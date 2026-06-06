@@ -110,7 +110,7 @@ $z = 5\,e^{i(\pi + \arctan(4/3))}$.
 
 </details>
 
-### 1.4 Euler's Formula and De Moivre's Theorem
+### 1.4 Euler's Formula and De Moivre’s Theorem
 
 **Euler's formula:** $e^{i\theta} = \cos\theta + i\sin\theta$.
 
@@ -664,7 +664,7 @@ simple closed contour in $D$Then
 
 $$\int_\gamma f(z)\, dz = 0$$
 
-_Proof (for $f'$ continuous)._ By Green's theorem in the plane, writing $f = u + iv$:
+_Proof (for $f'$ continuous)._ By Green’s theorem in the plane, writing $f = u + iv$:
 
 $$\int_\gamma f\, dz = \int_\gamma (u\, dx - v\, dy) + i\int_\gamma (v\, dx + u\, dy)$$
 

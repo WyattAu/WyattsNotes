@@ -5,8 +5,7 @@ tags:
   - university
 slug: practice-classical-mechanics
 description:
-  "Interactive university classical mechanics practice with auto-graded questions. Covers Newton's
-  laws, energy, oscillations, central forces, and Lagrangian mechanics."
+  "Interactive university classical mechanics practice with auto-graded questions. Covers Newton's laws, energy, oscillations, central forces, and Lagrangian mechanics."
 ---
 
 import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
@@ -20,118 +19,38 @@ the explanation.
 
 ### Newton's Laws
 
-<PracticeProblem
-  question="Two blocks of mass m₁ = 4 kg and m₂ = 6 kg are connected by a string over a frictionless pulley (Atwood machine). What is the acceleration of the system? (g = 9.8 m/s²)"
-  options={['1.96 m/s²', '2.94 m/s²', '4.90 m/s²', '0.98 m/s²']}
-  correctAnswer={0}
-  explanation="For an Atwood machine: a = (m₂ − m₁)g / (m₁ + m₂) = (6 − 4)(9.8) / (4 + 6) = 2(9.8)/10 = 19.6/10 = 1.96 m/s². The heavier mass accelerates downward, the lighter one upward."
-  difficulty="medium"
-/>
+<PracticeProblem question="Two blocks of mass m₁ = 4 kg and m₂ = 6 kg are connected by a string over a frictionless pulley (Atwood machine). What is the acceleration of the system? (g = 9.8 m/s²)" options={['1.96 m/s²', '2.94 m/s²', '4.90 m/s²', '0.98 m/s²']} correctAnswer={0} explanation="For an Atwood machine: a = (m₂ − m₁)g / (m₁ + m₂) = (6 − 4)(9.8) / (4 + 6) = 2(9.8)/10 = 19.6/10 = 1.96 m/s². The heavier mass accelerates downward, the lighter one upward." difficulty="medium" />
 
-<PracticeProblem
-  question="A 5 kg block sits on a surface with coefficient of static friction μₛ = 0.4 and kinetic friction μₖ = 0.3. A horizontal force of 15 N is applied. What is the friction force acting on the block? (g = 9.8 m/s²)"
-  options={[
-    '15 N — static friction matches the applied force since it is below maximum',
-    '19.6 N',
-    '14.7 N',
-    '4.5 N',
-  ]}
-  correctAnswer={0}
-  explanation="Maximum static friction: fₛ(max) = μₛ · N = 0.4 × 5 × 9.8 = 19.6 N. Since applied force (15 N) < fₛ(max), the block does not move and static friction equals the applied force: fₛ = 15 N."
-  difficulty="medium"
-/>
+<PracticeProblem question="A 5 kg block sits on a surface with coefficient of static friction μₛ = 0.4 and kinetic friction μₖ = 0.3. A horizontal force of 15 N is applied. What is the friction force acting on the block? (g = 9.8 m/s²)" options={[ '15 N — static friction matches the applied force since it is below maximum', '19.6 N', '14.7 N', '4.5 N', ]} correctAnswer={0} explanation="Maximum static friction: fₛ(max) = μₛ · N = 0.4 × 5 × 9.8 = 19.6 N. Since applied force (15 N) < fₛ(max), the block does not move and static friction equals the applied force: fₛ = 15 N." difficulty="medium" />
 
 ---
 
 ### Energy
 
-<PracticeProblem
-  question="A particle moves in a potential V(x) = ½kx² − αx³ with k, α > 0. How many equilibrium points exist and what type is x = 0?"
-  options={[
-    'Two equilibrium points; x = 0 is stable (local minimum)',
-    'Two equilibrium points; x = 0 is unstable (local maximum)',
-    'Three equilibrium points; x = 0 is an inflection point',
-    'One equilibrium point; x = 0 is stable',
-  ]}
-  correctAnswer={0}
-  explanation="dV/dx = kx − 3αx² = x(k − 3αx) = 0. Equilibria at x = 0 and x = k/(3α). At x = 0: d²V/dx² = k > 0, so it is stable (local minimum). At x = k/(3α): d²V/dx² = k − 6α(k/3α) = k − 2k = −k < 0, unstable (local maximum)."
-  difficulty="medium"
-/>
+<PracticeProblem question="A particle moves in a potential V(x) = ½kx² − αx³ with k, α > 0. How many equilibrium points exist and what type is x = 0?" options={[ 'Two equilibrium points; x = 0 is stable (local minimum)', 'Two equilibrium points; x = 0 is unstable (local maximum)', 'Three equilibrium points; x = 0 is an inflection point', 'One equilibrium point; x = 0 is stable', ]} correctAnswer={0} explanation="dV/dx = kx − 3αx² = x(k − 3αx) = 0. Equilibria at x = 0 and x = k/(3α). At x = 0: d²V/dx² = k > 0, so it is stable (local minimum). At x = k/(3α): d²V/dx² = k − 6α(k/3α) = k − 2k = −k < 0, unstable (local maximum)." difficulty="medium" />
 
-<PracticeProblem
-  question="A conservative force has potential V(x) = 4x³ − 3x² + 2 (in SI units). What is the force F(x)?"
-  options={['F(x) = −12x² + 6x', 'F(x) = 12x² − 6x', 'F(x) = 12x² + 6x', 'F(x) = −12x² − 6x']}
-  correctAnswer={0}
-  explanation="For a conservative force, F = −dV/dx = −(12x² − 6x) = −12x² + 6x. The force points in the direction of decreasing potential energy. At x = 0: F = 0 (equilibrium). At x = 1: F = −6 (force toward lower V)."
-  difficulty="easy"
-/>
+<PracticeProblem question="A conservative force has potential V(x) = 4x³ − 3x² + 2 (in SI units). What is the force F(x)?" options={['F(x) = −12x² + 6x', 'F(x) = 12x² − 6x', 'F(x) = 12x² + 6x', 'F(x) = −12x² − 6x']} correctAnswer={0} explanation="For a conservative force, F = −dV/dx = −(12x² − 6x) = −12x² + 6x. The force points in the direction of decreasing potential energy. At x = 0: F = 0 (equilibrium). At x = 1: F = −6 (force toward lower V)." difficulty="easy" />
 
 ---
 
 ### Oscillations
 
-<PracticeProblem
-  question="A mass of 0.5 kg on a spring with constant k = 200 N/m is displaced 0.05 m and released. What is the maximum velocity during the motion?"
-  options={['1.0 m/s', '0.5 m/s', '2.0 m/s', '0.71 m/s']}
-  correctAnswer={0}
-  explanation="Angular frequency ω = √(k/m) = √(200/0.5) = √400 = 20 rad/s. Maximum velocity v_max = Aω = 0.05 × 20 = 1.0 m/s. This occurs as the mass passes through the equilibrium position."
-  difficulty="medium"
-/>
+<PracticeProblem question="A mass of 0.5 kg on a spring with constant k = 200 N/m is displaced 0.05 m and released. What is the maximum velocity during the motion?" options={['1.0 m/s', '0.5 m/s', '2.0 m/s', '0.71 m/s']} correctAnswer={0} explanation="Angular frequency ω = √(k/m) = √(200/0.5) = √400 = 20 rad/s. Maximum velocity v_max = Aω = 0.05 × 20 = 1.0 m/s. This occurs as the mass passes through the equilibrium position." difficulty="medium" />
 
-<PracticeProblem
-  question="A damped harmonic oscillator has equation mẍ + bẋ + kx = 0 with m = 1 kg, k = 100 N/m. What value of b gives critical damping?"
-  options={['20 kg/s', '10 kg/s', '200 kg/s', '5 kg/s']}
-  correctAnswer={0}
-  explanation="Critical damping occurs when b² = 4mk, so b = 2√(mk) = 2√(1 × 100) = 2 × 10 = 20 kg/s. At critical damping the system returns to equilibrium in the shortest time without oscillating. Underdamped: b < 20, overdamped: b > 20."
-  difficulty="medium"
-/>
+<PracticeProblem question="A damped harmonic oscillator has equation mẍ + bẋ + kx = 0 with m = 1 kg, k = 100 N/m. What value of b gives critical damping?" options={['20 kg/s', '10 kg/s', '200 kg/s', '5 kg/s']} correctAnswer={0} explanation="Critical damping occurs when b² = 4mk, so b = 2√(mk) = 2√(1 × 100) = 2 × 10 = 20 kg/s. At critical damping the system returns to equilibrium in the shortest time without oscillating. Underdamped: b < 20, overdamped: b > 20." difficulty="medium" />
 
 ---
 
 ### Central Forces
 
-<PracticeProblem
-  question="A satellite orbits Earth at radius r with speed v. If the orbital radius is doubled while keeping the same central body, what is the new orbital speed in terms of v?"
-  options={['v/√2', 'v/2', 'v√2', '2v']}
-  correctAnswer={0}
-  explanation="Circular orbit: mv²/r = GMm/r² → v = √(GM/r). If r → 2r: v_new = √(GM/2r) = √(GM/r) · 1/√2 = v/√2. The orbital speed decreases as radius increases."
-  difficulty="easy"
-/>
+<PracticeProblem question="A satellite orbits Earth at radius r with speed v. If the orbital radius is doubled while keeping the same central body, what is the new orbital speed in terms of v?" options={['v/√2', 'v/2', 'v√2', '2v']} correctAnswer={0} explanation="Circular orbit: mv²/r = GMm/r² → v = √(GM/r). If r → 2r: v_new = √(GM/2r) = √(GM/r) · 1/√2 = v/√2. The orbital speed decreases as radius increases." difficulty="easy" />
 
-<PracticeProblem
-  question="For a central force problem with potential V(r) = −k/r, what is the effective potential V_eff(r)?"
-  options={[
-    'V_eff(r) = L²/(2mr²) − k/r',
-    'V_eff(r) = −k/r',
-    'V_eff(r) = L²/(2mr²) + k/r',
-    'V_eff(r) = ½mv² − k/r',
-  ]}
-  correctAnswer={0}
-  explanation="In polar coordinates with angular momentum L conserved: V_eff(r) = L²/(2mr²) + V(r) = L²/(2mr²) − k/r. The L²/(2mr²) term is the centrifugal barrier. The effective potential has a minimum at r₀ = L²/(mk), giving stable circular orbits."
-  difficulty="hard"
-/>
+<PracticeProblem question="For a central force problem with potential V(r) = −k/r, what is the effective potential V_eff(r)?" options={[ 'V_eff(r) = L²/(2mr²) − k/r', 'V_eff(r) = −k/r', 'V_eff(r) = L²/(2mr²) + k/r', 'V_eff(r) = ½mv² − k/r', ]} correctAnswer={0} explanation="In polar coordinates with angular momentum L conserved: V_eff(r) = L²/(2mr²) + V(r) = L²/(2mr²) − k/r. The L²/(2mr²) term is the centrifugal barrier. The effective potential has a minimum at r₀ = L²/(mk), giving stable circular orbits." difficulty="hard" />
 
 ---
 
 ### Lagrangian Mechanics
 
-<PracticeProblem
-  question="A particle of mass m slides on a frictionless parabolic wire y = ½ax² under gravity. Using x as the generalised coordinate, what is the Lagrangian L?"
-  options={['L = ½m(1 + a²x²)ẋ² − ½mgax²', 'L = ½mẋ² + ½mgax²', 'L = ½mẋ² − mgy', 'L = ½mv² + mgy']}
-  correctAnswer={0}
-  explanation="T = ½m(ẋ² + ẏ²) = ½m(ẋ² + a²x²ẋ²) = ½m(1 + a²x²)ẋ². V = mgy = mg(½ax²) = ½mgax². L = T − V = ½m(1 + a²x²)ẋ² − ½mgax². The Euler-Lagrange equation gives the equation of motion along the wire."
-  difficulty="hard"
-/>
+<PracticeProblem question="A particle of mass m slides on a frictionless parabolic wire y = ½ax² under gravity. Using x as the generalised coordinate, what is the Lagrangian L?" options={['L = ½m(1 + a²x²)ẋ² − ½mgax²', 'L = ½mẋ² + ½mgax²', 'L = ½mẋ² − mgy', 'L = ½mv² + mgy']} correctAnswer={0} explanation="T = ½m(ẋ² + ẏ²) = ½m(ẋ² + a²x²ẋ²) = ½m(1 + a²x²)ẋ². V = mgy = mg(½ax²) = ½mgax². L = T − V = ½m(1 + a²x²)ẋ² − ½mgax². The Euler-Lagrange equation gives the equation of motion along the wire." difficulty="hard" />
 
-<PracticeProblem
-  question="For a simple pendulum with Lagrangian L = ½mL²θ̇² − mgL(1 − cosθ), what is the Euler-Lagrange equation?"
-  options={[
-    'mL²θ̈ + mgL sinθ = 0',
-    'mL²θ̈ − mgL sinθ = 0',
-    'mLθ̈ + mg sinθ = 0',
-    'mL²θ̈ + mgL cosθ = 0',
-  ]}
-  correctAnswer={0}
-  explanation="Apply ∂L/∂θ − d/dt(∂L/∂θ̇) = 0. ∂L/∂θ = −mgL sinθ. ∂L/∂θ̇ = mL²θ̇. d/dt(∂L/∂θ̇) = mL²θ̈. So: −mgL sinθ − mL²θ̈ = 0 → mL²θ̈ + mgL sinθ = 0 → θ̈ + (g/L)sinθ = 0. For small angles: θ̈ + (g/L)θ = 0 (SHM with ω² = g/L)."
-  difficulty="medium"
-/>
+<PracticeProblem question="For a simple pendulum with Lagrangian L = ½mL²θ̇² − mgL(1 − cosθ), what is the Euler-Lagrange equation?" options={[ 'mL²θ̈ + mgL sinθ = 0', 'mL²θ̈ − mgL sinθ = 0', 'mLθ̈ + mg sinθ = 0', 'mL²θ̈ + mgL cosθ = 0', ]} correctAnswer={0} explanation="Apply ∂L/∂θ − d/dt(∂L/∂θ̇) = 0. ∂L/∂θ = −mgL sinθ. ∂L/∂θ̇ = mL²θ̇. d/dt(∂L/∂θ̇) = mL²θ̈. So: −mgL sinθ − mL²θ̈ = 0 → mL²θ̈ + mgL sinθ = 0 → θ̈ + (g/L)sinθ = 0. For small angles: θ̈ + (g/L)θ = 0 (SHM with ω² = g/L)." difficulty="medium" />

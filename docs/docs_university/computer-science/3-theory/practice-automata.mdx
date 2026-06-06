@@ -18,134 +18,24 @@ grammars, pushdown automata, and Turing machines. Select an option to check your
 
 ## Finite Automata and Regular Languages
 
-<PracticeProblem
-  question="A DFA is a 5-tuple $M = (Q, \\Sigma, \\delta, q_0, F)$. What distinguishes it from an NFA?"
-  options={[
-    'The DFA transition function $\\delta: Q \\times \\Sigma \\to Q$ returns exactly one state; NFA returns a set of states and allows $\\epsilon$-transitions',
-    'DFAs accept more languages than NFAs',
-    'NFAs cannot have accepting states',
-    'DFAs use a stack for computation',
-  ]}
-  correctAnswer={0}
-  explanation="DFA transitions are deterministic: for each state and symbol, exactly one next state. NFA transitions can return multiple states ($\\delta: Q \\times (\\Sigma \\cup \\{\\epsilon\\}) \\to 2^Q$) and allow $\\epsilon$-transitions (changing state without consuming input). Despite this difference, DFAs and NFAs recognize exactly the same class of languages: the regular languages."
-  difficulty="easy"
-/>
+<PracticeProblem question="A DFA is a 5-tuple $M = (Q, \\Sigma, \\delta, q_0, F)$. What distinguishes it from an NFA?" options={[ 'The DFA transition function $\\delta: Q \\times \\Sigma \\to Q$ returns exactly one state; NFA returns a set of states and allows $\\epsilon$-transitions', 'DFAs accept more languages than NFAs', 'NFAs cannot have accepting states', 'DFAs use a stack for computation', ]} correctAnswer={0} explanation="DFA transitions are deterministic: for each state and symbol, exactly one next state. NFA transitions can return multiple states ($\\delta: Q \\times (\\Sigma \\cup \\{\\epsilon\\}) \\to 2^Q$) and allow $\\epsilon$-transitions (changing state without consuming input). Despite this difference, DFAs and NFAs recognize exactly the same class of languages: the regular languages." difficulty="easy" />
 
-<PracticeProblem
-  question="Converting an NFA with $n$ states to an equivalent DFA using subset construction produces at most how many states?"
-  options={[
-    '$2^n$ states (each subset of NFA states becomes a DFA state)',
-    '$n^2$ states',
-    '$2n$ states',
-    '$n!$ states',
-  ]}
-  correctAnswer={0}
-  explanation="The subset construction maps each subset of NFA states to a single DFA state. With $n$ NFA states, there are $2^n$ possible subsets. The worst case requires all $2^n$ DFA states, though in practice many subsets are unreachable. Hopcroft's algorithm can then minimize the DFA to the unique minimal equivalent DFA in $O(n \\log n)$ time."
-  difficulty="medium"
-/>
+<PracticeProblem question="Converting an NFA with $n$ states to an equivalent DFA using subset construction produces at most how many states?" options={[ '$2^n$ states (each subset of NFA states becomes a DFA state)', '$n^2$ states', '$2n$ states', '$n!$ states', ]} correctAnswer={0} explanation="The subset construction maps each subset of NFA states to a single DFA state. With $n$ NFA states, there are $2^n$ possible subsets. The worst case requires all $2^n$ DFA states, though in practice many subsets are unreachable. Hopcroft’s algorithm can then minimize the DFA to the unique minimal equivalent DFA in $O(n \\log n)$ time." difficulty="medium" />
 
-<PracticeProblem
-  question="Using the pumping lemma for regular languages, what string is chosen to prove that $L = \\{a^n b^n : n \\geq 0\\}$ is not regular?"
-  options={[
-    '$s = a^p b^p$ where $p$ is the pumping length; pumping $y$ (within the first $p$ symbols) breaks the $a$-$b$ balance',
-    "$s = a^p$ (pumping adds more $a$'s)",
-    '$s = (ab)^p$ (pumping breaks alternation)',
-    "$s = b^p a^p$ (pumping removes $b$'s)",
-  ]}
-  correctAnswer={0}
-  explanation="Choose $s = a^p b^p$. Since $|s| \\geq p$ and $|xy| \\leq p$, $y$ consists only of $a$'s: $y = a^k$ for some $k \\geq 1$. Pumping down ($i=0$): $xy^0z = a^{p-k}b^p \\notin L$ since $p-k \\neq p$. This holds for any division of $s = xyz$ satisfying the lemma conditions, so $L$ is not regular."
-  difficulty="medium"
-/>
+<PracticeProblem question="Using the pumping lemma for regular languages, what string is chosen to prove that $L = \\{a^n b^n : n \\geq 0\\}$ is not regular?" options={[ '$s = a^p b^p$ where $p$ is the pumping length; pumping $y$ (within the first $p$ symbols) breaks the $a$-$b$ balance', "$s = a^p$ (pumping adds more $a$'s)", '$s = (ab)^p$ (pumping breaks alternation)', "$s = b^p a^p$ (pumping removes $b$'s)", ]} correctAnswer={0} explanation="Choose $s = a^p b^p$. Since $|s| \\geq p$ and $|xy| \\leq p$, $y$ consists only of $a$'s: $y = a^k$ for some $k \\geq 1$. Pumping down ($i=0$): $xy^0z = a^{p-k}b^p \\notin L$ since $p-k \\neq p$. This holds for any division of $s = xyz$ satisfying the lemma conditions, so $L$ is not regular." difficulty="medium" />
 
-<PracticeProblem
-  question="Regular languages are closed under which of the following operations?"
-  options={[
-    'Union, intersection, complement, concatenation, and Kleene star',
-    'Union and concatenation only',
-    'Complement only',
-    'Intersection and Kleene star only',
-  ]}
-  correctAnswer={0}
-  explanation="Regular languages are closed under all standard operations: union (parallel NFA construction or $R_1 \\cup R_2$), intersection (product DFA construction), complement (swap accepting/non-accepting states in DFA), concatenation ($R_1 \\cdot R_2$), Kleene star ($R^*$), and reversal. This closure under complement is a key property not shared by context-free languages."
-  difficulty="easy"
-/>
+<PracticeProblem question="Regular languages are closed under which of the following operations?" options={[ 'Union, intersection, complement, concatenation, and Kleene star', 'Union and concatenation only', 'Complement only', 'Intersection and Kleene star only', ]} correctAnswer={0} explanation="Regular languages are closed under all standard operations: union (parallel NFA construction or $R_1 \\cup R_2$), intersection (product DFA construction), complement (swap accepting/non-accepting states in DFA), concatenation ($R_1 \\cdot R_2$), Kleene star ($R^*$), and reversal. This closure under complement is a key property not shared by context-free languages." difficulty="easy" />
 
 ## Context-Free Languages and Turing Machines
 
-<PracticeProblem
-  question="A context-free grammar is ambiguous if some string has two or more different parse trees. Which of the following is inherently ambiguous (has no unambiguous grammar)?"
-  options={[
-    '$\\{a^i b^j c^k : i = j \\text{ or } j = k\\}$',
-    '$\\{a^n b^n : n \\geq 0\\}$',
-    '$\\{ww^R : w \\in \\{a,b\\}^*\\}$',
-    'The language of balanced parentheses',
-  ]}
-  correctAnswer={0}
-  explanation="$\\{a^i b^j c^k : i = j \\text{ or } j = k\\}$ is inherently ambiguous: strings where $i = j = k$ (e.g., $a^n b^n c^n$) can be derived through the $i=j$ branch or the $j=k$ branch, and no unambiguous grammar exists for this union. The language $\\{a^n b^n\\}$ has an unambiguous CFG ($S \\to aSb \\mid \\epsilon$)."
-  difficulty="hard"
-/>
+<PracticeProblem question="A context-free grammar is ambiguous if some string has two or more different parse trees. Which of the following is inherently ambiguous (has no unambiguous grammar)?" options={[ '$\\{a^i b^j c^k : i = j \\text{ or } j = k\\}$', '$\\{a^n b^n : n \\geq 0\\}$', '$\\{ww^R : w \\in \\{a,b\\}^*\\}$', 'The language of balanced parentheses', ]} correctAnswer={0} explanation="$\\{a^i b^j c^k : i = j \\text{ or } j = k\\}$ is inherently ambiguous: strings where $i = j = k$ (e.g., $a^n b^n c^n$) can be derived through the $i=j$ branch or the $j=k$ branch, and no unambiguous grammar exists for this union. The language $\\{a^n b^n\\}$ has an unambiguous CFG ($S \\to aSb \\mid \\epsilon$)." difficulty="hard" />
 
-<PracticeProblem
-  question="Which of the following is NOT closed under for context-free languages?"
-  options={[
-    'Intersection and complement',
-    'Union, concatenation, and Kleene star',
-    'Intersection with a regular language',
-    'Union and Kleene star',
-  ]}
-  correctAnswer={0}
-  explanation="CFLs are closed under union, concatenation, Kleene star, and intersection with a regular language (product of PDA and DFA). However, CFLs are NOT closed under intersection ($L_1 \\cap L_2$ of two CFLs may not be context-free) or complement. This is a key distinction from regular languages, which are closed under both."
-  difficulty="medium"
-/>
+<PracticeProblem question="Which of the following is NOT closed under for context-free languages?" options={[ 'Intersection and complement', 'Union, concatenation, and Kleene star', 'Intersection with a regular language', 'Union and Kleene star', ]} correctAnswer={0} explanation="CFLs are closed under union, concatenation, Kleene star, and intersection with a regular language (product of PDA and DFA). However, CFLs are NOT closed under intersection ($L_1 \\cap L_2$ of two CFLs may not be context-free) or complement. This is a key distinction from regular languages, which are closed under both." difficulty="medium" />
 
-<PracticeProblem
-  question="The pumping lemma for context-free languages states that if $L$ is a CFL, any string $s \\in L$ with $|s| \\geq p$ can be divided as $s = uvxyz$ with $|vxy| \\leq p$. How is this used to prove $L = \\{a^n b^n c^n : n \\geq 0\\}$ is not context-free?"
-  options={[
-    'Since $|vxy| \\leq p$, the substring $vxy$ cannot span all three letter types; pumping breaks the balance',
-    'Choose $s = a^p b^p c^p$ and show that removing $v$ and $y$ preserves the balance',
-    'Show that the language is regular instead',
-    'Apply the regular pumping lemma',
-  ]}
-  correctAnswer={0}
-  explanation="Choose $s = a^p b^p c^p$. Since $|vxy| \\leq p$, the pumped substring $vxy$ can contain at most two of the three letter types. If it contains only $a$'s: pumping increases $a$ count but not $b$ or $c$. If it spans $a$'s and $b$'s: pumping changes $a$ and $b$ counts but not $c$. In all cases, the $a^n b^n c^n$ structure is broken."
-  difficulty="hard"
-/>
+<PracticeProblem question="The pumping lemma for context-free languages states that if $L$ is a CFL, any string $s \\in L$ with $|s| \\geq p$ can be divided as $s = uvxyz$ with $|vxy| \\leq p$. How is this used to prove $L = \\{a^n b^n c^n : n \\geq 0\\}$ is not context-free?" options={[ 'Since $|vxy| \\leq p$, the substring $vxy$ cannot span all three letter types; pumping breaks the balance', 'Choose $s = a^p b^p c^p$ and show that removing $v$ and $y$ preserves the balance', 'Show that the language is regular instead', 'Apply the regular pumping lemma', ]} correctAnswer={0} explanation="Choose $s = a^p b^p c^p$. Since $|vxy| \\leq p$, the pumped substring $vxy$ can contain at most two of the three letter types. If it contains only $a$'s: pumping increases $a$ count but not $b$ or $c$. If it spans $a$'s and $b$'s: pumping changes $a$ and $b$ counts but not $c$. In all cases, the $a^n b^n c^n$ structure is broken." difficulty="hard" />
 
-<PracticeProblem
-  question="What does Rice's theorem state about non-trivial properties of Turing machine languages?"
-  options={[
-    'Any non-trivial property of the language recognized by a TM is undecidable',
-    'Any property of a TM\'s code is decidable',
-    'All properties of TM languages are decidable',
-    'Only properties related to the halting problem are undecidable',
-  ]}
-  correctAnswer={0}
-  explanation="Rice's theorem: if $P$ is a non-trivial property of TM languages (holds for some TMs, not for others, and depends only on the language, not the machine), then $P$ is undecidable. Examples: \"Is $L(M)$ finite?\", \"Is $L(M) = \\Sigma^*$?\", \"Is $L(M)$ regular?\" are all undecidable. Properties of the machine's computation (not its language) may still be decidable."
-  difficulty="medium"
-/>
+<PracticeProblem question="What does Rice's theorem state about non-trivial properties of Turing machine languages?" options={[ 'Any non-trivial property of the language recognized by a TM is undecidable', 'Any property of a TM\'s code is decidable', 'All properties of TM languages are decidable', 'Only properties related to the halting problem are undecidable', ]} correctAnswer={0} explanation="Rice’s theorem: if $P$ is a non-trivial property of TM languages (holds for some TMs, not for others, and depends only on the language, not the machine), then $P$ is undecidable. Examples: \"Is $L(M)$ finite?\", \"Is $L(M) = \\Sigma^*$?\", \"Is $L(M)$ regular?\" are all undecidable. Properties of the machine's computation (not its language) may still be decidable." difficulty="medium" />
 
-<PracticeProblem
-  question="A Pushdown Automaton (PDA) uses a stack as auxiliary memory. What is the relationship between deterministic PDAs (DPDA) and nondeterministic PDAs (NPDA)?"
-  options={[
-    'DPDAs are strictly less powerful than NPDAs; NPDAs = CFLs, DPDAs = proper subset',
-    'DPDAs and NPDAs recognize the same languages',
-    'DPDAs are more powerful than NPDAs',
-    'DPDAs can recognize all CFLs but NPDAs can recognize more',
-  ]}
-  correctAnswer={0}
-  explanation="Unlike finite automata (where DFA = NFA), deterministic and nondeterministic PDAs differ in power. NPDAs recognize exactly the context-free languages. DPDAs recognize a proper subset (deterministic CFLs). Languages like $\\{ww^R : w \\in \\{a,b\\}^*\\}$ are CFLs recognizable by NPDAs but not by DPDAs."
-  difficulty="hard"
-/>
+<PracticeProblem question="A Pushdown Automaton (PDA) uses a stack as auxiliary memory. What is the relationship between deterministic PDAs (DPDA) and nondeterministic PDAs (NPDA)?" options={[ 'DPDAs are strictly less powerful than NPDAs; NPDAs = CFLs, DPDAs = proper subset', 'DPDAs and NPDAs recognize the same languages', 'DPDAs are more powerful than NPDAs', 'DPDAs can recognize all CFLs but NPDAs can recognize more', ]} correctAnswer={0} explanation="Unlike finite automata (where DFA = NFA), deterministic and nondeterministic PDAs differ in power. NPDAs recognize exactly the context-free languages. DPDAs recognize a proper subset (deterministic CFLs). Languages like $\\{ww^R : w \\in \\{a,b\\}^*\\}$ are CFLs recognizable by NPDAs but not by DPDAs." difficulty="hard" />
 
-<PracticeProblem
-  question="Which of the following correctly describes the language classes Decidable, Turing-Recognizable (RE), and All Languages?"
-  options={[
-    'Decidable $\\subsetneq$ RE $\\subsetneq$ All Languages',
-    'Decidable = RE = All Languages',
-    'RE $\\subsetneq$ Decidable $\\subsetneq$ All Languages',
-    'Decidable $\\subsetneq$ All Languages $\\subsetneq$ RE',
-  ]}
-  correctAnswer={0}
-  explanation="Decidable languages are recognized by TMs that halt on all inputs (accept members, reject non-members). Turing-recognizable (recursively enumerable) languages are recognized by TMs that accept members but may loop on non-members. There exist languages that are not even RE (e.g., the complement of the halting problem). The halting problem itself is RE but not decidable."
-  difficulty="medium"
-/>
+<PracticeProblem question="Which of the following correctly describes the language classes Decidable, Turing-Recognizable (RE), and All Languages?" options={[ 'Decidable $\\subsetneq$ RE $\\subsetneq$ All Languages', 'Decidable = RE = All Languages', 'RE $\\subsetneq$ Decidable $\\subsetneq$ All Languages', 'Decidable $\\subsetneq$ All Languages $\\subsetneq$ RE', ]} correctAnswer={0} explanation="Decidable languages are recognized by TMs that halt on all inputs (accept members, reject non-members). Turing-recognizable (recursively enumerable) languages are recognized by TMs that accept members but may loop on non-members. There exist languages that are not even RE (e.g., the complement of the halting problem). The halting problem itself is RE but not decidable." difficulty="medium" />

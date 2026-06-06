@@ -20,135 +20,30 @@ the explanation.
 
 ### First-Order ODEs
 
-<PracticeProblem
-  question="What is the general solution of the separable ODE $y' = 2xy$?"
-  options={['$y = Ce^{x^2}$', '$y = Ce^{2x}$', '$y = Ce^{x}$', '$y = Cx^2$']}
-  correctAnswer={0}
-  explanation="Separate variables: $\frac{dy}{y} = 2x\,dx$. Integrate both sides: $\ln|y| = x^2 + C_1$. Exponentiate: $|y| = e^{C_1} e^{x^2}$, so $y = \pm e^{C_1} \cdot e^{x^2}$. Let $C = \pm e^{C_1}$ (where $C \neq 0$), giving $y = Ce^{x^2}$. The zero function $y = 0$ is also a solution (corresponding to $C = 0$)."
-  difficulty="easy"
-/>
+<PracticeProblem question="What is the general solution of the separable ODE $y' = 2xy$?" options={['$y = Ce^{x^2}$', '$y = Ce^{2x}$', '$y = Ce^{x}$', '$y = Cx^2$']} correctAnswer={0} explanation="Separate variables: $\frac{dy}{y} = 2x\,dx$. Integrate both sides: $\ln|y| = x^2 + C_1$. Exponentiate: $|y| = e^{C_1} e^{x^2}$, so $y = \pm e^{C_1} \cdot e^{x^2}$. Let $C = \pm e^{C_1}$ (where $C \neq 0$), giving $y = Ce^{x^2}$. The zero function $y = 0$ is also a solution (corresponding to $C = 0$)." difficulty="easy" />
 
-<PracticeProblem
-  question="Solve the first-order linear ODE $y' + 2y = e^{-x}$ using an integrating factor."
-  options={[
-    '$y = e^{-2x} \left( e^x + C \right) = e^{-x} + Ce^{-2x}$',
-    '$y = Ce^{-2x} + e^{-x}$',
-    '$y = e^{-x}(x + C)$',
-    '$y = Ce^{-2x} - e^{-x}$',
-  ]}
-  correctAnswer={0}
-  explanation="The integrating factor is $\mu(x) = e^{\int 2\,dx} = e^{2x}$. Multiply through: $e^{2x}y' + 2e^{2x}y = e^{2x} \cdot e^{-x} = e^x$. The left side is $\frac{d}{dx}(e^{2x}y) = e^x$. Integrate: $e^{2x}y = e^x + C$. Solve: $y = e^{-2x}(e^x + C) = e^{-x} + Ce^{-2x}$."
-  difficulty="medium"
-/>
+<PracticeProblem question="Solve the first-order linear ODE $y' + 2y = e^{-x}$ using an integrating factor." options={[ '$y = e^{-2x} \left( e^x + C \right) = e^{-x} + Ce^{-2x}$', '$y = Ce^{-2x} + e^{-x}$', '$y = e^{-x}(x + C)$', '$y = Ce^{-2x} - e^{-x}$', ]} correctAnswer={0} explanation="The integrating factor is $\mu(x) = e^{\int 2\,dx} = e^{2x}$. Multiply through: $e^{2x}y' + 2e^{2x}y = e^{2x} \cdot e^{-x} = e^x$. The left side is $\frac{d}{dx}(e^{2x}y) = e^x$. Integrate: $e^{2x}y = e^x + C$. Solve: $y = e^{-2x}(e^x + C) = e^{-x} + Ce^{-2x}$." difficulty="medium" />
 
-<PracticeProblem
-  question="Which of the following is an exact differential equation?"
-  options={[
-    '$(2x + y)\,dx + (x + 2y)\,dy = 0$',
-    '$(x)\,dx + (y)\,dy = 0$ where the test fails',
-    '$y\,dx - x\,dy = 0$',
-    '$(2xy)\,dx + (x^2)\,dy = 0$',
-  ]}
-  correctAnswer={0}
-  explanation="For $M\,dx + N\,dy = 0$ to be exact, we need $\frac{\partial M}{\partial y} = \frac{\partial N}{\partial x}$. For $(2x+y)\,dx + (x+2y)\,dy = 0$: $\frac{\partial M}{\partial y} = 1$ and $\frac{\partial N}{\partial x} = 1$. The test passes. The potential function is $\psi(x,y) = x^2 + xy + y^2 = C$. The second option is also exact ($M_y = 0 = N_x$), but the third has $M_y = 1 \neq N_x = -1$ and the fourth has $M_y = 2x \neq N_x = 2x$ — wait, the fourth IS exact. Both the first and fourth options are exact. Among the given choices, the first answer is correct since it passes the exactness test."
-  difficulty="medium"
-/>
+<PracticeProblem question="Which of the following is an exact differential equation?" options={[ '$(2x + y)\,dx + (x + 2y)\,dy = 0$', '$(x)\,dx + (y)\,dy = 0$ where the test fails', '$y\,dx - x\,dy = 0$', '$(2xy)\,dx + (x^2)\,dy = 0$', ]} correctAnswer={0} explanation="For $M\,dx + N\,dy = 0$ to be exact, we need $\frac{\partial M}{\partial y} = \frac{\partial N}{\partial x}$. For $(2x+y)\,dx + (x+2y)\,dy = 0$: $\frac{\partial M}{\partial y} = 1$ and $\frac{\partial N}{\partial x} = 1$. The test passes. The potential function is $\psi(x,y) = x^2 + xy + y^2 = C$. The second option is also exact ($M_y = 0 = N_x$), but the third has $M_y = 1 \neq N_x = -1$ and the fourth has $M_y = 2x \neq N_x = 2x$ — wait, the fourth IS exact. Both the first and fourth options are exact. Among the given choices, the first answer is correct since it passes the exactness test." difficulty="medium" />
 
 ---
 
 ### Second-Order Linear ODEs
 
-<PracticeProblem
-  question="What is the general solution of $y'' - 5y' + 6y = 0$?"
-  options={[
-    '$y = C_1 e^{2x} + C_2 e^{3x}$',
-    '$y = C_1 e^{x} + C_2 e^{6x}$',
-    '$y = (C_1 + C_2 x) e^{2x}$',
-    '$y = C_1 e^{2x} + C_2 e^{-3x}$',
-  ]}
-  correctAnswer={0}
-  explanation="The characteristic equation is $r^2 - 5r + 6 = 0$. Factor: $(r - 2)(r - 3) = 0$, giving distinct real roots $r = 2$ and $r = 3$. For distinct real roots, the general solution is $y = C_1 e^{r_1 x} + C_2 e^{r_2 x} = C_1 e^{2x} + C_2 e^{3x}$."
-  difficulty="easy"
-/>
+<PracticeProblem question="What is the general solution of $y'' - 5y' + 6y = 0$?" options={[ '$y = C_1 e^{2x} + C_2 e^{3x}$', '$y = C_1 e^{x} + C_2 e^{6x}$', '$y = (C_1 + C_2 x) e^{2x}$', '$y = C_1 e^{2x} + C_2 e^{-3x}$', ]} correctAnswer={0} explanation="The characteristic equation is $r^2 - 5r + 6 = 0$. Factor: $(r - 2)(r - 3) = 0$, giving distinct real roots $r = 2$ and $r = 3$. For distinct real roots, the general solution is $y = C_1 e^{r_1 x} + C_2 e^{r_2 x} = C_1 e^{2x} + C_2 e^{3x}$." difficulty="easy" />
 
-<PracticeProblem
-  question="What is the general solution of $y'' + 4y = 0$?"
-  options={[
-    '$y = C_1 \cos(2x) + C_2 \sin(2x)$',
-    '$y = C_1 \cos(4x) + C_2 \sin(4x)$',
-    '$y = C_1 e^{2ix} + C_2 e^{-2ix}$',
-    '$y = (C_1 + C_2 x) \cos(2x)$',
-  ]}
-  correctAnswer={0}
-  explanation="Characteristic equation: $r^2 + 4 = 0$, so $r = \pm 2i$. For complex conjugate roots $\alpha \pm \beta i$ with $\alpha = 0, \beta = 2$, the general solution is $y = C_1 \cos(\beta x) + C_2 \sin(\beta x) = C_1 \cos(2x) + C_2 \sin(2x)$. The third option is equivalent but uses complex exponentials rather than the standard real form."
-  difficulty="medium"
-/>
+<PracticeProblem question="What is the general solution of $y'' + 4y = 0$?" options={[ '$y = C_1 \cos(2x) + C_2 \sin(2x)$', '$y = C_1 \cos(4x) + C_2 \sin(4x)$', '$y = C_1 e^{2ix} + C_2 e^{-2ix}$', '$y = (C_1 + C_2 x) \cos(2x)$', ]} correctAnswer={0} explanation="Characteristic equation: $r^2 + 4 = 0$, so $r = \pm 2i$. For complex conjugate roots $\alpha \pm \beta i$ with $\alpha = 0, \beta = 2$, the general solution is $y = C_1 \cos(\beta x) + C_2 \sin(\beta x) = C_1 \cos(2x) + C_2 \sin(2x)$. The third option is equivalent but uses complex exponentials rather than the standard real form." difficulty="medium" />
 
-<PracticeProblem
-  question="For the ODE $y'' + 4y' + 4y = 0$, what form does the general solution take?"
-  options={[
-    '$y = (C_1 + C_2 x)e^{-2x}$ (repeated root case)',
-    '$y = C_1 e^{-2x} + C_2 e^{2x}$',
-    '$y = C_1 \cos(2x) + C_2 \sin(2x)$',
-    '$y = C_1 e^{-4x} + C_2 x e^{-4x}$',
-  ]}
-  correctAnswer={0}
-  explanation="Characteristic equation: $r^2 + 4r + 4 = (r+2)^2 = 0$. Repeated root $r = -2$. For a repeated root $r$, the general solution is $y = C_1 e^{rx} + C_2 x e^{rx}$. Here: $y = C_1 e^{-2x} + C_2 x e^{-2x} = (C_1 + C_2 x)e^{-2x}$. The two solutions $e^{-2x}$ and $xe^{-2x}$ are linearly independent (their Wronskian is non-zero)."
-  difficulty="medium"
-/>
+<PracticeProblem question="For the ODE $y'' + 4y' + 4y = 0$, what form does the general solution take?" options={[ '$y = (C_1 + C_2 x)e^{-2x}$ (repeated root case)', '$y = C_1 e^{-2x} + C_2 e^{2x}$', '$y = C_1 \cos(2x) + C_2 \sin(2x)$', '$y = C_1 e^{-4x} + C_2 x e^{-4x}$', ]} correctAnswer={0} explanation="Characteristic equation: $r^2 + 4r + 4 = (r+2)^2 = 0$. Repeated root $r = -2$. For a repeated root $r$, the general solution is $y = C_1 e^{rx} + C_2 x e^{rx}$. Here: $y = C_1 e^{-2x} + C_2 x e^{-2x} = (C_1 + C_2 x)e^{-2x}$. The two solutions $e^{-2x}$ and $xe^{-2x}$ are linearly independent (their Wronskian is non-zero)." difficulty="medium" />
 
-<PracticeProblem
-  question="Using undetermined coefficients, what is a particular solution of $y'' + y = 3\cos(x)$?"
-  options={[
-    '$y_p = \frac{3}{2}x \sin(x)$',
-    '$y_p = 3\cos(x)$',
-    '$y_p = \frac{3}{2}\sin(x)$',
-    '$y_p = \frac{3}{2}x \cos(x)$',
-  ]}
-  correctAnswer={0}
-  explanation="The complementary solution is $y_c = C_1 \cos(x) + C_2 \sin(x)$. Since $\cos(x)$ appears in $y_c$, the standard guess $A\cos(x) + B\sin(x)$ would fail. We multiply by $x$: try $y_p = x(A\cos(x) + B\sin(x))$. Then $y_p' = A\cos(x) + B\sin(x) + x(-A\sin(x) + B\cos(x))$ and $y_p'' = -2A\sin(x) + 2B\cos(x) - x(A\cos(x) + B\sin(x))$. Substituting: $y_p'' + y_p = -2A\sin(x) + 2B\cos(x) = 3\cos(x)$. So $A = 0, B = 3/2$, giving $y_p = \frac{3}{2}x\sin(x)$."
-  difficulty="hard"
-/>
+<PracticeProblem question="Using undetermined coefficients, what is a particular solution of $y'' + y = 3\cos(x)$?" options={[ '$y_p = \frac{3}{2}x \sin(x)$', '$y_p = 3\cos(x)$', '$y_p = \frac{3}{2}\sin(x)$', '$y_p = \frac{3}{2}x \cos(x)$', ]} correctAnswer={0} explanation="The complementary solution is $y_c = C_1 \cos(x) + C_2 \sin(x)$. Since $\cos(x)$ appears in $y_c$, the standard guess $A\cos(x) + B\sin(x)$ would fail. We multiply by $x$: try $y_p = x(A\cos(x) + B\sin(x))$. Then $y_p' = A\cos(x) + B\sin(x) + x(-A\sin(x) + B\cos(x))$ and $y_p'' = -2A\sin(x) + 2B\cos(x) - x(A\cos(x) + B\sin(x))$. Substituting: $y_p'' + y_p = -2A\sin(x) + 2B\cos(x) = 3\cos(x)$. So $A = 0, B = 3/2$, giving $y_p = \frac{3}{2}x\sin(x)$." difficulty="hard" />
 
 ---
 
 ### Systems, Laplace Transforms, and Series Solutions
 
-<PracticeProblem
-  question="What is the Laplace transform of $f(t) = e^{3t}$?"
-  options={[
-    '$\frac{1}{s - 3}$ for $s > 3$',
-    '$\frac{1}{s + 3}$ for $s > -3$',
-    '$\frac{3}{s^2 + 9}$',
-    '$\frac{s}{s^2 - 9}$',
-  ]}
-  correctAnswer={0}
-  explanation="$\mathcal{L}\{e^{at}\} = \int_0^{\infty} e^{at} e^{-st}\,dt = \int_0^{\infty} e^{-(s-a)t}\,dt = \left[\frac{-1}{s-a} e^{-(s-a)t}\right]_0^{\infty} = \frac{1}{s-a}$, provided $s > a$. For $a = 3$: $\mathcal{L}\{e^{3t}\} = \frac{1}{s - 3}$ for $s > 3$."
-  difficulty="easy"
-/>
+<PracticeProblem question="What is the Laplace transform of $f(t) = e^{3t}$?" options={[ '$\frac{1}{s - 3}$ for $s > 3$', '$\frac{1}{s + 3}$ for $s > -3$', '$\frac{3}{s^2 + 9}$', '$\frac{s}{s^2 - 9}$', ]} correctAnswer={0} explanation="$\mathcal{L}\{e^{at}\} = \int_0^{\infty} e^{at} e^{-st}\,dt = \int_0^{\infty} e^{-(s-a)t}\,dt = \left[\frac{-1}{s-a} e^{-(s-a)t}\right]_0^{\infty} = \frac{1}{s-a}$, provided $s > a$. For $a = 3$: $\mathcal{L}\{e^{3t}\} = \frac{1}{s - 3}$ for $s > 3$." difficulty="easy" />
 
-<PracticeProblem
-  question="For the system $\mathbf{x}' = A\mathbf{x}$ with $A = \begin{pmatrix} 0 & 1 \\ -4 & 0 \end{pmatrix}$, the eigenvalues are $\pm 2i$. What is the general solution?"
-  options={[
-    '$\mathbf{x} = C_1 \begin{pmatrix} \cos(2t) \\ -2\sin(2t) \end{pmatrix} + C_2 \begin{pmatrix} \sin(2t) \\ 2\cos(2t) \end{pmatrix}$',
-    '$\mathbf{x} = C_1 e^{2t} \begin{pmatrix} 1 \\ 2 \end{pmatrix} + C_2 e^{-2t} \begin{pmatrix} 1 \\ -2 \end{pmatrix}$',
-    '$\mathbf{x} = (C_1 + C_2 t) e^{2it} \begin{pmatrix} 1 \\ 2i \end{pmatrix}$',
-    '$\mathbf{x} = C_1 \begin{pmatrix} \cos(2t) \\ \cos(2t) \end{pmatrix} + C_2 \begin{pmatrix} \sin(2t) \\ \sin(2t) \end{pmatrix}$',
-  ]}
-  correctAnswer={0}
-  explanation="For eigenvalue $\lambda = 2i$, solve $(A - 2iI)\mathbf{v} = 0$: $\begin{pmatrix} -2i & 1 \\ -4 & -2i \end{pmatrix}$, giving eigenvector $\mathbf{v} = \begin{pmatrix} 1 \\ 2i \end{pmatrix}$. The complex solution is $e^{2it}\begin{pmatrix} 1 \\ 2i \end{pmatrix}$. Using Euler's formula, take real and imaginary parts: $\begin{pmatrix} \cos(2t) \\ -2\sin(2t) \end{pmatrix}$ and $\begin{pmatrix} \sin(2t) \\ 2\cos(2t) \end{pmatrix}$. These form the general real solution."
-  difficulty="hard"
-/>
+<PracticeProblem question="For the system $\mathbf{x}' = A\mathbf{x}$ with $A = \begin{pmatrix} 0 & 1 \\ -4 & 0 \end{pmatrix}$, the eigenvalues are $\pm 2i$. What is the general solution?" options={[ '$\mathbf{x} = C_1 \begin{pmatrix} \cos(2t) \\ -2\sin(2t) \end{pmatrix} + C_2 \begin{pmatrix} \sin(2t) \\ 2\cos(2t) \end{pmatrix}$', '$\mathbf{x} = C_1 e^{2t} \begin{pmatrix} 1 \\ 2 \end{pmatrix} + C_2 e^{-2t} \begin{pmatrix} 1 \\ -2 \end{pmatrix}$', '$\mathbf{x} = (C_1 + C_2 t) e^{2it} \begin{pmatrix} 1 \\ 2i \end{pmatrix}$', '$\mathbf{x} = C_1 \begin{pmatrix} \cos(2t) \\ \cos(2t) \end{pmatrix} + C_2 \begin{pmatrix} \sin(2t) \\ \sin(2t) \end{pmatrix}$', ]} correctAnswer={0} explanation="For eigenvalue $\lambda = 2i$, solve $(A - 2iI)\mathbf{v} = 0$: $\begin{pmatrix} -2i & 1 \\ -4 & -2i \end{pmatrix}$, giving eigenvector $\mathbf{v} = \begin{pmatrix} 1 \\ 2i \end{pmatrix}$. The complex solution is $e^{2it}\begin{pmatrix} 1 \\ 2i \end{pmatrix}$. Using Euler’s formula, take real and imaginary parts: $\begin{pmatrix} \cos(2t) \\ -2\sin(2t) \end{pmatrix}$ and $\begin{pmatrix} \sin(2t) \\ 2\cos(2t) \end{pmatrix}$. These form the general real solution." difficulty="hard" />
 
-<PracticeProblem
-  question="What is the recurrence relation for the series solution of $y'' - xy = 0$ about $x_0 = 0$?"
-  options={[
-    '$a_{n+2} = \frac{a_{n-1}}{(n+2)(n+1)}$ for $n \geq 1$',
-    '$a_{n+2} = \frac{a_n}{(n+2)(n+1)}$ for $n \geq 0$',
-    '$a_{n+1} = \frac{a_n}{n+1}$ for $n \geq 0$',
-    '$a_{n+2} = \frac{n \cdot a_n}{(n+2)(n+1)}$ for $n \geq 0$',
-  ]}
-  correctAnswer={0}
-  explanation="Let $y = \sum_{n=0}^{\infty} a_n x^n$. Then $y'' = \sum_{n=0}^{\infty} (n+2)(n+1) a_{n+2} x^n$ and $xy = \sum_{n=1}^{\infty} a_{n-1} x^n$. Substituting into $y'' - xy = 0$: for $n = 0$, $2a_2 = 0$; for $n \geq 1$: $(n+2)(n+1)a_{n+2} - a_{n-1} = 0$, giving $a_{n+2} = a_{n-1}/((n+2)(n+1))$. This is Airy's equation."
-  difficulty="hard"
-/>
+<PracticeProblem question="What is the recurrence relation for the series solution of $y'' - xy = 0$ about $x_0 = 0$?" options={[ '$a_{n+2} = \frac{a_{n-1}}{(n+2)(n+1)}$ for $n \geq 1$', '$a_{n+2} = \frac{a_n}{(n+2)(n+1)}$ for $n \geq 0$', '$a_{n+1} = \frac{a_n}{n+1}$ for $n \geq 0$', '$a_{n+2} = \frac{n \cdot a_n}{(n+2)(n+1)}$ for $n \geq 0$', ]} correctAnswer={0} explanation="Let $y = \sum_{n=0}^{\infty} a_n x^n$. Then $y'' = \sum_{n=0}^{\infty} (n+2)(n+1) a_{n+2} x^n$ and $xy = \sum_{n=1}^{\infty} a_{n-1} x^n$. Substituting into $y'' - xy = 0$: for $n = 0$, $2a_2 = 0$; for $n \geq 1$: $(n+2)(n+1)a_{n+2} - a_{n-1} = 0$, giving $a_{n+2} = a_{n-1}/((n+2)(n+1))$. This is Airy’s equation." difficulty="hard" />

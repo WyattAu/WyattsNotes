@@ -321,7 +321,7 @@ Trend: Basicity increases down a group; acidity increases across a period.
 - **Lanthanide contraction:** Poor shielding by 4f electrons; post-lanthanide $d$-block elements are
   similar in size to their period 5 counterparts.
 - **Inert pair effect:** Heavy p-block elements favor lower oxidation states ($ns^2$ inert).
-- **Relativistic effects:** Significant for 5d and 6p elements; gold's color, mercury's liquid
+- **Relativistic effects:** Significant for 5d and 6p elements; gold's color, mercury’s liquid
   state.
 
 ## Worked Examples

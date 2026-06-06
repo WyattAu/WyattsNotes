@@ -81,7 +81,7 @@ export const flashcards2 = [
   },
   {
     id: 'uni-cs-algorithms-010',
-    front: "Describe Kruskal's and Prim's algorithms for minimum spanning trees.",
+    front: "Describe Kruskal's and Prim’s algorithms for minimum spanning trees.",
     back: 'Kruskal: sort edges by weight, add edges one by one using Union-Find if they connect different components. O(E log E) = O(E log V). Correctness follows from the cut property. Prim: grow MST from a starting vertex, always add the lightest edge connecting the tree to a non-tree vertex. O((V+E) log V) with min-heap. Both produce an MST. Kruskal is edge-focused; Prim is vertex-focused.',
     tags: ['graph-algorithms'],
     difficulty: 'medium',
@@ -163,9 +163,4 @@ export const flashcards4 = [
     difficulty: 'medium',
   },
 ];
-<FlashcardDeck
-  deckId="uni-cs-algorithms"
-  title="University CS -- Algorithms"
-  description="Complexity, dynamic programming, NP-completeness, graph algorithms, string matching"
-  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
-/>;
+<FlashcardDeck deckId="uni-cs-algorithms" title="University CS -- Algorithms" description="Complexity, dynamic programming, NP-completeness, graph algorithms, string matching" cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]} />;

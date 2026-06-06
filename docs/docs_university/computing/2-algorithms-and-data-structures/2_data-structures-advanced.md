@@ -1327,7 +1327,7 @@ max-heap property). The priorities are assigned randomly at insertion time.
 
 **Rotations.** If the heap property is violated, perform rotations to restore it:
 
-- If a node's priority is less than its parent's (min-heap treap), rotate the node up.
+- If a node's priority is less than its parent’s (min-heap treap), rotate the node up.
 - This is equivalent to inserting the node and then rotating it up to its correct heap position.
 
 **Split and merge operations:**
@@ -1446,8 +1446,7 @@ A **scapegoat tree** is a BST where no rebalancing is done during insertion (onl
 needed). When an insertion causes the height to exceed $\log_{3/2} n$The algorithm finds a
 "scapegoat" ancestor whose subtree is unbalanced and rebuilds it.
 
-**Height bound.** A scapegoat tree with $n$ nodes has height at most $\log_{3/2} n$ (the "scapegoat
-bound").
+**Height bound.** A scapegoat tree with $n$ nodes has height at most $\log_{3/2} n$ (the "scapegoat bound").
 
 **Theorem 8.3.** Insertion into a scapegoat tree takes $O(\log n)$ amortised time.
 

@@ -266,7 +266,7 @@ $f(1) = n \cdot f(1/n)$So $f(m/n) = (m/n) \cdot f(1)$.
 
 **Vieta jumping** is a technique for solving Diophantine equations of the form $P(x, y) = 0$ where
 $P$ is symmetric. Given a solution $(x, y)$ with $x \geq y$One can often Construct a new solution
-$(x', y)$ with $x' < x$ using Vieta's formulas, then descend to a minimal Solution and analyse it.
+$(x', y)$ with $x' < x$ using Vieta’s formulas, then descend to a minimal Solution and analyse it.
 
 **Standard setup.** Suppose $x^2 + y^2 + 1 = kxy$ for some fixed positive integer $k$ and positive
 Integers $x, y$. View this as a quadratic in $x$: $x^2 - (ky)x + (y^2 + 1) = 0$. If $(x, y)$ is a

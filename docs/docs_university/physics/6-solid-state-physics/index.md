@@ -2391,8 +2391,7 @@ Klitzing constant.
 - Arises from electron--electron correlations (Laughlin wavefunction)
 - Described by Chern--Simons topological field theory
 
-**Composite fermions:** At $\nu = 1/2$The FQHE electrons bind two flux quanta to become "composite
-fermions" that see zero effective field. The FQHE of electrons maps to the IQHE of composite
+**Composite fermions:** At $\nu = 1/2$The FQHE electrons bind two flux quanta to become "composite fermions" that see zero effective field. The FQHE of electrons maps to the IQHE of composite
 fermions, elegantly explaining the observed sequence of fractions.
 
 ### 16.2 Mesoscopic Physics

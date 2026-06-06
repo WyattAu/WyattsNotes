@@ -18,129 +18,24 @@ and the Master theorem. Select an option to check your answer and view the expla
 
 ## Divide and Conquer and the Master Theorem
 
-<PracticeProblem
-  question="What is the time complexity of Strassen's matrix multiplication for multiplying two $n \\times n$ matrices?"
-  options={[
-    '$O(n^{\\log_2 7}) \\approx O(n^{2.807})$',
-    '$O(n^3)$',
-    '$O(n^2)$',
-    '$O(n^{\\log_2 8}) = O(n^3)$',
-  ]}
-  correctAnswer={0}
-  explanation="Strassen's algorithm divides each matrix into four $n/2 \\times n/2$ blocks and computes 7 products (instead of the naive 8). The recurrence is $T(n) = 7T(n/2) + O(n^2)$. By the Master theorem with $a=7$, $b=2$, $n^{\\log_2 7} \\approx n^{2.807}$ dominates $f(n) = O(n^2)$, giving $T(n) = O(n^{\\log_2 7})$."
-  difficulty="easy"
-/>
+<PracticeProblem question="What is the time complexity of Strassen's matrix multiplication for multiplying two $n \\times n$ matrices?" options={[ '$O(n^{\\log_2 7}) \\approx O(n^{2.807})$', '$O(n^3)$', '$O(n^2)$', '$O(n^{\\log_2 8}) = O(n^3)$', ]} correctAnswer={0} explanation="Strassen’s algorithm divides each matrix into four $n/2 \\times n/2$ blocks and computes 7 products (instead of the naive 8). The recurrence is $T(n) = 7T(n/2) + O(n^2)$. By the Master theorem with $a=7$, $b=2$, $n^{\\log_2 7} \\approx n^{2.807}$ dominates $f(n) = O(n^2)$, giving $T(n) = O(n^{\\log_2 7})$." difficulty="easy" />
 
-<PracticeProblem
-  question="Consider the recurrence $T(n) = 4T(n/2) + n^2 \\log n$. Applying the Master Theorem, which case applies and what is the solution?"
-  options={[
-    'Case 2 ($k=1$): $T(n) = \\Theta(n^2 \\log^2 n)$',
-    'Case 1: $T(n) = \\Theta(n^2)$',
-    'Case 3: $T(n) = \\Theta(n^2 \\log n)$',
-    'Case 2 ($k=0$): $T(n) = \\Theta(n^2 \\log n)$',
-  ]}
-  correctAnswer={0}
-  explanation="$a=4$, $b=2$, so $n^{\\log_b a} = n^{\\log_2 4} = n^2$. Here $f(n) = n^2 \\log n = n^{\\log_b a} \\cdot \\log^k n$ with $k=1$. This is Master Theorem Case 2: $T(n) = \\Theta(n^{\\log_b a} \\log^{k+1} n) = \\Theta(n^2 \\log^2 n)$."
-  difficulty="hard"
-/>
+<PracticeProblem question="Consider the recurrence $T(n) = 4T(n/2) + n^2 \\log n$. Applying the Master Theorem, which case applies and what is the solution?" options={[ 'Case 2 ($k=1$): $T(n) = \\Theta(n^2 \\log^2 n)$', 'Case 1: $T(n) = \\Theta(n^2)$', 'Case 3: $T(n) = \\Theta(n^2 \\log n)$', 'Case 2 ($k=0$): $T(n) = \\Theta(n^2 \\log n)$', ]} correctAnswer={0} explanation="$a=4$, $b=2$, so $n^{\\log_b a} = n^{\\log_2 4} = n^2$. Here $f(n) = n^2 \\log n = n^{\\log_b a} \\cdot \\log^k n$ with $k=1$. This is Master Theorem Case 2: $T(n) = \\Theta(n^{\\log_b a} \\log^{k+1} n) = \\Theta(n^2 \\log^2 n)$." difficulty="hard" />
 
-<PracticeProblem
-  question="Merge sort on an array of $n$ elements has which recurrence and overall time complexity?"
-  options={[
-    '$T(n) = 2T(n/2) + O(n)$; $O(n \\log n)$',
-    '$T(n) = 2T(n/2) + O(1)$; $O(n)$',
-    '$T(n) = T(n/2) + O(n)$; $O(n)$',
-    '$T(n) = 2T(n/2) + O(n \\log n)$; $O(n \\log^2 n)$',
-  ]}
-  correctAnswer={0}
-  explanation="Merge sort divides into two halves (2 recursive calls of size $n/2$) and merges them in $O(n)$ time. The recurrence $T(n) = 2T(n/2) + O(n)$ is Master Theorem Case 2, giving $T(n) = \\Theta(n \\log n)$. It is a stable sort but requires $O(n)$ extra space."
-  difficulty="easy"
-/>
+<PracticeProblem question="Merge sort on an array of $n$ elements has which recurrence and overall time complexity?" options={[ '$T(n) = 2T(n/2) + O(n)$; $O(n \\log n)$', '$T(n) = 2T(n/2) + O(1)$; $O(n)$', '$T(n) = T(n/2) + O(n)$; $O(n)$', '$T(n) = 2T(n/2) + O(n \\log n)$; $O(n \\log^2 n)$', ]} correctAnswer={0} explanation="Merge sort divides into two halves (2 recursive calls of size $n/2$) and merges them in $O(n)$ time. The recurrence $T(n) = 2T(n/2) + O(n)$ is Master Theorem Case 2, giving $T(n) = \\Theta(n \\log n)$. It is a stable sort but requires $O(n)$ extra space." difficulty="easy" />
 
 ## Dynamic Programming and Greedy Algorithms
 
-<PracticeProblem
-  question="What is the time complexity of the Longest Common Subsequence (LCS) algorithm using dynamic programming for two sequences of lengths $m$ and $n$?"
-  options={['$O(mn)$', '$O(2^{m+n})$', '$O(\\min(m,n) \\log \\max(m,n))$', '$O((m+n) \\log(m+n))$']}
-  correctAnswer={0}
-  explanation="The DP table $c[i][j]$ has $(m+1)(n+1)$ entries, each computed in $O(1)$ by the recurrence $c[i][j] = c[i-1][j-1]+1$ if $x_i = y_j$, else $\\max(c[i-1][j], c[i][j-1])$. Total time is $O(mn)$, space is $O(mn)$ which can be optimized to $O(\\min(m,n))$ by keeping only two rows."
-  difficulty="easy"
-/>
+<PracticeProblem question="What is the time complexity of the Longest Common Subsequence (LCS) algorithm using dynamic programming for two sequences of lengths $m$ and $n$?" options={['$O(mn)$', '$O(2^{m+n})$', '$O(\\min(m,n) \\log \\max(m,n))$', '$O((m+n) \\log(m+n))$']} correctAnswer={0} explanation="The DP table $c[i][j]$ has $(m+1)(n+1)$ entries, each computed in $O(1)$ by the recurrence $c[i][j] = c[i-1][j-1]+1$ if $x_i = y_j$, else $\\max(c[i-1][j], c[i][j-1])$. Total time is $O(mn)$, space is $O(mn)$ which can be optimized to $O(\\min(m,n))$ by keeping only two rows." difficulty="easy" />
 
-<PracticeProblem
-  question="For the 0/1 knapsack problem with $n$ items and capacity $W$, the DP solution has time complexity $O(nW)$. Why is this called pseudopolynomial?"
-  options={[
-    'Because $W$ is a numeric value that may be exponential in the input size',
-    'Because the algorithm does not always find the optimal solution',
-    'Because the space complexity is exponential in $n$',
-    'Because the recurrence is not well-defined',
-  ]}
-  correctAnswer={0}
-  explanation="The input encoding of $W$ requires $\\log W$ bits. An algorithm polynomial in the numeric value $W$ is exponential in the input size $\\log W$. Thus $O(nW)$ is polynomial in $n$ and $W$ but not in the actual bit-length of the input, making it pseudopolynomial. The 0/1 knapsack is NP-complete, but this DP is efficient when $W$ is small."
-  difficulty="medium"
-/>
+<PracticeProblem question="For the 0/1 knapsack problem with $n$ items and capacity $W$, the DP solution has time complexity $O(nW)$. Why is this called pseudopolynomial?" options={[ 'Because $W$ is a numeric value that may be exponential in the input size', 'Because the algorithm does not always find the optimal solution', 'Because the space complexity is exponential in $n$', 'Because the recurrence is not well-defined', ]} correctAnswer={0} explanation="The input encoding of $W$ requires $\\log W$ bits. An algorithm polynomial in the numeric value $W$ is exponential in the input size $\\log W$. Thus $O(nW)$ is polynomial in $n$ and $W$ but not in the actual bit-length of the input, making it pseudopolynomial. The 0/1 knapsack is NP-complete, but this DP is efficient when $W$ is small." difficulty="medium" />
 
-<PracticeProblem
-  question="Given coin denominations $\\{1, 3, 4\\}$ and target amount 6, why does the greedy algorithm fail to find the optimal solution?"
-  options={[
-    'Greedy picks 4+1+1 (3 coins) instead of the optimal 3+3 (2 coins)',
-    'Greedy picks 4+4 (2 coins) instead of the optimal 3+1+1+1 (4 coins)',
-    'Greedy picks 3+3 (2 coins) instead of the optimal 4+1+1 (3 coins)',
-    'The greedy algorithm does not fail; it always finds the optimal solution',
-  ]}
-  correctAnswer={0}
-  explanation="The greedy approach picks the largest coin first: $4 + 1 + 1 = 3$ coins. The optimal solution uses two 3-value coins: $3 + 3 = 2$ coins. Greedy fails because these coin denominations are not canonical. Dynamic programming correctly finds $dp[6] = 2$ by checking all subproblems."
-  difficulty="medium"
-/>
+<PracticeProblem question="Given coin denominations $\\{1, 3, 4\\}$ and target amount 6, why does the greedy algorithm fail to find the optimal solution?" options={[ 'Greedy picks 4+1+1 (3 coins) instead of the optimal 3+3 (2 coins)', 'Greedy picks 4+4 (2 coins) instead of the optimal 3+1+1+1 (4 coins)', 'Greedy picks 3+3 (2 coins) instead of the optimal 4+1+1 (3 coins)', 'The greedy algorithm does not fail; it always finds the optimal solution', ]} correctAnswer={0} explanation="The greedy approach picks the largest coin first: $4 + 1 + 1 = 3$ coins. The optimal solution uses two 3-value coins: $3 + 3 = 2$ coins. Greedy fails because these coin denominations are not canonical. Dynamic programming correctly finds $dp[6] = 2$ by checking all subproblems." difficulty="medium" />
 
-<PracticeProblem
-  question="Which algorithm paradigm does Huffman coding use, and what property guarantees its optimality?"
-  options={[
-    'Greedy: optimal substructure and greedy choice property',
-    'Dynamic programming: overlapping subproblems',
-    'Divide and conquer: independent subproblems',
-    'Backtracking: exhaustive search with pruning',
-  ]}
-  correctAnswer={0}
-  explanation="Huffman coding uses a greedy strategy: repeatedly merge the two trees with the smallest frequencies. Optimality is proven via the greedy choice property (merging the two least-frequent characters is always part of an optimal solution) and optimal substructure (the remaining subtrees must also be optimal). The proof uses an exchange argument."
-  difficulty="medium"
-/>
+<PracticeProblem question="Which algorithm paradigm does Huffman coding use, and what property guarantees its optimality?" options={[ 'Greedy: optimal substructure and greedy choice property', 'Dynamic programming: overlapping subproblems', 'Divide and conquer: independent subproblems', 'Backtracking: exhaustive search with pruning', ]} correctAnswer={0} explanation="Huffman coding uses a greedy strategy: repeatedly merge the two trees with the smallest frequencies. Optimality is proven via the greedy choice property (merging the two least-frequent characters is always part of an optimal solution) and optimal substructure (the remaining subtrees must also be optimal). The proof uses an exchange argument." difficulty="medium" />
 
-<PracticeProblem
-  question="In the edit distance (Levenshtein distance) problem between two strings of lengths $m$ and $n$, what is the space-optimised complexity?"
-  options={[
-    '$O(mn)$ time, $O(\\min(m,n))$ space',
-    '$O(\\min(m,n))$ time, $O(1)$ space',
-    '$O(mn)$ time, $O(mn)$ space',
-    '$O((m+n)!) $ time, $O(\\max(m,n))$ space',
-  ]}
-  correctAnswer={0}
-  explanation="The full DP table is $O(mn)$ time and $O(mn)$ space. Since $dp[i][j]$ depends only on the current row $dp[i-1][j]$, $dp[i][j-1]$, and the diagonal $dp[i-1][j-1]$, we can reduce to two rows of length $\\min(m,n)$, achieving $O(mn)$ time and $O(\\min(m,n))$ space."
-  difficulty="medium"
-/>
+<PracticeProblem question="In the edit distance (Levenshtein distance) problem between two strings of lengths $m$ and $n$, what is the space-optimised complexity?" options={[ '$O(mn)$ time, $O(\\min(m,n))$ space', '$O(\\min(m,n))$ time, $O(1)$ space', '$O(mn)$ time, $O(mn)$ space', '$O((m+n)!) $ time, $O(\\max(m,n))$ space', ]} correctAnswer={0} explanation="The full DP table is $O(mn)$ time and $O(mn)$ space. Since $dp[i][j]$ depends only on the current row $dp[i-1][j]$, $dp[i][j-1]$, and the diagonal $dp[i-1][j-1]$, we can reduce to two rows of length $\\min(m,n)$, achieving $O(mn)$ time and $O(\\min(m,n))$ space." difficulty="medium" />
 
-<PracticeProblem
-  question="Kruskal's algorithm for finding a Minimum Spanning Tree uses which data structure for efficiently detecting cycles, and what is the overall time complexity?"
-  options={[
-    'Union-Find with path compression and union by rank; $O(E \\log E)$',
-    'Hash table; $O(E^2)$',
-    'Priority queue; $O(E \\log V)$',
-    'Adjacency list; $O(V^2)$',
-  ]}
-  correctAnswer={0}
-  explanation="Kruskal's sorts edges by weight ($O(E \\log E)$), then iterates through them using Union-Find to check if two endpoints are in the same set ($O(\\alpha(V)) \\approx O(1)$ per operation with path compression and union by rank). Total: $O(E \\log E) = O(E \\log V)$ since $E \\leq V^2$."
-  difficulty="medium"
-/>
+<PracticeProblem question="Kruskal's algorithm for finding a Minimum Spanning Tree uses which data structure for efficiently detecting cycles, and what is the overall time complexity?" options={[ 'Union-Find with path compression and union by rank; $O(E \\log E)$', 'Hash table; $O(E^2)$', 'Priority queue; $O(E \\log V)$', 'Adjacency list; $O(V^2)$', ]} correctAnswer={0} explanation="Kruskal’s sorts edges by weight ($O(E \\log E)$), then iterates through them using Union-Find to check if two endpoints are in the same set ($O(\\alpha(V)) \\approx O(1)$ per operation with path compression and union by rank). Total: $O(E \\log E) = O(E \\log V)$ since $E \\leq V^2$." difficulty="medium" />
 
-<PracticeProblem
-  question="In the N-Queens problem solved by backtracking, what is the worst-case time complexity and what does backtracking prune compared to brute force?"
-  options={[
-    '$O(n!)$ worst case; backtracking prunes partial placements that lead to mutual attacks',
-    '$O(2^n)$ worst case; backtracking only prunes diagonal conflicts',
-    '$O(n^n)$ worst case; no pruning occurs',
-    '$O(n^2)$ worst case; backtracking finds the solution in polynomial time',
-  ]}
-  correctAnswer={0}
-  explanation="Brute force generates all $n^n$ possible board configurations. Backtracking incrementally places queens row by row and prunes whenever a queen conflicts with already-placed queens (column, diagonal checks). In the worst case, this is still $O(n!)$ (placing one queen per row), but in practice the pruning eliminates most invalid branches early."
-  difficulty="hard"
-/>
+<PracticeProblem question="In the N-Queens problem solved by backtracking, what is the worst-case time complexity and what does backtracking prune compared to brute force?" options={[ '$O(n!)$ worst case; backtracking prunes partial placements that lead to mutual attacks', '$O(2^n)$ worst case; backtracking only prunes diagonal conflicts', '$O(n^n)$ worst case; no pruning occurs', '$O(n^2)$ worst case; backtracking finds the solution in polynomial time', ]} correctAnswer={0} explanation="Brute force generates all $n^n$ possible board configurations. Backtracking incrementally places queens row by row and prunes whenever a queen conflicts with already-placed queens (column, diagonal checks). In the worst case, this is still $O(n!)$ (placing one queen per row), but in practice the pruning eliminates most invalid branches early." difficulty="hard" />

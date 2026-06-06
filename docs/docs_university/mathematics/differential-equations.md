@@ -1352,7 +1352,7 @@ $y = c_1 e^x + c_2 e^{2x} + c_3 e^{3x}$. $\blacksquare$
 </details>
 ### 6.5 Worked Example: Power Series Method
 
-**Problem.** Solve $y'' - xy = 0$ (Airy's equation) using power series about $x_0 = 0$.
+**Problem.** Solve $y'' - xy = 0$ (Airy’s equation) using power series about $x_0 = 0$.
 
 <details>
 <summary>Solution</summary>
@@ -1680,7 +1680,7 @@ $$u(x, t) = \sum_{n=1}^{\infty} \sin\frac{n\pi x}{L}\left(a_n \cos\frac{cn\pi t}
 Where $a_n = \frac{2}{L}\int_0^L f(x)\sin\frac{n\pi x}{L}\, dx$ and
 $b_n = \frac{2}{cn\pi}\int_0^L g(x)\sin\frac{n\pi x}{L}\, dx$.
 
-### 8.9 D'Alembert's Solution
+### 8.9 D'Alembert’s Solution
 
 For the wave equation on $-\infty \lt x \lt \infty$:
 
@@ -1812,7 +1812,7 @@ $\blacksquare$
 
 </details>
 
-### 8.16 Worked Example: D'Alembert's Solution
+### 8.16 Worked Example: D'Alembert’s Solution
 
 **Problem.** Solve $u_{tt} = 4u_{xx}$ for $-\infty \lt x \lt \infty$ with $u(x, 0) = e^{-x^2}$ and
 $u_t(x, 0) = 0$.
@@ -1820,7 +1820,7 @@ $u_t(x, 0) = 0$.
 <details>
 <summary>Solution</summary>
 
-_Solution._ Here $c = 2$. By D'Alembert's formula with $g = 0$:
+_Solution._ Here $c = 2$. By D'Alembert’s formula with $g = 0$:
 
 $u(x, t) = \frac{f(x + 2t) + f(x - 2t)}{2} = \frac{e^{-(x+2t)^2} + e^{-(x-2t)^2}}{2}$.
 

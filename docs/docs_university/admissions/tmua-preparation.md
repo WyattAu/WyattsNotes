@@ -224,7 +224,7 @@ Straight line, then $y = Ae^{kx}$.
 **Graphs and networks.** A graph $G = (V, E)$ consists of a set of vertices $V$ and a set of edges
 $E$. Key concepts: degree of a vertex, connectedness, Eulerian and Hamiltonian paths.
 
-**Minimum spanning trees.** Kruskal's algorithm and Prim's algorithm find the spanning tree of
+**Minimum spanning trees.** Kruskal's algorithm and Prim’s algorithm find the spanning tree of
 minimum Total weight. Kruskal's algorithm: sort edges by weight, add edges in order of increasing
 weight Provided they do not create a cycle. Prim's algorithm: grow the tree from a starting vertex,
 always Adding the cheapest edge connecting the tree to a vertex not yet in the tree.
@@ -261,8 +261,7 @@ $Q$ is true: 3, 5, 7, 11 are all odd primes.
 Since both $P$ and $Q$ are true, $P \implies Q$ is true (A is false), $Q \implies P$ is true (B is
 True), and $P \iff Q$ is true (C is true).
 
-The negation of $P$ ("All prime numbers greater than 2 are odd") is "There exists a prime number
-Greater than 2 that is even." Option D states "No prime number greater than 2 is odd," which is a
+The negation of $P$ ("All prime numbers greater than 2 are odd") is "There exists a prime number Greater than 2 that is even." Option D states "No prime number greater than 2 is odd," which is a
 Stronger statement than the negation (it says all primes greater than 2 are even). So D is false.
 
 Since B and C are both true, the correct answer depends on what the question asks for. However, B
@@ -280,9 +279,7 @@ Is the best answer.
 > A student claims to prove by induction that $\sum_{k=1}^{n} k = \frac{n(n+1)}{2}$ for all
 > $n \geq 1$ as follows:
 >
-> "Assume $\sum_{k=1}^{n} k = \frac{n(n+1)}{2}$. Then:
-> $\sum_{k=1}^{n+1} k = \frac{n(n+1)}{2} + (n+1) = \frac{n(n+1) + 2(n+1)}{2} = \frac{(n+1)(n+2)}{2}$.
-> This is what we wanted to show."
+> "Assume $\sum_{k=1}^{n} k = \frac{n(n+1)}{2}$. Then: > $\sum_{k=1}^{n+1} k = \frac{n(n+1)}{2} + (n+1) = \frac{n(n+1) + 2(n+1)}{2} = \frac{(n+1)(n+2)}{2}$. > This is what we wanted to show."
 >
 > What, if anything, is wrong with this proof?
 
@@ -423,8 +420,7 @@ and $3$. $1 + 3 = 4 > 2$. We cannot make $2$. **9 is not practical.**
 
 Both A (4) and D (8) are practical. Since the question asks "which of the following is practical"
 (singular), and multiple are correct, this question as stated is ambiguous. In a well-designed TMUA
-Question, only one option would be correct. Assuming the question intended to ask "which is the
-Largest practical number" or the question has a unique answer by design, the answer is:
+Question, only one option would be correct. Assuming the question intended to ask "which is the Largest practical number" or the question has a unique answer by design, the answer is:
 
 **Answer: D** (8 is practical, and it is the largest practical number among the options).
 

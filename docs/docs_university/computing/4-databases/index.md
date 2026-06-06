@@ -1768,8 +1768,7 @@ reader returns the most recent version among the 3 responses.
    with tuples $\\{(2,3), (3,5)\\}$: (a) Compute $\sigma_{B=2}(R)$. (b) Compute $R \bowtie S$. (c)
    Compute $R \div S$.
 
-6. Express the following query in relational algebra: "Find the names of students who have enrolled
-   in at least two courses taught by the same instructor."
+6. Express the following query in relational algebra: "Find the names of students who have enrolled in at least two courses taught by the same instructor."
 
 7. Prove that the cross product is commutative: $R \times S \equiv S \times R$. Prove that the cross
    product is associative: $(R \times S) \times T \equiv R \times (S \times T)$.

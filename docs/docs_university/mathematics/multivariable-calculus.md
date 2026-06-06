@@ -29,7 +29,7 @@ $\partial_i f$And $\frac{\partial f}{\partial x_i}$. We use these interchangeabl
 
 ### 1.2 Clairaut's Theorem
 
-**Theorem 1.1 (Clairaut's Theorem / Schwarz's Theorem).** If $f_{xy}$ and $f_{yx}$ are continuous on
+**Theorem 1.1 (Clairaut's Theorem / Schwarz’s Theorem).** If $f_{xy}$ and $f_{yx}$ are continuous on
 an Open set containing $(a, b)$Then
 
 $$\frac{\partial^2 f}{\partial x \partial y}(a,b) = \frac{\partial^2 f}{\partial y \partial x}(a,b)$$

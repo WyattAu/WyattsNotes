@@ -528,7 +528,7 @@ requires 3 bits (2^3 = 8 subnets). New mask: /24 + 3 = /27 (255.255.255.224). Bl
 **Problem:** Describe the TCP three-way handshake and explain the purpose of each segment's flags.
 **Solution:** Client sends SYN (seq=x). Server responds with SYN-ACK (seq=y, ack=x+1). Client sends
 ACK (ack=y+1). The SYN flag requests connection establishment and carries the initial sequence
-number. The SYN-ACK acknowledges the client's SYN and provides the server's initial sequence number.
+number. The SYN-ACK acknowledges the client's SYN and provides the server’s initial sequence number.
 The final ACK acknowledges the server's SYN. After this exchange, both sides have established their
 sequence numbers and the connection is established for full-duplex data transfer.
 

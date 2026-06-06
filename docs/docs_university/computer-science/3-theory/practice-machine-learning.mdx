@@ -20,134 +20,24 @@ your answer.
 
 ## Supervised Learning and Model Fundamentals
 
-<PracticeProblem
-  question="In linear regression with ordinary least squares, the closed-form solution is $\\mathbf{w}^* = (X^T X)^{-1} X^T \\mathbf{y}$. What assumption must hold for this solution to be valid?"
-  options={[
-    '$X^T X$ must be invertible (features must not be linearly dependent)',
-    'The number of features must equal the number of samples',
-    'All features must be binary',
-    'The target variable must be categorical',
-  ]}
-  correctAnswer={0}
-  explanation="The closed-form solution requires $(X^T X)^{-1}$ to exist, meaning $X^T X$ is full rank. This fails when features are linearly dependent (multicollinearity) or when $n < d$ (more features than samples). In these cases, use gradient descent, regularized regression (ridge: adds $\\lambda I$ to $X^T X$), or dimensionality reduction."
-  difficulty="easy"
-/>
+<PracticeProblem question="In linear regression with ordinary least squares, the closed-form solution is $\\mathbf{w}^* = (X^T X)^{-1} X^T \\mathbf{y}$. What assumption must hold for this solution to be valid?" options={[ '$X^T X$ must be invertible (features must not be linearly dependent)', 'The number of features must equal the number of samples', 'All features must be binary', 'The target variable must be categorical', ]} correctAnswer={0} explanation="The closed-form solution requires $(X^T X)^{-1}$ to exist, meaning $X^T X$ is full rank. This fails when features are linearly dependent (multicollinearity) or when $n < d$ (more features than samples). In these cases, use gradient descent, regularized regression (ridge: adds $\\lambda I$ to $X^T X$), or dimensionality reduction." difficulty="easy" />
 
-<PracticeProblem
-  question="The logistic regression loss function is binary cross-entropy: $\\mathcal{L} = -\\frac{1}{n}\\sum[y_i \\log \\hat{y}_i + (1-y_i)\\log(1-\\hat{y}_i)]$. What is the gradient with respect to $\\mathbf{w}$?"
-  options={[
-    '$\\nabla_{\\mathbf{w}} \\mathcal{L} = \\frac{1}{n} \\sum_{i=1}^{n} (\\hat{y}_i - y_i) \\mathbf{x}_i$',
-    '$\\nabla_{\\mathbf{w}} \\mathcal{L} = \\frac{1}{n} \\sum_{i=1}^{n} (y_i - \\hat{y}_i)^2 \\mathbf{x}_i$',
-    '$\\nabla_{\\mathbf{w}} \\mathcal{L} = \\frac{1}{n} \\sum_{i=1}^{n} \\hat{y}_i (1 - \\hat{y}_i) \\mathbf{x}_i$',
-    '$\\nabla_{\\mathbf{w}} \\mathcal{L} = \\frac{1}{n} \\sum_{i=1}^{n} (\\hat{y}_i - y_i) \\mathbf{x}_i \\hat{y}_i (1 - \\hat{y}_i)$',
-  ]}
-  correctAnswer={0}
-  explanation="The gradient of binary cross-entropy with respect to $\\mathbf{w}$ is $\\frac{1}{n} \\sum (\\hat{y}_i - y_i) \\mathbf{x}_i$. This elegant result arises because the derivative of the log-sigmoid cancels with the sigmoid derivative. The update rule is $\\mathbf{w} \\leftarrow \\mathbf{w} - \\alpha \\cdot \\frac{1}{n} \\sum (\\hat{y}_i - y_i) \\mathbf{x}_i$."
-  difficulty="medium"
-/>
+<PracticeProblem question="The logistic regression loss function is binary cross-entropy: $\\mathcal{L} = -\\frac{1}{n}\\sum[y_i \\log \\hat{y}_i + (1-y_i)\\log(1-\\hat{y}_i)]$. What is the gradient with respect to $\\mathbf{w}$?" options={[ '$\\nabla_{\\mathbf{w}} \\mathcal{L} = \\frac{1}{n} \\sum_{i=1}^{n} (\\hat{y}_i - y_i) \\mathbf{x}_i$', '$\\nabla_{\\mathbf{w}} \\mathcal{L} = \\frac{1}{n} \\sum_{i=1}^{n} (y_i - \\hat{y}_i)^2 \\mathbf{x}_i$', '$\\nabla_{\\mathbf{w}} \\mathcal{L} = \\frac{1}{n} \\sum_{i=1}^{n} \\hat{y}_i (1 - \\hat{y}_i) \\mathbf{x}_i$', '$\\nabla_{\\mathbf{w}} \\mathcal{L} = \\frac{1}{n} \\sum_{i=1}^{n} (\\hat{y}_i - y_i) \\mathbf{x}_i \\hat{y}_i (1 - \\hat{y}_i)$', ]} correctAnswer={0} explanation="The gradient of binary cross-entropy with respect to $\\mathbf{w}$ is $\\frac{1}{n} \\sum (\\hat{y}_i - y_i) \\mathbf{x}_i$. This elegant result arises because the derivative of the log-sigmoid cancels with the sigmoid derivative. The update rule is $\\mathbf{w} \\leftarrow \\mathbf{w} - \\alpha \\cdot \\frac{1}{n} \\sum (\\hat{y}_i - y_i) \\mathbf{x}_i$." difficulty="medium" />
 
-<PracticeProblem
-  question="In a decision tree, which splitting criterion measures the reduction in entropy after a split?"
-  options={[
-    'Information gain: $\\text{Gain}(S, A) = H(S) - \\sum_{v} \\frac{|S_v|}{|S|} H(S_v)$',
-    'Gini impurity: $1 - \\sum p_k^2$',
-    'Mean squared error reduction',
-    'Chi-squared statistic',
-  ]}
-  correctAnswer={0}
-  explanation="Information gain is defined as $\\text{Gain}(S, A) = H(S) - \\sum_{v \\in \\text{Values}(A)} \\frac{|S_v|}{|S|} H(S_v)$ where $H(S) = -\\sum p_k \\log_2 p_k$ is the entropy. The feature and threshold that maximize information gain are chosen for the split. Gini impurity ($1 - \\sum p_k^2$) is an alternative criterion that is faster to compute."
-  difficulty="easy"
-/>
+<PracticeProblem question="In a decision tree, which splitting criterion measures the reduction in entropy after a split?" options={[ 'Information gain: $\\text{Gain}(S, A) = H(S) - \\sum_{v} \\frac{|S_v|}{|S|} H(S_v)$', 'Gini impurity: $1 - \\sum p_k^2$', 'Mean squared error reduction', 'Chi-squared statistic', ]} correctAnswer={0} explanation="Information gain is defined as $\\text{Gain}(S, A) = H(S) - \\sum_{v \\in \\text{Values}(A)} \\frac{|S_v|}{|S|} H(S_v)$ where $H(S) = -\\sum p_k \\log_2 p_k$ is the entropy. The feature and threshold that maximize information gain are chosen for the split. Gini impurity ($1 - \\sum p_k^2$) is an alternative criterion that is faster to compute." difficulty="easy" />
 
-<PracticeProblem
-  question="What is the key difference between bagging (Random Forest) and boosting (Gradient Boosting)?"
-  options={[
-    'Bagging trains independent models in parallel on bootstrap samples and averages predictions; boosting trains models sequentially, each correcting the errors of the previous',
-    'Bagging uses only one model; boosting uses many',
-    'Both are identical in methodology',
-    'Bagging corrects errors sequentially; boosting trains independently',
-  ]}
-  correctAnswer={0}
-  explanation="Bagging (Bootstrap Aggregating) trains each model independently on a random bootstrap sample of the data, then aggregates predictions (majority vote for classification, average for regression). This reduces variance. Boosting trains models sequentially: each new model fits the residuals (negative gradient) of the ensemble so far, reducing bias."
-  difficulty="medium"
-/>
+<PracticeProblem question="What is the key difference between bagging (Random Forest) and boosting (Gradient Boosting)?" options={[ 'Bagging trains independent models in parallel on bootstrap samples and averages predictions; boosting trains models sequentially, each correcting the errors of the previous', 'Bagging uses only one model; boosting uses many', 'Both are identical in methodology', 'Bagging corrects errors sequentially; boosting trains independently', ]} correctAnswer={0} explanation="Bagging (Bootstrap Aggregating) trains each model independently on a random bootstrap sample of the data, then aggregates predictions (majority vote for classification, average for regression). This reduces variance. Boosting trains models sequentially: each new model fits the residuals (negative gradient) of the ensemble so far, reducing bias." difficulty="medium" />
 
-<PracticeProblem
-  question="In backpropagation for a multi-layer neural network, how is the gradient at layer $l$ computed?"
-  options={[
-    "Using the chain rule: $\\delta[l] = (W[l+1]^T \\delta[l+1]) \\circ \\sigma'(z[l])$",
-    'By directly differentiating the loss with respect to $W[l]$ without intermediate layers',
-    'Using numerical differentiation for each weight',
-    'By random gradient estimation',
-  ]}
-  correctAnswer={0}
-  explanation="Backpropagation applies the chain rule layer by layer from output to input. The error signal $\\delta[L]$ at the output layer is computed from the loss gradient. For hidden layers: $\\delta[l] = (W[l+1]^T \\delta[l+1]) \\circ \\sigma\'(z[l])$ where $\\circ$ is element-wise multiplication and $\\sigma\'$ is the activation derivative. Weight gradients: $\\nabla W[l] = \\delta[l] \\cdot a[l-1]^T$."
-  difficulty="hard"
-/>
+<PracticeProblem question="In backpropagation for a multi-layer neural network, how is the gradient at layer $l$ computed?" options={[ "Using the chain rule: $\\delta[l] = (W[l+1]^T \\delta[l+1]) \\circ \\sigma'(z[l])$", 'By directly differentiating the loss with respect to $W[l]$ without intermediate layers', 'Using numerical differentiation for each weight', 'By random gradient estimation', ]} correctAnswer={0} explanation="Backpropagation applies the chain rule layer by layer from output to input. The error signal $\\delta[L]$ at the output layer is computed from the loss gradient. For hidden layers: $\\delta[l] = (W[l+1]^T \\delta[l+1]) \\circ \\sigma\'(z[l])$ where $\\circ$ is element-wise multiplication and $\\sigma\'$ is the activation derivative. Weight gradients: $\\nabla W[l] = \\delta[l] \\cdot a[l-1]^T$." difficulty="hard" />
 
 ## Regularization, Evaluation, and Bias-Variance
 
-<PracticeProblem
-  question="L1 regularization (Lasso) produces sparse solutions because it drives some weights to exactly zero. L2 regularization (Ridge) shrinks weights but rarely to zero. Which regularization promotes sparsity and why?"
-  options={[
-    'L1: the absolute value penalty creates sharp corners at zero in the loss landscape, making zero-weight solutions optimal for some features',
-    'L2: the squared penalty creates sharp corners at zero',
-    'Both L1 and L2 produce equally sparse solutions',
-    'Neither produces sparsity; only dropout does',
-  ]}
-  correctAnswer={0}
-  explanation="The L1 penalty $\\lambda \\sum |w_j|$ has a diamond-shaped constraint region with corners on the axes. The loss function's elliptical contours often touch a corner first, setting some weights to exactly zero. L2's circular constraint region touches contours at non-zero weights, shrinking but rarely zeroing them. This makes L1 useful for feature selection."
-  difficulty="hard"
-/>
+<PracticeProblem question="L1 regularization (Lasso) produces sparse solutions because it drives some weights to exactly zero. L2 regularization (Ridge) shrinks weights but rarely to zero. Which regularization promotes sparsity and why?" options={[ 'L1: the absolute value penalty creates sharp corners at zero in the loss landscape, making zero-weight solutions optimal for some features', 'L2: the squared penalty creates sharp corners at zero', 'Both L1 and L2 produce equally sparse solutions', 'Neither produces sparsity; only dropout does', ]} correctAnswer={0} explanation="The L1 penalty $\\lambda \\sum |w_j|$ has a diamond-shaped constraint region with corners on the axes. The loss function’s elliptical contours often touch a corner first, setting some weights to exactly zero. L2's circular constraint region touches contours at non-zero weights, shrinking but rarely zeroing them. This makes L1 useful for feature selection." difficulty="hard" />
 
-<PracticeProblem
-  question="On an imbalanced dataset with 99% negative examples, a model predicting all negatives achieves 99% accuracy. Which metric is more appropriate?"
-  options={[
-    'F1 score (harmonic mean of precision and recall) or AUC-ROC',
-    'Accuracy (it correctly reflects overall performance)',
-    'Mean squared error',
-    'Training loss',
-  ]}
-  correctAnswer={0}
-  explanation="Accuracy is misleading on imbalanced data: predicting all negatives gives 99% accuracy but learns nothing useful. Precision ($\\frac{TP}{TP+FP}$) measures how many positive predictions are correct. Recall ($\\frac{TP}{TP+FN}$) measures how many actual positives are found. F1 ($2 \\cdot \\frac{P \\cdot R}{P+R}$) balances both. AUC-ROC measures ranking quality across all thresholds."
-  difficulty="easy"
-/>
+<PracticeProblem question="On an imbalanced dataset with 99% negative examples, a model predicting all negatives achieves 99% accuracy. Which metric is more appropriate?" options={[ 'F1 score (harmonic mean of precision and recall) or AUC-ROC', 'Accuracy (it correctly reflects overall performance)', 'Mean squared error', 'Training loss', ]} correctAnswer={0} explanation="Accuracy is misleading on imbalanced data: predicting all negatives gives 99% accuracy but learns nothing useful. Precision ($\\frac{TP}{TP+FP}$) measures how many positive predictions are correct. Recall ($\\frac{TP}{TP+FN}$) measures how many actual positives are found. F1 ($2 \\cdot \\frac{P \\cdot R}{P+R}$) balances both. AUC-ROC measures ranking quality across all thresholds." difficulty="easy" />
 
-<PracticeProblem
-  question="The expected error of a model decomposes as $\\text{Error} = \\text{Bias}^2 + \\text{Variance} + \\text{Irreducible Error}$. A model with high training accuracy but low validation accuracy is exhibiting:"
-  options={[
-    'High variance (overfitting)',
-    'High bias (underfitting)',
-    'Low irreducible error',
-    'Optimal bias-variance tradeoff',
-  ]}
-  correctAnswer={0}
-  explanation="High training accuracy with low validation accuracy indicates overfitting: the model has memorized training data (including noise) but fails to generalize. This corresponds to high variance. Remedies include more training data, reducing model complexity, adding regularization (L1/L2/dropout), and early stopping. High bias (underfitting) shows high error on both training and validation sets."
-  difficulty="medium"
-/>
+<PracticeProblem question="The expected error of a model decomposes as $\\text{Error} = \\text{Bias}^2 + \\text{Variance} + \\text{Irreducible Error}$. A model with high training accuracy but low validation accuracy is exhibiting:" options={[ 'High variance (overfitting)', 'High bias (underfitting)', 'Low irreducible error', 'Optimal bias-variance tradeoff', ]} correctAnswer={0} explanation="High training accuracy with low validation accuracy indicates overfitting: the model has memorized training data (including noise) but fails to generalize. This corresponds to high variance. Remedies include more training data, reducing model complexity, adding regularization (L1/L2/dropout), and early stopping. High bias (underfitting) shows high error on both training and validation sets." difficulty="medium" />
 
-<PracticeProblem
-  question="Dropout regularization during training randomly sets neuron activations to zero with probability $p$. At test time, how are the activations adjusted?"
-  options={[
-    'No dropout is applied; activations are scaled by $(1-p)$ during training to compensate',
-    'Dropout is applied with the same probability $p$',
-    'All activations are multiplied by $p$',
-    'Dropout is applied with probability $1-p$',
-  ]}
-  correctAnswer={0}
-  explanation="During training, dropout sets each activation to zero with probability $p$ and scales surviving activations by $1/(1-p)$ (inverted dropout). This ensures the expected activation magnitude remains the same. At test time, no dropout is applied and no scaling is needed (since training already compensated). This creates an implicit ensemble of $2^n$ thinned networks."
-  difficulty="medium"
-/>
+<PracticeProblem question="Dropout regularization during training randomly sets neuron activations to zero with probability $p$. At test time, how are the activations adjusted?" options={[ 'No dropout is applied; activations are scaled by $(1-p)$ during training to compensate', 'Dropout is applied with the same probability $p$', 'All activations are multiplied by $p$', 'Dropout is applied with probability $1-p$', ]} correctAnswer={0} explanation="During training, dropout sets each activation to zero with probability $p$ and scales surviving activations by $1/(1-p)$ (inverted dropout). This ensures the expected activation magnitude remains the same. At test time, no dropout is applied and no scaling is needed (since training already compensated). This creates an implicit ensemble of $2^n$ thinned networks." difficulty="medium" />
 
-<PracticeProblem
-  question="The Universal Approximation Theorem states that a feedforward neural network with a single hidden layer can approximate any continuous function on compact subsets of $\\mathbb{R}^d$. What is the key caveat?"
-  options={[
-    'The theorem guarantees existence but not learnability; the hidden layer may need exponentially many neurons',
-    'The theorem only applies to classification, not regression',
-    'It requires at least 10 hidden layers',
-    'It only works with ReLU activation',
-  ]}
-  correctAnswer={0}
-  explanation="The theorem proves that a sufficiently wide single hidden layer can approximate any continuous function to arbitrary precision. However, it says nothing about whether gradient descent can find the correct weights, how many neurons are needed (potentially exponential), or practical training time. Deeper networks can represent functions more efficiently (exponentially fewer parameters in some cases)."
-  difficulty="hard"
-/>
+<PracticeProblem question="The Universal Approximation Theorem states that a feedforward neural network with a single hidden layer can approximate any continuous function on compact subsets of $\\mathbb{R}^d$. What is the key caveat?" options={[ 'The theorem guarantees existence but not learnability; the hidden layer may need exponentially many neurons', 'The theorem only applies to classification, not regression', 'It requires at least 10 hidden layers', 'It only works with ReLU activation', ]} correctAnswer={0} explanation="The theorem proves that a sufficiently wide single hidden layer can approximate any continuous function to arbitrary precision. However, it says nothing about whether gradient descent can find the correct weights, how many neurons are needed (potentially exponential), or practical training time. Deeper networks can represent functions more efficiently (exponentially fewer parameters in some cases)." difficulty="hard" />

@@ -472,7 +472,7 @@ A property is **non-trivial** if it holds for some TMs and not for others.
 - Is $L(M)$ regular?
 - Does $L(M) = \Sigma^*$?
 
-**Not covered by Rice's theorem:** Properties about the machine's behavior (not its language), such as "does $M$ run for more than 100 steps on input $w$?"
+**Not covered by Rice's theorem:** Properties about the machine’s behavior (not its language), such as "does $M$ run for more than 100 steps on input $w$?"
 
 ## 10. Common Pitfalls
 
@@ -484,7 +484,7 @@ A property is **non-trivial** if it holds for some TMs and not for others.
 
 4. **Assuming decidability based on the existence of an algorithm.** An algorithm that may not halt (e.g., simulating a TM) does not establish decidability. The TM must halt on all inputs.
 
-5. **Misapplying Rice's theorem.** Rice's theorem applies only to properties of the **language** recognized by a TM, not properties of the TM's code or computation behavior.
+5. **Misapplying Rice's theorem.** Rice’s theorem applies only to properties of the **language** recognized by a TM, not properties of the TM's code or computation behavior.
 
 6. **Confusing Turing-recognizable and decidable.** Every decidable language is Turing-recognizable, but not vice versa. The halting problem is recognizable but not decidable.
 
@@ -498,7 +498,7 @@ A property is **non-trivial** if it holds for some TMs and not for others.
 
 ### Example 2: Context-Free Grammar for a Language
 **Problem:** Write a CFG that generates the language L = {a^n b^n c^n : n >= 1}.
-**Solution:** S -> aBC. B -> aBB (this ensures more a's push B's onto the middle). C -> cD. D -> cDD (this ensures more c's match). B -> b (terminal). D -> d (terminal). Wait -- this generates a^n b^n c^m which is wrong. The language a^n b^n c^n is not context-free (proven by the pumping lemma for CFLs). No CFG exists for this language. This is a common exam trick question.
+**Solution:** S -> aBC. B -> aBB (this ensures more a's push B’s onto the middle). C -> cD. D -> cDD (this ensures more c's match). B -> b (terminal). D -> d (terminal). Wait -- this generates a^n b^n c^m which is wrong. The language a^n b^n c^n is not context-free (proven by the pumping lemma for CFLs). No CFG exists for this language. This is a common exam trick question.
 
 ## Summary
 

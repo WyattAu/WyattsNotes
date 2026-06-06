@@ -5,8 +5,7 @@ tags:
   - university
 slug: practice-electromagnetism
 description:
-  "Interactive university electromagnetism practice with auto-graded questions. Covers
-  electrostatics, magnetostatics, Maxwell's equations, circuits, and EM waves."
+  "Interactive university electromagnetism practice with auto-graded questions. Covers electrostatics, magnetostatics, Maxwell's equations, circuits, and EM waves."
 ---
 
 import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
@@ -16,8 +15,8 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 10 auto-graded practice problems at medium to hard difficulty. Select an answer, submit, and review
 the explanation.
 
-Covers electrostatics (Gauss's law, electric potential, capacitors), magnetostatics (Ampere's law,
-Biot-Savart, magnetic materials), electrodynamics (Faraday's law, Maxwell's equations,
+Covers electrostatics (Gauss's law, electric potential, capacitors), magnetostatics (Ampere’s law,
+Biot-Savart, magnetic materials), electrodynamics (Faraday's law, Maxwell’s equations,
 electromagnetic waves), circuits (AC circuits, impedance, resonance), and EM waves (polarization,
 Poynting vector, reflection and refraction).
 
@@ -25,113 +24,32 @@ Poynting vector, reflection and refraction).
 
 ### Electrostatics and Magnetostatics
 
-<PracticeProblem
-  question="A point charge of +3.0 micro-C is placed at the origin. What is the electric flux through a sphere of radius 0.20 m centered at the origin? (epsilon_0 = 8.85 x 10^-12 C^2/(N*m^2))"
-  options={[
-    '3.39 x 10^5 N*m^2/C',
-    '1.69 x 10^5 N*m^2/C',
-    '6.78 x 10^5 N*m^2/C',
-    '8.49 x 10^4 N*m^2/C',
-  ]}
-  correctAnswer={0}
-  explanation="By Gauss's law, the flux through any closed surface enclosing the charge is Phi = q / epsilon_0 = 3.0 x 10^-6 C / 8.85 x 10^-12 C^2/(N*m^2) = 3.39 x 10^5 N*m^2/C. The flux depends only on the enclosed charge, not on the radius of the Gaussian surface."
-  difficulty="easy"
-/>
+<PracticeProblem question="A point charge of +3.0 micro-C is placed at the origin. What is the electric flux through a sphere of radius 0.20 m centered at the origin? (epsilon_0 = 8.85 x 10^-12 C^2/(N*m^2))" options={[ '3.39 x 10^5 N*m^2/C', '1.69 x 10^5 N*m^2/C', '6.78 x 10^5 N*m^2/C', '8.49 x 10^4 N*m^2/C', ]} correctAnswer={0} explanation="By Gauss’s law, the flux through any closed surface enclosing the charge is Phi = q / epsilon_0 = 3.0 x 10^-6 C / 8.85 x 10^-12 C^2/(N*m^2) = 3.39 x 10^5 N*m^2/C. The flux depends only on the enclosed charge, not on the radius of the Gaussian surface." difficulty="easy" />
 
-<PracticeProblem
-  question="A parallel-plate capacitor has plates of area 0.020 m^2 separated by a 2.0 mm gap filled with a dielectric (kappa = 5.0). What is its capacitance?"
-  options={['443 pF', '88.5 pF', '221 pF', '886 pF']}
-  correctAnswer={0}
-  explanation="Capacitance with dielectric: C = kappa * epsilon_0 * A / d = 5.0 * 8.85 x 10^-12 F/m * 0.020 m^2 / 0.002 m = 5.0 * 8.85 x 10^-12 * 10 = 4.425 x 10^-10 F = 442.5 pF, rounding to 443 pF. The dielectric increases the capacitance by a factor of kappa = 5.0 compared to vacuum."
-  difficulty="medium"
-/>
+<PracticeProblem question="A parallel-plate capacitor has plates of area 0.020 m^2 separated by a 2.0 mm gap filled with a dielectric (kappa = 5.0). What is its capacitance?" options={['443 pF', '88.5 pF', '221 pF', '886 pF']} correctAnswer={0} explanation="Capacitance with dielectric: C = kappa * epsilon_0 * A / d = 5.0 * 8.85 x 10^-12 F/m * 0.020 m^2 / 0.002 m = 5.0 * 8.85 x 10^-12 * 10 = 4.425 x 10^-10 F = 442.5 pF, rounding to 443 pF. The dielectric increases the capacitance by a factor of kappa = 5.0 compared to vacuum." difficulty="medium" />
 
-<PracticeProblem
-  question="A long straight wire carries a current of 15 A. What is the magnetic field magnitude at a perpendicular distance of 5.0 cm from the wire? (mu_0 = 4pi x 10^-7 T*m/A)"
-  options={['60 micro-T', '30 micro-T', '120 micro-T', '15 micro-T']}
-  correctAnswer={0}
-  explanation="By Ampere's law for a long straight wire: B = mu_0 * I / (2*pi*r) = (4pi x 10^-7 T*m/A * 15 A) / (2pi * 0.050 m) = (6pi x 10^-7) / (0.1pi) = 6.0 x 10^-5 T = 60 micro-T. The field circles the wire, falling as 1/r with distance."
-  difficulty="medium"
-/>
+<PracticeProblem question="A long straight wire carries a current of 15 A. What is the magnetic field magnitude at a perpendicular distance of 5.0 cm from the wire? (mu_0 = 4pi x 10^-7 T*m/A)" options={['60 micro-T', '30 micro-T', '120 micro-T', '15 micro-T']} correctAnswer={0} explanation="By Ampere’s law for a long straight wire: B = mu_0 * I / (2*pi*r) = (4pi x 10^-7 T*m/A * 15 A) / (2pi * 0.050 m) = (6pi x 10^-7) / (0.1pi) = 6.0 x 10^-5 T = 60 micro-T. The field circles the wire, falling as 1/r with distance." difficulty="medium" />
 
-<PracticeProblem
-  question="A solenoid of length 0.30 m and radius 0.05 m has 500 turns carrying 4.0 A. A second coil of 10 turns is wound around the solenoid at its center. What is the mutual inductance between them?"
-  options={['165 micro-H', '82 micro-H', '330 micro-H', '41 micro-H']}
-  correctAnswer={0}
-  explanation="Mutual inductance: M = mu_0 * N_1 * N_2 * A / L, where A = pi*r^2 = pi*(0.05)^2 = 7.854 x 10^-3 m^2. M = (4pi x 10^-7)(500)(10)(7.854 x 10^-3) / 0.30 = (4pi x 10^-7)(5000)(7.854 x 10^-3) / 0.30 = 1.645 x 10^-4 H = 165 micro-H. This mutual inductance means a changing current in the solenoid induces an EMF in the outer coil."
-  difficulty="hard"
-/>
+<PracticeProblem question="A solenoid of length 0.30 m and radius 0.05 m has 500 turns carrying 4.0 A. A second coil of 10 turns is wound around the solenoid at its center. What is the mutual inductance between them?" options={['165 micro-H', '82 micro-H', '330 micro-H', '41 micro-H']} correctAnswer={0} explanation="Mutual inductance: M = mu_0 * N_1 * N_2 * A / L, where A = pi*r^2 = pi*(0.05)^2 = 7.854 x 10^-3 m^2. M = (4pi x 10^-7)(500)(10)(7.854 x 10^-3) / 0.30 = (4pi x 10^-7)(5000)(7.854 x 10^-3) / 0.30 = 1.645 x 10^-4 H = 165 micro-H. This mutual inductance means a changing current in the solenoid induces an EMF in the outer coil." difficulty="hard" />
 
 ---
 
 ### Electrodynamics and Maxwell's Equations
 
-<PracticeProblem
-  question="Which of Maxwell's equations describes how a time-varying magnetic field generates an electric field?"
-  options={[
-    "Faraday's law: the line integral of E around a closed loop equals the negative rate of change of magnetic flux",
-    "Gauss's law: the flux of E through a closed surface equals the enclosed charge divided by epsilon_0",
-    "Ampere's law with Maxwell's correction: the line integral of B equals mu_0 times the enclosed current plus displacement current",
-    "Gauss's law for magnetism: the flux of B through any closed surface is zero",
-  ]}
-  correctAnswer={0}
-  explanation="Faraday's law (integral form: contour integral of E dot dl = -dPhi_B/dt) states that a changing magnetic flux induces a circulating electric field. This is the operating principle behind electric generators, transformers, and inductors. Unlike electrostatic fields, the induced E field is non-conservative."
-  difficulty="easy"
-/>
+<PracticeProblem question="Which of Maxwell's equations describes how a time-varying magnetic field generates an electric field?" options={[ "Faraday’s law: the line integral of E around a closed loop equals the negative rate of change of magnetic flux", "Gauss's law: the flux of E through a closed surface equals the enclosed charge divided by epsilon_0", "Ampere’s law with Maxwell's correction: the line integral of B equals mu_0 times the enclosed current plus displacement current", "Gauss’s law for magnetism: the flux of B through any closed surface is zero", ]} correctAnswer={0} explanation="Faraday's law (integral form: contour integral of E dot dl = -dPhi_B/dt) states that a changing magnetic flux induces a circulating electric field. This is the operating principle behind electric generators, transformers, and inductors. Unlike electrostatic fields, the induced E field is non-conservative." difficulty="easy" />
 
-<PracticeProblem
-  question="A circular loop of radius 0.10 m sits in a uniform magnetic field of 0.50 T perpendicular to the loop plane. If the field drops to zero in 0.050 s, what is the magnitude of the induced EMF?"
-  options={['0.31 V', '0.16 V', '0.63 V', '1.57 V']}
-  correctAnswer={0}
-  explanation="By Faraday's law: |epsilon| = dPhi/dt = d(B*A)/dt = A * dB/dt = pi*r^2 * delta_B / delta_t = pi*(0.10)^2 * 0.50 / 0.050 = 3.142 x 10^-2 * 10 = 0.314 V, rounding to 0.31 V. The rapid collapse of the magnetic field induces a significant EMF in the loop."
-  difficulty="medium"
-/>
+<PracticeProblem question="A circular loop of radius 0.10 m sits in a uniform magnetic field of 0.50 T perpendicular to the loop plane. If the field drops to zero in 0.050 s, what is the magnitude of the induced EMF?" options={['0.31 V', '0.16 V', '0.63 V', '1.57 V']} correctAnswer={0} explanation="By Faraday’s law: |epsilon| = dPhi/dt = d(B*A)/dt = A * dB/dt = pi*r^2 * delta_B / delta_t = pi*(0.10)^2 * 0.50 / 0.050 = 3.142 x 10^-2 * 10 = 0.314 V, rounding to 0.31 V. The rapid collapse of the magnetic field induces a significant EMF in the loop." difficulty="medium" />
 
-<PracticeProblem
-  question="An electromagnetic wave in vacuum has an electric field amplitude of 48 V/m. What is the average intensity (power per unit area) carried by the wave?"
-  options={['3.06 W/m^2', '6.12 W/m^2', '1.53 W/m^2', '12.2 W/m^2']}
-  correctAnswer={0}
-  explanation="Average intensity: I = (1/2) * epsilon_0 * c * E_0^2 = 0.5 * 8.854 x 10^-12 * 3.00 x 10^8 * (48)^2 = 0.5 * 8.854 x 10^-12 * 3.00 x 10^8 * 2304 = 3.06 W/m^2. Alternatively, I = E_0*B_0/(2*mu_0) where B_0 = E_0/c, giving the same result."
-  difficulty="medium"
-/>
+<PracticeProblem question="An electromagnetic wave in vacuum has an electric field amplitude of 48 V/m. What is the average intensity (power per unit area) carried by the wave?" options={['3.06 W/m^2', '6.12 W/m^2', '1.53 W/m^2', '12.2 W/m^2']} correctAnswer={0} explanation="Average intensity: I = (1/2) * epsilon_0 * c * E_0^2 = 0.5 * 8.854 x 10^-12 * 3.00 x 10^8 * (48)^2 = 0.5 * 8.854 x 10^-12 * 3.00 x 10^8 * 2304 = 3.06 W/m^2. Alternatively, I = E_0*B_0/(2*mu_0) where B_0 = E_0/c, giving the same result." difficulty="medium" />
 
-<PracticeProblem
-  question="In a plane electromagnetic wave propagating in vacuum, the electric and magnetic field amplitudes are related by E_0 = c*B_0. If E_0 = 120 V/m, what is the magnetic field amplitude and the wavelength when f = 5.0 x 10^14 Hz?"
-  options={[
-    'B_0 = 4.0 x 10^-7 T and lambda = 600 nm',
-    'B_0 = 4.0 x 10^-7 T and lambda = 300 nm',
-    'B_0 = 8.0 x 10^-7 T and lambda = 600 nm',
-    'B_0 = 2.0 x 10^-7 T and lambda = 600 nm',
-  ]}
-  correctAnswer={0}
-  explanation="B_0 = E_0/c = 120/(3.0 x 10^8) = 4.0 x 10^-7 T = 400 nT. Wavelength: lambda = c/f = 3.0 x 10^8 / 5.0 x 10^14 = 6.0 x 10^-7 m = 600 nm (visible orange light). In vacuum, E and B oscillate in phase, are perpendicular to each other and to the propagation direction."
-  difficulty="medium"
-/>
+<PracticeProblem question="In a plane electromagnetic wave propagating in vacuum, the electric and magnetic field amplitudes are related by E_0 = c*B_0. If E_0 = 120 V/m, what is the magnetic field amplitude and the wavelength when f = 5.0 x 10^14 Hz?" options={[ 'B_0 = 4.0 x 10^-7 T and lambda = 600 nm', 'B_0 = 4.0 x 10^-7 T and lambda = 300 nm', 'B_0 = 8.0 x 10^-7 T and lambda = 600 nm', 'B_0 = 2.0 x 10^-7 T and lambda = 600 nm', ]} correctAnswer={0} explanation="B_0 = E_0/c = 120/(3.0 x 10^8) = 4.0 x 10^-7 T = 400 nT. Wavelength: lambda = c/f = 3.0 x 10^8 / 5.0 x 10^14 = 6.0 x 10^-7 m = 600 nm (visible orange light). In vacuum, E and B oscillate in phase, are perpendicular to each other and to the propagation direction." difficulty="medium" />
 
 ---
 
 ### Circuits and Electromagnetic Waves
 
-<PracticeProblem
-  question="A series RLC circuit has R = 100 Ohm, L = 50 mH, and C = 20 micro-F. At what frequency does the circuit resonate?"
-  options={['159 Hz', '318 Hz', '79.6 Hz', '100 Hz']}
-  correctAnswer={0}
-  explanation="Resonant frequency: f_0 = 1 / (2*pi*sqrt(LC)) = 1 / (2*pi*sqrt(50 x 10^-3 * 20 x 10^-6)) = 1 / (2*pi*sqrt(1.0 x 10^-6)) = 1 / (2*pi*1.0 x 10^-3) = 159 Hz. At resonance, the impedance is purely resistive (Z = R = 100 Ohm), the current is maximum, and the reactances cancel: X_L = X_C."
-  difficulty="easy"
-/>
+<PracticeProblem question="A series RLC circuit has R = 100 Ohm, L = 50 mH, and C = 20 micro-F. At what frequency does the circuit resonate?" options={['159 Hz', '318 Hz', '79.6 Hz', '100 Hz']} correctAnswer={0} explanation="Resonant frequency: f_0 = 1 / (2*pi*sqrt(LC)) = 1 / (2*pi*sqrt(50 x 10^-3 * 20 x 10^-6)) = 1 / (2*pi*sqrt(1.0 x 10^-6)) = 1 / (2*pi*1.0 x 10^-3) = 159 Hz. At resonance, the impedance is purely resistive (Z = R = 100 Ohm), the current is maximum, and the reactances cancel: X_L = X_C." difficulty="easy" />
 
-<PracticeProblem
-  question="A light beam travels from air (n = 1.0) into glass (n = 1.5) at an angle of incidence of 30 degrees. What is the angle of refraction inside the glass?"
-  options={['19.5 degrees', '45.0 degrees', '20.0 degrees', '30.0 degrees']}
-  correctAnswer={0}
-  explanation="By Snell's law: n_1*sin(theta_1) = n_2*sin(theta_2). sin(theta_2) = (n_1/n_2)*sin(theta_1) = (1.0/1.5)*sin(30 degrees) = (2/3)*0.500 = 0.333. theta_2 = arcsin(0.333) = 19.47 degrees, rounding to 19.5 degrees. Light bends toward the normal when entering a denser medium."
-  difficulty="medium"
-/>
+<PracticeProblem question="A light beam travels from air (n = 1.0) into glass (n = 1.5) at an angle of incidence of 30 degrees. What is the angle of refraction inside the glass?" options={['19.5 degrees', '45.0 degrees', '20.0 degrees', '30.0 degrees']} correctAnswer={0} explanation="By Snell’s law: n_1*sin(theta_1) = n_2*sin(theta_2). sin(theta_2) = (n_1/n_2)*sin(theta_1) = (1.0/1.5)*sin(30 degrees) = (2/3)*0.500 = 0.333. theta_2 = arcsin(0.333) = 19.47 degrees, rounding to 19.5 degrees. Light bends toward the normal when entering a denser medium." difficulty="medium" />
 
-<PracticeProblem
-  question="A linearly polarized EM wave (E_0 = 60 V/m) passes through three successive polarizers. The transmission axes are at 0 degrees, 30 degrees, and 60 degrees relative to the initial polarization. What is the intensity after the third polarizer?"
-  options={['2.69 W/m^2', '4.78 W/m^2', '1.19 W/m^2', '0.30 W/m^2']}
-  correctAnswer={0}
-  explanation="Apply Malus's law at each polarizer. Initial intensity: I_0 = E_0^2/(2*mu_0*c) = 3600/(2*4pi*10^-7*3*10^8) = 4.775 W/m^2. After polarizer 1 (0 degrees): I_1 = I_0*cos^2(0) = I_0. After polarizer 2 (30 degrees from I_1 polarization): I_2 = I_0*cos^2(30) = I_0*3/4. After polarizer 3 (30 degrees from I_2 polarization): I_3 = I_0*(3/4)*cos^2(30) = I_0*9/16 = 4.775*0.5625 = 2.686 W/m^2 = 2.69 W/m^2."
-  difficulty="hard"
-/>
+<PracticeProblem question="A linearly polarized EM wave (E_0 = 60 V/m) passes through three successive polarizers. The transmission axes are at 0 degrees, 30 degrees, and 60 degrees relative to the initial polarization. What is the intensity after the third polarizer?" options={['2.69 W/m^2', '4.78 W/m^2', '1.19 W/m^2', '0.30 W/m^2']} correctAnswer={0} explanation="Apply Malus’s law at each polarizer. Initial intensity: I_0 = E_0^2/(2*mu_0*c) = 3600/(2*4pi*10^-7*3*10^8) = 4.775 W/m^2. After polarizer 1 (0 degrees): I_1 = I_0*cos^2(0) = I_0. After polarizer 2 (30 degrees from I_1 polarization): I_2 = I_0*cos^2(30) = I_0*3/4. After polarizer 3 (30 degrees from I_2 polarization): I_3 = I_0*(3/4)*cos^2(30) = I_0*9/16 = 4.775*0.5625 = 2.686 W/m^2 = 2.69 W/m^2." difficulty="hard" />

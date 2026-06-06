@@ -304,7 +304,7 @@ $\blacksquare$
 
 </details>
 
-### 2.5 Virtual Work and D'Alembert's Principle
+### 2.5 Virtual Work and D'Alembert’s Principle
 
 A **virtual displacement** $\delta \mathbf{r}_i$ is an infinitesimal change in position consistent
 with The constraints at a fixed instant in time ($\delta t = 0$).
@@ -335,14 +335,14 @@ forces vanishes for all admissible virtual displacements, the system must be in 
 (otherwise one could choose a virtual displacement in the direction of net force to get non-zero
 work). $\blacksquare$
 
-**Theorem 2.2 (D'Alembert's Principle).** For a system of $N$ particles:
+**Theorem 2.2 (D'Alembert’s Principle).** For a system of $N$ particles:
 
 $$\sum_{i=1}^N (\mathbf{F}_i - m_i \ddot{\mathbf{r}}_i) \cdot \delta \mathbf{r}_i = 0$$
 
 Where $\mathbf{F}_i$ includes both applied and constraint forces. For ideal constraints, the
 Constraint forces do no virtual work, so only the applied forces contribute.
 
-_Proof._ D'Alembert's principle extends the principle of virtual work to dynamics by treating
+_Proof._ D'Alembert’s principle extends the principle of virtual work to dynamics by treating
 $-m_i \ddot{\mathbf{r}}_i$ as a "fictitious force" (the **inertia force**). Starting from Newton's
 second law $\mathbf{F}_i + \mathbf{C}_i = m_i \ddot{\mathbf{r}}_i$:
 
@@ -364,14 +364,14 @@ $$L(q_1, \ldots, q_n, \dot{q}_1, \ldots, \dot{q}_n, t) = T - V$$
 
 Where $T$ is the kinetic energy and $V$ is the potential energy.
 
-### 3.2 Derivation of the Euler-Lagrange Equation from D'Alembert's Principle
+### 3.2 Derivation of the Euler-Lagrange Equation from D'Alembert’s Principle
 
 **Theorem 3.1 (Euler-Lagrange from D'Alembert).** The equations of motion for a holonomic system
 with ideal constraints are:
 
 $$\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{q}_j}\right) - \frac{\partial L}{\partial q_j} = 0, \quad j = 1, \ldots, n$$
 
-_Proof._ Start from D'Alembert's principle with only applied forces (ideal constraints):
+_Proof._ Start from D'Alembert’s principle with only applied forces (ideal constraints):
 
 $$\sum_i (\mathbf{F}_i^{(\mathrm{app})} - m_i\ddot{\mathbf{r}}_i) \cdot \delta\mathbf{r}_i = 0$$
 
@@ -407,7 +407,7 @@ $$\sum_i m_i\ddot{\mathbf{r}}_i \cdot \frac{\partial \mathbf{r}_i}{\partial q_j}
 
 $$= \frac{d}{dt}\frac{\partial T}{\partial \dot{q}_j} - \frac{\partial T}{\partial q_j}$$
 
-Combining both terms in D'Alembert's principle:
+Combining both terms in D'Alembert’s principle:
 
 $$\sum_j \left[Q_j - \frac{d}{dt}\frac{\partial T}{\partial \dot{q}_j} + \frac{\partial T}{\partial q_j}\right]\delta q_j = 0$$
 
@@ -2426,7 +2426,7 @@ At $r = 3.2$: the solutions are $x^* = 0.5130$ and $x^* = 0.7995$Matching our nu
    dynamics, not the complexity of the equations. A three-dimensional autonomous system (or
    two-dimensional non-autonomous system) is the minimum for chaos.
 
-5. **Liouville's theorem constrains but does not determine dynamics:** Liouville's theorem says
+5. **Liouville's theorem constrains but does not determine dynamics:** Liouville’s theorem says
    phase space volume is conserved, but it does not prevent phase space density from becoming
    filamented (stretched and folded). In fact, this filamentation is the mechanism behind mixing and
    ergodicity in Hamiltonian systems.

@@ -336,8 +336,7 @@ chiral ligands) induces enantioselectivity in a reaction.
 **Theorem 11 (Sharpless Epoxidation):** Ti(O$i$-Pr)$_4$ + $t$-BuOOH + chiral tartrate ester epoxidizes
 allylic alcohols with high enantioselectivity.
 
-Prediction rule: "The allylic alcohol is drawn with the OH at bottom right. If L-(+)-DET is used,
-the epoxide adds from the top; if D-(-)-DET, from the bottom."
+Prediction rule: "The allylic alcohol is drawn with the OH at bottom right. If L-(+)-DET is used, the epoxide adds from the top; if D-(-)-DET, from the bottom."
 
 ### 6.5 Biocatalysis
 

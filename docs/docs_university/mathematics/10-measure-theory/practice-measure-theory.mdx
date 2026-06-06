@@ -20,130 +20,30 @@ answer, submit, and review the explanation.
 
 ### Fundamentals
 
-<PracticeProblem
-  question="Which of the following is a sigma-algebra on $X = \\{1, 2, 3\\}$?"
-  options={[
-    '$\\{\\emptyset, \\{1\\}, \\{2, 3\\}, X\\}$',
-    '$\\{\\emptyset, \\{1\\}, \\{2\\}, X\\}$',
-    '$\\{\\emptyset, \\{1, 2\\}, X\\}$',
-    '$\\{\\emptyset, \\{1, 2\\}, \\{3\\}, X\\}$',
-  ]}
-  correctAnswer={0}
-  explanation="A sigma-algebra must contain $X$ and $\emptyset$, be closed under complements, and be closed under countable unions. Option (a): $\emptyset^c = X$, $\{1\}^c = \{2,3\}$, $\{2,3\}^c = \{1\}$, $X^c = \emptyset$. All unions of these stay in the collection. For (b), $\{1\} \cup \{2\} = \{1,2\}$ is not in the collection. For (c), $\{1,2\}^c = \{3\}$ is missing. For (d), $\{1,2\} \cup \{3\} = X$ is fine, but this set is also a sigma-algebra -- however, the question asks for a correct answer and (a) is valid."
-  difficulty="easy"
-/>
+<PracticeProblem question="Which of the following is a sigma-algebra on $X = \\{1, 2, 3\\}$?" options={[ '$\\{\\emptyset, \\{1\\}, \\{2, 3\\}, X\\}$', '$\\{\\emptyset, \\{1\\}, \\{2\\}, X\\}$', '$\\{\\emptyset, \\{1, 2\\}, X\\}$', '$\\{\\emptyset, \\{1, 2\\}, \\{3\\}, X\\}$', ]} correctAnswer={0} explanation="A sigma-algebra must contain $X$ and $\emptyset$, be closed under complements, and be closed under countable unions. Option (a): $\emptyset^c = X$, $\{1\}^c = \{2,3\}$, $\{2,3\}^c = \{1\}$, $X^c = \emptyset$. All unions of these stay in the collection. For (b), $\{1\} \cup \{2\} = \{1,2\}$ is not in the collection. For (c), $\{1,2\}^c = \{3\}$ is missing. For (d), $\{1,2\} \cup \{3\} = X$ is fine, but this set is also a sigma-algebra -- however, the question asks for a correct answer and (a) is valid." difficulty="easy" />
 
-<PracticeProblem
-  question="Let $m^*$ denote Lebesgue outer measure on $\\mathbb{R}$. What is $m^*(\\mathbb{Q} \\cap [0, 1])$?"
-  options={['0', '1', 'Infinity', '1/2']}
-  correctAnswer={0}
-  explanation="$\mathbb{Q} \cap [0,1]$ is countable. For each $\varepsilon > 0$, enumerate the rationals as $\{q_1, q_2, \ldots\}$ and cover $q_n$ by an interval of length $\varepsilon/2^n$. The total length is $\varepsilon$, so $m^*(\mathbb{Q} \cap [0,1]) = 0$. Every countable set has Lebesgue measure zero."
-  difficulty="easy"
-/>
+<PracticeProblem question="Let $m^*$ denote Lebesgue outer measure on $\\mathbb{R}$. What is $m^*(\\mathbb{Q} \\cap [0, 1])$?" options={['0', '1', 'Infinity', '1/2']} correctAnswer={0} explanation="$\mathbb{Q} \cap [0,1]$ is countable. For each $\varepsilon > 0$, enumerate the rationals as $\{q_1, q_2, \ldots\}$ and cover $q_n$ by an interval of length $\varepsilon/2^n$. The total length is $\varepsilon$, so $m^*(\mathbb{Q} \cap [0,1]) = 0$. Every countable set has Lebesgue measure zero." difficulty="easy" />
 
-<PracticeProblem
-  question="The Vitali set $V \\subseteq [0, 1]$ is constructed using the equivalence relation $x \\sim y$ iff $x - y \\in \\mathbb{Q}$. Why does the Axiom of Choice enter the proof?"
-  options={[
-    'To select one representative from each uncountably many equivalence classes',
-    'To show that $\\mathbb{Q}$ is countable',
-    'To prove that $V$ is a subset of $[0, 1]$',
-    'To verify that the translates $V + q$ are pairwise disjoint',
-  ]}
-  correctAnswer={0}
-  explanation="There are uncountably many equivalence classes of the relation $x \sim y \iff x - y \in \mathbb{Q}$. The Axiom of Choice is needed to select one representative from each class to form $V$. Without AC, such a set cannot be explicitly constructed. The pairwise disjointness of translates follows from the construction, not from AC."
-  difficulty="medium"
-/>
+<PracticeProblem question="The Vitali set $V \\subseteq [0, 1]$ is constructed using the equivalence relation $x \\sim y$ iff $x - y \\in \\mathbb{Q}$. Why does the Axiom of Choice enter the proof?" options={[ 'To select one representative from each uncountably many equivalence classes', 'To show that $\\mathbb{Q}$ is countable', 'To prove that $V$ is a subset of $[0, 1]$', 'To verify that the translates $V + q$ are pairwise disjoint', ]} correctAnswer={0} explanation="There are uncountably many equivalence classes of the relation $x \sim y \iff x - y \in \mathbb{Q}$. The Axiom of Choice is needed to select one representative from each class to form $V$. Without AC, such a set cannot be explicitly constructed. The pairwise disjointness of translates follows from the construction, not from AC." difficulty="medium" />
 
-<PracticeProblem
-  question="Let $\\mathcal{F}$ be a sigma-algebra on $X$ and let $A \\in \\mathcal{F}$. What is $\\sigma(\\mathcal{F} \\cup \\{A\\})$?"
-  options={[
-    '$\\mathcal{F}$',
-    '$\\{E \\cap A : E \\in \\mathcal{F}\\} \\cup \\{E \\cap A^c : E \\in \\mathcal{F}\\}$',
-    '$\\mathcal{P}(X)$',
-    '$\\{A, A^c, \\emptyset, X\\}$',
-  ]}
-  correctAnswer={0}
-  explanation="Since $A \in \mathcal{F}$ and $\mathcal{F}$ is already a sigma-algebra, adding $A$ to $\mathcal{F}$ generates no new sets. The sigma-algebra generated by $\mathcal{F} \cup \{A\}$ is just $\mathcal{F}$ itself. If $A \notin \mathcal{F}$, then $\sigma(\mathcal{F} \cup \{A\}) = \{E \cap A : E \in \mathcal{F}\} \cup \{E \cap A^c : E \in \mathcal{F}\}$."
-  difficulty="hard"
-/>
+<PracticeProblem question="Let $\\mathcal{F}$ be a sigma-algebra on $X$ and let $A \\in \\mathcal{F}$. What is $\\sigma(\\mathcal{F} \\cup \\{A\\})$?" options={[ '$\\mathcal{F}$', '$\\{E \\cap A : E \\in \\mathcal{F}\\} \\cup \\{E \\cap A^c : E \\in \\mathcal{F}\\}$', '$\\mathcal{P}(X)$', '$\\{A, A^c, \\emptyset, X\\}$', ]} correctAnswer={0} explanation="Since $A \in \mathcal{F}$ and $\mathcal{F}$ is already a sigma-algebra, adding $A$ to $\mathcal{F}$ generates no new sets. The sigma-algebra generated by $\mathcal{F} \cup \{A\}$ is just $\mathcal{F}$ itself. If $A \notin \mathcal{F}$, then $\sigma(\mathcal{F} \cup \{A\}) = \{E \cap A : E \in \mathcal{F}\} \cup \{E \cap A^c : E \in \mathcal{F}\}$." difficulty="hard" />
 
 ---
 
 ### Integration
 
-<PracticeProblem
-  question="Let $f_n = n \\chi_{(0, 1/n)}$ on $[0, 1]$ with Lebesgue measure. What is $\\lim_{n \\to \\infty} \\int_0^1 f_n\\, dx$ and does it equal $\\int_0^1 (\\lim f_n)\\, dx$?"
-  options={[
-    'The limit of integrals is 1, but the pointwise limit is 0, so they differ',
-    'Both equal 0',
-    'Both equal 1',
-    'The limit of integrals is 0, and the pointwise limit is 1',
-  ]}
-  correctAnswer={0}
-  explanation="$f_n \to 0$ pointwise everywhere (for any $x > 0$, $f_n(x) = 0$ for $n > 1/x$). But $\int f_n\, dx = n \cdot (1/n) = 1$ for all $n$. So $\lim \int f_n = 1 \neq 0 = \int \lim f_n$. The DCT does not apply because no integrable dominating function exists (the supremum of $f_n$ is unbounded)."
-  difficulty="medium"
-/>
+<PracticeProblem question="Let $f_n = n \\chi_{(0, 1/n)}$ on $[0, 1]$ with Lebesgue measure. What is $\\lim_{n \\to \\infty} \\int_0^1 f_n\\, dx$ and does it equal $\\int_0^1 (\\lim f_n)\\, dx$?" options={[ 'The limit of integrals is 1, but the pointwise limit is 0, so they differ', 'Both equal 0', 'Both equal 1', 'The limit of integrals is 0, and the pointwise limit is 1', ]} correctAnswer={0} explanation="$f_n \to 0$ pointwise everywhere (for any $x > 0$, $f_n(x) = 0$ for $n > 1/x$). But $\int f_n\, dx = n \cdot (1/n) = 1$ for all $n$. So $\lim \int f_n = 1 \neq 0 = \int \lim f_n$. The DCT does not apply because no integrable dominating function exists (the supremum of $f_n$ is unbounded)." difficulty="medium" />
 
-<PracticeProblem
-  question="Let $f_n(x) = x^n$ on $[0, 1]$ with Lebesgue measure. Compute $\\lim_{n \\to \\infty} \\int_0^1 f_n\\, dx$ and verify with a convergence theorem."
-  options={[
-    '$0$ -- by the Dominated Convergence Theorem with $g(x) = 1$',
-    '$0$ -- by the Monotone Convergence Theorem',
-    '$1/2$',
-    '$1$',
-  ]}
-  correctAnswer={0}
-  explanation="$f_n(x) = x^n \to 0$ for $x \in [0, 1)$ and $f_n(1) = 1$, so $f_n \to f$ a.e. where $f = \chi_{\{1\}}$. Since $|f_n| \leq 1 = g \in L^1[0,1]$, the DCT gives $\lim \int f_n = \int f = m(\{1\}) = 0$. Direct computation: $\int_0^1 x^n\, dx = 1/(n+1) \to 0$."
-  difficulty="medium"
-/>
+<PracticeProblem question="Let $f_n(x) = x^n$ on $[0, 1]$ with Lebesgue measure. Compute $\\lim_{n \\to \\infty} \\int_0^1 f_n\\, dx$ and verify with a convergence theorem." options={[ '$0$ -- by the Dominated Convergence Theorem with $g(x) = 1$', '$0$ -- by the Monotone Convergence Theorem', '$1/2$', '$1$', ]} correctAnswer={0} explanation="$f_n(x) = x^n \to 0$ for $x \in [0, 1)$ and $f_n(1) = 1$, so $f_n \to f$ a.e. where $f = \chi_{\{1\}}$. Since $|f_n| \leq 1 = g \in L^1[0,1]$, the DCT gives $\lim \int f_n = \int f = m(\{1\}) = 0$. Direct computation: $\int_0^1 x^n\, dx = 1/(n+1) \to 0$." difficulty="medium" />
 
-<PracticeProblem
-  question="Let $f_n(x) = (-1)^n n \\chi_{(0, 1/n)}$ on $[0, 1]$. Which convergence theorem applies to show $\\int f_n \\to 0$?"
-  options={[
-    'No standard convergence theorem applies directly; compute $\\int f_n = (-1)^n$ which has no limit',
-    "Fatou's lemma gives the result",
-    'The Monotone Convergence Theorem',
-    'The Dominated Convergence Theorem with $g(x) = x^{-1}$',
-  ]}
-  correctAnswer={0}
-  explanation="$\int f_n = (-1)^n n \cdot (1/n) = (-1)^n$, which oscillates between $-1$ and $1$ and has no limit. The MCT requires non-negative functions; Fatou's lemma gives $\int \liminf f_n \leq \liminf \int f_n$, but $\liminf f_n = 0$ and $\liminf \int f_n = -1$. The DCT fails since $f_n$ is not dominated by an integrable function ($\sup_n |f_n(x)| = \infty$ near $0$)."
-  difficulty="hard"
-/>
+<PracticeProblem question="Let $f_n(x) = (-1)^n n \\chi_{(0, 1/n)}$ on $[0, 1]$. Which convergence theorem applies to show $\\int f_n \\to 0$?" options={[ 'No standard convergence theorem applies directly; compute $\\int f_n = (-1)^n$ which has no limit', "Fatou’s lemma gives the result", 'The Monotone Convergence Theorem', 'The Dominated Convergence Theorem with $g(x) = x^{-1}$', ]} correctAnswer={0} explanation="$\int f_n = (-1)^n n \cdot (1/n) = (-1)^n$, which oscillates between $-1$ and $1$ and has no limit. The MCT requires non-negative functions; Fatou’s lemma gives $\int \liminf f_n \leq \liminf \int f_n$, but $\liminf f_n = 0$ and $\liminf \int f_n = -1$. The DCT fails since $f_n$ is not dominated by an integrable function ($\sup_n |f_n(x)| = \infty$ near $0$)." difficulty="hard" />
 
-<PracticeProblem
-  question="Let $f_n \\to f$ pointwise on a finite measure space $(X, \\mathcal{F}, \\mu)$ with $\\int f_n\\, d\\mu = 0$ for all $n$. What can you conclude?"
-  options={[
-    '$\\int f\\, d\\mu = 0$',
-    '$f = 0$ almost everywhere',
-    '$\\int f\\, d\\mu$ could be any value in $[0, \\mu(X)]$',
-    'The sequence $f_n$ is dominated by an integrable function',
-  ]}
-  correctAnswer={0}
-  explanation="Without additional hypotheses (such as a dominating function or non-negativity), nothing guarantees that $\lim \int f_n = \int f$. For example, $f_n = n \chi_{(0,1/n)}$ on $[0,1]$ has $\int f_n = 1$ for all $n$, $f_n \to 0$ a.e., and $\int f = 0 \neq 1 = \lim \int f_n$. So $\int f\, d\mu$ can differ from $\lim \int f_n\, d\mu$."
-  difficulty="hard"
-/>
+<PracticeProblem question="Let $f_n \\to f$ pointwise on a finite measure space $(X, \\mathcal{F}, \\mu)$ with $\\int f_n\\, d\\mu = 0$ for all $n$. What can you conclude?" options={[ '$\\int f\\, d\\mu = 0$', '$f = 0$ almost everywhere', '$\\int f\\, d\\mu$ could be any value in $[0, \\mu(X)]$', 'The sequence $f_n$ is dominated by an integrable function', ]} correctAnswer={0} explanation="Without additional hypotheses (such as a dominating function or non-negativity), nothing guarantees that $\lim \int f_n = \int f$. For example, $f_n = n \chi_{(0,1/n)}$ on $[0,1]$ has $\int f_n = 1$ for all $n$, $f_n \to 0$ a.e., and $\int f = 0 \neq 1 = \lim \int f_n$. So $\int f\, d\mu$ can differ from $\lim \int f_n\, d\mu$." difficulty="hard" />
 
 ---
 
 ### L^p Spaces
 
-<PracticeProblem
-  question="For $p, q \\in [1, \\infty]$ with $1/p + 1/q = 1$, which statement about $L^p$ and $L^q$ is always true on a finite measure space?"
-  options={[
-    '$L^q \\subseteq L^p$ when $q > p$',
-    '$L^p \\subseteq L^q$ when $p > q$',
-    '$L^p = L^q$ for all $p, q$',
-    '$L^p \\subseteq L^q$ when $p > q$',
-  ]}
-  correctAnswer={0}
-  explanation="On a finite measure space, higher exponents give smaller spaces: $L^q \subseteq L^p$ when $q > p$. By Holder's inequality with $f \in L^q$ and $g = 1 \in L^{q/(q-p)}$ (since $\mu(X) < \infty$): $\|f\|_p^p \leq \|f\|_q^p \cdot \mu(X)^{1 - p/q} < \infty$. So $f \in L^p$."
-  difficulty="medium"
-/>
+<PracticeProblem question="For $p, q \\in [1, \\infty]$ with $1/p + 1/q = 1$, which statement about $L^p$ and $L^q$ is always true on a finite measure space?" options={[ '$L^q \\subseteq L^p$ when $q > p$', '$L^p \\subseteq L^q$ when $p > q$', '$L^p = L^q$ for all $p, q$', '$L^p \\subseteq L^q$ when $p > q$', ]} correctAnswer={0} explanation="On a finite measure space, higher exponents give smaller spaces: $L^q \subseteq L^p$ when $q > p$. By Holder’s inequality with $f \in L^q$ and $g = 1 \in L^{q/(q-p)}$ (since $\mu(X) < \infty$): $\|f\|_p^p \leq \|f\|_q^p \cdot \mu(X)^{1 - p/q} < \infty$. So $f \in L^p$." difficulty="medium" />
 
-<PracticeProblem
-  question="Which of the following functions is in $L^2([1, \\infty))$ but not in $L^1([1, \\infty))$?"
-  options={['$f(x) = 1/x$', '$f(x) = 1/x^2$', '$f(x) = e^{-x}$', '$f(x) = 1/x^{3/2}$']}
-  correctAnswer={0}
-  explanation="$f(x) = 1/x$: $\int_1^\infty |f|^1\, dx = \int_1^\infty 1/x\, dx = \infty$, so $f \notin L^1$. But $\int_1^\infty |f|^2\, dx = \int_1^\infty 1/x^2\, dx = 1 < \infty$, so $f \in L^2$. For (b), $1/x^2 \in L^1 \cap L^2$. For (c), $e^{-x} \in L^1 \cap L^2$. For (d), $1/x^{3/2} \in L^1 \cap L^2$."
-  difficulty="medium"
-/>
+<PracticeProblem question="Which of the following functions is in $L^2([1, \\infty))$ but not in $L^1([1, \\infty))$?" options={['$f(x) = 1/x$', '$f(x) = 1/x^2$', '$f(x) = e^{-x}$', '$f(x) = 1/x^{3/2}$']} correctAnswer={0} explanation="$f(x) = 1/x$: $\int_1^\infty |f|^1\, dx = \int_1^\infty 1/x\, dx = \infty$, so $f \notin L^1$. But $\int_1^\infty |f|^2\, dx = \int_1^\infty 1/x^2\, dx = 1 < \infty$, so $f \in L^2$. For (b), $1/x^2 \in L^1 \cap L^2$. For (c), $e^{-x} \in L^1 \cap L^2$. For (d), $1/x^{3/2} \in L^1 \cap L^2$." difficulty="medium" />

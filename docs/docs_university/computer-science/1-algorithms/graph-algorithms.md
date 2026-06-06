@@ -527,7 +527,7 @@ Process C: remove edge to D (in-degree D becomes 0). Queue: [D]. Process D: remo
 - **BFS** finds shortest paths in unweighted graphs; **DFS** explores depth-first and enables
   topological sort and SCC detection.
 - **Topological sort** works on DAGs using DFS finish times or Kahn's indegree algorithm.
-- **SCCs** are found by Kosaraju's (two DFS passes) or Tarjan's (single DFS with lowlink).
+- **SCCs** are found by Kosaraju's (two DFS passes) or Tarjan’s (single DFS with lowlink).
 - **Shortest paths:** Dijkstra ($O((V+E)\log V)$, non-negative), Bellman-Ford ($O(VE)$, negative),
   Floyd-Warshall ($O(V^3)$, all pairs).
 - **MST:** Kruskal ($O(E \log E)$) and Prim ($O(E \log V)$), both based on cut/cycle properties.

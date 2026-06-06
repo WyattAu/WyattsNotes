@@ -177,8 +177,7 @@ intervals that Shrink to $\sup S$. $\blacksquare$
 _Remark._ The field $\mathbb{Q}$ satisfies none of these properties, which is why it must be
 Extended to $\mathbb{R}$ for analysis.
 
-:::caution Common Pitfall The completeness axiom is often misstated as "every bounded set has a
-supremum." The set must be Non-empty. Also, completeness does not say every set has a maximum;
+:::caution Common Pitfall The completeness axiom is often misstated as "every bounded set has a supremum." The set must be Non-empty. Also, completeness does not say every set has a maximum;
 $\sup(S)$ need not belong to $S$. For example, $\sup\{1/n : n \in \mathbb{N}\} = 1$Which belongs to
 the set, but $\sup(0, 1) = 1$Which does not belong to $(0, 1)$. :::
 
@@ -922,8 +921,8 @@ $$(f(b) - f(a))g'(c) = (g(b) - g(a))f'(c)$$
 _Proof._ Define $h(x) = (f(b) - f(a))g(x) - (g(b) - g(a))f(x)$. Then $h(a) = h(b)$So by Rolle's
 Theorem, $h'(c) = 0$ for some $c \in (a,b)$Which gives the result. $\blacksquare$
 
-_Remark._ When $g(x) = x$Cauchy's MVT reduces to the standard MVT. Cauchy's MVT is the key
-Ingredient in the proof of L'Hôpital's rule.
+_Remark._ When $g(x) = x$Cauchy's MVT reduces to the standard MVT. Cauchy’s MVT is the key
+Ingredient in the proof of L'Hôpital’s rule.
 
 **Corollary 5.6.** If $f$ is differentiable on $(a,b)$ and $|f'(x)| \leq M$ for all $x \in (a,b)$
 Then $f$ is Lipschitz continuous with constant $M$: $|f(x) - f(y)| \leq M|x - y|$ for all
@@ -957,9 +956,9 @@ $$g'(t) = -\frac{f^{(n+1)}(t)}{n!}(x - t)^n$$
 Setting $g'(\xi) = 0$ yields the result after comparing $g(a) = R_n(x)$ with the integral form. A
 Cleaner approach uses the standard MVT applied to $g$ on $[a, x]$. $\blacksquare$
 
-### 5.5 L'Hôpital's Rule
+### 5.5 L'Hôpital’s Rule
 
-**Theorem 5.7 (L'Hôpital's Rule, $\frac{0}{0}$ case).** Suppose $f$ and $g$ are differentiable on An
+**Theorem 5.7 (L'Hôpital’s Rule, $\frac{0}{0}$ case).** Suppose $f$ and $g$ are differentiable on An
 open interval containing $c$ (except possibly at $c$ itself), $g'(x) \neq 0$ near $c$And
 $\lim_{x \to c} f(x) = \lim_{x \to c} g(x) = 0$. If $\lim_{x \to c} f'(x)/g'(x) = L$ exists (as a
 finite Number or $\pm\infty$), then $\lim_{x \to c} f(x)/g(x) = L$.
@@ -973,7 +972,7 @@ I.e., $\frac{f(x)}{g(x)} = \frac{f'(\xi)}{g'(\xi)}$. As $x \to c$We have $\xi \t
 trapped between $c$ and $x$). Therefore
 $\lim_{x \to c} f(x)/g(x) = \lim_{\xi \to c} f'(\xi)/g'(\xi) = L$. $\blacksquare$
 
-**Theorem 5.7b (L'Hôpital's Rule, $\frac{\infty}{\infty}$ case).** Suppose $f$ and $g$ are
+**Theorem 5.7b (L'Hôpital’s Rule, $\frac{\infty}{\infty}$ case).** Suppose $f$ and $g$ are
 Differentiable on $(a, b)$ (except possibly at $c$), $g'(x) \neq 0$ near $c$And
 $\lim_{x \to c} |f(x)| = \lim_{x \to c} |g(x)| = \infty$. If $\lim_{x \to c} f'(x)/g'(x) = L$
 exists, Then $\lim_{x \to c} f(x)/g(x) = L$.
@@ -993,7 +992,7 @@ MVT. Hence $f(x)/g(x) \to L$. $\blacksquare$
 <details>
 <summary>Worked Example: Compute $\lim_{x \to 0} \frac{e^x - 1 - x}{x^2}$</summary>
 
-_Solution._ Both numerator and denominator approach $0$ as $x \to 0$. Applying L'Hôpital's rule:
+_Solution._ Both numerator and denominator approach $0$ as $x \to 0$. Applying L'Hôpital’s rule:
 
 $$\lim_{x \to 0} \frac{e^x - 1 - x}{x^2} = \lim_{x \to 0} \frac{e^x - 1}{2x}$$
 
@@ -1111,7 +1110,7 @@ $\blacksquare$
 
 </details>
 
-:::caution Common Pitfall L'Hôpital's rule only applies to indeterminate forms $\frac{0}{0}$ and
+:::caution Common Pitfall L'Hôpital’s rule only applies to indeterminate forms $\frac{0}{0}$ and
 $\frac{\infty}{\infty}$. Applying it to forms like $\frac{1}{0}$ or $\frac{\infty}{1}$ will give
 incorrect results. Always Verify the indeterminate form before applying the rule. Also, L'Hôpital's
 rule requires that the Limit of the quotient of derivatives exists; if it does not exist

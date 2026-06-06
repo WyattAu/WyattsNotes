@@ -20,140 +20,30 @@ the explanation.
 
 ### Sequences and Convergence
 
-<PracticeProblem
-  question="Which of the following defines a Cauchy sequence in $\mathbb{R}$?"
-  options={[
-    'For every $\epsilon > 0$, there exists $N$ such that for all $m, n > N$: $|a_m - a_n| < \epsilon$',
-    'There exists $\epsilon > 0$ such that for all $N$, there exist $m, n > N$: $|a_m - a_n| < \epsilon$',
-    'For every $N$, there exists $\epsilon > 0$ such that $|a_{N+1} - a_N| < \epsilon$',
-    'For every $\epsilon > 0$, there exists $N$ such that $|a_n - L| < \epsilon$ for all $n > N$',
-  ]}
-  correctAnswer={0}
-  explanation="The Cauchy criterion states: for every $\epsilon > 0$, there exists $N \in \mathbb{N}$ such that for all $m, n \geq N$, $|a_m - a_n| < \epsilon$. The last option is the definition of convergence (not Cauchy). In $\mathbb{R}$, a sequence is Cauchy if and only if it converges (completeness of $\mathbb{R}$)."
-  difficulty="easy"
-/>
+<PracticeProblem question="Which of the following defines a Cauchy sequence in $\mathbb{R}$?" options={[ 'For every $\epsilon > 0$, there exists $N$ such that for all $m, n > N$: $|a_m - a_n| < \epsilon$', 'There exists $\epsilon > 0$ such that for all $N$, there exist $m, n > N$: $|a_m - a_n| < \epsilon$', 'For every $N$, there exists $\epsilon > 0$ such that $|a_{N+1} - a_N| < \epsilon$', 'For every $\epsilon > 0$, there exists $N$ such that $|a_n - L| < \epsilon$ for all $n > N$', ]} correctAnswer={0} explanation="The Cauchy criterion states: for every $\epsilon > 0$, there exists $N \in \mathbb{N}$ such that for all $m, n \geq N$, $|a_m - a_n| < \epsilon$. The last option is the definition of convergence (not Cauchy). In $\mathbb{R}$, a sequence is Cauchy if and only if it converges (completeness of $\mathbb{R}$)." difficulty="easy" />
 
-<PracticeProblem
-  question="Let $(a_n)$ be a bounded monotone increasing sequence with $a_n \leq 7$ for all $n$. What can you conclude from the Monotone Convergence Theorem?"
-  options={[
-    '$(a_n)$ converges to some limit $L \leq 7$',
-    '$(a_n)$ converges to 7',
-    '$(a_n)$ must converge to 0',
-    '$(a_n)$ may not converge since no specific limit is identified',
-  ]}
-  correctAnswer={0}
-  explanation="The Monotone Convergence Theorem states that every bounded monotone sequence converges. Since $(a_n)$ is increasing and bounded above by 7, it converges to its supremum $L = \sup\{a_n\}$, where $L \leq 7$. The limit equals 7 only if 7 is the least upper bound; otherwise it is some $L < 7$."
-  difficulty="easy"
-/>
+<PracticeProblem question="Let $(a_n)$ be a bounded monotone increasing sequence with $a_n \leq 7$ for all $n$. What can you conclude from the Monotone Convergence Theorem?" options={[ '$(a_n)$ converges to some limit $L \leq 7$', '$(a_n)$ converges to 7', '$(a_n)$ must converge to 0', '$(a_n)$ may not converge since no specific limit is identified', ]} correctAnswer={0} explanation="The Monotone Convergence Theorem states that every bounded monotone sequence converges. Since $(a_n)$ is increasing and bounded above by 7, it converges to its supremum $L = \sup\{a_n\}$, where $L \leq 7$. The limit equals 7 only if 7 is the least upper bound; otherwise it is some $L < 7$." difficulty="easy" />
 
-<PracticeProblem
-  question="Which of the following series diverges?"
-  options={[
-    '$\sum_{n=1}^{\infty} \frac{1}{n}$ (harmonic series)',
-    '$\sum_{n=1}^{\infty} \frac{1}{n^2}$',
-    '$\sum_{n=1}^{\infty} \frac{(-1)^n}{n}$',
-    '$\sum_{n=1}^{\infty} \frac{1}{n!}$',
-  ]}
-  correctAnswer={0}
-  explanation="The harmonic series $\sum 1/n$ diverges by the integral test: $\int_1^{\infty} \frac{1}{x}\,dx = \lim_{b \to \infty} \ln b = \infty$. The $p$-series $\sum 1/n^2$ converges since $p = 2 > 1$. The alternating series $\sum (-1)^n/n$ converges conditionally by the Alternating Series Test. $\sum 1/n!$ converges (ratio test gives limit 0)."
-  difficulty="easy"
-/>
+<PracticeProblem question="Which of the following series diverges?" options={[ '$\sum_{n=1}^{\infty} \frac{1}{n}$ (harmonic series)', '$\sum_{n=1}^{\infty} \frac{1}{n^2}$', '$\sum_{n=1}^{\infty} \frac{(-1)^n}{n}$', '$\sum_{n=1}^{\infty} \frac{1}{n!}$', ]} correctAnswer={0} explanation="The harmonic series $\sum 1/n$ diverges by the integral test: $\int_1^{\infty} \frac{1}{x}\,dx = \lim_{b \to \infty} \ln b = \infty$. The $p$-series $\sum 1/n^2$ converges since $p = 2 > 1$. The alternating series $\sum (-1)^n/n$ converges conditionally by the Alternating Series Test. $\sum 1/n!$ converges (ratio test gives limit 0)." difficulty="easy" />
 
-<PracticeProblem
-  question="Which test is most appropriate to determine the convergence of $\sum_{n=1}^{\infty} \frac{n^n}{n!}$?"
-  options={[
-    'The ratio test — the limit of $a_{n+1}/a_n$ is $e > 1$, so the series diverges',
-    'The root test — the $n$th root approaches 1, so the test is inconclusive',
-    'The integral test — the associated integral converges',
-    'The comparison test — the terms are dominated by $1/n^2$',
-  ]}
-  correctAnswer={0}
-  explanation="Use the ratio test: $a_{n+1}/a_n = \frac{(n+1)^{n+1}/(n+1)!}{n^n/n!} = \frac{(n+1)^{n+1} \cdot n!}{(n+1)! \cdot n^n} = \frac{(n+1)^{n+1}}{(n+1) \cdot n^n} = \frac{(n+1)^n}{n^n} = (1 + 1/n)^n \to e$ as $n \to \infty$. Since $e > 1$, the ratio test gives divergence."
-  difficulty="medium"
-/>
+<PracticeProblem question="Which test is most appropriate to determine the convergence of $\sum_{n=1}^{\infty} \frac{n^n}{n!}$?" options={[ 'The ratio test — the limit of $a_{n+1}/a_n$ is $e > 1$, so the series diverges', 'The root test — the $n$th root approaches 1, so the test is inconclusive', 'The integral test — the associated integral converges', 'The comparison test — the terms are dominated by $1/n^2$', ]} correctAnswer={0} explanation="Use the ratio test: $a_{n+1}/a_n = \frac{(n+1)^{n+1}/(n+1)!}{n^n/n!} = \frac{(n+1)^{n+1} \cdot n!}{(n+1)! \cdot n^n} = \frac{(n+1)^{n+1}}{(n+1) \cdot n^n} = \frac{(n+1)^n}{n^n} = (1 + 1/n)^n \to e$ as $n \to \infty$. Since $e > 1$, the ratio test gives divergence." difficulty="medium" />
 
 ---
 
 ### Limits, Continuity, and Differentiation
 
-<PracticeProblem
-  question="Using the $\epsilon$-$\delta$ definition, what does it mean for $\lim_{x \to a} f(x) = L$?"
-  options={[
-    'For every $\epsilon > 0$, there exists $\delta > 0$ such that $0 < |x - a| < \delta \implies |f(x) - L| < \epsilon$',
-    'There exists $\epsilon > 0$ such that for every $\delta > 0$: $|x - a| < \delta \implies |f(x) - L| < \epsilon$',
-    'For every $\delta > 0$, there exists $\epsilon > 0$ such that $|f(x) - L| < \epsilon \implies |x - a| < \delta$',
-    'For every $\epsilon > 0$ and $\delta > 0$: $|x - a| < \delta \implies |f(x) - L| < \epsilon$',
-  ]}
-  correctAnswer={0}
-  explanation="The formal definition: $\lim_{x \to a} f(x) = L$ means for every $\epsilon > 0$, there exists $\delta > 0$ such that if $0 < |x - a| < \delta$, then $|f(x) - L| < \epsilon$. The quantifier order is crucial: $\epsilon$ is given first (arbitrarily), then $\delta$ is chosen in response."
-  difficulty="medium"
-/>
+<PracticeProblem question="Using the $\epsilon$-$\delta$ definition, what does it mean for $\lim_{x \to a} f(x) = L$?" options={[ 'For every $\epsilon > 0$, there exists $\delta > 0$ such that $0 < |x - a| < \delta \implies |f(x) - L| < \epsilon$', 'There exists $\epsilon > 0$ such that for every $\delta > 0$: $|x - a| < \delta \implies |f(x) - L| < \epsilon$', 'For every $\delta > 0$, there exists $\epsilon > 0$ such that $|f(x) - L| < \epsilon \implies |x - a| < \delta$', 'For every $\epsilon > 0$ and $\delta > 0$: $|x - a| < \delta \implies |f(x) - L| < \epsilon$', ]} correctAnswer={0} explanation="The formal definition: $\lim_{x \to a} f(x) = L$ means for every $\epsilon > 0$, there exists $\delta > 0$ such that if $0 < |x - a| < \delta$, then $|f(x) - L| < \epsilon$. The quantifier order is crucial: $\epsilon$ is given first (arbitrarily), then $\delta$ is chosen in response." difficulty="medium" />
 
-<PracticeProblem
-  question="If $f$ is continuous on $[a, b]$ with $f(a) = -1$ and $f(b) = 2$, what does the Intermediate Value Theorem guarantee?"
-  options={[
-    'There exists $c \in (a, b)$ with $f(c) = 0$',
-    '$f$ attains a maximum value of 2 on $[a, b]$',
-    '$f$ is differentiable on $(a, b)$',
-    '$f$ is strictly increasing on $[a, b]$',
-  ]}
-  correctAnswer={0}
-  explanation="The IVT states that if $f$ is continuous on $[a, b]$ and $k$ is any value between $f(a)$ and $f(b)$, then there exists $c \in (a, b)$ with $f(c) = k$. Since $0 \in [-1, 2]$, there exists $c \in (a, b)$ such that $f(c) = 0$. The IVT does not guarantee differentiability, monotonicity, or attainment of endpoints."
-  difficulty="easy"
-/>
+<PracticeProblem question="If $f$ is continuous on $[a, b]$ with $f(a) = -1$ and $f(b) = 2$, what does the Intermediate Value Theorem guarantee?" options={[ 'There exists $c \in (a, b)$ with $f(c) = 0$', '$f$ attains a maximum value of 2 on $[a, b]$', '$f$ is differentiable on $(a, b)$', '$f$ is strictly increasing on $[a, b]$', ]} correctAnswer={0} explanation="The IVT states that if $f$ is continuous on $[a, b]$ and $k$ is any value between $f(a)$ and $f(b)$, then there exists $c \in (a, b)$ with $f(c) = k$. Since $0 \in [-1, 2]$, there exists $c \in (a, b)$ such that $f(c) = 0$. The IVT does not guarantee differentiability, monotonicity, or attainment of endpoints." difficulty="easy" />
 
-<PracticeProblem
-  question="By the Mean Value Theorem, if $f(1) = 3$ and $f(3) = 7$ and $f$ is differentiable on $(1, 3)$, what is guaranteed?"
-  options={[
-    `There exists $c \\in (1, 3)$ with $f'(c) = 2$`,
-    `$f'(x) = 2$ for all $x \\in (1, 3)$`,
-    `There exists $c \\in (1, 3)$ with $f'(c) = 4$`,
-    `$f$ is increasing on $(1, 3)$`,
-  ]}
-  correctAnswer={0}
-  explanation={`The MVT gives $\\frac{f(b) - f(a)}{b - a} = f'(c)$ for some $c \\in (a, b)$. Here: $\\frac{f(3) - f(1)}{3 - 1} = \\frac{7 - 3}{2} = 2 = f'(c)$ for some $c \\in (1, 3)$. This means the instantaneous rate of change equals the average rate of change at some interior point. It does not mean $f'(x) = 2$ everywhere, only at some point.`}
-  difficulty="medium"
-/>
+<PracticeProblem question="By the Mean Value Theorem, if $f(1) = 3$ and $f(3) = 7$ and $f$ is differentiable on $(1, 3)$, what is guaranteed?" options={[ `There exists $c \\in (1, 3)$ with $f'(c) = 2$`, `$f'(x) = 2$ for all $x \\in (1, 3)$`, `There exists $c \\in (1, 3)$ with $f'(c) = 4$`, `$f$ is increasing on $(1, 3)$`, ]} correctAnswer={0} explanation={`The MVT gives $\\frac{f(b) - f(a)}{b - a} = f'(c)$ for some $c \\in (a, b)$. Here: $\\frac{f(3) - f(1)}{3 - 1} = \\frac{7 - 3}{2} = 2 = f'(c)$ for some $c \\in (1, 3)$. This means the instantaneous rate of change equals the average rate of change at some interior point. It does not mean $f'(x) = 2$ everywhere, only at some point.`} difficulty="medium" />
 
 ---
 
 ### Integration
 
-<PracticeProblem
-  question="Which of the following functions is Riemann integrable on $[0, 1]$?"
-  options={[
-    'The Dirichlet function (1 on rationals, 0 on irrationals) is NOT Riemann integrable',
-    'Every bounded function on $[0, 1]$ is Riemann integrable',
-    'Only continuous functions are Riemann integrable',
-    'A function with countably many discontinuities may fail to be Riemann integrable',
-  ]}
-  correctAnswer={0}
-  explanation="The Dirichlet function is the classic example of a bounded function that is NOT Riemann integrable: its lower sums are always 0 and upper sums are always 1, so the lower and upper integrals disagree. A bounded function on $[a, b]$ is Riemann integrable if and only if its set of discontinuities has measure zero (Lebesgue's criterion). Functions with countably many discontinuities ARE Riemann integrable since countable sets have measure zero."
-  difficulty="medium"
-/>
+<PracticeProblem question="Which of the following functions is Riemann integrable on $[0, 1]$?" options={[ 'The Dirichlet function (1 on rationals, 0 on irrationals) is NOT Riemann integrable', 'Every bounded function on $[0, 1]$ is Riemann integrable', 'Only continuous functions are Riemann integrable', 'A function with countably many discontinuities may fail to be Riemann integrable', ]} correctAnswer={0} explanation="The Dirichlet function is the classic example of a bounded function that is NOT Riemann integrable: its lower sums are always 0 and upper sums are always 1, so the lower and upper integrals disagree. A bounded function on $[a, b]$ is Riemann integrable if and only if its set of discontinuities has measure zero (Lebesgue’s criterion). Functions with countably many discontinuities ARE Riemann integrable since countable sets have measure zero." difficulty="medium" />
 
-<PracticeProblem
-  question="What does the Fundamental Theorem of Calculus (Part 1) state about $F(x) = \int_a^x f(t)\,dt$ when $f$ is continuous on $[a, b]$?"
-  options={[
-    `$F$ is differentiable on $(a, b)$ and $F'(x) = f(x)$`,
-    `$F$ is continuous and $\int_a^b F'(x)\,dx = F(b) - F(a)$`,
-    `$F(x) = f'(x)$ for all $x \in (a, b)$`,
-    `$F$ is twice differentiable and $F''(x) = f'(x)$`,
-  ]}
-  correctAnswer={0}
-  explanation="FTC Part 1: If $f$ is continuous on $[a, b]$, then $F(x) = \int_a^x f(t)\,dt$ is differentiable on $(a, b)$ and $F'(x) = f(x)$. This establishes that integration and differentiation are inverse operations. FTC Part 2 (the evaluation theorem) states $\int_a^b f(x)\,dx = F(b) - F(a)$ where $F$ is any antiderivative of $f$."
-  difficulty="medium"
-/>
+<PracticeProblem question="What does the Fundamental Theorem of Calculus (Part 1) state about $F(x) = \int_a^x f(t)\,dt$ when $f$ is continuous on $[a, b]$?" options={[ `$F$ is differentiable on $(a, b)$ and $F'(x) = f(x)$`, `$F$ is continuous and $\int_a^b F'(x)\,dx = F(b) - F(a)$`, `$F(x) = f'(x)$ for all $x \in (a, b)$`, `$F$ is twice differentiable and $F''(x) = f'(x)$`, ]} correctAnswer={0} explanation="FTC Part 1: If $f$ is continuous on $[a, b]$, then $F(x) = \int_a^x f(t)\,dt$ is differentiable on $(a, b)$ and $F'(x) = f(x)$. This establishes that integration and differentiation are inverse operations. FTC Part 2 (the evaluation theorem) states $\int_a^b f(x)\,dx = F(b) - F(a)$ where $F$ is any antiderivative of $f$." difficulty="medium" />
 
-<PracticeProblem
-  question="Which of the following series converges absolutely?"
-  options={[
-    '$\sum_{n=1}^{\infty} \frac{(-1)^n}{n^2}$',
-    '$\sum_{n=1}^{\infty} \frac{(-1)^n}{n}$',
-    '$\sum_{n=1}^{\infty} \frac{(-1)^n}{\sqrt{n}}$',
-    '$\sum_{n=1}^{\infty} (-1)^n \frac{n}{n+1}$',
-  ]}
-  correctAnswer={0}
-  explanation="A series converges absolutely if $\sum |a_n|$ converges. For $\sum |(-1)^n/n^2| = \sum 1/n^2$: this is a convergent $p$-series ($p = 2 > 1$), so the original series converges absolutely. The other three converge conditionally (by the alternating series test) but their absolute-value versions are $\sum 1/n$ (divergent), $\sum 1/\sqrt{n}$ (divergent $p$-series), and $\sum n/(n+1)$ (terms do not approach 0), all divergent."
-  difficulty="hard"
-/>
+<PracticeProblem question="Which of the following series converges absolutely?" options={[ '$\sum_{n=1}^{\infty} \frac{(-1)^n}{n^2}$', '$\sum_{n=1}^{\infty} \frac{(-1)^n}{n}$', '$\sum_{n=1}^{\infty} \frac{(-1)^n}{\sqrt{n}}$', '$\sum_{n=1}^{\infty} (-1)^n \frac{n}{n+1}$', ]} correctAnswer={0} explanation="A series converges absolutely if $\sum |a_n|$ converges. For $\sum |(-1)^n/n^2| = \sum 1/n^2$: this is a convergent $p$-series ($p = 2 > 1$), so the original series converges absolutely. The other three converge conditionally (by the alternating series test) but their absolute-value versions are $\sum 1/n$ (divergent), $\sum 1/\sqrt{n}$ (divergent $p$-series), and $\sum n/(n+1)$ (terms do not approach 0), all divergent." difficulty="hard" />

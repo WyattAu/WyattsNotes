@@ -1267,7 +1267,7 @@ $\lambda_{\mathrm{max} T
 <details>
 <summary>Solution: Worked Example — Temperature of the Sun's Surface</summary>
 
-The Sun's emission peaks at $\lambda_{\mathrm{max} \approx 502}$ nm (green). Using Wien's law:
+The Sun's emission peaks at $\lambda_{\mathrm{max} \approx 502}$ nm (green). Using Wien’s law:
 
 $$T = \frac{b}{\lambda_{\mathrm{max}} = \frac{2.898 \times 10^{-3}}{502 \times 10^{-9}} \approx 5770\ \mathrm{K}}$$
 

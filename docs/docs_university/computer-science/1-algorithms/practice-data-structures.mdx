@@ -18,119 +18,24 @@ analysis. Select an option to check your answer and view the explanation.
 
 ## Hash Tables and Tries
 
-<PracticeProblem
-  question="In a hash table with chaining and load factor $\\alpha = n/m$, what is the expected time complexity of an unsuccessful search?"
-  options={['$O(1 + \\alpha)$', '$O(1)$', '$O(\\alpha^2)$', '$O(\\log \\alpha)$']}
-  correctAnswer={0}
-  explanation="With chaining, each slot holds a linked list. Under simple uniform hashing, the expected chain length at any slot is $\\alpha = n/m$. An unsuccessful search must traverse the entire chain at the target slot, giving $O(\\alpha)$ average. Including the hash computation: $O(1 + \\alpha)$. For open addressing, it is $O(1/(1-\\alpha))$."
-  difficulty="easy"
-/>
+<PracticeProblem question="In a hash table with chaining and load factor $\\alpha = n/m$, what is the expected time complexity of an unsuccessful search?" options={['$O(1 + \\alpha)$', '$O(1)$', '$O(\\alpha^2)$', '$O(\\log \\alpha)$']} correctAnswer={0} explanation="With chaining, each slot holds a linked list. Under simple uniform hashing, the expected chain length at any slot is $\\alpha = n/m$. An unsuccessful search must traverse the entire chain at the target slot, giving $O(\\alpha)$ average. Including the hash computation: $O(1 + \\alpha)$. For open addressing, it is $O(1/(1-\\alpha))$." difficulty="easy" />
 
-<PracticeProblem
-  question="Which probing strategy in open addressing suffers from primary clustering, and which strategy eliminates it?"
-  options={[
-    'Linear probing suffers primary clustering; double hashing eliminates it',
-    'Quadratic probing suffers primary clustering; linear probing eliminates it',
-    'Double hashing suffers primary clustering; quadratic probing eliminates it',
-    'All strategies suffer equally from clustering',
-  ]}
-  correctAnswer={0}
-  explanation="Linear probing ($h(k,i) = (h'(k)+i) \\bmod m$) clusters filled slots together: a occupied run grows, making subsequent probes likely to extend it (primary clustering). Quadratic probing reduces but may cause secondary clustering. Double hashing ($h(k,i) = (h_1(k) + i \\cdot h_2(k)) \\bmod m$) uses a second hash to give a unique probe sequence per key, eliminating clustering."
-  difficulty="medium"
-/>
+<PracticeProblem question="Which probing strategy in open addressing suffers from primary clustering, and which strategy eliminates it?" options={[ 'Linear probing suffers primary clustering; double hashing eliminates it', 'Quadratic probing suffers primary clustering; linear probing eliminates it', 'Double hashing suffers primary clustering; quadratic probing eliminates it', 'All strategies suffer equally from clustering', ]} correctAnswer={0} explanation="Linear probing ($h(k,i) = (h'(k)+i) \\bmod m$) clusters filled slots together: a occupied run grows, making subsequent probes likely to extend it (primary clustering). Quadratic probing reduces but may cause secondary clustering. Double hashing ($h(k,i) = (h_1(k) + i \\cdot h_2(k)) \\bmod m$) uses a second hash to give a unique probe sequence per key, eliminating clustering." difficulty="medium" />
 
-<PracticeProblem
-  question="What is the key advantage of a trie (prefix tree) over a hash table for storing strings?"
-  options={[
-    'Efficient prefix search in $O(m)$ time where $m$ is the prefix length',
-    '$O(1)$ average-case insertion and search regardless of string length',
-    'Lower memory usage for all workloads',
-    'Support for range queries on numeric keys',
-  ]}
-  correctAnswer={0}
-  explanation="A trie stores strings character by character from root to leaf. Prefix search traverses from root following the prefix characters in $O(m)$ time. Hash tables cannot efficiently support prefix queries (\"find all strings starting with 'abc'\"). Tries trade higher space ($O(\\text{alphabet} \\times \\text{depth})$) for this prefix capability."
-  difficulty="easy"
-/>
+<PracticeProblem question="What is the key advantage of a trie (prefix tree) over a hash table for storing strings?" options={[ 'Efficient prefix search in $O(m)$ time where $m$ is the prefix length', '$O(1)$ average-case insertion and search regardless of string length', 'Lower memory usage for all workloads', 'Support for range queries on numeric keys', ]} correctAnswer={0} explanation="A trie stores strings character by character from root to leaf. Prefix search traverses from root following the prefix characters in $O(m)$ time. Hash tables cannot efficiently support prefix queries (\"find all strings starting with 'abc'\"). Tries trade higher space ($O(\\text{alphabet} \\times \\text{depth})$) for this prefix capability." difficulty="easy" />
 
-<PracticeProblem
-  question="In universal hashing, a family $\\mathcal{H}$ of hash functions is universal if for any distinct keys $x$ and $y$:"
-  options={[
-    '$\\Pr_{h \\in \\mathcal{H}}[h(x) = h(y)] \\leq 1/m$',
-    '$\\Pr_{h \\in \\mathcal{H}}[h(x) = h(y)] = 0$',
-    '$\\Pr_{h \\in \\mathcal{H}}[h(x) = h(y)] \\leq 1/m^2$',
-    '$\\Pr_{h \\in \\mathcal{H}}[h(x) = h(y)] \\leq \\log m / m$',
-  ]}
-  correctAnswer={0}
-  explanation="Universal hashing guarantees that the collision probability for any pair of distinct keys is at most $1/m$ (the same as if the hash values were uniformly random). This prevents an adversary from choosing keys that always collide, providing expected $O(1)$ operations regardless of input. The family is chosen randomly at runtime."
-  difficulty="medium"
-/>
+<PracticeProblem question="In universal hashing, a family $\\mathcal{H}$ of hash functions is universal if for any distinct keys $x$ and $y$:" options={[ '$\\Pr_{h \\in \\mathcal{H}}[h(x) = h(y)] \\leq 1/m$', '$\\Pr_{h \\in \\mathcal{H}}[h(x) = h(y)] = 0$', '$\\Pr_{h \\in \\mathcal{H}}[h(x) = h(y)] \\leq 1/m^2$', '$\\Pr_{h \\in \\mathcal{H}}[h(x) = h(y)] \\leq \\log m / m$', ]} correctAnswer={0} explanation="Universal hashing guarantees that the collision probability for any pair of distinct keys is at most $1/m$ (the same as if the hash values were uniformly random). This prevents an adversary from choosing keys that always collide, providing expected $O(1)$ operations regardless of input. The family is chosen randomly at runtime." difficulty="medium" />
 
 ## Trees, Heaps, and Amortized Analysis
 
-<PracticeProblem
-  question="An AVL tree maintains the balance factor $bf(v) = h(\\text{left}) - h(\\text{right})$ for every node. What is the maximum height of an AVL tree with $n$ nodes?"
-  options={[
-    '$h \\leq 1.44 \\log_2(n+2) - 0.328$',
-    '$h \\leq \\log_2 n$',
-    '$h \\leq 2 \\log_2(n+1)$',
-    '$h \\leq n/2$',
-  ]}
-  correctAnswer={0}
-  explanation="An AVL tree guarantees $|bf(v)| \\leq 1$ for every node. The minimum number of nodes $N(h)$ in an AVL tree of height $h$ satisfies $N(h) = N(h-1) + N(h-2) + 1$ (Fibonacci-like), giving $N(h) \\geq \\Phi^h / \\sqrt{5}$ where $\\Phi = (1+\\sqrt{5})/2$. Solving: $h \\leq 1.44 \\log_2(n+2)$. A red-black tree has a looser bound of $h \\leq 2\\log_2(n+1)$."
-  difficulty="medium"
-/>
+<PracticeProblem question="An AVL tree maintains the balance factor $bf(v) = h(\\text{left}) - h(\\text{right})$ for every node. What is the maximum height of an AVL tree with $n$ nodes?" options={[ '$h \\leq 1.44 \\log_2(n+2) - 0.328$', '$h \\leq \\log_2 n$', '$h \\leq 2 \\log_2(n+1)$', '$h \\leq n/2$', ]} correctAnswer={0} explanation="An AVL tree guarantees $|bf(v)| \\leq 1$ for every node. The minimum number of nodes $N(h)$ in an AVL tree of height $h$ satisfies $N(h) = N(h-1) + N(h-2) + 1$ (Fibonacci-like), giving $N(h) \\geq \\Phi^h / \\sqrt{5}$ where $\\Phi = (1+\\sqrt{5})/2$. Solving: $h \\leq 1.44 \\log_2(n+2)$. A red-black tree has a looser bound of $h \\leq 2\\log_2(n+1)$." difficulty="medium" />
 
-<PracticeProblem
-  question="In a binary max-heap, what is the time complexity of BUILD-MAX-HEAP on an array of $n$ elements?"
-  options={['$O(n)$', '$O(n \\log n)$', '$O(\\log n)$', '$O(n^2)$']}
-  correctAnswer={0}
-  explanation="BUILD-MAX-HEAP calls MAX-HEAPIFY starting from $\\lfloor n/2 \\rfloor$ down to 1. While MAX-HEAPIFY is $O(\\log n)$, most nodes are near the bottom and require little work. The total is bounded by $\\sum_{h=0}^{\\lfloor \\log n \\rfloor} \\lceil n/2^{h+1} \\rceil \\cdot O(h) = O(n)$. This is tighter than the naive $O(n \\log n)$ bound."
-  difficulty="medium"
-/>
+<PracticeProblem question="In a binary max-heap, what is the time complexity of BUILD-MAX-HEAP on an array of $n$ elements?" options={['$O(n)$', '$O(n \\log n)$', '$O(\\log n)$', '$O(n^2)$']} correctAnswer={0} explanation="BUILD-MAX-HEAP calls MAX-HEAPIFY starting from $\\lfloor n/2 \\rfloor$ down to 1. While MAX-HEAPIFY is $O(\\log n)$, most nodes are near the bottom and require little work. The total is bounded by $\\sum_{h=0}^{\\lfloor \\log n \\rfloor} \\lceil n/2^{h+1} \\rceil \\cdot O(h) = O(n)$. This is tighter than the naive $O(n \\log n)$ bound." difficulty="medium" />
 
-<PracticeProblem
-  question="A B-tree of order $t$ has what minimum and maximum number of keys per internal node, and what is the height bound?"
-  options={[
-    '$t-1$ to $2t-1$ keys; height $\\leq \\log_t \\frac{n+1}{2}$',
-    '$1$ to $2t$ keys; height $\\leq \\log_2 n$',
-    '$t$ to $2t$ keys; height $\\leq \\log_2(n/t)$',
-    '$\\lfloor t/2 \\rfloor$ to $t$ keys; height $\\leq n/t$',
-  ]}
-  correctAnswer={0}
-  explanation="A B-tree of minimum degree $t$ requires every node (except root) to have at least $t-1$ keys and at most $2t-1$ keys. Internal nodes with $k$ keys have $k+1$ children. All leaves are at the same depth. The height is bounded by $\\log_t((n+1)/2)$ because each level (except leaves) branches by at least $t+1$ ways."
-  difficulty="hard"
-/>
+<PracticeProblem question="A B-tree of order $t$ has what minimum and maximum number of keys per internal node, and what is the height bound?" options={[ '$t-1$ to $2t-1$ keys; height $\\leq \\log_t \\frac{n+1}{2}$', '$1$ to $2t$ keys; height $\\leq \\log_2 n$', '$t$ to $2t$ keys; height $\\leq \\log_2(n/t)$', '$\\lfloor t/2 \\rfloor$ to $t$ keys; height $\\leq n/t$', ]} correctAnswer={0} explanation="A B-tree of minimum degree $t$ requires every node (except root) to have at least $t-1$ keys and at most $2t-1$ keys. Internal nodes with $k$ keys have $k+1$ children. All leaves are at the same depth. The height is bounded by $\\log_t((n+1)/2)$ because each level (except leaves) branches by at least $t+1$ ways." difficulty="hard" />
 
-<PracticeProblem
-  question="Which heap variant provides $O(1)$ amortized DECREASE-KEY and is key to achieving $O(m + n \\log n)$ Dijkstra's algorithm?"
-  options={['Fibonacci heap', 'Binary heap', 'Binomial heap', 'Leftist heap']}
-  correctAnswer={0}
-  explanation="Fibonacci heaps support INSERT in $O(1)$ amortized, FIND-MIN in $O(1)$, EXTRACT-MIN in $O(\\log n)$ amortized, and critically DECREASE-KEY in $O(1)$ amortized. With Dijkstra, DECREASE-KEY is called $O(m)$ times, giving $O(m + n \\log n)$ total (vs $O(m \\log n)$ with binary heaps). Binary heaps have $O(\\log n)$ DECREASE-KEY."
-  difficulty="hard"
-/>
+<PracticeProblem question="Which heap variant provides $O(1)$ amortized DECREASE-KEY and is key to achieving $O(m + n \\log n)$ Dijkstra's algorithm?" options={['Fibonacci heap', 'Binary heap', 'Binomial heap', 'Leftist heap']} correctAnswer={0} explanation="Fibonacci heaps support INSERT in $O(1)$ amortized, FIND-MIN in $O(1)$, EXTRACT-MIN in $O(\\log n)$ amortized, and critically DECREASE-KEY in $O(1)$ amortized. With Dijkstra, DECREASE-KEY is called $O(m)$ times, giving $O(m + n \\log n)$ total (vs $O(m \\log n)$ with binary heaps). Binary heaps have $O(\\log n)$ DECREASE-KEY." difficulty="hard" />
 
-<PracticeProblem
-  question="Using the potential (physicist's) method for amortized analysis of a dynamic array, let $\\Phi = 2n - m$ where $n$ is the number of elements and $m$ is the capacity. What is the amortized cost of a single insert operation (no resize)?"
-  options={[
-    '$O(1)$ (specifically, amortized cost = 3)',
-    '$O(\\log n)$',
-    '$O(n)$',
-    '$O(1)$ (specifically, amortized cost = 1)',
-  ]}
-  correctAnswer={0}
-  explanation="For insert without resize: actual cost $c = 1$, $\\Delta\\Phi = 2(n+1) - m - (2n - m) = 2$. Amortized cost $\\hat{c} = 1 + 2 = 3$. For insert with resize (doubling): actual cost $c = n + 1$, but the potential drops from $m-1 = 2n-1$ to $2(n+1) - 2(n+1) = 0$, so $\\hat{c} = (n+1) + 0 - (2n-1) = 2-n+n+1+1 = 3$. Every insert has amortized cost $O(1)$."
-  difficulty="medium"
-/>
+<PracticeProblem question="Using the potential (physicist's) method for amortized analysis of a dynamic array, let $\\Phi = 2n - m$ where $n$ is the number of elements and $m$ is the capacity. What is the amortized cost of a single insert operation (no resize)?" options={[ '$O(1)$ (specifically, amortized cost = 3)', '$O(\\log n)$', '$O(n)$', '$O(1)$ (specifically, amortized cost = 1)', ]} correctAnswer={0} explanation="For insert without resize: actual cost $c = 1$, $\\Delta\\Phi = 2(n+1) - m - (2n - m) = 2$. Amortized cost $\\hat{c} = 1 + 2 = 3$. For insert with resize (doubling): actual cost $c = n + 1$, but the potential drops from $m-1 = 2n-1$ to $2(n+1) - 2(n+1) = 0$, so $\\hat{c} = (n+1) + 0 - (2n-1) = 2-n+n+1+1 = 3$. Every insert has amortized cost $O(1)$." difficulty="medium" />
 
-<PracticeProblem
-  question="What distinguishes a red-black tree from an AVL tree in terms of balance strictness and practical performance?"
-  options={[
-    'Red-black trees allow height up to $2\\log_2(n+1)$; AVL trees are stricter ($\\leq 1.44\\log_2 n$). Red-black trees do fewer rotations on insert/delete',
-    'AVL trees allow height up to $2\\log_2(n+1)$; red-black trees are stricter',
-    'Both have identical height bounds and rotation costs',
-    'Red-black trees guarantee $O(1)$ height; AVL trees allow $O(n)$',
-  ]}
-  correctAnswer={0}
-  explanation="Red-black trees guarantee $h \\leq 2\\log_2(n+1)$ via 5 properties (red root, no red-red children, equal black-height on all paths). AVL trees are stricter with $|bf| \\leq 1$, giving $h \\leq 1.44\\log_2(n+2)$. AVL trees are slightly more balanced (faster lookups), but red-black trees require at most 3 rotations on insert and at most $O(\\log n)$ on delete, making them faster for write-heavy workloads."
-  difficulty="medium"
-/>
+<PracticeProblem question="What distinguishes a red-black tree from an AVL tree in terms of balance strictness and practical performance?" options={[ 'Red-black trees allow height up to $2\\log_2(n+1)$; AVL trees are stricter ($\\leq 1.44\\log_2 n$). Red-black trees do fewer rotations on insert/delete', 'AVL trees allow height up to $2\\log_2(n+1)$; red-black trees are stricter', 'Both have identical height bounds and rotation costs', 'Red-black trees guarantee $O(1)$ height; AVL trees allow $O(n)$', ]} correctAnswer={0} explanation="Red-black trees guarantee $h \\leq 2\\log_2(n+1)$ via 5 properties (red root, no red-red children, equal black-height on all paths). AVL trees are stricter with $|bf| \\leq 1$, giving $h \\leq 1.44\\log_2(n+2)$. AVL trees are slightly more balanced (faster lookups), but red-black trees require at most 3 rotations on insert and at most $O(\\log n)$ on delete, making them faster for write-heavy workloads." difficulty="medium" />

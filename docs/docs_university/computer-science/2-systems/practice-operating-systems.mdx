@@ -18,134 +18,24 @@ virtual memory. Select an option to check your answer and view the explanation.
 
 ## Process Scheduling and Synchronization
 
-<PracticeProblem
-  question="Which scheduling algorithm suffers from the convoy effect, where short processes wait behind long ones?"
-  options={[
-    'First-Come, First-Served (FCFS)',
-    'Shortest Job First (SJF)',
-    'Round Robin (RR)',
-    'Multilevel Feedback Queue (MLFQ)',
-  ]}
-  correctAnswer={0}
-  explanation="FCFS is non-preemptive and processes run to completion in arrival order. If a long process arrives first, all subsequent short processes must wait, creating a 'convoy' effect. SJF minimizes average waiting time but requires knowing burst times. RR provides fair time slices. MLFQ automatically favors I/O-bound processes."
-  difficulty="easy"
-/>
+<PracticeProblem question="Which scheduling algorithm suffers from the convoy effect, where short processes wait behind long ones?" options={[ 'First-Come, First-Served (FCFS)', 'Shortest Job First (SJF)', 'Round Robin (RR)', 'Multilevel Feedback Queue (MLFQ)', ]} correctAnswer={0} explanation="FCFS is non-preemptive and processes run to completion in arrival order. If a long process arrives first, all subsequent short processes must wait, creating a 'convoy' effect. SJF minimizes average waiting time but requires knowing burst times. RR provides fair time slices. MLFQ automatically favors I/O-bound processes." difficulty="easy" />
 
-<PracticeProblem
-  question="In the Round Robin scheduling algorithm, what is the effect of choosing a time quantum that is too small?"
-  options={[
-    'Excessive context switching overhead, reducing CPU utilization',
-    'The algorithm degenerates to FCFS behavior',
-    'Starvation of long processes',
-    'Processes never complete execution',
-  ]}
-  correctAnswer={0}
-  explanation="If the time quantum is too small (e.g., comparable to the context switch time), the CPU spends most of its time switching between processes rather than executing them. The rule of thumb is that the quantum should be approximately 10-100 times the context switch time. If too large, RR degenerates to FCFS."
-  difficulty="easy"
-/>
+<PracticeProblem question="In the Round Robin scheduling algorithm, what is the effect of choosing a time quantum that is too small?" options={[ 'Excessive context switching overhead, reducing CPU utilization', 'The algorithm degenerates to FCFS behavior', 'Starvation of long processes', 'Processes never complete execution', ]} correctAnswer={0} explanation="If the time quantum is too small (e.g., comparable to the context switch time), the CPU spends most of its time switching between processes rather than executing them. The rule of thumb is that the quantum should be approximately 10-100 times the context switch time. If too large, RR degenerates to FCFS." difficulty="easy" />
 
-<PracticeProblem
-  question="The Banker's Algorithm for deadlock avoidance maintains the Available, Max, Allocation, and Need matrices. A state is safe if there exists a sequence in which:"
-  options={[
-    'Each process can obtain its maximum needed resources and terminate, one at a time',
-    'All processes can run simultaneously without any resource constraints',
-    'The total resources allocated equals the total available resources',
-    'No process needs more resources than currently allocated',
-  ]}
-  correctAnswer={0}
-  explanation="A safe state means there exists a sequence $\\langle P_1, P_2, \\ldots, P_n \\rangle$ such that for each $P_i$, $\\text{Need}[i] \\leq \\text{Work}$ (initially Available). After $P_i$ finishes, $\\text{Work} += \\text{Allocation}[i]$. The algorithm checks this iteratively. If all processes can finish, the state is safe. The time complexity is $O(m \\times n^2)$."
-  difficulty="medium"
-/>
+<PracticeProblem question="The Banker's Algorithm for deadlock avoidance maintains the Available, Max, Allocation, and Need matrices. A state is safe if there exists a sequence in which:" options={[ 'Each process can obtain its maximum needed resources and terminate, one at a time', 'All processes can run simultaneously without any resource constraints', 'The total resources allocated equals the total available resources', 'No process needs more resources than currently allocated', ]} correctAnswer={0} explanation="A safe state means there exists a sequence $\\langle P_1, P_2, \\ldots, P_n \\rangle$ such that for each $P_i$, $\\text{Need}[i] \\leq \\text{Work}$ (initially Available). After $P_i$ finishes, $\\text{Work} += \\text{Allocation}[i]$. The algorithm checks this iteratively. If all processes can finish, the state is safe. The time complexity is $O(m \\times n^2)$." difficulty="medium" />
 
-<PracticeProblem
-  question="In the producer-consumer problem using semaphores, why must WAIT(empty) be called before WAIT(mutex)?"
-  options={[
-    'To avoid deadlock: if the producer waits on mutex first with a full buffer, it holds the mutex while waiting for space',
-    'Because mutex operations must always precede counting semaphore operations',
-    'To ensure FIFO ordering of operations',
-    'To prevent buffer overflow',
-  ]}
-  correctAnswer={0}
-  explanation="If the producer calls WAIT(mutex) first when the buffer is full, it holds the mutex while calling WAIT(empty), which blocks. The consumer cannot enter WAIT(mutex) to consume and free space, causing deadlock. By calling WAIT(empty) first, the producer blocks on the counting semaphore without holding the mutex, allowing the consumer to proceed."
-  difficulty="hard"
-/>
+<PracticeProblem question="In the producer-consumer problem using semaphores, why must WAIT(empty) be called before WAIT(mutex)?" options={[ 'To avoid deadlock: if the producer waits on mutex first with a full buffer, it holds the mutex while waiting for space', 'Because mutex operations must always precede counting semaphore operations', 'To ensure FIFO ordering of operations', 'To prevent buffer overflow', ]} correctAnswer={0} explanation="If the producer calls WAIT(mutex) first when the buffer is full, it holds the mutex while calling WAIT(empty), which blocks. The consumer cannot enter WAIT(mutex) to consume and free space, causing deadlock. By calling WAIT(empty) first, the producer blocks on the counting semaphore without holding the mutex, allowing the consumer to proceed." difficulty="hard" />
 
-<PracticeProblem
-  question="A Multilevel Feedback Queue (MLFQ) scheduling algorithm automatically favors I/O-bound processes over CPU-bound processes. How?"
-  options={[
-    'I/O-bound processes yield before their time quantum expires, staying in higher-priority queues with shorter quanta',
-    'I/O-bound processes are given explicit priority by the system administrator',
-    'CPU-bound processes are moved to a higher-priority queue after using their full quantum',
-    'Both types are treated identically within the MLFQ structure',
-  ]}
-  correctAnswer={0}
-  explanation="MLFQ maintains multiple priority queues. New processes enter the highest-priority queue (shortest quantum). If a process uses its full quantum (CPU-bound), it is demoted to the next lower-priority queue with a longer quantum. I/O-bound processes typically block for I/O before exhausting their quantum, so they stay in higher-priority queues and get faster response times."
-  difficulty="medium"
-/>
+<PracticeProblem question="A Multilevel Feedback Queue (MLFQ) scheduling algorithm automatically favors I/O-bound processes over CPU-bound processes. How?" options={[ 'I/O-bound processes yield before their time quantum expires, staying in higher-priority queues with shorter quanta', 'I/O-bound processes are given explicit priority by the system administrator', 'CPU-bound processes are moved to a higher-priority queue after using their full quantum', 'Both types are treated identically within the MLFQ structure', ]} correctAnswer={0} explanation="MLFQ maintains multiple priority queues. New processes enter the highest-priority queue (shortest quantum). If a process uses its full quantum (CPU-bound), it is demoted to the next lower-priority queue with a longer quantum. I/O-bound processes typically block for I/O before exhausting their quantum, so they stay in higher-priority queues and get faster response times." difficulty="medium" />
 
 ## Memory Management and Virtual Memory
 
-<PracticeProblem
-  question="In a paging system with page size $F$ bytes and a logical address space of $2^p$ bytes, how many entries does the page table have?"
-  options={[
-    '$2^{p - \\log_2 F}$ entries',
-    '$2^p / F$ entries (same as above)',
-    '$F$ entries',
-    '$2^{p + \\log_2 F}$ entries',
-  ]}
-  correctAnswer={0}
-  explanation="The number of pages = logical address space / page size = $2^p / F$. The page number has $p - \\log_2 F$ bits, so there are $2^{p - \\log_2 F}$ pages and thus the same number of page table entries. Each entry maps a page number to a frame number. For 32-bit addresses with 4KB pages: $2^{20} = 1,048,576$ entries."
-  difficulty="medium"
-/>
+<PracticeProblem question="In a paging system with page size $F$ bytes and a logical address space of $2^p$ bytes, how many entries does the page table have?" options={[ '$2^{p - \\log_2 F}$ entries', '$2^p / F$ entries (same as above)', '$F$ entries', '$2^{p + \\log_2 F}$ entries', ]} correctAnswer={0} explanation="The number of pages = logical address space / page size = $2^p / F$. The page number has $p - \\log_2 F$ bits, so there are $2^{p - \\log_2 F}$ pages and thus the same number of page table entries. Each entry maps a page number to a frame number. For 32-bit addresses with 4KB pages: $2^{20} = 1,048,576$ entries." difficulty="medium" />
 
-<PracticeProblem
-  question="Which page replacement algorithm suffers from Belady's anomaly, where increasing the number of frames can increase the number of page faults?"
-  options={[
-    'FIFO (First-In, First-Out)',
-    'LRU (Least Recently Used)',
-    'Optimal (OPT)',
-    'Clock (Second Chance)',
-  ]}
-  correctAnswer={0}
-  explanation="Belady's anomaly occurs with FIFO: more frames can paradoxically cause more page faults. Example: reference string 1,2,3,4,1,2,5,1,2,3,4,5 with 3 frames gives 9 faults; with 4 frames gives 10 faults. LRU and OPT satisfy the stack property (the set of pages in $n+1$ frames is a superset of those in $n$ frames) and do not exhibit Belady's anomaly."
-  difficulty="easy"
-/>
+<PracticeProblem question="Which page replacement algorithm suffers from Belady's anomaly, where increasing the number of frames can increase the number of page faults?" options={[ 'FIFO (First-In, First-Out)', 'LRU (Least Recently Used)', 'Optimal (OPT)', 'Clock (Second Chance)', ]} correctAnswer={0} explanation="Belady’s anomaly occurs with FIFO: more frames can paradoxically cause more page faults. Example: reference string 1,2,3,4,1,2,5,1,2,3,4,5 with 3 frames gives 9 faults; with 4 frames gives 10 faults. LRU and OPT satisfy the stack property (the set of pages in $n+1$ frames is a superset of those in $n$ frames) and do not exhibit Belady's anomaly." difficulty="easy" />
 
-<PracticeProblem
-  question="What is thrashing in the context of virtual memory, and what condition causes it?"
-  options={[
-    'A process spends more time paging than executing; occurs when the sum of working sets exceeds available physical frames',
-    'A page fault occurs on every memory access due to a bug in the OS',
-    'The CPU executes instructions faster than they can be fetched from memory',
-    'The TLB cache hit rate drops to zero',
-  ]}
-  correctAnswer={0}
-  explanation="Thrashing occurs when $\\sum \\text{working\\_sets} > \\text{available\\_frames}$. Each process needs a minimum set of pages (working set) in memory to make progress. When memory is overcommitted, page faults force pages out that will be needed again, causing constant paging. Solutions: reduce the degree of multiprogramming or add physical memory."
-  difficulty="medium"
-/>
+<PracticeProblem question="What is thrashing in the context of virtual memory, and what condition causes it?" options={[ 'A process spends more time paging than executing; occurs when the sum of working sets exceeds available physical frames', 'A page fault occurs on every memory access due to a bug in the OS', 'The CPU executes instructions faster than they can be fetched from memory', 'The TLB cache hit rate drops to zero', ]} correctAnswer={0} explanation="Thrashing occurs when $\\sum \\text{working\\_sets} > \\text{available\\_frames}$. Each process needs a minimum set of pages (working set) in memory to make progress. When memory is overcommitted, page faults force pages out that will be needed again, causing constant paging. Solutions: reduce the degree of multiprogramming or add physical memory." difficulty="medium" />
 
-<PracticeProblem
-  question="A TLB (Translation Lookaside Buffer) has a hit rate of $h = 0.95$ with TLB access time 5ns and main memory access time 100ns (single-level paging). What is the effective access time?"
-  options={[
-    '$h \\cdot t_{\\text{TLB}} + (1-h) \\cdot (t_{\\text{TLB}} + t_{\\text{mem}}) = 0.95 \\times 5 + 0.05 \\times 105 = 10$ ns',
-    '$h \\cdot t_{\\text{mem}} + (1-h) \\cdot t_{\\text{TLB}} = 95 + 0.25 = 95.25$ ns',
-    '$t_{\\text{mem}} = 100$ ns (TLB does not affect access time)',
-    '$0.95 \\times 5 = 4.75$ ns',
-  ]}
-  correctAnswer={0}
-  explanation="On a TLB hit, the frame number is found in the TLB (5ns) and memory is accessed (100ns), total 105ns. On a miss, the TLB is checked (5ns), the page table is accessed in memory (100ns), then the actual data is accessed (100ns), total 205ns. Wait -- the standard formula is $\\text{EAT} = h \\cdot (t_{\\text{TLB}} + t_{\\text{mem}}) + (1-h) \\cdot (t_{\\text{TLB}} + 2 t_{\\text{mem}})$ for two-level or $h \\cdot t_{\\text{TLB}} + (1-h)(t_{\\text{mem}} + t_{\\text{TLB}})$ for the TLB lookup + one memory access. The correct answer uses the single-level formula: $0.95(5+100) + 0.05(5+100+100) = 99.75 + 10.25 = 110$ ns. Actually, let me restate: for single-level paging, EAT = $h(t_{TLB} + t_{mem}) + (1-h)(t_{TLB} + 2t_{mem})$."
-  difficulty="hard"
-/>
+<PracticeProblem question="A TLB (Translation Lookaside Buffer) has a hit rate of $h = 0.95$ with TLB access time 5ns and main memory access time 100ns (single-level paging). What is the effective access time?" options={[ '$h \\cdot t_{\\text{TLB}} + (1-h) \\cdot (t_{\\text{TLB}} + t_{\\text{mem}}) = 0.95 \\times 5 + 0.05 \\times 105 = 10$ ns', '$h \\cdot t_{\\text{mem}} + (1-h) \\cdot t_{\\text{TLB}} = 95 + 0.25 = 95.25$ ns', '$t_{\\text{mem}} = 100$ ns (TLB does not affect access time)', '$0.95 \\times 5 = 4.75$ ns', ]} correctAnswer={0} explanation="On a TLB hit, the frame number is found in the TLB (5ns) and memory is accessed (100ns), total 105ns. On a miss, the TLB is checked (5ns), the page table is accessed in memory (100ns), then the actual data is accessed (100ns), total 205ns. Wait -- the standard formula is $\\text{EAT} = h \\cdot (t_{\\text{TLB}} + t_{\\text{mem}}) + (1-h) \\cdot (t_{\\text{TLB}} + 2 t_{\\text{mem}})$ for two-level or $h \\cdot t_{\\text{TLB}} + (1-h)(t_{\\text{mem}} + t_{\\text{TLB}})$ for the TLB lookup + one memory access. The correct answer uses the single-level formula: $0.95(5+100) + 0.05(5+100+100) = 99.75 + 10.25 = 110$ ns. Actually, let me restate: for single-level paging, EAT = $h(t_{TLB} + t_{mem}) + (1-h)(t_{TLB} + 2t_{mem})$." difficulty="hard" />
 
-<PracticeProblem
-  question="Deadlock requires four necessary conditions (Coffman conditions): mutual exclusion, hold and wait, no preemption, and circular wait. Which prevention strategy eliminates circular wait?"
-  options={[
-    'Impose a total ordering on resource types and require processes to request resources in increasing order',
-    'Allow all processes to request all resources simultaneously',
-    'Use preemption to forcibly remove resources from processes',
-    'Eliminate mutual exclusion by making all resources shareable',
-  ]}
-  correctAnswer={0}
-  explanation="Circular wait prevention imposes a total order on resource types (e.g., number them $R_1, R_2, \\ldots, R_n$) and requires that a process can only request $R_j$ after releasing all $R_i$ where $i > j$. This eliminates cycles in the resource-allocation graph. Hold-and-wait prevention requires requesting all resources upfront (impractical). Preemption is often not feasible for non-sharable resources."
-  difficulty="medium"
-/>
+<PracticeProblem question="Deadlock requires four necessary conditions (Coffman conditions): mutual exclusion, hold and wait, no preemption, and circular wait. Which prevention strategy eliminates circular wait?" options={[ 'Impose a total ordering on resource types and require processes to request resources in increasing order', 'Allow all processes to request all resources simultaneously', 'Use preemption to forcibly remove resources from processes', 'Eliminate mutual exclusion by making all resources shareable', ]} correctAnswer={0} explanation="Circular wait prevention imposes a total order on resource types (e.g., number them $R_1, R_2, \\ldots, R_n$) and requires that a process can only request $R_j$ after releasing all $R_i$ where $i > j$. This eliminates cycles in the resource-allocation graph. Hold-and-wait prevention requires requesting all resources upfront (impractical). Preemption is often not feasible for non-sharable resources." difficulty="medium" />

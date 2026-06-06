@@ -144,7 +144,7 @@ export const flashcards4 = [
   {
     id: 'uni-cs-theory-of-computation-017',
     front: "State Rice's theorem.",
-    back: "Rice's theorem states that for any non-trivial semantic property P of recursively enumerable languages (i.e., P holds for some but not all RE languages), it is undecidable whether a given Turing machine's language has property P.",
+    back: "Rice's theorem states that for any non-trivial semantic property P of recursively enumerable languages (i.e., P holds for some but not all RE languages), it is undecidable whether a given Turing machine’s language has property P.",
     tags: ['decidability', 'rices-theorem'],
     difficulty: 'hard',
   },
@@ -165,15 +165,10 @@ export const flashcards4 = [
   {
     id: 'uni-cs-theory-of-computation-020',
     front: 'Prove that the language {a^n b^n c^n | n >= 0} is not context-free.',
-    back: "Assume it is context-free. By the pumping lemma for CFLs, let p be the pumping length. Consider s = a^p b^p c^p. The repeated substring must span at most two of the three symbol types. Pumping will disrupt the balance of a's, b's, and c's, producing a string not in the language -- a contradiction.",
+    back: "Assume it is context-free. By the pumping lemma for CFLs, let p be the pumping length. Consider s = a^p b^p c^p. The repeated substring must span at most two of the three symbol types. Pumping will disrupt the balance of a's, b’s, and c's, producing a string not in the language -- a contradiction.",
     tags: ['cfg', 'pumping-lemma-cfl', 'undecidable'],
     difficulty: 'hard',
   },
 ];
 
-<FlashcardDeck
-  deckId="uni-cs-theory-of-computation"
-  title="University Computing -- Theory of Computation"
-  description="Flashcards covering automata, regular languages, context-free grammars, Turing machines, decidability, and complexity classes."
-  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
-/>
+<FlashcardDeck deckId="uni-cs-theory-of-computation" title="University Computing -- Theory of Computation" description="Flashcards covering automata, regular languages, context-free grammars, Turing machines, decidability, and complexity classes." cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]} />

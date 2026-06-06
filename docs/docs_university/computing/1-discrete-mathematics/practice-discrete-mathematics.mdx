@@ -20,111 +20,26 @@ the explanation.
 
 ### Propositional Logic and Set Theory
 
-<PracticeProblem
-  question="Which of the following is logically equivalent to the negation of `p AND (q OR r)`?"
-  options={[
-    '(NOT p) OR ((NOT q) AND (NOT r))',
-    '(NOT p) AND (NOT q) AND (NOT r)',
-    '(NOT p) OR (NOT q) OR (NOT r)',
-    '(NOT p) AND ((NOT q) OR (NOT r))',
-  ]}
-  correctAnswer={0}
-  explanation="Apply De Morgan's laws twice. Start with NOT(p AND (q OR r)). The first law gives: NOT p OR NOT(q OR r). Then apply De Morgan's to NOT(q OR r): (NOT q) AND (NOT r). Final result: (NOT p) OR ((NOT q) AND (NOT r)). De Morgan's laws state NOT(A AND B) = (NOT A) OR (NOT B) and NOT(A OR B) = (NOT A) AND (NOT B)."
-  difficulty="easy"
-/>
+<PracticeProblem question="Which of the following is logically equivalent to the negation of `p AND (q OR r)`?" options={[ '(NOT p) OR ((NOT q) AND (NOT r))', '(NOT p) AND (NOT q) AND (NOT r)', '(NOT p) OR (NOT q) OR (NOT r)', '(NOT p) AND ((NOT q) OR (NOT r))', ]} correctAnswer={0} explanation="Apply De Morgan’s laws twice. Start with NOT(p AND (q OR r)). The first law gives: NOT p OR NOT(q OR r). Then apply De Morgan's to NOT(q OR r): (NOT q) AND (NOT r). Final result: (NOT p) OR ((NOT q) AND (NOT r)). De Morgan’s laws state NOT(A AND B) = (NOT A) OR (NOT B) and NOT(A OR B) = (NOT A) AND (NOT B)." difficulty="easy" />
 
-<PracticeProblem
-  question="If the implication `p => q` is false, what must be true?"
-  options={[
-    'p is true and q is false',
-    'p is false and q is true',
-    'Both p and q are false',
-    'Both p and q are true',
-  ]}
-  correctAnswer={0}
-  explanation="The implication `p => q` is only false in one case out of four: when p is true and q is false. Truth table: T=>T=T, T=>F=F, F=>T=T, F=>F=T. Only the (T, F) row yields false. This is the definition of material implication in propositional logic."
-  difficulty="easy"
-/>
+<PracticeProblem question="If the implication `p => q` is false, what must be true?" options={[ 'p is true and q is false', 'p is false and q is true', 'Both p and q are false', 'Both p and q are true', ]} correctAnswer={0} explanation="The implication `p => q` is only false in one case out of four: when p is true and q is false. Truth table: T=>T=T, T=>F=F, F=>T=T, F=>F=T. Only the (T, F) row yields false. This is the definition of material implication in propositional logic." difficulty="easy" />
 
-<PracticeProblem
-  question="If A = {1, 2, 3} and B = {3, 4, 5}, how many elements are in the power set of A union B?"
-  options={['64', '128', '32', '8']}
-  correctAnswer={0}
-  explanation="A union B = {1, 2, 3, 4, 5}, which has 6 elements. The power set of a set with n elements contains 2^n subsets. So the power set of A union B has 2^6 = 64 elements, including the empty set and the full set itself."
-  difficulty="easy"
-/>
+<PracticeProblem question="If A = {1, 2, 3} and B = {3, 4, 5}, how many elements are in the power set of A union B?" options={['64', '128', '32', '8']} correctAnswer={0} explanation="A union B = {1, 2, 3, 4, 5}, which has 6 elements. The power set of a set with n elements contains 2^n subsets. So the power set of A union B has 2^6 = 64 elements, including the empty set and the full set itself." difficulty="easy" />
 
-<PracticeProblem
-  question="Using inclusion-exclusion, how many integers from 1 to 100 are divisible by 2, 3, or 5?"
-  options={['74', '70', '67', '78']}
-  correctAnswer={0}
-  explanation="Divisible by 2: floor(100/2) = 50. By 3: floor(100/3) = 33. By 5: floor(100/5) = 20. Pairwise: by 6: floor(100/6) = 16. By 10: floor(100/10) = 10. By 15: floor(100/15) = 6. All three (by 30): floor(100/30) = 3. Inclusion-exclusion: |A|+|B|+|C| - |AnB|-|AnC|-|BnC| + |AnBnC| = 50+33+20-16-10-6+3 = 74."
-  difficulty="medium"
-/>
+<PracticeProblem question="Using inclusion-exclusion, how many integers from 1 to 100 are divisible by 2, 3, or 5?" options={['74', '70', '67', '78']} correctAnswer={0} explanation="Divisible by 2: floor(100/2) = 50. By 3: floor(100/3) = 33. By 5: floor(100/5) = 20. Pairwise: by 6: floor(100/6) = 16. By 10: floor(100/10) = 10. By 15: floor(100/15) = 6. All three (by 30): floor(100/30) = 3. Inclusion-exclusion: |A|+|B|+|C| - |AnB|-|AnC|-|BnC| + |AnBnC| = 50+33+20-16-10-6+3 = 74." difficulty="medium" />
 
 ### Relations, Combinatorics, and Proof Techniques
 
-<PracticeProblem
-  question="A relation R on the set {1, 2, 3, 4, 5, 6} is defined by x R y if x is congruent to y (mod 3). How many equivalence classes does R partition the set into?"
-  options={['3', '2', '4', '6']}
-  correctAnswer={0}
-  explanation="Equivalence classes are determined by remainder mod 3. Class [0]: {3, 6}. Class [1]: {1, 4}. Class [2]: {2, 5}. This gives exactly 3 equivalence classes. Each element belongs to exactly one class, and the classes are disjoint and their union is the full set."
-  difficulty="medium"
-/>
+<PracticeProblem question="A relation R on the set {1, 2, 3, 4, 5, 6} is defined by x R y if x is congruent to y (mod 3). How many equivalence classes does R partition the set into?" options={['3', '2', '4', '6']} correctAnswer={0} explanation="Equivalence classes are determined by remainder mod 3. Class [0]: {3, 6}. Class [1]: {1, 4}. Class [2]: {2, 5}. This gives exactly 3 equivalence classes. Each element belongs to exactly one class, and the classes are disjoint and their union is the full set." difficulty="medium" />
 
-<PracticeProblem
-  question="What is the coefficient of x^3 in the expansion of (2x + 1)^5?"
-  options={['80', '40', '10', '160']}
-  correctAnswer={0}
-  explanation="By the binomial theorem, (2x+1)^5 = sum from k=0 to 5 of C(5,k) * (2x)^k * 1^(5-k). The x^3 term occurs when k=3: C(5,3) * (2x)^3 * 1^2. C(5,3) = 5!/(3!2!) = 10. (2x)^3 = 8x^3. Coefficient = 10 * 8 = 80."
-  difficulty="medium"
-/>
+<PracticeProblem question="What is the coefficient of x^3 in the expansion of (2x + 1)^5?" options={['80', '40', '10', '160']} correctAnswer={0} explanation="By the binomial theorem, (2x+1)^5 = sum from k=0 to 5 of C(5,k) * (2x)^k * 1^(5-k). The x^3 term occurs when k=3: C(5,3) * (2x)^3 * 1^2. C(5,3) = 5!/(3!2!) = 10. (2x)^3 = 8x^3. Coefficient = 10 * 8 = 80." difficulty="medium" />
 
-<PracticeProblem
-  question="From 10 people, how many committees of 5 can be formed if two specific people refuse to serve together?"
-  options={['196', '252', '210', '56']}
-  correctAnswer={0}
-  explanation="Total committees without restriction: C(10,5) = 252. Subtract committees where both specific people (call them A and B) are included. If A and B are both on the committee, choose the remaining 3 from the other 8 people: C(8,3) = 56. Valid committees: 252 - 56 = 196."
-  difficulty="hard"
-/>
+<PracticeProblem question="From 10 people, how many committees of 5 can be formed if two specific people refuse to serve together?" options={['196', '252', '210', '56']} correctAnswer={0} explanation="Total committees without restriction: C(10,5) = 252. Subtract committees where both specific people (call them A and B) are included. If A and B are both on the committee, choose the remaining 3 from the other 8 people: C(8,3) = 56. Valid committees: 252 - 56 = 196." difficulty="hard" />
 
-<PracticeProblem
-  question="In proof by induction for 1 + 2 + ... + n = n(n+1)/2, what is the inductive hypothesis?"
-  options={[
-    'Assume 1 + 2 + ... + k = k(k+1)/2 for some k >= 1',
-    'Assume 1 + 2 + ... + n = n(n+1)/2 for all n',
-    'Assume 1 + 2 + ... + (k+1) = (k+1)(k+2)/2',
-    'Assume n(n+1)/2 is always an integer',
-  ]}
-  correctAnswer={0}
-  explanation="The inductive hypothesis assumes the statement holds for an arbitrary k >= 1: 1+2+...+k = k(k+1)/2. In the inductive step, add (k+1) to both sides: k(k+1)/2 + (k+1) = (k(k+1) + 2(k+1))/2 = (k+1)(k+2)/2. This proves the formula for k+1. The base case (n=1): 1 = 1(2)/2 = 1, which holds."
-  difficulty="medium"
-/>
+<PracticeProblem question="In proof by induction for 1 + 2 + ... + n = n(n+1)/2, what is the inductive hypothesis?" options={[ 'Assume 1 + 2 + ... + k = k(k+1)/2 for some k >= 1', 'Assume 1 + 2 + ... + n = n(n+1)/2 for all n', 'Assume 1 + 2 + ... + (k+1) = (k+1)(k+2)/2', 'Assume n(n+1)/2 is always an integer', ]} correctAnswer={0} explanation="The inductive hypothesis assumes the statement holds for an arbitrary k >= 1: 1+2+...+k = k(k+1)/2. In the inductive step, add (k+1) to both sides: k(k+1)/2 + (k+1) = (k(k+1) + 2(k+1))/2 = (k+1)(k+2)/2. This proves the formula for k+1. The base case (n=1): 1 = 1(2)/2 = 1, which holds." difficulty="medium" />
 
 ### Graph Theory
 
-<PracticeProblem
-  question="Which condition is necessary for a connected graph to have an Euler circuit?"
-  options={[
-    'Every vertex has even degree',
-    'The graph has exactly two vertices of odd degree',
-    'The graph is a tree',
-    'The graph has no cycles',
-  ]}
-  correctAnswer={0}
-  explanation="Euler's theorem: a connected graph has an Euler circuit (closed walk using every edge exactly once) if and only if every vertex has even degree. If exactly two vertices have odd degree, the graph has an Euler trail but not a circuit. Trees have no cycles so they cannot have Euler circuits, since a circuit requires returning to the start via edges."
-  difficulty="medium"
-/>
+<PracticeProblem question="Which condition is necessary for a connected graph to have an Euler circuit?" options={[ 'Every vertex has even degree', 'The graph has exactly two vertices of odd degree', 'The graph is a tree', 'The graph has no cycles', ]} correctAnswer={0} explanation="Euler’s theorem: a connected graph has an Euler circuit (closed walk using every edge exactly once) if and only if every vertex has even degree. If exactly two vertices have odd degree, the graph has an Euler trail but not a circuit. Trees have no cycles so they cannot have Euler circuits, since a circuit requires returning to the start via edges." difficulty="medium" />
 
-<PracticeProblem
-  question="A connected planar graph has 6 vertices, each of degree 4. How many edges does it have, and does it have an Euler circuit?"
-  options={[
-    '12 edges, yes (all degrees are even)',
-    '12 edges, no (degrees are odd)',
-    '24 edges, yes',
-    '6 edges, no',
-  ]}
-  correctAnswer={0}
-  explanation="By the handshaking lemma: sum of all degrees = 2 * |E|. Sum = 6 * 4 = 24, so |E| = 24/2 = 12 edges. Since every vertex has degree 4 (even), and the graph is connected, it satisfies Euler's condition. The graph has an Euler circuit because all vertices have even degree and the graph is connected."
-  difficulty="hard"
-/>
+<PracticeProblem question="A connected planar graph has 6 vertices, each of degree 4. How many edges does it have, and does it have an Euler circuit?" options={[ '12 edges, yes (all degrees are even)', '12 edges, no (degrees are odd)', '24 edges, yes', '6 edges, no', ]} correctAnswer={0} explanation="By the handshaking lemma: sum of all degrees = 2 * |E|. Sum = 6 * 4 = 24, so |E| = 24/2 = 12 edges. Since every vertex has degree 4 (even), and the graph is connected, it satisfies Euler’s condition. The graph has an Euler circuit because all vertices have even degree and the graph is connected." difficulty="hard" />

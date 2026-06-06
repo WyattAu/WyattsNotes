@@ -686,8 +686,7 @@ $n$ prime) is at most $1/4$ per random witness.
    $x = 1$Declare "composite."
 5. If we reach $r = s$ without $x = n - 1$Declare "composite."
 
-**Theorem 6.1.** If $n$ is an odd composite number, the Miller-Rabin test declares $n$ "probably
-prime" for at most $(n-1)/4$ choices of $a \in \{2, \ldots, n-2\}$.
+**Theorem 6.1.** If $n$ is an odd composite number, the Miller-Rabin test declares $n$ "probably prime" for at most $(n-1)/4$ choices of $a \in \{2, \ldots, n-2\}$.
 
 **Running time:** $O(k \log^3 n)$ for $k$ iterations, using fast modular exponentiation.
 

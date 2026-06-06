@@ -19,124 +19,24 @@ reductions, Cook's theorem, and approximation algorithms. Select an option to ch
 
 ## Asymptotic Notation and Complexity Classes
 
-<PracticeProblem
-  question="Which of the following correctly defines $f(n) = \\Theta(g(n))$?"
-  options={[
-    'There exist constants $c_1, c_2 > 0$ and $n_0$ such that $c_1 g(n) \\leq f(n) \\leq c_2 g(n)$ for all $n \\geq n_0$',
-    '$f(n) \\leq c \\cdot g(n)$ for some $c > 0$ for sufficiently large $n$',
-    '$\\lim_{n \\to \\infty} f(n)/g(n) = 0$',
-    '$f(n) \\geq c \\cdot g(n)$ for some $c > 0$ for sufficiently large $n$',
-  ]}
-  correctAnswer={0}
-  explanation="Big-Theta ($\\Theta$) means both Big-O and Big-Omega: $f(n)$ is bounded above and below by $g(n)$ with constants $c_1, c_2$. Big-O ($O$) is only the upper bound (option 2). Little-o ($o$) is the limit going to 0 (option 3). Big-Omega ($\\Omega$) is only the lower bound (option 4)."
-  difficulty="easy"
-/>
+<PracticeProblem question="Which of the following correctly defines $f(n) = \\Theta(g(n))$?" options={[ 'There exist constants $c_1, c_2 > 0$ and $n_0$ such that $c_1 g(n) \\leq f(n) \\leq c_2 g(n)$ for all $n \\geq n_0$', '$f(n) \\leq c \\cdot g(n)$ for some $c > 0$ for sufficiently large $n$', '$\\lim_{n \\to \\infty} f(n)/g(n) = 0$', '$f(n) \\geq c \\cdot g(n)$ for some $c > 0$ for sufficiently large $n$', ]} correctAnswer={0} explanation="Big-Theta ($\\Theta$) means both Big-O and Big-Omega: $f(n)$ is bounded above and below by $g(n)$ with constants $c_1, c_2$. Big-O ($O$) is only the upper bound (option 2). Little-o ($o$) is the limit going to 0 (option 3). Big-Omega ($\\Omega$) is only the lower bound (option 4)." difficulty="easy" />
 
-<PracticeProblem
-  question="What is the relationship between the complexity classes P, NP, NP-complete, and NP-hard?"
-  options={[
-    '$P \\subseteq NP$, and $NP\\text{-complete} = NP \\cap NP\\text{-hard}$',
-    '$P = NP$, and NP-complete is a subset of P',
-    '$NP \\subseteq P$, and NP-hard is a subset of NP',
-    '$P$, NP, and NP-complete are all disjoint',
-  ]}
-  correctAnswer={0}
-  explanation="P is the class of problems solvable in polynomial time by a deterministic TM. NP is the class verifiable in polynomial time by a nondeterministic TM. $P \\subseteq NP$ is known. NP-complete = problems that are both in NP and NP-hard (every problem in NP reduces to them). It is unknown whether $P = NP$."
-  difficulty="easy"
-/>
+<PracticeProblem question="What is the relationship between the complexity classes P, NP, NP-complete, and NP-hard?" options={[ '$P \\subseteq NP$, and $NP\\text{-complete} = NP \\cap NP\\text{-hard}$', '$P = NP$, and NP-complete is a subset of P', '$NP \\subseteq P$, and NP-hard is a subset of NP', '$P$, NP, and NP-complete are all disjoint', ]} correctAnswer={0} explanation="P is the class of problems solvable in polynomial time by a deterministic TM. NP is the class verifiable in polynomial time by a nondeterministic TM. $P \\subseteq NP$ is known. NP-complete = problems that are both in NP and NP-hard (every problem in NP reduces to them). It is unknown whether $P = NP$." difficulty="easy" />
 
-<PracticeProblem
-  question="Which of the following is a correct statement about NP-hard problems?"
-  options={[
-    'Every problem in NP can be reduced to an NP-hard problem in polynomial time',
-    'All NP-hard problems are in NP',
-    'All NP-hard problems can be solved in polynomial time',
-    'NP-hard problems are exactly the same as NP-complete problems',
-  ]}
-  correctAnswer={0}
-  explanation="NP-hard means every problem in NP reduces to it ($\\forall L' \\in NP, L' \\leq_p L$). Not all NP-hard problems are in NP (e.g., the halting problem is NP-hard but not in NP). NP-complete requires being both NP-hard AND in NP. NP-hard problems may not be solvable in polynomial time."
-  difficulty="medium"
-/>
+<PracticeProblem question="Which of the following is a correct statement about NP-hard problems?" options={[ 'Every problem in NP can be reduced to an NP-hard problem in polynomial time', 'All NP-hard problems are in NP', 'All NP-hard problems can be solved in polynomial time', 'NP-hard problems are exactly the same as NP-complete problems', ]} correctAnswer={0} explanation="NP-hard means every problem in NP reduces to it ($\\forall L' \\in NP, L' \\leq_p L$). Not all NP-hard problems are in NP (e.g., the halting problem is NP-hard but not in NP). NP-complete requires being both NP-hard AND in NP. NP-hard problems may not be solvable in polynomial time." difficulty="medium" />
 
-<PracticeProblem
-  question="To prove that a language $L$ is NP-complete, which two steps must you demonstrate?"
-  options={[
-    'Show $L \\in NP$ (polynomial-time verification) and show $L$ is NP-hard via reduction from a known NP-complete problem',
-    'Show $L$ can be solved in polynomial time and show $L \\in co\\text{-}NP$',
-    'Show $L$ is NP-hard and show $L$ is decidable in exponential time',
-    'Show $L$ reduces to SAT and show SAT reduces to $L$',
-  ]}
-  correctAnswer={0}
-  explanation="NP-completeness requires (1) membership in NP: a yes-instance can be verified in polynomial time given a certificate, and (2) NP-hardness: reduce a known NP-complete problem to $L$ (e.g., from SAT or 3-SAT). The reduction direction is critical: hard $\\to$ unknown, not the reverse."
-  difficulty="medium"
-/>
+<PracticeProblem question="To prove that a language $L$ is NP-complete, which two steps must you demonstrate?" options={[ 'Show $L \\in NP$ (polynomial-time verification) and show $L$ is NP-hard via reduction from a known NP-complete problem', 'Show $L$ can be solved in polynomial time and show $L \\in co\\text{-}NP$', 'Show $L$ is NP-hard and show $L$ is decidable in exponential time', 'Show $L$ reduces to SAT and show SAT reduces to $L$', ]} correctAnswer={0} explanation="NP-completeness requires (1) membership in NP: a yes-instance can be verified in polynomial time given a certificate, and (2) NP-hardness: reduce a known NP-complete problem to $L$ (e.g., from SAT or 3-SAT). The reduction direction is critical: hard $\\to$ unknown, not the reverse." difficulty="medium" />
 
-<PracticeProblem
-  question="The Vertex Cover problem and the Clique problem on complementary graphs are related. If $G$ has a vertex cover of size $k$, what does $\\overline{G}$ have?"
-  options={[
-    'A clique of size $|V| - k$',
-    'A vertex cover of size $|V| - k$',
-    'An independent set of size $k$',
-    'A clique of size $k$',
-  ]}
-  correctAnswer={0}
-  explanation="In the complement graph $\\overline{G}$, edges become non-edges and vice versa. A vertex cover $S$ in $G$ means every edge has at least one endpoint in $S$. In $\\overline{G}$, the vertices not in $S$ ($V \\setminus S$) are all pairwise adjacent (no edges among them in $G$ means all edges among them in $\\overline{G}$), forming a clique of size $|V| - k$."
-  difficulty="hard"
-/>
+<PracticeProblem question="The Vertex Cover problem and the Clique problem on complementary graphs are related. If $G$ has a vertex cover of size $k$, what does $\\overline{G}$ have?" options={[ 'A clique of size $|V| - k$', 'A vertex cover of size $|V| - k$', 'An independent set of size $k$', 'A clique of size $k$', ]} correctAnswer={0} explanation="In the complement graph $\\overline{G}$, edges become non-edges and vice versa. A vertex cover $S$ in $G$ means every edge has at least one endpoint in $S$. In $\\overline{G}$, the vertices not in $S$ ($V \\setminus S$) are all pairwise adjacent (no edges among them in $G$ means all edges among them in $\\overline{G}$), forming a clique of size $|V| - k$." difficulty="hard" />
 
 ## Approximation Algorithms and Hardness
 
-<PracticeProblem
-  question="What approximation ratio does the greedy algorithm achieve for the Vertex Cover problem?"
-  options={[
-    '2-approximation: $|C| \\leq 2 \\cdot |OPT|$',
-    '$\\ln(n)$-approximation',
-    '3/2-approximation',
-    'No constant approximation ratio is possible unless P = NP',
-  ]}
-  correctAnswer={0}
-  explanation="The greedy algorithm picks an arbitrary edge, adds both endpoints to the cover, and removes all incident edges. Since each selected edge has at least one endpoint in any valid vertex cover, the greedy cover is at most twice the optimal. Time complexity is $O(V + E)$. This is a classic 2-approximation."
-  difficulty="easy"
-/>
+<PracticeProblem question="What approximation ratio does the greedy algorithm achieve for the Vertex Cover problem?" options={[ '2-approximation: $|C| \\leq 2 \\cdot |OPT|$', '$\\ln(n)$-approximation', '3/2-approximation', 'No constant approximation ratio is possible unless P = NP', ]} correctAnswer={0} explanation="The greedy algorithm picks an arbitrary edge, adds both endpoints to the cover, and removes all incident edges. Since each selected edge has at least one endpoint in any valid vertex cover, the greedy cover is at most twice the optimal. Time complexity is $O(V + E)$. This is a classic 2-approximation." difficulty="easy" />
 
-<PracticeProblem
-  question="Cook's theorem establishes which problem as the first known NP-complete problem?"
-  options={['SAT (Boolean Satisfiability)', '3-SAT', 'Hamiltonian Cycle', 'Subset Sum']}
-  correctAnswer={0}
-  explanation="Cook (1971) proved that SAT is NP-complete: (1) SAT $\\in$ NP because a truth assignment can be verified in $O(|\\phi|)$ time, and (2) SAT is NP-hard because any NP computation can be encoded as a Boolean formula in CNF whose satisfiability corresponds to acceptance. Levin proved the same independently in 1973."
-  difficulty="medium"
-/>
+<PracticeProblem question="Cook's theorem establishes which problem as the first known NP-complete problem?" options={['SAT (Boolean Satisfiability)', '3-SAT', 'Hamiltonian Cycle', 'Subset Sum']} correctAnswer={0} explanation="Cook (1971) proved that SAT is NP-complete: (1) SAT $\\in$ NP because a truth assignment can be verified in $O(|\\phi|)$ time, and (2) SAT is NP-hard because any NP computation can be encoded as a Boolean formula in CNF whose satisfiability corresponds to acceptance. Levin proved the same independently in 1973." difficulty="medium" />
 
-<PracticeProblem
-  question="What is the key consequence of the PCP Theorem (1992) for the Max-3SAT problem?"
-  options={[
-    'Max-3SAT cannot be approximated beyond $7/8 + \\epsilon$ unless P = NP',
-    'Max-3SAT can be solved exactly in polynomial time',
-    'Max-3SAT has a PTAS (polynomial-time approximation scheme)',
-    'Max-3SAT cannot be approximated within any constant factor',
-  ]}
-  correctAnswer={0}
-  explanation="The PCP Theorem states that every problem in NP has a probabilistically checkable proof verifiable by reading a constant number of bits. A consequence is hardness of approximation: Max-3SAT cannot be approximated beyond $7/8 + \\epsilon$ for any $\\epsilon > 0$ unless P = NP. The simple random assignment algorithm achieves $7/8$."
-  difficulty="hard"
-/>
+<PracticeProblem question="What is the key consequence of the PCP Theorem (1992) for the Max-3SAT problem?" options={[ 'Max-3SAT cannot be approximated beyond $7/8 + \\epsilon$ unless P = NP', 'Max-3SAT can be solved exactly in polynomial time', 'Max-3SAT has a PTAS (polynomial-time approximation scheme)', 'Max-3SAT cannot be approximated within any constant factor', ]} correctAnswer={0} explanation="The PCP Theorem states that every problem in NP has a probabilistically checkable proof verifiable by reading a constant number of bits. A consequence is hardness of approximation: Max-3SAT cannot be approximated beyond $7/8 + \\epsilon$ for any $\\epsilon > 0$ unless P = NP. The simple random assignment algorithm achieves $7/8$." difficulty="hard" />
 
-<PracticeProblem
-  question="Which of the following correctly describes the relationship $P \\subseteq NP \\subseteq PSPACE \\subseteq EXP$?"
-  options={[
-    'Each class is contained within the next, and all inclusions are known to be strict except possibly P = NP',
-    'All classes are equal',
-    'Only P $\\subseteq$ NP is known; the other inclusions are conjectured',
-    'NP = PSPACE but P $\\neq$ PSPACE',
-  ]}
-  correctAnswer={0}
-  explanation="The chain $P \\subseteq NP \\subseteq PSPACE \\subseteq EXP$ is well-established. $P \\subseteq NP$ because a deterministic TM is a special case of a nondeterministic one. $NP \\subseteq PSPACE$ because polynomial space suffices to try all certificates. $PSPACE \\subseteq EXP$ because with exponential time, one can enumerate all possible configurations. Whether $P = NP$ is the central open question."
-  difficulty="medium"
-/>
+<PracticeProblem question="Which of the following correctly describes the relationship $P \\subseteq NP \\subseteq PSPACE \\subseteq EXP$?" options={[ 'Each class is contained within the next, and all inclusions are known to be strict except possibly P = NP', 'All classes are equal', 'Only P $\\subseteq$ NP is known; the other inclusions are conjectured', 'NP = PSPACE but P $\\neq$ PSPACE', ]} correctAnswer={0} explanation="The chain $P \\subseteq NP \\subseteq PSPACE \\subseteq EXP$ is well-established. $P \\subseteq NP$ because a deterministic TM is a special case of a nondeterministic one. $NP \\subseteq PSPACE$ because polynomial space suffices to try all certificates. $PSPACE \\subseteq EXP$ because with exponential time, one can enumerate all possible configurations. Whether $P = NP$ is the central open question." difficulty="medium" />
 
-<PracticeProblem
-  question="A FPTAS (Fully Polynomial-Time Approximation Scheme) produces a $(1+\\epsilon)$-approximation in time polynomial in both $n$ and $1/\\epsilon$. Which classic NP-hard problem admits an FPTAS?"
-  options={['Knapsack', 'Vertex Cover', 'TSP (general)', 'Set Cover']}
-  correctAnswer={0}
-  explanation="The knapsack problem admits an FPTAS through a scaling approach: scale down item values by a factor depending on $\\epsilon$, solve the scaled instance using the pseudopolynomial DP, and adjust the result. Running time is $O(n^3/\\epsilon)$. In contrast, Vertex Cover cannot have a PTAS better than $2 - \\epsilon$ unless P = NP, and TSP (general) and Set Cover are even harder to approximate."
-  difficulty="hard"
-/>
+<PracticeProblem question="A FPTAS (Fully Polynomial-Time Approximation Scheme) produces a $(1+\\epsilon)$-approximation in time polynomial in both $n$ and $1/\\epsilon$. Which classic NP-hard problem admits an FPTAS?" options={['Knapsack', 'Vertex Cover', 'TSP (general)', 'Set Cover']} correctAnswer={0} explanation="The knapsack problem admits an FPTAS through a scaling approach: scale down item values by a factor depending on $\\epsilon$, solve the scaled instance using the pseudopolynomial DP, and adjust the result. Running time is $O(n^3/\\epsilon)$. In contrast, Vertex Cover cannot have a PTAS better than $2 - \\epsilon$ unless P = NP, and TSP (general) and Set Cover are even harder to approximate." difficulty="hard" />

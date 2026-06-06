@@ -79,7 +79,7 @@ To show tightness, note $n^2 + 3n + 1 \geq n^2$ for all $n \geq 0$So $n^2 + 3n +
 <summary>Worked Example: Proving $2^n \neq O(n^k)$ for any constant $k$</summary>
 
 By the limit rule: $\lim_{n \to \infty} 2^n / n^k = \infty$ for any fixed $k$ (this follows from
-repeated application of L'Hôpital's rule, or from the fact that $\log(2^n) = n \log 2$ grows faster
+repeated application of L'Hôpital’s rule, or from the fact that $\log(2^n) = n \log 2$ grows faster
 than $\log(n^k) = k \log n$). Therefore $2^n = \omega(n^k)$ for all $k$And in particular
 $2^n \neq O(n^k)$.
 
@@ -1864,8 +1864,7 @@ Reduce 3-SAT formula
 $\phi = (x_1 \vee \bar{x}_2 \vee x_3) \wedge (\bar{x}_1 \vee x_2 \vee x_3) \wedge (x_1 \vee x_2 \vee \bar{x}_3)$
 to a vertex cover instance.
 
-For each variable $x_i$Create two vertices $x_i$ and $\bar{x}_i$ connected by an edge (the "literal
-edge").
+For each variable $x_i$Create two vertices $x_i$ and $\bar{x}_i$ connected by an edge (the "literal edge").
 
 For each clause $C_j$Create a triangle of 3 vertices $c_{j1}, c_{j2}, c_{j3}$.
 

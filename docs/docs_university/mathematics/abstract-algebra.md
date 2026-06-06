@@ -33,7 +33,7 @@ of algebraic structure:
 
 Abstract algebra arises by definition from several directions:
 
-- **Number theory:** Fermat's little theorem and Euler's theorem are most by definition understood
+- **Number theory:** Fermat's little theorem and Euler’s theorem are most by definition understood
   through the lens of group theory. The structure of $\mathbb{Z}/n\mathbb{Z}$ and its units
   underpins modular arithmetic.
 - **Equation solving:** The question "which polynomial equations can be solved by radicals?"
@@ -546,7 +546,7 @@ $\gcd(e, \phi(n)) = 1$. The private key is $d = e^{-1} \pmod{\phi(n)}$.
 **Decryption:** $m = c^d \pmod{n}$.
 
 **Correctness.** Since $ed \equiv 1 \pmod{\phi(n)}$, we have $c^d = m^{ed} \equiv m \pmod{n}$ by
-Euler's theorem (a consequence of Lagrange's theorem applied to $(\mathbb{Z}/n\mathbb{Z})^\times$).
+Euler's theorem (a consequence of Lagrange’s theorem applied to $(\mathbb{Z}/n\mathbb{Z})^\times$).
 
 ### 7.2 Error-Correcting Codes
 
@@ -661,7 +661,7 @@ computationally infeasible in sufficiently large groups.
 | Constructibility                | $\alpha$ constructible $\Leftrightarrow$ $[\mathbb{Q}(\alpha):\mathbb{Q}]$ is a power of 2 |
 | Solvability                     | Polynomial solvable by radicals $\Leftrightarrow$ Galois group is solvable                 |
 | Abel–Ruffini                    | General quintic (degree $\geq 5$) is not solvable by radicals                              |
-| Fermat's little theorem         | $a^{p-1} \equiv 1 \pmod{p}$; consequence of Lagrange's theorem                             |
+| Fermat's little theorem         | $a^{p-1} \equiv 1 \pmod{p}$; consequence of Lagrange’s theorem                             |
 
 ## Worked Examples
 

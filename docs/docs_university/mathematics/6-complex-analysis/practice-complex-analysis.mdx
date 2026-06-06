@@ -20,115 +20,30 @@ the explanation.
 
 ### Holomorphic Functions and Cauchy-Riemann Equations
 
-<PracticeProblem
-  question="Let $f(z) = u(x,y) + i\\,v(x,y)$ where $u(x,y) = x^2 - y^2$ and $v(x,y) = 2xy$. Is $f$ holomorphic on $\\mathbb{C}$, and if so, what is $f(z)$ expressed in terms of $z$?"
-  options={[
-    '$f(z) = z^2$, holomorphic on $\\mathbb{C}$',
-    '$f(z) = z^3$, holomorphic on $\\mathbb{C}$',
-    '$f(z) = \\bar{z}^2$, not holomorphic',
-    '$f(z) = z^2 + \\bar{z}$, not holomorphic',
-  ]}
-  correctAnswer={0}
-  explanation="Check the Cauchy-Riemann equations: $u_x = 2x$, $u_y = -2y$, $v_x = 2y$, $v_y = 2x$. Since $u_x = v_y = 2x$ and $u_y = -v_x = -2y$, the Cauchy-Riemann equations hold everywhere. Therefore $f$ is entire (holomorphic on all of $\\mathbb{C}$). Noting that $(x+iy)^2 = x^2 - y^2 + 2xy\\,i = u + iv$, we get $f(z) = z^2$."
-  difficulty="easy"
-/>
+<PracticeProblem question="Let $f(z) = u(x,y) + i\\,v(x,y)$ where $u(x,y) = x^2 - y^2$ and $v(x,y) = 2xy$. Is $f$ holomorphic on $\\mathbb{C}$, and if so, what is $f(z)$ expressed in terms of $z$?" options={[ '$f(z) = z^2$, holomorphic on $\\mathbb{C}$', '$f(z) = z^3$, holomorphic on $\\mathbb{C}$', '$f(z) = \\bar{z}^2$, not holomorphic', '$f(z) = z^2 + \\bar{z}$, not holomorphic', ]} correctAnswer={0} explanation="Check the Cauchy-Riemann equations: $u_x = 2x$, $u_y = -2y$, $v_x = 2y$, $v_y = 2x$. Since $u_x = v_y = 2x$ and $u_y = -v_x = -2y$, the Cauchy-Riemann equations hold everywhere. Therefore $f$ is entire (holomorphic on all of $\\mathbb{C}$). Noting that $(x+iy)^2 = x^2 - y^2 + 2xy\\,i = u + iv$, we get $f(z) = z^2$." difficulty="easy" />
 
-<PracticeProblem
-  question="Which of the following functions is holomorphic on $\\mathbb{C} \\setminus \\{0\\}$?"
-  options={[
-    '$f(z) = e^{1/z}$',
-    '$f(z) = \\bar{z}/z$',
-    '$f(z) = |z|^2 / z$',
-    '$f(z) = \\operatorname{Re}(z) / |z|^2$',
-  ]}
-  correctAnswer={0}
-  explanation="For $f(z) = e^{1/z}$, we can use the chain rule: $e^{1/z}$ is the composition of $e^w$ (entire) and $1/z$ (holomorphic on $\\mathbb{C} \\setminus \\{0\\}$). The composition of holomorphic functions is holomorphic, so $f$ is holomorphic on $\\mathbb{C} \\setminus \\{0\\}$. The other options all involve $\\bar{z}$ or $|z|$ directly and fail the Cauchy-Riemann equations."
-  difficulty="medium"
-/>
+<PracticeProblem question="Which of the following functions is holomorphic on $\\mathbb{C} \\setminus \\{0\\}$?" options={[ '$f(z) = e^{1/z}$', '$f(z) = \\bar{z}/z$', '$f(z) = |z|^2 / z$', '$f(z) = \\operatorname{Re}(z) / |z|^2$', ]} correctAnswer={0} explanation="For $f(z) = e^{1/z}$, we can use the chain rule: $e^{1/z}$ is the composition of $e^w$ (entire) and $1/z$ (holomorphic on $\\mathbb{C} \\setminus \\{0\\}$). The composition of holomorphic functions is holomorphic, so $f$ is holomorphic on $\\mathbb{C} \\setminus \\{0\\}$. The other options all involve $\\bar{z}$ or $|z|$ directly and fail the Cauchy-Riemann equations." difficulty="medium" />
 
-<PracticeProblem
-  question="Let $f(z) = u + iv$ be holomorphic with $u(x,y) = e^x \\cos y$. What is $v(x,y)$?"
-  options={[
-    '$v(x,y) = e^x \\sin y + C$',
-    '$v(x,y) = e^x \\sin y - e^y \\cos x$',
-    '$v(x,y) = e^y \\cos x + C$',
-    '$v(x,y) = -e^x \\sin y + C$',
-  ]}
-  correctAnswer={0}
-  explanation="By the Cauchy-Riemann equations: $v_y = u_x = e^x \\cos y$. Integrating with respect to $y$: $v(x,y) = e^x \\sin y + g(x)$. Also $v_x = -u_y = e^x \\sin y$, so $e^x \\sin y + g'(x) = e^x \\sin y$, giving $g'(x) = 0$ and $g(x) = C$. Therefore $v(x,y) = e^x \\sin y + C$, and $f(z) = e^z$ (up to an additive constant)."
-  difficulty="medium"
-/>
+<PracticeProblem question="Let $f(z) = u + iv$ be holomorphic with $u(x,y) = e^x \\cos y$. What is $v(x,y)$?" options={[ '$v(x,y) = e^x \\sin y + C$', '$v(x,y) = e^x \\sin y - e^y \\cos x$', '$v(x,y) = e^y \\cos x + C$', '$v(x,y) = -e^x \\sin y + C$', ]} correctAnswer={0} explanation="By the Cauchy-Riemann equations: $v_y = u_x = e^x \\cos y$. Integrating with respect to $y$: $v(x,y) = e^x \\sin y + g(x)$. Also $v_x = -u_y = e^x \\sin y$, so $e^x \\sin y + g'(x) = e^x \\sin y$, giving $g'(x) = 0$ and $g(x) = C$. Therefore $v(x,y) = e^x \\sin y + C$, and $f(z) = e^z$ (up to an additive constant)." difficulty="medium" />
 
-<PracticeProblem
-  question="If $f(z) = \\overline{z}^2$, what is the value of the partial derivative ratio $u_x / v_y$?"
-  options={['$-1$', '$1$', '$0$', '$2$']}
-  correctAnswer={0}
-  explanation="Write $z = x + iy$, so $\\overline{z} = x - iy$ and $\\overline{z}^2 = (x-iy)^2 = x^2 - y^2 - 2xyi$. Thus $u = x^2 - y^2$ and $v = -2xy$. We get $u_x = 2x$ and $v_y = -2x$, so $u_x / v_y = 2x / (-2x) = -1$ (for $x \\neq 0$). Since $u_x \\neq v_y$ in general, the Cauchy-Riemann equations are not satisfied, confirming $f$ is not holomorphic."
-  difficulty="hard"
-/>
+<PracticeProblem question="If $f(z) = \\overline{z}^2$, what is the value of the partial derivative ratio $u_x / v_y$?" options={['$-1$', '$1$', '$0$', '$2$']} correctAnswer={0} explanation="Write $z = x + iy$, so $\\overline{z} = x - iy$ and $\\overline{z}^2 = (x-iy)^2 = x^2 - y^2 - 2xyi$. Thus $u = x^2 - y^2$ and $v = -2xy$. We get $u_x = 2x$ and $v_y = -2x$, so $u_x / v_y = 2x / (-2x) = -1$ (for $x \\neq 0$). Since $u_x \\neq v_y$ in general, the Cauchy-Riemann equations are not satisfied, confirming $f$ is not holomorphic." difficulty="hard" />
 
 ---
 
 ### Complex Integration and Residue Theory
 
-<PracticeProblem
-  question="Evaluate $\\displaystyle\\oint_C \\frac{dz}{z - 2i}$ where $C$ is the circle $|z| = 3$ traversed counterclockwise."
-  options={['$2\\pi i$', '$0$', '$4\\pi i$', '$-2\\pi i$']}
-  correctAnswer={0}
-  explanation="The integrand $1/(z - 2i)$ has a simple pole at $z = 2i$. Since $|2i| = 2 < 3$, the pole lies inside $C$. By the Cauchy integral formula (or direct parameterization), $\\oint_C \\frac{dz}{z - a} = 2\\pi i$ when $a$ is inside $C$. Here $a = 2i$, so the integral equals $2\\pi i$."
-  difficulty="easy"
-/>
+<PracticeProblem question="Evaluate $\\displaystyle\\oint_C \\frac{dz}{z - 2i}$ where $C$ is the circle $|z| = 3$ traversed counterclockwise." options={['$2\\pi i$', '$0$', '$4\\pi i$', '$-2\\pi i$']} correctAnswer={0} explanation="The integrand $1/(z - 2i)$ has a simple pole at $z = 2i$. Since $|2i| = 2 < 3$, the pole lies inside $C$. By the Cauchy integral formula (or direct parameterization), $\\oint_C \\frac{dz}{z - a} = 2\\pi i$ when $a$ is inside $C$. Here $a = 2i$, so the integral equals $2\\pi i$." difficulty="easy" />
 
-<PracticeProblem
-  question="Find the residue of $f(z) = \\dfrac{e^z}{(z-1)^2(z+2)}$ at $z = 1$."
-  options={['$\\dfrac{2e}{9}$', '$\\dfrac{e}{3}$', '$3e$', '$e$']}
-  correctAnswer={0}
-  explanation="The pole at $z = 1$ is a pole of order 2. The residue formula gives $\\operatorname{Res}(f, 1) = \\lim_{z \\to 1}\\frac{d}{dz}\\left[\\frac{e^z}{z+2}\\right]$. Using the quotient rule: $\\frac{d}{dz}\\left[\\frac{e^z}{z+2}\\right] = \\frac{e^z(z+2) - e^z}{(z+2)^2} = \\frac{e^z(z+1)}{(z+2)^2}$. Evaluating at $z = 1$: $\\frac{e \\cdot 2}{3^2} = \\frac{2e}{9}$."
-  difficulty="hard"
-/>
+<PracticeProblem question="Find the residue of $f(z) = \\dfrac{e^z}{(z-1)^2(z+2)}$ at $z = 1$." options={['$\\dfrac{2e}{9}$', '$\\dfrac{e}{3}$', '$3e$', '$e$']} correctAnswer={0} explanation="The pole at $z = 1$ is a pole of order 2. The residue formula gives $\\operatorname{Res}(f, 1) = \\lim_{z \\to 1}\\frac{d}{dz}\\left[\\frac{e^z}{z+2}\\right]$. Using the quotient rule: $\\frac{d}{dz}\\left[\\frac{e^z}{z+2}\\right] = \\frac{e^z(z+2) - e^z}{(z+2)^2} = \\frac{e^z(z+1)}{(z+2)^2}$. Evaluating at $z = 1$: $\\frac{e \\cdot 2}{3^2} = \\frac{2e}{9}$." difficulty="hard" />
 
-<PracticeProblem
-  question="Using the residue theorem, evaluate $\\displaystyle\\int_0^{2\\pi} \\frac{d\\theta}{5 + 4\\cos\\theta}$."
-  options={['$\\dfrac{2\\pi}{3}$', '$\\dfrac{\\pi}{3}$', '$2\\pi$', '$\\dfrac{4\\pi}{3}$']}
-  correctAnswer={0}
-  explanation="Substitute $z = e^{i\\theta}$, so $d\\theta = dz/(iz)$ and $\\cos\\theta = (z + z^{-1})/2$. The integral becomes $\\oint_{|z|=1} \\frac{dz/(iz)}{5 + 2(z + z^{-1})} = \\frac{1}{i}\\oint_{|z|=1} \\frac{dz}{2z^2 + 5z + 2} = \\frac{1}{i}\\oint_{|z|=1} \\frac{dz}{(2z+1)(z+2)}$. The poles are at $z = -1/2$ and $z = -2$. Only $z = -1/2$ is inside $|z|=1$. Residue at $z=-1/2$: $\\lim_{z\\to -1/2}\\frac{z+1/2}{(2z+1)(z+2)} \\cdot (z+1/2)$... Actually: $\\frac{1}{i} \\cdot 2\\pi i \\cdot \\operatorname{Res}$. The residue at $z=-1/2$ of $\\frac{1}{(2z+1)(z+2)}$: $\\lim_{z\\to -1/2}\\frac{1}{z+2} = \\frac{1}{3/2} = \\frac{2}{3}$. So the integral equals $2\\pi \\cdot \\frac{2}{3} = \\frac{4\\pi}{3}$. Wait, let me redo: $\\frac{1}{i}\\cdot 2\\pi i \\cdot \\frac{2}{3} = \\frac{4\\pi}{3}$. This does not match. Actually $\\frac{1}{i}\\oint = \\frac{1}{i} \\cdot 2\\pi i \\cdot \\frac{1/2}{3/2} = 2\\pi \\cdot \\frac{1}{3} = \\frac{2\\pi}{3}$. The correct answer is $\\frac{2\\pi}{3}$."
-  difficulty="hard"
-/>
+<PracticeProblem question="Using the residue theorem, evaluate $\\displaystyle\\int_0^{2\\pi} \\frac{d\\theta}{5 + 4\\cos\\theta}$." options={['$\\dfrac{2\\pi}{3}$', '$\\dfrac{\\pi}{3}$', '$2\\pi$', '$\\dfrac{4\\pi}{3}$']} correctAnswer={0} explanation="Substitute $z = e^{i\\theta}$, so $d\\theta = dz/(iz)$ and $\\cos\\theta = (z + z^{-1})/2$. The integral becomes $\\oint_{|z|=1} \\frac{dz/(iz)}{5 + 2(z + z^{-1})} = \\frac{1}{i}\\oint_{|z|=1} \\frac{dz}{2z^2 + 5z + 2} = \\frac{1}{i}\\oint_{|z|=1} \\frac{dz}{(2z+1)(z+2)}$. The poles are at $z = -1/2$ and $z = -2$. Only $z = -1/2$ is inside $|z|=1$. Residue at $z=-1/2$: $\\lim_{z\\to -1/2}\\frac{z+1/2}{(2z+1)(z+2)} \\cdot (z+1/2)$... Actually: $\\frac{1}{i} \\cdot 2\\pi i \\cdot \\operatorname{Res}$. The residue at $z=-1/2$ of $\\frac{1}{(2z+1)(z+2)}$: $\\lim_{z\\to -1/2}\\frac{1}{z+2} = \\frac{1}{3/2} = \\frac{2}{3}$. So the integral equals $2\\pi \\cdot \\frac{2}{3} = \\frac{4\\pi}{3}$. Wait, let me redo: $\\frac{1}{i}\\cdot 2\\pi i \\cdot \\frac{2}{3} = \\frac{4\\pi}{3}$. This does not match. Actually $\\frac{1}{i}\\oint = \\frac{1}{i} \\cdot 2\\pi i \\cdot \\frac{1/2}{3/2} = 2\\pi \\cdot \\frac{1}{3} = \\frac{2\\pi}{3}$. The correct answer is $\\frac{2\\pi}{3}$." difficulty="hard" />
 
-<PracticeProblem
-  question="What is the Laurent series expansion of $f(z) = \\dfrac{1}{z(z-1)}$ in the annulus $0 < |z| < 1$?"
-  options={[
-    '$-\\displaystyle\\sum_{n=0}^{\\infty} z^n + \\dfrac{1}{z}$',
-    '$\\displaystyle\\sum_{n=0}^{\\infty} z^{n-1}$',
-    '$\\displaystyle\\sum_{n=0}^{\\infty} (-1)^n z^n$',
-    '$-\\displaystyle\\sum_{n=1}^{\\infty} z^{-n}$',
-  ]}
-  correctAnswer={0}
-  explanation="Using partial fractions: $\\frac{1}{z(z-1)} = \\frac{1}{z-1} - \\frac{1}{z}$. For $|z| < 1$: $\\frac{1}{z-1} = -\\frac{1}{1-z} = -\\sum_{n=0}^{\\infty} z^n$. Therefore $f(z) = -\\sum_{n=0}^{\\infty} z^n - \\frac{1}{z} = -\\sum_{n=0}^{\\infty} z^n + \\frac{1}{z}$. Wait, $-\\frac{1}{z} + (-\\sum z^n)$; actually $f = -\\sum_{n=0}^{\\infty} z^n + \\frac{1}{z}$. The principal part is $1/z$ (simple pole at origin), confirming the answer."
-  difficulty="medium"
-/>
+<PracticeProblem question="What is the Laurent series expansion of $f(z) = \\dfrac{1}{z(z-1)}$ in the annulus $0 < |z| < 1$?" options={[ '$-\\displaystyle\\sum_{n=0}^{\\infty} z^n + \\dfrac{1}{z}$', '$\\displaystyle\\sum_{n=0}^{\\infty} z^{n-1}$', '$\\displaystyle\\sum_{n=0}^{\\infty} (-1)^n z^n$', '$-\\displaystyle\\sum_{n=1}^{\\infty} z^{-n}$', ]} correctAnswer={0} explanation="Using partial fractions: $\\frac{1}{z(z-1)} = \\frac{1}{z-1} - \\frac{1}{z}$. For $|z| < 1$: $\\frac{1}{z-1} = -\\frac{1}{1-z} = -\\sum_{n=0}^{\\infty} z^n$. Therefore $f(z) = -\\sum_{n=0}^{\\infty} z^n - \\frac{1}{z} = -\\sum_{n=0}^{\\infty} z^n + \\frac{1}{z}$. Wait, $-\\frac{1}{z} + (-\\sum z^n)$; actually $f = -\\sum_{n=0}^{\\infty} z^n + \\frac{1}{z}$. The principal part is $1/z$ (simple pole at origin), confirming the answer." difficulty="medium" />
 
 ---
 
 ### Series and Conformal Mappings
 
-<PracticeProblem
-  question="What is the radius of convergence of the Taylor series for $f(z) = \\dfrac{1}{1+z^2}$ expanded about $z = 1 + i$?"
-  options={['$1$', '$\\sqrt{2}$', '$2$', '$\\sqrt{3}$']}
-  correctAnswer={0}
-  explanation="The singularities of $f(z) = 1/(1+z^2) = 1/[(z+i)(z-i)]$ are at $z = i$ and $z = -i$. The radius of convergence about $z_0 = 1+i$ equals the distance to the nearest singularity. Distance to $z = i$: $|(1+i) - i| = |1| = 1$. Distance to $z = -i$: $|(1+i) - (-i)| = |1+2i| = \\sqrt{5}$. The minimum distance is $1$, so the radius of convergence is $1$."
-  difficulty="medium"
-/>
+<PracticeProblem question="What is the radius of convergence of the Taylor series for $f(z) = \\dfrac{1}{1+z^2}$ expanded about $z = 1 + i$?" options={['$1$', '$\\sqrt{2}$', '$2$', '$\\sqrt{3}$']} correctAnswer={0} explanation="The singularities of $f(z) = 1/(1+z^2) = 1/[(z+i)(z-i)]$ are at $z = i$ and $z = -i$. The radius of convergence about $z_0 = 1+i$ equals the distance to the nearest singularity. Distance to $z = i$: $|(1+i) - i| = |1| = 1$. Distance to $z = -i$: $|(1+i) - (-i)| = |1+2i| = \\sqrt{5}$. The minimum distance is $1$, so the radius of convergence is $1$." difficulty="medium" />
 
-<PracticeProblem
-  question="Consider the Mobius transformation $T(z) = \\dfrac{z - i}{z + i}$. What is the image of the real axis under $T$?"
-  options={[
-    'The unit circle $|w| = 1$',
-    'The real axis',
-    'The line $\\operatorname{Re}(w) = 1$',
-    'The unit circle minus a point',
-  ]}
-  correctAnswer={0}
-  explanation="A Mobius transformation maps generalized circles to generalized circles. The real axis passes through $0$, $1$, and $\\infty$. Compute: $T(0) = \\frac{-i}{i} = -1$, $T(1) = \\frac{1-i}{1+i} = \\frac{(1-i)^2}{2} = \\frac{-2i}{2} = -i$, $T(\\infty) = 1$. Also $T(-1) = \\frac{-1-i}{-1+i} = \\frac{(-1-i)^2}{2} = \\frac{2i}{2} = i$. Three points on the unit circle confirm the image is the unit circle. For any real $x$: $|T(x)| = |x-i|/|x+i| = \\sqrt{x^2+1}/\\sqrt{x^2+1} = 1$. So the image is exactly $|w| = 1$."
-  difficulty="hard"
-/>
+<PracticeProblem question="Consider the Mobius transformation $T(z) = \\dfrac{z - i}{z + i}$. What is the image of the real axis under $T$?" options={[ 'The unit circle $|w| = 1$', 'The real axis', 'The line $\\operatorname{Re}(w) = 1$', 'The unit circle minus a point', ]} correctAnswer={0} explanation="A Mobius transformation maps generalized circles to generalized circles. The real axis passes through $0$, $1$, and $\\infty$. Compute: $T(0) = \\frac{-i}{i} = -1$, $T(1) = \\frac{1-i}{1+i} = \\frac{(1-i)^2}{2} = \\frac{-2i}{2} = -i$, $T(\\infty) = 1$. Also $T(-1) = \\frac{-1-i}{-1+i} = \\frac{(-1-i)^2}{2} = \\frac{2i}{2} = i$. Three points on the unit circle confirm the image is the unit circle. For any real $x$: $|T(x)| = |x-i|/|x+i| = \\sqrt{x^2+1}/\\sqrt{x^2+1} = 1$. So the image is exactly $|w| = 1$." difficulty="hard" />

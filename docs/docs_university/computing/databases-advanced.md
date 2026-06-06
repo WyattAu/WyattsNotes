@@ -1149,8 +1149,7 @@ The coordinator writes all votes and the commit record in a single log flush.
 
 ### 7.1 Relational Algebra (Problems 1--3)
 
-**Problem 1.** Express the following in relational algebra: "Find the names of students who have
-taken all courses offered by the department in which they are majoring." Assume schemas:
+**Problem 1.** Express the following in relational algebra: "Find the names of students who have taken all courses offered by the department in which they are majoring." Assume schemas:
 Student(name, dept), Course(cname, dept), Enrolment(name, cname).
 
 **Problem 2.** Prove the equivalence:
@@ -1170,8 +1169,7 @@ salary. Use window functions.
 $C \to D$, $D \to E$, $E \to A$. Find all candidate keys, decompose into BCNF, and check if the
 decomposition is dependency-preserving.
 
-**Problem 6.** The relation Teaching(course, teacher, textbook, room) has the constraint: "The
-teacher and textbook assigned to a course section are independent." What normal form does this
+**Problem 6.** The relation Teaching(course, teacher, textbook, room) has the constraint: "The teacher and textbook assigned to a course section are independent." What normal form does this
 violate? Decompose accordingly.
 
 **Problem 7.** Prove that if a relation is in BCNF, it is also in 3NF. Give an example of a relation

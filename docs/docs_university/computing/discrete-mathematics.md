@@ -59,8 +59,7 @@ $$\neg \exists x\, P(x) \equiv \forall x\, \neg P(x)$$
 
 $$\forall x\, \exists y\, P(x, y) \not\equiv \exists y\, \forall x\, P(x, y)$$
 
-The first says "for every $x$ there is a (possibly different) $y$." The second says "there exists a
-Single $y$ that works for all $x$."
+The first says "for every $x$ there is a (possibly different) $y$." The second says "there exists a Single $y$ that works for all $x$."
 
 ### 1.3 Validity and Satisfiability
 
@@ -1136,7 +1135,7 @@ $\deg(v) \geq n/2$ for every vertex, then $G$ has a Hamilton circuit.
 $\deg(u) + \deg(v) \geq n$ for every pair of non-adjacent vertices $u, v$Then $G$ has a Hamilton
 Circuit.
 
-Note that Dirac's theorem is a corollary of Ore's theorem.
+Note that Dirac's theorem is a corollary of Ore’s theorem.
 
 **Worked Example.** Does $K_{2,3}$ have a Hamilton circuit?
 
@@ -1204,7 +1203,7 @@ $|N(\\{x\\})| \geq 1$ So $x$ has a neighbour, and we can match $x$ to it.
 Inductive step. Consider two cases.
 
 _Case 1:_ For every nonempty proper subset $S \subsetneq X$, $|N(S)| \gt |S|$. Pick any edge $xy$.
-In $G' = G - \\{x, y\\}$Hall's condition still holds (removing one element from each side preserves
+In $G' = G - \\{x, y\\}$Hall’s condition still holds (removing one element from each side preserves
 the Strict inequality). By the induction hypothesis, $X \setminus \\{x\\}$ can be matched in $G'$.
 Adding $xy$ Gives the desired matching.
 
@@ -1496,16 +1495,14 @@ If you get this wrong, revise: Section 1.6.
 
 </details>
 
-**Problem 3.** Negate: "For every real number $x$There exists a real number $y$ such that
-$y \gt x$."
+**Problem 3.** Negate: "For every real number $x$There exists a real number $y$ such that $y \gt x$."
 
 <details>
 <summary>Solution</summary>
 
 Original: $\forall x\, \exists y\, (y \gt x)$.
 
-Negation: $\exists x\, \forall y\, (y \leq x)$I.e., "there exists a real number $x$ such that every
-Real number $y$ satisfies $y \leq x$."
+Negation: $\exists x\, \forall y\, (y \leq x)$I.e., "there exists a real number $x$ such that every Real number $y$ satisfies $y \leq x$."
 
 If you get this wrong, revise: Section 1.2.
 

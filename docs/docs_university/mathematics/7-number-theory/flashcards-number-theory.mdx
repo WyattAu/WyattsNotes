@@ -44,7 +44,7 @@ export const flashcards1 = [
   {
     id: 'uni-maths-number-theory-005',
     front: 'Define a prime number and state the fundamental properties.',
-    back: "p > 1 is prime if its only positive divisors are 1 and p. Equivalently: p has exactly two positive divisors, or p > 1 and whenever p | ab then p | a or p | b (Euclid's lemma). Every integer n > 1 has a prime divisor (by well-ordering). There are infinitely many primes (Euclid's proof by contradiction: suppose p₁, ..., pₙ are all primes; consider p₁p₂...pₙ + 1).",
+    back: "p > 1 is prime if its only positive divisors are 1 and p. Equivalently: p has exactly two positive divisors, or p > 1 and whenever p | ab then p | a or p | b (Euclid's lemma). Every integer n > 1 has a prime divisor (by well-ordering). There are infinitely many primes (Euclid’s proof by contradiction: suppose p₁, ..., pₙ are all primes; consider p₁p₂...pₙ + 1).",
     tags: ['primes'],
     difficulty: 'easy',
   },
@@ -92,7 +92,7 @@ export const flashcards3 = [
   {
     id: 'uni-maths-number-theory-011',
     front: "State Euler's theorem.",
-    back: "If gcd(a, n) = 1, then a^(φ(n)) ≡ 1 (mod n). This generalises Fermat's little theorem (since φ(p) = p − 1). Applications: RSA decryption relies on Euler's theorem with n = pq, where φ(n) = (p−1)(q−1). Modular inverse: a⁻¹ ≡ a^(φ(n)−1) (mod n). The order of a modulo n divides φ(n).",
+    back: "If gcd(a, n) = 1, then a^(φ(n)) ≡ 1 (mod n). This generalises Fermat's little theorem (since φ(p) = p − 1). Applications: RSA decryption relies on Euler’s theorem with n = pq, where φ(n) = (p−1)(q−1). Modular inverse: a⁻¹ ≡ a^(φ(n)−1) (mod n). The order of a modulo n divides φ(n).",
     tags: ['modular-arithmetic'],
     difficulty: 'medium',
   },
@@ -163,9 +163,4 @@ export const flashcards4 = [
     difficulty: 'medium',
   },
 ];
-<FlashcardDeck
-  deckId="uni-maths-number-theory"
-  title="University Maths -- Number Theory"
-  description="Divisibility, modular arithmetic, Fermat/Euler theorems, quadratic reciprocity, RSA"
-  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
-/>;
+<FlashcardDeck deckId="uni-maths-number-theory" title="University Maths -- Number Theory" description="Divisibility, modular arithmetic, Fermat/Euler theorems, quadratic reciprocity, RSA" cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]} />;

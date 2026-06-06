@@ -1171,12 +1171,10 @@ accepts $w$Then $L(M_w) = L(M_0) \in P$; if $M$ does not accept $w$, $L(M_w) = \
 $\emptyset \notin P$Then $M_w \in P$ iff $M$ accepts $w$So deciding $P$ would decide
 $A_{\mathrm{TM}}$. The case $\emptyset \in P$ is similar. $\blacksquare$
 
-**Corollary.** The following are undecidable: "Does $M$ accept at least one string?", "Is $L(M)$
-Finite?", "Is $L(M)$ regular?", "Is $L(M)$ context-free?"
+**Corollary.** The following are undecidable: "Does $M$ accept at least one string?", "Is $L(M)$ Finite?", "Is $L(M)$ regular?", "Is $L(M)$ context-free?"
 
 :::caution Common Pitfall Rice's theorem applies only to properties of the **language** $L(M)$Not
-properties of the **machine** $M$ itself. For example, "Does $M$ halt within 100 steps on input
-$w$?" is a property Of $M$'s behaviour, not of $L(M)$And is in fact decidable (just simulate for 100
+properties of the **machine** $M$ itself. For example, "Does $M$ halt within 100 steps on input $w$?" is a property Of $M$'s behaviour, not of $L(M)$And is in fact decidable (just simulate for 100
 steps). :::
 
 ### 5.5 Post Correspondence Problem
@@ -1234,8 +1232,7 @@ First.
 ### 5.6 Oracle Machines and the Arithmetical Hierarchy
 
 An **oracle machine** $M^O$ is a Turing machine with access to an **oracle** $O$ for a language
-$O \subseteq \Sigma^*$. In addition to its ordinary transitions, $M^O$ may enter a special "query
-state," write a string $q$ on a query tape, and enter an "answer state" where the tape Contains `1`
+$O \subseteq \Sigma^*$. In addition to its ordinary transitions, $M^O$ may enter a special "query state," write a string $q$ on a query tape, and enter an "answer state" where the tape Contains `1`
 if $q \in O$ and `0` if $q \notin O$. The oracle answers in one step.
 
 **Definition.** $A^O = \{w : M^O \mathrm{ accepts}  w\}$ for a fixed oracle TM $M$ and oracle $O$.
@@ -1589,9 +1586,7 @@ $O(n)$ space to store the current assignment, giving $O(n^2)$ total.
 _Proof (hardness)._ Reduce from any $L \in \mathrm{PSPACE$ using the configuration graph. A
 Computation of a PSPACE TM on input $w$ of length $n$ uses at most $p(n)$ cells for some Polynomial
 $p$. The number of distinct configurations is at most $N = |\Gamma|^{p(n)} \cdot p(n) \cdot |Q|$
-Which is exponential. The statement "$M$ accepts $w$" can be expressed as: "there exists a
-Configuration $c_1$ reachable from the start configuration in $\leq N$ steps such that for all
-Configurations $c_2$ reachable from $c_1$ in one step, there exists a configuration $c_3$..." This
+Which is exponential. The statement "$M$ accepts $w$" can be expressed as: "there exists a Configuration $c_1$ reachable from the start configuration in $\leq N$ steps such that for all Configurations $c_2$ reachable from $c_1$ in one step, there exists a configuration $c_3$..." This
 alternating reachability formula can be encoded as a quantified Boolean formula of Polynomial size.
 $\blacksquare$
 
@@ -1632,8 +1627,7 @@ Where each $|y_i| \leq p(|x|)$ and the quantifiers alternate, starting with $\ex
 
 - $\Sigma_1^P = \mathrm{NP}$: "there exists a certificate."
 - $\Pi_1^P = \mathrm{coNP}$: "for all certificates."
-- $\Sigma_2^P$ contains problems like "does there exist a strategy for player 1 such that for all
-  strategies of player 2, player 1 wins?" (for polynomial-size games).
+- $\Sigma_2^P$ contains problems like "does there exist a strategy for player 1 such that for all strategies of player 2, player 1 wins?" (for polynomial-size games).
 - $\Pi_2^P$ contains the complement of such problems.
 
 **Relationships:**

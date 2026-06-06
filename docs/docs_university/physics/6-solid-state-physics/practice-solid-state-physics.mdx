@@ -20,135 +20,30 @@ the explanation.
 
 ### Crystal Structures and Reciprocal Lattice
 
-<PracticeProblem
-  question="How many atoms per unit cell does the face-centred cubic (FCC) structure contain, and what is its packing fraction?"
-  options={[
-    '4 atoms per unit cell; packing fraction = pi/(3*sqrt(2)) approx 0.74',
-    '4 atoms per unit cell; packing fraction = pi/6 approx 0.52',
-    '2 atoms per unit cell; packing fraction = pi/sqrt(18) approx 0.68',
-    '6 atoms per unit cell; packing fraction = pi/(2*sqrt(2)) approx 0.74',
-  ]}
-  correctAnswer={0}
-  explanation="FCC has 8 corner atoms (1/8 each) + 6 face atoms (1/2 each) = 8 x (1/8) + 6 x (1/2) = 1 + 3 = 4 atoms per unit cell. The atoms touch along face diagonals: sqrt(2)*a = 4R, so R = sqrt(2)*a/4. Packing fraction = (4 x (4/3)*pi*R^3)/a^3 = (16*pi/3)(sqrt(2)*a/4)^3/a^3 = (16*pi/3)(2*sqrt(2)*a^3/64)/a^3 = pi*sqrt(2)/6 = pi/(3*sqrt(2)) approx 0.7405. This is the highest packing fraction for equal spheres in 3D."
-  difficulty="easy"
-/>
+<PracticeProblem question="How many atoms per unit cell does the face-centred cubic (FCC) structure contain, and what is its packing fraction?" options={[ '4 atoms per unit cell; packing fraction = pi/(3*sqrt(2)) approx 0.74', '4 atoms per unit cell; packing fraction = pi/6 approx 0.52', '2 atoms per unit cell; packing fraction = pi/sqrt(18) approx 0.68', '6 atoms per unit cell; packing fraction = pi/(2*sqrt(2)) approx 0.74', ]} correctAnswer={0} explanation="FCC has 8 corner atoms (1/8 each) + 6 face atoms (1/2 each) = 8 x (1/8) + 6 x (1/2) = 1 + 3 = 4 atoms per unit cell. The atoms touch along face diagonals: sqrt(2)*a = 4R, so R = sqrt(2)*a/4. Packing fraction = (4 x (4/3)*pi*R^3)/a^3 = (16*pi/3)(sqrt(2)*a/4)^3/a^3 = (16*pi/3)(2*sqrt(2)*a^3/64)/a^3 = pi*sqrt(2)/6 = pi/(3*sqrt(2)) approx 0.7405. This is the highest packing fraction for equal spheres in 3D." difficulty="easy" />
 
-<PracticeProblem
-  question="A plane in a cubic crystal intercepts the axes at a = 2, b = -3, c = infinity. What are the Miller indices (hkl) of this plane?"
-  options={['(3 -2 0)', '(2 -3 0)', '(1/2 -1/3 0)', '(6 -4 0)']}
-  correctAnswer={0}
-  explanation="Miller indices are found by taking reciprocals of intercepts and clearing fractions. Intercepts: (2, -3, infinity). Reciprocals: (1/2, -1/3, 0). Clear fractions by multiplying by 6: (3, -2, 0). Miller indices are written as (hkl) = (3 -2 0), conventionally without commas. A zero index means the plane is parallel to that axis. Negative indices are written with an overbar in crystallography: (3, 2-bar, 0)."
-  difficulty="easy"
-/>
+<PracticeProblem question="A plane in a cubic crystal intercepts the axes at a = 2, b = -3, c = infinity. What are the Miller indices (hkl) of this plane?" options={['(3 -2 0)', '(2 -3 0)', '(1/2 -1/3 0)', '(6 -4 0)']} correctAnswer={0} explanation="Miller indices are found by taking reciprocals of intercepts and clearing fractions. Intercepts: (2, -3, infinity). Reciprocals: (1/2, -1/3, 0). Clear fractions by multiplying by 6: (3, -2, 0). Miller indices are written as (hkl) = (3 -2 0), conventionally without commas. A zero index means the plane is parallel to that axis. Negative indices are written with an overbar in crystallography: (3, 2-bar, 0)." difficulty="easy" />
 
-<PracticeProblem
-  question="For a BCC lattice with conventional cube side a, what is the magnitude of the shortest reciprocal lattice vector G?"
-  options={[
-    '|G_min| = 2*pi*sqrt(3)/a',
-    '|G_min| = 2*pi/a',
-    '|G_min| = 4*pi/(a*sqrt(3))',
-    '|G_min| = 4*pi/a',
-  ]}
-  correctAnswer={0}
-  explanation="The BCC lattice has primitive vectors a_1 = (a/2)(x+y-z), a_2 = (a/2)(-x+y+z), a_3 = (a/2)(x-y+z). The reciprocal lattice primitive vectors are b_1 = (2*pi/a)(y+z), b_2 = (2*pi/a)(z+x), b_3 = (2*pi/a)(x+y). The reciprocal lattice of BCC is FCC. The shortest G vectors are of type {111} in the FCC reciprocal lattice: G = (2*pi/a)(x+y+z), with |G| = (2*pi/a)*sqrt(1+1+1) = 2*pi*sqrt(3)/a. These correspond to the first Brillouin zone boundaries of the BCC direct lattice, where the first diffraction peaks appear."
-  difficulty="hard"
-/>
+<PracticeProblem question="For a BCC lattice with conventional cube side a, what is the magnitude of the shortest reciprocal lattice vector G?" options={[ '|G_min| = 2*pi*sqrt(3)/a', '|G_min| = 2*pi/a', '|G_min| = 4*pi/(a*sqrt(3))', '|G_min| = 4*pi/a', ]} correctAnswer={0} explanation="The BCC lattice has primitive vectors a_1 = (a/2)(x+y-z), a_2 = (a/2)(-x+y+z), a_3 = (a/2)(x-y+z). The reciprocal lattice primitive vectors are b_1 = (2*pi/a)(y+z), b_2 = (2*pi/a)(z+x), b_3 = (2*pi/a)(x+y). The reciprocal lattice of BCC is FCC. The shortest G vectors are of type {111} in the FCC reciprocal lattice: G = (2*pi/a)(x+y+z), with |G| = (2*pi/a)*sqrt(1+1+1) = 2*pi*sqrt(3)/a. These correspond to the first Brillouin zone boundaries of the BCC direct lattice, where the first diffraction peaks appear." difficulty="hard" />
 
 ---
 
 ### Electronic Band Theory and Semiconductors
 
-<PracticeProblem
-  question="In the nearly free electron model, what happens to the electron dispersion near a Brillouin zone boundary at k = G/2?"
-  options={[
-    'A band gap of magnitude 2|V_G| opens, where V_G is the Fourier component of the periodic potential',
-    'The band gap is proportional to k^2',
-    'No gap forms -- the bands remain parabolic',
-    'A gap of magnitude |V_G| opens and the effective mass becomes infinite',
-  ]}
-  correctAnswer={0}
-  explanation="At the zone boundary k = G/2, two degenerate plane waves e^(iGx/2) and e^(-iGx/2) are coupled by the periodic potential V(x). Degenerate perturbation theory gives energy eigenvalues E = (hbar^2 G^2)/(8m) +/- |V_G|. The band gap is 2|V_G|. This is analogous to the Bragg reflection of electrons by the lattice, where standing waves form and the electron cannot propagate -- its group velocity v_g = (1/hbar)(dE/dk) goes to zero at the zone boundary."
-  difficulty="medium"
-/>
+<PracticeProblem question="In the nearly free electron model, what happens to the electron dispersion near a Brillouin zone boundary at k = G/2?" options={[ 'A band gap of magnitude 2|V_G| opens, where V_G is the Fourier component of the periodic potential', 'The band gap is proportional to k^2', 'No gap forms -- the bands remain parabolic', 'A gap of magnitude |V_G| opens and the effective mass becomes infinite', ]} correctAnswer={0} explanation="At the zone boundary k = G/2, two degenerate plane waves e^(iGx/2) and e^(-iGx/2) are coupled by the periodic potential V(x). Degenerate perturbation theory gives energy eigenvalues E = (hbar^2 G^2)/(8m) +/- |V_G|. The band gap is 2|V_G|. This is analogous to the Bragg reflection of electrons by the lattice, where standing waves form and the electron cannot propagate -- its group velocity v_g = (1/hbar)(dE/dk) goes to zero at the zone boundary." difficulty="medium" />
 
-<PracticeProblem
-  question="Silicon has a band gap of 1.12 eV. What is the wavelength of a photon that can just excite an electron across the band gap? (h = 6.626 x 10^-34 J·s, c = 3.0 x 10^8 m/s, 1 eV = 1.602 x 10^-19 J)"
-  options={[
-    '1107 nm (infrared)',
-    '554 nm (visible green)',
-    '2200 nm (mid-infrared)',
-    '400 nm (visible violet)',
-  ]}
-  correctAnswer={0}
-  explanation="E = hc/lambda, so lambda = hc/E = (6.626 x 10^-34)(3.0 x 10^8)/(1.12 x 1.602 x 10^-19) = 1.988 x 10^-25/(1.794 x 10^-19) = 1.108 x 10^-6 m = 1108 nm. This is in the near-infrared region, explaining why silicon is opaque to visible light but transparent to longer infrared wavelengths. Photons with energy below 1.12 eV (lambda > 1108 nm) cannot excite electrons across the gap."
-  difficulty="medium"
-/>
+<PracticeProblem question="Silicon has a band gap of 1.12 eV. What is the wavelength of a photon that can just excite an electron across the band gap? (h = 6.626 x 10^-34 J·s, c = 3.0 x 10^8 m/s, 1 eV = 1.602 x 10^-19 J)" options={[ '1107 nm (infrared)', '554 nm (visible green)', '2200 nm (mid-infrared)', '400 nm (visible violet)', ]} correctAnswer={0} explanation="E = hc/lambda, so lambda = hc/E = (6.626 x 10^-34)(3.0 x 10^8)/(1.12 x 1.602 x 10^-19) = 1.988 x 10^-25/(1.794 x 10^-19) = 1.108 x 10^-6 m = 1108 nm. This is in the near-infrared region, explaining why silicon is opaque to visible light but transparent to longer infrared wavelengths. Photons with energy below 1.12 eV (lambda > 1108 nm) cannot excite electrons across the gap." difficulty="medium" />
 
-<PracticeProblem
-  question="An n-type silicon sample has donor concentration N_D = 10^16 cm^-3 at room temperature (T = 300 K). Assuming complete ionization and using n_i = 1.5 x 10^10 cm^-3 for silicon, what is the electron concentration n?"
-  options={[
-    'n approx 10^16 cm^-3 (essentially equal to N_D)',
-    'n = 5 x 10^12 cm^-3',
-    'n = sqrt(N_D * n_i) approx 3.87 x 10^13 cm^-3',
-    'n = n_i = 1.5 x 10^10 cm^-3',
-  ]}
-  correctAnswer={0}
-  explanation="Charge neutrality: n + N_A^- = p + N_D^+. For n-type with no acceptors: n = p + N_D. Using n·p = n_i^2: n = n_i^2/p and p = n - N_D. Substituting: n(n - N_D) = n_i^2. Since N_D >> n_i (10^16 >> 1.5 x 10^10), n >> p, so n approx N_D = 10^16 cm^-3. The hole concentration is p = n_i^2/N_D = (1.5 x 10^10)^2/10^16 = 2.25 x 10^4 cm^-3, confirming that p << n for this extrinsic semiconductor."
-  difficulty="medium"
-/>
+<PracticeProblem question="An n-type silicon sample has donor concentration N_D = 10^16 cm^-3 at room temperature (T = 300 K). Assuming complete ionization and using n_i = 1.5 x 10^10 cm^-3 for silicon, what is the electron concentration n?" options={[ 'n approx 10^16 cm^-3 (essentially equal to N_D)', 'n = 5 x 10^12 cm^-3', 'n = sqrt(N_D * n_i) approx 3.87 x 10^13 cm^-3', 'n = n_i = 1.5 x 10^10 cm^-3', ]} correctAnswer={0} explanation="Charge neutrality: n + N_A^- = p + N_D^+. For n-type with no acceptors: n = p + N_D. Using n·p = n_i^2: n = n_i^2/p and p = n - N_D. Substituting: n(n - N_D) = n_i^2. Since N_D >> n_i (10^16 >> 1.5 x 10^10), n >> p, so n approx N_D = 10^16 cm^-3. The hole concentration is p = n_i^2/N_D = (1.5 x 10^10)^2/10^16 = 2.25 x 10^4 cm^-3, confirming that p << n for this extrinsic semiconductor." difficulty="medium" />
 
-<PracticeProblem
-  question="A semiconductor carries a current of 10 mA with a magnetic field of 0.5 T applied perpendicular to the current. The Hall voltage measured is 2.5 mV for a sample of thickness d = 1 mm. What is the carrier concentration? (n = IB/(eV_H·d))"
-  options={[
-    'n = 1.25 x 10^22 m^-3',
-    'n = 6.25 x 10^18 m^-3',
-    'n = 3.12 x 10^22 m^-3',
-    'n = 8.0 x 10^19 m^-3',
-  ]}
-  correctAnswer={0}
-  explanation="Hall coefficient: R_H = V_H*d/(I*B). Carrier concentration: n = 1/(e*R_H) = I*B/(e*V_H*d). Substituting: n = (10 x 10^-3)(0.5)/((1.602 x 10^-19)(2.5 x 10^-3)(1 x 10^-3)) = 5.0 x 10^-3/(4.005 x 10^-25) = 1.248 x 10^22 m^-3. The sign of V_H determines carrier type: negative V_H for electrons (n-type), positive for holes (p-type). This Hall carrier density is typical for moderately doped semiconductors."
-  difficulty="medium"
-/>
+<PracticeProblem question="A semiconductor carries a current of 10 mA with a magnetic field of 0.5 T applied perpendicular to the current. The Hall voltage measured is 2.5 mV for a sample of thickness d = 1 mm. What is the carrier concentration? (n = IB/(eV_H·d))" options={[ 'n = 1.25 x 10^22 m^-3', 'n = 6.25 x 10^18 m^-3', 'n = 3.12 x 10^22 m^-3', 'n = 8.0 x 10^19 m^-3', ]} correctAnswer={0} explanation="Hall coefficient: R_H = V_H*d/(I*B). Carrier concentration: n = 1/(e*R_H) = I*B/(e*V_H*d). Substituting: n = (10 x 10^-3)(0.5)/((1.602 x 10^-19)(2.5 x 10^-3)(1 x 10^-3)) = 5.0 x 10^-3/(4.005 x 10^-25) = 1.248 x 10^22 m^-3. The sign of V_H determines carrier type: negative V_H for electrons (n-type), positive for holes (p-type). This Hall carrier density is typical for moderately doped semiconductors." difficulty="medium" />
 
 ---
 
 ### Phonons and Superconductivity
 
-<PracticeProblem
-  question="In the Debye model, the Debye temperature theta_D of copper is 343 K. What is the Debye frequency omega_D? (k_B = 1.381 x 10^-23 J/K, hbar = 1.055 x 10^-34 J·s)"
-  options={[
-    'omega_D = 4.48 x 10^13 rad/s',
-    'omega_D = 7.12 x 10^13 rad/s',
-    'omega_D = 2.24 x 10^13 rad/s',
-    'omega_D = 1.06 x 10^14 rad/s',
-  ]}
-  correctAnswer={0}
-  explanation="The Debye temperature is defined by theta_D = hbar·omega_D/k_B. So omega_D = k_B·theta_D/hbar = (1.381 x 10^-23)(343)/(1.055 x 10^-34) = 4.737 x 10^-21/1.055 x 10^-34 = 4.49 x 10^13 rad/s. The Debye frequency represents the maximum frequency of lattice vibrations (phonons) in the solid. At temperatures T >> theta_D, the specific heat approaches the classical Dulong-Petit value 3Nk_B."
-  difficulty="medium"
-/>
+<PracticeProblem question="In the Debye model, the Debye temperature theta_D of copper is 343 K. What is the Debye frequency omega_D? (k_B = 1.381 x 10^-23 J/K, hbar = 1.055 x 10^-34 J·s)" options={[ 'omega_D = 4.48 x 10^13 rad/s', 'omega_D = 7.12 x 10^13 rad/s', 'omega_D = 2.24 x 10^13 rad/s', 'omega_D = 1.06 x 10^14 rad/s', ]} correctAnswer={0} explanation="The Debye temperature is defined by theta_D = hbar·omega_D/k_B. So omega_D = k_B·theta_D/hbar = (1.381 x 10^-23)(343)/(1.055 x 10^-34) = 4.737 x 10^-21/1.055 x 10^-34 = 4.49 x 10^13 rad/s. The Debye frequency represents the maximum frequency of lattice vibrations (phonons) in the solid. At temperatures T >> theta_D, the specific heat approaches the classical Dulong-Petit value 3Nk_B." difficulty="medium" />
 
-<PracticeProblem
-  question="According to the BCS theory, how does the superconducting energy gap Delta at T = 0 relate to the critical temperature T_c?"
-  options={[
-    'Delta(0) = 1.764 k_B·T_c',
-    'Delta(0) = 2.00 k_B·T_c',
-    'Delta(0) = 3.53 k_B·T_c',
-    'Delta(0) = 0.50 k_B·T_c',
-  ]}
-  correctAnswer={0}
-  explanation="BCS theory predicts: Delta(0)/k_B·T_c = pi/e^gamma = pi/1.781 approx 1.764. The factor pi/e^gamma arises from solving the BCS gap equation. At T = 0, the energy gap Delta(0) represents the minimum energy needed to break a Cooper pair into two individual electrons. As T approaches T_c from below, Delta(T) decreases and vanishes at T_c following Delta(T) approx Delta(0)*sqrt(1 - T/T_c) near T_c. This universal ratio is one of the most celebrated predictions of BCS theory."
-  difficulty="hard"
-/>
+<PracticeProblem question="According to the BCS theory, how does the superconducting energy gap Delta at T = 0 relate to the critical temperature T_c?" options={[ 'Delta(0) = 1.764 k_B·T_c', 'Delta(0) = 2.00 k_B·T_c', 'Delta(0) = 3.53 k_B·T_c', 'Delta(0) = 0.50 k_B·T_c', ]} correctAnswer={0} explanation="BCS theory predicts: Delta(0)/k_B·T_c = pi/e^gamma = pi/1.781 approx 1.764. The factor pi/e^gamma arises from solving the BCS gap equation. At T = 0, the energy gap Delta(0) represents the minimum energy needed to break a Cooper pair into two individual electrons. As T approaches T_c from below, Delta(T) decreases and vanishes at T_c following Delta(T) approx Delta(0)*sqrt(1 - T/T_c) near T_c. This universal ratio is one of the most celebrated predictions of BCS theory." difficulty="hard" />
 
-<PracticeProblem
-  question="In a Type-II superconductor, what is the fundamental difference between the Meissner state (H < H_c1) and the vortex state (H_c1 < H < H_c2)?"
-  options={[
-    'The Meissner state completely excludes all magnetic flux; the vortex state allows quantized flux penetration through Abrikosov vortices',
-    'The Meissner state allows partial flux penetration; the vortex state excludes all flux',
-    'Both states exclude flux, but the vortex state has a higher critical temperature',
-    'The Meissner state has Cooper pairs; the vortex state does not',
-  ]}
-  correctAnswer={0}
-  explanation="In the Meissner state (H < H_c1), the superconductor exhibits perfect diamagnetism, expelling all magnetic flux (B = 0 inside). Surface screening currents maintain this state. Above H_c1, magnetic flux penetrates in quantized units Phi_0 = h/(2e) = 2.07 x 10^-15 Wb through Abrikosov vortices -- each vortex is a tube of normal material surrounded by circulating supercurrents. The superconducting state persists between the vortices. Above H_c2, the vortex cores overlap and superconductivity is destroyed. Type-II behavior requires the Ginzburg-Landau parameter kappa > 1/sqrt(2)."
-  difficulty="medium"
-/>
+<PracticeProblem question="In a Type-II superconductor, what is the fundamental difference between the Meissner state (H < H_c1) and the vortex state (H_c1 < H < H_c2)?" options={[ 'The Meissner state completely excludes all magnetic flux; the vortex state allows quantized flux penetration through Abrikosov vortices', 'The Meissner state allows partial flux penetration; the vortex state excludes all flux', 'Both states exclude flux, but the vortex state has a higher critical temperature', 'The Meissner state has Cooper pairs; the vortex state does not', ]} correctAnswer={0} explanation="In the Meissner state (H < H_c1), the superconductor exhibits perfect diamagnetism, expelling all magnetic flux (B = 0 inside). Surface screening currents maintain this state. Above H_c1, magnetic flux penetrates in quantized units Phi_0 = h/(2e) = 2.07 x 10^-15 Wb through Abrikosov vortices -- each vortex is a tube of normal material surrounded by circulating supercurrents. The superconducting state persists between the vortices. Above H_c2, the vortex cores overlap and superconductivity is destroyed. Type-II behavior requires the Ginzburg-Landau parameter kappa > 1/sqrt(2)." difficulty="medium" />

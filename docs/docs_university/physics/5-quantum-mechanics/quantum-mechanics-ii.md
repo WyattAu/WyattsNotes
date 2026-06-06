@@ -25,8 +25,7 @@ degenerate subspace:
 
 $$\langle n'l'm'|z|nlm\rangle \propto \delta_{l',l\pm 1}\,\delta_{m',m}$$
 
-Only $\langle 200|z|210\rangle$ and $\langle 210|z|200\rangle$ are nonzero. Defining the "parabolic
-basis" states:
+Only $\langle 200|z|210\rangle$ and $\langle 210|z|200\rangle$ are nonzero. Defining the "parabolic basis" states:
 
 $$|\psi_1\rangle = \frac{1}{\sqrt{2}}(|200\rangle + |210\rangle), \quad |\psi_2\rangle = \frac{1}{\sqrt{2}}(|200\rangle - |210\rangle)$$
 

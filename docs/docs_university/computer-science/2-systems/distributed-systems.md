@@ -539,7 +539,7 @@ $$V \leq W \iff V[j] \leq W[j] \text{ for all } j$$
 
 **Problem:** Three events: A at process P1 (VC: 1,0,0), B at P1 (VC: 2,0,0), C at P2 (VC: 0,1,0)
 which received message from A. Is A -> C? **Solution:** Event A has VC (1,0,0). Process P2 receives
-A's message before event C, so C's VC includes A's clock: C = max(A, local event) = max((1,0,0),
+A's message before event C, so C’s VC includes A's clock: C = max(A, local event) = max((1,0,0),
 (0,1,0)) = (1,1,0). Since VC(C) >= VC(A) component-wise, A happened before C (A -> C). Event B has
 VC (2,0,0), which does not causally precede C (0 < 1 at P2's counter). B and C are concurrent.
 

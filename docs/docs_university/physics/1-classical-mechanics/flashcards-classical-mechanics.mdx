@@ -2,8 +2,7 @@
 title: 'Classical Mechanics Flashcards'
 slug: flashcards-classical-mechanics
 description:
-  "University-level classical mechanics flashcards covering Newton's laws, Lagrangian and
-  Hamiltonian mechanics, Noether's theorem, rigid body dynamics, and canonical transformations."
+  "University-level classical mechanics flashcards covering Newton's laws, Lagrangian and Hamiltonian mechanics, Noether’s theorem, rigid body dynamics, and canonical transformations."
 tags:
   - University
   - Physics
@@ -43,7 +42,7 @@ export const flashcards1 = [
   {
     id: 'university-physics-classical-mechanics-004',
     front: 'State the Euler-Lagrange equation for a system with generalized coordinates.',
-    back: "For a system with Lagrangian L(q, q_dot, t) = T - V, the equations of motion are: d/dt (partial L / partial q_dot_i) - (partial L / partial q_i) = 0 for each generalized coordinate q_i. This single scalar equation replaces Newton's vector force laws and automatically handles constraint forces. The Euler-Lagrange equation follows from Hamilton's principle of stationary action.",
+    back: "For a system with Lagrangian L(q, q_dot, t) = T - V, the equations of motion are: d/dt (partial L / partial q_dot_i) - (partial L / partial q_i) = 0 for each generalized coordinate q_i. This single scalar equation replaces Newton's vector force laws and automatically handles constraint forces. The Euler-Lagrange equation follows from Hamilton’s principle of stationary action.",
     tags: ['lagrangian-mechanics'],
     difficulty: 'medium',
   },
@@ -82,7 +81,7 @@ export const flashcards2 = [
   },
   {
     id: 'university-physics-classical-mechanics-009',
-    front: "Sketch the derivation of Kepler's three laws from Newton's law of gravitation.",
+    front: "Sketch the derivation of Kepler's three laws from Newton’s law of gravitation.",
     back: '(1) First law (elliptical orbits): from F = -GMm/r^2 r_hat and the orbit equation, u = 1/r = (GMm^2/L^2)(1 + e cos theta), which is a conic section with eccentricity e. (2) Second law (equal areas): dA/dt = L/(2m) = constant, since L is conserved for a central force. (3) Third law (T^2 proportional to a^3): integrating over one period gives T = 2pi m a^{3/2} / sqrt(GM(M+m)), and for M >> m, T^2 = (4pi^2/GM) a^3.',
     tags: ['keplers-laws'],
     difficulty: 'hard',
@@ -175,9 +174,4 @@ export const flashcards4 = [
   },
 ];
 
-<FlashcardDeck
-  deckId="university-physics-classical-mechanics"
-  title="University Physics -- Classical Mechanics"
-  description="Newton's laws, Lagrangian and Hamiltonian mechanics, rigid body dynamics, canonical transformations, and scattering theory"
-  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
-/>
+<FlashcardDeck deckId="university-physics-classical-mechanics" title="University Physics -- Classical Mechanics" description="Newton's laws, Lagrangian and Hamiltonian mechanics, rigid body dynamics, canonical transformations, and scattering theory" cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]} />

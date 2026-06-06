@@ -367,7 +367,7 @@ S (S$_8$/polymeric), Se (gray/red/black).
 
 ### Example 2: Silicon vs Carbon Chemistry
 **Problem:** Explain why silicon does not form stable double bonds with oxygen (analogous to carbon dioxide), and why SiO2 forms a giant covalent lattice rather than discrete molecules.
-**Solution:** The Si=O pi bond is weaker than the C=O pi bond because silicon's 3p orbitals have poor overlap with oxygen's 2p orbitals (size mismatch and reduced p-p overlap). Instead, Si forms four single Si-O bonds, each of which is strong (partial d-p pi bonding provides additional stabilisation). This leads to a 3D network of SiO4 tetrahedra (quartz) rather than discrete SiO2 molecules. This is why silicon carbonyl analogues do not exist and why silica has a very high melting point.
+**Solution:** The Si=O pi bond is weaker than the C=O pi bond because silicon's 3p orbitals have poor overlap with oxygen’s 2p orbitals (size mismatch and reduced p-p overlap). Instead, Si forms four single Si-O bonds, each of which is strong (partial d-p pi bonding provides additional stabilisation). This leads to a 3D network of SiO4 tetrahedra (quartz) rather than discrete SiO2 molecules. This is why silicon carbonyl analogues do not exist and why silica has a very high melting point.
 
 ## Cross-References
 

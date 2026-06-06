@@ -189,7 +189,7 @@ transition state is the activation energy.
 
 $$k = \frac{k_B T}{h}\,e^{-\Delta^{\ddagger} G^\circ/RT} = \frac{k_B T}{h}\,e^{\Delta^{\ddagger} S^\circ/R}\,e^{-\Delta^{\ddagger} H^\circ/RT}$$
 
-where $k_B$ is Boltzmann's constant, $h$ is Planck's constant, $\Delta^{\ddagger} G^\circ$,
+where $k_B$ is Boltzmann's constant, $h$ is Planck’s constant, $\Delta^{\ddagger} G^\circ$,
 $\Delta^{\ddagger} H^\circ$, and $\Delta^{\ddagger} S^\circ$ are the standard Gibbs energy,
 enthalpy, and entropy of activation.
 

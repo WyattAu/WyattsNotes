@@ -39,7 +39,7 @@ The one-dimensional wave equation:
 
 $$\frac{\partial^2 u}{\partial x^2} = \frac{1}{v^2}\frac{\partial^2 u}{\partial t^2}$$
 
-Has the general solution (d'Alembert's solution):
+Has the general solution (d'Alembert’s solution):
 
 $$u(x, t) = f(x - vt) + g(x + vt)$$
 
@@ -1229,7 +1229,7 @@ Glare from horizontal surfaces (Brewster's angle reflection from road/water).
 
 **Snell's Law:** $n_1 \sin\theta_1 = n_2 \sin\theta_2$.
 
-**Derivation of Snell's law from Fermat's principle.** The optical path length from point $A$ in
+**Derivation of Snell's law from Fermat’s principle.** The optical path length from point $A$ in
 Medium 1 to point $B$ in medium 2 via a point on the interface at $x$ is:
 
 $$\Lambda(x) = n_1\sqrt{a^2 + x^2} + n_2\sqrt{b^2 + (d - x)^2}$$
@@ -1782,7 +1782,7 @@ $\theta_{\min} = 1.22\lambda/D = 1.22(500 \times 10^{-9})/2.4 = 2.54 \times 10^{
 $= 0.0527''$. The ground-based $D = 8$ m telescope has a diffraction limit of
 $1.22(500 \times 10^{-9})/8 = 7.63 \times 10^{-8}$ rad $= 0.0158''$But atmospheric seeing of $1.0''$
 degrades this by a factor of $\sim 63$. Hubble, being above the atmosphere, achieves its
-diffraction-limited $0.053''$ resolution, far surpassing the ground-based telescope's effective
+diffraction-limited $0.053''$ resolution, far surpassing the ground-based telescope’s effective
 resolution.
 
 **Solution 17.** (a) $\theta_B = \arctan(1.50) = 56.3°$. (b) $\theta_t = 90° - \theta_B = 33.7°$.
@@ -2120,7 +2120,7 @@ $\blacksquare$
 - **Ignoring the phase in interference calculations.** Phase differences determine constructive and
   destructive interference. Always track the optical path length carefully.
 
-- **Misidentifying Brewster's angle.** Brewster's angle is for the _reflected_ beam, not the
+- **Misidentifying Brewster's angle.** Brewster’s angle is for the _reflected_ beam, not the
   transmitted beam. At Brewster's angle, the reflected light is purely $s$-polarised.
 
 - **Neglecting the difference between intensity and amplitude.** Interference patterns depend on
@@ -2371,7 +2371,7 @@ the waist contribution, valid for $z \gg z_R$).
    approaches a Gaussian profile (Airy pattern central maximum), which is why spatial filtering is
    used to "clean up" laser beams.
 
-5. **Polarisation and Brewster's angle:** At Brewster's angle, the _reflected_ beam is purely
+5. **Polarisation and Brewster's angle:** At Brewster’s angle, the _reflected_ beam is purely
    $s$-polarised, not the transmitted beam. The transmitted beam has reduced $s$-component and
    becomes partially $p$-polarised. Complete polarisation of the transmitted beam requires many
    interfaces (pile-of-plates polariser).
@@ -2577,7 +2577,7 @@ $\blacksquare$
   at $v_g$.
 - Interference: thin films, Michelson interferometer, Fabry-Pérot etalon.
 - Diffraction: single slit, double slit, diffraction grating; Rayleigh criterion for resolution.
-- Polarisation: Brewster's angle, Malus's law ($I = I_0 \cos^2 \theta$).
+- Polarisation: Brewster's angle, Malus’s law ($I = I_0 \cos^2 \theta$).
 
 ## Cross-References
 

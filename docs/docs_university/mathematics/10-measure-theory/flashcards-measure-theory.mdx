@@ -113,7 +113,7 @@ export const flashcards3 = [
   {
     id: 'uni-maths-measure-theory-014',
     front: "State Minkowski's inequality and explain its role.",
-    back: "For f, g in L^p (1 <= p <= infinity): ||f + g||_p <= ||f||_p + ||g||_p. This is the triangle inequality for the L^p norm. It is proved using Holder's inequality applied to |f + g|^p = |f + g| * |f + g|^{p-1}. Minkowski's inequality ensures ||.||_p is indeed a norm.",
+    back: "For f, g in L^p (1 <= p <= infinity): ||f + g||_p <= ||f||_p + ||g||_p. This is the triangle inequality for the L^p norm. It is proved using Holder's inequality applied to |f + g|^p = |f + g| * |f + g|^{p-1}. Minkowski’s inequality ensures ||.||_p is indeed a norm.",
     tags: ['inequalities'],
     difficulty: 'medium',
   },
@@ -157,15 +157,10 @@ export const flashcards4 = [
   },
   {
     id: 'uni-maths-measure-theory-020',
-    front: "State Egorov's theorem and Lusin's theorem.",
+    front: "State Egorov's theorem and Lusin’s theorem.",
     back: 'Egorov: on a finite measure space, if f_n -> f a.e., then for every epsilon > 0, there exists A with mu(A) < epsilon such that f_n -> f uniformly on X \\ A. Lusin: if f: [a,b] -> R is Lebesgue measurable, for every epsilon > 0 there is a compact K subset of [a,b] with m([a,b] \\ K) < epsilon and f|_K is continuous.',
     tags: ['measurable-functions'],
     difficulty: 'hard',
   },
 ];
-<FlashcardDeck
-  deckId="uni-maths-measure-theory"
-  title="University Maths -- Measure Theory"
-  description="Sigma-algebras, measures, Lebesgue integration, convergence theorems, L^p spaces, Fubini-Tonelli, Radon-Nikodym"
-  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
-/>;
+<FlashcardDeck deckId="uni-maths-measure-theory" title="University Maths -- Measure Theory" description="Sigma-algebras, measures, Lebesgue integration, convergence theorems, L^p spaces, Fubini-Tonelli, Radon-Nikodym" cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]} />;

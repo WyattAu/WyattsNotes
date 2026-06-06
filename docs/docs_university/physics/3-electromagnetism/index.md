@@ -203,7 +203,7 @@ $V(\infty) = 0$).
 Conservative, so the line integral $\int_A^B \mathbf{E} \cdot d\mathbf{l} = V(A) - V(B)$ is
 Path-independent.
 
-### 2.4 Poisson's and Laplace's Equations
+### 2.4 Poisson's and Laplace’s Equations
 
 Substituting $\mathbf{E} = -\nabla V$ into Gauss's law:
 
@@ -682,7 +682,7 @@ The induced EMF: $\mathcal{E} = -\frac{d\Phi_B}{dt} = \pi R^2 B_0 \omega \sin(\o
 
 ### 4.2 Displacement Current
 
-Maxwell's key insight: Ampere's law $\nabla \times \mathbf{B} = \mu_0 \mathbf{J}$ is inconsistent
+Maxwell's key insight: Ampere’s law $\nabla \times \mathbf{B} = \mu_0 \mathbf{J}$ is inconsistent
 with The continuity equation. Adding the **displacement current** term
 $\mu_0 \varepsilon_0 \partial \mathbf{E}/\partial t$ Resolves this:
 
@@ -740,7 +740,7 @@ rod. $\blacksquare$
 
 ### 4.5 Derivation of Maxwell's Correction
 
-**Problem with Ampere's original law.** The original Ampere's law was
+**Problem with Ampere's original law.** The original Ampere’s law was
 $\nabla \times \mathbf{B} = \mu_0 \mathbf{J}$. Taking the divergence:
 
 $$\nabla \cdot (\nabla \times \mathbf{B}) = 0 = \mu_0 \nabla \cdot \mathbf{J}$$
@@ -1220,7 +1220,7 @@ $$\mathbf{B} = \frac{1}{c}\hat{\mathbf{R}} \times \mathbf{E}$$
 ### 7.1 Covariant Formulation
 
 The laws of electromagnetism are inherently relativistic. In fact, it was the inconsistency of
-Maxwell's equations with Galilean relativity that motivated Einstein's 1905 theory.
+Maxwell's equations with Galilean relativity that motivated Einstein’s 1905 theory.
 
 **Minkowski spacetime.** Events are labelled by coordinates $(ct, x, y, z)$ in a four-dimensional
 Spacetime. The **spacetime interval** between two events is:
@@ -1309,7 +1309,7 @@ All four Maxwell equations are contained in two covariant equations:
 
 $$\boxed{\partial_\mu F^{\mu\nu} = \mu_0 J^\nu}$$
 
-**Homogeneous equations** (Gauss's law for magnetism + Faraday's law):
+**Homogeneous equations** (Gauss's law for magnetism + Faraday’s law):
 
 $$\boxed{\partial_\mu \tilde{F}^{\mu\nu} = 0}$$
 
@@ -2404,7 +2404,7 @@ $\blacksquare$
 
 ## Common Pitfalls
 
-- **Confusing Gauss's law applications.** Gauss's law is most useful for systems with high symmetry
+- **Confusing Gauss's law applications.** Gauss’s law is most useful for systems with high symmetry
   (spherical, cylindrical, planar). **Fix:** Choose a Gaussian surface matching the symmetry; the
   flux through the surface equals the enclosed charge divided by $\varepsilon_0$.
 - **Wrong Maxwell equation sign.** Faraday's law has a negative sign:
@@ -2416,7 +2416,7 @@ $\blacksquare$
 
 ## Summary
 
-- Maxwell's equations: Gauss's law, Gauss's law for magnetism, Faraday's law, Ampère-Maxwell law.
+- Maxwell's equations: Gauss’s law, Gauss's law for magnetism, Faraday’s law, Ampère-Maxwell law.
 - Gauss's law: $\oint \vec{E} \cdot d\vec{A} = Q_{\text{enc}}/\varepsilon_0$.
 - EM waves: $E_0 = cB_0$; $c = 1/\sqrt{\mu_0\varepsilon_0}$; Poynting vector
   $\vec{S} = \vec{E} \times \vec{H}/\mu_0$.
