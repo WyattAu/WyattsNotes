@@ -9,7 +9,7 @@ tags:
   - University
 categories:
   - Chemistry
-slug: university-chemistry/coordination-chemistry
+slug: coordination-chemistry
 ---
 
 ## 1. Crystal Field Theory

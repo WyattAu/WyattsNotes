@@ -9,7 +9,7 @@ tags:
   - University
 categories:
   - Chemistry
-slug: university-chemistry/atomic-structure-and-periodicity
+slug: atomic-structure-and-periodicity
 ---
 
 ## 1. Atomic Orbitals

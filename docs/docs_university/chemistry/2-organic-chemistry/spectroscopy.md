@@ -7,7 +7,7 @@ tags:
   - University
 categories:
   - Chemistry
-slug: university-chemistry/spectroscopy
+slug: spectroscopy
 ---
 
 ## 1. UV-Visible Spectroscopy

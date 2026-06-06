@@ -7,7 +7,7 @@ tags:
   - University
 categories:
   - Chemistry
-slug: university-chemistry/main-group-chemistry
+slug: main-group-chemistry
 ---
 
 ## 1. Group 1: The Alkali Metals
