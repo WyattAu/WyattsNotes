@@ -41,3 +41,4 @@ jobs:
           deploy-url: 'https://qualifications.wyattau.com'
           node-memory: '7168'
           preprocess-paths: 'docs/docs_qualifications'
+        secrets: inherit

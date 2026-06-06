@@ -42,3 +42,4 @@ jobs:
           node-memory: '14336'
           preprocess-paths: 'docs/docs_ib'
           create-project: 'true'
+        secrets: inherit

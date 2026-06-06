@@ -82,10 +82,10 @@ runs:
         NODE_OPTIONS: '--max-old-space-size=${{ inputs.node-memory }}'
         DISABLE_LUNR: '1'
         GENERATE_SOURCEMAP: '${{ inputs.generate-sitemap }}'
-        SENTRY_DSN: '${{ secrets.SENTRY_DSN }}'
-        GOOGLE_SITE_VERIFICATION: '${{ secrets.GOOGLE_SITE_VERIFICATION }}'
-        BING_SITE_VERIFICATION: '${{ secrets.BING_SITE_VERIFICATION }}'
-        CLOUDFLARE_ANALYTICS_TOKEN: '${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}'
+        SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+        GOOGLE_SITE_VERIFICATION: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
+        BING_SITE_VERIFICATION: ${{ secrets.BING_SITE_VERIFICATION }}
+        CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
 
     - name: Remove SSR bundle
       shell: bash
@@ -97,16 +97,16 @@ runs:
       run: |
         npx wrangler@4 pages project create ${{ inputs.project-name }} --production-branch main 2>/dev/null || true
       env:
-        CLOUDFLARE_API_TOKEN: '${{ secrets.CLOUDFLARE_API_TOKEN }}'
-        CLOUDFLARE_ACCOUNT_ID: '${{ secrets.CLOUDFLARE_ACCOUNT_ID }}'
+        CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
     - name: Deploy to Cloudflare Pages
       id: deploy
       shell: bash
       run: npx wrangler@4 pages deploy build --project-name ${{ inputs.project-name }}
       env:
-        CLOUDFLARE_API_TOKEN: '${{ secrets.CLOUDFLARE_API_TOKEN }}'
-        CLOUDFLARE_ACCOUNT_ID: '${{ secrets.CLOUDFLARE_ACCOUNT_ID }}'
+        CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
     - name: Deployment summary
       if: always()

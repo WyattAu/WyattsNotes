@@ -44,11 +44,13 @@ const EXPECTED_PAGES = [
   '/docs/mathematics/functional-analysis',
   '/docs/mathematics/differential-geometry',
 
-  // Mathematics — sub-pages
+  // Mathematics — sub-pages (slug prefix fixed)
   '/docs/mathematics/linear-algebra/flashcards-linear-algebra',
   '/docs/mathematics/linear-algebra/practice-linear-algebra',
   '/docs/mathematics/real-analysis/flashcards-real-analysis',
   '/docs/mathematics/real-analysis/practice-real-analysis',
+  '/docs/mathematics/abstract-algebra/flashcards-abstract-algebra',
+  '/docs/mathematics/abstract-algebra/practice-abstract-algebra',
 
   // Physics — numbered subdirectories (index.md)
   '/docs/physics/classical-mechanics',

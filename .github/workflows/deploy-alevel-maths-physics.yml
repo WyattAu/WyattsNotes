@@ -43,3 +43,4 @@ jobs:
           node-memory: '14336'
           preprocess-paths: 'docs/docs_alevel'
           create-project: 'true'
+        secrets: inherit

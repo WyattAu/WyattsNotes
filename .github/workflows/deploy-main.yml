@@ -38,3 +38,4 @@ jobs:
           site-name: Main
           deploy-url: 'https://wyattsnotes.wyattau.com'
           node-memory: '7168'
+        secrets: inherit
