@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Chemistry
-slug: structure-and-bonding
 ---
 
 ## 1. Hybridization

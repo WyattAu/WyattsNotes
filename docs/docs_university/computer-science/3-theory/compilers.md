@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Computer Science
-slug: compilers
 ---
 
 ## 1. Compiler Overview

@@ -7,7 +7,6 @@ tags:
   - University
 categories:
   - Computer Science
-slug: complexity-theory
 ---
 
 ## 1. Asymptotic Notation

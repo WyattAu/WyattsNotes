@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Computer Science
-slug: graph-algorithms
 ---
 
 ## 1. Graph Traversals

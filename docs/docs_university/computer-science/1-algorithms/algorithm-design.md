@@ -7,7 +7,6 @@ tags:
   - University
 categories:
   - Computer Science
-slug: algorithm-design
 ---
 
 ## 1. Divide and Conquer

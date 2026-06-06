@@ -7,7 +7,6 @@ tags:
   - University
 categories:
   - Computer Science
-slug: automata-and-formal-languages
 ---
 
 ## 1. Finite Automata

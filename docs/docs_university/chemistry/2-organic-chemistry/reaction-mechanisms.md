@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Chemistry
-slug: reaction-mechanisms
 ---
 
 ## 1. Nucleophilic Substitution

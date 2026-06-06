@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Computer Science
-slug: machine-learning-fundamentals
 ---
 
 ## 1. Linear Regression

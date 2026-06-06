@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Computer Science
-slug: operating-systems
 ---
 
 ## 1. Processes and Threads

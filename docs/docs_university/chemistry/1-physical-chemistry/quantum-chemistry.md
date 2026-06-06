@@ -7,7 +7,6 @@ tags:
   - University
 categories:
   - Chemistry
-slug: quantum-chemistry
 ---
 
 ## 1. Postulates of Quantum Mechanics

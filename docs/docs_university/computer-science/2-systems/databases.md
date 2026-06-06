@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Computer Science
-slug: databases
 ---
 
 ## 1. Relational Model

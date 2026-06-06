@@ -7,7 +7,6 @@ tags:
   - University
 categories:
   - Chemistry
-slug: solid-state-chemistry
 ---
 
 ## 1. Crystal Structures

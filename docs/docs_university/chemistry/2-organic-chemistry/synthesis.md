@@ -7,7 +7,6 @@ tags:
   - University
 categories:
   - Chemistry
-slug: synthesis
 ---
 
 ## 1. Retrosynthetic Analysis

@@ -7,7 +7,6 @@ tags:
   - University
 categories:
   - Chemistry
-slug: statistical-mechanics
 ---
 
 ## 1. Microstates and Macrostates

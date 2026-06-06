@@ -7,7 +7,6 @@ tags:
   - University
 categories:
   - Chemistry
-slug: thermodynamics
 ---
 
 ## 1. The Laws of Thermodynamics

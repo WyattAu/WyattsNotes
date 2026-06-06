@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Computer Science
-slug: networking
 ---
 
 ## 1. Network Models

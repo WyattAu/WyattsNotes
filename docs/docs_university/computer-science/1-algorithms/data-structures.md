@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Computer Science
-slug: data-structures
 ---
 
 ## 1. Arrays and Linked Lists

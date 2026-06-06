@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Chemistry
-slug: chemical-kinetics
 ---
 
 ## 1. Rate Laws and Reaction Order

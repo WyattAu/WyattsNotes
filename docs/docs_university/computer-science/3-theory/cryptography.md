@@ -7,7 +7,6 @@ tags:
   - University
 categories:
   - Computer Science
-slug: cryptography
 ---
 
 ## 1. Fundamentals

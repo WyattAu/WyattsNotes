@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Computer Science
-slug: distributed-systems
 ---
 
 ## 1. CAP Theorem
