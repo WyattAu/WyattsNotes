@@ -39,7 +39,9 @@ the explanation.
   question="What is the result of `[0 | [1, 2, 3]]`?"
   options={['[0, 1, 2, 3]', '[1, 2, 3, 0]', '{:ok, [0, 1, 2, 3]}', 'Syntax error']}
   correctAnswer={0}
-  explanation="The | operator prepends an element to a list. [0 | [1, 2, 3]] produces [0, 1, 2, 3]. This is O(1) because it only creates a new head node pointing to the existing tail."
+  explanation="The | operator prepends an element to a list. [0 | [1, 2, 3]] 
+
+produces [0, 1, 2, 3]. This is O(1) because it only creates a new head node pointing to the existing tail."
   difficulty="easy"
 />
 
@@ -88,9 +90,13 @@ the explanation.
 
 <PracticeProblem
   question={`Which of the following correctly accesses the value associated with the key :name in the map \`%{name: "Alice", age: 30}\`?`}
-  options={['map.name', 'map[:name] or map.name both work', 'map.get(:name)', 'map.fetch("name")']}
+  options={['map.name', 'map[:name] 
+
+or map.name both work', 'map.get(:name)', 'map.fetch("name")']}
   correctAnswer={0}
-  explanation="For maps with atom keys, the dot syntax (map.name) works and returns the value. map[:name] also works and returns nil for missing keys. The dot syntax raises KeyError if the key is missing. map.get/2 is a Map module function, not a dot-access method."
+  explanation="For maps with atom keys, the dot syntax (map.name) works and returns the value. map[:name] 
+
+also works and returns nil for missing keys. The dot syntax raises KeyError if the key is missing. map.get/2 is a Map module function, not a dot-access method."
   difficulty="easy"
 />
 

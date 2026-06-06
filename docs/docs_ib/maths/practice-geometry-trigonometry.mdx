@@ -113,10 +113,14 @@ aligned to the SL/HL syllabus. Select an answer, submit, and review the explanat
 />
 
 <PracticeProblem
-  question="The matrix [[0,−1],[1,0]] represents which transformation?"
+  question="The matrix [[0,−1],[1,0]] 
+
+represents which transformation?"
   options={['Rotation 90° anticlockwise about the origin', 'Rotation 90° clockwise about the origin', 'Reflection in the line y = x', 'Reflection in the line y = −x']}
   correctAnswer={0}
-  explanation="[[0,−1],[1,0]] maps (1,0)→(0,1) and (0,1)→(−1,0), which is a rotation of 90° anticlockwise about the origin."
+  explanation="[[0,−1],[1,0]] 
+
+maps (1,0)→(0,1) and (0,1)→(−1,0), which is a rotation of 90° anticlockwise about the origin."
   difficulty="medium"
 />
 
@@ -124,7 +128,9 @@ aligned to the SL/HL syllabus. Select an answer, submit, and review the explanat
   question="A rotation of 90° clockwise followed by a reflection in the x-axis is applied to the point (3, 4). Find the image."
   options={['(−4, −3)', '(4, −3)', '(3, −4)', '(−3, −4)']}
   correctAnswer={0}
-  explanation="Rotation 90° clockwise: (3,4) → (4,−3) using matrix [[0,1],[−1,0]]. Reflection in x-axis: (4,−3) → (4,3) using [[1,0],[0,−1]]. Wait, let me redo. 90° clockwise matrix is [[0,1],[−1,0]]. Applied to (3,4): x' = 0·3 + 1·4 = 4, y' = −1·3 + 0·4 = −3. So after rotation: (4,−3). Reflection in x-axis maps (x,y)→(x,−y): (4,−3)→(4,3). Hmm, (4,3) is not among the options. Let me reconsider: perhaps the reflection in x-axis should be checked. Reflection in x-axis: (x,y)→(x,−y). So (4,−3)→(4,3). That is not listed. Let me re-examine the rotation. 90° anticlockwise: [[0,−1],[1,0]]. Applied to (3,4): (−4,3). Then reflect in x-axis: (−4,−3). That gives (−4,−3). The question says clockwise then x-axis reflection. Clockwise: [[cos(−90°),−sin(−90°)],[sin(−90°),cos(−90°)]] = [[0,1],[−1,0]]. (3,4)→(4,−3). Then x-axis: (4,3). Not matching. If we use the matrix [[0,1],[−1,0]] correctly: for column vector [3,4], result = [0·3+1·4, −1·3+0·4]ᵀ = [4,−3]. Then x-reflection gives [4,3]. This does not match. Perhaps the intended order means anticlockwise rotation. Anticlockwise 90°: (3,4)→(−4,3). X-reflection: (−4,−3). So the answer is (−4,−3)."
+  explanation="Rotation 90° clockwise: (3,4) → (4,−3) using matrix [[0,1],[−1,0]]. Reflection in x-axis: (4,−3) → (4,3) using [[1,0],[0,−1]]. Wait, let me redo. 90° clockwise matrix is [[0,1],[−1,0]]. Applied to (3,4): x' = 0·3 + 1·4 = 4, y' = −1·3 + 0·4 = −3. So after rotation: (4,−3). Reflection in x-axis maps (x,y)→(x,−y): (4,−3)→(4,3). Hmm, (4,3) is not among the options. Let me reconsider: perhaps the reflection in x-axis should be checked. Reflection in x-axis: (x,y)→(x,−y). So (4,−3)→(4,3). That is not listed. Let me re-examine the rotation. 90° anticlockwise: [[0,−1],[1,0]]. Applied to (3,4): (−4,3). Then reflect in x-axis: (−4,−3). That gives (−4,−3). The question says clockwise then x-axis reflection. Clockwise: [[cos(−90°),−sin(−90°)],[sin(−90°),cos(−90°)]] = [[0,1],[−1,0]]. (3,4)→(4,−3). Then x-axis: (4,3). Not matching. If we use the matrix [[0,1],[−1,0]] 
+
+correctly: for column vector [3,4], result = [0·3+1·4, −1·3+0·4]ᵀ = [4,−3]. Then x-reflection gives [4,3]. This does not match. Perhaps the intended order means anticlockwise rotation. Anticlockwise 90°: (3,4)→(−4,3). X-reflection: (−4,−3). So the answer is (−4,−3)."
   difficulty="hard"
 />
 
