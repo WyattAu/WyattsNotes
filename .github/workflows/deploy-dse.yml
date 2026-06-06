@@ -42,4 +42,3 @@ jobs:
           node-memory: '11264'
           preprocess-paths: 'docs/docs_dse'
           create-project: 'true'
-        secrets: inherit

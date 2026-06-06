@@ -44,4 +44,3 @@ jobs:
           preprocess-paths: 'docs/docs_alevel'
           create-project: 'true'
           allow-build-failure: 'true'
-        secrets: inherit
