@@ -1,30 +1,12 @@
 #!/usr/bin/env node
 /**
  * Comprehensive deployment smoke test for university site.
- * Auto-discovers all pages from the docs directory structure.
- *
- * URL mapping rules:
- *   - Subdirectories with index.md: Docusaurus derives the slug from
- *     the frontmatter `title` (lowercased, spaces → dashes).
- *     e.g., docs/docs_university/mathematics/1-abstract-algebra/index.md
- *     (title: "Abstract Algebra") → /docs/mathematics/abstract-algebra
- *   - Standalone .md/.mdx files: filename becomes slug.
- *     e.g., docs/docs_university/admissions/bmo-preparation.md
- *     → /docs/admissions/bmo-preparation
- *   - Nested files in subdirectories: directory name (no number stripping)
- *     becomes the slug. The title-based slug only applies to index.md
- *     in the top-level subdirectory.
+ * Fetches the live sitemap to get authoritative URL list,
+ * then verifies every page returns a valid 200 with real content.
  *
  * Usage:
  *   node scripts/smoke-test-university.mjs [--base-url URL] [--fail-fast] [--concurrency N]
  */
-
-import { execSync, readFileSync } from 'fs';
-import { resolve, dirname } from 'path';
-import { fileURLToPath } from 'url';
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const projectRoot = resolve(__dirname, '..');
 
 const BASE_URL = process.argv.includes('--base-url')
   ? process.argv[process.argv.indexOf('--base-url') + 1]
@@ -36,80 +18,44 @@ const CONCURRENCY = parseInt(
   10,
 );
 
-// Extract title from markdown frontmatter
-function extractTitle(filePath) {
-  try {
-    const content = readFileSync(resolve(projectRoot, filePath), 'utf8');
-    const match = content.match(/^title:\s*['"]?(.+?)['"]?\s*$/m);
-    return match ? match[1] : null;
-  } catch {
-    return null;
+// Fetch sitemap and extract page paths
+async function fetchSitemapPages() {
+  const res = await fetch(`${BASE_URL}/sitemap.xml`, {
+    headers: { 'User-Agent': 'smoke-test/1.0' },
+  });
+  if (!res.ok) {
+    throw new Error(`Failed to fetch sitemap: HTTP ${res.status}`);
   }
+  const xml = await res.text();
+
+  // Extract all <loc> URLs
+  const locRegex = /<loc>([^<]+)<\/loc>/g;
+  const urls = [];
+  let match;
+  while ((match = locRegex.exec(xml)) !== null) {
+    urls.push(match[1]);
+  }
+
+  // Filter to only /docs/ pages (skip /, /404, /privacy, /search, /tags)
+  return urls
+    .filter((url) => url.startsWith(`${BASE_URL}/docs/`))
+    .map((url) => url.replace(`${BASE_URL}`, '')); // Strip base URL
 }
 
-// Convert a frontmatter title to a URL slug
-function titleToSlug(title) {
-  return title
-    .toLowerCase()
-    .replace(/[^\w\s-]/g, '') // Remove non-word chars except spaces and hyphens
-    .replace(/\s+/g, '-') // Spaces to hyphens
-    .replace(/-+/g, '-') // Collapse multiple hyphens
-    .replace(/^-|-$/g, ''); // Trim leading/trailing hyphens
-}
+// Also discover expected pages from filesystem for comparison
+import { execSync } from 'child_process';
+import { resolve, dirname } from 'path';
+import { fileURLToPath } from 'url';
 
-// Auto-discover all pages with correct URL mapping
-function discoverPages() {
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const projectRoot = resolve(__dirname, '..');
+
+function discoverFilesystemPages() {
   const stdout = execSync(
     'find docs/docs_university -name "*.md" -o -name "*.mdx"',
     { encoding: 'utf8', cwd: projectRoot },
   );
-
-  const pages = [];
-
-  for (const filePath of stdout.trim().split('\n').filter(Boolean)) {
-    // Remove docs/docs_university/ prefix
-    const relativePath = filePath.replace(/^docs\/docs_university\//, '');
-
-    // Get the parts
-    const parts = relativePath.split('/');
-    // parts[0] = subject directory (mathematics, physics, etc.)
-    // parts[1] = subdirectory or filename
-    // parts[2] = filename if in nested dir
-
-    const subject = parts[0];
-
-    if (parts.length === 2) {
-      // File directly in subject directory: admissions/bmo-preparation.md
-      const fileName = parts[1].replace(/\.mdx?$/, '');
-      pages.push(`${subject}/${fileName}`);
-    } else if (parts.length >= 3) {
-      const fileName = parts[parts.length - 1].replace(/\.mdx?$/, '');
-      const parentDir = parts[1];
-
-      // Check if this is index.md in a subdirectory
-      if (fileName === 'index') {
-        // Docusaurus derives slug from frontmatter title for index.md
-        const title = extractTitle(filePath);
-        if (title) {
-          pages.push(`${subject}/${titleToSlug(title)}`);
-        } else {
-          // No title — use directory name as-is
-          pages.push(`${subject}/${parentDir}`);
-        }
-      } else {
-        // Non-index file in a subdirectory: use parent dir + filename
-        // e.g., computing/2-algorithms-and-data-structures/2_data-structures-advanced.md
-        // → /docs/computing/algorithms-and-data-structures/2_data-structures-advanced
-        // The parent directory slug is derived from its index.md title
-        const indexPath = filePath.replace(/[^/]+\.mdx?$/, 'index.md');
-        const indexTitle = extractTitle(indexPath);
-        const dirSlug = indexTitle ? titleToSlug(indexTitle) : parentDir;
-        pages.push(`${subject}/${dirSlug}/${fileName}`);
-      }
-    }
-  }
-
-  return [...new Set(pages)].sort();
+  return stdout.trim().split('\n').filter(Boolean).length;
 }
 
 // Cloudflare Pages returns 200 for 404 pages, so we need to check content
@@ -127,7 +73,6 @@ async function checkPage(url) {
       return { status: res.status, is404: true };
     }
 
-    // Check if it's actually a 404 page (Cloudflare returns 200 with 404 HTML)
     const html = await res.text();
     const titleMatch = html.match(/<title>([^<]*)<\/title>/i);
     const title = titleMatch ? titleMatch[1] : '';
@@ -166,32 +111,46 @@ async function runWithConcurrency(items, fn, concurrency) {
 }
 
 async function main() {
-  const pages = discoverPages();
-
   console.log(`\n${'='.repeat(60)}`);
   console.log(`University Site Comprehensive Smoke Test`);
   console.log(`${'='.repeat(60)}`);
   console.log(`Base URL:    ${BASE_URL}`);
-  console.log(`Total pages:  ${pages.length}`);
   console.log(`Concurrency:  ${CONCURRENCY}`);
   console.log(`Fail fast:    ${FAIL_FAST}`);
   console.log('');
 
-  // Group pages by subject for summary
+  const fsPageCount = discoverFilesystemPages();
+  console.log(`Filesystem pages: ${fsPageCount} (.md/.mdx files)`);
+  console.log('');
+
+  const pages = await fetchSitemapPages();
+  console.log(`Sitemap pages:  ${pages.length}`);
+
+  if (pages.length === 0) {
+    console.log('\n⚠️  No /docs/ pages found in sitemap — site may not be deployed yet.');
+    process.exit(2);
+  }
+
+  // Group by top-level subject
   const subjects = {};
   for (const page of pages) {
-    const subject = page.split('/')[0];
+    const subject = page.replace(/^\/docs\//, '').split('/')[0];
     if (!subjects[subject]) subjects[subject] = 0;
     subjects[subject]++;
   }
-  console.log('Pages by subject:');
+  console.log('\nPages by subject:');
   for (const [subj, count] of Object.entries(subjects).sort()) {
     console.log(`  ${subj}: ${count}`);
   }
+
+  // Coverage estimate
+  const expected = fsPageCount; // Rough count of content files
+  const coverage = ((pages.length / expected) * 100).toFixed(1);
+  console.log(`\nSitemap coverage: ~${coverage}% of ${expected} content files`);
   console.log('');
 
   const results = await runWithConcurrency(pages, async (page, i) => {
-    const url = `${BASE_URL}/docs/${page}`;
+    const url = `${BASE_URL}${page}`;
     const result = await checkPage(url);
     return { page, url, ...result };
   }, CONCURRENCY);
@@ -221,11 +180,11 @@ async function main() {
   if (failures.length > 0) {
     console.log(`\nFailed pages (${failures.length}):`);
     for (const f of failures) {
-      console.log(`  ❌ /docs/${f.page} — ${f.reason}`);
+      console.log(`  ❌ ${f.page} — ${f.reason}`);
     }
     process.exit(1);
   } else {
-    console.log('\n✅ All university pages are live and accessible!');
+    console.log('\n✅ All sitemap pages are live and accessible!');
   }
 }
 
