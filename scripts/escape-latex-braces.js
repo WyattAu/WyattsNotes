@@ -579,14 +579,162 @@ function escapeApostrophesAllLines(source) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// Transformation 7: Fix MDX-unfriendly patterns in markdown text
+// ─────────────────────────────────────────────────────────────────────────────
+
+/**
+ * Fix patterns in markdown prose that MDX interprets as JSX/HTML but cannot
+ * parse correctly. Applied line-by-line, skipping frontmatter, code blocks,
+ * and math delimiters.
+ *
+ * Three patterns:
+ *
+ * 1. <digit (e.g., "-1<0") — MDX interprets < as HTML tag start.
+ *    "0" is not a valid tag name → "Unexpected character `0` before name".
+ *    Fix: replace < with &lt; when followed by a digit.
+ *
+ * 2. {(non-identifier-start) (e.g., "{(G, u, v)") — MDX parses as JSX
+ *    expression, acorn fails on the content.
+ *    Fix: diamondify the braces so remark plugin restores them.
+ *
+ * 3. \<escaped sequences in text — Some content uses \< or \> as math-like
+ *    notation in prose. These are fine for markdown but MDX may interpret
+ *    the < as HTML. Already handled by markdown rendering.
+ */
+
+function fixMdxUnfriendlyPatterns(source) {
+  const lines = source.split('\n');
+  let frontmatterEnd = 0;
+  if (lines[0]?.trim() === '---') {
+    for (let i = 1; i < lines.length; i++) {
+      if (lines[i].trim() === '---') {
+        frontmatterEnd = i + 1;
+        break;
+      }
+    }
+  }
+
+  let inCodeBlock = false;
+  let changed = false;
+  const result = lines.map((line, idx) => {
+    // Track code blocks
+    if (line.trim().startsWith('```')) {
+      inCodeBlock = !inCodeBlock;
+      return line;
+    }
+    if (inCodeBlock) return line;
+    if (idx < frontmatterEnd) return line;
+
+    let modified = line;
+
+    // Pattern 1: <digit — MDX interprets as HTML tag with invalid name
+    // Only in markdown text (not inside JSX tags or math)
+    // Match < followed by a digit, NOT preceded by & (already escaped)
+    // But NOT < followed by digit inside $...$ math
+    modified = modified.replace(/<(?=[0-9])(?![^$]*\$)/g, (match, offset, str) => {
+      // Check if we're inside a $...$ math expression
+      // Count $ signs before this position
+      const before = str.substring(0, offset);
+      const dollarCount = (before.match(/\$/g) || []).length;
+      // If odd number of $ before, we're inside math
+      if (dollarCount % 2 === 1) return match;
+      // Also skip if inside inline code
+      const backtickCount = (before.match(/`/g) || []).length;
+      if (backtickCount % 2 === 1) return match;
+      changed = true;
+      return '&lt;';
+    });
+
+    // Pattern 2: { followed by ( or space or non-identifier char
+    // MDX parses as JSX expression. If acorn can't parse it, build fails.
+    // Diamondify these braces so the remark plugin can restore them.
+    // Skip: lines that are JSX (start with <), lines with $...$ math,
+    // and { that starts valid JS identifiers/expressions.
+    if (modified.includes('{') && !modified.trimStart().startsWith('<') && !modified.includes('export ') && !modified.includes('const ')) {
+      // Find { that is NOT inside $...$ math, inline code, or JSX attributes
+      let newModified = '';
+      let i = 0;
+      let inMath = false;
+      let inInlineCode = false;
+      let inDollarMath = false;
+
+      while (i < modified.length) {
+        const ch = modified[i];
+
+        // Track $ math delimiters
+        if (ch === '$' && (i === 0 || modified[i-1] !== '\\')) {
+          inDollarMath = !inDollarMath;
+          newModified += ch;
+          i++;
+          continue;
+        }
+        if (inDollarMath) {
+          newModified += ch;
+          i++;
+          continue;
+        }
+
+        // Track inline code
+        if (ch === '`') {
+          inInlineCode = !inInlineCode;
+          newModified += ch;
+          i++;
+          continue;
+        }
+        if (inInlineCode) {
+          newModified += ch;
+          i++;
+          continue;
+        }
+
+        // Handle { — check if it starts a problematic expression
+        if (ch === '{') {
+          const next = i + 1 < modified.length ? modified[i + 1] : '';
+          // Valid JS expression starters: letter, $, _, {, [, !, ~, +, -, @
+          // Problematic: (, space, digit, *, etc.
+          const isValidJsStart = /[a-zA-Z$_\[{!~+\-@]/.test(next);
+          if (!isValidJsStart && next !== '' && next !== '}') {
+            // Diamondify this brace pair
+            // Find matching }
+            let depth = 1;
+            let j = i + 1;
+            while (j < modified.length && depth > 0) {
+              if (modified[j] === '{') depth++;
+              else if (modified[j] === '}') depth--;
+              if (depth > 0) j++;
+            }
+            if (depth === 0) {
+              // Found matching }
+              newModified += LB + modified.substring(i + 1, j) + RB;
+              i = j + 1;
+              changed = true;
+              continue;
+            }
+          }
+        }
+
+        newModified += ch;
+        i++;
+      }
+      modified = newModified;
+    }
+
+    return modified;
+  });
+
+  return changed ? result.join('\n') : source;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 
 function processFile(filepath) {
   const content = fs.readFileSync(filepath, 'utf8');
 
-  // Apply transformations in order: blank lines → collapse → autolinks → latex braces → superscripts → apostrophes
+  // Apply transformations in order: blank lines → collapse → autolinks → mdx-unfriendly → latex braces → superscripts → apostrophes
   let processed = ensureBlankLineAfterImport(content);
   processed = collapseConstArrays(processed);
   processed = fixAutolinks(processed);
+  processed = fixMdxUnfriendlyPatterns(processed);
   processed = diamondifyLatexBraces(processed);
   processed = diamondifySuperscriptSubscript(processed);
   processed = escapeApostrophesAllLines(processed);
