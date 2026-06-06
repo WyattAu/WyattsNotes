@@ -1,8 +1,8 @@
 // @ts-check
 // Docusaurus config for the University sub-site.
 // Build: pnpm run build -- --config docusaurus.university.config.ts
-// Contains: Mathematics, Physics, Computing (university-level)
-// Total: ~61K lines across 5 docs plugins + intro.
+// Contains: Mathematics, Physics, Computing, Chemistry, Computer Science, Admissions
+// Total: ~115K lines across 7 docs plugins + intro.
 
 import type * as Preset from '@docusaurus/preset-classic';
 
@@ -21,7 +21,7 @@ import {
 const config = {
   ...sharedConfig({
     title: "Wyatt's Notes — University",
-    tagline: 'Mathematics, Physics, and Computing for Undergraduates',
+    tagline: 'Mathematics, Physics, Computing, Chemistry, and Computer Science for Undergraduates',
     url: 'https://university.wyattau.com',
     algoliaIndexName: 'wyattsnotes_university',
     socialCard: '/img/social-cards/university.png',
@@ -33,6 +33,9 @@ const config = {
       removeLegacyPostBuildHeadAttribute: true,
     },
   },
+
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
 
   plugins: [
     ...sharedPlugins('wyattsnotes-university'),
@@ -98,6 +101,30 @@ const config = {
         ...createCommonDocsPluginConfig(true),
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'university-chemistry',
+        path: 'docs/docs_university/chemistry',
+        routeBasePath: '/docs/chemistry',
+        sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
+        editUrl:
+          'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/chemistry/{dir}',
+        ...createCommonDocsPluginConfig(true),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'university-cs',
+        path: 'docs/docs_university/computer-science',
+        routeBasePath: '/docs/computer-science',
+        sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
+        editUrl:
+          'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/computer-science/{dir}',
+        ...createCommonDocsPluginConfig(true),
+      },
+    ],
   ],
 
   themeConfig: {
@@ -156,6 +183,8 @@ const config = {
             { label: 'Mathematics', to: '/docs/mathematics/linear-algebra' },
             { label: 'Physics', to: '/docs/physics/classical-mechanics' },
             { label: 'Computing', to: '/docs/computing/algorithms-and-data-structures' },
+            { label: 'Chemistry', to: '/docs/chemistry/physical-chemistry' },
+            { label: 'Computer Science', to: '/docs/computer-science/algorithms' },
           ],
         },
         {
