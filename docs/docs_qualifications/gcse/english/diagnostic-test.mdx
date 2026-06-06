@@ -12,293 +12,45 @@ import DiagnosticTest from '@site/src/components/interactive/DiagnosticTest';
 <DiagnosticTest
   title="GCSE English Diagnostic Test"
   description="20 questions covering Shakespeare, 19th-century novel, modern texts and poetry, and essay writing. Identify your strengths and target your revision."
-  questions={[
-    {
-      id: 'eng-1',
-      topic: 'Shakespeare',
-      difficulty: 'easy',
-      question: 'What is a soliloquy in a Shakespeare play?',
-      options: [
-        'A conversation between two characters',
-        'A speech by one character alone on stage, revealing inner thoughts',
-        'A song performed by the chorus',
-        'A stage direction indicating silence',
-      ],
-      correctIndex: 1,
-      explanation:
-        'A soliloquy is a device where a character speaks alone on stage, sharing their thoughts and feelings with the audience.',
+  questions={[ { id: 'eng-1', topic: 'Shakespeare', difficulty: 'easy', question: 'What is a soliloquy in a Shakespeare play?', options: [ 'A conversation between two characters', 'A speech by one character alone on stage, revealing inner thoughts', 'A song performed by the chorus', 'A stage direction indicating silence', ], correctIndex: 1, explanation: 'A soliloquy is a device where a character speaks alone on stage, sharing their thoughts and feelings with the audience.',
     },
-    {
-      id: 'eng-2',
-      topic: 'Shakespeare',
-      difficulty: 'easy',
-      question: 'What is iambic pentameter?',
-      options: [
-        'A rhyme scheme of ABAB',
-        'A type of dramatic irony',
-        'A metre with five iambs (unstressed-stressed pairs) per line',
-        'A form of prose writing',
-      ],
-      correctIndex: 2,
-      explanation:
-        'Iambic pentameter has five iambs per line, each iamb being one unstressed followed by one stressed syllable: da-DUM da-DUM da-DUM da-DUM da-DUM.',
+    { id: 'eng-2', topic: 'Shakespeare', difficulty: 'easy', question: 'What is iambic pentameter?', options: [ 'A rhyme scheme of ABAB', 'A type of dramatic irony', 'A metre with five iambs (unstressed-stressed pairs) per line', 'A form of prose writing', ], correctIndex: 2, explanation: 'Iambic pentameter has five iambs per line, each iamb being one unstressed followed by one stressed syllable: da-DUM da-DUM da-DUM da-DUM da-DUM.',
     },
-    {
-      id: 'eng-3',
-      topic: 'Shakespeare',
-      difficulty: 'medium',
-      question:
-        'What dramatic technique is used when the audience knows something that a character does not?',
-      options: ['Foreshadowing', 'Dramatic irony', 'Pathetic fallacy', 'Metaphor'],
-      correctIndex: 1,
-      explanation:
-        'Dramatic irony creates tension or humour when the audience has knowledge that the character lacks, often about the true nature of a situation.',
+    { id: 'eng-3', topic: 'Shakespeare', difficulty: 'medium', question: 'What dramatic technique is used when the audience knows something that a character does not?', options: ['Foreshadowing', 'Dramatic irony', 'Pathetic fallacy', 'Metaphor'], correctIndex: 1, explanation: 'Dramatic irony creates tension or humour when the audience has knowledge that the character lacks, often about the true nature of a situation.',
     },
-    {
-      id: 'eng-4',
-      topic: 'Shakespeare',
-      difficulty: 'medium',
-      question: "In Shakespeare's time, what were the main types of play?",
-      options: [
-        'Comedy, tragedy, and history',
-        'Romance, horror, and adventure',
-        'Satire, comedy, and fable',
-        'Epic, lyric, and drama',
-      ],
-      correctIndex: 0,
-      explanation:
-        "Shakespeare's plays are categorised into three main genres: comedies (e.g. Twelfth Night), tragedies (e.g. Macbeth), and histories (e.g. Henry V).",
+    { id: 'eng-4', topic: 'Shakespeare', difficulty: 'medium', question: "In Shakespeare's time, what were the main types of play?", options: [ 'Comedy, tragedy, and history', 'Romance, horror, and adventure', 'Satire, comedy, and fable', 'Epic, lyric, and drama', ], correctIndex: 0, explanation: "Shakespeare's plays are categorised into three main genres: comedies (e.g. Twelfth Night), tragedies (e.g. Macbeth), and histories (e.g. Henry V).",
     },
-    {
-      id: 'eng-5',
-      topic: 'Shakespeare',
-      difficulty: 'hard',
-      question:
-        'Why is understanding the Elizabethan context important when analysing Shakespeare?',
-      options: [
-        'It helps with pronunciation of old words',
-        'Themes and attitudes reflect the beliefs and values of Elizabethan society',
-        'The plays were originally written in modern English',
-        'Context only matters for history plays',
-      ],
-      correctIndex: 1,
-      explanation:
-        "Shakespeare's plays reflect Elizabethan beliefs about the Great Chain of Being, divine right of kings, gender roles, and the supernatural, which shaped themes and audience reception.",
+    { id: 'eng-5', topic: 'Shakespeare', difficulty: 'hard', question: 'Why is understanding the Elizabethan context important when analysing Shakespeare?', options: [ 'It helps with pronunciation of old words', 'Themes and attitudes reflect the beliefs and values of Elizabethan society', 'The plays were originally written in modern English', 'Context only matters for history plays', ], correctIndex: 1, explanation: "Shakespeare's plays reflect Elizabethan beliefs about the Great Chain of Being, divine right of kings, gender roles, and the supernatural, which shaped themes and audience reception.",
     },
-    {
-      id: 'eng-6',
-      topic: '19th-Century Novel',
-      difficulty: 'easy',
-      question: 'What is a common feature of 19th-century novel settings?',
-      options: [
-        'Modern urban environments',
-        'Industrial landscapes reflecting social change',
-        'Fantasy worlds with magic',
-        'Space stations',
-      ],
-      correctIndex: 1,
-      explanation:
-        '19th-century novels often feature industrial settings, workhouses, and poverty-stricken streets, reflecting the social impact of the Industrial Revolution.',
+    { id: 'eng-6', topic: '19th-Century Novel', difficulty: 'easy', question: 'What is a common feature of 19th-century novel settings?', options: [ 'Modern urban environments', 'Industrial landscapes reflecting social change', 'Fantasy worlds with magic', 'Space stations', ], correctIndex: 1, explanation: '19th-century novels often feature industrial settings, workhouses, and poverty-stricken streets, reflecting the social impact of the Industrial Revolution.',
     },
-    {
-      id: 'eng-7',
-      topic: '19th-Century Novel',
-      difficulty: 'easy',
-      question: 'What does the term "characterisation" mean?',
-      options: [
-        'The setting of a story',
-        'How a writer creates and develops characters',
-        'The plot structure of a novel',
-        'The language style of narration',
-      ],
-      correctIndex: 1,
-      explanation:
-        'Characterisation is the methods a writer uses to reveal character -- through description, action, dialogue, and the reactions of other characters.',
+    { id: 'eng-7', topic: '19th-Century Novel', difficulty: 'easy', question: 'What does the term "characterisation" mean?', options: [ 'The setting of a story', 'How a writer creates and develops characters', 'The plot structure of a novel', 'The language style of narration', ], correctIndex: 1, explanation: 'Characterisation is the methods a writer uses to reveal character -- through description, action, dialogue, and the reactions of other characters.',
     },
-    {
-      id: 'eng-8',
-      topic: '19th-Century Novel',
-      difficulty: 'medium',
-      question: 'Which narrative technique presents events from a first-person perspective?',
-      options: [
-        'Omniscient narration',
-        'Third-person limited narration',
-        'First-person narrative',
-        'Unreliable narration',
-      ],
-      correctIndex: 2,
-      explanation:
-        'First-person narrative uses "I" and is told from one character\'s perspective, giving an intimate but potentially biased view of events.',
+    { id: 'eng-8', topic: '19th-Century Novel', difficulty: 'medium', question: 'Which narrative technique presents events from a first-person perspective?', options: [ 'Omniscient narration', 'Third-person limited narration', 'First-person narrative', 'Unreliable narration', ], correctIndex: 2, explanation: 'First-person narrative uses "I" and is told from one character\'s perspective, giving an intimate but potentially biased view of events.',
     },
-    {
-      id: 'eng-9',
-      topic: '19th-Century Novel',
-      difficulty: 'medium',
-      question: 'What social theme is commonly explored in 19th-century novels?',
-      options: [
-        'Space exploration',
-        'Social class and inequality',
-        'Video game culture',
-        'Modern technology',
-      ],
-      correctIndex: 1,
-      explanation:
-        'Class division, poverty, the workhouse system, and social mobility are central themes, reflecting the rigid class hierarchy of Victorian Britain.',
+    { id: 'eng-9', topic: '19th-Century Novel', difficulty: 'medium', question: 'What social theme is commonly explored in 19th-century novels?', options: [ 'Space exploration', 'Social class and inequality', 'Video game culture', 'Modern technology', ], correctIndex: 1, explanation: 'Class division, poverty, the workhouse system, and social mobility are central themes, reflecting the rigid class hierarchy of Victorian Britain.',
     },
-    {
-      id: 'eng-10',
-      topic: '19th-Century Novel',
-      difficulty: 'hard',
-      question: 'What is "pathetic fallacy" and why might a writer use it in a 19th-century novel?',
-      options: [
-        'An error in the plot that readers notice',
-        "Using weather or environment to reflect characters' emotions or mood",
-        'A type of character who always makes bad decisions',
-        'A fallacy in the argument presented by a character',
-      ],
-      correctIndex: 1,
-      explanation:
-        'Pathetic fallacy attributes human emotions to nature or weather. A storm during a tense scene mirrors conflict; sunshine signals hope. Gothic novels use it extensively to create atmosphere.',
+    { id: 'eng-10', topic: '19th-Century Novel', difficulty: 'hard', question: 'What is "pathetic fallacy" and why might a writer use it in a 19th-century novel?', options: [ 'An error in the plot that readers notice', "Using weather or environment to reflect characters' emotions or mood", 'A type of character who always makes bad decisions', 'A fallacy in the argument presented by a character', ], correctIndex: 1, explanation: 'Pathetic fallacy attributes human emotions to nature or weather. A storm during a tense scene mirrors conflict; sunshine signals hope. Gothic novels use it extensively to create atmosphere.',
     },
-    {
-      id: 'eng-11',
-      topic: 'Modern Texts and Poetry',
-      difficulty: 'easy',
-      question: 'What is a simile?',
-      options: [
-        'A comparison without using "like" or "as"',
-        'A comparison using "like" or "as"',
-        'An exaggeration for effect',
-        'Words that imitate sounds',
-      ],
-      correctIndex: 1,
-      explanation:
-        'A simile compares two things using "like" or "as" (e.g. "brave as a lion"). A metaphor makes the same comparison without these words.',
+    { id: 'eng-11', topic: 'Modern Texts and Poetry', difficulty: 'easy', question: 'What is a simile?', options: [ 'A comparison without using "like" or "as"', 'A comparison using "like" or "as"', 'An exaggeration for effect', 'Words that imitate sounds', ], correctIndex: 1, explanation: 'A simile compares two things using "like" or "as" (e.g. "brave as a lion"). A metaphor makes the same comparison without these words.',
     },
-    {
-      id: 'eng-12',
-      topic: 'Modern Texts and Poetry',
-      difficulty: 'easy',
-      question: 'What does "stanza" refer to in poetry?',
-      options: [
-        'The rhythm of a poem',
-        'A group of lines forming a unit in a poem',
-        'The emotional tone of a poem',
-        'The rhyming pattern at the end of lines',
-      ],
-      correctIndex: 1,
-      explanation:
-        'A stanza is a grouped set of lines within a poem, separated by spacing. It functions like a paragraph in prose.',
+    { id: 'eng-12', topic: 'Modern Texts and Poetry', difficulty: 'easy', question: 'What does "stanza" refer to in poetry?', options: [ 'The rhythm of a poem', 'A group of lines forming a unit in a poem', 'The emotional tone of a poem', 'The rhyming pattern at the end of lines', ], correctIndex: 1, explanation: 'A stanza is a grouped set of lines within a poem, separated by spacing. It functions like a paragraph in prose.',
     },
-    {
-      id: 'eng-13',
-      topic: 'Modern Texts and Poetry',
-      difficulty: 'medium',
-      question: 'What is enjambment in poetry?',
-      options: [
-        'When a line ends with a full stop',
-        'When a sentence runs on from one line to the next without punctuation',
-        'When a poem has no rhyme scheme',
-        'When a poet repeats the same word at the start of lines',
-      ],
-      correctIndex: 1,
-      explanation:
-        'Enjambment carries the sense of one line into the next without a pause, creating flowing, continuous effects that can mirror meaning.',
+    { id: 'eng-13', topic: 'Modern Texts and Poetry', difficulty: 'medium', question: 'What is enjambment in poetry?', options: [ 'When a line ends with a full stop', 'When a sentence runs on from one line to the next without punctuation', 'When a poem has no rhyme scheme', 'When a poet repeats the same word at the start of lines', ], correctIndex: 1, explanation: 'Enjambment carries the sense of one line into the next without a pause, creating flowing, continuous effects that can mirror meaning.',
     },
-    {
-      id: 'eng-14',
-      topic: 'Modern Texts and Poetry',
-      difficulty: 'medium',
-      question: 'Which structural device involves the repetition of sounds at the ends of words?',
-      options: ['Alliteration', 'Assonance', 'Rhyme', 'Onomatopoeia'],
-      correctIndex: 2,
-      explanation:
-        'Rhyme is the repetition of identical or similar sounds at the ends of words (e.g. cat/hat). Alliteration repeats initial consonant sounds.',
+    { id: 'eng-14', topic: 'Modern Texts and Poetry', difficulty: 'medium', question: 'Which structural device involves the repetition of sounds at the ends of words?', options: ['Alliteration', 'Assonance', 'Rhyme', 'Onomatopoeia'], correctIndex: 2, explanation: 'Rhyme is the repetition of identical or similar sounds at the ends of words (e.g. cat/hat). Alliteration repeats initial consonant sounds.',
     },
-    {
-      id: 'eng-15',
-      topic: 'Modern Texts and Poetry',
-      difficulty: 'hard',
-      question: 'When comparing two poems, which approach provides the strongest analysis?',
-      options: [
-        'Describing each poem separately without linking them',
-        'Writing about only the similarities',
-        'Identifying techniques in both poems and explaining how they create different effects for different purposes',
-        'Counting the number of literary devices in each poem',
-      ],
-      correctIndex: 2,
-      explanation:
-        'Strong comparative analysis identifies shared techniques but evaluates how each poet uses them differently to achieve their specific effects and convey their themes.',
+    { id: 'eng-15', topic: 'Modern Texts and Poetry', difficulty: 'hard', question: 'When comparing two poems, which approach provides the strongest analysis?', options: [ 'Describing each poem separately without linking them', 'Writing about only the similarities', 'Identifying techniques in both poems and explaining how they create different effects for different purposes', 'Counting the number of literary devices in each poem', ], correctIndex: 2, explanation: 'Strong comparative analysis identifies shared techniques but evaluates how each poet uses them differently to achieve their specific effects and convey their themes.',
     },
-    {
-      id: 'eng-16',
-      topic: 'Essay Writing',
-      difficulty: 'easy',
-      question: 'What does the "E" in PEEL stand for?',
-      options: ['Evidence', 'Evaluation', 'Explanation', 'Example'],
-      correctIndex: 2,
-      explanation:
-        'PEEL stands for Point, Evidence, Explanation, Link. The Explanation interprets how the evidence supports the point being made.',
+    { id: 'eng-16', topic: 'Essay Writing', difficulty: 'easy', question: 'What does the "E" in PEEL stand for?', options: ['Evidence', 'Evaluation', 'Explanation', 'Example'], correctIndex: 2, explanation: 'PEEL stands for Point, Evidence, Explanation, Link. The Explanation interprets how the evidence supports the point being made.',
     },
-    {
-      id: 'eng-17',
-      topic: 'Essay Writing',
-      difficulty: 'easy',
-      question: 'What is the purpose of an introduction in an essay?',
-      options: [
-        'To list all the points in the essay',
-        'To introduce the topic, state the argument, and outline the essay structure',
-        'To summarise the conclusion',
-        'To define all key terms',
-      ],
-      correctIndex: 1,
-      explanation:
-        'An introduction should introduce the text and topic, present a clear thesis or argument, and briefly outline the main points the essay will cover.',
+    { id: 'eng-17', topic: 'Essay Writing', difficulty: 'easy', question: 'What is the purpose of an introduction in an essay?', options: [ 'To list all the points in the essay', 'To introduce the topic, state the argument, and outline the essay structure', 'To summarise the conclusion', 'To define all key terms', ], correctIndex: 1, explanation: 'An introduction should introduce the text and topic, present a clear thesis or argument, and briefly outline the main points the essay will cover.',
     },
-    {
-      id: 'eng-18',
-      topic: 'Essay Writing',
-      difficulty: 'medium',
-      question: 'What is the best way to integrate a quotation into an essay?',
-      options: [
-        'Drop it in as a standalone sentence',
-        'Embed it within your own sentence, using it as evidence for your point',
-        'Only use very long quotations',
-        'Put all quotations at the end of each paragraph',
-      ],
-      correctIndex: 1,
-      explanation:
-        'Embedded quotations flow naturally within your analysis. For example: "Shakespeare uses metaphor when Macbeth describes life as a \'tale told by an idiot\' to suggest..."',
+    { id: 'eng-18', topic: 'Essay Writing', difficulty: 'medium', question: 'What is the best way to integrate a quotation into an essay?', options: [ 'Drop it in as a standalone sentence', 'Embed it within your own sentence, using it as evidence for your point', 'Only use very long quotations', 'Put all quotations at the end of each paragraph', ], correctIndex: 1, explanation: 'Embedded quotations flow naturally within your analysis. For example: "Shakespeare uses metaphor when Macbeth describes life as a \'tale told by an idiot\' to suggest..."',
     },
-    {
-      id: 'eng-19',
-      topic: 'Essay Writing',
-      difficulty: 'medium',
-      question: 'In a comparison essay, what is the most effective structure?',
-      options: [
-        'Write entirely about text A, then entirely about text B',
-        'Alternate paragraphs comparing both texts on the same point or theme',
-        'Only discuss similarities',
-        'Write about text A first and mention text B in the conclusion',
-      ],
-      correctIndex: 1,
-      explanation:
-        'An integrated (alternating) structure makes sustained comparisons throughout. Each paragraph addresses one aspect across both texts, showing similarities and differences.',
+    { id: 'eng-19', topic: 'Essay Writing', difficulty: 'medium', question: 'In a comparison essay, what is the most effective structure?', options: [ 'Write entirely about text A, then entirely about text B', 'Alternate paragraphs comparing both texts on the same point or theme', 'Only discuss similarities', 'Write about text A first and mention text B in the conclusion', ], correctIndex: 1, explanation: 'An integrated (alternating) structure makes sustained comparisons throughout. Each paragraph addresses one aspect across both texts, showing similarities and differences.',
     },
-    {
-      id: 'eng-20',
-      topic: 'Essay Writing',
-      difficulty: 'hard',
-      question: 'What does it mean to write an "analytical" rather than "descriptive" essay?',
-      options: [
-        'Writing more words and longer paragraphs',
-        "Explaining how and why the writer's choices create effects, rather than just stating what happens",
-        'Using more quotations than analysis',
-        'Writing in chronological order of the text',
-      ],
-      correctIndex: 1,
-      explanation:
-        'Analysis goes beyond description by exploring the writer\'s methods and intentions, explaining the effect on the reader, and evaluating the significance of choices. It answers "how" and "why", not just "what".',
+    { id: 'eng-20', topic: 'Essay Writing', difficulty: 'hard', question: 'What does it mean to write an "analytical" rather than "descriptive" essay?', options: [ 'Writing more words and longer paragraphs', "Explaining how and why the writer's choices create effects, rather than just stating what happens", 'Using more quotations than analysis', 'Writing in chronological order of the text', ], correctIndex: 1, explanation: 'Analysis goes beyond description by exploring the writer\'s methods and intentions, explaining the effect on the reader, and evaluating the significance of choices. It answers "how" and "why", not just "what".',
     },
   ]}
 />

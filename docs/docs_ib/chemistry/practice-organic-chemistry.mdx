@@ -126,47 +126,25 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="What is the first step in the electrophilic addition of HBr to propene (CH₃CH=CH₂)?"
-  options={[
-    'The π electrons of the C=C bond attack the H⁺ (from HBr), forming a carbocation intermediate and Br⁻.',
-    'The Br⁻ ion attacks the double bond directly.',
-    'The hydrogen atom adds to both carbon atoms simultaneously.',
-    'The HBr molecule adds across the double bond without any intermediate.',
-  ]}
-  correctAnswer={0}
-  explanation="Electrophilic addition proceeds via a two-step mechanism. Step 1: The electron-rich π bond of the alkene acts as a nucleophile, attacking the electrophilic H of HBr. This forms a carbocation intermediate and a bromide ion. The H adds to the less substituted carbon (following Markovnikov's rule), giving the more stable secondary carbocation (CH₃CH⁺CH₃) rather than the less stable primary carbocation (CH₃CH₂CH₂⁺). Step 2: Br⁻ attacks the carbocation to give CH₃CHBrCH₃ (2-bromopropane)."
-  difficulty="medium"
+  options={[ 'The π electrons of the C=C bond attack the H⁺ (from HBr), forming a carbocation intermediate and Br⁻.', 'The Br⁻ ion attacks the double bond directly.', 'The hydrogen atom adds to both carbon atoms simultaneously.', 'The HBr molecule adds across the double bond without any intermediate.', ]} correctAnswer={0} explanation="Electrophilic addition proceeds via a two-step mechanism. Step 1: The electron-rich π bond of the alkene acts as a nucleophile, attacking the electrophilic H of HBr. This forms a carbocation intermediate and a bromide ion. The H adds to the less substituted carbon (following Markovnikov's rule), giving the more stable secondary carbocation (CH₃CH⁺CH₃) rather than the less stable primary carbocation (CH₃CH₂CH₂⁺). Step 2: Br⁻ attacks the carbocation to give CH₃CHBrCH₃ (2-bromopropane)." difficulty="medium"
 />
 
 <PracticeProblem
   question="In an SN2 reaction of 1-bromopropane with aqueous NaOH, what happens to the stereochemistry at the carbon undergoing substitution?"
-  options={[
-    'Inversion of configuration occurs (Walden inversion).',
-    'Racemisation occurs (50:50 mixture of both configurations).',
-    'Retention of configuration occurs.',
-    'No stereochemical change since the substrate is not chiral.',
-  ]}
-  correctAnswer={3}
-  explanation="1-bromopropane (CH₃CH₂CH₂Br) is a primary alkyl halide with the Br on a non-chiral carbon (CH₂Br has two identical H atoms). An SN2 reaction causes inversion of configuration at the reacting carbon, but since the starting material is achiral (the reacting carbon is not a stereocentre), the product is also achiral and there is no observable stereochemical consequence. If the substrate were chiral (e.g., 2-bromobutane), SN2 would give inversion. Racemisation is characteristic of SN1, and retention occurs in specific mechanisms like neighbouring group participation."
-  difficulty="medium"
+  options={[ 'Inversion of configuration occurs (Walden inversion).', 'Racemisation occurs (50:50 mixture of both configurations).', 'Retention of configuration occurs.', 'No stereochemical change since the substrate is not chiral.', ]} correctAnswer={3} explanation="1-bromopropane (CH₃CH₂CH₂Br) is a primary alkyl halide with the Br on a non-chiral carbon (CH₂Br has two identical H atoms). An SN2 reaction causes inversion of configuration at the reacting carbon, but since the starting material is achiral (the reacting carbon is not a stereocentre), the product is also achiral and there is no observable stereochemical consequence. If the substrate were chiral (e.g., 2-bromobutane), SN2 would give inversion. Racemisation is characteristic of SN1, and retention occurs in specific mechanisms like neighbouring group participation." difficulty="medium"
 />
 
 <PracticeProblem
   question="Which factor does NOT affect the rate of an SN1 reaction?"
   options={['Concentration of the nucleophile', 'Stability of the carbocation intermediate', 'Nature of the leaving group', 'Polarity of the solvent']}
   correctAnswer={0}
-  explanation="SN1 reactions are unimolecular in the rate-determining step (only the substrate is involved). The rate law is rate = k[substrate];
-
-the nucleophile does not appear in the rate equation. Therefore, the concentration of the nucleophile does NOT affect the rate of an SN1 reaction. The rate IS affected by: carbocation stability (more stable carbocations form faster, so tertiary > secondary >> primary), the nature of the leaving group (better leaving groups increase rate), and solvent polarity (polar protic solvents stabilise the carbocation and leaving group, increasing rate). The nucleophile concentration matters for SN2 but not SN1."
+  explanation="SN1 reactions are unimolecular in the rate-determining step (only the substrate is involved). The rate law is rate = k[substrate]; the nucleophile does not appear in the rate equation. Therefore, the concentration of the nucleophile does NOT affect the rate of an SN1 reaction. The rate IS affected by: carbocation stability (more stable carbocations form faster, so tertiary > secondary >> primary), the nature of the leaving group (better leaving groups increase rate), and solvent polarity (polar protic solvents stabilise the carbocation and leaving group, increasing rate). The nucleophile concentration matters for SN2 but not SN1."
   difficulty="hard"
 />
 
 <PracticeProblem
   question="The dehydration of ethanol with concentrated H₂SO₄ at 170 °C produces ethene. Which mechanism describes this elimination reaction?"
-  options={[
-    'E1 (unimolecular elimination)', 'E2 (bimolecular elimination)', 'SN1', 'Free radical elimination']}
-  correctAnswer={0}
-  explanation="The dehydration of a primary alcohol with a strong acid at high temperature proceeds via an E1-like mechanism (sometimes classified as E1 for secondary/tertiary alcohols). The acid protonates the -OH group, forming -OH₂⁺ (good leaving group). Water departs as a leaving group, creating a carbocation (slow, rate-determining step). A base (HSO₄⁻ or H₂O) then removes a β-hydrogen, forming the C=C double bond. For ethanol specifically, the primary carbocation is unstable, and the mechanism may have E2 character. In the IB syllabus context, this is typically described as acid-catalysed elimination where the alcohol is protonated first, water leaves, and then deprotonation occurs."
-  difficulty="hard"
+  options={[ 'E1 (unimolecular elimination)', 'E2 (bimolecular elimination)', 'SN1', 'Free radical elimination']} correctAnswer={0} explanation="The dehydration of a primary alcohol with a strong acid at high temperature proceeds via an E1-like mechanism (sometimes classified as E1 for secondary/tertiary alcohols). The acid protonates the -OH group, forming -OH₂⁺ (good leaving group). Water departs as a leaving group, creating a carbocation (slow, rate-determining step). A base (HSO₄⁻ or H₂O) then removes a β-hydrogen, forming the C=C double bond. For ethanol specifically, the primary carbocation is unstable, and the mechanism may have E2 character. In the IB syllabus context, this is typically described as acid-catalysed elimination where the alcohol is protonated first, water leaves, and then deprotonation occurs." difficulty="hard"
 />
 
 ---
@@ -215,13 +193,5 @@ the nucleophile does not appear in the rate equation. Therefore, the concentrati
 
 <PracticeProblem
   question="Polypropene is produced from propene (CH₃CH=CH₂). What type of polymerisation is this and what type of polymer is formed?"
-  options={[
-    'Addition polymerisation; the polymer has the same empirical formula as the monomer.',
-    'Condensation polymerisation; water is eliminated during the reaction.',
-    'Addition polymerisation; carbon dioxide is released as a by-product.',
-    'Condensation polymerisation; HCl is eliminated during the reaction.',
-  ]}
-  correctAnswer={0}
-  explanation="Polypropene is formed by addition polymerisation: the C=C double bond of propene opens and monomers join end-to-end without any small molecule being eliminated. The repeating unit is -CH(CH₃)CH₂-, and the polymer has the same empirical formula as the monomer (no atoms are lost). This contrasts with condensation polymerisation (e.g., nylon, polyesters), where monomers join with the elimination of a small molecule such as H₂O or HCl. The catalyst used is typically Ziegler-Natta (TiCl₃ + Al(C₂H₅)₃) at low pressure."
-  difficulty="hard"
+  options={[ 'Addition polymerisation; the polymer has the same empirical formula as the monomer.', 'Condensation polymerisation; water is eliminated during the reaction.', 'Addition polymerisation; carbon dioxide is released as a by-product.', 'Condensation polymerisation; HCl is eliminated during the reaction.', ]} correctAnswer={0} explanation="Polypropene is formed by addition polymerisation: the C=C double bond of propene opens and monomers join end-to-end without any small molecule being eliminated. The repeating unit is -CH(CH₃)CH₂-, and the polymer has the same empirical formula as the monomer (no atoms are lost). This contrasts with condensation polymerisation (e.g., nylon, polyesters), where monomers join with the elimination of a small molecule such as H₂O or HCl. The catalyst used is typically Ziegler-Natta (TiCl₃ + Al(C₂H₅)₃) at low pressure." difficulty="hard"
 />

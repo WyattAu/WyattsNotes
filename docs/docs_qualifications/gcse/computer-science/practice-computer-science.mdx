@@ -21,15 +21,7 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="What is the purpose of the ALU (Arithmetic Logic Unit) in a CPU?"
-  options={[
-    'To perform calculations and logical comparisons',
-    'To store data and instructions temporarily',
-    'To manage data flow between components',
-    'To convert analogue signals to digital signals',
-  ]}
-  correctAnswer={0}
-  explanation="The ALU performs arithmetic operations (addition, subtraction, multiplication, division) and logical operations (AND, OR, NOT comparisons). It is one of the core components of the CPU alongside the control unit and registers. The control unit coordinates the fetching, decoding, and executing of instructions, while RAM temporarily stores data."
-  difficulty="easy"
+  options={[ 'To perform calculations and logical comparisons', 'To store data and instructions temporarily', 'To manage data flow between components', 'To convert analogue signals to digital signals', ]} correctAnswer={0} explanation="The ALU performs arithmetic operations (addition, subtraction, multiplication, division) and logical operations (AND, OR, NOT comparisons). It is one of the core components of the CPU alongside the control unit and registers. The control unit coordinates the fetching, decoding, and executing of instructions, while RAM temporarily stores data." difficulty="easy"
 />
 
 <PracticeProblem
@@ -44,84 +36,36 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="Which storage device uses flash memory and has no moving parts?"
-  options={[
-    'Solid-state drive (SSD)',
-    'Hard disk drive (HDD)',
-    'Optical disc (DVD)',
-    'Magnetic tape',
-  ]}
-  correctAnswer={0}
-  explanation="Solid-state drives (SSDs) store data in flash memory chips and have no moving mechanical parts. This makes them faster, more durable, quieter, and more resistant to physical shock than HDDs. HDDs use spinning magnetic platters and read/write heads, optical discs use lasers, and magnetic tape uses sequential access on reels. SSDs use random access like RAM."
-  difficulty="easy"
+  options={[ 'Solid-state drive (SSD)', 'Hard disk drive (HDD)', 'Optical disc (DVD)', 'Magnetic tape', ]} correctAnswer={0} explanation="Solid-state drives (SSDs) store data in flash memory chips and have no moving mechanical parts. This makes them faster, more durable, quieter, and more resistant to physical shock than HDDs. HDDs use spinning magnetic platters and read/write heads, optical discs use lasers, and magnetic tape uses sequential access on reels. SSDs use random access like RAM." difficulty="easy"
 />
 
 <PracticeProblem
   question="What is the key difference between RAM and ROM?"
-  options={[
-    'RAM is volatile (loses data when power is off) and ROM is non-volatile (retains data when power is off)',
-    'RAM stores the operating system permanently and ROM stores running applications',
-    'RAM is read-only and ROM is read-write',
-    'RAM is slower than ROM',
-  ]}
-  correctAnswer={0}
-  explanation="RAM (Random Access Memory) is volatile, meaning all stored data is lost when the computer is switched off. It is used to store currently running programs and data that the CPU needs quickly. ROM (Read Only Memory) is non-volatile and retains its contents permanently. It stores the BIOS/firmware that the computer needs to boot up. RAM is generally faster and has larger capacity than ROM."
-  difficulty="medium"
+  options={[ 'RAM is volatile (loses data when power is off) and ROM is non-volatile (retains data when power is off)', 'RAM stores the operating system permanently and ROM stores running applications', 'RAM is read-only and ROM is read-write', 'RAM is slower than ROM', ]} correctAnswer={0} explanation="RAM (Random Access Memory) is volatile, meaning all stored data is lost when the computer is switched off. It is used to store currently running programs and data that the CPU needs quickly. ROM (Read Only Memory) is non-volatile and retains its contents permanently. It stores the BIOS/firmware that the computer needs to boot up. RAM is generally faster and has larger capacity than ROM." difficulty="medium"
 />
 
 ### Networks
 
 <PracticeProblem
   question="Which protocol is used to transfer web pages from a web server to a web browser?"
-  options={[
-    'HTTP (HyperText Transfer Protocol)',
-    'FTP (File Transfer Protocol)',
-    'SMTP (Simple Mail Transfer Protocol)',
-    'TCP/IP (Transmission Control Protocol/Internet Protocol)',
-  ]}
-  correctAnswer={0}
-  explanation="HTTP (HyperText Transfer Protocol) is the protocol used for transferring web pages and web content between a server and a browser. It is the foundation of data communication on the World Wide Web. FTP is for file transfers, SMTP is for sending emails, and TCP/IP is the suite of protocols that underpins all internet communication. HTTPS is the secure version of HTTP."
-  difficulty="easy"
+  options={[ 'HTTP (HyperText Transfer Protocol)', 'FTP (File Transfer Protocol)', 'SMTP (Simple Mail Transfer Protocol)', 'TCP/IP (Transmission Control Protocol/Internet Protocol)', ]} correctAnswer={0} explanation="HTTP (HyperText Transfer Protocol) is the protocol used for transferring web pages and web content between a server and a browser. It is the foundation of data communication on the World Wide Web. FTP is for file transfers, SMTP is for sending emails, and TCP/IP is the suite of protocols that underpins all internet communication. HTTPS is the secure version of HTTP." difficulty="easy"
 />
 
 <PracticeProblem
   question="In a star network topology, what happens if the central switch or hub fails?"
-  options={[
-    'All devices on the network lose connectivity',
-    'Only the directly connected devices stop working',
-    'Data is rerouted through alternative paths automatically',
-    'The network continues to function normally at reduced speed',
-  ]}
-  correctAnswer={0}
-  explanation="In a star topology, every device connects to a single central hub or switch. This central device manages all network traffic. If it fails, all devices lose their connection to the network because there are no direct links between the devices themselves. However, if a single cable or device fails, only that device is affected, which makes troubleshooting easier."
-  difficulty="medium"
+  options={[ 'All devices on the network lose connectivity', 'Only the directly connected devices stop working', 'Data is rerouted through alternative paths automatically', 'The network continues to function normally at reduced speed', ]} correctAnswer={0} explanation="In a star topology, every device connects to a single central hub or switch. This central device manages all network traffic. If it fails, all devices lose their connection to the network because there are no direct links between the devices themselves. However, if a single cable or device fails, only that device is affected, which makes troubleshooting easier." difficulty="medium"
 />
 
 ### Algorithms
 
 <PracticeProblem
   question="In a binary search, what must be true about the dataset before the search begins?"
-  options={[
-    'The data must be sorted',
-    'The data must contain no duplicate values',
-    'The data must be stored in a linked list',
-    'The data must contain only numbers',
-  ]}
-  correctAnswer={0}
-  explanation="Binary search requires the data to be sorted before the algorithm can be applied. It works by repeatedly dividing the sorted dataset in half and comparing the middle element with the target value. If the middle element matches, the search is complete. If the target is less than the middle, the search continues in the left half; if greater, it continues in the right half. This gives a logarithmic time complexity of O(log n)."
-  difficulty="medium"
+  options={[ 'The data must be sorted', 'The data must contain no duplicate values', 'The data must be stored in a linked list', 'The data must contain only numbers', ]} correctAnswer={0} explanation="Binary search requires the data to be sorted before the algorithm can be applied. It works by repeatedly dividing the sorted dataset in half and comparing the middle element with the target value. If the middle element matches, the search is complete. If the target is less than the middle, the search continues in the left half; if greater, it continues in the right half. This gives a logarithmic time complexity of O(log n)." difficulty="medium"
 />
 
 <PracticeProblem
   question="What is the purpose of a flowchart symbol shaped like a diamond (rhombus)?"
-  options={[
-    'To represent a decision point',
-    'To represent a process or calculation',
-    'To represent input or output',
-    'To represent the start or end of the program',
-  ]}
-  correctAnswer={0}
-  explanation="A diamond (rhombus) shape in a flowchart represents a decision point, where the flow of the program can go in different directions based on a yes/no or true/false condition. Rectangles represent processes or calculations, parallelograms represent input and output, and rounded rectangles (ovals) represent the start and end of the program."
-  difficulty="easy"
+  options={[ 'To represent a decision point', 'To represent a process or calculation', 'To represent input or output', 'To represent the start or end of the program', ]} correctAnswer={0} explanation="A diamond (rhombus) shape in a flowchart represents a decision point, where the flow of the program can go in different directions based on a yes/no or true/false condition. Rectangles represent processes or calculations, parallelograms represent input and output, and rounded rectangles (ovals) represent the start and end of the program." difficulty="easy"
 />
 
 ### Programming
@@ -136,13 +80,5 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="A programmer needs to count how many times a score exceeds 50 in a list. Which programming construct is most appropriate for this task?"
-  options={[
-    'A counter variable inside a loop',
-    'A single IF statement without a loop',
-    'A constant variable',
-    'A function with no return value',
-  ]}
-  correctAnswer={0}
-  explanation="A counter variable initialised to zero and incremented inside a loop is the correct approach. The loop iterates through each score in the list, and each time a score exceeds 50, the counter is increased by 1. A single IF statement only checks one value. A constant cannot be changed once set. The counter needs to be returned or displayed after the loop completes."
-  difficulty="hard"
+  options={[ 'A counter variable inside a loop', 'A single IF statement without a loop', 'A constant variable', 'A function with no return value', ]} correctAnswer={0} explanation="A counter variable initialised to zero and incremented inside a loop is the correct approach. The loop iterates through each score in the list, and each time a score exceeds 50, the counter is increased by 1. A single IF statement only checks one value. A constant cannot be changed once set. The counter needs to be returned or displayed after the loop completes." difficulty="hard"
 />

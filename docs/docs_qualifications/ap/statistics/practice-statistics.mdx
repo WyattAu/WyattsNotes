@@ -37,15 +37,7 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="Two events A and B are such that P(A) = 0.4, P(B) = 0.5, and P(A and B) = 0.2. Are A and B independent?"
-  options={[
-    'Yes, because P(A and B) = P(A) x P(B)',
-    'No, because P(A and B) does not equal P(A) x P(B)',
-    'Yes, because P(A) + P(B) = P(A or B)',
-    'Cannot be determined from the given information',
-  ]}
-  correctAnswer={0}
-  explanation="Two events are independent if and only if P(A and B) = P(A) x P(B). Here, P(A) x P(B) = 0.4 x 0.5 = 0.2, which equals P(A and B) = 0.2. Since the condition is satisfied, A and B are independent. Note that independence is different from mutual exclusivity -- mutually exclusive events cannot be independent (unless one event has probability zero)."
-  difficulty="medium"
+  options={[ 'Yes, because P(A and B) = P(A) x P(B)', 'No, because P(A and B) does not equal P(A) x P(B)', 'Yes, because P(A) + P(B) = P(A or B)', 'Cannot be determined from the given information', ]} correctAnswer={0} explanation="Two events are independent if and only if P(A and B) = P(A) x P(B). Here, P(A) x P(B) = 0.4 x 0.5 = 0.2, which equals P(A and B) = 0.2. Since the condition is satisfied, A and B are independent. Note that independence is different from mutual exclusivity -- mutually exclusive events cannot be independent (unless one event has probability zero)." difficulty="medium"
 />
 
 ---
@@ -54,41 +46,17 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="A 95% confidence interval for a population mean is calculated as (12.3, 18.7). Which of the following is the correct interpretation of this interval?"
-  options={[
-    'There is a 95% probability that the population mean is between 12.3 and 18.7',
-    'We are 95% confident that the true population mean is between 12.3 and 18.7',
-    '95% of the data falls between 12.3 and 18.7',
-    'If we repeated the sampling many times, 95% of the sample means would fall between 12.3 and 18.7',
-  ]}
-  correctAnswer={1}
-  explanation="The correct interpretation is: 'We are 95% confident that the true population mean is between 12.3 and 18.7.' This means that if we were to take many random samples and construct 95% confidence intervals from each, approximately 95% of those intervals would contain the true population mean. The population mean is a fixed (unknown) value, not a random variable, so we do not say there is a probability that it falls in the interval."
-  difficulty="medium"
+  options={[ 'There is a 95% probability that the population mean is between 12.3 and 18.7', 'We are 95% confident that the true population mean is between 12.3 and 18.7', '95% of the data falls between 12.3 and 18.7', 'If we repeated the sampling many times, 95% of the sample means would fall between 12.3 and 18.7', ]} correctAnswer={1} explanation="The correct interpretation is: 'We are 95% confident that the true population mean is between 12.3 and 18.7.' This means that if we were to take many random samples and construct 95% confidence intervals from each, approximately 95% of those intervals would contain the true population mean. The population mean is a fixed (unknown) value, not a random variable, so we do not say there is a probability that it falls in the interval." difficulty="medium"
 />
 
 <PracticeProblem
   question="In a hypothesis test with H0: mu = 100 and Ha: mu > 100, a researcher obtains a p-value of 0.03. Using a significance level of alpha = 0.05, what conclusion should be drawn?"
-  options={[
-    'Fail to reject H0; there is insufficient evidence that mu > 100',
-    'Reject H0; there is sufficient evidence that mu > 100',
-    'Accept H0; mu = 100',
-    'Reject H0; mu is significantly less than 100',
-  ]}
-  correctAnswer={1}
-  explanation="Since the p-value (0.03) is less than the significance level (alpha = 0.05), we reject the null hypothesis. This means there is sufficient evidence at the 0.05 significance level to conclude that the population mean mu is greater than 100. Note: we never 'accept' the null hypothesis; we either reject it or fail to reject it. The conclusion must be stated in context, referring to the alternative hypothesis direction."
-  difficulty="medium"
+  options={[ 'Fail to reject H0; there is insufficient evidence that mu > 100', 'Reject H0; there is sufficient evidence that mu > 100', 'Accept H0; mu = 100', 'Reject H0; mu is significantly less than 100', ]} correctAnswer={1} explanation="Since the p-value (0.03) is less than the significance level (alpha = 0.05), we reject the null hypothesis. This means there is sufficient evidence at the 0.05 significance level to conclude that the population mean mu is greater than 100. Note: we never 'accept' the null hypothesis; we either reject it or fail to reject it. The conclusion must be stated in context, referring to the alternative hypothesis direction." difficulty="medium"
 />
 
 <PracticeProblem
   question="A researcher wants to reduce the margin of error in a confidence interval for a population proportion. Which change would accomplish this?"
-  options={[
-    'Decreasing the confidence level from 95% to 90%',
-    'Increasing the sample size',
-    'Both A and B would reduce the margin of error',
-    'Neither A nor B would reduce the margin of error',
-  ]}
-  correctAnswer={2}
-  explanation="Both decreasing the confidence level and increasing the sample size reduce the margin of error. The margin of error for a proportion is z*(sqrt(p-hat(1-p-hat)/n)), where z* is the critical value. Decreasing the confidence level reduces z* (e.g., from 1.96 to 1.645), and increasing n reduces the fraction under the square root. Both changes produce a narrower interval. The trade-off is that a lower confidence level means less certainty that the interval captures the true parameter."
-  difficulty="medium"
+  options={[ 'Decreasing the confidence level from 95% to 90%', 'Increasing the sample size', 'Both A and B would reduce the margin of error', 'Neither A nor B would reduce the margin of error', ]} correctAnswer={2} explanation="Both decreasing the confidence level and increasing the sample size reduce the margin of error. The margin of error for a proportion is z*(sqrt(p-hat(1-p-hat)/n)), where z* is the critical value. Decreasing the confidence level reduces z* (e.g., from 1.96 to 1.645), and increasing n reduces the fraction under the square root. Both changes produce a narrower interval. The trade-off is that a lower confidence level means less certainty that the interval captures the true parameter." difficulty="medium"
 />
 
 <PracticeProblem
@@ -101,15 +69,7 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="A Type I error occurs when a researcher:"
-  options={[
-    'Fails to reject a false null hypothesis',
-    'Rejects a true null hypothesis',
-    'Fails to reject a true null hypothesis',
-    'Rejects a false null hypothesis',
-  ]}
-  correctAnswer={1}
-  explanation="A Type I error (false positive) occurs when the null hypothesis is true but is rejected by the test. The probability of a Type I error is equal to the significance level alpha. A Type II error (false negative) occurs when the null hypothesis is false but the test fails to reject it. The power of a test is 1 - P(Type II error), representing the probability of correctly rejecting a false null hypothesis."
-  difficulty="medium"
+  options={[ 'Fails to reject a false null hypothesis', 'Rejects a true null hypothesis', 'Fails to reject a true null hypothesis', 'Rejects a false null hypothesis', ]} correctAnswer={1} explanation="A Type I error (false positive) occurs when the null hypothesis is true but is rejected by the test. The probability of a Type I error is equal to the significance level alpha. A Type II error (false negative) occurs when the null hypothesis is false but the test fails to reject it. The power of a test is 1 - P(Type II error), representing the probability of correctly rejecting a false null hypothesis." difficulty="medium"
 />
 
 ---
@@ -118,26 +78,10 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="A least-squares regression line has the equation y-hat = 3.2 + 1.5x. If x increases by 2 units, by how much does the predicted value of y change?"
-  options={[
-    'Increase by 3.0 units',
-    'Increase by 1.5 units',
-    'Increase by 6.2 units',
-    'Cannot be determined without the data',
-  ]}
-  correctAnswer={0}
-  explanation="The slope of the regression line (1.5) represents the change in the predicted value of y for each one-unit increase in x. If x increases by 2 units, the predicted y increases by 2 x 1.5 = 3.0 units. The y-intercept (3.2) is the predicted y when x = 0 and does not affect how y changes with x."
-  difficulty="hard"
+  options={[ 'Increase by 3.0 units', 'Increase by 1.5 units', 'Increase by 6.2 units', 'Cannot be determined without the data', ]} correctAnswer={0} explanation="The slope of the regression line (1.5) represents the change in the predicted value of y for each one-unit increase in x. If x increases by 2 units, the predicted y increases by 2 x 1.5 = 3.0 units. The y-intercept (3.2) is the predicted y when x = 0 and does not affect how y changes with x." difficulty="hard"
 />
 
 <PracticeProblem
   question="In a regression analysis, the coefficient of determination r-squared = 0.81. Which of the following is the correct interpretation?"
-  options={[
-    'The correlation between x and y is 0.81',
-    '81% of the data points fall on the regression line',
-    '81% of the variation in y is accounted for by the linear relationship with x',
-    'The slope of the regression line is 0.81',
-  ]}
-  correctAnswer={2}
-  explanation="The coefficient of determination (r-squared) represents the proportion of the total variation in the response variable y that is explained by the linear relationship with the explanatory variable x. An r-squared of 0.81 means that 81% of the variation in y is accounted for by its linear relationship with x, and the remaining 19% is due to other factors or random variation. The correlation r would be sqrt(0.81) = 0.9 (or -0.9), not 0.81."
-  difficulty="hard"
+  options={[ 'The correlation between x and y is 0.81', '81% of the data points fall on the regression line', '81% of the variation in y is accounted for by the linear relationship with x', 'The slope of the regression line is 0.81', ]} correctAnswer={2} explanation="The coefficient of determination (r-squared) represents the proportion of the total variation in the response variable y that is explained by the linear relationship with the explanatory variable x. An r-squared of 0.81 means that 81% of the variation in y is accounted for by its linear relationship with x, and the remaining 19% is due to other factors or random variation. The correlation r would be sqrt(0.81) = 0.9 (or -0.9), not 0.81." difficulty="hard"
 />

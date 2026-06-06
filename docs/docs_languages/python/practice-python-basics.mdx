@@ -45,15 +45,7 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="What does the LEGB rule stand for in Python variable resolution?"
-  options={[
-    'Local, Enclosing, Global, Built-in',
-    'Local, External, Global, Base',
-    'Loop, Enclosing, Global, Built-in',
-    'Local, Enclosed, Generic, Built-in',
-  ]}
-  correctAnswer={0}
-  explanation="Python resolves variable names using the LEGB scope order: Local (inside the current function), Enclosing (in enclosing functions for nested functions), Global (module level), and Built-in (the `builtins` module). The first match in this order is used."
-  difficulty="easy"
+  options={[ 'Local, Enclosing, Global, Built-in', 'Local, External, Global, Base', 'Loop, Enclosing, Global, Built-in', 'Local, Enclosed, Generic, Built-in', ]} correctAnswer={0} explanation="Python resolves variable names using the LEGB scope order: Local (inside the current function), Enclosing (in enclosing functions for nested functions), Global (module level), and Built-in (the `builtins` module). The first match in this order is used." difficulty="easy"
 />
 
 ---
@@ -82,28 +74,12 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="What does `@functools.lru_cache(maxsize=2)` do when applied to a recursive function?"
-  options={[
-    'Caches up to 2 most recent distinct call results, eliminating redundant computation',
-    'Caches all call results indefinitely',
-    'Limits the function to 2 total calls',
-    'Raises an error when the cache is full',
-  ]}
-  correctAnswer={0}
-  explanation="The LRU (Least Recently Used) cache stores up to `maxsize` distinct argument-result pairs. When the cache is full, the least recently used entry is evicted. For recursive functions like Fibonacci, this transforms exponential time complexity into linear by avoiding recomputation of subproblems."
-  difficulty="medium"
+  options={[ 'Caches up to 2 most recent distinct call results, eliminating redundant computation', 'Caches all call results indefinitely', 'Limits the function to 2 total calls', 'Raises an error when the cache is full', ]} correctAnswer={0} explanation="The LRU (Least Recently Used) cache stores up to `maxsize` distinct argument-result pairs. When the cache is full, the least recently used entry is evicted. For recursive functions like Fibonacci, this transforms exponential time complexity into linear by avoiding recomputation of subproblems." difficulty="medium"
 />
 
 <PracticeProblem
   question="What happens when a generator function uses `return value` instead of `yield`?"
-  options={[
-    'It raises StopIteration with the value and terminates the generator',
-    'It yields the value and continues',
-    'It returns the value normally like a regular function',
-    'It raises SyntaxError',
-  ]}
-  correctAnswer={0}
-  explanation="In a generator function, `return value` raises `StopIteration(value)` to signal the generator is exhausted. The `value` is attached to the exception and can be retrieved via the return value of `next()` (using a try/except StopIteration) or by capturing it from `yield from`. The generator cannot be resumed after `return`."
-  difficulty="medium"
+  options={[ 'It raises StopIteration with the value and terminates the generator', 'It yields the value and continues', 'It returns the value normally like a regular function', 'It raises SyntaxError', ]} correctAnswer={0} explanation="In a generator function, `return value` raises `StopIteration(value)` to signal the generator is exhausted. The `value` is attached to the exception and can be retrieved via the return value of `next()` (using a try/except StopIteration) or by capturing it from `yield from`. The generator cannot be resumed after `return`." difficulty="medium"
 />
 
 ---
@@ -112,15 +88,7 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="What is the output of `try: 1/0 except ValueError: print('caught')`?"
-  options={[
-    'ZeroDivisionError is raised and not caught',
-    "'caught' is printed",
-    "'ZeroDivisionError: division by zero' is printed",
-    'None',
-  ]}
-  correctAnswer={0}
-  explanation="Dividing by zero raises `ZeroDivisionError`, which is a subclass of `ArithmeticError` and `Exception`, but NOT of `ValueError`. Since the `except` clause only catches `ValueError`, the exception propagates uncaught. The program would terminate with a traceback unless caught by an outer handler."
-  difficulty="medium"
+  options={[ 'ZeroDivisionError is raised and not caught', "'caught' is printed", "'ZeroDivisionError: division by zero' is printed", 'None', ]} correctAnswer={0} explanation="Dividing by zero raises `ZeroDivisionError`, which is a subclass of `ArithmeticError` and `Exception`, but NOT of `ValueError`. Since the `except` clause only catches `ValueError`, the exception propagates uncaught. The program would terminate with a traceback unless caught by an outer handler." difficulty="medium"
 />
 
 ---
@@ -129,26 +97,10 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="What happens when you call an `async def` function without using `await`?"
-  options={[
-    'It returns a coroutine object without executing the function body',
-    'It runs the function synchronously',
-    'It raises SyntaxError',
-    'It returns None',
-  ]}
-  correctAnswer={0}
-  explanation="Calling an `async def` function does not execute its body. It creates and returns a coroutine object. To actually run the coroutine, you must `await` it inside another async function, or schedule it with `asyncio.run()`, `asyncio.create_task()`, or `asyncio.gather()`. The coroutine must be awaited or scheduled exactly once."
-  difficulty="hard"
+  options={[ 'It returns a coroutine object without executing the function body', 'It runs the function synchronously', 'It raises SyntaxError', 'It returns None', ]} correctAnswer={0} explanation="Calling an `async def` function does not execute its body. It creates and returns a coroutine object. To actually run the coroutine, you must `await` it inside another async function, or schedule it with `asyncio.run()`, `asyncio.create_task()`, or `asyncio.gather()`. The coroutine must be awaited or scheduled exactly once." difficulty="hard"
 />
 
 <PracticeProblem
   question="What is the effect of defining `__slots__ = ('x', 'y')` on a class?"
-  options={[
-    'It replaces the per-instance __dict__ with fixed-size slots, preventing dynamic attribute assignment and reducing memory usage by 40-60%',
-    'It makes the class abstract',
-    'It enables multiple inheritance',
-    'It adds type checking to attributes x and y',
-  ]}
-  correctAnswer={0}
-  explanation="`__slots__` tells the metaclass to allocate fixed attribute descriptors instead of a per-instance `__dict__`. This reduces memory overhead significantly for classes with many instances. Instances cannot have attributes not listed in `__slots__`, catching typos at runtime. All classes in the hierarchy must define `__slots__` for the full benefit."
-  difficulty="hard"
+  options={[ 'It replaces the per-instance __dict__ with fixed-size slots, preventing dynamic attribute assignment and reducing memory usage by 40-60%', 'It makes the class abstract', 'It enables multiple inheritance', 'It adds type checking to attributes x and y', ]} correctAnswer={0} explanation="`__slots__` tells the metaclass to allocate fixed attribute descriptors instead of a per-instance `__dict__`. This reduces memory overhead significantly for classes with many instances. Instances cannot have attributes not listed in `__slots__`, catching typos at runtime. All classes in the hierarchy must define `__slots__` for the full benefit." difficulty="hard"
 />

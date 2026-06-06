@@ -33,28 +33,12 @@ the explanation.
 
 <PracticeProblem
   question={`What does \`GlobalScope.launch { delay(1000); println("done") }\` do that is considered bad practice?`}
-  options={[
-    'It creates a coroutine that is not tied to any lifecycle and cannot be cancelled predictably',
-    'It blocks the main thread for 1 second',
-    'It throws an exception after 1 second',
-    'It cannot access the IO dispatcher',
-  ]}
-  correctAnswer={0}
-  explanation="GlobalScope creates a coroutine with a lifetime tied to the entire application, not to any specific scope. This means it cannot be cancelled through structured concurrency -- if the launching component (e.g., an Activity) is destroyed, the coroutine keeps running. Always prefer `viewModelScope`, `lifecycleScope`, or custom `CoroutineScope` instances to ensure proper cancellation."
-  difficulty="medium"
+  options={[ 'It creates a coroutine that is not tied to any lifecycle and cannot be cancelled predictably', 'It blocks the main thread for 1 second', 'It throws an exception after 1 second', 'It cannot access the IO dispatcher', ]} correctAnswer={0} explanation="GlobalScope creates a coroutine with a lifetime tied to the entire application, not to any specific scope. This means it cannot be cancelled through structured concurrency -- if the launching component (e.g., an Activity) is destroyed, the coroutine keeps running. Always prefer `viewModelScope`, `lifecycleScope`, or custom `CoroutineScope` instances to ensure proper cancellation." difficulty="medium"
 />
 
 <PracticeProblem
   question={`What is the difference between \`flow { emit(1); emit(2) }.collect { ... }\` and \`flowOf(1, 2).collect { ... }\`?`}
-  options={[
-    'No functional difference -- both produce a Flow that emits 1 then 2',
-    '`flow {}` is synchronous; `flowOf` is asynchronous',
-    '`flowOf` only emits the last element',
-    '`flow {}` buffers emissions; `flowOf` does not',
-  ]}
-  correctAnswer={0}
-  explanation="Both produce a cold Flow that emits 1 and then 2 when collected. The `flow {}` builder gives you full control over emission logic (loops, conditions, suspension), while `flowOf` is a shorthand for a fixed set of values. The key difference is flexibility: use `flow {}` for dynamic emission and `flowOf` for simple static values."
-  difficulty="medium"
+  options={[ 'No functional difference -- both produce a Flow that emits 1 then 2', '`flow {}` is synchronous; `flowOf` is asynchronous', '`flowOf` only emits the last element', '`flow {}` buffers emissions; `flowOf` does not', ]} correctAnswer={0} explanation="Both produce a cold Flow that emits 1 and then 2 when collected. The `flow {}` builder gives you full control over emission logic (loops, conditions, suspension), while `flowOf` is a shorthand for a fixed set of values. The key difference is flexibility: use `flow {}` for dynamic emission and `flowOf` for simple static values." difficulty="medium"
 />
 
 ---
@@ -75,15 +59,7 @@ the explanation.
 
 <PracticeProblem
   question={`In Kotlin 1.5+, where can subclasses of a sealed class be defined?`}
-  options={[
-    'In the same package (but not necessarily the same file)',
-    'Only in the same file',
-    'In any package within the same module',
-    'In any package as long as they are marked `sealed`',
-  ]}
-  correctAnswer={0}
-  explanation="Starting with Kotlin 1.5, subclasses of a sealed class can be defined anywhere in the same package, not just in the same file as the sealed class definition. This provides more flexibility in organizing code while still ensuring the compiler can perform exhaustive checks in `when` expressions. The subclasses must still be in the same package."
-  difficulty="medium"
+  options={[ 'In the same package (but not necessarily the same file)', 'Only in the same file', 'In any package within the same module', 'In any package as long as they are marked `sealed`', ]} correctAnswer={0} explanation="Starting with Kotlin 1.5, subclasses of a sealed class can be defined anywhere in the same package, not just in the same file as the sealed class definition. This provides more flexibility in organizing code while still ensuring the compiler can perform exhaustive checks in `when` expressions. The subclasses must still be in the same package." difficulty="medium"
 />
 
 ---
@@ -92,15 +68,7 @@ the explanation.
 
 <PracticeProblem
   question={`Can an extension function override a member function of a class?`}
-  options={[
-    'No -- if a class has a member function, the member is always called instead of the extension',
-    'Yes -- the extension takes priority',
-    'Yes -- but only if declared in the same package',
-    'It depends on the visibility modifier',
-  ]}
-  correctAnswer={0}
-  explanation="Extension functions never override member functions. If a class already has a member function with the same signature, the member function is always called. Extensions are resolved statically at compile time based on the declared type of the variable, not the runtime type. This is a fundamental limitation to be aware of when writing extensions."
-  difficulty="easy"
+  options={[ 'No -- if a class has a member function, the member is always called instead of the extension', 'Yes -- the extension takes priority', 'Yes -- but only if declared in the same package', 'It depends on the visibility modifier', ]} correctAnswer={0} explanation="Extension functions never override member functions. If a class already has a member function with the same signature, the member function is always called. Extensions are resolved statically at compile time based on the declared type of the variable, not the runtime type. This is a fundamental limitation to be aware of when writing extensions." difficulty="easy"
 />
 
 ---
@@ -109,15 +77,7 @@ the explanation.
 
 <PracticeProblem
   question={`How does property delegation with \`by lazy { ... }\` work?`}
-  options={[
-    'The lambda is evaluated only on first access, and the result is cached and returned on subsequent accesses',
-    'The lambda is evaluated at class instantiation time',
-    'The lambda is evaluated every time the property is accessed',
-    'The property must be declared as `var`',
-  ]}
-  correctAnswer={0}
-  explanation="The `lazy` delegate computes the value on first access and stores it. Subsequent reads return the cached value without re-evaluating the lambda. By default, `lazy` is thread-safe using `LazyThreadSafetyMode.SYNCHRONIZED` (double-checked locking). You can pass `LazyThreadSafetyMode.NONE` for single-threaded scenarios to avoid synchronization overhead. The property must be `val` (read-only)."
-  difficulty="medium"
+  options={[ 'The lambda is evaluated only on first access, and the result is cached and returned on subsequent accesses', 'The lambda is evaluated at class instantiation time', 'The lambda is evaluated every time the property is accessed', 'The property must be declared as `var`', ]} correctAnswer={0} explanation="The `lazy` delegate computes the value on first access and stores it. Subsequent reads return the cached value without re-evaluating the lambda. By default, `lazy` is thread-safe using `LazyThreadSafetyMode.SYNCHRONIZED` (double-checked locking). You can pass `LazyThreadSafetyMode.NONE` for single-threaded scenarios to avoid synchronization overhead. The property must be `val` (read-only)." difficulty="medium"
 />
 
 ---
@@ -149,16 +109,7 @@ the explanation.
 ### Inline and Reified
 
 <PracticeProblem
-  question={
-    'Why does this code fail to compile without `reified`?\n```\ninline fun <T> myGenericCheck(value: Any) = value is T\n```'
+  question={ 'Why does this code fail to compile without `reified`?\n```\ninline fun <T> myGenericCheck(value: Any) = value is T\n```'
   }
-  options={[
-    'Type parameters are erased at runtime on the JVM, so `T` cannot be checked with `is` without `reified`',
-    '`is` checks are not supported for generic types in Kotlin',
-    'Inline functions cannot have type parameters',
-    'The function must be declared as `suspend` to check types at runtime',
-  ]}
-  correctAnswer={0}
-  explanation="The JVM erases generic type parameters at runtime due to type erasure, so `T` is reduced to `Any` and `value is T` would always be true (or fail to compile). The `reified` keyword on an `inline` function tells the compiler to substitute the actual type argument at each call site, making the type available at runtime. Only `inline` functions support `reified` because the compiler inlines the function body with the concrete type."
-  difficulty="hard"
+  options={[ 'Type parameters are erased at runtime on the JVM, so `T` cannot be checked with `is` without `reified`', '`is` checks are not supported for generic types in Kotlin', 'Inline functions cannot have type parameters', 'The function must be declared as `suspend` to check types at runtime', ]} correctAnswer={0} explanation="The JVM erases generic type parameters at runtime due to type erasure, so `T` is reduced to `Any` and `value is T` would always be true (or fail to compile). The `reified` keyword on an `inline` function tells the compiler to substitute the actual type argument at each call site, making the type available at runtime. Only `inline` functions support `reified` because the compiler inlines the function body with the concrete type." difficulty="hard"
 />

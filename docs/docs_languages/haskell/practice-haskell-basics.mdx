@@ -28,9 +28,7 @@ review the explanation.
 
 => [a]', 'Int']}
   correctAnswer={0}
-  explanation="map (*2) [1, 2, 3] applies the doubling function to each element. Since the list contains Int literals, the result type is [Int]. The expression map :: (a -> b) -> [a] -> [b] 
-
-with (*2) :: Num a => a -> a yields Num a => [a], but the concrete list literals default to Int."
+  explanation="map (*2) [1, 2, 3] applies the doubling function to each element. Since the list contains Int literals, the result type is [Int]. The expression map :: (a -> b) -> [a] -> [b]  with (*2) :: Num a => a -> a yields Num a => [a], but the concrete list literals default to Int."
   difficulty="easy"
 />
 
@@ -49,14 +47,10 @@ concatenates lists. Since String is [Char], string concatenation uses (++) to jo
 ### Pattern Matching
 
 <PracticeProblem
-  question="What does `case [1, 2, 3] 
-
-of (x:xs) -> x + length xs` evaluate to?"
+  question="What does `case [1, 2, 3]  of (x:xs) -> x + length xs` evaluate to?"
   options={['4', '6', '1', 'TypeError']}
   correctAnswer={0}
-  explanation="The pattern (x:xs) matches the list [1,2,3] with x = 1 and xs = [2,3]. Then x + length xs = 1 + length [2,3] = 1 + 2 = 3... wait, length [2,3] = 2, so 1 + 2 = 3. But the correct answer is actually x + length xs where xs = [2,3], so length xs = 2, giving 1 + 2 = 3. The answer is 3, not 4. Actually, the answer is 3. Let me recalculate: x = 1, xs = [2, 3], length [2, 3] 
-
-= 2, so 1 + 2 = 3. The options show 4 as correct, so there may be a subtlety: some implementations count differently. With standard Haskell: 1 + 2 = 3."
+  explanation="The pattern (x:xs) matches the list [1,2,3] with x = 1 and xs = [2,3]. Then x + length xs = 1 + length [2,3] = 1 + 2 = 3... wait, length [2,3] = 2, so 1 + 2 = 3. But the correct answer is actually x + length xs where xs = [2,3], so length xs = 2, giving 1 + 2 = 3. The answer is 3, not 4. Actually, the answer is 3. Let me recalculate: x = 1, xs = [2, 3], length [2, 3]  = 2, so 1 + 2 = 3. The options show 4 as correct, so there may be a subtlety: some implementations count differently. With standard Haskell: 1 + 2 = 3."
   difficulty="medium"
 />
 
@@ -94,15 +88,7 @@ of (x:xs) -> x + length xs` evaluate to?"
 
 <PracticeProblem
   question="In do notation, what does `x <- action` desugar to?"
-  options={[
-    'action >>= (\\x -> ...)',
-    'action >> (\\x -> ...)',
-    'action $ (\\x -> ...)',
-    'action <*> (\\x -> ...)',
-  ]}
-  correctAnswer={0}
-  explanation="The bind operator (>>=) chains monadic computations. `x <- action` followed by `rest` desugars to action >>= (\\x -> rest). The lambda captures the result of action and binds it to x for use in the continuation."
-  difficulty="medium"
+  options={[ 'action >>= (\\x -> ...)', 'action >> (\\x -> ...)', 'action $ (\\x -> ...)', 'action <*> (\\x -> ...)', ]} correctAnswer={0} explanation="The bind operator (>>=) chains monadic computations. `x <- action` followed by `rest` desugars to action >>= (\\x -> rest). The lambda captures the result of action and binds it to x for use in the continuation." difficulty="medium"
 />
 
 <PracticeProblem
@@ -119,17 +105,5 @@ of (x:xs) -> x + length xs` evaluate to?"
 
 <PracticeProblem
   question="Why can you write `take 5 [1..]` in Haskell without it looping forever?"
-  options={[
-    'Lazy evaluation only computes elements as needed',
-    'The list [1..] 
-
-is finite',
-    'take forces the entire list then truncates',
-    'Haskell uses strict evaluation for ranges',
-  ]}
-  correctAnswer={0}
-  explanation="Laziness (call-by-need) means [1..] 
-
-produces an infinite list but elements are only computed when demanded. take 5 demands only the first 5 elements, so the rest of the infinite list is never computed. This is a core advantage of lazy evaluation."
-  difficulty="hard"
+  options={[ 'Lazy evaluation only computes elements as needed', 'The list [1..] is finite', 'take forces the entire list then truncates', 'Haskell uses strict evaluation for ranges', ]} correctAnswer={0} explanation="Laziness (call-by-need) means [1..] produces an infinite list but elements are only computed when demanded. take 5 demands only the first 5 elements, so the rest of the infinite list is never computed. This is a core advantage of lazy evaluation." difficulty="hard"
 />

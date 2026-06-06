@@ -30,15 +30,7 @@ explanation.
 
 <PracticeProblem
   question="Which of the following types satisfies the interface `type Stringer interface { String() string }`?"
-  options={[
-    'type MyInt int with a String() string method',
-    'type MyInt int without methods',
-    'The built-in int type',
-    'type MyFloat float64 with a String() int method',
-  ]}
-  correctAnswer={0}
-  explanation="In Go, any type that has all the methods of an interface implicitly satisfies it. A `MyInt` type with a `String() string` method satisfies the `Stringer` interface. Go uses structural typing, not explicit `implements` declarations."
-  difficulty="medium"
+  options={[ 'type MyInt int with a String() string method', 'type MyInt int without methods', 'The built-in int type', 'type MyFloat float64 with a String() int method', ]} correctAnswer={0} explanation="In Go, any type that has all the methods of an interface implicitly satisfies it. A `MyInt` type with a `String() string` method satisfies the `Stringer` interface. Go uses structural typing, not explicit `implements` declarations." difficulty="medium"
 />
 
 ---
@@ -46,9 +38,7 @@ explanation.
 ### Functions
 
 <PracticeProblem
-  question="What does `func sum(nums ...int) int { total := 0; for _, n := range nums { total += n };
-
-return total }` return when called as `sum(1, 2, 3)`?"
+  question="What does `func sum(nums ...int) int { total := 0; for _, n := range nums { total += n }; return total }` return when called as `sum(1, 2, 3)`?"
   options={['6', '3', 'Compilation error', 'panic']}
   correctAnswer={0}
   explanation="The `...int` syntax makes `nums` a variadic parameter of type `[]int`. Inside the function, it is treated as a slice. `sum(1, 2, 3)` passes the values 1, 2, 3, and the function sums them to 6."
@@ -77,15 +67,7 @@ return total }` return when called as `sum(1, 2, 3)`?"
 
 <PracticeProblem
   question="In a `select` statement with multiple ready cases, how does Go choose which case to execute?"
-  options={[
-    'Pseudo-randomly among ready cases',
-    'The first ready case in source order',
-    'The case with the highest priority',
-    'All ready cases execute',
-  ]}
-  correctAnswer={0}
-  explanation="If multiple cases in a `select` statement are ready, Go selects one pseudo-randomly. This prevents bias and is important for writing fair concurrent programs. If no cases are ready, the select blocks (unless there is a `default` case)."
-  difficulty="medium"
+  options={[ 'Pseudo-randomly among ready cases', 'The first ready case in source order', 'The case with the highest priority', 'All ready cases execute', ]} correctAnswer={0} explanation="If multiple cases in a `select` statement are ready, Go selects one pseudo-randomly. This prevents bias and is important for writing fair concurrent programs. If no cases are ready, the select blocks (unless there is a `default` case)." difficulty="medium"
 />
 
 ---
@@ -94,28 +76,10 @@ return total }` return when called as `sum(1, 2, 3)`?"
 
 <PracticeProblem
   question='What does `fmt.Errorf("task failed: %w", err)` do?'
-  options={[
-    'Wraps err with additional context, creating an error chain',
-    'Replaces err entirely',
-    'Panics with the error message',
-    'Logs the error to stderr',
-  ]}
-  correctAnswer={0}
-  explanation="The `%w` verb in `fmt.Errorf` wraps the original error, creating a new error that contains the original. This allows using `errors.Is()` and `errors.As()` to inspect the error chain, which is Go's preferred error wrapping pattern."
-  difficulty="medium"
+  options={[ 'Wraps err with additional context, creating an error chain', 'Replaces err entirely', 'Panics with the error message', 'Logs the error to stderr', ]} correctAnswer={0} explanation="The `%w` verb in `fmt.Errorf` wraps the original error, creating a new error that contains the original. This allows using `errors.Is()` and `errors.As()` to inspect the error chain, which is Go's preferred error wrapping pattern." difficulty="medium"
 />
 
 <PracticeProblem
   question="How do you create a custom error type in Go?"
-  options={[
-    'Define a struct implementing the `error` interface with an `Error() string` method',
-    'Use the `throw` keyword',
-    'Subclass the `Error` struct',
-    'Use `errors.New` only',
-  ]}
-  correctAnswer={0}
-  explanation='To create a custom error, define a struct type and give it an `Error() string` method. For example: `type MyError struct { Code int };
-
-func (e *MyError) Error() string { return fmt.Sprintf("error %d", e.Code) }`. This satisfies the built-in `error` interface.'
-  difficulty="medium"
+  options={[ 'Define a struct implementing the `error` interface with an `Error() string` method', 'Use the `throw` keyword', 'Subclass the `Error` struct', 'Use `errors.New` only', ]} correctAnswer={0} explanation='To create a custom error, define a struct type and give it an `Error() string` method. For example: `type MyError struct { Code int }; func (e *MyError) Error() string { return fmt.Sprintf("error %d", e.Code) }`. This satisfies the built-in `error` interface.' difficulty="medium"
 />

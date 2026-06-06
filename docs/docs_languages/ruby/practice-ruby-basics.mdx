@@ -74,28 +74,12 @@ the explanation.
 
 <PracticeProblem
   question="What does `super` do when called without arguments in an overridden method?"
-  options={[
-    'Passes the same arguments that were passed to the current method',
-    'Calls the parent method with no arguments',
-    'Raises a NoMethodError',
-    'Returns nil',
-  ]}
-  correctAnswer={0}
-  explanation="super without arguments passes all arguments from the current method to the parent method, including block arguments. To call the parent with no arguments, use super(). This is a common Ruby gotcha."
-  difficulty="medium"
+  options={[ 'Passes the same arguments that were passed to the current method', 'Calls the parent method with no arguments', 'Raises a NoMethodError', 'Returns nil', ]} correctAnswer={0} explanation="super without arguments passes all arguments from the current method to the parent method, including block arguments. To call the parent with no arguments, use super(). This is a common Ruby gotcha." difficulty="medium"
 />
 
 <PracticeProblem
   question="What is the method lookup order for a class Dog that includes modules M1 then M2, and inherits from Animal?"
-  options={[
-    'Dog, M2, M1, Animal, Object, Kernel, BasicObject',
-    'Dog, M1, M2, Animal, Object, Kernel, BasicObject',
-    'Dog, Animal, M2, M1, Object, Kernel, BasicObject',
-    'Dog, M1, M2, Animal, Kernel, Object, BasicObject',
-  ]}
-  correctAnswer={0}
-  explanation="Module lookup follows reverse inclusion order. Since M2 was included after M1, it appears before M1 in the ancestors chain. prepend would place the module before the class itself."
-  difficulty="medium"
+  options={[ 'Dog, M2, M1, Animal, Object, Kernel, BasicObject', 'Dog, M1, M2, Animal, Object, Kernel, BasicObject', 'Dog, Animal, M2, M1, Object, Kernel, BasicObject', 'Dog, M1, M2, Animal, Kernel, Object, BasicObject', ]} correctAnswer={0} explanation="Module lookup follows reverse inclusion order. Since M2 was included after M1, it appears before M1 in the ancestors chain. prepend would place the module before the class itself." difficulty="medium"
 />
 
 ---
@@ -104,28 +88,12 @@ the explanation.
 
 <PracticeProblem
   question="In `begin; risky; rescue => e; raise; end`, what does `raise` without arguments in the rescue block do?"
-  options={[
-    'Re-raises the caught exception preserving the original backtrace',
-    'Raises a new RuntimeError',
-    'Raises ArgumentError',
-    'Does nothing (no-op)',
-  ]}
-  correctAnswer={0}
-  explanation="raise without arguments inside a rescue block re-raises the current exception. The original exception object and its backtrace are preserved. This is the idiomatic way to re-raise after logging or partial handling."
-  difficulty="medium"
+  options={[ 'Re-raises the caught exception preserving the original backtrace', 'Raises a new RuntimeError', 'Raises ArgumentError', 'Does nothing (no-op)', ]} correctAnswer={0} explanation="raise without arguments inside a rescue block re-raises the current exception. The original exception object and its backtrace are preserved. This is the idiomatic way to re-raise after logging or partial handling." difficulty="medium"
 />
 
 <PracticeProblem
   question="What does `[1, 2, 3].each { |n| return n if n == 2 }` return from the enclosing method?"
-  options={[
-    '2 (returns from the method, not just the block)',
-    '1 (returns nil, since each returns the array)',
-    'NoMethodError',
-    'break is required instead of return',
-  ]}
-  correctAnswer={0}
-  explanation="return inside a block returns from the enclosing method, not just from the block. So if this block is inside a method, that method returns 2 immediately. Use next to skip iterations or break to exit the block only."
-  difficulty="hard"
+  options={[ '2 (returns from the method, not just the block)', '1 (returns nil, since each returns the array)', 'NoMethodError', 'break is required instead of return', ]} correctAnswer={0} explanation="return inside a block returns from the enclosing method, not just from the block. So if this block is inside a method, that method returns 2 immediately. Use next to skip iterations or break to exit the block only." difficulty="hard"
 />
 
 ---

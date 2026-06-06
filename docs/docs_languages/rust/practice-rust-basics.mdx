@@ -24,41 +24,17 @@ an answer, submit, and review the explanation.
 
 <PracticeProblem
   question={`What happens when you assign a String to a new variable and then try to use the original?\n\`let a = String::from("hello"); let b = a; println!("{}", a);\``}
-  options={[
-    'Compilation error: value borrowed here after move',
-    'It prints "hello"',
-    'It prints "hello" twice',
-    'Runtime panic',
-  ]}
-  correctAnswer={0}
-  explanation="String is a heap-allocated type that does not implement Copy. Assigning a to b moves ownership of the string data to b, invalidating a. Attempting to use a after the move produces a compile-time error: value borrowed here after move. To use both variables, you could clone the string: let b = a.clone();"
-  difficulty="easy"
+  options={[ 'Compilation error: value borrowed here after move', 'It prints "hello"', 'It prints "hello" twice', 'Runtime panic', ]} correctAnswer={0} explanation="String is a heap-allocated type that does not implement Copy. Assigning a to b moves ownership of the string data to b, invalidating a. Attempting to use a after the move produces a compile-time error: value borrowed here after move. To use both variables, you could clone the string: let b = a.clone();" difficulty="easy"
 />
 
 <PracticeProblem
   question="Which of the following is NOT a valid borrowing rule in Rust?"
-  options={[
-    'You can have multiple mutable references to the same data at the same time',
-    'You can have any number of immutable references simultaneously',
-    'Mutable and immutable references cannot coexist for the same data',
-    'References must always be valid (cannot outlive the data they reference)',
-  ]}
-  correctAnswer={0}
-  explanation="Rust enforces that you can have either any number of immutable references or exactly one mutable reference, but never both. Having multiple mutable references would create data races without synchronization. The compiler rejects this at compile time, making Rust's aliasing guarantees a core safety property."
-  difficulty="easy"
+  options={[ 'You can have multiple mutable references to the same data at the same time', 'You can have any number of immutable references simultaneously', 'Mutable and immutable references cannot coexist for the same data', 'References must always be valid (cannot outlive the data they reference)', ]} correctAnswer={0} explanation="Rust enforces that you can have either any number of immutable references or exactly one mutable reference, but never both. Having multiple mutable references would create data races without synchronization. The compiler rejects this at compile time, making Rust's aliasing guarantees a core safety property." difficulty="easy"
 />
 
 <PracticeProblem
   question="What does `Option::None` represent and how do you safely extract a value from Option<T>?"
-  options={[
-    'It represents the absence of a value; use pattern matching or combinators like unwrap_or() to safely extract',
-    'It represents a null pointer; use unwrap() to always get the value',
-    'It represents an empty string; use as_str() to convert',
-    'It represents a default value; use .default() to get the inner type',
-  ]}
-  correctAnswer={0}
-  explanation="Option<T> is an enum with Some(T) (value present) and None (absent). It replaces null references in other languages. Unwrap() will panic on None and should be avoided in production code. Safe extraction methods include pattern matching (if let Some(v) = opt), unwrap_or(default), map/and_then combinators, and the ? operator in functions returning Option."
-  difficulty="easy"
+  options={[ 'It represents the absence of a value; use pattern matching or combinators like unwrap_or() to safely extract', 'It represents a null pointer; use unwrap() to always get the value', 'It represents an empty string; use as_str() to convert', 'It represents a default value; use .default() to get the inner type', ]} correctAnswer={0} explanation="Option<T> is an enum with Some(T) (value present) and None (absent). It replaces null references in other languages. Unwrap() will panic on None and should be avoided in production code. Safe extraction methods include pattern matching (if let Some(v) = opt), unwrap_or(default), map/and_then combinators, and the ? operator in functions returning Option." difficulty="easy"
 />
 
 ---
@@ -67,41 +43,17 @@ an answer, submit, and review the explanation.
 
 <PracticeProblem
   question={`Why does this function compile without explicit lifetime annotations?\n\`fn first_word(s: &str) -> &str { ... }\``}
-  options={[
-    'Lifetime elision rule 2 applies: with one input lifetime, it is assigned to all output references',
-    'Lifetimes are optional for all functions in Rust',
-    'The compiler infers a static lifetime for the return value',
-    'It would not compile -- explicit annotations are always required',
-  ]}
-  correctAnswer={0}
-  explanation="Rust has three lifetime elision rules for function signatures. Rule 2 states: if there is exactly one input lifetime parameter, that lifetime is assigned to all output lifetime parameters. Since first_word has one reference parameter (s: &str), the output &str automatically gets the same lifetime. The function is equivalent to fn first_word<'a>(s: &'a str) -> &'a str."
-  difficulty="medium"
+  options={[ 'Lifetime elision rule 2 applies: with one input lifetime, it is assigned to all output references', 'Lifetimes are optional for all functions in Rust', 'The compiler infers a static lifetime for the return value', 'It would not compile -- explicit annotations are always required', ]} correctAnswer={0} explanation="Rust has three lifetime elision rules for function signatures. Rule 2 states: if there is exactly one input lifetime parameter, that lifetime is assigned to all output lifetime parameters. Since first_word has one reference parameter (s: &str), the output &str automatically gets the same lifetime. The function is equivalent to fn first_word<'a>(s: &'a str) -> &'a str." difficulty="medium"
 />
 
 <PracticeProblem
   question={`What constraint does the trait bound \`T: Clone + std::fmt::Display\` impose on a generic type T?`}
-  options={[
-    'T must implement both Clone and Display traits, enabling .clone() calls and formatting with {}',
-    'T must be either Clone or Display, but not necessarily both',
-    'T must inherit from Clone and Display as base classes',
-    'T must be a primitive type that can be printed and copied',
-  ]}
-  correctAnswer={0}
-  explanation="The + syntax in trait bounds means T must implement all listed traits simultaneously. T: Clone + Display means T must have both clone() (from Clone) and fmt::Display (enabling {} formatting). This allows the generic function to call .clone() and use {} format syntax on any T passed to it. Multiple bounds use + to combine them, and where clauses can express more complex constraints."
-  difficulty="medium"
+  options={[ 'T must implement both Clone and Display traits, enabling .clone() calls and formatting with {}', 'T must be either Clone or Display, but not necessarily both', 'T must inherit from Clone and Display as base classes', 'T must be a primitive type that can be printed and copied', ]} correctAnswer={0} explanation="The + syntax in trait bounds means T must implement all listed traits simultaneously. T: Clone + Display means T must have both clone() (from Clone) and fmt::Display (enabling {} formatting). This allows the generic function to call .clone() and use {} format syntax on any T passed to it. Multiple bounds use + to combine them, and where clauses can express more complex constraints." difficulty="medium"
 />
 
 <PracticeProblem
   question="Why can you pass Arc<String> across threads but not Rc<String>?"
-  options={[
-    'Arc uses atomic reference counting (thread-safe), Rc uses non-atomic counting (not Send or Sync)',
-    'Arc is faster than Rc for single-threaded use',
-    'Rc cannot hold String types, only primitive types',
-    'Arc is a built-in type while Rc requires an external crate',
-  ]}
-  correctAnswer={0}
-  explanation="Rc<T> uses non-atomic reference counting, meaning incrementing/decrementing the count is not an atomic operation. This makes Rc neither Send nor Sync -- moving it between threads would cause data races on the reference count itself. Arc<T> uses atomic operations for its reference count, making it Send and Sync (when T is also Send + Sync). Use Rc for single-threaded shared ownership and Arc for multi-threaded."
-  difficulty="medium"
+  options={[ 'Arc uses atomic reference counting (thread-safe), Rc uses non-atomic counting (not Send or Sync)', 'Arc is faster than Rc for single-threaded use', 'Rc cannot hold String types, only primitive types', 'Arc is a built-in type while Rc requires an external crate', ]} correctAnswer={0} explanation="Rc<T> uses non-atomic reference counting, meaning incrementing/decrementing the count is not an atomic operation. This makes Rc neither Send nor Sync -- moving it between threads would cause data races on the reference count itself. Arc<T> uses atomic operations for its reference count, making it Send and Sync (when T is also Send + Sync). Use Rc for single-threaded shared ownership and Arc for multi-threaded." difficulty="medium"
 />
 
 ---
@@ -110,28 +62,12 @@ an answer, submit, and review the explanation.
 
 <PracticeProblem
   question="What is the key difference between impl Trait and dyn Trait in function signatures?"
-  options={[
-    'impl Trait uses static dispatch (monomorphization, zero overhead); dyn Trait uses dynamic dispatch (vtable, runtime cost)',
-    'impl Trait only works with structs; dyn Trait only works with enums',
-    'impl Trait is for trait definitions; dyn Trait is for trait implementations',
-    'There is no difference -- they are interchangeable syntaxes',
-  ]}
-  correctAnswer={0}
-  explanation="impl Trait (e.g., fn process(item: impl Display)) causes the compiler to monomorphize the function for each concrete type, producing specialized machine code. This has zero runtime overhead and enables inlining. dyn Trait (e.g., fn process(item: &dyn Display)) uses a fat pointer with a vtable for dynamic dispatch, adding a small indirection cost but allowing heterogeneous collections. Choose impl Trait for performance, dyn Trait for flexibility."
-  difficulty="medium"
+  options={[ 'impl Trait uses static dispatch (monomorphization, zero overhead); dyn Trait uses dynamic dispatch (vtable, runtime cost)', 'impl Trait only works with structs; dyn Trait only works with enums', 'impl Trait is for trait definitions; dyn Trait is for trait implementations', 'There is no difference -- they are interchangeable syntaxes', ]} correctAnswer={0} explanation="impl Trait (e.g., fn process(item: impl Display)) causes the compiler to monomorphize the function for each concrete type, producing specialized machine code. This has zero runtime overhead and enables inlining. dyn Trait (e.g., fn process(item: &dyn Display)) uses a fat pointer with a vtable for dynamic dispatch, adding a small indirection cost but allowing heterogeneous collections. Choose impl Trait for performance, dyn Trait for flexibility." difficulty="medium"
 />
 
 <PracticeProblem
   question="When should you use an associated type versus a generic type parameter in a trait?"
-  options={[
-    'Use an associated type when there is exactly one type per implementing type; use a generic when callers choose the type',
-    'Use an associated type for all traits; generics are only for functions',
-    'Use a generic when there is one type per implementation; use an associated type for multiple types',
-    'They are functionally identical -- always prefer generics',
-  ]}
-  correctAnswer={0}
-  explanation="Associated types (type Item;) allow each implementing type to choose exactly one concrete type. Iterator has type Item because each iterator yields one specific type. You cannot implement Iterator<T> multiple times for the same struct with different Items. Generic parameters (trait Foo<T>) allow callers to specify the type, enabling multiple implementations. Use generics when the caller decides the type, associated types when the implementor decides."
-  difficulty="medium"
+  options={[ 'Use an associated type when there is exactly one type per implementing type; use a generic when callers choose the type', 'Use an associated type for all traits; generics are only for functions', 'Use a generic when there is one type per implementation; use an associated type for multiple types', 'They are functionally identical -- always prefer generics', ]} correctAnswer={0} explanation="Associated types (type Item;) allow each implementing type to choose exactly one concrete type. Iterator has type Item because each iterator yields one specific type. You cannot implement Iterator<T> multiple times for the same struct with different Items. Generic parameters (trait Foo<T>) allow callers to specify the type, enabling multiple implementations. Use generics when the caller decides the type, associated types when the implementor decides." difficulty="medium"
 />
 
 ---
@@ -140,26 +76,10 @@ an answer, submit, and review the explanation.
 
 <PracticeProblem
   question="What is the interior mutability pattern and which types enable it in Rust?"
-  options={[
-    'Interior mutability allows mutation through shared references using Cell (for Copy types), RefCell (runtime borrow checking), or Mutex (thread-safe). The mutation happens inside the container while the container reference remains immutable.',
-    'Interior mutability means all fields in a struct are mutable by default',
-    'Interior mutability uses raw pointers to bypass the borrow checker entirely',
-    'Interior mutability is achieved by making all struct fields pub mut',
-  ]}
-  correctAnswer={0}
-  explanation="Rust normally forbids mutation through shared references (&T). Interior mutability types bypass this in controlled ways. Cell<T> provides get/set for Copy types with no runtime checks. RefCell<T> provides runtime borrow checking: borrow() returns Ref, borrow_mut() returns RefMut, and panics on violation. Mutex<T> and RwLock<T> provide thread-safe interior mutability using OS-level locking. Atomic types (AtomicUsize, AtomicBool, etc.) provide lock-free interior mutability through CPU atomic instructions. The safety invariants are maintained by the type's API, not by the borrow checker."
-  difficulty="hard"
+  options={[ 'Interior mutability allows mutation through shared references using Cell (for Copy types), RefCell (runtime borrow checking), or Mutex (thread-safe). The mutation happens inside the container while the container reference remains immutable.', 'Interior mutability means all fields in a struct are mutable by default', 'Interior mutability uses raw pointers to bypass the borrow checker entirely', 'Interior mutability is achieved by making all struct fields pub mut', ]} correctAnswer={0} explanation="Rust normally forbids mutation through shared references (&T). Interior mutability types bypass this in controlled ways. Cell<T> provides get/set for Copy types with no runtime checks. RefCell<T> provides runtime borrow checking: borrow() returns Ref, borrow_mut() returns RefMut, and panics on violation. Mutex<T> and RwLock<T> provide thread-safe interior mutability using OS-level locking. Atomic types (AtomicUsize, AtomicBool, etc.) provide lock-free interior mutability through CPU atomic instructions. The safety invariants are maintained by the type's API, not by the borrow checker." difficulty="hard"
 />
 
 <PracticeProblem
   question="What is cancellation safety in async Rust and how does tokio::select! relate to it?"
-  options={[
-    'Cancellation safety ensures that dropping a future (e.g., via select! branch not chosen) does not leave shared state inconsistent. Only cancellation-safe futures should be used in select! branches that may be cancelled.',
-    'Cancellation safety means futures cannot be cancelled under any circumstances',
-    'Cancellation safety is enforced by the Rust compiler through the async keyword alone',
-    'Cancellation safety only applies to synchronous code, not async code',
-  ]}
-  correctAnswer={0}
-  explanation="When tokio::select! runs multiple branches, the futures that are not chosen are dropped (cancelled). If a future was partway through updating shared state when dropped, that state may be left inconsistent. A future is cancellation-safe if dropping it at any await point leaves the program in a valid state. Many futures are NOT cancellation-safe by default (e.g., splitting a futures::stream::Stream into two readers). Tokio documents which operations are cancellation-safe. To make select! safe, use patterns like completing operations fully before branching, or using AbortHandle for controlled cancellation."
-  difficulty="hard"
+  options={[ 'Cancellation safety ensures that dropping a future (e.g., via select! branch not chosen) does not leave shared state inconsistent. Only cancellation-safe futures should be used in select! branches that may be cancelled.', 'Cancellation safety means futures cannot be cancelled under any circumstances', 'Cancellation safety is enforced by the Rust compiler through the async keyword alone', 'Cancellation safety only applies to synchronous code, not async code', ]} correctAnswer={0} explanation="When tokio::select! runs multiple branches, the futures that are not chosen are dropped (cancelled). If a future was partway through updating shared state when dropped, that state may be left inconsistent. A future is cancellation-safe if dropping it at any await point leaves the program in a valid state. Many futures are NOT cancellation-safe by default (e.g., splitting a futures::stream::Stream into two readers). Tokio documents which operations are cancellation-safe. To make select! safe, use patterns like completing operations fully before branching, or using AbortHandle for controlled cancellation." difficulty="hard"
 />

@@ -2,8 +2,7 @@
 title: 'IB Chemistry: Energetics Practice'
 slug: ib-chemistry/practice-energetics
 description:
-  "Interactive IB Chemistry energetics practice with auto-graded questions covering Hess's Law,
-  enthalpy changes, Born-Haber cycles, calorimetry, bond enthalpies, entropy, and Gibbs free energy."
+  "Interactive IB Chemistry energetics practice with auto-graded questions covering Hess's Law, enthalpy changes, Born-Haber cycles, calorimetry, bond enthalpies, entropy, and Gibbs free energy."
 tags:
   - Chemistry
   - IB Chemistry
@@ -23,15 +22,7 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="Which of the following is defined as the enthalpy change when one mole of a compound is formed from its elements in their standard states?"
-  options={[
-    'Standard enthalpy of formation',
-    'Standard enthalpy of combustion',
-    'Standard enthalpy of neutralisation',
-    'Bond enthalpy',
-  ]}
-  correctAnswer={0}
-  explanation="The standard enthalpy of formation (delta Hf) is the enthalpy change when one mole of a compound is formed from its elements in their standard states under standard conditions (100 kPa, 298 K). For elements in their standard states, delta Hf = 0 (e.g., O2(g), Na(s), C(graphite)). Combustion is reaction with O2, neutralisation is acid-base, and bond enthalpy is energy to break one mole of bonds in the gas phase."
-  difficulty="easy"
+  options={[ 'Standard enthalpy of formation', 'Standard enthalpy of combustion', 'Standard enthalpy of neutralisation', 'Bond enthalpy', ]} correctAnswer={0} explanation="The standard enthalpy of formation (delta Hf) is the enthalpy change when one mole of a compound is formed from its elements in their standard states under standard conditions (100 kPa, 298 K). For elements in their standard states, delta Hf = 0 (e.g., O2(g), Na(s), C(graphite)). Combustion is reaction with O2, neutralisation is acid-base, and bond enthalpy is energy to break one mole of bonds in the gas phase." difficulty="easy"
 />
 
 <PracticeProblem
@@ -52,15 +43,7 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="Which statement about standard enthalpy of neutralisation is correct?"
-  options={[
-    'It is always negative (exothermic).',
-    'It is the same for all strong acid-strong base reactions.',
-    'It applies only to reactions involving HCl and NaOH.',
-    'It is the enthalpy change when 1 mol of acid reacts with 1 mol of base.',
-  ]}
-  correctAnswer={0}
-  explanation="Neutralisation reactions are always exothermic because forming H2O from H+ and OH- releases energy (delta H = -57.3 kJ mol-1 for strong acid-strong base). However, the exact value varies for weak acids/bases because additional energy is absorbed to dissociate the weak acid/base, making delta H less negative than -57.3 kJ mol-1. Option B is incorrect because the value depends on the strengths of the acid and base. Option D is imprecise because it depends on the stoichiometry of the reaction."
-  difficulty="medium"
+  options={[ 'It is always negative (exothermic).', 'It is the same for all strong acid-strong base reactions.', 'It applies only to reactions involving HCl and NaOH.', 'It is the enthalpy change when 1 mol of acid reacts with 1 mol of base.', ]} correctAnswer={0} explanation="Neutralisation reactions are always exothermic because forming H2O from H+ and OH- releases energy (delta H = -57.3 kJ mol-1 for strong acid-strong base). However, the exact value varies for weak acids/bases because additional energy is absorbed to dissociate the weak acid/base, making delta H less negative than -57.3 kJ mol-1. Option B is incorrect because the value depends on the strengths of the acid and base. Option D is imprecise because it depends on the stoichiometry of the reaction." difficulty="medium"
 />
 
 <PracticeProblem
@@ -89,54 +72,22 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="In a Born-Haber cycle for NaCl, which step represents the electron affinity of chlorine?"
-  options={[
-    'Cl(g) + e- -> Cl-(g)',
-    'Na+(g) + Cl-(g) -> NaCl(s)',
-    '1/2 Cl2(g) -> Cl(g)',
-    'Na(g) -> Na+(g) + e-',
-  ]}
-  correctAnswer={0}
-  explanation="Electron affinity is the enthalpy change when one mole of gaseous atoms gains one electron to form one mole of gaseous ions: Cl(g) + e- -> Cl-(g). This step is exothermic (releases energy) for chlorine (delta EA = -349 kJ mol-1). The Born-Haber cycle includes: sublimation of metal, ionization of metal, bond dissociation of halogen, electron affinity of halogen, and lattice enthalpy. The sum of all steps equals the enthalpy of formation."
-  difficulty="hard"
+  options={[ 'Cl(g) + e- -> Cl-(g)', 'Na+(g) + Cl-(g) -> NaCl(s)', '1/2 Cl2(g) -> Cl(g)', 'Na(g) -> Na+(g) + e-', ]} correctAnswer={0} explanation="Electron affinity is the enthalpy change when one mole of gaseous atoms gains one electron to form one mole of gaseous ions: Cl(g) + e- -> Cl-(g). This step is exothermic (releases energy) for chlorine (delta EA = -349 kJ mol-1). The Born-Haber cycle includes: sublimation of metal, ionization of metal, bond dissociation of halogen, electron affinity of halogen, and lattice enthalpy. The sum of all steps equals the enthalpy of formation." difficulty="hard"
 />
 
 <PracticeProblem
   question="The experimental enthalpy of combustion of propane is -2221 kJ mol-1. Using mean bond enthalpies (C-H: 414, C-C: 347, O=O: 498, C=O: 805, O-H: 464 kJ mol-1), calculate the theoretical value. C3H8 + 5O2 -> 3CO2 + 4H2O."
-  options={[
-    '-2054 kJ mol-1 (difference due to bond enthalpy averaging)',
-    '-2221 kJ mol-1 (values should match exactly)',
-    '-1890 kJ mol-1 (difference due to incomplete combustion)',
-    '-2310 kJ mol-1 (difference due to experimental error)',
-  ]}
-  correctAnswer={0}
-  explanation="Bonds broken: 8 C-H + 2 C-C + 5 O=O = 8(414) + 2(347) + 5(498) = 3312 + 694 + 2490 = 6496 kJ mol-1. Bonds formed: 6 C=O + 8 O-H = 6(805) + 8(464) = 4830 + 3712 = 8542 kJ mol-1. delta H = 6496 - 8542 = -2046 kJ mol-1. This differs from the experimental value (-2221 kJ mol-1) because mean bond enthalpies are averaged over different molecules and do not account for the specific environment of bonds in a particular molecule. The difference (~175 kJ mol-1) is typical and expected."
-  difficulty="hard"
+  options={[ '-2054 kJ mol-1 (difference due to bond enthalpy averaging)', '-2221 kJ mol-1 (values should match exactly)', '-1890 kJ mol-1 (difference due to incomplete combustion)', '-2310 kJ mol-1 (difference due to experimental error)', ]} correctAnswer={0} explanation="Bonds broken: 8 C-H + 2 C-C + 5 O=O = 8(414) + 2(347) + 5(498) = 3312 + 694 + 2490 = 6496 kJ mol-1. Bonds formed: 6 C=O + 8 O-H = 6(805) + 8(464) = 4830 + 3712 = 8542 kJ mol-1. delta H = 6496 - 8542 = -2046 kJ mol-1. This differs from the experimental value (-2221 kJ mol-1) because mean bond enthalpies are averaged over different molecules and do not account for the specific environment of bonds in a particular molecule. The difference (~175 kJ mol-1) is typical and expected." difficulty="hard"
 />
 
 <PracticeProblem
   question="Which of the following processes has a positive entropy change?"
-  options={[
-    'NaCl(s) -> Na+(aq) + Cl-(aq)',
-    'H2O(g) -> H2O(l)',
-    '2NO2(g) -> N2O4(g)',
-    'CO2(g) -> CO2(s)',
-  ]}
-  correctAnswer={0}
-  explanation="Dissolving NaCl(s) into ions increases the number of particles and randomness, so delta S is positive. Condensation (gas to liquid), combination of gases (fewer moles), and deposition (gas to solid) all decrease disorder, giving negative delta S. In general: delta S > 0 for solid to liquid, solid to gas, liquid to gas, increasing moles of gas, and dissolving ionic solids. delta S < 0 for the reverse processes."
-  difficulty="hard"
+  options={[ 'NaCl(s) -> Na+(aq) + Cl-(aq)', 'H2O(g) -> H2O(l)', '2NO2(g) -> N2O4(g)', 'CO2(g) -> CO2(s)', ]} correctAnswer={0} explanation="Dissolving NaCl(s) into ions increases the number of particles and randomness, so delta S is positive. Condensation (gas to liquid), combination of gases (fewer moles), and deposition (gas to solid) all decrease disorder, giving negative delta S. In general: delta S > 0 for solid to liquid, solid to gas, liquid to gas, increasing moles of gas, and dissolving ionic solids. delta S < 0 for the reverse processes." difficulty="hard"
 />
 
 <PracticeProblem
   question="For the reaction NH4NO3(s) -> N2O(g) + 2H2O(g), delta H = -36.0 kJ mol-1 and delta S = +309 J K-1 mol-1. At what temperature does the reaction become spontaneous? (R = 8.31 J K-1 mol-1)"
-  options={[
-    'Below 116.5 K',
-    'Above 116.5 K',
-    'Below 0.1165 K',
-    'Always spontaneous at all temperatures',
-  ]}
-  correctAnswer={0}
-  explanation="Spontaneous when delta G = delta H - T delta S < 0. Since delta H is negative and delta S is positive, the reaction is spontaneous at all temperatures (both terms favour spontaneity). The crossover temperature would be T = delta H/delta S = -36000/309 = -116.5 K, which is below absolute zero and physically impossible. When delta H < 0 and delta S > 0, delta G < 0 at all temperatures. Note: 298 K gives delta G = -36000 - 298(309) = -128,082 J = -128 kJ mol-1."
-  difficulty="hard"
+  options={[ 'Below 116.5 K', 'Above 116.5 K', 'Below 0.1165 K', 'Always spontaneous at all temperatures', ]} correctAnswer={0} explanation="Spontaneous when delta G = delta H - T delta S < 0. Since delta H is negative and delta S is positive, the reaction is spontaneous at all temperatures (both terms favour spontaneity). The crossover temperature would be T = delta H/delta S = -36000/309 = -116.5 K, which is below absolute zero and physically impossible. When delta H < 0 and delta S > 0, delta G < 0 at all temperatures. Note: 298 K gives delta G = -36000 - 298(309) = -128,082 J = -128 kJ mol-1." difficulty="hard"
 />
 
 <PracticeProblem
@@ -177,13 +128,5 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="Which type of calorimeter provides the most accurate results for measuring enthalpy changes of combustion?"
-  options={[
-    'Bomb calorimeter',
-    'Polystyrene cup calorimeter',
-    'Beaker calorimeter',
-    'Test tube calorimeter',
-  ]}
-  correctAnswer={0}
-  explanation="A bomb calorimeter operates at constant volume, preventing heat loss to the surroundings and ensuring complete combustion. It measures temperature change precisely and accounts for the heat capacity of the calorimeter itself. Polystyrene cup calorimeters are simpler but less accurate because they operate at constant pressure and have higher heat losses. Bomb calorimeters are used for accurate determination of food calorific values and fuel enthalpies."
-  difficulty="medium"
+  options={[ 'Bomb calorimeter', 'Polystyrene cup calorimeter', 'Beaker calorimeter', 'Test tube calorimeter', ]} correctAnswer={0} explanation="A bomb calorimeter operates at constant volume, preventing heat loss to the surroundings and ensuring complete combustion. It measures temperature change precisely and accounts for the heat capacity of the calorimeter itself. Polystyrene cup calorimeters are simpler but less accurate because they operate at constant pressure and have higher heat losses. Bomb calorimeters are used for accurate determination of food calorific values and fuel enthalpies." difficulty="medium"
 />

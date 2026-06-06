@@ -31,15 +31,7 @@ the explanation.
 
 <PracticeProblem
   question="What does `typealias StringPair = (String, String)` create?"
-  options={[
-    'A new class',
-    'An alias for any two-element tuple of Strings',
-    'A new struct with two String properties',
-    'A dictionary with String keys and values',
-  ]}
-  correctAnswer={1}
-  explanation="A `typealias` creates an alternative name for an existing type. `StringPair` is simply another name for `(String, String)`, a tuple of two strings."
-  difficulty="easy"
+  options={[ 'A new class', 'An alias for any two-element tuple of Strings', 'A new struct with two String properties', 'A dictionary with String keys and values', ]} correctAnswer={1} explanation="A `typealias` creates an alternative name for an existing type. `StringPair` is simply another name for `(String, String)`, a tuple of two strings." difficulty="easy"
 />
 
 ---
@@ -96,15 +88,7 @@ the explanation.
 
 <PracticeProblem
   question="When is `@escaping` required on a closure parameter?"
-  options={[
-    'When the closure is called synchronously',
-    'When the closure is stored or called after the function returns',
-    'When the closure captures external variables',
-    'When the closure returns a value',
-  ]}
-  correctAnswer={1}
-  explanation="Non-escaping closures (the default) execute before the function returns. If the closure outlives the function -- stored as a property, passed to another async function, or called later -- `@escaping` is required."
-  difficulty="medium"
+  options={[ 'When the closure is called synchronously', 'When the closure is stored or called after the function returns', 'When the closure captures external variables', 'When the closure returns a value', ]} correctAnswer={1} explanation="Non-escaping closures (the default) execute before the function returns. If the closure outlives the function -- stored as a property, passed to another async function, or called later -- `@escaping` is required." difficulty="medium"
 />
 
 ---
@@ -112,9 +96,7 @@ the explanation.
 ### OOP and Error Handling
 
 <PracticeProblem
-  question="What is the output of the following code? `struct Point { var x: Int };
-
-var a = Point(x: 1); var b = a; b.x = 2; print(a.x)`"
+  question="What is the output of the following code? `struct Point { var x: Int }; var a = Point(x: 1); var b = a; b.x = 2; print(a.x)`"
   options={['1', '2', 'nil', 'Compile error']}
   correctAnswer={0}
   explanation="Structs are value types. Assigning `a` to `b` creates a copy. Modifying `b.x` does not affect `a`. This is different from classes, which share the same reference."
@@ -123,13 +105,5 @@ var a = Point(x: 1); var b = a; b.x = 2; print(a.x)`"
 
 <PracticeProblem
   question="In the statement `do { try riskyOp() } catch NetworkError.timeout { } catch { }`, what does the bare `catch` block handle?"
-  options={[
-    'Only `NetworkError.timeout`',
-    'Only non-NetworkError errors',
-    'Any error not caught by previous catch blocks',
-    'Nothing -- it is unreachable',
-  ]}
-  correctAnswer={2}
-  explanation="A bare `catch` acts as a catch-all for any error not matched by preceding specific `catch` patterns. It must be the last catch block."
-  difficulty="medium"
+  options={[ 'Only `NetworkError.timeout`', 'Only non-NetworkError errors', 'Any error not caught by previous catch blocks', 'Nothing -- it is unreachable', ]} correctAnswer={2} explanation="A bare `catch` acts as a catch-all for any error not matched by preceding specific `catch` patterns. It must be the last catch block." difficulty="medium"
 />
