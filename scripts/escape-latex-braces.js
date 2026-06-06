@@ -693,7 +693,27 @@ function fixMdxUnfriendlyPatterns(source) {
           // Valid JS expression starters: letter, $, _, {, [, !, ~, +, -, @
           // Problematic: (, space, digit, *, etc.
           const isValidJsStart = /[a-zA-Z$_\[{!~+\-@]/.test(next);
-          if (!isValidJsStart && next !== '' && next !== '}') {
+
+          // Find matching } to inspect content
+          let depth = 1;
+          let j = i + 1;
+          while (j < modified.length && depth > 0) {
+            if (modified[j] === '{') depth++;
+            else if (modified[j] === '}') depth--;
+            if (depth > 0) j++;
+          }
+          const braceContent = depth === 0 ? modified.substring(i + 1, j) : '';
+
+          // Diamondify if:
+          // 1. Next char is not a valid JS start (e.g., {(G, u, v)})
+          // 2. Content contains ^ (LaTeX superscript, not JSX)
+          // 3. Content contains comma+space (set notation like {id, (, +})
+          // BUT NOT if the line is a JSX line or const declaration
+          const hasLatexPattern = /\^/.test(braceContent);
+          const hasSetNotation = /,\s/.test(braceContent);
+
+          if ((!isValidJsStart && next !== '' && next !== '}') ||
+              (braceContent && (hasLatexPattern || hasSetNotation))) {
             // Diamondify this brace pair
             // Find matching }
             let depth = 1;
