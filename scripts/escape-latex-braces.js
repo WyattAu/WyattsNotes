@@ -650,7 +650,7 @@ function fixMdxUnfriendlyPatterns(source) {
     // Diamondify these braces so the remark plugin can restore them.
     // Skip: lines that are JSX (start with <), lines with $...$ math,
     // and { that starts valid JS identifiers/expressions.
-    if (modified.includes('{') && !modified.trimStart().startsWith('<') && !modified.includes('export ') && !modified.includes('const ')) {
+    if (modified.includes('{') && !modified.trimStart().startsWith('<') && !modified.trimStart().startsWith('"') && !modified.trimStart().startsWith("'") && !modified.includes('export ') && !modified.includes('const ')) {
       // Find { that is NOT inside $...$ math, inline code, or JSX attributes
       let newModified = '';
       let i = 0;
