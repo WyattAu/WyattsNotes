@@ -46,7 +46,9 @@ explanation.
 ### Functions
 
 <PracticeProblem
-  question="What does `func sum(nums ...int) int { total := 0; for _, n := range nums { total += n }; return total }` return when called as `sum(1, 2, 3)`?"
+  question="What does `func sum(nums ...int) int { total := 0; for _, n := range nums { total += n };
+
+return total }` return when called as `sum(1, 2, 3)`?"
   options={['6', '3', 'Compilation error', 'panic']}
   correctAnswer={0}
   explanation="The `...int` syntax makes `nums` a variadic parameter of type `[]int`. Inside the function, it is treated as a slice. `sum(1, 2, 3)` passes the values 1, 2, 3, and the function sums them to 6."
@@ -112,6 +114,8 @@ explanation.
     'Use `errors.New` only',
   ]}
   correctAnswer={0}
-  explanation='To create a custom error, define a struct type and give it an `Error() string` method. For example: `type MyError struct { Code int }; func (e *MyError) Error() string { return fmt.Sprintf("error %d", e.Code) }`. This satisfies the built-in `error` interface.'
+  explanation='To create a custom error, define a struct type and give it an `Error() string` method. For example: `type MyError struct { Code int };
+
+func (e *MyError) Error() string { return fmt.Sprintf("error %d", e.Code) }`. This satisfies the built-in `error` interface.'
   difficulty="medium"
 />

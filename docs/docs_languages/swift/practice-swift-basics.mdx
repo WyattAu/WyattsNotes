@@ -112,7 +112,9 @@ the explanation.
 ### OOP and Error Handling
 
 <PracticeProblem
-  question="What is the output of the following code? `struct Point { var x: Int }; var a = Point(x: 1); var b = a; b.x = 2; print(a.x)`"
+  question="What is the output of the following code? `struct Point { var x: Int };
+
+var a = Point(x: 1); var b = a; b.x = 2; print(a.x)`"
   options={['1', '2', 'nil', 'Compile error']}
   correctAnswer={0}
   explanation="Structs are value types. Assigning `a` to `b` creates a copy. Modifying `b.x` does not affect `a`. This is different from classes, which share the same reference."

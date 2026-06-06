@@ -66,7 +66,9 @@ review the explanation.
     'Compilation error',
   ]}
   correctAnswer={0}
-  explanation="The `Readonly<T>` utility type makes all properties of `T` read-only by adding the `readonly` modifier to each property. This prevents reassignment of individual properties: `const u: ReadonlyUser = { name: 'a', age: 1 }; u.name = 'b'` would be a compile error. The object itself can still be mutated through mutable methods, and the original non-readonly type remains unchanged."
+  explanation="The `Readonly<T>` utility type makes all properties of `T` read-only by adding the `readonly` modifier to each property. This prevents reassignment of individual properties: `const u: ReadonlyUser = { name: 'a', age: 1 };
+
+u.name = 'b'` would be a compile error. The object itself can still be mutated through mutable methods, and the original non-readonly type remains unchanged."
   difficulty="easy"
 />
 
@@ -75,7 +77,9 @@ review the explanation.
 ### Advanced Patterns
 
 <PracticeProblem
-  question={`Given a discriminated union:\n\`\`\`\ntype Shape =\n  | { kind: 'circle'; radius: number }\n  | { kind: 'square'; size: number };\n\`\`\`\nWhat is the type of \`s.radius\` after narrowing with \`if (s.kind === 'circle')\`?`}
+  question={`Given a discriminated union:\n\`\`\`\ntype Shape =\n  | { kind: 'circle'; radius: number }\n  | { kind: 'square'; size: number };
+
+\n\`\`\`\nWhat is the type of \`s.radius\` after narrowing with \`if (s.kind === 'circle')\`?`}
   options={[
     'number',
     'number | undefined',
