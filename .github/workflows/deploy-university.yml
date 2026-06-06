@@ -29,10 +29,26 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
-    name: Build and Deploy
+  build:
+    name: Build ${{ matrix.subject }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    strategy:
+      matrix:
+        include:
+          - subject: maths
+            docs_path: docs/docs_university/mathematics
+            include_intro: 'intro'
+          - subject: physics
+            docs_path: docs/docs_university/physics
+          - subject: computing
+            docs_path: docs/docs_university/computing
+          - subject: chemistry
+            docs_path: docs/docs_university/chemistry
+          - subject: computer-science
+            docs_path: docs/docs_university/computer-science
+          - subject: admissions
+            docs_path: docs/docs_university/admissions
     steps:
       - uses: actions/checkout@v6
 
@@ -55,10 +71,15 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       - name: Preprocess MDX files
-        run: node scripts/escape-latex-braces.js docs/docs_university
+        run: node scripts/escape-latex-braces.js ${{ matrix.docs_path }}
+
+      - name: Generate per-plugin Docusaurus config
+        run:
+          node scripts/generate-university-plugin-config.mjs ${{ matrix.subject }} ${{
+          matrix.docs_path }} ${{ matrix.include_intro || '' }}
 
       - name: Build
-        run: npx docusaurus build --config docusaurus.university.config.ts
+        run: npx docusaurus build --config docusaurus-university-${{ matrix.subject }}.config.ts
         env:
           NODE_OPTIONS: --max-old-space-size=11264
           DISABLE_LUNR: 'true'
@@ -71,12 +92,103 @@ jobs:
       - name: Remove SSR bundle
         run: rm -rf build/__server
 
-      - name: Verify build
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: university-build-${{ matrix.subject }}
+          path: build/
+          retention-days: 1
+
+  merge-and-deploy:
+    name: Merge and Deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    needs: [build]
+    if: success()
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Download maths build (base with intro + shared assets)
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: university-build-maths
+          path: build-maths
+
+      - name: Download physics build
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: university-build-physics
+          path: build-physics
+
+      - name: Download computing build
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: university-build-computing
+          path: build-computing
+
+      - name: Download admissions build
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: university-build-admissions
+          path: build-admissions
+
+      - name: Download chemistry build
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: university-build-chemistry
+          path: build-chemistry
+
+      - name: Download computer-science build
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: university-build-computer-science
+          path: build-computer-science
+
+      - name: Merge builds
         run: |
+          # Use maths as the base (has intro page + shared theme assets)
+          mv build-maths build
+
+          # Merge per-subject page directories from other builds
+          # Each build puts its pages under build/docs/<routeBasePath>/
+          # These directories don't overlap, so we can safely copy them
+          cp -rn build-physics/docs build/ 2>/dev/null || true
+          cp -rn build-computing/docs build/ 2>/dev/null || true
+          cp -rn build-admissions/docs build/ 2>/dev/null || true
+          cp -rn build-chemistry/docs build/ 2>/dev/null || true
+          cp -rn build-computer-science/docs build/ 2>/dev/null || true
+
+          # Merge JS bundles from other subjects so their HTML pages can load
+          # their own main.<hash>.js. Each subject's HTML references its own
+          # main.js, and those pages need that specific JS for client-side
+          # navigation within the subject.
+          for subject in physics computing admissions chemistry computer-science; do
+            if [ -d "build-${subject}/assets/js" ]; then
+              cp -rn "build-${subject}/assets/js/"* "build/assets/js/" 2>/dev/null || true
+            fi
+            if [ -d "build-${subject}/assets/css" ]; then
+              cp -rn "build-${subject}/assets/css/"* "build/assets/css/" 2>/dev/null || true
+            fi
+          done
+
+          # Verify structure
           echo "=== Build directory structure ==="
-          find build/docs -maxdepth 2 -type d | sort | head -40
+          find build/docs -maxdepth 2 -type d | sort | head -30
           echo "=== Total HTML pages ==="
           find build/docs -name '*.html' | wc -l
+          echo "=== Total JS bundles ==="
+          find build/assets/js -name '*.js' | wc -l
+
+      - name: Remove SSR bundle
+        run: rm -rf build/__server
+
+      - uses: pnpm/action-setup@v6
+
+      - uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
 
       - name: Deploy to Cloudflare Pages
         id: deploy

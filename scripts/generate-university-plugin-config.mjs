@@ -112,7 +112,7 @@ const config = {
       },
       items: [
         { type: 'search', position: 'right' },
-        { to: '/docs/intro', label: 'University', position: 'left' },
+        { href: '/docs/intro', label: 'University', position: 'left' },
         { href: 'https://academics.wyattau.com', label: 'Academics', position: 'right' },
         { href: 'https://alevel.wyattau.com', label: 'A-Levels', position: 'right' },
         { href: 'https://qualifications.wyattau.com', label: 'Qualifications', position: 'right' },
@@ -128,11 +128,11 @@ const config = {
         {
           title: 'University Subjects',
           items: [
-            { label: 'Mathematics', to: '/docs/mathematics/linear-algebra' },
-            { label: 'Physics', to: '/docs/physics/classical-mechanics' },
-            { label: 'Computing', to: '/docs/computing/algorithms-and-data-structures' },
-            { label: 'Chemistry', to: '/docs/chemistry/physical-chemistry' },
-            { label: 'Computer Science', to: '/docs/computer-science/algorithms' },
+            { label: 'Mathematics', href: '/docs/mathematics/linear-algebra' },
+            { label: 'Physics', href: '/docs/physics/classical-mechanics' },
+            { label: 'Computing', href: '/docs/computing/algorithms-and-data-structures' },
+            { label: 'Chemistry', href: '/docs/chemistry/physical-chemistry' },
+            { label: 'Computer Science', href: '/docs/computer-science/algorithms' },
           ],
         },
         {
