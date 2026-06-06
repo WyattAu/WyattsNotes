@@ -708,12 +708,14 @@ function fixMdxUnfriendlyPatterns(source) {
           // 1. Next char is not a valid JS start (e.g., {(G, u, v)})
           // 2. Content contains ^ (LaTeX superscript, not JSX)
           // 3. Content contains comma+space (set notation like {id, (, +})
+          // 4. Content is a single non-identifier char (e.g., {+}, {-}, {*})
           // BUT NOT if the line is a JSX line or const declaration
           const hasLatexPattern = /\^/.test(braceContent);
           const hasSetNotation = /,\s/.test(braceContent);
+          const isSingleOperator = braceContent.length === 1 && !/[a-zA-Z0-9$_]/.test(braceContent);
 
           if ((!isValidJsStart && next !== '' && next !== '}') ||
-              (braceContent && (hasLatexPattern || hasSetNotation))) {
+              (braceContent && (hasLatexPattern || hasSetNotation || isSingleOperator))) {
             // Diamondify this brace pair
             // Find matching }
             let depth = 1;
