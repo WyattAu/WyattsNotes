@@ -39,7 +39,7 @@ the explanation.
 
 <PracticeProblem question="What does `[1, 2, 3, 4, 5].filter { $0 % 2 == 0 }.map { $0 * $0 }` return?" options={['[4, 16]', '[2, 4]', '[1, 9, 25]', '[1, 4, 9, 16, 25]']} correctAnswer={0} explanation="`filter` keeps even numbers: [2, 4]. Then `map` squares each: [4, 16]. Higher-order functions chain left-to-right." difficulty="medium" />
 
-<PracticeProblem question="What is the time complexity of `Set.contains(_:)` in Swift?" options={['O(1) average, O(n) worst', 'O(n)', 'O(log n)', 'O(n log n)']} correctAnswer={0} explanation="Swift's `Set` is backed by a hash table. Average lookup is O(1), worst case is O(n) due to hash collisions. Use sets when you need fast membership testing." difficulty="medium" />
+<PracticeProblem question="What is the time complexity of `Set.contains(_:)` in Swift?" options={['O(1) average, O(n) worst', 'O(n)', 'O(log n)', 'O(n log n)']} correctAnswer={0} explanation="Swift’s `Set` is backed by a hash table. Average lookup is O(1), worst case is O(n) due to hash collisions. Use sets when you need fast membership testing." difficulty="medium" />
 
 ---
 

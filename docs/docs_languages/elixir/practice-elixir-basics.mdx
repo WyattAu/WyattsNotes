@@ -26,7 +26,7 @@ the explanation.
 
 <PracticeProblem question="What is the result of `[0 | [1, 2, 3]]`?" options={['[0, 1, 2, 3]', '[1, 2, 3, 0]', '{:ok, [0, 1, 2, 3]}', 'Syntax error']} correctAnswer={0} explanation="The | operator prepends an element to a list. [0 | [1, 2, 3]]  produces [0, 1, 2, 3]. This is O(1) because it only creates a new head node pointing to the existing tail." difficulty="easy" />
 
-<PracticeProblem question="What does `^x = 2` do if x is currently bound to 1?" options={[ 'Raises a MatchError because x (1) does not equal 2', 'Rebinds x to 2', 'Returns false', 'Returns :error', ]} correctAnswer={0} explanation="The pin operator ^ prevents rebinding. ^x = 2 attempts to match x's current value (1) against 2. Since 1 != 2, it raises a MatchError. Without the pin, x = 2 would rebind x to 2." difficulty="medium" />
+<PracticeProblem question="What does `^x = 2` do if x is currently bound to 1?" options={[ 'Raises a MatchError because x (1) does not equal 2', 'Rebinds x to 2', 'Returns false', 'Returns :error', ]} correctAnswer={0} explanation="The pin operator ^ prevents rebinding. ^x = 2 attempts to match x’s current value (1) against 2. Since 1 != 2, it raises a MatchError. Without the pin, x = 2 would rebind x to 2." difficulty="medium" />
 
 ---
 
