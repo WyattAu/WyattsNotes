@@ -19,80 +19,26 @@ the NCERT syllabus. Select an option to check your answer and view the explanati
 
 ## Algebra and Calculus
 
-<PracticeProblem
-  question="If $A = \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix}$, then $|A|$ (determinant of $A$) is:"
-  options={['$-2$', '$2$', '$10$', '$-10$']}
-  correctAnswer={0}
-  explanation="$|A| = (1)(4) - (2)(3) = 4 - 6 = -2$. The determinant of a $2 \\times 2$ matrix $\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}$ is $ad - bc$."
-  difficulty="easy"
-/>
+<PracticeProblem question="If $A = \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix}$, then $|A|$ (determinant of $A$) is:" options={['$-2$', '$2$', '$10$', '$-10$']} correctAnswer={0} explanation="$|A| = (1)(4) - (2)(3) = 4 - 6 = -2$. The determinant of a $2 \\times 2$ matrix $\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}$ is $ad - bc$." difficulty="easy" />
 
-<PracticeProblem
-  question="Evaluate: $\\dfrac{d}{dx}\\left[\\tan^{-1}\\left(\\dfrac{x}{1+\\sqrt{1-x^2}}\\right)\\right]$ at $x = \\dfrac{1}{2}$:"
-  options={['$\\dfrac{1}{2}$', '$1$', '$\\dfrac{1}{\\sqrt{3}}$', '$\\dfrac{\\sqrt{3}}{2}$']}
-  correctAnswer={0}
-  explanation="Let $x = \\sin\\theta$. Then the expression simplifies to $\\dfrac{d}{dx}\\left[\\dfrac{\\theta}{2}\\right]  = \\dfrac{1}{2} \\cdot \\dfrac{1}{\\sqrt{1-x^2}}$. At $x = 1/2$, this equals $\\dfrac{1}{2} \\cdot \\dfrac{1}{\\sqrt{3}/2} = \\dfrac{1}{\\sqrt{3}}$. Alternatively, simplifying the composition yields the derivative $\\dfrac{1}{2\\sqrt{1-x^2}}$, and at $x = 1/2$: $\\dfrac{1}{2\\cdot\\sqrt{3}/2} = \\dfrac{1}{\\sqrt{3}}$."
-  difficulty="hard"
-/>
+<PracticeProblem question="Evaluate: $\\dfrac{d}{dx}\\left[\\tan^{-1}\\left(\\dfrac{x}{1+\\sqrt{1-x^2}}\\right)\\right]$ at $x = \\dfrac{1}{2}$:" options={['$\\dfrac{1}{2}$', '$1$', '$\\dfrac{1}{\\sqrt{3}}$', '$\\dfrac{\\sqrt{3}}{2}$']} correctAnswer={0} explanation="Let $x = \\sin\\theta$. Then the expression simplifies to $\\dfrac{d}{dx}\\left[\\dfrac{\\theta}{2}\\right]  = \\dfrac{1}{2} \\cdot \\dfrac{1}{\\sqrt{1-x^2}}$. At $x = 1/2$, this equals $\\dfrac{1}{2} \\cdot \\dfrac{1}{\\sqrt{3}/2} = \\dfrac{1}{\\sqrt{3}}$. Alternatively, simplifying the composition yields the derivative $\\dfrac{1}{2\\sqrt{1-x^2}}$, and at $x = 1/2$: $\\dfrac{1}{2\\cdot\\sqrt{3}/2} = \\dfrac{1}{\\sqrt{3}}$." difficulty="hard" />
 
-<PracticeProblem
-  question="The integral $\\int e^x\\left(\\dfrac{1 + \\sin x}{1 + \\cos x}\\right) dx$ equals:"
-  options={[ '$e^x \\tan\\left(\\dfrac{x}{2}\\right) + C$', '$e^x \\cot\\left(\\dfrac{x}{2}\\right) + C$', '$e^x \\tan x + C$', '$e^x \\sin\\left(\\dfrac{x}{2}\\right) + C$', ]} correctAnswer={0} explanation="Using $\\dfrac{1 + \\sin x}{1 + \\cos x} = \\tan\\left(\\dfrac{x}{2} + \\dfrac{\\pi}{4}\\right)$ is complex. Instead, note that $\\dfrac{1 + \\sin x}{1 + \\cos x} = \\sec^2\\left(\\dfrac{x}{2}\\right) - \\tan\\left(\\dfrac{x}{2}\\right) + 1$, but the cleanest approach: simplify to $\\dfrac{\\sin x + 1}{2\\cos^2(x/2)} = \\tan(x/2) + \\sec^2(x/2)$. Since $\\int e^x(f(x) + f'(x))\\,dx = e^x f(x) + C$, we get $e^x \\tan(x/2) + C$." difficulty="hard"
-/>
+<PracticeProblem question="The integral $\\int e^x\\left(\\dfrac{1 + \\sin x}{1 + \\cos x}\\right) dx$ equals:" options={[ '$e^x \\tan\\left(\\dfrac{x}{2}\\right) + C$', '$e^x \\cot\\left(\\dfrac{x}{2}\\right) + C$', '$e^x \\tan x + C$', '$e^x \\sin\\left(\\dfrac{x}{2}\\right) + C$', ]} correctAnswer={0} explanation="Using $\\dfrac{1 + \\sin x}{1 + \\cos x} = \\tan\\left(\\dfrac{x}{2} + \\dfrac{\\pi}{4}\\right)$ is complex. Instead, note that $\\dfrac{1 + \\sin x}{1 + \\cos x} = \\sec^2\\left(\\dfrac{x}{2}\\right) - \\tan\\left(\\dfrac{x}{2}\\right) + 1$, but the cleanest approach: simplify to $\\dfrac{\\sin x + 1}{2\\cos^2(x/2)} = \\tan(x/2) + \\sec^2(x/2)$. Since $\\int e^x(f(x) + f'(x))\\,dx = e^x f(x) + C$, we get $e^x \\tan(x/2) + C$." difficulty="hard" />
 
-<PracticeProblem
-  question="If $f(x) = |\\cos x|$, then $f'(x)$ at $x = \\dfrac{\\pi}{2}$ is:"
-  options={['$1$', '$-1$', 'Does not exist', '$0$']}
-  correctAnswer={2}
-  explanation="At $x = \\pi/2$, $\\cos x = 0$ and the function $|\\cos x|$ changes from decreasing (where $\\cos x > 0$, so $f'(x) = -\\sin x$ approaching $-1$ from the left) to increasing (where $\\cos x < 0$, so $f'(x) = \\sin x$ approaching $1$ from the right). The left-hand derivative is $-1$ and the right-hand derivative is $+1$, so the derivative does not exist at this cusp."
-  difficulty="medium"
-/>
+<PracticeProblem question="If $f(x) = |\\cos x|$, then $f'(x)$ at $x = \\dfrac{\\pi}{2}$ is:" options={['$1$', '$-1$', 'Does not exist', '$0$']} correctAnswer={2} explanation="At $x = \\pi/2$, $\\cos x = 0$ and the function $|\\cos x|$ changes from decreasing (where $\\cos x > 0$, so $f'(x) = -\\sin x$ approaching $-1$ from the left) to increasing (where $\\cos x < 0$, so $f'(x) = \\sin x$ approaching $1$ from the right). The left-hand derivative is $-1$ and the right-hand derivative is $+1$, so the derivative does not exist at this cusp." difficulty="medium" />
 
 ## Probability and Statistics
 
-<PracticeProblem
-  question="A die is thrown twice. What is the probability that the sum of the numbers appearing on the dice is 8?"
-  options={['$\\dfrac{5}{36}$', '$\\dfrac{7}{36}$', '$\\dfrac{1}{6}$', '$\\dfrac{4}{36}$']}
-  correctAnswer={0}
-  explanation="Favourable outcomes: $(2,6), (3,5), (4,4), (5,3), (6,2)$ -- 5 outcomes. Total outcomes: $6 \\times 6 = 36$. Probability $= 5/36$."
-  difficulty="easy"
-/>
+<PracticeProblem question="A die is thrown twice. What is the probability that the sum of the numbers appearing on the dice is 8?" options={['$\\dfrac{5}{36}$', '$\\dfrac{7}{36}$', '$\\dfrac{1}{6}$', '$\\dfrac{4}{36}$']} correctAnswer={0} explanation="Favourable outcomes: $(2,6), (3,5), (4,4), (5,3), (6,2)$ -- 5 outcomes. Total outcomes: $6 \\times 6 = 36$. Probability $= 5/36$." difficulty="easy" />
 
-<PracticeProblem
-  question="If $P(A) = \\dfrac{3}{5}$, $P(B) = \\dfrac{1}{3}$, and $P(A \\cap B) = \\dfrac{1}{5}$, then $P(A \\cup B)$ is:"
-  options={['$\\dfrac{13}{15}$', '$\\dfrac{11}{15}$', '$\\dfrac{4}{5}$', '$\\dfrac{2}{3}$']}
-  correctAnswer={0}
-  explanation="$P(A \\cup B) = P(A) + P(B) - P(A \\cap B) = \\dfrac{3}{5} + \\dfrac{1}{3} - \\dfrac{1}{5} = \\dfrac{2}{5} + \\dfrac{1}{3} = \\dfrac{6+5}{15} = \\dfrac{11}{15}$."
-  difficulty="medium"
-/>
+<PracticeProblem question="If $P(A) = \\dfrac{3}{5}$, $P(B) = \\dfrac{1}{3}$, and $P(A \\cap B) = \\dfrac{1}{5}$, then $P(A \\cup B)$ is:" options={['$\\dfrac{13}{15}$', '$\\dfrac{11}{15}$', '$\\dfrac{4}{5}$', '$\\dfrac{2}{3}$']} correctAnswer={0} explanation="$P(A \\cup B) = P(A) + P(B) - P(A \\cap B) = \\dfrac{3}{5} + \\dfrac{1}{3} - \\dfrac{1}{5} = \\dfrac{2}{5} + \\dfrac{1}{3} = \\dfrac{6+5}{15} = \\dfrac{11}{15}$." difficulty="medium" />
 
-<PracticeProblem
-  question="A random variable $X$ has the probability distribution: $P(X = 0) = \\dfrac{1}{5}$, $P(X = 1) = \\dfrac{2}{5}$, $P(X = 2) = \\dfrac{2}{5}$. Find $E(X)$:"
-  options={['$1.2$', '$1.0$', '$1.4$', '$1.6$']}
-  correctAnswer={0}
-  explanation="$E(X) = \\sum x_i P(X = x_i) = 0 \\times \\dfrac{1}{5} + 1 \\times \\dfrac{2}{5} + 2 \\times \\dfrac{2}{5} = 0 + \\dfrac{2}{5} + \\dfrac{4}{5} = \\dfrac{6}{5} = 1.2$."
-  difficulty="medium"
-/>
+<PracticeProblem question="A random variable $X$ has the probability distribution: $P(X = 0) = \\dfrac{1}{5}$, $P(X = 1) = \\dfrac{2}{5}$, $P(X = 2) = \\dfrac{2}{5}$. Find $E(X)$:" options={['$1.2$', '$1.0$', '$1.4$', '$1.6$']} correctAnswer={0} explanation="$E(X) = \\sum x_i P(X = x_i) = 0 \\times \\dfrac{1}{5} + 1 \\times \\dfrac{2}{5} + 2 \\times \\dfrac{2}{5} = 0 + \\dfrac{2}{5} + \\dfrac{4}{5} = \\dfrac{6}{5} = 1.2$." difficulty="medium" />
 
-<PracticeProblem
-  question="If $A$ and $B$ are independent events with $P(A) = 0.6$ and $P(B) = 0.4$, then $P(A \\cup B)$ is:"
-  options={['$0.76$', '$0.24$', '$0.84$', '$0.64$']}
-  correctAnswer={0}
-  explanation="For independent events: $P(A \\cap B) = P(A) \\cdot P(B) = 0.6 \\times 0.4 = 0.24$. Then $P(A \\cup B) = P(A) + P(B) - P(A \\cap B) = 0.6 + 0.4 - 0.24 = 0.76$."
-  difficulty="medium"
-/>
+<PracticeProblem question="If $A$ and $B$ are independent events with $P(A) = 0.6$ and $P(B) = 0.4$, then $P(A \\cup B)$ is:" options={['$0.76$', '$0.24$', '$0.84$', '$0.64$']} correctAnswer={0} explanation="For independent events: $P(A \\cap B) = P(A) \\cdot P(B) = 0.6 \\times 0.4 = 0.24$. Then $P(A \\cup B) = P(A) + P(B) - P(A \\cap B) = 0.6 + 0.4 - 0.24 = 0.76$." difficulty="medium" />
 
 ## Vectors and Relations
 
-<PracticeProblem
-  question="If $\\vec{a} = 2\\hat{i} + 3\\hat{j} - \\hat{k}$ and $\\vec{b} = \\hat{i} - \\hat{j} + 2\\hat{k}$, find the angle between $\\vec{a}$ and $\\vec{b}$:"
-  options={[ '$\\cos^{-1}\\left(\\dfrac{-3}{\\sqrt{91}}\\right)$', '$\\cos^{-1}\\left(\\dfrac{3}{\\sqrt{91}}\\right)$', '$\\cos^{-1}\\left(\\dfrac{3}{\\sqrt{182}}\\right)$', '$90^\\circ$', ]} correctAnswer={0} explanation="$\\vec{a} \\cdot \\vec{b} = 2(1) + 3(-1) + (-1)(2) = 2 - 3 - 2 = -3$. $|\\vec{a}| = \\sqrt{4+9+1} = \\sqrt{14}$. $|\\vec{b}| = \\sqrt{1+1+4} = \\sqrt{6}$. $\\cos\\theta = \\dfrac{-3}{\\sqrt{14} \\cdot \\sqrt{6}} = \\dfrac{-3}{\\sqrt{84}} = \\dfrac{-3}{2\\sqrt{21}} = \\dfrac{-3}{\\sqrt{84}}$. This simplifies to $\\dfrac{-3}{2\\sqrt{21}}$, but using $\\sqrt{14 \\cdot 6} = \\sqrt{84}$, the answer is $\\cos^{-1}\\left(\\dfrac{-3}{\\sqrt{84}}\\right)$." difficulty="medium"
-/>
+<PracticeProblem question="If $\\vec{a} = 2\\hat{i} + 3\\hat{j} - \\hat{k}$ and $\\vec{b} = \\hat{i} - \\hat{j} + 2\\hat{k}$, find the angle between $\\vec{a}$ and $\\vec{b}$:" options={[ '$\\cos^{-1}\\left(\\dfrac{-3}{\\sqrt{91}}\\right)$', '$\\cos^{-1}\\left(\\dfrac{3}{\\sqrt{91}}\\right)$', '$\\cos^{-1}\\left(\\dfrac{3}{\\sqrt{182}}\\right)$', '$90^\\circ$', ]} correctAnswer={0} explanation="$\\vec{a} \\cdot \\vec{b} = 2(1) + 3(-1) + (-1)(2) = 2 - 3 - 2 = -3$. $|\\vec{a}| = \\sqrt{4+9+1} = \\sqrt{14}$. $|\\vec{b}| = \\sqrt{1+1+4} = \\sqrt{6}$. $\\cos\\theta = \\dfrac{-3}{\\sqrt{14} \\cdot \\sqrt{6}} = \\dfrac{-3}{\\sqrt{84}} = \\dfrac{-3}{2\\sqrt{21}} = \\dfrac{-3}{\\sqrt{84}}$. This simplifies to $\\dfrac{-3}{2\\sqrt{21}}$, but using $\\sqrt{14 \\cdot 6} = \\sqrt{84}$, the answer is $\\cos^{-1}\\left(\\dfrac{-3}{\\sqrt{84}}\\right)$." difficulty="medium" />
 
-<PracticeProblem
-  question="Find the area of the parallelogram whose adjacent sides are $\\vec{a} = \\hat{i} + \\hat{j} + \\hat{k}$ and $\\vec{b} = \\hat{i} + 2\\hat{j} + 3\\hat{k}$:"
-  options={['$\\sqrt{3}$', '$\\sqrt{6}$', '$3$', '$\\sqrt{2}$']}
-  correctAnswer={0}
-  explanation="Area $= |\\vec{a} \\times \\vec{b}|$. $\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & 1 & 1 \\\\ 1 & 2 & 3 \\end{vmatrix} = \\hat{i}(3-2) - \\hat{j}(3-1) + \\hat{k}(2-1) = \\hat{i} - 2\\hat{j} + \\hat{k}$. $|\\vec{a} \\times \\vec{b}| = \\sqrt{1+4+1} = \\sqrt{6}$."
-  difficulty="medium"
-/>
+<PracticeProblem question="Find the area of the parallelogram whose adjacent sides are $\\vec{a} = \\hat{i} + \\hat{j} + \\hat{k}$ and $\\vec{b} = \\hat{i} + 2\\hat{j} + 3\\hat{k}$:" options={['$\\sqrt{3}$', '$\\sqrt{6}$', '$3$', '$\\sqrt{2}$']} correctAnswer={0} explanation="Area $= |\\vec{a} \\times \\vec{b}|$. $\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & 1 & 1 \\\\ 1 & 2 & 3 \\end{vmatrix} = \\hat{i}(3-2) - \\hat{j}(3-1) + \\hat{k}(2-1) = \\hat{i} - 2\\hat{j} + \\hat{k}$. $|\\vec{a} \\times \\vec{b}| = \\sqrt{1+4+1} = \\sqrt{6}$." difficulty="medium" />

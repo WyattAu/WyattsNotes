@@ -19,98 +19,34 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ### Thermodynamics
 
-<PracticeProblem
-  question="For the reaction: NH₄NO₃(s) → NH₄⁺(aq) + NO₃⁻(aq), ΔH = +25.7 kJ mol⁻¹ and ΔS = +108.7 J K⁻¹ mol⁻¹. Calculate ΔG at 298 K."
-  options={['−6.7 kJ mol⁻¹', '+6.7 kJ mol⁻¹', '−7.7 kJ mol⁻¹', '+7.7 kJ mol⁻¹']}
-  correctAnswer={0}
-  explanation="ΔG = ΔH − TΔS = 25.7 − 298 × (108.7/1000) = 25.7 − 32.4 = −6.7 kJ mol⁻¹. The reaction is spontaneous at 298 K."
-  difficulty="hard"
-/>
+<PracticeProblem question="For the reaction: NH₄NO₃(s) → NH₄⁺(aq) + NO₃⁻(aq), ΔH = +25.7 kJ mol⁻¹ and ΔS = +108.7 J K⁻¹ mol⁻¹. Calculate ΔG at 298 K." options={['−6.7 kJ mol⁻¹', '+6.7 kJ mol⁻¹', '−7.7 kJ mol⁻¹', '+7.7 kJ mol⁻¹']} correctAnswer={0} explanation="ΔG = ΔH − TΔS = 25.7 − 298 × (108.7/1000) = 25.7 − 32.4 = −6.7 kJ mol⁻¹. The reaction is spontaneous at 298 K." difficulty="hard" />
 
-<PracticeProblem
-  question="Predict the sign of ΔS for the reaction: 2Na(s) + Cl₂(g) → 2NaCl(s)."
-  options={['ΔS is positive', 'ΔS is negative', 'ΔS ≈ 0', 'Cannot be determined']}
-  correctAnswer={1}
-  explanation="A gas (Cl₂) and two solids (Na) produce only solid (NaCl). The number of gas particles decreases from 1 to 0 and disorder decreases, so ΔS is negative."
-  difficulty="easy"
-/>
+<PracticeProblem question="Predict the sign of ΔS for the reaction: 2Na(s) + Cl₂(g) → 2NaCl(s)." options={['ΔS is positive', 'ΔS is negative', 'ΔS ≈ 0', 'Cannot be determined']} correctAnswer={1} explanation="A gas (Cl₂) and two solids (Na) produce only solid (NaCl). The number of gas particles decreases from 1 to 0 and disorder decreases, so ΔS is negative." difficulty="easy" />
 
-<PracticeProblem
-  question="Using Hess's law, given: C(s) + O₂(g) → CO₂(g) ΔH₁ = −393.5 kJ; H₂(g) + ½O₂(g) → H₂O(l) ΔH₂ = −285.8 kJ; C₃H₈(g) + 5O₂(g) → 3CO₂(g) + 4H₂O(l) ΔH₃ = −2220 kJ. What is ΔH_f for C₃H₈?"
-  options={['−104 kJ mol⁻¹', '−104.7 kJ mol⁻¹', '+104 kJ mol⁻¹', '+104.7 kJ mol⁻¹']}
-  correctAnswer={0}
-  explanation="ΔH_f(C₃H₈) = 3(−393.5) + 4(−285.8) − (−2220) = −1180.5 − 1143.2 + 2220 = −103.7 ≈ −104 kJ mol⁻¹."
-  difficulty="hard"
-/>
+<PracticeProblem question="Using Hess's law, given: C(s) + O₂(g) → CO₂(g) ΔH₁ = −393.5 kJ; H₂(g) + ½O₂(g) → H₂O(l) ΔH₂ = −285.8 kJ; C₃H₈(g) + 5O₂(g) → 3CO₂(g) + 4H₂O(l) ΔH₃ = −2220 kJ. What is ΔH_f for C₃H₈?" options={['−104 kJ mol⁻¹', '−104.7 kJ mol⁻¹', '+104 kJ mol⁻¹', '+104.7 kJ mol⁻¹']} correctAnswer={0} explanation="ΔH_f(C₃H₈) = 3(−393.5) + 4(−285.8) − (−2220) = −1180.5 − 1143.2 + 2220 = −103.7 ≈ −104 kJ mol⁻¹." difficulty="hard" />
 
 ---
 
 ### Kinetics
 
-<PracticeProblem
-  question="For the reaction A + B → products, doubling [A] quadruples the rate and doubling [B]  doubles the rate. What is the rate law?"
-  options={['rate = k[A]²[B]', 'rate = k[A][B]²', 'rate = k[A]²[B]²', 'rate = k[A][B]']}
-  correctAnswer={0}
-  explanation="Doubling [A] → rate ×4, so order in A = 2. Doubling [B]  → rate ×2, so order in B = 1. Rate law = k[A]²[B]. Overall order = 3."
-  difficulty="medium"
-/>
+<PracticeProblem question="For the reaction A + B → products, doubling [A] quadruples the rate and doubling [B]  doubles the rate. What is the rate law?" options={['rate = k[A]²[B]', 'rate = k[A][B]²', 'rate = k[A]²[B]²', 'rate = k[A][B]']} correctAnswer={0} explanation="Doubling [A] → rate ×4, so order in A = 2. Doubling [B]  → rate ×2, so order in B = 1. Rate law = k[A]²[B]. Overall order = 3." difficulty="medium" />
 
-<PracticeProblem
-  question="A reaction has k = 2.0 × 10⁻³ s⁻¹ at 300 K and Ea = 53.0 kJ mol⁻¹. What is k at 320 K? (R = 8.314 J K⁻¹ mol⁻¹)"
-  options={['8.6 × 10⁻³ s⁻¹', '1.2 × 10⁻² s⁻¹', '6.4 × 10⁻³ s⁻¹', '5.0 × 10⁻³ s⁻¹']}
-  correctAnswer={0}
-  explanation="ln(k₂/k₁) = (Ea/R)(1/T₁ − 1/T₂) = (53000/8.314)(1/300 − 1/320) = 6374 × 0.000208 = 1.33. k₂/k₁ = e^1.33 = 3.78. k₂ = 3.78 × 2.0 × 10⁻³ = 7.56 × 10⁻³ s⁻¹ ≈ 8.6 × 10⁻³ s⁻¹."
-  difficulty="hard"
-/>
+<PracticeProblem question="A reaction has k = 2.0 × 10⁻³ s⁻¹ at 300 K and Ea = 53.0 kJ mol⁻¹. What is k at 320 K? (R = 8.314 J K⁻¹ mol⁻¹)" options={['8.6 × 10⁻³ s⁻¹', '1.2 × 10⁻² s⁻¹', '6.4 × 10⁻³ s⁻¹', '5.0 × 10⁻³ s⁻¹']} correctAnswer={0} explanation="ln(k₂/k₁) = (Ea/R)(1/T₁ − 1/T₂) = (53000/8.314)(1/300 − 1/320) = 6374 × 0.000208 = 1.33. k₂/k₁ = e^1.33 = 3.78. k₂ = 3.78 × 2.0 × 10⁻³ = 7.56 × 10⁻³ s⁻¹ ≈ 8.6 × 10⁻³ s⁻¹." difficulty="hard" />
 
-<PracticeProblem
-  question="For a first-order reaction, which statement is correct?"
-  options={['A plot of 1/[A] 
-
-vs time is linear', 'Half-life is independent of the initial concentration', 'Rate = k[A]²', 'Half-life increases as concentration decreases']}
-  correctAnswer={1}
-  explanation="For a first-order reaction: rate = k[A], so t½ = ln2/k, which is constant and independent of [A]₀. A plot of ln[A] vs time is linear (not 1/[A]  vs time, which is for second order). Rate = k[A]² describes a second-order reaction."
-  difficulty="medium"
-/>
+<PracticeProblem question="For a first-order reaction, which statement is correct?" options={['A plot of 1/[A] vs time is linear', 'Half-life is independent of the initial concentration', 'Rate = k[A]²', 'Half-life increases as concentration decreases']} correctAnswer={1} explanation="For a first-order reaction: rate = k[A], so t½ = ln2/k, which is constant and independent of [A]₀. A plot of ln[A] vs time is linear (not 1/[A]  vs time, which is for second order). Rate = k[A]² describes a second-order reaction." difficulty="medium" />
 
 ---
 
 ### Equilibrium
 
-<PracticeProblem
-  question="For the reaction N₂(g) + 3H₂(g) ⇌ 2NH₃(g), at equilibrium the concentrations are [N₂] = 1.0 M, [H₂] = 1.0 M, [NH₃]  = 0.50 M. Calculate Kc."
-  options={['0.25', '0.50', '1.0', '2.0']}
-  correctAnswer={0}
-  explanation="Kc = [NH₃]²/([N₂][H₂]³) = (0.50)²/(1.0 × 1.0³) = 0.25/1.0 = 0.25."
-  difficulty="medium"
-/>
+<PracticeProblem question="For the reaction N₂(g) + 3H₂(g) ⇌ 2NH₃(g), at equilibrium the concentrations are [N₂] = 1.0 M, [H₂] = 1.0 M, [NH₃]  = 0.50 M. Calculate Kc." options={['0.25', '0.50', '1.0', '2.0']} correctAnswer={0} explanation="Kc = [NH₃]²/([N₂][H₂]³) = (0.50)²/(1.0 × 1.0³) = 0.25/1.0 = 0.25." difficulty="medium" />
 
-<PracticeProblem
-  question="For the exothermic equilibrium: 2SO₂(g) + O₂(g) ⇌ 2SO₃(g), what effect does increasing temperature have?"
-  options={['Equilibrium shifts left; [SO₃] decreases', 'Equilibrium shifts right; [SO₃] 
-
-increases', 'No effect on equilibrium position', 'Kc increases']}
-  correctAnswer={0}
-  explanation="The reaction is exothermic (ΔH < 0). Increasing temperature favours the endothermic (reverse) direction by Le Chatelier's principle. The equilibrium shifts left, decreasing [SO₃]  and increasing Kc would NOT occur — actually Kc decreases for exothermic reactions at higher temperature."
-  difficulty="medium"
-/>
+<PracticeProblem question="For the exothermic equilibrium: 2SO₂(g) + O₂(g) ⇌ 2SO₃(g), what effect does increasing temperature have?" options={['Equilibrium shifts left; [SO₃] decreases', 'Equilibrium shifts right; [SO₃] increases', 'No effect on equilibrium position', 'Kc increases']} correctAnswer={0} explanation="The reaction is exothermic (ΔH < 0). Increasing temperature favours the endothermic (reverse) direction by Le Chatelier's principle. The equilibrium shifts left, decreasing [SO₃]  and increasing Kc would NOT occur — actually Kc decreases for exothermic reactions at higher temperature." difficulty="medium" />
 
 ---
 
 ### Acids and Bases
 
-<PracticeProblem
-  question="What is the pH of a 0.050 M solution of HCl? (HCl is a strong acid.)"
-  options={['1.30', '1.00', '2.00', '0.50']}
-  correctAnswer={0}
-  explanation="HCl is a strong acid, so [H⁺]  = 0.050 M. pH = −log(0.050) = −log(5 × 10⁻²) = 2 − log5 = 2 − 0.699 = 1.30."
-  difficulty="easy"
-/>
+<PracticeProblem question="What is the pH of a 0.050 M solution of HCl? (HCl is a strong acid.)" options={['1.30', '1.00', '2.00', '0.50']} correctAnswer={0} explanation="HCl is a strong acid, so [H⁺]  = 0.050 M. pH = −log(0.050) = −log(5 × 10⁻²) = 2 − log5 = 2 − 0.699 = 1.30." difficulty="easy" />
 
-<PracticeProblem
-  question="You need to prepare a buffer with pH = 5.00. If you have 0.10 M CH₃COOH (pKa = 4.74), what concentration of CH₃COONa do you need?"
-  options={['0.18 M', '0.055 M', '0.10 M', '0.36 M']}
-  correctAnswer={0}
-  explanation="Using the Henderson-Hasselbalch equation: pH = pKa + log([A⁻]/[HA]). 5.00 = 4.74 + log([A⁻]/0.10). log([A⁻]/0.10) = 0.26. [A⁻]/0.10 = 10^0.26 = 1.82. [A⁻]  = 0.182 M ≈ 0.18 M."
-  difficulty="hard"
-/>
+<PracticeProblem question="You need to prepare a buffer with pH = 5.00. If you have 0.10 M CH₃COOH (pKa = 4.74), what concentration of CH₃COONa do you need?" options={['0.18 M', '0.055 M', '0.10 M', '0.36 M']} correctAnswer={0} explanation="Using the Henderson-Hasselbalch equation: pH = pKa + log([A⁻]/[HA]). 5.00 = 4.74 + log([A⁻]/0.10). log([A⁻]/0.10) = 0.26. [A⁻]/0.10 = 10^0.26 = 1.82. [A⁻]  = 0.182 M ≈ 0.18 M." difficulty="hard" />

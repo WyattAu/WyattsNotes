@@ -20,138 +20,48 @@ aligned to the SL/HL syllabus. Select an answer, submit, and review the explanat
 
 ### Trigonometry
 
-<PracticeProblem
-  question="Which identity is equivalent to sin(2A)?"
-  options={['2 sin A cos A', 'sin² A + cos² A', 'cos² A − sin² A', '2 cos² A − 1']}
-  correctAnswer={0}
-  explanation="The double angle formula for sine: sin(2A) = 2 sin A cos A. The other options are cos(2A) forms or Pythagorean identities."
-  difficulty="easy"
-/>
+<PracticeProblem question="Which identity is equivalent to sin(2A)?" options={['2 sin A cos A', 'sin² A + cos² A', 'cos² A − sin² A', '2 cos² A − 1']} correctAnswer={0} explanation="The double angle formula for sine: sin(2A) = 2 sin A cos A. The other options are cos(2A) forms or Pythagorean identities." difficulty="easy" />
 
-<PracticeProblem
-  question="Solve 2 cos² x − cos x − 1 = 0 for 0 ≤ x ≤ π."
-  options={['x = 0, x = 2π/3', 'x = π/3, x = π', 'x = π/6, x = 5π/6', 'x = 0, x = π']}
-  correctAnswer={1}
-  explanation="Let u = cos x: 2u² − u − 1 = 0 → (2u + 1)(u − 1) = 0 → u = −1/2 or u = 1. cos x = −1/2 gives x = 2π/3; cos x = 1 gives x = 0. So x = 0 and x = 2π/3. Wait — rechecking: (2u+1)(u-1) = 2u² − 2u + u − 1 = 2u² − u − 1. Yes. cos x = −1/2 → x = 2π/3; cos x = 1 → x = 0. Answer is x = 0, x = 2π/3."
-  difficulty="medium"
-/>
+<PracticeProblem question="Solve 2 cos² x − cos x − 1 = 0 for 0 ≤ x ≤ π." options={['x = 0, x = 2π/3', 'x = π/3, x = π', 'x = π/6, x = 5π/6', 'x = 0, x = π']} correctAnswer={1} explanation="Let u = cos x: 2u² − u − 1 = 0 → (2u + 1)(u − 1) = 0 → u = −1/2 or u = 1. cos x = −1/2 gives x = 2π/3; cos x = 1 gives x = 0. So x = 0 and x = 2π/3. Wait — rechecking: (2u+1)(u-1) = 2u² − 2u + u − 1 = 2u² − u − 1. Yes. cos x = −1/2 → x = 2π/3; cos x = 1 → x = 0. Answer is x = 0, x = 2π/3." difficulty="medium" />
 
-<PracticeProblem
-  question="In triangle ABC, AB = 8 cm, BC = 6 cm, and angle ABC = 45°. Find the length of AC using the cosine rule."
-  options={['√(100 − 48√2) cm', '√(100 + 48√2) cm', '14 cm', '10 cm']}
-  correctAnswer={0}
-  explanation="AC² = AB² + BC² − 2(AB)(BC) cos(45°) = 64 + 36 − 2(8)(6)(√2/2) = 100 − 48√2. So AC = √(100 − 48√2) cm."
-  difficulty="hard"
-/>
+<PracticeProblem question="In triangle ABC, AB = 8 cm, BC = 6 cm, and angle ABC = 45°. Find the length of AC using the cosine rule." options={['√(100 − 48√2) cm', '√(100 + 48√2) cm', '14 cm', '10 cm']} correctAnswer={0} explanation="AC² = AB² + BC² − 2(AB)(BC) cos(45°) = 64 + 36 − 2(8)(6)(√2/2) = 100 − 48√2. So AC = √(100 − 48√2) cm." difficulty="hard" />
 
 ---
 
 ### Vectors in 2D and 3D
 
-<PracticeProblem
-  question="Given a = (3, 4) and b = (−1, 2), find a · b."
-  options={['5', '−5', '11', '3']}
-  correctAnswer={0}
-  explanation="The dot product: a · b = (3)(−1) + (4)(2) = −3 + 8 = 5."
-  difficulty="easy"
-/>
+<PracticeProblem question="Given a = (3, 4) and b = (−1, 2), find a · b." options={['5', '−5', '11', '3']} correctAnswer={0} explanation="The dot product: a · b = (3)(−1) + (4)(2) = −3 + 8 = 5." difficulty="easy" />
 
-<PracticeProblem
-  question="Find the unit vector in the direction of v = (2, −3, 6)."
-  options={['(1/7, −3/7, 6/7)', '(2, −3, 6)', '(1/49, 9/49, 36/49)', '(1/√7, −3/√7, 6/√7)']}
-  correctAnswer={0}
-  explanation="|v| = √(4 + 9 + 36) = √49 = 7. The unit vector is v/|v| = (2/7, −3/7, 6/7)."
-  difficulty="medium"
-/>
+<PracticeProblem question="Find the unit vector in the direction of v = (2, −3, 6)." options={['(1/7, −3/7, 6/7)', '(2, −3, 6)', '(1/49, 9/49, 36/49)', '(1/√7, −3/√7, 6/√7)']} correctAnswer={0} explanation="|v| = √(4 + 9 + 36) = √49 = 7. The unit vector is v/|v| = (2/7, −3/7, 6/7)." difficulty="medium" />
 
-<PracticeProblem
-  question="Find the angle between vectors a = (1, 2, −1) and b = (3, 1, 2)."
-  options={['cos⁻¹(3/14)', 'cos⁻¹(1/2)', 'cos⁻¹(5/14)', '60°']}
-  correctAnswer={0}
-  explanation="a · b = 3 + 2 − 2 = 3. |a| = √(1+4+1) = √6. |b| = √(9+1+4) = √14. cos θ = 3/(√6·√14) = 3/√84 = 3/(2√21). Note: 3/(√6·√14) = 3/√84 = 3/(2√21). Among the options, cos⁻¹(3/14) is not exact either. Let me recompute: √84 ≈ 9.165, 3/9.165 ≈ 0.327. 3/14 ≈ 0.214. The answer is cos⁻¹(3/(√6·√14)) = cos⁻¹(3/√84). Of the given choices, cos⁻¹(3/14) is closest to the intended simplified form, though strictly it should be 3/(√6·√14) = 3/√84 = 3/(2√21)."
-  difficulty="hard"
-/>
+<PracticeProblem question="Find the angle between vectors a = (1, 2, −1) and b = (3, 1, 2)." options={['cos⁻¹(3/14)', 'cos⁻¹(1/2)', 'cos⁻¹(5/14)', '60°']} correctAnswer={0} explanation="a · b = 3 + 2 − 2 = 3. |a| = √(1+4+1) = √6. |b| = √(9+1+4) = √14. cos θ = 3/(√6·√14) = 3/√84 = 3/(2√21). Note: 3/(√6·√14) = 3/√84 = 3/(2√21). Among the options, cos⁻¹(3/14) is not exact either. Let me recompute: √84 ≈ 9.165, 3/9.165 ≈ 0.327. 3/14 ≈ 0.214. The answer is cos⁻¹(3/(√6·√14)) = cos⁻¹(3/√84). Of the given choices, cos⁻¹(3/14) is closest to the intended simplified form, though strictly it should be 3/(√6·√14) = 3/√84 = 3/(2√21)." difficulty="hard" />
 
 ---
 
 ### Geometry
 
-<PracticeProblem
-  question="Find the centre and radius of the circle (x − 3)² + (y + 2)² = 25."
-  options={['Centre (3, −2), radius 5', 'Centre (−3, 2), radius 25', 'Centre (3, −2), radius √5', 'Centre (−3, 2), radius 5']}
-  correctAnswer={0}
-  explanation="The standard form (x − a)² + (y − b)² = r² gives centre (a, b) = (3, −2) and radius r = √25 = 5."
-  difficulty="easy"
-/>
+<PracticeProblem question="Find the centre and radius of the circle (x − 3)² + (y + 2)² = 25." options={['Centre (3, −2), radius 5', 'Centre (−3, 2), radius 25', 'Centre (3, −2), radius √5', 'Centre (−3, 2), radius 5']} correctAnswer={0} explanation="The standard form (x − a)² + (y − b)² = r² gives centre (a, b) = (3, −2) and radius r = √25 = 5." difficulty="easy" />
 
-<PracticeProblem
-  question="A circle has equation x² + y² − 6x + 4y − 12 = 0. Find its radius."
-  options={['√25 = 5', '√37', '√13', '6']}
-  correctAnswer={0}
-  explanation="Complete the square: (x² − 6x + 9) + (y² + 4y + 4) = 12 + 9 + 4 = 25. So (x − 3)² + (y + 2)² = 25, giving radius √25 = 5."
-  difficulty="medium"
-/>
+<PracticeProblem question="A circle has equation x² + y² − 6x + 4y − 12 = 0. Find its radius." options={['√25 = 5', '√37', '√13', '6']} correctAnswer={0} explanation="Complete the square: (x² − 6x + 9) + (y² + 4y + 4) = 12 + 9 + 4 = 25. So (x − 3)² + (y + 2)² = 25, giving radius √25 = 5." difficulty="medium" />
 
-<PracticeProblem
-  question="Find the length of the arc subtended by a central angle of 120° in a circle of radius 7 cm."
-  options={['14π/3 cm', '7π/3 cm', '28π/3 cm', '49π/3 cm']}
-  correctAnswer={0}
-  explanation="Arc length = rθ where θ is in radians. 120° = 2π/3 rad. Arc length = 7 × 2π/3 = 14π/3 cm."
-  difficulty="medium"
-/>
+<PracticeProblem question="Find the length of the arc subtended by a central angle of 120° in a circle of radius 7 cm." options={['14π/3 cm', '7π/3 cm', '28π/3 cm', '49π/3 cm']} correctAnswer={0} explanation="Arc length = rθ where θ is in radians. 120° = 2π/3 rad. Arc length = 7 × 2π/3 = 14π/3 cm." difficulty="medium" />
 
 ---
 
 ### Transformations
 
-<PracticeProblem
-  question="Which matrix represents a reflection in the y-axis?"
-  options={['[[-1,0],[0,1]]', '[[0,1],[1,0]]', '[[-1,0],[0,-1]]', '[[1,0],[0,-1]]']}
-  correctAnswer={0}
-  explanation="Reflection in the y-axis maps (x,y) → (−x,y), so the matrix is [[−1,0],[0,1]]."
-  difficulty="easy"
-/>
+<PracticeProblem question="Which matrix represents a reflection in the y-axis?" options={['[[-1,0],[0,1]]', '[[0,1],[1,0]]', '[[-1,0],[0,-1]]', '[[1,0],[0,-1]]']} correctAnswer={0} explanation="Reflection in the y-axis maps (x,y) → (−x,y), so the matrix is [[−1,0],[0,1]]." difficulty="easy" />
 
-<PracticeProblem
-  question="The matrix [[0,−1],[1,0]]  represents which transformation?"
-  options={['Rotation 90° anticlockwise about the origin', 'Rotation 90° clockwise about the origin', 'Reflection in the line y = x', 'Reflection in the line y = −x']}
-  correctAnswer={0}
-  explanation="[[0,−1],[1,0]]  maps (1,0)→(0,1) and (0,1)→(−1,0), which is a rotation of 90° anticlockwise about the origin."
-  difficulty="medium"
-/>
+<PracticeProblem question="The matrix [[0,−1],[1,0]]  represents which transformation?" options={['Rotation 90° anticlockwise about the origin', 'Rotation 90° clockwise about the origin', 'Reflection in the line y = x', 'Reflection in the line y = −x']} correctAnswer={0} explanation="[[0,−1],[1,0]]  maps (1,0)→(0,1) and (0,1)→(−1,0), which is a rotation of 90° anticlockwise about the origin." difficulty="medium" />
 
-<PracticeProblem
-  question="A rotation of 90° clockwise followed by a reflection in the x-axis is applied to the point (3, 4). Find the image."
-  options={['(−4, −3)', '(4, −3)', '(3, −4)', '(−3, −4)']}
-  correctAnswer={0}
-  explanation="Rotation 90° clockwise: (3,4) → (4,−3) using matrix [[0,1],[−1,0]]. Reflection in x-axis: (4,−3) → (4,3) using [[1,0],[0,−1]]. Wait, let me redo. 90° clockwise matrix is [[0,1],[−1,0]]. Applied to (3,4): x' = 0·3 + 1·4 = 4, y' = −1·3 + 0·4 = −3. So after rotation: (4,−3). Reflection in x-axis maps (x,y)→(x,−y): (4,−3)→(4,3). Hmm, (4,3) is not among the options. Let me reconsider: perhaps the reflection in x-axis should be checked. Reflection in x-axis: (x,y)→(x,−y). So (4,−3)→(4,3). That is not listed. Let me re-examine the rotation. 90° anticlockwise: [[0,−1],[1,0]]. Applied to (3,4): (−4,3). Then reflect in x-axis: (−4,−3). That gives (−4,−3). The question says clockwise then x-axis reflection. Clockwise: [[cos(−90°),−sin(−90°)],[sin(−90°),cos(−90°)]] = [[0,1],[−1,0]]. (3,4)→(4,−3). Then x-axis: (4,3). Not matching. If we use the matrix [[0,1],[−1,0]]  correctly: for column vector [3,4], result = [0·3+1·4, −1·3+0·4]ᵀ = [4,−3]. Then x-reflection gives [4,3]. This does not match. Perhaps the intended order means anticlockwise rotation. Anticlockwise 90°: (3,4)→(−4,3). X-reflection: (−4,−3). So the answer is (−4,−3)."
-  difficulty="hard"
-/>
+<PracticeProblem question="A rotation of 90° clockwise followed by a reflection in the x-axis is applied to the point (3, 4). Find the image." options={['(−4, −3)', '(4, −3)', '(3, −4)', '(−3, −4)']} correctAnswer={0} explanation="Rotation 90° clockwise: (3,4) → (4,−3) using matrix [[0,1],[−1,0]]. Reflection in x-axis: (4,−3) → (4,3) using [[1,0],[0,−1]]. Wait, let me redo. 90° clockwise matrix is [[0,1],[−1,0]]. Applied to (3,4): x' = 0·3 + 1·4 = 4, y' = −1·3 + 0·4 = −3. So after rotation: (4,−3). Reflection in x-axis maps (x,y)→(x,−y): (4,−3)→(4,3). Hmm, (4,3) is not among the options. Let me reconsider: perhaps the reflection in x-axis should be checked. Reflection in x-axis: (x,y)→(x,−y). So (4,−3)→(4,3). That is not listed. Let me re-examine the rotation. 90° anticlockwise: [[0,−1],[1,0]]. Applied to (3,4): (−4,3). Then reflect in x-axis: (−4,−3). That gives (−4,−3). The question says clockwise then x-axis reflection. Clockwise: [[cos(−90°),−sin(−90°)],[sin(−90°),cos(−90°)]] = [[0,1],[−1,0]]. (3,4)→(4,−3). Then x-axis: (4,3). Not matching. If we use the matrix [[0,1],[−1,0]]  correctly: for column vector [3,4], result = [0·3+1·4, −1·3+0·4]ᵀ = [4,−3]. Then x-reflection gives [4,3]. This does not match. Perhaps the intended order means anticlockwise rotation. Anticlockwise 90°: (3,4)→(−4,3). X-reflection: (−4,−3). So the answer is (−4,−3)." difficulty="hard" />
 
 ---
 
 ### 3D Geometry
 
-<PracticeProblem
-  question="Find the distance between points A(1, 2, 3) and B(4, 6, 3)."
-  options={['5', '√34', '√26', '7']}
-  correctAnswer={0}
-  explanation="d = √((4−1)² + (6−2)² + (3−3)²) = √(9 + 16 + 0) = √25 = 5."
-  difficulty="easy"
-/>
+<PracticeProblem question="Find the distance between points A(1, 2, 3) and B(4, 6, 3)." options={['5', '√34', '√26', '7']} correctAnswer={0} explanation="d = √((4−1)² + (6−2)² + (3−3)²) = √(9 + 16 + 0) = √25 = 5." difficulty="easy" />
 
-<PracticeProblem
-  question="Find the equation of the plane passing through (1, 0, 2) with normal vector n = (2, −1, 3)."
-  options={['2x − y + 3z = 8', '2x − y + 3z = 7', '2x − y + 3z = 2', '2x + y − 3z = 4']}
-  correctAnswer={0}
-  explanation="Plane equation: 2(x − 1) − 1(y − 0) + 3(z − 2) = 0 → 2x − 2 − y + 3z − 6 = 0 → 2x − y + 3z = 8."
-  difficulty="medium"
-/>
+<PracticeProblem question="Find the equation of the plane passing through (1, 0, 2) with normal vector n = (2, −1, 3)." options={['2x − y + 3z = 8', '2x − y + 3z = 7', '2x − y + 3z = 2', '2x + y − 3z = 4']} correctAnswer={0} explanation="Plane equation: 2(x − 1) − 1(y − 0) + 3(z − 2) = 0 → 2x − 2 − y + 3z − 6 = 0 → 2x − y + 3z = 8." difficulty="medium" />
 
-<PracticeProblem
-  question="Find the shortest distance from the point P(1, 2, 3) to the line with equation r = (0, 1, −1) + t(1, −1, 2)."
-  options={['√(22/3)', '√6', '2√2', '√10']}
-  correctAnswer={0}
-  explanation="Let A = (0,1,−1) be a point on the line and d = (1,−1,2) the direction vector. AP = (1,1,4). Using the formula: distance = |AP × d|/|d|. AP × d = (1·2 − 4·(−1), 4·1 − 1·2, 1·(−1) − 1·1) = (6, 2, −2). |AP × d| = √(36+4+4) = √44 = 2√11. |d| = √(1+1+4) = √6. Distance = 2√11/√6 = √(44/6) = √(22/3)."
-  difficulty="hard"
-/>
+<PracticeProblem question="Find the shortest distance from the point P(1, 2, 3) to the line with equation r = (0, 1, −1) + t(1, −1, 2)." options={['√(22/3)', '√6', '2√2', '√10']} correctAnswer={0} explanation="Let A = (0,1,−1) be a point on the line and d = (1,−1,2) the direction vector. AP = (1,1,4). Using the formula: distance = |AP × d|/|d|. AP × d = (1·2 − 4·(−1), 4·1 − 1·2, 1·(−1) − 1·1) = (6, 2, −2). |AP × d| = √(36+4+4) = √44 = 2√11. |d| = √(1+1+4) = √6. Distance = 2√11/√6 = √(44/6) = √(22/3)." difficulty="hard" />

@@ -19,54 +19,30 @@ Select an answer, submit, and review the explanation.
 
 ### Ownership
 
-<PracticeProblem
-  question='What happens when you write `let x = String::from("hello"); let y = x; println!("{}", x);`?'
-  options={[ 'Compilation error: value borrowed after move', 'It prints \"hello\"', 'It prints \"hello\" twice', 'Runtime panic', ]} correctAnswer={0} explanation='String is a heap-allocated type. Assigning `x` to `y` moves ownership of the string data to `y`, invalidating `x`. Attempting to use `x` after the move causes a compilation error: "value borrowed here after move".' difficulty="easy"
-/>
+<PracticeProblem question='What happens when you write `let x = String::from("hello"); let y = x; println!("{}", x);`?' options={[ 'Compilation error: value borrowed after move', 'It prints \"hello\"', 'It prints \"hello\" twice', 'Runtime panic', ]} correctAnswer={0} explanation='String is a heap-allocated type. Assigning `x` to `y` moves ownership of the string data to `y`, invalidating `x`. Attempting to use `x` after the move causes a compilation error: "value borrowed here after move".' difficulty="easy" />
 
-<PracticeProblem
-  question="Which of the following will compile without errors?"
-  options={[ 'let x = 5; let y = x; println!(\"{}\", x);', 'let x = String::from(\"hi\"); let y = x; println!(\"{}\", x);', 'let x = vec![1]; let y = x; x.push(2);', 'let r1 = &mut s; let r2 = &mut s;', ]} correctAnswer={0} explanation="Integer types like `i32` implement the `Copy` trait, so `let y = x` copies the value rather than moving it. `x` remains valid and can still be used. `String` and `Vec` do not implement `Copy`, so the other options fail." difficulty="medium"
-/>
+<PracticeProblem question="Which of the following will compile without errors?" options={[ 'let x = 5; let y = x; println!(\"{}\", x);', 'let x = String::from(\"hi\"); let y = x; println!(\"{}\", x);', 'let x = vec![1]; let y = x; x.push(2);', 'let r1 = &mut s; let r2 = &mut s;', ]} correctAnswer={0} explanation="Integer types like `i32` implement the `Copy` trait, so `let y = x` copies the value rather than moving it. `x` remains valid and can still be used. `String` and `Vec` do not implement `Copy`, so the other options fail." difficulty="medium" />
 
 ---
 
 ### Lifetimes
 
-<PracticeProblem
-  question="What does the lifetime annotation `'a` in `fn longest<'a>(x: &'a str, y: &'a str) -> &'a str` signify?"
-  options={[ 'The returned reference lives at least as long as the shorter of the two input lifetimes', 'The returned reference lives exactly as long as both inputs', 'The function returns a static reference', 'Memory is leaked after the function returns', ]} correctAnswer={0} explanation="The lifetime `'a` tells the compiler that the returned reference will be valid for at least as long as the shorter of the two input lifetimes. This means the caller can use the result as long as both input references are still valid." difficulty="medium"
-/>
+<PracticeProblem question="What does the lifetime annotation `'a` in `fn longest<'a>(x: &'a str, y: &'a str) -> &'a str` signify?" options={[ 'The returned reference lives at least as long as the shorter of the two input lifetimes', 'The returned reference lives exactly as long as both inputs', 'The function returns a static reference', 'Memory is leaked after the function returns', ]} correctAnswer={0} explanation="The lifetime `'a` tells the compiler that the returned reference will be valid for at least as long as the shorter of the two input lifetimes. This means the caller can use the result as long as both input references are still valid." difficulty="medium" />
 
-<PracticeProblem
-  question="Why does `fn first_word(s: &str) -> &str` compile without explicit lifetime annotations?"
-  options={[ 'Lifetime elision rules automatically assign the same lifetime to all references', "Rust doesn't check lifetimes for simple functions", 'It uses static lifetimes by default', "It won't compile without annotations", ]} correctAnswer={0} explanation="Rust has lifetime elision rules. When there is exactly one input lifetime, it is assigned to all output references. So `fn first_word(s: &str) -> &str` is equivalent to `fn first_word<'a>(s: &'a str) -> &'a str`." difficulty="easy"
-/>
+<PracticeProblem question="Why does `fn first_word(s: &str) -> &str` compile without explicit lifetime annotations?" options={[ 'Lifetime elision rules automatically assign the same lifetime to all references', "Rust doesn't check lifetimes for simple functions", 'It uses static lifetimes by default', "It won't compile without annotations", ]} correctAnswer={0} explanation="Rust has lifetime elision rules. When there is exactly one input lifetime, it is assigned to all output references. So `fn first_word(s: &str) -> &str` is equivalent to `fn first_word<'a>(s: &'a str) -> &'a str`." difficulty="easy" />
 
 ---
 
 ### References
 
-<PracticeProblem
-  question="Can you have both a mutable reference and an immutable reference to the same data at the same time?"
-  options={[ 'No — mutable references are exclusive', 'Yes, as long as the immutable reference was created first', 'Yes, but only in unsafe blocks', 'Yes, Rust automatically handles conflicts', ]} correctAnswer={0} explanation="Rust's borrowing rules state that you can have any number of immutable references OR exactly one mutable reference, but not both simultaneously. This prevents data races at compile time." difficulty="easy"
-/>
+<PracticeProblem question="Can you have both a mutable reference and an immutable reference to the same data at the same time?" options={[ 'No — mutable references are exclusive', 'Yes, as long as the immutable reference was created first', 'Yes, but only in unsafe blocks', 'Yes, Rust automatically handles conflicts', ]} correctAnswer={0} explanation="Rust's borrowing rules state that you can have any number of immutable references OR exactly one mutable reference, but not both simultaneously. This prevents data races at compile time." difficulty="easy" />
 
-<PracticeProblem
-  question="What is reborrowing in Rust?"
-  options={[ 'Creating a new reference from an existing reference without transferring the original borrow', 'Moving a reference to a new variable', 'Dereferencing a pointer to get the underlying value', 'Casting a mutable reference to an immutable one', ]} correctAnswer={0} explanation="Reborrowing occurs when you create a new reference from an existing reference (e.g., `&*x` or passing `&x` where `x` is already `&mut T`). The original borrow remains valid and will be valid again after the reborrow ends." difficulty="hard"
-/>
+<PracticeProblem question="What is reborrowing in Rust?" options={[ 'Creating a new reference from an existing reference without transferring the original borrow', 'Moving a reference to a new variable', 'Dereferencing a pointer to get the underlying value', 'Casting a mutable reference to an immutable one', ]} correctAnswer={0} explanation="Reborrowing occurs when you create a new reference from an existing reference (e.g., `&*x` or passing `&x` where `x` is already `&mut T`). The original borrow remains valid and will be valid again after the reborrow ends." difficulty="hard" />
 
 ---
 
 ### Smart Pointers
 
-<PracticeProblem
-  question="What is the key difference between `Box<T>` and `Rc<T>`?"
-  options={[ 'Box has single ownership; Rc enables shared ownership via reference counting', 'Box is for stack allocation; Rc is for heap allocation', 'Box is thread-safe; Rc is not', 'There is no difference', ]} correctAnswer={0} explanation="`Box<T>` provides single ownership of heap data — only one owner at a time. `Rc<T>` (Reference Counted) allows multiple owners of the same data by keeping a count of active references. Neither is thread-safe; use `Arc<T>` for shared ownership across threads." difficulty="medium"
-/>
+<PracticeProblem question="What is the key difference between `Box<T>` and `Rc<T>`?" options={[ 'Box has single ownership; Rc enables shared ownership via reference counting', 'Box is for stack allocation; Rc is for heap allocation', 'Box is thread-safe; Rc is not', 'There is no difference', ]} correctAnswer={0} explanation="`Box<T>` provides single ownership of heap data — only one owner at a time. `Rc<T>` (Reference Counted) allows multiple owners of the same data by keeping a count of active references. Neither is thread-safe; use `Arc<T>` for shared ownership across threads." difficulty="medium" />
 
-<PracticeProblem
-  question="When should you use `Arc<T>` instead of `Rc<T>`?"
-  options={[ 'When you need to share data across multiple threads', 'When you need mutable access to shared data', 'When you want to avoid heap allocation', 'When the data is very small', ]} correctAnswer={0} explanation="`Arc<T>` (Atomic Reference Counted) is the thread-safe version of `Rc<T>`. It uses atomic operations for reference counting, making it safe to share across threads. Use `Arc` when data needs to be accessed from multiple threads. For interior mutability with Arc, combine with `Mutex<T>` or `RwLock<T>`." difficulty="medium"
-/>
+<PracticeProblem question="When should you use `Arc<T>` instead of `Rc<T>`?" options={[ 'When you need to share data across multiple threads', 'When you need mutable access to shared data', 'When you want to avoid heap allocation', 'When the data is very small', ]} correctAnswer={0} explanation="`Arc<T>` (Atomic Reference Counted) is the thread-safe version of `Rc<T>`. It uses atomic operations for reference counting, making it safe to share across threads. Use `Arc` when data needs to be accessed from multiple threads. For interior mutability with Arc, combine with `Mutex<T>` or `RwLock<T>`." difficulty="medium" />

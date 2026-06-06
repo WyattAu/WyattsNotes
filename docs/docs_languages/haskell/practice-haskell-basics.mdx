@@ -22,88 +22,36 @@ review the explanation.
 
 ### Types and Functions
 
-<PracticeProblem
-  question="What is the type of the expression `map (*2) [1, 2, 3]`?"
-  options={['[Int]', '[Integer]', '[Num a] 
+<PracticeProblem question="What is the type of the expression `map (*2) [1, 2, 3]`?" options={['[Int]', '[Integer]', '[Num a] => [a]', 'Int']} correctAnswer={0} explanation="map (*2) [1, 2, 3] applies the doubling function to each element. Since the list contains Int literals, the result type is [Int]. The expression map :: (a -> b) -> [a] -> [b]  with (*2) :: Num a => a -> a yields Num a => [a], but the concrete list literals default to Int." difficulty="easy" />
 
-=> [a]', 'Int']}
-  correctAnswer={0}
-  explanation="map (*2) [1, 2, 3] applies the doubling function to each element. Since the list contains Int literals, the result type is [Int]. The expression map :: (a -> b) -> [a] -> [b]  with (*2) :: Num a => a -> a yields Num a => [a], but the concrete list literals default to Int."
-  difficulty="easy"
-/>
-
-<PracticeProblem
-  question='What does `"hello" ++ " " ++ "world"` evaluate to?'
-  options={['"hello world"', '"helloworld"', '["hello", " ", "world"]', 'TypeError']}
-  correctAnswer={0}
-  explanation={`(++) :: [a] -> [a] -> [a] 
-
-concatenates lists. Since String is [Char], string concatenation uses (++) to join the three strings into one: "hello world".`}
-  difficulty="easy"
-/>
+<PracticeProblem question='What does `"hello" ++ " " ++ "world"` evaluate to?' options={['"hello world"', '"helloworld"', '["hello", " ", "world"]', 'TypeError']} correctAnswer={0} explanation={`(++) :: [a] -> [a] -> [a] concatenates lists. Since String is [Char], string concatenation uses (++) to join the three strings into one: "hello world".`} difficulty="easy" />
 
 ---
 
 ### Pattern Matching
 
-<PracticeProblem
-  question="What does `case [1, 2, 3]  of (x:xs) -> x + length xs` evaluate to?"
-  options={['4', '6', '1', 'TypeError']}
-  correctAnswer={0}
-  explanation="The pattern (x:xs) matches the list [1,2,3] with x = 1 and xs = [2,3]. Then x + length xs = 1 + length [2,3] = 1 + 2 = 3... wait, length [2,3] = 2, so 1 + 2 = 3. But the correct answer is actually x + length xs where xs = [2,3], so length xs = 2, giving 1 + 2 = 3. The answer is 3, not 4. Actually, the answer is 3. Let me recalculate: x = 1, xs = [2, 3], length [2, 3]  = 2, so 1 + 2 = 3. The options show 4 as correct, so there may be a subtlety: some implementations count differently. With standard Haskell: 1 + 2 = 3."
-  difficulty="medium"
-/>
+<PracticeProblem question="What does `case [1, 2, 3]  of (x:xs) -> x + length xs` evaluate to?" options={['4', '6', '1', 'TypeError']} correctAnswer={0} explanation="The pattern (x:xs) matches the list [1,2,3] with x = 1 and xs = [2,3]. Then x + length xs = 1 + length [2,3] = 1 + 2 = 3... wait, length [2,3] = 2, so 1 + 2 = 3. But the correct answer is actually x + length xs where xs = [2,3], so length xs = 2, giving 1 + 2 = 3. The answer is 3, not 4. Actually, the answer is 3. Let me recalculate: x = 1, xs = [2, 3], length [2, 3]  = 2, so 1 + 2 = 3. The options show 4 as correct, so there may be a subtlety: some implementations count differently. With standard Haskell: 1 + 2 = 3." difficulty="medium" />
 
-<PracticeProblem
-  question="What is the result of `let (a, b, _) = (10, 20, 30) in a * b`?"
-  options={['200', '30', '6000', 'PatternMatchError']}
-  correctAnswer={0}
-  explanation="The let pattern (a, b, _) destructures the tuple: a = 10, b = 20, and _ matches 30 (discarded). Then a * b = 10 * 20 = 200."
-  difficulty="easy"
-/>
+<PracticeProblem question="What is the result of `let (a, b, _) = (10, 20, 30) in a * b`?" options={['200', '30', '6000', 'PatternMatchError']} correctAnswer={0} explanation="The let pattern (a, b, _) destructures the tuple: a = 10, b = 20, and _ matches 30 (discarded). Then a * b = 10 * 20 = 200." difficulty="easy" />
 
 ---
 
 ### Type Classes
 
-<PracticeProblem
-  question="Which type class must be a superclass of Ord in Haskell?"
-  options={['Eq', 'Show', 'Num', 'Functor']}
-  correctAnswer={0}
-  explanation="Ord requires Eq because you need equality to define ordering comparisons. The Haskell 2010 standard defines class Eq a => Ord a. You cannot compare for ordering without being able to compare for equality."
-  difficulty="medium"
-/>
+<PracticeProblem question="Which type class must be a superclass of Ord in Haskell?" options={['Eq', 'Show', 'Num', 'Functor']} correctAnswer={0} explanation="Ord requires Eq because you need equality to define ordering comparisons. The Haskell 2010 standard defines class Eq a => Ord a. You cannot compare for ordering without being able to compare for equality." difficulty="medium" />
 
-<PracticeProblem
-  question="What does `fmap (*2) (Just 5)` evaluate to?"
-  options={['Just 10', '10', 'Nothing', 'Just (*2) 5']}
-  correctAnswer={0}
-  explanation="fmap applies the function (*2) inside the Maybe context. fmap (*2) (Just 5) = Just ((*2) 5) = Just 10. If the input were Nothing, fmap would return Nothing."
-  difficulty="easy"
-/>
+<PracticeProblem question="What does `fmap (*2) (Just 5)` evaluate to?" options={['Just 10', '10', 'Nothing', 'Just (*2) 5']} correctAnswer={0} explanation="fmap applies the function (*2) inside the Maybe context. fmap (*2) (Just 5) = Just ((*2) 5) = Just 10. If the input were Nothing, fmap would return Nothing." difficulty="easy" />
 
 ---
 
 ### Monads
 
-<PracticeProblem
-  question="In do notation, what does `x <- action` desugar to?"
-  options={[ 'action >>= (\\x -> ...)', 'action >> (\\x -> ...)', 'action $ (\\x -> ...)', 'action <*> (\\x -> ...)', ]} correctAnswer={0} explanation="The bind operator (>>=) chains monadic computations. `x <- action` followed by `rest` desugars to action >>= (\\x -> rest). The lambda captures the result of action and binds it to x for use in the continuation." difficulty="medium"
-/>
+<PracticeProblem question="In do notation, what does `x <- action` desugar to?" options={[ 'action >>= (\\x -> ...)', 'action >> (\\x -> ...)', 'action $ (\\x -> ...)', 'action <*> (\\x -> ...)', ]} correctAnswer={0} explanation="The bind operator (>>=) chains monadic computations. `x <- action` followed by `rest` desugars to action >>= (\\x -> rest). The lambda captures the result of action and binds it to x for use in the continuation." difficulty="medium" />
 
-<PracticeProblem
-  question="What happens when safeDivide 10 0 is called where safeDivide x y = if y == 0 then Nothing else Just (x `div` y)?"
-  options={['Nothing', 'Just 0', 'RuntimeError', 'Just infinity']}
-  correctAnswer={0}
-  explanation="When y == 0, the function returns Nothing, which propagates through any monadic bind chain. This is the core benefit of Maybe: failure is handled structurally without exceptions or null checks."
-  difficulty="medium"
-/>
+<PracticeProblem question="What happens when safeDivide 10 0 is called where safeDivide x y = if y == 0 then Nothing else Just (x `div` y)?" options={['Nothing', 'Just 0', 'RuntimeError', 'Just infinity']} correctAnswer={0} explanation="When y == 0, the function returns Nothing, which propagates through any monadic bind chain. This is the core benefit of Maybe: failure is handled structurally without exceptions or null checks." difficulty="medium" />
 
 ---
 
 ### Lazy Evaluation
 
-<PracticeProblem
-  question="Why can you write `take 5 [1..]` in Haskell without it looping forever?"
-  options={[ 'Lazy evaluation only computes elements as needed', 'The list [1..] is finite', 'take forces the entire list then truncates', 'Haskell uses strict evaluation for ranges', ]} correctAnswer={0} explanation="Laziness (call-by-need) means [1..] produces an infinite list but elements are only computed when demanded. take 5 demands only the first 5 elements, so the rest of the infinite list is never computed. This is a core advantage of lazy evaluation." difficulty="hard"
-/>
+<PracticeProblem question="Why can you write `take 5 [1..]` in Haskell without it looping forever?" options={[ 'Lazy evaluation only computes elements as needed', 'The list [1..] is finite', 'take forces the entire list then truncates', 'Haskell uses strict evaluation for ranges', ]} correctAnswer={0} explanation="Laziness (call-by-need) means [1..] produces an infinite list but elements are only computed when demanded. take 5 demands only the first 5 elements, so the rest of the infinite list is never computed. This is a core advantage of lazy evaluation." difficulty="hard" />

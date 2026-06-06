@@ -19,76 +19,28 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ### Mechanics
 
-<PracticeProblem
-  question="A car accelerates uniformly from rest at 2 m/s^2 for 10 seconds. What is its final velocity?"
-  options={['20 m/s', '10 m/s', '100 m/s', '200 m/s']}
-  correctAnswer={0}
-  explanation="Using the equation of motion v = u + at, where u = initial velocity = 0 m/s (from rest), a = acceleration = 2 m/s^2, and t = time = 10 s. Therefore v = 0 + (2)(10) = 20 m/s. The SUVAT equation v = u + at relates final velocity to initial velocity, acceleration, and time. Alternatively, using v^2 = u^2 + 2as would require knowing the displacement, which is not given here."
-  difficulty="easy"
-/>
+<PracticeProblem question="A car accelerates uniformly from rest at 2 m/s^2 for 10 seconds. What is its final velocity?" options={['20 m/s', '10 m/s', '100 m/s', '200 m/s']} correctAnswer={0} explanation="Using the equation of motion v = u + at, where u = initial velocity = 0 m/s (from rest), a = acceleration = 2 m/s^2, and t = time = 10 s. Therefore v = 0 + (2)(10) = 20 m/s. The SUVAT equation v = u + at relates final velocity to initial velocity, acceleration, and time. Alternatively, using v^2 = u^2 + 2as would require knowing the displacement, which is not given here." difficulty="easy" />
 
-<PracticeProblem
-  question="A 5 kg object moving at 3 m/s collides with a stationary 5 kg object and they move off together. What is their common velocity after the collision, assuming momentum is conserved?"
-  options={['1.5 m/s', '3 m/s', '6 m/s', '0.75 m/s']}
-  correctAnswer={0}
-  explanation="By the principle of conservation of momentum: total momentum before = total momentum after. Before collision: p = (5)(3) + (5)(0) = 15 kg m/s. After collision, the combined mass is 10 kg moving at velocity v: p = (10)(v) = 15 kg m/s. Therefore v = 15/10 = 1.5 m/s. This is a perfectly inelastic collision where the objects stick together, and kinetic energy is not conserved (some is converted to heat, sound, and deformation)."
-  difficulty="medium"
-/>
+<PracticeProblem question="A 5 kg object moving at 3 m/s collides with a stationary 5 kg object and they move off together. What is their common velocity after the collision, assuming momentum is conserved?" options={['1.5 m/s', '3 m/s', '6 m/s', '0.75 m/s']} correctAnswer={0} explanation="By the principle of conservation of momentum: total momentum before = total momentum after. Before collision: p = (5)(3) + (5)(0) = 15 kg m/s. After collision, the combined mass is 10 kg moving at velocity v: p = (10)(v) = 15 kg m/s. Therefore v = 15/10 = 1.5 m/s. This is a perfectly inelastic collision where the objects stick together, and kinetic energy is not conserved (some is converted to heat, sound, and deformation)." difficulty="medium" />
 
-<PracticeProblem
-  question="A crane lifts a 200 kg mass through a vertical height of 15 m in 10 seconds. What is the power output of the crane? (Take g = 9.8 m/s^2.)"
-  options={['2,940 W', '2,940 J', '29,400 W', '294 W']}
-  correctAnswer={0}
-  explanation="Power is the rate of doing work: P = W/t. Work done = force x distance = mg x h = 200 x 9.8 x 15 = 29,400 J. Power = 29,400 / 10 = 2,940 W (watts). One watt equals one joule per second. Note that 2,940 J is a unit of energy, not power. The power calculation assumes constant velocity (no acceleration), so the force exerted equals the weight of the mass only."
-  difficulty="medium"
-/>
+<PracticeProblem question="A crane lifts a 200 kg mass through a vertical height of 15 m in 10 seconds. What is the power output of the crane? (Take g = 9.8 m/s^2.)" options={['2,940 W', '2,940 J', '29,400 W', '294 W']} correctAnswer={0} explanation="Power is the rate of doing work: P = W/t. Work done = force x distance = mg x h = 200 x 9.8 x 15 = 29,400 J. Power = 29,400 / 10 = 2,940 W (watts). One watt equals one joule per second. Note that 2,940 J is a unit of energy, not power. The power calculation assumes constant velocity (no acceleration), so the force exerted equals the weight of the mass only." difficulty="medium" />
 
 ### Waves
 
-<PracticeProblem
-  question="A wave has a frequency of 250 Hz and a wavelength of 1.2 m. What is its speed?"
-  options={['300 m/s', '208 m/s', '250 m/s', '120 m/s']}
-  correctAnswer={0}
-  explanation="Using the wave equation: v = f x lambda, where v = speed, f = frequency = 250 Hz, and lambda = wavelength = 1.2 m. Therefore v = 250 x 1.2 = 300 m/s. This fundamental equation connects the three properties of a wave. If either the frequency or wavelength increases (while the medium stays the same), the wave speed changes proportionally."
-  difficulty="easy"
-/>
+<PracticeProblem question="A wave has a frequency of 250 Hz and a wavelength of 1.2 m. What is its speed?" options={['300 m/s', '208 m/s', '250 m/s', '120 m/s']} correctAnswer={0} explanation="Using the wave equation: v = f x lambda, where v = speed, f = frequency = 250 Hz, and lambda = wavelength = 1.2 m. Therefore v = 250 x 1.2 = 300 m/s. This fundamental equation connects the three properties of a wave. If either the frequency or wavelength increases (while the medium stays the same), the wave speed changes proportionally." difficulty="easy" />
 
-<PracticeProblem
-  question="Light travelling in air (refractive index 1.0) enters glass (refractive index 1.5) at an angle of incidence of 30 degrees. What is the angle of refraction in the glass?"
-  options={['19.5 degrees', '45 degrees', '20 degrees', '15 degrees']}
-  correctAnswer={0}
-  explanation="Using Snell's law: n1 sin(theta1) = n2 sin(theta2). Substituting: 1.0 x sin(30) = 1.5 x sin(theta2). Since sin(30) = 0.5: 0.5 = 1.5 x sin(theta2), so sin(theta2) = 0.5/1.5 = 0.333. Therefore theta2 = arcsin(0.333) = 19.5 degrees. The light bends towards the normal when entering a denser medium (higher refractive index), which is why the angle of refraction is smaller than the angle of incidence."
-  difficulty="hard"
-/>
+<PracticeProblem question="Light travelling in air (refractive index 1.0) enters glass (refractive index 1.5) at an angle of incidence of 30 degrees. What is the angle of refraction in the glass?" options={['19.5 degrees', '45 degrees', '20 degrees', '15 degrees']} correctAnswer={0} explanation="Using Snell's law: n1 sin(theta1) = n2 sin(theta2). Substituting: 1.0 x sin(30) = 1.5 x sin(theta2). Since sin(30) = 0.5: 0.5 = 1.5 x sin(theta2), so sin(theta2) = 0.5/1.5 = 0.333. Therefore theta2 = arcsin(0.333) = 19.5 degrees. The light bends towards the normal when entering a denser medium (higher refractive index), which is why the angle of refraction is smaller than the angle of incidence." difficulty="hard" />
 
 ### Electricity
 
-<PracticeProblem
-  question="A circuit has a 12 V battery connected to two 6 ohm resistors in parallel. What is the total current drawn from the battery?"
-  options={['4 A', '2 A', '1 A', '8 A']}
-  correctAnswer={0}
-  explanation="For resistors in parallel, the combined resistance R is given by 1/R = 1/R1 + 1/R2 = 1/6 + 1/6 = 2/6 = 1/3, so R = 3 ohms. Using Ohm's law (V = IR), the total current I = V/R = 12/3 = 4 A. Note that the combined resistance of two equal resistors in parallel is always half the individual resistance: 6/2 = 3 ohms. The total current splits equally through each branch: 2 A through each 6 ohm resistor."
-  difficulty="medium"
-/>
+<PracticeProblem question="A circuit has a 12 V battery connected to two 6 ohm resistors in parallel. What is the total current drawn from the battery?" options={['4 A', '2 A', '1 A', '8 A']} correctAnswer={0} explanation="For resistors in parallel, the combined resistance R is given by 1/R = 1/R1 + 1/R2 = 1/6 + 1/6 = 2/6 = 1/3, so R = 3 ohms. Using Ohm's law (V = IR), the total current I = V/R = 12/3 = 4 A. Note that the combined resistance of two equal resistors in parallel is always half the individual resistance: 6/2 = 3 ohms. The total current splits equally through each branch: 2 A through each 6 ohm resistor." difficulty="medium" />
 
-<PracticeProblem
-  question="According to Kirchhoff's first law (current law), which statement correctly describes the relationship between currents at a junction in an electrical circuit?"
-  options={[ 'The sum of currents entering a junction equals the sum of currents leaving the junction', 'The total voltage around any closed loop equals the sum of the EMFs', 'The current through each resistor in series is the same', 'The total resistance in parallel equals the sum of individual resistances', ]} correctAnswer={0} explanation="Kirchhoff's first law (current law) is based on the conservation of charge: the total current flowing into any junction must equal the total current flowing out. This is equivalent to stating that the algebraic sum of currents at a junction is zero. Kirchhoff's second law (voltage law) states that the sum of EMFs equals the sum of potential differences around any closed loop. Equal current in series resistors is a consequence of Kirchhoff's first law. The statement about parallel resistance is false (parallel resistance is calculated using reciprocals)." difficulty="easy"
-/>
+<PracticeProblem question="According to Kirchhoff's first law (current law), which statement correctly describes the relationship between currents at a junction in an electrical circuit?" options={[ 'The sum of currents entering a junction equals the sum of currents leaving the junction', 'The total voltage around any closed loop equals the sum of the EMFs', 'The current through each resistor in series is the same', 'The total resistance in parallel equals the sum of individual resistances', ]} correctAnswer={0} explanation="Kirchhoff's first law (current law) is based on the conservation of charge: the total current flowing into any junction must equal the total current flowing out. This is equivalent to stating that the algebraic sum of currents at a junction is zero. Kirchhoff's second law (voltage law) states that the sum of EMFs equals the sum of potential differences around any closed loop. Equal current in series resistors is a consequence of Kirchhoff's first law. The statement about parallel resistance is false (parallel resistance is calculated using reciprocals)." difficulty="easy" />
 
 ### Heat
 
-<PracticeProblem
-  question="How much energy is required to raise the temperature of 2 kg of water from 20 degrees Celsius to 80 degrees Celsius? (Specific heat capacity of water = 4,200 J/(kg degrees C).)"
-  options={['504,000 J', '336,000 J', '168,000 J', '84,000 J']}
-  correctAnswer={0}
-  explanation="Using the equation Q = mc(delta T), where Q = energy, m = mass = 2 kg, c = specific heat capacity = 4,200 J/(kg degrees C), and delta T = temperature change = 80 - 20 = 60 degrees C. Therefore Q = 2 x 4,200 x 60 = 504,000 J (or 504 kJ). This equation applies to heating a substance without a change of state. The high specific heat capacity of water means it requires a large amount of energy to change its temperature, which is why water is effective as a coolant."
-  difficulty="medium"
-/>
+<PracticeProblem question="How much energy is required to raise the temperature of 2 kg of water from 20 degrees Celsius to 80 degrees Celsius? (Specific heat capacity of water = 4,200 J/(kg degrees C).)" options={['504,000 J', '336,000 J', '168,000 J', '84,000 J']} correctAnswer={0} explanation="Using the equation Q = mc(delta T), where Q = energy, m = mass = 2 kg, c = specific heat capacity = 4,200 J/(kg degrees C), and delta T = temperature change = 80 - 20 = 60 degrees C. Therefore Q = 2 x 4,200 x 60 = 504,000 J (or 504 kJ). This equation applies to heating a substance without a change of state. The high specific heat capacity of water means it requires a large amount of energy to change its temperature, which is why water is effective as a coolant." difficulty="medium" />
 
 ### Modern Physics
 
-<PracticeProblem
-  question="In the photoelectric effect, what happens when photons of light with energy less than the work function of the metal surface strike the surface?"
-  options={[ 'No electrons are emitted, regardless of the intensity or number of photons', 'Electrons are emitted but with very low kinetic energy', 'Electrons are emitted after a time delay while energy accumulates', 'The metal surface becomes positively charged but no electrons escape', ]} correctAnswer={0} explanation="The photoelectric effect demonstrates the particle nature of light. Each photon must have sufficient energy (greater than the work function) to eject a single electron. If the photon energy E = hf is less than the work function phi, no electrons are emitted regardless of how many photons strike the surface (intensity). This is because energy transfer is a one-photon-to-one-electron interaction, not a cumulative process. Increasing intensity only increases the number of photons, not their individual energy. Einstein's photoelectric equation is: hf = phi + KE_max." difficulty="hard"
-/>
+<PracticeProblem question="In the photoelectric effect, what happens when photons of light with energy less than the work function of the metal surface strike the surface?" options={[ 'No electrons are emitted, regardless of the intensity or number of photons', 'Electrons are emitted but with very low kinetic energy', 'Electrons are emitted after a time delay while energy accumulates', 'The metal surface becomes positively charged but no electrons escape', ]} correctAnswer={0} explanation="The photoelectric effect demonstrates the particle nature of light. Each photon must have sufficient energy (greater than the work function) to eject a single electron. If the photon energy E = hf is less than the work function phi, no electrons are emitted regardless of how many photons strike the surface (intensity). This is because energy transfer is a one-photon-to-one-electron interaction, not a cumulative process. Increasing intensity only increases the number of photons, not their individual energy. Einstein's photoelectric equation is: hf = phi + KE_max." difficulty="hard" />

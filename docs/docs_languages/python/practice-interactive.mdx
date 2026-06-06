@@ -21,74 +21,26 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ### Data Structures
 
-<PracticeProblem
-  question="What does `list(map(lambda x: x**2, range(5)))` return?"
-  options={['[1, 4, 9, 16, 25]', '[0, 1, 4, 9, 16]', '[0, 2, 4, 6, 8]', '[1, 2, 3, 4, 5]']}
-  correctAnswer={1}
-  explanation="range(5) produces [0, 1, 2, 3, 4]. Mapping x² gives [0, 1, 4, 9, 16]."
-  difficulty="medium"
-/>
+<PracticeProblem question="What does `list(map(lambda x: x**2, range(5)))` return?" options={['[1, 4, 9, 16, 25]', '[0, 1, 4, 9, 16]', '[0, 2, 4, 6, 8]', '[1, 2, 3, 4, 5]']} correctAnswer={1} explanation="range(5) produces [0, 1, 2, 3, 4]. Mapping x² gives [0, 1, 4, 9, 16]." difficulty="medium" />
 
-<PracticeProblem
-  question="What is the time complexity of checking membership (`x in lst`) in a Python list?"
-  options={['O(1)', 'O(log n)', 'O(n)', 'O(n log n)']}
-  correctAnswer={2}
-  explanation="Lists use a linear search for membership tests, which is O(n). For O(1) lookups, use a set or dict."
-  difficulty="easy"
-/>
+<PracticeProblem question="What is the time complexity of checking membership (`x in lst`) in a Python list?" options={['O(1)', 'O(log n)', 'O(n)', 'O(n log n)']} correctAnswer={2} explanation="Lists use a linear search for membership tests, which is O(n). For O(1) lookups, use a set or dict." difficulty="easy" />
 
-<PracticeProblem
-  question="What does `{'a': 1, 'b': 2}.get('c', 3)` return?"
-  options={['None', 'KeyError', '3', 'False']}
-  correctAnswer={2}
-  explanation="dict.get(key, default) returns the default value (3) when the key ('c') is not found."
-  difficulty="easy"
-/>
+<PracticeProblem question="What does `{'a': 1, 'b': 2}.get('c', 3)` return?" options={['None', 'KeyError', '3', 'False']} correctAnswer={2} explanation="dict.get(key, default) returns the default value (3) when the key ('c') is not found." difficulty="easy" />
 
 ---
 
 ### Functions and Scope
 
-<PracticeProblem
-  question="What is printed by `print([x for x in range(10) if x % 3 == 0])`?"
-  options={['[0, 3, 6, 9]', '[3, 6, 9]', '[1, 2, 3, 4, 5, 6]', '[0, 1, 2, 3]']}
-  correctAnswer={0}
-  explanation="The list comprehension filters for numbers divisible by 3: 0, 3, 6, 9."
-  difficulty="easy"
-/>
+<PracticeProblem question="What is printed by `print([x for x in range(10) if x % 3 == 0])`?" options={['[0, 3, 6, 9]', '[3, 6, 9]', '[1, 2, 3, 4, 5, 6]', '[0, 1, 2, 3]']} correctAnswer={0} explanation="The list comprehension filters for numbers divisible by 3: 0, 3, 6, 9." difficulty="easy" />
 
-<PracticeProblem
-  question="What does `def f(a, b=[]): b.append(a); return b` return when called as `f(1); f(2)`?"
-  options={['[1], [2]', '[1, 2]', '[1, 2], [1, 2]', 'TypeError']}
-  correctAnswer={1}
-  explanation="Mutable default arguments are shared across calls. After f(1), b = [1]. After f(2), b = [1, 2]. This is a common Python gotcha."
-  difficulty="hard"
-/>
+<PracticeProblem question="What does `def f(a, b=[]): b.append(a); return b` return when called as `f(1); f(2)`?" options={['[1], [2]', '[1, 2]', '[1, 2], [1, 2]', 'TypeError']} correctAnswer={1} explanation="Mutable default arguments are shared across calls. After f(1), b = [1]. After f(2), b = [1, 2]. This is a common Python gotcha." difficulty="hard" />
 
 ---
 
 ### Core Language Features
 
-<PracticeProblem
-  question="Which sorting algorithm does Python's built-in `sorted()` use?"
-  options={['Quicksort', 'Merge sort (Timsort)', 'Heap sort', 'Bubble sort']}
-  correctAnswer={1}
-  explanation="Python uses Timsort, a hybrid of merge sort and insertion sort. It is stable and has O(n log n) worst-case time complexity."
-  difficulty="medium"
-/>
+<PracticeProblem question="Which sorting algorithm does Python's built-in `sorted()` use?" options={['Quicksort', 'Merge sort (Timsort)', 'Heap sort', 'Bubble sort']} correctAnswer={1} explanation="Python uses Timsort, a hybrid of merge sort and insertion sort. It is stable and has O(n log n) worst-case time complexity." difficulty="medium" />
 
-<PracticeProblem
-  question="What is the result of `type((1, 2, 3))`?"
-  options={["<class 'list'>", "<class 'set'>", "<class 'tuple'>", "<class 'dict'>"]}
-  correctAnswer={2}
-  explanation="(1, 2, 3) with parentheses and commas is a tuple, not a list or set."
-  difficulty="easy"
-/>
+<PracticeProblem question="What is the result of `type((1, 2, 3))`?" options={["<class 'list'>", "<class 'set'>", "<class 'tuple'>", "<class 'dict'>"]} correctAnswer={2} explanation="(1, 2, 3) with parentheses and commas is a tuple, not a list or set." difficulty="easy" />
 
-<PracticeProblem
-  question="What does `(yield from x for x in range(3))` do?"
-  options={['Returns a generator that yields 0, 1, 2', 'Returns [0, 1, 2]', 'Raises SyntaxError', 'Yields a single generator object']}
-  correctAnswer={0}
-  explanation="This is a generator expression. It returns a generator object that yields 0, 1, 2 when iterated."
-  difficulty="hard"
-/>
+<PracticeProblem question="What does `(yield from x for x in range(3))` do?" options={['Returns a generator that yields 0, 1, 2', 'Returns [0, 1, 2]', 'Raises SyntaxError', 'Yields a single generator object']} correctAnswer={0} explanation="This is a generator expression. It returns a generator object that yields 0, 1, 2 when iterated." difficulty="hard" />

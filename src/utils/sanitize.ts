@@ -7,7 +7,11 @@ import DOMPurify from 'dompurify';
  * and math-related tags (span, sub, sup, math, mi, mn, mo, ms, mtext).
  */
 export function sanitizeHtml(dirty: string): string {
-  return DOMPurify.sanitize(dirty, {
+  // DOMPurify requires a DOM. During SSR (Node.js), fall back to identity.
+  if (typeof window === 'undefined') {
+    return dirty;
+  }
+  return (DOMPurify as any).sanitize(dirty, {
     ALLOWED_TAGS: [
       // Block elements
       'p',

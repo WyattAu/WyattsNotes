@@ -21,91 +21,40 @@ the explanation.
 
 ### Null Safety and Types
 
-<PracticeProblem
-  question="What happens when you declare `String name;` in a Dart file with null safety enabled?"
-  options={[ 'Compilation error: non-nullable variable must be initialized', 'name is set to null', 'name is set to an empty string', 'It compiles successfully', ]} correctAnswer={0} explanation="With null safety enabled, all non-nullable variables must be initialized at declaration. `String name;` without an initializer or `late` keyword produces a compilation error. To fix: initialize it (`String name = 'Alice';`), make it nullable (`String? name;`), or defer with `late` (`late String name;`)." difficulty="easy"
-/>
+<PracticeProblem question="What happens when you declare `String name;` in a Dart file with null safety enabled?" options={[ 'Compilation error: non-nullable variable must be initialized', 'name is set to null', 'name is set to an empty string', 'It compiles successfully', ]} correctAnswer={0} explanation="With null safety enabled, all non-nullable variables must be initialized at declaration. `String name;` without an initializer or `late` keyword produces a compilation error. To fix: initialize it (`String name = 'Alice';`), make it nullable (`String? name;`), or defer with `late` (`late String name;`)." difficulty="easy" />
 
-<PracticeProblem
-  question="What is the type of `List<int>? numbers = [1, 2, 3]; `?"
-  options={[ 'The variable is of type `List<int>?` and currently holds a non-null `List<int>`', 'It is of type `List<int>` (the ? is ignored)', 'Compilation error: cannot assign List<int> to List<int>?', 'It is of type `dynamic`', ]} correctAnswer={0} explanation="`List<int>?` is a nullable list type. The variable `numbers` can hold either a `List<int>` or `null`. The initializer `[1, 2, 3]` is a valid `List<int>`, so it compiles. The `?` does not make the list elements nullable -- only the list reference itself can be null." difficulty="easy"
-/>
+<PracticeProblem question="What is the type of `List<int>? numbers = [1, 2, 3]; `?" options={[ 'The variable is of type `List<int>?` and currently holds a non-null `List<int>`', 'It is of type `List<int>` (the ? is ignored)', 'Compilation error: cannot assign List<int> to List<int>?', 'It is of type `dynamic`', ]} correctAnswer={0} explanation="`List<int>?` is a nullable list type. The variable `numbers` can hold either a `List<int>` or `null`. The initializer `[1, 2, 3]` is a valid `List<int>`, so it compiles. The `?` does not make the list elements nullable -- only the list reference itself can be null." difficulty="easy" />
 
-<PracticeProblem
-  question="Which Dart collection type guarantees uniqueness of elements?"
-  options={['Set', 'List', 'Map', 'Queue']}
-  correctAnswer={0}
-  explanation="A `Set` is an unordered collection of unique elements backed by a hash table. Adding a duplicate element is silently ignored: `{'a', 'b', 'a'}` becomes `{'a', 'b'}`. Use `Set` for fast O(1) membership checks (`contains`), deduplication (`Set.from(list).toList()`), and mathematical set operations (`union`, `intersection`, `difference`)."
-  difficulty="easy"
-/>
+<PracticeProblem question="Which Dart collection type guarantees uniqueness of elements?" options={['Set', 'List', 'Map', 'Queue']} correctAnswer={0} explanation="A `Set` is an unordered collection of unique elements backed by a hash table. Adding a duplicate element is silently ignored: `{'a', 'b', 'a'}` becomes `{'a', 'b'}`. Use `Set` for fast O(1) membership checks (`contains`), deduplication (`Set.from(list).toList()`), and mathematical set operations (`union`, `intersection`, `difference`)." difficulty="easy" />
 
 ---
 
 ### Async and Streams
 
-<PracticeProblem
-  question="What does `Stream.fromIterable([1, 2, 3]).listen((value) => print(value * 2))` output?"
-  options={['2, 4, 6 (in order, one per event)', '246', '6', 'Compilation error']}
-  correctAnswer={0}
-  explanation="`Stream.fromIterable` creates a single-subscription stream that emits each element of the iterable as a separate event. The listener multiplies each value by 2: 1*2=2, 2*2=4, 3*2=6. Events are delivered asynchronously but in order for synchronous iterables. After emitting all three, the stream completes."
-  difficulty="medium"
-/>
+<PracticeProblem question="What does `Stream.fromIterable([1, 2, 3]).listen((value) => print(value * 2))` output?" options={['2, 4, 6 (in order, one per event)', '246', '6', 'Compilation error']} correctAnswer={0} explanation="`Stream.fromIterable` creates a single-subscription stream that emits each element of the iterable as a separate event. The listener multiplies each value by 2: 1*2=2, 2*2=4, 3*2=6. Events are delivered asynchronously but in order for synchronous iterables. After emitting all three, the stream completes." difficulty="medium" />
 
-<PracticeProblem
-  question="Given `Future<String> fetchName() async { await Future.delayed(Duration(seconds: 1)); return 'Alice'; }`, what is the type of `var result = fetchName();`?"
-  options={['`Future<String>`', '`String`', '`dynamic`', '`void`']}
-  correctAnswer={0}
-  explanation="Calling an async function without `await` returns the Future immediately without waiting for it to complete. `var result = fetchName();` gives `result` the type `Future<String>`, not `String`. To get the String value, you must `await` it: `var result = await fetchName();` which yields type `String`."
-  difficulty="medium"
-/>
+<PracticeProblem question="Given `Future<String> fetchName() async { await Future.delayed(Duration(seconds: 1)); return 'Alice'; }`, what is the type of `var result = fetchName();`?" options={['`Future<String>`', '`String`', '`dynamic`', '`void`']} correctAnswer={0} explanation="Calling an async function without `await` returns the Future immediately without waiting for it to complete. `var result = fetchName();` gives `result` the type `Future<String>`, not `String`. To get the String value, you must `await` it: `var result = await fetchName();` which yields type `String`." difficulty="medium" />
 
 ---
 
 ### Dart 3 Features
 
-<PracticeProblem
-  question="Given `sealed class Result {} class Success extends Result {} class Failure extends Result {}`, which switch expression is exhaustive without a default case?"
-  options={[ 'switch (r) { case Success(): ... case Failure(): ... }', 'switch (r) { case Success(): ... }', 'switch (r) { default: ... }', 'switch (r) { case Result(): ... }', ]} correctAnswer={0} explanation="Sealed classes restrict subtypes to a known finite set. The compiler knows `Result` has exactly two subtypes: `Success` and `Failure`. A switch covering both is exhaustive -- no default needed. This is the primary benefit of sealed classes: safe, compile-time-verified exhaustive pattern matching." difficulty="medium"
-/>
+<PracticeProblem question="Given `sealed class Result {} class Success extends Result {} class Failure extends Result {}`, which switch expression is exhaustive without a default case?" options={[ 'switch (r) { case Success(): ... case Failure(): ... }', 'switch (r) { case Success(): ... }', 'switch (r) { default: ... }', 'switch (r) { case Result(): ... }', ]} correctAnswer={0} explanation="Sealed classes restrict subtypes to a known finite set. The compiler knows `Result` has exactly two subtypes: `Success` and `Failure`. A switch covering both is exhaustive -- no default needed. This is the primary benefit of sealed classes: safe, compile-time-verified exhaustive pattern matching." difficulty="medium" />
 
-<PracticeProblem
-  question="In Dart 3 records, how do you access the first positional field of `var record = ('Alice', 30);`?"
-  options={['`record.$1`', 'record[0]', 'record.first', 'record.0']}
-  correctAnswer={0}
-  explanation="Record positional fields are accessed via `$1`, `$2`, `$3`, etc. (1-indexed). Named fields use dot notation: `var (name, age) = record;` for destructuring, or `record.$1` returns 'Alice' and `record.$2` returns 30. The `$` prefix distinguishes record fields from regular properties."
-  difficulty="medium"
-/>
+<PracticeProblem question="In Dart 3 records, how do you access the first positional field of `var record = ('Alice', 30);`?" options={['`record.$1`', 'record[0]', 'record.first', 'record.0']} correctAnswer={0} explanation="Record positional fields are accessed via `$1`, `$2`, `$3`, etc. (1-indexed). Named fields use dot notation: `var (name, age) = record;` for destructuring, or `record.$1` returns 'Alice' and `record.$2` returns 30. The `$` prefix distinguishes record fields from regular properties." difficulty="medium" />
 
 ---
 
 ### OOP and Extensions
 
-<PracticeProblem
-  question="Given `mixin Walker { void walk() => print('walking'); }` and `class Person extends Animal with Walker {}`, what is the result of calling `walk()` on a `Person` instance?"
-  options={[ "Prints 'walking' -- Walker's method is mixed into Person", 'Throws NoSuchMethodError', "Calls Animal's walk method instead", 'Compilation error: Walker cannot be used with Person', ]} correctAnswer={0} explanation="Mixins inject their method implementations into the class that uses them. `Person` gains the `walk()` method from `Walker`. If `Person` also defines `walk()`, its own method takes precedence (override). If `Animal` defines `walk()` and `Walker` also defines it, the mixin's linearization order determines which wins -- mixins applied later have higher priority." difficulty="medium"
-/>
+<PracticeProblem question="Given `mixin Walker { void walk() => print('walking'); }` and `class Person extends Animal with Walker {}`, what is the result of calling `walk()` on a `Person` instance?" options={[ "Prints 'walking' -- Walker's method is mixed into Person", 'Throws NoSuchMethodError', "Calls Animal's walk method instead", 'Compilation error: Walker cannot be used with Person', ]} correctAnswer={0} explanation="Mixins inject their method implementations into the class that uses them. `Person` gains the `walk()` method from `Walker`. If `Person` also defines `walk()`, its own method takes precedence (override). If `Animal` defines `walk()` and `Walker` also defines it, the mixin's linearization order determines which wins -- mixins applied later have higher priority." difficulty="medium" />
 
-<PracticeProblem
-  question={`Given \`extension on String { String get reversed => split('').reversed.join(); }\`, what does \`"hello".reversed\` return?`}
-  options={['"olleh"', '"hello"', 'Compilation error: String already has reversed', 'null']}
-  correctAnswer={0}
-  explanation="Extension methods add members to existing types. This extension adds a `reversed` getter to `String`. `split('')` creates `['h','e','l','l','o']`, `.reversed` produces `['o','l','l','e','h']`, and `.join()` yields `'olleh'`. Extensions are resolved at compile time -- if `String` later adds a `reversed` member, the real member takes priority."
-  difficulty="medium"
-/>
+<PracticeProblem question={`Given \`extension on String { String get reversed => split('').reversed.join(); }\`, what does \`"hello".reversed\` return?`} options={['"olleh"', '"hello"', 'Compilation error: String already has reversed', 'null']} correctAnswer={0} explanation="Extension methods add members to existing types. This extension adds a `reversed` getter to `String`. `split('')` creates `['h','e','l','l','o']`, `.reversed` produces `['o','l','l','e','h']`, and `.join()` yields `'olleh'`. Extensions are resolved at compile time -- if `String` later adds a `reversed` member, the real member takes priority." difficulty="medium" />
 
 ---
 
 ### Flutter and Advanced
 
-<PracticeProblem
-  question="During Dart null safety migration, which approach does the Dart team recommend as the primary strategy?"
-  options={[ 'Analyze existing code, add `?` where nulls are intended, remove unnecessary `!`, and use `late` for lazily initialized fields', 'Set the entire project to `// @dart=2.9` and avoid migration', 'Replace all nullable types with `dynamic`', 'Rewrite the project from scratch with null safety from day one', ]} correctAnswer={0} explanation="The recommended migration flow: 1) Enable null safety incrementally with `// @dart=2.12` or per-package. 2) Run the migration tool (`dart fix --apply`). 3) Review: add `?` where nulls are intentional, replace `!` with proper null checks, use `late` for fields initialized in `initState` or constructors. 4) Run analysis (`dart analyze`) to find remaining issues. 5) Remove `!` operators one by one -- each removed operator is a safety improvement." difficulty="hard"
-/>
+<PracticeProblem question="During Dart null safety migration, which approach does the Dart team recommend as the primary strategy?" options={[ 'Analyze existing code, add `?` where nulls are intended, remove unnecessary `!`, and use `late` for lazily initialized fields', 'Set the entire project to `// @dart=2.9` and avoid migration', 'Replace all nullable types with `dynamic`', 'Rewrite the project from scratch with null safety from day one', ]} correctAnswer={0} explanation="The recommended migration flow: 1) Enable null safety incrementally with `// @dart=2.12` or per-package. 2) Run the migration tool (`dart fix --apply`). 3) Review: add `?` where nulls are intentional, replace `!` with proper null checks, use `late` for fields initialized in `initState` or constructors. 4) Run analysis (`dart analyze`) to find remaining issues. 5) Remove `!` operators one by one -- each removed operator is a safety improvement." difficulty="hard" />
 
-<PracticeProblem
-  question="In a Flutter StatefulWidget, which lifecycle method should you use to initialize data that depends on `BuildContext` or to subscribe to a stream?"
-  options={['`initState`', 'the constructor', '`didChangeDependencies`', '`build`']}
-  correctAnswer={0}
-  explanation="`initState()` is called once when the State object is created, before `build()`. It is the correct place to initialize data, subscribe to streams, and set up controllers that depend on `this.context`. Do NOT call `BuildContext`-dependent methods (like `Theme.of(context)`) in `initState` -- use `didChangeDependencies` for those. Clean up subscriptions in `dispose()`."
-  difficulty="hard"
-/>
+<PracticeProblem question="In a Flutter StatefulWidget, which lifecycle method should you use to initialize data that depends on `BuildContext` or to subscribe to a stream?" options={['`initState`', 'the constructor', '`didChangeDependencies`', '`build`']} correctAnswer={0} explanation="`initState()` is called once when the State object is created, before `build()`. It is the correct place to initialize data, subscribe to streams, and set up controllers that depend on `this.context`. Do NOT call `BuildContext`-dependent methods (like `Theme.of(context)`) in `initState` -- use `didChangeDependencies` for those. Clean up subscriptions in `dispose()`." difficulty="hard" />

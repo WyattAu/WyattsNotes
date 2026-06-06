@@ -19,60 +19,30 @@ coroutines. Select an answer, submit, and review the explanation.
 
 ### Null Safety
 
-<PracticeProblem
-  question="What does `val length: Int = name?.length` compile to when `name` is of type `String?`?"
-  options={[ 'Compilation error: Type mismatch (Int? vs Int)', '0', 'null', 'It compiles successfully', ]} correctAnswer={0} explanation='The safe call operator `?.` returns `null` if the receiver is null, so `name?.length` has type `Int?`. Assigning `Int?` to `Int` causes a compilation error: "Type mismatch: inferred type is Int? but Int was expected." You need `val length: Int? = name?.length` or use a default.' difficulty="easy"
-/>
+<PracticeProblem question="What does `val length: Int = name?.length` compile to when `name` is of type `String?`?" options={[ 'Compilation error: Type mismatch (Int? vs Int)', '0', 'null', 'It compiles successfully', ]} correctAnswer={0} explanation='The safe call operator `?.` returns `null` if the receiver is null, so `name?.length` has type `Int?`. Assigning `Int?` to `Int` causes a compilation error: "Type mismatch: inferred type is Int? but Int was expected." You need `val length: Int? = name?.length` or use a default.' difficulty="easy" />
 
-<PracticeProblem
-  question="What does `val len = name?.length ?: 0` do when `name` is null?"
-  options={['Returns 0', 'Throws NullPointerException', 'Returns -1', 'Compilation error']}
-  correctAnswer={0}
-  explanation="The elvis operator `?:` provides a default value when the left side is null. If `name` is null, `name?.length` is null, so the elvis operator returns 0. This is a common Kotlin idiom for handling nullable types."
-  difficulty="easy"
-/>
+<PracticeProblem question="What does `val len = name?.length ?: 0` do when `name` is null?" options={['Returns 0', 'Throws NullPointerException', 'Returns -1', 'Compilation error']} correctAnswer={0} explanation="The elvis operator `?:` provides a default value when the left side is null. If `name` is null, `name?.length` is null, so the elvis operator returns 0. This is a common Kotlin idiom for handling nullable types." difficulty="easy" />
 
 ---
 
 ### Scope Functions
 
-<PracticeProblem
-  question='What does `val x = "hello".let { it.uppercase() }` return?'
-  options={['\"HELLO\"', '\"hello\"', 'Unit', 'Compilation error']}
-  correctAnswer={0}
-  explanation='`let` executes the lambda with the receiver as `it`, and returns the lambda&apos;s result. `"hello".let { it.uppercase() }` calls `uppercase()` on "hello", returning "HELLO".'
-  difficulty="easy"
-/>
+<PracticeProblem question='What does `val x = "hello".let { it.uppercase() }` return?' options={['\"HELLO\"', '\"hello\"', 'Unit', 'Compilation error']} correctAnswer={0} explanation='`let` executes the lambda with the receiver as `it`, and returns the lambda&apos;s result. `"hello".let { it.uppercase() }` calls `uppercase()` on "hello", returning "HELLO".' difficulty="easy" />
 
-<PracticeProblem
-  question="What is the difference between `apply` and `also`?"
-  options={[ 'apply uses `this` as context; also uses `it` as argument — both return the receiver object', 'apply returns the lambda result; also returns the receiver', 'There is no difference', 'apply is for nullable types; also is for non-null', ]} correctAnswer={0} explanation="Both `apply` and `also` return the receiver object (not the lambda result). The difference is: `apply` uses `this` as the context object inside the block (useful for configuring objects), while `also` uses `it` as the lambda argument (useful for side effects like logging)." difficulty="medium"
-/>
+<PracticeProblem question="What is the difference between `apply` and `also`?" options={[ 'apply uses `this` as context; also uses `it` as argument — both return the receiver object', 'apply returns the lambda result; also returns the receiver', 'There is no difference', 'apply is for nullable types; also is for non-null', ]} correctAnswer={0} explanation="Both `apply` and `also` return the receiver object (not the lambda result). The difference is: `apply` uses `this` as the context object inside the block (useful for configuring objects), while `also` uses `it` as the lambda argument (useful for side effects like logging)." difficulty="medium" />
 
 ---
 
 ### Sealed Classes
 
-<PracticeProblem
-  question="What advantage does a `sealed class` provide over an `open class` for modelling a restricted hierarchy?"
-  options={[ 'The compiler ensures all subclasses are known and handles exhaustiveness in `when` expressions', 'Sealed classes are faster at runtime', 'Sealed classes cannot have properties', 'Sealed classes can only have one subclass', ]} correctAnswer={0} explanation="Sealed classes restrict inheritance to a known set of subclasses defined in the same file/package. This enables the compiler to verify that all cases are handled in `when` expressions (exhaustive checking), making the code safer. In Kotlin 1.5+, subclasses can be in the same package." difficulty="medium"
-/>
+<PracticeProblem question="What advantage does a `sealed class` provide over an `open class` for modelling a restricted hierarchy?" options={[ 'The compiler ensures all subclasses are known and handles exhaustiveness in `when` expressions', 'Sealed classes are faster at runtime', 'Sealed classes cannot have properties', 'Sealed classes can only have one subclass', ]} correctAnswer={0} explanation="Sealed classes restrict inheritance to a known set of subclasses defined in the same file/package. This enables the compiler to verify that all cases are handled in `when` expressions (exhaustive checking), making the code safer. In Kotlin 1.5+, subclasses can be in the same package." difficulty="medium" />
 
-<PracticeProblem
-  question="Given `sealed class Result { data class Success(val data: String) : Result(); data class Error(val message: String) : Result() }`, which `when` expression is exhaustive?"
-  options={[ 'when (r) { is Result.Success -> ...; is Result.Error -> ... }', 'when (r) { is Result.Success -> ... }', 'when (r) { }', 'when (r) { else -> ... }', ]} correctAnswer={0} explanation="Since `Result` is a sealed class with exactly two subclasses (`Success` and `Error`), a `when` expression covering both `is Result.Success` and `is Result.Error` branches is exhaustive — no `else` branch needed. The compiler verifies all sealed subclasses are handled." difficulty="easy"
-/>
+<PracticeProblem question="Given `sealed class Result { data class Success(val data: String) : Result(); data class Error(val message: String) : Result() }`, which `when` expression is exhaustive?" options={[ 'when (r) { is Result.Success -> ...; is Result.Error -> ... }', 'when (r) { is Result.Success -> ... }', 'when (r) { }', 'when (r) { else -> ... }', ]} correctAnswer={0} explanation="Since `Result` is a sealed class with exactly two subclasses (`Success` and `Error`), a `when` expression covering both `is Result.Success` and `is Result.Error` branches is exhaustive — no `else` branch needed. The compiler verifies all sealed subclasses are handled." difficulty="easy" />
 
 ---
 
 ### Coroutines
 
-<PracticeProblem
-  question="What is the key difference between `launch` and `async` in Kotlin coroutines?"
-  options={[ 'launch returns a Job (fire-and-forget); async returns a Deferred<T> that produces a result', 'launch is blocking; async is non-blocking', 'launch runs on IO dispatcher; async runs on Default', 'There is no difference', ]} correctAnswer={0} explanation="`launch` starts a coroutine that returns a `Job` — it's fire-and-forget and doesn't return a value. `async` starts a coroutine that returns a `Deferred<T>`, which you can await with `.await()` to get the computed result. Use `async` when you need a result." difficulty="medium"
-/>
+<PracticeProblem question="What is the key difference between `launch` and `async` in Kotlin coroutines?" options={[ 'launch returns a Job (fire-and-forget); async returns a Deferred<T> that produces a result', 'launch is blocking; async is non-blocking', 'launch runs on IO dispatcher; async runs on Default', 'There is no difference', ]} correctAnswer={0} explanation="`launch` starts a coroutine that returns a `Job` — it's fire-and-forget and doesn't return a value. `async` starts a coroutine that returns a `Deferred<T>`, which you can await with `.await()` to get the computed result. Use `async` when you need a result." difficulty="medium" />
 
-<PracticeProblem
-  question="What does the `suspend` keyword on a function signify?"
-  options={[ 'The function can be paused and resumed, and can only be called from a coroutine or another suspend function', 'The function runs on a separate thread', 'The function blocks the calling thread', 'The function is marked for garbage collection', ]} correctAnswer={0} explanation="A `suspend` function can suspend execution at suspension points without blocking a thread. It can only be called from within a coroutine or another suspend function. The compiler transforms suspend functions into state machines that handle suspension and resumption efficiently." difficulty="easy"
-/>
+<PracticeProblem question="What does the `suspend` keyword on a function signify?" options={[ 'The function can be paused and resumed, and can only be called from a coroutine or another suspend function', 'The function runs on a separate thread', 'The function blocks the calling thread', 'The function is marked for garbage collection', ]} correctAnswer={0} explanation="A `suspend` function can suspend execution at suspension points without blocking a thread. It can only be called from within a coroutine or another suspend function. The compiler transforms suspend functions into state machines that handle suspension and resumption efficiently." difficulty="easy" />

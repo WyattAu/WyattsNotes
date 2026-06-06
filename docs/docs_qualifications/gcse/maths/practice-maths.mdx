@@ -19,90 +19,30 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ### Number
 
-<PracticeProblem
-  question="Find the highest common factor (HCF) of 24 and 36."
-  options={['12', '6', '8', '18']}
-  correctAnswer={0}
-  explanation="Find the prime factors: 24 = 2^3 x 3 and 36 = 2^2 x 3^2. The HCF is found by taking the lowest power of each common prime factor: 2^2 x 3 = 4 x 3 = 12. The HCF is the largest number that divides both 24 and 36 exactly. Alternatively, listing the factors of each number and finding the largest common one gives the same result."
-  difficulty="easy"
-/>
+<PracticeProblem question="Find the highest common factor (HCF) of 24 and 36." options={['12', '6', '8', '18']} correctAnswer={0} explanation="Find the prime factors: 24 = 2^3 x 3 and 36 = 2^2 x 3^2. The HCF is found by taking the lowest power of each common prime factor: 2^2 x 3 = 4 x 3 = 12. The HCF is the largest number that divides both 24 and 36 exactly. Alternatively, listing the factors of each number and finding the largest common one gives the same result." difficulty="easy" />
 
-<PracticeProblem
-  question="A shirt originally costs 40 pounds and is reduced by 15% in a sale. What is the sale price?"
-  options={['34 pounds', '36 pounds', '35 pounds', '32 pounds']}
-  correctAnswer={0}
-  explanation="15% of 40 = 0.15 x 40 = 6 pounds. The discount is 6 pounds, so the sale price = 40 - 6 = 34 pounds. Alternatively, calculate the remaining percentage: 100% - 15% = 85%, so 0.85 x 40 = 34 pounds. Both methods give the same result. Always check whether a question asks for the discount amount or the final price."
-  difficulty="easy"
-/>
+<PracticeProblem question="A shirt originally costs 40 pounds and is reduced by 15% in a sale. What is the sale price?" options={['34 pounds', '36 pounds', '35 pounds', '32 pounds']} correctAnswer={0} explanation="15% of 40 = 0.15 x 40 = 6 pounds. The discount is 6 pounds, so the sale price = 40 - 6 = 34 pounds. Alternatively, calculate the remaining percentage: 100% - 15% = 85%, so 0.85 x 40 = 34 pounds. Both methods give the same result. Always check whether a question asks for the discount amount or the final price." difficulty="easy" />
 
 ### Algebra
 
-<PracticeProblem
-  question="Factorise fully: 2x^2 + 8x"
-  options={['2x(x + 4)', '2(x^2 + 8x)', 'x(2x + 8)', '2x(x + 8)']}
-  correctAnswer={0}
-  explanation="Find the highest common factor of the terms: 2x is common to both 2x^2 and 8x. Factor out 2x: 2x^2 / 2x = x, and 8x / 2x = 4. So the fully factorised form is 2x(x + 4). The second option is not fully factorised because x can still be taken out. The third option also works but is not fully factorised because 2 can also be taken out."
-  difficulty="easy"
-/>
+<PracticeProblem question="Factorise fully: 2x^2 + 8x" options={['2x(x + 4)', '2(x^2 + 8x)', 'x(2x + 8)', '2x(x + 8)']} correctAnswer={0} explanation="Find the highest common factor of the terms: 2x is common to both 2x^2 and 8x. Factor out 2x: 2x^2 / 2x = x, and 8x / 2x = 4. So the fully factorised form is 2x(x + 4). The second option is not fully factorised because x can still be taken out. The third option also works but is not fully factorised because 2 can also be taken out." difficulty="easy" />
 
-<PracticeProblem
-  question="Solve the inequality: 3x - 5 > 13"
-  options={['x > 6', 'x > 6/3', 'x > 8', 'x > 2']}
-  correctAnswer={0}
-  explanation="Add 5 to both sides: 3x > 18. Divide by 3: x > 6. The inequality sign stays the same because we divided by a positive number. The solution represents all values of x greater than 6. If we had divided by a negative number, the inequality sign would need to be reversed. Always show each step clearly."
-  difficulty="medium"
-/>
+<PracticeProblem question="Solve the inequality: 3x - 5 > 13" options={['x > 6', 'x > 6/3', 'x > 8', 'x > 2']} correctAnswer={0} explanation="Add 5 to both sides: 3x > 18. Divide by 3: x > 6. The inequality sign stays the same because we divided by a positive number. The solution represents all values of x greater than 6. If we had divided by a negative number, the inequality sign would need to be reversed. Always show each step clearly." difficulty="medium" />
 
 ### Geometry
 
-<PracticeProblem
-  question="A right-angled triangle has sides of length 5 cm and 12 cm (excluding the hypotenuse). What is the length of the hypotenuse?"
-  options={['13 cm', '17 cm', '7 cm', '11 cm']}
-  correctAnswer={0}
-  explanation="Using Pythagoras' theorem: a^2 + b^2 = c^2, where c is the hypotenuse. So 5^2 + 12^2 = c^2, which gives 25 + 144 = c^2, so c^2 = 169. Taking the square root: c = 13 cm. This is a Pythagorean triple (5, 12, 13), which is worth remembering as it appears frequently in GCSE questions."
-  difficulty="easy"
-/>
+<PracticeProblem question="A right-angled triangle has sides of length 5 cm and 12 cm (excluding the hypotenuse). What is the length of the hypotenuse?" options={['13 cm', '17 cm', '7 cm', '11 cm']} correctAnswer={0} explanation="Using Pythagoras' theorem: a^2 + b^2 = c^2, where c is the hypotenuse. So 5^2 + 12^2 = c^2, which gives 25 + 144 = c^2, so c^2 = 169. Taking the square root: c = 13 cm. This is a Pythagorean triple (5, 12, 13), which is worth remembering as it appears frequently in GCSE questions." difficulty="easy" />
 
-<PracticeProblem
-  question="A cylinder has a radius of 5 cm and a height of 10 cm. What is its volume? (Give your answer in terms of pi.)"
-  options={['250 pi cm^3', '100 pi cm^3', '50 pi cm^3', '125 pi cm^3']}
-  correctAnswer={0}
-  explanation="Volume of a cylinder = pi x r^2 x h. Substituting: pi x 5^2 x 10 = pi x 25 x 10 = 250 pi cm^3. The formula combines the area of the circular base (pi x r^2) with the height. Common mistakes include forgetting to square the radius or confusing the radius with the diameter."
-  difficulty="medium"
-/>
+<PracticeProblem question="A cylinder has a radius of 5 cm and a height of 10 cm. What is its volume? (Give your answer in terms of pi.)" options={['250 pi cm^3', '100 pi cm^3', '50 pi cm^3', '125 pi cm^3']} correctAnswer={0} explanation="Volume of a cylinder = pi x r^2 x h. Substituting: pi x 5^2 x 10 = pi x 25 x 10 = 250 pi cm^3. The formula combines the area of the circular base (pi x r^2) with the height. Common mistakes include forgetting to square the radius or confusing the radius with the diameter." difficulty="medium" />
 
 ### Statistics
 
-<PracticeProblem
-  question="The five numbers 3, 7, 4, 9, 7 are arranged in ascending order: 3, 4, 7, 7, 9. What is the median?"
-  options={['7', '4', '6', '9']}
-  correctAnswer={0}
-  explanation="The median is the middle value when data is arranged in order. With five values, the third value is the median: 3, 4, 7, 7, 9, so the median is 7. If there is an even number of values, the median is the average of the two middle values. The mean of this set is (3+4+7+7+9)/5 = 30/5 = 6, and the mode is 7 (most frequent value)."
-  difficulty="easy"
-/>
+<PracticeProblem question="The five numbers 3, 7, 4, 9, 7 are arranged in ascending order: 3, 4, 7, 7, 9. What is the median?" options={['7', '4', '6', '9']} correctAnswer={0} explanation="The median is the middle value when data is arranged in order. With five values, the third value is the median: 3, 4, 7, 7, 9, so the median is 7. If there is an even number of values, the median is the average of the two middle values. The mean of this set is (3+4+7+7+9)/5 = 30/5 = 6, and the mode is 7 (most frequent value)." difficulty="easy" />
 
-<PracticeProblem
-  question="A bag contains 3 red balls, 5 blue balls, and 2 green balls. A ball is picked at random. What is the probability it is not blue?"
-  options={['1/2', '1/10', '3/10', '7/10']}
-  correctAnswer={0}
-  explanation="Total balls = 3 + 5 + 2 = 10. Probability of not blue = probability of red or green = (3 + 2) / 10 = 5/10 = 1/2. Alternatively, use the complement rule: P(not blue) = 1 - P(blue) = 1 - 5/10 = 5/10 = 1/2. The complement rule is useful when it is easier to calculate the probability of the event not happening."
-  difficulty="medium"
-/>
+<PracticeProblem question="A bag contains 3 red balls, 5 blue balls, and 2 green balls. A ball is picked at random. What is the probability it is not blue?" options={['1/2', '1/10', '3/10', '7/10']} correctAnswer={0} explanation="Total balls = 3 + 5 + 2 = 10. Probability of not blue = probability of red or green = (3 + 2) / 10 = 5/10 = 1/2. Alternatively, use the complement rule: P(not blue) = 1 - P(blue) = 1 - 5/10 = 5/10 = 1/2. The complement rule is useful when it is easier to calculate the probability of the event not happening." difficulty="medium" />
 
 ### Ratio and Proportion
 
-<PracticeProblem
-  question="The ratio of boys to girls in a class is 3:5. If there are 40 students in total, how many boys are there?"
-  options={['15', '25', '12', '20']}
-  correctAnswer={0}
-  explanation="Total parts in the ratio = 3 + 5 = 8. Each part represents 40 / 8 = 5 students. The number of boys = 3 parts x 5 = 15. The number of girls = 5 parts x 5 = 25. Check: 15 + 25 = 40. Always verify your answer by checking it adds up to the given total."
-  difficulty="easy"
-/>
+<PracticeProblem question="The ratio of boys to girls in a class is 3:5. If there are 40 students in total, how many boys are there?" options={['15', '25', '12', '20']} correctAnswer={0} explanation="Total parts in the ratio = 3 + 5 = 8. Each part represents 40 / 8 = 5 students. The number of boys = 3 parts x 5 = 15. The number of girls = 5 parts x 5 = 25. Check: 15 + 25 = 40. Always verify your answer by checking it adds up to the given total." difficulty="easy" />
 
-<PracticeProblem
-  question="If y is directly proportional to x, and y = 8 when x = 2, what is the value of y when x = 7?"
-  options={['28', '16', '14', '56']}
-  correctAnswer={0}
-  explanation="Since y is directly proportional to x, y = kx where k is the constant of proportionality. Find k: when y = 8 and x = 2, k = y/x = 8/2 = 4. So y = 4x. When x = 7, y = 4 x 7 = 28. Direct proportion means as one quantity increases, the other increases at the same rate, producing a straight line through the origin on a graph."
-  difficulty="hard"
-/>
+<PracticeProblem question="If y is directly proportional to x, and y = 8 when x = 2, what is the value of y when x = 7?" options={['28', '16', '14', '56']} correctAnswer={0} explanation="Since y is directly proportional to x, y = kx where k is the constant of proportionality. Find k: when y = 8 and x = 2, k = y/x = 8/2 = 4. So y = 4x. When x = 7, y = 4 x 7 = 28. Direct proportion means as one quantity increases, the other increases at the same rate, producing a straight line through the origin on a graph." difficulty="hard" />

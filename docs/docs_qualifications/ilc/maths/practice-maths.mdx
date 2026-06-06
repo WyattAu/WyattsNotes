@@ -19,80 +19,26 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ### Algebra
 
-<PracticeProblem
-  question="Solve the quadratic equation x^2 - 5x + 6 = 0."
-  options={['x = 2 or x = 3', 'x = -2 or x = -3', 'x = 1 or x = 6', 'x = -1 or x = 6']}
-  correctAnswer={0}
-  explanation="Factorise the quadratic: x^2 - 5x + 6 = (x - 2)(x - 3) = 0. Setting each factor to zero: x - 2 = 0 gives x = 2, and x - 3 = 0 gives x = 3. Verification: substitute x = 2: 4 - 10 + 6 = 0 (correct). Substitute x = 3: 9 - 15 + 6 = 0 (correct). The two numbers that multiply to give 6 and add to give -5 are -2 and -3."
-  difficulty="easy"
-/>
+<PracticeProblem question="Solve the quadratic equation x^2 - 5x + 6 = 0." options={['x = 2 or x = 3', 'x = -2 or x = -3', 'x = 1 or x = 6', 'x = -1 or x = 6']} correctAnswer={0} explanation="Factorise the quadratic: x^2 - 5x + 6 = (x - 2)(x - 3) = 0. Setting each factor to zero: x - 2 = 0 gives x = 2, and x - 3 = 0 gives x = 3. Verification: substitute x = 2: 4 - 10 + 6 = 0 (correct). Substitute x = 3: 9 - 15 + 6 = 0 (correct). The two numbers that multiply to give 6 and add to give -5 are -2 and -3." difficulty="easy" />
 
-<PracticeProblem
-  question="Solve the simultaneous equations: 2x + y = 7 and x - y = 2."
-  options={['x = 3, y = 1', 'x = 2, y = 3', 'x = 4, y = -1', 'x = 5, y = -3']}
-  correctAnswer={0}
-  explanation="Add the two equations to eliminate y: (2x + y) + (x - y) = 7 + 2, giving 3x = 9, so x = 3. Substitute x = 3 into the second equation: 3 - y = 2, so y = 1. Verify with the first equation: 2(3) + 1 = 7 (correct). The elimination method works well here because the coefficients of y are equal and opposite (+1 and -1), so adding eliminates y directly."
-  difficulty="medium"
-/>
+<PracticeProblem question="Solve the simultaneous equations: 2x + y = 7 and x - y = 2." options={['x = 3, y = 1', 'x = 2, y = 3', 'x = 4, y = -1', 'x = 5, y = -3']} correctAnswer={0} explanation="Add the two equations to eliminate y: (2x + y) + (x - y) = 7 + 2, giving 3x = 9, so x = 3. Substitute x = 3 into the second equation: 3 - y = 2, so y = 1. Verify with the first equation: 2(3) + 1 = 7 (correct). The elimination method works well here because the coefficients of y are equal and opposite (+1 and -1), so adding eliminates y directly." difficulty="medium" />
 
-<PracticeProblem
-  question="Simplify log_2(8) + log_2(4) using the laws of logarithms."
-  options={['5', '6', '3', '12']}
-  correctAnswer={0}
-  explanation="Using the product law of logarithms: log_a(m) + log_a(n) = log_a(m x n). So log_2(8) + log_2(4) = log_2(8 x 4) = log_2(32). Since 2^5 = 32, log_2(32) = 5. Alternatively, evaluate each term separately: log_2(8) = 3 (since 2^3 = 8) and log_2(4) = 2 (since 2^2 = 4), then 3 + 2 = 5. Both methods give the same result."
-  difficulty="easy"
-/>
+<PracticeProblem question="Simplify log_2(8) + log_2(4) using the laws of logarithms." options={['5', '6', '3', '12']} correctAnswer={0} explanation="Using the product law of logarithms: log_a(m) + log_a(n) = log_a(m x n). So log_2(8) + log_2(4) = log_2(8 x 4) = log_2(32). Since 2^5 = 32, log_2(32) = 5. Alternatively, evaluate each term separately: log_2(8) = 3 (since 2^3 = 8) and log_2(4) = 2 (since 2^2 = 4), then 3 + 2 = 5. Both methods give the same result." difficulty="easy" />
 
 ### Calculus
 
-<PracticeProblem
-  question="Find dy/dx for y = 4x^3 - 2x + 7."
-  options={['dy/dx = 12x^2 - 2', 'dy/dx = 12x^2 - 2x', 'dy/dx = 4x^2 - 2', 'dy/dx = 12x^3 - 2']}
-  correctAnswer={0}
-  explanation="Apply the power rule of differentiation: if y = ax^n, then dy/dx = anx^(n-1). Differentiating term by term: d/dx(4x^3) = 12x^2, d/dx(-2x) = -2, and d/dx(7) = 0 (the derivative of a constant is zero). Therefore dy/dx = 12x^2 - 2. This gives the gradient function, representing the rate of change of y with respect to x at any point on the curve."
-  difficulty="easy"
-/>
+<PracticeProblem question="Find dy/dx for y = 4x^3 - 2x + 7." options={['dy/dx = 12x^2 - 2', 'dy/dx = 12x^2 - 2x', 'dy/dx = 4x^2 - 2', 'dy/dx = 12x^3 - 2']} correctAnswer={0} explanation="Apply the power rule of differentiation: if y = ax^n, then dy/dx = anx^(n-1). Differentiating term by term: d/dx(4x^3) = 12x^2, d/dx(-2x) = -2, and d/dx(7) = 0 (the derivative of a constant is zero). Therefore dy/dx = 12x^2 - 2. This gives the gradient function, representing the rate of change of y with respect to x at any point on the curve." difficulty="easy" />
 
-<PracticeProblem
-  question="Evaluate the definite integral of f(x) = 2x from x = 1 to x = 4."
-  options={['15', '14', '8', '16']}
-  correctAnswer={0}
-  explanation="The indefinite integral of 2x is x^2 + C. For the definite integral from 1 to 4, apply the limits: [x^2]  evaluated from 1 to 4 = 4^2 - 1^2 = 16 - 1 = 15. Geometrically, this represents the area under the line y = 2x between x = 1 and x = 4. This can also be verified: the area is a trapezium with parallel sides of length 2 and 8 (the y-values at x=1 and x=4) and width 3, giving area = (1/2)(2 + 8)(3) = 15."
-  difficulty="medium"
-/>
+<PracticeProblem question="Evaluate the definite integral of f(x) = 2x from x = 1 to x = 4." options={['15', '14', '8', '16']} correctAnswer={0} explanation="The indefinite integral of 2x is x^2 + C. For the definite integral from 1 to 4, apply the limits: [x^2]  evaluated from 1 to 4 = 4^2 - 1^2 = 16 - 1 = 15. Geometrically, this represents the area under the line y = 2x between x = 1 and x = 4. This can also be verified: the area is a trapezium with parallel sides of length 2 and 8 (the y-values at x=1 and x=4) and width 3, giving area = (1/2)(2 + 8)(3) = 15." difficulty="medium" />
 
 ### Geometry and Trigonometry
 
-<PracticeProblem
-  question="In a triangle with sides a = 8 cm, b = 6 cm, and angle C = 60 degrees, what is the length of side c using the cosine rule?"
-  options={['7 cm', '10 cm', '5 cm', '8.5 cm']}
-  correctAnswer={0}
-  explanation="The cosine rule states: c^2 = a^2 + b^2 - 2ab cos(C). Substituting: c^2 = 64 + 36 - 2(8)(6)cos(60) = 100 - 96(0.5) = 100 - 48 = 52. Therefore c = square root of 52 = 7.21 cm, which rounds to 7 cm from the given options. The cosine rule is used when you know two sides and the included angle, or all three sides and need to find an angle."
-  difficulty="medium"
-/>
+<PracticeProblem question="In a triangle with sides a = 8 cm, b = 6 cm, and angle C = 60 degrees, what is the length of side c using the cosine rule?" options={['7 cm', '10 cm', '5 cm', '8.5 cm']} correctAnswer={0} explanation="The cosine rule states: c^2 = a^2 + b^2 - 2ab cos(C). Substituting: c^2 = 64 + 36 - 2(8)(6)cos(60) = 100 - 96(0.5) = 100 - 48 = 52. Therefore c = square root of 52 = 7.21 cm, which rounds to 7 cm from the given options. The cosine rule is used when you know two sides and the included angle, or all three sides and need to find an angle." difficulty="medium" />
 
-<PracticeProblem
-  question="A circle has a tangent and a chord that meet at a point on the circumference. The angle between the tangent and the chord is 35 degrees. What is the size of the angle in the alternate segment?"
-  options={['35 degrees', '55 degrees', '70 degrees', '145 degrees']}
-  correctAnswer={0}
-  explanation="The alternate segment theorem states that the angle between a tangent and a chord at a point of contact is equal to the angle in the alternate (opposite) segment. Therefore, the angle subtended by the chord in the opposite segment is also 35 degrees. This theorem is derived from the fact that the angle between a tangent and a radius is 90 degrees, combined with the properties of angles in a semicircle."
-  difficulty="hard"
-/>
+<PracticeProblem question="A circle has a tangent and a chord that meet at a point on the circumference. The angle between the tangent and the chord is 35 degrees. What is the size of the angle in the alternate segment?" options={['35 degrees', '55 degrees', '70 degrees', '145 degrees']} correctAnswer={0} explanation="The alternate segment theorem states that the angle between a tangent and a chord at a point of contact is equal to the angle in the alternate (opposite) segment. Therefore, the angle subtended by the chord in the opposite segment is also 35 degrees. This theorem is derived from the fact that the angle between a tangent and a radius is 90 degrees, combined with the properties of angles in a semicircle." difficulty="hard" />
 
 ### Probability and Statistics
 
-<PracticeProblem
-  question="A bag contains 3 red balls and 5 blue balls. Two balls are drawn at random without replacement. What is the probability that both balls are blue?"
-  options={['5/28', '25/64', '5/14', '1/4']}
-  correctAnswer={0}
-  explanation="This requires the multiplication rule for independent events without replacement. Probability of first blue ball = 5/8 (5 blue out of 8 total). After removing one blue ball, there are 4 blue out of 7 total. Probability of second blue ball = 4/7. Combined probability = (5/8) x (4/7) = 20/56 = 5/28. If the balls were drawn with replacement, the probability would be (5/8) x (5/8) = 25/64, but without replacement changes the denominator for the second draw."
-  difficulty="medium"
-/>
+<PracticeProblem question="A bag contains 3 red balls and 5 blue balls. Two balls are drawn at random without replacement. What is the probability that both balls are blue?" options={['5/28', '25/64', '5/14', '1/4']} correctAnswer={0} explanation="This requires the multiplication rule for independent events without replacement. Probability of first blue ball = 5/8 (5 blue out of 8 total). After removing one blue ball, there are 4 blue out of 7 total. Probability of second blue ball = 4/7. Combined probability = (5/8) x (4/7) = 20/56 = 5/28. If the balls were drawn with replacement, the probability would be (5/8) x (5/8) = 25/64, but without replacement changes the denominator for the second draw." difficulty="medium" />
 
-<PracticeProblem
-  question="For the data set {3, 7, 7, 8, 12, 15}, what is the standard deviation (to 2 decimal places)?"
-  options={['3.83', '4.12', '8.67', '3.16']}
-  correctAnswer={0}
-  explanation="First find the mean: (3 + 7 + 7 + 8 + 12 + 15) / 6 = 52 / 6 = 8.67. Calculate squared deviations from the mean: (3-8.67)^2 = 32.15, (7-8.67)^2 = 2.79, (7-8.67)^2 = 2.79, (8-8.67)^2 = 0.45, (12-8.67)^2 = 11.09, (15-8.67)^2 = 40.07. Sum of squared deviations = 89.34. For population standard deviation: divide by n=6 to get variance = 14.89, then sqrt(14.89) = 3.86. For sample standard deviation (dividing by n-1=5): variance = 17.87, then sqrt(17.87) = 4.23. The closest answer to the population standard deviation is 3.83."
-  difficulty="hard"
-/>
+<PracticeProblem question="For the data set {3, 7, 7, 8, 12, 15}, what is the standard deviation (to 2 decimal places)?" options={['3.83', '4.12', '8.67', '3.16']} correctAnswer={0} explanation="First find the mean: (3 + 7 + 7 + 8 + 12 + 15) / 6 = 52 / 6 = 8.67. Calculate squared deviations from the mean: (3-8.67)^2 = 32.15, (7-8.67)^2 = 2.79, (7-8.67)^2 = 2.79, (8-8.67)^2 = 0.45, (12-8.67)^2 = 11.09, (15-8.67)^2 = 40.07. Sum of squared deviations = 89.34. For population standard deviation: divide by n=6 to get variance = 14.89, then sqrt(14.89) = 3.86. For sample standard deviation (dividing by n-1=5): variance = 17.87, then sqrt(17.87) = 4.23. The closest answer to the population standard deviation is 3.83." difficulty="hard" />

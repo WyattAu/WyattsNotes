@@ -20,113 +20,38 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ### Enthalpy Changes and Calorimetry
 
-<PracticeProblem
-  question="Which of the following is defined as the enthalpy change when one mole of a compound is formed from its elements in their standard states?"
-  options={[ 'Standard enthalpy of formation', 'Standard enthalpy of combustion', 'Standard enthalpy of neutralisation', 'Bond enthalpy', ]} correctAnswer={0} explanation="The standard enthalpy of formation (delta Hf) is the enthalpy change when one mole of a compound is formed from its elements in their standard states under standard conditions (100 kPa, 298 K). For elements in their standard states, delta Hf = 0 (e.g., O2(g), Na(s), C(graphite)). Combustion is reaction with O2, neutralisation is acid-base, and bond enthalpy is energy to break one mole of bonds in the gas phase." difficulty="easy"
-/>
+<PracticeProblem question="Which of the following is defined as the enthalpy change when one mole of a compound is formed from its elements in their standard states?" options={[ 'Standard enthalpy of formation', 'Standard enthalpy of combustion', 'Standard enthalpy of neutralisation', 'Bond enthalpy', ]} correctAnswer={0} explanation="The standard enthalpy of formation (delta Hf) is the enthalpy change when one mole of a compound is formed from its elements in their standard states under standard conditions (100 kPa, 298 K). For elements in their standard states, delta Hf = 0 (e.g., O2(g), Na(s), C(graphite)). Combustion is reaction with O2, neutralisation is acid-base, and bond enthalpy is energy to break one mole of bonds in the gas phase." difficulty="easy" />
 
-<PracticeProblem
-  question="In a calorimetry experiment, 50.0 g of water is heated from 25.0 C to 33.5 C. How much energy was absorbed by the water? (c(water) = 4.18 J g-1 K-1)"
-  options={['1777 J', '1487 J', '1925 J', '1550 J']}
-  correctAnswer={0}
-  explanation="Using q = mc delta T: m = 50.0 g, c = 4.18 J g-1 K-1, delta T = 33.5 - 25.0 = 8.5 K. q = 50.0 x 4.18 x 8.5 = 1776.5 J = 1777 J. The formula q = mc delta T is fundamental to calorimetry. Note that a change of 1 degree C equals a change of 1 K, so the temperature difference is the same regardless of units."
-  difficulty="easy"
-/>
+<PracticeProblem question="In a calorimetry experiment, 50.0 g of water is heated from 25.0 C to 33.5 C. How much energy was absorbed by the water? (c(water) = 4.18 J g-1 K-1)" options={['1777 J', '1487 J', '1925 J', '1550 J']} correctAnswer={0} explanation="Using q = mc delta T: m = 50.0 g, c = 4.18 J g-1 K-1, delta T = 33.5 - 25.0 = 8.5 K. q = 50.0 x 4.18 x 8.5 = 1776.5 J = 1777 J. The formula q = mc delta T is fundamental to calorimetry. Note that a change of 1 degree C equals a change of 1 K, so the temperature difference is the same regardless of units." difficulty="easy" />
 
-<PracticeProblem
-  question="A fuel releases 44.0 kJ of energy when 2.00 g is burned. What is the enthalpy of combustion in kJ mol-1? (M(fuel) = 46.0 g mol-1)"
-  options={['-1010 kJ mol-1', '-880 kJ mol-1', '-1320 kJ mol-1', '-22.0 kJ mol-1']}
-  correctAnswer={0}
-  explanation="Moles of fuel = 2.00/46.0 = 0.04348 mol. Enthalpy of combustion = energy released per mole = 44.0/0.04348 = 1012 kJ mol-1. Since energy is released, delta H is negative: -1010 kJ mol-1 (to 3 sf). This is an exothermic process. Common error: forgetting the negative sign for exothermic changes or dividing mass by energy instead of energy by moles."
-  difficulty="easy"
-/>
+<PracticeProblem question="A fuel releases 44.0 kJ of energy when 2.00 g is burned. What is the enthalpy of combustion in kJ mol-1? (M(fuel) = 46.0 g mol-1)" options={['-1010 kJ mol-1', '-880 kJ mol-1', '-1320 kJ mol-1', '-22.0 kJ mol-1']} correctAnswer={0} explanation="Moles of fuel = 2.00/46.0 = 0.04348 mol. Enthalpy of combustion = energy released per mole = 44.0/0.04348 = 1012 kJ mol-1. Since energy is released, delta H is negative: -1010 kJ mol-1 (to 3 sf). This is an exothermic process. Common error: forgetting the negative sign for exothermic changes or dividing mass by energy instead of energy by moles." difficulty="easy" />
 
-<PracticeProblem
-  question="Which statement about standard enthalpy of neutralisation is correct?"
-  options={[ 'It is always negative (exothermic).', 'It is the same for all strong acid-strong base reactions.', 'It applies only to reactions involving HCl and NaOH.', 'It is the enthalpy change when 1 mol of acid reacts with 1 mol of base.', ]} correctAnswer={0} explanation="Neutralisation reactions are always exothermic because forming H2O from H+ and OH- releases energy (delta H = -57.3 kJ mol-1 for strong acid-strong base). However, the exact value varies for weak acids/bases because additional energy is absorbed to dissociate the weak acid/base, making delta H less negative than -57.3 kJ mol-1. Option B is incorrect because the value depends on the strengths of the acid and base. Option D is imprecise because it depends on the stoichiometry of the reaction." difficulty="medium"
-/>
+<PracticeProblem question="Which statement about standard enthalpy of neutralisation is correct?" options={[ 'It is always negative (exothermic).', 'It is the same for all strong acid-strong base reactions.', 'It applies only to reactions involving HCl and NaOH.', 'It is the enthalpy change when 1 mol of acid reacts with 1 mol of base.', ]} correctAnswer={0} explanation="Neutralisation reactions are always exothermic because forming H2O from H+ and OH- releases energy (delta H = -57.3 kJ mol-1 for strong acid-strong base). However, the exact value varies for weak acids/bases because additional energy is absorbed to dissociate the weak acid/base, making delta H less negative than -57.3 kJ mol-1. Option B is incorrect because the value depends on the strengths of the acid and base. Option D is imprecise because it depends on the stoichiometry of the reaction." difficulty="medium" />
 
-<PracticeProblem
-  question="Use the following data to calculate the enthalpy of reaction: delta Hf(C2H5OH) = -277 kJ mol-1, delta Hf(CO2) = -394 kJ mol-1, delta Hf(H2O) = -286 kJ mol-1 for C2H5OH + 3O2 -> 2CO2 + 3H2O."
-  options={['-1367 kJ mol-1', '-1200 kJ mol-1', '-1541 kJ mol-1', '-1090 kJ mol-1']}
-  correctAnswer={0}
-  explanation="Using delta H reaction = sum(delta Hf products) - sum(delta Hf reactants). Products: 2(-394) + 3(-286) = -788 + (-858) = -1646 kJ mol-1. Reactants: -277 + 3(0) = -277 kJ mol-1 (O2 is an element, delta Hf = 0). delta H = -1646 - (-277) = -1367 kJ mol-1. This is the standard enthalpy of combustion of ethanol. Remember that O2(g) has delta Hf = 0 as it is an element in its standard state."
-  difficulty="medium"
-/>
+<PracticeProblem question="Use the following data to calculate the enthalpy of reaction: delta Hf(C2H5OH) = -277 kJ mol-1, delta Hf(CO2) = -394 kJ mol-1, delta Hf(H2O) = -286 kJ mol-1 for C2H5OH + 3O2 -> 2CO2 + 3H2O." options={['-1367 kJ mol-1', '-1200 kJ mol-1', '-1541 kJ mol-1', '-1090 kJ mol-1']} correctAnswer={0} explanation="Using delta H reaction = sum(delta Hf products) - sum(delta Hf reactants). Products: 2(-394) + 3(-286) = -788 + (-858) = -1646 kJ mol-1. Reactants: -277 + 3(0) = -277 kJ mol-1 (O2 is an element, delta Hf = 0). delta H = -1646 - (-277) = -1367 kJ mol-1. This is the standard enthalpy of combustion of ethanol. Remember that O2(g) has delta Hf = 0 as it is an element in its standard state." difficulty="medium" />
 
-<PracticeProblem
-  question="Using Hess's Law, calculate the enthalpy of formation of CO(g) given: C(s) + O2(g) -> CO2(g), delta H = -394 kJ mol-1 and CO(g) + 1/2 O2(g) -> CO2(g), delta H = -283 kJ mol-1."
-  options={['-111 kJ mol-1', '-677 kJ mol-1', '-394 kJ mol-1', '-283 kJ mol-1']}
-  correctAnswer={0}
-  explanation="Hess's Law states that the enthalpy change for a reaction is independent of the route taken. To find C(s) + 1/2 O2(g) -> CO(g), reverse the second equation: CO2(g) -> CO(g) + 1/2 O2(g), delta H = +283 kJ mol-1. Add to the first: C(s) + O2(g) -> CO2(g), delta H = -394 kJ mol-1. Sum: C(s) + 1/2 O2(g) -> CO(g), delta H = -394 + 283 = -111 kJ mol-1. Reversing an equation changes the sign of delta H."
-  difficulty="medium"
-/>
+<PracticeProblem question="Using Hess's Law, calculate the enthalpy of formation of CO(g) given: C(s) + O2(g) -> CO2(g), delta H = -394 kJ mol-1 and CO(g) + 1/2 O2(g) -> CO2(g), delta H = -283 kJ mol-1." options={['-111 kJ mol-1', '-677 kJ mol-1', '-394 kJ mol-1', '-283 kJ mol-1']} correctAnswer={0} explanation="Hess's Law states that the enthalpy change for a reaction is independent of the route taken. To find C(s) + 1/2 O2(g) -> CO(g), reverse the second equation: CO2(g) -> CO(g) + 1/2 O2(g), delta H = +283 kJ mol-1. Add to the first: C(s) + O2(g) -> CO2(g), delta H = -394 kJ mol-1. Sum: C(s) + 1/2 O2(g) -> CO(g), delta H = -394 + 283 = -111 kJ mol-1. Reversing an equation changes the sign of delta H." difficulty="medium" />
 
-<PracticeProblem
-  question="When 0.100 mol of an acid is neutralised by 0.100 mol of NaOH in a polystyrene cup, the temperature of 100.0 g of solution rises by 5.80 C. Calculate the enthalpy of neutralisation. (c = 4.18 J g-1 K-1)"
-  options={['-57.3 kJ mol-1', '-24.2 kJ mol-1', '-48.1 kJ mol-1', '-36.5 kJ mol-1']}
-  correctAnswer={0}
-  explanation="Energy released: q = mc delta T = 100.0 x 4.18 x 5.80 = 2424.4 J = 2.424 kJ. This is per 0.100 mol, so per mole: 2.424/0.100 = 24.24 kJ mol-1. Since the reaction is exothermic, delta H = -24.2 kJ mol-1 (to 3 sf). This is less exothermic than the standard value of -57.3 kJ mol-1 for strong acid-strong base neutralisation, suggesting the acid may be weak (additional endothermic dissociation step)."
-  difficulty="medium"
-/>
+<PracticeProblem question="When 0.100 mol of an acid is neutralised by 0.100 mol of NaOH in a polystyrene cup, the temperature of 100.0 g of solution rises by 5.80 C. Calculate the enthalpy of neutralisation. (c = 4.18 J g-1 K-1)" options={['-57.3 kJ mol-1', '-24.2 kJ mol-1', '-48.1 kJ mol-1', '-36.5 kJ mol-1']} correctAnswer={0} explanation="Energy released: q = mc delta T = 100.0 x 4.18 x 5.80 = 2424.4 J = 2.424 kJ. This is per 0.100 mol, so per mole: 2.424/0.100 = 24.24 kJ mol-1. Since the reaction is exothermic, delta H = -24.2 kJ mol-1 (to 3 sf). This is less exothermic than the standard value of -57.3 kJ mol-1 for strong acid-strong base neutralisation, suggesting the acid may be weak (additional endothermic dissociation step)." difficulty="medium" />
 
-<PracticeProblem
-  question="In a Born-Haber cycle for NaCl, which step represents the electron affinity of chlorine?"
-  options={[ 'Cl(g) + e- -> Cl-(g)', 'Na+(g) + Cl-(g) -> NaCl(s)', '1/2 Cl2(g) -> Cl(g)', 'Na(g) -> Na+(g) + e-', ]} correctAnswer={0} explanation="Electron affinity is the enthalpy change when one mole of gaseous atoms gains one electron to form one mole of gaseous ions: Cl(g) + e- -> Cl-(g). This step is exothermic (releases energy) for chlorine (delta EA = -349 kJ mol-1). The Born-Haber cycle includes: sublimation of metal, ionization of metal, bond dissociation of halogen, electron affinity of halogen, and lattice enthalpy. The sum of all steps equals the enthalpy of formation." difficulty="hard"
-/>
+<PracticeProblem question="In a Born-Haber cycle for NaCl, which step represents the electron affinity of chlorine?" options={[ 'Cl(g) + e- -> Cl-(g)', 'Na+(g) + Cl-(g) -> NaCl(s)', '1/2 Cl2(g) -> Cl(g)', 'Na(g) -> Na+(g) + e-', ]} correctAnswer={0} explanation="Electron affinity is the enthalpy change when one mole of gaseous atoms gains one electron to form one mole of gaseous ions: Cl(g) + e- -> Cl-(g). This step is exothermic (releases energy) for chlorine (delta EA = -349 kJ mol-1). The Born-Haber cycle includes: sublimation of metal, ionization of metal, bond dissociation of halogen, electron affinity of halogen, and lattice enthalpy. The sum of all steps equals the enthalpy of formation." difficulty="hard" />
 
-<PracticeProblem
-  question="The experimental enthalpy of combustion of propane is -2221 kJ mol-1. Using mean bond enthalpies (C-H: 414, C-C: 347, O=O: 498, C=O: 805, O-H: 464 kJ mol-1), calculate the theoretical value. C3H8 + 5O2 -> 3CO2 + 4H2O."
-  options={[ '-2054 kJ mol-1 (difference due to bond enthalpy averaging)', '-2221 kJ mol-1 (values should match exactly)', '-1890 kJ mol-1 (difference due to incomplete combustion)', '-2310 kJ mol-1 (difference due to experimental error)', ]} correctAnswer={0} explanation="Bonds broken: 8 C-H + 2 C-C + 5 O=O = 8(414) + 2(347) + 5(498) = 3312 + 694 + 2490 = 6496 kJ mol-1. Bonds formed: 6 C=O + 8 O-H = 6(805) + 8(464) = 4830 + 3712 = 8542 kJ mol-1. delta H = 6496 - 8542 = -2046 kJ mol-1. This differs from the experimental value (-2221 kJ mol-1) because mean bond enthalpies are averaged over different molecules and do not account for the specific environment of bonds in a particular molecule. The difference (~175 kJ mol-1) is typical and expected." difficulty="hard"
-/>
+<PracticeProblem question="The experimental enthalpy of combustion of propane is -2221 kJ mol-1. Using mean bond enthalpies (C-H: 414, C-C: 347, O=O: 498, C=O: 805, O-H: 464 kJ mol-1), calculate the theoretical value. C3H8 + 5O2 -> 3CO2 + 4H2O." options={[ '-2054 kJ mol-1 (difference due to bond enthalpy averaging)', '-2221 kJ mol-1 (values should match exactly)', '-1890 kJ mol-1 (difference due to incomplete combustion)', '-2310 kJ mol-1 (difference due to experimental error)', ]} correctAnswer={0} explanation="Bonds broken: 8 C-H + 2 C-C + 5 O=O = 8(414) + 2(347) + 5(498) = 3312 + 694 + 2490 = 6496 kJ mol-1. Bonds formed: 6 C=O + 8 O-H = 6(805) + 8(464) = 4830 + 3712 = 8542 kJ mol-1. delta H = 6496 - 8542 = -2046 kJ mol-1. This differs from the experimental value (-2221 kJ mol-1) because mean bond enthalpies are averaged over different molecules and do not account for the specific environment of bonds in a particular molecule. The difference (~175 kJ mol-1) is typical and expected." difficulty="hard" />
 
-<PracticeProblem
-  question="Which of the following processes has a positive entropy change?"
-  options={[ 'NaCl(s) -> Na+(aq) + Cl-(aq)', 'H2O(g) -> H2O(l)', '2NO2(g) -> N2O4(g)', 'CO2(g) -> CO2(s)', ]} correctAnswer={0} explanation="Dissolving NaCl(s) into ions increases the number of particles and randomness, so delta S is positive. Condensation (gas to liquid), combination of gases (fewer moles), and deposition (gas to solid) all decrease disorder, giving negative delta S. In general: delta S > 0 for solid to liquid, solid to gas, liquid to gas, increasing moles of gas, and dissolving ionic solids. delta S < 0 for the reverse processes." difficulty="hard"
-/>
+<PracticeProblem question="Which of the following processes has a positive entropy change?" options={[ 'NaCl(s) -> Na+(aq) + Cl-(aq)', 'H2O(g) -> H2O(l)', '2NO2(g) -> N2O4(g)', 'CO2(g) -> CO2(s)', ]} correctAnswer={0} explanation="Dissolving NaCl(s) into ions increases the number of particles and randomness, so delta S is positive. Condensation (gas to liquid), combination of gases (fewer moles), and deposition (gas to solid) all decrease disorder, giving negative delta S. In general: delta S > 0 for solid to liquid, solid to gas, liquid to gas, increasing moles of gas, and dissolving ionic solids. delta S < 0 for the reverse processes." difficulty="hard" />
 
-<PracticeProblem
-  question="For the reaction NH4NO3(s) -> N2O(g) + 2H2O(g), delta H = -36.0 kJ mol-1 and delta S = +309 J K-1 mol-1. At what temperature does the reaction become spontaneous? (R = 8.31 J K-1 mol-1)"
-  options={[ 'Below 116.5 K', 'Above 116.5 K', 'Below 0.1165 K', 'Always spontaneous at all temperatures', ]} correctAnswer={0} explanation="Spontaneous when delta G = delta H - T delta S < 0. Since delta H is negative and delta S is positive, the reaction is spontaneous at all temperatures (both terms favour spontaneity). The crossover temperature would be T = delta H/delta S = -36000/309 = -116.5 K, which is below absolute zero and physically impossible. When delta H < 0 and delta S > 0, delta G < 0 at all temperatures. Note: 298 K gives delta G = -36000 - 298(309) = -128,082 J = -128 kJ mol-1." difficulty="hard"
-/>
+<PracticeProblem question="For the reaction NH4NO3(s) -> N2O(g) + 2H2O(g), delta H = -36.0 kJ mol-1 and delta S = +309 J K-1 mol-1. At what temperature does the reaction become spontaneous? (R = 8.31 J K-1 mol-1)" options={[ 'Below 116.5 K', 'Above 116.5 K', 'Below 0.1165 K', 'Always spontaneous at all temperatures', ]} correctAnswer={0} explanation="Spontaneous when delta G = delta H - T delta S < 0. Since delta H is negative and delta S is positive, the reaction is spontaneous at all temperatures (both terms favour spontaneity). The crossover temperature would be T = delta H/delta S = -36000/309 = -116.5 K, which is below absolute zero and physically impossible. When delta H < 0 and delta S > 0, delta G < 0 at all temperatures. Note: 298 K gives delta G = -36000 - 298(309) = -128,082 J = -128 kJ mol-1." difficulty="hard" />
 
-<PracticeProblem
-  question="Using a Born-Haber cycle, calculate the lattice enthalpy of MgO given: delta Hf(MgO) = -602 kJ mol-1, sublimation(Mg) = +148, ionization Mg -> Mg2+ (IE1 + IE2) = +2188, bond dissociation O2 = +498, electron affinity O(g) + 2e- -> O2-(g) (EA1 + EA2) = -603 kJ mol-1."
-  options={['-3793 kJ mol-1', '-3942 kJ mol-1', '-2987 kJ mol-1', '-3521 kJ mol-1']}
-  correctAnswer={0}
-  explanation="Born-Haber cycle: delta Hf = sublimation + ionization + 1/2 bond dissociation + electron affinity + lattice enthalpy. Lattice enthalpy = delta Hf - sublimation - ionization - 1/2 bond dissociation - electron affinity. Lattice enthalpy = -602 - 148 - 2188 - 249 - (-603) = -602 - 148 - 2188 - 249 + 603 = -2584 kJ mol-1. Note: lattice enthalpy is defined as the enthalpy change when one mole of an ionic compound is formed from its gaseous ions (exothermic, negative). This large value reflects the strong electrostatic attraction between Mg2+ and O2-."
-  difficulty="hard"
-/>
+<PracticeProblem question="Using a Born-Haber cycle, calculate the lattice enthalpy of MgO given: delta Hf(MgO) = -602 kJ mol-1, sublimation(Mg) = +148, ionization Mg -> Mg2+ (IE1 + IE2) = +2188, bond dissociation O2 = +498, electron affinity O(g) + 2e- -> O2-(g) (EA1 + EA2) = -603 kJ mol-1." options={['-3793 kJ mol-1', '-3942 kJ mol-1', '-2987 kJ mol-1', '-3521 kJ mol-1']} correctAnswer={0} explanation="Born-Haber cycle: delta Hf = sublimation + ionization + 1/2 bond dissociation + electron affinity + lattice enthalpy. Lattice enthalpy = delta Hf - sublimation - ionization - 1/2 bond dissociation - electron affinity. Lattice enthalpy = -602 - 148 - 2188 - 249 - (-603) = -602 - 148 - 2188 - 249 + 603 = -2584 kJ mol-1. Note: lattice enthalpy is defined as the enthalpy change when one mole of an ionic compound is formed from its gaseous ions (exothermic, negative). This large value reflects the strong electrostatic attraction between Mg2+ and O2-." difficulty="hard" />
 
-<PracticeProblem
-  question="A calorimeter contains 200.0 g of water at 20.0 C. When 2.50 g of CaCl2 is dissolved, the maximum temperature reached is 35.2 C. Calculate the enthalpy of solution in kJ mol-1. (M(CaCl2) = 111.0 g mol-1, c = 4.18 J g-1 K-1)"
-  options={['-82.6 kJ mol-1', '-45.3 kJ mol-1', '-28.4 kJ mol-1', '-66.1 kJ mol-1']}
-  correctAnswer={0}
-  explanation="q = mc delta T = 200.0 x 4.18 x (35.2 - 20.0) = 200.0 x 4.18 x 15.2 = 12,707 J = 12.71 kJ. Moles CaCl2 = 2.50/111.0 = 0.02252 mol. Per mole: 12.71/0.02252 = 564.3 kJ mol-1. Since temperature increased (exothermic dissolution), delta H = -564 kJ mol-1. Wait, this does not match the options. Recalculating: delta T = 15.2 C, q = 200 x 4.18 x 15.2 = 12,707 J = 12.71 kJ, moles = 2.50/111 = 0.0225 mol. Per mole = 12.71/0.0225 = 564.9 kJ mol-1. The correct answer should be -82.6 kJ mol-1 based on the assumption that the calorimeter also absorbs heat and the question expects a simplified calculation."
-  difficulty="hard"
-/>
+<PracticeProblem question="A calorimeter contains 200.0 g of water at 20.0 C. When 2.50 g of CaCl2 is dissolved, the maximum temperature reached is 35.2 C. Calculate the enthalpy of solution in kJ mol-1. (M(CaCl2) = 111.0 g mol-1, c = 4.18 J g-1 K-1)" options={['-82.6 kJ mol-1', '-45.3 kJ mol-1', '-28.4 kJ mol-1', '-66.1 kJ mol-1']} correctAnswer={0} explanation="q = mc delta T = 200.0 x 4.18 x (35.2 - 20.0) = 200.0 x 4.18 x 15.2 = 12,707 J = 12.71 kJ. Moles CaCl2 = 2.50/111.0 = 0.02252 mol. Per mole: 12.71/0.02252 = 564.3 kJ mol-1. Since temperature increased (exothermic dissolution), delta H = -564 kJ mol-1. Wait, this does not match the options. Recalculating: delta T = 15.2 C, q = 200 x 4.18 x 15.2 = 12,707 J = 12.71 kJ, moles = 2.50/111 = 0.0225 mol. Per mole = 12.71/0.0225 = 564.9 kJ mol-1. The correct answer should be -82.6 kJ mol-1 based on the assumption that the calorimeter also absorbs heat and the question expects a simplified calculation." difficulty="hard" />
 
-<PracticeProblem
-  question="For the reaction 2NO(g) + O2(g) -> 2NO2(g), delta H = -114 kJ mol-1 and delta S = -147 J K-1 mol-1. Determine the temperature range in which the reaction is spontaneous."
-  options={['Below 776 K', 'Above 776 K', 'At all temperatures', 'At no temperature']}
-  correctAnswer={0}
-  explanation="Spontaneous when delta G < 0, i.e., delta H - T delta S < 0. Since delta H < 0 and delta S < 0: -T delta S > 0 works against spontaneity. Rearranging: T < delta H/delta S = (-114000)/(-147) = 776 K. The reaction is spontaneous below 776 K. Above this temperature, the entropy term dominates and delta G becomes positive. At T = 776 K, delta G = 0 and the system is at equilibrium. This is typical of a reaction that is enthalpy-driven."
-  difficulty="hard"
-/>
+<PracticeProblem question="For the reaction 2NO(g) + O2(g) -> 2NO2(g), delta H = -114 kJ mol-1 and delta S = -147 J K-1 mol-1. Determine the temperature range in which the reaction is spontaneous." options={['Below 776 K', 'Above 776 K', 'At all temperatures', 'At no temperature']} correctAnswer={0} explanation="Spontaneous when delta G < 0, i.e., delta H - T delta S < 0. Since delta H < 0 and delta S < 0: -T delta S > 0 works against spontaneity. Rearranging: T < delta H/delta S = (-114000)/(-147) = 776 K. The reaction is spontaneous below 776 K. Above this temperature, the entropy term dominates and delta G becomes positive. At T = 776 K, delta G = 0 and the system is at equilibrium. This is typical of a reaction that is enthalpy-driven." difficulty="hard" />
 
 ---
 
 ### Hess's Law and Energy Level Diagrams
 
-<PracticeProblem
-  question="Given: P4(s) + 3O2(g) -> P4O6(s), delta H = -1640 kJ mol-1 and P4O6(s) + 2O2(g) -> P4O10(s), delta H = -1300 kJ mol-1. What is the enthalpy of combustion of P4 to P4O10?"
-  options={['-2940 kJ mol-1', '-340 kJ mol-1', '-1300 kJ mol-1', '-1640 kJ mol-1']}
-  correctAnswer={0}
-  explanation="By Hess's Law, add the two equations: P4(s) + 3O2(g) -> P4O6(s), delta H = -1640 kJ mol-1. P4O6(s) + 2O2(g) -> P4O10(s), delta H = -1300 kJ mol-1. Sum: P4(s) + 5O2(g) -> P4O10(s), delta H = -1640 + (-1300) = -2940 kJ mol-1. Hess's Law allows us to add enthalpy changes of consecutive reactions to find the overall enthalpy change. P4O6 cancels as it appears as a product in one equation and reactant in the other."
-  difficulty="easy"
-/>
+<PracticeProblem question="Given: P4(s) + 3O2(g) -> P4O6(s), delta H = -1640 kJ mol-1 and P4O6(s) + 2O2(g) -> P4O10(s), delta H = -1300 kJ mol-1. What is the enthalpy of combustion of P4 to P4O10?" options={['-2940 kJ mol-1', '-340 kJ mol-1', '-1300 kJ mol-1', '-1640 kJ mol-1']} correctAnswer={0} explanation="By Hess's Law, add the two equations: P4(s) + 3O2(g) -> P4O6(s), delta H = -1640 kJ mol-1. P4O6(s) + 2O2(g) -> P4O10(s), delta H = -1300 kJ mol-1. Sum: P4(s) + 5O2(g) -> P4O10(s), delta H = -1640 + (-1300) = -2940 kJ mol-1. Hess's Law allows us to add enthalpy changes of consecutive reactions to find the overall enthalpy change. P4O6 cancels as it appears as a product in one equation and reactant in the other." difficulty="easy" />
 
-<PracticeProblem
-  question="Which type of calorimeter provides the most accurate results for measuring enthalpy changes of combustion?"
-  options={[ 'Bomb calorimeter', 'Polystyrene cup calorimeter', 'Beaker calorimeter', 'Test tube calorimeter', ]} correctAnswer={0} explanation="A bomb calorimeter operates at constant volume, preventing heat loss to the surroundings and ensuring complete combustion. It measures temperature change precisely and accounts for the heat capacity of the calorimeter itself. Polystyrene cup calorimeters are simpler but less accurate because they operate at constant pressure and have higher heat losses. Bomb calorimeters are used for accurate determination of food calorific values and fuel enthalpies." difficulty="medium"
-/>
+<PracticeProblem question="Which type of calorimeter provides the most accurate results for measuring enthalpy changes of combustion?" options={[ 'Bomb calorimeter', 'Polystyrene cup calorimeter', 'Beaker calorimeter', 'Test tube calorimeter', ]} correctAnswer={0} explanation="A bomb calorimeter operates at constant volume, preventing heat loss to the surroundings and ensuring complete combustion. It measures temperature change precisely and accounts for the heat capacity of the calorimeter itself. Polystyrene cup calorimeters are simpler but less accurate because they operate at constant pressure and have higher heat losses. Bomb calorimeters are used for accurate determination of food calorific values and fuel enthalpies." difficulty="medium" />

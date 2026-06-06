@@ -22,94 +22,34 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ### Limits
 
-<PracticeProblem
-  question="Evaluate: lim(x→2) (x² − 4) / (x − 2)"
-  options={['0', '2', '4', 'Does not exist']}
-  correctAnswer={2}
-  explanation="Factor numerator: (x² − 4) / (x − 2) = (x + 2)(x − 2) / (x − 2) = x + 2 for x ≠ 2. So lim(x→2) (x + 2) = 4."
-  difficulty="easy"
-/>
+<PracticeProblem question="Evaluate: lim(x→2) (x² − 4) / (x − 2)" options={['0', '2', '4', 'Does not exist']} correctAnswer={2} explanation="Factor numerator: (x² − 4) / (x − 2) = (x + 2)(x − 2) / (x − 2) = x + 2 for x ≠ 2. So lim(x→2) (x + 2) = 4." difficulty="easy" />
 
-<PracticeProblem
-  question="Evaluate using L'Hôpital's Rule: lim(x→0) (sin(3x)) / (5x)"
-  options={['3/5', '1/5', '3', '0']}
-  correctAnswer={0}
-  explanation="Differentiate numerator and denominator: cos(3x)·3 / 5. At x = 0: cos(0)·3 / 5 = 3/5. Note: this could also be solved by the small-angle limit sin(3x)/(3x)·(3/5) → 1·(3/5) = 3/5."
-  difficulty="medium"
-/>
+<PracticeProblem question="Evaluate using L'Hôpital's Rule: lim(x→0) (sin(3x)) / (5x)" options={['3/5', '1/5', '3', '0']} correctAnswer={0} explanation="Differentiate numerator and denominator: cos(3x)·3 / 5. At x = 0: cos(0)·3 / 5 = 3/5. Note: this could also be solved by the small-angle limit sin(3x)/(3x)·(3/5) → 1·(3/5) = 3/5." difficulty="medium" />
 
 ---
 
 ### Derivatives
 
-<PracticeProblem
-  question="Find dy/dx using the chain rule: y = (2x + 1)⁵"
-  options={['5(2x + 1)⁴', '10(2x + 1)⁴', '10(2x + 1)⁵', '5(2x + 1)⁴ · 2']}
-  correctAnswer={1}
-  explanation="dy/dx = 5(2x + 1)⁴ · 2 = 10(2x + 1)⁴."
-  difficulty="easy"
-/>
+<PracticeProblem question="Find dy/dx using the chain rule: y = (2x + 1)⁵" options={['5(2x + 1)⁴', '10(2x + 1)⁴', '10(2x + 1)⁵', '5(2x + 1)⁴ · 2']} correctAnswer={1} explanation="dy/dx = 5(2x + 1)⁴ · 2 = 10(2x + 1)⁴." difficulty="easy" />
 
-<PracticeProblem
-  question="Find dy/dx implicitly: x² + y² = 25"
-  options={['dy/dx = −x/y', 'dy/dx = x/y', 'dy/dx = −y/x', 'dy/dx = y/x']}
-  correctAnswer={0}
-  explanation="Differentiate: 2x + 2y·dy/dx = 0 → 2y·dy/dx = −2x → dy/dx = −x/y."
-  difficulty="medium"
-/>
+<PracticeProblem question="Find dy/dx implicitly: x² + y² = 25" options={['dy/dx = −x/y', 'dy/dx = x/y', 'dy/dx = −y/x', 'dy/dx = y/x']} correctAnswer={0} explanation="Differentiate: 2x + 2y·dy/dx = 0 → 2y·dy/dx = −2x → dy/dx = −x/y." difficulty="medium" />
 
-<PracticeProblem
-  question="A ladder 10 ft long leans against a wall. The bottom slides away at 1 ft/s. How fast is the top sliding down when the bottom is 6 ft from the wall?"
-  options={['0.5 ft/s', '0.75 ft/s', '1.25 ft/s', '1.5 ft/s']}
-  correctAnswer={1}
-  explanation="By Pythagoras: x² + y² = 100. When x = 6, y = 8. Differentiate: 2x·dx/dt + 2y·dy/dt = 0 → dy/dt = −(x/y)·dx/dt = −(6/8)·1 = −0.75 ft/s."
-  difficulty="hard"
-/>
+<PracticeProblem question="A ladder 10 ft long leans against a wall. The bottom slides away at 1 ft/s. How fast is the top sliding down when the bottom is 6 ft from the wall?" options={['0.5 ft/s', '0.75 ft/s', '1.25 ft/s', '1.5 ft/s']} correctAnswer={1} explanation="By Pythagoras: x² + y² = 100. When x = 6, y = 8. Differentiate: 2x·dx/dt + 2y·dy/dt = 0 → dy/dt = −(x/y)·dx/dt = −(6/8)·1 = −0.75 ft/s." difficulty="hard" />
 
 ---
 
 ### Applications of Derivatives
 
-<PracticeProblem
-  question="Find the local minimum of f(x) = x³ − 3x + 2."
-  options={['x = −1, f = 4', 'x = 1, f = 0', 'x = 0, f = 2', 'x = 1, f = −4']}
-  correctAnswer={1}
-  explanation="f\'(x) = 3x² − 3 = 0 → x = ±1. f\'\'(x) = 6x. At x = 1: f\'\' = 6 > 0 (local min). f(1) = 1 − 3 + 2 = 0."
-  difficulty="medium"
-/>
+<PracticeProblem question="Find the local minimum of f(x) = x³ − 3x + 2." options={['x = −1, f = 4', 'x = 1, f = 0', 'x = 0, f = 2', 'x = 1, f = −4']} correctAnswer={1} explanation="f\'(x) = 3x² − 3 = 0 → x = ±1. f\'\'(x) = 6x. At x = 1: f\'\' = 6 > 0 (local min). f(1) = 1 − 3 + 2 = 0." difficulty="medium" />
 
-<PracticeProblem
-  question="On what interval is f(x) = x³ − 6x² + 9x + 1 concave up?"
-  options={['x < 2', 'x > 2', 'x < 0 or x > 3', 'All real numbers']}
-  correctAnswer={1}
-  explanation="f\'(x) = 3x² − 12x + 9, f\'\'(x) = 6x − 12. Concave up when f\'\'(x) > 0 → 6x − 12 > 0 → x > 2."
-  difficulty="medium"
-/>
+<PracticeProblem question="On what interval is f(x) = x³ − 6x² + 9x + 1 concave up?" options={['x < 2', 'x > 2', 'x < 0 or x > 3', 'All real numbers']} correctAnswer={1} explanation="f\'(x) = 3x² − 12x + 9, f\'\'(x) = 6x − 12. Concave up when f\'\'(x) > 0 → 6x − 12 > 0 → x > 2." difficulty="medium" />
 
 ---
 
 ### Integration
 
-<PracticeProblem
-  question="Evaluate: ∫ 2x·cos(x²) dx"
-  options={['sin(x²) + C', '2·sin(x²) + C', 'cos(x²) + C', '½·sin(x²) + C']}
-  correctAnswer={0}
-  explanation="Let u = x², du = 2x dx. Then ∫ cos(u) du = sin(u) + C = sin(x²) + C."
-  difficulty="medium"
-/>
+<PracticeProblem question="Evaluate: ∫ 2x·cos(x²) dx" options={['sin(x²) + C', '2·sin(x²) + C', 'cos(x²) + C', '½·sin(x²) + C']} correctAnswer={0} explanation="Let u = x², du = 2x dx. Then ∫ cos(u) du = sin(u) + C = sin(x²) + C." difficulty="medium" />
 
-<PracticeProblem
-  question="By the Fundamental Theorem of Calculus, evaluate: ∫₁³ (x² + 1) dx"
-  options={['32/3', '28/3', '10', '34/3']}
-  correctAnswer={3}
-  explanation="∫(x² + 1) dx = x³/3 + x. Evaluate from 1 to 3: (27/3 + 3) − (1/3 + 1) = 12 − 4/3 = 32/3."
-  difficulty="easy"
-/>
+<PracticeProblem question="By the Fundamental Theorem of Calculus, evaluate: ∫₁³ (x² + 1) dx" options={['32/3', '28/3', '10', '34/3']} correctAnswer={3} explanation="∫(x² + 1) dx = x³/3 + x. Evaluate from 1 to 3: (27/3 + 3) − (1/3 + 1) = 12 − 4/3 = 32/3." difficulty="easy" />
 
-<PracticeProblem
-  question="Find the area between y = x and y = x² from x = 0 to x = 2."
-  options={['2/3', '1', '4/3', '2']}
-  correctAnswer={1}
-  explanation="Curves intersect at x = 0 and x = 1. Area = ∫₀¹ (x − x²) dx + ∫₁² (x² − x) dx. First part: [x²/2 − x³/3]₀¹ = 1/2 − 1/3 = 1/6. Second part: [x³/3 − x²/2]₁² = (8/3 − 2) − (1/3 − 1/2) = 2/3 − (−1/6) = 5/6. Total = 1/6 + 5/6 = 1."
-  difficulty="hard"
-/>
+<PracticeProblem question="Find the area between y = x and y = x² from x = 0 to x = 2." options={['2/3', '1', '4/3', '2']} correctAnswer={1} explanation="Curves intersect at x = 0 and x = 1. Area = ∫₀¹ (x − x²) dx + ∫₁² (x² − x) dx. First part: [x²/2 − x³/3]₀¹ = 1/2 − 1/3 = 1/6. Second part: [x³/3 − x²/2]₁² = (8/3 − 2) − (1/3 − 1/2) = 2/3 − (−1/6) = 5/6. Total = 1/6 + 5/6 = 1." difficulty="hard" />

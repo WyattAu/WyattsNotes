@@ -19,82 +19,34 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ### Computational Thinking
 
-<PracticeProblem
-  question="A programmer is designing an app that shows the nearest coffee shops on a map. The programmer decides to represent each coffee shop only by its name, latitude, and longitude, ignoring details like opening hours and menu. Which computational thinking practice does this represent?"
-  options={['Abstraction', 'Algorithm design', 'Decomposition', 'Pattern recognition']}
-  correctAnswer={0}
-  explanation="Abstraction involves reducing complexity by focusing on essential characteristics while hiding unnecessary details. By representing each coffee shop with only name, latitude, and longitude, the programmer is abstracting away irrelevant details (hours, menu) to focus on what is needed for the map feature. Decomposition would involve breaking the problem into subproblems. Pattern recognition involves identifying similarities. Algorithm design involves creating step-by-step procedures."
-  difficulty="easy"
-/>
+<PracticeProblem question="A programmer is designing an app that shows the nearest coffee shops on a map. The programmer decides to represent each coffee shop only by its name, latitude, and longitude, ignoring details like opening hours and menu. Which computational thinking practice does this represent?" options={['Abstraction', 'Algorithm design', 'Decomposition', 'Pattern recognition']} correctAnswer={0} explanation="Abstraction involves reducing complexity by focusing on essential characteristics while hiding unnecessary details. By representing each coffee shop with only name, latitude, and longitude, the programmer is abstracting away irrelevant details (hours, menu) to focus on what is needed for the map feature. Decomposition would involve breaking the problem into subproblems. Pattern recognition involves identifying similarities. Algorithm design involves creating step-by-step procedures." difficulty="easy" />
 
-<PracticeProblem
-  question="An algorithm takes a list of 1000 names and checks each name one at a time to find a specific name. If the name is not in the list, how many comparisons will the algorithm perform?"
-  options={['1000', '500', '999', '1']}
-  correctAnswer={0}
-  explanation="This describes a linear search (sequential search) algorithm. When the target name is not in the list, the algorithm must check every element to confirm its absence. With 1000 names, it performs exactly 1000 comparisons -- one for each element. This illustrates the worst-case scenario for linear search, which has O(n) time complexity where n is the number of elements. The average case for a name present in the list would be approximately n/2 comparisons."
-  difficulty="easy"
-/>
+<PracticeProblem question="An algorithm takes a list of 1000 names and checks each name one at a time to find a specific name. If the name is not in the list, how many comparisons will the algorithm perform?" options={['1000', '500', '999', '1']} correctAnswer={0} explanation="This describes a linear search (sequential search) algorithm. When the target name is not in the list, the algorithm must check every element to confirm its absence. With 1000 names, it performs exactly 1000 comparisons -- one for each element. This illustrates the worst-case scenario for linear search, which has O(n) time complexity where n is the number of elements. The average case for a name present in the list would be approximately n/2 comparisons." difficulty="easy" />
 
 ---
 
 ### Computing Systems
 
-<PracticeProblem
-  question="A computer stores a number in binary as 10110110. What is the decimal equivalent of this binary number?"
-  options={['182', '181', '91', '172']}
-  correctAnswer={0}
-  explanation="To convert binary 10110110 to decimal, multiply each bit by its corresponding power of 2: 1x128 + 0x64 + 1x32 + 1x16 + 0x8 + 1x4 + 1x2 + 0x1 = 128 + 0 + 32 + 16 + 0 + 4 + 2 + 0 = 182. Reading from right to left, the position values are 1, 2, 4, 8, 16, 32, 64, 128 (powers of 2 from 2^0 to 2^7). Adding the values where bits are 1 gives the decimal result."
-  difficulty="easy"
-/>
+<PracticeProblem question="A computer stores a number in binary as 10110110. What is the decimal equivalent of this binary number?" options={['182', '181', '91', '172']} correctAnswer={0} explanation="To convert binary 10110110 to decimal, multiply each bit by its corresponding power of 2: 1x128 + 0x64 + 1x32 + 1x16 + 0x8 + 1x4 + 1x2 + 0x1 = 128 + 0 + 32 + 16 + 0 + 4 + 2 + 0 = 182. Reading from right to left, the position values are 1, 2, 4, 8, 16, 32, 64, 128 (powers of 2 from 2^0 to 2^7). Adding the values where bits are 1 gives the decimal result." difficulty="easy" />
 
-<PracticeProblem
-  question="Which of the following best explains why computers use binary (base-2) representation for data instead of decimal (base-10)?"
-  options={[ 'Binary representation aligns with the two-state nature (on/off) of electronic circuits, making hardware implementation simpler and more reliable', 'Binary numbers can represent a wider range of values than decimal numbers', 'Binary is mathematically superior to all other number systems', 'Binary representation uses less storage space than decimal for all values', ]} correctAnswer={0} explanation="Computers use binary because transistors and other electronic components naturally operate in two states: on (high voltage) and off (low voltage). These two states map directly to binary digits 1 and 0. Binary circuits are simpler to design, more reliable (only two voltage levels to distinguish), and less susceptible to noise. Binary does not inherently represent a wider range of values or use less storage -- the range and storage depend on the number of bits used, not the base system itself." difficulty="medium"
-/>
+<PracticeProblem question="Which of the following best explains why computers use binary (base-2) representation for data instead of decimal (base-10)?" options={[ 'Binary representation aligns with the two-state nature (on/off) of electronic circuits, making hardware implementation simpler and more reliable', 'Binary numbers can represent a wider range of values than decimal numbers', 'Binary is mathematically superior to all other number systems', 'Binary representation uses less storage space than decimal for all values', ]} correctAnswer={0} explanation="Computers use binary because transistors and other electronic components naturally operate in two states: on (high voltage) and off (low voltage). These two states map directly to binary digits 1 and 0. Binary circuits are simpler to design, more reliable (only two voltage levels to distinguish), and less susceptible to noise. Binary does not inherently represent a wider range of values or use less storage -- the range and storage depend on the number of bits used, not the base system itself." difficulty="medium" />
 
-<PracticeProblem
-  question="The hexadecimal number 2F is equivalent to which decimal number?"
-  options={['47', '4715', '27', '31']}
-  correctAnswer={0}
-  explanation="Hexadecimal is base-16, using digits 0-9 and letters A-F (where A=10, B=11, C=12, D=13, E=14, F=15). To convert 2F to decimal: 2 x 16 + 15 x 1 = 32 + 15 = 47. The leftmost digit (2) is in the sixteens place and F (15) is in the ones place. Hexadecimal is commonly used in computing as a compact way to represent binary values, since each hex digit maps to exactly 4 binary digits."
-  difficulty="easy"
-/>
+<PracticeProblem question="The hexadecimal number 2F is equivalent to which decimal number?" options={['47', '4715', '27', '31']} correctAnswer={0} explanation="Hexadecimal is base-16, using digits 0-9 and letters A-F (where A=10, B=11, C=12, D=13, E=14, F=15). To convert 2F to decimal: 2 x 16 + 15 x 1 = 32 + 15 = 47. The leftmost digit (2) is in the sixteens place and F (15) is in the ones place. Hexadecimal is commonly used in computing as a compact way to represent binary values, since each hex digit maps to exactly 4 binary digits." difficulty="easy" />
 
 ---
 
 ### Algorithms and Programming
 
-<PracticeProblem
-  question="Consider the following code segment: FOR i FROM 1 TO 4, DISPLAY(i). What is the output?"
-  options={['1 2 3 4', '0 1 2 3', '1 2 3 4 5', '4 3 2 1']}
-  correctAnswer={0}
-  explanation="The FOR loop initializes i to 1 and increments i by 1 each iteration until i exceeds 4. On each iteration, it displays the current value of i. The iterations produce: i=1 displays 1, i=2 displays 2, i=3 displays 3, i=4 displays 4. The output is 1 2 3 4. This is a basic counting loop, one of the fundamental control structures in programming."
-  difficulty="easy"
-/>
+<PracticeProblem question="Consider the following code segment: FOR i FROM 1 TO 4, DISPLAY(i). What is the output?" options={['1 2 3 4', '0 1 2 3', '1 2 3 4 5', '4 3 2 1']} correctAnswer={0} explanation="The FOR loop initializes i to 1 and increments i by 1 each iteration until i exceeds 4. On each iteration, it displays the current value of i. The iterations produce: i=1 displays 1, i=2 displays 2, i=3 displays 3, i=4 displays 4. The output is 1 2 3 4. This is a basic counting loop, one of the fundamental control structures in programming." difficulty="easy" />
 
-<PracticeProblem
-  question="A list contains the values [3, 7, 2, 9, 5]. After the following algorithm is applied to the list, what is the value of the last element? SET sum TO 0, FOR EACH element IN list, SET sum TO sum + element, SET lastElement TO sum."
-  options={['26', '25', '9', '5']}
-  correctAnswer={0}
-  explanation="The algorithm calculates the sum of all elements in the list and assigns it to lastElement. The sum is: 3 + 7 + 2 + 9 + 5 = 26. Note that the variable lastElement is simply a variable name -- it does not refer to the actual last element of the list. The algorithm sums all values and stores the total (26) in the variable lastElement. Understanding that variable names are arbitrary labels is important for avoiding confusion."
-  difficulty="medium"
-/>
+<PracticeProblem question="A list contains the values [3, 7, 2, 9, 5]. After the following algorithm is applied to the list, what is the value of the last element? SET sum TO 0, FOR EACH element IN list, SET sum TO sum + element, SET lastElement TO sum." options={['26', '25', '9', '5']} correctAnswer={0} explanation="The algorithm calculates the sum of all elements in the list and assigns it to lastElement. The sum is: 3 + 7 + 2 + 9 + 5 = 26. Note that the variable lastElement is simply a variable name -- it does not refer to the actual last element of the list. The algorithm sums all values and stores the total (26) in the variable lastElement. Understanding that variable names are arbitrary labels is important for avoiding confusion." difficulty="medium" />
 
-<PracticeProblem
-  question="A student writes a procedure called findMax that takes a list of numbers as a parameter and returns the largest value. Which of the following is the most appropriate use of this procedure?"
-  options={[ 'To abstract away the details of finding a maximum value so the main program can be simpler and more readable', 'To replace all comparison operations in the program', 'To sort the list in ascending order', 'To calculate the average of the numbers in the list', ]} correctAnswer={0} explanation="Procedures (also called functions or methods) are used to abstract complex operations into reusable blocks of code. By creating a findMax procedure, the details of how the maximum is found are hidden inside the procedure, making the main program simpler and easier to read. The procedure can be called whenever a maximum value is needed without rewriting the search logic. It does not sort the list, calculate averages, or replace all comparisons -- it has a single, focused purpose." difficulty="medium"
-/>
+<PracticeProblem question="A student writes a procedure called findMax that takes a list of numbers as a parameter and returns the largest value. Which of the following is the most appropriate use of this procedure?" options={[ 'To abstract away the details of finding a maximum value so the main program can be simpler and more readable', 'To replace all comparison operations in the program', 'To sort the list in ascending order', 'To calculate the average of the numbers in the list', ]} correctAnswer={0} explanation="Procedures (also called functions or methods) are used to abstract complex operations into reusable blocks of code. By creating a findMax procedure, the details of how the maximum is found are hidden inside the procedure, making the main program simpler and easier to read. The procedure can be called whenever a maximum value is needed without rewriting the search logic. It does not sort the list, calculate averages, or replace all comparisons -- it has a single, focused purpose." difficulty="medium" />
 
 ---
 
 ### Data Analysis and Networks
 
-<PracticeProblem
-  question="Which of the following describes the primary difference between lossy and lossless data compression?"
-  options={[ 'Lossy compression permanently removes some data to achieve smaller file sizes, while lossless compression preserves all original data', 'Lossy compression is only used for text files, while lossless compression is used for images', 'Lossless compression always produces smaller files than lossy compression', 'Lossy compression cannot be reversed, while lossless compression can only be reversed once', ]} correctAnswer={0} explanation="Lossy compression achieves smaller file sizes by permanently discarding some data that is deemed less important or less perceptible to humans (such as certain frequencies in audio or color variations in images). The original data cannot be perfectly reconstructed. Lossless compression reduces file size without losing any data, allowing the original to be perfectly reconstructed. Lossy is typically used for media (JPEG, MP3) where minor quality loss is acceptable. Lossless is used for text, code, and situations where data integrity is essential (ZIP, PNG)." difficulty="medium"
-/>
+<PracticeProblem question="Which of the following describes the primary difference between lossy and lossless data compression?" options={[ 'Lossy compression permanently removes some data to achieve smaller file sizes, while lossless compression preserves all original data', 'Lossy compression is only used for text files, while lossless compression is used for images', 'Lossless compression always produces smaller files than lossy compression', 'Lossy compression cannot be reversed, while lossless compression can only be reversed once', ]} correctAnswer={0} explanation="Lossy compression achieves smaller file sizes by permanently discarding some data that is deemed less important or less perceptible to humans (such as certain frequencies in audio or color variations in images). The original data cannot be perfectly reconstructed. Lossless compression reduces file size without losing any data, allowing the original to be perfectly reconstructed. Lossy is typically used for media (JPEG, MP3) where minor quality loss is acceptable. Lossless is used for text, code, and situations where data integrity is essential (ZIP, PNG)." difficulty="medium" />
 
-<PracticeProblem
-  question="When you type a URL into a browser, the domain name (e.g., example.com) must be converted to an IP address. Which Internet protocol is primarily responsible for this translation?"
-  options={[ 'DNS (Domain Name System)', 'HTTP (Hypertext Transfer Protocol)', 'TCP (Transmission Control Protocol)', 'FTP (File Transfer Protocol)', ]} correctAnswer={0} explanation="The Domain Name System (DNS) translates human-readable domain names (like example.com) into IP addresses (like 93.184.216.34) that computers use to identify each other on the network. DNS operates as a hierarchical, distributed database. HTTP is the protocol for transferring web pages. TCP ensures reliable data delivery between applications. FTP is for file transfers. DNS is the specific protocol that handles name-to-address resolution." difficulty="hard"
-/>
+<PracticeProblem question="When you type a URL into a browser, the domain name (e.g., example.com) must be converted to an IP address. Which Internet protocol is primarily responsible for this translation?" options={[ 'DNS (Domain Name System)', 'HTTP (Hypertext Transfer Protocol)', 'TCP (Transmission Control Protocol)', 'FTP (File Transfer Protocol)', ]} correctAnswer={0} explanation="The Domain Name System (DNS) translates human-readable domain names (like example.com) into IP addresses (like 93.184.216.34) that computers use to identify each other on the network. DNS operates as a hierarchical, distributed database. HTTP is the protocol for transferring web pages. TCP ensures reliable data delivery between applications. FTP is for file transfers. DNS is the specific protocol that handles name-to-address resolution." difficulty="hard" />
