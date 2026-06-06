@@ -43,6 +43,10 @@ jobs:
             docs_path: docs/docs_university/physics
           - subject: computing
             docs_path: docs/docs_university/computing
+          - subject: chemistry
+            docs_path: docs/docs_university/chemistry
+          - subject: computer-science
+            docs_path: docs/docs_university/computer-science
           - subject: admissions
             docs_path: docs/docs_university/admissions
     steps:
@@ -127,6 +131,18 @@ jobs:
           name: university-build-admissions
           path: build-admissions
 
+      - name: Download chemistry build
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: university-build-chemistry
+          path: build-chemistry
+
+      - name: Download computer-science build
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: university-build-computer-science
+          path: build-computer-science
+
       - name: Merge builds
         run: |
           # Use maths as the base (has intro page + shared theme assets)
@@ -138,6 +154,8 @@ jobs:
           cp -rn build-physics/docs build/ 2>/dev/null || true
           cp -rn build-computing/docs build/ 2>/dev/null || true
           cp -rn build-admissions/docs build/ 2>/dev/null || true
+          cp -rn build-chemistry/docs build/ 2>/dev/null || true
+          cp -rn build-computer-science/docs build/ 2>/dev/null || true
 
           # Verify structure
           echo "=== Build directory structure ==="

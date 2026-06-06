@@ -3,15 +3,32 @@
  * Comprehensive deployment smoke test for university site.
  * Auto-discovers all pages from the docs directory structure.
  *
+ * URL mapping rules:
+ *   - Subdirectories with index.md: Docusaurus derives the slug from
+ *     the frontmatter `title` (lowercased, spaces → dashes).
+ *     e.g., docs/docs_university/mathematics/1-abstract-algebra/index.md
+ *     (title: "Abstract Algebra") → /docs/mathematics/abstract-algebra
+ *   - Standalone .md/.mdx files: filename becomes slug.
+ *     e.g., docs/docs_university/admissions/bmo-preparation.md
+ *     → /docs/admissions/bmo-preparation
+ *   - Nested files in subdirectories: directory name (no number stripping)
+ *     becomes the slug. The title-based slug only applies to index.md
+ *     in the top-level subdirectory.
+ *
  * Usage:
  *   node scripts/smoke-test-university.mjs [--base-url URL] [--fail-fast] [--concurrency N]
  */
 
-import { execSync } from 'child_process';
+import { execSync, readFileSync } from 'fs';
+import { resolve, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const projectRoot = resolve(__dirname, '..');
 
 const BASE_URL = process.argv.includes('--base-url')
   ? process.argv[process.argv.indexOf('--base-url') + 1]
-  : 'https://wyattsnotes-university.pages.dev';
+  : 'https://university.wyattau.com';
 
 const FAIL_FAST = process.argv.includes('--fail-fast');
 const CONCURRENCY = parseInt(
@@ -19,34 +36,80 @@ const CONCURRENCY = parseInt(
   10,
 );
 
-// Auto-discover all pages from the filesystem
+// Extract title from markdown frontmatter
+function extractTitle(filePath) {
+  try {
+    const content = readFileSync(resolve(projectRoot, filePath), 'utf8');
+    const match = content.match(/^title:\s*['"]?(.+?)['"]?\s*$/m);
+    return match ? match[1] : null;
+  } catch {
+    return null;
+  }
+}
+
+// Convert a frontmatter title to a URL slug
+function titleToSlug(title) {
+  return title
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, '') // Remove non-word chars except spaces and hyphens
+    .replace(/\s+/g, '-') // Spaces to hyphens
+    .replace(/-+/g, '-') // Collapse multiple hyphens
+    .replace(/^-|-$/g, ''); // Trim leading/trailing hyphens
+}
+
+// Auto-discover all pages with correct URL mapping
 function discoverPages() {
   const stdout = execSync(
     'find docs/docs_university -name "*.md" -o -name "*.mdx"',
-    { encoding: 'utf8', cwd: new URL('..', import.meta.url) },
+    { encoding: 'utf8', cwd: projectRoot },
   );
 
-  const pages = new Set();
+  const pages = [];
 
   for (const filePath of stdout.trim().split('\n').filter(Boolean)) {
     // Remove docs/docs_university/ prefix
-    let page = filePath.replace(/^docs\/docs_university\//, '');
+    const relativePath = filePath.replace(/^docs\/docs_university\//, '');
 
-    // Remove extension
-    page = page.replace(/\.mdx?$/, '');
+    // Get the parts
+    const parts = relativePath.split('/');
+    // parts[0] = subject directory (mathematics, physics, etc.)
+    // parts[1] = subdirectory or filename
+    // parts[2] = filename if in nested dir
 
-    // Convert index.md to directory URL (trailing slash)
-    if (page.endsWith('/index')) {
-      page = page.replace(/\/index$/, '');
+    const subject = parts[0];
+
+    if (parts.length === 2) {
+      // File directly in subject directory: admissions/bmo-preparation.md
+      const fileName = parts[1].replace(/\.mdx?$/, '');
+      pages.push(`${subject}/${fileName}`);
+    } else if (parts.length >= 3) {
+      const fileName = parts[parts.length - 1].replace(/\.mdx?$/, '');
+      const parentDir = parts[1];
+
+      // Check if this is index.md in a subdirectory
+      if (fileName === 'index') {
+        // Docusaurus derives slug from frontmatter title for index.md
+        const title = extractTitle(filePath);
+        if (title) {
+          pages.push(`${subject}/${titleToSlug(title)}`);
+        } else {
+          // No title — use directory name as-is
+          pages.push(`${subject}/${parentDir}`);
+        }
+      } else {
+        // Non-index file in a subdirectory: use parent dir + filename
+        // e.g., computing/2-algorithms-and-data-structures/2_data-structures-advanced.md
+        // → /docs/computing/algorithms-and-data-structures/2_data-structures-advanced
+        // The parent directory slug is derived from its index.md title
+        const indexPath = filePath.replace(/[^/]+\.mdx?$/, 'index.md');
+        const indexTitle = extractTitle(indexPath);
+        const dirSlug = indexTitle ? titleToSlug(indexTitle) : parentDir;
+        pages.push(`${subject}/${dirSlug}/${fileName}`);
+      }
     }
-
-    // Skip empty paths
-    if (!page || page === '/') continue;
-
-    pages.add(page);
   }
 
-  return [...pages].sort();
+  return [...new Set(pages)].sort();
 }
 
 // Cloudflare Pages returns 200 for 404 pages, so we need to check content
