@@ -558,47 +558,13 @@ The expression is $\geq 0$ when $-2 \leq x < 1$ or $x \geq 2$.
 (Note: $x = -2$ is included because the numerator is zero there; $x = 1$ is excluded; $x = 2$ is
 Included.)
 
-Solution: $[-2, 1) \cup [2, \infty)$.
-
-10. **Question:** Solve $|x^2 - 3x + 1| < 3$.
-<details>
-<summary>Answer</summary>
-$$
--3 < x^2 - 3x + 1 < 3
-$$
-
-Split into two inequalities:
-
-**Left inequality:** $x^2 - 3x + 1 > -3 \implies x^2 - 3x + 4 > 0$.
-
-Discriminant: $\Delta = 9 - 16 = -7 < 0$. Since $a = 1 > 0$This is always true.
-
-**Right inequality:** $x^2 - 3x + 1 < 3 \implies x^2 - 3x - 2 < 0$.
-
-Roots: $x = \dfrac{3 \pm \sqrt{9 + 8}}{2} = \dfrac{3 \pm \sqrt{17}}{2}$.
-
-Since $a = 1 > 0$The expression is negative between the roots:
-
-$$
-\frac{3 - \sqrt{17}}{2} < x < \frac{3 + \sqrt{17}}{2}
-$$
-
-Since the left inequality imposes no restriction, the solution is:
-
-Solution: $\left(\dfrac{3 - \sqrt{17}}{2},\; \dfrac{3 + \sqrt{17}}{2}\right)$.
-
-</details>
-
----
-
-:::tip Diagnostic Test Ready to test your understanding of **Inequalities**? The
-[diagnostic test](/docs/dse/maths/diagnostics/diag-inequalities) contains the hardest questions
+Solution: $ contains the hardest questions
 within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
 Inequalities with other DSE mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/maths/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 
 ---

@@ -821,14 +821,13 @@ $$
 
 ---
 
-:::tip Diagnostic Test Ready to test your understanding of **Induction**? The
-[diagnostic test](/docs/ib/physics/diagnostics/diag-induction) contains the hardest questions within
+:::tip Diagnostic Test Ready to test your understanding of **Induction**? The contains the hardest questions within
 the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Induction
 with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 :::
 

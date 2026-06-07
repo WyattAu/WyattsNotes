@@ -1352,14 +1352,13 @@ these, protein synthesis cannot occur.
 
 ---
 
-:::tip Diagnostic Test Ready to test your understanding of **Genetics**? The
-[diagnostic test](/docs/dse/biology/diagnostics/diag-genetics) contains the hardest questions within
+:::tip Diagnostic Test Ready to test your understanding of **Genetics**? The contains the hardest questions within
 the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Genetics
 with other biology topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/biology/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 
 ---

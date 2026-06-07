@@ -763,14 +763,13 @@ Section 3.
 
 ---
 
-:::tip Diagnostic Test Ready to test your understanding of **Hypothesis Testing**? The
-[diagnostic test](/docs/alevel/maths/diagnostics/diag-hypothesis-testing) contains the hardest
+:::tip Diagnostic Test Ready to test your understanding of **Hypothesis Testing**? The contains the hardest
 questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Hypothesis
 Testing with other topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+See for instructions on self-marking and
 building a personal test matrix.
 
 ## Common Pitfalls

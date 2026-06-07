@@ -443,7 +443,7 @@ at -f /path/to/script.sh 02:00
 
 # List pending jobs
 atq
-# 3	Tue Apr  6 02:00:00 2026 a user
+# 3    Tue Apr  6 02:00:00 2026 a user
 
 # View job details
 at -c 3

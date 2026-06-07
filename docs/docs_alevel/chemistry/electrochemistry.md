@@ -981,14 +981,13 @@ State and explain two differences between a primary cell and a secondary cell.
 
 ---
 
-:::tip Diagnostic Test Ready to test your understanding of **Electrochemistry**? The
-[diagnostic test](/docs/alevel/chemistry/diagnostics/diag-electrochemistry) contains the hardest
+:::tip Diagnostic Test Ready to test your understanding of **Electrochemistry**? The contains the hardest
 questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
 Electrochemistry with other chemistry topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 
 ## Summary

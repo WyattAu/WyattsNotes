@@ -743,14 +743,13 @@ $\left(\frac{-2+1}{3}, 2 \times 5 + 4\right) = \left(-\frac{1}{3}, 14\right)$.
 
 ---
 
-:::tip Tip Ready to test your understanding of **Functions**? The
-[diagnostic test](/docs/alevel/maths/diagnostics/diag-functions) contains the hardest questions
+:::tip Tip Ready to test your understanding of **Functions**? The contains the hardest questions
 within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Functions
 with other pure mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+See for instructions on self-marking and
 building a personal test matrix.
 :::
 

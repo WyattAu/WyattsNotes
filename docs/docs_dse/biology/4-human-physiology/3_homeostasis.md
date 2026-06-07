@@ -889,10 +889,9 @@ medulla:
   sweat drips off the skin without evaporating, it does not cool the body. This is why fans help
   with cooling (they increase evaporation rate)** :::tip Tip Ready to test your understanding of
   **Homeostasis\*\*? Review the
-  [Human Reproduction and Homeostasis diagnostic test](/docs/dse/biology/diagnostics/diag-human-reproduction-homeostasis)
   which covers homeostatic topics within the DSE specification.
 
-See [Diagnostic Guide](/docs/dse/biology/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 
 ---

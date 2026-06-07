@@ -1101,14 +1101,13 @@ diversity in a small, inbred population.
 | Habitat restoration           | Restoring degraded ecosystems to increase resilience and absorb climate refugees                                    |
 | Reducing greenhouse emissions | The most important long-term strategy; transitioning to renewable energy; reducing deforestation                    |
 
-:::tip Tip Ready to test your understanding of **Biodiversity and Conservation**? The
-[diagnostic test](/docs/dse/biology/diagnostics/diag-biodiversity-conservation) contains the hardest
+:::tip Tip Ready to test your understanding of **Biodiversity and Conservation**? The contains the hardest
 questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
 Biodiversity and Conservation with other biology topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/biology/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 
 ---

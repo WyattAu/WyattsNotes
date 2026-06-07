@@ -1472,14 +1472,13 @@ chemically digest fats. Lipase chemically digests fats.
 
 ---
 
-:::tip Tip Ready to test your understanding of **Human Physiology**? The
-[diagnostic test](/docs/dse/biology/diagnostics/diag-human-physiology) contains the hardest
+:::tip Tip Ready to test your understanding of **Human Physiology**? The contains the hardest
 questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Human
 Physiology with other biology topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/biology/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 
 ---

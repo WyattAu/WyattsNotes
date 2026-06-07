@@ -1448,14 +1448,13 @@ species, or that Pond B has low diversity due to its size or location.
 
 ---
 
-:::tip Tip Ready to test your understanding of **Evolution and Ecology**? The
-[diagnostic test](/docs/dse/biology/diagnostics/diag-evolution-ecology) contains the hardest
+:::tip Tip Ready to test your understanding of **Evolution and Ecology**? The contains the hardest
 questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Evolution
 and Ecology with other biology topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/biology/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 
 ---

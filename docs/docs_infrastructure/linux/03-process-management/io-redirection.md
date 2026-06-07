@@ -82,8 +82,8 @@ EOF
 
 # Read from here-document with tab stripping
 command <<- EOF
-	tab-indented content
-	(tabs stripped, spaces preserved)
+    tab-indented content
+    (tabs stripped, spaces preserved)
 EOF
 
 # Read from here-string

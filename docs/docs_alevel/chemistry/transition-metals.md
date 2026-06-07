@@ -1081,14 +1081,13 @@ rule: $t_{2g}^4\,e_g^2$ (high-spin, paramagnetic with four unpaired electrons) (
 
 ---
 
-:::tip Diagnostic Test Ready to test your understanding of **Transition Metals**? The
-[diagnostic test](/docs/alevel/chemistry/diagnostics/diag-transition-metals) contains the hardest
+:::tip Diagnostic Test Ready to test your understanding of **Transition Metals**? The contains the hardest
 questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Transition
 Metals with other chemistry topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 
 ## Worked Examples

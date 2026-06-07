@@ -319,5 +319,4 @@ $\mathbf{c} = \mathbf{a} + \tau(\mathbf{x}-\mathbf{a})$ yields the result. $\bla
   $\mathbf{v}$Divide by $\lVert \mathbf{v} \rVert$ first.
 
 
-
 :::

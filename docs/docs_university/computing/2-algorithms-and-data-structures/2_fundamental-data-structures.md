@@ -528,5 +528,4 @@ for sparse graphs ($E \ll V^2$). For example, BFS with an adjacency matrix takes
 adjacency lists takes $O(V + E)$.
 
 
-
 :::

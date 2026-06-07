@@ -96,7 +96,7 @@ Follow the sidebar order. Each topic page contains:
 5. **Multi-step problem set** — questions that require chaining multiple concepts
 6. **Board-specific notes** — where specifications diverge
 
-When you have studied all topics, attempt the [Diagnostic Test](/docs/alevel/maths/diagnostic-guide)
+When you have studied all topics, attempt the
 to identify your Weakest areas.
 
 ## Common Pitfalls

@@ -1013,14 +1013,13 @@ $$s = \sqrt[3]{\frac{K_{sp}}{4}} = \sqrt[3]{\frac◆LB◆9.8 \times 10^{-9}◆RB
 
 ---
 
-:::tip Diagnostic Test Ready to test your understanding of **Chemical Equilibrium**? The
-[diagnostic test](/docs/alevel/chemistry/diagnostics/diag-equilibrium) contains the hardest
+:::tip Diagnostic Test Ready to test your understanding of **Chemical Equilibrium**? The contains the hardest
 questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Chemical
 Equilibrium with other chemistry topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 
 ## Summary

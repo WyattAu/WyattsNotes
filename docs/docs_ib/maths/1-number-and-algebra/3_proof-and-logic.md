@@ -1263,14 +1263,13 @@ Transitivity of divisibility, $n \mid (a-b)$. Therefore $a \equiv b \pmod{n}$.
 ---
 
 :::tip Diagnostic Test Ready to test your understanding of **Proof and Logic**? The
-[diagnostic test](/docs/ib/maths/diagnostics/diag-.../1-number-and-algebra/3_proof-and-logic-logic)
 contains the hardest questions within the IB specification for this topic, each with a full worked
 solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Proof and
 Logic with other IB mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
+See for instructions on self-marking
 and building a personal test matrix.
 
 ## Worked Examples

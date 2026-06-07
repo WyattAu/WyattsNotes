@@ -119,14 +119,14 @@ Calculate the maximum rice output at this point, (b) calculate the marginal rate
 And 10 units of textiles.
 
 (b) The MRT is the absolute value of the slope of the PPC:
-$MRT = \left|\frac{\text{dR}}{	ext{dT}}\right| = |-T| = T$. At $T = 10$: $MRT = 10$. This means 1
+$MRT = \left|\frac{\text{dR}}{    ext{dT}}\right| = |-T| = T$. At $T = 10$: $MRT = 10$. This means 1
 Additional unit of textiles costs 10 units of rice in opportunity cost.
 
 (c) The MRT represents the opportunity cost of producing one more unit of textiles in terms of rice
-Forgone. It is equal to the ratio of marginal costs: $MRT = \frac{\text{MC_T}}{	ext{MC_R}}$. As more
+Forgone. It is equal to the ratio of marginal costs: $MRT = \frac{\text{MC_T}}{    ext{MC_R}}$. As more
 Textiles are produced, the MRT increases (increasing opportunity cost), reflecting the concave shape
 Of the PPC. For allocative efficiency, the MRT should equal the ratio of marginal benefits (prices):
-$MRT = \frac{\text{P_T}}{	ext{P_R}}$. If MRT $\gt$ price ratio, the economy should produce more rice;
+$MRT = \frac{\text{P_T}}{    ext{P_R}}$. If MRT $\gt$ price ratio, the economy should produce more rice;
 If MRT $\lt$ price ratio, it should produce more textiles.
 
 ### IT-2: Economic Systems and Market Failure (with Government Intervention)

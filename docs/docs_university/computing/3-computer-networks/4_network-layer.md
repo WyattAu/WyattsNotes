@@ -356,5 +356,4 @@ addresses and is valid for Point-to-point links with no network or broadcast add
 single host route. The Formula $2^n - 2$ usable hosts applies only for prefixes of `/30` or shorter.
 
 
-
 :::

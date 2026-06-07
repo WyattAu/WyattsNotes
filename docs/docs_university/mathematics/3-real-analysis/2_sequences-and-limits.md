@@ -229,5 +229,4 @@ and $\inf\{a_n\} = -1$ happen to agree in this case. However, for $a_n = 1/n$, $
 $\limsup = 0$.
 
 
-
 :::

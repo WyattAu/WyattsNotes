@@ -738,7 +738,7 @@ def coin_change_dp(amount, coins):
     return dp[amount] if dp[amount] != float('inf') else -1
 ```
 
-**Time complexity:** $O(amount 	imes len(coins))$.
+**Time complexity:** $O(amount     imes len(coins))$.
 
 ## Additional Practice Questions
 

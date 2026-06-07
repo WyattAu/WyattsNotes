@@ -1392,14 +1392,13 @@ nutrient-rich compost that can be used as fertiliser. Regular turning of the hea
 - **Bt crops produce the Bt toxin protein, NOT live bacteria.** The plant cells synthesise the Bt
   protein from the inserted bacterial gene. When an insect eats the plant tissue, the toxin is
   activated in the insect's alkaline gut and kills the insect by forming pores in its gut lining**
-  :::tip Tip Ready to test your understanding of **Microorganisms and Biotechnology\*\*? The
-  [diagnostic test](/docs/dse/biology/diagnostics/diag-microorganisms-biotechnology) contains the
+  :::tip Tip Ready to test your understanding of **Microorganisms and Biotechnology\*\*? The contains the
   hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
 Microorganisms and Biotechnology with other biology topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/biology/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 
 ---

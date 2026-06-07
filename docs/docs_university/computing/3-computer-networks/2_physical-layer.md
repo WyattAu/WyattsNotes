@@ -180,5 +180,4 @@ per Bit). 4B/5B adds 25% overhead. 8B/10B adds 25%. 64B/66B adds only 3% overhea
 Transitions for clock recovery, preventing long runs of identical bits.
 
 
-
 :::

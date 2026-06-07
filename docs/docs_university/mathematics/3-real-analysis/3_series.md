@@ -208,5 +208,4 @@ cases, try the comparison Test, integral test, or other methods. For example, $\
 (harmonic series) and $\sum 1/n^2$ converges, but both give a ratio test limit of 1.
 
 
-
 :::

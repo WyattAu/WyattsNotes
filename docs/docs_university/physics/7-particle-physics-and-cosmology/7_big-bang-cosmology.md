@@ -508,5 +508,4 @@ involved.
 | 13.8 Gyr       | 2.725 K        | Present day                           |
 
 
-
 :::

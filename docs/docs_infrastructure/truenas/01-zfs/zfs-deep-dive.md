@@ -902,11 +902,11 @@ Memory per DDT entry: approximately 320 bytes.
 For a pool with 4 TB of unique data at 128K recordsize:
 
 $$
-DDT\_entries = rac{4 	imes 2^{40}}{128 	imes 1024} = 33554432
+DDT\_entries = rac{4     imes 2^{40}}{128     imes 1024} = 33554432
 $$
 
 $$
-DDT\_RAM = 33554432 	imes 320 	ext{ bytes} pprox 10.7 	ext{ GB}
+DDT\_RAM = 33554432     imes 320     ext{ bytes} pprox 10.7     ext{ GB}
 $$
 
 This is why dedup requires careful capacity planning. A 4 TB pool with 4 TB of unique data needs ~10

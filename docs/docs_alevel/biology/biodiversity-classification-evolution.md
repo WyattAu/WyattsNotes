@@ -1577,7 +1577,6 @@ target: protect 30% of land and ocean by 2030.
 
 :::tip Diagnostic Test Ready to test your understanding of **Biodiversity, Classification and
 Evolution**? The
-[diagnostic test](/docs/alevel/biology/diagnostics/diag-biodiversity-classification-evolution)
 contains the hardest questions within the A-Level specification for this topic, each with a full
 worked solution.
 
@@ -1585,7 +1584,7 @@ worked solution.
 Biodiversity, Classification and Evolution with other biology topics to test synthesis under exam
 conditions.
 
-See [Diagnostic Guide](/docs/alevel/biology/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 :::
 

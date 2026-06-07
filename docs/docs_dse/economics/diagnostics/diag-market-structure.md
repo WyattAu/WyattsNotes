@@ -18,7 +18,7 @@ The shutdown price.
 
 **Solution:**
 
-(a) Profit maximisation: $MC = MR = P$. $MC = \frac{\text{dTC}}{	ext{dQ}} = 10 + Q$. Set
+(a) Profit maximisation: $MC = MR = P$. $MC = \frac{\text{dTC}}{    ext{dQ}} = 10 + Q$. Set
 $10 + Q = 50$So $Q^* = 40$.
 
 (b) Profit
@@ -28,7 +28,7 @@ $= TR - TC = 50(40) - [200 + 10(40) + 0.5(40)^2] = 2000 - [200 + 400 + 800] = 20
 Perfect competition, economic profit $= 0$ (firms enter until price $=$ minimum ATC).
 
 (d) Shutdown price $= $ minimum AVC. $VC = 10Q + 0.5Q^2$So $AVC = 10 + 0.5Q$. Minimum AVC occurs
-Where $\frac{\text{dAVC}}{	ext{dQ}} = 0.5 = 0$Which is at $Q = 0$. At $Q = 0$: $AVC = 10$. So the
+Where $\frac{\text{dAVC}}{    ext{dQ}} = 0.5 = 0$Which is at $Q = 0$. At $Q = 0$: $AVC = 10$. So the
 Shutdown price is $\$10$. If price falls below $\$10$The firm shuts down because it cannot even
 Cover its variable costs.
 

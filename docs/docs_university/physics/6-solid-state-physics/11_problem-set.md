@@ -99,5 +99,4 @@ vector, always Use $k_F = (3\pi^2 n)^{1/3}$ --- the factor of $3\pi^2$ (not $6\p
 the factor Of 2 from spin.
 
 
-
 :::

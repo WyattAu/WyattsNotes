@@ -228,5 +228,4 @@ condition variables. Spurious Wakeups can cause `pthread_cond_wait()` to return 
 condition being signalled. The loop Re-checks the condition after every wakeup.
 
 
-
 :::

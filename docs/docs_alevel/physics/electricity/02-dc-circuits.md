@@ -747,14 +747,13 @@ $S = R \times 60/40 = 10 \times 1.5 = 15\,\Omega$.
 
 ---
 
-:::tip Tip Ready to test your understanding of **DC Circuits**? The
-[diagnostic test](/docs/alevel/physics/diagnostics/diag-dc-circuits) contains the hardest questions
+:::tip Tip Ready to test your understanding of **DC Circuits**? The contains the hardest questions
 within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine DC Circuits
 with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 :::
 

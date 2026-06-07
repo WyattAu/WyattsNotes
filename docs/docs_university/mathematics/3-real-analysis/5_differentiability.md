@@ -258,5 +258,4 @@ rule requires that the Limit of the quotient of derivatives exists; if it does n
 (oscillates), the original limit May still exist.
 
 
-
 :::

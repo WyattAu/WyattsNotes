@@ -340,5 +340,4 @@ Frequencies within a few percent) but is less reliable for band gaps (LDA undere
 30--50\%) and strongly correlated systems (e.g., transition metal oxides).
 
 
-
 :::

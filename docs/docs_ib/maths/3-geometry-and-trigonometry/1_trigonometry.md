@@ -941,14 +941,13 @@ $$
 
 ---
 
-:::tip Diagnostic Test Ready to test your understanding of **Trigonometry**? The
-[diagnostic test](/docs/ib/maths/diagnostics/diag-trigonometry) contains the hardest questions
+:::tip Diagnostic Test Ready to test your understanding of **Trigonometry**? The contains the hardest questions
 within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
 Trigonometry with other IB mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
+See for instructions on self-marking
 and building a personal test matrix.
 
 ## Summary

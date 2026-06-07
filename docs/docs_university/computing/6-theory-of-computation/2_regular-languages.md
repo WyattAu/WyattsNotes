@@ -374,5 +374,4 @@ and $D_2$ accept $w$I.e., $w \in L_1 \cap L_2$. $\blacksquare$
 Regular. Closure properties do not apply when one operand is non-regular.
 
 
-
 :::

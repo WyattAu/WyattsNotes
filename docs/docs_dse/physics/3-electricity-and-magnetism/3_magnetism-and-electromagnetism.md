@@ -552,13 +552,13 @@ For the A-Level treatment of this topic, see
 
 ---
 
-:::tip Tip [diagnostic test](/docs/dse/physics/diagnostics/diag-electricity-magnetism) contains the
+:::tip Tip contains the
 hardest Questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Magnetism
 And Electromagnetism with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/physics/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 Self-marking and building a personal test matrix.
 
 ---

@@ -1475,14 +1475,13 @@ At the venous end:
 
 ---
 
-:::tip Diagnostic Test Ready to test your understanding of **Exchange and Transport**? The
-[diagnostic test](/docs/alevel/biology/diagnostics/diag-exchange-transport) contains the hardest
+:::tip Diagnostic Test Ready to test your understanding of **Exchange and Transport**? The contains the hardest
 questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Exchange
 and Transport with other biology topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/biology/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 :::
 

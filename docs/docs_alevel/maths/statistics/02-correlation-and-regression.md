@@ -589,14 +589,13 @@ A large amount.
 
 ---
 
-:::tip Tip Ready to test your understanding of **Correlation and Regression**? The
-[diagnostic test](/docs/alevel/maths/diagnostics/diag-correlation-and-regression) contains the
+:::tip Tip Ready to test your understanding of **Correlation and Regression**? The contains the
 hardest questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Correlation
 and Regression with other topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+See for instructions on self-marking and
 building a personal test matrix.
 
 ## Common Pitfalls

@@ -268,5 +268,4 @@ The smoothed RTT converges toward the true average (~240 ms) and the RTO stabili
 </details>
 
 
-
 :::

@@ -658,9 +658,9 @@ EOF
 # Here-document with tab stripping (<<-)
 if true; then
     cat <<- EOF
-		Indented content (leading tabs stripped)
-		Second line
-	EOF
+        Indented content (leading tabs stripped)
+        Second line
+    EOF
 fi
 
 # Here-string

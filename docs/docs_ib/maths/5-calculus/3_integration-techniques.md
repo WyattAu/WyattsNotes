@@ -969,14 +969,13 @@ For the A-Level treatment of this topic, see
 
 ---
 
-:::tip Diagnostic Test Ready to test your understanding of **Integration**? The
-[diagnostic test](/docs/ib/maths/diagnostics/diag-integration) contains the hardest questions within
+:::tip Diagnostic Test Ready to test your understanding of **Integration**? The contains the hardest questions within
 the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Integration
 with other IB mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
+See for instructions on self-marking
 and building a personal test matrix.
 
 ## Common Pitfalls

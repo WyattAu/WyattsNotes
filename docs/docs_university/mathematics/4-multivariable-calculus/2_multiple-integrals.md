@@ -296,5 +296,4 @@ elementary Antiderivative with respect to $y$. Swapping the order was essential.
   the bounds. The new bounds may require splitting the integral into multiple pieces.
 
 
-
 :::

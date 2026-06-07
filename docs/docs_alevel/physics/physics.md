@@ -70,7 +70,7 @@ Each topic page follows a consistent structure:
 5. **Multi-step problem set** — exam-style questions requiring chain reasoning
 6. **Board-specific notes** — specification differences highlighted
 
-When finished, attempt the [Diagnostic Test](/docs/alevel/physics/diagnostics/diagnostic-guide) to
+When finished, attempt the to
 identify gaps.
 
 ## Common Pitfalls

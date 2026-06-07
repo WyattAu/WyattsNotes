@@ -719,9 +719,9 @@ C = 67 = 01000011, a = 97 = 01100001, t = 116 = 01110100.
 
 **Image file size (bytes) = width $ imes$ height $ imes$ colour depth / 8**
 
-**Example:** $1920 	imes 1080$ image with 24-bit colour:
+**Example:** $1920     imes 1080$ image with 24-bit colour:
 
-$$1920 	imes 1080 	imes 24 / 8 = 6220800 	ext{ bytes} pprox 5.93 	ext{ MB}$$
+$$1920     imes 1080     imes 24 / 8 = 6220800     ext{ bytes} pprox 5.93     ext{ MB}$$
 
 **Vector images:** Mathematical descriptions of shapes. Scale without quality loss.
 

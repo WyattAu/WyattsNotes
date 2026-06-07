@@ -474,11 +474,11 @@ $128 + 64 + 16 + 4 + 2 = 214$.
 
 **Worked Example.** Convert `3A7` from hex to decimal.
 
-$3 	imes 256 + 10 	imes 16 + 7 = 768 + 160 + 7 = 935$.
+$3     imes 256 + 10     imes 16 + 7 = 768 + 160 + 7 = 935$.
 
 **Worked Example.** Convert `FF` from hex to binary and decimal.
 
-Binary: $11111111$. Decimal: $15 	imes 16 + 15 = 255$.
+Binary: $11111111$. Decimal: $15     imes 16 + 15 = 255$.
 
 ### Binary Arithmetic
 
@@ -582,7 +582,7 @@ It can actually reduce their lifespan.
 
 **Worked Example.** Convert $11010110_2$ to hexadecimal.
 
-Group into 4s: $1101\ 0110 = 	ext{D6}_{16}$.
+Group into 4s: $1101\ 0110 =     ext{D6}_{16}$.
 
 **Worked Example.** Convert $ ext{A3F}\_{16}$ to binary.
 
@@ -590,7 +590,7 @@ A = 1010, 3 = 0011, F = 1111. Result: $101000111111_2$.
 
 **Worked Example.** Convert $ ext{2B}\_{16}$ to decimal.
 
-$2 	imes 16 + 11 = 43$.
+$2     imes 16 + 11 = 43$.
 
 ## Logic Circuits in Practice
 

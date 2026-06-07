@@ -217,5 +217,4 @@ associates with Which name. In this document, $\mathbf{B}$ is the magnetic field
 the Auxiliary H field.
 
 
-
 :::

@@ -812,14 +812,13 @@ For the A-Level treatment of this topic, see
 
 ---
 
-:::tip Diagnostic Test Ready to test your understanding of **Functions**? The
-[diagnostic test](/docs/dse/maths/diagnostics/diag-functions) contains the hardest questions within
+:::tip Diagnostic Test Ready to test your understanding of **Functions**? The contains the hardest questions within
 the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Functions
 with other DSE mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/maths/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 
 ---

@@ -797,14 +797,13 @@ Quartiles, which are less affected by that extreme value.
 
 ---
 
-:::tip Diagnostic Test Ready to test your understanding of **Data Representation**? The
-[diagnostic test](/docs/alevel/maths/diagnostics/diag-data-representation) contains the hardest
+:::tip Diagnostic Test Ready to test your understanding of **Data Representation**? The contains the hardest
 questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Data
 Representation with other topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+See for instructions on self-marking and
 building a personal test matrix.
 :::
 

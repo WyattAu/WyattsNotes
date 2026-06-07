@@ -52,30 +52,17 @@ Each topic page contains:
 - **Key concepts and definitions** aligned with the HKEAA syllabus
 - **Worked examples** with full calculations and step-by-step solutions
 - **Data-response practice** problems in `<details>` format for self-testing
-- **Diagnostic tests** (linked below) for identifying weak areas
 - **Real-world Hong Kong examples** connecting theory to the local economy
 
-## Diagnostic Tests
 
-Before starting revision, take the diagnostic tests to identify your strengths and weaknesses:
-
-- [Diagnostic Guide](./diagnostics/diagnostic-guide) -- Coverage map, grading rubric, and timing
   recommendations
-- [Basic Economic Concepts](./diagnostics/diag-basic-economic-concepts) -- Scarcity, opportunity
   cost, PPC, economic systems
-- [Demand, Supply, and Markets](./diagnostics/diag-demand-supply-markets) -- PED, PES, equilibrium,
   surplus, price controls
-- [Market Structure](./diagnostics/diag-market-structure) -- Perfect competition, monopoly,
   oligopoly, monopolistic competition
-- [Market Failure](./diagnostics/diag-market-failure) -- Externalities, public goods, information
   asymmetry
-- [National Income](./diagnostics/diag-national-income) -- GDP/GNP, real vs nominal, inflation,
   unemployment
-- [Money and Banking](./diagnostics/diag-money-banking) -- Money creation, interest rates, banking
   system
-- [Fiscal and Monetary Policy](./diagnostics/diag-fiscal-monetary-policy) -- Multipliers, AD-AS,
   policy mix
-- [International Trade](./diagnostics/diag-international-trade) -- Comparative advantage, tariffs,
   exchange rates, BOP
 
 ## DSE Exam Tips

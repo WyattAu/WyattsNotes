@@ -625,14 +625,13 @@ Equilibrium value over several radon half-lives (approximately 20-40 days).
 
 
 :::
-:::tip Diagnostic Test Ready to test your understanding of **Radioactivity**? The
-[diagnostic test](/docs/alevel/physics/diagnostics/diag-radioactivity) contains the hardest
+:::tip Diagnostic Test Ready to test your understanding of **Radioactivity**? The contains the hardest
 questions within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine
 Radioactivity with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 :::
 :::

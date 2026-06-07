@@ -113,7 +113,7 @@ deficit by borrowing from the central bank, what is this called and what is the 
 
 **Solution:**
 
-(a) Money supply $= \frac{\text{Reserves}}{	ext{rrr}} = \frac{200}{0.125} = \$1600$B.
+(a) Money supply $= \frac{\text{Reserves}}{    ext{rrr}} = \frac{200}{0.125} = \$1600$B.
 
 (b) $\$10$B open market purchase increases reserves by $\$10$B. Maximum change
 $= \frac{10}{0.125} = \$80$B. New money supply $= 1600 + 80 = \$1680$B.
@@ -142,7 +142,7 @@ benefits and who loses from this loan contract?
 **Solution:**
 
 (a) GDP deflator $= \frac{2000}{1600} \times 100 = 125$. Inflation $= \frac{125 - 100}{100} = 25\%$.
-Velocity $= \frac{\text{PY}}{	ext{M}} = \frac{2000}{800} = 2.5$.
+Velocity $= \frac{\text{PY}}{    ext{M}} = \frac{2000}{800} = 2.5$.
 
 (b) $\hat{M} = \hat{P} + \hat{Y}$ (assuming constant velocity). $\hat{M} = 2\% + 4\% = 6\%$. The
 money supply should grow at 6%.

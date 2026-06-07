@@ -880,16 +880,16 @@ Add a Makefile or script for convenience:
 .PHONY: generate clean test
 
 generate:
-	dart run build_runner build --delete-conflicting-outputs
+    dart run build_runner build --delete-conflicting-outputs
 
 watch:
-	dart run build_runner watch --delete-conflicting-outputs
+    dart run build_runner watch --delete-conflicting-outputs
 
 clean:
-	dart run build_runner clean
+    dart run build_runner clean
 
 test: generate
-	dart test
+    dart test
 ```
 
 ---

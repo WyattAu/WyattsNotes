@@ -136,5 +136,4 @@ $p$-subgroups, But they are all conjugate. A common mistake is to assume $n_p = 
 the Sylow Conditions. Always verify that $n_p \equiv 1 \pmod{p}$ and $n_p$ divides $m$.
 
 
-
 :::

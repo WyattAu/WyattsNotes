@@ -707,14 +707,13 @@ For the A-Level treatment of this topic, see
 
 ---
 
-:::tip Tip Ready to test your understanding of **Optics**? The
-[diagnostic test](/docs/dse/physics/diagnostics/diag-optics) contains the hardest questions within
+:::tip Tip Ready to test your understanding of **Optics**? The contains the hardest questions within
 the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Optics with
 other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/physics/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 
 ---

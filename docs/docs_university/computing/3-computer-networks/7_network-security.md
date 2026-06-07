@@ -211,5 +211,4 @@ The server's connection table. Defences: SYN cookies (encode state in the initia
 Rate limiting, connection throttling.
 
 
-
 :::

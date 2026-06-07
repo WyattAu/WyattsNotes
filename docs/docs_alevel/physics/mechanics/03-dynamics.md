@@ -760,14 +760,13 @@ $v = \sqrt◆LB◆2 \times 3.50 \times 2.0◆RB◆ = \sqrt{14.0} = 3.74$ M s$^{-
 
 ---
 
-:::tip Tip Ready to test your understanding of **Dynamics**? The
-[diagnostic test](/docs/alevel/physics/diagnostics/diag-dynamics) contains the hardest questions
+:::tip Tip Ready to test your understanding of **Dynamics**? The contains the hardest questions
 within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Dynamics
 with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 :::
 

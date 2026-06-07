@@ -1041,11 +1041,10 @@ has a greater effect in small populations.
 | Flatter face                  | The face became flatter as the jaws reduced; the brow ridge became less prominent; the forehead became higher and more vertical                                                                                              |
 | Reduced body hair             | Likely associated with the evolution of sweating for thermoregulation during endurance running in hot African savanna environments                                                                                           |
 
-:::tip Tip Ready to test your understanding of **Evolution**? Review the
-[Evolution and Ecology diagnostic test](/docs/dse/biology/diagnostics/diag-evolution-ecology) which
+:::tip Tip Ready to test your understanding of **Evolution**? Review the which
 covers evolution topics within the DSE specification.
 
-See [Diagnostic Guide](/docs/dse/biology/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 
 ---

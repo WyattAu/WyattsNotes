@@ -883,11 +883,10 @@ the left eye.
 
 ---
 
-:::tip Tip Ready to test your understanding of **Nervous System**? Review the
-[Human Physiology diagnostic test](/docs/dse/biology/diagnostics/diag-human-physiology) which covers
+:::tip Tip Ready to test your understanding of **Nervous System**? Review the which covers
 nervous system topics within the DSE specification.
 
-See [Diagnostic Guide](/docs/dse/biology/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 
 :::

@@ -826,14 +826,13 @@ Centre of mass is approximately $4.21\,\mathrm{cm}$ from the flat face.
 
 ---
 
-:::tip Tip Ready to test your understanding of **Moments**? The
-[diagnostic test](/docs/alevel/maths/diagnostics/diag-moments) contains the hardest questions within
+:::tip Tip Ready to test your understanding of **Moments**? The contains the hardest questions within
 the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Moments
 with other topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+See for instructions on self-marking and
 building a personal test matrix.
 :::
 

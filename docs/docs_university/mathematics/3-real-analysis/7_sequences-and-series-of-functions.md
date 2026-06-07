@@ -240,5 +240,4 @@ Weierstrass M-Test applies only to series Of functions, not sequences; for seque
 verify the uniform Cauchy criterion directly.
 
 
-
 :::

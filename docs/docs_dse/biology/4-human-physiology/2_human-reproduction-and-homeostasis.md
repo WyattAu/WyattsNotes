@@ -1550,13 +1550,13 @@ PGD allows parents who are carriers of genetic disorders to have children withou
 condition, without the ethical dilemma of terminating an affected pregnancy.
 
 :::tip Diagnostic Test Ready to test your understanding of **Human Reproduction and Homeostasis**?
-The [diagnostic test](/docs/dse/biology/diagnostics/diag-human-reproduction-homeostasis) contains
+The contains
 the hardest questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Human
 Reproduction and Homeostasis with other biology topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/biology/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 
 ---

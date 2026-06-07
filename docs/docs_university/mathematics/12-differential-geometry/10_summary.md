@@ -27,5 +27,4 @@ different connections, different geodesics, and different curvatures. The topolo
 total curvature (Gauss-Bonnet) but not the local curvature at individual points.
 
 
-
 :::

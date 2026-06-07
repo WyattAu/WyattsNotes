@@ -780,10 +780,9 @@ antigens, attacking the body's own tissues.
 
 :::
 :::tip Tip Ready to test your understanding of **Immunology**? Review the
-[Cell Biology and Biochemistry diagnostic test](/docs/dse/biology/diagnostics/diag-cell-biology-biochemistry)
 which covers immune system topics within the DSE specification.
 
-See [Diagnostic Guide](/docs/dse/biology/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 
 ---

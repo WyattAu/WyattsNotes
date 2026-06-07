@@ -819,14 +819,13 @@ The adjacent sides are not perpendicular, so $ABCD$ is **not** a rectangle.
 
 ---
 
-:::tip Tip Ready to test your understanding of **Vectors**? The
-[diagnostic test](/docs/alevel/maths/diagnostics/diag-vectors) contains the hardest questions within
+:::tip Tip Ready to test your understanding of **Vectors**? The contains the hardest questions within
 the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Vectors
 with other pure mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+See for instructions on self-marking and
 building a personal test matrix.
 :::
 

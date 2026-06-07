@@ -1627,14 +1627,13 @@ Translation is the process of synthesising a polypeptide chain from the mRNA cod
 sequence of codons on the mRNA determines the sequence of amino acids in the polypeptide.
 
 :::
-:::tip Diagnostic Test Ready to test your understanding of **Cell Biology and Biochemistry**? The
-[diagnostic test](/docs/dse/biology/diagnostics/diag-cell-biology-biochemistry) contains the hardest
+:::tip Diagnostic Test Ready to test your understanding of **Cell Biology and Biochemistry**? The contains the hardest
 questions within the DSE specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Cell
 Biology and Biochemistry with other biology topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/dse/biology/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 
 ---

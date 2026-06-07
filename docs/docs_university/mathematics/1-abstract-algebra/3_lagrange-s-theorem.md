@@ -113,5 +113,4 @@ subgroup when $H$ or $K$ is normal. In that case, $|HK| = |H||K|/|H \cap K|$ als
 Lagrange.
 
 
-
 :::

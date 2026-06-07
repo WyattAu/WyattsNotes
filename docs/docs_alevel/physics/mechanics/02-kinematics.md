@@ -717,14 +717,13 @@ $\sqrt{17.3^2 + 31.4^2} = 35.8$ m s$^{-1}$.
 ---
 
 :::
-:::tip Tip Ready to test your understanding of **Kinematics**? The
-[diagnostic test](/docs/alevel/physics/diagnostics/diag-kinematics) contains the hardest questions
+:::tip Tip Ready to test your understanding of **Kinematics**? The contains the hardest questions
 within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Kinematics
 with other physics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 
 :::

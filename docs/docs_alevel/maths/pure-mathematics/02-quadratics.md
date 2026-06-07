@@ -1065,14 +1065,13 @@ Solution: $\theta \in \left\{\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆, \frac◆
 
 ---
 
-:::tip Diagnostic Test Ready to test your understanding of **Quadratics**? The
-[diagnostic test](/docs/alevel/maths/diagnostics/diag-quadratics) contains the hardest questions
+:::tip Diagnostic Test Ready to test your understanding of **Quadratics**? The contains the hardest questions
 within the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Quadratics
 with other pure mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+See for instructions on self-marking and
 building a personal test matrix.
 
 ## Common Pitfalls

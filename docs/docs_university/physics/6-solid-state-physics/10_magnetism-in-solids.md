@@ -192,5 +192,4 @@ interaction is a Consequence of the Coulomb repulsion combined with the antisymm
 wave function (Pauli principle), and is $10$--$100$ meV.
 
 
-
 :::

@@ -1458,14 +1458,13 @@ direct left-right asymmetry during development).
 ---
 
 :::
-:::tip Diagnostic Test Ready to test your understanding of **Cells**? The
-[diagnostic test](/docs/alevel/biology/diagnostics/diag-cells) contains the hardest questions within
+:::tip Diagnostic Test Ready to test your understanding of **Cells**? The contains the hardest questions within
 the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Cells with
 other biology topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/biology/diagnostics/diagnostic-guide) for instructions on
+See for instructions on
 self-marking and building a personal test matrix.
 :::
 

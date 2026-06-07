@@ -1326,14 +1326,13 @@ Approximation is quite close despite $p \gt 0.1$ because $\lambda = 10$ is moder
 
 ---
 
-:::tip Diagnostic Test Ready to test your understanding of **Probability Distributions**? The
-[diagnostic test](/docs/ib/maths/diagnostics/diag-probability-distributions) contains the hardest
+:::tip Diagnostic Test Ready to test your understanding of **Probability Distributions**? The contains the hardest
 questions within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Probability
 Distributions with other IB mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
+See for instructions on self-marking
 and building a personal test matrix.
 :::
 

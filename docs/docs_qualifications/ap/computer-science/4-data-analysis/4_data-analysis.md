@@ -560,7 +560,7 @@ public static int findMax2D(int[][] grid) {
 }
 ```
 
-**Time complexity:** $O(r 	imes c)$ where $r$ is rows and $c$ is columns.
+**Time complexity:** $O(r     imes c)$ where $r$ is rows and $c$ is columns.
 
 ### Jagged Arrays (AP CS A)
 

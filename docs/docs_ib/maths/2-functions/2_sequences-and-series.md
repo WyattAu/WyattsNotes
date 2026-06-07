@@ -868,14 +868,13 @@ For the A-Level treatment of this topic, see
 
 ---
 
-:::tip Tip Ready to test your understanding of **Sequences and Series**? The
-[diagnostic test](/docs/ib/maths/diagnostics/diag-sequences-series) contains the hardest questions
+:::tip Tip Ready to test your understanding of **Sequences and Series**? The contains the hardest questions
 within the IB specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Sequences
 and Series with other IB mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
+See for instructions on self-marking
 and building a personal test matrix.
 
 ## Common Pitfalls

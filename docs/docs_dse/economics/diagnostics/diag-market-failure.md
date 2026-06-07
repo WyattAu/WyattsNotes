@@ -59,7 +59,7 @@ Since all residents consume the same quantity simultaneously.
 
 $MSB = \sum_{i=1}^{100} P_i = 100(10 - 0.1Q) = 1000 - 10Q$.
 
-(c) Social optimum: MSB $=$ MSC. $MSC = \frac{\text{dTC}}{	ext{dQ}} = 5$.
+(c) Social optimum: MSB $=$ MSC. $MSC = \frac{\text{dTC}}{    ext{dQ}} = 5$.
 
 $1000 - 10Q = 5$$10Q = 995$$Q^* = 99.5$.
 

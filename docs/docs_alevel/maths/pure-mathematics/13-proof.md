@@ -531,14 +531,13 @@ $$
 
 ---
 
-:::tip Diagnostic Test Ready to test your understanding of **Proof**? The
-[diagnostic test](/docs/alevel/maths/diagnostics/diag-proof) contains the hardest questions within
+:::tip Diagnostic Test Ready to test your understanding of **Proof**? The contains the hardest questions within
 the A-Level specification for this topic, each with a full worked solution.
 
 **Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Proof with
 other pure mathematics topics to test synthesis under exam conditions.
 
-See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
+See for instructions on self-marking and
 building a personal test matrix.
 
 ## Common Pitfalls
