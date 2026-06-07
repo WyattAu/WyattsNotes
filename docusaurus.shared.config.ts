@@ -204,6 +204,11 @@ export const sharedHeadTags: Config['headTags'] = [
     tagName: 'link',
     attributes: { rel: 'stylesheet', href: '/css/print.css', media: 'print' },
   },
+  // KaTeX CSS — required for rehype-katex math rendering
+  {
+    tagName: 'link',
+    attributes: { rel: 'stylesheet', href: '/css/katex.min.css' },
+  },
   // Async font preloading (render-blocking fonts loaded asynchronously)
   {
     tagName: 'link',
