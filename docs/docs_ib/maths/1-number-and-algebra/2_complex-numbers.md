@@ -1,10 +1,14 @@
----
-slug: 1-number-and-algebra/2_complex-numbers
-date: 2024-01-01T00:00:00Z
-categories:
-  - ib
-  - ib-maths
----
+title: Complex Numbers tags:
+
+- maths slug: 1-number-and-algebra/2_complex-numbers description: 'Rigorous IB mathematics notes
+  covering Complex Numbers. Includes definitions, derivations, worked examples, and exam-style
+  problems.'
+
+date: 2024-01-01T00:00:00Z categories:
+
+- ib
+- ib-maths
+
 ## Cartesian Form
 
 Cartesian form complex numbers ($z$) are separated to real ($a$) and imaginary parts ($bi$):

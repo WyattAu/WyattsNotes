@@ -1,10 +1,14 @@
----
-slug: electrochemistry
-date: 2024-01-01T00:00:00Z
-categories:
-  - ib
-  - ib-chemistry
----
+title: Electrochemistry tags:
+
+- Chemistry
+- IB slug: electrochemistry description: 'Rigorous IB chemistry notes covering Electrochemistry.
+  Includes definitions, derivations, worked examples, and exam-style problems.'
+
+date: 2024-01-01T00:00:00Z categories:
+
+- ib
+- ib-chemistry
+
 ## 1. Redox Review (SL Topic 9)
 
 ### Oxidation and Reduction

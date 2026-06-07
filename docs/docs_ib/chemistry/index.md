@@ -1,13 +1,19 @@
----
-title: IB Chemistry
-description: 'Complete IB Chemistry revision notes covering stoichiometry,
+title: IB Chemistry description: 'Complete IB Chemistry revision notes covering stoichiometry,
 atomic theory, bonding, thermodynamics, kinetics, equilibrium, acids and bases, redox, and organic'
 slug: chemistry
-date: 2024-01-01T00:00:00Z
-categories:
-  - ib
-  - ib-chemistry
----
+
+date: 2024-01-01T00:00:00Z tags:
+
+- ib
+- chemistry categories:
+- ib
+- ib-chemistry
+
+# IB Chemistry
+
+Complete revision notes for IB Chemistry, covering the full syllabus with worked examples, common
+pitfalls, and exam-style problems.
+
 ## Core Topics
 
 ### Atomic Structure and Periodicity

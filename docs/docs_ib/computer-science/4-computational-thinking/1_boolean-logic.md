@@ -1,10 +1,14 @@
----
-slug: boolean-logic
-date: 2024-01-01T00:00:00Z
-categories:
-  - ib
-  - ib-computer-science
----
+title: Boolean Logic tags:
+
+- IB
+- CS slug: boolean-logic description: 'Rigorous IB computer science notes covering Boolean Logic.
+  Includes definitions, derivations, worked examples, and exam-style problems.'
+
+date: 2024-01-01T00:00:00Z categories:
+
+- ib
+- ib-computer-science
+
 ## Boolean Algebra Fundamentals
 
 Boolean algebra is a branch of mathematics that operates on binary values: 1 (true) and 0 (false).

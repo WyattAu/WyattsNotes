@@ -1,19 +1,14 @@
----
-title: 'Quantum and Nuclear Physics'
-description: 'IB Physics — photoelectric effect, photon model,
+title: 'Quantum and Nuclear Physics' description: 'IB Physics — photoelectric effect, photon model,
 de Broglie wavelength, energy levels, spectra, radioactive decay, nuclear reactions, and binding
-energy.'
-slug: quantum-and-nuclear-physics-advanced
-date: 2024-01-01T00:00:00Z
-tags:
-  - ib
-  - physics
-  - ib
-  - ib-physics
-categories:
-  - ib
-  - ib-physics
----
+energy.' slug: quantum-and-nuclear-physics-advanced
+
+date: 2024-01-01T00:00:00Z tags:
+
+- ib
+- physics categories:
+- ib
+- ib-physics
+
 ## The Photoelectric Effect
 
 ### Observations

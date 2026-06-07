@@ -1,19 +1,14 @@
----
-title: Energy and Conservation
-description: 'Rigorous IB physics notes covering Energy and
+title: Energy and Conservation description: 'Rigorous IB physics notes covering Energy and
 Conservation. Includes definitions, derivations, worked examples, and exam-style problems. and
-power.'
-slug: energy
-date: 2024-01-01T00:00:00Z
-tags:
-  - ib
-  - physics
-  - ib
-  - ib-physics
-categories:
-  - ib
-  - ib-physics
----
+power.' slug: energy
+
+date: 2024-01-01T00:00:00Z tags:
+
+- ib
+- physics categories:
+- ib
+- ib-physics
+
 ## Forms of Energy
 
 Energy is a scalar quantity measured in joules ($\mathrm{J}$). It exists in many forms and can be

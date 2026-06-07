@@ -1,10 +1,15 @@
----
-slug: matrices-and-transformations
-date: 2024-01-01T00:00:00Z
-categories:
-  - ib
-  - ib-maths
----
+title: Matrices and Transformations tags:
+
+- IB
+- Maths slug: matrices-and-transformations description: 'Rigorous IB mathematics notes covering
+  Matrices and Transformations. Includes definitions, derivations, worked examples, and exam-style
+  problems. Baccalaureate.'
+
+date: 2024-01-01T00:00:00Z categories:
+
+- ib
+- ib-maths
+
 ## Matrices and Transformations
 
 A matrix is a rectangular array of numbers arranged in rows and columns. Matrices provide a powerful

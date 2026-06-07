@@ -1,13 +1,19 @@
----
-title: IB Physics
-description: 'Complete IB Physics revision notes covering mechanics, fields,
-waves, thermodynamics, quantum physics, and nuclear physics. Worked examples, exam-style'
-slug: physics
-date: 2024-01-01T00:00:00Z
-categories:
-  - ib
-  - ib-physics
----
+title: IB Physics description: 'Complete IB Physics revision notes covering mechanics, fields,
+waves, thermodynamics, quantum physics, and nuclear physics. Worked examples, exam-style' slug:
+physics
+
+date: 2024-01-01T00:00:00Z tags:
+
+- ib
+- physics categories:
+- ib
+- ib-physics
+
+# IB Physics
+
+Complete revision notes for IB Physics, covering the full syllabus with worked examples, common
+pitfalls, and exam-style problems.
+
 ## Core Topics
 
 ### Mechanics
