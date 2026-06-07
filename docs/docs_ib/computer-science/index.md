@@ -1,13 +1,11 @@
-title: IB Computer Science description: 'Complete IB Computer Science revision notes covering
-computational thinking, system design, data structures, algorithms, networking, databases, and
-programming' slug: computer-science
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- computer-science categories:
-- ib
-- ib-computer-science
+---
+title: IB Computer Science
+description: 'Complete IB Computer Science revision notes covering computational thinking, system design, data structures, algorithms, networking, databases, and programming'
+slug: computer-science
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+---
 
 # IB Computer Science
 

@@ -1,13 +1,11 @@
-title: 'Sequences and Series' description: 'IB Mathematics — arithmetic and geometric sequences,
-sigma notation, Maclaurin and Taylor series, convergence, and the binomial theorem.' slug:
-sequences-and-series
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- maths categories:
-- ib
-- ib-maths
+---
+title: 'Sequences and Series'
+description: 'IB Mathematics — arithmetic and geometric sequences, sigma notation, Maclaurin and Taylor series, convergence, and the binomial theorem.'
+slug: sequences-and-series
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+---
 
 ## Sequences
 

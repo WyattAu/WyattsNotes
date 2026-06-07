@@ -1,13 +1,11 @@
-title: Redox Reactions (Advanced) description: 'Rigorous IB chemistry notes covering Redox Reactions
-(Advanced). Includes definitions, derivations, worked examples, and exam-style problems.' slug:
-9-redox/2_redox-advanced
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- chemistry categories:
-- ib
-- ib-chemistry
+---
+title: Redox Reactions (Advanced)
+description: 'Rigorous IB chemistry notes covering Redox Reactions (Advanced). Includes definitions, derivations, worked examples, and exam-style problems.'
+slug: 9-redox/2_redox-advanced
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+---
 
 ## 1. Electrochemical Cells
 

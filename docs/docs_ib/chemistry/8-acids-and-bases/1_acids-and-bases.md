@@ -1,14 +1,13 @@
-title: Acids and Bases description: 'Rigorous IB chemistry notes covering Acids and Bases. Includes
-definitions, derivations, worked examples, and exam-style problems. buffers, titrations, and
-indicators.' slug: acids-and-bases tags:
-
-- IB
-- Chemistry
-
-date: 2024-01-01T00:00:00Z categories:
-
-- ib
-- ib-chemistry
+---
+title: Acids and Bases
+description: 'Rigorous IB chemistry notes covering Acids and Bases. Includes definitions, derivations, worked examples, and exam-style problems. buffers, titrations, and indicators.'
+slug: acids-and-bases
+date: 2024-01-01T00:00:00Z
+tags:
+  - IB
+categories:
+  - ib
+---
 
 ## Bronsted-Lowry Theory
 

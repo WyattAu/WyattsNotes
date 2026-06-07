@@ -1,12 +1,14 @@
-title: JETS tags:
-
-- CS slug: jets draft: false description: 'Rigorous IB computer science notes covering JETS.
-  Includes definitions, derivations, worked examples, and exam-style problems.'
-
-date: 2024-01-01T00:00:00Z categories:
-
-- ib
-- ib-computer-science
+---
+title: JETS
+description: 'Rigorous IB computer science notes covering JETS. Includes definitions, derivations, worked examples, and exam-style problems.'
+slug: jets
+date: 2024-01-01T00:00:00Z
+draft: false
+tags:
+  - CS
+categories:
+  - ib
+---
 
 # Java Examination Tool Sebset (JETS)
 

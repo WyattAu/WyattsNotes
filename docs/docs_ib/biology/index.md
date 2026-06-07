@@ -1,12 +1,11 @@
-title: IB Biology description: 'Complete IB Biology revision notes covering cell biology, molecular
-biology, genetics, ecology, human physiology, and plant biology. Worked examples,' slug: biology
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- biology categories:
-- ib
-- ib-biology
+---
+title: IB Biology
+description: 'Complete IB Biology revision notes covering cell biology, molecular biology, genetics, ecology, human physiology, and plant biology. Worked examples,'
+slug: biology
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+---
 
 # IB Biology
 

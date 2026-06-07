@@ -1,13 +1,11 @@
-title: Sequences and Series description: 'Rigorous IB mathematics notes covering Sequences and
-Series. Includes definitions, derivations, worked examples, and exam-style problems. notation,
-binomial theorem.' slug: sequences-series
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- maths categories:
-- ib
-- ib-maths
+---
+title: Sequences and Series
+description: 'Rigorous IB mathematics notes covering Sequences and Series. Includes definitions, derivations, worked examples, and exam-style problems. notation, binomial theorem.'
+slug: sequences-series
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+---
 
 ## Sequences and Series
 

@@ -1,12 +1,10 @@
-title: Wave Phenomena description: IB Physics — standing waves, resonance, harmonics, Doppler
-effect, diffraction, interference, and thin film interference. slug: wave-phenomena
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- physics categories:
-- ib
-- ib-physics
+---
+title: Wave Phenomena
+slug: wave-phenomena
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+---
 
 ## Standing Waves
 

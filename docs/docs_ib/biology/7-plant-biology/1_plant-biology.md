@@ -1,12 +1,11 @@
-title: Plant Biology description: 'Rigorous IB biology notes covering Plant Biology. Includes
-definitions, derivations, worked examples, and exam-style problems.' slug: plant-biology
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- biology categories:
-- ib
-- ib-biology
+---
+title: Plant Biology
+description: 'Rigorous IB biology notes covering Plant Biology. Includes definitions, derivations, worked examples, and exam-style problems.'
+slug: plant-biology
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+---
 
 ## 1. Plant Structure and Tissues
 

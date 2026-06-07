@@ -1,13 +1,11 @@
-title: Chemical Kinetics description: 'Rigorous IB chemistry notes covering Chemical Kinetics.
-Includes definitions, derivations, worked examples, and exam-style problems. collision theory.'
+---
+title: Chemical Kinetics
+description: 'Rigorous IB chemistry notes covering Chemical Kinetics. Includes definitions, derivations, worked examples, and exam-style problems. collision theory.'
 slug: chemical-kinetics
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- chemistry categories:
-- ib
-- ib-chemistry
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+---
 
 ## Rate of Reaction
 

@@ -1,13 +1,11 @@
-title: Forces and Momentums slug: forces-and-momentums description: 'Rigorous IB physics notes
-covering Forces and Momentums. Includes definitions, derivations, worked examples, and exam-style
-problems.'
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- physics categories:
-- ib
-- ib-physics
+---
+title: Forces and Momentums
+description: 'Rigorous IB physics notes covering Forces and Momentums. Includes definitions, derivations, worked examples, and exam-style problems.'
+slug: forces-and-momentums
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+---
 
 ## motion
 

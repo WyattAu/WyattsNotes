@@ -1,12 +1,13 @@
-title: Induction tags:
-
-- physics slug: Induction description: 'Rigorous IB physics notes covering Induction. Includes
-  definitions, derivations, worked examples, and exam-style problems.'
-
-date: 2024-01-01T00:00:00Z categories:
-
-- ib
-- ib-physics
+---
+title: Induction
+description: 'Rigorous IB physics notes covering Induction. Includes definitions, derivations, worked examples, and exam-style problems.'
+slug: Induction
+date: 2024-01-01T00:00:00Z
+tags:
+  - physics
+categories:
+  - ib
+---
 
 ## Magnetic Flux
 

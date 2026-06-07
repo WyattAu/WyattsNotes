@@ -1,14 +1,13 @@
-title: Atomic Structure and Periodicity tags:
-
-- Chemistry
-- IB slug: atomic-structure-and-periodicity description: 'Rigorous IB chemistry notes covering
-  Atomic Structure and Periodicity. Includes definitions, derivations, worked examples, and
-  exam-style problems. Baccalaureate.'
-
-date: 2024-01-01T00:00:00Z categories:
-
-- ib
-- ib-chemistry
+---
+title: Atomic Structure and Periodicity
+description: 'Rigorous IB chemistry notes covering Atomic Structure and Periodicity. Includes definitions, derivations, worked examples, and exam-style problems. Baccalaureate.'
+slug: atomic-structure-and-periodicity
+date: 2024-01-01T00:00:00Z
+tags:
+  - Chemistry
+categories:
+  - ib
+---
 
 ## 1. Atomic Structure
 

@@ -1,13 +1,11 @@
-title: Wave Properties description: 'Rigorous IB physics notes covering Wave Properties. Includes
-definitions, derivations, worked examples, and exam-style problems. the Doppler effect.' slug:
-wave-properties
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- physics categories:
-- ib
-- ib-physics
+---
+title: Wave Properties
+description: 'Rigorous IB physics notes covering Wave Properties. Includes definitions, derivations, worked examples, and exam-style problems. the Doppler effect.'
+slug: wave-properties
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+---
 
 ## Wave Fundamentals
 

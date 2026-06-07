@@ -1,13 +1,11 @@
-title: Probability description: 'Rigorous IB mathematics notes covering Probability. Includes
-definitions, derivations, worked examples, and exam-style problems. and distributions.' slug:
-probability
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- maths categories:
-- ib
-- ib-maths
+---
+title: Probability
+description: 'Rigorous IB mathematics notes covering Probability. Includes definitions, derivations, worked examples, and exam-style problems. and distributions.'
+slug: probability
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+---
 
 ## Probability Fundamentals
 

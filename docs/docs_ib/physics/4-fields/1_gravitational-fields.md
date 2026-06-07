@@ -1,13 +1,11 @@
-title: Gravitational Fields slug: gravitational-fields description: 'Rigorous IB physics notes
-covering Gravitational Fields. Includes definitions, derivations, worked examples, and exam-style
-problems.'
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- physics categories:
-- ib
-- ib-physics
+---
+title: Gravitational Fields
+description: 'Rigorous IB physics notes covering Gravitational Fields. Includes definitions, derivations, worked examples, and exam-style problems.'
+slug: gravitational-fields
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+---
 
 ## Point Mass
 

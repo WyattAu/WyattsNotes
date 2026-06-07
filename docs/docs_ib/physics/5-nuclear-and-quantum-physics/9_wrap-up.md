@@ -1,12 +1,13 @@
-title: Wrap Up tags:
-
-- physics slug: wrap description: 'Comprehensive IB physics notes on Wrap Up key concepts and
-  principles. Covers key definitions, worked examples, and practice problems for revision.'
-
-date: 2024-01-01T00:00:00Z categories:
-
-- ib
-- ib-physics
+---
+title: Wrap Up
+description: 'Comprehensive IB physics notes on Wrap Up key concepts and principles. Covers key definitions, worked examples, and practice problems for revision.'
+slug: wrap
+date: 2024-01-01T00:00:00Z
+tags:
+  - physics
+categories:
+  - ib
+---
 
 <details>
 <summary><strong>E.1 Structure of the Atom, E.2 Quantum Physics & E.3 Radioactive Decay</strong></summary>

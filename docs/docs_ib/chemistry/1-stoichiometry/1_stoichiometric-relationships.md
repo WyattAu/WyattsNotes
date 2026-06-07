@@ -1,12 +1,11 @@
-title: Stoichiometry description: 'Rigorous IB chemistry notes covering Stoichiometry. Includes
-definitions, derivations, worked examples, and exam-style problems. chemistry.' slug: stoichiometry
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- chemistry categories:
-- ib
-- ib-chemistry
+---
+title: Stoichiometry
+description: 'Rigorous IB chemistry notes covering Stoichiometry. Includes definitions, derivations, worked examples, and exam-style problems. chemistry.'
+slug: stoichiometry
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+---
 
 ## The Mole Concept
 

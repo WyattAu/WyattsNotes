@@ -1,12 +1,13 @@
-title: Wrap Up tags:
-
-- physics slug: wrap description: 'Detailed IB physics study notes for Wrap Up. Provides rigorous
-  definitions, .../1-number-and-algebra/3_proof-and-logics, and exam-focused practice questions.'
-
-date: 2024-01-01T00:00:00Z categories:
-
-- ib
-- ib-physics
+---
+title: Wrap Up
+description: 'Detailed IB physics study notes for Wrap Up. Provides rigorous definitions, .../1-number-and-algebra/3_proof-and-logics, and exam-focused practice questions.'
+slug: wrap
+date: 2024-01-01T00:00:00Z
+tags:
+  - physics
+categories:
+  - ib
+---
 
 ## C.1 Simple Harmonic Motion, C.2 Wave Model & C.3 Wave Phenomena
 

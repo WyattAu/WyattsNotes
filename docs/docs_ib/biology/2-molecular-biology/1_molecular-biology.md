@@ -1,12 +1,11 @@
-title: Molecular Biology description: 'IB Biology — water, carbohydrates, lipids, proteins, enzymes,
-DNA structure, replication, transcription, and translation.' slug: molecular-biology
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- biology categories:
-- ib
-- ib-biology
+---
+title: Molecular Biology
+description: 'IB Biology — water, carbohydrates, lipids, proteins, enzymes, DNA structure, replication, transcription, and translation.'
+slug: molecular-biology
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+---
 
 ## 1. Water
 

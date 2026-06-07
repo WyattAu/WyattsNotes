@@ -1,13 +1,11 @@
-title: Genetics Advanced description: 'IB Biology -- DNA replication in detail, transcription and
-gene regulation, translation mechanics, operons, epigenetics, genetic engineering techniques, PCR,'
+---
+title: Genetics Advanced
+description: 'IB Biology -- DNA replication in detail, transcription and gene regulation, translation mechanics, operons, epigenetics, genetic engineering techniques, PCR,'
 slug: genetics-advanced
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- biology categories:
-- ib
-- ib-biology
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+---
 
 ## 1. DNA Replication in Detail
 

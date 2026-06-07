@@ -1,13 +1,11 @@
-title: Metabolism and Cell Biology description: 'IB Biology -- enzyme kinetics (Michaelis-Menten,
-inhibition types), cellular respiration (glycolysis, Krebs cycle, electron transport chain),
-photosynthesis' slug: metabolism-cell-biology
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- biology categories:
-- ib
-- ib-biology
+---
+title: Metabolism and Cell Biology
+description: 'IB Biology -- enzyme kinetics (Michaelis-Menten, inhibition types), cellular respiration (glycolysis, Krebs cycle, electron transport chain), photosynthesis'
+slug: metabolism-cell-biology
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+---
 
 ## 1. Enzyme Kinetics
 

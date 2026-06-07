@@ -1,12 +1,11 @@
-title: Immunology description: 'IB Biology — innate immunity, adaptive immunity, antibody structure
-and classes, T-cell and B-cell activation, immunological memory, vaccines, ELISA,' slug: immunology
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- biology categories:
-- ib
-- ib-biology
+---
+title: Immunology
+description: 'IB Biology — innate immunity, adaptive immunity, antibody structure and classes, T-cell and B-cell activation, immunological memory, vaccines, ELISA,'
+slug: immunology
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+---
 
 ## 1. Overview of the Immune System
 

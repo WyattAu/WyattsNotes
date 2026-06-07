@@ -1,12 +1,13 @@
-title: Wrap Up tags:
-
-- physics slug: wrap description: 'Rigorous IB physics notes covering Wrap Up. Includes definitions,
-  derivations, worked examples, and exam-style problems.'
-
-date: 2024-01-01T00:00:00Z categories:
-
-- ib
-- ib-physics
+---
+title: Wrap Up
+description: 'Rigorous IB physics notes covering Wrap Up. Includes definitions, derivations, worked examples, and exam-style problems.'
+slug: wrap
+date: 2024-01-01T00:00:00Z
+tags:
+  - physics
+categories:
+  - ib
+---
 
 <details>
 <summary><strong>B.1 Thermal Energy Transfers, B.2 Greenhouse Effect & B.3 Gas Laws</strong></summary>

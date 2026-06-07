@@ -1,14 +1,13 @@
-title: Proof and Logic tags:
-
-- IB
-- Maths slug: .../1-number-and-algebra/3_proof-and-logic description: 'Rigorous IB mathematics notes
-  covering Proof and Logic. Includes definitions, derivations, worked examples, and exam-style
-  problems.'
-
-date: 2024-01-01T00:00:00Z categories:
-
-- ib
-- ib-maths
+---
+title: Proof and Logic
+description: 'Rigorous IB mathematics notes covering Proof and Logic. Includes definitions, derivations, worked examples, and exam-style problems.'
+slug: .../1-number-and-algebra/3_proof-and-logic
+date: 2024-01-01T00:00:00Z
+tags:
+  - IB
+categories:
+  - ib
+---
 
 # Proof and Logic
 

@@ -1,13 +1,11 @@
-title: Organic Chemistry (Advanced) description: 'IB Chemistry — reaction mechanisms,
-stereochemistry, addition and condensation polymers, and spectroscopic identification.' slug:
-10-organic-chemistry/2_organic-chemistry-advanced
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- chemistry categories:
-- ib
-- ib-chemistry
+---
+title: Organic Chemistry (Advanced)
+description: 'IB Chemistry — reaction mechanisms, stereochemistry, addition and condensation polymers, and spectroscopic identification.'
+slug: 10-organic-chemistry/2_organic-chemistry-advanced
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+---
 
 ## 1. Reaction Mechanisms
 

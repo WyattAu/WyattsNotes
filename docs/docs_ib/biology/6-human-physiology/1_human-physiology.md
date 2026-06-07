@@ -1,12 +1,11 @@
-title: Human Physiology description: 'IB Biology — digestion, cardiovascular system, immune system,
-gas exchange, neurones, synapses, hormones, homeostasis, and reproduction.' slug: human-physiology
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- biology categories:
-- ib
-- ib-biology
+---
+title: Human Physiology
+description: 'IB Biology — digestion, cardiovascular system, immune system, gas exchange, neurones, synapses, hormones, homeostasis, and reproduction.'
+slug: human-physiology
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+---
 
 ## 1. Digestion
 
