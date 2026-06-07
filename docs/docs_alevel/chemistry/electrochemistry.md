@@ -990,7 +990,6 @@ Electrochemistry with other chemistry topics to test synthesis under exam condit
 
 See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on
 self-marking and building a personal test matrix.
-:::
 
 ## Summary
 

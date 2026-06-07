@@ -771,8 +771,6 @@ The `ERR` trap fires on every non-zero exit status when `set -e` is active. In p
 `pipefail`The trap fires for the failing command, not the pipeline as a whole. Avoid relying on
 `ERR` trap in complex pipelines — explicit error checking is more reliable.
 
-:::
-
 ## Signal Handling
 
 ### Trapping Signals

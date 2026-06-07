@@ -2201,8 +2201,6 @@ Your local history. Any collaborator who has based work on those commits will en
 Always prefer `--force-with-lease` unless you are certain you are the only person working on the
 Branch.
 
-:::
-
 ### Detached HEAD State
 
 ```bash

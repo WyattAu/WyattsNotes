@@ -811,8 +811,6 @@ BBR v2 (2023) improves upon BBR v1 by being more fair to other flows sharing the
 You are using BBR, consider BBR v2 if your kernel supports it. BBR v1 can be unfair to loss-based
 Congestion control algorithms (CUBIC) in shared environments.
 
-:::
-
 ## Summary
 
 This topic covers the core concepts of tcp state machine, including underlying theory, practical

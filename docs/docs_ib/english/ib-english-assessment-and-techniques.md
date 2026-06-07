@@ -807,7 +807,6 @@ Before submitting any essay, perform a structural audit:
 [Chronicle of a Death Foretold](chronicle-of-a-death-foretold.md),
 [Chronicle of a Death Foretold -- Close Reading and Analysis](chronicle-of-a-death-foretold-analysis.md),
 And the [comparative analysis](comparitives/chronicle-streetcar.md).
-:::
 
 ## Worked Examples
 

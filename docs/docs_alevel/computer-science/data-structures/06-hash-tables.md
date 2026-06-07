@@ -864,8 +864,6 @@ Available for insertion.
 
 :::
 
-:::
-
 ## Common Pitfalls
 
 1. Confusing hash tables with hash maps — the distinction relates to handling of key-value pairs vs

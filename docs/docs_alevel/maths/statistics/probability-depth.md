@@ -276,7 +276,6 @@ $$= (1 - P(A))(1 - P(B)) = P(A') \cdot P(B') \quad \blacksquare$$
 :::warning Warning "Independent" and "mutually exclusive" are different concepts. In fact, if $A$
 and $B$ are both Non-trivial (positive probability) and mutually exclusive, they **cannot** be
 independent: $P(A \cap B) = 0 \neq P(A)P(B)$.
-:::
 
 <hr />
 

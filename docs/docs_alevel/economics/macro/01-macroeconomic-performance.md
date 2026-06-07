@@ -826,8 +826,6 @@ The Bank of England feared that if inflation remained high for an extended perio
   inflation-unemployment trade-off -- attempting to do so only produces accelerating inflation in
   the long run.
 
-:::
-
 ## 8. Advanced Macroeconomic Analysis
 
 ### 8.1 GDP Calculations: Comprehensive Worked Examples

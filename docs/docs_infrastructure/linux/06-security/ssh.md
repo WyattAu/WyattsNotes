@@ -435,8 +435,6 @@ Servers. If the remote server is compromised, an attacker can use your forwarded
 Authenticate to any server your keys have access to. Only enable ForwardAgent when necessary, and
 Prefer SSH certificates or ProxyJump for multi-hop access.
 
-:::
-
 ## Tunneling
 
 ### Local Port Forwarding (-L)

@@ -1137,7 +1137,6 @@ try {
 cause pinning. The JDK team has been progressively replacing internal uses of `synchronized` with
 `ReentrantLock` to eliminate pinning in the JDK itself. In JDK 24+, pinning from `synchronized` is
 being addressed through async monitor enter/exit, but for JDK 21-23, you must be aware of it.
-:::
 
 ### When to Use Virtual Threads
 

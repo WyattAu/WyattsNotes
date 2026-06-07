@@ -419,8 +419,6 @@ By default, `systemd-journald` stores logs in `/var/log/journal/` (persistent). 
 Does not exist, logs are stored in `/run/log/journal/` (volatile — lost on reboot). Ensure
 `/var/log/journal/` exists and has correct permissions (`systemd-tmpfiles --create`).
 
-:::
-
 ## Timers
 
 Systemd timers replace cron for scheduled tasks. They support one-shot and recurring timers with

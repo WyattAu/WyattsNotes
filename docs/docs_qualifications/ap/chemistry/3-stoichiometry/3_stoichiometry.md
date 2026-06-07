@@ -559,8 +559,6 @@ $\mathrm{Pb^{2+}(aq) + 2\mathrm{NO_3^-(aq) + 2\mathrm{K^+(aq) + 2\mathrm{I^-(aq)
 
 Net ionic: $\mathrm{Pb^{2+}(aq) + 2\mathrm{I^-(aq) \to \mathrm{PbI_2(s)$
 
-:::
-
 ## Summary Table: Solubility Rules Quick Reference
 
 | Ion Type          | Generally Soluble With These Exceptions:                   |

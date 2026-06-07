@@ -386,8 +386,6 @@ Microtasks run before the event loop processes the next event. All microtasks co
 Event from the event queue is processed. This is why `Future.then` callbacks (which schedule
 Microtasks) run before `Future.delayed` callbacks (which schedule events).
 
-:::
-
 ## Common Pitfalls
 
 ### 1. Unawaited Futures

@@ -871,8 +871,6 @@ Your assertion is wrong, you have undefined behavior. Only do this when you can 
 Thread safety (e.g., when using platform-specific synchronization primitives that the compiler
 Cannot see).
 
-:::
-
 ## Common Pitfalls
 
 1. **Blocking the async executor.** Calling `std::thread::sleep``std::fs::read_to_string`Or any

@@ -753,7 +753,6 @@ int main() {
 Parentheses around `local_variable` make it an lvalue expression, so `decltype((local_variable))` is
 `T&`. But the local variable is destroyed at the end of the function, leaving a dangling reference.
 Always use `return local_variable;` (without parentheses) when you intend to return by value.
-:::
 
 ## 3.9 Implicit Value Category Conversions
 

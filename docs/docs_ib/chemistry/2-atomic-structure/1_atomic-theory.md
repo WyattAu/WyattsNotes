@@ -329,8 +329,6 @@ $IE_1 = 787$$IE_2 = 1577$$IE_3 = 3228$$IE_4 = 4356$$IE_5 = 16091\mathrm{ kJ/mol}
 The large jump from $IE_4$ to $IE_5$ indicates 4 valence electrons, consistent with silicon
 ($[\mathrm{Ne}]\, 3s^2\, 3p^2$).
 
-:::
-
 ---
 
 ## 5. Electronegativity

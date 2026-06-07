@@ -92,8 +92,6 @@ flutter doctor
 Do not install Flutter in directories that require elevated privileges (`C:\Program Files`
 `/usr/local`). The Flutter CLI needs write access to its own directory for SDK updates.
 
-:::
-
 ## Version Management
 
 ### Using `fvm` (Flutter Version Management)

@@ -34,7 +34,6 @@ $$M_r = (2 \times 14.0) + (8 \times 1.0) + 32.1 + (4 \times 16.0) = 28 + 8 + 32.
 :::warning Remember to multiply the relative atomic mass of each atom by the number of that atom in
 The formula, including atoms inside brackets. The subscript outside the bracket applies to every
 Atom inside.
-:::
 
 **Worked Example.** Calculate $M_r$ for Cu(NO$_3$)$_2$.
 

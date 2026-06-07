@@ -483,8 +483,6 @@ Soft delete creates a subtle issue with UNIQUE constraints. If you soft-delete a
 Constraint. Solutions: use a partial unique index, append a suffix on deletion, or add `deleted_at`
 To the unique constraint.
 
-:::
-
 ## Audit Trails
 
 ### Append-Only Event Log

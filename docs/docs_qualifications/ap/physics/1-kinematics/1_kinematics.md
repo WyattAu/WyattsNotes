@@ -751,7 +751,6 @@ At $t = 0$: $a = 9 \mathrm{ m/s^2$ (speeding up) At $t = 3$: $a = 3(9 - 12 + 3) 
 :::info Even though the particle is stationary at $t = 3 \mathrm{ s$The acceleration is also zero
 There, so the particle does not reverse direction. Compare this to projectile motion at the top of
 The trajectory where $v = 0$ but $a = g \ne 0$So the projectile immediately starts moving Downward.
-:::
 
 ### Example 18: Kinematics with Air Resistance
 

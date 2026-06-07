@@ -560,7 +560,6 @@ And Electromagnetism with other physics topics to test synthesis under exam cond
 
 See [Diagnostic Guide](/docs/dse/physics/diagnostics/diagnostic-guide) for instructions on
 Self-marking and building a personal test matrix.
-:::
 
 ---
 

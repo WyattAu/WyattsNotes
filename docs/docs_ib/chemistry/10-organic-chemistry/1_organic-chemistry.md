@@ -604,8 +604,6 @@ Curly arrow mechanisms showing electron movement. For comparison questions ($S_N
 Table for clarity. For polymer questions, be able to identify the monomer from the polymer and vice
 Versa.
 
-:::
-
 ---
 
 ## Organic Chemistry: Extended Topics

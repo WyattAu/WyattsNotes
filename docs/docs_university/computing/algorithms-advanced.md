@@ -433,7 +433,6 @@ lines and query in $O(\log n)$ per step.
 hold. Knuth's optimisation requires the quadrangle inequality AND monotonicity of the optimal split
 point. The convex hull trick requires lines to be added in monotone order of slope. Applying these
 optimisations without verifying the conditions leads to incorrect results.
-:::
 
 ## 3. String Algorithms
 

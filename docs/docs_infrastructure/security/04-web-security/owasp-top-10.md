@@ -95,8 +95,6 @@ Implement access control as a framework-level middleware, not per-route. Every r
 Authentication by default, with explicit opt-in for public routes. This prevents the most common
 Access control bug: forgetting to add `@require_auth` to a new route.
 
-:::
-
 ## A02: Cryptographic Failures
 
 ### Weak Algorithms

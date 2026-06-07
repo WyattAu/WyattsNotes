@@ -765,7 +765,6 @@ and Magnetic Fields with other physics topics to test synthesis under exam condi
 
 See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
 self-marking and building a personal test matrix.
-:::
 
 ## Summary
 

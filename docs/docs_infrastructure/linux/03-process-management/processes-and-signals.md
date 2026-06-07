@@ -606,8 +606,6 @@ ulimit -u 4096     # increase max processes
 NOT apply to services started by systemd. For systemd services, configure limits in the unit file Or
 systemd's override mechanism (`systemctl edit`).
 
-:::
-
 ## Zombie Processes
 
 A zombie process (state `Z`) has completed execution but its parent has not yet called `wait` to

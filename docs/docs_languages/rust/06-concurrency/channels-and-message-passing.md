@@ -130,8 +130,6 @@ Unbounded channels can cause memory exhaustion if producers send faster than con
 Prefer bounded channels with an appropriate buffer size. If the buffer fills, backpressure Slows
 producers.
 
-:::
-
 ### Async Send Error Handling
 
 ```rust

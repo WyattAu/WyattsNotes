@@ -795,8 +795,6 @@ Boyer-Moore's worst case is $O(nm)$Which is worse than KMP. In practice, Boyer-M
 average (it examines fewer than $n$ characters of the text). For guaranteed $O(n)$ worst case, Use
 the Boyer-Moore-Horspool variant or KMP.
 
-:::
-
 ## String Hashing
 
 ### Polynomial Rolling Hash

@@ -1260,8 +1260,6 @@ Has overhead. For DOM-heavy applications, this overhead can dominate. For comput
 Dart2wasm requires WebAssembly Garbage Collection (WASM GC) support in the browser. As of 2025, this
 Is available in Chrome 119+, Firefox 120+, and Safari 17.4+. Older browsers fall back to dart2js.
 
-:::
-
 ## Advanced Patterns
 
 ### Extension Types (Dart 3)

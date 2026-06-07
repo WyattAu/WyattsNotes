@@ -1400,7 +1400,6 @@ List<String>[] array = (List<String>[]) new List<?>[10];
 Erasure. [JLS §4.5](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.5) defines
 Parameterized types.
 [JLS §4.7](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.7) defines wildcards.
-:::
 
 ## Complete Class Hierarchy
 

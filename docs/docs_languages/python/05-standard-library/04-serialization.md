@@ -438,7 +438,6 @@ with open("quoted.csv", "w", newline="") as f:
 
 :::warning Always open CSV files with `newline=""` as specified in the `csv` module documentation.
 On Python 3, failing to do so can cause extra blank lines in the output on some platforms.
-:::
 
 ## Protocol Buffers
 

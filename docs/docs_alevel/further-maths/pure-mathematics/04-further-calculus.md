@@ -628,8 +628,6 @@ $\boxed{I = \frac◆LB◆e^x(\sin 2x - 2\cos 2x)◆RB◆◆LB◆5◆RB◆ + C}$
 
 </details>
 
-:::
-
 ---
 
 ## 8. Advanced Worked Examples

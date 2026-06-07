@@ -912,7 +912,6 @@ Compounds with other chemistry topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on
 self-marking and building a personal test matrix.
-:::
 
 ## Summary
 

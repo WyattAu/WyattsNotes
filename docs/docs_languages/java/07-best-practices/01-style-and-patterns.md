@@ -1354,7 +1354,6 @@ This flag touches every page in the heap at JVM startup, which forces the operat
 Allocate physical memory for the entire heap immediately. It eliminates page fault pauses during
 Runtime, but it delays startup and can cause the container to be killed if the memory limit is
 Tight.
-:::
 
 ## Common Pitfalls
 

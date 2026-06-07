@@ -716,8 +716,6 @@ $= \dfrac◆LB◆x◆RB◆◆LB◆\cos 10°◆RB◆ = \dfrac{220.8}{0.9848} \app
 
 </details>
 
-:::
-
 ---
 
 ## 8. Advanced Worked Examples

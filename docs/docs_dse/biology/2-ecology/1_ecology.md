@@ -1457,7 +1457,6 @@ and Ecology with other biology topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/biology/diagnostics/diagnostic-guide) for instructions on
 self-marking and building a personal test matrix.
-:::
 
 ---
 

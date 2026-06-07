@@ -313,8 +313,6 @@ Always use annotated tags for public releases. Lightweight tags do not carry the
 or message, which makes them unsuitable for audit trails. Use `git tag -a` or configure
 `tag.forceSignAnnotated` for GPG signing.
 
-:::
-
 ## Object Storage Format
 
 ### Loose Objects

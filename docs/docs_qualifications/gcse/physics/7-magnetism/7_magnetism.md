@@ -708,7 +708,6 @@ At $400 \mathrm{ kV$: $\eta = \frac{500 - 3.125}{500} \times 100 = 99.375\%$
 :::info Step-up transformers increase the voltage (and decrease the current) for transmission,
 Dramatically reducing $I^2R$ losses. Step-down transformers then reduce the voltage to safe levels
 For domestic use. This is the fundamental reason the National Grid uses high-voltage transmission.
-:::
 
 ### Example 28: Designing an Electromagnet
 

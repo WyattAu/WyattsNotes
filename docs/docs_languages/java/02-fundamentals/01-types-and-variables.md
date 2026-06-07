@@ -853,7 +853,6 @@ ComplexNumber[] points = new ComplexNumber[1000];
 Feature is available behind `--enable-preview`. The exact syntax and semantics may change in future
 Releases. The core idea remains: providing user-defined types with inline layout and value-based
 Equality, eliminating the performance penalty of object identity.
-:::
 
 ### Identity vs Value Semantics
 

@@ -360,7 +360,6 @@ $\square$
 
 :::info info $C$$D$ are coplanar, then
 $\overrightarrow{AB}\cdot(\overrightarrow{AC}\times\overrightarrow{AD}) = 0$.
-:::
 
 <hr />
 

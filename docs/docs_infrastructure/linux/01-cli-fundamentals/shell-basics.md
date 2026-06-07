@@ -672,8 +672,6 @@ set -euo pipefail
 It does not fire for commands whose exit status is tested (e.g., `if ! command; then`). If you need
 Fine-grained error handling, use explicit error checking with `$?` or `trap`.
 
-:::
-
 ### Trap — Signal Handling in Scripts
 
 ```bash

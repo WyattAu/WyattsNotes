@@ -1046,8 +1046,6 @@ optional.ifPresentOrElse(
 String result = optional.orElse(defaultValue);
 ```
 
-:::
-
 ### Anti-Patterns
 
 ```java

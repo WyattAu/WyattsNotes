@@ -844,8 +844,6 @@ Microbenchmarks are misleading. A sort that benchmarks 10% faster on random data
 On the actual production workload due to access patterns, data distribution, and interaction with
 Other system components. Always benchmark with realistic data and in a realistic environment.
 
-:::
-
 ## Summary
 
 This topic covers the core concepts of complexity analysis, including underlying theory, practical

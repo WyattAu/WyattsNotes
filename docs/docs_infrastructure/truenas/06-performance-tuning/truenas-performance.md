@@ -957,8 +957,6 @@ arc_summary | grep -A10 "L2 ARC"
 
 :::
 
-:::
-
 ## Summary
 
 This topic covers the essential concepts and techniques related to truenas performance tuning,

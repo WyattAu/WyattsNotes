@@ -703,7 +703,6 @@ Not shared, so the random sequence quality is preserved).
 
 :::tip Tip Simulations and other embarrassingly parallel stochastic computations. Each thread's
 generator is Independent, so there are no synchronization overheads or sequence quality concerns.
-:::
 
 ## Thread-Local Memory Pool (Advanced Pattern)
 

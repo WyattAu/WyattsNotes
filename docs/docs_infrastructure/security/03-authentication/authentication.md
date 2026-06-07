@@ -815,8 +815,6 @@ And government agencies.
 Management), RFC 6749 (OAuth 2.0), RFC 7636 (PKCE), RFC 7519 (JWT), RFC 7515 (JWS), RFC 6238 (TOTP),
 RFC 8446 (TLS 1.3), OWASP Authentication Cheat Sheet, FIDO2 (W3C WebAuthn + CTAP2).
 
-:::
-
 ## Summary
 
 This topic covers the essential concepts and techniques related to authentication and authorization,

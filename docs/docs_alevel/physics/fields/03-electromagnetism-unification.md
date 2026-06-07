@@ -735,7 +735,6 @@ self-marking and building a personal test matrix.
   changing the area, or rotating the coil.
 
 :::
-:::
 
 ## Common Pitfalls
 

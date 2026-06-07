@@ -618,8 +618,6 @@ void stream_state_demo() {
 
 :::
 
-:::
-
 ## Common Pitfalls
 
 1. Ignoring feedback from marked work and failing to address recurring weaknesses.

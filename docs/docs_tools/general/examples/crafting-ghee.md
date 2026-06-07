@@ -35,8 +35,6 @@ import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 Washing butter (optional but recommended for purity) - melt butter with $20%$ water, cool, solidify,
 discard water layer. Removes water-soluble impurities.
 
-:::
-
 ## Procedure
 
 1. Butter Clarification (Temperature: $100-115\degree C$)

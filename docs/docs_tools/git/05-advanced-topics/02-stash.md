@@ -32,8 +32,6 @@ Stash is **not a substitute for branches**. Stashes are stored as commits in the
 but they are not visible in `git log` and can be accidentally dropped. If your changes are
 substantial, commit them on a branch instead.
 
-:::
-
 ## How Stash Works Internally
 
 A stash is stored as a special commit with a **tree of your working directory + index changes**.

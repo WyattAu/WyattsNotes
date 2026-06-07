@@ -1241,7 +1241,6 @@ mvn -Pnative native:compile
 :::warning Do not attempt to unit test the native image binary itself during development. The build
 Takes 30-120 seconds, which makes the test cycle too slow. Test business logic in JVM mode, and use
 The native image binary only for integration tests and final validation.
-:::
 
 ## Common Pitfalls
 

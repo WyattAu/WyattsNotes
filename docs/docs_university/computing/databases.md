@@ -1588,7 +1588,6 @@ Since network partitions are inevitable in distributed systems, the real trade-o
 databases now support SQL-like Query languages (e.g., Cassandra CQL). The choice between relational
 and NoSQL depends on the Workload, not on a blanket preference. Relational databases remain the best
 choice for strongly Structured data with complex queries and transactional requirements.
-:::
 
 ## 9. Distributed Databases
 

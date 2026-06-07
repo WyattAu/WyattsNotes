@@ -16,8 +16,6 @@ slug: 4-genetics-adaptation
 
 This chapter covers **Advanced Higher** Biology content, extending beyond Higher level.
 
-:::
-
 ## Molecular Genetics
 
 ### DNA Structure

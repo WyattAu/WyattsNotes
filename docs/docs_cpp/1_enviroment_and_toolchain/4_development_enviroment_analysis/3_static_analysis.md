@@ -616,7 +616,6 @@ clang-format -i src/**/*.cpp src/**/*.hpp src/**/*.h
 :::warning Always run clang-tidy fixes in a separate commit. Review the diff carefully before
 Merging. Some fixes (e.g., `modernize-use-auto`) can change semantics if the deduced type is not
 What you expected.
-:::
 
 ### Bulk Refactoring with `--fix`
 

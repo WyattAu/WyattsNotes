@@ -774,8 +774,6 @@ Suboptimal plans if the parameter values significantly affect selectivity (e.g.,
 Where 'pending' has 5 rows and 'completed' has 5 million rows). Monitor with `pg_stat_statements`
 And use `plan_cache_mode = force_custom_plan` if generic plans are consistently worse.
 
-:::
-
 ### Partition Pruning
 
 When querying a partitioned table, the planner can eliminate entire partitions based on the WHERE

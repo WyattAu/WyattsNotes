@@ -662,8 +662,6 @@ self-marking and building a personal test matrix.
   because the detector only captures a fraction of the emissions and background radiation adds to
   the reading.
 
-:::
-
 ## Common Pitfalls
 
 1. Confusing atomic number (protons) with mass number (protons + neutrons).

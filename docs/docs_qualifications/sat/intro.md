@@ -129,8 +129,6 @@ understand.
 The College Board releases free full-length practice tests through Bluebook. Taking at least 3-4
 full-length practice tests under timed conditions is the single most effective preparation strategy.
 
-:::
-
 ## Summary
 
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding

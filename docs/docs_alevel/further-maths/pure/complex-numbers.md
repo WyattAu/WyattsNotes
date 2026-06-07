@@ -440,7 +440,6 @@ $\blacksquare$
    interior or exterior including the boundary. Shade carefully in Argand diagrams.
 4. **Forgetting all roots:** For $z^n = w$There are exactly $n$ distinct roots. Do not forget to
    include $k = 0, 1, \ldots, n-1$.
-:::
 
 ---
 

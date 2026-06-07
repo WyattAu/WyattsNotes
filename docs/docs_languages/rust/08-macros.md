@@ -1084,8 +1084,6 @@ This SQL macro is a simplified illustration. A production SQL macro would parse 
 Validate parameter bindings at compile time, and generate type-safe code. Libraries like `sqlx` with
 Its `query!` macro provide this level of sophistication.
 
-:::
-
 ## The `syn` and `quote` Ecosystem
 
 ### Parsing with `syn`

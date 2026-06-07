@@ -705,8 +705,6 @@ self-marking and building a personal test matrix.
   is always half the wavelength (lambda/2). The distance between a node and the nearest antinode is
   lambda/4.
 
-:::
-
 ## Common Pitfalls
 
 1. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world

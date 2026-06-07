@@ -1072,8 +1072,6 @@ $\lambda_2^k \to 0$ and the system converges to the eigenvector for $\lambda_1 =
   invalidates the entire calculation. Always double-check by multiplying the matrix by its inverse
   to get the identity.
 
-:::
-
 ### Orthogonal Matrices
 
 A square matrix $Q$ is **orthogonal** if $Q^T Q = Q Q^T = I$Which means $Q^{-1} = Q^T$.

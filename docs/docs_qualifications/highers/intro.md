@@ -85,8 +85,6 @@ Advanced Higher subjects generally have:
 These notes are designed to complement, not replace, the official SQA course specifications. Always
 Refer to the most recent SQA documentation for the definitive syllabus and assessment requirements.
 
-:::
-
 ## Summary
 
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding

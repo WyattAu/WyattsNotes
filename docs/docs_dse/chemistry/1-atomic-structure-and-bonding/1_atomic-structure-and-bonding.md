@@ -899,8 +899,6 @@ In antibonding orbitals), which cannot be explained by simple Lewis structures.
   AND an asymmetrical shape. CO2 has polar bonds but is a non-polar molecule (linear, symmetrical).
   H2O is polar (bent shape, dipole moments do not cancel).
 
-:::
-
 ### Intermolecular Forces in Detail
 
 The strength of intermolecular forces directly affects physical properties:

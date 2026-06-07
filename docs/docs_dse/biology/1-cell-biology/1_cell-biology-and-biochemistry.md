@@ -1308,7 +1308,6 @@ $$\text{Glucose (6C)} + 2\mathrm{NAD}^+ + 2\mathrm{ADP} + 2\mathrm{P}_i \to 2\te
 cytoplasmic NADH into the mitochondria can cost 1 ATP per NADH. The theoretical maximum is 38 ATP,
 but in practice, the yield is closer to 30-32 ATP due to proton leakage across the inner
 mitochondrial membrane and the cost of transporting molecules.
-:::
 
 ### Anaerobic Respiration
 

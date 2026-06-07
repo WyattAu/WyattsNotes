@@ -418,8 +418,6 @@ For new deployments, systemd timers are generally preferred over cron because th
 Logging, dependency management, and missed-job handling. However, cron remains ubiquitous and is
 Still the default on many distributions for user-level scheduling.
 
-:::
-
 ## at and batch
 
 `at` schedules one-time execution of commands at a specified time. `batch` executes commands when

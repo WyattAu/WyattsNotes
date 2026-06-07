@@ -898,7 +898,6 @@ Expansion with other pure mathematics topics to test synthesis under exam condit
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
 building a personal test matrix.
-:::
 
 ## Common Pitfalls
 

@@ -16,8 +16,6 @@ slug: 3-calculus
 
 This chapter covers **Advanced Higher** Mathematics content.
 
-:::
-
 ## Further Differentiation
 
 ### Implicit Differentiation

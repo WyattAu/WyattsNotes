@@ -120,7 +120,6 @@ namespace std {
 `B.exe` is compiled with `_GLIBCXX_USE_CXX11_ABI=1`The linker will fail with "Undefined Reference To
 `std::string`" because the application is looking for `std::__cxx11::string`But the library Provides
 `std::string`.
-:::
 
 ### The `std::list` ABI Change
 

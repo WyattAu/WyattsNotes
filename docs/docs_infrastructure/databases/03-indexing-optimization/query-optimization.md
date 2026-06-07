@@ -944,8 +944,6 @@ Partition-wise joins require both sides to be partitioned on the same key with t
 Bounds. If the partitioning schemes do not align, the optimizer falls back to joining the entire
 Tables.
 
-:::
-
 ## Statistics Target Tuning Guide
 
 | Column Pattern                          | Recommended statistics_target | Reason                                        |

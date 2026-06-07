@@ -463,8 +463,6 @@ ssl_early_data on;
 0-RTT for idempotent, safe-to-replay requests (e.g., GET requests, non-critical analytics). Never
 Use 0-RTT for authentication, payment, or state-changing requests.
 
-:::
-
 ## Mutual TLS (mTLS)
 
 ### Client Certificates

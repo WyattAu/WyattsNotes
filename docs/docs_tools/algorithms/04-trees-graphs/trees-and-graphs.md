@@ -607,8 +607,6 @@ Use adjacency lists for sparse graphs (most real-world graphs — social network
 Networks). Use adjacency matrices for dense graphs (fully connected or nearly so) or when you need
 $O(1)$ edge existence checks.
 
-:::
-
 ## Graph Traversal
 
 ### BFS (Breadth-First Search)

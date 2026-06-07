@@ -701,7 +701,6 @@ for (String name : names) {
 
 :::warning Using `for-each` or an enhanced for loop, you cannot modify the ArrayList (add/remove)
 During iteration. Use an Iterator or iterate backwards with an index.
-:::
 
 ```java
 for (int i = names.size() - 1; i >= 0; i--) {

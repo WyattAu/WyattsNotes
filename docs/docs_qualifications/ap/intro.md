@@ -58,8 +58,6 @@ Sections.
 The College Board publishes past exam questions and scoring guidelines on AP Central. Practice with
 Released exams is the best preparation.
 
-:::
-
 ## Summary
 
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding

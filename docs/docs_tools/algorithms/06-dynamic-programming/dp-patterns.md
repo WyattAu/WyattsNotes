@@ -58,8 +58,6 @@ The 1D optimisation iterates capacity in reverse to prevent using the same item 
 Iterate forward, `dp[c - w]` may already include item $i$Violating the 0/1 constraint. This is the
 Most common bug in knapsack implementations.
 
-:::
-
 ### Unbounded Knapsack
 
 Each item can be taken unlimited times. Iterate capacity forward.

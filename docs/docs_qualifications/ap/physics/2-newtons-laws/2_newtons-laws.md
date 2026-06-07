@@ -656,7 +656,6 @@ $a = \frac{(m_2 - m_1)g}{m_1 + m_2} = \frac{19.6}{10} = 1.96 \mathrm{ m/s^2$. Th
 Reduces the acceleration because some of the net force goes into rotating the pulley rather than
 Accelerating the masses. The difference $T_2 - T_1 = 1.8 \mathrm{ N$ is the net torque on the
 pulley.
-:::
 
 ### Example 17: Object in a Fluid with Drag
 

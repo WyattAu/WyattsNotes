@@ -354,7 +354,6 @@ Alcohol, tobacco, illegal drugs.
 :::warning Warning Judgements about what is "good" or "bad" for people. This is different from
 positive externalities (which are objective welfare effects on third parties). Many merit goods also
 generate positive Externalities, but the concepts are distinct.
-:::
 
 ### Tragedy of the Commons
 

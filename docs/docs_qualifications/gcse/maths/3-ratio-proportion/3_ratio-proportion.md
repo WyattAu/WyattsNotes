@@ -15,7 +15,6 @@ slug: 3-ratio-proportion
 ## Ratio, Proportion, and Rates of Change
 
 :::info Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR Paper 1, 2, 3 | WJEC Unit 1 & 2
-:::
 
 ## 1. Ratio
 

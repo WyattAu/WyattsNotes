@@ -727,8 +727,6 @@ openssl s_client -connect example.com:443 -tls1_3 -early_data /tmp/request.txt
 Operations. Common safe uses: GET requests, database reads, cache lookups. Unsafe: POST, PUT,
 DELETE, financial transactions.
 
-:::
-
 ## TLS Configuration Hardening
 
 ### Mozilla SSL Configuration Generator

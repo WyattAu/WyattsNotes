@@ -478,8 +478,6 @@ The built-in Desmos calculator in Bluebook is powerful:
 Practise with Desmos before test day at <https://www.desmos.com/calculator>. Familiarity with the
 interface saves time on the exam.
 
-:::
-
 ---
 
 ## Common Pitfalls

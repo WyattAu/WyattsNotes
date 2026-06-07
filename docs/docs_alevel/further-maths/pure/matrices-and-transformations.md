@@ -451,7 +451,6 @@ $\blacksquare$
    eigenvalues in $D$.
 5. **Repeated eigenvalues:** A repeated eigenvalue does not necessarily give two independent
    eigenvectors. Check by attempting to solve $(A - \lambda I)\mathbf{v} = \mathbf{0}$.
-:::
 
 ---
 

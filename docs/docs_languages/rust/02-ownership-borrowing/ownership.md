@@ -461,8 +461,6 @@ Implementing `Sync` for a type containing `UnsafeCell` without proper synchroniz
 Behavior. Only do this if you can prove that mutation is properly synchronized (e.g., via atomics or
 Platform-specific memory barriers).
 
-:::
-
 ## `Rc` and `Arc`
 
 ### `Rc<T>` — Reference Counted

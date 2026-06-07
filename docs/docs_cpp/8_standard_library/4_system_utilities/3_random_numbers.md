@@ -591,8 +591,6 @@ PRNG.
 
 :::
 
-:::
-
 ## Common Pitfalls
 
 1. Not practising with past papers or exercises under timed conditions.

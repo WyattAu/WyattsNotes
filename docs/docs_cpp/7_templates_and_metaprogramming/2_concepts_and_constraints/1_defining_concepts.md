@@ -582,7 +582,6 @@ Necessary) and **specific** (exclude types that would cause undefined behavior).
 Concepts like `requires(T t) { t + t; }` --- this would accept `std::string` (which supports `+` for
 Concatenation) even if the algorithm is intended for arithmetic. Use the standard library concepts
 In `<concepts>` as building blocks whenever possible.
-:::
 
 ## Recursive Concept Constraints
 

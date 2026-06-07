@@ -98,8 +98,6 @@ $ git submodule update --init --recursive
 If you clone without `--recurse-submodules`Your submodule directories will be **empty**. Running
 `git submodule update --init` fills them. This is a common source of confusion for new developers.
 
-:::
-
 ### Updating Submodules
 
 ```bash

@@ -2095,7 +2095,6 @@ The products of one process are the reactants of the other. This is a cyclical r
 :::warning Common Pitfall $\mathrm{FADH_2}$ produces fewer ATP than NADH because it enters the ETC
 at Complex II (bypassing Complex I). This means fewer protons are pumped per $\mathrm{FADH_2}$
 molecule (6 vs 10). Always use 2.5 ATP per NADH and 1.5 ATP per $\mathrm{FADH_2}$.
-:::
 
 ## 43. Respiratory Substrates
 

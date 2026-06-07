@@ -962,8 +962,6 @@ When using tuples as heap elements, comparison proceeds element-by-element. If t
 Comparable (e.g., two different types), this raises `TypeError`. The tiebreaker pattern using an
 `itertools.count()` counter avoids this problem entirely.
 
-:::
-
 ### nsmallest and nlargest
 
 For finding the k smallest or largest elements, `heapq.nsmallest(k, iterable)` and

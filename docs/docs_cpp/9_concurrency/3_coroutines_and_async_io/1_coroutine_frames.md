@@ -535,7 +535,6 @@ After `destroy()`The handle becomes **invalid** — using it is undefined behavi
 :::tip RAII wrappers In production code, wrap `std::coroutine_handle` in an RAII type (e.g.,
 `std::unique_ptr` with a custom deleter, or a dedicated `coroutine` class) to ensure `destroy()` is
 Called even if an exception propagates.
-:::
 
 ## Complete Example: Handle Lifecycle Management
 

@@ -56,8 +56,6 @@ ls -la /etc/resolv.conf
 # /etc/resolv.conf -> /run/systemd/resolve/stub-resolv.conf
 ```
 
-:::
-
 ### nsswitch.conf
 
 The Name Service Switch determines the order of lookup mechanisms:

@@ -48,7 +48,6 @@ with (
 :::warning If the second `with` statement fails (e.g., `open("output.txt", "w")` raises
 `PermissionError`), the first resource (`input.txt`) is still properly closed. This is a key
 Advantage over manual try/finally.
-:::
 
 ## \_\_enter\_\_ and \_\_exit\_\_
 

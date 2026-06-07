@@ -457,8 +457,6 @@ async fn main() {
 `select!` drops all non-selected futures. If you need to retry a branch, restructure your code to
 Loop and recreate the future.
 
-:::
-
 ### `join!`
 
 Run multiple futures concurrently and wait for all of them:

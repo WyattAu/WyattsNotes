@@ -468,7 +468,6 @@ A tropism is a growth response to a directional stimulus. The response can be to
 :::warning A common source of confusion: auxin stimulates elongation in shoots but inhibits
 Elongation in roots. Roots are far more sensitive to auxin than shoots, so the same concentration
 That promotes growth in shoots inhibits growth in roots.
-:::
 
 ### Worked Example: Explaining Phototropism (HL)
 

@@ -1069,7 +1069,6 @@ Applications:
 transcriptome is the set of all mRNA molecules produced; the proteome is the set of all proteins;
 the metabolome is the set of all small molecule metabolites. Each level is more dynamic and complex
 than the one above it.
-:::
 
 ## 26. Industrial Biotechnology: Case Studies
 

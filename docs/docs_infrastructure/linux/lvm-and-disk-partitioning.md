@@ -1788,8 +1788,6 @@ WRONG ORDER (will corrupt data):
 Always use `lvreduce --resizefs` which performs the filesystem check and resize automatically in the
 Correct order. Never run `lvreduce` without `--resizefs` unless you know exactly what you are doing.
 
-:::
-
 ### Forgetting to Resize the Filesystem After Extending the LV
 
 After extending an LV with `lvextend`The filesystem does not automatically grow to fill the new

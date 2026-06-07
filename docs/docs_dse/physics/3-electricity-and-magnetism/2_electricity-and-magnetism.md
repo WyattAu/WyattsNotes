@@ -1784,8 +1784,6 @@ $\varepsilon_{\mathrm{RMS}} = \frac{\varepsilon_0}{\sqrt{2}} = \frac{37.7}{1.414
 (iv) Average power:
 $P = \frac{\varepsilon_{\mathrm{RMS}}^2}{R} = \frac{(26.7)^2}{50} = \frac{712.9}{50} = 14.3 \mathrm{ W}$
 
-:::
-
 ## Common Pitfalls
 
 1. Confusing EMF and potential difference — EMF is the total energy per unit charge supplied; PD is

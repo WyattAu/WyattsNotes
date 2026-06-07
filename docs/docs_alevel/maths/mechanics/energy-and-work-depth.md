@@ -390,7 +390,6 @@ The line, with both strings at angles.
 :::warning Warning Elastic potential energy problems often require careful consideration of whether
 strings are taut or Slack at different points in the motion. Always check the assumptions about
 extensions at each stage.
-:::
 
 <hr />
 

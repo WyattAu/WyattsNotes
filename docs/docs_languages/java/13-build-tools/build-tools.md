@@ -980,7 +980,6 @@ The wrapper downloads the specified Gradle distribution to `~/.gradle/wrapper/di
 Different developers (and CI agents) may have different versions installed, leading to "works on my
 Machine" build failures. Pin the wrapper version in version control and update it deliberately
 Through a PR.
-:::
 
 ## Summary
 

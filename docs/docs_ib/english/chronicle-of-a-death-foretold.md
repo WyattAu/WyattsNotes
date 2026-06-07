@@ -803,8 +803,6 @@ Management strategies.
   honour after being returned on her wedding night by Bayardo San Roman), her silence, and her later
   letters to Bayardo are crucial to understanding the novel's themes.
 
-:::
-
 ## Common Pitfalls
 
 1. Using vague analytical terminology — be specific about the technique (e.g., 'sibilance' not

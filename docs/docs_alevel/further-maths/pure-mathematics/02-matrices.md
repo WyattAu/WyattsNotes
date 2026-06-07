@@ -940,8 +940,6 @@ $\boxed{\lambda = 2 \text{ and } \lambda = 3}$
 
 </details>
 
-:::
-
 ---
 
 ## 11. Connections to Other Topics

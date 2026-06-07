@@ -383,8 +383,6 @@ $2^n \gt n$ For all positive integers $n$.
 The inductive step must genuinely use the inductive hypothesis. Proving $P(k+1)$ independently Of
 $P(k)$ is not a valid induction argument. Always make it explicit where the hypothesis is used.
 
-:::
-
 ---
 
 ## Additional Worked Examples

@@ -97,8 +97,6 @@ The only way to internalise algorithms is to implement them. Reading about quick
 As writing quicksort, debugging the off-by-one errors, and measuring its performance on pathological
 Inputs. Use the pseudocode here as a starting point, but write the code yourself.
 
-:::
-
 ## Summary
 
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding

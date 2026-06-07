@@ -1686,8 +1686,6 @@ $$\mu_s \geqslant \frac{f}{N} = \frac{10778}{21262} = 0.507$$
 
 Minimum coefficient of static friction: $\mu_s = 0.51$.
 
-:::
-
 ## Common Pitfalls
 
 1. Confusing displacement with distance, or velocity with speed, particularly in graphs and

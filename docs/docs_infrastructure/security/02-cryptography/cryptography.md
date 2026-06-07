@@ -801,8 +801,6 @@ Does not provide it. Ensure your cipher suites use ECDHE or DHE.
 SP 800-38D (GCM), NIST SP 800-132 (PBKDF2), NIST FIPS 203/204/205 (Post-Quantum), RFC 8446 (TLS
 1.3), RFC 8017 (RSA), RFC 8032 (EdDSA), RFC 7748 (Curve25519), RFC 5869 (HKDF).
 
-:::
-
 ## Summary
 
 This topic covers the mathematical techniques and concepts related to cryptography, including key

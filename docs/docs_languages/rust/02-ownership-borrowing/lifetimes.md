@@ -112,8 +112,6 @@ Reference. Adding `'static` constraints reduces the function's flexibility — c
 Pass locally-owned string slices. The compiler may suggest `'static` when it cannot infer a shorter
 Lifetime, but this is often a sign that the function signature needs redesign.
 
-:::
-
 ```rust
 // Overly restrictive
 fn print(s: &'static str) {

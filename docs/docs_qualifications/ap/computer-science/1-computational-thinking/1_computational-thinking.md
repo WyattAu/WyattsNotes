@@ -435,8 +435,6 @@ PROCEDURE reverseList(list)
 Iteration until it reaches 1. Since LENGTH(list) is a finite positive integer, the loop terminates
 After LENGTH(list) iterations. $\blacksquare$
 
-:::
-
 ## Problem Solving Strategies
 
 ### Top-Down Design

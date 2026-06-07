@@ -716,7 +716,6 @@ int main() {
 
 :::warning Warning Are implementing a smart pointer or proxy object. Overloading these operators on
 regular types Creates confusing semantics that mislead readers into expecting pointer-like behavior.
-:::
 
 ## Common Pitfalls
 

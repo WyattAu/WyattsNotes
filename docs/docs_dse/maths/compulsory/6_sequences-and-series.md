@@ -931,7 +931,6 @@ and Series with other DSE mathematics topics to test synthesis under exam condit
 
 See [Diagnostic Guide](/docs/dse/maths/diagnostics/diagnostic-guide) for instructions on
 self-marking and building a personal test matrix.
-:::
 
 ## Summary
 

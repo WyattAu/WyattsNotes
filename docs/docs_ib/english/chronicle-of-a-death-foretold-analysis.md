@@ -912,8 +912,6 @@ Contribute to the novel's overall meaning.
   contrasts with the implausible coincidences and gaps in collective memory. Students who do not
   discuss this narrative voice miss a key literary technique.
 
-:::
-
 ## Sample Essay Questions
 
 The following questions are modelled on the types of prompts that appear in IB English A Paper 2 and

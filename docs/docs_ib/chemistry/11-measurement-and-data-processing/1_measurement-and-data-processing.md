@@ -420,8 +420,6 @@ answer is $\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOCH}_3$ (methyl propanoate, $M = 
 $\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOCH}_2\mathrm{CH}_3$ (ethyl propanoate, $M = 102$). This
 illustrates the iterative nature of spectral analysis.
 
-:::
-
 ---
 
 ## Practice Problems

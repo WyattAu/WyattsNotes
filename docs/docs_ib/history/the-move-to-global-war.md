@@ -1162,8 +1162,6 @@ Court), are the direct institutional descendants of Nuremberg.
   Nations, appeasement, and Hitler's expansionist ideology were all necessary conditions. A strong
   IB essay weighs multiple causes rather than assigning blame to a single factor.
 
-:::
-
 ## Common Pitfalls
 
 1. Writing in the present tense about historical events — use the past tense consistently.

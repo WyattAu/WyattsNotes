@@ -717,8 +717,6 @@ $\boxed{y = \dfrac{x^3}{2} + \dfrac{5x}{2} = \dfrac{x(x^2 + 5)}{2}}$.
 
 </details>
 
-:::
-
 ---
 
 ## 8. Advanced Worked Examples

@@ -110,8 +110,6 @@ Insertion sort is the fastest comparison sort for small arrays ($n \lt 50$) and 
 This is why it is used as the base case in merge sort and quicksort implementations, and why TimSort
 (the default in Python, Java, and Rust) uses insertion sort for small runs.
 
-:::
-
 ### Merge Sort
 
 Divide the array in half, recursively sort each half, then merge the two sorted halves.

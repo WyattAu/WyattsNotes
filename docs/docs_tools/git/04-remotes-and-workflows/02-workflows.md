@@ -338,8 +338,6 @@ npm install --save-dev @commitlint/cli @commitlint/config-conventional
 echo "export default { extends: ['@commitlint/config-conventional'] };" > commitlint.config.js
 ```
 
-:::
-
 ## Common Pitfalls
 
 1. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.

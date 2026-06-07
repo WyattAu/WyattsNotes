@@ -354,8 +354,6 @@ Retry logic must be idempotent. If the operation has side effects (e.g., creatin
 Record), retrying may create duplicates. Design your operations to be idempotent before adding retry
 Logic. Use idempotency keys for non-idempotent operations.
 
-:::
-
 ## Graceful Degradation
 
 ### Fallback Values

@@ -192,8 +192,6 @@ $ git gc --prune=now
 `git gc --prune=now` is permanent. After running this, any commits that were only reachable via
 expired reflog entries are gone forever. Use with extreme caution.
 
-:::
-
 ## Reflog Best Practices
 
 ### 1. Know the Reflog Exists

@@ -941,7 +941,6 @@ Structure and Periodicity with other chemistry topics to test synthesis under ex
 
 See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on
 self-marking and building a personal test matrix.
-:::
 
 ## Common Pitfalls
 

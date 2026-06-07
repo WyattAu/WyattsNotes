@@ -1178,8 +1178,6 @@ Mechanism to keep it consistent. If you denormalize, you must have a concrete st
 Consistency: database triggers, application-level event handlers, or periodic reconciliation jobs.
 Unmaintained denormalized data silently rots and becomes a source of bugs.
 
-:::
-
 ## Anomaly Examples
 
 This section demonstrates each anomaly type with concrete, unnormalized data and shows how

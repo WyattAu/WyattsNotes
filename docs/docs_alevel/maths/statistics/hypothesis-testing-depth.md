@@ -219,7 +219,6 @@ This is approximately 4.14%, which is the closest we can get to 5% with a discre
 :::warning Warning For discrete distributions, the actual significance level may differ from the
 nominal level. The Critical region is chosen so that $P(\mathrm{critical\ region} \mid H_0)$ does
 not exceed $\alpha$ And is as close as possible to $\alpha$.
-:::
 
 <hr />
 

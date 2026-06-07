@@ -20,7 +20,6 @@ across all major exam boards.
 
 :::info Board Coverage AQA Paper 1 & 2 | Edexcel A Paper 1 & 2 | OCR (A) Paper 1 & 2 | CIE Paper 2 &
 4
-:::
 
 ---
 

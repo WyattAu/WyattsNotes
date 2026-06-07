@@ -229,8 +229,6 @@ def fib_iter(n):
     return b
 ```
 
-:::
-
 ### Example: Tower of Hanoi
 
 ```python

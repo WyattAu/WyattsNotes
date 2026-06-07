@@ -667,8 +667,6 @@ tag Alongside the pointer, or use hazard pointers.
 
 :::
 
-:::
-
 ## Summary
 
 This topic covers the core concepts of atomic operations and lock-free programming, including

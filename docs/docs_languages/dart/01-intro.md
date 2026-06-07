@@ -18,8 +18,6 @@ Tutorial.
 Different from other languages, the Flutter aspect is important, and GUI presentation is important,
 Therefore when Dart code uses Flutter, compiler explorer cannot be used and Dartpad will be used.
 
-:::
-
 <div className="godbolt-container">
  <iframe
  width="100%"

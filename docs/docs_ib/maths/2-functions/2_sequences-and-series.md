@@ -879,7 +879,6 @@ and Series with other IB mathematics topics to test synthesis under exam conditi
 
 See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
 and building a personal test matrix.
-:::
 
 ## Common Pitfalls
 

@@ -423,8 +423,6 @@ $$
 C = \frac{\kappa \epsilon_0 A}{\kappa d - (\kappa - 1)t}
 $$
 
-:::
-
 ## Common Pitfalls
 
 1. **Confusing electric field and electric force.** $\vec{E} = \vec{F}/q_0$. The field exists

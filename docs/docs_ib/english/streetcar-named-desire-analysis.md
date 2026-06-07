@@ -1238,8 +1238,6 @@ _Streetcar_ is a domestic tragedy that resolves through the failure of action.
   their marriage). Reducing him to a villain oversimplifies the play's exploration of class and
   cultural conflict.
 
-:::
-
 ## Common Pitfalls
 
 1. Neglecting to normalise database designs, leading to data redundancy and update anomalies.

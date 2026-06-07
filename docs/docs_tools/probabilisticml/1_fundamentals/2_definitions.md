@@ -2101,7 +2101,6 @@ space $\Omega$ to the parameter space $\Theta$.
 
 :::info In practice, we often work directly with a prior probability measure defined on the
 parameter space $\Theta$
-:::
 
 ### Uncertainty
 

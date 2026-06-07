@@ -219,8 +219,6 @@ Add login endpoint
 Use `squash` when you have a series of "WIP" commits that should be combined into a single logical
 commit before merging. This keeps the history clean and meaningful.
 
-:::
-
 #### `fixup` — Squash Without Editing
 
 Like `squash`But discards the commit message of the squashed commit. The combined commit retains

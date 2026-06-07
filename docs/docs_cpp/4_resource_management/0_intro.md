@@ -36,7 +36,6 @@ This part covers four tightly coupled topics:
 :::info Prerequisite Reading This part assumes familiarity with stack frames (Module 3.4), heap
 Allocation (Module 3.5), pointers (Module 3.6), and class basics (Module 9). Exception mechanics are
 Covered in detail in Module 13.
-:::
 
 ## Common Pitfalls
 

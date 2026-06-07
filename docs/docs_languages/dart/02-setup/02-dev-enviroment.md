@@ -37,8 +37,6 @@ If running `Flutter: Select Device` does not show your physical device, try revo
 Debugging and disconnect the device. Then reconnect the device and check remember device when
 Verifying.
 
-:::
-
 ## Compiling and Running
 
 With everything setup and a `Flutter: new project` created, the code can now be compiled and ran

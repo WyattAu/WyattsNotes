@@ -285,8 +285,6 @@ Supernetting only works when the networks are contiguous and aligned on the summ
 192.168.2.0/24 cannot be cleanly summarized (they would require 192.168.0.0/22, which also includes
 192.168.0.0/24 and 192.168.3.0/24).
 
-:::
-
 ## Private Address Ranges (RFC 1918)
 
 RFC 1918 defines three ranges of private IPv4 addresses that are not routable on the public

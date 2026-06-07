@@ -714,7 +714,6 @@ Significant.
 [A Streetcar Named Desire -- Close Reading and Analysis](streetcar-named-desire-analysis.md) and
 [Chronicle of a Death Foretold -- Close Reading and Analysis](chronicle-of-a-death-foretold-analysis.md).
 The analytical techniques described in this guide apply equally to prose and drama.
-:::
 
 ## Summary
 

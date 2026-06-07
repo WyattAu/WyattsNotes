@@ -503,7 +503,6 @@ Where:
 
 :::warning Ensure units are consistent. If $\Delta H$ is in kJ/mol and $\Delta S$ is in J mol$^{-1}$
 K$^{-1}$Convert $\Delta S$ to kJ mol$^{-1}$ K$^{-1}$ by dividing by 1000.
-:::
 
 ### Feasibility of Reactions
 

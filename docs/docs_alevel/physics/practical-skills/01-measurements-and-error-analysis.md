@@ -493,7 +493,6 @@ $$\Delta m = \frac◆LB◆|m_{\mathrm{best}} - m_{\mathrm{worst}}|◆RB◆◆LB�
 
 :::warning Warning Uncertainty is $\pm$ half the smallest scale division of the measuring instrument
 used to obtain Each data point. State this assumption explicitly.
-:::
 
 ## 8. Common Pitfalls
 

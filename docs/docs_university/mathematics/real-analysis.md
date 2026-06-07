@@ -1644,7 +1644,6 @@ integral, but not limit and Derivative. For derivatives, uniform convergence of 
 derivatives_ (not the original Sequence) is required, as stated in Theorem 7.4. Also, the
 Weierstrass M-Test applies only to series Of functions, not sequences; for sequences, one must
 verify the uniform Cauchy criterion directly.
-:::
 
 ## 8. Problem Set
 

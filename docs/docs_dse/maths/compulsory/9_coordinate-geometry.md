@@ -676,7 +676,6 @@ Geometry with other DSE mathematics topics to test synthesis under exam conditio
 
 See [Diagnostic Guide](/docs/dse/maths/diagnostics/diagnostic-guide) for instructions on
 self-marking and building a personal test matrix.
-:::
 
 ---
 

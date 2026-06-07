@@ -320,7 +320,6 @@ Where $P_s(Q)$ is the inverse supply function.
 (arc elasticity) formula:
 $\mathrm{PED} = \frac◆LB◆\Delta Q◆RB◆◆LB◆\Delta P◆RB◆ \times \frac{(P_1 + P_2)/2}{(Q_1 + Q_2)/2}$.
 CIE Uses the point elasticity formula. Check your board's preference.
-:::
 
 ## 7. Problem Set
 

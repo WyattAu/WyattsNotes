@@ -151,7 +151,6 @@ Down / table pushes book up.
 
 :::warning Newton's third law pairs always act on different objects. The normal reaction and weight
 Act on the same object, so they are NOT a third law pair.
-:::
 
 ### 2.6 Identifying Third Law Pairs: A Systematic Method
 

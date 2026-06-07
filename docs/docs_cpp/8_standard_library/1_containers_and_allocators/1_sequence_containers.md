@@ -518,7 +518,6 @@ Satisfy the container requirements in [N4950 §22.2] because its elements are no
 STL" (Item 18) recommends using `std::deque&lt;bool>` or `boost::dynamic_bitset` instead. For new
 Code, consider `std::vector&lt;uint8_t>` if you need addressable elements, or a dedicated bitset
 Library if you need compact storage.
-:::
 
 ### `std::vector` Exception Safety: Strong Guarantee for `push_back`
 

@@ -734,8 +734,6 @@ Suggests that fiscal devolution may be necessary but not sufficient.
   require spending cuts elsewhere. Cutting education spending to fund tax cuts undermines human
   capital -- a key supply-side input. Always consider the opportunity cost of supply-side policies.
 
-:::
-
 ## 8. Supply-Side Policy: Advanced Worked Examples
 
 ### 8.1 Laffer Curve: Numerical Analysis

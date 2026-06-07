@@ -2024,7 +2024,6 @@ $\sin(\beta \ln x)$Not $\cos(\beta x)$ and $\sin(\beta x)$.
 :::caution Common Pitfall The Wronskian $W(y_1, y_2)$ being zero at a single point does not
 Necessarily mean the solutions are linearly dependent. For linear ODEs with continuous coefficients,
 $W \equiv 0$ everywhere or $W \neq 0$ everywhere. Check Abel's identity.
-:::
 
 ### 9.9 Worked Example: Lyapunov Function
 

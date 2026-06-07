@@ -13,7 +13,6 @@ slug: 4-chemical-changes
 ## Chemical Reactions
 
 :::info Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR A Gateway C2-C4 | WJEC C2 & C3
-:::
 
 ## 1. Writing Chemical Equations
 

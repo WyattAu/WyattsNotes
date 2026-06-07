@@ -650,7 +650,6 @@ class UserService:
 :::tip **Log and raise** for unexpected errors the caller must handle. **Log and continue** for
 Non-critical background operations. **Raise without logging** when the caller is responsible for
 Handling (e.g., validation at API boundary). Never swallow exceptions silently.
-:::
 
 ## Failure Domains
 

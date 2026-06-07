@@ -503,8 +503,6 @@ Automatically by the browser during the HTTP upgrade request, so cookie-based au
 Is insufficient -- a malicious site can initiate a WebSocket connection to your server with the
 Victim's cookies. Always verify the Origin header.
 
-:::
-
 ### wss:// (WebSocket Secure)
 
 Always use `wss://` (WebSocket over TLS) in production. Unencrypted `ws://` connections expose all

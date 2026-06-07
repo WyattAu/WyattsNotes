@@ -694,8 +694,6 @@ The same energy.
   vaporisation is given out, not absorbed). When ice melts, it ABSORBS energy. Always consider
   whether the phase change is absorbing or releasing energy.
 
-:::
-
 ## Common Pitfalls
 
 1. Confusing temperature with thermal energy — temperature is a measure of average kinetic energy,

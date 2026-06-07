@@ -586,8 +586,6 @@ The greedy set cover algorithm is essentially optimal in terms of approximation 
 Polynomial-time algorithms (assuming P != NP). The $(\ln n + 1)$ bound is tight — there exist
 Instances where greedy achieves no better than this ratio.
 
-:::
-
 ## Egyptian Fractions
 
 Express a fraction $a/b$ as a sum of distinct unit fractions (fractions with numerator 1). The

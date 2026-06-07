@@ -1246,7 +1246,6 @@ router bgp 65001
 :::warning BGP dampening can cause more harm than good in some scenarios, particularly when a
 Flapping route carries important traffic. Many operators prefer to fix the root cause of the
 Flapping rather than suppress the route. Use dampening carefully.
-:::
 
 ### OSPF Area Design Mistakes
 

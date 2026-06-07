@@ -710,7 +710,6 @@ Resistance acts).
 :::info The study of projectile motion with air resistance requires numerical methods or
 Differential equations. At Leaving Certificate level, you are expected to describe the effects
 Qualitatively.
-:::
 
 ### Example 22: Conservation of Momentum with External Forces
 

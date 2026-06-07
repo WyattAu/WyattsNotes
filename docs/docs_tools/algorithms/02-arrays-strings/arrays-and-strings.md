@@ -454,8 +454,6 @@ Python's built-in `hash()` is not deterministic across process invocations (Pyth
 Randomisation by default via `PYTHONHASHSEED`). This is a security measure against HashDoS attacks.
 For persistent hashing (e.g., on-disk hash tables), use `hashlib` or a deterministic hash function.
 
-:::
-
 ## String Matching
 
 ### Naive Algorithm

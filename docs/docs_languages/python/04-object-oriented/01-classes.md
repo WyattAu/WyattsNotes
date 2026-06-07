@@ -825,8 +825,6 @@ p.z = 3    # AttributeError: 'DensePoint' object has no attribute 'z'
    (which re-enables those features).
 4. Code that relies on `__dict__` (e.g., serialization, `vars()`Some ORMs) will break.
 
-:::
-
 ```python
 class Base:
     __slots__ = ("id",)

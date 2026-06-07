@@ -511,8 +511,6 @@ public:
 
 :::
 
-:::
-
 ## Summary
 
 This topic covers the essential concepts and techniques related to data races and critical sections,

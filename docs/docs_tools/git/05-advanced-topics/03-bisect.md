@@ -119,8 +119,6 @@ Write your bisect script to be **idempotent** — it should produce the same res
 system state. Clean build artifacts, use a fresh database, etc. Otherwise, you may get false
 positives from stale state.
 
-:::
-
 ## Bisect with Skipped Commits
 
 Some commits may not build (e.g., due to a missing dependency or a known compilation error). You can

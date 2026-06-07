@@ -399,7 +399,6 @@ int main() {
 
 :::warning Never write `throw e;` in a catch clause — this creates a **new copy** of `e` using its
 Static type, slicing the dynamic type. Always use `throw;` to re-throw the original exception.
-:::
 
 ## 1.7 Cross-Thread Exception Propagation with `std::exception_ptr`
 

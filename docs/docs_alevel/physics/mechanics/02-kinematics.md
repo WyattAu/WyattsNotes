@@ -751,7 +751,6 @@ self-marking and building a personal test matrix.
   object reaches a lower maximum height), and the trajectory is no longer a perfect parabola.
 
 :::
-:::
 
 ## Common Pitfalls
 

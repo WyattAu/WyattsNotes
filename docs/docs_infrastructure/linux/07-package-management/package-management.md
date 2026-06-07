@@ -378,8 +378,6 @@ AUR packages are not vetted by Arch developers. Always review PKGBUILD scripts b
 Especially packages that modify system files or run install hooks. Use a helper that supports
 PKGBUILD inspection.
 
-:::
-
 ## Nix — Functional Package Management
 
 Nix is a fundamentally different approach to package management. Instead of a global package

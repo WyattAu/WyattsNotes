@@ -810,8 +810,6 @@ Privacy-focused resolvers (Cloudflare 1.1.1.1, Quad9) zero out ECS by default or
 You operate an authoritative server behind a CDN, ensure ECS is configured correctly -- incorrect
 ECS processing can route clients to the wrong CDN edge.
 
-:::
-
 ## DNS Failover and High Availability
 
 ### Primary/Secondary Architecture

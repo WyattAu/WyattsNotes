@@ -676,7 +676,6 @@ Means:
   to iron)
 - Nuclei heavier than iron can _release energy by fission_ (splitting to form lighter nuclei closer
   To iron)
-:::
 
 ### Example 28: Two-Source Interference Quantitative
 

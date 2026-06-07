@@ -588,8 +588,6 @@ self-marking and building a personal test matrix.
   defined as the ratio of the speed of light in vacuum to the speed in the medium (n = c/v), and it
   is always greater than or equal to 1 for real materials.
 
-:::
-
 ## Common Pitfalls
 
 1. Forgetting to include units in final answers, especially when working with derived units like

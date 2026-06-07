@@ -16,8 +16,6 @@ slug: 2-metabolism
 
 This chapter covers **Advanced Higher** Biology content, extending beyond Higher level.
 
-:::
-
 ## Metabolism
 
 ### Enzymes

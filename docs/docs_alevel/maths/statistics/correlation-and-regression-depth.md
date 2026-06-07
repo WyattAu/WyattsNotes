@@ -257,7 +257,6 @@ Minimises vertical residuals; the line of $x$ on $y$ minimises horizontal residu
 
 :::warning Warning Do not use the regression line of $y$ on $x$ to predict $x$ from a given $y$Or
 vice versa. Use the appropriate regression line for the direction of prediction.
-:::
 
 <hr />
 

@@ -628,7 +628,6 @@ For the first three states:
 width containing a Node is not zero. When asked "what is the probability at position $x$" the
 correct answer is zero For any single point (probability densities are per unit length). Always
 integrate over an interval.
-:::
 
 ## 8. Electron Microscopy
 

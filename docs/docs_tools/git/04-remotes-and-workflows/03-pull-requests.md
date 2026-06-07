@@ -192,8 +192,6 @@ Squash and merge creates a single commit from all commits in the PR. This has co
 If you use squash and merge, ensure your PR title and description are comprehensive — they become
 the only commit message for the entire change.
 
-:::
-
 ## Reverting a PR
 
 ### After a Merge Commit

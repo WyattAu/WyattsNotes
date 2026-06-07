@@ -506,8 +506,6 @@ Waiting for the server's handshake response.
 The server. Applications must not use 0-RTT for non-idempotent operations (POST requests, financial
 Transactions).
 
-:::
-
 ## UDP vs TCP Decision Framework
 
 Use this decision tree:

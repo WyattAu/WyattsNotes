@@ -798,7 +798,6 @@ new Derived(); // throws NullPointerException
 Run, so its fields are uninitialized. If the overridden method accesses subclass fields, you get
 `NullPointerException` or incorrect behavior. Mark the method `final` or `private` if you must call
 It from a constructor.
-:::
 
 ### `instanceof` and `null`
 

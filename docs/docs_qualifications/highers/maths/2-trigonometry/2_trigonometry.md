@@ -216,7 +216,6 @@ Trig functions means there are multiple solutions.
 
 :::warning When dividing by a trig function to simplify, always consider the case where that
 Function equals zero separately. Dividing by $\cos x$ loses the solutions where $\cos x = 0$.
-:::
 
 **Example:** Solve $\sin 2x = \cos x$ for $0 \leq x < 2\pi$.
 

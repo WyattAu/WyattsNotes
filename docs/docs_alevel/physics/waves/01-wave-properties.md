@@ -651,8 +651,6 @@ self-marking and building a personal test matrix.
   is an odd multiple of half-wavelengths ((n + 0.5) _ lambda). The phase difference between adjacent
   points is 2 _ pi _ (path difference) / lambda.
 
-:::
-
 ## Common Pitfalls
 
 1. Confusing wave speed, frequency, and wavelength — remember $v = f\lambda$ relates all three.

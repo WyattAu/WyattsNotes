@@ -492,8 +492,6 @@ Wire diameter, reducing the uncertainty from $\pm 0.5$ mm to $\pm 0.005$ mm."
   DIRECTION (does each error make the result too high or too low?), and suggests specific
   IMPROVEMENTS. Vague statements like "human error" score few marks.
 
-:::
-
 ## Problem Set
 
 <details>

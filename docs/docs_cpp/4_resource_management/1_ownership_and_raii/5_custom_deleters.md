@@ -730,7 +730,6 @@ auto arr2 = std::shared_ptr<int>(new int[10], [](int* p) { delete[] p; });
 [N4950 S20.11.3.7]. It provides `operator[]` but still requires an explicit array deleter. Before
 C++17, managing arrays with `shared_ptr` required manually passing `default_delete&lt;T[]&gt;` or a
 Lambda.
-:::
 
 ## Summary
 

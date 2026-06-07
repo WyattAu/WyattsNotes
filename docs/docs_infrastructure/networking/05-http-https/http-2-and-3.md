@@ -702,8 +702,6 @@ SETTINGS frame's INITIAL_WINDOW_SIZE parameter.
 Changing INITIAL_WINDOW_SIZE affects only new streams, not existing ones. Existing streams continue
 With their current window size. This can lead to confusion during the transition period.
 
-:::
-
 ### Window Update Behavior
 
 When the receiver consumes data (reads it from the buffer), it sends WINDOW_UPDATE to increase the

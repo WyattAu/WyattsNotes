@@ -756,8 +756,6 @@ Automatic failover can cause split-brain if the network partition is asymmetric 
 It is still the leader, but the replicas have already promoted one of their own). Always use a
 Consensus-based coordination system (Patroni + etcd) rather than custom scripts.
 
-:::
-
 ## Data Warehousing
 
 ### OLTP vs OLAP

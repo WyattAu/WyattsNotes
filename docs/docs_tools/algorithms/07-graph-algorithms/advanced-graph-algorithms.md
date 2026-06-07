@@ -246,8 +246,6 @@ The condition for a bridge is `low[u] > tin[v]` (strict inequality), while for a
 It is `low[u] >= tin[v]` (non-strict). The difference matters: a back edge to the parent vertex
 Satisfies `low[u] == tin[v]` but does not make the edge a bridge.
 
-:::
-
 ### Biconnected Components
 
 A biconnected component is a maximal set of edges such that any two edges lie on a common simple

@@ -78,7 +78,6 @@ Reading bottom to top: 11010110.
 Manufacturers often use 1000 for marketing purposes. A "500 GB" hard drive advertised by the
 Manufacturer is actually about 465 GiB when measured in binary. The IEC prefixes KiB, MiB, GiB refer
 Specifically to powers of 1024.
-:::
 
 ### 1.4 Binary Addition
 

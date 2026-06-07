@@ -341,7 +341,6 @@ int main() {
 the stores due to Store buffering. On x86, stores are not reordered with other stores (TSO), so this
 particular Example would likely work on x86 but fail on ARM. This is a common source of subtle
 cross-platform Bugs.
-:::
 
 The fix is to use `std::atomic&lt;bool&gt;` with release/acquire ordering:
 

@@ -638,7 +638,6 @@ Handle: work stealing, priority queues, thread affinity, shutdown semantics, exc
 Across `when_all`And proper cancellation propagation. Libraries like
 [libunifex](https://github.com/facebookexperimental/libunifex) (now `std::execution` proposal,
 P2300) provide production-grade executors.
-:::
 
 ## Work-Stealing Concepts
 

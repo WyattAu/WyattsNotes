@@ -723,7 +723,6 @@ Diagram in the startup sequence section). The CRT constructs `envp` from this da
 
 :::info Per [N4950 S6.6.1], the `main` function signature with `char* envp[]` as a third parameter
 Is a common extension but not standard C++. Portable code should use `std::getenv()` instead.
-:::
 
 ## See Also
 

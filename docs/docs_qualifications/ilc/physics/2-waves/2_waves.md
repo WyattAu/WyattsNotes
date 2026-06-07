@@ -598,7 +598,6 @@ The emergent ray is parallel to the incident ray but displaced sideways by $1.43
 
 :::info The emergent ray is always parallel to the incident ray for a rectangular block with
 Parallel faces. The lateral displacement increases with thickness and with angle of incidence.
-:::
 
 ### Example 22: Doppler Effect -- Moving Observer
 

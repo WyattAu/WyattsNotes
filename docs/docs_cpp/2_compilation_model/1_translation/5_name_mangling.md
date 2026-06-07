@@ -654,7 +654,6 @@ Ensure the `noexcept` specification is consistent across all declarations.
 :::warning In C++17, `noexcept` became part of the type system. This means function pointer types
 Are different if their `noexcept` specification differs. A `void(*)(int)` and a
 `void(*)(int) noexcept` are different types and cannot be implicitly converted.
-:::
 
 ## 13. Practical Mangling Debugging Workflow
 

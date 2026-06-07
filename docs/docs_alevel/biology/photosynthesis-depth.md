@@ -1443,7 +1443,6 @@ fact, the Calvin cycle produces TP (a 3-carbon compound), which must then be con
 are used to regenerate RuBP. For every 6 molecules of $\mathrm{CO_2}$ fixed, the cycle produces 2
 molecules of TP that can be exported, while 10 molecules of TP are used to regenerate 6 molecules of
 RuBP.
-:::
 
 ### 23.3 Calculating Net Primary Productivity (NPP)
 

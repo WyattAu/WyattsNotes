@@ -836,8 +836,6 @@ Are necessary only when an adversary can choose inputs (e.g., hash DoS attacks).
 From a simple hash to SipHash (a cryptographic hash) in Python 3.4+ specifically to prevent hash
 Flooding attacks.
 
-:::
-
 ## Hash Table Implementation Details
 
 ### Python `dict`

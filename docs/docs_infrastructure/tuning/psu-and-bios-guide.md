@@ -1302,7 +1302,6 @@ BIOS versions are not universally forward or backward compatible:
 :::warning Never interrupt a BIOS flash. If the flash is interrupted (power loss, accidental reset),
 The SPI flash will be corrupted and the board will not POST. Recovery requires BIOS flashback (if
 Available) or an external SPI programmer. Always use a UPS when flashing BIOS.
-:::
 
 ### Dual BIOS Boards
 

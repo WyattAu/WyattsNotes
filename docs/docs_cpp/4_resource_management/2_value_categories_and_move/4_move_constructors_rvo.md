@@ -873,7 +873,6 @@ State" afterward. For resource-owning types that do not guard against self-assig
 use-after-free. Always include the self-assignment check in move assignment Operators, or
 restructure to avoid the issue entirely (e.g., using the copy-and-swap idiom which Handles
 self-assignment ).
-:::
 
 ## 7.5 Move-Only Types and the Standard Library
 

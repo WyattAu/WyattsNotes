@@ -812,8 +812,6 @@ Converting to megaparsecs: $d = 4.99 \times 10^{24}/(3.09 \times 10^{22}) = 161$
 
 :::
 
-:::
-
 ## Common Pitfalls
 
 1. Incorrectly applying $\vec{F} = m\vec{a}$ when forces are not collinear — resolve into components

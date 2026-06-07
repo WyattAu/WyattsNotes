@@ -713,7 +713,6 @@ free -h
 
 :::warning Do not create a swap file on a ZFS dataset. ZFS does not support swap files due to its
 Copy-on-write nature. Use a swap file on ext4/xfs or a dedicated swap partition instead.
-:::
 
 ### NUMA Memory Policy Deep Dive
 

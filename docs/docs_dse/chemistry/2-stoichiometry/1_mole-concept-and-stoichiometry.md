@@ -408,7 +408,6 @@ $$PV = nRT$$
 $V_m = \dfrac{nRT}{P} = \dfrac{1 \times 0.0821 \times 273}{1} = 22.4 \mathrm{ dm}^3$
 
 This confirms the molar volume at STP.
-:::
 
 **Worked example 12:** Calculate the volume occupied by 5.00 g of $\mathrm{O}_2$ at 2.0 atm and
 $27^\circ\mathrm{C}$.

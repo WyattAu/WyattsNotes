@@ -601,8 +601,6 @@ Partially false. Crowding out was limited during 2008–09 because: (1) The econ
   because some of the tax increase reduces autonomous consumption. Always check the type of tax in
   the question.
 
-:::
-
 ## 11. Extended Worked Examples
 
 ### 11.1 Full Fiscal Policy Impact Analysis

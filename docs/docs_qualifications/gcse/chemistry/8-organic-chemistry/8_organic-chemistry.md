@@ -117,7 +117,6 @@ $$\mathrm{CH_4 + \mathrm{O_2 \to \mathrm{C + 2\mathrm{H_2\mathrm{O$$
 :::warning Carbon monoxide is a toxic, colourless, odourless gas that binds to haemoglobin more
 Strongly than oxygen, preventing oxygen transport in the blood. Incomplete combustion is dangerous
 Because CO is produced without any visible or olfactory warning.
-:::
 
 Incomplete combustion occurs when the oxygen supply is insufficient. The extent of incompleteness
 Depends on the oxygen-to-fuel ratio. With very limited oxygen, solid carbon (soot) is produced; with

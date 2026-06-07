@@ -782,7 +782,6 @@ Packages.
 
 :::tip For new projects, `hatch` or `flit` are excellent choices. Use `setuptools` only when you
 Need compatibility with existing tooling or complex build requirements (e.g., C extensions).
-:::
 
 ## Wheel vs sdist
 

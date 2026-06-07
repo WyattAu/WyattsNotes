@@ -784,7 +784,6 @@ int main() {
 :::warning `__attribute__((always_inline))` overrides the compiler's inlining heuristics. Use it
 Only when profiling confirms the overhead, for tiny leaf functions in hot loops. Overusing It
 increases code size and can degrade instruction cache performance.
-:::
 
 ## Common Pitfalls
 

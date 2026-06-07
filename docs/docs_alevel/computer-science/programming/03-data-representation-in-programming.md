@@ -534,8 +534,6 @@ For revision on number representation, see
 
 :::
 
-:::
-
 ## Common Pitfalls
 
 1. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted

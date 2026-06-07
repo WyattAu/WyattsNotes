@@ -46,8 +46,6 @@ void runApp(Widget app) {
 - `SchedulerBinding.scheduleFrame()` hooks into `window.onDrawFrame`
 - The event loop will now initialize, each loop will update render objects and draw schedule frames.
 
-:::
-
 ## main() Function Variants
 
 The `main()` function has three valid signatures:

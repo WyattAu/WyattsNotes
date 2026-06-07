@@ -696,7 +696,6 @@ $0.01 \mathrm{ mol}$ of $\mathrm{HCl}$ to $1 \mathrm{ dm}^3$ of water would give
 
 :::info Info $\mathrm{pH} = \mathrm{p}K_a$. The effective buffering range is approximately
 $\mathrm{p}K_a \pm 1$.
-:::
 
 ---
 

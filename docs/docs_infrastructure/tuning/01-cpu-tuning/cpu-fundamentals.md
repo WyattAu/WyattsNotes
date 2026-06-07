@@ -947,7 +947,6 @@ Points:
 :::tip Always run Cinebench at least 3 times and report the median. The first run may be slower due
 To caching effects. Let the CPU cool between runs (wait for temperatures to drop below 50C) to
 Ensure consistent thermal conditions.
-:::
 
 ### Geekbench vs Cinebench
 

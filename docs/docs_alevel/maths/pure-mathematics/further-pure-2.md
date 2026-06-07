@@ -24,7 +24,6 @@ slug: further-pure-2
 
 :::info This is advanced content in most cases appearing in the second year of Further Mathematics.
 Ensure full mastery of Further Pure 1 before proceeding.
-:::
 
 <hr />
 

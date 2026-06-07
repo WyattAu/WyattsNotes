@@ -402,7 +402,6 @@ Output:
 :::tip Deducing this eliminates the need for CRTP in most mixin and static-polymorphism use cases.
 Prefer deducing this in new C++23 code. Reserve CRTP for projects that must target pre-C++23
 Standards, or when explicit template instantiation control is needed.
-:::
 
 ## 5.7 CRTP Use Cases: Static Interface Pattern
 

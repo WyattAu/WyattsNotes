@@ -534,8 +534,6 @@ resolvectl query example.com
 You configure DNS manually in `/etc/resolv.conf`Your changes may be overwritten. To use custom DNS
 Servers, configure them via `systemd-resolved` or NetworkManager.
 
-:::
-
 ## Common Pitfalls
 
 1. **DNS propagation is not a thing.** DNS changes propagate based on TTL. A record with a

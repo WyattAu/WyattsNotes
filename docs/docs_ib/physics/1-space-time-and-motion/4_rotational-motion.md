@@ -868,7 +868,6 @@ Motion with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
 self-marking and building a personal test matrix.
-:::
 
 ## Common Pitfalls
 

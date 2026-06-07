@@ -38,7 +38,6 @@ Examination hall.
 :::info The broad content -- Shakespeare, a 19th-century novel, modern drama or prose, and poetry --
 Is common to all boards. Differences lie in the arrangement of texts across papers, the presence or
 Absence of an anthology, and whether texts may be taken into the examination.
-:::
 
 ## Assessment Objectives
 

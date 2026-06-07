@@ -582,7 +582,6 @@ int main() {
 :::warning The `RTLD_NOW` flag resolves all symbols at load time, surfacing missing symbol errors
 Immediately. `RTLD_LAZY` defers resolution to first use, which can mask errors and cause crashes at
 Unpredictable points. For plugin loading, prefer `RTLD_NOW`.
-:::
 
 ### Windows Equivalent: `LoadLibrary` and `GetProcAddress`
 

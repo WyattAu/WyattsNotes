@@ -632,8 +632,6 @@ Elements from nickel to lead all have binding energies per nucleon in the range
 $7.5$--$8.8\,\mathrm{MeV/nucleon}$. Do not assume that fission of elements lighter than iron always
 Absorbs energy; the actual threshold depends on the specific reaction.
 
-:::
-
 ---
 
 ## Problem Set

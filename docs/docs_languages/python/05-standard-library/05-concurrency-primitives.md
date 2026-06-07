@@ -546,7 +546,6 @@ print(pq.get())  # (3, 'low priority')
 
 :::info `PriorityQueue` orders items by the first element of the tuple. If the first elements are
 Equal, it compares the second, and so on. If items are not comparable, it raises `TypeError`.
-:::
 
 ## GIL Impact Analysis
 

@@ -306,8 +306,6 @@ $$
 I_1 = I \cdot \frac{R_2}{R_1 + R_2} = 34.2 \times \frac{300}{400} = 25.7\,\mu\text{A
 $$
 
-:::
-
 ## Ammeters and Voltmeters
 
 - **Ammeter:** Measures current. Connected in series. Ideal ammeter has zero resistance.

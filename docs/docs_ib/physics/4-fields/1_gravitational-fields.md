@@ -876,7 +876,6 @@ Gravitational Fields with other physics topics to test synthesis under exam cond
 
 See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
 self-marking and building a personal test matrix.
-:::
 
 ## Summary
 

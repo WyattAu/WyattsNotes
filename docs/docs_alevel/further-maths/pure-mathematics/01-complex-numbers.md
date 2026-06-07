@@ -792,8 +792,6 @@ Therefore: $\displaystyle\sum_{k=1}^{n-1}\frac◆LB◆1◆RB◆◆LB◆1 - \omeg
 
 </details>
 
-:::
-
 ---
 
 ## 8. Advanced Worked Examples

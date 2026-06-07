@@ -744,7 +744,6 @@ Does not require modifying the original source code.
 :::warning `--wrap` operates at the symbol level, not the function level. If `malloc` is inlined by
 The compiler, the wrapper will not intercept the inlined call. Use `-fno-inline` on the wrapping TU
 Or compile the wrapped TU separately without LTO.
-:::
 
 ## See Also
 

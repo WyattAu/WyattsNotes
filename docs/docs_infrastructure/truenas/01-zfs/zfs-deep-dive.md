@@ -785,7 +785,6 @@ zpool import -f tank
 :::warning Always export a pool before disconnecting drives. If a pool is not exported, ZFS may mark
 It as active on the original system, preventing import on the new system. Use `zpool export -f` to
 Force export if necessary.
-:::
 
 ### Pool Degradation Scenarios
 

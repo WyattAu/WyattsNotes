@@ -743,8 +743,6 @@ Complete regime change.
   policy regime, because behaviour changes when policy changes. Micro-founded models that use deep
   structural parameters are more robust.
 
-:::
-
 ## 8. Advanced Policy Debates: Worked Examples
 
 ### 8.1 Taylor Rule: Full Numerical Application

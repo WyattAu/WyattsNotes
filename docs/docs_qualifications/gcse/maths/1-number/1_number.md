@@ -525,7 +525,6 @@ Places, all digits beyond that point are discarded (not rounded).
 
 :::warning Truncation and rounding give different results when the digit immediately after the
 Cutoff is 5 or greater. Be sure to read the question carefully.
-:::
 
 ## 6. Direct and Inverse Proportion
 

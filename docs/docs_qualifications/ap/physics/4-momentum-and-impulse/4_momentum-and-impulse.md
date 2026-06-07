@@ -690,7 +690,6 @@ The tension is positive, so the block does indeed complete full vertical circles
 
 :::info Info Make the block complete full vertical circles. In most textbook versions, the block
 only swings to a Modest height.
-:::
 
 ## Common Pitfalls Extended
 

@@ -1652,7 +1652,6 @@ A **Virtual Private Network** creates an encrypted tunnel over a public network.
 public key guarantees Confidentiality but does not prove who sent it. Digital signatures (signing
 with a private key) Provide authentication and non-repudiation. TLS combines both via the
 certificate chain.
-:::
 
 ### 7.7 Common Network Attacks
 

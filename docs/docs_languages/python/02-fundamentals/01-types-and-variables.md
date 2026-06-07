@@ -968,8 +968,6 @@ Overuse of `global` is a code smell. It creates hidden coupling between function
 Difficult to test and reason about. Prefer passing state explicitly through function parameters or
 Using classes.
 
-:::
-
 ## Common Pitfalls
 
 1. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its

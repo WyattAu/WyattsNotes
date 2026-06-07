@@ -361,7 +361,6 @@ Social premium for community development projects (schools, healthcare, clean wa
 :::warning Warning Developing country liberalises trade while developed countries maintain subsidies
 on agriculture (e.g., the EU's Common Agricultural Policy), developing-country farmers cannot
 compete. Trade Liberalisation must be reciprocal and sequenced appropriately.
-:::
 
 ## 7. Sustainable Development
 

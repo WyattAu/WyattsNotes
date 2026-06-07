@@ -582,8 +582,6 @@ Comparative advantage: leaving the EU's single market means the UK faces tariffs
   opportunity cost in terms of the OTHER good. If Country A can produce 10 cars or 5 trucks, the
   opportunity cost of 1 car is 0.5 trucks, NOT 2 trucks. Many students invert the ratio.
 
-:::
-
 ## 13. Advanced Topics in International Economics
 
 ### 13.1 The Marshall-Lerner Condition: Formal Derivation

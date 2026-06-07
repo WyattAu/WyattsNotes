@@ -80,7 +80,6 @@ Docusaurus supports admonition callouts using triple-colon syntax:
 :::
 
 :::danger This is a danger block.
-:::
 ```
 
 Custom titles are supported: `:::info[Custom Title]`

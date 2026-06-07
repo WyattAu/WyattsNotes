@@ -709,8 +709,6 @@ Const generics with expressions (like `N > 0`) are evaluated at compile time but
 Not all operations are supported in const contexts. Check the Rust reference for the current
 Supported const operations.
 
-:::
-
 ## Trait Aliases
 
 Trait aliases (unstable, feature gate `trait_alias`) allow you to create a shorthand for complex

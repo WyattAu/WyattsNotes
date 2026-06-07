@@ -1119,7 +1119,6 @@ And when crimes are likely to occur, or to identify individuals who are likely t
 :::info Board-specific The following questions are structured to match the style of AQA, OCR (A),
 Edexcel, and CIE examination papers. AQA and OCR favour structured questions with specific marks for
 Specific points. Edexcel and CIE favour extended discussion questions requiring evaluation.
-:::
 
 ### Question 1 (AQA-style, 6 marks)
 

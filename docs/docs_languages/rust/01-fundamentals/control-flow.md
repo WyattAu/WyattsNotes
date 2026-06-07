@@ -727,8 +727,6 @@ match x {
 This works correctly because the guard's `x` refers to the pattern binding, not the outer `x`. But
 If the guard references an outer variable with the same name, the outer variable takes precedence.
 
-:::
-
 ## Control Flow in Error Handling
 
 ### `match` for Error Classification

@@ -523,8 +523,6 @@ Arbitrary text. They are used internally by the Dart VM for optimization and ref
 Exposed via the `dart:mirrors` library. Most application developers will never create symbols
 Directly.
 
-:::
-
 ## Common Pitfalls
 
 1. Writing pseudocode that is too language-specific rather than using standard algorithmic

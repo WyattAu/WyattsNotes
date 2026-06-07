@@ -801,8 +801,6 @@ Limit pricing is rational when: (a) the long-run gain from maintaining monopoly 
   firm makes a loss but should continue producing because it covers variable costs and contributes
   to fixed costs.
 
-:::
-
 ## 8. Advanced Market Structure Analysis
 
 ### 8.1 Revenue Diagrams for Each Market Structure

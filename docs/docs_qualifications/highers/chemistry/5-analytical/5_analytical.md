@@ -16,8 +16,6 @@ slug: 5-analytical
 
 This chapter covers **Advanced Higher** Chemistry content, extending beyond Higher level.
 
-:::
-
 ## Analytical Techniques
 
 ### Spectroscopy Overview

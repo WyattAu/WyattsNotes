@@ -16,7 +16,6 @@ slug: 5-programming
 
 :::info Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR J277 Paper 1 & 2 | WJEC Unit 1 &
 2
-:::
 
 ## 1. Programming Concepts
 

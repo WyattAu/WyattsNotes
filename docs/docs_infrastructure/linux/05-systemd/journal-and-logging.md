@@ -363,8 +363,6 @@ Systemd-managed services log to the journal by default. `logrotate` is used for:
 2. Legacy applications without systemd support
 3. Situations requiring specific rotation policies per application
 
-:::
-
 ## rsyslog
 
 `rsyslog` is the traditional syslog daemon that can receive messages from journald and process them

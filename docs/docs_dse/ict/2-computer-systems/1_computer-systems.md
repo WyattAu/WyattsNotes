@@ -435,7 +435,6 @@ $185_{10} = 000110000101_{BCD}$
 :::info Key difference: ASCII uses 1 byte per character and covers only English and basic symbols.
 Unicode covers all writing systems but uses more storage. UTF-8 is the most widely used encoding on
 The internet.
-:::
 
 ### Image Representation
 

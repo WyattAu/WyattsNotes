@@ -435,7 +435,6 @@ int main() {
 Final suspend point. Calling `handle.destroy()` afterward on a dangling handle is **undefined
 Behavior**. If `final_suspend` returns `std::suspend_always`You **must** eventually call
 `handle.destroy()` or the frame leaks.
-:::
 
 ## Symmetric Transfer and `await_suspend` Returning a Handle
 

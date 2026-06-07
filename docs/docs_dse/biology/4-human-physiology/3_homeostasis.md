@@ -74,7 +74,6 @@ is completed.
 requires knowledge of positive feedback examples (ovulation and childbirth are the most commonly
 tested). Remember: negative feedback maintains homeostasis; positive feedback amplifies change and
 does NOT maintain a constant internal environment.
-:::
 
 ### Components of a Homeostatic Control System
 

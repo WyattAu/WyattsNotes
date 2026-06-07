@@ -1247,7 +1247,6 @@ Bases and Buffers with other chemistry topics to test synthesis under exam condi
 
 See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on
 self-marking and building a personal test matrix.
-:::
 
 ## Summary
 

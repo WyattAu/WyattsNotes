@@ -822,8 +822,6 @@ Approach.
   ABOVE transfer earnings. All workers earn at least their transfer earnings; the area above the
   supply curve and below the wage is economic rent.
 
-:::
-
 ## 11. Advanced Labour Market Analysis
 
 ### 11.1 Perfect Competition vs Monopsony: Comprehensive Diagrammatic Analysis

@@ -893,7 +893,6 @@ Trigonometry with other pure mathematics topics to test synthesis under exam con
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
 building a personal test matrix.
-:::
 
 ## Common Pitfalls
 

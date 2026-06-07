@@ -357,7 +357,6 @@ $$v = \frac{10}{t + 1}\;\mathrm{m\,s^{-1}}$$
 integration** and use the Initial conditions to find it. Also check whether the particle changes
 direction by finding when $v = 0$ -- the total distance is not the same as the displacement if there
 is a change of Direction.
-:::
 
 <hr />
 

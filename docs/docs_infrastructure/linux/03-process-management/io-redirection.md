@@ -448,8 +448,6 @@ done
 `xargs` without `-0` or `-d` splits on whitespace and newlines, which breaks on filenames with
 Spaces. Always use `find ... -print0 | xargs -0` when processing filenames.
 
-:::
-
 ## Command Substitution
 
 ```bash

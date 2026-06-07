@@ -844,8 +844,6 @@ Use `COALESCE` to provide defaults for NULL values in application queries. Use `
 Division-by-zero errors: `ratio = a / NULLIF(b, 0)` returns NULL instead of raising an error when
 `b` is zero.
 
-:::
-
 ## Common Pitfalls
 
 ### Off-by-One Errors with BETWEEN

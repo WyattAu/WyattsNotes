@@ -696,8 +696,6 @@ The effective multiplier accounts for excess reserves and cash leakages. Let $rr
   largely remain in the banking system. This distinction matters for understanding why QE did not
   cause hyperinflation after 2008.
 
-:::
-
 ## 8. Advanced Financial Sector Topics
 
 ### 8.1 The Money Multiplier: Step-by-Step Balance Sheet Analysis

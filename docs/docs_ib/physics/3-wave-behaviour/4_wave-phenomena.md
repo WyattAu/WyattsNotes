@@ -490,8 +490,6 @@ Fringe spacing is determined by $d$; the envelope of the diffraction pattern is 
 The overall intensity pattern is the product of the double-slit interference pattern and the
 Single-slit diffraction envelope.
 
-:::
-
 ---
 
 ## Related Content at Other Levels

@@ -792,8 +792,6 @@ self-marking and building a personal test matrix.
   friction is 4N to the left, the net force is 6N, not 10N. Always resolve forces before
   substituting into F = ma.
 
-:::
-
 ## Common Pitfalls
 
 1. Confusing scalar and vector quantities — always check whether direction matters for the quantity

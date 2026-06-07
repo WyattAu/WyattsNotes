@@ -864,8 +864,6 @@ It uses up one piece of information from the data.
 
 </details>
 
-:::
-
 ---
 
 ## 8. Advanced Worked Examples

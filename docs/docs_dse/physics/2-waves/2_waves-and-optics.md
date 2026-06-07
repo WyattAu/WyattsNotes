@@ -1373,8 +1373,6 @@ $$\frac{60 + D_m}{2} = \sin^{-1}(0.760) = 49.5^\circ$$
 
 $$60 + D_m = 99.0^\circ \implies D_m = 39.0^\circ$$
 
-:::
-
 ## Common Pitfalls
 
 1. Confusing wave speed, frequency, and wavelength — remember $v = f\lambda$ relates all three.

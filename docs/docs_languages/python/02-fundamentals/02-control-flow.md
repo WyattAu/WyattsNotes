@@ -1044,8 +1044,6 @@ Always use `with` statements for file I/O, database connections, network sockets
 Other resource that requires explicit cleanup. Never rely on `__del__` or the garbage collector for
 Resource management.
 
-:::
-
 ## Common Pitfalls
 
 1. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.

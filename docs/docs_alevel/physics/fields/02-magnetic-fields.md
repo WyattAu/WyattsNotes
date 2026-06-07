@@ -859,8 +859,6 @@ self-marking and building a personal test matrix.
   This centripetal force causes circular motion with radius r = mv/(qB). The particle does NOT slow
   down -- the magnetic force only changes direction.
 
-:::
-
 ## Common Pitfalls
 
 1. Confusing gravitational field strength $g$ with gravitational potential $V_g$ — one is force per

@@ -651,8 +651,6 @@ For revision on algorithms, see
 
 :::
 
-:::
-
 ## Common Pitfalls
 
 1. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way

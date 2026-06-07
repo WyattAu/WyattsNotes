@@ -136,8 +136,6 @@ These notes assume familiarity with basic Linux usage (navigating directories, r
 Editing files). The focus is on depth — understanding _how_ things work, not just _what_ commands to
 Run.
 
-:::
-
 ## Summary
 
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding

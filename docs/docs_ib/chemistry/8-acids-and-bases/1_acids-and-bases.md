@@ -322,7 +322,6 @@ $K_w$ is **temperature dependent**:
 Because $K_w$ is larger, so $[\mathrm{H}^+] = [\mathrm{OH}^-] = \sqrt{K_w} \gt 10^{-7}$. The water
 Is still **neutral** because $[\mathrm{H}^+] = [\mathrm{OH}^-]$. Neutral does not always mean pH =
 7; on temperature.
-:::
 
 ---
 

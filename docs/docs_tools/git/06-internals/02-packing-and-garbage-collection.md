@@ -131,8 +131,6 @@ $ git gc --prune=now
 Always verify with `git fsck --unreachable` first, and ensure you don't need the objects (e.g.,
 they're not needed for a reflog-based recovery).
 
-:::
-
 ## Garbage Collection
 
 `git gc` performs several maintenance tasks:

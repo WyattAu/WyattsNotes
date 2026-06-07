@@ -113,8 +113,6 @@ $ git diff src/auth.c
 # Shows the conflict markers and your edits
 ```
 
-:::
-
 ### Strategy 2: Accept One Side Entirely
 
 ```bash

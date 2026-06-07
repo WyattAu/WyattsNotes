@@ -92,8 +92,6 @@ These notes assume familiarity with networking fundamentals (TCP/IP, DNS, TLS) a
 Administration. The focus is on understanding how security controls work at the implementation level
 And why they fail when they do.
 
-:::
-
 ## Summary
 
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding

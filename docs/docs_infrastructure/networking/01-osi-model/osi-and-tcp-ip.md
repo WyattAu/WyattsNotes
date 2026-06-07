@@ -695,8 +695,6 @@ Checking IP configuration. Verify IP connectivity before checking TCP ports. Ver
 Before debugging application-level issues. This systematic approach saves time and prevents
 Misdiagnosis.
 
-:::
-
 ## Common Pitfalls
 
 1. **Treating the OSI model as prescriptive.** The OSI model describes, it does not prescribe. No

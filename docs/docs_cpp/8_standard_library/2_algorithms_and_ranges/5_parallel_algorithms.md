@@ -749,7 +749,6 @@ int main() {
 Execution policies: `std::stable_sort` (until C++20), `std::nth_element` (until C++20), and
 `std::inplace_merge`. Check the standard or your compiler's documentation for the full list of
 Parallel-capable algorithms.
-:::
 
 ## See Also
 

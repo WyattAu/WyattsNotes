@@ -688,7 +688,6 @@ int main() {
 :::warning Always catch exceptions by reference (`const std::exception& e`). Catching by value
 Slices the exception object, losing derived-class information and potentially invoking slicing in
 The exception handler itself.
-:::
 
 ## 2.12 Preventing Slicing at Compile Time
 

@@ -536,7 +536,6 @@ String[] parts = "one,two,three".split(",");
 
 :::tip Always prefer `split` or compiled `Pattern` over `StringTokenizer`. The only advantage of
 `StringTokenizer` is that it does not compile a regex, but `Pattern.compile(",")` is negligible.
-:::
 
 ## Common String Algorithms
 

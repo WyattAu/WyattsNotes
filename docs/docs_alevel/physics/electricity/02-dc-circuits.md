@@ -777,8 +777,6 @@ self-marking and building a personal test matrix.
   resistors in series with no load connected. If a load resistance is connected across R2, the
   effective resistance of the parallel combination must be used instead.
 
-:::
-
 ## Common Pitfalls
 
 1. Confusing EMF and potential difference — EMF is the total energy per unit charge supplied; PD is

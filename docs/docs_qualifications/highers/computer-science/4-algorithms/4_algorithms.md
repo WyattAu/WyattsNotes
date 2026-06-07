@@ -16,8 +16,6 @@ slug: 4-algorithms
 
 This chapter covers **Advanced Higher** Computing Science content, extending beyond Higher level.
 
-:::
-
 ## Algorithm Complexity
 
 ### Big O Notation

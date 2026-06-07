@@ -1533,7 +1533,6 @@ $\blacksquare$
   orientation. Swapping the order changes the sign of the flux integral.
 - **Surface area vs. Flux.** Surface area uses $\lVert \mathbf{r}_u \times \mathbf{r}_v \rVert$
   (scalar), while flux uses $\mathbf{r}_u \times \mathbf{r}_v$ (vector, oriented).
-:::
 
 ## 6. Problem Set
 

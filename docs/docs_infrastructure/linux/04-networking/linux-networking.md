@@ -316,8 +316,6 @@ New connections are dropped with no error logged. This is a common cause of "mys
 Failures under high load. Monitor `net.netfilter.nf_conntrack_count` vs
 `net.netfilter.nf_conntrack_max`.
 
-:::
-
 ## iptables
 
 Iptables is the legacy user-space interface to netfilter. It organizes rules into tables, chains,
