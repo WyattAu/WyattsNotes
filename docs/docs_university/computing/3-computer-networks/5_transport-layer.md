@@ -226,7 +226,6 @@ Where $\mathrm{RTT_m}$ = measured RTT, $\alpha = 1/8$, $\beta = 1/4$. Initial RT
 
 :::caution Common Pitfall Karn's algorithm: do not update RTT estimates for retransmitted segments.
 The ACK could correspond To either the original or the retransmission (retransmission ambiguity).
-:::
 
 <details>
 <summary>Worked Example: RTT Estimation</summary>
@@ -267,5 +266,6 @@ $\mathrm{RTO} = 117.91 + 4(119.69) = 596.67$ ms
 The smoothed RTT converges toward the true average (~240 ms) and the RTO stabilises around 600 ms.
 
 </details>
+
 
 

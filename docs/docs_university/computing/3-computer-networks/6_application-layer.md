@@ -239,6 +239,6 @@ Per second. $\blacksquare$
 :::caution Common Pitfall DNS uses both TCP and UDP. Queries use UDP port 53 (for efficiency). TCP
 is used for zone Transfers, responses exceeding 512 bytes, and DNSSEC. The switch to TCP was
 formalised in RFC 7766.
-:::
+
 
 

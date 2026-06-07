@@ -302,7 +302,6 @@ Measure $m^*$ directly: the resonance frequency is $\omega_c = eB/m^*$.
 symmetry, it reduces to A scalar, but for anisotropic crystals (e.g., graphite, silicon), different
 effective masses apply Along different crystallographic directions. Always check the crystal
 symmetry before assuming $m^*$ is a scalar.
-:::
 
 ### 5.9 Band Structure Calculations
 
@@ -339,5 +338,6 @@ occupied States). The Kohn--Sham equations are solved self-consistently.
 DFT accurately predicts structural properties (lattice constants, elastic constants, phonon
 Frequencies within a few percent) but is less reliable for band gaps (LDA underestimates By
 30--50\%) and strongly correlated systems (e.g., transition metal oxides).
+
 
 

@@ -172,6 +172,6 @@ Extended to $\mathbb{R}$ for analysis.
 :::caution Common Pitfall The completeness axiom is often misstated as "every bounded set has a supremum." The set must be Non-empty. Also, completeness does not say every set has a maximum;
 $\sup(S)$ need not belong to $S$. For example, $\sup\{1/n : n \in \mathbb{N}\} = 1$Which belongs to
 the set, but $\sup(0, 1) = 1$Which does not belong to $(0, 1)$.
-:::
+
 
 

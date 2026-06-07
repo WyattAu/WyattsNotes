@@ -225,7 +225,6 @@ Therefore $A^{10} = 3254867 \cdot A - 6508710 \cdot I$. $\blacksquare$
 $A = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ has Eigenvalue $\lambda = 1$ with algebraic
 multiplicity 2 but geometric multiplicity 1. It has only one Linearly independent eigenvector and is
 not diagonalisable.
-:::
 
 ### 5.8 Worked Example: Spectral Decomposition of a Symmetric Matrix
 
@@ -279,5 +278,6 @@ $\blacksquare$
   transform by $P$.
 
 ---
+
 
 

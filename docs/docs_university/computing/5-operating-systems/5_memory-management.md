@@ -303,7 +303,6 @@ And no global ordering of references.
 
 :::caution Common Pitfall Belady's anomaly applies to FIFO but **not** to LRU or Optimal. Adding
 more memory does not always Reduce page faults for non-stack algorithms.
-:::
 
 ### 5.8 Thrashing
 
@@ -360,5 +359,6 @@ Just that page.
 
 - `fork()` becomes nearly $O(1)$ instead of $O(n)$ where $n$ is the number of pages.
 - If the child immediately calls `exec()`No copies are ever made.
+
 
 

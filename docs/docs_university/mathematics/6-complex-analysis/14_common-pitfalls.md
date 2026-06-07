@@ -42,11 +42,7 @@ No zeros in the domain.
 without specifying a branch, you must either compute all values or explicitly state which Branch you
 are using. The principal branch $\mathrm{Log}\, z$ has a branch cut along $(-\infty, 0]$ And is
 undefined on this cut.
-:::
 
 :::caution Common Pitfall When applying the ML inequality, make sure $M$ is a valid upper bound for
 $|f(z)|$ on the entire contour. A common error is bounding $|f|$ on only part of the contour. Also,
 $L$ must be the arc length of the contour, not a diameter or radius.
-:::
-
-

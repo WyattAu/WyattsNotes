@@ -323,6 +323,6 @@ AI planning. Modern solvers routinely handle instances with millions of variable
 :::caution Common Pitfall Do not confuse satisfiability with validity. A formula is _satisfiable_ if
 it is true under _some_ Assignment; it is _valid_ (a tautology) if true under _all_ assignments.
 Checking validity is Co-NP-complete, not NP-complete.
-:::
+
 
 

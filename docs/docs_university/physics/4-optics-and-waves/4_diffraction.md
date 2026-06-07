@@ -76,7 +76,6 @@ $a\sin\theta = \lambda$ (not $\lambda/2$). The factor of 2 difference from the d
 condition ($d\sin\theta = \lambda$) Reflects the fundamentally different geometry: in single-slit
 diffraction, the minimum occurs when Wavelets from the edges cancel, requiring a path difference of
 one full wavelength between them.
-:::
 
 ### 4.3 Double-Slit with Finite Width
 
@@ -263,5 +262,6 @@ $a\sin\theta = \lambda$: the third order ($m = 3$) and all multiples of 3 are mi
 $d/a = 3$ as the ratio for missing orders.
 
 </details>
+
 
 

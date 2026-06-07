@@ -161,6 +161,6 @@ subgroup Of order $d$ for each divisor $d$ of $12$.
 $d$ of $n$. The converse of Lagrange's theorem is false. For example, $A_4$ has order $12$ but no
 subgroup of order $6$. However, every subgroup of a _cyclic_ group of order $n$ has order dividing
 $n$And for each divisor There is exactly one such subgroup.
-:::
+
 
 

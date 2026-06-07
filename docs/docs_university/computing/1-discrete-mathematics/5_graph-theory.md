@@ -251,7 +251,6 @@ Unused edges, find a subtour, and splice it in. Repeat until all edges are used.
 :::caution Common Pitfall Determining whether a graph has a Hamilton path/circuit is NP-complete ,
 whereas Euler Paths/circuits can be determined in polynomial time using the degree condition. Do not
 confuse the two.
-:::
 
 ### 5.7 Matching Theory
 
@@ -346,5 +345,6 @@ Where every $f(e)$ is an integer.
 The **Ford--Fulkerson method** repeatedly finds augmenting paths in the residual graph and pushes
 Flow along them. When capacities are integers, each augmentation increases the flow by at least 1,
 Guaranteeing termination.
+
 
 

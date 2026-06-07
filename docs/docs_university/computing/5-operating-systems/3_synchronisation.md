@@ -226,6 +226,6 @@ void philosopher(int i) {
 :::caution Common Pitfall Always use a `while` loop (not `if`) when checking conditions with
 condition variables. Spurious Wakeups can cause `pthread_cond_wait()` to return without the
 condition being signalled. The loop Re-checks the condition after every wakeup.
-:::
+
 
 

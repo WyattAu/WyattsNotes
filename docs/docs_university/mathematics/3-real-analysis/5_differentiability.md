@@ -256,6 +256,6 @@ $\frac{\infty}{\infty}$. Applying it to forms like $\frac{1}{0}$ or $\frac{\inft
 incorrect results. Always Verify the indeterminate form before applying the rule. Also, L'Hôpital's
 rule requires that the Limit of the quotient of derivatives exists; if it does not exist
 (oscillates), the original limit May still exist.
-:::
+
 
 

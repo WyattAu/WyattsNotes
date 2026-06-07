@@ -273,10 +273,6 @@ $\frac{x^2}{2} + y^2 = C$. These are ellipses.
 
 :::caution Common Pitfall When separating variables, dividing by $h(y)$ can lose solutions where
 $h(y) = 0$. Always check whether $h(y) = 0$ yields valid solutions before dividing.
-:::
 
 :::caution Common Pitfall Not every first-order ODE falls into a standard category. Equations like
 $y' = e^{x^2} + \sin(y^2)$ cannot be solved by elementary methods and require numerical Techniques.
-:::
-
-

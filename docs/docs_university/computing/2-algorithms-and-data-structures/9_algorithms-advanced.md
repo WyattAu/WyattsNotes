@@ -433,7 +433,6 @@ lines and query in $O(\log n)$ per step.
 hold. Knuth's optimisation requires the quadrangle inequality AND monotonicity of the optimal split
 point. The convex hull trick requires lines to be added in monotone order of slope. Applying these
 optimisations without verifying the conditions leads to incorrect results.
-:::
 
 ## 3. String Algorithms
 
@@ -1668,4 +1667,5 @@ $\blacksquare$
 - Searching: linear $O(n)$, binary $O(\log n)$, hash $O(1)$ average.
 - Data structures: arrays, linked lists, stacks, queues, trees, hash tables, heaps, graphs.
 - Amortised analysis: dynamic arrays $O(1)$ amortised append; splay trees $O(\log n)$ amortised.
+
 

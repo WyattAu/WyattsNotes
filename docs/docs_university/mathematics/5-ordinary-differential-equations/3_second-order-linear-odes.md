@@ -391,7 +391,6 @@ $x > 0$. For $x < 0$Substitute $x = -e^t$ or use $y = (-x)^r$.
 :::caution Common Pitfall Variation of parameters always works but can lead to difficult integrals.
 If the forcing term $g(x)$ is a polynomial, exponential, sine, or cosine (or products of these),
 Prefer undetermined coefficients --- it is much faster.
-:::
 
 ### 3.18 Abel's Identity (Proof)
 
@@ -441,4 +440,5 @@ $= -\frac{(x+1)e^x}{4} - \frac{(3x-1)e^x}{36} = e^x\left(-\frac{9(x+1)}{36} - \f
 $y = c_1 e^{2x} + c_2 e^{-2x} - \frac{(x+2)e^x}{9}$. $\blacksquare$
 
 </details>
+
 

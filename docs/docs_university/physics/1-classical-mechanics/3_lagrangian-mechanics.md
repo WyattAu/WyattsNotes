@@ -308,6 +308,6 @@ $\blacksquare$
 (scleronomic constraints and Velocity-independent potentials). For a bead on a rotating hoop
 (rheonomic constraint), $h$ is Conserved but $h \neq T + V$. Always check whether the system is
 natural before identifying $h$ With the total energy.
-:::
+
 
 

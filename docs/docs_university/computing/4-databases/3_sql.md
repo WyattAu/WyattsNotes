@@ -293,7 +293,6 @@ cursor.execute("SELECT * FROM Student WHERE name = %s", (user_input,))
 :::caution Common Pitfall Even if you escape single quotes in user input, this is not a reliable
 defence against SQL injection. Use parameterised queries instead. Escape-based defences are fragile
 and have been bypassed by Encoding tricks (e.g., multibyte character exploits).
-:::
 
 ### 3.10 Query Optimisation Basics
 
@@ -366,5 +365,6 @@ With these indexes, the optimiser can use an index scan on `Course(Dept)` to fin
 Use nested-loop index joins to find matching enrolments and students, avoiding full table scans.
 
 </details>
+
 
 

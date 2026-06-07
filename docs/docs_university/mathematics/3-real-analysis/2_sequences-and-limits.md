@@ -227,6 +227,6 @@ $\inf$ of the range $\{a_n : n \in \mathbb{N}\}$. The $\limsup$ depends on the _
 the sequence. For Example, $a_n = (-1)^n$ has $\limsup = 1$ and $\liminf = -1$But $\sup\{a_n\} = 1$
 and $\inf\{a_n\} = -1$ happen to agree in this case. However, for $a_n = 1/n$, $\sup = 1$ but
 $\limsup = 0$.
-:::
+
 
 

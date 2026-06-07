@@ -187,7 +187,6 @@ Three principal experimental methods:
 :::caution Common Pitfall The coordination number is the number of _nearest neighbours_, not the
 number of atoms in the unit Cell. For FCC, the coordination number is 12 even though there are only
 4 atoms per conventional Cell. Do not confuse the basis size with the coordination number.
-:::
 
 <details>
 <summary>Worked Example: Interplanar Spacing for SC, BCC, FCC</summary>
@@ -213,5 +212,6 @@ Note that (100) is absent in FCC (since 1+0+0 = 1 is odd but not all odd). The s
 $h^2+k^2+l^2$ values (3, 4, 8, 11, 12, ...) is characteristic of FCC.
 
 </details>
+
 
 

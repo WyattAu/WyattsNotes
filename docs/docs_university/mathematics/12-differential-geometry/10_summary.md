@@ -24,6 +24,6 @@ tags:
 the smooth structure. Two different Riemannian metrics on the same smooth manifold generally give
 different connections, different geodesics, and different curvatures. The topology constrains the
 total curvature (Gauss-Bonnet) but not the local curvature at individual points.
-:::
+
 
 

@@ -113,7 +113,6 @@ exponentially. $\blacksquare$
 is counterintuitive: a Rigid body spinning about its intermediate axis is unstable. This is not a
 violation of angular Momentum conservation --- the angular momentum vector remains fixed in space,
 but the body Tumbles relative to it.
-:::
 
 ### 8.7 Worked Example: The Spinning Top
 
@@ -223,5 +222,6 @@ the centre of mass they would be $0$, $ML^2/12$, $ML^2/12$.
 $\blacksquare$
 
 </details>
+
 
 

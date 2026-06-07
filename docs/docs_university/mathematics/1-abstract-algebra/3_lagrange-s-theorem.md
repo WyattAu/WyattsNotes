@@ -111,6 +111,6 @@ $|H||K| = |HK| \cdot |H \cap K|$. $\blacksquare$
 :::caution Common Pitfall The product $HK$ need not be a subgroup . However, $HK$ is always a
 subgroup when $H$ or $K$ is normal. In that case, $|HK| = |H||K|/|H \cap K|$ also divides $|G|$ by
 Lagrange.
-:::
+
 
 

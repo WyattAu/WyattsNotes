@@ -198,7 +198,6 @@ $\blacksquare$
 
 :::tip To check if $n$ vectors in $\mathbb{R}^n$ form a basis, compute the determinant of the matrix
 whose Columns are those vectors. If $\det \neq 0$They form a basis; if $\det = 0$They do not.
-:::
 
 **Problem.** Let $V = \mathcal{P}_3(\mathbb{R})$ (polynomials of degree at most 3). Find the
 dimension Of the subspace $W = \{p \in \mathcal{P}_3 : p(1) = p(-1) = 0\}$.
@@ -231,5 +230,6 @@ _If you get this wrong, revise: Section 2.7 (Worked Examples)._
   the empty set is a basis for $\{\mathbf{0}\}$. The dimension of the zero space is 0.
 
 ---
+
 
 

@@ -206,6 +206,6 @@ _If you get this wrong, revise:_ Section 3.5 (Cauchy Condensation Test).
 :::caution Common Pitfall The ratio and root tests are inconclusive when the limit equals 1. In such
 cases, try the comparison Test, integral test, or other methods. For example, $\sum 1/n$ diverges
 (harmonic series) and $\sum 1/n^2$ converges, but both give a ratio test limit of 1.
-:::
+
 
 

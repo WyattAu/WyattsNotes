@@ -526,6 +526,6 @@ A graph $G = (V, E)$ can be represented by:
 asymptotically slower. Use adjacency matrices for dense graphs ($E \approx V^2$) and adjacency lists
 for sparse graphs ($E \ll V^2$). For example, BFS with an adjacency matrix takes $O(V^2)$ but with
 adjacency lists takes $O(V + E)$.
-:::
+
 
 

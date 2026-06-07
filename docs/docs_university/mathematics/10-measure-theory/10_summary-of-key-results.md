@@ -18,6 +18,6 @@ tags:
 :::caution Common Pitfall When applying the dominated convergence theorem, the dominating function
 $g$ must be integrable ($g \in L^1$), not just bounded. A bounded function on a space of infinite
 measure need not be integrable.
-:::
+
 
 

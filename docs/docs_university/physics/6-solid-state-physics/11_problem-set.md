@@ -96,6 +96,6 @@ lattice constant $a$ With the reciprocal lattice spacing $2\pi/a$. The first Bri
 from $-\pi/a$ to $+\pi/a$ in each direction, not from $0$ to $a$. When calculating the Fermi wave
 vector, always Use $k_F = (3\pi^2 n)^{1/3}$ --- the factor of $3\pi^2$ (not $6\pi^2$) accounts for
 the factor Of 2 from spin.
-:::
+
 
 

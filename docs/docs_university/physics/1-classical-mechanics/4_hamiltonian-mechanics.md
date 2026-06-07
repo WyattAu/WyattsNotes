@@ -261,6 +261,6 @@ $\blacksquare$
 Legendre transform from $L$ To $H$ is regular. If
 $\det(\partial^2 L / \partial \dot{q}_i \partial \dot{q}_j) = 0$The system Has **constraints** and
 the Hamiltonian formulation requires special treatment (Dirac brackets or Constraint analysis).
-:::
+
 
 

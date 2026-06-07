@@ -204,7 +204,6 @@ error is to swap the $n_1\cos\theta_i$ and $n_2\cos\theta_t$ terms. Remember: fo
 starts with $n_1\cos\theta_i$; for $r_p$The numerator starts with $n_2\cos\theta_i$. Also, $r$ and
 $t$ are Amplitude coefficients, while $R$ and $T$ are energy coefficients — they are related but not
 Interchangeable.
-:::
 
 ### 2.6 Total Internal Reflection and Evanescent Waves
 
@@ -256,5 +255,6 @@ Penetration depth: $\delta = 1/\kappa = 1.41 \times 10^{-7}$ m $= 141$ nm.
 m$^{-1}$.
 
 </details>
+
 
 

@@ -449,6 +449,6 @@ polynomial time; whether all Such problems are solvable in polynomial time is th
 A common error is confusing "NP-hard" with "NP-complete": NP-hard means at least as hard as all NP
 problems, but the problem Itself might not be in NP (e.g., the halting problem is NP-hard but
 undecidable).
-:::
+
 
 

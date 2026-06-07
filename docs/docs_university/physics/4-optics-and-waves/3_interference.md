@@ -84,7 +84,6 @@ soap film in Air, there is one $\pi$ shift (at the top surface). For a coating o
 ($n_{\mathrm{coat} \lt n_{\mathrm{glass}}}$), there is also one shift. The conditions for
 constructive and destructive interference swap depending on whether the total number of shifts is
 odd or even.
-:::
 
 <details>
 <summary>Worked Example: Anti-reflection coating design</summary>
@@ -225,5 +224,6 @@ Minimum resolvable wavelength:
 $\delta\lambda = \lambda/\mathcal{R} = 500/1.19 \times 10^5 = 4.20 \times 10^{-3}$ nm $= 4.20$ pm.
 
 </details>
+
 
 

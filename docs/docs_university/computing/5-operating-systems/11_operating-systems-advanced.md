@@ -1199,7 +1199,6 @@ process in advance. In practice, processes often do not know (or cannot express)
 needs. This limits the practical applicability of the Banker's algorithm. Additionally, the
 algorithm has $O(m \times n^2)$ time complexity per resource request (where $m$ is the number of
 resource types and $n$ is the number of processes), which may be prohibitive for large systems.
-:::
 
 ## 17. Problem Set
 
@@ -1367,4 +1366,5 @@ $\blacksquare$
 - Memory management: paging, segmentation, virtual memory, page replacement (LRU, FIFO, optimal).
 - File systems: directory structure, allocation methods (contiguous, linked, indexed).
 - Synchronisation: semaphores, monitors, critical sections; Peterson's algorithm for two processes.
+
 

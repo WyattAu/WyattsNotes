@@ -190,6 +190,6 @@ This logarithmic running arises from vacuum polarisation (screening by virtual $
 divergences) with **renormalization** (the physical procedure of redefining parameters).
 Regularisation is a Temporary scaffold; renormalization is the essential step that yields finite,
 physical predictions.
-:::
+
 
 

@@ -61,6 +61,6 @@ clusters.
 :::caution Common Pitfall Containers do **not** provide hardware-level isolation. A kernel
 vulnerability can potentially Compromise all containers on a host. For strong multi-tenant
 isolation, VMs are preferred.
-:::
+
 
 

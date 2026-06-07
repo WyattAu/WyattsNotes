@@ -211,7 +211,6 @@ $\blacksquare$
 :::caution Common Pitfall The determinant is only defined for square matrices. There is no
 meaningful determinant for an $m \times n$ matrix with $m \neq n$. Do not confuse
 $\det(AB) = \det(A)\det(B)$ with a Non-existent formula for non-square matrices.
-:::
 
 ### 3.8 Worked Example: Determinant via Row Reduction (Efficient Method)
 
@@ -250,5 +249,6 @@ Only the product of diagonal entries. $\blacksquare$
 - **A matrix with $\det(A) = 0$ has no inverse.** Do not attempt to divide by zero.
 
 ---
+
 
 

@@ -344,7 +344,6 @@ $p \geq 3$ And $2 \cdot 2! = 4 \neq n!$ for any $n$). Hence $xy^iz \notin L$. $\
 valid decompositions lead To a contradiction. A single decomposition that works is insufficient to
 disprove the lemma. The converse of the pumping lemma is false: if a language satisfies the pumping
 condition, it is Not necessarily regular.
-:::
 
 ### 2.7 Closure Properties of Regular Languages
 
@@ -373,5 +372,6 @@ and $D_2$ accept $w$I.e., $w \in L_1 \cap L_2$. $\blacksquare$
 
 **Theorem 2.7.** If $L_1$ is regular and $L_2$ is not regular, then $L_1 \cap L_2$ may or may not be
 Regular. Closure properties do not apply when one operand is non-regular.
+
 
 

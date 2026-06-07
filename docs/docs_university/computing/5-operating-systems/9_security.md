@@ -92,6 +92,6 @@ Addresses using shadow stacks.
 single mechanism is Insufficient. A determined attacker who can read memory can defeat ASLR; a
 format string Vulnerability can leak canary values; and JIT compilers require
 writable-and-executable pages.
-:::
+
 
 

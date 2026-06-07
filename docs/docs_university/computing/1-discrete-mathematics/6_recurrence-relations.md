@@ -110,7 +110,6 @@ $G(x) = \frac{1}{1-2x} - \frac{1}{1-x}$Giving $a_n = 2^n - 1$. $\blacksquare$
 :::caution Common Pitfall Generating functions are formal power series; they may not converge for
 any $x \neq 0$. Convergence Is irrelevant for combinatorial applications -- the series is
 manipulated algebraically.
-:::
 
 ### 6.5 The Master Theorem
 
@@ -190,6 +189,3 @@ $$T(n) = \Theta\!\left(n^{c_{\mathrm{crit}}\right) + \sum_{j=0}^{\log_b n - 1} a
   $T(n) = T(n-1) + n$ (not of the form $a\,T(n/b) + f(n)$). Also, if $f(n)$ falls between cases
   (e.g., $f(n) = n \log n$ with $c_{\mathrm{crit{}} = 1$), the Master Theorem does not apply and the
   Akra--Bazzi method should be used Instead.
-:::
-
-

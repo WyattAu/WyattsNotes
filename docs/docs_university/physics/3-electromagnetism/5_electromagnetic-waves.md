@@ -211,7 +211,6 @@ They satisfy $v_p\,v_g = c^2$.
 special relativity. No information or energy travels faster than $c$; the signal velocity is the
 group velocity $v_g \lt c$. The phase velocity is the speed of the wave crests, which is a purely
 Kinematic quantity.
-:::
 
 ### 5.8 Electric Dipole Radiation
 
@@ -258,5 +257,6 @@ $$P = \frac{\mu_0 p_0^2\omega^4}{32\pi^2 c} \cdot 2\pi \cdot \frac{4}{3} = \frac
 $\blacksquare$
 
 </details>
+
 
 

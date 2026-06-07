@@ -215,6 +215,6 @@ is an auxiliary field Convenient for problems with free currents. The names "mag
 "magnetic field Intensity" vary across textbooks --- always check which symbol a given text
 associates with Which name. In this document, $\mathbf{B}$ is the magnetic field and $\mathbf{H}$ is
 the Auxiliary H field.
-:::
+
 
 

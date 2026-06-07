@@ -64,12 +64,8 @@ constants $c$Or use Reduction modulo a prime.
 not just a prime ideal. For example, $(0)$ is prime in $\mathbb{Z}[x]$ but not maximal, so
 $\mathbb{Z}[x]$ is an integral Domain but not a field. Every maximal ideal is prime, but not
 conversely.
-:::
 
 :::caution Common Pitfall The fundamental theorem of Galois theory requires the extension to be
 Galois. For a non-Galois Extension $E/F$The correspondence between intermediate fields and subgroups
 of $\mathrm{Gal}(E/F)$ is not a bijection, and indices may not match. Always verify the Galois
 Condition before applying the theorem.
-:::
-
-

@@ -206,6 +206,6 @@ the One that **minimises** (or more precisely, makes stationary) the **action**.
 (centrifugal, Coriolis) that Are artifacts of the coordinate choice. The Lagrangian formulation
 automatically accounts for these Through the coordinate transformation of the kinetic energy,
 without any ad-hoc force terms.
-:::
+
 
 

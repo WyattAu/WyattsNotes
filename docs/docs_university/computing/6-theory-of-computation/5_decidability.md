@@ -153,7 +153,6 @@ $A_{\mathrm{TM}}$. The case $\emptyset \in P$ is similar. $\blacksquare$
 :::caution Common Pitfall Rice's theorem applies only to properties of the **language** $L(M)$Not
 properties of the **machine** $M$ itself. For example, "Does $M$ halt within 100 steps on input $w$?" is a property Of $M$'s behaviour, not of $L(M)$And is in fact decidable (just simulate for 100
 steps).
-:::
 
 ### 5.5 Post Correspondence Problem
 
@@ -239,6 +238,3 @@ $A \leq_m B$Not $B \leq_m A$. Remember: if $A \leq_m B$ and $A$ is undecidable, 
 undecidable (contrapositive of "if $B$ is decidable then $A$ is decidable"). Reversing the direction
 gives a valid implication ("if $B \leq_m A$ and $A$ is undecidable, then...") that tells us nothing
 about $B$.
-:::
-
-

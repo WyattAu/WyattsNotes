@@ -373,7 +373,6 @@ Therefore $\phi(x,y,z) = x^2 y + xz^2 + y^2 z + C$. $\blacksquare$
 - **Orientation.** Green's and Stokes' theorems require positive orientation (counterclockwise for
   planar curves, right-hand rule for surfaces). The divergence theorem requires the outward normal.
   Reversing orientation changes the sign of the result.
-:::
 
 ### 3.9 Relationships Among the Fundamental Theorems
 
@@ -399,5 +398,6 @@ $$\int_{\partial \Omega} \omega = \int_{\Omega} d\omega$$
 
 Where $\Omega$ is a $k$-dimensional manifold with boundary $\partial \Omega$, $\omega$ is a
 $(k-1)$-form, And $d\omega$ is its exterior derivative.
+
 
 

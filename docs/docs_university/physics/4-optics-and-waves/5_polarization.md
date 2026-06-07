@@ -67,7 +67,6 @@ polarisation and the fast axis.
 linear polarisation is at Exactly $45°$ to the fast and slow axes. For other input angles, the
 output is elliptically Polarised. A half-wave plate rotates linear polarisation by $2\theta$Not
 $\theta$.
-:::
 
 <details>
 <summary>Worked Example: Quarter-wave plate design and application</summary>
@@ -203,5 +202,6 @@ along $\hat{\mathbf{y}}$. $\blacksquare$
 
 This explains why the sky is polarised at $90°$ from the sun and why polarising sunglasses reduce
 Glare from horizontal surfaces (Brewster's angle reflection from road/water).
+
 
 

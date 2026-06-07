@@ -145,6 +145,6 @@ Bragg's law $2d\sin\theta = n\lambda$. These are equivalent formulations of the 
 Laue condition is a vector equation in Reciprocal space, while Bragg's law is a scalar equation in
 real space. Converting between them Requires careful geometry --- remember that $\theta$ in Bragg's
 law is measured from the _plane_, Not from the normal.
-:::
+
 
 

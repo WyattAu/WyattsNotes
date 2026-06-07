@@ -231,6 +231,6 @@ $(1/3, 1/3, 1/3)$. $\blacksquare$
   critical point.
 - **Non-normalised constraint gradients.** Ensure the constraint functions are written in the form
   $g = 0$; multiplying $g$ by a constant changes $\lambda$ but not the critical points.
-:::
+
 
 

@@ -276,6 +276,6 @@ packet envelope and equals The energy transport velocity in lossless media. Howe
 equal to the signal velocity In regions of weak, normal dispersion. Near absorption resonances,
 $v_g$ can exceed $c$ or become Negative — this does not violate causality, since the true signal
 velocity (front velocity) never Exceeds $c$.
-:::
+
 
 

@@ -289,6 +289,6 @@ integral. A common error is Applying the FTC directly to improper integrals with
 limit. Also, conditional Convergence of improper integrals behaves differently from absolute
 convergence: rearranging the "terms" (subintervals) of a conditionally convergent improper integral
 can change its value.
-:::
+
 
 

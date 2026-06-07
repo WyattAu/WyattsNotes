@@ -920,7 +920,6 @@ Using `ss -tanp` or `netstat -tanp`:
 leak: the application received a close from the remote end but never called `close()` on its socket.
 This eventually exhausts file descriptors. The fix is in the application code, not in the network
 configuration.
-:::
 
 <details>
 <summary>Worked Example: Network Debugging Scenario</summary>
@@ -1344,4 +1343,5 @@ $\blacksquare$
   AIMD).
 - IP addressing and subnetting: CIDR notation, variable-length subnet masking.
 - Routing: distance vector (RIP), link state (OSPF), path vector (BGP).
+
 

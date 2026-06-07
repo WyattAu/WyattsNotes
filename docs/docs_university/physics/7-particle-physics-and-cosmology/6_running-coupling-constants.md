@@ -95,6 +95,6 @@ extrapolated using SM beta Functions. The three lines form a rough triangle. It 
 supersymmetric extensions (MSSM) That the additional superpartner contributions to the beta
 functions bring the three couplings to Near-convergence. This convergence is often cited as indirect
 evidence for supersymmetry.
-:::
+
 
 

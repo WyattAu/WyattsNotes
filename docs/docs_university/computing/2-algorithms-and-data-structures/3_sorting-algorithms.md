@@ -236,7 +236,6 @@ $\blacksquare$
 sorting. Non-comparison sorts Like radix sort can achieve $O(n)$ time for integers in a bounded
 range. However, non-comparison sorts sacrifice generality: they depend on the structure of the keys
 and cannot sort arbitrary objects.
-:::
 
 ### 3.8 Comparison of Sorting Algorithms
 
@@ -247,5 +246,6 @@ and cannot sort arbitrary objects.
 | Heapsort      | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(1)$      | No     |
 | Counting Sort | $O(n + k)$    | $O(n + k)$    | $O(n + k)$    | $O(n + k)$  | Yes    |
 | Radix Sort    | $O(d(n+b))$   | $O(d(n+b))$   | $O(d(n+b))$   | $O(n + b)$  | Yes    |
+
 
 

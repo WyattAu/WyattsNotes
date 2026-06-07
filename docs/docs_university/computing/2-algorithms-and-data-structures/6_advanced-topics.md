@@ -114,7 +114,6 @@ size).
 :::caution Common Pitfall NP-hardness does not mean the problem is unsolvable. It means there is no
 known polynomial-time Algorithm. Many NP-complete problems have efficient approximation algorithms
 or can be solved Exactly for practical input sizes using branch-and-bound or SAT solvers.
-:::
 
 ### 6.2 Approximation Algorithms
 
@@ -366,5 +365,6 @@ $\blacksquare$
 **Corollary.** A sequence of $m$ splay tree operations takes $O(m \log n)$ amortised time.
 
 </details>
+
 
 

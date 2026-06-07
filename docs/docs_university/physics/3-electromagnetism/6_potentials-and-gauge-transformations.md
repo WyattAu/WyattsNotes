@@ -36,7 +36,6 @@ $$\nabla^2 \mathbf{A} - \mu_0 \varepsilon_0 \frac{\partial^2 \mathbf{A}}{\partia
 :::caution Common Pitfall The Lorenz gauge (with one "r") is named after Ludvig Lorenz, not Hendrik
 Lorentz. It is frequently Misspelled "Lorentz gauge." The two are different people, and the correct
 spelling is "Lorenz gauge."
-:::
 
 ### 6.3 Derivation of the Lorenz Gauge Condition
 
@@ -149,5 +148,6 @@ Only the acceleration field contributes to radiation at large distances. The mag
 always:
 
 $$\mathbf{B} = \frac{1}{c}\hat{\mathbf{R}} \times \mathbf{E}$$
+
 
 

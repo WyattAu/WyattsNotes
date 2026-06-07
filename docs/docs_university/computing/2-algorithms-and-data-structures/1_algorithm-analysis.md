@@ -278,6 +278,6 @@ In both cases, the amortised cost is $O(1)$.
 a per-operation worst-case bound. A single operation can still be expensive (e.g., a resize in a
 dynamic array costs $O(n)$). Amortised bounds are meaningful only when the sequence length is not
 bounded by a constant.
-:::
+
 
 

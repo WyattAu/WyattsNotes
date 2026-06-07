@@ -73,6 +73,6 @@ $5$ groups of order $8$ There are $14$ groups of order $16$ and $267$ groups of 
 Classification by hand is only Feasible for small orders. For prime-squared orders, the abelian
 classification is straightforward, But non-abelian cases require careful analysis of possible
 semidirect products.
-:::
+
 
 

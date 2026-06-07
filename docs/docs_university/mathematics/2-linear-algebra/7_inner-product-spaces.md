@@ -177,7 +177,6 @@ $\blacksquare$
 :::caution Common Pitfall The Gram--Schmidt process requires a linearly independent starting set. If
 the input vectors are Linearly dependent, one of the $\mathbf{u}_k$ will be the zero vector, and the
 process will fail (attempting to divide by zero in the normalisation step).
-:::
 
 ### 7.8 Worked Example: Orthogonal Projection onto a Plane
 
@@ -250,5 +249,6 @@ $\blacksquare$
   decomposition**.
 
 ---
+
 
 

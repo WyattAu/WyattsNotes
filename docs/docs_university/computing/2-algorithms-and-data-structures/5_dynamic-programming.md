@@ -54,7 +54,6 @@ $\blacksquare$
 simple path_ problem does not: the longest simple path from $u$ to $v$ may not contain the longest
 simple path from $u$ to an intermediate vertex $w$Because the subpath might share vertices with the
 rest of the path, creating a non-simple path.
-:::
 
 ### 5.4 Common Patterns
 
@@ -259,5 +258,6 @@ pile whose top card is $\geq$ the current card, or start a new pile on the right
 exists. The number of piles equals the LIS length.
 
 </details>
+
 
 

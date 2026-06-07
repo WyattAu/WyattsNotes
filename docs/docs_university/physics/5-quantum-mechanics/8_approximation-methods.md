@@ -78,7 +78,6 @@ The first-order correction is $E_n^{(1)} = V_0/2$ for all $n$. $\blacksquare$
 level spacing. If $|\langle m | H' | n \rangle| \sim |E_n^{(0)} - E_m^{(0)}|$The perturbation series
 may diverge. The Method also fails for systems where the unperturbed Hamiltonian has closely spaced
 or degenerate Levels that are not handled correctly.
-:::
 
 ### 8.4 Variational Principle
 
@@ -211,5 +210,6 @@ exact solutions are not available, and it forms the basis of the JWKB approximat
 theory.
 
 </details>
+
 
 

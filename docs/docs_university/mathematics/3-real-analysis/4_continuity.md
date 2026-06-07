@@ -254,6 +254,6 @@ $f(x) = 1/x$ on $(0, 1)$ is Continuous but not uniformly continuous. The Heine-C
 requires a **closed and bounded** Interval. Also, a function can be uniformly continuous on an
 unbounded domain (e.g., $f(x) = \sqrt{x}$ On $[0, \infty)$) --- boundedness of the domain is
 sufficient but not necessary.
-:::
+
 
 

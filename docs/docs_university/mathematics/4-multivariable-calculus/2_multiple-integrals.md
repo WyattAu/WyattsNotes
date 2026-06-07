@@ -294,6 +294,6 @@ elementary Antiderivative with respect to $y$. Swapping the order was essential.
   $\theta \in [0, 2\pi]$ is the azimuthal angle.
 - **Region description.** When swapping integration order, carefully redraw the region and re-derive
   the bounds. The new bounds may require splitting the integral into multiple pieces.
-:::
+
 
 
