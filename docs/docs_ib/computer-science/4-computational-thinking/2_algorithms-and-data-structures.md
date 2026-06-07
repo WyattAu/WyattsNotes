@@ -1,9 +1,16 @@
 ---
-slug: algorithms-and-data-structures
-date: 2024-01-01T00:00:00Z
-categories:
-  - ib
-  - ib-computer-science
+title: Algorithms and Data Structures tags:
+
+- IB
+- CS slug: algorithms-and-data-structures description: 'Rigorous IB computer science notes covering
+  Algorithms and Data Structures. Includes definitions, derivations, worked examples, and exam-style
+  problems. Baccalaureate.'
+
+date: 2024-01-01T00:00:00Z categories:
+
+- ib
+- ib-computer-science
+
 ---
 ## Algorithmic Thinking
 

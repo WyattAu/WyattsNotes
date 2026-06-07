@@ -1,9 +1,15 @@
 ---
-slug: current-electricity
-date: 2024-01-01T00:00:00Z
-categories:
-  - ib
-  - ib-physics
+title: Current Electricity tags:
+
+- IB
+- Physics slug: current-electricity description: 'Rigorous IB physics notes covering Current
+  Electricity. Includes definitions, derivations, worked examples, and exam-style problems.'
+
+date: 2024-01-01T00:00:00Z categories:
+
+- ib
+- ib-physics
+
 ---
 ## 1. Electric Fields
 

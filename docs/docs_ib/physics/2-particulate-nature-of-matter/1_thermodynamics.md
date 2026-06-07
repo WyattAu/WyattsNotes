@@ -1,9 +1,14 @@
 ---
-slug: thermodynamics
-date: 2024-01-01T00:00:00Z
-categories:
-  - ib
-  - ib-physics
+title: Thermodynamics tags:
+
+- physics slug: thermodynamics description: 'Rigorous IB physics notes covering Thermodynamics.
+  Includes definitions, derivations, worked examples, and exam-style problems.'
+
+date: 2024-01-01T00:00:00Z categories:
+
+- ib
+- ib-physics
+
 ---
 ## Ideal Gas Law
 

@@ -1,17 +1,15 @@
 ---
-title: Acids and Bases (Advanced)
-description: 'Rigorous IB chemistry notes covering Acids and Bases
-(Advanced). Includes definitions, derivations, worked examples, and exam-style problems.'
-slug: 8-acids-and-bases/2_acids-and-bases-advanced
-date: 2024-01-01T00:00:00Z
-tags:
-  - ib
-  - chemistry
-  - ib
-  - ib-chemistry
-categories:
-  - ib
-  - ib-chemistry
+title: Acids and Bases (Advanced) description: 'Rigorous IB chemistry notes covering Acids and Bases
+(Advanced). Includes definitions, derivations, worked examples, and exam-style problems.' slug:
+8-acids-and-bases/2_acids-and-bases-advanced
+
+date: 2024-01-01T00:00:00Z tags:
+
+- ib
+- chemistry categories:
+- ib
+- ib-chemistry
+
 ---
 ## 1. Advanced pH Calculations
 

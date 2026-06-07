@@ -1,17 +1,15 @@
 ---
-title: 'Differential Equations'
-description: 'IB Mathematics — first order separable equations,
-integrating factors, second order homogeneous equations, applications, and numerical methods.'
-slug: differential-equations
-date: 2024-01-01T00:00:00Z
-tags:
-  - ib
-  - maths
-  - ib
-  - ib-maths
-categories:
-  - ib
-  - ib-maths
+title: 'Differential Equations' description: 'IB Mathematics — first order separable equations,
+integrating factors, second order homogeneous equations, applications, and numerical methods.' slug:
+differential-equations
+
+date: 2024-01-01T00:00:00Z tags:
+
+- ib
+- maths categories:
+- ib
+- ib-maths
+
 ---
 ## First Order Differential Equations
 

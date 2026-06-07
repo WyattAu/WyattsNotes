@@ -1,9 +1,61 @@
 ---
-slug: logic
-date: 2024-01-01T00:00:00Z
-categories:
-  - ib
-  - ib-maths
+title: Logic tags:
+
+- maths slug: logic description: 'Rigorous IB mathematics notes covering Logic. Includes
+  definitions, derivations, worked examples, and exam-style problems.'
+
+date: 2024-01-01T00:00:00Z categories:
+
+- ib
+- ib-maths
+
+:::info TMUA Specification
+
+- The Logic of Arguments
+- Arg1 Understand and be able to use mathematical logic in simple situations:
+- The terms true and false;
+- The terms and, or (meaning inclusive or), not;
+- Statements of the form:
+- if A then B
+- A if B
+- A only if B
+- A if and only if B
+- The converse of a statement;
+- The contrapositive of a statement;
+- The relationship between the truth of a statement and its converse
+- and its contrapositive.
+- Note: candidates will not be expected to recognise or use symbolic notation for any
+- of these terms, nor will they be expected to complete formal truth tables.
+- Arg2 Understand and use the terms necessary and sufficient.
+- Arg3 Understand and use the terms for all, for some (meaning for at least one),
+- and there exists.
+- Arg4 Be able to negate statements that use any of the above terms.
+- Mathematical Proof
+- Prf1 Follow a .../1-number-and-algebra/3_proof-and-logic of the following types, and in simple
+  cases know how to
+- construct such a .../1-number-and-algebra/3_proof-and-logic:
+- Direct deductive .../1-number-and-algebra/3_proof-and-logic ('Since A, therefore B, therefore C,
+  …,
+- therefore Z, which is what we wanted to prove.');
+- Proof by cases (for example, by considering even and odd cases
+- separately);
+- Proof by contradiction;
+- Dis.../1-number-and-algebra/3_proof-and-logic by counterexample.
+- Prf2 Deduce implications from given statements.
+- Prf3 Make conjectures based on small cases, and then justify these conjectures.
+- Prf4 Rearrange a sequence of statements into the correct order to give a
+  .../1-number-and-algebra/3_proof-and-logic for
+- a statement.
+- Prf5 Problems requiring a sophisticated chain of reasoning to solve.
+- Identifying Errors in Proofs
+- Err1 Identifying errors in purported .../1-number-and-algebra/3_proof-and-logics.
+- Err2 Be aware of common mathematical errors in purported
+  .../1-number-and-algebra/3_proof-and-logics; for example,
+- claiming 'if $ab = ac$Then $b = c$' or assuming 'if $\sin A = \sin B$Then $A = B$'
+- neither of which are valid deductions. :::
+
+# The Logic Of Arguments
+
 ---
 ## Arg1: Simple Logic
 

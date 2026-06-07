@@ -1,17 +1,15 @@
 ---
-title: Statistics
-description: 'Rigorous IB mathematics notes covering Statistics. Includes
-definitions, derivations, worked examples, and exam-style problems. hypothesis testing.'
-slug: .../4-statistics-and-probability/2_statistics
-date: 2024-01-01T00:00:00Z
-tags:
-  - ib
-  - maths
-  - ib
-  - ib-maths
-categories:
-  - ib
-  - ib-maths
+title: Statistics description: 'Rigorous IB mathematics notes covering Statistics. Includes
+definitions, derivations, worked examples, and exam-style problems. hypothesis testing.' slug:
+.../4-statistics-and-probability/2_statistics
+
+date: 2024-01-01T00:00:00Z tags:
+
+- ib
+- maths categories:
+- ib
+- ib-maths
+
 ---
 ## Measures of Central Tendency
 

@@ -1,17 +1,14 @@
 ---
-title: Cell Biology
-description: 'Rigorous IB biology notes covering Cell Biology. Includes
-definitions, derivations, worked examples, and exam-style problems.'
-slug: cell-biology
-date: 2024-01-01T00:00:00Z
-tags:
-  - ib
-  - biology
-  - ib
-  - ib-biology
-categories:
-  - ib
-  - ib-biology
+title: Cell Biology description: 'Rigorous IB biology notes covering Cell Biology. Includes
+definitions, derivations, worked examples, and exam-style problems.' slug: cell-biology
+
+date: 2024-01-01T00:00:00Z tags:
+
+- ib
+- biology categories:
+- ib
+- ib-biology
+
 ---
 ## 1. Cell Theory
 

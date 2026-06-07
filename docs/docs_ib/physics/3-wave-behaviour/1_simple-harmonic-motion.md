@@ -1,9 +1,14 @@
 ---
-slug: simple-harmonic-motion
-date: 2024-01-01T00:00:00Z
-categories:
-  - ib
-  - ib-physics
+title: Simple Harmonic Motion tags:
+
+- physics slug: simple-harmonic-motion description: 'Rigorous IB physics notes covering Simple
+  Harmonic Motion. Includes definitions, derivations, worked examples, and exam-style problems.'
+
+date: 2024-01-01T00:00:00Z categories:
+
+- ib
+- ib-physics
+
 ---
 ## Specification
 

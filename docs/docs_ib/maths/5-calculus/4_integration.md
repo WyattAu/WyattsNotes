@@ -1,9 +1,14 @@
 ---
-slug: integration-depth
-date: 2024-01-01T00:00:00Z
-categories:
-  - ib
-  - ib-maths
+tags:
+
+- maths slug: integration-depth description: 'Comprehensive IB mathematics notes on Calculus. Covers
+  key definitions, worked examples, and practice problems for revision.' title: Calculus
+
+date: 2024-01-01T00:00:00Z categories:
+
+- ib
+- ib-maths
+
 ---
 ## Integration
 

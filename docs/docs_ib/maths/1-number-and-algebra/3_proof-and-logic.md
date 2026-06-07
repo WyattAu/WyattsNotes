@@ -1,9 +1,21 @@
 ---
-slug: .../1-number-and-algebra/3_proof-and-logic
-date: 2024-01-01T00:00:00Z
-categories:
-  - ib
-  - ib-maths
+title: Proof and Logic tags:
+
+- IB
+- Maths slug: .../1-number-and-algebra/3_proof-and-logic description: 'Rigorous IB mathematics notes
+  covering Proof and Logic. Includes definitions, derivations, worked examples, and exam-style
+  problems.'
+
+date: 2024-01-01T00:00:00Z categories:
+
+- ib
+- ib-maths
+
+# Proof and Logic
+
+This note covers **IB Mathematics AA — Topic 1.4: Proof** in full depth. Everything here is
+Examinable at both Standard Level and Higher Level, with HL extensions marked where relevant.
+
 ---
 ## 1. Logic Foundations
 

@@ -1,18 +1,15 @@
 ---
-title: Measurement and Data Processing
-description: 'Rigorous IB chemistry notes covering
+title: Measurement and Data Processing description: 'Rigorous IB chemistry notes covering
 Measurement and Data Processing. Includes definitions, derivations, worked examples, and exam-style
-problems.'
-slug: measurement-and-data-processing
-date: 2024-01-01T00:00:00Z
-tags:
-  - ib
-  - chemistry
-  - ib
-  - ib-chemistry
-categories:
-  - ib
-  - ib-chemistry
+problems.' slug: measurement-and-data-processing
+
+date: 2024-01-01T00:00:00Z tags:
+
+- ib
+- chemistry categories:
+- ib
+- ib-chemistry
+
 ---
 ## 1. Uncertainty and Error
 

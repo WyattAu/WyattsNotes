@@ -1,9 +1,14 @@
 ---
-slug: networks
-date: 2024-01-01T00:00:00Z
-categories:
-  - ib
-  - ib-computer-science
+title: Networks tags:
+
+- CS slug: networks description: 'Rigorous IB computer science notes covering Networks. Includes
+  definitions, derivations, worked examples, and exam-style problems.'
+
+date: 2024-01-01T00:00:00Z categories:
+
+- ib
+- ib-computer-science
+
 ---
 ## Computer Network
 

@@ -1,18 +1,15 @@
 ---
-title: Functions and Equations
-description: 'Rigorous IB mathematics notes covering Functions and
+title: Functions and Equations description: 'Rigorous IB mathematics notes covering Functions and
 Equations. Includes definitions, derivations, worked examples, and exam-style problems. and
-equations.'
-slug: functions
-date: 2024-01-01T00:00:00Z
-tags:
-  - ib
-  - maths
-  - ib
-  - ib-maths
-categories:
-  - ib
-  - ib-maths
+equations.' slug: functions
+
+date: 2024-01-01T00:00:00Z tags:
+
+- ib
+- maths categories:
+- ib
+- ib-maths
+
 ---
 ## Function Notation
 
