@@ -208,7 +208,8 @@ $\blacksquare$
 
 :::caution Common Pitfall In natural deduction, always track which assumptions are discharged. A
 common mistake is to use a Discharged assumption in a later step. Each discharged assumption is only
-valid within the scope Indicated by the rule that discharges it. :::
+valid within the scope Indicated by the rule that discharges it.
+:::
 
 ### 1.6 CNF and DNF
 
@@ -268,7 +269,8 @@ This is in CNF.
 
 :::caution Common Pitfall Distributing $\lor$ over $\land$ can cause exponential blowup. A DNF
 formula with $n$ terms can Produce up to $2^n$ clauses when converted to CNF. This exponential
-growth underlies the hardness Of many satisfiability problems. :::
+growth underlies the hardness Of many satisfiability problems.
+:::
 
 ### 1.7 Resolution
 
@@ -328,7 +330,8 @@ AI planning. Modern solvers routinely handle instances with millions of variable
 
 :::caution Common Pitfall Do not confuse satisfiability with validity. A formula is _satisfiable_ if
 it is true under _some_ Assignment; it is _valid_ (a tautology) if true under _all_ assignments.
-Checking validity is Co-NP-complete, not NP-complete. :::
+Checking validity is Co-NP-complete, not NP-complete.
+:::
 
 ## 2. Sets, Relations, and Functions
 
@@ -1176,7 +1179,8 @@ Unused edges, find a subtour, and splice it in. Repeat until all edges are used.
 
 :::caution Common Pitfall Determining whether a graph has a Hamilton path/circuit is NP-complete ,
 whereas Euler Paths/circuits can be determined in polynomial time using the degree condition. Do not
-confuse the two. :::
+confuse the two.
+:::
 
 ### 5.7 Matching Theory
 
@@ -1378,7 +1382,8 @@ $G(x) = \frac{1}{1-2x} - \frac{1}{1-x}$Giving $a_n = 2^n - 1$. $\blacksquare$
 
 :::caution Common Pitfall Generating functions are formal power series; they may not converge for
 any $x \neq 0$. Convergence Is irrelevant for combinatorial applications -- the series is
-manipulated algebraically. :::
+manipulated algebraically.
+:::
 
 ### 6.5 The Master Theorem
 
@@ -1457,7 +1462,8 @@ $$T(n) = \Theta\!\left(n^{c_{\mathrm{crit}}\right) + \sum_{j=0}^{\log_b n - 1} a
   dominates all levels below. The Master Theorem does not apply to recurrences like
   $T(n) = T(n-1) + n$ (not of the form $a\,T(n/b) + f(n)$). Also, if $f(n)$ falls between cases
   (e.g., $f(n) = n \log n$ with $c_{\mathrm{crit{}} = 1$), the Master Theorem does not apply and the
-  Akra--Bazzi method should be used Instead. :::
+  Akra--Bazzi method should be used Instead.
+:::
 
 ## 7. Problem Set
 

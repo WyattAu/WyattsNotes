@@ -777,7 +777,8 @@ $$\phi_n(x) = \sqrt{\frac{2}{L}}\sin\left(\frac{n\pi x}{L}\right), \quad E_n = \
 :::caution Common Pitfall The ground state has $n = 1$Not $n = 0$. The solution $n = 0$ gives
 $\phi(x) = 0$ everywhere, Which is not normalisable. Furthermore, $E_1 > 0$ (zero-point energy) is a
 direct consequence of The uncertainty principle: confining the particle to a finite region requires
-kinetic energy. :::
+kinetic energy.
+:::
 
 ### 5.2 The Quantum Harmonic Oscillator
 
@@ -1054,7 +1055,8 @@ Penetration decreases exponentially with barrier width and height.
 :::caution Common Pitfall Tunnelling does not violate energy conservation. The particle does not
 "have" energy $V_0$ inside The barrier; rather, the wave function extends into the classically
 forbidden region with Exponentially decreasing amplitude. The particle's energy is $E \lt V_0$
-throughout. :::
+throughout.
+:::
 
 **Example 5.2.** An electron with $E = 5$ eV approaches a barrier of height $V_0 = 10$ eV and Width
 $a = 0.5$ nm. Calculate $T$.
@@ -1645,7 +1647,8 @@ The first-order correction is $E_n^{(1)} = V_0/2$ for all $n$. $\blacksquare$
 :::caution Common Pitfall Perturbation theory assumes the perturbation is "small" compared to the
 level spacing. If $|\langle m | H' | n \rangle| \sim |E_n^{(0)} - E_m^{(0)}|$The perturbation series
 may diverge. The Method also fails for systems where the unperturbed Hamiltonian has closely spaced
-or degenerate Levels that are not handled correctly. :::
+or degenerate Levels that are not handled correctly.
+:::
 
 ### 8.4 Variational Principle
 

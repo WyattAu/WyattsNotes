@@ -213,7 +213,8 @@ the One that **minimises** (or more precisely, makes stationary) the **action**.
 :::caution Common Pitfall Newton's laws in curvilinear coordinates introduce fictitious forces
 (centrifugal, Coriolis) that Are artifacts of the coordinate choice. The Lagrangian formulation
 automatically accounts for these Through the coordinate transformation of the kinetic energy,
-without any ad-hoc force terms. :::
+without any ad-hoc force terms.
+:::
 
 ## 2. Generalised Coordinates and Constraints
 
@@ -658,7 +659,8 @@ $\blacksquare$
 :::caution Common Pitfall The energy function $h$ equals $T + V$ only for natural systems
 (scleronomic constraints and Velocity-independent potentials). For a bead on a rotating hoop
 (rheonomic constraint), $h$ is Conserved but $h \neq T + V$. Always check whether the system is
-natural before identifying $h$ With the total energy. :::
+natural before identifying $h$ With the total energy.
+:::
 
 ## 4. Hamiltonian Mechanics
 
@@ -917,7 +919,8 @@ $\blacksquare$
 :::caution Common Pitfall The Lagrangian and Hamiltonian formulations are equivalent only when the
 Legendre transform from $L$ To $H$ is regular. If
 $\det(\partial^2 L / \partial \dot{q}_i \partial \dot{q}_j) = 0$The system Has **constraints** and
-the Hamiltonian formulation requires special treatment (Dirac brackets or Constraint analysis). :::
+the Hamiltonian formulation requires special treatment (Dirac brackets or Constraint analysis).
+:::
 
 ## 5. Noether's Theorem and Conservation Laws
 
@@ -1460,7 +1463,8 @@ exponentially. $\blacksquare$
 :::caution Common Pitfall The intermediate axis theorem (tennis racket theorem / Dzhanibekov effect)
 is counterintuitive: a Rigid body spinning about its intermediate axis is unstable. This is not a
 violation of angular Momentum conservation --- the angular momentum vector remains fixed in space,
-but the body Tumbles relative to it. :::
+but the body Tumbles relative to it.
+:::
 
 ### 8.7 Worked Example: The Spinning Top
 

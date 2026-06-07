@@ -489,4 +489,5 @@ decomposition, $\mu_F = \mu_F + 0$ with $\mu_F \perp m$.
 
 :::caution Common Pitfall When applying the dominated convergence theorem, the dominating function
 $g$ must be integrable ($g \in L^1$), not just bounded. A bounded function on a space of infinite
-measure need not be integrable. :::
+measure need not be integrable.
+:::

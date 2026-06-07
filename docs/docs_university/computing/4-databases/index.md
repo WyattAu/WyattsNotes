@@ -601,7 +601,8 @@ cursor.execute("SELECT * FROM Student WHERE name = %s", (user_input,))
 
 :::caution Common Pitfall Even if you escape single quotes in user input, this is not a reliable
 defence against SQL injection. Use parameterised queries instead. Escape-based defences are fragile
-and have been bypassed by Encoding tricks (e.g., multibyte character exploits). :::
+and have been bypassed by Encoding tricks (e.g., multibyte character exploits).
+:::
 
 ### 3.10 Query Optimisation Basics
 
@@ -876,7 +877,8 @@ Synthesis algorithm avoids this issue.
 :::caution Common Pitfall Do not confuse partial dependency (2NF violation) with transitive
 dependency (3NF violation). A Partial dependency involves a **proper subset** of a candidate key
 determining a non-prime attribute. A transitive dependency involves a non-key attribute determining
-another non-prime attribute. :::
+another non-prime attribute.
+:::
 
 ### 4.5 Multivalued Dependencies and 4NF
 
@@ -1585,7 +1587,8 @@ Since network partitions are inevitable in distributed systems, the real trade-o
 :::caution Common Pitfall "NoSQL" does not mean "no SQL." It means "Not Only SQL." Many NoSQL
 databases now support SQL-like Query languages (e.g., Cassandra CQL). The choice between relational
 and NoSQL depends on the Workload, not on a blanket preference. Relational databases remain the best
-choice for strongly Structured data with complex queries and transactional requirements. :::
+choice for strongly Structured data with complex queries and transactional requirements.
+:::
 
 ## 9. Distributed Databases
 

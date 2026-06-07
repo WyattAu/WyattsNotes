@@ -454,7 +454,8 @@ $p \geq 3$ And $2 \cdot 2! = 4 \neq n!$ for any $n$). Hence $xy^iz \notin L$. $\
 (2), **there exists** a Pumping that fails. To prove non-regularity, you must show that **all**
 valid decompositions lead To a contradiction. A single decomposition that works is insufficient to
 disprove the lemma. The converse of the pumping lemma is false: if a language satisfies the pumping
-condition, it is Not necessarily regular. :::
+condition, it is Not necessarily regular.
+:::
 
 ### 2.7 Closure Properties of Regular Languages
 
@@ -1175,7 +1176,8 @@ $A_{\mathrm{TM}}$. The case $\emptyset \in P$ is similar. $\blacksquare$
 
 :::caution Common Pitfall Rice's theorem applies only to properties of the **language** $L(M)$Not
 properties of the **machine** $M$ itself. For example, "Does $M$ halt within 100 steps on input $w$?" is a property Of $M$'s behaviour, not of $L(M)$And is in fact decidable (just simulate for 100
-steps). :::
+steps).
+:::
 
 ### 5.5 Post Correspondence Problem
 
@@ -1260,7 +1262,8 @@ prove $B$ is undecidable Using a reduction from a known undecidable problem $A$Y
 $A \leq_m B$Not $B \leq_m A$. Remember: if $A \leq_m B$ and $A$ is undecidable, then $B$ is
 undecidable (contrapositive of "if $B$ is decidable then $A$ is decidable"). Reversing the direction
 gives a valid implication ("if $B \leq_m A$ and $A$ is undecidable, then...") that tells us nothing
-about $B$. :::
+about $B$.
+:::
 
 ## 6. Complexity Theory
 
@@ -1707,7 +1710,8 @@ $\mathrm{NP}$ remains open.
 polynomial time; whether all Such problems are solvable in polynomial time is the P vs. NP question.
 A common error is confusing "NP-hard" with "NP-complete": NP-hard means at least as hard as all NP
 problems, but the problem Itself might not be in NP (e.g., the halting problem is NP-hard but
-undecidable). :::
+undecidable).
+:::
 
 ## 7. Problem Set
 

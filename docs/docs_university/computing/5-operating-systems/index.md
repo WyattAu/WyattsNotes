@@ -600,7 +600,8 @@ void philosopher(int i) {
 
 :::caution Common Pitfall Always use a `while` loop (not `if`) when checking conditions with
 condition variables. Spurious Wakeups can cause `pthread_cond_wait()` to return without the
-condition being signalled. The loop Re-checks the condition after every wakeup. :::
+condition being signalled. The loop Re-checks the condition after every wakeup.
+:::
 
 ## 4. Deadlocks
 
@@ -1097,7 +1098,8 @@ And no global ordering of references.
 </details>
 
 :::caution Common Pitfall Belady's anomaly applies to FIFO but **not** to LRU or Optimal. Adding
-more memory does not always Reduce page faults for non-stack algorithms. :::
+more memory does not always Reduce page faults for non-stack algorithms.
+:::
 
 ### 5.8 Thrashing
 
@@ -1537,7 +1539,8 @@ clusters.
 
 :::caution Common Pitfall Containers do **not** provide hardware-level isolation. A kernel
 vulnerability can potentially Compromise all containers on a host. For strong multi-tenant
-isolation, VMs are preferred. :::
+isolation, VMs are preferred.
+:::
 
 ## 9. Security
 
@@ -1627,7 +1630,8 @@ Addresses using shadow stacks.
 :::caution Common Pitfall ASLR, stack canaries, and DEP are complementary defences. Relying on any
 single mechanism is Insufficient. A determined attacker who can read memory can defeat ASLR; a
 format string Vulnerability can leak canary values; and JIT compilers require
-writable-and-executable pages. :::
+writable-and-executable pages.
+:::
 
 ## 10. Problem Set
 

@@ -193,7 +193,8 @@ $$C_{\mathrm{Shannon} = 2H \log_2 V \implies 60000 = 12000 \times \log_2 V \impl
 :::caution Common Pitfall Bandwidth (Hz) and bit rate (bps) are different quantities. Bandwidth is
 the range of frequencies The channel can carry; bit rate is the number of bits transmitted per
 second. Shannon's theorem Relates the maximum bit rate to bandwidth and SNR, but they are not
-interchangeable. :::
+interchangeable.
+:::
 
 ### 2.3 Multiplexing
 
@@ -1465,7 +1466,8 @@ Per second. $\blacksquare$
 
 :::caution Common Pitfall DNS uses both TCP and UDP. Queries use UDP port 53 (for efficiency). TCP
 is used for zone Transfers, responses exceeding 512 bytes, and DNSSEC. The switch to TCP was
-formalised in RFC 7766. :::
+formalised in RFC 7766.
+:::
 
 ## 7. Network Security
 
@@ -1649,7 +1651,8 @@ A **Virtual Private Network** creates an encrypted tunnel over a public network.
 :::caution Common Pitfall Encryption does not imply authentication. A message encrypted with a
 public key guarantees Confidentiality but does not prove who sent it. Digital signatures (signing
 with a private key) Provide authentication and non-repudiation. TLS combines both via the
-certificate chain. :::
+certificate chain.
+:::
 
 ### 7.7 Common Network Attacks
 

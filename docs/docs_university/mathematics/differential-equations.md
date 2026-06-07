@@ -382,7 +382,8 @@ $\frac{x^2}{2} + y^2 = C$. These are ellipses.
 ### 2.17 Common Pitfalls for First-Order ODEs
 
 :::caution Common Pitfall When separating variables, dividing by $h(y)$ can lose solutions where
-$h(y) = 0$. Always check whether $h(y) = 0$ yields valid solutions before dividing. :::
+$h(y) = 0$. Always check whether $h(y) = 0$ yields valid solutions before dividing.
+:::
 
 :::caution Common Pitfall Not every first-order ODE falls into a standard category. Equations like
 $y' = e^{x^2} + \sin(y^2)$ cannot be solved by elementary methods and require numerical Techniques.
@@ -759,14 +760,17 @@ The homogeneous solution depends on the discriminant $\gamma^2 - \omega_0^2$:
 
 :::caution Common Pitfall When using undetermined coefficients, always check whether your guess
 Overlaps with the homogeneous solution. For $y'' - 4y = e^{2x}$Guessing $y_p = Ae^{2x}$ fails
-Because $e^{2x}$ satisfies the homogeneous equation. You must use $y_p = Axe^{2x}$ instead. :::
+Because $e^{2x}$ satisfies the homogeneous equation. You must use $y_p = Axe^{2x}$ instead.
+:::
 
 :::caution Common Pitfall For Euler-Cauchy equations, the substitution $y = x^r$ only works for
-$x > 0$. For $x < 0$Substitute $x = -e^t$ or use $y = (-x)^r$. :::
+$x > 0$. For $x < 0$Substitute $x = -e^t$ or use $y = (-x)^r$.
+:::
 
 :::caution Common Pitfall Variation of parameters always works but can lead to difficult integrals.
 If the forcing term $g(x)$ is a polynomial, exponential, sine, or cosine (or products of these),
-Prefer undetermined coefficients --- it is much faster. :::
+Prefer undetermined coefficients --- it is much faster.
+:::
 
 ### 3.18 Abel's Identity (Proof)
 
@@ -1287,11 +1291,13 @@ $y(t) = 6 \cdot \frac{t^2 e^{3t}}{2!} = 3t^2 e^{3t}$. $\blacksquare$
 ### 5.14 Common Pitfalls for Laplace Transforms
 
 :::caution Common Pitfall The Laplace transform of $y'(t)$ is $sY(s) - y(0)$Not $sY(s)$. The Initial
-conditions are built into the transform. Forgetting them leads to incorrect solutions. :::
+conditions are built into the transform. Forgetting them leads to incorrect solutions.
+:::
 
 :::caution Common Pitfall When using the second shifting theorem, the time-shifted function must Be
 written as $u_c(t)f(t - c)$Not $u_c(t)f(t)$. The function $f$ must be shifted by the same Amount as
-the step. :::
+the step.
+:::
 
 ### 5.15 Proof Sketch: Picard Iteration
 
@@ -1973,42 +1979,52 @@ extinction (competitive exclusion).
 
 :::caution Common Pitfall When using undetermined coefficients, always check whether your guess
 Overlaps with the homogeneous solution. For $y'' - 4y = e^{2x}$Guessing $y_p = Ae^{2x}$ fails
-Because $e^{2x}$ satisfies the homogeneous equation. You must use $y_p = Axe^{2x}$ instead. :::
+Because $e^{2x}$ satisfies the homogeneous equation. You must use $y_p = Axe^{2x}$ instead.
+:::
 
 :::caution Common Pitfall The Laplace transform of $y'(t)$ is $sY(s) - y(0)$Not $sY(s)$. The Initial
-conditions are built into the transform. Forgetting them leads to incorrect solutions. :::
+conditions are built into the transform. Forgetting them leads to incorrect solutions.
+:::
 
 :::caution Common Pitfall Separation of variables can miss solutions. When dividing by $h(y)$ to
 Separate, check whether $h(y) = 0$ gives any valid solutions. For example, solving $y' = y^2$ by
-Separating gives $y = -1/(x + C)$But misses the solution $y = 0$. :::
+Separating gives $y = -1/(x + C)$But misses the solution $y = 0$.
+:::
 
 :::caution Common Pitfall The Fourier series of a function converges to the function only at points
 Of continuity. At jump discontinuities, it converges to the midpoint of the jump. The Gibbs
-Phenomenon causes overshoots near jumps that do not vanish as more terms are added. :::
+Phenomenon causes overshoots near jumps that do not vanish as more terms are added.
+:::
 
 :::caution Common Pitfall When solving PDEs by separation of variables, the boundary conditions
 Determine the eigenvalues. Using the wrong boundary conditions (e.g., Neumann instead of Dirichlet)
-Leads to a completely different set of eigenfunctions and eigenvalues. :::
+Leads to a completely different set of eigenfunctions and eigenvalues.
+:::
 
 :::caution Common Pitfall Not every first-order ODE can be solved analytically. Equations like
 $y' = x^2 + y^2$ have no closed-form solution in terms of elementary functions. Numerical methods
-(Euler, Runge-Kutta) may be necessary. :::
+(Euler, Runge-Kutta) may be necessary.
+:::
 
 :::caution Common Pitfall The linearization of a nonlinear system near a critical point is only
 Valid for hyperbolic critical points (no eigenvalues on the imaginary axis). If eigenvalues lie on
-The imaginary axis, the nonlinear system can behave very differently from its linearization. :::
+The imaginary axis, the nonlinear system can behave very differently from its linearization.
+:::
 
 :::caution Common Pitfall When computing the inverse Laplace transform, always check that the
 Partial fraction decomposition is correct before inverting term-by-term. A common error is
-Forgetting to include all powers of irreducible quadratic factors. :::
+Forgetting to include all powers of irreducible quadratic factors.
+:::
 
 :::caution Common Pitfall For the Euler-Cauchy equation $x^2 y'' + axy' + by = 0$Remember that $x^r$
 with complex $r = \alpha \pm i\beta$ gives solutions involving $\cos(\beta \ln x)$ and
-$\sin(\beta \ln x)$Not $\cos(\beta x)$ and $\sin(\beta x)$. :::
+$\sin(\beta \ln x)$Not $\cos(\beta x)$ and $\sin(\beta x)$.
+:::
 
 :::caution Common Pitfall The Wronskian $W(y_1, y_2)$ being zero at a single point does not
 Necessarily mean the solutions are linearly dependent. For linear ODEs with continuous coefficients,
-$W \equiv 0$ everywhere or $W \neq 0$ everywhere. Check Abel's identity. :::
+$W \equiv 0$ everywhere or $W \neq 0$ everywhere. Check Abel's identity.
+:::
 
 ### 9.9 Worked Example: Lyapunov Function
 

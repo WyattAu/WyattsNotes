@@ -325,7 +325,8 @@ $\mathbf{c} = \mathbf{a} + \tau(\mathbf{x}-\mathbf{a})$ yields the result. $\bla
   $f_{xy} = f_{yx}$ can fail.
 - **Normalise the direction vector.** The formula $D_{\mathbf{u}} f = \nabla f \cdot \mathbf{u}$
   assumes $\lVert \mathbf{u} \rVert = 1$. If the direction is given by a non-unit vector
-  $\mathbf{v}$Divide by $\lVert \mathbf{v} \rVert$ first. :::
+  $\mathbf{v}$Divide by $\lVert \mathbf{v} \rVert$ first.
+:::
 
 ## 2. Multiple Integrals
 
@@ -617,7 +618,8 @@ elementary Antiderivative with respect to $y$. Swapping the order was essential.
   $\theta$. Here, $\phi \in [0, \pi]$ is the polar angle (from the positive $z$-axis) and
   $\theta \in [0, 2\pi]$ is the azimuthal angle.
 - **Region description.** When swapping integration order, carefully redraw the region and re-derive
-  the bounds. The new bounds may require splitting the integral into multiple pieces. :::
+  the bounds. The new bounds may require splitting the integral into multiple pieces.
+:::
 
 ## 3. Vector Calculus
 
@@ -988,7 +990,8 @@ Therefore $\phi(x,y,z) = x^2 y + xz^2 + y^2 z + C$. $\blacksquare$
   is not conservative there (the domain is not connected).
 - **Orientation.** Green's and Stokes' theorems require positive orientation (counterclockwise for
   planar curves, right-hand rule for surfaces). The divergence theorem requires the outward normal.
-  Reversing orientation changes the sign of the result. :::
+  Reversing orientation changes the sign of the result.
+:::
 
 ### 3.9 Relationships Among the Fundamental Theorems
 
@@ -1242,7 +1245,8 @@ $(1/3, 1/3, 1/3)$. $\blacksquare$
   inconclusive. Use higher-order Taylor expansions or direct analysis of the function near the
   critical point.
 - **Non-normalised constraint gradients.** Ensure the constraint functions are written in the form
-  $g = 0$; multiplying $g$ by a constant changes $\lambda$ but not the critical points. :::
+  $g = 0$; multiplying $g$ by a constant changes $\lambda$ but not the critical points.
+:::
 
 ## 5. Curves and Surfaces
 
@@ -1528,7 +1532,8 @@ $\blacksquare$
 - **Normal orientation.** The cross product $\mathbf{r}_u \times \mathbf{r}_v$ determines the
   orientation. Swapping the order changes the sign of the flux integral.
 - **Surface area vs. Flux.** Surface area uses $\lVert \mathbf{r}_u \times \mathbf{r}_v \rVert$
-  (scalar), while flux uses $\mathbf{r}_u \times \mathbf{r}_v$ (vector, oriented). :::
+  (scalar), while flux uses $\mathbf{r}_u \times \mathbf{r}_v$ (vector, oriented).
+:::
 
 ## 6. Problem Set
 

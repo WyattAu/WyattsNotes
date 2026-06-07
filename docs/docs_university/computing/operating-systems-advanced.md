@@ -231,7 +231,8 @@ All deadlines satisfied.
 
 :::caution Common Pitfall The RMS utilisation bound is a **sufficient** condition, not necessary. A
 task set with $U > n(2^{1/n} - 1)$ may still be schedulable under RMS. The response time analysis
-(RTA) provides a necessary and sufficient test but is more complex to compute. :::
+(RTA) provides a necessary and sufficient test but is more complex to compute.
+:::
 
 ## 2. Advanced Memory Management
 
@@ -410,7 +411,8 @@ to enforce ordering when necessary.
 :::caution Common Pitfall X86-64 has a **stronger memory model** (TSO -- Total Store Order) than ARM
 and RISC-V. Code that works correctly on x86-64 may fail on ARM due to reordering. Always use proper
 synchronisation primitives (mutexes, atomic operations with explicit ordering) rather than relying
-on the hardware memory model. :::
+on the hardware memory model.
+:::
 
 <details>
 <summary>Worked Example: Double-Checked Locking with Memory Ordering</summary>
@@ -1195,7 +1197,8 @@ Safe sequence: P1, P3, P4, P0, P2. Request granted.
 process in advance. In practice, processes often do not know (or cannot express) their maximum
 needs. This limits the practical applicability of the Banker's algorithm. Additionally, the
 algorithm has $O(m \times n^2)$ time complexity per resource request (where $m$ is the number of
-resource types and $n$ is the number of processes), which may be prohibitive for large systems. :::
+resource types and $n$ is the number of processes), which may be prohibitive for large systems.
+:::
 
 ## 17. Problem Set
 

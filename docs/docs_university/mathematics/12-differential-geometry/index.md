@@ -406,4 +406,5 @@ $c_1(E) \in H^2(M, \mathbb{R})$ is represented by the closed 2-form $\frac{i}{2\
 :::caution Common Pitfall The Levi-Civita connection depends on the choice of metric, not just on
 the smooth structure. Two different Riemannian metrics on the same smooth manifold generally give
 different connections, different geodesics, and different curvatures. The topology constrains the
-total curvature (Gauss-Bonnet) but not the local curvature at individual points. :::
+total curvature (Gauss-Bonnet) but not the local curvature at individual points.
+:::

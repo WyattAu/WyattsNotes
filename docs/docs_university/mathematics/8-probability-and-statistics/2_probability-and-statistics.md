@@ -200,7 +200,8 @@ $$= \frac{0.02 \times 0.5}{0.02 \times 0.5 + 0.01 \times 0.3 + 0.03 \times 0.2} 
 :::caution Common Pitfall People often confuse $P(A \mid B)$ with $P(B \mid A)$. In medical testing,
 $P(\mathrm{disease} \mid \mathrm{positive})$ Is much lower than
 $P(\mathrm{positive} \mid \mathrm{disease})$ due to low base rates. Always apply Bayes' Theorem
-rigorously. :::
+rigorously.
+:::
 
 ## 2. Random Variables
 
@@ -853,7 +854,8 @@ $$\mathrm{Var}(X) = \frac{91}{6} - \left(\frac{7}{2}\right)^2 = \frac{91}{6} - \
 
 :::caution Common Pitfall $\mathrm{Var}(X) = E[X^2] - (E[X])^2$**not** $(E[X])^2 - E[X^2]$. The
 variance is always non-negative, so if you Obtain a negative value, you have made an arithmetic
-error. :::
+error.
+:::
 
 ## 5. Joint Distributions
 
@@ -1387,7 +1389,8 @@ $$\hat{\lambda} \pm 1.96 \cdot \frac{\hat{\lambda}}{\sqrt{n}}$$
 
 :::caution Common Pitfall The MLE is not always unbiased. For example, the MLE
 $\hat{\sigma}^2 = \frac{1}{n}\sum (X_i - \bar{X})^2$ For the normal variance is biased; the unbiased
-estimator uses $n - 1$ in the denominator. :::
+estimator uses $n - 1$ in the denominator.
+:::
 
 ## 8. Hypothesis Testing
 
@@ -1604,7 +1607,8 @@ recovers the Z-test. $\blacksquare$
 
 :::caution Common Pitfall "Failing to reject $H_0$" is not the same as "accepting $H_0$". The test
 only provides evidence against $H_0$; absence of evidence is not evidence of absence. The
-distinction is critical in scientific Reasoning. :::
+distinction is critical in scientific Reasoning.
+:::
 
 ## 9. Problem Set
 

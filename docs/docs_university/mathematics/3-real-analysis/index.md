@@ -179,7 +179,8 @@ Extended to $\mathbb{R}$ for analysis.
 
 :::caution Common Pitfall The completeness axiom is often misstated as "every bounded set has a supremum." The set must be Non-empty. Also, completeness does not say every set has a maximum;
 $\sup(S)$ need not belong to $S$. For example, $\sup\{1/n : n \in \mathbb{N}\} = 1$Which belongs to
-the set, but $\sup(0, 1) = 1$Which does not belong to $(0, 1)$. :::
+the set, but $\sup(0, 1) = 1$Which does not belong to $(0, 1)$.
+:::
 
 ## 2. Sequences and Limits
 
@@ -404,7 +405,8 @@ $(L-2)(L+1) = 0$. Since $a_n \geq \sqrt{2} > 0$ for all $n$, $L \geq 0$So $L = 2
 $\inf$ of the range $\{a_n : n \in \mathbb{N}\}$. The $\limsup$ depends on the _tail_ behavior of
 the sequence. For Example, $a_n = (-1)^n$ has $\limsup = 1$ and $\liminf = -1$But $\sup\{a_n\} = 1$
 and $\inf\{a_n\} = -1$ happen to agree in this case. However, for $a_n = 1/n$, $\sup = 1$ but
-$\limsup = 0$. :::
+$\limsup = 0$.
+:::
 
 ## 3. Series
 
@@ -608,7 +610,8 @@ _If you get this wrong, revise:_ Section 3.5 (Cauchy Condensation Test).
 
 :::caution Common Pitfall The ratio and root tests are inconclusive when the limit equals 1. In such
 cases, try the comparison Test, integral test, or other methods. For example, $\sum 1/n$ diverges
-(harmonic series) and $\sum 1/n^2$ converges, but both give a ratio test limit of 1. :::
+(harmonic series) and $\sum 1/n^2$ converges, but both give a ratio test limit of 1.
+:::
 
 ## 4. Continuity
 
@@ -860,7 +863,8 @@ _If you get this wrong, revise:_ Section 4.2 (Continuity), Section 5.3 (Mean Val
 $f(x) = 1/x$ on $(0, 1)$ is Continuous but not uniformly continuous. The Heine-Cantor theorem
 requires a **closed and bounded** Interval. Also, a function can be uniformly continuous on an
 unbounded domain (e.g., $f(x) = \sqrt{x}$ On $[0, \infty)$) --- boundedness of the domain is
-sufficient but not necessary. :::
+sufficient but not necessary.
+:::
 
 ## 5. Differentiability
 
@@ -1114,7 +1118,8 @@ $\blacksquare$
 $\frac{\infty}{\infty}$. Applying it to forms like $\frac{1}{0}$ or $\frac{\infty}{1}$ will give
 incorrect results. Always Verify the indeterminate form before applying the rule. Also, L'Hôpital's
 rule requires that the Limit of the quotient of derivatives exists; if it does not exist
-(oscillates), the original limit May still exist. :::
+(oscillates), the original limit May still exist.
+:::
 
 ## 6. Riemann Integration
 
@@ -1401,7 +1406,8 @@ intervals. For unbounded Functions or infinite intervals, one must use the impro
 integral. A common error is Applying the FTC directly to improper integrals without taking the
 limit. Also, conditional Convergence of improper integrals behaves differently from absolute
 convergence: rearranging the "terms" (subintervals) of a conditionally convergent improper integral
-can change its value. :::
+can change its value.
+:::
 
 ## 7. Sequences and Series of Functions
 
@@ -1637,7 +1643,8 @@ integrability. Uniform Convergence preserves continuity and allows interchange o
 integral, but not limit and Derivative. For derivatives, uniform convergence of the _sequence of
 derivatives_ (not the original Sequence) is required, as stated in Theorem 7.4. Also, the
 Weierstrass M-Test applies only to series Of functions, not sequences; for sequences, one must
-verify the uniform Cauchy criterion directly. :::
+verify the uniform Cauchy criterion directly.
+:::
 
 ## 8. Problem Set
 

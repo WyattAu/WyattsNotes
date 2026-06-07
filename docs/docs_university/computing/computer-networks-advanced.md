@@ -127,7 +127,8 @@ route, any loop would cause the AS number to appear twice, triggering the reject
 oscillate between multiple stable states (known as BGP wedgies or "persistent oscillation"). The
 Gao-Rexford conditions ensure convergence: (1) routes are ranked by customer-provider-peer
 relationships, (2) an AS never prefers a route through a peer over a route through a customer, and
-(3) an AS never exports routes learned from one peer to another peer. :::
+(3) an AS never exports routes learned from one peer to another peer.
+:::
 
 ### 1.3 Route Aggregation
 
@@ -289,7 +290,8 @@ establishment.
 :::caution Common Pitfall 0-RTT resumption is vulnerable to replay attacks. An attacker who captures
 the client's 0-RTT data can replay it to the server. Applications must ensure that 0-RTT requests
 are idempotent (safe to execute multiple times). The server can reject 0-RTT for non-idempotent
-operations. :::
+operations.
+:::
 
 ## 3. Network Performance Analysis
 
@@ -916,7 +918,8 @@ Using `ss -tanp` or `netstat -tanp`:
 :::caution Common Pitfall A large number of connections in CLOSE_WAIT state indicates a resource
 leak: the application received a close from the remote end but never called `close()` on its socket.
 This eventually exhausts file descriptors. The fix is in the application code, not in the network
-configuration. :::
+configuration.
+:::
 
 <details>
 <summary>Worked Example: Network Debugging Scenario</summary>

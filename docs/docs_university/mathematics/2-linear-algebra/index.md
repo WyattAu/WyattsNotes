@@ -372,7 +372,8 @@ $\blacksquare$
 </details>
 
 :::tip To check if $n$ vectors in $\mathbb{R}^n$ form a basis, compute the determinant of the matrix
-whose Columns are those vectors. If $\det \neq 0$They form a basis; if $\det = 0$They do not. :::
+whose Columns are those vectors. If $\det \neq 0$They form a basis; if $\det = 0$They do not.
+:::
 
 **Problem.** Let $V = \mathcal{P}_3(\mathbb{R})$ (polynomials of degree at most 3). Find the
 dimension Of the subspace $W = \{p \in \mathcal{P}_3 : p(1) = p(-1) = 0\}$.
@@ -613,7 +614,8 @@ $\blacksquare$
 
 :::caution Common Pitfall The determinant is only defined for square matrices. There is no
 meaningful determinant for an $m \times n$ matrix with $m \neq n$. Do not confuse
-$\det(AB) = \det(A)\det(B)$ with a Non-existent formula for non-square matrices. :::
+$\det(AB) = \det(A)\det(B)$ with a Non-existent formula for non-square matrices.
+:::
 
 ### 3.8 Worked Example: Determinant via Row Reduction (Efficient Method)
 
@@ -1100,7 +1102,8 @@ Therefore $A^{10} = 3254867 \cdot A - 6508710 \cdot I$. $\blacksquare$
 :::caution Common Pitfall Not every matrix is diagonalisable. For example,
 $A = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ has Eigenvalue $\lambda = 1$ with algebraic
 multiplicity 2 but geometric multiplicity 1. It has only one Linearly independent eigenvector and is
-not diagonalisable. :::
+not diagonalisable.
+:::
 
 ### 5.8 Worked Example: Spectral Decomposition of a Symmetric Matrix
 
@@ -1517,7 +1520,8 @@ $\blacksquare$
 
 :::caution Common Pitfall The Gram--Schmidt process requires a linearly independent starting set. If
 the input vectors are Linearly dependent, one of the $\mathbf{u}_k$ will be the zero vector, and the
-process will fail (attempting to divide by zero in the normalisation step). :::
+process will fail (attempting to divide by zero in the normalisation step).
+:::
 
 ### 7.8 Worked Example: Orthogonal Projection onto a Plane
 

@@ -661,7 +661,8 @@ ferromagnets (permanent magnets), $H_c$ is large.
 is an auxiliary field Convenient for problems with free currents. The names "magnetic field" and
 "magnetic field Intensity" vary across textbooks --- always check which symbol a given text
 associates with Which name. In this document, $\mathbf{B}$ is the magnetic field and $\mathbf{H}$ is
-the Auxiliary H field. :::
+the Auxiliary H field.
+:::
 
 ## 4. Electrodynamics
 
@@ -1021,7 +1022,8 @@ They satisfy $v_p\,v_g = c^2$.
 :::caution Common Pitfall The phase velocity in a waveguide exceeds $c$But this does not violate
 special relativity. No information or energy travels faster than $c$; the signal velocity is the
 group velocity $v_g \lt c$. The phase velocity is the speed of the wave crests, which is a purely
-Kinematic quantity. :::
+Kinematic quantity.
+:::
 
 ### 5.8 Electric Dipole Radiation
 
@@ -1101,7 +1103,8 @@ $$\nabla^2 \mathbf{A} - \mu_0 \varepsilon_0 \frac{\partial^2 \mathbf{A}}{\partia
 
 :::caution Common Pitfall The Lorenz gauge (with one "r") is named after Ludvig Lorenz, not Hendrik
 Lorentz. It is frequently Misspelled "Lorentz gauge." The two are different people, and the correct
-spelling is "Lorenz gauge." :::
+spelling is "Lorenz gauge."
+:::
 
 ### 6.3 Derivation of the Lorenz Gauge Condition
 

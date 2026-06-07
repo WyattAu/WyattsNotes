@@ -1376,7 +1376,8 @@ These are verified experimentally and by renormalisation group calculations.
 :::caution Common Pitfall The mean-field approximation overestimates $T_c$ and gives incorrect
 Critical exponents. In 1D, it predicts a phase transition at $T_c = Jz/k_B$Whereas the exact
 Solution shows no transition at $T \gt 0$. Mean-field theory is only reliable in high dimensions
-(where fluctuations are small) or for long-range interactions. :::
+(where fluctuations are small) or for long-range interactions.
+:::
 
 ## 15. The Microcanonical Ensemble
 
@@ -2010,17 +2011,20 @@ We can verify with the Clausius-Clapeyron equation if $\Delta V$ is known.
 :::caution Common Pitfall Do not confuse the different ensembles. Use the microcanonical ensemble
 ($NVE$) for isolated systems, the canonical ensemble ($NVT$) for systems in a heat bath, and the
 Grand canonical ensemble ($\mu VT$) for open systems. For macroscopic systems in equilibrium, all
-Ensembles give the same thermodynamic results, but they differ in their fluctuation predictions. :::
+Ensembles give the same thermodynamic results, but they differ in their fluctuation predictions.
+:::
 
 :::caution Common Pitfall When applying the equipartition theorem, remember that it applies only to
 _quadratic_ degrees of freedom. Vibrational modes contribute $k_B T$ (not $k_B T/2$) because they
 Have both kinetic and potential energy terms. Electronic and rotational degrees of freedom may be
-"frozen out" at low temperatures when $k_B T$ is much less than the level spacing. :::
+"frozen out" at low temperatures when $k_B T$ is much less than the level spacing.
+:::
 
 :::caution Common Pitfall The Gibbs paradox arises when classical particles are treated as
 Distinguishable. Always include the $1/N!$ factor in the partition function for identical particles.
 This is not an optional correction — it is required by quantum mechanics (indistinguishability of
-Identical particles) and ensures that entropy is extensive. :::
+Identical particles) and ensures that entropy is extensive.
+:::
 
 ## 13. Nonequilibrium Thermodynamics
 

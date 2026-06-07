@@ -283,7 +283,8 @@ $= 34.6$ ns.
 packet envelope and equals The energy transport velocity in lossless media. However, it is only
 equal to the signal velocity In regions of weak, normal dispersion. Near absorption resonances,
 $v_g$ can exceed $c$ or become Negative — this does not violate causality, since the true signal
-velocity (front velocity) never Exceeds $c$. :::
+velocity (front velocity) never Exceeds $c$.
+:::
 
 ## 2. Electromagnetic Waves
 
@@ -485,7 +486,8 @@ sign of $r_s$ indicates a phase shift of $\pi$ upon reflection.
 error is to swap the $n_1\cos\theta_i$ and $n_2\cos\theta_t$ terms. Remember: for $r_s$The numerator
 starts with $n_1\cos\theta_i$; for $r_p$The numerator starts with $n_2\cos\theta_i$. Also, $r$ and
 $t$ are Amplitude coefficients, while $R$ and $T$ are energy coefficients — they are related but not
-Interchangeable. :::
+Interchangeable.
+:::
 
 ### 2.6 Total Internal Reflection and Evanescent Waves
 
@@ -618,7 +620,8 @@ A reflection from Low-to-high refractive index introduces a $\pi$ shift; high-to
 soap film in Air, there is one $\pi$ shift (at the top surface). For a coating on glass
 ($n_{\mathrm{coat} \lt n_{\mathrm{glass}}}$), there is also one shift. The conditions for
 constructive and destructive interference swap depending on whether the total number of shifts is
-odd or even. :::
+odd or even.
+:::
 
 <details>
 <summary>Worked Example: Anti-reflection coating design</summary>
@@ -832,7 +835,8 @@ The intensity is about 4.5% of the central maximum.
 $a\sin\theta = \lambda$ (not $\lambda/2$). The factor of 2 difference from the double-slit maximum
 condition ($d\sin\theta = \lambda$) Reflects the fundamentally different geometry: in single-slit
 diffraction, the minimum occurs when Wavelets from the edges cancel, requiring a path difference of
-one full wavelength between them. :::
+one full wavelength between them.
+:::
 
 ### 4.3 Double-Slit with Finite Width
 
@@ -1083,7 +1087,8 @@ polarisation and the fast axis.
 :::caution Common Pitfall A quarter-wave plate only produces circular polarisation when the input
 linear polarisation is at Exactly $45°$ to the fast and slow axes. For other input angles, the
 output is elliptically Polarised. A half-wave plate rotates linear polarisation by $2\theta$Not
-$\theta$. :::
+$\theta$.
+:::
 
 <details>
 <summary>Worked Example: Quarter-wave plate design and application</summary>

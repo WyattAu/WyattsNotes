@@ -194,7 +194,8 @@ Three principal experimental methods:
 
 :::caution Common Pitfall The coordination number is the number of _nearest neighbours_, not the
 number of atoms in the unit Cell. For FCC, the coordination number is 12 even though there are only
-4 atoms per conventional Cell. Do not confuse the basis size with the coordination number. :::
+4 atoms per conventional Cell. Do not confuse the basis size with the coordination number.
+:::
 
 <details>
 <summary>Worked Example: Interplanar Spacing for SC, BCC, FCC</summary>
@@ -541,7 +542,8 @@ Estimating nanocrystallite sizes from powder diffraction data.
 Bragg's law $2d\sin\theta = n\lambda$. These are equivalent formulations of the same physics. The
 Laue condition is a vector equation in Reciprocal space, while Bragg's law is a scalar equation in
 real space. Converting between them Requires careful geometry --- remember that $\theta$ in Bragg's
-law is measured from the _plane_, Not from the normal. :::
+law is measured from the _plane_, Not from the normal.
+:::
 
 ## 4. Lattice Vibrations and Phonons
 
@@ -713,7 +715,8 @@ Model uses a single average sound velocity, while the real phonon spectrum is an
 specific heat. At low Temperatures, the electronic specific heat $C_e = \gamma T$ also contributes
 and can dominate over The lattice $T^3$ term in metals. The total low-$T$ specific heat of a metal
 is $C_V = \gamma T + \beta T^3$Where $\beta$ is related to $\Theta_D$. A plot of $C_V/T$ versus
-$T^2$ yields $\gamma$ (intercept) and $\beta$ (slope). :::
+$T^2$ yields $\gamma$ (intercept) and $\beta$ (slope).
+:::
 
 <details>
 <summary>Worked Example: Comparing Debye and Einstein Specific Heats</summary>
@@ -1067,7 +1070,8 @@ Measure $m^*$ directly: the resonance frequency is $\omega_c = eB/m^*$.
 :::caution Common Pitfall The effective mass is a tensor quantity . For crystals with cubic
 symmetry, it reduces to A scalar, but for anisotropic crystals (e.g., graphite, silicon), different
 effective masses apply Along different crystallographic directions. Always check the crystal
-symmetry before assuming $m^*$ is a scalar. :::
+symmetry before assuming $m^*$ is a scalar.
+:::
 
 ### 5.9 Band Structure Calculations
 
@@ -1722,7 +1726,8 @@ This is the primary experimental technique for mapping Fermi surfaces.
 dipole interaction. The dipole energy between two spins is $\sim \mu_0\mu_B^2/a^3 \sim 10^{-4}$ eV,
 far too small to Explain Curie temperatures of $\sim 10^3$ K ($\sim 0.1$ eV). The exchange
 interaction is a Consequence of the Coulomb repulsion combined with the antisymmetry of the electron
-wave function (Pauli principle), and is $10$--$100$ meV. :::
+wave function (Pauli principle), and is $10$--$100$ meV.
+:::
 
 ## 11. Problem Set
 
@@ -1816,7 +1821,8 @@ at the Brillouin zone Boundaries (where Bragg diffraction occurs). Do not confus
 lattice constant $a$ With the reciprocal lattice spacing $2\pi/a$. The first Brillouin zone extends
 from $-\pi/a$ to $+\pi/a$ in each direction, not from $0$ to $a$. When calculating the Fermi wave
 vector, always Use $k_F = (3\pi^2 n)^{1/3}$ --- the factor of $3\pi^2$ (not $6\pi^2$) accounts for
-the factor Of 2 from spin. :::
+the factor Of 2 from spin.
+:::
 
 ## 12. Advanced Topics in Superconductivity
 

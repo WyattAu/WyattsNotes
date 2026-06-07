@@ -432,7 +432,8 @@ lines and query in $O(\log n)$ per step.
 :::caution Common Pitfall When applying DP optimisations, always verify that the required conditions
 hold. Knuth's optimisation requires the quadrangle inequality AND monotonicity of the optimal split
 point. The convex hull trick requires lines to be added in monotone order of slope. Applying these
-optimisations without verifying the conditions leads to incorrect results. :::
+optimisations without verifying the conditions leads to incorrect results.
+:::
 
 ## 3. String Algorithms
 

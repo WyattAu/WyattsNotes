@@ -543,7 +543,8 @@ This logarithmic running arises from vacuum polarisation (screening by virtual $
 :::caution Common Pitfall Students often confuse **regularisation** (a mathematical tool to control
 divergences) with **renormalization** (the physical procedure of redefining parameters).
 Regularisation is a Temporary scaffold; renormalization is the essential step that yields finite,
-physical predictions. :::
+physical predictions.
+:::
 
 ## 4. The Higgs Mechanism
 
@@ -996,7 +997,8 @@ cleaner unification at $M_{\mathrm{GUT} \sim 2 \times 10^{16}}$ GeV.
 extrapolated using SM beta Functions. The three lines form a rough triangle. It is only in
 supersymmetric extensions (MSSM) That the additional superpartner contributions to the beta
 functions bring the three couplings to Near-convergence. This convergence is often cited as indirect
-evidence for supersymmetry. :::
+evidence for supersymmetry.
+:::
 
 ## 7. Big Bang Cosmology
 
@@ -1483,7 +1485,8 @@ In cosmology. Possible resolutions include:
 Planck) disagrees with Local distance-ladder measurements ($\sim 73.0$ km/s/Mpc, SH0ES). This
 "Hubble tension" is one of The most significant open problems in cosmology. When using $H_0$ in
 calculations, be aware of Which measurement you are referencing and the systematic uncertainties
-involved. :::
+involved.
+:::
 
 ### 7.11 Timeline of the Universe
 

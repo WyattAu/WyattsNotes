@@ -286,7 +286,8 @@ In both cases, the amortised cost is $O(1)$.
 :::caution Common Pitfall Amortised analysis gives a guarantee over a _sequence_ of operations, not
 a per-operation worst-case bound. A single operation can still be expensive (e.g., a resize in a
 dynamic array costs $O(n)$). Amortised bounds are meaningful only when the sequence length is not
-bounded by a constant. :::
+bounded by a constant.
+:::
 
 ## 2. Fundamental Data Structures
 
@@ -809,7 +810,8 @@ A graph $G = (V, E)$ can be represented by:
 :::caution Common Pitfall Choosing the wrong graph representation can make an algorithm
 asymptotically slower. Use adjacency matrices for dense graphs ($E \approx V^2$) and adjacency lists
 for sparse graphs ($E \ll V^2$). For example, BFS with an adjacency matrix takes $O(V^2)$ but with
-adjacency lists takes $O(V + E)$. :::
+adjacency lists takes $O(V + E)$.
+:::
 
 ## 3. Sorting Algorithms
 
@@ -1043,7 +1045,8 @@ $\blacksquare$
 :::caution Common Pitfall The $O(n \log n)$ lower bound applies only to **comparison-based**
 sorting. Non-comparison sorts Like radix sort can achieve $O(n)$ time for integers in a bounded
 range. However, non-comparison sorts sacrifice generality: they depend on the structure of the keys
-and cannot sort arbitrary objects. :::
+and cannot sort arbitrary objects.
+:::
 
 ### 3.8 Comparison of Sorting Algorithms
 
@@ -1576,7 +1579,8 @@ $\blacksquare$
 :::caution Common Pitfall Not all problems have optimal substructure. For example, the _longest
 simple path_ problem does not: the longest simple path from $u$ to $v$ may not contain the longest
 simple path from $u$ to an intermediate vertex $w$Because the subpath might share vertices with the
-rest of the path, creating a non-simple path. :::
+rest of the path, creating a non-simple path.
+:::
 
 ### 5.4 Common Patterns
 
@@ -1892,7 +1896,8 @@ size).
 
 :::caution Common Pitfall NP-hardness does not mean the problem is unsolvable. It means there is no
 known polynomial-time Algorithm. Many NP-complete problems have efficient approximation algorithms
-or can be solved Exactly for practical input sizes using branch-and-bound or SAT solvers. :::
+or can be solved Exactly for practical input sizes using branch-and-bound or SAT solvers.
+:::
 
 ### 6.2 Approximation Algorithms
 

@@ -250,7 +250,8 @@ SELECT * FROM reachable WHERE depth <= 5;
 
 :::caution Common Pitfall Recursive CTEs without cycle detection will loop forever on cyclic graphs.
 Always include a cycle check (e.g., tracking the path or visited nodes) or a depth limit. PostgreSQL
-supports the `CYCLE` clause for automatic cycle detection. :::
+supports the `CYCLE` clause for automatic cycle detection.
+:::
 
 ## 3. Advanced Normalisation
 
@@ -505,7 +506,8 @@ acyclic, and by Theorem 5.1, the schedule is conflict-serialisable. $\blacksquar
 :::caution Common Pitfall 2PL prevents conflicts but does not prevent deadlocks. Deadlock prevention
 (e.g., wait-die, wound-wait) or detection (wait-for graph) is still needed. Additionally, 2PL may
 not be necessary: there exist conflict-serialisable schedules that cannot be produced by any 2PL
-protocol. :::
+protocol.
+:::
 
 ### 5.4 Multi-Version Concurrency Control (MVCC)
 

@@ -250,7 +250,8 @@ rotations.
 the case where the node to be deleted has two children. In this case, one must find the successor
 (or predecessor), copy its key/value to the node being deleted, and then delete the successor node
 from its original position. The successor always has at most one child, simplifying the actual
-removal. :::
+removal.
+:::
 
 ### 1.2 B-Trees and B+ Trees
 
@@ -427,7 +428,8 @@ height $h \leq \lceil \log_d(n) \rceil + 1$.
 :::caution Common Pitfall Students often confuse the minimum degree $t$ of a B-tree with its order.
 A B-tree of order $m$ has maximum $m$ children per internal node, which means
 $t = \lceil m/2 \rceil$. A B-tree of minimum degree $t$ has maximum $2t - 1$ keys per node. Always
-verify which convention the question or textbook uses. :::
+verify which convention the question or textbook uses.
+:::
 
 ### 1.3 Tries and Prefix Trees
 
@@ -919,7 +921,8 @@ $\blacksquare$
 :::caution Common Pitfall Fibonacci heaps have excellent amortised bounds but poor constant factors
 in practice due to the overhead of maintaining the root list, marking nodes, and consolidation. For
 this reason, binary heaps (or pairing heaps) are often preferred in practice despite worse
-theoretical amortised bounds for decrease-key. :::
+theoretical amortised bounds for decrease-key.
+:::
 
 ### 2.3 Pairing Heaps
 
@@ -1310,7 +1313,8 @@ A good potential function satisfies:
 individual operations. In real-time systems, an $O(n)$ operation (even if amortised $O(1)$) may
 violate timing constraints. For real-time applications, use data structures with worst-case bounds
 (e.g., balanced BSTs instead of splay trees, or dynamic arrays with geometric resizing only when
-safe). :::
+safe).
+:::
 
 **Theorem 7.1.** There exist sequences of operations where any data structure supporting dynamic
 array operations must pay $\Omega(\log n)$ per operation in the worst case (cell-probe model lower
