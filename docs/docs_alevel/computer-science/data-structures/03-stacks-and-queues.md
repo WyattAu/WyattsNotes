@@ -947,9 +947,6 @@ Handled — unfair and violating the FIFO service guarantee.
 
 </details>
 
-:::
-
-:::
 
 ## Common Pitfalls
 

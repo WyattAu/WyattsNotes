@@ -890,17 +890,6 @@ hdparm -B 127 /dev/sda  # 1 (aggressive) to 255 (disabled)
 
 :::warning Frequent HDD spin-up/spin-down cycles increase wear. Set standby timeout to a reasonable
 Value (15–30 minutes) rather than a short interval.
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
 
 ## Summary
 

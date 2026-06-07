@@ -797,9 +797,6 @@ $w\,\Delta t = u^2\sin^2\theta / (2g)$ for some $\Delta t \gt 0$.
 
 </details>
 
-:::
-
-:::
 
 ---
 

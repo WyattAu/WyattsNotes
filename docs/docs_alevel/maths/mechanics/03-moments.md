@@ -823,17 +823,6 @@ Centre of mass is approximately $4.21\,\mathrm{cm}$ from the flat face.
 
 </details>
 
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
 
 ---
 

@@ -806,11 +806,6 @@ Converting to megaparsecs: $d = 4.99 \times 10^{24}/(3.09 \times 10^{22}) = 161$
 
 </details>
 
-:::
-
-:::
-
-:::
 
 ## Common Pitfalls
 

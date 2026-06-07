@@ -701,9 +701,6 @@ class Library:
 For revision on programming fundamentals, see
 [Programming Constructs](/docs/alevel/computer-science/programming/programming-constructs).
 
-:::
-
-:::
 
 ## Common Pitfalls
 

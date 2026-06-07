@@ -680,11 +680,6 @@ Both inputs are negative and the result is negative, so no overflow.
 
 </details>
 
-:::
-
-:::
-
-:::
 
 ## Common Pitfalls
 

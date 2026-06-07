@@ -677,15 +677,6 @@ void move_vs_forward() {
    temporary. If `T` is a non-reference type, you return an rvalue reference to a local — which
    always dangles. Return by value instead and let NRVO or move semantics handle it.
 
-:::
-
-:::
-
-:::
-
-:::
-
-:::
 
 ## Summary
 

@@ -870,9 +870,6 @@ When adding used hardware (CPU, RAM, GPU) to an existing system, run a focused b
 - **Used GPU:** FurMark for 30 minutes + CUDA memtest for 1 hour.
 - **Used SSD/HDD:** SMART long test + badblocks non-destructive read test.
 
-:::
-
-:::
 
 ## Summary
 

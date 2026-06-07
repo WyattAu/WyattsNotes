@@ -551,11 +551,6 @@ Index `-1`.
 - [Chrono Library](./2_chrono.md)
 - [Random Number Generation](./3_random_numbers.md)
 
-:::
-
-:::
-
-:::
 
 ## Summary
 

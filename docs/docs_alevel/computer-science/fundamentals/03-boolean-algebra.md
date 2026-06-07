@@ -806,11 +806,6 @@ Covered. ✓
 
 </details>
 
-:::
-
-:::
-
-:::
 
 ## Common Pitfalls
 

@@ -701,11 +701,6 @@ int main() {
 `get_expensive()` concurrently. Internally, it uses a combination of atomic flags and a mutex, but
 The fast path (already initialized) is a single atomic load.
 
-:::
-
-:::
-
-:::
 
 ## Summary
 

@@ -551,21 +551,6 @@ void constructor_variants() {
    is called. Use `std::promise` to transport exceptions to the joining thread, or catch all
    exceptions inside the thread function and store them.
 
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
 
 ## Summary
 

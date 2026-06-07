@@ -695,23 +695,6 @@ Has been lacking. International evidence (Germany's federal system, Spain's auto
 Suggests that fiscal devolution may be necessary but not sufficient.
 </details>
 
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
 
 :::danger Danger
 

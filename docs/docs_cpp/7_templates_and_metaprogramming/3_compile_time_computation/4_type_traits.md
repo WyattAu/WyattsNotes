@@ -932,17 +932,6 @@ Introspected).
 - [Compile-Time Branching and Constexpr Functions](./3_if_constexpr.md)
 - [SFINAE vs Concepts](../2_concepts_and_constraints/4_sfinae_vs_concepts.md)
 
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
 
 ## Common Pitfalls
 

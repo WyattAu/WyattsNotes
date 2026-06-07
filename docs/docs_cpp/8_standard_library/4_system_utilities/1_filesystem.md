@@ -594,21 +594,6 @@ void atomic_write(const fs::path& target, std::string_view content) {
    `fs::permissions` on Windows can only reliably set/clear the read-only attribute. Do not rely on
    group/other permissions on Windows.
 
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
 
 ## Common Pitfalls
 

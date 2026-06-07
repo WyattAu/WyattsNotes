@@ -586,11 +586,6 @@ A large amount.
 
 </details>
 
-:::
-
-:::
-
-:::
 
 ---
 

@@ -655,17 +655,6 @@ tag Alongside the pointer, or use hazard pointers.
    the other, even if they are logically independent. Pad atomics to cache line boundaries to
    prevent this.
 
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
 
 ## Summary
 

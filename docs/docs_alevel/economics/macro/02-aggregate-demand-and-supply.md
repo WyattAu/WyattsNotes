@@ -653,19 +653,6 @@ Inflationary, not growth-promoting. (3) Second-round effects: higher import pric
 Demands, creating a wage-price spiral.
 </details>
 
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
 
 :::danger Common Pitfalls
 

@@ -756,9 +756,6 @@ The optimal choice.
 
 </details>
 
-:::
-
-:::
 
 ## Common Pitfalls
 

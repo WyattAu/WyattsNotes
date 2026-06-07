@@ -947,15 +947,6 @@ arc_summary | grep -A10 "L2 ARC"
 # L2 ARC Size: Should approach the device capacity over time
 ```
 
-:::
-
-:::
-
-:::
-
-:::
-
-:::
 
 ## Summary
 

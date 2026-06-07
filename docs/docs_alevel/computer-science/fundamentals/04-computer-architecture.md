@@ -617,11 +617,6 @@ With 8-bit opcode: $2^8 = 256$ possible opcodes.
 
 </details>
 
-:::
-
-:::
-
-:::
 
 ## Common Pitfalls
 

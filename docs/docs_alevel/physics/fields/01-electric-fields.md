@@ -702,15 +702,6 @@ Becoming significant at macroscopic scales where charges cancel almost perfectly
 - Numerical answers are given to 2 or 3 significant figures, matching the precision of the data
   provided.
 
-:::
-
-:::
-
-:::
-
-:::
-
-:::
 
 ---
 

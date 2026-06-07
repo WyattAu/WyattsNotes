@@ -528,13 +528,6 @@ public:
 - [Weak Pointers and Cyclic Reference Breaking](4_weak_ptr.md)
 - [Common Pitfalls](5_custom_deleters.md)
 
-:::
-
-:::
-
-:::
-
-:::
 
 ## Summary
 

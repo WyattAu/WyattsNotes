@@ -794,17 +794,6 @@ Quartiles, which are less affected by that extreme value.
 
 </details>
 
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
 
 ---
 

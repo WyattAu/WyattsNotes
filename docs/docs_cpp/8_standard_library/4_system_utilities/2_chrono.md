@@ -595,17 +595,6 @@ Busy-waiting with `std::chrono::steady_clock` or OS-specific spin loops.
    to convert time points between clocks. Converting manually (e.g., subtracting epochs) is
    error-prone and may not account for clock skew.
 
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
 
 ## Common Pitfalls
 

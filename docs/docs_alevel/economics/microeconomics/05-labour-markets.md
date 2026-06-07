@@ -786,19 +786,6 @@ High minimum wages through sectoral bargaining with strong unions) supports this
 Approach.
 </details>
 
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
 
 :::danger Common Pitfalls
 

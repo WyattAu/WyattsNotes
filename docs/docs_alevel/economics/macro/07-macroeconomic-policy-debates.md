@@ -713,13 +713,6 @@ Flexible inflation target (average inflation targeting, as adopted by the Fed in
 Complete regime change.
 </details>
 
-:::
-
-:::
-
-:::
-
-:::
 
 :::danger Danger
 

@@ -1290,15 +1290,6 @@ iterates through the array again to count scores above average, and outputs both
 
 </details>
 
-:::
-
-:::
-
-:::
-
-:::
-
-:::
 
 :::danger Common Pitfalls
 

@@ -607,15 +607,6 @@ Be the fully constructive case at $\Delta\phi = 0$).
 
 </details>
 
-:::
-
-:::
-
-:::
-
-:::
-
-:::
 
 ---
 

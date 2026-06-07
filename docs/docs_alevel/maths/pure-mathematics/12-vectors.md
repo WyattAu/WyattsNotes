@@ -816,25 +816,6 @@ The adjacent sides are not perpendicular, so $ABCD$ is **not** a rectangle.
 
 </details>
 
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
 
 ---
 

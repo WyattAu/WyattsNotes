@@ -658,8 +658,6 @@ self-marking and building a personal test matrix.
   consequence of the shell theorem. Between two concentric shells, only the mass of the inner shell
   contributes to the field at that point.
 
-:::
-:::
 
 ## Common Pitfalls
 

@@ -603,13 +603,6 @@ key: 'key', value: 'value'
 - [Fold Expressions and Pack Expansion](./2_fold_expressions.md)
 - [Type Traits and Static Reflection Patterns](./4_type_traits.md)
 
-:::
-
-:::
-
-:::
-
-:::
 
 ## Common Pitfalls
 

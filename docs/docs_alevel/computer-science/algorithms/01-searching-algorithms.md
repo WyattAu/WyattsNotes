@@ -702,11 +702,6 @@ Sorted.
 
 </details>
 
-:::
-
-:::
-
-:::
 
 ## Common Pitfalls
 

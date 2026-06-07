@@ -569,13 +569,6 @@ Manual `stop_token` integration as shown above is the recommended approach.
 - [Coroutine Handle, Promise Type, and Awaiter](./2_promise_awaiter.md)
 - [Stackless Coroutine Frames and Heap Allocation](./1_coroutine_frames.md)
 
-:::
-
-:::
-
-:::
-
-:::
 
 ## Common Pitfalls
 

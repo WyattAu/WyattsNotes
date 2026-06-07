@@ -847,9 +847,6 @@ Operation in a busy A&E department.
 
 </details>
 
-:::
-
-:::
 
 ## Common Pitfalls
 

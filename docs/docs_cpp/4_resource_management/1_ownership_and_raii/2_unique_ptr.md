@@ -661,17 +661,6 @@ std::unique_ptr<int> make_value_alt() {
 - [Weak References (std::weak_ptr)](4_weak_ptr.md)
 - [Common Pitfalls](5_custom_deleters.md)
 
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
 
 ## Summary
 

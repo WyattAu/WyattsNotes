@@ -503,13 +503,6 @@ public:
 - [Mutexes, Shared Locks, and Deadlock Prevention](./3_mutexes_deadlocks.md)
 - [Atomic Operations and Lock-Free Programming](../2_memory_model_and_atomics/3_atomic_operations.md)
 
-:::
-
-:::
-
-:::
-
-:::
 
 ## Summary
 

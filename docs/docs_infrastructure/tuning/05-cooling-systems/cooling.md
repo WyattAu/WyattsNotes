@@ -934,9 +934,6 @@ Load transitions. These spikes are caused by the CPU ramping from a low P-state 
 Before the cooling system can respond. They are normal and not cause for concern as long as average
 Temperatures remain within safe limits.
 
-:::
-
-:::
 
 ## Summary
 

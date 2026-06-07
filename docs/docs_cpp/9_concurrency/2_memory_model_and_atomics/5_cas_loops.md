@@ -679,11 +679,6 @@ The head swings, so it can never be recycled and re-inserted. The tail pointer m
   cycles and bus bandwidth. Use `__builtin_ia32_pause()` on x86, `yield()` on ARM, or
   `std::this_thread::yield()` to reduce contention.
 
-:::
-
-:::
-
-:::
 
 ## Worked Examples
 

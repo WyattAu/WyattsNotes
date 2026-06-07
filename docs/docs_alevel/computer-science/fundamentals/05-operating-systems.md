@@ -719,11 +719,6 @@ The same file, and the owner can modify the ACL to add or revoke permissions at 
 
 </details>
 
-:::
-
-:::
-
-:::
 
 ## Common Pitfalls
 
