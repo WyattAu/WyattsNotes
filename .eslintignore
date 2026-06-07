@@ -48,6 +48,9 @@ pnpm-lock.yaml
 # Config files (plain JS, not TypeScript)
 lighthouserc.js
 
+# Generated per-subject Docusaurus configs (created at build time)
+docusaurus-university-*.config.ts
+
 # Playwright E2E tests (handled by Playwright's own config)
 e2e/
 playwright-report/

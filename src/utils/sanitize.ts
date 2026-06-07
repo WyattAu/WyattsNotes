@@ -11,7 +11,8 @@ export function sanitizeHtml(dirty: string): string {
   if (typeof window === 'undefined') {
     return dirty;
   }
-  return (DOMPurify as any).sanitize(dirty, {
+
+  return DOMPurify.sanitize(dirty, {
     ALLOWED_TAGS: [
       // Block elements
       'p',

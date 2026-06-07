@@ -650,11 +650,17 @@ function fixMdxUnfriendlyPatterns(source) {
     // Diamondify these braces so the remark plugin can restore them.
     // Skip: lines that are JSX (start with <), lines with $...$ math,
     // and { that starts valid JS identifiers/expressions.
-    if (modified.includes('{') && !modified.trimStart().startsWith('<') && !modified.trimStart().startsWith('"') && !modified.trimStart().startsWith("'") && !modified.includes('export ') && !modified.includes('const ')) {
+    if (
+      modified.includes('{') &&
+      !modified.trimStart().startsWith('<') &&
+      !modified.trimStart().startsWith('"') &&
+      !modified.trimStart().startsWith("'") &&
+      !modified.includes('export ') &&
+      !modified.includes('const ')
+    ) {
       // Find { that is NOT inside $...$ math, inline code, or JSX attributes
       let newModified = '';
       let i = 0;
-      let inMath = false;
       let inInlineCode = false;
       let inDollarMath = false;
 
@@ -662,7 +668,7 @@ function fixMdxUnfriendlyPatterns(source) {
         const ch = modified[i];
 
         // Track $ math delimiters
-        if (ch === '$' && (i === 0 || modified[i-1] !== '\\')) {
+        if (ch === '$' && (i === 0 || modified[i - 1] !== '\\')) {
           inDollarMath = !inDollarMath;
           newModified += ch;
           i++;
@@ -692,7 +698,7 @@ function fixMdxUnfriendlyPatterns(source) {
           const next = i + 1 < modified.length ? modified[i + 1] : '';
           // Valid JS expression starters: letter, $, _, {, [, !, ~, +, -, @
           // Problematic: (, space, digit, *, etc.
-          const isValidJsStart = /[a-zA-Z$_\[{!~+\-@]/.test(next);
+          const isValidJsStart = /[a-zA-Z$_{!~+\-@]/.test(next);
 
           // Find matching } to inspect content
           let depth = 1;
@@ -714,8 +720,10 @@ function fixMdxUnfriendlyPatterns(source) {
           const hasSetNotation = /,\s/.test(braceContent);
           const isSingleOperator = braceContent.length === 1 && !/[a-zA-Z0-9$_]/.test(braceContent);
 
-          if ((!isValidJsStart && next !== '' && next !== '}') ||
-              (braceContent && (hasLatexPattern || hasSetNotation || isSingleOperator))) {
+          if (
+            (!isValidJsStart && next !== '' && next !== '}') ||
+            (braceContent && (hasLatexPattern || hasSetNotation || isSingleOperator))
+          ) {
             // Diamondify this brace pair
             // Find matching }
             let depth = 1;
