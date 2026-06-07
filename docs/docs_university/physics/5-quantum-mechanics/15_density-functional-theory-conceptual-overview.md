@@ -1,5 +1,5 @@
 ---
-title: Density Functional Theory: Conceptual Overview
+title: 'Density Functional Theory: Conceptual Overview'
 tags:
   - Physics
   - University

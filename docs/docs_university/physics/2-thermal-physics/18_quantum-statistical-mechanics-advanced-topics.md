@@ -1,5 +1,5 @@
 ---
-title: Quantum Statistical Mechanics: Advanced Topics
+title: 'Quantum Statistical Mechanics: Advanced Topics'
 tags:
   - Physics
   - University

@@ -1,5 +1,5 @@
 ---
-title: Plasma Physics: Brief Overview
+title: 'Plasma Physics: Brief Overview'
 tags:
   - Physics
   - University

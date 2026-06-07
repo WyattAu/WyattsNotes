@@ -1,5 +1,5 @@
 ---
-title: Rigid Body Dynamics: Advanced Topics
+title: 'Rigid Body Dynamics: Advanced Topics'
 tags:
   - Physics
   - University

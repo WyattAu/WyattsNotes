@@ -1,5 +1,5 @@
 ---
-title: Hamiltonian Mechanics: Advanced Topics
+title: 'Hamiltonian Mechanics: Advanced Topics'
 tags:
   - Physics
   - University
