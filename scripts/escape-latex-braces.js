@@ -615,6 +615,7 @@ function fixMdxUnfriendlyPatterns(source) {
   }
 
   let inCodeBlock = false;
+  let jsxDepth = 0; // Track <Component ... > nesting
   let changed = false;
   const result = lines.map((line, idx) => {
     // Track code blocks
@@ -624,6 +625,25 @@ function fixMdxUnfriendlyPatterns(source) {
     }
     if (inCodeBlock) return line;
     if (idx < frontmatterEnd) return line;
+
+    // Track JSX tag context: lines inside <Component ... /> or </Component>
+    const trimmed = line.trimStart();
+    if (/<\/?[A-Z]/.test(trimmed)) {
+      // Opening or closing JSX tag
+      if (/<\/[A-Z]/.test(trimmed)) {
+        jsxDepth = Math.max(0, jsxDepth - 1);
+      } else {
+        // Opening tag — check if self-closing on same line
+        jsxDepth++;
+        if (/\/>\s*$/.test(trimmed)) {
+          jsxDepth = Math.max(0, jsxDepth - 1);
+        }
+      }
+    } else if (jsxDepth > 0 && /\/>\s*$/.test(trimmed)) {
+      // Self-closing end on continuation line
+      jsxDepth = Math.max(0, jsxDepth - 1);
+    }
+    if (jsxDepth > 0) return line; // Skip lines inside JSX tags
 
     let modified = line;
 
