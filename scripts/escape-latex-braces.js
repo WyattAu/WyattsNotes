@@ -639,11 +639,11 @@ function fixMdxUnfriendlyPatterns(source) {
           jsxDepth = Math.max(0, jsxDepth - 1);
         }
       }
-    } else if (jsxDepth > 0 && /\/>\s*$/.test(trimmed)) {
-      // Self-closing end on continuation line
-      jsxDepth = Math.max(0, jsxDepth - 1);
+      // Skip ALL JSX tag lines (both opening with content and closing)
+      // This prevents diamondification of JSX attributes
+      return line;
     }
-    if (jsxDepth > 0) return line; // Skip lines inside JSX tags
+    if (jsxDepth > 0) return line; // Skip continuation lines inside multi-line JSX tags
 
     let modified = line;
 
