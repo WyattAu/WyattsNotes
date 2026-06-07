@@ -14,8 +14,8 @@ slug: kinematics
 
 ## Kinematics
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2 :::
-
+:::info Board Coverage AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2
+:::
 ## 1. Fundamental Definitions
 
 Kinematics is the mathematical description of motion, without reference to the forces that cause it.
@@ -179,7 +179,6 @@ This was established by Galileo's experiments and is a consequence of the equiva
 
 :::info Info Problems. Always use the value specified in the question.
 :::
-
 ## 5. Projectile Motion
 
 ### Assumptions
@@ -290,8 +289,8 @@ $$\boxed{v_T \mathrm{ is reached when } F_{\mathrm{drag}} = mg \implies a = 0}$$
 The $v$-$t$ graph for a falling object reaching terminal velocity shows the velocity increasing with
 A decreasing gradient (decreasing acceleration) until it asymptotically approaches $v_T$.
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 1 | CIE P2 :::
-
+:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 1 | CIE P2
+:::
 :::warning Common Pitfall Terminal velocity does **not** mean the object has stopped accelerating
 Because it has run out of force. The forces are balanced: weight down equals drag up. The
 Acceleration is zero because the **net** force is zero, not because no forces act.
@@ -304,7 +303,6 @@ Relate displacement, velocity, and acceleration.
 
 :::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 1 | CIE P1, P2
 :::
-
 ### The Differential Relations
 
 From the definitions:
@@ -405,6 +403,7 @@ With speed $v_b$ (relative to water) can:
   component against the current is $v_b\sin\theta$. For zero downstream drift:
   $v_b\sin\theta = v_c$Giving $\theta = \arcsin(v_c/v_b)$. This is only possible if $v_b > v_c$.
 
+:::
 :::warning Common Pitfall The boat's speed $v_b$ is always relative to the water, not relative to
 The ground. The ground speed is the vector sum of the boat's water-relative velocity and the current
 Velocity. Never add the magnitudes directly unless the velocities are in the same direction.
@@ -717,6 +716,7 @@ $\sqrt{17.3^2 + 31.4^2} = 35.8$ m s$^{-1}$.
 
 ---
 
+:::
 :::tip Tip Ready to test your understanding of **Kinematics**? The
 [diagnostic test](/docs/alevel/physics/diagnostics/diag-kinematics) contains the hardest questions
 within the A-Level specification for this topic, each with a full worked solution.
@@ -726,8 +726,8 @@ with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
 self-marking and building a personal test matrix.
-:::
 
+:::
 :::danger Danger
 
 - **Applying SUVAT equations to non-uniform acceleration:** The five SUVAT equations ONLY apply when
@@ -776,3 +776,4 @@ each approach.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+:::

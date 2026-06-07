@@ -1122,3 +1122,4 @@ $\blacksquare$
 | [Electricity] | IB      | [View](https://ib.wyattau.com/docs/ib/physics/2-particulate-nature-of-matter/6_current-electricity)        |
 | [Electricity] | DSE     | [View](https://dse.wyattau.com/docs/dse/physics/3-electricity-and-magnetism/1_electrical-circuits)         |
 
+:::

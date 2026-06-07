@@ -154,8 +154,8 @@ $$\frac{x^2 + 1}{(x^2 + 4)^2} = \frac{1}{x^2 + 4} - \frac{3}{(x^2 + 4)^2}$$
 
 </details>
 
-:::info info OCR cover Types 1 and 2. CIE covers Type 1 extensively in P3. :::
-
+:::info info OCR cover Types 1 and 2. CIE covers Type 1 extensively in P3.
+:::
 <hr />
 
 ## 3. Roots of Polynomial Equations

@@ -120,8 +120,8 @@ For a velocity-time graph:
 - Area under the graph = displacement
 - A straight line indicates uniform acceleration
 
-:::tip Tip Squares or integration. :::
-
+:::tip Tip Squares or integration.
+:::
 ### Free Fall
 
 All objects in free fall near the Earth's surface experience the same acceleration due to gravity,
@@ -174,8 +174,8 @@ Time of flight:
 
 $$T = \frac{2u\sin\theta}{g}$$
 
-:::info Info They share only the common variable $t$ (time). :::
-
+:::info Info They share only the common variable $t$ (time).
+:::
 ### Worked Example 4
 
 A ball is thrown with initial velocity $15 \mathrm{ m/s}$ at $30^\circ$ above the horizontal. Find
@@ -244,8 +244,8 @@ Force on body `A`.
 
 $$F_{AB} = -F_{BA}$$
 
-:::warning Warning Together as they do not act on the same object. :::
-
+:::warning Warning Together as they do not act on the same object.
+:::
 ### Types of Forces
 
 | Force           | Symbol     | Description                                  |
@@ -319,8 +319,8 @@ $$f_k = \mu_k N$$
 
 Where $\mu$ is the coefficient of friction and $N$ is the normal reaction force.
 
-:::tip Tip :::
-
+:::tip Tip
+:::
 ### Worked Example 6
 
 A $10 \mathrm{ kg}$ block rests on a rough horizontal surface with $\mu = 0.3$. A horizontal force
@@ -404,8 +404,8 @@ Or equivalently:
 
 $$E_{k1} + E_{p1} = E_{k2} + E_{p2} + W_{\mathrm{lost to friction}}$$
 
-:::info Info The motion. :::
-
+:::info Info The motion.
+:::
 ### Worked Example 7
 
 A roller coaster car of mass $500 \mathrm{ kg}$ starts from rest at point `A`$20 \mathrm{ m}$ Above
@@ -507,7 +507,6 @@ Impulse equals the change in momentum. The SI unit is N s.
 
 :::tip Impulse is the area under a force-time graph. For a variable force, use $J = \int F \, dt$.
 :::
-
 ### Worked Example 9
 
 A $0.15 \mathrm{ kg}$ cricket ball travelling at $30 \mathrm{ m/s}$ is hit back along the same line
@@ -1701,3 +1700,4 @@ Minimum coefficient of static friction: $\mu_s = 0.51$.
    first.
    > > > > > > > Stashed changes:docs/docs_dse/Physics/mechanics.md
 
+:::

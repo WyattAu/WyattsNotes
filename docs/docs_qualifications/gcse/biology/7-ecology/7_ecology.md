@@ -14,8 +14,8 @@ slug: 7-ecology
 
 ## Ecology
 
-:::info Board Coverage AQA Paper 2 | Edexcel Paper 2 | OCR A Gateway B3 & B4 | WJEC B4 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel Paper 2 | OCR A Gateway B3 & B4 | WJEC B4
+:::
 ## 1. Ecosystems and Levels of Organisation
 
 ### 1.1 Levels of Organisation in an Ecosystem

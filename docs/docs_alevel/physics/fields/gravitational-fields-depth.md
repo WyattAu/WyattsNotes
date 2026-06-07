@@ -11,8 +11,8 @@ slug: gravitational-fields-depth
 
 ## Gravitational Fields
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 ## 1. Newton's Law of Universal Gravitation
 
 **Newton's Law.** Every point mass attracts every other point mass with a force directed along the
@@ -545,3 +545,4 @@ $\blacksquare$
   $\approx 11.2\ \mathrm{km\,s^{-1}}$.
 - Orbital velocity: $v = \sqrt{\frac{GM}{r}}$; $g = -\frac{dV}{dr}$ links field and potential.
 
+:::

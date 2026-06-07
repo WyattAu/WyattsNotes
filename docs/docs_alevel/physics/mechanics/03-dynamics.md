@@ -14,8 +14,8 @@ slug: dynamics
 
 ## Dynamics
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2 :::
-
+:::info Board Coverage AQA Paper 1 | Edexcel CP1, CP2 | OCR (A) Paper 1 | CIE P2
+:::
 ## 1. Newton's Laws of Motion
 
 Newton's three laws form the foundation of classical mechanics. They were first published in the
@@ -404,8 +404,8 @@ $$mg - kv^2 = ma$$
 
 At terminal velocity: $v_T = \sqrt◆LB◆\frac{mg}{k}◆RB◆$.
 
-:::info Info Focuses on the qualitative description of terminal velocity. :::
-
+:::info Info Focuses on the qualitative description of terminal velocity.
+:::
 ## Problem Set
 
 <details>
@@ -816,3 +816,4 @@ each approach.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+:::

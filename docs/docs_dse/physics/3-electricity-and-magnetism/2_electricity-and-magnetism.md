@@ -1803,3 +1803,4 @@ $P = \frac{\varepsilon_{\mathrm{RMS}}^2}{R} = \frac{(26.7)^2}{50} = \frac{712.9}
    calculations.
    > > > > > > > Stashed changes:docs/docs_dse/Physics/electricity-and-magnetism.md
 
+:::

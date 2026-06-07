@@ -263,8 +263,8 @@ $$\boxed{\sum_{n=0}^{\infty}x^n = \frac{1}{1-x} \quad \mathrm{for } |x| < 1}$$
 
 $\square$
 
-:::tip tip $\dfrac{1}{1+x}$, $\ln(1+x)$And $\arctan x$ all derive from it. :::
-
+:::tip tip $\dfrac{1}{1+x}$, $\ln(1+x)$And $\arctan x$ all derive from it.
+:::
 <hr />
 
 ## 5. Applications

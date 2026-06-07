@@ -380,8 +380,8 @@ int main() {
 }
 ```
 
-:::tip Tip Code, prefer `++it` over `it++` for iterators and counters. :::
-
+:::tip Tip Code, prefer `++it` over `it++` for iterators and counters.
+:::
 ## 4.7 Stream Insertion and Extraction Operators
 
 The stream operators `operator&lt;&lt;` and `operator&gt;&gt;` must be implemented as **non-member
@@ -771,3 +771,4 @@ for mastery of this topic.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+:::

@@ -15,8 +15,8 @@ sidebar_position: 9
 
 ## Respiration (In Depth)
 
-:::info Board Coverage AQA Paper 1 & 2 | Edexcel A Paper 1 | OCR (A) Paper 1 | CIE Paper 4 :::
-
+:::info Board Coverage AQA Paper 1 & 2 | Edexcel A Paper 1 | OCR (A) Paper 1 | CIE Paper 4
+:::
 ## 1. Overview of Cellular Respiration
 
 ### 1.1 Definition and Significance
@@ -1170,6 +1170,7 @@ However, over geological time scales, imbalances have occurred:
 
 ---
 
+:::
 :::tip Diagnostic Test
 
 ## 18. The Krebs Cycle: Detailed Mechanism
@@ -1466,6 +1467,8 @@ post-exercise oxygen consumption, EPOC**).
 | Oligomycin                | ATP synthase (Complex V)          | Blocks the proton channel in ATP synthase, preventing ATP synthesis                                                                                                                           | Antibiotic                                                                             |
 | DNP (2,4-dinitrophenol)   | Uncouples ETC from ATP synthesis  | Carries protons across the inner mitochondrial membrane, dissipating the proton gradient as heat. ETC continues (even faster than normal) but no ATP is produced. Energy is released as heat. | Historically used as a weight-loss drug (dangerous: hyperthermia, death)               |
 
+
+:::
 :::warning Common Pitfall Students often confuse respiratory inhibitors with respiratory poisons. An
 inhibitor (e.g., cyanide) stops the ETC entirely, so no ATP is produced and $\mathrm{O_2}$
 consumption drops. An uncoupler (e.g., DNP) allows the ETC to continue (so $\mathrm{O_2}$
@@ -1797,6 +1800,8 @@ The Cori cycle describes the recycling of lactate between muscles and the liver:
 - Liver spends: 6 ATP per glucose (gluconeogenesis).
 - **Net: 4 ATP consumed per glucose recycled** -- this is the metabolic cost of the Cori cycle.
 
+
+:::
 :::warning Common Pitfall The Cori cycle is NOT energetically favourable. The liver spends more ATP
 making glucose than the muscles gain from breaking it down. The benefit is that it prevents
 dangerous lactate accumulation in the blood and recycles carbon skeletons.
@@ -2092,6 +2097,8 @@ The products of one process are the reactants of the other. This is a cyclical r
 - 2 $\mathrm{FADH_2}$ (Krebs cycle) $\times$ 1.5 = 3 ATP
 - **Total = 5 + 20 + 3 = 28 ATP**
 
+
+:::
 :::warning Common Pitfall $\mathrm{FADH_2}$ produces fewer ATP than NADH because it enters the ETC
 at Complex II (bypassing Complex I). This means fewer protons are pumped per $\mathrm{FADH_2}$
 molecule (6 vs 10). Always use 2.5 ATP per NADH and 1.5 ATP per $\mathrm{FADH_2}$.
@@ -2176,7 +2183,9 @@ is transported to the liver, converted back to glucose, and returned to the musc
 
 ---
 
-:::tip Diagnostic Test ::: ::: :::
+:::
+:::
+:::tip Diagnostic Test
 
 ## Common Pitfalls
 
@@ -2235,3 +2244,6 @@ $\blacksquare$
   carbohydrates $\approx 1.0$, lipids $\approx 0.7$, proteins $\approx 0.8$.
 - PFK is the key regulatory enzyme of glycolysis, inhibited by ATP and citrate, activated by AMP.
 
+:::
+:::
+:::

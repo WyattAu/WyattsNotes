@@ -17,8 +17,8 @@ sidebar_position: 1
 
 Study guide covering the core biochemistry topics for A-Level Biology examinations.
 
-:::info Board Coverage AQA Paper 1 | Edexcel A Paper 1 | OCR (A) Paper 1 | CIE Paper 2 :::
-
+:::info Board Coverage AQA Paper 1 | Edexcel A Paper 1 | OCR (A) Paper 1 | CIE Paper 2
+:::
 ---
 
 ## 1. Water

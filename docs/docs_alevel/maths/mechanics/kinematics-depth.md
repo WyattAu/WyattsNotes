@@ -526,3 +526,4 @@ $\blacksquare$
   changes direction.
 - Chain rule form: $a = v\frac{dv}{ds}$ is useful when acceleration depends on displacement.
 
+:::

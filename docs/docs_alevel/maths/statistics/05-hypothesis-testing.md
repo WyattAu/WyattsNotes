@@ -262,7 +262,6 @@ $$\hat{p} \approx N\!\left(p, \dfrac{p(1-p)}{n}\right)$$
 
 :::warning Warning $H_0$), not the observed sample proportion $\hat{p}$.
 :::
-
 ### 9.2 Continuity correction
 
 Since the binomial distribution is discrete and the normal distribution is continuous, a
@@ -798,3 +797,4 @@ each approach.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+:::

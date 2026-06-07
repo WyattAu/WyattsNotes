@@ -104,8 +104,8 @@ Incentivising producers to supply more.
 | Adverse weather (agricultural goods)       | Supply shifts left                  |
 | Expectation of future price increase       | Supply shifts left (withhold stock) |
 
-:::warning Warning "increase in supply" (shift). Be precise with terminology. :::
-
+:::warning Warning "increase in supply" (shift). Be precise with terminology.
+:::
 ### Market Supply
 
 Market supply is the horizontal sum of all individual firm supplies:
@@ -574,8 +574,8 @@ Marginal product starts to diminish after the 3rd worker. Negative marginal prod
 - MC is U-shaped; it intersects AVC and ATC at their minimum points
 - MC passes below ATC when ATC is falling, and above ATC when ATC is rising
 
-:::info Info Because when MC \lt ATC, it pulls ATC down; when MC \gt ATC, it pulls ATC up. :::
-
+:::info Info Because when MC \lt ATC, it pulls ATC down; when MC \gt ATC, it pulls ATC up.
+:::
 ### Revenue
 
 | Revenue               | Definition                         | Formula                         |

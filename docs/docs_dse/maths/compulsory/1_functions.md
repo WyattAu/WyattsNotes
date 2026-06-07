@@ -993,3 +993,4 @@ applying these mathematical techniques.
 
 > > > > > > > Stashed changes:docs/docs_dse/Maths/compulsory/functions.md
 
+:::

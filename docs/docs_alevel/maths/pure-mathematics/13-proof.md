@@ -151,7 +151,6 @@ All five cases confirmed. $\blacksquare$
 
 :::warning Warning Manageable. You cannot use exhaustion for "all integers" or "all real numbers."
 :::
-
 <hr />
 
 ## 4. Disproof by Counterexample
@@ -566,3 +565,4 @@ each approach.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+:::

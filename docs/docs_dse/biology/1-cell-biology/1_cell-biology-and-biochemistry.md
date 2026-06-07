@@ -1626,6 +1626,7 @@ Translation is the process of synthesising a polypeptide chain from the mRNA cod
 **One gene, one polypeptide (generally):** Each gene codes for a specific polypeptide chain. The
 sequence of codons on the mRNA determines the sequence of amino acids in the polypeptide.
 
+:::
 :::tip Diagnostic Test Ready to test your understanding of **Cell Biology and Biochemistry**? The
 [diagnostic test](/docs/dse/biology/diagnostics/diag-cell-biology-biochemistry) contains the hardest
 questions within the DSE specification for this topic, each with a full worked solution.
@@ -1932,3 +1933,5 @@ $$m(\text{CaCl}_2) = 0.100 \times 111 = 11.1\,\text{g}$$
 
 > > > > > > > Stashed changes:docs/docs_dse/Biology/cell-biology-and-biochemistry.md
 
+
+:::

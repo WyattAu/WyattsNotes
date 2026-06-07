@@ -819,3 +819,4 @@ When analysing texts for ib english assessment and analytical techniques, follow
 3. Analyse the effect of the technique on the reader
 4. Link the analysis to the text's broader themes or concerns
 
+:::

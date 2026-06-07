@@ -14,8 +14,8 @@ slug: experimental-design
 
 ## Experimental Design
 
-:::info Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5 :::
-
+:::info Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5
+:::
 ## 1. Key Principles of Experimental Design
 
 ### Independent, Dependent, and Control Variables
@@ -165,8 +165,8 @@ Validity has two aspects that examiners distinguish:
    conditions? For example, results obtained with a 1 mm copper wire may not apply to a 5 mm
    aluminium wire.
 
-:::info Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5 :::
-
+:::info Board Coverage AQA Paper 3 | Edexcel CP6 | OCR (A) Paper 3 | CIE P5
+:::
 - **AQA** emphasises the distinction between validity and reliability in 6-mark practical questions.
 - **Edexcel** Core Practicals require students to comment on the validity of their conclusions.
 - **OCR (A)** PAG reports ask students to evaluate the validity of their method and results.
@@ -259,8 +259,8 @@ Is critical:
 - **Number of repeats:** At least 3 repeats at each value. If time allows, more repeats improve the
   reliability of the mean.
 
-:::info Board Coverage AQA Paper 3 Section A | Edexcel CP6 | OCR (A) PAG | CIE P5 :::
-
+:::info Board Coverage AQA Paper 3 Section A | Edexcel CP6 | OCR (A) PAG | CIE P5
+:::
 - **AQA** often provides a method and asks students to identify improvements — focus on range,
   intervals, and repeats.
 - **Edexcel** Core Practicals have prescribed ranges; students should justify why the chosen range
@@ -359,8 +359,8 @@ When asked to write a risk assessment, structure your answer as follows:
 3. **Describe the control measure** — "Use a low-voltage (e.g., 12 V) power supply instead of mains,
    and ensure all connections are insulated."
 
-:::info Board Coverage AQA Paper 3 | Edexcel CP1–CP12 | OCR (A) PAG (all) | CIE P5 :::
-
+:::info Board Coverage AQA Paper 3 | Edexcel CP1–CP12 | OCR (A) PAG (all) | CIE P5
+:::
 - **AQA** requires a risk assessment as part of the 12 required practicals. Risk assessments are
   assessed in written papers.
 - **Edexcel** Core Practicals include risk assessment in the student lab book. Exams may ask
@@ -452,8 +452,8 @@ When a graph is plotted, check:
 - Plot $\lambda$ vs $1/f$; gradient $= v$ (wave speed)
 - Largest uncertainty: measuring wavelength from a frozen ripple pattern
 
-:::info Board Coverage AQA Paper 3 | Edexcel CP6, CP9 | OCR (A) PAG 2, PAG 3 | CIE P5 :::
-
+:::info Board Coverage AQA Paper 3 | Edexcel CP6, CP9 | OCR (A) PAG 2, PAG 3 | CIE P5
+:::
 - **AQA** Required Practical 5 uses a falling object to determine `g`; Required Practical 8 uses a
   potentiometer or voltmeter/ammeter method for internal resistance.
 - **Edexcel** Core Practical 6 uses a pendulum for `g`; Core Practical 9 investigates waves on a
@@ -744,3 +744,4 @@ each approach.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+:::

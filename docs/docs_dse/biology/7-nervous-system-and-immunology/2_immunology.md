@@ -778,6 +778,7 @@ antigens, attacking the body's own tissues.
 | Monoclonal antibodies   | Targeted antibodies that block specific immune pathways (e.g., anti-TNF-alpha for rheumatoid arthritis) |
 | Plasmapheresis          | Filtering blood to remove autoantibodies and immune complexes                                           |
 
+:::
 :::tip Tip Ready to test your understanding of **Immunology**? Review the
 [Cell Biology and Biochemistry diagnostic test](/docs/dse/biology/diagnostics/diag-cell-biology-biochemistry)
 which covers immune system topics within the DSE specification.
@@ -1114,3 +1115,5 @@ each approach.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+
+:::

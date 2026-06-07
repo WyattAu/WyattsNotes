@@ -14,8 +14,8 @@ slug: 3-quantitative-chemistry
 
 ## Quantitative Chemistry
 
-:::info Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR A Gateway C3 | WJEC C3 :::
-
+:::info Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR A Gateway C3 | WJEC C3
+:::
 ## 1. Relative Formula Mass
 
 ### 1.1 Calculating Relative Formula Mass
@@ -901,3 +901,4 @@ This topic covers the key concepts of Quantitative Chemistry for GCSE Chemistry.
 understanding the fundamental principles, practising with exam-style questions, and applying your
 knowledge to unfamiliar contexts.
 
+:::

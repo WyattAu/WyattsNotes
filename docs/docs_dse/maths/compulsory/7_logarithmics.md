@@ -960,3 +960,4 @@ $\blacksquare$
 | [Exponentials and Logarithms] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/maths/pure-mathematics/09-exponentials-and-logarithms) |
 | [Exponentials and Logarithms] | DSE     | [View](https://dse.wyattau.com/docs/dse/maths/compulsory/7_logarithmics)                                           |
 
+:::

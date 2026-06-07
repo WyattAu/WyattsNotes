@@ -795,3 +795,4 @@ When working with common pitfalls, follow a structured approach:
 3. Support your answer with evidence, examples, or calculations
 4. Evaluate your answer critically, considering limitations and alternative perspectives
 
+:::

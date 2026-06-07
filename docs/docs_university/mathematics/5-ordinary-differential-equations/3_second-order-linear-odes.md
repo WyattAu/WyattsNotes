@@ -442,3 +442,4 @@ $y = c_1 e^{2x} + c_2 e^{-2x} - \frac{(x+2)e^x}{9}$. $\blacksquare$
 </details>
 
 
+:::

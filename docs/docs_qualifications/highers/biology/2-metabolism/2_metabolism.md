@@ -713,3 +713,4 @@ Is exploited in brewing (beer) and baking (bread -- $\mathrm{CO_2$ causes the do
 - Aerobic respiration occurs in the mitochondria (in eukaryotes); anaerobic respiration occurs in
   the cytoplasm.
 
+:::

@@ -14,8 +14,8 @@ slug: 4-bioenergetics
 
 ## Bioenergetics
 
-:::info Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR A Gateway B2 & B3 | WJEC B2 :::
-
+:::info Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR A Gateway B2 & B3 | WJEC B2
+:::
 ## 1. Photosynthesis
 
 ### 1.1 The Equation

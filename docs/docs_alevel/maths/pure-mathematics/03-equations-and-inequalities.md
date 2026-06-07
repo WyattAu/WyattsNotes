@@ -134,8 +134,8 @@ $\Delta = 496 > 0$So the line intersects the circle at two points.
 
 </details>
 
-:::tip Tip Quadratic in both variables, which is harder to solve. :::
-
+:::tip Tip Quadratic in both variables, which is harder to solve.
+:::
 <hr />
 
 ## 3. Algebraic Inequalities

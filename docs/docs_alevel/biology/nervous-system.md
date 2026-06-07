@@ -15,8 +15,8 @@ sidebar_position: 8
 
 ## Nervous System
 
-:::info Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4
+:::
 ## 1. Neuron Structure
 
 ### 1.1 Types of Neurone
@@ -1251,6 +1251,7 @@ II fibres).
 
 ---
 
+:::
 :::tip Diagnostic Test
 
 ## 21. Synaptic Transmission: Detailed Mechanism
@@ -2312,7 +2313,8 @@ so no light is detected.
 
 ---
 
-:::tip Diagnostic Test ::: ::: :::
+:::
+:::tip Diagnostic Test
 
 ## Common Pitfalls
 
@@ -2331,3 +2333,5 @@ so no light is detected.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+:::
+:::

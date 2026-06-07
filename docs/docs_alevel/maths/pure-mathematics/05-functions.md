@@ -75,8 +75,8 @@ $f \circ g \neq g \circ f$.
 
 </details>
 
-:::warning Warning Right to left: $(f \circ g)(x) = f(g(x))$. :::
-
+:::warning Warning Right to left: $(f \circ g)(x) = f(g(x))$.
+:::
 <hr />
 
 ## 3. Inverse Functions
@@ -259,7 +259,6 @@ Translation by $q$ (up).
 
 :::tip Tip (outside). The order inside-out matters.
 :::
-
 <hr />
 
 ## 6. Even and Odd Functions

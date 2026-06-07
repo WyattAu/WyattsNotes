@@ -15,8 +15,8 @@ sidebar_position: 13
 
 ## Biotechnology
 
-:::info Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4
+:::
 ## 1. Recombinant DNA Technology
 
 ### 1.1 Overview
@@ -1129,6 +1129,7 @@ degradation may produce toxic intermediates; may be slower than physical removal
 
 ---
 
+:::
 :::tip Diagnostic Test
 
 ## 25. Ethical Frameworks for Biotechnology Decisions
@@ -1186,6 +1187,8 @@ When evaluating a biotechnology application, consider:
 
 ---
 
+
+:::
 :::tip Diagnostic Test
 
 ## 22. CRISPR-Cas9: Mechanism and Applications in Detail
@@ -2290,7 +2293,6 @@ vitamin A) in the endosperm of the rice grain. It was developed to address vitam
 
 ---
 
-::: :::
 
 ## Common Pitfalls
 
@@ -2311,3 +2313,6 @@ The key principles covered in this topic are linked in the sub-pages above. Focu
 the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
 each approach.
 
+::::::
+
+:::

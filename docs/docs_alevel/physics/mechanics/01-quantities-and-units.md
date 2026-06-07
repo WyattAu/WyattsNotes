@@ -14,8 +14,8 @@ slug: quantities-and-units
 
 ## Quantities and Units
 
-:::info Board Coverage AQA Paper 1 & 3 | Edexcel CP1 | OCR (A) Paper 1 | CIE P1 :::
-
+:::info Board Coverage AQA Paper 1 & 3 | Edexcel CP1 | OCR (A) Paper 1 | CIE P1
+:::
 ## 1. Physical Quantities and the SI System
 
 We begin with the most fundamental question in physics: **how do we measure things?**
@@ -42,7 +42,6 @@ Varieties:
 
 :::info Note The candela is rarely encountered in A Level Physics. Focus on the first six.
 :::
-
 ### Derived Units
 
 A derived unit is obtained by combining base units according to the physical relationship. We denote

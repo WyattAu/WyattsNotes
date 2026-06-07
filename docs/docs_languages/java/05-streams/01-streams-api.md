@@ -975,6 +975,7 @@ String result3 = opt.orElseThrow();  // throws NoSuchElementException
 String result4 = opt.orElseThrow(() -> new IllegalArgumentException("not found"));
 ```
 
+:::
 :::danger The difference between `orElse()` and `orElseGet()` is critical. `orElse(defaultValue)`
 always evaluates `defaultValue`Even if the `Optional` is present. `orElseGet(supplier)` only invokes
 the supplier when the `Optional` is empty.
@@ -1024,6 +1025,7 @@ if (opt.isPresent()) {
 opt.ifPresent(value -> System.out.println("Value: " + value));
 ```
 
+:::
 :::warning Avoid the `isPresent()` + `get()` pattern. It is functionally equivalent to a null check
 (`if (x != null) { x.foo() }`) and negates the purpose of `Optional`. Prefer
 `ifPresent()``map()``flatMap()``filter()`Or the `orElse*` family.
@@ -1162,3 +1164,5 @@ List<String> cities = List.of(user)
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+
+:::

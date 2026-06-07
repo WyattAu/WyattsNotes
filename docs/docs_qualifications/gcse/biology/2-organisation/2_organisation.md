@@ -14,8 +14,8 @@ slug: 2-organisation
 
 ## Organisation
 
-:::info Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR A Gateway B2 | WJEC B2 :::
-
+:::info Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR A Gateway B2 | WJEC B2
+:::
 ## 1. The Digestive System
 
 ### 1.1 Overview

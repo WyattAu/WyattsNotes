@@ -137,8 +137,8 @@ $I_1 = \displaystyle\int_0^{\pi/2}\sin x\,dx = 1$.
 **Example.** Using the reduction formula,
 $I_4 = \dfrac{3}{4}I_2 = \dfrac{3}{4}\cdot\dfrac{1}{2}I_0 = \dfrac{3}{4}\cdot\dfrac{1}{2}\cdot\dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ = \dfrac◆LB◆3\pi◆RB◆◆LB◆16◆RB◆$.
 
-:::warning warning $0$ and $\pi/2$. For general limits, the boundary term must be evaluated. :::
-
+:::warning warning $0$ and $\pi/2$. For general limits, the boundary term must be evaluated.
+:::
 **Example.** Find a reduction formula for $I_n = \displaystyle\int x^n e^x\,dx$.
 
 Let $u = x^n$$dv = e^x\,dx$. Then $du = nx^{n-1}\,dx$$v = e^x$.

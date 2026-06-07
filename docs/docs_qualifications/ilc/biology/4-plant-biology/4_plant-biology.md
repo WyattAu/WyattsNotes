@@ -744,3 +744,4 @@ genetic variation.
 | Genetic variation | No                                   | Yes (crossing over, independent assortment) |
 | Function          | Growth, repair, asexual reproduction | Production of gametes                       |
 
+:::

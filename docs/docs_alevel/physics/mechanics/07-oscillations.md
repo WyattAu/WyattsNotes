@@ -14,8 +14,8 @@ slug: oscillations
 
 ## Oscillations
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 <PhetSimulation simulationId="masses-and-springs" title="Masses and Springs" />
 
 Explore the simulation above to develop intuition for this topic.
@@ -582,8 +582,8 @@ With included angle $\delta$. $\square$
 The resultant phase is given by
 $\tan\phi_{\mathrm{res}} = \frac◆LB◆A_2 \sin\delta◆RB◆◆LB◆A_1 + A_2 \cos\delta◆RB◆$.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 <details>
 <summary>Problem 11</summary>
 A mass-spring system has $m = 0.25$ kg and $k = 100$ N m$^{-1}$Oscillating with amplitude $0.08$ m. Calculate: (a) the total energy using $E = \frac{1}{2}kA^2$(b) the KE and PE when $x = 0.04$ m, (c) show that KE and PE each oscillate at twice the displacement frequency.
@@ -729,3 +729,4 @@ each approach.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+:::

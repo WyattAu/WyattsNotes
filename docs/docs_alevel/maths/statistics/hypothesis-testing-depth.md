@@ -436,3 +436,4 @@ $\blacksquare$
 - For binomial tests, use cumulative probabilities; for normal tests, use the $z$-score.
 - The critical region is the set of values that lead to rejection of $H_0$.
 
+:::

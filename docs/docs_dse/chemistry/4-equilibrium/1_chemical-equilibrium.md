@@ -34,8 +34,8 @@ Dynamic equilibrium is established when:
 - The position of equilibrium describes the relative amounts of reactants and products.
 - Equilibrium can be approached from either direction.
 
-:::warning Warning (e.g., a gas leaving an open container), equilibrium will never be reached. :::
-
+:::warning Warning (e.g., a gas leaving an open container), equilibrium will never be reached.
+:::
 ---
 
 ## Le Chatelier's Principle

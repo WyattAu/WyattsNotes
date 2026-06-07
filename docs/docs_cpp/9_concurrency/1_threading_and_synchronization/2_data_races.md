@@ -142,8 +142,8 @@ Even data races that appear harmless in practice can cause problems because:
 3. **Future-proofing.** Code that "works" today with benign data races may break when compiled with
    a different optimization level, a different compiler version, or a different CPU architecture.
 
-:::warning Warning Writes, use a mutex or `std::atomic` [N4950 §6.9.4.2]. :::
-
+:::warning Warning Writes, use a mutex or `std::atomic` [N4950 §6.9.4.2].
+:::
 ## Detecting Data Races with ThreadSanitizer
 
 **ThreadSanitizer** (TSan) is a compile-time instrumentation tool that detects data races at

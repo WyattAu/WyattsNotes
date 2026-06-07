@@ -232,9 +232,12 @@ The arithmetical hierarchy is defined by iterating the jump: $\emptyset^{(0)} = 
 $\emptyset^{(n+1)} = (\emptyset^{(n)})'$. Each jump produces a strictly more difficult problem,
 Yielding an infinite hierarchy of undecidability.
 
+:::
 :::caution Common Pitfall A common mistake when using reductions is confusing the direction. To
 prove $B$ is undecidable Using a reduction from a known undecidable problem $A$You need
 $A \leq_m B$Not $B \leq_m A$. Remember: if $A \leq_m B$ and $A$ is undecidable, then $B$ is
 undecidable (contrapositive of "if $B$ is decidable then $A$ is decidable"). Reversing the direction
 gives a valid implication ("if $B \leq_m A$ and $A$ is undecidable, then...") that tells us nothing
 about $B$.
+
+:::

@@ -14,8 +14,8 @@ slug: wave-properties
 
 ## Wave Properties
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 <PhetSimulation simulationId="waves-on-a-string" title="Waves on a String" />
 
 Explore the simulation above to develop intuition for this topic.
@@ -297,8 +297,8 @@ While a 10 dB increase sounds roughly "twice as loud" to human ears.
 Ratio is $10^{(60-30)/10} = 10^3 = 1000$Meaning conversation is 1000 times more intense than a
 Whisper.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 All boards cover the inverse square law. The decibel scale is explicitly on CIE and sometimes
 Appears in AQA context questions. Edexcel and OCR (A) focus more on $I \propto A^2$ and
 $I \propto 1/r^2$ calculations.
@@ -358,7 +358,6 @@ $$\Delta\phi = \frac◆LB◆\Delta t◆RB◆◆LB◆T◆RB◆ \times 360° = \fr
 
 :::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
 :::
-
 AQA and OCR (A) frequently test phase difference from displacement--position graphs. CIE often
 Combines phase difference with path difference in interference questions. Edexcel emphasises the
 Connection between phase difference and the condition for constructive/destructive interference.
@@ -669,3 +668,4 @@ each approach.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+:::

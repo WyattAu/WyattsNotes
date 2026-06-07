@@ -14,8 +14,8 @@ slug: 1-atomic-structure
 
 ## Atomic Structure
 
-:::info Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR A Gateway C1 | WJEC C1 :::
-
+:::info Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR A Gateway C1 | WJEC C1
+:::
 ## 1. The Atom
 
 ### 1.1 Subatomic Particles

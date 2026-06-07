@@ -17,9 +17,7 @@ slug: 4-particles-waves
 :::info
 
 This chapter covers **Advanced Higher** Physics content, extending beyond Higher level.
-
 :::
-
 ## Quantum Physics
 
 ### Wave-Particle Duality

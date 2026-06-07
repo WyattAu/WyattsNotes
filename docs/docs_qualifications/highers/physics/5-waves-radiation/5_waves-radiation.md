@@ -735,3 +735,4 @@ Where $\tau$ is the dead time.
 30. Explain the principles of a gamma camera used in medical imaging. Describe how the collimator,
     scintillator crystal, photomultiplier tubes, and computer work together to produce an image.
 
+:::

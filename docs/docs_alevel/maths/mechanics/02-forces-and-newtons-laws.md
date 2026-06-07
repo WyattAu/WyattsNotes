@@ -133,7 +133,6 @@ In A Level, we assume $\mu_s = \mu_k = \mu$.
 
 :::warning Warning Maximum $\mu R$. Only use $F = \mu R$ when the body is sliding or about to slide.
 :::
-
 ### 4.3 Angle of friction
 
 The angle of friction $\lambda$ satisfies $\tan\lambda = \mu$. This is the steepest angle at which a
@@ -208,8 +207,8 @@ A valid Third Law pair must satisfy **all** of the following criteria:
 
 ### 7.3 Common misconceptions
 
-:::warning The following are **not** Newton's Third Law pairs: :::
-
+:::warning The following are **not** Newton's Third Law pairs:
+:::
 | Situation             | Incorrect Pair (NOT Third Law)                | Why It Fails                                            | Correct Third Law Pair                               |
 | --------------------- | --------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------- |
 | Book on a table       | Weight and normal reaction                    | Both act on the book                                    | Weight of book / gravitational pull of book on Earth |
@@ -248,8 +247,8 @@ $$F = \mu R$$
 
 The word "limiting" is the signal to set $F = \mu R$ rather than $F \lt \mu R$.
 
-:::tip Tip Equilibrium" all mean the same thing: set $F = \mu R$. :::
-
+:::tip Tip Equilibrium" all mean the same thing: set $F = \mu R$.
+:::
 ### 8.2 Friction on a horizontal surface -- full analysis
 
 A block of mass $m$ rests on a rough horizontal surface with coefficient of friction $\mu$. A force

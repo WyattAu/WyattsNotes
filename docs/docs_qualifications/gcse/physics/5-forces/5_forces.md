@@ -14,8 +14,8 @@ slug: 5-forces
 
 ## Forces
 
-:::info Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR A Gateway P2 & P6 | WJEC P2 :::
-
+:::info Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR A Gateway P2 & P6 | WJEC P2
+:::
 <PhetSimulation simulationId="forces-and-motion-basics" title="Forces and Motion: Basics" />
 
 Explore the simulation above to develop intuition for this topic.
@@ -858,3 +858,4 @@ This topic covers the key concepts of Forces for GCSE Physics. Focus on understa
 fundamental principles, practising with exam-style questions, and applying your knowledge to
 unfamiliar contexts.
 
+:::

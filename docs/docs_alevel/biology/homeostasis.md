@@ -15,8 +15,8 @@ sidebar_position: 12
 
 ## Homeostasis
 
-:::info Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4
+:::
 ## 1. Principles of Homeostasis
 
 ### 1.1 Definition
@@ -1171,6 +1171,7 @@ change), and nutrients (amino acids, minerals) are reabsorbed into the stem and 
 
 ---
 
+:::
 :::tip Diagnostic Test
 
 ## 21. Plant Growth Substances: Quantitative Investigations
@@ -1263,6 +1264,8 @@ $50\ \mu\mathrm{mol\ L^{-1}}$). Causes:
 
 ---
 
+
+:::
 :::tip Diagnostic Test
 
 ## 17. Thermoregulation in Ectotherms
@@ -1509,6 +1512,8 @@ temperature):
 | **Low** (fasting/exercise)                      | $\alpha$ cells secrete glucagon                         | Glucagon binds to G-protein coupled receptors on liver cells; activates adenylate cyclase $\to$ cAMP $\to$ protein kinase A; activates glycogen phosphorylase; activates phosphoenolpyruvate carboxykinase (PEPCK) for gluconeogenesis | Glycogenolysis stimulated; gluconeogenesis stimulated; blood glucose rises                                           |
 | **Normal** ($\approx 5\ \mathrm{mmol\ L^{-1}}$) | Both $\alpha$ and $\beta$ cells are relatively inactive | Basal insulin secretion maintains glucose homeostasis                                                                                                                                                                                  | Blood glucose remains stable                                                                                         |
 
+:::
+:::
 :::warning Common Pitfall Students often think insulin lowers blood glucose by converting glucose to
 glycogen in all cells. Insulin promotes glucose uptake primarily in muscle and adipose tissue (via
 GLUT4). The liver does not require insulin for glucose uptake (it uses GLUT2, which is
@@ -1579,6 +1584,7 @@ Ultrafiltration occurs at the renal corpuscle (glomerulus + Bowman's capsule):
    hypertonic medulla) and is reabsorbed into the blood.
 7. Blood volume and pressure increase; blood osmolarity decreases (negative feedback).
 
+:::
 :::warning Common Pitfall Students often think that ADH makes the kidneys produce "more urine." In
 fact, ADH makes the kidneys produce less, more concentrated urine by increasing water reabsorption
 in the collecting ducts. Without ADH (e.g., in diabetes insipidus), large volumes of dilute urine
@@ -2267,7 +2273,7 @@ responses (drought, cold, salinity) and seed dormancy.
 
 ---
 
-:::tip Diagnostic Test ::: ::: ::: :::
+:::tip Diagnostic Test :::
 
 ## Common Pitfalls
 

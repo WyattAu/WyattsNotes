@@ -14,8 +14,8 @@ slug: superposition-and-interference
 
 ## Superposition and Interference
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 <PhetSimulation simulationId="wave-interference" title="Wave Interference" />
 
 Explore the simulation above to develop intuition for this topic.

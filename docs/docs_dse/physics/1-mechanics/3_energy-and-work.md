@@ -1111,3 +1111,4 @@ $\blacksquare$
 | [Energy and Work] | IB      | [View](https://ib.wyattau.com/docs/ib/physics/1-space-time-and-motion/3_energy)                     |
 | [Energy and Work] | DSE     | [View](https://dse.wyattau.com/docs/dse/physics/1-mechanics/3_energy-and-work)                      |
 
+:::

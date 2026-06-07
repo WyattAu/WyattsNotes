@@ -14,8 +14,8 @@ slug: circular-motion
 
 ## Circular Motion
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
-
+:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 <PhetSimulation simulationId="gravity-and-orbits" title="Gravity and Orbits" />
 
 Explore the simulation above to develop intuition for this topic.
@@ -487,8 +487,8 @@ $T = mv_b^2/r + mg = 1.5 \times 39.24/0.80 + 14.7 = 73.6 + 14.7 = 88.3$ N.
 
 </details>
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
-
+:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 ## 6. Conical Pendulum -- Extended Analysis
 
 Section 4 derived the basic results for the conical pendulum. Here we present a complete derivation

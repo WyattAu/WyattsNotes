@@ -252,3 +252,4 @@ Only the product of diagonal entries. $\blacksquare$
 
 
 
+:::

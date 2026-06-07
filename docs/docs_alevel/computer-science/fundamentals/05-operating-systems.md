@@ -14,8 +14,8 @@ slug: operating-systems
 
 ## 1. What is an Operating System?
 
-:::info Board-specific AQA Paper 1 | Edexcel P1 | OCR (A) Paper 1 | CIE Paper 1 :::
-
+:::info Board-specific AQA Paper 1 | Edexcel P1 | OCR (A) Paper 1 | CIE Paper 1
+:::
 ### Definition
 
 **Definition.** An **operating system** (OS) is a system software that manages hardware resources,

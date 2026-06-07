@@ -1324,3 +1324,4 @@ $\blacksquare$
 | [Kinematics (Physics)] | IB      | [View](https://ib.wyattau.com/docs/ib/physics/1-space-time-and-motion/1_kinematics)          |
 | [Kinematics (Physics)] | DSE     | [View](https://dse.wyattau.com/docs/dse/physics/1-mechanics/1_forces-and-motion)             |
 
+:::

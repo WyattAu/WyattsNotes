@@ -181,8 +181,8 @@ Let $u = x^2 + 1$, $du = 2x\,dx$.
 
 $$\int 2x\sqrt{x^2+1}\,dx = \int \sqrt{u}\,du = \frac{2}{3}u^{3/2} + C = \frac{2}{3}(x^2+1)^{3/2} + C$$
 
-:::tip Tip $\sqrt{g(x)}$ and $g'(x)$ in the integrand, try $u = g(x)$. :::
-
+:::tip Tip $\sqrt{g(x)}$ and $g'(x)$ in the integrand, try $u = g(x)$.
+:::
 ### 5.3 Definite integrals with substitution
 
 For a definite integral, you can either:
@@ -215,8 +215,8 @@ I.e., $\displaystyle\int u\,dv = uv - \int v\,du$. $\blacksquare$
 Use the mnemonic **LIATE** (Logarithmic, Inverse trig, Algebraic, Trig, Exponential). Choose $u$
 From the leftmost category that appears.
 
-:::warning Warning After applying the formula, swap $u$ and $dv$. :::
-
+:::warning Warning After applying the formula, swap $u$ and $dv$.
+:::
 **Example.** Find $\displaystyle\int x e^x\,dx$.
 
 Let $u = x$$dv = e^x\,dx$. Then $du = dx$$v = e^x$.
@@ -281,8 +281,8 @@ $$|E| \leq n \cdot \frac{h^3}{12} M = n \cdot \frac{(b-a)^3}{12n^3}M = \frac{(b-
 The error also depends on how curved the function is (via $f''$). For a straight line ($f'' = 0$),
 The trapezium rule is exact.
 
-:::tip Tip Concave-down functions and overestimates for concave-up functions. :::
-
+:::tip Tip Concave-down functions and overestimates for concave-up functions.
+:::
 <hr />
 
 ## 8. Further Techniques

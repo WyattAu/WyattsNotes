@@ -14,8 +14,8 @@ slug: 3-networks
 
 ## Networks
 
-:::info Board Coverage AQA Paper 2 | Edexcel Paper 2 | OCR J277 Paper 2 | WJEC Unit 2 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel Paper 2 | OCR J277 Paper 2 | WJEC Unit 2
+:::
 ## 1. Types of Networks
 
 ### 1.1 LAN and WAN

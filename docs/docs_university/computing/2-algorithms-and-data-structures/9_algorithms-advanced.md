@@ -1670,3 +1670,4 @@ $\blacksquare$
 - Amortised analysis: dynamic arrays $O(1)$ amortised append; splay trees $O(\log n)$ amortised.
 
 
+:::

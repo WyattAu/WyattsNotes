@@ -166,8 +166,8 @@ $$\boldsymbol{\tau} = \mathbf{r} \times \mathbf{F}$$
 The direction of $\boldsymbol{\tau}$ is given by the right-hand rule and is perpendicular to the
 Plane containing $\mathbf{r}$ and $\mathbf{F}$.
 
-:::info Info Anticlockwise are the only two directions you need to consider. :::
-
+:::info Info Anticlockwise are the only two directions you need to consider.
+:::
 ### 3.1.5 Equilibrium of couples
 
 If a body is acted on by several couples, the body is in rotational equilibrium if and only if the

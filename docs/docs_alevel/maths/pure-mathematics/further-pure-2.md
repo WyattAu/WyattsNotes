@@ -403,3 +403,4 @@ further calculus (Maclaurin and Taylor series, series solutions, reduction formu
 (scalar and vector products, lines, planes, shortest distances), and conics (focus-directrix
 properties, parametric and Cartesian equations, tangents and normals).
 
+:::

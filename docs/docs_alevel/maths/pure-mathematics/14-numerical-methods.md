@@ -171,8 +171,8 @@ Newton-Raphson fails when:
 - $f'(x_n)$ is close to zero (the next iterate jumps far away).
 - The starting point is not close enough to the root.
 
-:::warning Warning A different starting point. :::
-
+:::warning Warning A different starting point.
+:::
 ### 3.4 Horizontal tangent failure
 
 When $f'(x_n) = 0$ at some iterate, the Newton-Raphson formula requires division by zero and the
@@ -193,7 +193,6 @@ point.
 
 :::warning Warning Tangent is not close to horizontal near your starting point.
 :::
-
 ### 3.5 Slow convergence near inflection points
 
 The quadratic convergence proof in Section 3.2 requires $f'(\alpha) \neq 0$. When the root coincides

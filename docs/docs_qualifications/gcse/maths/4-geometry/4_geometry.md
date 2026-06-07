@@ -14,8 +14,8 @@ slug: 4-geometry
 
 ## Geometry
 
-:::info Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR Paper 2 & 3 | WJEC Unit 2 :::
-
+:::info Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR Paper 2 & 3 | WJEC Unit 2
+:::
 ## 1. Angle Properties
 
 ### 1.1 Basic Angle Facts
@@ -747,3 +747,4 @@ theorems, methods, and problem-solving approaches.
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
 
+:::

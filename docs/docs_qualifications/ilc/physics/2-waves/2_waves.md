@@ -707,3 +707,4 @@ Different densities.
     calculation showing why a fibre with core refractive index $1.50$ and cladding index $1.45$ is
     suitable for this purpose.
 
+:::

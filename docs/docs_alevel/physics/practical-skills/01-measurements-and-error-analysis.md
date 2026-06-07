@@ -14,8 +14,8 @@ slug: measurements-and-error-analysis
 
 ## Measurements and Error Analysis
 
-:::info Board Coverage AQA Paper 3 | Edexcel CP1, CP6 | OCR (A) Paper 3 | CIE P5 :::
-
+:::info Board Coverage AQA Paper 3 | Edexcel CP1, CP6 | OCR (A) Paper 3 | CIE P5
+:::
 ## 1. Systematic and Random Errors
 
 ### Systematic Errors
@@ -661,3 +661,4 @@ and past paper questions, is essential for success in examinations.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+:::

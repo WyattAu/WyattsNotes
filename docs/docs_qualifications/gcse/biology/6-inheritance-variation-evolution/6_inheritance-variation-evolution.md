@@ -14,8 +14,8 @@ slug: 6-inheritance-variation-evolution
 
 ## Inheritance, Variation, and Evolution
 
-:::info Board Coverage AQA Paper 2 | Edexcel Paper 2 | OCR A Gateway B3 | WJEC B3 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel Paper 2 | OCR A Gateway B3 | WJEC B3
+:::
 ## 1. DNA and Genetics
 
 ### 1.1 DNA Structure

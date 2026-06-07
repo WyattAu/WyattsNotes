@@ -15,8 +15,8 @@ sidebar_position: 8
 
 ## Development Economics
 
-:::info Board Coverage Edexcel P1, P3 | CIE P2, P4 :::
-
+:::info Board Coverage Edexcel P1, P3 | CIE P2, P4
+:::
 Development economics studies how nations transform from low-income, less-productive economies into
 High-income, modern economies. It is distinct from mainstream macroeconomics because it must grapple
 With institutional failure, poverty traps, and structural transformation — problems that are largely
@@ -1206,3 +1206,4 @@ The key principles covered in this topic are linked in the sub-pages above. Focu
 the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
 each approach.
 
+:::

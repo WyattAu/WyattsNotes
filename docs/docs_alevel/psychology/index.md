@@ -106,3 +106,4 @@ Status: stub scope: Exam-aligned qualification content only. Subject to CONTENT_
 12 (Prohibited Subjects as standalone topics). Expansion_criteria: Content must be aligned to
 A-Level exam specification. General humanities content not in scope.
 
+:::

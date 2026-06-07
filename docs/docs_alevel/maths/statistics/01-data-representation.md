@@ -73,8 +73,8 @@ Mode.
 - The median is robust to outliers but ignores the magnitude of extreme values.
 - The mode is useful for categorical data.
 
-:::warning Warning Mean. A few extreme values can pull the mean far from the centre of the data. :::
-
+:::warning Warning Mean. A few extreme values can pull the mean far from the centre of the data.
+:::
 <hr />
 
 ## 2. Variance and Standard Deviation
@@ -145,8 +145,8 @@ $$\mathrm{Upper fence} = Q_3 + 1.5 \times \mathrm{IQR}$$
 
 Values outside these fences are potential outliers.
 
-:::warning Warning Some use $1.5 \times$ IQR, others use different multipliers. :::
-
+:::warning Warning Some use $1.5 \times$ IQR, others use different multipliers.
+:::
 <hr />
 
 ## 4. Coding Data

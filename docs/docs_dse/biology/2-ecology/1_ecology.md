@@ -1840,3 +1840,4 @@ phosphates), leading to excessive algal growth.
 | [Ecology] | IB      | [View](https://ib.wyattau.com/docs/ib/biology/4-ecology/1_ecology)      |
 | [Ecology] | DSE     | [View](https://dse.wyattau.com/docs/dse/biology/2-ecology/1_ecology)    |
 
+:::

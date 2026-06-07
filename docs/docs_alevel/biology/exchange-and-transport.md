@@ -15,8 +15,8 @@ sidebar_position: 3
 
 ## Exchange and Transport
 
-:::info Board Coverage AQA Paper 1 | Edexcel A Paper 1 | OCR (A) Paper 1 | CIE Paper 2 :::
-
+:::info Board Coverage AQA Paper 1 | Edexcel A Paper 1 | OCR (A) Paper 1 | CIE Paper 2
+:::
 ## 1. Surface Area to Volume Ratio
 
 ### 1.1 The Fundamental Constraint

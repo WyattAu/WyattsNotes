@@ -14,8 +14,8 @@ slug: quantum-physics
 
 ## Quantum Physics
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 ## 1. The Photoelectric Effect
 
 **Definition.** The photoelectric effect is the phenomenon in which electrons are emitted from a
@@ -1042,3 +1042,4 @@ each approach.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+:::

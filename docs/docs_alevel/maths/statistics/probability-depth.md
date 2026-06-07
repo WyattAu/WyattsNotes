@@ -414,3 +414,4 @@ $\blacksquare$
 - Total probability: $P(B) = \sum P(B|A_i)P(A_i)$ partitions the sample space.
 - Tree diagrams organise multi-stage probability calculations systematically.
 
+:::

@@ -553,3 +553,4 @@ $\blacksquare$
 - Elastic PE: $\mathrm{EPE} = \frac{1}{2}kx^2 = \frac{\lambda x^2}{2l}$ for springs and elastic
   strings.
 
+:::

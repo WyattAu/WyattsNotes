@@ -14,8 +14,8 @@ slug: electromagnetism-unification
 
 ## Electromagnetism Unification
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 <PhetSimulation simulationId="faraday-electromagnetic-lab" title="Faraday's Electromagnetic Lab" />
 
 Explore the simulation above to develop intuition for this topic.
@@ -68,8 +68,8 @@ Restore this symmetry — and in doing so, predicted electromagnetic waves.
 Oscillating electric and magnetic fields perpendicular to each other and to the direction of
 Propagation, travelling at speed $c = 1/\sqrt◆LB◆\mu_0\varepsilon_0◆RB◆$ in vacuum.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 Mod 6 | CIE P4
+:::
 AQA expects qualitative understanding of all four Maxwell's equations and their physical
 Significance. Edexcel and CIE require the full derivation of $c$ from first principles. OCR (A)
 Emphasises the consequences (EM wave properties, the spectrum) rather than the mathematical
@@ -212,8 +212,8 @@ From Maxwell's equations, EM waves have these properties:
 6. **Carry momentum**: radiation pressure $P = I/c$ for total absorption, $P = 2I/c$ for perfect
    reflection
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 Mod 6 | CIE P4
+:::
 AQA and OCR (A) focus on the qualitative properties listed above. Edexcel and CIE may ask for the
 $E = cB$ relationship quantitatively. The Poynting vector is beyond most A Level syllabi but
 Provides useful context for understanding radiation pressure and energy transport. CIE P4 includes
@@ -313,8 +313,8 @@ It provides smooth deceleration without mechanical contact.
 Object, resistively heating it. Used in induction cooktops (where the pan itself becomes the heat
 Source) and in industrial furnaces for melting metals.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4
+:::
 AQA requires quantitative treatment of transformers (efficiency, turns ratio) and generators.
 Edexcel covers motional `EMF` in detail and includes the rotating coil derivation. CIE P4 requires
 The back-`EMF` of a motor and transformer equations. OCR (A) links electromagnetic induction to
@@ -421,8 +421,9 @@ $$r = \frac{1}{0.50}\sqrt◆LB◆\frac{2 \times 1.99 \times 10^{-26} \times 1000
 Carbon-13 ions ($m = 13 \times 1.66 \times 10^{-27}$ kg) would be deflected to a radius
 $\sqrt{13/12} \times 10.0 \approx 10.4$ cm — the two isotopes are separated on the detector.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4 :::
-
+:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 Mod 6 | CIE P4
+:::
 AQA covers the mass spectrometer quantitatively, including the derivation of $r = mv/(qB)$. Edexcel
 Includes it as an application of circular motion in a magnetic field. CIE P4 covers it in detail,
 Including time-of-flight variants. OCR (A) treats it more briefly but expects familiarity with the
@@ -496,6 +497,7 @@ Decreasing cyclotron frequency.
 Just 11 cm and accelerated protons to 80 keV. Modern cyclotrons in hospitals produce radioactive
 Isotopes for PET scans by accelerating protons to energies of 10--20 MeV.
 
+:::
 :::info Info
 
 AQA mentions the cyclotron briefly as an application of circular motion in magnetic fields. Edexcel
@@ -702,6 +704,7 @@ Increase proportionally ($r = mv/(qB)$), keeping the period $T = 2\pi r/v = 2\pi
 
 ---
 
+:::
 :::tip Tip Ready to test your understanding of **Electromagnetism**? The
 [diagnostic test](/docs/alevel/physics/diagnostics/diag-electromagnetism-unification) contains the
 hardest questions within the A-Level specification for this topic, each with a full worked solution.
@@ -711,8 +714,8 @@ Electromagnetism with other physics topics to test synthesis under exam conditio
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
 self-marking and building a personal test matrix.
-:::
 
+:::
 :::danger Danger
 
 - **Forgetting Lenz's law when determining induced current direction:** Lenz's law states that the
@@ -761,3 +764,4 @@ each approach.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+:::

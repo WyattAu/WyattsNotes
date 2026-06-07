@@ -16,7 +16,6 @@ slug: 2-algebra
 
 :::info Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR Paper 1, 2, 3 | WJEC Unit 1 & 2
 :::
-
 ## 1. Algebraic Expressions
 
 ### 1.1 Simplifying Expressions

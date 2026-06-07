@@ -15,8 +15,8 @@ sidebar_position: 2
 
 ## Cells
 
-:::info Board Coverage AQA Paper 1 | Edexcel A Paper 1 | OCR (A) Paper 1 | CIE Paper 2 :::
-
+:::info Board Coverage AQA Paper 1 | Edexcel A Paper 1 | OCR (A) Paper 1 | CIE Paper 2
+:::
 ## 1. Cell Theory and Microscopy
 
 ### 1.1 Cell Theory
@@ -1457,6 +1457,7 @@ direct left-right asymmetry during development).
 
 ---
 
+:::
 :::tip Diagnostic Test Ready to test your understanding of **Cells**? The
 [diagnostic test](/docs/alevel/biology/diagnostics/diag-cells) contains the hardest questions within
 the A-Level specification for this topic, each with a full worked solution.

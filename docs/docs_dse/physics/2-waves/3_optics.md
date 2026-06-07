@@ -1227,3 +1227,4 @@ $\blacksquare$
 - Rayleigh criterion: two sources are just resolved when the central maximum of one coincides with
   the first minimum of the other.
 
+:::

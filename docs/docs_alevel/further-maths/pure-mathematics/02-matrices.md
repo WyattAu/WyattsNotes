@@ -361,8 +361,8 @@ Each has $\det = -1$Confirming orientation reversal.
 
 ## 7. Eigenvalues and Eigenvectors
 
-:::info info require this topic at A Level. :::
-
+:::info info require this topic at A Level.
+:::
 **Definition.** Let $\mathbf{A}$ be an $n \times n$ matrix. A scalar $\lambda$ is an _eigenvalue_ of
 $\mathbf{A}$ if there exists a non-zero vector $\mathbf{v}$ such that:
 

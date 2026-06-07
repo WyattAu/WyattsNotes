@@ -14,8 +14,8 @@ slug: refraction-and-total-internal-reflection
 
 ## Refraction and Total Internal Reflection
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 <PhetSimulation simulationId="bending-light" title="Bending Light" />
 
 Explore the simulation above to develop intuition for this topic.
@@ -54,8 +54,8 @@ Where $A$ and $B$ are constants specific to the material and $\lambda$ is the wa
 This wavelength dependence is what causes white light to separate into a spectrum when passing
 Through a prism.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 **Application: Diamond Cutting.** Diamond has an exceptionally high refractive index ($n = 2.42$)
 And large dispersion. Jewellers cut diamonds with many angled facets so that light entering the top
 Of the diamond strikes the internal facets at angles well above the critical angle
@@ -214,8 +214,8 @@ Evanescent wave is exploited in technologies such as:
 - **Optical fibre sensors**: chemicals or biological molecules near the fibre surface can interact
   with the evanescent wave, changing the propagation and allowing detection.
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 ## 4. Optical Fibres
 
 Optical fibres use total internal reflection to guide light along a curved path.
@@ -303,8 +303,8 @@ exceeds the critical angle, producing TIR. Prism periscopes are preferred over m
 because TIR gives 100% reflection (no absorption by a metallic coating), and the Reflective surface
 is protected inside the glass, making it resistant to scratches and tarnishing.
 
-:::info Info Physics applications) | OCR (A) Paper 2 (quantum and waves) | CIE P2 :::
-
+:::info Info Physics applications) | OCR (A) Paper 2 (quantum and waves) | CIE P2
+:::
 ## Problem Set
 
 <details>
@@ -605,3 +605,4 @@ each approach.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+:::

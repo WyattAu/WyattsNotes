@@ -15,8 +15,8 @@ sidebar_position: 5
 
 ## Genetics and DNA
 
-:::info Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4
+:::
 ## 1. DNA Structure and Replication
 
 ### 1.1 The Structure of DNA

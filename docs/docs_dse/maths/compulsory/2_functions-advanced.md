@@ -878,3 +878,4 @@ $\blacksquare$
   holes, not asymptotes.
 - Use sign charts for rational inequalities; include or exclude endpoints based on strictness.
 
+:::

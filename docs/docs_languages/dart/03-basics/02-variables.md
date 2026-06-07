@@ -178,9 +178,7 @@ Should be avoided.
 :::warning
 
 Dart does not have primitive data types as all types are interfaces inherited from `Object` class
-
 :::
-
 #### Number Types
 
 Only two number types exists in Dart, `int` and `double`. `int` represents 64-bit integers on native
@@ -548,3 +546,4 @@ each approach.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+:::

@@ -17,7 +17,6 @@ sidebar_position: 1
 
 :::info Board Coverage AQA Paper 2 (Option 9) | Edexcel CP5 (Option 9) | OCR (A) Paper 2 (Option D)
 :::
-
 ## 1. Astronomical Distances and Measurements
 
 ### Astronomical Units of Distance

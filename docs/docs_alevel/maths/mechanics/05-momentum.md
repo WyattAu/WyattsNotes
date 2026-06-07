@@ -180,8 +180,8 @@ $$1 - e^2 \geq 0 \implies e^2 \leq 1 \implies e \leq 1$$
 
 Combining both results: $0 \leq e \leq 1$. $\blacksquare$
 
-:::warning Warning Energy cannot increase during a collision. :::
-
+:::warning Warning Energy cannot increase during a collision.
+:::
 <hr />
 
 ## 6. The Impulse-Momentum Theorem
@@ -932,3 +932,4 @@ each approach.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+:::

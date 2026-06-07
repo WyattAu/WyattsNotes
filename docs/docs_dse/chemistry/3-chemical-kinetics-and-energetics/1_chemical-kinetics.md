@@ -322,8 +322,8 @@ Where:
 - $n$ = order of reaction with respect to B
 - Overall order = $m + n$
 
-:::warning Warning The stoichiometric coefficients $a$ and $b$. :::
-
+:::warning Warning The stoichiometric coefficients $a$ and $b$.
+:::
 ### Order of Reaction
 
 **Zero order:** Rate is independent of concentration.

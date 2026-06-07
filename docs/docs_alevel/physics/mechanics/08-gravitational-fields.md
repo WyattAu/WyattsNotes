@@ -14,8 +14,8 @@ slug: gravitational-fields
 
 ## Gravitational Fields
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 <PhetSimulation simulationId="gravity-and-orbits" title="Gravity and Orbits" />
 
 Explore the simulation above to develop intuition for this topic.
@@ -625,6 +625,7 @@ M s$^{-1} = 10.7$ km s$^{-1}$.
 
 ---
 
+:::
 :::tip Tip Ready to test your understanding of **Gravitational Fields**? The
 [diagnostic test](/docs/alevel/physics/diagnostics/diag-gravitational-fields) contains the hardest
 questions within the A-Level specification for this topic, each with a full worked solution.
@@ -634,8 +635,8 @@ Gravitational Fields with other physics topics to test synthesis under exam cond
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
 self-marking and building a personal test matrix.
-:::
 
+:::
 :::danger Danger
 
 - **Confusing gravitational field strength g with gravitational force:** g = GM/r squared is the
@@ -689,3 +690,5 @@ each approach.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+:::
+:::

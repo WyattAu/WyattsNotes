@@ -15,8 +15,8 @@ sidebar_position: 6
 
 ## Ecology
 
-:::info Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4
+:::
 ## 1. Ecosystems
 
 ### 1.1 Definitions
@@ -2005,3 +2005,4 @@ The key principles covered in this topic are linked in the sub-pages above. Focu
 the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
 each approach.
 
+:::

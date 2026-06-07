@@ -365,8 +365,8 @@ Non-negative when $a > 0$ and always non-positive when $a < 0$With equality only
 5. Select the intervals that satisfy the original inequality, respecting strict ($>$, $<$) vs
    non-strict ($\geq$, $\leq$) conditions.
 
-:::tip Tip **never** include points where the denominator is zero. :::
-
+:::tip Tip **never** include points where the denominator is zero.
+:::
 <details>
 <summary>Example</summary>
 Solve $-2x^2 + 3x + 5 \geq 0$ using a sign chart.
@@ -1100,3 +1100,4 @@ each approach.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+:::

@@ -15,8 +15,8 @@ sidebar_position: 7
 
 ## Immunology
 
-:::info Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4
+:::
 ## 1. Overview of the Immune System
 
 ### 1.1 Types of Immunity
@@ -1454,6 +1454,7 @@ $$\text{Herd immunity threshold} = 1 - \frac{1}{R_0}$$
 | Seasonal influenza | 1.5--3 | 33--67%                 |
 | Diphtheria         | 4--6   | 75--83%                 |
 
+:::
 :::warning Common Pitfall Students often think herd immunity means no one can get the disease. Herd
 immunity reduces the probability of transmission but does not eliminate risk entirely. Non-immune
 individuals (too young for vaccination, immunocompromised, vaccine contraindications) can still be
@@ -1891,6 +1892,7 @@ the body's own tissues:
 | Failure of regulatory T cells ($\mathrm{T_{reg}}$) | $\mathrm{T_{reg}}$ cells normally suppress self-reactive lymphocytes; deficiency leads to loss of self-tolerance                                                        |
 | Polyclonal B cell activation                       | Some pathogens (e.g., EBV) activate many B cells non-specifically, including self-reactive clones                                                                       |
 
+:::
 :::warning Common Pitfall Type 1 diabetes is autoimmune (immune system destroys $\beta$ cells). Type
 2 diabetes is metabolic (insulin resistance). Do not confuse them. Also, coeliac disease is an
 autoimmune condition triggered by gluten, not a food allergy.
@@ -2292,8 +2294,8 @@ inactive form.
 
 ---
 
-:::tip Diagnostic Test ::: :::
-
+:::tip Diagnostic Test
+:::
 ## Common Pitfalls
 
 1. Writing vague answers without specific biological terminology — use precise terms (e.g.,

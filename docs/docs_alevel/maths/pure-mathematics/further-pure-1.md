@@ -388,3 +388,4 @@ parts, standard integrals, first and second order ODEs), polar coordinates, hype
 and proof techniques (induction, contradiction, counterexamples). Mastery of these topics is
 essential before progressing to Further Pure 2.
 
+:::

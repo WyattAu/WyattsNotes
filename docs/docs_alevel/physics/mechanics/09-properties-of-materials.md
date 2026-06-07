@@ -15,8 +15,8 @@ sidebar_position: 9
 
 ## Properties of Materials
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP1 | OCR (A) Paper 1 | CIE P1 :::
-
+:::info Board Coverage AQA Paper 1 | Edexcel CP1 | OCR (A) Paper 1 | CIE P1
+:::
 The mechanical properties of materials — how they deform, stretch, compress, and break — are central
 To engineering and physics. This topic sits within the "Mechanics & Materials" strand on every A
 Level board.

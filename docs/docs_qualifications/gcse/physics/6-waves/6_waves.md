@@ -14,8 +14,8 @@ slug: 6-waves
 
 ## Waves
 
-:::info Board Coverage AQA Paper 2 | Edexcel Paper 1 | OCR A Gateway P3 & P6 | WJEC P3 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel Paper 1 | OCR A Gateway P3 & P6 | WJEC P3
+:::
 <PhetSimulation simulationId="waves-on-a-string" title="Waves on a String" />
 
 Explore the simulation above to develop intuition for this topic.
@@ -896,3 +896,4 @@ This topic covers the key concepts of Waves for GCSE Physics. Focus on understan
 principles, practising with exam-style questions, and applying your knowledge to unfamiliar
 contexts.
 
+:::

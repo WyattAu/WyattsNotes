@@ -14,8 +14,8 @@ slug: 1-energy
 
 ## Energy
 
-:::info Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR A Gateway P1 | WJEC P1 :::
-
+:::info Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR A Gateway P1 | WJEC P1
+:::
 <PhetSimulation simulationId="energy-skate-park-basics" title="Energy Skate Park: Basics" />
 
 Explore the simulation above to develop intuition for this topic.

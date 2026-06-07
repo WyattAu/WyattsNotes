@@ -467,8 +467,8 @@ int c = (int) 2.9;    // 2 (truncation)
 double d = (double) 5 / 2;  // 2.5
 ```
 
-:::warning Always cast to `double` before division when you need a decimal result. :::
-
+:::warning Always cast to `double` before division when you need a decimal result.
+:::
 ## Practice Questions
 
 1. Write a Java method that finds and returns the mode (most frequent element) in an array of
@@ -951,3 +951,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+:::

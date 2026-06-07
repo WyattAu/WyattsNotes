@@ -11,8 +11,8 @@ slug: nuclear-physics
 
 ## Nuclear Physics
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 | CIE P4 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP6 | OCR (A) Paper 2 | CIE P4
+:::
 ## 1. Rutherford Scattering
 
 ### The Experiment

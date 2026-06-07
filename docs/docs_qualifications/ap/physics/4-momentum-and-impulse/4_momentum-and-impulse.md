@@ -854,3 +854,4 @@ The block rises approximately $20.2 \mathrm{ cm$.
 
 </details>
 
+:::

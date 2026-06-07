@@ -14,8 +14,8 @@ slug: 8-organic-chemistry
 
 ## Organic Chemistry
 
-:::info Board Coverage AQA Paper 2 | Edexcel Paper 2 | OCR A Gateway C5 & C6 | WJEC C4 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel Paper 2 | OCR A Gateway C5 & C6 | WJEC C4
+:::
 ## 1. Introduction to Organic Chemistry
 
 ### 1.1 What Is Organic Chemistry?
@@ -832,3 +832,4 @@ This topic covers the key concepts of Organic Chemistry for GCSE Chemistry. Focu
 the fundamental principles, practising with exam-style questions, and applying your knowledge to
 unfamiliar contexts.
 
+:::

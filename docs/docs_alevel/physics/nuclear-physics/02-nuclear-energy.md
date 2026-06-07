@@ -14,8 +14,8 @@ slug: nuclear-energy
 
 ## Nuclear Energy
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 <PhetSimulation simulationId="nuclear-fission" title="Nuclear Fission" />
 
 Explore the simulation above to develop intuition for this topic.

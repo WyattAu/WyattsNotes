@@ -14,8 +14,8 @@ slug: current-and-resistance
 
 ## Current and Resistance
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
-
+:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 <PhetSimulation simulationId="resistance-in-a-wire" title="Resistance in a Wire" />
 
 Explore the simulation above to develop intuition for this topic.

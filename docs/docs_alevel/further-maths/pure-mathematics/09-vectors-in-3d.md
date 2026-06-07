@@ -1175,3 +1175,4 @@ The lines intersect at $\boxed{(1,0,0)}$.
 6. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way
    around.
 
+:::

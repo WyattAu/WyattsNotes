@@ -76,7 +76,6 @@ Where $\overline{z_2} = c - di$ is the _complex conjugate_ of $z_2$.
 
 :::warning warning $\theta = \arctan(b/a)$ only gives the correct principal argument when $a > 0$.
 :::
-
 <details>
 <summary>Worked Example: Modulus, argument, and polar form</summary>
 
@@ -294,8 +293,8 @@ Z^n &= r^n e^{in\theta} & &\mathrm{(argument multiplies)}
 \end{aligned}
 $$
 
-:::info info with the $\cos\theta + i\sin\theta$ form. All boards require De Moivre's theorem. :::
-
+:::info info with the $\cos\theta + i\sin\theta$ form. All boards require De Moivre's theorem.
+:::
 <hr />
 
 ## 5. Loci in the Argand Diagram

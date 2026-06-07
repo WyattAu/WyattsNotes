@@ -171,8 +171,8 @@ $$\left(x + \frac{D}{2}\right)^2 + \left(y + \frac{E}{2}\right)^2 = \frac{D^2 + 
 This is a circle with centre $\left(-\frac{D}{2}, -\frac{E}{2}\right)$ and radius
 $\sqrt◆LB◆\frac{D^2 + E^2}{4} - F◆RB◆$Provided the right-hand side is positive. $\blacksquare$
 
-:::tip Tip $y$. This is faster and less error-prone than memorising the formula. :::
-
+:::tip Tip $y$. This is faster and less error-prone than memorising the formula.
+:::
 <details>
 <summary>Example</summary>
 Find the centre and radius of $x^2 + y^2 - 6x + 4y - 12 = 0$.
@@ -963,3 +963,4 @@ each approach.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+:::

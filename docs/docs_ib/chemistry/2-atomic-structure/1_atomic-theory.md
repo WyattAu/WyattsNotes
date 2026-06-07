@@ -755,3 +755,4 @@ to unfamiliar contexts, particularly in calculation and practical questions.
 | [Atomic Structure] | IB      | [View](https://ib.wyattau.com/docs/ib/chemistry/2-atomic-structure/1_atomic-theory)                              |
 | [Atomic Structure] | DSE     | [View](https://dse.wyattau.com/docs/dse/chemistry/1-atomic-structure-and-bonding/1_atomic-structure-and-bonding) |
 
+:::

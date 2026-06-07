@@ -14,8 +14,8 @@ slug: 1-fundamentals
 
 ## Data Representation
 
-:::info Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR J277 Paper 1 | WJEC Unit 1 :::
-
+:::info Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR J277 Paper 1 | WJEC Unit 1
+:::
 ## 1. Binary
 
 ### 1.1 The Binary Number System
@@ -777,3 +777,4 @@ implementation, and key applications.
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
 
+:::

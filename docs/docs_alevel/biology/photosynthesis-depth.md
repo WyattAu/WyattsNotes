@@ -15,8 +15,8 @@ sidebar_position: 10
 
 ## Photosynthesis (In Depth)
 
-:::info Board Coverage AQA Paper 1 | Edexcel A Paper 1 | OCR (A) Paper 1 | CIE Paper 4 :::
-
+:::info Board Coverage AQA Paper 1 | Edexcel A Paper 1 | OCR (A) Paper 1 | CIE Paper 4
+:::
 ## 1. Overview
 
 ### 1.1 Definition
@@ -1181,6 +1181,7 @@ Daily electricity cost $= 139 \times \pounds 0.15 = \pounds 20.85$.
 
 ---
 
+:::
 :::tip Diagnostic Test
 
 ## 18. The Chloroplast: Structure and Adaptations
@@ -1437,6 +1438,8 @@ TP produced in the Calvin cycle has several fates:
 6. **Converted to amino acids** by combining with nitrogen (from $\mathrm{NO_3^-}$ or
    $\mathrm{NH_4^+}$) in a process called nitrogen assimilation.
 
+
+:::
 :::warning Common Pitfall Students often think that the Calvin cycle directly produces glucose. In
 fact, the Calvin cycle produces TP (a 3-carbon compound), which must then be converted to glucose
 (6C) by joining two TP molecules. Only some TP molecules are exported from the chloroplast; the rest
@@ -2311,7 +2314,9 @@ in shortest supply. At any given moment, only one factor limits the rate of phot
 
 ---
 
-:::tip Diagnostic Test ::: ::: :::
+:::
+:::
+:::tip Diagnostic Test
 
 ## Common Pitfalls
 
@@ -2373,3 +2378,6 @@ $\blacksquare$
 - Chloroplast structure (grana, thylakoids, stroma) is adapted to maximise light absorption and
   enzyme concentration.
 
+:::
+:::
+:::

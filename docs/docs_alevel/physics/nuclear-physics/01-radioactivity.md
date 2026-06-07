@@ -14,8 +14,8 @@ slug: radioactivity
 
 ## Radioactivity
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 <PhetSimulation simulationId="alpha-decay" title="Alpha Decay" />
 
 Explore the simulation above to develop intuition for this topic.
@@ -104,7 +104,6 @@ Number changes. A neutron becomes a proton, so the total nucleon count is unchan
 
 :::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
 :::
-
 | Requirement                  | AQA         | Edexcel     | OCR (A)     | CIE      |
 | ---------------------------- | ----------- | ----------- | ----------- | -------- |
 | Alpha decay equations        | Yes         | Yes         | Yes         | Yes      |
@@ -214,6 +213,7 @@ Sources of background radiation include:
   $^{238}\mathrm{U}$.
 - **Food and drink** — trace amounts of $^{40}\mathrm{K}$ and $^{14}\mathrm{C}$.
 
+:::
 :::warning Warning Because: (1) the detector only intercepts a fraction of emitted radiation (solid
 angle factor), and (2) not all radiation that enters the tube produces a count (detection efficiency
 is 1-2% For gamma rays). Never assume count rate equals activity.
@@ -244,6 +244,7 @@ $$\ln A = \ln A_0 - \lambda t$$
 
 The gradient of the straight line gives $-\lambda$And then $t_{1/2} = \ln 2 / \lambda$.
 
+:::
 :::tip Exam Technique When describing an experimental method for determining half-life, always
 Mention: (1) measuring background count rate first, (2) subtracting it from all readings, (3) taking
 Readings at regular intervals, and (4) using a log-linear graph for greater accuracy.
@@ -257,6 +258,7 @@ Readings at regular intervals, and (4) using a log-linear graph for greater accu
   known mass of the isotope and use $A = \lambda N$ where $N$ is calculated from the mass and
   Avogadro's number.
 
+:::
 :::info Board Coverage AQA requires the graphical method; Edexcel and OCR (A) additionally require
 Discussion of uncertainties and the effect of dead time on accuracy; CIE requires the logarithmic
 Method.
@@ -400,8 +402,9 @@ $1000 - 125 = 875$.
 
 ## 4. Decay Chains
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
-
+:::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 **Definition.** A decay chain (or radioactive series) is a sequence of radioactive decays where each
 Daughter nuclide is itself radioactive, continuing until a stable nuclide is reached.
 
@@ -439,6 +442,7 @@ Each daughter has the same activity as the parent. This has practical importance
 Protection: the activity of radon-222 (a daughter of $^{238}\mathrm{U}$) in buildings is sustained
 By the essentially constant uranium in the ground beneath.
 
+:::
 :::warning Warning Only when the parent is much longer-lived than all daughters. If a short-lived
 daughter precedes a Long-lived daughter, the long-lived daughter accumulates and can become the
 dominant radiological Hazard.
@@ -448,6 +452,7 @@ dominant radiological Hazard.
 
 ### Carbon-14 Dating
 
+:::
 :::info Info
 
 Living organisms continuously exchange carbon with the atmosphere, maintaining a constant ratio of
@@ -488,6 +493,8 @@ Activity to fall to half its initial value, combining both physical decay and bi
 
 $$\frac◆LB◆1◆RB◆◆LB◆t_{\mathrm{eff}}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆t_{\mathrm{physical}}◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆t_{\mathrm{biological}}◆RB◆$$
 
+
+:::
 :::info Board Coverage The effective half-life is required by Edexcel and OCR (A) but is not
 Explicitly tested by AQA or CIE at A Level.
 :::
@@ -528,6 +535,8 @@ Key differences from Chernobyl:
 Both disasters demonstrate that understanding half-lives is critical for predicting contamination
 Timelines and informing public health responses.
 
+
+:::
 :::tip Exam Application When asked to evaluate the risks from a nuclear incident, consider: (1)
 Which isotopes were released, (2) their half-lives, (3) how they enter the body (inhalation,
 Ingestion, external exposure), and (4) the type of radiation emitted (alpha is most dangerous
@@ -614,6 +623,8 @@ Equilibrium value over several radon half-lives (approximately 20-40 days).
 
 ---
 
+
+:::
 :::tip Diagnostic Test Ready to test your understanding of **Radioactivity**? The
 [diagnostic test](/docs/alevel/physics/diagnostics/diag-radioactivity) contains the hardest
 questions within the A-Level specification for this topic, each with a full worked solution.
@@ -624,7 +635,7 @@ Radioactivity with other physics topics to test synthesis under exam conditions.
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
 self-marking and building a personal test matrix.
 :::
-
+:::
 :::danger Common Pitfalls
 
 - **Confusing alpha, beta, and gamma radiation properties:** Alpha particles are helium nuclei (2
@@ -676,3 +687,6 @@ each approach.
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
 
+::::::
+
+:::

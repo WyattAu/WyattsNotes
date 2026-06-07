@@ -15,8 +15,8 @@ sidebar_position: 11
 
 ## Advanced Genetics
 
-:::info Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel A Paper 2 | OCR (A) Paper 2 | CIE Paper 4
+:::
 ## 1. Epistasis
 
 ### 1.1 Definition
@@ -1315,6 +1315,7 @@ Even after a protein is synthesised, its activity can be regulated:
 | Proteolytic cleavage  | Activates a pro-protein by cutting it                                               | Proinsulin $\to$ insulin; trypsinogen $\to$ trypsin           |
 | Allosteric regulation | Effector molecule binds at a site other than the active site, changing conformation | Haemoglobin (2,3-BPG binding reduces $\mathrm{O_2}$ affinity) |
 
+:::
 :::warning Common Pitfall Students often use the term "junk DNA" to describe non-coding DNA. This
 term is outdated and misleading. While most non-coding DNA does not code for proteins, it includes
 regulatory elements (promoters, enhancers, silencers), non-coding RNAs (miRNA, lncRNA, snRNA),

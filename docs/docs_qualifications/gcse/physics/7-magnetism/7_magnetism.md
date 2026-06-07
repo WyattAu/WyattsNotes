@@ -14,8 +14,8 @@ slug: 7-magnetism
 
 ## Magnetism and Electromagnetism
 
-:::info Board Coverage AQA Paper 2 | Edexcel Paper 2 | OCR A Gateway P4 & P7 | WJEC P4 :::
-
+:::info Board Coverage AQA Paper 2 | Edexcel Paper 2 | OCR A Gateway P4 & P7 | WJEC P4
+:::
 <PhetSimulation simulationId="faraday-electromagnetic-lab" title="Faraday's Electromagnetic Lab" />
 
 Explore the simulation above to develop intuition for this topic.
@@ -912,3 +912,4 @@ equations, experimental methods, and applications relevant to the specification.
 A strong understanding of these principles, combined with regular practice of quantitative problems
 and past paper questions, is essential for success in examinations.
 
+:::
