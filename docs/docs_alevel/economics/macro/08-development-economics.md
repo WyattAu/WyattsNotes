@@ -43,7 +43,8 @@ Developing if the gains accrue to a small elite.
 :::warning Common Pitfall Do not conflate growth with development. Equatorial Guinea has a high GDP
 Per capita (driven by oil) but low HDI (0.59) due to extreme inequality. Conversely, Costa Rica has
 A moderate GDP per capita but high HDI (0.81) due to strong public services and political stability.
-Always use multiple indicators. :::
+Always use multiple indicators.
+:::
 
 ## 2. Indicators of Development
 
@@ -122,7 +123,8 @@ Under the Lorenz curve.
 :::info Board-Specific Note **CIE (9708)** requires you to evaluate the strengths and weaknesses of
 Different development indicators, including the HDI and Gini coefficient. **Edexcel** focuses on GDP
 Per capita and HDI as measures of living standards, and may ask you to compare indicators across
-Countries. :::
+Countries.
+:::
 
 ## 3. Causes of Economic Growth
 
@@ -358,7 +360,8 @@ Social premium for community development projects (schools, healthcare, clean wa
 
 :::warning Warning Developing country liberalises trade while developed countries maintain subsidies
 on agriculture (e.g., the EU's Common Agricultural Policy), developing-country farmers cannot
-compete. Trade Liberalisation must be reciprocal and sequenced appropriately. :::
+compete. Trade Liberalisation must be reciprocal and sequenced appropriately.
+:::
 
 ## 7. Sustainable Development
 
@@ -1203,3 +1206,4 @@ approximately 20%.
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
 the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
 each approach.
+

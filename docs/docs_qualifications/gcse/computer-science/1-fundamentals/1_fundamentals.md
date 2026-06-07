@@ -77,7 +77,8 @@ Reading bottom to top: 11010110.
 :::warning In computing, kilo means 1024 (not 1000) because computers use binary. However, storage
 Manufacturers often use 1000 for marketing purposes. A "500 GB" hard drive advertised by the
 Manufacturer is actually about 465 GiB when measured in binary. The IEC prefixes KiB, MiB, GiB refer
-Specifically to powers of 1024. :::
+Specifically to powers of 1024.
+:::
 
 ### 1.4 Binary Addition
 
@@ -776,3 +777,4 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+

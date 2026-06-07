@@ -1095,3 +1095,4 @@ $\blacksquare$
 - `#[non_exhaustive]` prevents downstream crates from exhaustively matching on enums or struct
   fields.
 - Type-state pattern moves validation to compile time by encoding state in generic type parameters.
+

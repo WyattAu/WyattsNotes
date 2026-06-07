@@ -340,3 +340,4 @@ DFT accurately predicts structural properties (lattice constants, elastic consta
 Frequencies within a few percent) but is less reliable for band gaps (LDA underestimates By
 30--50\%) and strongly correlated systems (e.g., transition metal oxides).
 
+

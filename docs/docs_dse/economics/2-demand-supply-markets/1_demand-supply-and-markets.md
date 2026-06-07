@@ -58,7 +58,8 @@ As the price of a good increases, the quantity demanded decreases, and vice vers
 | Successful advertising               | Demand shifts right |
 
 :::tip Remember: a change in the good's own price causes movement **along** the curve. A change in
-Any other factor causes a **shift** of the curve. DSE exams frequently test this distinction. :::
+Any other factor causes a **shift** of the curve. DSE exams frequently test this distinction.
+:::
 
 ### Individual Demand vs Market Demand
 
@@ -211,7 +212,8 @@ $$\mathrm{Total Revenue (TR)} = P \times Q$$
 | Unit elastic (PED = 1) | TR unchanged   | TR unchanged   |
 
 :::tip If a firm wants to increase revenue, it should lower price if demand is elastic and raise
-Price if demand is inelastic. This is a very common exam question. :::
+Price if demand is inelastic. This is a very common exam question.
+:::
 
 ### Worked Example 3
 
@@ -672,7 +674,8 @@ Maximum profit: TR - TC = 250 - 185 = USD 65.
 | Innovation       | May lack incentive             | May have incentive |
 
 :::warning Warning Where MR = MC. Setting the highest price would reduce quantity sold too much and
-lower total Revenue. :::
+lower total Revenue.
+:::
 
 :::danger Danger
 
@@ -1278,3 +1281,4 @@ along) or a decrease (shift) of the demand curve.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

@@ -366,7 +366,8 @@ int main() {
 
 :::warning Reading from a union member other than the one most recently written to is **undefined
 Behavior** in C++ (unlike C, where it is implementation-defined). Use `std::memcpy` for type
-Punning, which is well-defined by the standard. :::
+Punning, which is well-defined by the standard.
+:::
 
 ### Type Punning with `std::memcpy`
 
@@ -585,3 +586,4 @@ for mastery of this topic.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

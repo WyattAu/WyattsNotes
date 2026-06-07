@@ -496,7 +496,8 @@ void resize(Rectangle r, int w, int h) {
 
 :::info The classic Rectangle/Square example demonstrates that behavioral subtyping is stricter than
 Structural subtyping. Just because a class can be made to extend another does not mean it should. If
-A subclass must violate the superclass's contract to work correctly, use composition instead. :::
+A subclass must violate the superclass's contract to work correctly, use composition instead.
+:::
 
 ## SOLID Principles Overview
 
@@ -734,7 +735,8 @@ if (r instanceof Rectangle(
 
 :::info Record patterns work with any record class. The pattern variables are inferred from the
 Record components. You can use `var` for type inference or specify the exact type. The number of
-Pattern components must match the number of record components. :::
+Pattern components must match the number of record components.
+:::
 
 ## Common Pitfalls
 
@@ -795,7 +797,8 @@ new Derived(); // throws NullPointerException
 :::warning Never call an overridable method from a constructor. The subclass constructor has not yet
 Run, so its fields are uninitialized. If the overridden method accesses subclass fields, you get
 `NullPointerException` or incorrect behavior. Mark the method `final` or `private` if you must call
-It from a constructor. :::
+It from a constructor.
+:::
 
 ### `instanceof` and `null`
 
@@ -898,3 +901,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

@@ -16,7 +16,8 @@ Alternative hypotheses, significance levels, Type I and II errors, one-tailed an
 And critical regions.
 
 :::info Hypothesis testing is a formal procedure for making decisions about population parameters
-based on Sample evidence. It provides a principled framework for quantifying uncertainty. :::
+based on Sample evidence. It provides a principled framework for quantifying uncertainty.
+:::
 
 <hr />
 
@@ -64,7 +65,8 @@ test statistic exceeds $c$Reject $H_0$.
 
 :::warning Common Pitfall "Accepting $H_0$" is not the same as "not rejecting $H_0$." We never prove
 $H_0$; we merely fail To find sufficient evidence against it. The conclusion should always be stated
-carefully. :::
+carefully.
+:::
 
 <hr />
 
@@ -216,7 +218,8 @@ This is approximately 4.14%, which is the closest we can get to 5% with a discre
 
 :::warning Warning For discrete distributions, the actual significance level may differ from the
 nominal level. The Critical region is chosen so that $P(\mathrm{critical\ region} \mid H_0)$ does
-not exceed $\alpha$ And is as close as possible to $\alpha$. :::
+not exceed $\alpha$ And is as close as possible to $\alpha$.
+:::
 
 <hr />
 
@@ -433,3 +436,4 @@ $\blacksquare$
 - Type II error: failing to reject $H_0$ when it is false (probability $= \beta$).
 - For binomial tests, use cumulative probabilities; for normal tests, use the $z$-score.
 - The critical region is the set of values that lead to rejection of $H_0$.
+

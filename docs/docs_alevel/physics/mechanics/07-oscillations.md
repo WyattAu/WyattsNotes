@@ -159,7 +159,8 @@ This is SHM in the variable $\theta$ with angular frequency $\omega = \sqrt{g/L}
 $$\boxed{T = 2\pi\sqrt◆LB◆\frac{L}{g}◆RB◆}$$
 
 :::warning Common Pitfall The period of a simple pendulum is **independent of mass** and
-**independent of amplitude** (for small oscillations). These are classic exam questions. :::
+**independent of amplitude** (for small oscillations). These are classic exam questions.
+:::
 
 ## 6. Phase Relationships
 
@@ -212,7 +213,8 @@ Resonance).
 
 :::tip Exam Technique In exam questions about damping and resonance, remember: more damping $\to$
 Lower maximum amplitude $\to$ broader resonance curve. Less damping $\to$ higher peak $\to$ narrower
-Curve. :::
+Curve.
+:::
 
 ## Problem Set
 
@@ -401,7 +403,8 @@ Displacement cycle, KE reaches its maximum twice: once as the mass passes throug
 Left, and once moving right.
 
 :::tip Tip At twice the displacement frequency, exactly out of phase, oscillating between $0$ and
-$E_{\mathrm{total}}$. Their sum is a horizontal line at $E_{\mathrm{total}}$. :::
+$E_{\mathrm{total}}$. Their sum is a horizontal line at $E_{\mathrm{total}}$.
+:::
 
 ## 10. Damping — Time Constant and Displacement-Time Graphs
 
@@ -465,7 +468,8 @@ $E \propto A^2$.
 
 :::warning Warning Fastest overall. A lightly damped system passes through equilibrium sooner but
 overshoots. Heavy Damping is slower than critical — adding more damping beyond the critical value
-makes the system **slower**, not faster. :::
+makes the system **slower**, not faster.
+:::
 
 **Application.** Car shock absorbers are designed to be critically damped: after hitting a bump, the
 Car body returns to equilibrium as quickly as possible without bouncing up and down.
@@ -523,7 +527,8 @@ Field, enabling detailed internal imaging without ionising radiation.
 
 :::tip Tip Slightly below $f_0$. Less damping $\to$ higher, sharper peak closer to $f_0$. When
 sketching Resonance curves for different damping levels, always label the natural frequency $f_0$
-and show the Amplitude axis . :::
+and show the Amplitude axis .
+:::
 
 ## 12. Phasor Diagrams for SHM
 
@@ -677,7 +682,8 @@ within the A-Level specification for this topic, each with a full worked solutio
 Oscillations with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 :::danger Common Pitfalls
 
@@ -724,3 +730,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

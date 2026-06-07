@@ -70,7 +70,8 @@ Map<String, Integer> map = new HashMap<>((int) (1000 / 0.75f) + 1);
 ```
 
 :::warning `HashMap` allows one `null` key and multiple `null` values. It is not thread-safe. Use
-`ConcurrentHashMap` for concurrent access. :::
+`ConcurrentHashMap` for concurrent access.
+:::
 
 ### `LinkedHashMap`
 
@@ -306,7 +307,8 @@ workPlusWeekend.addAll(weekend);
 
 :::info `EnumSet` is the fastest `Set` implementation for enums. Its internal representation is a
 Single `long` (for enums with up to 64 values) or a `long[]` (for larger enums). All operations are
-Simple bit manipulations. :::
+Simple bit manipulations.
+:::
 
 ## Set Operations
 
@@ -489,7 +491,8 @@ Set<String> immutableSet = Set.copyOf(mutableSet);
 
 :::warning Immutable collections do not allow `null` elements or keys. `List.of(1, null)` throws
 `NullPointerException`. This is by design — nulls in collections are a common source of bugs, and
-The immutable factories enforce non-null. :::
+The immutable factories enforce non-null.
+:::
 
 ### Unmodifiable Wrappers
 
@@ -547,7 +550,8 @@ List<String> syncList = Collections.synchronizedList(mutableList);
 :::info `Collections.synchronizedList` returns a list where each method is synchronized. However,
 Iteration requires external synchronization:
 `synchronized (syncList) { for (String s : syncList) { ... } }`. For better concurrency, use
-`CopyOnWriteArrayList`. :::
+`CopyOnWriteArrayList`.
+:::
 
 ## Collection Design Patterns
 
@@ -833,7 +837,8 @@ System.out.println(metadata.size()); // possibly 0
 
 :::warning `WeakHashMap` is not suitable for caching . Entries are collected aggressively — as soon
 as the GC discovers that a key is weakly reachable. If you need size-bounded caching, use
-`LinkedHashMap` with `removeEldestEntry` or a dedicated cache library like Caffeine. :::
+`LinkedHashMap` with `removeEldestEntry` or a dedicated cache library like Caffeine.
+:::
 
 ### Sorted Collection Views
 
@@ -955,3 +960,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

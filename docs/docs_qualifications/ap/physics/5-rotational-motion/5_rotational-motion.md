@@ -639,7 +639,8 @@ The wheel precesses at $0.240 \mathrm{ rad/s$Completing one revolution in
 $T = 2\pi/\omega_p = 26.2 \mathrm{ s$.
 
 :::info Info Momentum vector. Instead of tipping over, the angular momentum vector rotates
-horizontally. This is The same principle behind gyrocompasses and spacecraft attitude control. :::
+horizontally. This is The same principle behind gyrocompasses and spacecraft attitude control.
+:::
 
 ### Example 17: Moment of Inertia of a Composite Object
 
@@ -906,3 +907,4 @@ $I_f = I_{\mathrm{disk} + mr^2 = 0.24 + 1(0.3)^2 = 0.24 + 0.09 = 0.33 \mathrm{ k
 Conservation: $L_f = L_i$$I_f\omega_f = 2.4$$\omega_f = 2.4/0.33 = 7.27 \mathrm{ rad/s$.
 
 </details>
+

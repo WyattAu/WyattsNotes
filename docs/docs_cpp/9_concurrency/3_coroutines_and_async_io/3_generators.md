@@ -158,7 +158,8 @@ Sum: 4613732
 :::tip `std::generator` is composable with C++20 ranges. You can pipe a generator into
 `std::views::filter``std::views::transform`Etc. However, be aware that range adaptors are eager On
 the iteration step — each `++it` call on the adapted view will advance the underlying generator By
-one element. :::
+one element.
+:::
 
 ## See Also
 
@@ -421,7 +422,8 @@ int main() {
 
 :::warning Heap allocation. Every `std::generator` coroutine frame is heap-allocated. For
 Microsecond-latency systems, this can be a concern. C++26 is expected to add `std::generator` with
-Allocator support to allow custom allocation strategies. :::
+Allocator support to allow custom allocation strategies.
+:::
 
 ## Practical Example: State Machine Generator
 
@@ -531,3 +533,4 @@ for mastery of this topic.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

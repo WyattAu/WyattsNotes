@@ -23,7 +23,8 @@ slug: further-pure-1
 | CIE (9709) | Paper 3     | Complex numbers, polars, further calculus, induction        |
 
 :::info This content sits at the transition between single A-Level Mathematics and Further
-Mathematics. You must be confident with all Core Pure topics before tackling these. :::
+Mathematics. You must be confident with all Core Pure topics before tackling these.
+:::
 
 <hr />
 
@@ -387,3 +388,4 @@ matrices (operations, determinants, transformations, invariants), further calcul
 parts, standard integrals, first and second order ODEs), polar coordinates, hyperbolic functions,
 and proof techniques (induction, contradiction, counterexamples). Mastery of these topics is
 essential before progressing to Further Pure 2.
+

@@ -15,7 +15,8 @@ This document provides a rigorous treatment of modulus-argument form, De Moivre'
 Complex numbers, loci in the Argand diagram, and Euler's formula.
 
 :::info Complex numbers unify algebra and geometry in a powerful way. Many results that are
-Difficult to prove in real analysis become straightforward when extended to the complex plane. :::
+Difficult to prove in real analysis become straightforward when extended to the complex plane.
+:::
 
 <hr />
 
@@ -438,7 +439,8 @@ $\blacksquare$
 3. **Locus regions:** $|z - z_0| = r$ is a circle (boundary only). Use $\leq$ or $\geq$ for the
    interior or exterior including the boundary. Shade carefully in Argand diagrams.
 4. **Forgetting all roots:** For $z^n = w$There are exactly $n$ distinct roots. Do not forget to
-   include $k = 0, 1, \ldots, n-1$. :::
+   include $k = 0, 1, \ldots, n-1$.
+:::
 
 ---
 
@@ -1102,3 +1104,4 @@ including key theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+

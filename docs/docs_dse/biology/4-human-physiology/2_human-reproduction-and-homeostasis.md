@@ -234,7 +234,8 @@ Uterus, controlled by four hormones.
 :::info The switch from negative to positive feedback by oestrogen is a critical concept. At low
 Concentrations, oestrogen inhibits the pituitary (negative feedback). At high concentrations
 Sustained for approximately 36 hours, oestrogen stimulates the pituitary (positive feedback),
-Causing the LH surge. The DSE frequently tests this distinction. :::
+Causing the LH surge. The DSE frequently tests this distinction.
+:::
 
 ### Worked Example: Hormone Levels at Day 20
 
@@ -359,7 +360,8 @@ Foetus to the placenta) and the umbilical VEIN carries oxygenated blood (from th
 Foetus). This is the OPPOSITE of the naming convention in the systemic circulation, where arteries
 Carry oxygenated blood. The naming is based on direction of flow relative to the heart: arteries
 Carry blood away from the heart, veins carry blood towards it. The umbilical arteries carry blood
-Away from the foetal heart. :::
+Away from the foetal heart.
+:::
 
 **Worked Example**
 
@@ -431,7 +433,8 @@ The term "negative" refers to the fact that the response opposes (negates) the o
 
 :::info Homeostasis maintains parameters within a normal range, not at a single fixed value. The set
 Point is a target value, and the actual value fluctuates within narrow limits around it. In DSE exam
-Answers, write "maintained within narrow limits" rather than "kept exactly constant." :::
+Answers, write "maintained within narrow limits" rather than "kept exactly constant."
+:::
 
 ---
 
@@ -594,7 +597,8 @@ Concentration must be tightly regulated because:
 Liver can release free glucose into the blood. Muscle glycogenolysis produces glucose-6-phosphate,
 Which is used directly by the muscle for respiration. Muscle lacks the enzyme glucose-6-phosphatase,
 Which is required to convert glucose-6-phosphate to free glucose. The DSE often tests this
-Distinction. :::
+Distinction.
+:::
 
 **Worked Example**
 
@@ -1759,3 +1763,4 @@ and evaluate experimental evidence critically.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

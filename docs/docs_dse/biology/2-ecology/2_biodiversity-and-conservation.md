@@ -361,7 +361,8 @@ New species arise without geographic separation. Mechanisms include:
 
 :::info Info On speciation, always identify the geographic barrier, explain how gene flow is
 interrupted, Describe the different selection pressures on each population, and explain how
-reproductive Isolation arises. :::
+reproductive Isolation arises.
+:::
 
 ---
 
@@ -659,7 +660,8 @@ Triple bond in $\mathrm{N}_2$ is very strong and requires significant energy to 
 
 :::warning Warning Atmosphere. Plants cannot use atmospheric nitrogen directly. They can only absorb
 nitrogen in the Form of nitrate ($\mathrm{NO}_3^-$) or ammonium ($\mathrm{NH}_4^+$) ions through
-their roots. Atmospheric nitrogen must first be fixed by bacteria or lightning. :::
+their roots. Atmospheric nitrogen must first be fixed by bacteria or lightning.
+:::
 
 ### The Water Cycle
 
@@ -1425,3 +1427,4 @@ and evaluate experimental evidence critically.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

@@ -816,7 +816,8 @@ IB specification for this topic, each with a full worked solution.
 Harmonic Motion with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ## Summary
 
@@ -832,3 +833,4 @@ self-marking and building a personal test matrix. :::
 | ---------------------- | ------- | ---------------------------------------------------------------------------------------------- |
 | [Oscillations and SHM] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/physics/mechanics/07-oscillations) |
 | [Oscillations and SHM] | IB      | [View](https://ib.wyattau.com/docs/ib/physics/3-wave-behaviour/1_simple-harmonic-motion)       |
+

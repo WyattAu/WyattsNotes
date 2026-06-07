@@ -868,3 +868,4 @@ it hits the ground (ignore air resistance).
 Using conservation of energy: $mgh = \frac{1}{2}mv^2$
 
 $$v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 20} = \sqrt{392.4} \approx 19.8\,\text{m\,s}^{-1}$$
+

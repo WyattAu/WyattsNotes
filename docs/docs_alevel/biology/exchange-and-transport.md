@@ -108,7 +108,8 @@ $500 \times 15 = 7500\ \mathrm{cm^3\ min^{-1}}$.
 
 :::warning Warning The maximum volume of air that can be exhaled after a maximum inhalation
 ($\approx 4500\ \mathrm{cm^3}$). Residual volume is the air remaining in the lungs after maximum
-Exhalation ($\approx 1500\ \mathrm{cm^3}$). :::
+Exhalation ($\approx 1500\ \mathrm{cm^3}$).
+:::
 
 ## 3. Gas Exchange in Other Organisms
 
@@ -215,7 +216,8 @@ Phloem consists of:
 :::warning Warning A model with limitations. Translocation is faster than predicted by simple
 diffusion, and some Solutes appear to move bidirectionally, which the model does not explain. The
 current Consensus is that mass flow is the primary mechanism but is supplemented by cytoplasmic
-streaming And active transport. :::
+streaming And active transport.
+:::
 
 ### 4.3 Transpiration
 
@@ -285,7 +287,8 @@ Atrial systole; ventricular pressure rises sharply during ventricular systole (e
 Pressure to open the SL valves); aortic pressure peaks during ejection and falls during diastole.
 
 :::warning Warning They contract from the base (apex) upwards, which efficiently pushes blood
-towards the arteries at The top of the heart. :::
+towards the arteries at The top of the heart.
+:::
 
 ### 5.4 Cardiac Output
 
@@ -438,7 +441,8 @@ large surface area) to extract sufficient $\mathrm{O_2}$ from water.
 less dense." While this is directionally correct, the precise reason is that the diffusion
 coefficient in air is Approximately four orders of magnitude larger than in water. This is a
 consequence of the kinetic theory Of gases: gas molecules travel further between collisions in a gas
-than in a liquid. :::
+than in a liquid.
+:::
 
 ## 8. Water Potential Calculations
 
@@ -515,7 +519,8 @@ $\Psi_s \approx -414\ \mathrm{kPa}$.
 :::warning Common Pitfall Students sometimes forget that the formula $\Psi_s = -iCRT$ gives the
 solute potential Of the solution, not the cell. The cell's solute potential is only equal to this
 value at equilibrium When $\Psi_p = 0$. In a turgid cell, $\Psi_p > 0$ and $\Psi_{\mathrm{cell}}$ is
-less negative than $\Psi_s$. :::
+less negative than $\Psi_s$.
+:::
 
 ## 9. Detailed Cardiac Cycle and Pressure Curves
 
@@ -595,7 +600,8 @@ $1.4\times$).
 multiplicatively And state the increase as $2.9 \times 1.4 = 4.1\times$. While this gives
 approximately the right answer, The correct approach is to calculate the cardiac output at each
 state separately and then compare, as Shown above. This avoids rounding errors and is
-methodologically correct. :::
+methodologically correct.
+:::
 
 ## 10. The Chloride Shift and Bicarbonate Buffer System
 
@@ -630,7 +636,8 @@ $\mathrm{Cl^-}$ exits the red blood cell (reverse chloride shift).
 :::warning Common Pitfall Students sometimes write that $\mathrm{CO_2}$ "binds to haemoglobin" in
 the same way That $\mathrm{O_2}$ does. $\mathrm{CO_2}$ binds to the amino groups of the globin
 chains (forming Carbaminohaemoglobin), not to the haem groups. $\mathrm{O_2}$ binds to the iron in
-the haem groups. These are distinct binding sites and mechanisms. :::
+the haem groups. These are distinct binding sites and mechanisms.
+:::
 
 ## Practice Problems
 
@@ -1009,7 +1016,8 @@ A lower $P_{50}$ means higher affinity (the curve is shifted to the left).
 dissociation curve. Remember: **L**eft = **L**oads $\mathrm{O_2}$ more readily (high affinity, e.g.,
 foetal Hb, low temperature, low $\mathrm{CO_2}$). **R**ight = **R**eleases $\mathrm{O_2}$ more
 readily (low affinity, e.g., adult Hb in muscle, high temperature, high $\mathrm{CO_2}$High
-2,3-BPG). :::
+2,3-BPG).
+:::
 
 ## 15. Plant Transport: Advanced Topics
 
@@ -1475,7 +1483,8 @@ questions within the A-Level specification for this topic, each with a full work
 and Transport with other biology topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/biology/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ## 22. Adaptations to Extreme Environments
 
@@ -1665,7 +1674,8 @@ In the lungs (reverse Bohr effect):
 :::warning Common Pitfall In concurrent (parallel) exchange, blood and water flow in the same
 direction. Equilibrium is reached quickly and no further diffusion occurs. In countercurrent
 exchange, a gradient is maintained along the entire length, maximising diffusion. Always specify
-countercurrent in your answers about fish gills. :::
+countercurrent in your answers about fish gills.
+:::
 
 ## 28. Gas Exchange in Insects
 
@@ -2000,3 +2010,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

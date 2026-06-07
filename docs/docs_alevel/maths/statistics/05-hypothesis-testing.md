@@ -22,7 +22,8 @@ slug: hypothesis-testing
 | CIE (9709) | P1, P6     | Basic hypothesis testing in P6           |
 
 :::info Hypothesis testing requires clear, structured answers. Always state your hypotheses, test
-Statistic, critical value/region, comparison, and conclusion in context. :::
+Statistic, critical value/region, comparison, and conclusion in context.
+:::
 
 <hr />
 
@@ -45,7 +46,8 @@ Directional prediction **before** seeing the data.
 
 :::warning Choosing a one-tailed test after seeing the data (because the results happen to go in one
 Direction) is a form of $p$-hacking and is statistically invalid. The tail direction must be decided
-Before the experiment. :::
+Before the experiment.
+:::
 
 <hr />
 
@@ -180,7 +182,8 @@ Test statistic: $z = \dfrac◆LB◆\hat{p} - p_0◆RB◆◆LB◆\sqrt{p_0(1-p_0)
 
 :::warning "Failing to reject $H_0$" is **not** the same as "proving $H_0$ is true." It means the
 Data does not provide sufficient evidence against $H_0$. The test may lack power (sample too small,
-Effect too weak). :::
+Effect too weak).
+:::
 
 <hr />
 
@@ -229,7 +232,8 @@ Two-tailed test ($|1.80| \lt 1.960$).
 
 :::info A two-tailed test at level $\alpha$ requires a more extreme test statistic than a one-tailed
 Test at the same $\alpha$Because the significance "budget" is split between two tails. A Two-tailed
-test at $\alpha = 0.05$ corresponds roughly to two one-tailed tests each at $\alpha = 0.025$. :::
+test at $\alpha = 0.05$ corresponds roughly to two one-tailed tests each at $\alpha = 0.025$.
+:::
 
 ### 8.3 Effect on power
 
@@ -256,7 +260,8 @@ Equivalently, for the sample proportion $\hat{p} = X/n$:
 
 $$\hat{p} \approx N\!\left(p, \dfrac{p(1-p)}{n}\right)$$
 
-:::warning Warning $H_0$), not the observed sample proportion $\hat{p}$. :::
+:::warning Warning $H_0$), not the observed sample proportion $\hat{p}$.
+:::
 
 ### 9.2 Continuity correction
 
@@ -378,7 +383,8 @@ The smaller the $p$-value, the stronger the evidence against $H_0$:
   $H_0$.
 - Statistical significance does **not** imply practical or scientific importance.
 - The $p$-value depends on sample size: with a very large sample, even small effects can produce
-  tiny $p$-values. :::
+  tiny $p$-values.
+:::
 
 ### 11.5 Worked example
 
@@ -771,7 +777,8 @@ questions within the A-Level specification for this topic, each with a full work
 Testing with other topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -796,3 +803,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

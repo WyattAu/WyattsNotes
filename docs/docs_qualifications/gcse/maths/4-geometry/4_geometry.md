@@ -521,7 +521,8 @@ Triangles are **congruent** if they are identical in shape and size. The conditi
 | Right angle, hypotenuse, one side   | RHS          |
 
 :::warning ASS (two sides and a non-included angle) is NOT a valid congruence condition. It can
-Produce two different triangles. :::
+Produce two different triangles.
+:::
 
 ### 6.2 Similar Triangles
 
@@ -746,3 +747,4 @@ theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+

@@ -1019,7 +1019,8 @@ or a random pivot.
 Consider the data size, whether the data is nearly sorted, memory constraints, and whether stability
 Is required. Merge sort guarantees $O(n \log n)$ but uses extra space. Quick sort is often faster in
 Practice but has a worst case of $O(n^2)$. Insertion sort is unbeatable for small or nearly sorted
-Arrays. :::
+Arrays.
+:::
 
 ## Data Structures
 
@@ -1954,7 +1955,8 @@ Input sizes.
 Permutation generation, the naive traveling salesman solution.
 
 :::warning Warning $n \log n$ is significantly larger than $n$. For example, when $n = 1000000$
-$n \log_2 n \approx 20000000$Which is 20 times larger than $n$. :::
+$n \log_2 n \approx 20000000$Which is 20 times larger than $n$.
+:::
 
 ### Space Complexity
 
@@ -2329,7 +2331,8 @@ queue (FIFO) would undo the oldest action first, which is incorrect.
 
 :::note Note Class structure with `PRIVATE` and `PUBLIC` sections, a constructor, and all specified
 operations. Ensure preconditions are checked (e.g., do not pop from an empty stack). The choice of
-underlying Data structure (array vs linked list) should be stated and justified. :::
+underlying Data structure (array vs linked list) should be stated and justified.
+:::
 
 ## Problem Set
 
@@ -2799,3 +2802,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

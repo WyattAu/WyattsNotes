@@ -434,7 +434,8 @@ int main() {
 :::warning If `final_suspend` returns `std::suspend_never`The coroutine frame is destroyed at the
 Final suspend point. Calling `handle.destroy()` afterward on a dangling handle is **undefined
 Behavior**. If `final_suspend` returns `std::suspend_always`You **must** eventually call
-`handle.destroy()` or the frame leaks. :::
+`handle.destroy()` or the frame leaks.
+:::
 
 ## Symmetric Transfer and `await_suspend` Returning a Handle
 
@@ -779,3 +780,4 @@ for mastery of this topic.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

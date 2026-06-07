@@ -597,7 +597,8 @@ $$\theta_e = 40^\circ$$
 The emergent ray is parallel to the incident ray but displaced sideways by $1.43 \mathrm{ cm$.
 
 :::info The emergent ray is always parallel to the incident ray for a rectangular block with
-Parallel faces. The lateral displacement increases with thickness and with angle of incidence. :::
+Parallel faces. The lateral displacement increases with thickness and with angle of incidence.
+:::
 
 ### Example 22: Doppler Effect -- Moving Observer
 
@@ -706,3 +707,4 @@ Different densities.
 25. Explain how fibre optic cables use total internal reflection to transmit data. Include a
     calculation showing why a fibre with core refractive index $1.50$ and cladding index $1.45$ is
     suitable for this purpose.
+

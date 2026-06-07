@@ -65,7 +65,8 @@ Myelination has two critical effects:
 precisely, myelin forces the action potential to jump between nodes of Ranvier (saltatory
 conduction), which is much faster than continuous propagation. The speed increase is because less
 membrane needs to be depolarised, and the local current flows further ahead to depolarise the next
-node. :::
+node.
+:::
 
 ## 2. Resting Potential
 
@@ -247,7 +248,8 @@ diffusion" without specifying that they bind to receptors. The neurotransmitter 
 cleft and binds to specific receptor proteins on the postsynaptic membrane. This binding opens ion
 channels, which is what causes the change in membrane potential. The specificity of
 neurotransmitter-receptor binding is what determines whether the synapse is excitatory or
-inhibitory. :::
+inhibitory.
+:::
 
 ## 5. Neurotransmitters
 
@@ -348,7 +350,8 @@ conscious awareness and modification of the response, but the reflex itself is s
 :::warning Common Pitfall Students often state that reflexes "do not involve the brain." Reflexes do
 not require brain processing to occur, but the brain receives sensory information about the reflex
 via ascending tracts. This allows the brain to modify the response if necessary (e.g., suppressing
-the withdrawal reflex if you are carrying something hot). :::
+the withdrawal reflex if you are carrying something hot).
+:::
 
 ## 7. Sensory Receptors
 
@@ -1106,7 +1109,8 @@ initiated.
 **resting potential** ($-70\ \mathrm{mV}$) is the membrane potential of an unstimulated neuron. The
 **threshold potential** ($-55\ \mathrm{mV}$) is the depolarisation level that must be reached to
 trigger an action potential. If the membrane depolarises to $-60\ \mathrm{mV}$ (above resting but
-below threshold), no action potential is fired. :::
+below threshold), no action potential is fired.
+:::
 
 ## 25. Reflex Arcs: Detailed Mechanisms
 
@@ -2326,3 +2330,4 @@ so no light is detected.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

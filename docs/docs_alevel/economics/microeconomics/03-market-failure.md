@@ -28,7 +28,8 @@ This leads to a **deadweight welfare loss**: the total surplus (consumer + produ
 Is not maximised.
 
 :::warning Warning Sense. It means the _outcome_ is suboptimal — there exists a reallocation that
-could make at least One person better off without making anyone worse off (Pareto improvement). :::
+could make at least One person better off without making anyone worse off (Pareto improvement).
+:::
 
 ## 2. Types of Market Failure
 
@@ -37,7 +38,8 @@ could make at least One person better off without making anyone worse off (Paret
 diagrams. **CIE (9708)** covers market failure in the context of allocative efficiency and requires
 Consumer/producer surplus, deadweight loss, and cost-benefit analysis. **OCR (A)** links market
 Failure directly to government intervention and expects evaluation of whether intervention improves
-Outcomes. :::
+Outcomes.
+:::
 
 ### 2.1 Externalities
 
@@ -237,7 +239,8 @@ Tradable permits with evaluation of each. **Edexcel** expects diagrammatic analy
 Effect of Pigouvian taxes and subsidies on equilibrium. **CIE (9708)** covers government
 Intervention alongside cost-benefit analysis and requires understanding of when intervention may
 Fail. **OCR (A)** emphasises the link between market failure and government failure, requiring
-Students to evaluate whether intervention worsens outcomes. :::
+Students to evaluate whether intervention worsens outcomes.
+:::
 
 ### 4.1 Pigouvian Taxation
 
@@ -350,7 +353,8 @@ Alcohol, tobacco, illegal drugs.
 
 :::warning Warning Judgements about what is "good" or "bad" for people. This is different from
 positive externalities (which are objective welfare effects on third parties). Many merit goods also
-generate positive Externalities, but the concepts are distinct. :::
+generate positive Externalities, but the concepts are distinct.
+:::
 
 ### Tragedy of the Commons
 
@@ -1251,3 +1255,4 @@ models, evidence, and policy implications.
 
 The ability to apply these theories to real-world data and evaluate policy decisions is central to
 success in this subject.
+

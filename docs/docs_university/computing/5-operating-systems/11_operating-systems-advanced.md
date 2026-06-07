@@ -1367,3 +1367,4 @@ $\blacksquare$
 - Memory management: paging, segmentation, virtual memory, page replacement (LRU, FIFO, optimal).
 - File systems: directory structure, allocation methods (contiguous, linked, indexed).
 - Synchronisation: semaphores, monitors, critical sections; Peterson's algorithm for two processes.
+

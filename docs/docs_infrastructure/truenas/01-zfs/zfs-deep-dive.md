@@ -73,7 +73,8 @@ When ZFS reads a block, it:
 
 :::info Set the checksum algorithm at pool creation time with `-O checksum=sha256`. It cannot be
 Changed after pool creation. `edonr` is the fastest on hardware with SSE4.2+ support and provides
-Excellent collision resistance. :::
+Excellent collision resistance.
+:::
 
 ---
 
@@ -134,7 +135,8 @@ Set at pool creation time and cannot be changed afterward.
 
 :::warning Always set `ashift=12` (4 KB) at minimum for modern drives. Setting `ashift=9` on a drive
 With 4 KB physical sectors causes read-modify-write amplification, devastating performance. On
-TrueNAS, the default `ashift` is 12, which is correct for virtually all modern drives. :::
+TrueNAS, the default `ashift` is 12, which is correct for virtually all modern drives.
+:::
 
 ### Pool Creation Examples
 
@@ -202,7 +204,8 @@ Variable-size blocks up to this maximum. The optimal recordsize depends on the w
 
 :::warning Changing `recordsize` on an existing dataset only affects new writes. Existing files
 Retain their original block sizes. To benefit from a recordsize change, you must rewrite the data
-(e.g., copy files to a new dataset with the desired recordsize). :::
+(e.g., copy files to a new dataset with the desired recordsize).
+:::
 
 ---
 
@@ -318,7 +321,8 @@ write performance on HDD-based pools.
 :::warning The SLOG must have power-loss protection (PLP). Without PLP, a power loss during a
 Synchronous write can lose acknowledged data, violating the sync guarantee. Intel Optane DC
 Persistent memory is the gold standard for SLOG devices. Enterprise NVMe SSDs with PLP are also
-Acceptable. Consumer NVMe SSDs without PLP should not be used as SLOG devices. :::
+Acceptable. Consumer NVMe SSDs without PLP should not be used as SLOG devices.
+:::
 
 ---
 
@@ -366,7 +370,8 @@ zpool status tank
 
 :::warning During a resilver, the pool is vulnerable. If a second drive fails during resilver of a
 RAIDZ1 pool, all data is lost. For RAIDZ2, you can tolerate a second failure. Always monitor
-Resilver progress and ensure the pool is healthy before and after. :::
+Resilver progress and ensure the pool is healthy before and after.
+:::
 
 ---
 
@@ -698,7 +703,8 @@ zfs rollback -rf tank/data@daily-2024-01-10
 ```
 
 :::warning `zfs rollback` destroys all intermediate snapshots between the current state and the
-Target snapshot. Use `zfs clone` instead if you want to preserve the current state. :::
+Target snapshot. Use `zfs clone` instead if you want to preserve the current state.
+:::
 
 ## ZFS Send/Receive Advanced Usage
 
@@ -778,7 +784,8 @@ zpool import -f tank
 
 :::warning Always export a pool before disconnecting drives. If a pool is not exported, ZFS may mark
 It as active on the original system, preventing import on the new system. Use `zpool export -f` to
-Force export if necessary. :::
+Force export if necessary.
+:::
 
 ### Pool Degradation Scenarios
 
@@ -1006,3 +1013,4 @@ for mastery of this topic.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

@@ -230,7 +230,8 @@ For $\prescript{238}{92}\mathrm{U} + \mathrm{n} \to \prescript{239}{92}\mathrm{U
 - Since $E_b^{\mathrm{added}} \lt E_f$Thermal neutrons cannot induce fission.
 
 :::warning Warning But is not fissile --- it cannot sustain a chain reaction with thermal neutrons.
-The only Occurring fissile isotope is U-235 (0.72\% of natural uranium). :::
+The only Occurring fissile isotope is U-235 (0.72\% of natural uranium).
+:::
 
 ### Fast Fission of U-238
 
@@ -317,7 +318,8 @@ The $\sim 200$ MeV released per U-235 fission is distributed as follows:
 
 :::warning Warning Anti-neutrinos, which interact so weakly that they escape the reactor entirely.
 When calculating Thermal power output, use $\sim 200$ MeV total but $\sim 193$ MeV recoverable. The
-neutrino energy Is unrecoverable. :::
+neutrino energy Is unrecoverable.
+:::
 
 ### Breeder Reactors
 
@@ -349,7 +351,8 @@ Abundant than uranium and produces less long-lived transuranic waste.
 :::tip Tip Short half-life isotopes can be stored and left to decay. Long half-life isotopes
 (thousands to Millions of years) require geological disposal relying on multiple barriers: waste
 form (vitrification), container (steel/copper), buffer (bentonite clay), and host rock
-(granite/clay). :::
+(granite/clay).
+:::
 
 ## 6. Nuclear Reactor Design
 
@@ -421,7 +424,8 @@ Infinite-medium factor and $P_{\mathrm{non-leak}}$ is the non-leakage probabilit
 
 :::tip Tip Critical when $k_{\mathrm{eff}} = 1$. Control rods absorb neutrons to reduce
 $k_{\mathrm{eff}}$ Below 1 for shutdown, or are adjusted to maintain $k_{\mathrm{eff}} = 1$ for
-steady power." :::
+steady power."
+:::
 
 ### Delayed Neutrons and Reactor Control
 
@@ -451,7 +455,8 @@ control systems. $\square$
 
 :::warning Warning Responds on the timescale set by delayed neutrons ($\sim$Tens of seconds),
 provided $k_{\mathrm{eff}} \lt 1 + \beta$. Only if $k_{\mathrm{eff}}$ exceeds $1 + \beta$ does the
-reactor Become "prompt supercritical" and uncontrollable. :::
+reactor Become "prompt supercritical" and uncontrollable.
+:::
 
 ### Coolant
 
@@ -492,7 +497,8 @@ For compact gamma shielding. **Water** provides both shielding and moderation in
 
 :::tip Tip Moderator and coolant (simpler but lower efficiency), while AGRs separate them (graphite
 moderator, CO$_2$ coolant), allowing higher temperature and thus higher efficiency from
-$\eta \lt 1 - T_c/T_h$. :::
+$\eta \lt 1 - T_c/T_h$.
+:::
 
 ## 7. Nuclear Fusion
 
@@ -523,7 +529,8 @@ Fusion requires positively charged nuclei to approach within $\sim 10^{-15}$ m, 
 Kinetic energy to overcome the Coulomb repulsion.
 
 :::info Board Note AQA and Edexcel focus on the qualitative aspects of fission and fusion. CIE may
-Require calculation of energy released from mass defect. :::
+Require calculation of energy released from mass defect.
+:::
 
 ## 8. Nuclear Fusion in Detail
 
@@ -643,7 +650,8 @@ R-process.
 
 :::warning Warning Strictly, Ni-62 has the highest $E_b/A$ (8.7945 MeV/nucleon versus Fe-56's 8.7906
 MeV/nucleon), but Fe-56 is produced in greater abundance because the alpha process favours nuclei
-with $N = Z$. :::
+with $N = Z$.
+:::
 
 ## Problem Set
 
@@ -928,7 +936,8 @@ questions within the A-Level specification for this topic, each with a full work
 Energy with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 :::danger Danger
 
@@ -982,3 +991,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

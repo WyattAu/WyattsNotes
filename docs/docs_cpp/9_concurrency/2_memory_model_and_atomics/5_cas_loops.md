@@ -57,7 +57,8 @@ To recompute `desired` and retry.
 
 :::tip Tip Retries). Use `compare_exchange_strong` when you need to know whether the CAS actually
 failed due to A value mismatch (e.g., when you want to take a different action on real failure vs
-spurious Failure). :::
+spurious Failure).
+:::
 
 ## When Weak CAS Is Preferable
 
@@ -186,7 +187,8 @@ int main() {
 Operation. The acquire semantics ensure that all accesses to the object (sequenced-before the
 Release) are visible to the thread that performs the destruction. The release semantics ensure that
 The destruction itself is visible to other threads. The `fetch_sub` return value is checked against
-1 (not 0) because `fetch_sub` returns the **old** value [N4950 §31.7.2]. :::
+1 (not 0) because `fetch_sub` returns the **old** value [N4950 §31.7.2].
+:::
 
 ## CAS Loop Idioms Summary
 
@@ -199,7 +201,8 @@ The destruction itself is visible to other threads. The `fetch_sub` return value
 
 :::tip When writing CAS loops, always update `desired` based on the new `expected` value after a
 Failed CAS. The `compare_exchange_weak` function automatically updates `expected` to the current
-Value on failure, so you can use it directly in the next iteration's computation. :::
+Value on failure, so you can use it directly in the next iteration's computation.
+:::
 
 ## Lock-Free Stack Push and Pop
 
@@ -699,3 +702,4 @@ Trace the following operations on an empty stack: `push(5)`, `push(3)`, `pop()`,
 | push(8)   | [8, 5]               | —      |
 | pop()     | [5]                  | 8      |
 | pop()     | []                   | 5      |
+

@@ -600,7 +600,8 @@ $$v = \sqrt{18} = 4.24 \mathrm{ m/s$$
 
 :::info The work-energy theorem is one of the most powerful tools in mechanics. It works even when
 Forces are variable (requiring calculus) and does not require knowledge of the path taken, only the
-Initial and final speeds. :::
+Initial and final speeds.
+:::
 
 ### Example 22: Oblique Collision in 2D
 
@@ -681,7 +682,8 @@ Net force.
 
 :::warning Always check whether motion actually occurs before applying the equations of motion. If
 The net force in every possible direction is negative (accounting for the maximum static friction),
-The system remains stationary. :::
+The system remains stationary.
+:::
 
 ## Common Pitfalls Extended
 
@@ -728,3 +730,4 @@ Surface with no vertical acceleration.
 25. Derive an expression for the period of a simple pendulum using energy considerations. A pendulum
     of length $1.5 \mathrm{ m$ is displaced $10^\circ$ from the vertical. Calculate the maximum
     speed of the bob and the period of oscillation.
+

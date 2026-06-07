@@ -335,7 +335,8 @@ Regions, be careful about whether boundaries are included (solid line) or exclud
 
 :::tip Always sketch loci problems. The algebraic description follows from the geometric picture.
 Common exam technique: identify the boundary (circle, line, half-line), then determine which side of
-The boundary is included by testing a point. :::
+The boundary is included by testing a point.
+:::
 
 <details>
 <summary>Worked Example: Describing a locus algebraically</summary>
@@ -1294,3 +1295,4 @@ This is the parallelogram law: the sum of squares of the diagonals equals the su
 Four sides. $\blacksquare$
 
 </details>
+

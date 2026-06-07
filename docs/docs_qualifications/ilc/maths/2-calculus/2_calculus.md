@@ -454,7 +454,8 @@ $$
 
 :::note The absolute value in $\int \frac{1}{x}\,dx = \ln|x| + C$ is essential. It accounts for the
 Fact that $\frac{d}{dx}[\ln x] = \frac{1}{x}$ for $x > 0$ and
-$\frac{d}{dx}[\ln(-x)] = \frac{-1}{-x} = \frac{1}{x}$ for $x < 0$. :::
+$\frac{d}{dx}[\ln(-x)] = \frac{-1}{-x} = \frac{1}{x}$ for $x < 0$.
+:::
 
 ### Definite Integration (OL/HL)
 
@@ -480,7 +481,8 @@ A = \int_a^b |f(x)| \, dx
 $$
 
 :::warning If the curve crosses the $x$-axis between $a$ and $b$Split the integral and take the
-Absolute value of each part. The integral itself gives the signed area. :::
+Absolute value of each part. The integral itself gives the signed area.
+:::
 
 **Example (OL):** Find the area enclosed by $y = x^2$The $x$-axis, $x = 0$And $x = 3$.
 
@@ -845,3 +847,4 @@ theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+

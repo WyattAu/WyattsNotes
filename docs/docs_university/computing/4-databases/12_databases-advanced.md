@@ -1366,3 +1366,4 @@ $\blacksquare$
 - ACID properties: Atomicity, Consistency, Isolation, Durability.
 - SQL: DDL (CREATE, ALTER, DROP), DML (SELECT, INSERT, UPDATE, DELETE), DCL (GRANT, REVOKE).
 - CAP theorem: distributed systems trade off consistency, availability, and partition tolerance.
+

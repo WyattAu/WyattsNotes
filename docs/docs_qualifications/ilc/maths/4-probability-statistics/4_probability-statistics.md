@@ -479,7 +479,8 @@ Is longer.
 | p-value         | One tail area          | Two tail areas combined |
 
 :::warning Choose one-tailed or two-tailed before collecting data. Never decide after seeing the
-Results. :::
+Results.
+:::
 
 ### z-test for a Proportion (HL)
 
@@ -733,7 +734,8 @@ $$
 | Normal       | Continuous data, symmetric bell shape              | $\mu, \sigma^2$ |
 
 :::tip If a question mentions "per unit time" or "per unit area" and events are rare, think Poisson.
-If it mentions "out of $n$ trials," think Binomial. :::
+If it mentions "out of $n$ trials," think Binomial.
+:::
 
 ### 8.6 Relationship Between Distributions
 
@@ -773,3 +775,4 @@ including key theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+

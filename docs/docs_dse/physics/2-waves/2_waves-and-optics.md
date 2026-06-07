@@ -48,7 +48,8 @@ Since $f = \frac{1}{T}$We can also write:
 $$v = \frac{\lambda}{T}$$
 
 :::info The wave equation applies to all types of waves: transverse, longitudinal, mechanical, and
-Electromagnetic. :::
+Electromagnetic.
+:::
 
 ### Worked Example 1
 
@@ -108,7 +109,8 @@ $$n = \frac{c}{v}$$
 Where $c$ is the speed of light in vacuum and $v$ is the speed of light in the medium.
 
 :::info Info **towards** the normal. When entering a less dense medium, it speeds up and bends
-**away** from the Normal. :::
+**away** from the Normal.
+:::
 
 ### Total Internal Reflection
 
@@ -244,7 +246,8 @@ $$\beta = 10\log_{10}\left(\frac{I}{I_0}\right)$$
 Where $I_0 = 10^{-12} \mathrm{ W/m}^2$ is the threshold of hearing.
 
 :::warning Warning Physical quantity. A $10 \mathrm{ dB}$ increase corresponds to a $10\times$
-increase in intensity, But is perceived as roughly a doubling of loudness. :::
+increase in intensity, But is perceived as roughly a doubling of loudness.
+:::
 
 ### Worked Example 5
 
@@ -292,7 +295,8 @@ All EM waves:
 
 :::tip For the DSE exam, remember the order of the EM spectrum from longest to shortest wavelength:
 **R**adio, **M**icrowaves, **I**nfrared, **V**isible, **U**ltraviolet, **X**-rays, **G**amma rays
-(RMIVUXG). :::
+(RMIVUXG).
+:::
 
 ---
 
@@ -394,7 +398,8 @@ Internal reflection and travels along the fibre.
 - Decorative lighting
 
 :::warning Warning Acceptance angle. The acceptance angle is the maximum angle at which light can
-enter the fibre and Still undergo total internal reflection. :::
+enter the fibre and Still undergo total internal reflection.
+:::
 
 ### Worked Example 7
 
@@ -543,7 +548,8 @@ The observed frequency is lower than the source frequency.
 
 :::info Red shift occurs when a light source moves away from the observer. The observed wavelength
 Increases (shifts towards the red end of the spectrum). This is key evidence for the expansion of
-The universe. :::
+The universe.
+:::
 
 ### Worked Example 9
 
@@ -641,7 +647,8 @@ Damping reduces the amplitude of oscillations over time by dissipating energy.
 - **Over-damping:** System returns to equilibrium slowly without oscillating
 
 :::warning Warning Excessive vibrations at resonance. Car shock absorbers and building dampers are
-examples. :::
+examples.
+:::
 
 ---
 
@@ -926,7 +933,8 @@ within the DSE specification for this topic, each with a full worked solution.
 Optics with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 :::danger Danger
 
@@ -1384,3 +1392,4 @@ $$60 + D_m = 99.0^\circ \implies D_m = 39.0^\circ$$
 6. Confusing scalar and vector quantities — always check whether direction matters for the quantity
    in question.
    > > > > > > > Stashed changes:docs/docs_dse/Physics/waves-and-optics.md
+

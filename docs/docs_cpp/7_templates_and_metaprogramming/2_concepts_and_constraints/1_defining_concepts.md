@@ -148,7 +148,8 @@ Succeeds or fails.
 Ordering** (subsumption) during overload resolution, while a `constexpr bool` variable template does
 Not. Concepts are also required to be `true` for all substitutions --- a concept that is `false` for
 Some argument is well-formed, whereas a `static_assert(false)` in the concept body would be
-Ill-formed. :::
+Ill-formed.
+:::
 
 ## Requires-Expressions
 
@@ -356,7 +357,8 @@ int main() {
 Participate in subsumption ordering**. A concept `!C` does not subsume or is not subsumed by `C` ---
 They are incomparable. This means `!C` cannot be used to establish a partial ordering between
 Overloads, which limits its usefulness in overload resolution. Prefer using a positive constraint on
-An alternative overload instead of negating a constraint. :::
+An alternative overload instead of negating a constraint.
+:::
 
 ## Standard Library Concepts Overview
 
@@ -579,7 +581,8 @@ mean(3.0, 7.0) = 10.0
 Necessary) and **specific** (exclude types that would cause undefined behavior). Avoid overly broad
 Concepts like `requires(T t) { t + t; }` --- this would accept `std::string` (which supports `+` for
 Concatenation) even if the algorithm is intended for arithmetic. Use the standard library concepts
-In `<concepts>` as building blocks whenever possible. :::
+In `<concepts>` as building blocks whenever possible.
+:::
 
 ## Recursive Concept Constraints
 
@@ -911,3 +914,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

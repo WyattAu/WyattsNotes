@@ -709,7 +709,8 @@ Resistance acts).
 
 :::info The study of projectile motion with air resistance requires numerical methods or
 Differential equations. At Leaving Certificate level, you are expected to describe the effects
-Qualitatively. :::
+Qualitatively.
+:::
 
 ### Example 22: Conservation of Momentum with External Forces
 
@@ -818,3 +819,4 @@ Errors:
 25. Derive an expression for the acceleration of an object sliding down a frictionless incline of
     angle $\theta$. A block takes $4 \mathrm{ s$ to slide $8 \mathrm{ m$ from rest down a
     frictionless incline. Calculate the angle of the incline.
+

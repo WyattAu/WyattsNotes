@@ -71,7 +71,8 @@ Examples:
 - Isotones: $\prescript{14}{6}\mathrm{C}$ and $\prescript{15}{7}\mathrm{N}$ (both have $N = 8$)
 
 :::info In DSE exams, isotopes share the same chemical symbol and chemical behaviour. Only nuclear
-Reactions can distinguish between isotopes of the same element. :::
+Reactions can distinguish between isotopes of the same element.
+:::
 
 ### Nuclear Forces
 
@@ -221,7 +222,8 @@ Every nuclear decay must satisfy:
 
 :::warning Warning Equations. While DSE exams sometimes omit them for simplicity, always check
 whether the question Requires them. Also, ensure $A$ and $Z$ balance on both sides of every decay
-equation. :::
+equation.
+:::
 
 ### Worked Example: Balancing Decay Equations
 
@@ -340,7 +342,8 @@ $$t_{1/2} = \frac{\ln 2}{\lvert\mathrm{slope}\rvert}$$
 
 :::info Info Plot, remember the slope is negative: $\lvert\mathrm{slope}\rvert = \lambda$. Always
 check the axes carefully -- count rate is proportional to activity but is lower due to detector
-efficiency. :::
+efficiency.
+:::
 
 ### Relationship Between Activity and Mass
 
@@ -359,7 +362,8 @@ to the activity Because:
 
 - The detector only captures a fraction of emitted radiation (solid angle)
 - Not all radiation reaches the detector (absorption by air, source holder)
-- The detector has less than 100% efficiency :::
+- The detector has less than 100% efficiency
+:::
 
 ---
 
@@ -567,7 +571,8 @@ $$Q = [m(\prescript{2}{1}\mathrm{H}) + m(\prescript{3}{1}\mathrm{H}) - m(\prescr
 
 :::info In DSE calculations, always convert masses to the same units (preferably u) before computing
 The Q-value. Use $1 \mathrm{ u} = 931.5 \mathrm{ MeV}/c^2$ for the energy conversion. Remember that
-The Q-value is shared among all products as kinetic energy (and possibly photons). :::
+The Q-value is shared among all products as kinetic energy (and possibly photons).
+:::
 
 ---
 
@@ -681,7 +686,8 @@ Semiconductor material (e.g., silicon or germanium).
 
 :::info In DSE exams, the GM tube is the most important detector. Know its construction, operation
 Principle, dead time, and limitations. Be prepared to explain why a GM tube cannot distinguish
-Between alpha and beta radiation. :::
+Between alpha and beta radiation.
+:::
 
 ---
 
@@ -781,7 +787,8 @@ Where $\mu$ is the linear attenuation coefficient.
 :::warning Never use lead shielding for beta radiation. High-Z materials like lead produce
 Bremsstrahlung (breaking radiation) when beta particles decelerate rapidly, creating X-rays that are
 More penetrating than the original beta particles. Use aluminium or perspex for beta shielding
-Instead. :::
+Instead.
+:::
 
 ---
 
@@ -958,7 +965,8 @@ Given a decay equation, identify the missing particle. Check:
 
 :::info Info Calculations and explanations. In Paper 2, it appears as multiple-choice questions
 testing concepts, Definitions, and quick calculations. Practise balancing decay equations and
-calculating binding Energy -- these are high-frequency topics. :::
+calculating binding Energy -- these are high-frequency topics.
+:::
 
 ### Key Formulae Summary
 
@@ -1104,7 +1112,8 @@ The ancient wood is approximately $19,000$ years old.
 
 :::info Info Many half-lives correspond to this fraction. $2^n = 10$ gives
 $n = \frac{\ln 10}{\ln 2} = 3.32$ Half-lives. So $t = 3.32 \times 5730 = 19,024$ years. Both methods
-give the same result. :::
+give the same result.
+:::
 
 ### Worked Example 5: Nuclear Fission Energy
 
@@ -1300,7 +1309,8 @@ Where $m(\prescript{1}{1}\mathrm{H})$ is the atomic mass of hydrogen (proton + e
 
 :::warning Warning Atomic masses are provided. Mixing the two conventions will lead to incorrect
 results. When in Doubt, use atomic masses (the more common convention in exam questions) and note
-that the electron Masses approximately cancel. :::
+that the electron Masses approximately cancel.
+:::
 
 ### Mistake 8: Assuming All Radiation Is Equally Harmful
 
@@ -1645,7 +1655,8 @@ within the DSE specification for this topic, each with a full worked solution.
 Physics with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ---
 
@@ -2024,3 +2035,4 @@ substance.
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
 the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
 each approach.
+

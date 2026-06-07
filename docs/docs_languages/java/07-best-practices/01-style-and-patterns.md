@@ -129,7 +129,8 @@ long t;         // meaningless
 For declaring names.
 [JLS §3.8](https://docs.oracle.com/javase/specs/jls/se21/html/jls-3.html#jls-3.8) defines what
 Constitutes a valid identifier. Unicode characters are permitted, but ASCII identifiers are the de
-Facto standard. :::
+Facto standard.
+:::
 
 ## Code Organization
 
@@ -172,7 +173,8 @@ Across `controller/``service/``repository/`And `model/` -- four separate directo
 apart in the tree.
 
 :::tip Recommendation Use feature-first packaging for any project with more than two bounded
-Contexts. For small projects or libraries, layer-first packaging remains acceptable. :::
+Contexts. For small projects or libraries, layer-first packaging remains acceptable.
+:::
 
 ### Class Structure
 
@@ -283,7 +285,8 @@ tasks.test {
 :::tip Recommendation Use Gradle with the Kotlin DSL for new projects. Gradle's build cache,
 Incremental compilation, and configuration avoidance yield measurable performance improvements, and
 The Kotlin DSL provides type safety and IDE autocompletion. Use Maven when integrating with legacy
-Enterprise infrastructure that requires it, or when team familiarity makes the trade-off clear. :::
+Enterprise infrastructure that requires it, or when team familiarity makes the trade-off clear.
+:::
 
 ### Dependency Management
 
@@ -478,7 +481,8 @@ Collaborators without requiring an equality implementation that may not exist on
 :::warning Over-Mocking If a test requires more than three mocks, the unit under test likely has too
 Many responsibilities. Restructure the code rather than adding more mocks. Tests that mock
 Extensively tend to be brittle: they break when implementation details change even when the
-Externally observable behavior is correct. :::
+Externally observable behavior is correct.
+:::
 
 ## Logging
 
@@ -599,7 +603,8 @@ Instance unless `readResolve` is implemented).
 Expensive resources (connection pools, thread pools). They are inappropriate for stateful objects
 That represent business domain concepts, because a global mutable singleton is essentially a hidden
 Global variable that makes testing difficult and introduces hidden coupling between unrelated parts
-Of the codebase. :::
+Of the codebase.
+:::
 
 ### Factory
 
@@ -1348,7 +1353,8 @@ Total memory, which causes containers to be killed by the OOM killer:
 This flag touches every page in the heap at JVM startup, which forces the operating system to
 Allocate physical memory for the entire heap immediately. It eliminates page fault pauses during
 Runtime, but it delays startup and can cause the container to be killed if the memory limit is
-Tight. :::
+Tight.
+:::
 
 ## Common Pitfalls
 
@@ -1373,3 +1379,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

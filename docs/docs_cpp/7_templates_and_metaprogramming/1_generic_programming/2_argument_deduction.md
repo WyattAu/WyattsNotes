@@ -205,7 +205,8 @@ Following are **not** forwarding references:
 - `std::vector&lt;T&gt;&amp;&amp;` (T is a class template parameter, not a function template
   parameter)
 - `T&amp;&amp;` in a class template member function where T is the class template parameter
-- `const T&amp;&amp;` (the `const` prevents the forwarding reference interpretation) :::
+- `const T&amp;&amp;` (the `const` prevents the forwarding reference interpretation)
+:::
 
 ### Array-to-Pointer and Function-to-Pointer Decay
 
@@ -330,7 +331,8 @@ int main() {
 
 :::info CTAD only works when there is exactly one viable deduction. If the constructor template and
 The class template both participate in deduction and produce conflicting results, deduction fails
-[N4950 S16.3.1.7]. :::
+[N4950 S16.3.1.7].
+:::
 
 ### CTAD Rules [N4950 S16.3.1.3]
 
@@ -874,3 +876,4 @@ applying these mathematical techniques.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

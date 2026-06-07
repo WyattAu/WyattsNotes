@@ -90,7 +90,8 @@ Every device is connected to every other device (full mesh) or to multiple devic
 | Failure impact | High fault tolerance; data can route around failed connections                                             |
 
 :::warning[Exam Tip] In exam questions, always discuss both advantages AND disadvantages of each
-Topology. Star is the most common in modern LANs due to ease of management and fault isolation. :::
+Topology. Star is the most common in modern LANs due to ease of management and fault isolation.
+:::
 
 ---
 
@@ -256,7 +257,8 @@ document.getElementById('myButton').onclick = function () {
 ```
 
 :::info HTML = structure, CSS = style, JavaScript = behaviour. This three-way separation is a
-Fundamental principle of web development. :::
+Fundamental principle of web development.
+:::
 
 ---
 
@@ -379,7 +381,8 @@ To register a domain:
 
 :::warning[Exam Tip] Fibre optics is immune to electromagnetic interference (EMI), supports the
 Highest bandwidth and longest distances, but is the most expensive and difficult to install. Twisted
-Pair is the cheapest but has the lowest bandwidth and is susceptible to EMI. :::
+Pair is the cheapest but has the lowest bandwidth and is susceptible to EMI.
+:::
 
 ---
 
@@ -486,7 +489,8 @@ The OSI (Open Systems Interconnection) model has 7 layers:
 
 :::warning[Exam Tip] Memorise the OSI layers from top to bottom using mnemonics. Common one: **A**ll
 **P**eople **S**eem **T**o **N**eed **D**ata **P**rocessing (Application, Presentation, Session,
-Transport, Network, Data Link, Physical). :::
+Transport, Network, Data Link, Physical).
+:::
 
 ---
 
@@ -1036,3 +1040,4 @@ for mastery of this topic.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

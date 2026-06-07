@@ -128,7 +128,8 @@ Dramatically as data must be folded from SLC into the TLC/QLC area.
 
 :::warning QLC SSDs with full SLC caches can experience catastrophic write speed drops — from 5,000
 MB/s to under 200 MB/s. This is a fundamental limitation of QLC NAND, not a defect. Avoid QLC SSDs
-For write-heavy workloads (video editing, database, OS drive). :::
+For write-heavy workloads (video editing, database, OS drive).
+:::
 
 ### Wear Leveling
 
@@ -189,7 +190,8 @@ sudo systemctl start fstrim.timer
 ```
 
 :::warning On ZFS, do not use `fstrim`. ZFS handles discard internally and the `autotrim` pool
-Property controls TRIM behavior. :::
+Property controls TRIM behavior.
+:::
 
 ### Over-Provisioning
 
@@ -245,7 +247,8 @@ ZFS eliminates many traditional RAID problems:
 
 :::warning Never use hardware RAID with ZFS. ZFS needs direct access to individual disks to manage
 The storage pool. Hardware RAID hides the disks behind a virtual block device, which prevents ZFS
-From performing its error detection and correction. :::
+From performing its error detection and correction.
+:::
 
 ---
 
@@ -554,7 +557,8 @@ sudo nvme fw-download /dev/nvme0n1 --fw=/path/to/firmware.bin --save
 
 :::warning Firmware updates are irreversible on most drives. A failed firmware update can brick the
 Drive. Ensure the update process is not interrupted (connect the drive to a UPS, close all
-Applications accessing the drive). :::
+Applications accessing the drive).
+:::
 
 ## Deep Dive: I/O Scheduler Internals
 
@@ -885,7 +889,8 @@ hdparm -B 127 /dev/sda  # 1 (aggressive) to 255 (disabled)
 ```
 
 :::warning Frequent HDD spin-up/spin-down cycles increase wear. Set standby timeout to a reasonable
-Value (15–30 minutes) rather than a short interval. :::
+Value (15–30 minutes) rather than a short interval.
+:::
 
 :::
 
@@ -917,3 +922,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

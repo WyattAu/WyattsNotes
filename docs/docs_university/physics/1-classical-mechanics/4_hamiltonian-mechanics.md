@@ -263,3 +263,4 @@ $\det(\partial^2 L / \partial \dot{q}_i \partial \dot{q}_j) = 0$The system Has *
 the Hamiltonian formulation requires special treatment (Dirac brackets or Constraint analysis).
 :::
 
+

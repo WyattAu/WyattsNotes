@@ -87,7 +87,8 @@ void process_file(const char* path) {
 ```
 
 :::info Relevance RAII is why C++ programs do not need `try`/`finally` blocks. The destructor **is**
-The `finally`. This is the mechanism that enables exception-safe code without manual cleanup. :::
+The `finally`. This is the mechanism that enables exception-safe code without manual cleanup.
+:::
 
 ## 1.3 MutexLock Example
 
@@ -112,7 +113,8 @@ void thread_safe_operation(std::mutex& mtx) {
 ```
 
 :::tip In production code, prefer `std::lock_guard` or `std::scoped_lock` (C++17) over a hand-rolled
-MutexLock. They are the standard library's RAII wrappers for mutexes. :::
+MutexLock. They are the standard library's RAII wrappers for mutexes.
+:::
 
 ## 1.4 Standard Library RAII Wrappers
 
@@ -258,7 +260,8 @@ private:
 
 :::info The move constructor and move assignment operator transfer ownership of the file descriptor.
 The moved-from `Socket` has `fd_ == -1`So its destructor is a no-op. This is the standard pattern
-For move-only RAII types that wrap non-copyable OS resources [N4950 §11.4.7]. :::
+For move-only RAII types that wrap non-copyable OS resources [N4950 §11.4.7].
+:::
 
 ## 1.6 Database Connection Wrapper
 
@@ -421,7 +424,8 @@ For non-memory resources (files, sockets, locks). In C++, RAII handles all of th
 :::info The C++ destructor model is what makes RAII possible. Objects with automatic storage
 Duration are destroyed in reverse order of construction when the scope exits, whether by normal flow
 Of control or by exception propagation [N4950 §6.7.2]. This is a language guarantee, not a
-Convention. :::
+Convention.
+:::
 
 ## 1.10 RAII Rule of Thumb
 
@@ -552,3 +556,4 @@ for mastery of this topic.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

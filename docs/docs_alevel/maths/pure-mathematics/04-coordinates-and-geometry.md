@@ -340,7 +340,8 @@ $$d = \frac◆LB◆|3(5) + 4(-2) - 10|◆RB◆◆LB◆\sqrt{9 + 16}◆RB◆ = \f
 </details>
 
 :::info The absolute value in the numerator ensures the distance is always non-negative. The sign of
-$ax_0 + by_0 + c$ tells you which side of the line the point lies on. :::
+$ax_0 + by_0 + c$ tells you which side of the line the point lies on.
+:::
 
 <hr />
 
@@ -415,7 +416,8 @@ Subtracting the first equation from the second and third eliminates $F$Yielding 
 System in $D$ and $E$. Solve for $D$ and $E$Then substitute back to find $F$.
 
 :::warning Warning Three collinear points). You can check collinearity by verifying that the
-gradient between the first Two points equals the gradient between the second two. :::
+gradient between the first Two points equals the gradient between the second two.
+:::
 
 <details>
 <summary>Worked example</summary>
@@ -934,7 +936,8 @@ questions within the A-Level specification for this topic, each with a full work
 and Geometry with other pure mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -960,3 +963,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

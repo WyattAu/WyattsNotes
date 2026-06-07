@@ -119,7 +119,8 @@ namespace std {
 :::danger Linker Errors If library `A.a` is compiled with `_GLIBCXX_USE_CXX11_ABI=0` and application
 `B.exe` is compiled with `_GLIBCXX_USE_CXX11_ABI=1`The linker will fail with "Undefined Reference To
 `std::string`" because the application is looking for `std::__cxx11::string`But the library Provides
-`std::string`. :::
+`std::string`.
+:::
 
 ### The `std::list` ABI Change
 
@@ -772,3 +773,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

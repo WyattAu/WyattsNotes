@@ -366,7 +366,8 @@ are correct, because NRVO may not apply.
 :::warning NRVO can be inhibited by multiple return paths returning different named variables, by
 Returning a function parameter, or by certain compiler flags. Always write code that is correct even
 If NRVO fails — which means ensuring your move constructor is correct (or your copy constructor, as
-A fallback). :::
+A fallback).
+:::
 
 ## See Also
 
@@ -443,7 +444,8 @@ Extension**.
 
 :::warning Lifetime extension applies only when the reference is directly bound to the prvalue. If
 The prvalue is passed through an intermediate function or stored in a member, lifetime extension
-Does **not** propagate. :::
+Does **not** propagate.
+:::
 
 ```cpp
 #include <iostream>
@@ -787,3 +789,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

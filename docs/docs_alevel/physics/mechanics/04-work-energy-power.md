@@ -182,7 +182,8 @@ Friction to act over a distance proportional to $v^2$.
 
 :::warning Warning Never lost -- it is transferred from mechanical to thermal (internal) energy. The
 total energy of The closed system is always conserved. Only **mechanical** energy ($E_k + E_p$)
-decreases. :::
+decreases.
+:::
 
 <details>
 <summary>Example: Braking distance comparison</summary>
@@ -237,7 +238,8 @@ Needing to know the distance or time separately.
 :::tip Exam Technique When asked for "the power developed by the engine" as a car accelerates,
 Specify whether you mean instantaneous power ($P = Fv$) or average power ($P = Fs/t$). The
 Instantaneous power at the end of the acceleration is $Fv_{\mathrm{final}}$While the average power
-Over the whole acceleration is $F(u+v)/2$. :::
+Over the whole acceleration is $F(u+v)/2$.
+:::
 
 **Definition.** The **efficiency** of an energy transfer is:
 
@@ -601,7 +603,8 @@ questions within the A-Level specification for this topic, each with a full work
 Energy and Power with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 :::danger Common Pitfalls
 
@@ -650,3 +653,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

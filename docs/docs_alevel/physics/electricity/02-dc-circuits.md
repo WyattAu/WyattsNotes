@@ -59,7 +59,8 @@ $\square$
 
 :::tip Exam Technique When applying Kirchhoff's second law, choose a direction around the loop and
 Stick to it. E.m.f.s are positive if they drive current in your chosen direction; p.d.s are positive
-If current flows through the resistor in your chosen direction. :::
+If current flows through the resistor in your chosen direction.
+:::
 
 ## 2. Series and Parallel Resistors
 
@@ -137,7 +138,8 @@ $$V_{\mathrm{out}} = V_{\mathrm{in}} \cdot \frac◆LB◆R_{\mathrm{sensor}}◆RB
 
 :::warning Common Pitfall A potential divider circuit loaded by connecting a component across $R_2$
 Changes the effective resistance. The simple divider formula no longer applies — you must
-Recalculate the parallel combination of $R_2$ and the load. :::
+Recalculate the parallel combination of $R_2$ and the load.
+:::
 
 ## 4. Internal Resistance
 
@@ -287,7 +289,8 @@ balance.
 </details>
 
 :::warning Warning Current is exactly zero. If the bridge is unbalanced, you must use Kirchhoff's
-laws (or Thevenin Analysis) to find the galvanometer current. :::
+laws (or Thevenin Analysis) to find the galvanometer current.
+:::
 
 ## 7. Norton's Theorem
 
@@ -321,7 +324,8 @@ And $R_N = R_{\mathrm{Th}}$. $\square$
 
 :::tip Exam Technique Source transformations are useful for simplifying circuits step by step.
 Convert a voltage source with series resistance to a Norton equivalent, combine parallel current
-Sources, then convert back. :::
+Sources, then convert back.
+:::
 
 ## 8. Multi-Loop Circuit Analysis
 
@@ -430,7 +434,8 @@ Note the very small shunt resistance — most current bypasses the galvanometer.
 </details>
 
 :::warning Warning The circuit it is measuring. Always ensure $R_V \gg R_{\mathrm{circuit}}$ (rule
-of thumb: $R_V \gt 10 \times R_{\mathrm{circuit}}$ for less than 10% loading error). :::
+of thumb: $R_V \gt 10 \times R_{\mathrm{circuit}}$ for less than 10% loading error).
+:::
 
 ## Problem Set
 
@@ -750,7 +755,8 @@ within the A-Level specification for this topic, each with a full worked solutio
 with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 :::danger Danger
 
@@ -800,3 +806,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

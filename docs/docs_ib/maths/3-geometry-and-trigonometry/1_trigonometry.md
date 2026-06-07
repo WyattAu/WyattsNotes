@@ -161,7 +161,8 @@ For $y = a\sin(bx + c) + d$:
 - $d$ = vertical shift
 
 :::tip Exam Tip When sketching trig graphs, always label axis intercepts, maximum/minimum points,
-And show at least one full period . :::
+And show at least one full period .
+:::
 
 <!-- prettier-ignore -->
 <DesmosGraph title="Trigonometric Functions: y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D", "A\tan(Bx+C)+D"]} width={800} height={500} />
@@ -344,7 +345,8 @@ $$
 
 :::tip Exam Tip Be careful with the range of inverse trig functions. Your calculator only gives the
 Principal value -- you may need to find other solutions using the periodic properties or the ASTC
-Rule. :::
+Rule.
+:::
 
 ## Sine and Cosine Rules
 
@@ -946,7 +948,8 @@ within the IB specification for this topic, each with a full worked solution.
 Trigonometry with other IB mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
-and building a personal test matrix. :::
+and building a personal test matrix.
+:::
 
 ## Summary
 
@@ -976,3 +979,4 @@ applying these mathematical techniques.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

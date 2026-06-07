@@ -264,3 +264,4 @@ Both are in 4NF (the determining attribute `Course` is a candidate key in each).
 
 </details>
 
+

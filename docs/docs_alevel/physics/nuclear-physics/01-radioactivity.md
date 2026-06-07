@@ -99,9 +99,11 @@ No change in $A$ or $Z$. Gamma rays are weakly ionising but highly penetrating (
 Lead or concrete).
 
 :::warning Common Pitfall In $\beta^-$ decay, the mass number $A$ does not change — only the atomic
-Number changes. A neutron becomes a proton, so the total nucleon count is unchanged. :::
+Number changes. A neutron becomes a proton, so the total nucleon count is unchanged.
+:::
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4 :::
+:::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 | CIE P4
+:::
 
 | Requirement                  | AQA         | Edexcel     | OCR (A)     | CIE      |
 | ---------------------------- | ----------- | ----------- | ----------- | -------- |
@@ -176,7 +178,8 @@ $N = N_0/2^n$. The decay is exponential — the activity is always proportional 
 Remaining nuclei, so it decreases exponentially.
 
 :::tip Tip Straight line with gradient $=-\lambda$. The half-life can be found by finding the time
-for the Activity to halve at any point on the curve. :::
+for the Activity to halve at any point on the curve.
+:::
 
 ### Radiation Detection
 
@@ -213,7 +216,8 @@ Sources of background radiation include:
 
 :::warning Warning Because: (1) the detector only intercepts a fraction of emitted radiation (solid
 angle factor), and (2) not all radiation that enters the tube produces a count (detection efficiency
-is 1-2% For gamma rays). Never assume count rate equals activity. :::
+is 1-2% For gamma rays). Never assume count rate equals activity.
+:::
 
 #### Scintillation Detector
 
@@ -242,7 +246,8 @@ The gradient of the straight line gives $-\lambda$And then $t_{1/2} = \ln 2 / \l
 
 :::tip Exam Technique When describing an experimental method for determining half-life, always
 Mention: (1) measuring background count rate first, (2) subtracting it from all readings, (3) taking
-Readings at regular intervals, and (4) using a log-linear graph for greater accuracy. :::
+Readings at regular intervals, and (4) using a log-linear graph for greater accuracy.
+:::
 
 #### Practical Considerations
 
@@ -254,7 +259,8 @@ Readings at regular intervals, and (4) using a log-linear graph for greater accu
 
 :::info Board Coverage AQA requires the graphical method; Edexcel and OCR (A) additionally require
 Discussion of uncertainties and the effect of dead time on accuracy; CIE requires the logarithmic
-Method. :::
+Method.
+:::
 
 ## Problem Set
 
@@ -435,7 +441,8 @@ By the essentially constant uranium in the ground beneath.
 
 :::warning Warning Only when the parent is much longer-lived than all daughters. If a short-lived
 daughter precedes a Long-lived daughter, the long-lived daughter accumulates and can become the
-dominant radiological Hazard. :::
+dominant radiological Hazard.
+:::
 
 ## 5. Applications of Radioactivity
 
@@ -482,7 +489,8 @@ Activity to fall to half its initial value, combining both physical decay and bi
 $$\frac◆LB◆1◆RB◆◆LB◆t_{\mathrm{eff}}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆t_{\mathrm{physical}}◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆t_{\mathrm{biological}}◆RB◆$$
 
 :::info Board Coverage The effective half-life is required by Edexcel and OCR (A) but is not
-Explicitly tested by AQA or CIE at A Level. :::
+Explicitly tested by AQA or CIE at A Level.
+:::
 
 ## 6. Case Studies
 
@@ -523,7 +531,8 @@ Timelines and informing public health responses.
 :::tip Exam Application When asked to evaluate the risks from a nuclear incident, consider: (1)
 Which isotopes were released, (2) their half-lives, (3) how they enter the body (inhalation,
 Ingestion, external exposure), and (4) the type of radiation emitted (alpha is most dangerous
-Internally, gamma externally). :::
+Internally, gamma externally).
+:::
 
 ## Additional Problems
 
@@ -628,7 +637,8 @@ questions within the A-Level specification for this topic, each with a full work
 Radioactivity with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 :::danger Common Pitfalls
 
@@ -682,3 +692,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

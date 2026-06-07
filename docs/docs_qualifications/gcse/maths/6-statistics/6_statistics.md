@@ -15,7 +15,8 @@ slug: 6-statistics
 ## Statistics
 
 :::info Board Coverage AQA Paper 2 | Edexcel Paper 2 | OCR Paper 3 (Higher) / Paper 6 (Foundation) |
-WJEC Unit 2 :::
+WJEC Unit 2
+:::
 
 ## 1. Data Collection
 
@@ -286,7 +287,8 @@ It should pass through the mean point $(\bar{x}, \bar{y})$ and have roughly equa
 On each side.
 
 :::warning Correlation does not imply causation. Two variables may be correlated due to a third
-Factor, or by coincidence. :::
+Factor, or by coincidence.
+:::
 
 ### 4.5 Interpolation and Extrapolation
 
@@ -614,7 +616,8 @@ Roughly equal numbers of points on each side. It can be used to make predictions
 - **Extrapolation:** Predicting outside the range of the data (unreliable).
 
 :::warning Never extrapolate far beyond the data range. The relationship may not hold outside the
-Observed values. :::
+Observed values.
+:::
 
 ### 9.7 Frequency Polygons
 
@@ -748,3 +751,4 @@ theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+

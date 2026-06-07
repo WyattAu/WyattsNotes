@@ -54,7 +54,8 @@ A mass spectrometer separates ions based on their mass-to-charge ratio ($m/z$). 
 4. **Detection:** Ions hit a detector, producing a signal proportional to abundance
 
 :::info In a mass spectrum, the x-axis is the mass-to-charge ratio ($m/z$) and the y-axis is the
-Relative abundance. For singly charged ions, $m/z$ equals the relative isotopic mass. :::
+Relative abundance. For singly charged ions, $m/z$ equals the relative isotopic mass.
+:::
 
 ---
 
@@ -78,7 +79,8 @@ Electrons fill orbitals in order of increasing energy:
 $$1s \lt 2s \lt 2p \lt 3s \lt 3p \lt 4s \lt 3d \lt 4p \lt 5s \lt 4d \lt 5p \lt 6s \lt 4f \lt 5d \lt 6p$$
 
 :::warning Warning Cations. This is because the $4s$ orbital is at a higher energy than $3d$ once
-electrons are in the $3d$ subshell. :::
+electrons are in the $3d$ subshell.
+:::
 
 ### Pauli Exclusion Principle
 
@@ -107,7 +109,8 @@ For transition metals, use the noble gas core notation:
   stable)
 
 :::tip Tip (not $4s^2\, 3d^9$). These arise because half-filled and fully-filled $d$ subshells have
-extra Stability. :::
+extra Stability.
+:::
 
 ---
 
@@ -282,7 +285,8 @@ Possible.
 | 6 bonding pairs   | Octahedral           | $90^\circ$            | $\mathrm{SF}_6$                  |
 
 :::info Lone pairs exert a greater repulsive effect than bonding pairs because they are closer to
-The nucleus. This reduces bond angles from the ideal values. :::
+The nucleus. This reduces bond angles from the ideal values.
+:::
 
 ### Worked Example 5
 
@@ -564,7 +568,8 @@ Bonds formed:
 $$\Delta H = (1652 + 996) - (1490 + 1852) = 2648 - 3342 = -694 \mathrm{ kJ/mol}$$
 
 :::warning Warning Formation data instead. Bond enthalpy calculations are less accurate for
-reactions involving liquids Or solids because they only account for gaseous state bonds. :::
+reactions involving liquids Or solids because they only account for gaseous state bonds.
+:::
 
 ---
 
@@ -869,7 +874,8 @@ $$\mathrm{Bond order} = \frac{1}{2}(\mathrm{bonding electrons} - \mathrm{antibon
 - Bond order = 0: no bond (molecule does not exist, e.g., $\mathrm{He}_2$)
 
 :::info Molecular orbital theory explains why $\mathrm{O}_2$ is paramagnetic (has unpaired electrons
-In antibonding orbitals), which cannot be explained by simple Lewis structures. :::
+In antibonding orbitals), which cannot be explained by simple Lewis structures.
+:::
 
 :::danger Common Pitfalls
 
@@ -1363,3 +1369,4 @@ These factors combine to give helium the highest first ionisation energy of all 
 
 4. Confusing enthalpy of formation with enthalpy of combustion, or using the wrong sign convention.
    > > > > > > > Stashed changes:docs/docs_dse/Chemistry/atomic-structure-and-bonding.md
+

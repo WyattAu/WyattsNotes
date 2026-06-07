@@ -16,7 +16,8 @@ Calculus.
 
 :::info Hyperbolic functions are analogues of trigonometric functions defined using exponentials
 Rather than circles. They arise in many areas including differential equations, special Relativity,
-and catenary curves. :::
+and catenary curves.
+:::
 
 <hr />
 
@@ -301,7 +302,8 @@ $$= 2\operatorname{arsinh}\!\left(\frac{x}{2}\right) + \frac◆LB◆x\sqrt{x^2 +
 :::warning Common Pitfall The substitution $x = a\sinh u$ is a powerful technique for integrals
 Involving $\sqrt{x^2 + a^2}$. Similarly, $x = a\cosh u$ handles $\sqrt{x^2 - a^2}$ and
 $x = a\tanh u$ handles expressions with $a^2 - x^2$. The choice of substitution mirrors the
-Trigonometric substitutions but is often simpler algebraically. :::
+Trigonometric substitutions but is often simpler algebraically.
+:::
 
 <hr />
 
@@ -422,7 +424,8 @@ Integrating again: $y = a\cosh\!\left(\dfrac{x}{a}\right) + C$. $\blacksquare$
    the positive root $\cosh x = +\sqrt{k}$ since $\cosh x \geq 1 > 0$ for all real $x$.
 4. **Integration: artanh vs ln:** When $|x| > a$ in $\displaystyle\int \frac{dx}{a^2 - x^2}$The
    result involves $\operatorname{arcoth}$ (or an alternative logarithmic form), not
-   $\operatorname{artanh}$. Check the domain of the integrand carefully. :::
+   $\operatorname{artanh}$. Check the domain of the integrand carefully.
+:::
 
 ---
 
@@ -822,7 +825,8 @@ So $\ln 3 - \ln 2 = \operatorname{artanh}(1/5)$.
    (no absolute value needed) since $\cosh x \geq 1 > 0$ for all real $x$.
 4. **Differential equation solutions:** The equation $y'' - y = 0$ has solutions in both exponential
    and hyperbolic forms. When boundary conditions involve $y(0)$ and $y'(0)$The hyperbolic form
-   $y = A\cosh x + B\sinh x$ is often more convenient since $\cosh 0 = 1$ and $\sinh 0 = 0$. :::
+   $y = A\cosh x + B\sinh x$ is often more convenient since $\cosh 0 = 1$ and $\sinh 0 = 0$.
+:::
 
 ---
 
@@ -1102,3 +1106,4 @@ $\sinh 2t = 2\cdot\dfrac{4}{3}\cdot\dfrac{5}{3} = \dfrac{40}{9}$.
 $= \frac{9}{2}\!\left(\operatorname{arsinh}\!\frac{4}{3} + \frac{20}{9}\right) = \boxed{\frac{9}{2}\operatorname{arsinh}\!\frac{4}{3} + 10}$.
 
 </details>
+

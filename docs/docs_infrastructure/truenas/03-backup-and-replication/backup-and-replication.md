@@ -551,7 +551,8 @@ Store encryption keys in a secure, offsite location:
 3. **Key escrow service:** Some password managers offer key escrow for trusted contacts.
 
 :::danger If you lose the encryption key, all data on the encrypted dataset is permanently
-Irrecoverable. There is no backdoor. Always have a verified backup of the key. :::
+Irrecoverable. There is no backdoor. Always have a verified backup of the key.
+:::
 
 ## Backup Monitoring and Alerting
 
@@ -987,7 +988,8 @@ midclt call cloudsync.update 1 '{
 
 :::warning If you lose the encryption key, all cloud backups become permanently unrecoverable. Store
 Encryption keys in multiple secure locations: a password manager, a hardware security key, and a
-Printed copy in a physical safe. Never store encryption keys alongside the backups themselves. :::
+Printed copy in a physical safe. Never store encryption keys alongside the backups themselves.
+:::
 
 ### Compliance Considerations
 
@@ -1073,3 +1075,4 @@ for mastery of this topic.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

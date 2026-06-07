@@ -110,3 +110,4 @@ and NoSQL depends on the Workload, not on a blanket preference. Relational datab
 choice for strongly Structured data with complex queries and transactional requirements.
 :::
 
+

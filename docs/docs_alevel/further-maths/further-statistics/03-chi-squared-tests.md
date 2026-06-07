@@ -30,7 +30,8 @@ Deviates significantly from expected values. It has two main applications: testi
 
 :::info The chi-squared test statistic is always based on observed and expected frequencies, never
 On percentages or proportions. Always check the conditions (expected frequency $\geq 5$) before
-Applying the test. The formula booklet provides the chi-squared distribution table. :::
+Applying the test. The formula booklet provides the chi-squared distribution table.
+:::
 
 <hr />
 
@@ -240,7 +241,8 @@ There is strong evidence that age group and preferred news source are not indepe
 7. Conclude in context
 
 :::warning Never use percentages or proportions in the chi-squared test — always use raw
-Frequencies. The test relies on the multinomial distribution, which requires count data. :::
+Frequencies. The test relies on the multinomial distribution, which requires count data.
+:::
 
 <hr />
 
@@ -1361,3 +1363,4 @@ $2.9 < 11.07$So we **do not reject** $H_0$. There is insufficient evidence to su
 Unfair.
 
 </details>
+

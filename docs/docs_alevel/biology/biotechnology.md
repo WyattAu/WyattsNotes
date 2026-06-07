@@ -375,7 +375,8 @@ Concentration $= \frac{0.40}{1.0} \times 50 = 20\ \mu\mathrm{g\ mL^{-1}}$.
 :::warning Common Pitfall Students often confuse Southern, Northern, and Western blotting. Southern
 = DNA, Northern = RNA, Western = protein. The mnemonic "SNOW Drop" (Southern, Northern, Western --
 DNA, RNA, protein) may help. Students also frequently forget that PCR does not require living
-organisms or bacterial cells -- it is an entirely in vitro technique. :::
+organisms or bacterial cells -- it is an entirely in vitro technique.
+:::
 
 ## Practice Problems
 
@@ -841,7 +842,8 @@ selectively stimulate the growth and activity of beneficial gut bacteria.
 (which add beneficial bacteria). Antibiotics can disrupt the microbiome and cause side effects
 (diarrhoea, thrush). Probiotics may help restore the microbiome after antibiotic treatment, but they
 should not be taken simultaneously with antibiotics (the antibiotic would kill the probiotic
-bacteria). :::
+bacteria).
+:::
 
 ## 17. Genetically Modified Organisms: Case Studies
 
@@ -1066,7 +1068,8 @@ Applications:
 "metabolome" interchangeably. Remember the hierarchy: the genome is the set of all genes (DNA); the
 transcriptome is the set of all mRNA molecules produced; the proteome is the set of all proteins;
 the metabolome is the set of all small molecule metabolites. Each level is more dynamic and complex
-than the one above it. :::
+than the one above it.
+:::
 
 ## 26. Industrial Biotechnology: Case Studies
 
@@ -2308,3 +2311,4 @@ vitamin A) in the endosperm of the rice grain. It was developed to address vitam
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
 the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
 each approach.
+

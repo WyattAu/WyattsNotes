@@ -127,14 +127,16 @@ Longer wavelengths.
 
 :::warning Common Pitfall Electromagnetic waves are transverse but do not require a medium — they
 Propagate through vacuum via oscillating electric and magnetic fields. Sound waves are longitudinal
-And require a medium. :::
+And require a medium.
+:::
 
 :::tip Exam Technique When asked to sketch a longitudinal wave, draw a series of vertical lines
 Representing air molecules. Show compressions (closely spaced) and rarefactions (widely spaced).
 Label both.
 
 Alternatively, plot displacement vs position — the graph looks sinusoidal, but positive displacement
-Means particles moved to the right (in the direction of propagation), not upward. :::
+Means particles moved to the right (in the direction of propagation), not upward.
+:::
 
 ## 3. Polarisation
 
@@ -173,7 +175,8 @@ incidence:
 $$\tan\theta_B = n_2/n_1$$
 
 :::info Board Note AQA and OCR (A) require Malus's law. CIE focuses on polarisation by filters.
-Edexcel covers qualitative polarisation. :::
+Edexcel covers qualitative polarisation.
+:::
 
 ### Polarisation in Real Life
 
@@ -215,7 +218,8 @@ Electron transitions), X-rays (electron deceleration), gamma rays (nuclear trans
 
 :::tip Exam Technique Memorise the order: **R**adio, **M**icrowave, **I**nfrared, **V**isible,
 **U**ltraviolet, **X**-ray, **G**amma. Mnemonic: "**R**eal **M**en **I**n **V**ietnam **U**se
-**X**-ray **G**uns." :::
+**X**-ray **G**uns."
+:::
 
 ## 5. Intensity and Amplitude
 
@@ -325,7 +329,8 @@ $$\Delta\phi = \frac◆LB◆2\pi◆RB◆◆LB◆\lambda◆RB◆\Delta x$$
 
 :::tip Exam Technique Phase difference questions often require you to identify two points on a wave
 Graph and calculate $\Delta x$. Then use $\Delta\phi = 360° \times \Delta x / \lambda$ (using
-Degrees) or $\Delta\phi = 2\pi \Delta x / \lambda$ (using radians). Be consistent with units. :::
+Degrees) or $\Delta\phi = 2\pi \Delta x / \lambda$ (using radians). Be consistent with units.
+:::
 
 ### Phase Difference from Wave Equations
 
@@ -351,7 +356,8 @@ $t_1$ and $t_2$ is:
 
 $$\Delta\phi = \frac◆LB◆\Delta t◆RB◆◆LB◆T◆RB◆ \times 360° = \frac◆LB◆\Delta t◆RB◆◆LB◆T◆RB◆ \times 2\pi \mathrm{ rad}$$
 
-:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2 :::
+:::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
+:::
 
 AQA and OCR (A) frequently test phase difference from displacement--position graphs. CIE often
 Combines phase difference with path difference in interference questions. Edexcel emphasises the
@@ -621,7 +627,8 @@ questions within the A-Level specification for this topic, each with a full work
 Properties with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 :::danger Common Pitfalls
 
@@ -672,3 +679,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

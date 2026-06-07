@@ -266,7 +266,8 @@ Total size: 12 bytes (not 7).
   emphasise static vs dynamic distinction
 - **OCR (A)** requires understanding of arrays, records, and file operations (sequential and random
   access files)
-- **Edexcel** covers arrays and records with pseudocode implementations :::
+- **Edexcel** covers arrays and records with pseudocode implementations
+:::
 
 <hr />
 
@@ -280,7 +281,8 @@ Overflow** vulnerability.
 
 :::warning Pitfall In C and C++, array access is **not** bounds-checked by default. Accessing
 `A[-1]` or `A[n]` compiles but causes undefined behaviour. Python, Java, and C# perform automatic
-Bounds checking. :::
+Bounds checking.
+:::
 
 <hr />
 
@@ -782,3 +784,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

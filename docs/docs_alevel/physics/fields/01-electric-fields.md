@@ -157,7 +157,8 @@ Formula $E = V/d$ for the uniform field region.
 :::info Board Coverage AQA: Gauss's law is not formally required but the uniform field result for
 Parallel plates is given. Edexcel: Only the uniform field result $E = V/d$ is required. OCR (A):
 Gauss's law may appear as extension material in Module 6. CIE: The infinite plane result is not in
-The syllabus but is useful for understanding parallel plates. :::
+The syllabus but is useful for understanding parallel plates.
+:::
 
 ## 3. Electric Potential
 
@@ -228,7 +229,8 @@ As useful work when the system returns to its equilibrium state.
 
 :::info Info Topic 11 (capacitor energy and charging/discharging graphs). OCR (A): Required in
 6.3.2, including Deriving energy from the area under a $V$--$Q$ graph. CIE: Required in P3 (Chapter
-22), including The three equivalent forms. :::
+22), including The three equivalent forms.
+:::
 
 ## 4. Relationship Between $E$ and $V$: $E = -dV/dr$
 
@@ -329,7 +331,8 @@ Repulsion.
 :::info Board Coverage AQA: Van de Graaff generators are a specified practical context (required
 Practical 10). Edexcel: Mentioned in CP3 and CP6 as an example of charge accumulation and high
 Potential. OCR (A): Can appear in Paper 2 as a context question. CIE: Not explicitly named but the
-Underlying physics (field of a sphere, potential, discharge) is examined in P4. :::
+Underlying physics (field of a sphere, potential, discharge) is examined in P4.
+:::
 
 ### Inkjet Printers
 
@@ -377,7 +380,8 @@ Equation relates collection efficiency $\eta$ to plate area, gas flow rate, and 
 :::info Board Coverage AQA: Electrostatic precipitators appear as an application of electric fields
 In Paper 2. Edexcel: Listed as an application in CP3. OCR (A): May appear as an unseen context
 Question in Paper 2 requiring application of field and force principles. CIE: Industrial
-Applications of electric fields are examinable in P4. :::
+Applications of electric fields are examinable in P4.
+:::
 
 ## Problem Set
 
@@ -718,7 +722,8 @@ questions within the A-Level specification for this topic, each with a full work
 Fields with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 :::danger Common Pitfalls
 
@@ -772,3 +777,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

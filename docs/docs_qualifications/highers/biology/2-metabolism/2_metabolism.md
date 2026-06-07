@@ -714,3 +714,4 @@ Is exploited in brewing (beer) and baking (bread -- $\mathrm{CO_2$ causes the do
   chain; anaerobic respiration uses organic molecules as the final electron acceptor.
 - Aerobic respiration occurs in the mitochondria (in eukaryotes); anaerobic respiration occurs in
   the cytoplasm.
+

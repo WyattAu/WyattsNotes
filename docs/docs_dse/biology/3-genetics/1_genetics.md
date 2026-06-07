@@ -60,7 +60,8 @@ Dominant; the allele that is masked is recessive.
 :::info Mendel's laws are idealisations that assume: (a) genes are on different chromosomes, (b)
 Complete dominance, (c) no gene interaction, and (d) no linkage. Real organisms frequently violate
 One or more of these assumptions. The DSE syllabus expects you to recognise when Mendelian ratios do
-Not hold and to explain why. :::
+Not hold and to explain why.
+:::
 
 ### Monohybrid Crosses
 
@@ -246,7 +247,8 @@ Three alleles exist at the I locus:
 
 :::warning A common error is writing "three alleles" when the question asks about an individual's
 Genotype. An individual always carries exactly two alleles. The phrase "multiple alleles" refers to
-The gene pool of the entire population, not to a single organism. :::
+The gene pool of the entire population, not to a single organism.
+:::
 
 **Worked calculation:**
 
@@ -408,7 +410,8 @@ When constructing genetic diagrams for DSE examinations, follow these convention
 
 :::info Info Standard Mendelian ratios. Use a Punnett square when the genes are linked or when you
 need to show All individual genotypes. For X-linked crosses, always use a Punnett square since the
-gamete Combinations differ between males and females. :::
+gamete Combinations differ between males and females.
+:::
 
 ---
 
@@ -1229,7 +1232,8 @@ sequence itself.
 factors (diet, stress, toxins). This has important implications for understanding how environmental
 exposures affect gene expression and disease risk across generations. However, epigenetic changes
 should NOT be confused with Lamarckian inheritance of acquired characteristics -- the DNA sequence
-itself is unchanged. :::
+itself is unchanged.
+:::
 
 ---
 
@@ -1610,3 +1614,4 @@ and evaluate experimental evidence critically.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

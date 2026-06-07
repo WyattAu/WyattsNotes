@@ -45,7 +45,8 @@ Mismatch between the format specification and the argument type is a compile-tim
 :::info The format string is a **constant expression** --- it must be known at compile time. This
 Enables the compiler to parse it and verify that every `{}` field has a corresponding argument of
 The correct type. Runtime-computed format strings are not supported by `std::format` (use
-`std::vformat` for runtime format strings, at the cost of losing compile-time checking). :::
+`std::vformat` for runtime format strings, at the cost of losing compile-time checking).
+:::
 
 ### Format Specification Syntax
 
@@ -158,7 +159,8 @@ void width_precision_demo() {
 
 :::warning Dynamic width and precision use the next argument in the argument list. Mixing manual
 Argument IDs with dynamic width/precision can lead to confusing index errors. When using dynamic
-Width/precision, keep the argument ordering simple. :::
+Width/precision, keep the argument ordering simple.
+:::
 
 #### Type Specifiers
 
@@ -294,11 +296,13 @@ int main() {
 Stream, bypassing `std::cout` and its stream buffer. This makes it faster for simple console output
 But means it does not synchronize with `std::cout` by default. Avoid mixing
 `std::print(stdout, ...)` and `std::cout` in the same program without calling
-`std::ios_base::sync_with_stdio(true)` first. :::
+`std::ios_base::sync_with_stdio(true)` first.
+:::
 
 :::warning `std::print` to stdout does **not** lock the stdout mutex by default. Concurrent calls to
 `std::print` from multiple threads can produce interleaved output. Use `std::print(stderr, ...)` for
-Error messages (stderr is unbuffered) or protect stdout with a mutex. :::
+Error messages (stderr is unbuffered) or protect stdout with a mutex.
+:::
 
 ### Custom Type Formatter
 
@@ -438,12 +442,14 @@ int main() {
 :::tip Inheriting from `std::formatter&lt;std::string>` (or any standard formatter) gives you access
 To the standard format specification parsing logic. If your custom type needs to support the full
 Standard specification set (width, fill, alignment), parse the standard spec first with the base
-Class's `parse()`Then check for your custom specifiers. :::
+Class's `parse()`Then check for your custom specifiers.
+:::
 
 :::warning The specialization of `std::formatter` must be in namespace `std` for `std::format` to
 Find it. However, adding declarations to namespace `std` is technically undefined behavior unless it
 Is a **template specialization** of a standard library template [N4950 §16.5.4.2.1]. Specializing
-`std::formatter` is explicitly permitted. :::
+`std::formatter` is explicitly permitted.
+:::
 
 ### Runtime Format Strings with `std::vformat`
 
@@ -725,3 +731,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

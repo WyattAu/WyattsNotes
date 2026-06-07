@@ -916,7 +916,8 @@ within the IB specification for this topic, each with a full worked solution.
 Algebra with other IB mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
-and building a personal test matrix. :::
+and building a personal test matrix.
+:::
 
 ## Summary
 
@@ -938,3 +939,4 @@ applying these mathematical techniques.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

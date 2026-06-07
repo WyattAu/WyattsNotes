@@ -135,7 +135,8 @@ phosphorylation.
 :::warning Common Pitfall Students often state that glycolysis produces "2 ATP." Glycolysis produces
 4 ATP but uses 2 ATP, giving a net yield of 2 ATP. In examination answers, it is important to
 specify the net yield. Also, glycolysis produces 2 molecules of pyruvate, 2 NADH, and 2
-$\mathrm{H_2O}$ (not just ATP). :::
+$\mathrm{H_2O}$ (not just ATP).
+:::
 
 ## 3. The Link Reaction
 
@@ -243,7 +244,8 @@ $$\mathrm{Malate + NAD^+ \to oxaloacetate + NADH + H^+}$$
 cycle produces 2 GTP (or ATP equivalents) per glucose via substrate-level phosphorylation, plus
 large quantities of NADH and $\mathrm{FADH_2}$ that feed into oxidative phosphorylation. The
 majority of ATP from aerobic respiration comes from oxidative phosphorylation, not from the Krebs
-cycle. :::
+cycle.
+:::
 
 ## 5. Oxidative Phosphorylation
 
@@ -353,7 +355,8 @@ This is why cells must switch to anaerobic respiration in the absence of oxygen.
 :::warning Common Pitfall Students often write that "oxygen is needed to make ATP." Oxygen is needed
 specifically as the final electron acceptor in the electron transport chain. The ATP itself is
 synthesised by ATP synthase, driven by the proton gradient. Oxygen's role is to keep the electron
-transport chain flowing so that the proton gradient is maintained. :::
+transport chain flowing so that the proton gradient is maintained.
+:::
 
 ## 6. Anaerobic Respiration
 
@@ -521,7 +524,8 @@ Rate of $\mathrm{O_2}$ consumption $= \frac{0.022}{10} = 0.0022\ \mathrm{cm^3\ m
 :::warning Common Pitfall In respirometer experiments, students often forget to include a control
 (with dead organisms) and fail to control temperature. Changes in ambient temperature cause gas
 expansion or contraction, which can be mistaken for respiration. All respirometer measurements must
-be conducted in a temperature-controlled water bath with an appropriate control. :::
+be conducted in a temperature-controlled water bath with an appropriate control.
+:::
 
 ## Practice Problems
 
@@ -868,7 +872,8 @@ requirements to fully repay the oxygen debt.
 $\mathrm{O_2}$ that was "missed" during exercise. It is specifically the $\mathrm{O_2}$ needed to
 oxidise the lactate that accumulated due to anaerobic respiration. The volume of $\mathrm{O_2}$
 consumed during exercise (from aerobic respiration) is not part of the oxygen debt -- it has already
-been "paid." :::
+been "paid."
+:::
 
 ## 14. Mitochondrial Structure and Adaptations
 
@@ -1034,7 +1039,8 @@ Because several coenzymes are derived from vitamins, vitamin deficiencies impair
 produce any ATP directly. It produces 2 $\mathrm{CO_2}$ and 2 NADH per glucose molecule. The NADH
 subsequently yields approximately 5 ATP via oxidative phosphorylation. Similarly, the Krebs cycle
 produces no ATP directly -- it produces 2 GTP (which are equivalent to ATP) and 6 NADH + 2
-$\mathrm{FADH_2}$. :::
+$\mathrm{FADH_2}$.
+:::
 
 ## 22. Exercise Physiology: Respiration in Practice
 
@@ -1464,7 +1470,8 @@ post-exercise oxygen consumption, EPOC**).
 inhibitor (e.g., cyanide) stops the ETC entirely, so no ATP is produced and $\mathrm{O_2}$
 consumption drops. An uncoupler (e.g., DNP) allows the ETC to continue (so $\mathrm{O_2}$
 consumption increases) but prevents ATP synthesis. The difference is that inhibitors block electron
-flow, while uncouplers dissipate the proton gradient. :::
+flow, while uncouplers dissipate the proton gradient.
+:::
 
 ### 23.2 Effect of Cyanide on Respiration: A Worked Example
 
@@ -1792,7 +1799,8 @@ The Cori cycle describes the recycling of lactate between muscles and the liver:
 
 :::warning Common Pitfall The Cori cycle is NOT energetically favourable. The liver spends more ATP
 making glucose than the muscles gain from breaking it down. The benefit is that it prevents
-dangerous lactate accumulation in the blood and recycles carbon skeletons. :::
+dangerous lactate accumulation in the blood and recycles carbon skeletons.
+:::
 
 ## 31. Respiratory Quotient (RQ)
 
@@ -2086,7 +2094,8 @@ The products of one process are the reactants of the other. This is a cyclical r
 
 :::warning Common Pitfall $\mathrm{FADH_2}$ produces fewer ATP than NADH because it enters the ETC
 at Complex II (bypassing Complex I). This means fewer protons are pumped per $\mathrm{FADH_2}$
-molecule (6 vs 10). Always use 2.5 ATP per NADH and 1.5 ATP per $\mathrm{FADH_2}$. :::
+molecule (6 vs 10). Always use 2.5 ATP per NADH and 1.5 ATP per $\mathrm{FADH_2}$.
+:::
 
 ## 43. Respiratory Substrates
 
@@ -2226,3 +2235,4 @@ $\blacksquare$
 - The respiratory quotient ($\mathrm{RQ} = \mathrm{CO_2}/\mathrm{O_2}$) identifies the substrate:
   carbohydrates $\approx 1.0$, lipids $\approx 0.7$, proteins $\approx 0.8$.
 - PFK is the key regulatory enzyme of glycolysis, inhibited by ATP and citrate, activated by AMP.
+

@@ -127,7 +127,8 @@ $$\frac{(x - 2)^2}{(x - 2)(x + 2)} = \frac{x - 2}{x + 2}$$
 $$\frac{2(x^2 - 4)}{(x + 2)^2} = \frac{2(x - 2)(x + 2)}{(x + 2)^2} = \frac{2(x - 2)}{x + 2}$$
 
 ::warning When cancelling factors in algebraic fractions, always factorise first. Never cancel
-Individual terms across addition or subtraction. :::
+Individual terms across addition or subtraction.
+:::
 
 ## 2. Solving Equations
 
@@ -286,7 +287,8 @@ $$x = \frac{32 \pm 4\sqrt{7}}{6} = \frac{16 \pm 2\sqrt{7}}{3}$$
 Solving linear inequalities follows the same rules as equations, with one critical difference.
 
 :::warning When multiplying or dividing both sides of an inequality by a negative number, you must
-Reverse the inequality sign. :::
+Reverse the inequality sign.
+:::
 
 **Worked Example.** Solve $3 - 2x \gt 7$.
 
@@ -653,7 +655,8 @@ This is always divisible by 8 is **false**. For example, when $n = 1$: $1 + 4 - 
 Divisible by 8.
 
 ::warning Not every claim about numbers is true. When asked to prove something, first check whether
-The statement is actually correct with a small example. :::
+The statement is actually correct with a small example.
+:::
 
 ### 7.3 Disproof by Counterexample
 
@@ -772,3 +775,4 @@ theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+

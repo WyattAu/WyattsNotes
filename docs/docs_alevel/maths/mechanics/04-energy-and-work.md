@@ -22,7 +22,8 @@ slug: energy-and-work
 | CIE (9709) | P1, P4  | Work-energy in P1; further in P4   |
 
 :::info Energy methods are often simpler than force methods for problems where only initial and
-Final states matter (no time information needed). :::
+Final states matter (no time information needed).
+:::
 
 <hr />
 
@@ -626,7 +627,8 @@ questions within the A-Level specification for this topic, each with a full work
 Work with other topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -652,3 +654,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

@@ -384,7 +384,8 @@ At the surface (for a uniform sphere).
 
 :::warning Common Pitfall Satellites in low Earth orbit are NOT in "zero gravity." The gravitational
 Field strength at 300 km altitude is still about 89% of its surface value. Astronauts experience
-Weightlessness because they are in free fall, not because gravity is absent. :::
+Weightlessness because they are in free fall, not because gravity is absent.
+:::
 
 ## 10. Geostationary Orbits
 
@@ -436,7 +437,8 @@ Medium Earth orbits for better geometric accuracy.
 :::warning Common Pitfall A geostationary orbit is NOT the same as a geosynchronous orbit. A
 Geosynchronous orbit has period 24 hours but can be inclined or elliptical, so the satellite appears
 To trace a figure-eight in the sky. Geostationary implies geosynchronous AND equatorial AND
-Circular. :::
+Circular.
+:::
 
 ## 11. Gravitational Potential Energy — Taylor Expansion
 
@@ -484,7 +486,8 @@ Escape, enough energy must be added to raise $E_{\mathrm{total}}$ to zero.
 :::tip Exam Technique When asked why $E_p = -GMm/r$ is negative, explain: we define $V = 0$ at
 Infinity, so bringing masses together releases energy (the system loses potential energy). The
 Negative sign reflects this. The formula $E_p = mgh$ is only a special case for small heights near
-The surface. :::
+The surface.
+:::
 
 ## 12. Escape Velocity — Extended Discussion
 
@@ -630,7 +633,8 @@ questions within the A-Level specification for this topic, each with a full work
 Gravitational Fields with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 :::danger Danger
 
@@ -654,7 +658,8 @@ self-marking and building a personal test matrix. :::
   consequence of the shell theorem. Between two concentric shells, only the mass of the inner shell
   contributes to the field at that point.
 
-::: :::
+:::
+:::
 
 ## Common Pitfalls
 
@@ -685,3 +690,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

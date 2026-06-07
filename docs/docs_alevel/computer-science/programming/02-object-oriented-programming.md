@@ -91,7 +91,8 @@ class Student:
 4. **Maintainability:** Reduces coupling between components
 
 :::tip Exam tip In exams, always justify why encapsulation is important. Focus on data integrity
-(preventing invalid states) and implementation flexibility. :::
+(preventing invalid states) and implementation flexibility.
+:::
 
 <hr />
 
@@ -214,7 +215,8 @@ This means: wherever a superclass object is expected, a subclass object should w
 Polymorphism, encapsulation; uses pseudocode class definitions. **CIE (9618)** covers OOP
 Principles; may require implementation in a specific language (Python/Pascal). **OCR (A)** requires
 Class definitions with attributes and methods; constructor/destructor understanding. **Edexcel**
-Covers OOP with pseudocode; emphasises encapsulation and data hiding. :::
+Covers OOP with pseudocode; emphasises encapsulation and data hiding.
+:::
 
 <hr />
 
@@ -725,3 +727,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

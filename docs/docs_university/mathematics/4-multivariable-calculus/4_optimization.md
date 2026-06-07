@@ -233,3 +233,4 @@ $(1/3, 1/3, 1/3)$. $\blacksquare$
   $g = 0$; multiplying $g$ by a constant changes $\lambda$ but not the critical points.
 :::
 
+

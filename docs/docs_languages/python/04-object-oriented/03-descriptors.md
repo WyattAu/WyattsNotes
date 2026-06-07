@@ -289,7 +289,8 @@ class StaticMethod:
 
 :::tip Use `@staticmethod` when a method does not need access to `self` or `cls`. Use `@classmethod`
 When you need the class (e.g., for alternative constructors). Use a regular method when you need the
-Instance. :::
+Instance.
+:::
 
 ## \_\_slots\_\_
 
@@ -372,7 +373,8 @@ f.dynamic = "allowed"  # Stored in __dict__
 ```
 
 :::warning `__slots__` prevents `__dict__` by default, which means `pickle` with protocol 0 may not
-Work correctly. Always test serialization with your chosen protocol when using `__slots__`. :::
+Work correctly. Always test serialization with your chosen protocol when using `__slots__`.
+:::
 
 ## \_\_getattr\_\_ and \_\_getattribute\_\_
 
@@ -423,7 +425,8 @@ print(s.x)        # Works
 
 :::danger When implementing `__getattribute__`You **must** use `object.__getattribute__(self, name)`
 for any attribute access within the method. Using `self.name` Will cause infinite recursion because
-it triggers `__getattribute__` again. :::
+it triggers `__getattribute__` again.
+:::
 
 ## \_\_setattr\_\_ and \_\_delattr\_\_
 
@@ -467,7 +470,8 @@ pa.version = "1.0"
 ```
 
 :::warning Same recursion rule applies: always use `object.__setattr__(self, name, value)` and
-`object.__delattr__(self, name)` within these methods. :::
+`object.__delattr__(self, name)` within these methods.
+:::
 
 ## \_\_dir\_\_
 
@@ -528,7 +532,8 @@ print(v1 >= v2)  # False (generated)
 ```
 
 :::warning `@total_ordering` adds overhead because each generated method calls the others. For
-Performance-critical code, implement all six comparison methods explicitly. :::
+Performance-critical code, implement all six comparison methods explicitly.
+:::
 
 ### functools.singledispatchmethod
 
@@ -907,3 +912,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

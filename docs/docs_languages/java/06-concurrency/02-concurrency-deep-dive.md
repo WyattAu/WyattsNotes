@@ -199,7 +199,8 @@ Reentrancy prevents certain deadlock patterns and allows the optimistic read mec
 
 :::warning `StampedLock` does not implement the `Lock` or `ReadWriteLock` interface. It cannot be
 Used with `Condition` or in `synchronized`-style patterns. Convert to a `ReadWriteLock` view via
-`asReadLock()` / `asWriteLock()` if needed. :::
+`asReadLock()` / `asWriteLock()` if needed.
+:::
 
 ## Condition
 
@@ -252,7 +253,8 @@ public class BoundedBuffer<T> {
 
 :::info Always use `while` (not `if`) with `await`. Spurious wakeups are possible — the thread may
 Wake without a `signal`. The loop re-checks the condition. This is mandated by the Javadoc for
-`Object.wait` and `Condition.await`. :::
+`Object.wait` and `Condition.await`.
+:::
 
 ### Fair vs Non-fair Conditions
 
@@ -442,7 +444,8 @@ long total = wordCounts.reduceValuesToLong(4, Long::longValue, 0, Long::sum);
 
 :::info `ConcurrentHashMap` does not allow `null` keys or values. `HashMap` allows one `null` key
 And `null` values. This is a deliberate design decision — `null` is ambiguous in concurrent contexts
-(does `get(key)` returning `null` mean "key not found" or "value is null"?). :::
+(does `get(key)` returning `null` mean "key not found" or "value is null"?).
+:::
 
 ### `ConcurrentLinkedQueue`
 
@@ -478,7 +481,8 @@ listeners.add(newListener);
 ```
 
 :::warning `CopyOnWriteArrayList` does NOT support `Iterator.remove()` or `ListIterator.set()`. The
-Iterator operates on a snapshot and does not reflect modifications made during iteration. :::
+Iterator operates on a snapshot and does not reflect modifications made during iteration.
+:::
 
 ### Blocking Queues
 
@@ -865,7 +869,8 @@ pool.submit(() -&gt; {
 
 :::warning Never submit a task to a pool that waits for the result of another task submitted to the
 Same pool. If the pool is fully utilized, all threads will be blocked waiting, and no thread will be
-Available to execute the inner tasks. This is called thread pool deadlock or starvation. :::
+Available to execute the inner tasks. This is called thread pool deadlock or starvation.
+:::
 
 ## Summary
 
@@ -887,3 +892,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

@@ -125,7 +125,8 @@ Negation is $\neg C \vee \neg D$I.e., "$f$ is either not continuous or not diffe
 
 :::info A common mistake is to negate "P and Q" as "not P and not Q." That is wrong. The negation of
 "$f$ is continuous and differentiable" is NOT "$f$ is not continuous and not differentiable" — that
-Is too strong. :::
+Is too strong.
+:::
 
 ### 1.5 The Contrapositive
 
@@ -143,7 +144,8 @@ Compare with two other related statements that are NOT equivalent:
 - The **inverse** of $P \implies Q$ is $\neg P \implies \neg Q$ (not equivalent , but equivalent to
   the converse)
 
-:::danger Danger Implication. Never confuse the contrapositive with the converse. :::
+:::danger Danger Implication. Never confuse the contrapositive with the converse.
+:::
 
 **Worked Example:**
 
@@ -212,7 +214,8 @@ The existential becomes universal and the universal becomes existential. This is
 Backbone of epsilon-delta definitions in analysis.
 
 :::warning Warning Negate the predicate. The order of quantifiers does NOT change — it remains the
-same sequence but With each quantifier flipped. :::
+same sequence but With each quantifier flipped.
+:::
 
 <details>
 <summary>Worked Example: Negate $\forall n \in \mathbb{Z}^+, \; \exists p \mathrm{ prime}, \; p \gt n$</summary>
@@ -293,7 +296,8 @@ This method is especially powerful when the statement you want to prove is a neg
 Does not exist..." or "there are no...").
 
 :::info Info Which means $\neg P$ must be false, hence $P$ is true. It relies on the Law of Excluded
-Middle ($P \vee \neg P$ must be true). :::
+Middle ($P \vee \neg P$ must be true).
+:::
 
 **Worked Example — $\sqrt{2}$ is irrational:**
 
@@ -316,7 +320,8 @@ But now both $a$ and $b$ are even, contradicting $\gcd(a, b) = 1$.
 Therefore our assumption is false, and $\sqrt{2}$ is irrational.
 
 :::note Note Odd, then $a = 2k+1$So $a^2 = 4k^2 + 4k + 1 = 2(2k^2+2k) + 1$Which is odd. Hence if
-$a^2$ is Even, $a$ cannot be odd, so $a$ is even. :::
+$a^2$ is Even, $a$ cannot be odd, so $a$ is even.
+:::
 
 <details>
 <summary>Exercise: Prove that $\sqrt{3}$ is irrational.</summary>
@@ -488,7 +493,8 @@ Case $P(j)$ where $j \lt k$.
 
 :::warning Weak and strong induction are logically equivalent — anything provable by one is provable
 By the other. But strong induction can make certain .../1-number-and-algebra/3_proof-and-logics much
-more natural. Use it when the Inductive step needs to reference cases earlier than just $k$. :::
+more natural. Use it when the Inductive step needs to reference cases earlier than just $k$.
+:::
 
 **Worked Example — Every integer $n \ge 2$ is a product of primes:**
 
@@ -637,7 +643,8 @@ Therefore, there are infinitely many primes. $\blacksquare$
 
 :::info Info Example, $2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 + 1 = 30031 = 59 \times 509$. The
 .../1-number-and-algebra/3_proof-and-logic only Requires that $N$ has SOME prime factor not in the
-list. :::
+list.
+:::
 
 ### 3.3 $\log_2{3}$ is Irrational
 
@@ -736,7 +743,8 @@ Since $mx + ny \in \mathbb{Z}$$d \mid (ax + by)$. $\blacksquare$
 
 :::note This theorem is the foundation of the Euclidean algorithm. The expression $ax + by$ is
 Called a **linear combination** of $a$ and $b$. The greatest common divisor $\gcd(a, b)$ can always
-Be expressed as a linear combination of $a$ and $b$ (Bezout's identity). :::
+Be expressed as a linear combination of $a$ and $b$ (Bezout's identity).
+:::
 
 ### 3.6 Inequality Proofs
 
@@ -848,7 +856,8 @@ Therefore $n \mid (ac - bd)$So $ac \equiv bd \pmod{n}$. $\blacksquare$
 
 :::warning Division does NOT work with congruences . From $ac \equiv bc \pmod{n}$You can Only
 conclude $a \equiv b \pmod{n}$ if $\gcd(c, n) = 1$. For example, $6 \equiv 0 \pmod{3}$ and
-$3 \equiv 0 \pmod{3}$But $\frac{6}{3} = 2 \not\equiv \frac{0}{0}$ (undefined). :::
+$3 \equiv 0 \pmod{3}$But $\frac{6}{3} = 2 \not\equiv \frac{0}{0}$ (undefined).
+:::
 
 <details>
 <summary>Worked Example: Find the last two digits of $7^{100}$.</summary>
@@ -1046,7 +1055,8 @@ proving.
 
 :::danger Circular reasoning is the most dangerous logical fallacy in mathematics because it can
 Look convincing. Always verify that your .../1-number-and-algebra/3_proof-and-logic does not contain
-the conclusion as an unstated Assumption. :::
+the conclusion as an unstated Assumption.
+:::
 
 ### 5.2 Assuming the Conclusion
 
@@ -1087,7 +1097,8 @@ Incorrect negation: "If it rains, the ground does not get wet." (This is a diffe
 Entirely.)
 
 :::warning This is one of the most common errors on IB exams. Memorize: the negation of "$P$ implies
-$Q$" is "$P$ AND not $Q$." :::
+$Q$" is "$P$ AND not $Q$."
+:::
 
 ### 5.4 Induction Base Case Errors
 
@@ -1145,7 +1156,8 @@ induction unless the structure Of the problem requires strong induction.
 
 :::tip **Rule of thumb:** If the statement for $n$ depends only on the statement for $n-1$ (like
 $n! = n \cdot (n-1)!$), use weak induction. If on earlier terms (like $F_n = F_{n-1} + F_{n-2}$),
-use strong induction. :::
+use strong induction.
+:::
 
 ### 5.6 Confusing Converse with Contrapositive
 
@@ -1182,7 +1194,8 @@ Showing $P$ is false does NOT disprove the implication.
 :::danger The order of quantifiers matters. "For every person, there exists a mother" is very
 Different from "There exists a person who is the mother of everyone." The negation of "for every x
 There exists y" is "there exists x such that for every y" — quantifiers flip but their order is
-Preserved. :::
+Preserved.
+:::
 
 ---
 
@@ -1260,7 +1273,8 @@ solution.
 Logic with other IB mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
-and building a personal test matrix. :::
+and building a personal test matrix.
+:::
 
 ## Worked Examples
 
@@ -1290,3 +1304,4 @@ $$x^2 - 1 = 9 \implies x^2 = 10 \implies x = \sqrt{10}$$ (since $x > 1$)
 | ----------------- | ------- | -------------------------------------------------------------------------------------------- |
 | [Proof and Logic] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/maths/pure-mathematics/13-proof) |
 | [Proof and Logic] | IB      | [View](https://ib.wyattau.com/docs/ib/maths/1-number-and-algebra/3_proof-and-logic)          |
+

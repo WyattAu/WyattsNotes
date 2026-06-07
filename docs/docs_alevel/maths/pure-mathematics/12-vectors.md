@@ -22,7 +22,8 @@ slug: vectors
 | CIE (9709) | P1, P2, P3 | 2D in P1; 3D and lines in P2/P3                    |
 
 :::info The formula booklet gives the scalar product formula. You must be comfortable working in 3D
-And converting between column and $\mathbf{i},\mathbf{j},\mathbf{k}$ notation. :::
+And converting between column and $\mathbf{i},\mathbf{j},\mathbf{k}$ notation.
+:::
 
 <hr />
 
@@ -208,7 +209,8 @@ In 2D, eliminating $t$: $\dfrac{x - a_1}{b_1} = \dfrac{y - a_2}{b_2}$.
 
 :::warning Warning $\mathbf{a}$And the direction vector $\mathbf{b}$ can be any non-zero scalar
 multiple of the Direction. Always check your answer gives a point and direction consistent with the
-question. :::
+question.
+:::
 
 ### 5.4 Vector equation of a line in 3D
 
@@ -223,7 +225,8 @@ The parametric form is:
 $$x = x_0 + td_1, \quad y = y_0 + td_2, \quad z = z_0 + td_3$$
 
 :::tip Tip And $\overrightarrow{AB}$ as the direction vector. Alternatively, use $B$ and
-$\overrightarrow{BA}$ --- both give the same line. :::
+$\overrightarrow{BA}$ --- both give the same line.
+:::
 
 **Example.** Find the vector equation of the line through $P(2, -1, 3)$ and $Q(5, 1, -2)$.
 
@@ -297,7 +300,8 @@ Distance.
 
 :::info When the cross product is not on your syllabus, use the dot-product method from Section 8.
 The cross-product formula is listed here for reference and is examined on CIE P3 and some OCR
-Papers. :::
+Papers.
+:::
 
 **Example using the dot-product method.** Find the distance from $P(4, 1, -1)$ to the line
 $\mathbf{r} = \begin{pmatrix}1\\0\\2\end{pmatrix} + t\begin{pmatrix}2\\1\\-1\end{pmatrix}$.
@@ -426,7 +430,8 @@ $\overrightarrow{AD} = \overrightarrow{BC}$).
 
 :::tip To show a quadrilateral is a **rhombus**, additionally show that adjacent sides have equal
 Magnitude. To show a **rectangle**, show that adjacent sides are perpendicular. A **square**
-Requires both conditions. :::
+Requires both conditions.
+:::
 
 ### 10.4 Using vectors in geometric proofs
 
@@ -841,7 +846,8 @@ the A-Level specification for this topic, each with a full worked solution.
 with other pure mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -870,3 +876,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

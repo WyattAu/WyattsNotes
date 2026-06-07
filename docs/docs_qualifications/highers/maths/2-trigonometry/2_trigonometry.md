@@ -215,7 +215,8 @@ When solving trig equations in a given interval, always check for all solutions.
 Trig functions means there are multiple solutions.
 
 :::warning When dividing by a trig function to simplify, always consider the case where that
-Function equals zero separately. Dividing by $\cos x$ loses the solutions where $\cos x = 0$. :::
+Function equals zero separately. Dividing by $\cos x$ loses the solutions where $\cos x = 0$.
+:::
 
 **Example:** Solve $\sin 2x = \cos x$ for $0 \leq x < 2\pi$.
 
@@ -790,3 +791,4 @@ including key theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+

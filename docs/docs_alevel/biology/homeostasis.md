@@ -84,7 +84,8 @@ birth of the baby terminates the oxytocin loop).
 :::warning Common Pitfall Students often confuse negative and positive feedback. Negative feedback
 opposes changes and maintains stability (the most common mechanism in homeostasis). Positive
 feedback amplifies changes and destabilises the system. In examination answers, always specify which
-type of feedback is operating and explain why. :::
+type of feedback is operating and explain why.
+:::
 
 ## 2. Blood Glucose Regulation
 
@@ -200,7 +201,8 @@ For more on the immune system and autoimmunity, see [Immunology](/docs/alevel/bi
 :::warning Common Pitfall Students often write that "insulin converts glucose to glycogen." Insulin
 does not perform this conversion itself -- it is a signalling molecule that stimulates liver and
 muscle cells to perform glycogenesis via enzyme activation. The insulin binds to receptors on the
-cell surface and triggers a signalling cascade that activates the relevant enzymes. :::
+cell surface and triggers a signalling cascade that activates the relevant enzymes.
+:::
 
 ## 3. Temperature Regulation (Thermoregulation)
 
@@ -856,7 +858,8 @@ Chronic hyperglycaemia damages blood vessels through several mechanisms:
 :::warning Common Pitfall Students often state that "insulin converts glucose to glycogen." This is
 imprecise. Insulin stimulates the enzyme glycogen synthase (via dephosphorylation) and promotes
 GLUT4 translocation, which increases glucose uptake into cells. Glycogen synthase catalyses the
-conversion. Always specify the enzyme or the cellular mechanism, not just the hormone. :::
+conversion. Always specify the enzyme or the cellular mechanism, not just the hormone.
+:::
 
 ## 13. Control of Blood Sugar: Molecular Mechanisms
 
@@ -1072,7 +1075,8 @@ Types of rejection:
 transported out of the blood." In haemodialysis, urea removal occurs by **diffusion** down a
 concentration gradient (dialysis fluid has no urea). No active transport is involved. The patient's
 own kidneys use both diffusion and active transport; the dialysis machine relies solely on diffusion
-and ultrafiltration. :::
+and ultrafiltration.
+:::
 
 ## 24. Communicable and Non-Communicable Diseases
 
@@ -1509,7 +1513,8 @@ temperature):
 glycogen in all cells. Insulin promotes glucose uptake primarily in muscle and adipose tissue (via
 GLUT4). The liver does not require insulin for glucose uptake (it uses GLUT2, which is
 insulin-independent). Insulin acts on the liver primarily to stimulate glycogenesis and inhibit
-glycogenolysis and gluconeogenesis. :::
+glycogenolysis and gluconeogenesis.
+:::
 
 ### 23.4 Adrenal Glands and Stress Response
 
@@ -1577,7 +1582,8 @@ Ultrafiltration occurs at the renal corpuscle (glomerulus + Bowman's capsule):
 :::warning Common Pitfall Students often think that ADH makes the kidneys produce "more urine." In
 fact, ADH makes the kidneys produce less, more concentrated urine by increasing water reabsorption
 in the collecting ducts. Without ADH (e.g., in diabetes insipidus), large volumes of dilute urine
-are produced. :::
+are produced.
+:::
 
 ## 25. Plant Hormones: Detailed Analysis
 
@@ -2284,3 +2290,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

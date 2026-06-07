@@ -314,7 +314,8 @@ photorespiration (see Section 7).
 reactions" and state that they "do not require light." While the Calvin cycle itself does not
 directly use light, it is dependent on the products of the light-dependent reactions (ATP and
 $\mathrm{NADPH}$), which cease in the dark. In practice, the Calvin cycle stops within seconds of
-placing a plant in darkness because ATP and $\mathrm{NADPH}$ are rapidly depleted. :::
+placing a plant in darkness because ATP and $\mathrm{NADPH}$ are rapidly depleted.
+:::
 
 ## 6. Limiting Factors
 
@@ -466,7 +467,8 @@ night is limited) but extremely high water-use efficiency.
 cycle." $\mathrm{C_4}$ plants do use the Calvin cycle -- it occurs in the bundle sheath cells, not
 in the mesophyll cells. The $\mathrm{C_4}$ pathway is a supplementary $\mathrm{CO_2}$-concentrating
 mechanism that feeds $\mathrm{CO_2}$ into the Calvin cycle. Both pathways are present and operate
-together. :::
+together.
+:::
 
 ## 8. Practical Investigations
 
@@ -1062,7 +1064,8 @@ often say "temperature" when the graph shows rate vs $\mathrm{CO_2}$. The limiti
 factor that is NOT on the x-axis -- the factor held constant. If the graph shows rate vs
 $\mathrm{CO_2}$ concentration and the curve has plateaued, the limiting factor is light intensity or
 temperature (whichever is held constant). Always identify which factor is being manipulated and
-which are held constant. :::
+which are held constant.
+:::
 
 ## 23. Investigating Factors Affecting the Rate of Photosynthesis
 
@@ -1439,7 +1442,8 @@ fact, the Calvin cycle produces TP (a 3-carbon compound), which must then be con
 (6C) by joining two TP molecules. Only some TP molecules are exported from the chloroplast; the rest
 are used to regenerate RuBP. For every 6 molecules of $\mathrm{CO_2}$ fixed, the cycle produces 2
 molecules of TP that can be exported, while 10 molecules of TP are used to regenerate 6 molecules of
-RuBP. :::
+RuBP.
+:::
 
 ### 23.3 Calculating Net Primary Productivity (NPP)
 
@@ -2369,3 +2373,4 @@ $\blacksquare$
   to reduce photorespiration.
 - Chloroplast structure (grana, thylakoids, stroma) is adapted to maximise light absorption and
   enzyme concentration.
+

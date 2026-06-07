@@ -40,7 +40,8 @@ Varieties:
 | Amount of substance | $n$    | mole     | mol         |
 | Luminous intensity  | $I_v$  | candela  | cd          |
 
-:::info Note The candela is rarely encountered in A Level Physics. Focus on the first six. :::
+:::info Note The candela is rarely encountered in A Level Physics. Focus on the first six.
+:::
 
 ### Derived Units
 
@@ -115,7 +116,8 @@ $$
 Therefore $T = k\sqrt{l/g}$. Full analysis reveals $k = 2\pi$.
 
 :::tip Exam Technique Dimensional analysis is invaluable for checking your working. Get into the
-Habit of verifying dimensions for every formula you derive in an exam. :::
+Habit of verifying dimensions for every formula you derive in an exam.
+:::
 
 ## 3. SI Prefixes
 
@@ -265,7 +267,8 @@ And the uncertainty should be quoted to at most 2 significant figures.
 Trailing zero implies precision we do not have.
 
 :::tip Exam Technique When you compute $g = 9.78 \pm 0.15 \mathrm{ m s}^{-2}$Write $9.8 \pm 0.2$ m
-S$^{-2}$ (round the uncertainty to 1 s.f. And match the result). This is what examiners expect. :::
+S$^{-2}$ (round the uncertainty to 1 s.f. And match the result). This is what examiners expect.
+:::
 
 ## 6. Determining Uncertainty from Repeated Measurements
 
@@ -478,7 +481,8 @@ Interpreting measurements correctly.
 
 :::info Note Since 2019, all SI base units are defined in terms of fundamental physical constants.
 The values of $c$$h$$e$$k_B$$N_A$And $\Delta\nu_{Cs}$ are now exact defined quantities, While the
-unit values are derived from them. :::
+unit values are derived from them.
+:::
 
 ## 9. Dimensional Analysis: Extended Worked Examples
 
@@ -774,7 +778,8 @@ questions within the A-Level specification for this topic, each with a full work
 and Units with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ## Summary
 
@@ -791,3 +796,4 @@ experimental methods, and applications relevant to the specification.
 
 A strong understanding of these principles, combined with regular practice of quantitative problems
 and past paper questions, is essential for success in examinations.
+

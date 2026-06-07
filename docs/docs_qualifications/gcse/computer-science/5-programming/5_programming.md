@@ -15,7 +15,8 @@ slug: 5-programming
 ## Programming
 
 :::info Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR J277 Paper 1 & 2 | WJEC Unit 1 &
-2 :::
+2
+:::
 
 ## 1. Programming Concepts
 
@@ -745,3 +746,4 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+

@@ -84,7 +84,8 @@ $\square$
 :::info Board-specific **AQA** requires Big-O notation for standard algorithms (searching, sorting);
 Focuses on time complexity. **CIE (9618)** covers Big-O, Big-Theta, and Big-Omega notation; requires
 Space complexity analysis. **OCR (A)** requires Big-O notation; may require comparison of algorithm
-Performance. **Edexcel** covers time and space complexity with Big-O notation. :::
+Performance. **Edexcel** covers time and space complexity with Big-O notation.
+:::
 
 <hr />
 
@@ -840,3 +841,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

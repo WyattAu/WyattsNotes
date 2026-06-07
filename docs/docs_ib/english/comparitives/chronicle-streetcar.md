@@ -255,7 +255,8 @@ Both texts depend heavily on dramatic irony:
 
 :::tip Exam Tip For HL comparative essays, always address both the **similarities and differences**
 Between the texts. Stronger essays move beyond surface comparisons to explore how formal differences
-(novella vs play) shape the reader's experience of shared themes. :::
+(novella vs play) shape the reader's experience of shared themes.
+:::
 
 ## Truth and Memory
 
@@ -323,7 +324,8 @@ Both authors destabilise the concept of objective truth through their narrative 
 
 :::tip When writing about truth and memory, consider how form determines access to truth. Marquez's
 Fragmented journalism and Williams's subjective staging both prevent the audience from ever grasping
-A complete, objective account — and this is precisely the point. :::
+A complete, objective account — and this is precisely the point.
+:::
 
 ## Character Comparison: Eunice/Steve vs Clotilde Armenta
 
@@ -650,3 +652,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

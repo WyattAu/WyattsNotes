@@ -216,7 +216,8 @@ Needed. After $5\tau$The capacitor is effectively fully charged or discharged.
 
 :::tip Tip At which the curve reaches 63.2% of its final value. For discharging, find the time at
 which the Curve drops to 36.8% of its initial value. Alternatively, find the time at which the
-tangent at $t = 0$ intersects the final value line. :::
+tangent at $t = 0$ intersects the final value line.
+:::
 
 ## 8. Dielectrics in Detail
 
@@ -342,7 +343,8 @@ $$V_{\mathrm{max}} = E_{\mathrm{breakdown}} \cdot d$$
 
 :::warning Common Pitfall A high $\varepsilon_r$ does not imply high dielectric strength. Water has
 An enormous $\varepsilon_r = 80$ but a very low breakdown voltage ($\approx 65$ V/mm), so water is a
-Poor practical dielectric for high-voltage capacitors despite its high permittivity. :::
+Poor practical dielectric for high-voltage capacitors despite its high permittivity.
+:::
 
 ### Effect of Dielectric on Energy Stored
 
@@ -368,7 +370,8 @@ $Q' = (\varepsilon_r - 1)CV$ to the plates.
 
 :::tip Exam Technique When a question asks about inserting a dielectric, always check whether the
 Capacitor is isolated or connected to a supply. This completely determines whether $Q$ or $V$ is
-Held constant, and therefore whether energy increases or decreases. :::
+Held constant, and therefore whether energy increases or decreases.
+:::
 
 ## 9. Charge Sharing Between Capacitors
 
@@ -429,7 +432,8 @@ Electromagnetic radiation. The "missing" energy is accounted for by Joule heatin
 Losses.
 
 :::warning Warning But the system loses energy to the surroundings. Never assume $E_i = E_f$ when
-solving Charge-sharing problems. :::
+solving Charge-sharing problems.
+:::
 
 ### Worked Example
 
@@ -580,7 +584,8 @@ $$C = -\frac{1}{mR}$$
 :::tip Exam Technique When asked to determine $C$ from a discharge curve, always take the natural
 Log of the voltage values and plot $\ln(V)$ vs $t$. Do NOT attempt to fit an exponential curve
 Directly. The gradient gives you $-1/(RC)$And since $R$ is known, you extract $C$. Show the
-Log-linear transformation explicitly. :::
+Log-linear transformation explicitly.
+:::
 
 ### Method 2: Repeating Capacitor (Ballistic Galvanometer)
 
@@ -930,7 +935,8 @@ within the A-Level specification for this topic, each with a full worked solutio
 with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 :::danger Common Pitfalls
 
@@ -978,3 +984,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

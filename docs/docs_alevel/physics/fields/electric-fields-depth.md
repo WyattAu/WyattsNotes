@@ -155,7 +155,8 @@ A practical method uses conducting paper with electrodes painted on:
 4. Draw field lines perpendicular to the equipotentials.
 
 :::warning Warning The field is zero on an equipotential. The field is non-zero and perpendicular;
-only the component Tangent to the surface is zero. :::
+only the component Tangent to the surface is zero.
+:::
 
 ## 5. Motion of Charged Particles in Uniform Fields
 
@@ -245,7 +246,8 @@ Plates, closer spacing, and lower acceleration voltage.
 
 :::warning Common Pitfall A common error is to confuse the acceleration voltage $V_{\mathrm{acc}}$
 (which determines beam speed) with the deflection voltage $V_d$ (which determines deflection). The
-Deflection is proportional to $V_d$ and inversely proportional to $V_{\mathrm{acc}}$. :::
+Deflection is proportional to $V_d$ and inversely proportional to $V_{\mathrm{acc}}$.
+:::
 
 ## 7. Electric Fields of Extended Charge Distributions
 
@@ -498,3 +500,4 @@ $\blacksquare$
   field lines.
 - Electric potential: $V = \frac{Q}{4\pi\varepsilon_0 r}$; potential energy: $W = qV$.
 - $E = -\frac{dV}{dr}$; the electric field is the negative gradient of the potential.
+

@@ -23,7 +23,8 @@ slug: statistical-distributions
 
 :::info The formula booklet gives the probability mass function for the Binomial and Poisson
 Distributions, and the normal distribution function. You must know when to use each distribution and
-How to find probabilities. :::
+How to find probabilities.
+:::
 
 <hr />
 
@@ -176,7 +177,8 @@ With **continuity correction**:
 $P(X \leq k) \approx P\!\left(Z \lt \frac◆LB◆k + 0.5 - np◆RB◆◆LB◆\sqrt{np(1-p)}◆RB◆\right)$.
 
 :::warning Warning (Binomial) with a continuous one (Normal). Add or subtract 0.5 depending on the
-inequality Direction. :::
+inequality Direction.
+:::
 
 <hr />
 
@@ -262,7 +264,8 @@ Typical applications include: calls arriving at a call centre per hour, typing e
 Radioactive decays per second, and cars passing a checkpoint per minute.
 
 :::tip Tip Constant over the interval and that events do not cluster. If events tend to occur in
-bursts, the Poisson model is not appropriate. :::
+bursts, the Poisson model is not appropriate.
+:::
 
 ### 4.7 Poisson approximation to the Binomial
 
@@ -282,7 +285,8 @@ The approximation improves as $n$ increases and $p$ decreases while $\lambda = n
 
 :::warning Warning And $n$ is large, use the normal approximation (Section 3.6) instead. The two
 approximations are Complementary: Poisson handles the case of many trials with rare success, while
-normal handles the Case of many trials with moderate success probability. :::
+normal handles the Case of many trials with moderate success probability.
+:::
 
 <hr />
 
@@ -337,7 +341,8 @@ Note how the terms $2abE(X)$ and $b^2$ cancel between $E(Y^2)$ and $[E(Y)]^2$.
 
 :::info Adding a constant $b$ (a location shift) has **no effect** on variance. Only multiplying by
 $a$ (a scale change) affects variance, and it does so by a factor of $a^2$. This is why variance is
-Measured in **squared units** of the original variable. :::
+Measured in **squared units** of the original variable.
+:::
 
 ### 6.4 Effect on standard deviation
 
@@ -681,7 +686,8 @@ hardest questions within the A-Level specification for this topic, each with a f
 Distributions with other topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -706,3 +712,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

@@ -351,7 +351,8 @@ List<Integer> unique = Stream.of(1, 2, 2, 3, 1, 4, 3)
 
 :::warning `distinct()` internally uses a `HashSet`-like structure to track seen elements. For large
 streams with expensive `equals()`/`hashCode()` implementations, this can be costly. Consider whether
-`distinct()` is necessary or whether you can eliminate duplicates at the source. :::
+`distinct()` is necessary or whether you can eliminate duplicates at the source.
+:::
 
 ### sorted
 
@@ -398,7 +399,8 @@ List<String> result = Stream.of("Alice", "Bob", "Charlie")
 contract, which states that intermediate operations should be free of side effects. The behavior of
 `peek()` is undefined if it modifies the stream source or interferes with the pipeline. Furthermore,
 in parallel streams, `peek()` may be called from multiple threads simultaneously, making any side
-effect unsafe without synchronization. :::
+effect unsafe without synchronization.
+:::
 
 ### limit
 
@@ -446,7 +448,8 @@ List<Integer> dropped = Stream.of(1, 2, 3, 4, 5, 1, 2)
 :::info For **ordered** streams, `takeWhile` and `dropWhile` are deterministic: they process
 elements in encounter order. For **unordered** streams (e.g., `HashSet.parallelStream()`), the
 behavior is nondeterministic -- different elements may be taken or dropped on different runs because
-the encounter order is not defined. :::
+the encounter order is not defined.
+:::
 
 ## Terminal Operations
 
@@ -511,7 +514,8 @@ String concatenated = Stream.of("a", "b", "c")
 :::warning The accumulator function passed to `reduce` must be **associative**:
 `(a op b) op c == a op (b op c)`. If it is not associative, the result will be incorrect in parallel
 streams, because partial results may be combined in any order. The identity value must also satisfy
-`identity op x == x` for all x. :::
+`identity op x == x` for all x.
+:::
 
 ### count
 
@@ -580,7 +584,8 @@ Optional<String> any = names.parallelStream()
 streams, `findAny()` may return a different element than `findFirst()` because it can return any
 element that the parallel worker encounters first, without the synchronization overhead of
 maintaining encounter order. Use `findAny()` when you do not care about which element is returned --
-it is faster in parallel streams because it avoids ordering constraints. :::
+it is faster in parallel streams because it avoids ordering constraints.
+:::
 
 ### toArray
 
@@ -654,7 +659,8 @@ LinkedHashMap<String, Integer> ordered = people.stream()
 
 :::danger `Collectors.toMap()` throws `IllegalStateException` on duplicate keys unless a merge
 function is provided. This is a common source of runtime exceptions. Always provide a merge function
-if duplicate keys are possible, or use `groupingBy` when multiple values per key are expected. :::
+if duplicate keys are possible, or use `groupingBy` when multiple values per key are expected.
+:::
 
 ### joining
 
@@ -729,7 +735,8 @@ Map<Boolean, Long> counts = names.stream()
 :::info Use `partitioningBy` when the classifier is a `Predicate` and you want exactly two groups
 (true/false). Use `groupingBy` when the classifier produces more than two categories or is not a
 boolean predicate. `partitioningBy` always creates both map entries (true and false), even if one
-group is empty. `groupingBy` only creates entries for groups that have at least one element. :::
+group is empty. `groupingBy` only creates entries for groups that have at least one element.
+:::
 
 ### counting / summingInt / averagingInt
 
@@ -1156,3 +1163,4 @@ List<String> cities = List.of(user)
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

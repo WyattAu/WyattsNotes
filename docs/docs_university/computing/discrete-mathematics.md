@@ -1831,3 +1831,4 @@ $\blacksquare$
 | Abstract Algebra                  | WyattsNotes | [View](/docs/university/mathematics/abstract-algebra)                                  |
 | Number Theory                     | WyattsNotes | [View](/docs/university/mathematics/number-theory)                                     |
 | Discrete Mathematics — MIT 6.042J | MIT OCW     | [View](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/) |
+

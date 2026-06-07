@@ -126,7 +126,8 @@ sudo apt install intel-mkl
 
 :::warning Linpack generates extreme power consumption — often exceeding the CPU's rated TDP by
 30–50%. This can push VRMs and PSU beyond their rated capacity. Only use Linpack for brief thermal
-Profiling (5–10 minutes), not for extended stability testing. :::
+Profiling (5–10 minutes), not for extended stability testing.
+:::
 
 ---
 
@@ -281,7 +282,8 @@ sudo badblocks -sv /dev/sdX
 ```
 
 :::warning `badblocks -w` is destructive — it overwrites all data on the device. Only use on
-Unpartitioned drives or drives whose data you have backed up. :::
+Unpartitioned drives or drives whose data you have backed up.
+:::
 
 ### CrystalDiskMark
 
@@ -892,3 +894,4 @@ essential for examination success.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

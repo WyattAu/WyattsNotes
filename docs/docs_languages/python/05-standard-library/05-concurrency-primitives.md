@@ -85,7 +85,8 @@ r.join()  # Wait for regular thread
 ```
 
 :::warning Daemon threads are abruptly terminated when the main thread exits. They may not release
-Locks, close files, or flush buffers. Use them only for non-critical background tasks. :::
+Locks, close files, or flush buffers. Use them only for non-critical background tasks.
+:::
 
 ## Lock and RLock
 
@@ -146,7 +147,8 @@ outer()  # Works fine — RLock allows same thread to re-acquire
 | Overhead              | Lower          | Slightly higher          |
 
 :::warning With `Lock`If the same thread tries to acquire it twice, it deadlocks. With `RLock` The
-thread must call `release()` the same number of times it called `acquire()`. :::
+thread must call `release()` the same number of times it called `acquire()`.
+:::
 
 ## Semaphore, Event, Condition, Barrier
 
@@ -392,7 +394,8 @@ if __name__ == "__main__":
 ```
 
 :::info `multiprocessing.Pipe()` creates a pair of connection objects. It supports duplex
-Communication by default. For one-way communication, use `duplex=False`. :::
+Communication by default. For one-way communication, use `duplex=False`.
+:::
 
 ## concurrent.futures
 
@@ -542,7 +545,8 @@ print(pq.get())  # (3, 'low priority')
 ```
 
 :::info `PriorityQueue` orders items by the first element of the tuple. If the first elements are
-Equal, it compares the second, and so on. If items are not comparable, it raises `TypeError`. :::
+Equal, it compares the second, and so on. If items are not comparable, it raises `TypeError`.
+:::
 
 ## GIL Impact Analysis
 
@@ -922,3 +926,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

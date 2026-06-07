@@ -22,7 +22,8 @@ slug: numerical-methods
 | CIE (9709) | P2, P3  | Numerical solutions of equations, integration in P2/P3 |
 
 :::info The formula booklet gives the Newton-Raphson formula and the trapezium/Simpson's rule. You
-Must know when each method is applicable and its limitations. :::
+Must know when each method is applicable and its limitations.
+:::
 
 <hr />
 
@@ -43,7 +44,8 @@ The sign change theorem tells us a root **exists** but says nothing about:
 :::warning A sign change is **sufficient but not necessary** for a root. If $f(x) = x^2$Then
 $f(-1) = f(1) = 1$ (no sign change), but there is a root at $x = 0$. Additionally, a sign change
 Could arise from a **discontinuity** rather than a root: $f(x) = 1/x$ has $f(-1) = -1$ and
-$f(1) = 1$But no root. :::
+$f(1) = 1$But no root.
+:::
 
 **Intuition.** The sign change theorem is the Intermediate Value Theorem applied to the special case
 Of crossing zero. If you walk from a point below sea level to one above sea level, you must cross
@@ -98,7 +100,8 @@ Different rearrangements of $f(x) = 0$ give different $g(x)$And some converge wh
 
 :::tip In exams, if a question asks you to show that a particular rearrangement converges, compute
 $g'(x)$ at the root and show $|g'(\alpha)| \lt 1$. If asked why a rearrangement fails, show
-$|g'(\alpha)| \gt 1$. :::
+$|g'(\alpha)| \gt 1$.
+:::
 
 ### 2.4 Geometric interpretation
 
@@ -188,7 +191,8 @@ The root is near $\alpha \approx -2.10$So the iterate has been sent in the wrong
 iterate $x_2$ will be pulled back, but convergence is erratic compared to a well-chosen Starting
 point.
 
-:::warning Warning Tangent is not close to horizontal near your starting point. :::
+:::warning Warning Tangent is not close to horizontal near your starting point.
+:::
 
 ### 3.5 Slow convergence near inflection points
 
@@ -345,7 +349,8 @@ Trapezium rule. This is because quadratic approximations match the curvature of 
 Better than linear ones.
 
 :::tip Simpson's rule requires an **even** number of strips. The trapezium rule works with any
-Number. Simpson's rule is exact for cubics (since the error depends on $f^{(4)}$). :::
+Number. Simpson's rule is exact for cubics (since the error depends on $f^{(4)}$).
+:::
 
 <hr />
 
@@ -390,7 +395,8 @@ In practice, numerical software often combines methods:
 
 :::info Newton-Raphson is the method of choice when derivatives are available and the function is
 Well-behaved. Fixed-point iteration is useful when the problem gives a contraction Mapping.
-Bisection is the reliable fallback when nothing else is guaranteed to work. :::
+Bisection is the reliable fallback when nothing else is guaranteed to work.
+:::
 
 ### 7.3 Cost comparison
 
@@ -841,7 +847,8 @@ questions within the A-Level specification for this topic, each with a full work
 Methods with other pure mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -867,3 +874,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

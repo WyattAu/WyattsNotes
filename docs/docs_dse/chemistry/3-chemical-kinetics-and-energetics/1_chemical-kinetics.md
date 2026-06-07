@@ -58,7 +58,8 @@ Rate is expressed in mol dm$^{-3}$ s$^{-1}$ (change in concentration per unit ti
 
 :::warning The mass loss method only works if the gas escapes the flask. If the flask is sealed, no
 Mass change occurs. Also, ensure the reaction does not produce heat that would affect the balance
-Reading. :::
+Reading.
+:::
 
 ### Concentration-Time Graphs
 
@@ -174,7 +175,8 @@ The $E_a$ line shifts to the left on the Maxwell-Boltzmann distribution. More pa
 Energy $\geq E_a$ (the new, lower activation energy), so the rate increases.
 
 :::info A catalyst does NOT change the distribution itself. It only lowers the threshold. The curve
-Shape remains the same at the same temperature. :::
+Shape remains the same at the same temperature.
+:::
 
 ### Key DSE Exam Points
 
@@ -943,3 +945,4 @@ $2.0 \times 10^{-3}\,\text{mol\,dm}^{-3}\text{s}^{-1}$. Calculate $k$.
 $$k = \frac{\text{rate}}{[\text{A}][\text{B}]^2} = \frac{2.0 \times 10^{-3}}{(0.10)(0.20)^2} = \frac{2.0 \times 10^{-3}}{4.0 \times 10^{-3}} = 0.50\,\text{mol}^{-2}\,\text{dm}^6\text{s}^{-1}$$
 
 > > > > > > > Stashed changes:docs/docs_dse/Chemistry/chemical-kinetics.md
+

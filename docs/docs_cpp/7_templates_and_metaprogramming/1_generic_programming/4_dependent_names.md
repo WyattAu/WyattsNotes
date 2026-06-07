@@ -67,7 +67,8 @@ int main() {
 :::warning Inside a class template that inherits from a dependent base, **you must use `this->`** to
 Access members of the base class. Without `this->`The name is non-dependent and looked up at Phase
 1, where the base class members are invisible. This is the single most common two-phase lookup bug
-[N4950 S13.8.3]. :::
+[N4950 S13.8.3].
+:::
 
 ### When Is a Name Dependent?
 
@@ -306,7 +307,8 @@ Per [N4950 S13.8.1], `typename` is required in the following contexts and prohib
 :::warning The error message "need `typename` before dependent type name" is one of the most common
 Template compilation errors. Always use `typename` before a qualified dependent name that you intend
 To use as a type, unless you are in a base class specifier or mem-initializer. This is a purely
-Syntactic requirement --- it does not change the generated code. :::
+Syntactic requirement --- it does not change the generated code.
+:::
 
 ### Where `typename` Is Required vs Not
 
@@ -832,3 +834,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

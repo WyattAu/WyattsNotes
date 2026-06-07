@@ -19,7 +19,8 @@ sidebar_position: 6
 Numerical examples and covers the Ricardian and Heckscher-Ohlin models. **AQA** focuses on the gains
 From trade and limitations of the comparative advantage model. **Edexcel** emphasises diagrammatic
 Analysis of trade flows and the UK's trade relationships. **OCR (A)** covers trade theory alongside
-The impact of MNCs and requires evaluation of trade policies. :::
+The impact of MNCs and requires evaluation of trade policies.
+:::
 
 ### 1.1 Absolute vs Comparative Advantage
 
@@ -89,7 +90,8 @@ Both are strictly better off. $\blacksquare$
 
 :::tip Tip Costs for both countries, (2) identify which country has the lower OC for each good, (3)
 show Specialisation increases world output, (4) show a mutually beneficial exchange rate. Use a
-numerical Example. :::
+numerical Example.
+:::
 
 ### 1.3 Limitations of the Ricardian Model
 
@@ -151,7 +153,8 @@ Buy the same quantity of imports as in 2020.
 
 :::warning Warning Deterioration is caused by cheaper imports (e.g., due to technological progress
 abroad), consumers Benefit from lower prices. Conversely, an improvement caused by a fall in export
-volumes (due to Declining competitiveness) may actually reflect economic weakness. :::
+volumes (due to Declining competitiveness) may actually reflect economic weakness.
+:::
 
 ## 3. Exchange Rates
 
@@ -159,7 +162,8 @@ volumes (due to Declining competitiveness) may actually reflect economic weaknes
 determination, Purchasing power parity, and the effects of exchange rate changes on the balance of
 payments. **Edexcel** emphasises the UK context including Brexit impacts on trade and the pound.
 **OCR (A)** Links exchange rates to macroeconomic policy objectives and requires evaluation of
-intervention. :::
+intervention.
+:::
 
 ### 3.1 Definition
 
@@ -282,7 +286,8 @@ $$CA \mathrm{ falls initially, then rises above the starting level}$$
 
 :::tip Tip Distinguish between the short run (J-curve — CA may worsen) and the long run
 (Marshall-Lerner — CA Improves). Draw the J-curve diagram. State the Marshall-Lerner condition
-explicitly. :::
+explicitly.
+:::
 
 ## 5. Globalisation
 
@@ -363,7 +368,8 @@ War, reshoring) reflects these tensions.
 
 :::warning Warning Ignores income distribution, (2) it doesn't capture health, education, or
 political freedom, (3) it Is biased toward market activity (excludes subsistence farming, unpaid
-work). Always use multiple Indicators. :::
+work). Always use multiple Indicators.
+:::
 
 ### 6.2 Barriers to Economic Development
 
@@ -1175,3 +1181,4 @@ deterioration.
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
 the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
 each approach.
+

@@ -42,7 +42,8 @@ Where:
 - $W$ is the work done **on** the system (J) — positive if work is done on the system
 
 :::warning Warning Work done **by** the system. Always check which convention is being used. We use
-the "physics" Convention where $W$ is work done on the system. :::
+the "physics" Convention where $W$ is work done on the system.
+:::
 
 **Intuition.** The first law is energy conservation applied to thermodynamic systems. You can
 Increase a gas's internal energy either by heating it or by compressing it (doing work on it).
@@ -234,7 +235,8 @@ Note that $\mathrm{COP}_{\mathrm{hp}} = \mathrm{COP}_{\mathrm{ref}} + 1$.
 
 :::warning Common Pitfall Students often confuse engine efficiency ($\eta = W/Q_H$) with
 Refrigerator COP ($Q_C/W$). The key difference: efficiency is a fraction (always $\lt 1$), while COP
-Can exceed 1 (you move more heat than the work you put in). :::
+Can exceed 1 (you move more heat than the work you put in).
+:::
 
 ## 5. The Second Law of Thermodynamics
 
@@ -305,7 +307,8 @@ Molecules have far more positional freedom.
 
 :::tip Tip Give a consequence (no 100% efficient engine), and explain in terms of entropy if
 possible. On a $p$-$V$ diagram, the Carnot cycle encloses the maximum possible area for given
-temperature limits. :::
+temperature limits.
+:::
 
 ## Problem Set
 
@@ -634,3 +637,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

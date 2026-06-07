@@ -382,7 +382,8 @@ void container_demo() {
 Genuinely can throw (which is rare — moving should only perform pointer swaps and assignments). The
 `std::is_nothrow_move_constructible_v<T>` type trait is used by standard containers to select
 Between move and copy during reallocation. If your move is not `noexcept`Your types will be Silently
-copied in containers, which can be a severe performance regression. :::
+copied in containers, which can be a severe performance regression.
+:::
 
 ### How `std::vector` Uses `noexcept` Move
 
@@ -783,7 +784,8 @@ After swap:  a.size=2000, b.size=1000
 
 :::tip When writing a custom `swap`Always include `using std::swap;` before calling `swap` on
 Individual members. This ensures that if a member type has a custom `swap`It is found via ADL, While
-falling back to `std::swap` for types that do not. :::
+falling back to `std::swap` for types that do not.
+:::
 
 ## 7.3 Swap as a Building Block
 
@@ -870,7 +872,8 @@ Case [N4950 S11.4.5.3], but the Standard requires the object to be in a "valid b
 State" afterward. For resource-owning types that do not guard against self-assignment, this means a
 use-after-free. Always include the self-assignment check in move assignment Operators, or
 restructure to avoid the issue entirely (e.g., using the copy-and-swap idiom which Handles
-self-assignment ). :::
+self-assignment ).
+:::
 
 ## 7.5 Move-Only Types and the Standard Library
 
@@ -944,3 +947,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

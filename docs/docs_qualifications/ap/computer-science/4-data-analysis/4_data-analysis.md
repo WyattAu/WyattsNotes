@@ -342,7 +342,8 @@ for (String name : names) {
 ### Modifying ArrayList During Iteration
 
 :::warning Using `for-each` or an enhanced for loop, you cannot modify the ArrayList (add/remove)
-During iteration. Use an Iterator or iterate backwards with an index. :::
+During iteration. Use an Iterator or iterate backwards with an index.
+:::
 
 ```java
 for (int i = names.size() - 1; i >= 0; i--) {
@@ -699,7 +700,8 @@ for (String name : names) {
 ### Modifying ArrayList During Iteration
 
 :::warning Using `for-each` or an enhanced for loop, you cannot modify the ArrayList (add/remove)
-During iteration. Use an Iterator or iterate backwards with an index. :::
+During iteration. Use an Iterator or iterate backwards with an index.
+:::
 
 ```java
 for (int i = names.size() - 1; i >= 0; i--) {
@@ -949,3 +951,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

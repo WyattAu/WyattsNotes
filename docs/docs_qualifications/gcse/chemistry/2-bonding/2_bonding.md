@@ -255,7 +255,8 @@ With each chlorine, and retains one lone pair. The structure is analogous to amm
 :::warning It is the **intermolecular forces** that are overcome when a simple covalent substance
 Melts or boils, NOT the covalent bonds within the molecules. Covalent bonds are strong, but there
 Are only weak forces between molecules. Breaking covalent bonds would decompose the molecule into
-Atoms -- this does not happen during melting or boiling. :::
+Atoms -- this does not happen during melting or boiling.
+:::
 
 The distinction between intramolecular bonds (within molecules) and intermolecular forces (between
 Molecules) is one of the most important ideas in chemistry. The covalent bonds inside a water
@@ -517,7 +518,8 @@ Given the type of bonding, you should be able to predict:
 
 :::info Changes of state are **physical** changes, not chemical changes. No new substances are
 Formed, and the process is reversible. The identity of the substance does not change; only the
-Arrangement and energy of its particles. :::
+Arrangement and energy of its particles.
+:::
 
 ### 5.3 Heating and Cooling Curves
 
@@ -904,3 +906,4 @@ and practical applications.
 
 Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
 to unfamiliar contexts, particularly in calculation and practical questions.
+

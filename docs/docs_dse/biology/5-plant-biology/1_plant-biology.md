@@ -157,7 +157,8 @@ Process at any given time. The rate of photosynthesis is determined by the slowe
 :::info At very high light intensities, the rate may decrease due to **photorespiration**. RuBisCO
 Can bind $\mathrm{O}_2$ instead of $\mathrm{CO}_2$ (oxygenase activity), which does not produce
 Glucose and wastes energy. This is more significant at high temperatures and low $\mathrm{CO}_2$
-Concentrations. C4 and CAM plants have evolved mechanisms to minimise photorespiration. :::
+Concentrations. C4 and CAM plants have evolved mechanisms to minimise photorespiration.
+:::
 
 ---
 
@@ -368,7 +369,8 @@ Water moves up the xylem against gravity through three contributing mechanisms:
 :::warning A common DSE pitfall is writing that root pressure is the main mechanism for water
 Transport in tall trees. Root pressure alone can only push water a few metres. The cohesion-tension
 Theory is the dominant mechanism in tall plants. Root pressure is supplementary and is only
-Significant in small plants or under conditions of low transpiration. :::
+Significant in small plants or under conditions of low transpiration.
+:::
 
 ### Phloem Structure and Function
 
@@ -706,7 +708,8 @@ Growth can be towards (positive tropism) or away from (negative tropism) the sti
 :::warning The critical distinction for DSE is that auxin has opposite effects on cell elongation in
 Shoots versus roots. In shoots, auxin promotes elongation (high concentration side grows more). In
 Roots, auxin inhibits elongation (low concentration side grows more). This is why shoots bend
-Towards light but roots bend away from it when auxin redistributes. :::
+Towards light but roots bend away from it when auxin redistributes.
+:::
 
 ### Auxin and Gibberellin Interactions
 
@@ -1170,7 +1173,8 @@ use photoperiod to determine the appropriate time to flower.
 rather than NIGHT length. The critical factor is actually the length of the DARK period. Long-day
 plants are really "short-night plants," and short-day plants are really "long-night plants." This
 was demonstrated by interrupting the dark period with a brief flash of light, which prevents
-short-day plants from flowering but promotes flowering in long-day plants. :::
+short-day plants from flowering but promotes flowering in long-day plants.
+:::
 
 ### Phytochrome
 
@@ -1798,3 +1802,4 @@ and evaluate experimental evidence critically.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

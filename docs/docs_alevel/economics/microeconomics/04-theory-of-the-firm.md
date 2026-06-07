@@ -281,7 +281,8 @@ Always reduces consumer welfare — the key is to recognise that _some_ consumer
 May face lower prices. CIE (9708) requires calculation of profit under single-price vs
 Discriminatory pricing. AQA Paper 2 frequently features questions on the ethics and fairness of
 Price discrimination. OCR (A) may ask about the conditions necessary for each type of price
-Discrimination to be feasible. :::
+Discrimination to be feasible.
+:::
 
 #### Natural Monopoly
 
@@ -300,7 +301,8 @@ Ownership.
 regulation Can create **X-inefficiency** — the monopoly has no incentive to minimise costs if the
 regulator allows cost-plus pricing. CIE (9708) often asks students to compare **public ownership vs
 Regulation** using efficiency criteria. OCR (A) focuses on the principal-agent problem between
-Regulator and firm (information asymmetry). :::
+Regulator and firm (information asymmetry).
+:::
 
 **Real-world example: UK water industry.** Thames Water and other regional water companies are
 Natural monopolies covering specific geographic areas — it would be deeply inefficient to run
@@ -419,7 +421,8 @@ Is loss of market share to discounters.
 Differs from a one-shot game in sustaining collusion. CIE (9708) may ask students to construct a
 Payoff matrix and identify dominant strategies. OCR (A) has recently included questions on whether
 The prisoner's dilemma applies to real-world oligopolies where firms can communicate — a key
-Evaluation point. :::
+Evaluation point.
+:::
 
 #### Kinked Demand Curve Model (Sweezy, 1939)
 
@@ -512,7 +515,8 @@ Monopolies. This illustrates the gap between theoretical contestability and real
 Contestable and competitive markets — the key distinction is that a contestable market may have only
 One firm but behaves as if competitive due to the threat of entry. AQA Paper 1 has included 25-mark
 Questions on the extent to which UK supermarket markets are contestable. OCR (A) requires
-Understanding of sunk costs as the key barrier to contestability. :::
+Understanding of sunk costs as the key barrier to contestability.
+:::
 
 ## 5. Comparative Table of Market Structures
 
@@ -535,7 +539,8 @@ Focuses on the link between market structure and **economic efficiency**, often 
 Evaluate which structure is most efficient. Edexcel (A) requires analysis of how market structures
 Affect **consumer and producer surplus**. CIE (9708) expects students to draw diagrams for each
 Structure and annotate efficiency losses. OCR (A) frequently asks about **real-world markets that
-Fall between categories** (e.g., is Amazon a monopoly or oligopoly?). :::
+Fall between categories** (e.g., is Amazon a monopoly or oligopoly?).
+:::
 
 ## 6. Critical Evaluation
 
@@ -603,12 +608,14 @@ Traditional theory of the firm assumes profit maximisation. Behavioural economic
 Debate whether firms really maximise profit — behavioural objections are high-scoring evaluation
 Points. CIE (9708) does not formally require behavioural economics but rewards students who mention
 Satisficing as an alternative objective. Edexcel includes the principal-agent problem in its
-Specification for market failure topics. :::
+Specification for market failure topics.
+:::
 
 :::info Board-Specific Note CIE (9708) requires detailed diagrammatic analysis for each market
 Structure, including short-run and long-run equilibrium diagrams. AQA and Edexcel emphasise
 Evaluation of real-world examples. OCR (A) often asks about the relationship between market
-Structure and efficiency. :::
+Structure and efficiency.
+:::
 
 ## 7. Problem Set
 
@@ -1281,3 +1288,4 @@ limitations of price cap regulation when the X factor is set too generously.
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
 the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
 each approach.
+

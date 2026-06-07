@@ -485,7 +485,8 @@ Maven supports version ranges, but they are a source of non-reproducible builds.
 
 :::warning Avoid version ranges in production. They make builds non-reproducible — a build that
 Works today may break tomorrow when a new compatible version is published. Pin exact versions and
-Update them deliberately through dependency review. :::
+Update them deliberately through dependency review.
+:::
 
 ## Multi-Module Projects
 
@@ -594,7 +595,8 @@ mvn clean install
 :::info In Maven, a parent POM with `&lt;packaging&gt;pom&lt;/packaging&gt;` serves as an
 Aggregation point and a source of shared configuration. In Gradle, the `settings.gradle.kts` file
 Declares which modules belong to the build, and shared configuration is applied through convention
-Plugins or the `subprojects` block. :::
+Plugins or the `subprojects` block.
+:::
 
 ## Common Pitfalls
 
@@ -977,7 +979,8 @@ The wrapper downloads the specified Gradle distribution to `~/.gradle/wrapper/di
 :::warning Always use wrapper scripts. Never depend on a globally installed Maven or Gradle.
 Different developers (and CI agents) may have different versions installed, leading to "works on my
 Machine" build failures. Pin the wrapper version in version control and update it deliberately
-Through a PR. :::
+Through a PR.
+:::
 
 ## Summary
 
@@ -999,3 +1002,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

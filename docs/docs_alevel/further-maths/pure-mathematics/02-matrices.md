@@ -69,7 +69,8 @@ $\mathbf{A}\mathbf{I}_n = \mathbf{I}_n\mathbf{A} = \mathbf{A}$ for any
 $\mathbf{A} \in M_{m \times n}(\mathbb{R})$.
 
 :::warning warning "apply $\mathbf{B}$ first, then $\mathbf{A}$." When composing transformations,
-The rightmost matrix is applied first. :::
+The rightmost matrix is applied first.
+:::
 
 <hr />
 
@@ -162,7 +163,8 @@ Suppose $\mathbf{B}$ and $\mathbf{C}$ are both inverses of $\mathbf{A}$. Then:
 $$\mathbf{B} = \mathbf{B}\mathbf{I} = \mathbf{B}(\mathbf{AC}) = (\mathbf{BA})\mathbf{C} = \mathbf{IC} = \mathbf{C} \quad \square$$
 
 :::tip To verify your inverse, always check that $\mathbf{A}\mathbf{A}^{-1} = \mathbf{I}$. This
-Catches sign errors and arithmetic mistakes immediately. :::
+Catches sign errors and arithmetic mistakes immediately.
+:::
 
 <details>
 <summary>Worked Example: $3\times3$ inverse</summary>
@@ -292,11 +294,13 @@ is represented by $\mathbf{BA}$ (rightmost applied first).
 
 :::warning Order matters. A rotation followed by a reflection generally produces a different result
 From a reflection followed by a rotation. The combined matrix is $\mathbf{BA}$ (not $\mathbf{AB}$)
-When $\mathbf{A}$ is applied first. :::
+When $\mathbf{A}$ is applied first.
+:::
 
 :::tip To find the matrix of a combined transformation, multiply the matrices in reverse order of
 Application. If the question says "reflect then rotate," compute
-$\mathbf{R}_{\mathrm{rot}} \times \mathbf{R}_{\mathrm{ref}}$. :::
+$\mathbf{R}_{\mathrm{rot}} \times \mathbf{R}_{\mathrm{ref}}$.
+:::
 
 <details>
 <summary>Worked Example: Combined transformation</summary>
@@ -321,7 +325,8 @@ Transformation.
 ## 6. Matrix Transformations in 3D
 
 :::info 3D transformations are required by AQA and appear on CIE P1. Edexcel and OCR focus primarily
-On 2D but may include basic $3\times3$ determinant and inverse calculations. :::
+On 2D but may include basic $3\times3$ determinant and inverse calculations.
+:::
 
 ### 6.1 Rotations in 3D
 
@@ -1160,3 +1165,4 @@ $-(\lambda_1 + \lambda_2 + \cdots + \lambda_n)$.
 Therefore $\text{tr}\,\mathbf{A} = \lambda_1 + \lambda_2 + \cdots + \lambda_n$. $\blacksquare$
 
 </details>
+

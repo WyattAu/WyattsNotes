@@ -53,7 +53,8 @@ $$\boxed{F = Bqv}$$
 
 :::warning Common Pitfall The magnetic force is always perpendicular to both $\mathbf{v}$ and
 $\mathbf{B}$. It does no work ($\mathbf{F} \cdot \mathbf{v} = 0$), so a magnetic field alone cannot
-Change the speed of a charged particle — only its direction. :::
+Change the speed of a charged particle — only its direction.
+:::
 
 ## 3. Circular Motion in a Magnetic Field
 
@@ -160,7 +161,8 @@ Opposing it, a self-amplifying cycle would create energy from nothing. The oppos
 Work must be done to maintain the flux change, and this work appears as electrical energy.
 
 :::tip Tip Determine the field direction that would oppose this change, (3) use the right-hand grip
-rule to find The induced current direction. :::
+rule to find The induced current direction.
+:::
 
 ### Motional e.m.f.
 
@@ -484,3 +486,4 @@ $\blacksquare$
   (independent of speed).
 - Fleming's left-hand rule determines the direction of force on a current/charge in a field.
 - Magnetic flux: $\Phi = BA\cos\theta$; flux linkage for a coil: $N\Phi = BAN\cos\theta$.
+

@@ -22,7 +22,8 @@ slug: moments
 | CIE (9709) | P4      | Moments and equilibrium       |
 
 :::info The principle of moments is fundamental. Always state the point about which you are Taking
-moments, and include the direction (clockwise/anticlockwise) of each moment. :::
+moments, and include the direction (clockwise/anticlockwise) of each moment.
+:::
 
 <hr />
 
@@ -103,7 +104,8 @@ $R_{\mathrm{left}}$ decreases — the bridge load redistributes continuously.
 
 :::warning The principle of moments applies about **any** point — not just the pivot. Choosing a
 Clever point (often where an unknown force acts) can simplify calculations by eliminating that
-Unknown from the moment equation. :::
+Unknown from the moment equation.
+:::
 
 <hr />
 
@@ -216,7 +218,8 @@ Steeper ($\theta$ increases), $\cot\theta$ decreases and less friction is needed
 
 :::warning If the wall is **rough**, there is an additional vertical friction force $F_w$ acting up
 The wall. This changes the vertical equilibrium to $R_g + F_w = W$ and adds complexity to the moment
-Equation. Always read the question carefully to determine whether the wall is smooth or rough. :::
+Equation. Always read the question carefully to determine whether the wall is smooth or rough.
+:::
 
 ### 3.2.4 Ladder with a person on it
 
@@ -289,7 +292,8 @@ To find the forces in the members of a framework:
 If you assume a rod is in tension and get a negative answer, the rod is in compression.
 
 :::info Info Choosing the right joint to start with — look for joints where you have at most two
-unknown forces, Since you can only write two equilibrium equations per joint. :::
+unknown forces, Since you can only write two equilibrium equations per joint.
+:::
 
 <hr />
 
@@ -421,7 +425,8 @@ $P = \dfrac{150}{1.2} = 125\,\mathrm{N}$.
 Since $125 \lt 200$The block **topples first** at $P = 125\,\mathrm{N}$.
 
 :::info Info Slides. Here $\dfrac{1.2}{0.3} = 4$ and $\dfrac{1}{0.4} = 2.5$. Since $4 > 2.5$Toppling
-occurs First, which matches our calculation. :::
+occurs First, which matches our calculation.
+:::
 
 <hr />
 
@@ -840,7 +845,8 @@ the A-Level specification for this topic, each with a full worked solution.
 with other topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -866,3 +872,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

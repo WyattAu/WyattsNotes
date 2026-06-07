@@ -62,7 +62,8 @@ Grants the embedded page the same privileges as the parent page.
 
 :::warning Never combine `allow-scripts` with `allow-same-origin` if the iframe source is
 User-controlled or untrusted. Together they allow the embedded page to strip its own sandbox
-Restrictions via JavaScript. :::
+Restrictions via JavaScript.
+:::
 
 For trusted embeds like Godbolt and Dartpad, `sandbox="allow-scripts allow-same-origin"` is
 Acceptable because both services are well-known and operate over HTTPS.
@@ -378,3 +379,4 @@ applying these mathematical techniques.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

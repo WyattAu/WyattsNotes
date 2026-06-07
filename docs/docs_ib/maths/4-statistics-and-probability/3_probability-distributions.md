@@ -1335,7 +1335,8 @@ questions within the IB specification for this topic, each with a full worked so
 Distributions with other IB mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
-and building a personal test matrix. :::
+and building a personal test matrix.
+:::
 
 ## Worked Examples
 
@@ -1362,3 +1363,4 @@ $$= 1 + 10(2x) + 45(4x^2) = 1 + 20x + 180x^2$$
 | --------------------------- | ------- | ---------------------------------------------------------------------------------------------------------- |
 | [Statistical Distributions] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/maths/statistics/04-statistical-distributions) |
 | [Statistical Distributions] | IB      | [View](https://ib.wyattau.com/docs/ib/maths/4-statistics-and-probability/3_probability-distributions)      |
+

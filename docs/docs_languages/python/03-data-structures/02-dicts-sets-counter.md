@@ -52,7 +52,8 @@ hash(("a", "b"))   # depends on hash("a") ^ hash("b") with rotation
 ```
 
 :::info CPython randomizes hash seeds for `str``bytes`And `datetime` objects at interpreter Startup.
-This is a security measure against hash DoS attacks. Set `PYTHONHASHSEED=0` to disable. :::
+This is a security measure against hash DoS attacks. Set `PYTHONHASHSEED=0` to disable.
+:::
 
 ### Collision Resolution: Open Addressing
 
@@ -136,7 +137,8 @@ Since Python 3.7, regular `dict` also preserves insertion order. The differences
 
 :::warning `OrderedDict` equality is **order-sensitive**:
 `OrderedDict([(1,2),(3,4)]) != OrderedDict([(3,4),(1,2)])`. Regular `dict` equality does **not**
-Consider order — only `OrderedDict` equality is order-sensitive. :::
+Consider order — only `OrderedDict` equality is order-sensitive.
+:::
 
 ### LRU Cache with OrderedDict
 
@@ -368,7 +370,8 @@ ChainMap is ideal for layered configuration systems: defaults, environment varia
 Per-request overrides.
 
 :::warning Writes to a ChainMap affect **only the first mapping**. If you need to modify a specific
-Layer, access it via `config.maps[0]``config.maps[1]`Etc. :::
+Layer, access it via `config.maps[0]``config.maps[1]`Etc.
+:::
 
 ```python
 config = ChainMap({"timeout": 30}, {"timeout": 60})
@@ -518,7 +521,8 @@ del d["port"]             # Deleting 'port'
 
 :::warning Prefer `UserDict` over subclassing `dict` directly. When you subclass `dict`Some C-level
 methods bypass your Python-level overrides. `UserDict` stores data in an internal `dict` Attribute
-(`self.data`), so all access goes through your Python methods. :::
+(`self.data`), so all access goes through your Python methods.
+:::
 
 ```python
 from collections import UserList
@@ -643,7 +647,8 @@ print([e[1] for e in events])
 ```
 
 :::tip `bisect` operations are O(log n) for search and O(n) for insertion (because the list must
-Shift elements). For frequent insertions, consider `heapq` or a balanced tree structure. :::
+Shift elements). For frequent insertions, consider `heapq` or a balanced tree structure.
+:::
 
 ## heapq Module
 
@@ -866,3 +871,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

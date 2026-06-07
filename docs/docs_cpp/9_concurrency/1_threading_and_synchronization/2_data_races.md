@@ -30,7 +30,8 @@ Is the order relation defined in [N4950 §6.9.4.1].
 
 :::warning Warning The compiler is free to assume no data races exist and may optimize accordingly,
 potentially Eliminating loads, stores, or reordering operations in ways that are surprising and
-Non-deterministic. :::
+Non-deterministic.
+:::
 
 ## Undefined Behavior of Data Races
 
@@ -69,7 +70,8 @@ Threads. A race condition can occur even with proper synchronization (e.g., two 
 
 :::warning Warning Exhibits undefined behavior and may crash, produce incorrect results, or appear
 to work correctly Depending on the platform and compiler flags. Never write code like this in
-production. :::
+production.
+:::
 
 ```cpp
 #include <iostream>
@@ -275,7 +277,8 @@ void increment_b(int iterations) {
 ```
 
 :::tip Tip Prevents the next counter from sharing the same line. On systems with 128-byte cache
-lines, use `alignas(128)` and adjust the padding accordingly. :::
+lines, use `alignas(128)` and adjust the padding accordingly.
+:::
 
 ### Contended vs Uncontended Locks
 
@@ -349,7 +352,8 @@ int main() {
 :::warning Warning `memory_order_release` are effectively free (the hardware provides the ordering).
 On ARM, POWER, and RISC-V, these orderings emit explicit memory barrier instructions and have real
 cost. Always measure Before optimizing memory orderings — `memory_order_seq_cst` is the safest
-default. :::
+default.
+:::
 
 ## Practical Data Race Bug and Fix
 
@@ -529,3 +533,4 @@ for mastery of this topic.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

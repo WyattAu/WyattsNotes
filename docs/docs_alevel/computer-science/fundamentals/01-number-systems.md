@@ -284,7 +284,8 @@ Result: $1011_2 = -5$ in two's complement. But $6 + 5 = 11$Which is outside the 
 
 - **AQA:** Requires two's complement for 8-bit and 16-bit numbers.
 - **CIE:** Requires two's complement for 8-bit numbers specifically.
-- **OCR:** Requires understanding of sign and magnitude as well as two's complement. :::
+- **OCR:** Requires understanding of sign and magnitude as well as two's complement.
+:::
 
 <hr />
 
@@ -354,7 +355,8 @@ The codes $1010$ through $1111$ are **invalid** in BCD.
 - BCD avoids rounding errors in decimal arithmetic — useful in financial systems
 
 :::warning Pitfall BCD is NOT the same as converting the entire number to binary. $12_{10}$ in BCD
-Is $00010010_2$NOT $1100_2$. :::
+Is $00010010_2$NOT $1100_2$.
+:::
 
 <hr />
 
@@ -441,7 +443,8 @@ Magnitude.
 
 1. It has two representations of zero
 2. Addition requires different logic depending on the signs
-3. The range is asymmetric :::
+3. The range is asymmetric
+:::
 
 <hr />
 
@@ -706,3 +709,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

@@ -1380,3 +1380,4 @@ $\blacksquare$
   after crash.
 - Distributed databases: CAP theorem — partition tolerance forces choice between consistency and
   availability; eventual consistency models.
+

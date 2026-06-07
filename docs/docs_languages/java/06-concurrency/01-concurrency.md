@@ -127,7 +127,8 @@ public class SafePublisher {
 :::warning Publication via a normal (non-volatile, non-final) field is never safe. Even if Thread A
 writes the reference after constructing the object, the JIT compiler may reorder the write to
 `holder` before the writes to the object's fields during construction. This is not theoretical -- it
-has been observed in practice on x86, ARM, and every major architecture. :::
+has been observed in practice on x86, ARM, and every major architecture.
+:::
 
 ## Threads
 
@@ -227,7 +228,8 @@ stateDiagram-v2
 :::info `RUNNABLE` in the JVM state machine does not distinguish between "currently executing on a
 CPU core" and "ready to execute but waiting for CPU time." The JVM delegates scheduling to the
 operating system, and the OS distinguishes between these two conditions (running vs. Runnable in the
-OS run queue). From the JVM's perspective, both are `RUNNABLE`. :::
+OS run queue). From the JVM's perspective, both are `RUNNABLE`.
+:::
 
 ## Synchronized
 
@@ -348,7 +350,8 @@ public class BoundedBuffer<V> {
 :::warning Always use `wait()` inside a `while` loop, never an `if` statement. The JMM permits
 **spurious wakeups** -- a thread may return from `wait()` without `notify()` or `notifyAll()` being
 called. The condition must be re-checked after every wakeup. This is not a theoretical concern; it
-is mandated by the POSIX specification and the JLS. :::
+is mandated by the POSIX specification and the JLS.
+:::
 
 ## Volatile
 
@@ -470,7 +473,8 @@ fixedPool.shutdownNow();  // forceful shutdown -- interrupts running tasks
 :::danger Never use `Executors.newCachedThreadPool()` in production code. It creates a new thread
 for every submitted task when the pool is saturated, which means a sudden burst of 100,000 tasks
 creates 100,000 OS threads and almost certainly crashes the JVM with an
-`OutOfMemoryError: unable to create new native thread`. Always use a bounded pool. :::
+`OutOfMemoryError: unable to create new native thread`. Always use a bounded pool.
+:::
 
 ### ThreadPoolExecutor: The Complete Picture
 
@@ -671,7 +675,8 @@ counts.forEach(2, (key, value) -> {
 :::info The iteration semantics of `ConcurrentHashMap` are **weakly consistent**: the iterator
 reflects the state of the map at some point during or since the creation of the iterator. It will
 never throw `ConcurrentModificationException` and is guaranteed to see each element at most once,
-but it may miss elements that were added after the iterator was created. :::
+but it may miss elements that were added after the iterator was created.
+:::
 
 ### CopyOnWriteArrayList
 
@@ -828,7 +833,8 @@ public final int incrementAndGet() {
 classes can suffer from **cache line contention** (also called "false sharing"). Each failed CAS
 triggers a cache coherence protocol invalidation on the cache line holding the atomic variable,
 which can cause severe performance degradation. In extreme cases, a lock-based approach can
-outperform lock-free CAS. :::
+outperform lock-free CAS.
+:::
 
 ## Explicit Locks
 
@@ -918,7 +924,8 @@ public class ThreadSafeCache<K, V> {
 :::warning `ReentrantReadWriteLock` is not reentrant between read and write locks. A thread holding
 the read lock cannot acquire the write lock (it will deadlock). A thread holding the write lock can
 acquire the read lock (downgrade), but a thread holding the read lock cannot upgrade to the write
-lock. :::
+lock.
+:::
 
 ### StampedLock
 
@@ -960,7 +967,8 @@ public class StampedLockCache<K, V> {
 :::info `StampedLock` is NOT reentrant. Each call to `writeLock()` must be matched with exactly one
 `unlockWrite()` using the returned stamp. Losing the stamp or calling unlock with the wrong stamp
 will cause an `IllegalMonitorStateException`. Additionally, `StampedLock` does not support
-`Condition` variables. :::
+`Condition` variables.
+:::
 
 ## Synchronizers
 
@@ -1008,7 +1016,8 @@ System.out.println("All services initialized");
 ```
 
 :::info `CountDownLatch` is one-shot: once the count reaches zero, it cannot be reset. If you need a
-reusable version, use `CyclicBarrier`. :::
+reusable version, use `CyclicBarrier`.
+:::
 
 ### CyclicBarrier
 
@@ -1034,7 +1043,8 @@ for (int i = 0; i < 4; i++) {
 
 :::warning If a thread fails (throws an exception) while waiting at a `CyclicBarrier`The barrier is
 **broken** and all other waiting threads receive a `BrokenBarrierException`. The barrier must be
-explicitly reset via `barrier.reset()` before it can be used again. :::
+explicitly reset via `barrier.reset()` before it can be used again.
+:::
 
 ## Virtual Threads (Java 21+)
 
@@ -1126,7 +1136,8 @@ try {
 `ReentrantLock``Semaphore``CountDownLatch`And all other `java.util.concurrent` synchronizers do NOT
 cause pinning. The JDK team has been progressively replacing internal uses of `synchronized` with
 `ReentrantLock` to eliminate pinning in the JDK itself. In JDK 24+, pinning from `synchronized` is
-being addressed through async monitor enter/exit, but for JDK 21-23, you must be aware of it. :::
+being addressed through async monitor enter/exit, but for JDK 21-23, you must be aware of it.
+:::
 
 ### When to Use Virtual Threads
 
@@ -1206,3 +1217,4 @@ structure (the scope is lexically scoped via try-with-resources).
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

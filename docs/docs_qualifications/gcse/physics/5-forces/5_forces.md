@@ -150,7 +150,8 @@ The SAME object. The true pairs are: Earth pulls book down / book pulls Earth up
 Down / table pushes book up.
 
 :::warning Newton's third law pairs always act on different objects. The normal reaction and weight
-Act on the same object, so they are NOT a third law pair. :::
+Act on the same object, so they are NOT a third law pair.
+:::
 
 ### 2.6 Identifying Third Law Pairs: A Systematic Method
 
@@ -857,3 +858,4 @@ $$a = \frac{F_{\text{net}}}{m} = \frac{10}{2.0} = 5.0\,\text{m\,s}^{-2}$$
 This topic covers the key concepts of Forces for GCSE Physics. Focus on understanding the
 fundamental principles, practising with exam-style questions, and applying your knowledge to
 unfamiliar contexts.
+

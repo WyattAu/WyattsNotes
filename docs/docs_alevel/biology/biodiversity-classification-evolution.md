@@ -84,7 +84,8 @@ Proteins, and PCR-based methods to quantify allele variation.
 
 :::warning Warning Only one component. Simpson's Index incorporates both richness and evenness,
 giving a more accurate Measure of diversity. A community dominated by one species with many rare
-species has low diversity Despite high richness. :::
+species has low diversity Despite high richness.
+:::
 
 ### 1.5 Sampling Methods
 
@@ -160,7 +161,8 @@ Is preferred.
 Structures** share a common evolutionary origin (e.g., the pentadactyl limb in mammals, birds,
 Reptiles, and amphibians). **Analogous structures** perform a similar function but have different
 Evolutionary origins (e.g., the wings of insects and birds). Only homologous structures are
-Informative for cladistics. :::
+Informative for cladistics.
+:::
 
 ## 3. Evolution
 
@@ -298,7 +300,8 @@ Suggesting the population is approximately in equilibrium.
 :::warning Common Pitfall Students sometimes think Hardy-Weinberg equilibrium means no evolution is
 Occurring. It describes the theoretical conditions under which allele frequencies remain constant.
 If a population deviates from H-W, this is evidence that evolutionary forces (selection, drift, gene
-Flow, mutation, non-random mating) are acting. :::
+Flow, mutation, non-random mating) are acting.
+:::
 
 ## 5. Genetic Drift and Gene Flow
 
@@ -345,7 +348,8 @@ barrier), populations Diverge and may eventually become separate species.
 :::warning Common Pitfall Students often think that evolution always leads to "improvement" or
 "progress." Natural Selection produces adaptations to the current environment, not to some absolute
 standard of fitness. What is advantageous in one environment may be disadvantageous in another.
-Genetic drift produces Changes without regard to fitness at all. :::
+Genetic drift produces Changes without regard to fitness at all.
+:::
 
 ## 6. Molecular Clocks and Phylogenetics
 
@@ -469,7 +473,8 @@ Genotype, or population substructure (Wahlund effect).
 :::warning Common Pitfall When calculating degrees of freedom for the chi-squared test with
 Hardy-Weinberg data, Students often incorrectly use $\mathrm{df} = n - 1$ (where $n$ is the number
 of genotypes). The Correct formula accounts for the fact that allele frequencies are estimated from
-the data, reducing the Degrees of freedom further. For a two-allele system, $\mathrm{df} = 1$. :::
+the data, reducing the Degrees of freedom further. For a two-allele system, $\mathrm{df} = 1$.
+:::
 
 ## 8. Classification: The Five Kingdom System and Beyond
 
@@ -1581,7 +1586,8 @@ Biodiversity, Classification and Evolution with other biology topics to test syn
 conditions.
 
 See [Diagnostic Guide](/docs/alevel/biology/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ## 26. Investigating Variation
 
@@ -2031,3 +2037,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

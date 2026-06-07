@@ -441,3 +441,4 @@ $= -\frac{(x+1)e^x}{4} - \frac{(3x-1)e^x}{36} = e^x\left(-\frac{9(x+1)}{36} - \f
 $y = c_1 e^{2x} + c_2 e^{-2x} - \frac{(x+2)e^x}{9}$. $\blacksquare$
 
 </details>
+

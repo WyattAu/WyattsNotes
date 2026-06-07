@@ -210,7 +210,8 @@ $$
 
 :::tip When finding $\arg(z)$Always draw a quick Argand diagram to check which quadrant the point Is
 in. A common mistake is to use the calculator value directly without adjusting for the correct
-Quadrant. :::
+Quadrant.
+:::
 
 ### Geometric Interpretation of Operations
 
@@ -347,7 +348,8 @@ $$
 | Euler     | $z = re^{i\theta}$                | Powers, roots (De Moivre) |
 
 :::tip Converting between forms is essential. A good strategy: always convert to polar/Euler form
-Before raising to a power or finding roots, and convert back to Cartesian for the final answer. :::
+Before raising to a power or finding roots, and convert back to Cartesian for the final answer.
+:::
 
 ## Modulus-Argument Form Operations
 
@@ -1073,7 +1075,8 @@ the hardest questions within the IB specification for this topic, each with a fu
 Numbers with other IB mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
-and building a personal test matrix. :::
+and building a personal test matrix.
+:::
 
 ## Summary
 
@@ -1090,3 +1093,4 @@ and building a personal test matrix. :::
 | [Complex Numbers] | A-Level    | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/further-maths/pure-mathematics/01-complex-numbers) |
 | [Complex Numbers] | IB         | [View](https://ib.wyattau.com/docs/ib/maths/1-number-and-algebra/2_complex-numbers)                            |
 | [Complex Numbers] | University | [View](https://university.wyattau.com/docs/mathematics/7-complex-analysis/1_complex-analysis)                  |
+

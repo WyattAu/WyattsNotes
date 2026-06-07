@@ -621,7 +621,8 @@ The car cannot maintain $30 \mathrm{ m/s$ with the same driving force -- air res
 Too rapidly.
 
 :::info Info Air density, $C_D$ is the drag coefficient, and $A$ is the cross-sectional area. This
-quadratic Dependence on velocity is why fuel consumption increases dramatically at high speeds. :::
+quadratic Dependence on velocity is why fuel consumption increases dramatically at high speeds.
+:::
 
 ### Example 17: Energy in a Mass-Spring System with Gravity
 
@@ -839,3 +840,4 @@ The force is conservative (it can be written as the negative gradient of a poten
 $U = -\frac{3}{2}x^2 - y^2$), so the work depends only on the endpoints, not the path taken.
 
 </details>
+

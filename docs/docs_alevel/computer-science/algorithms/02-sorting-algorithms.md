@@ -312,7 +312,8 @@ Therefore, any comparison-based sorting algorithm requires at least $\Omega(n \l
 In the worst case. $\square$
 
 :::info Info Are asymptotically optimal among comparison-based sorts. Non-comparison sorts (radix
-sort, counting Sort) can beat $O(n \log n)$ but have restrictions on key types. :::
+sort, counting Sort) can beat $O(n \log n)$ but have restrictions on key types.
+:::
 
 <hr />
 
@@ -576,3 +577,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

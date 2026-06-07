@@ -630,7 +630,8 @@ the DSE specification for this topic, each with a full worked solution.
 (Advanced) with other DSE mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/maths/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ---
 
@@ -877,3 +878,4 @@ $\blacksquare$
 - Rational functions: state domain restrictions before simplifying; cancelled factors indicate
   holes, not asymptotes.
 - Use sign charts for rational inequalities; include or exclude endpoints based on strictness.
+

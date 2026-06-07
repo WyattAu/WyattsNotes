@@ -15,7 +15,8 @@ This document extends the core kinematics material with deeper derivations, mult
 Projectile motion in two dimensions, and the calculus approach to variable acceleration.
 
 :::info This page complements the core kinematics notes. Readers should already be comfortable with
-the SUVAT equations and basic calculus definitions of velocity and acceleration. :::
+the SUVAT equations and basic calculus definitions of velocity and acceleration.
+:::
 
 <hr />
 
@@ -95,7 +96,8 @@ $$s_{\mathrm{total}} = 36 + 24 = 60\;\mathrm{m}$$
 
 :::warning Common Pitfall When a problem has multiple stages, the **final velocity of one stage
 becomes the initial velocity Of the next**. Forgetting this connection is the most frequent error in
-multi-stage kinematics Problems. :::
+multi-stage kinematics Problems.
+:::
 
 <hr />
 
@@ -145,7 +147,8 @@ The negative sign confirms downward motion. Speed $= 16.3\;\mathrm{m\,s^{-1}}$ (
 
 :::info Note that the total time of flight can also be found directly: $s = -2$$u = 15$$a = -9.8$:
 $-2 = 15t - 4.9t^2$Giving $t \approx 3.15\;\mathrm{s}$. This is **not** $2 \times t_{\mathrm{max}}$
-Because the ball was thrown from a height, not from ground level. :::
+Because the ball was thrown from a height, not from ground level.
+:::
 
 <hr />
 
@@ -233,7 +236,8 @@ The ball travels approximately $62.0\;\mathrm{m}$ horizontally.
 
 :::warning Warning When a projectile is launched from a height above the landing level, the
 trajectory is **not** Symmetric. The time of ascent is less than the time of descent, and the
-landing angle is steeper Than the launch angle. :::
+landing angle is steeper Than the launch angle.
+:::
 
 <hr />
 
@@ -352,7 +356,8 @@ $$v = \frac{10}{t + 1}\;\mathrm{m\,s^{-1}}$$
 :::warning Warning For variable acceleration problems, **always include the constant of
 integration** and use the Initial conditions to find it. Also check whether the particle changes
 direction by finding when $v = 0$ -- the total distance is not the same as the displacement if there
-is a change of Direction. :::
+is a change of Direction.
+:::
 
 <hr />
 
@@ -521,3 +526,4 @@ $\blacksquare$
 - For variable acceleration: $v = \int a\,dt$, $s = \int v\,dt$; always check if the particle
   changes direction.
 - Chain rule form: $a = v\frac{dv}{ds}$ is useful when acceleration depends on displacement.
+

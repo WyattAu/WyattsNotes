@@ -146,7 +146,8 @@ The cell membrane (plasma membrane) is a phospholipid bilayer with embedded prot
 
 :::info The cell membrane is selectively permeable: it allows some substances to pass through freely
 But restricts others. Small, non-polar molecules (e.g., $\mathrm{O}_2$, $\mathrm{CO}_2$) diffuse
-Through , while large or charged molecules require transport proteins. :::
+Through , while large or charged molecules require transport proteins.
+:::
 
 ---
 
@@ -386,7 +387,8 @@ Fit. This lowers the activation energy of the reaction.
 
 :::warning Denaturation is **irreversible**. Once an enzyme is denatured by heat or extreme pH, it
 Cannot regain its function. This is different from a temporary decrease in activity at sub-optimal
-Conditions. :::
+Conditions.
+:::
 
 ### Worked Example 1
 
@@ -466,7 +468,8 @@ For each glucose molecule (two turns of the cycle):
 | **Total**                                 | **approximately 36-38** |
 
 :::info The actual ATP yield may be less than 38 due to the cost of transporting NADH from
-Glycolysis into the mitochondria. Many textbooks now quote approximately 30-32 ATP per glucose. :::
+Glycolysis into the mitochondria. Many textbooks now quote approximately 30-32 ATP per glucose.
+:::
 
 ---
 
@@ -877,7 +880,8 @@ When a ligand binds to a cell-surface receptor, it triggers a cascade of intrace
 
 :::info Second messengers greatly amplify the signal. One receptor activation can produce many
 Second messenger molecules, each of which can activate many enzyme molecules, creating a large
-Response from a small stimulus. :::
+Response from a small stimulus.
+:::
 
 ---
 
@@ -1303,7 +1307,8 @@ $$\text{Glucose (6C)} + 2\mathrm{NAD}^+ + 2\mathrm{ADP} + 2\mathrm{P}_i \to 2\te
 :::info The exact ATP yield varies because the shuttle mechanism that transfers electrons from
 cytoplasmic NADH into the mitochondria can cost 1 ATP per NADH. The theoretical maximum is 38 ATP,
 but in practice, the yield is closer to 30-32 ATP due to proton leakage across the inner
-mitochondrial membrane and the cost of transporting molecules. :::
+mitochondrial membrane and the cost of transporting molecules.
+:::
 
 ### Anaerobic Respiration
 
@@ -1927,3 +1932,4 @@ From the equation, ratio is $1:1$, so $n(\text{CaCl}_2) = 0.100\,\text{mol}$.
 $$m(\text{CaCl}_2) = 0.100 \times 111 = 11.1\,\text{g}$$
 
 > > > > > > > Stashed changes:docs/docs_dse/Biology/cell-biology-and-biochemistry.md
+

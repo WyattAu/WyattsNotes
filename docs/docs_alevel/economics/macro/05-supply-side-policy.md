@@ -43,7 +43,8 @@ Where $K$ = capital, $L$ = labour, $A$ = total factor productivity (technology a
 :::info Board-Specific Note CIE (9708) distinguishes between market-oriented and interventionist
 Supply-side policies and requires evaluation of both. AQA emphasises the effect of supply-side
 Policies on the Phillips curve. Edexcel links supply-side policy to productivity and
-Competitiveness. :::
+Competitiveness.
+:::
 
 ## 2. Market-Oriented Supply-Side Policies
 
@@ -95,7 +96,8 @@ Suggest the UK may be closer to $t^*$ due to capital mobility.
 
 :::info Info AQA tends to focus more on the income and substitution effects of tax changes rather
 than the Laffer Curve explicitly, though it can be used in evaluation. OCR includes the Laffer curve
-in the context Of fiscal policy. :::
+in the context Of fiscal policy.
+:::
 
 **Evaluation of tax reform.** The effectiveness of tax cuts as a supply-side tool depends on several
 Factors. First, the **elasticity of the tax base** matters — if workers and firms are highly
@@ -176,7 +178,8 @@ Of the period.
 
 :::info Info Their effects on the UK economy. Edexcel (A) references Thatcherism in the context of
 Market-oriented policies. AQA and CIE may expect examples but do not mandate specific knowledge of
-The Thatcher era. :::
+The Thatcher era.
+:::
 
 ### 2.4 Competition Policy
 
@@ -248,7 +251,8 @@ Investing more in education without reforming how it is delivered yields diminis
 
 :::info Info As examples of interventionist supply-side policy. CIE (9708) accepts any country
 example but Rewards specificity. AQA does not mandate particular policy knowledge but values
-well-explained Real-world examples. OCR (H460) links education policy to labour market outcomes. :::
+well-explained Real-world examples. OCR (H460) links education policy to labour market outcomes.
+:::
 
 ### 3.2 Investment in Infrastructure
 
@@ -331,7 +335,8 @@ Diverse population and different political culture may make the Nordic approach 
 :::info Board-Specific Note AQA and Edexcel both value comparative analysis of different countries'
 Supply-side approaches. CIE (9708) rewards discussion of how different institutional frameworks
 Affect policy effectiveness. OCR (H460) may ask students to compare UK policy with other countries.
-The Nordic model is a strong evaluative point for any board. :::
+The Nordic model is a strong evaluative point for any board.
+:::
 
 ## 4. Evaluation of Supply-Side Policies
 
@@ -376,7 +381,8 @@ Rather than adhering to a rigid ideological position.
 Of market-oriented and interventionist supply-side policies. Edexcel (A) Paper 3 may present a
 Scenario requiring analysis of both. CIE (9708) Paper 4 essays frequently require a balanced
 Discussion. OCR (H460) emphasises the role of government in correcting market failure through
-Supply-side policy. All boards reward nuanced answers that recognise context matters. :::
+Supply-side policy. All boards reward nuanced answers that recognise context matters.
+:::
 
 ### 4.2 Supply-Side vs Demand-Side Policy
 
@@ -394,7 +400,8 @@ Substitutes.
 
 :::tip Exam Technique The strongest evaluation answers recognise that supply-side policies take time
 To work. An economy in a deep recession needs immediate demand-side stimulus, not just long-run
-Supply-side reforms. But sustained growth requires both. Always reference the time horizon. :::
+Supply-side reforms. But sustained growth requires both. Always reference the time horizon.
+:::
 
 ### 4.3 Supply-Side Effects on the Phillips Curve
 
@@ -459,7 +466,8 @@ $$\mathrm{Net benefit of supply-side policy} = \mathrm{Efficiency gain} - \mathr
 :::tip Exam Technique When writing evaluation paragraphs, use a structure like: "On one hand,
 [policy] may [benefit] because [reason]. On the other hand, [counter-argument] because [reason].
 However, the overall impact depends on [contextual factor]. Therefore, [judgement]." This "however,
-Therefore" structure is what examiners look for in Level 4 (AQA) or Band A (CIE) responses. :::
+Therefore" structure is what examiners look for in Level 4 (AQA) or Band A (CIE) responses.
+:::
 
 ## 5. Measuring the Impact of Supply-Side Policies
 
@@ -518,7 +526,8 @@ Reforms that learn from international best practice.
 
 :::tip Tip Korea achieved 7% annual growth for three decades by investing 5% of GDP in education" is
 more Persuasive than abstract arguments. But always acknowledge differences in context — policies
-that Work in one country may not transfer directly. :::
+that Work in one country may not transfer directly.
+:::
 
 ## 6. Problem Set
 
@@ -1302,3 +1311,4 @@ imbalances were addressed.
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
 the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
 each approach.
+

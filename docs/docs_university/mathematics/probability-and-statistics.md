@@ -2168,3 +2168,4 @@ $\blacksquare$
 | Real Analysis               | WyattsNotes | [View](/docs/university/mathematics/real-analysis)          |
 | Differential Equations      | WyattsNotes | [View](/docs/university/mathematics/differential-equations) |
 | Statistics — Stanford CS229 | Stanford    | [View](https://cs229.stanford.edu/)                         |
+

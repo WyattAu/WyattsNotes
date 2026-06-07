@@ -32,7 +32,8 @@ Interface.
 :::info On POSIX systems, `std::filesystem` is implemented on top of POSIX system calls (`stat`
 `opendir``readdir``unlink`Etc.). On Windows, it uses the Win32 API (`CreateFileW`
 `FindFirstFileW`Etc.). The interface is the same on both platforms, but some features are only
-Available on one (e.g., file permissions are more expressive on POSIX). :::
+Available on one (e.g., file permissions are more expressive on POSIX).
+:::
 
 ### `std::filesystem::path`
 
@@ -113,7 +114,8 @@ void path_iteration() {
 :::tip `fs::path::lexically_normal()` removes `.` and `..` components without touching the
 Filesystem. `fs::canonical()` resolves them by actually querying the filesystem (and throws if the
 Path does not exist). Use `lexically_normal()` for string-level cleanup, `canonical()` when you need
-The true absolute path. :::
+The true absolute path.
+:::
 
 ### Directory Iterators
 
@@ -153,7 +155,8 @@ void list_directory(const fs::path& dir) {
 :::warning `fs::directory_iterator` does **not** follow symlinks by default. A symlink to a
 Directory returns `is_symlink() == true` but also `is_directory() == true` (since `is_directory()`
 Follows symlinks by default). Use `fs::directory_options::follow_directory_symlink` to follow
-Symlinks into directories, but be careful of symlink cycles. :::
+Symlinks into directories, but be careful of symlink cycles.
+:::
 
 ### Recursive Directory Listing
 
@@ -213,7 +216,8 @@ void recursive_list(const fs::path& root, int max_depth = 3) {
 Directories that the current process lacks permission to read. Without this option, a
 `fs::filesystem_error` exception is thrown. This is essential for recursively scanning directories
 Like `/home` or `/tmp` where some subdirectories may have restricted permissions [N4950
-§30.10.11.1]. :::
+§30.10.11.1].
+:::
 
 ### File Operations
 
@@ -280,7 +284,8 @@ void file_operations_demo(const fs::path& work_dir) {
 
 :::warning `fs::remove_all()` is dangerous — it recursively deletes an entire directory tree without
 Confirmation. Never call it with a path derived from untrusted user input without validation. Unlike
-`rm -rf`There is no "trash" or "undo" mechanism. :::
+`rm -rf`There is no "trash" or "undo" mechanism.
+:::
 
 ## See Also
 
@@ -322,7 +327,8 @@ void file_time_demo(const fs::path& file) {
 :::warning On Windows with MSVC, `fs::file_time_type` historically used a resolution of 100
 Nanoseconds (Windows FILETIME), while on POSIX it used 1-second resolution (`stat` `st_mtime`).
 C++20 improves this, but portability issues remain for sub-second precision. Always test on your
-Target platforms. :::
+Target platforms.
+:::
 
 ### Permissions
 
@@ -372,7 +378,8 @@ void permissions_demo(const fs::path& file) {
 | `nofollow`         | Do not follow symlinks (applicable on POSIX)          |
 
 :::warning On Windows, `fs::permissions` can only control the read-only attribute. Group and other
-Permissions are not supported. The `owner_exec` permission is not meaningful on Windows. :::
+Permissions are not supported. The `owner_exec` permission is not meaningful on Windows.
+:::
 
 ### Symbolic Links
 
@@ -525,7 +532,8 @@ void error_handling_demo() {
 
 :::tip Use the `std::error_code` overloads in performance-critical code or when errors are expected
 (e.g., checking if a file exists by trying to open it). Exception-based error handling has overhead
-From stack unwinding, while error codes do not. :::
+From stack unwinding, while error codes do not.
+:::
 
 ### Temporary Files and Atomic Write Patterns
 
@@ -624,3 +632,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

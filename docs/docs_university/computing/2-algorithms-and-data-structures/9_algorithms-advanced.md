@@ -1668,3 +1668,4 @@ $\blacksquare$
 - Searching: linear $O(n)$, binary $O(\log n)$, hash $O(1)$ average.
 - Data structures: arrays, linked lists, stacks, queues, trees, hash tables, heaps, graphs.
 - Amortised analysis: dynamic arrays $O(1)$ amortised append; splay trees $O(\log n)$ amortised.
+

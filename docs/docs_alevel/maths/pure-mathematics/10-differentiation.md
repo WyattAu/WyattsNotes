@@ -22,7 +22,8 @@ slug: differentiation
 | CIE (9709) | P1, P2, P3 | Basic differentiation in P1; product/quotient/chain in P2/P3     |
 
 :::info The formula booklet lists derivatives of standard functions. You must know how to apply the
-Product, quotient, and chain rules, and how to find stationary points. :::
+Product, quotient, and chain rules, and how to find stationary points.
+:::
 
 <hr />
 
@@ -41,7 +42,8 @@ Line through the points $(x, f(x))$ and $(x+h, f(x+h))$. As $h \to 0$This secant
 Tangent, so $f'(x)$ is the gradient of the tangent at $x$.
 
 :::info Info There. Continuity is necessary but not sufficient — $f(x) = |x|$ is continuous at $x=0$
-but not Differentiable. :::
+but not Differentiable.
+:::
 
 <hr />
 
@@ -123,7 +125,8 @@ By the chain rule, $\dfrac{d}{dx}(v^{-1}) = -v^{-2}\dfrac{dv}{dx}$:
 $$= \frac{1}{v}\frac{du}{dx} - \frac{u}{v^2}\frac{dv}{dx} = \frac◆LB◆v\frac{du}{dx} - u\frac{dv}{dx}◆RB◆◆LB◆v^2◆RB◆ \quad \blacksquare$$
 
 :::warning The quotient rule has a **minus** sign in the numerator: $v\,u' - u\,v'$. Getting this
-The wrong way around is one of the most common errors in A Level mathematics. :::
+The wrong way around is one of the most common errors in A Level mathematics.
+:::
 
 <hr />
 
@@ -244,7 +247,8 @@ $$f(x) - f(a) \approx \frac{f''(a)}{2}(x-a)^2$$
 - If $f''(a) = 0$: the test is inconclusive; use a nature table or higher derivatives.
 
 :::warning Warning Point could still be a maximum, minimum, or inflection. Always use a nature table
-(checking the sign Of $f'$ on either side) if the second derivative test is inconclusive. :::
+(checking the sign Of $f'$ on either side) if the second derivative test is inconclusive.
+:::
 
 <!-- prettier-ignore -->
 <DesmosGraph title="Function, Derivative, and Tangent Line" expressions={["f(x)=x^3-6x^2+9x+1", "f'(x)=3x^2-12x+9"]} width={800} height={500} /> Observe how the Derivative relates to the gradient
@@ -291,7 +295,8 @@ For $x \gt 1$: $(x-1) \gt 0$ and $(x+1) \gt 0$So $f'(x) \gt 0$. Hence $f$ is str
 $x \gt 1$.
 
 :::tip Tip Inequality. When asked to "show that a function is increasing", verify that $f'(x) \gt 0$
-(or $\geq 0$) on the given interval. :::
+(or $\geq 0$) on the given interval.
+:::
 
 <hr />
 
@@ -618,7 +623,8 @@ questions within the A-Level specification for this topic, each with a full work
 Differentiation with other pure mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -648,3 +654,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

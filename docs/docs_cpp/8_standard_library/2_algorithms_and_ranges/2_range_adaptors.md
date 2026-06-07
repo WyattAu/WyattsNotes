@@ -106,7 +106,8 @@ int main() {
 
 :::tip Views are so lightweight that they consist of just a few pointers and sizes stored On the
 stack. The entire pipeline in the example above likely compiles to a tight loop with no heap
-Allocations. :::
+Allocations.
+:::
 
 ### View Composition with the Pipe Operator
 
@@ -837,3 +838,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

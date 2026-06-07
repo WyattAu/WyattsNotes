@@ -97,7 +97,8 @@ class LinkedListStack:
 ```
 
 :::tip Exam tip Stack push/pop always operate at the **head** of the linked list (not the tail) for
-$O(1)$ time. Pushing at the tail would require traversal. :::
+$O(1)$ time. Pushing at the tail would require traversal.
+:::
 
 <hr />
 
@@ -193,7 +194,8 @@ class LinkedListQueue:
   implementations
 - **OCR (A)** requires linear and circular queue implementations (array-based), plus linked list
   implementations
-- **Edexcel** covers stack and queue ADTs with pseudocode :::
+- **Edexcel** covers stack and queue ADTs with pseudocode
+:::
 
 <hr />
 
@@ -973,3 +975,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

@@ -70,7 +70,8 @@ Measurement or environmental variability.
 
 :::warning Common Pitfall Do not confuse accuracy and precision. A measurement can be precise (small
 Scatter) but inaccurate (systematic error), or accurate (close to true value) but imprecise (large
-Scatter). Neither is sufficient alone. :::
+Scatter). Neither is sufficient alone.
+:::
 
 ## 2. Uncertainty Analysis
 
@@ -206,7 +207,8 @@ Many physical relationships can be linearised by choosing appropriate variables:
 
 :::tip Exam Technique When asked to find the percentage uncertainty in a quantity determined from a
 Gradient, first find the gradient uncertainty using the worst line method, then divide by the
-Best-fit gradient and multiply by 100%. :::
+Best-fit gradient and multiply by 100%.
+:::
 
 ## Problem Set
 
@@ -490,7 +492,8 @@ All the error bars. The uncertainty in the gradient is:
 $$\Delta m = \frac◆LB◆|m_{\mathrm{best}} - m_{\mathrm{worst}}|◆RB◆◆LB◆2◆RB◆$$
 
 :::warning Warning Uncertainty is $\pm$ half the smallest scale division of the measuring instrument
-used to obtain Each data point. State this assumption explicitly. :::
+used to obtain Each data point. State this assumption explicitly.
+:::
 
 ## 8. Common Pitfalls
 
@@ -658,3 +661,4 @@ and past paper questions, is essential for success in examinations.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

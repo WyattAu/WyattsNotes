@@ -31,7 +31,8 @@ Geometric distribution counts the number of trials until the first success.
 :::info The formula booklet provides the Poisson PMF. You must know when to apply each distribution
 And how to carry out hypothesis testing with discrete distributions. The geometric distribution has
 Two common conventions for the support: $r = 1, 2, 3, \ldots$ (number of trials) or
-$r = 0, 1, 2, \ldots$ (number of failures). AQA uses $r = 1, 2, \ldots$. :::
+$r = 0, 1, 2, \ldots$ (number of failures). AQA uses $r = 1, 2, \ldots$.
+:::
 
 <hr />
 
@@ -241,7 +242,8 @@ $$
 $$
 
 :::info info success, the probability of waiting at least $n$ more trials is exactly the same as if
-You were starting fresh. The process "forgets" its history. :::
+You were starting fresh. The process "forgets" its history.
+:::
 
 ### 2.5 Cumulative distribution function
 
@@ -297,7 +299,8 @@ Before applying the Poisson distribution, verify:
 3. At most one event can occur in a sufficiently small sub-interval
 
 :::warning warning not confuse this with the normal approximation to the binomial, which requires
-$np > 5$ and $n(1-p) > 5$. :::
+$np > 5$ and $n(1-p) > 5$.
+:::
 
 <hr />
 
@@ -1113,3 +1116,4 @@ $= \frac{p}{1-p} \cdot \frac{(1-p)e^t}{1-(1-p)e^t} = \frac{pe^t}{1-(1-p)e^t}$.
 This converges when $|(1-p)e^t| < 1$I.e., $t < -\ln(1-p)$. $\blacksquare$
 
 </details>
+

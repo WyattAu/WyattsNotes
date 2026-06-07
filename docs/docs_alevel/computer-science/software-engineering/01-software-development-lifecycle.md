@@ -199,7 +199,8 @@ Speed. Uses workshops, focus groups, and iterative user testing.
 - **CIE (9618)** covers waterfall and agile methodologies; may include iterative development
 - **OCR (A)** requires waterfall and agile methodologies with understanding of when each is
   appropriate
-- **Edexcel** covers SDLC phases and development methodologies :::
+- **Edexcel** covers SDLC phases and development methodologies
+:::
 
 <hr />
 
@@ -725,3 +726,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

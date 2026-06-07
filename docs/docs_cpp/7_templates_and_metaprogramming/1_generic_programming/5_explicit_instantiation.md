@@ -77,7 +77,8 @@ int main() {
 :::tip Use `extern template` in header files for templates that are instantiated with common types
 (e.g., `int``double``std::string`). Provide explicit instantiation definitions in a single `.cpp`
 file. This reduces compilation time and binary size without sacrificing the flexibility of
-Templates. :::
+Templates.
+:::
 
 ## Formal Semantics: Declaration vs Definition [N4950 §13.9.2]
 
@@ -471,7 +472,8 @@ Instantiation.
 
 :::warning Warning Forgetting to add a new type results in a linker error (if you only include
 `fmt_inst.h`) or a Silent fallback to implicit instantiation (if the full header is also included).
-Always add both the Declaration and the definition in the same commit. :::
+Always add both the Declaration and the definition in the same commit.
+:::
 
 ## Library Design Patterns with Explicit Instantiation
 
@@ -793,3 +795,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

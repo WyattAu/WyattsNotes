@@ -16,7 +16,8 @@ Frameworks with a rigorous, proof-based approach.
 
 :::info Statics problems require careful consideration of every force and every moment. A systematic
 Approach -- drawing the diagram, listing forces, choosing a pivot -- is more reliable than
-Intuition. :::
+Intuition.
+:::
 
 <hr />
 
@@ -65,7 +66,8 @@ Resolving vertically: $R_A + R_C = 20g + 50$
 $$R_A = 20g + 50 - 139 = 196 + 50 - 139 = 107\;\mathrm{N}$$
 
 :::warning Common Pitfall When taking moments, always measure the **perpendicular distance** from
-the line of action of the Force to the pivot point, not just the distance along the beam. :::
+the line of action of the Force to the pivot point, not just the distance along the beam.
+:::
 
 <hr />
 
@@ -200,7 +202,8 @@ $$\bar{y} = \frac{144 + 42.67 - 150.80}{48 - 25.13} = \frac{35.87}{22.87} \appro
 
 :::warning Common Pitfall When a shape has a hole or a section removed, use the **negative mass**
 method: treat the removed Section as having negative area. The formula remains the same but with
-negative contributions from The removed part. :::
+negative contributions from The removed part.
+:::
 
 <hr />
 
@@ -264,7 +267,8 @@ The minimum angle is approximately $51.3^\circ$.
 
 :::warning Warning In ladder problems, always take moments about the **foot** of the ladder (or the
 point where two Unknown forces act) to eliminate as many unknowns as possible from the moment
-equation. :::
+equation.
+:::
 
 <hr />
 
@@ -492,3 +496,4 @@ $\blacksquare$
   holes.
 - Ladder problems: take moments about the foot to eliminate two unknown forces.
 - Choose the pivot wisely to simplify the moment equation by eliminating unknown forces.
+

@@ -1309,3 +1309,4 @@ $\blacksquare$
 - `ROWS` vs `RANGE`: `ROWS` counts physical rows; `RANGE` uses logical value-based boundaries.
 - `LAG`, `LEAD`, `FIRST_VALUE`, `LAST_VALUE` provide positional access within a window frame.
 - Recursive CTEs enable hierarchical queries (org charts, bill-of-materials, tree traversal).
+

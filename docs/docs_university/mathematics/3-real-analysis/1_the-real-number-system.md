@@ -174,3 +174,4 @@ $\sup(S)$ need not belong to $S$. For example, $\sup\{1/n : n \in \mathbb{N}\} =
 the set, but $\sup(0, 1) = 1$Which does not belong to $(0, 1)$.
 :::
 
+

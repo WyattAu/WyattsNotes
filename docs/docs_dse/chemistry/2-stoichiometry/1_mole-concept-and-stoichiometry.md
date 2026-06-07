@@ -40,7 +40,8 @@ For ionic compounds, the term **relative formula mass** is used, calculated the 
 $$M_r(\mathrm{NaCl}) = 23.0 + 35.5 = 58.5$$
 
 :::info Info Problems. Memorise the common values: H = 1.0, C = 12.0, N = 14.0, O = 16.0, Na = 23.0,
-Mg = 24.3, Al = 27.0, S = 32.1, Cl = 35.5, K = 39.1, Ca = 40.1, Fe = 55.8, Cu = 63.5, Zn = 65.4. :::
+Mg = 24.3, Al = 27.0, S = 32.1, Cl = 35.5, K = 39.1, Ca = 40.1, Fe = 55.8, Cu = 63.5, Zn = 65.4.
+:::
 
 ---
 
@@ -86,7 +87,8 @@ $$n = \frac{V}{V_m}$$
 Where $V_m$ = 22.4 dm$^3$/mol (STP) or 24.0 dm$^3$/mol (RTP).
 
 :::warning Pay close attention to whether the question specifies STP or RTP. Using the wrong molar
-Volume is one of the most common errors in DSE stoichiometry questions. :::
+Volume is one of the most common errors in DSE stoichiometry questions.
+:::
 
 ---
 
@@ -405,7 +407,8 @@ $$PV = nRT$$
 
 $V_m = \dfrac{nRT}{P} = \dfrac{1 \times 0.0821 \times 273}{1} = 22.4 \mathrm{ dm}^3$
 
-This confirms the molar volume at STP. :::
+This confirms the molar volume at STP.
+:::
 
 **Worked example 12:** Calculate the volume occupied by 5.00 g of $\mathrm{O}_2$ at 2.0 atm and
 $27^\circ\mathrm{C}$.
@@ -891,3 +894,4 @@ to unfamiliar contexts, particularly in calculation and practical questions.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

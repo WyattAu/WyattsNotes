@@ -963,3 +963,4 @@ Velocity across river: $5\cos\theta = 5 \times 0.8 = 4 \mathrm{ m/s$. Time to cr
 $100 / 4 = 25 \mathrm{ s$.
 
 </details>
+

@@ -273,7 +273,8 @@ Per insertion: $O(1)$. $\square$
   probing, rehashing), and calculating hash table load factor
 - **CIE (9618)** covers hashing and collision handling; may use different terminology
 - **OCR (A)** requires hash tables with collision resolution using linear probing and rehashing
-- **Edexcel** covers hash tables and collision resolution methods :::
+- **Edexcel** covers hash tables and collision resolution methods
+:::
 
 <hr />
 
@@ -894,3 +895,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

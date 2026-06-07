@@ -107,7 +107,8 @@ ByteBuffer direct = ByteBuffer.allocateDirect(1024);
 :::info Use direct buffers when the buffer is long-lived and used for repeated I/O operations. The
 Allocation cost is amortized over many I/O calls, and the avoidance of heap-to-native copies
 Improves throughput. Use heap buffers for short-lived buffers where allocation speed matters more
-Than I/O throughput. :::
+Than I/O throughput.
+:::
 
 ### `get` and `put` Operations
 
@@ -215,7 +216,8 @@ try (FileChannel src = FileChannel.open(Path.of("source.bin"), StandardOpenOptio
 
 :::info `transferTo` may not transfer all requested bytes in a single call (it returns the actual
 Number transferred). Loop until the return value is zero or an exception is thrown. On Linux with
-Ext4/xfs, the entire transfer completes in a single system call. :::
+Ext4/xfs, the entire transfer completes in a single system call.
+:::
 
 ### File Locking
 
@@ -250,7 +252,8 @@ FileLock exclusiveLock = channel.tryLock(0L, Long.MAX_VALUE, false); // false = 
 :::warning File locks are JVM-scoped, not thread-scoped. If two threads in the same JVM try to
 Acquire overlapping exclusive locks on the same file, the second `lock()` call throws
 `OverlappingFileLockException`. Use `tryLock()` for non-blocking acquisition. Locks are
-Automatically released when the channel is closed or the JVM exits. :::
+Automatically released when the channel is closed or the JVM exits.
+:::
 
 ### Socket Channels
 
@@ -428,7 +431,8 @@ while (buf.hasRemaining()) {
 
 :::warning When using non-blocking I/O, you must handle partial reads and writes. A single `read()`
 May return fewer bytes than requested, and a single `write()` may accept fewer bytes than provided.
-Always check the return value and manage the buffer position accordingly. :::
+Always check the return value and manage the buffer position accordingly.
+:::
 
 ## `AsynchronousFileChannel`
 
@@ -488,7 +492,8 @@ try (AsynchronousFileChannel channel = AsynchronousFileChannel.open(
 
 :::info The completion handler's callback methods are executed by the `AsynchronousFileChannel`'s
 Thread pool. By default, this is the JVM-wide default `ForkJoinPool`. You can provide a custom
-`ExecutorService` via `AsynchronousFileChannel.open(path, options, executor)`. :::
+`ExecutorService` via `AsynchronousFileChannel.open(path, options, executor)`.
+:::
 
 ## `Path` and `Files` Utility Classes
 
@@ -614,7 +619,8 @@ try (FileChannel channel = FileChannel.open(Path.of("data.bin"),
 Limits, but it does consume address space. On 32-bit JVMs, you are limited to ~2 GB of mapped
 Memory. On 64-bit JVMs, the limit is the available virtual address space. Closing the `FileChannel`
 Does not immediately unmap the buffer — the mapped memory is released when the `MappedByteBuffer`
-Object is GC'd, which may be delayed. :::
+Object is GC'd, which may be delayed.
+:::
 
 ## Common Pitfalls
 
@@ -964,3 +970,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

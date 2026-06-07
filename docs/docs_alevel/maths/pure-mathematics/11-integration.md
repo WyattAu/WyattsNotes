@@ -22,7 +22,8 @@ slug: integration
 | CIE (9709) | P1, P2, P3 | Basic in P1; by parts/substitution in P2/P3; further in P3 |
 
 :::info The formula booklet provides standard integrals. You must know how to apply integration
-Techniques and when to use each method. :::
+Techniques and when to use each method.
+:::
 
 <hr />
 
@@ -77,7 +78,8 @@ Hence $\displaystyle\int_a^b f(x)\,dx = F(b) - F(a)$. $\blacksquare$
 
 :::info The Fundamental Theorem of Calculus is one of the most important results in all of
 Mathematics. It connects the two seemingly unrelated operations of differentiation (finding rates of
-Change) and integration (finding areas). :::
+Change) and integration (finding areas).
+:::
 
 <hr />
 
@@ -138,7 +140,8 @@ $$A = \int_a^b |f(x)|\,dx$$
 
 :::warning $\int_a^b f(x)\,dx$ gives the **signed area** (negative below the $x$-axis). To find the
 Actual geometric area, take the absolute value and integrate separately over regions where $f$ is
-Positive and negative. :::
+Positive and negative.
+:::
 
 ### 4.3 Area between two curves
 
@@ -574,7 +577,8 @@ within the A-Level specification for this topic, each with a full worked solutio
 with other pure mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -606,3 +610,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

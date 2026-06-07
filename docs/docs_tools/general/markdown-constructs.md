@@ -216,27 +216,34 @@ Admonitions are the preferred way to call out important information:
 ```md
 :::note This is a note. :::
 
-:::tip This is a tip. :::
+:::tip This is a tip.
+:::
 
-:::info This is informational. :::
+:::info This is informational.
+:::
 
-:::caution This is a caution. :::
+:::caution This is a caution.
+:::
 
-:::danger This is dangerous. :::
+:::danger This is dangerous.
+:::
 
-:::warning This is a warning. :::
+:::warning This is a warning.
+:::
 ```
 
 Admonitions support optional titles:
 
 ```md
-:::tip Custom Title Content here. :::
+:::tip Custom Title Content here.
+:::
 ```
 
 They can also be collapsible (Docusaurus 3):
 
 ```md
-:::note[Click to expand] Hidden content that is revealed on click. :::
+:::note[Click to expand] Hidden content that is revealed on click.
+:::
 ```
 
 ### Tabs
@@ -329,7 +336,8 @@ Hidden content here.
 ```
 
 :::warning Do not nest `&lt;details&gt;` inside another `&lt;details&gt;`. This causes rendering
-issues in Docusaurus. :::
+issues in Docusaurus.
+:::
 
 ### MDX Import Statements
 
@@ -458,3 +466,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

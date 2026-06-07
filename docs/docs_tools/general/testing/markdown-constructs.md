@@ -73,11 +73,14 @@ Docusaurus supports admonition callouts using triple-colon syntax:
 ```md
 :::note This is a note block. :::
 
-:::tip This is a tip block. :::
+:::tip This is a tip block.
+:::
 
-:::warning This is a warning block. :::
+:::warning This is a warning block.
+:::
 
-:::danger This is a danger block. :::
+:::danger This is a danger block.
+:::
 ```
 
 Custom titles are supported: `:::info[Custom Title]`
@@ -179,3 +182,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

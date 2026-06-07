@@ -48,7 +48,8 @@ Where:
 - $t$ = time
 
 :::info These equations are only valid for **uniform acceleration**. When acceleration varies,
-Calculus or graphical methods must be used. :::
+Calculus or graphical methods must be used.
+:::
 
 ### Worked Example 1
 
@@ -131,7 +132,8 @@ $$g \approx 9.81 \mathrm{ m/s}^2$$
 The acceleration is **downward** regardless of whether the object is moving up or down.
 
 :::warning Air resistance is neglected in ideal free-fall problems unless the question explicitly
-States otherwise. :::
+States otherwise.
+:::
 
 ### Worked Example 3
 
@@ -533,7 +535,8 @@ Magnitude of the average force is $1500 \mathrm{ N}$.
 Energy loss).
 
 :::info Momentum is **always** conserved in collisions (provided no external forces act). Kinetic
-Energy is only conserved in perfectly elastic collisions. :::
+Energy is only conserved in perfectly elastic collisions.
+:::
 
 ### Worked Example 10
 
@@ -626,7 +629,8 @@ The centripetal force required is:
 $$F_c = \frac{mv^2}{r} = m\omega^2 r$$
 
 :::warning Warning Directed towards the centre of the circle. It is provided by gravity, tension,
-friction, normal Reaction, or a combination of these. :::
+friction, normal Reaction, or a combination of these.
+:::
 
 ### Worked Example 12
 
@@ -737,7 +741,8 @@ $$T = \frac{2\pi r}{v} = 2\pi\sqrt{\frac{r^3}{GM}}$$
 
 :::info Geostationary satellites orbit at the same rate as the Earth's rotation (period = 24 hours),
 Remaining above the same point on the equator. They orbit at approximately $42,300 \mathrm{ km}$
-From the centre of the Earth. :::
+From the centre of the Earth.
+:::
 
 ### Worked Example 14
 
@@ -902,7 +907,8 @@ For a mass-spring system: $T = 2\pi\sqrt{\frac{m}{k}}$
 For a simple pendulum (small angle approximation): $T = 2\pi\sqrt{\frac{L}{g}}$
 
 :::info The period of SHM is independent of amplitude (isochronous). This is why pendulum clocks
-Keep consistent time even as the swing gradually decreases. :::
+Keep consistent time even as the swing gradually decreases.
+:::
 
 ### Worked Example 15
 
@@ -1288,7 +1294,8 @@ within the DSE specification for this topic, each with a full worked solution.
 with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 :::danger Common Pitfalls
 
@@ -1695,3 +1702,4 @@ Minimum coefficient of static friction: $\mu_s = 0.51$.
 4. Incorrectly applying $\vec{F} = m\vec{a}$ when forces are not collinear — resolve into components
    first.
    > > > > > > > Stashed changes:docs/docs_dse/Physics/mechanics.md
+

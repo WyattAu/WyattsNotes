@@ -591,7 +591,8 @@ java -XX:+UseZGC -XX:MaxRAMPercentage=75.0 -jar app.jar
 
 :::tip Use `-XX:MaxRAMPercentage` instead of fixed `-Xmx` for containerized deployments. This allows
 The same container image to work with different memory limits without rebuilding. A value of 70-80%
-Is typical, leaving room for metaspace, native memory, and off-heap buffers. :::
+Is typical, leaving room for metaspace, native memory, and off-heap buffers.
+:::
 
 ### Native Memory Tracking
 
@@ -660,7 +661,8 @@ After making changes, compare GC logs before and after. Look for:
 
 :::info JDK Mission Control (JMC) and Java Flight Recorder (JFR) provide the most comprehensive GC
 Analysis. JFR has near-zero overhead and can be enabled in production:
-`-XX:StartFlightRecording=duration=60s,filename=recording.jfr` :::
+`-XX:StartFlightRecording=duration=60s,filename=recording.jfr`
+:::
 
 ## GC Internals: Detailed Algorithms
 
@@ -830,3 +832,4 @@ and evaluate experimental evidence critically.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

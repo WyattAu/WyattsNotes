@@ -218,7 +218,8 @@ shared_ptr(new Sensor) (two allocations):
 :::info Relevance `std::make_shared` performs a single allocation (better cache locality, fewer
 Syscalls). However, the control block and object share the same memory block, so the memory for the
 Control block cannot be freed until **all** `weak_ptr` references are also gone. For very large
-Objects with long-lived `weak_ptr` observers, this can delay deallocation. :::
+Objects with long-lived `weak_ptr` observers, this can delay deallocation.
+:::
 
 ### Quantitative Allocation Overhead
 
@@ -349,7 +350,8 @@ Sequentially-consistent operations. The implications:
 :::info Relevance In practice, some implementations (notably libstdc++) use `memory_order_acq_rel`
 For increment and `memory_order_acq_rel` for decrement instead of `seq_cst`Which is valid because
 The standard only requires that the control block operations do not race with each other. The
-Stronger `seq_cst` default is a conservative choice that implementations may relax. :::
+Stronger `seq_cst` default is a conservative choice that implementations may relax.
+:::
 
 ## 3.5 Custom Deleters
 
@@ -499,7 +501,8 @@ int main() {
 :::warning COW with `shared_ptr` has thread-safety subtleties. The `unique()` check is a data race
 If another thread might modify the object concurrently. COW is safe only in single-threaded contexts
 Or with external synchronization. `std::string` implementations have moved away from COW for this
-Reason. :::
+Reason.
+:::
 
 ## 3.8 `sizeof(shared_ptr)` Across Implementations
 
@@ -527,7 +530,8 @@ Matters in memory-constrained applications or when storing many pointers in cont
 
 :::warning Do not use `shared_ptr` by default. Use `unique_ptr` as your default smart pointer. Only
 Reach for `shared_ptr` when you genuinely need shared ownership. Premature use of `shared_ptr` is a
-Common source of performance bugs in C++ codebases. :::
+Common source of performance bugs in C++ codebases.
+:::
 
 ## 3.10 `enable_shared_from_this`: Internal Mechanics
 
@@ -618,7 +622,8 @@ int main() {
 Stack-allocated object or one owned by `unique_ptr`) is undefined behavior. The internal
 `weak_this_` is uninitialized, and `lock()` on an empty `weak_ptr` returns a null `shared_ptr` Which
 when dereferenced causes undefined behavior. Some implementations throw `std::bad_weak_ptr` in Debug
-mode to catch this error early. :::
+mode to catch this error early.
+:::
 
 ## 3.11 Aliasing Constructor: Formal Semantics
 
@@ -784,3 +789,4 @@ for mastery of this topic.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

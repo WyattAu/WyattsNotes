@@ -1080,3 +1080,4 @@ $\blacksquare$
   lower constant factors than segment trees.
 - Trie supports $O(L)$ insertion and lookup for strings of length $L$; used in autocomplete and IP
   routing.
+

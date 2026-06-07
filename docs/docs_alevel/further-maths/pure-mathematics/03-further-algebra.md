@@ -352,7 +352,8 @@ $$= \frac{(k+1)^2[k^2 + 4(k+1)]}{4} = \frac{(k+1)^2(k+2)^2}{4} = \left[\frac{(k+
 ✓ $\square$
 
 :::info info summation formulae. Edexcel FP2 requires summation of series including method of
-Differences. AQA covers summation in the context of mathematical induction. :::
+Differences. AQA covers summation in the context of mathematical induction.
+:::
 
 <hr />
 
@@ -1065,3 +1066,4 @@ $\dfrac{1}{2}\!\left(\dfrac{1}{2} - \dfrac{1}{(n+1)(n+2)}\right) = \dfrac{(n+1)(
 $\blacksquare$
 
 </details>
+

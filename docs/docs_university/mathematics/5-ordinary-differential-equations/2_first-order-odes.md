@@ -279,3 +279,4 @@ $h(y) = 0$. Always check whether $h(y) = 0$ yields valid solutions before dividi
 $y' = e^{x^2} + \sin(y^2)$ cannot be solved by elementary methods and require numerical Techniques.
 :::
 
+

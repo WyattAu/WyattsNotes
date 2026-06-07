@@ -70,7 +70,8 @@ int main() {
 :::info With multiple inheritance, `pa` and `pb` point to **different addresses** within the same
 `C` object -- they point to the respective base subobjects. The compiler generates **thunks** (small
 Adjustment stubs) to correct the `this` pointer when dispatching virtual calls through non-primary
-Bases. :::
+Bases.
+:::
 
 ## 2.2 Object Slicing
 
@@ -154,7 +155,8 @@ set to `Animal`'s vtable, so `a.speak()` dispatches to `Animal::speak`. The `Dog
 (`breed`) and the `Dog::speak` override are lost.
 
 :::warning Never pass polymorphic objects by value. Always use pointers (`Animal*`) or references
-(`Animal&` / `const Animal&`) to preserve the dynamic type. :::
+(`Animal&` / `const Animal&`) to preserve the dynamic type.
+:::
 
 ## 2.3 Slicing in Containers
 
@@ -297,7 +299,8 @@ Causing resource leaks. With `GoodBase`The virtual dispatch mechanism selects
 
 :::tip Rule If a class has **any** virtual function, its destructor **must** also be virtual. If a
 Class is designed to be a polymorphic base class, always declare `virtual ~Base() = default;` (or
-Provide a virtual destructor with a body). :::
+Provide a virtual destructor with a body).
+:::
 
 ### Destructor Chaining Order
 
@@ -438,7 +441,8 @@ private:
 
 :::info Convention Prefixing interface names with `I` (e.g., `ISerializable`) is a common C++
 Convention borrowed from COM and C#. It is not mandated by the Standard. Alternatives include
-Suffixes like `-able` (e.g., `Serializable`). :::
+Suffixes like `-able` (e.g., `Serializable`).
+:::
 
 ## 2.7 Virtual Inheritance and the Diamond Problem
 
@@ -512,7 +516,8 @@ S11.7.1].
 :::warning Virtual inheritance adds runtime cost: accessing members of a virtual base requires an
 Extra indirection through the vbase offset table. Construction order is also affected -- virtual
 Bases are constructed by the most-derived class, before any non-virtual base classes [N4950
-S11.9.3]. Avoid virtual inheritance unless the diamond pattern is genuinely needed. :::
+S11.9.3]. Avoid virtual inheritance unless the diamond pattern is genuinely needed.
+:::
 
 ## 2.8 `override``final`And Name Hiding
 
@@ -560,7 +565,8 @@ Other overloads are still hidden.
 
 :::tip Best Practice When overriding a base class function that participates in overloading, always
 Add `using Base::function_name;` in the derived class to avoid accidentally hiding sibling
-Overloads. The `override` keyword catches signature mismatches but does not prevent hiding. :::
+Overloads. The `override` keyword catches signature mismatches but does not prevent hiding.
+:::
 
 ## 2.9 Slicing and Return Values
 
@@ -681,7 +687,8 @@ int main() {
 
 :::warning Always catch exceptions by reference (`const std::exception& e`). Catching by value
 Slices the exception object, losing derived-class information and potentially invoking slicing in
-The exception handler itself. :::
+The exception handler itself.
+:::
 
 ## 2.12 Preventing Slicing at Compile Time
 
@@ -785,3 +792,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

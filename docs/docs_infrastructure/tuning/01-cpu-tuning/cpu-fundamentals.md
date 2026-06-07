@@ -510,7 +510,8 @@ echo 1 | sudo tee /sys/devices/system/cpu/smt/active
 
 :::warning Disabling SMT halves your logical core count. Ensure your workload can run within the
 Physical core limit before disabling it. Some applications are licensed per logical core and will
-Not work correctly with SMT disabled. :::
+Not work correctly with SMT disabled.
+:::
 
 ### Security Considerations
 
@@ -661,7 +662,8 @@ Microcode updates can change CPU behavior in ways that affect performance measur
 
 :::warning Never benchmark a CPU before verifying the microcode version. A BIOS update that includes
 A new microcode revision can invalidate months of tuning work if it changes turbo behavior or adds
-Mitigation overhead. :::
+Mitigation overhead.
+:::
 
 ### Forcing Microcode Reload
 
@@ -734,7 +736,8 @@ echo $PID > /sys/fs/cgroup/batch_jobs/cgroup.procs
 
 :::info On server platforms with homogeneous cores (Xeon Scalable), ITD is less relevant because all
 Cores have identical capabilities. ITD primarily benefits client and workstation platforms with
-Big.LITTLE-style heterogeneous core layouts. :::
+Big.LITTLE-style heterogeneous core layouts.
+:::
 
 ## AMD Precision Boost Overdrive 2
 
@@ -796,7 +799,8 @@ done
 :::warning A negative offset that is too aggressive causes WHEA (Windows Hardware Error
 Architecture) errors on Windows or Machine Check Exceptions (MCE) on Linux. These can cause silent
 Data corruption. Always verify stability with both compute tests (Prime95, stress-ng) and memory
-Tests (memtester) when changing voltage offsets. :::
+Tests (memtester) when changing voltage offsets.
+:::
 
 ## Interpreting turbostat Output
 
@@ -942,7 +946,8 @@ Points:
 
 :::tip Always run Cinebench at least 3 times and report the median. The first run may be slower due
 To caching effects. Let the CPU cool between runs (wait for temperatures to drop below 50C) to
-Ensure consistent thermal conditions. :::
+Ensure consistent thermal conditions.
+:::
 
 ### Geekbench vs Cinebench
 
@@ -1015,3 +1020,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

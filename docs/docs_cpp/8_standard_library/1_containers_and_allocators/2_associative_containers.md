@@ -122,7 +122,8 @@ int main() {
 
 :::tip Since C++17, `std::map::try_emplace` is preferred over `operator[]` or `insert` when you want
 To insert only if the key is absent, avoiding unnecessary construction of the value [N4950
-§22.4.4.4]. :::
+§22.4.4.4].
+:::
 
 ```cpp
 #include <map>
@@ -386,7 +387,8 @@ int main() {
 
 :::warning `std::unordered_map` lookup is $O(1)$ on average but $O(n)$ in the worst case (all keys
 Hash to the same bucket). If adversarial inputs are a concern, consider hash functions resistant to
-Collision attacks, or use `std::map` for guaranteed $O(\log n)$ worst-case. :::
+Collision attacks, or use `std::map` for guaranteed $O(\log n)$ worst-case.
+:::
 
 ### `std::map` Heterogeneous Lookup (C++14)
 
@@ -755,3 +757,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

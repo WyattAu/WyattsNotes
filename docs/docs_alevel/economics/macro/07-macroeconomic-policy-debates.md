@@ -70,7 +70,8 @@ $$\pi = \Delta M - \Delta V + \Delta Y \approx \Delta M - \Delta Y$$
 :::info Board-Specific Note The Keynesian-monetarist debate is a staple of A-Level economics. CIE
 (9708) Paper 4 often asks students to evaluate the effectiveness of demand-side policies, requiring
 Them to contrast Keynesian and monetarist perspectives. Edexcel requires students to discuss the
-"battle of the economists" in the context of policy debates. :::
+"battle of the economists" in the context of policy debates.
+:::
 
 ### 1.4 Evaluation: The Keynesian-Monetarist Debate in Practice
 
@@ -209,7 +210,8 @@ $$\mathrm{UK (1992–present), NZ (1990–present), Canada (1991–present), Eur
 (Paper 3) often Asks about the role of central bank independence in achieving macroeconomic
 objectives. OCR (Paper 3) may ask students to compare different monetary policy frameworks. CIE
 (9708) Paper 4 Expects students to evaluate the relative merits of rules vs discretion with
-reference to specific Country examples. :::
+reference to specific Country examples.
+:::
 
 ## 3. The Lucas Critique
 
@@ -452,7 +454,8 @@ Apply to countries that borrow in foreign currency (emerging markets — most de
 Misrepresentation. MMT argues that deficits should be used to achieve real objectives (full
 Employment) and that the only constraint is inflation. It does not claim that unlimited deficits are
 Harmless. However, the practical difficulty of knowing when inflation will emerge makes MMT's policy
-Prescriptions risky. :::
+Prescriptions risky.
+:::
 
 ### 5.3 Exam Technique: Evaluating Policy Frameworks
 
@@ -527,7 +530,8 @@ Effect depends on the relative strength of each.
 Effectiveness of policy mixes. Edexcel Paper 3 expects discussion of policy conflicts and
 Trade-offs. OCR may ask about the role of the Treasury and `` `{BoE}` `` in coordinating policy. CIE
 Paper 4 frequently asks students to assess whether government intervention can achieve multiple
-Macroeconomic objectives simultaneously. :::
+Macroeconomic objectives simultaneously.
+:::
 
 ## 7. Nominal GDP Targeting: An Alternative Framework
 
@@ -1402,3 +1406,4 @@ inflation target, triggering a gilt market crisis and forcing a policy reversal.
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
 the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
 each approach.
+

@@ -66,7 +66,8 @@ $$
 $$
 
 :::info One situation that generates EMF is a magnet passing through a solenoid, where an EMF is
-Generated to oppose the change in flux through the coil. :::
+Generated to oppose the change in flux through the coil.
+:::
 
 ## Lenz's Law
 
@@ -87,7 +88,8 @@ Change in flux, it would create a runaway effect producing infinite energy.
 4. Use the right-hand grip rule to find the current direction from the magnetic field direction.
 
 :::tip Exam Tip When answering Lenz's law questions, always state both: (a) the direction of the
-Induced current, and (b) **why** it flows in that direction (to oppose the change in flux). :::
+Induced current, and (b) **why** it flows in that direction (to oppose the change in flux).
+:::
 
 ## Motional EMF
 
@@ -183,7 +185,8 @@ $$
 
 :::tip Exam Tip RMS values are what multimeters display. Always use RMS values when calculating
 Average power in AC circuits:
-$P_{\mathrm{avg}} = \frac{\epsilon_0^2}{2R} = \frac{\epsilon_{\mathrm{rms}}^2}{R}$ :::
+$P_{\mathrm{avg}} = \frac{\epsilon_0^2}{2R} = \frac{\epsilon_{\mathrm{rms}}^2}{R}$
+:::
 
 ## Transformers
 
@@ -298,7 +301,8 @@ Solenoid.
 
 :::tip Exam Tip In Paper 2, induction questions often combine Faraday's law with energy
 Conservation. Make sure you can explain why Lenz's law is necessary (conservation of energy) and
-Derive the motional EMF expression from Faraday's law. :::
+Derive the motional EMF expression from Faraday's law.
+:::
 
 ---
 
@@ -477,7 +481,8 @@ $$
 
 :::warning This model assumes the entire disc is immersed in the field. In practice only a localized
 Region passes through the field gap, so actual dissipation is far lower. The key result is the
-Scaling: $P \propto \omega^2$ and $P \propto R^4$. :::
+Scaling: $P \propto \omega^2$ and $P \propto R^4$.
+:::
 
 ---
 
@@ -823,7 +828,8 @@ the IB specification for this topic, each with a full worked solution.
 with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ## Summary
 
@@ -840,3 +846,4 @@ self-marking and building a personal test matrix. :::
 | [Electromagnetism] | IB         | [View](https://ib.wyattau.com/docs/ib/physics/4-fields/4_induction)                                           |
 | [Electromagnetism] | DSE        | [View](https://dse.wyattau.com/docs/dse/physics/3-electricity-and-magnetism/3_magnetism-and-electromagnetism) |
 | [Electromagnetism] | University | [View](https://university.wyattau.com/docs/physics/3-electromagnetism/1_electromagnetism)                     |
+

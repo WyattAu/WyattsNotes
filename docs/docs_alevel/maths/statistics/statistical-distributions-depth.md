@@ -15,7 +15,8 @@ This document provides rigorous coverage of the binomial, normal, and Poisson di
 Approximations, and hypothesis testing applications.
 
 :::info Always state the distribution you are using in full, including the parameter values, before
-Calculating probabilities. For example: "$X \sim B(20, 0.3)$". :::
+Calculating probabilities. For example: "$X \sim B(20, 0.3)$".
+:::
 
 <hr />
 
@@ -242,7 +243,8 @@ $P(X \gt 7) = 1 - P(X \leq 7) = 1 - e^{-10}\displaystyle\sum_{r=0}^{7}\dfrac{10^
 
 :::warning Common Pitfall When using the Poisson approximation to the binomial, always check that
 the conditions are met (large $n$Small $p$). If $p$ is close to 0.5, the normal approximation is
-more appropriate. :::
+more appropriate.
+:::
 
 <hr />
 
@@ -376,3 +378,4 @@ $\blacksquare$
   events in a fixed interval.
 - Normal approximates binomial when $np > 5$ and $n(1-p) > 5$; use continuity correction.
 - Poisson approximates binomial when $n$ is large and $p$ is small ($np = \lambda$).
+

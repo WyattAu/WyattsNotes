@@ -22,7 +22,8 @@ slug: trigonometry
 | CIE (9709) | P1, P2, P3 | Trig functions in P1; identities and equations in P2; further trig in P3 |
 
 :::info All boards provide trigonometric identities in the formula booklet, but not their proofs.
-You need to know _which_ identities exist and how to apply them. :::
+You need to know _which_ identities exist and how to apply them.
+:::
 
 <hr />
 
@@ -255,7 +256,8 @@ _Intuition._ Near the origin, the curves $y = \sin\theta$ and $y = \tan\theta$ a
 Indistinguishable from the line $y = \theta$. The curve $y = \cos\theta$ is nearly flat at $y = 1$.
 
 :::warning The small angle approximations are only valid when $\theta$ is in **radians**, not
-Degrees. This is a very common exam error. :::
+Degrees. This is a very common exam error.
+:::
 
 <hr />
 
@@ -890,7 +892,8 @@ within the A-Level specification for this topic, each with a full worked solutio
 Trigonometry with other pure mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -915,3 +918,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

@@ -68,7 +68,8 @@ Reconstruction without the need for physical sectioning.
 :::warning Common Pitfall Students often confuse magnification with resolution. Magnification is how
 Much larger the image appears; resolution is the ability to distinguish two closely spaced objects
 As separate. Increasing magnification without increasing resolution produces a larger but blurry
-Image -- no additional detail is revealed. :::
+Image -- no additional detail is revealed.
+:::
 
 ### 1.3 Cell Fractionation
 
@@ -116,7 +117,8 @@ Animals, plants, fungi, and protists.
 :::warning Common Pitfall The "S" in ribosome sizes (70S, 80S) stands for Svedberg units, which
 Measure sedimentation rate during centrifugation -- not molecular weight. Svedberg units are not
 Additive: $50\mathrm{S} + 30\mathrm{S} = 70\mathrm{S}$ is a coincidence of sedimentation rates, not
-Molecular masses. :::
+Molecular masses.
+:::
 
 ### 2.2 Prokaryotic Cell Structure
 
@@ -202,7 +204,8 @@ Enzymes (lipases, proteases, nucleases) optimised for pH $\approx 5$. They funct
 
 :::warning Common Pitfall Plant cells do have lysosomes, though they are sometimes called vacuoles
 With hydrolytic activity. However, plant cells also have a large permanent vacuole, which is a
-Distinct structure with different functions (turgor, storage, waste isolation). :::
+Distinct structure with different functions (turgor, storage, waste isolation).
+:::
 
 ### 3.6 Other Organelles
 
@@ -339,7 +342,8 @@ Reproduction.
    Cytokinesis (division of the cytoplasm) follows.
 
 :::warning Warning Replication occurs during the S phase of interphase, _before_ mitosis begins. By
-the time mitosis Starts, each chromosome already consists of two identical sister chromatids. :::
+the time mitosis Starts, each chromosome already consists of two identical sister chromatids.
+:::
 
 ### 6.2 The Cell Cycle
 
@@ -420,7 +424,8 @@ known biological Dimensions.
 :::warning Common Pitfall Students frequently forget to convert units before applying the
 magnification formula. Always convert both image size and actual size to the same unit. A common
 error is to leave the answer In mm when the question asks for $\mu\mathrm{m}$. Write down the
-conversion explicitly to avoid losing Marks. :::
+conversion explicitly to avoid losing Marks.
+:::
 
 ## 8. Endocytosis and Exocytosis
 
@@ -465,7 +470,8 @@ as Well as for insertion of new membrane proteins and lipids into the plasma mem
 :::warning Common Pitfall Students often state that endocytosis and exocytosis are forms of
 diffusion. They are Not. Both are active processes requiring ATP. They involve bulk transport of
 large quantities of Material in membrane-bound vesicles, which is fundamentally different from the
-passive movement of Individual molecules through the bilayer. :::
+passive movement of Individual molecules through the bilayer.
+:::
 
 ## 9. Osmosis and Water Potential Calculations
 
@@ -529,7 +535,8 @@ occurs.
 :::warning Common Pitfall Students often write that plant cells "burst" in hypotonic solutions. They
 do not -- The rigid cell wall exerts an inward pressure (wall pressure) that opposes further water
 entry once Turgidity is reached. Only animal cells (which lack cell walls) burst in hypotonic
-solutions. :::
+solutions.
+:::
 
 ## 10. The Cell Cycle in Detail
 
@@ -586,7 +593,8 @@ of two or more tumour suppressor genes (Knudson's two-hit hypothesis).
 :::warning Common Pitfall Students often state that "one mutation causes cancer." Cancer is a
 multistep Process requiring the accumulation of several mutations in genes regulating the cell
 cycle, DNA repair, And apoptosis. A single mutation in a proto-oncogene or tumour suppressor gene is
-necessary but not Sufficient for malignancy. :::
+necessary but not Sufficient for malignancy.
+:::
 
 ## 11. Meiosis: Overview and Comparison with Mitosis
 
@@ -657,7 +665,8 @@ Klf4, c-Myc), Offering an ethically uncontroversial alternative to embryonic ste
 :::warning Common Pitfall Students often conflate pluripotent and totipotent stem cells. Totipotent
 cells can Form a complete organism including placenta and umbilical cord; pluripotent cells can form
 all body cell Types but not extra-embryonic tissues. Only the zygote and very early embryonic cells
-are totipotent. :::
+are totipotent.
+:::
 
 ## Practice Problems
 
@@ -1456,7 +1465,8 @@ the A-Level specification for this topic, each with a full worked solution.
 other biology topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/biology/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ## 24. Viruses: Structure and Replication
 
@@ -1980,3 +1990,4 @@ differential centrifugation.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

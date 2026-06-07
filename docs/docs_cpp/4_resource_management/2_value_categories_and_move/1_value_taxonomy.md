@@ -72,7 +72,8 @@ Are materialized, which enabled guaranteed copy elision [N4950 S8.4.4].
 :::info Relevance The value category of an expression determines which overloaded function is called
 (via reference binding rules), whether a move constructor or copy constructor is invoked, and
 Whether temporary lifetime extension applies. Understanding value categories is essential to
-Understanding why move semantics work. :::
+Understanding why move semantics work.
+:::
 
 ## 2.1 lvalue
 
@@ -177,7 +178,8 @@ int main() {
 :::info Relevance The parenthesized expression `decltype((e))` yields the **declared type of `e`**
 With reference qualifiers preserved, which is how the `static_assert` tests above work. Without the
 Extra parentheses, `decltype(e)` strips references. This distinction is critical when writing type
-Traits or SFINAE constraints. :::
+Traits or SFINAE constraints.
+:::
 
 ## See Also
 
@@ -750,7 +752,8 @@ int main() {
 :::warning Using `decltype(auto)` with `return (local_variable);` returns a dangling reference. The
 Parentheses around `local_variable` make it an lvalue expression, so `decltype((local_variable))` is
 `T&`. But the local variable is destroyed at the end of the function, leaving a dangling reference.
-Always use `return local_variable;` (without parentheses) when you intend to return by value. :::
+Always use `return local_variable;` (without parentheses) when you intend to return by value.
+:::
 
 ## 3.9 Implicit Value Category Conversions
 
@@ -863,3 +866,4 @@ When working with value taxonomy, follow these steps:
 2. Select the appropriate algorithm, data structure, or technique
 3. Implement the solution step by step
 4. Test with edge cases and verify correctness
+

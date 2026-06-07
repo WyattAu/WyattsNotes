@@ -73,7 +73,8 @@ is completed.
 :::warning A common DSE pitfall is to assume all feedback loops are negative. The DSE specification
 requires knowledge of positive feedback examples (ovulation and childbirth are the most commonly
 tested). Remember: negative feedback maintains homeostasis; positive feedback amplifies change and
-does NOT maintain a constant internal environment. :::
+does NOT maintain a constant internal environment.
+:::
 
 ### Components of a Homeostatic Control System
 
@@ -1107,3 +1108,4 @@ and evaluate experimental evidence critically.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

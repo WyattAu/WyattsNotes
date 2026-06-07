@@ -940,7 +940,8 @@ questions within the A-Level specification for this topic, each with a full work
 Structure and Periodicity with other chemistry topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -958,3 +959,4 @@ self-marking and building a personal test matrix. :::
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

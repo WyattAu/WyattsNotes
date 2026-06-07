@@ -912,7 +912,8 @@ questions within the A-Level specification for this topic, each with a full work
 Chemistry with other chemistry topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/chemistry/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ## Summary
 
@@ -934,3 +935,4 @@ to unfamiliar contexts, particularly in calculation and practical questions.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

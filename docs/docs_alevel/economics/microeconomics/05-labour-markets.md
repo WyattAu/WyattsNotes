@@ -223,7 +223,8 @@ than in traditional company-town settings.
 
 :::info Info Employees or self-employed, and the implications for labour market regulation. AQA has
 examined the Gig economy in the context of labour market flexibility. Edexcel often links the gig
-economy to Wider debates about competition and regulation. :::
+economy to Wider debates about competition and regulation.
+:::
 
 ### 4.7 Evaluation of Monopsony Theory
 
@@ -329,7 +330,8 @@ The net effect of trade unions on economic welfare is ambiguous and context-depe
 
 :::info Info Force for good or harm in the labour market — both sides must be discussed for full
 marks. Edexcel (Theme 3) links trade unions to broader debates about government intervention. OCR
-may ask about the Impact of declining union membership on wage inequality. :::
+may ask about the Impact of declining union membership on wage inequality.
+:::
 
 ## 6. Minimum Wage
 
@@ -359,7 +361,8 @@ Competitive outcome: $L = L_c$, $w = w_c$.
 :::warning Common Pitfall The statement "minimum wages always cause unemployment" is only true in
 Perfectly competitive labour markets. Under monopsony (e.g., large employers in small towns, certain
 Professional sports leagues), a minimum wage can increase employment. Always state the market
-Structure. :::
+Structure.
+:::
 
 ### 6.3 Real-World Evidence on Minimum Wages
 
@@ -409,7 +412,8 @@ Same pay).
 :::info Board-Specific Note AQA and Edexcel both expect students to distinguish between the gender
 Pay gap (an average difference across the economy) and equal pay (a legal requirement for identical
 Work). OCR (A) may link the gender pay gap to human capital theory and occupational segregation. CIE
-Has examined the effectiveness of government policies to reduce the gender pay gap. :::
+Has examined the effectiveness of government policies to reduce the gender pay gap.
+:::
 
 ### 6.5 Evaluation of Minimum Wage Policy
 
@@ -512,7 +516,8 @@ Significant limitations:
 Improving labour market outcomes. AQA may ask students to evaluate whether increasing university
 Participation is always economically beneficial. CIE (9708) links human capital to economic growth
 In macro contexts. OCR often examines the limitations of human capital theory in explaining
-Persistent wage inequalities. :::
+Persistent wage inequalities.
+:::
 
 ## 8. Labour Market Discrimination
 
@@ -581,7 +586,8 @@ Reflect discrimination.
 Unexplained portions of the gender pay gap. AQA expects evaluation of government policies such as
 The UK Gender Pay Gap Reporting Regulations (2017). Edexcel often links discrimination to government
 Intervention policies. OCR may examine whether legislation alone is sufficient to eliminate
-Discrimination. :::
+Discrimination.
+:::
 
 ## 9. Critical Evaluation
 
@@ -606,7 +612,8 @@ Discrimination. :::
 :::info Board-Specific Note AQA places significant emphasis on trade unions and the minimum wage
 Debate. Edexcel covers human capital and migration effects on labour markets. CIE (9708) often asks
 About wage determination in different market structures. OCR (A) emphasises labour market
-Flexibility and government intervention. :::
+Flexibility and government intervention.
+:::
 
 ## 10. Problem Set
 
@@ -1379,3 +1386,4 @@ may drive platforms underground or offshore, leaving workers with no protection 
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
 the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
 each approach.
+

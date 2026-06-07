@@ -39,7 +39,8 @@ JNI mechanism with a type-safe, allocation-tracking API that is practically usab
 :::info GraalVM has been folded into the OpenJDK project. Starting with JDK 22, `native-image` ships
 As a standard JDK component. You no longer need a separate GraalVM distribution to build native
 Images. The Graal JIT compiler has been available as an experimental tier-4 compiler in OpenJDK
-Since JDK 10. :::
+Since JDK 10.
+:::
 
 ## The Graal Compiler
 
@@ -364,7 +365,8 @@ Reasons are:
 :::info The throughput gap between HotSpot and native image has been narrowing with each GraalVM
 Release. For I/O-bound server applications, native image now matches or exceeds HotSpot performance
 For most practical workloads. The gap is most noticeable in CPU-bound, long-running processes where
-HotSpot's adaptive optimization has time to produce highly specialized code. :::
+HotSpot's adaptive optimization has time to produce highly specialized code.
+:::
 
 ## Foreign Function and Memory API (Project Panama)
 
@@ -603,7 +605,8 @@ public class LibCurlExample {
 :::warning The FFM API uses `restricted` methods (marked with `@Restricted`) that can crash the JVM
 If misused. These methods perform bounds checks and null checks, but cannot prevent all undefined
 Behavior (e.g., passing a freed segment to a native function). The `@Restricted` annotation serves
-As a warning: you are leaving the safety guarantees of the Java platform. :::
+As a warning: you are leaving the safety guarantees of the Java platform.
+:::
 
 ## Foreign Memory Access
 
@@ -798,7 +801,8 @@ public class OffHeapRingBuffer {
 
 :::warning The off-heap ring buffer above has a bug: the `Arena` used to allocate the buffer is
 Closed in the constructor, making the segment inaccessible. In practice, the arena must outlive the
-Data structure. Use a shared arena or hold a reference to the arena as a field. :::
+Data structure. Use a shared arena or hold a reference to the arena as a field.
+:::
 
 ## Vector API (Incubator)
 
@@ -894,7 +898,8 @@ Intrinsics is portability: the same Java code runs on x86 (AVX2/AVX-512), ARM (N
 Architectures, with the JIT compiler selecting the appropriate instructions at runtime.
 
 :::info The Vector API requires `--add-modules jdk.incubator.vector` on the command line. It is
-Still in incubator status as of JDK 23. The API surface may change before final standardization. :::
+Still in incubator status as of JDK 23. The API surface may change before final standardization.
+:::
 
 ## Virtual Threads (Project Loom)
 
@@ -1016,7 +1021,8 @@ Synchronization, and no null instances. Two value instances with the same field 
 Considered equal.
 
 :::info Project Valhalla is still in preview as of JDK 23. The syntax and semantics may change
-Before finalization. The examples below reflect the current preview state. :::
+Before finalization. The examples below reflect the current preview state.
+:::
 
 ### Identity Classes vs Value Classes
 
@@ -1128,7 +1134,8 @@ native-image --version
 
 :::info As of JDK 22, native-image is bundled with the standard JDK. You do not need a separate
 GraalVM distribution. Install a JDK that includes native-image support (look for "GraalVM" in the
-Vendor name when using SDKMAN, or download from the GraalVM GitHub releases). :::
+Vendor name when using SDKMAN, or download from the GraalVM GitHub releases).
+:::
 
 ### Building a Native Image: Step by Step
 
@@ -1233,7 +1240,8 @@ mvn -Pnative native:compile
 
 :::warning Do not attempt to unit test the native image binary itself during development. The build
 Takes 30-120 seconds, which makes the test cycle too slow. Test business logic in JVM mode, and use
-The native image binary only for integration tests and final validation. :::
+The native image binary only for integration tests and final validation.
+:::
 
 ## Common Pitfalls
 
@@ -1460,3 +1468,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

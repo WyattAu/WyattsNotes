@@ -54,7 +54,8 @@ process(std::make_unique<Widget>(), compute_risk());
 :::info Relevance This is a real bug pattern. The C++ standard allows argument evaluation in any
 Order [N4950 S7.6.1.9]. If `compute_risk()` is evaluated before the `unique_ptr` constructor, and it
 Throws, the `new Widget()` allocation is leaked. `make_unique` eliminates this class of bug
-Entirely. :::
+Entirely.
+:::
 
 ## 5.3 `shared_ptr` Overuse and Reference Cycles
 
@@ -97,7 +98,8 @@ void aliasing_demo() {
 :::warning The aliasing constructor is useful but dangerous. The aliased pointer does not extend the
 Lifetime of the member it points to — it only extends the lifetime of the **owning** object. If the
 Owning object is destroyed first, the aliased pointer dangles. Use cases include returning pointers
-To members from APIs that need to express shared ownership of the containing object. :::
+To members from APIs that need to express shared ownership of the containing object.
+:::
 
 ## 5.5 Custom Deleters
 
@@ -266,7 +268,8 @@ int main() {
 :::warning Never capture by reference in a lambda deleter unless the referent is guaranteed to
 Outlive the `unique_ptr`. Since the deleter runs in the `unique_ptr` destructor, which runs when the
 `unique_ptr` goes out of scope, any captured reference must refer to an object with equal or greater
-Scope. This is easy to violate in practice — prefer capturing by value. :::
+Scope. This is easy to violate in practice — prefer capturing by value.
+:::
 
 ### 5.5.3 Functor Deleters with State
 
@@ -377,7 +380,8 @@ int main() {
 
 :::tip Prefer stateless functor deleters or captureless lambdas to avoid size overhead. If a deleter
 Must carry state, consider whether `std::shared_ptr` with a capturing lambda is more appropriate,
-Since `shared_ptr` type-erases the deleter into the control block. :::
+Since `shared_ptr` type-erases the deleter into the control block.
+:::
 
 ### Compile-Time Analysis of Deleter Storage
 
@@ -553,7 +557,8 @@ void allocator_mismatch_example() {
 :::warning Never extract a raw pointer from an allocator-aware container and manage it with a
 Default-deleter smart pointer. The allocation and deallocation mechanisms must match. If you need to
 Transfer ownership out of a container, use `std::move`Extract via `release()` on allocator-aware
-Wrappers, or use `std::pmr` resources [N4950 S23.12]. :::
+Wrappers, or use `std::pmr` resources [N4950 S23.12].
+:::
 
 ## 5.10 Type Erasure: How `shared_ptr` Stores Deleters
 
@@ -724,7 +729,8 @@ auto arr2 = std::shared_ptr<int>(new int[10], [](int* p) { delete[] p; });
 :::warning `std::shared_ptr&lt;T[]&gt;` (the partial specialization for arrays) was added in C++17
 [N4950 S20.11.3.7]. It provides `operator[]` but still requires an explicit array deleter. Before
 C++17, managing arrays with `shared_ptr` required manually passing `default_delete&lt;T[]&gt;` or a
-Lambda. :::
+Lambda.
+:::
 
 ## Summary
 
@@ -789,3 +795,4 @@ When working with common pitfalls, follow a structured approach:
 2. Apply the appropriate methods, equations, or frameworks
 3. Support your answer with evidence, examples, or calculations
 4. Evaluate your answer critically, considering limitations and alternative perspectives
+

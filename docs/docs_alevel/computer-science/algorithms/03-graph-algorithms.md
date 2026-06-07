@@ -144,7 +144,8 @@ To a non-MST vertex.
 :::info Board-specific **AQA** requires Dijkstra's shortest path algorithm with trace tables. **CIE
 (9618)** requires Dijkstra's; may also require minimum spanning tree (Prim's or Kruskal's). **OCR
 (A)** requires Dijkstra's, Prim's, and Kruskal's algorithms with step-by-step tracing. **Edexcel**
-Covers basic graph traversal (BFS, DFS) and shortest path. :::
+Covers basic graph traversal (BFS, DFS) and shortest path.
+:::
 
 <hr />
 
@@ -910,3 +911,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

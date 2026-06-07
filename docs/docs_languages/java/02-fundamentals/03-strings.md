@@ -73,7 +73,8 @@ System.out.println(s1 == s2); // true
 
 :::warning Do not intern user-controlled strings at scale. The pool is unbounded, and interning
 Billions of unique strings (e.g., every URL your crawler visits) will cause `OutOfMemoryError`.
-Intern only strings that appear frequently and have bounded cardinality. :::
+Intern only strings that appear frequently and have bounded cardinality.
+:::
 
 ### Compact Strings (JDK 9+)
 
@@ -220,7 +221,8 @@ String sub = s.substring(7, 12); // "World"
 
 :::info Prior to JDK 7u6, `substring` shared the backing `char[]` with the original string, which
 Could cause memory leaks (the original large string could not be GC'd if a small substring was
-Retained). Since JDK 7u6, `substring` copies the relevant portion into a new `char[]`. :::
+Retained). Since JDK 7u6, `substring` copies the relevant portion into a new `char[]`.
+:::
 
 ### Split and Join
 
@@ -319,7 +321,8 @@ emoji.codePoints().forEach(cp -> {
 ```
 
 :::warning Never use `charAt` or iterate `char`-by-`char` on strings that may contain surrogate
-Pairs. Use `codePoints()``codePointAt()`Or iterate with `Character.isHighSurrogate` checks. :::
+Pairs. Use `codePoints()``codePointAt()`Or iterate with `Character.isHighSurrogate` checks.
+:::
 
 ## Regular Expressions
 
@@ -465,7 +468,8 @@ CharsetEncoder strict = StandardCharsets.UTF_8.newEncoder()
 :::warning Never rely on the platform default charset. It varies by operating system and locale
 Setting. A program that works on Linux (UTF-8 default) will mangle data on Windows (Windows-1252
 Default) if you use `getBytes()` or `new String(byte[])` without an explicit charset. Always use
-`StandardCharsets.UTF_8` or a specific `Charset` constant. :::
+`StandardCharsets.UTF_8` or a specific `Charset` constant.
+:::
 
 ## String Formatting
 
@@ -531,7 +535,8 @@ String[] parts = "one,two,three".split(",");
 ```
 
 :::tip Always prefer `split` or compiled `Pattern` over `StringTokenizer`. The only advantage of
-`StringTokenizer` is that it does not compile a regex, but `Pattern.compile(",")` is negligible. :::
+`StringTokenizer` is that it does not compile a regex, but `Pattern.compile(",")` is negligible.
+:::
 
 ## Common String Algorithms
 
@@ -955,3 +960,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

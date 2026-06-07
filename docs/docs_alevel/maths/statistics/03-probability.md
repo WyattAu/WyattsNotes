@@ -22,7 +22,8 @@ slug: probability
 | CIE (9709) | P1, P6     | Probability in P1; conditional in P6              |
 
 :::info Probability questions test logical reasoning as much as formula recall. Always define events
-and draw a diagram before calculating. :::
+and draw a diagram before calculating.
+:::
 
 <hr />
 
@@ -150,7 +151,8 @@ $$P(B_k|A) = \frac◆LB◆P(A|B_k)P(B_k)◆RB◆◆LB◆\sum_{i=1}^{n}P(A|B_i)P(
 
 :::tip Bayes' theorem is essential for "reverse" probability questions: "Given that a test is
 Positive, what is the probability the patient actually has the disease?" Always define events and
-identify what is given ($P(A|B)$) versus what is sought ($P(B|A)$). :::
+identify what is given ($P(A|B)$) versus what is sought ($P(B|A)$).
+:::
 
 <hr />
 
@@ -178,7 +180,8 @@ $P(A \cap B) = P(A)P(B)$. $\blacksquare$
 Probability of $A$ is the same whether or not $B$ has happened.
 
 :::warning Warning Mutually exclusive and both have positive probability, they are **not**
-independent (since $P(A \cap B) = 0 \neq P(A)P(B)$). :::
+independent (since $P(A \cap B) = 0 \neq P(A)P(B)$).
+:::
 
 ### 5.3 Pairwise and mutual independence
 
@@ -194,7 +197,8 @@ $(A_i, A_j)$ with $i \neq j$ is independent.
 Independence does not imply mutual independence. For example, with two independent coin tosses, let
 $A$ = "first toss is heads", $B$ = "second toss is heads", $C$ = "both tosses are the same". Then
 $A$, $B$, $C$ are pairwise independent but not mutually independent since
-$P(A \cap B \cap C) = 0 \neq P(A)P(B)P(C) = 1/8$. :::
+$P(A \cap B \cap C) = 0 \neq P(A)P(B)P(C) = 1/8$.
+:::
 
 <hr />
 
@@ -444,7 +448,8 @@ $$= \tfrac{1 + 8 + 27 + 48 + 50 + 36}{12} = \tfrac{170}{12} = \tfrac{85}{6}$$
 $$\mathrm{Var}(X) = E(X^2) - [E(X)]^2 = \tfrac{85}{6} - \tfrac{49}{4} = \tfrac{170 - 147}{12} = \tfrac{23}{12} \approx 1.917$$
 
 :::info Info Above has the same mean but smaller variance, meaning its outcomes are more
-concentrated around the Centre. :::
+concentrated around the Centre.
+:::
 
 <hr />
 
@@ -838,7 +843,8 @@ within the A-Level specification for this topic, each with a full worked solutio
 with other topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -863,3 +869,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

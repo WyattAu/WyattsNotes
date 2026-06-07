@@ -222,7 +222,8 @@ def dll_delete(node):
   pointers)
 - **CIE (9618)** may require both singly and doubly linked lists
 - **OCR (A)** links linked lists to stack and queue implementations (dynamic data structures)
-- **Edexcel** covers basic singly linked list operations :::
+- **Edexcel** covers basic singly linked list operations
+:::
 
 <hr />
 
@@ -260,7 +261,8 @@ Cycles vs ~1 cycle for a cache hit. $\square$
 
 - Frequent insertions/deletions at known positions
 - Unknown or highly variable size
-- When random access is not needed :::
+- When random access is not needed
+:::
 
 <hr />
 
@@ -872,3 +874,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

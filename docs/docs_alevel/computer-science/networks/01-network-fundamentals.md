@@ -162,7 +162,8 @@ Physical:     [Bits on wire]
 :::info Board-specific Know specific use cases for each protocol:
 
 - TCP: HTTP, HTTPS, FTP, SMTP, SSH
-- UDP: DNS, DHCP, TFTP, online gaming, video streaming, VoIP :::
+- UDP: DNS, DHCP, TFTP, online gaming, video streaming, VoIP
+:::
 
 ### TCP Three-Way Handshake
 
@@ -764,3 +765,4 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+

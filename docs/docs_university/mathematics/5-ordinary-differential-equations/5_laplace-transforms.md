@@ -292,3 +292,4 @@ uniformly Cauchy on some interval $[x_0 - h, x_0 + h]$Hence converges uniformly 
 $\phi$. Passing to the limit in the integral equation shows $\phi$ satisfies the ODE. Uniqueness
 follows From the **Gronwall inequality** applied to the difference of two solutions.
 
+

@@ -85,7 +85,8 @@ void collapsing_demo() {
 :::info Relevance Reference collapsing is the mechanism that enables **forwarding references**
 (Section 4). Without collapsing, a `T&&` parameter could not bind to lvalues — the deduction would
 Always produce `T&&`Which cannot accept lvalues. Collapsing allows `T&&` to become `T&` when an
-Lvalue is passed, making perfect forwarding possible. :::
+Lvalue is passed, making perfect forwarding possible.
+:::
 
 ## 4.1 Distinguishing Forwarding References from Rvalue References
 
@@ -156,7 +157,8 @@ void not_forwarding() {
 
 :::warning If you add a constraint like `requires` that depends on `T`The parameter `T&&` is **not**
 a forwarding reference — it becomes a plain rvalue reference. The forwarding reference Deduction
-requires that `T` be a freshly deduced, unconstrained type parameter. :::
+requires that `T` be a freshly deduced, unconstrained type parameter.
+:::
 
 ## 4.3 `std::forward<T>(x)` — Perfect Forwarding
 
@@ -274,7 +276,8 @@ int main() {
 `std::vector::emplace_back`And virtually every factory or emplacement function in the standard
 Library. Without forwarding references and `std::forward`These functions would be forced to copy
 Their arguments or require separate overloads for every combination of lvalue/rvalue parameters — a
-Combinatorial explosion. :::
+Combinatorial explosion.
+:::
 
 ## See Also
 
@@ -378,7 +381,8 @@ void range_for_forwarding() {
 
 :::tip In `for (auto&& x : expr)`The `auto&&` is a forwarding reference. This is the idiomatic way
 To write generic range-based for loops that work with both lvalue and rvalue ranges, and with proxy
-Iterators that return prvalues (like `std::vector<bool>`). :::
+Iterators that return prvalues (like `std::vector<bool>`).
+:::
 
 ## 5.3 `std::forward` Implementation Detail
 
@@ -538,7 +542,8 @@ Literal `42` produces a `const int&` in the tuple, which dangles if the tuple ou
 Expression). `std::make_tuple` decays its arguments, so rvalues are copied/moved, but lvalues are
 Stored as references. For safe capture, use `std::make_tuple(std::decay_t&lt;Args>(args)...)` to
 Always store by value, or `std::forward_as_tuple(args...)` which explicitly stores references with
-The same lifetime concerns documented. :::
+The same lifetime concerns documented.
+:::
 
 ## 5.6 Forwarding in Class Templates
 
@@ -702,3 +707,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

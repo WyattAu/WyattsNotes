@@ -778,7 +778,8 @@ Expectations."**
 :::tip When practising these questions, write under timed conditions. For SL, aim for a complete
 Essay in 55 minutes. For HL, aim for 100 minutes to allow for integration of a third text. See
 [ib-english-assessment-and-techniques](./ib-english-assessment-and-techniques) for detailed time
-Management strategies. :::
+Management strategies.
+:::
 
 :::danger Common Pitfalls
 
@@ -820,3 +821,4 @@ Management strategies. :::
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

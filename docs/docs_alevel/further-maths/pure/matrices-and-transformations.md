@@ -15,7 +15,8 @@ This document covers matrix operations, determinants, inverses, 3x3 matrices, li
 Transformations, and an introduction to eigenvalues and eigenvectors.
 
 :::info Matrices provide a compact and powerful notation for systems of linear equations, geometric
-Transformations, and many applications in science and engineering. :::
+Transformations, and many applications in science and engineering.
+:::
 
 <hr />
 
@@ -294,7 +295,8 @@ Since $D^n$ is the diagonal matrix with each eigenvalue raised to the power $n$.
 
 :::warning warning Not all matrices are diagonalisable. A matrix is diagonalisable if and only if it
 Has a full set of linearly independent eigenvectors. A matrix with repeated eigenvalues may or may
-Not be diagonalisable. :::
+Not be diagonalisable.
+:::
 
 <hr />
 
@@ -448,7 +450,8 @@ $\blacksquare$
    eigenvector. When diagonalising, ensure consistency: the columns of $P$ must match the order of
    eigenvalues in $D$.
 5. **Repeated eigenvalues:** A repeated eigenvalue does not necessarily give two independent
-   eigenvectors. Check by attempting to solve $(A - \lambda I)\mathbf{v} = \mathbf{0}$. :::
+   eigenvectors. Check by attempting to solve $(A - \lambda I)\mathbf{v} = \mathbf{0}$.
+:::
 
 ---
 
@@ -1097,3 +1100,4 @@ This topic covers the mathematical techniques and concepts related to matrices a
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+

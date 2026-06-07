@@ -42,7 +42,8 @@ Any other TU.
 :::danger The ODR Violation Trap If two different TUs define the same class/struct `Foo` (e.g., via
 Copy-pasted headers), but the definitions differ (e.g., different member order or types), the linker
 **may not detect this**. This is **Undefined Behavior**. The runtime may crash or corrupt memory
-Because code in TU 'A' assumes one memory layout while code in TU 'B' assumes another. :::
+Because code in TU 'A' assumes one memory layout while code in TU 'B' assumes another.
+:::
 
 ## Linkage Types
 
@@ -548,3 +549,4 @@ for mastery of this topic.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

@@ -806,7 +806,8 @@ Before submitting any essay, perform a structural audit:
 [Streetcar Named Desire -- Close Reading and Analysis](streetcar-named-desire-analysis.md),
 [Chronicle of a Death Foretold](chronicle-of-a-death-foretold.md),
 [Chronicle of a Death Foretold -- Close Reading and Analysis](chronicle-of-a-death-foretold-analysis.md),
-And the [comparative analysis](comparitives/chronicle-streetcar.md). :::
+And the [comparative analysis](comparitives/chronicle-streetcar.md).
+:::
 
 ## Worked Examples
 
@@ -818,3 +819,4 @@ When analysing texts for ib english assessment and analytical techniques, follow
 2. Identify the specific technique used (e.g., metaphor, enjambment, iambic pentameter)
 3. Analyse the effect of the technique on the reader
 4. Link the analysis to the text's broader themes or concerns
+

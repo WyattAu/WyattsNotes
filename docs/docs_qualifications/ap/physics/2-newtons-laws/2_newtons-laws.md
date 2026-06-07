@@ -655,7 +655,8 @@ $$T_2 = 6(9.8 - 1.78) = 6 \times 8.02 = 48.1 \mathrm{ N$$
 $a = \frac{(m_2 - m_1)g}{m_1 + m_2} = \frac{19.6}{10} = 1.96 \mathrm{ m/s^2$. The massive pulley
 Reduces the acceleration because some of the net force goes into rotating the pulley rather than
 Accelerating the masses. The difference $T_2 - T_1 = 1.8 \mathrm{ N$ is the net torque on the
-pulley. :::
+pulley.
+:::
 
 ### Example 17: Object in a Fluid with Drag
 
@@ -885,3 +886,4 @@ equilibrium because these two forces (gravity and normal) balance, but they are 
 pair.
 
 </details>
+

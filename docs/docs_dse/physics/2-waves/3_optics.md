@@ -715,7 +715,8 @@ the DSE specification for this topic, each with a full worked solution.
 other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ---
 
@@ -1226,3 +1227,4 @@ $\blacksquare$
   $= \lfloor d/\lambda \rfloor$.
 - Rayleigh criterion: two sources are just resolved when the central maximum of one coincides with
   the first minimum of the other.
+

@@ -554,7 +554,8 @@ If $f$ is continuous on a closed interval $[a, b]$Then $f$ attains both an absol
 Absolute minimum on $[a, b]$.
 
 :::warning The EVT requires continuity on a **closed** interval. The function $f(x) = \frac{1}{x}$
-On $(0, 1)$ has no maximum, despite being continuous. :::
+On $(0, 1)$ has no maximum, despite being continuous.
+:::
 
 ### Boundedness Theorem
 
@@ -943,7 +944,8 @@ hardest questions within the AP specification for this topic, each with a full w
 Continuity with other AP Calculus topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/qualifications/ap/maths/diagnostics/diagnostic-guide) for instructions
-on self-marking and building a personal test matrix. :::
+on self-marking and building a personal test matrix.
+:::
 
 ## Summary
 
@@ -965,3 +967,4 @@ applying these mathematical techniques.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

@@ -22,7 +22,8 @@ slug: momentum
 | CIE (9709) | P4      | Momentum, impulse, restitution |
 
 :::info Momentum is a vector quantity. Always define a positive direction and be consistent with
-Signs. :::
+Signs.
+:::
 
 <hr />
 
@@ -223,7 +224,8 @@ $$J_y = \int_{t_1}^{t_2}F_y\,dt = \Delta p_y = m v_{y,\mathrm{final}} - m v_{y,\
 This is particularly useful for oblique impacts where the impulse acts in a specific direction.
 
 :::info Info Equation) and conservation of momentum (an algebraic constraint). It tells us exactly
-how much Momentum a force transfers over a given time interval. :::
+how much Momentum a force transfers over a given time interval.
+:::
 
 <hr />
 
@@ -395,7 +397,8 @@ $$\tan\beta = \frac◆LB◆v_t◆RB◆◆LB◆|v_n|◆RB◆ = \frac◆LB◆u\sin
 
 :::info Info $\beta \geq \alpha$. The particle always rebounds at an angle greater than or equal to
 the angle of Incidence. Equality holds only when $e = 1$ (perfectly elastic), recovering the law of
-reflection. :::
+reflection.
+:::
 
 Special cases:
 
@@ -902,7 +905,8 @@ within the A-Level specification for this topic, each with a full worked solutio
 with other topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -928,3 +932,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

@@ -16,7 +16,8 @@ friction, Inclined planes, momentum, and impulse.
 
 :::info A solid understanding of free-body diagrams is essential for all of the material in this
 document. Always draw a clear diagram showing all forces acting on each body before writing any
-equations. :::
+equations.
+:::
 
 <hr />
 
@@ -70,7 +71,8 @@ $$R - mg = ma$$
 
 :::warning Warning The normal reaction is **not always equal to $mg$**. It equals $mg$ only when
 there is no vertical Acceleration. In an accelerating lift, on an inclined plane, or in circular
-motion, $R$ differs From $mg$. :::
+motion, $R$ differs From $mg$.
+:::
 
 <hr />
 
@@ -181,7 +183,8 @@ $T = 5(g - a) = 5(9.8 - 0.754) = 45.23\;\mathrm{N}$
 
 :::warning Common Pitfall When a pulley problem involves an inclined plane, always state your
 assumption about which Direction the system moves. If the resulting acceleration is negative, your
-assumption was wrong And the system moves the other way. :::
+assumption was wrong And the system moves the other way.
+:::
 
 <hr />
 
@@ -346,7 +349,8 @@ $$v_2 = -3 + 5 = 2\;\mathrm{m\,s^{-1}}$$
 
 :::warning Warning The restitution equation uses **relative velocities with the correct signs**. The
 speed of approach Is $|u_1 - u_2|$ and the speed of separation is $|v_2 - v_1|$But the signs in the
-formula must Be consistent with your chosen positive direction. :::
+formula must Be consistent with your chosen positive direction.
+:::
 
 <hr />
 
@@ -568,3 +572,4 @@ $\blacksquare$
 - Conservation of momentum: $m_1 u_1 + m_2 u_2 = m_1 v_1 + m_2 v_2$ applies when no external force
   acts.
 - Impulse: $I = \Delta p = m(v - u)$; coefficient of restitution $e = \frac{v_2 - v_1}{u_1 - u_2}$.
+

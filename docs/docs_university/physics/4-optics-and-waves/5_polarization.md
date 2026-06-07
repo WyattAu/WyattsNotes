@@ -204,3 +204,4 @@ along $\hat{\mathbf{y}}$. $\blacksquare$
 This explains why the sky is polarised at $90°$ from the sun and why polarising sunglasses reduce
 Glare from horizontal surfaces (Brewster's angle reflection from road/water).
 
+

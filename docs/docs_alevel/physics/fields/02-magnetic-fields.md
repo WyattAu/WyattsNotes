@@ -196,7 +196,8 @@ Where the peak e.m.f. Is $\mathcal{E}_0 = NBA\omega$.
 
 :::tip Exam Technique When asked about Lenz's law, always describe what the induced current does
 (creates a field to oppose the change) and identify the direction of the induced current using the
-Right-hand grip rule. :::
+Right-hand grip rule.
+:::
 
 ## 6. Biot-Savart Law and Ampere's Law
 
@@ -218,7 +219,8 @@ The direction of $d\mathbf{B}$ follows from the right-hand rule on
 $d\mathbf{l} \times \hat{\mathbf{r}}$.
 
 :::warning Common Pitfall: the cross-product order is $d\mathbf{l} \times \hat{\mathbf{r}}$Not
-$\hat{\mathbf{r}} \times d\mathbf{l}$. Reversing the order flips the field direction. :::
+$\hat{\mathbf{r}} \times d\mathbf{l}$. Reversing the order flips the field direction.
+:::
 
 ### Field at the Centre of a Circular Loop
 
@@ -308,7 +310,8 @@ Left-hand rule to wire 2 for the force direction:
 - **Opposite-direction currents** $\to$ repulsive force
 
 :::tip Tip Currents repel. Think of it as two parallel beams of particles moving together (attract)
-versus Head-on (repel). :::
+versus Head-on (repel).
+:::
 
 ### Definition of the Ampere
 
@@ -358,7 +361,8 @@ That drifts at $\mathbf{v}_d = \mathbf{E} \times \mathbf{B}/B^2$ perpendicular t
 - $v \gt E/B$: **prolate cycloid** (loops with self-intersections).
 
 :::warning Warning Velocity and charge. Even a stationary particle will drift at this speed. The
-drift direction is Always $\mathbf{E} \times \mathbf{B}$Perpendicular to both fields. :::
+drift direction is Always $\mathbf{E} \times \mathbf{B}$Perpendicular to both fields.
+:::
 
 ### $\mathbf{E} \parallel \mathbf{B}$: Accelerating Helix
 
@@ -452,7 +456,8 @@ $5\tau$It is within 1%.
 
 :::tip Exam Technique The differential equation $L\,dI/dt + IR = V$ is identical in form to
 $RC\,dV_C/dt + V_C = V$. Both are first-order linear ODEs with exponential solutions. Use the same
-Problem-solving framework for both. :::
+Problem-solving framework for both.
+:::
 
 ### Transformers
 
@@ -829,7 +834,8 @@ questions within the A-Level specification for this topic, each with a full work
 Fields with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 :::danger Common Pitfalls
 
@@ -884,3 +890,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

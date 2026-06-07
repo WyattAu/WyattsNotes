@@ -148,12 +148,14 @@ Straight line. Two approaches are available:
 Whether the curve crosses the time axis. If it does, the velocity changes sign and you must split
 The calculation: the **area above** the axis is positive displacement, the **area below** is
 Negative displacement. The total distance is the sum of absolute areas; the net displacement is
-Their algebraic sum. :::
+Their algebraic sum.
+:::
 
 :::warning Common Pitfall Students often draw a tangent to a curve incorrectly by placing the ruler
 Away from the point of interest. Always place the ruler so it just touches the curve **at the
 Point** where you need the gradient, then extend it to read two clear coordinates for
-$\Delta y / \Delta x$. :::
+$\Delta y / \Delta x$.
+:::
 
 <details>
 <summary>Example: Finding displacement from a curved v-t graph</summary>
@@ -175,7 +177,8 @@ $$g \approx 9.81 \mathrm{ m s}^{-2}$$
 This was established by Galileo's experiments and is a consequence of the equivalence principle
 (mass cancels in $F = ma = mg$).
 
-:::info Info Problems. Always use the value specified in the question. :::
+:::info Info Problems. Always use the value specified in the question.
+:::
 
 ## 5. Projectile Motion
 
@@ -291,14 +294,16 @@ A decreasing gradient (decreasing acceleration) until it asymptotically approach
 
 :::warning Common Pitfall Terminal velocity does **not** mean the object has stopped accelerating
 Because it has run out of force. The forces are balanced: weight down equals drag up. The
-Acceleration is zero because the **net** force is zero, not because no forces act. :::
+Acceleration is zero because the **net** force is zero, not because no forces act.
+:::
 
 ## 6. Non-Uniform Acceleration
 
 When acceleration is not constant, the SUVAT equations do not apply. Instead, we use calculus to
 Relate displacement, velocity, and acceleration.
 
-:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 1 | CIE P1, P2 :::
+:::info Board Coverage AQA Paper 1 | Edexcel CP2 | OCR (A) Paper 1 | CIE P1, P2
+:::
 
 ### The Differential Relations
 
@@ -402,7 +407,8 @@ With speed $v_b$ (relative to water) can:
 
 :::warning Common Pitfall The boat's speed $v_b$ is always relative to the water, not relative to
 The ground. The ground speed is the vector sum of the boat's water-relative velocity and the current
-Velocity. Never add the magnitudes directly unless the velocities are in the same direction. :::
+Velocity. Never add the magnitudes directly unless the velocities are in the same direction.
+:::
 
 ### Relative Velocity and Closest Approach
 
@@ -719,7 +725,8 @@ within the A-Level specification for this topic, each with a full worked solutio
 with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 :::danger Danger
 
@@ -743,7 +750,8 @@ self-marking and building a personal test matrix. :::
   component of velocity DECREASES (it is no longer constant), the time of flight DECREASES (the
   object reaches a lower maximum height), and the trajectory is no longer a perfect parabola.
 
-::: :::
+:::
+:::
 
 ## Common Pitfalls
 
@@ -768,3 +776,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

@@ -199,7 +199,8 @@ $\epsilon = 2^{-23} \approx 1.19 \times 10^{-7}$.
 4. **Accumulation error:** Errors compound over many operations
 
 :::warning Pitfall Never use `==` to compare floating-point numbers. Instead, check if
-$|a - b| \lt \epsilon$ for some tolerance. :::
+$|a - b| \lt \epsilon$ for some tolerance.
+:::
 
 <hr />
 
@@ -209,7 +210,8 @@ $|a - b| \lt \epsilon$ for some tolerance. :::
 
 - 1 sign bit
 - 4 exponent bits (excess-8, i.e., bias = 8)
-- 3 mantissa bits :::
+- 3 mantissa bits
+:::
 
 **Format:** `S EEEE MMM`
 
@@ -781,3 +783,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

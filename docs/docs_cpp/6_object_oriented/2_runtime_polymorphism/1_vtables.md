@@ -103,7 +103,8 @@ $$
 
 :::info ABI Note The Itanium C++ ABI (used by GCC and Clang on all platforms except Windows)
 Mandates that the vptr is at offset 0 within the object (before any data members). MSVC uses a
-Similar but incompatible layout on Windows. :::
+Similar but incompatible layout on Windows.
+:::
 
 ### Vtable Structure Diagram
 
@@ -318,7 +319,8 @@ int main() {
 :::warning The actual performance difference depends heavily on compiler optimization levels, CPU
 Branch prediction accuracy, and whether the compiler can **devirtualize** the call (see
 [Devirtualization](./3_devirtualization.md)). With `-O2` or `-O3`Modern compilers may eliminate The
-virtual dispatch entirely if the dynamic type is provable. :::
+virtual dispatch entirely if the dynamic type is provable.
+:::
 
 ## 1.5 The `final` Keyword
 
@@ -386,7 +388,8 @@ struct Wrong : Base {
 ```
 
 :::tip Best Practice Always use `override` on every function intended to override a base-class
-Virtual function. This eliminates an entire class of bugs caused by signature mismatches. :::
+Virtual function. This eliminates an entire class of bugs caused by signature mismatches.
+:::
 
 ## 1.7 Virtual Dispatch During Construction and Destruction
 
@@ -467,7 +470,8 @@ The vptr transitions through three states during `Derived` object construction:
 :::warning Calling a pure virtual function from a constructor or destructor is **undefined
 Behavior** [N4950 S11.9.3]. The pure virtual function has no definition to dispatch to (or the
 Definition is not called). Some implementations call the pure virtual handler and terminate the
-Program. :::
+Program.
+:::
 
 ## 1.8 NVI (Non-Virtual Interface) Pattern
 
@@ -740,3 +744,4 @@ applying these mathematical techniques.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

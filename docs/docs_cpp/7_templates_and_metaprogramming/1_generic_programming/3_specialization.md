@@ -60,7 +60,8 @@ int main() {
 
 :::warning Full specializations are **not** templates themselves --- they are concrete definitions.
 They must be declared in the same namespace as the primary template. If you fully specialize a
-Function template, you must specialize every overload that participates in overload resolution. :::
+Function template, you must specialize every overload that participates in overload resolution.
+:::
 
 ### Full Specialization of Function Templates
 
@@ -730,7 +731,8 @@ int main() {
 
 :::warning You cannot partially specialize a member template without partially specializing the
 Enclosing class template. Member templates can only be **fully** specialized. If you need partial
-Specialization of a member, you must partially specialize the entire class. :::
+Specialization of a member, you must partially specialize the entire class.
+:::
 
 ## Common Errors with Ambiguity
 
@@ -867,3 +869,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

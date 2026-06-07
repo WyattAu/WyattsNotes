@@ -373,7 +373,8 @@ First, then the vertical scaling, then the vertical shift.
 
 :::info Horizontal transformations operate on $x$ **before** the function is evaluated; vertical
 Transformations operate on $f(x)$ **after** the function is evaluated. This is why the horizontal
-Shift has the "opposite sign" effect: $f(x + b)$ shifts left by $b$ (not right). :::
+Shift has the "opposite sign" effect: $f(x + b)$ shifts left by $b$ (not right).
+:::
 
 <summary>Examples</summary>
 - Describe the transformation from $y = x^2$ to $y = 2(x - 3)^2 + 1$:
@@ -516,7 +517,8 @@ To solve $\frac{f(x)}{g(x)} \gt 0$ (or $\lt$$\geq$$\leq$):
 
 :::warning **Critical pitfall:** When multiplying both sides of an inequality by an expression
 Involving $x$The direction of the inequality flips if that expression is negative. Instead of
-Multiplying through, use a sign chart. :::
+Multiplying through, use a sign chart.
+:::
 
 <summary>Examples</summary>
 
@@ -818,7 +820,8 @@ the DSE specification for this topic, each with a full worked solution.
 with other DSE mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/maths/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ---
 
@@ -990,3 +993,4 @@ Regular practice with a variety of question types is essential to build fluency 
 applying these mathematical techniques.
 
 > > > > > > > Stashed changes:docs/docs_dse/Maths/compulsory/functions.md
+

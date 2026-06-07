@@ -81,7 +81,8 @@ int main() {
 ```
 
 :::tip Tip Loads and stores compile to plain `mov` instructions. On ARM, `relaxed` loads use `ldar`
-and stores Use `stlr` (or `ldr`/`str` with `relaxed` semantics depending on the ARM version). :::
+and stores Use `stlr` (or `ldr`/`str` with `relaxed` semantics depending on the ARM version).
+:::
 
 ### When Relaxed Is Insufficient: The Message Passing Idiom
 
@@ -196,7 +197,8 @@ On x86, `seq_cst` stores require a `MFENCE` (or `LOCK XCHG`), and `seq_cst` load
 On some implementations. On ARM, `seq_cst` operations use `dmb ish` barriers.
 
 :::info Info Specified. This ensures maximum safety but may not be necessary in all cases. For
-Performance-critical code, consider using weaker orderings where appropriate. :::
+Performance-critical code, consider using weaker orderings where appropriate.
+:::
 
 ### The Store Buffering Problem (Why seq_cst Is Needed)
 
@@ -343,7 +345,8 @@ Multi-core systems.
 :::tip Tip Provides those ordering guarantees. The only extra cost is for `seq_cst` stores (which
 require `MFENCE`). On ARM and POWER, acquire and release require explicit barrier instructions, so
 the Performance difference between relaxed and acquire/release is significant on those
-architectures. :::
+architectures.
+:::
 
 ### Hardware Memory Models
 
@@ -425,7 +428,8 @@ Discouraged in favor of direct memory ordering on atomic loads and stores.
 
 :::info Info Stores directly, as they are more readable and equally efficient. Fences are primarily
 useful when Interfacing with hardware or when the atomic operation itself is performed by
-non-standard means. :::
+non-standard means.
+:::
 
 ## `memory_order_consume`: The Problematic Ordering
 
@@ -533,3 +537,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

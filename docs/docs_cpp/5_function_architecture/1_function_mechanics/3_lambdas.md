@@ -339,7 +339,8 @@ int main() {
 
 :::info Relevance Generic lambdas are the backbone of STL algorithms. `std::sort``std::transform`
 `std::find_if` all accept callable objects, and generic lambdas provide the most ergonomic way to
-Pass custom comparators and predicates. :::
+Pass custom comparators and predicates.
+:::
 
 ## 3.5 Stateful Lambdas and Lifetime Issues
 
@@ -690,3 +691,4 @@ and past paper questions, is essential for success in examinations.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

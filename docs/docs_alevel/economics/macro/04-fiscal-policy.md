@@ -37,7 +37,8 @@ $$\mathrm{Budget balance} = T - G$$
 
 :::info Board-Specific Note CIE (9708) requires students to distinguish between the budget balance
 And the national debt. AQA and Edexcel may ask about the UK's fiscal rules (e.g., the fiscal mandate
-And supplementary target). :::
+And supplementary target).
+:::
 
 ## 2. Government Spending
 
@@ -63,7 +64,8 @@ Disposable income and hence consumption ($C$).
 
 :::warning Warning Formula. They are a government outlay but not a purchase of goods and services.
 They affect $C$Not $G$ directly. However, exam questions sometimes use "government spending" loosely
-— always clarify What is meant. :::
+— always clarify What is meant.
+:::
 
 ### 2.2 Government Spending as a Share of GDP
 
@@ -149,7 +151,8 @@ ATR falls with income because higher earners save a larger proportion of income.
 :::tip Exam Technique When asked to evaluate whether a tax is progressive or regressive, calculate
 The ATR at different income levels. Never just state the marginal rate — a tax can have increasing
 Marginal rates but still be regressive in practice (e.g., if there are generous allowances for high
-Earners). :::
+Earners).
+:::
 
 ### 3.3 Laffer Curve
 
@@ -195,7 +198,8 @@ GDP is also large.
 
 :::warning Warning Small (or zero) deficit if it is running a balanced budget. The deficit is a
 _flow_ (per year), While the debt is a _stock_ (accumulated). Reducing the deficit does _not_ reduce
-the debt — it Merely slows the rate at which debt grows. Only a surplus reduces the debt. :::
+the debt — it Merely slows the rate at which debt grows. Only a surplus reduces the debt.
+:::
 
 ### 4.2 Debt Dynamics
 
@@ -314,7 +318,8 @@ Prices, reducing private sector profitability.
 
 :::tip Exam Technique When evaluating fiscal policy, always consider crowding out. The strongest
 Answer recognises that crowding out is less severe in a recession (Keynesian view) and more severe
-At full employment (Classical view). Reference the state of the economic cycle. :::
+At full employment (Classical view). Reference the state of the economic cycle.
+:::
 
 ## 7. Automatic Stabilisers
 
@@ -1027,3 +1032,4 @@ uncertain and time-varying.
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
 the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
 each approach.
+

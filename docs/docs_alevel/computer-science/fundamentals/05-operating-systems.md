@@ -73,7 +73,8 @@ Application.
 
 :::info Board-specific **AQA** emphasises batch, real-time, and distributed systems. **Edexcel** and
 **OCR (A)** focus on batch, real-time, and desktop/mobile. **CIE** covers real-time and distributed
-Systems in particular depth. :::
+Systems in particular depth.
+:::
 
 <hr />
 
@@ -248,7 +249,8 @@ If offset $\ge$ limit, a segmentation fault is raised.
 
 :::info Board-specific **AQA** and **OCR (A)** require understanding of both paging and
 Segmentation. **Edexcel** focuses primarily on paging. **CIE** covers paging with address
-Translation in detail. :::
+Translation in detail.
+:::
 
 ### TLB (Translation Lookaside Buffer)
 
@@ -416,7 +418,8 @@ The OS must manage updates to itself and installed software. Key concerns:
 - **Rollback** mechanisms allow reverting to a previous version if an update causes problems
 
 :::info Board-specific **AQA** and **Edexcel** specifically mention software updates and patch
-Management. **OCR (A)** and **CIE** may cover this under broader system security topics. :::
+Management. **OCR (A)** and **CIE** may cover this under broader system security topics.
+:::
 
 ### Malware Protection
 
@@ -745,3 +748,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

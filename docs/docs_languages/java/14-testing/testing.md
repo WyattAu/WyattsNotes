@@ -177,7 +177,8 @@ class LifecycleTest {
 :::info By default, JUnit 5 creates a new test instance for each test method (PER_METHOD lifecycle).
 Use `@TestInstance(Lifecycle.PER_CLASS)` to create a single instance shared across all test methods.
 This allows non-static `@BeforeAll`/`@AfterAll` methods, but tests share instance state, which can
-Cause interference. :::
+Cause interference.
+:::
 
 ### Parameterized Tests
 
@@ -402,7 +403,8 @@ System.out.println(spyList.get(0));   // "real" (real method called)
 
 :::warning When spying, use `doReturn().when(spy)` instead of `when(spy).thenReturn()`. The latter
 Calls the real method to get the return value before stubbing, which can have side effects or throw
-Exceptions. :::
+Exceptions.
+:::
 
 ## Integration Testing
 
@@ -700,7 +702,8 @@ tasks.check {
 :::warning 100% coverage does not mean bug-free code. Coverage measures execution paths, not
 Correctness. A test that calls a method with wrong inputs and asserts wrong values still contributes
 To coverage. Focus on meaningful tests, not the coverage number. Use coverage as a tool to find
-Untested code, not as a target to gamify. :::
+Untested code, not as a target to gamify.
+:::
 
 ## Flaky Tests
 
@@ -931,3 +934,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

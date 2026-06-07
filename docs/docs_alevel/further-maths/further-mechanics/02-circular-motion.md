@@ -30,7 +30,8 @@ Determine unknown forces.
 
 :::info Centripetal force is not a separate force — it is the resultant of the physical forces
 (tension, friction, normal reaction, weight) directed towards the centre of the circle. Never
-Include "centripetal force" on a free body diagram. :::
+Include "centripetal force" on a free body diagram.
+:::
 
 <hr />
 
@@ -1249,3 +1250,4 @@ This is SHM with $\omega^2 = g/l$. Period:
 $T = \dfrac◆LB◆2\pi◆RB◆◆LB◆\omega◆RB◆ = \boxed{2\pi\sqrt{l/g}}$. $\blacksquare$
 
 </details>
+

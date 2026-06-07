@@ -106,7 +106,8 @@ Questions are included throughout.
 
 :::tip When studying, focus first on understanding the core concepts before attempting practice
 Questions. For Higher Level students, pay particular attention to the proofs and derivations, as
-These frequently appear on the examination. :::
+These frequently appear on the examination.
+:::
 
 ## State Examinations Commission (SEC)
 
@@ -116,7 +117,8 @@ Provides past examination papers, marking schemes, and chief examiner reports --
 Resources for revision.
 
 :::info Past papers and marking schemes are available free of charge from the SEC website. Working
-Through past papers under timed conditions is one of the most effective preparation strategies. :::
+Through past papers under timed conditions is one of the most effective preparation strategies.
+:::
 
 ## Summary
 
@@ -133,3 +135,4 @@ linked above.
 
 - Confusing terminology or concepts that appear similar but have distinct meanings.
 - Overlooking key assumptions or boundary conditions that limit applicability.
+

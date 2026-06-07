@@ -22,7 +22,8 @@ slug: kinematics
 | CIE (9709) | P1, P4  | 1D in P1; 2D/projectiles in P4 |
 
 :::info The formula booklet lists the SUVAT equations. You must be able to select the correct
-Equation and apply it to multi-stage problems. :::
+Equation and apply it to multi-stage problems.
+:::
 
 <hr />
 
@@ -94,7 +95,8 @@ $$s = \tfrac{1}{2}(u+v)t \implies v = \frac{2s}{t} - u \quad \mathrm{(useful whe
 
 :::tip The key insight is that **all five SUVAT equations follow from two integrations** of the
 Constant acceleration $a = dv/dt$Using the initial conditions $v(0) = u$ and $s(0) = 0$. Memorising
-the derivation means you can recover any formula you forget. :::
+the derivation means you can recover any formula you forget.
+:::
 
 ### 2.2 Summary
 
@@ -106,7 +108,8 @@ the derivation means you can recover any formula you forget. :::
 | $s = \frac{1}{2}(u+v)t$    | $s, u, v, t$ | $a$     |
 
 :::tip Always write down what you know and what you need. Choose the equation that contains all
-Known quantities and the unknown. Draw a diagram with positive direction marked. :::
+Known quantities and the unknown. Draw a diagram with positive direction marked.
+:::
 
 <hr />
 
@@ -162,7 +165,8 @@ Straight-line $v$-$t$ graph, the acceleration is constant and equals the gradien
 
 :::warning Displacement $\neq$ distance. If a particle moves $10\,\mathrm{m}$ forwards and then
 $10\,\mathrm{m}$ backwards, its displacement is $0$ but its total distance is $20\,\mathrm{m}$. On a
-$v$-$t$ graph, the signed areas cancel (displacement), but the unsigned areas add (distance). :::
+$v$-$t$ graph, the signed areas cancel (displacement), but the unsigned areas add (distance).
+:::
 
 ### 3.6 Worked example: graphs
 
@@ -287,7 +291,8 @@ The horizontal range is then $R = v\cos\theta \cdot t$.
 
 :::tip When a projectile is launched from a height, the time of flight is **longer** than for level
 Ground, and the angle for maximum range is **less** than $45^\circ$ (derived via calculus, but
-Beyond the core syllabus). :::
+Beyond the core syllabus).
+:::
 
 <hr />
 
@@ -806,7 +811,8 @@ within the A-Level specification for this topic, each with a full worked solutio
 with other topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -831,3 +837,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

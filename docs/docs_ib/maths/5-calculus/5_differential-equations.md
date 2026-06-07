@@ -617,7 +617,8 @@ questions within the IB specification for this topic, each with a full worked so
 Differential Equations with other IB mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
-and building a personal test matrix. :::
+and building a personal test matrix.
+:::
 
 | Topic                    | Site       | Link                                                                                                                  |
 | ------------------------ | ---------- | --------------------------------------------------------------------------------------------------------------------- |
@@ -646,3 +647,4 @@ applying these mathematical techniques. | [Differential Equations] | A-Level |
 Equations] | University |
 [View](https://university.wyattau.com/docs/mathematics/4-ordinary-differential-equations/1_differential-equations)
 |
+

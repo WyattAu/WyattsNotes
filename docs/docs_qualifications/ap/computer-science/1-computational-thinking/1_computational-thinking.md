@@ -238,7 +238,8 @@ REPEAT UNTIL (condition)
 ```
 
 :::warning `REPEAT UNTIL` is a post-test loop -- the body executes at least once, then the condition
-Is checked. This differs from a `WHILE` loop, which is a pre-test loop. :::
+Is checked. This differs from a `WHILE` loop, which is a pre-test loop.
+:::
 
 **FOR EACH:**
 
@@ -271,7 +272,8 @@ LENGTH(list)
 ```
 
 :::warning AP CSP pseudocode uses **1-based indexing**. `list[1]` is the first element, not
-`list[0]`. This differs from Java, Python, and most programming languages. :::
+`list[0]`. This differs from Java, Python, and most programming languages.
+:::
 
 :::info[Example: Finding the Maximum]
 
@@ -1054,3 +1056,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

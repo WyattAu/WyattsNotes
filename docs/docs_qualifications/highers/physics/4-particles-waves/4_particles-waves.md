@@ -541,7 +541,8 @@ Directly:
 $$\lambda = \frac{h}{\sqrt{2m_e eV}} = \frac{1.226}{\sqrt{V}} \mathrm{ nm$$
 
 Where $V$ is in volts. This is a very useful shortcut: for $V = 200 \mathrm{ V$
-$\lambda = 1.226/\sqrt{200} = 0.0867 \mathrm{ nm$. :::
+$\lambda = 1.226/\sqrt{200} = 0.0867 \mathrm{ nm$.
+:::
 
 ### Example 22: Photon Energy and Wavelength Relationships
 
@@ -597,7 +598,8 @@ Present ($f_n = nf_1$).
 
 :::info A closed pipe produces only odd harmonics (1st, 3rd, 5th, ...), giving a richer, more
 "hollow" sound than an open pipe which produces all harmonics (1st, 2nd, 3rd, ...). This is why
-Clarinets (effectively closed pipes) sound different from flutes (open pipes). :::
+Clarinets (effectively closed pipes) sound different from flutes (open pipes).
+:::
 
 ## Common Pitfalls Extended
 
@@ -670,7 +672,8 @@ This is in the gamma ray region of the electromagnetic spectrum.
 
 :::info Pair production cannot occur in a vacuum -- it must happen near a nucleus to conserve
 Momentum. The recoil of the nucleus absorbs the excess momentum. This is why pair production is more
-Likely in high-atomic-number materials (lead, tungsten), which are used in radiation shielding. :::
+Likely in high-atomic-number materials (lead, tungsten), which are used in radiation shielding.
+:::
 
 ### Example 27: Energy Levels of Hydrogen -- Detailed Transitions
 
@@ -777,3 +780,4 @@ In every particle interaction, the following must be conserved:
 30. Compare and contrast the properties of alpha, beta, and gamma radiation in a table. Include:
     nature, charge, mass, speed, penetrating power, ionising power, and deflection in magnetic
     fields.
+

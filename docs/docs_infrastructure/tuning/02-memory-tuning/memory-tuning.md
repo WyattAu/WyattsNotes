@@ -336,7 +336,8 @@ Operation less penalizing.
 
 :::danger Never exceed 1.5 V on VDD/VDDQ for DDR5. Sustained operation above this voltage will cause
 Permanent damage to the DRAM chips. Even 1.45 V should only be used with active cooling on the
-DIMMs. :::
+DIMMs.
+:::
 
 ### Stability Testing After Changes
 
@@ -438,7 +439,8 @@ echo always | sudo tee /sys/kernel/mm/transparent_hugepage/enabled
 
 :::warning For database workloads (PostgreSQL, Redis, MongoDB), THP can cause latency spikes due to
 The kernel's khugepaged daemon defragmenting memory in the background. Database vendors recommend
-Setting THP to `madvise` or `never`. :::
+Setting THP to `madvise` or `never`.
+:::
 
 ### Huge Pages
 
@@ -710,7 +712,8 @@ free -h
 ```
 
 :::warning Do not create a swap file on a ZFS dataset. ZFS does not support swap files due to its
-Copy-on-write nature. Use a swap file on ext4/xfs or a dedicated swap partition instead. :::
+Copy-on-write nature. Use a swap file on ext4/xfs or a dedicated swap partition instead.
+:::
 
 ### NUMA Memory Policy Deep Dive
 
@@ -1019,3 +1022,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

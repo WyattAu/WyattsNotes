@@ -146,7 +146,8 @@ characterised by the classic signs: **rubor** (redness), **calor** (heat), **tum
 inflammatory response. Histamine is released by mast cells immediately upon tissue damage and causes
 the vasodilation and increased permeability characteristic of inflammation. Antibodies are produced
 later by B cells as part of the adaptive immune response and are not involved in the initial
-inflammatory cascade. :::
+inflammatory cascade.
+:::
 
 ### 2.4 The Complement System
 
@@ -237,7 +238,8 @@ re-exposure to the same antigen.
 
 :::warning Common Pitfall Students often write that T killer cells "engulf" or "digest" pathogens.
 They do not. T killer cells induce apoptosis in infected host cells. Phagocytosis is carried out by
-phagocytes (neutrophils and macrophages), not by T killer cells. :::
+phagocytes (neutrophils and macrophages), not by T killer cells.
+:::
 
 ## 4. Adaptive Immunity: The Humoral Response
 
@@ -361,7 +363,8 @@ The secondary (anamnestic) response occurs on subsequent exposure to the same an
 :::warning Common Pitfall Students often state that "antibodies kill pathogens." Antibodies do not
 kill pathogens directly. They mark pathogens for destruction by other mechanisms (phagocytosis,
 complement lysis, neutralisation of toxins). The antibody itself is a signalling molecule that tags
-the pathogen and triggers other components of the immune system. :::
+the pathogen and triggers other components of the immune system.
+:::
 
 ## 6. Autoimmune Diseases
 
@@ -456,7 +459,8 @@ For comparison:
 immunity." Vaccination provides **artificial active immunity** because it stimulates the body's own
 immune system to produce antibodies and memory cells. Passive immunity (e.g., maternal antibodies
 crossing the placenta, or injection of pre-made antibodies) provides temporary protection but does
-not create memory cells. :::
+not create memory cells.
+:::
 
 ## 8. ELISA (Enzyme-Linked Immunosorbent Assay)
 
@@ -510,7 +514,8 @@ The patient sample contains approximately $27.2\ \mathrm{ng\ cm^{-3}}$ of antige
 :::warning Common Pitfall In ELISA, the colour change is catalysed by an enzyme attached to the
 antibody, not by the antigen itself. Students sometimes write that "the antigen changes colour." The
 enzyme on the secondary antibody converts the substrate to a coloured product; the intensity of
-colour indicates how much antigen-antibody complex is present. :::
+colour indicates how much antigen-antibody complex is present.
+:::
 
 ## 9. Monoclonal Antibodies
 
@@ -1244,7 +1249,8 @@ supervision.
 :::warning Common Pitfall Students often confuse antibodies (proteins produced by B cells/plasma
 cells) with antigens (molecules that trigger an immune response). Remember: **Antibody** is produced
 by the immune system in response to an **Antigen**. Antibodies are Y-shaped proteins; antigens can
-be proteins, polysaccharides, or other molecules on the surface of pathogens. :::
+be proteins, polysaccharides, or other molecules on the surface of pathogens.
+:::
 
 ## 26. The Inflammatory Response: Detailed Mechanism
 
@@ -1452,7 +1458,8 @@ $$\text{Herd immunity threshold} = 1 - \frac{1}{R_0}$$
 immunity reduces the probability of transmission but does not eliminate risk entirely. Non-immune
 individuals (too young for vaccination, immunocompromised, vaccine contraindications) can still be
 infected if exposed. Additionally, immunity can wane over time, and new variants may partially
-escape existing immunity. :::
+escape existing immunity.
+:::
 
 ### 26.4 Antigenic Variation and Vaccine Challenges
 
@@ -1886,7 +1893,8 @@ the body's own tissues:
 
 :::warning Common Pitfall Type 1 diabetes is autoimmune (immune system destroys $\beta$ cells). Type
 2 diabetes is metabolic (insulin resistance). Do not confuse them. Also, coeliac disease is an
-autoimmune condition triggered by gluten, not a food allergy. :::
+autoimmune condition triggered by gluten, not a food allergy.
+:::
 
 ## 37. Vaccination in Detail
 
@@ -2308,3 +2316,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

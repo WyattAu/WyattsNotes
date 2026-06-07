@@ -68,7 +68,8 @@ $$
 
 :::warning A common error is to "rationalise" by splitting the fraction:
 $\frac◆LB◆a + b\sqrt{c}◆RB◆◆LB◆d◆RB◆ \neq \frac{a}{d} + b\sqrt◆LB◆\frac{c}{d}◆RB◆$ . Always
-distribute the Denominator correctly. :::
+distribute the Denominator correctly.
+:::
 
 ### 1.2 Irrationality of $\sqrt{2}$
 
@@ -312,7 +313,8 @@ $$\frac{ab + ac}{ad + ae} = \frac{a(b + c)}{a(d + e)} = \frac{b + c}{d + e}$$
 
 :::warning You can only cancel _factors_, not terms. $\frac{x + 3}{x}$ is NOT equal to $3$. The $x$
 In the denominator is a factor of the whole expression, but the $x$ in the numerator is only one
-Term. :::
+Term.
+:::
 
 ### 6.2 Addition and Subtraction
 
@@ -656,7 +658,8 @@ questions within the A-Level specification for this topic, each with a full work
 Expressions with other pure mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -682,3 +685,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

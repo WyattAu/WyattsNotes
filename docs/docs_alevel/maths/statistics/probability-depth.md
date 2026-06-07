@@ -15,7 +15,8 @@ This document extends the core probability material with rigorous treatments of 
 Probability, independence, Venn diagrams, tree diagrams, and Bayes' theorem.
 
 :::info Probability problems reward careful notation and clear event definitions. Always define your
-events Explicitly before writing any equations. :::
+events Explicitly before writing any equations.
+:::
 
 <hr />
 
@@ -113,7 +114,8 @@ So even with a positive test, there is only about an 8.8% chance of having the d
 
 :::warning Warning This counterintuitive result arises because the disease is rare. The number of
 false positives far Exceeds the number of true positives. This is the **base rate fallacy** --
-ignoring the prior Probability of the condition. :::
+ignoring the prior Probability of the condition.
+:::
 
 ### 2.4 Worked example: factory with three machines
 
@@ -273,7 +275,8 @@ $$= (1 - P(A))(1 - P(B)) = P(A') \cdot P(B') \quad \blacksquare$$
 
 :::warning Warning "Independent" and "mutually exclusive" are different concepts. In fact, if $A$
 and $B$ are both Non-trivial (positive probability) and mutually exclusive, they **cannot** be
-independent: $P(A \cap B) = 0 \neq P(A)P(B)$. :::
+independent: $P(A \cap B) = 0 \neq P(A)P(B)$.
+:::
 
 <hr />
 
@@ -411,3 +414,4 @@ $\blacksquare$
 - Bayes' theorem: $P(A|B) = \frac{P(B|A)P(A)}{P(B)}$ inverts conditional probabilities.
 - Total probability: $P(B) = \sum P(B|A_i)P(A_i)$ partitions the sample space.
 - Tree diagrams organise multi-stage probability calculations systematically.
+

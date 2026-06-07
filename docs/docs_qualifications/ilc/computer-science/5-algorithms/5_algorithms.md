@@ -409,7 +409,8 @@ print(f"Change: {change}")
 
 :::warning Greedy algorithms do not always produce the optimal solution. For example, with coin
 Denominations {1, 3, 4} and amount 6, the greedy approach gives 4 + 1 + 1 (3 coins), but the optimal
-Is 3 + 3 (2 coins). :::
+Is 3 + 3 (2 coins).
+:::
 
 **Proof that greedy fails for {1, 3, 4} with amount 6.** Greedy: pick 4 (amount=2), pick 1
 (amount=1), pick 1 (amount=0). Total: 3 coins. Optimal: pick 3 (amount=3), pick 3 (amount=0). Total:
@@ -833,3 +834,4 @@ practical implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+

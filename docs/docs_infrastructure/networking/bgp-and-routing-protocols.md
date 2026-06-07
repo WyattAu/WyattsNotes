@@ -104,7 +104,8 @@ Unreachable.
 
 :::info Administrative distance is a Cisco concept, but the principle exists in other vendors'
 Implementations under different names (route preference, distance, or trust value). The numeric
-Values may differ. :::
+Values may differ.
+:::
 
 When two routes for the same prefix have the same AD, the router compares metrics. When both AD and
 Metric match, the router may load-balance (equal-cost or unequal-cost, depending on the protocol).
@@ -131,7 +132,8 @@ ip route 192.168.2.0 255.255.255.0 Ethernet0/1
 
 :::warning Specifying an outbound interface instead of a next-hop on a multi-access network (like
 Ethernet) requires proxy ARP to function correctly, which can cause unexpected behavior. Prefer
-Next-hop addresses on multi-access links. :::
+Next-hop addresses on multi-access links.
+:::
 
 ### Default Routes
 
@@ -327,7 +329,8 @@ Calculations:
 
 :::info Area design is one of the most critical decisions in an OSPF deployment. A poorly designed
 Area topology causes excessive SPF recalculations, large routing tables, and slow convergence. Keep
-Areas small, limit the number of ABRs, and avoid transit areas. :::
+Areas small, limit the number of ABRs, and avoid transit areas.
+:::
 
 ### OSPF Cost Metric
 
@@ -381,7 +384,8 @@ interface Ethernet0/0
 
 :::warning DR/BDR election on NBMA networks (like Frame Relay or DMVPN) can cause unexpected
 Behavior. On hub-and-spoke topologies, ensure the hub has the highest priority and all spokes have
-Priority 0. Otherwise, a spoke might win the DR election, breaking routing. :::
+Priority 0. Otherwise, a spoke might win the DR election, breaking routing.
+:::
 
 ### OSPF Configuration
 
@@ -516,7 +520,8 @@ By default, only K1 (bandwidth) and K3 (delay) are enabled (K1=1, K2=0, K3=1, K4
 | Load        | Load on the path (0-255, where 255 is fully loaded)              |
 
 :::info Never enable K2 (load) or K5 (reliability) in production. These values fluctuate with
-Traffic, causing the metric to change constantly and leading to route flapping and instability. :::
+Traffic, causing the metric to change constantly and leading to route flapping and instability.
+:::
 
 ### Feasible Successors and DUAL
 
@@ -603,7 +608,8 @@ interface Loopback0
 
 :::info For iBGP sessions, use loopback interfaces as the source and configure
 `update-source Loopback0` and `next-hop-self`. For eBGP sessions, use directly connected interfaces
-(unless you are using multihop, which requires `ebgp-multihop`). :::
+(unless you are using multihop, which requires `ebgp-multihop`).
+:::
 
 ### NLRI
 
@@ -763,7 +769,8 @@ Operators should follow:
 :::warning BGP hijacking is a real and ongoing threat. In 2008, Pakistan Telecom hijacked YouTube's
 Prefix (208.65.153.0/24) by advertising a more specific route, redirecting global YouTube traffic to
 Pakistan. In 2018, attackers hijacked Amazon's NS1 prefix to intercept cryptocurrency DNS traffic.
-Implement RPKI validation and prefix filtering on all BGP sessions. :::
+Implement RPKI validation and prefix filtering on all BGP sessions.
+:::
 
 ## Route Redistribution
 
@@ -1176,7 +1183,8 @@ show logging | include OSPF|BGP
 
 :::warning Debug commands can generate massive output and impact router performance. Use them
 Carefully, and always use `terminal monitor` and specific debug filters. Disable debug with
-`undebug all` as soon as you have the information you need. :::
+`undebug all` as soon as you have the information you need.
+:::
 
 ```
 debug ip routing
@@ -1237,7 +1245,8 @@ router bgp 65001
 
 :::warning BGP dampening can cause more harm than good in some scenarios, particularly when a
 Flapping route carries important traffic. Many operators prefer to fix the root cause of the
-Flapping rather than suppress the route. Use dampening carefully. :::
+Flapping rather than suppress the route. Use dampening carefully.
+:::
 
 ### OSPF Area Design Mistakes
 
@@ -1296,3 +1305,4 @@ for mastery of this topic.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

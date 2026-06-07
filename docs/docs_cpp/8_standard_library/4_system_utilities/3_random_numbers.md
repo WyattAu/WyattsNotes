@@ -159,7 +159,8 @@ void seeded_rng_demo() {
 Well-distributed initial state for the engine. This is important because the Mersenne Twister's
 Initialization algorithm has known weaknesses when given a single 32-bit seed — some bits of the
 Initial state may have low entropy. Using `seed_seq` with multiple entropy sources produces a better
-Initial state. :::
+Initial state.
+:::
 
 ### Sampling from Normal Distribution
 
@@ -276,7 +277,8 @@ Expected stdd: 1
 
 :::info `std::normal_distribution` uses the Marsaglia polar method internally to transform pairs of
 Uniform random numbers into normally distributed values [N4950 §29.6.4.4]. This method produces
-Values in pairs, so the distribution object may cache one value internally for efficiency. :::
+Values in pairs, so the distribution object may cache one value internally for efficiency.
+:::
 
 ## See Also
 
@@ -324,7 +326,8 @@ This serialization is essential for:
 
 :::warning The `operator<<`/`operator>>` format is **not** portable across compilers or standard
 Library implementations. GCC libstdc++ and Clang libc++ may produce different binary formats. Use
-Only the same implementation for save/restore. :::
+Only the same implementation for save/restore.
+:::
 
 ### `std::random_device` Implementation Details
 
@@ -356,7 +359,8 @@ void random_device_props() {
 
 :::warning `std::random_device::entropy()` returns 0.0 on many implementations even when the device
 Is truly non-deterministic. A return of 0.0 means "entropy estimate not available," NOT "no
-Entropy." Do not use this value to decide whether the device is secure. :::
+Entropy." Do not use this value to decide whether the device is secure.
+:::
 
 ### `std::seed_seq` and Initialization Quality
 
@@ -457,7 +461,8 @@ void discrete_distribution_demo() {
 ```
 
 :::info Info Sampling time after an $O(n)$ setup phase. This is optimal for distributions that are
-sampled many Times with the same weights [N4950 §29.6.4.5]. :::
+sampled many Times with the same weights [N4950 §29.6.4.5].
+:::
 
 ### Poisson and Exponential Distributions
 
@@ -547,7 +552,8 @@ void engine_benchmark() {
 
 :::tip Tip `random_device` call, then use the engine for all subsequent random values.
 `random_device` may make An OS syscall for every call, which is orders of magnitude slower than a
-PRNG. :::
+PRNG.
+:::
 
 ### Common Pitfalls
 
@@ -609,3 +615,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

@@ -59,7 +59,8 @@ $$\mathbf{F}_{AB} = -\mathbf{F}_{BA}$$
 
 :::warning Warning They do **not** cancel. The normal reaction from a table on a book and the book's
 weight are **not** A third law pair (both act on the book). The third law pair of the book's weight
-is the Gravitational pull of the book on the Earth. :::
+is the Gravitational pull of the book on the Earth.
+:::
 
 ## 2. Weight and Mass
 
@@ -147,12 +148,14 @@ The centre of a circular path, responsible for maintaining circular motion.
 
 :::warning Common Pitfall Centripetal force is **not** a separate force. It is the **net radial
 Component** of the real forces acting on the body (tension, friction, gravity, normal reaction,
-Etc.). Never draw "centripetal force" as an additional arrow on a free body diagram. :::
+Etc.). Never draw "centripetal force" as an additional arrow on a free body diagram.
+:::
 
 :::tip Exam Technique When solving circular motion problems, always start with a free body diagram
 Showing only the real forces. Then resolve forces towards the centre of the circle and apply
 $F_c = mv^2/r$. The centripetal force is always provided by one or more of the forces already on
-Your diagram. :::
+Your diagram.
+:::
 
 <details>
 <summary>Example: Car on a Banked Curve</summary>
@@ -765,7 +768,8 @@ within the A-Level specification for this topic, each with a full worked solutio
 with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 :::danger Danger
 
@@ -813,3 +817,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

@@ -22,7 +22,8 @@ slug: data-representation
 | CIE (9709) | P1, P6  | Data handling in P1; further statistics in P6 |
 
 :::info You must know when to use the sample variance formula (dividing by $n-1$) versus the
-Population variance formula (dividing by $n$). Edexcel and OCR use $n-1$ for sample data. :::
+Population variance formula (dividing by $n$). Edexcel and OCR use $n-1$ for sample data.
+:::
 
 <hr />
 
@@ -102,7 +103,8 @@ $$
 $$
 
 :::tip This formula is computationally more efficient and is the one you should use in exams. Just
-Remember: "mean of squares minus square of mean." :::
+Remember: "mean of squares minus square of mean."
+:::
 
 ### 2.3 Sample variance
 
@@ -170,7 +172,8 @@ Hence $\sigma_y = \sigma_x/|c|$. $\blacksquare$
 
 :::tip Coding makes computation easier when data values are large. Always work with coded data to
 Find the mean and standard deviation, then decode back. Remember: adding a constant shifts the mean
-But does not affect the spread. :::
+But does not affect the spread.
+:::
 
 <hr />
 
@@ -216,7 +219,8 @@ $$S_2 = \frac{Q_3 + Q_1 - 2Q_2}{Q_3 - Q_1}$$
 - $S = 0$: symmetric distribution.
 
 :::info Info Useful when quartiles are already known and the standard deviation has not been
-calculated. Both Give the same sign of skewness but may differ in magnitude. :::
+calculated. Both Give the same sign of skewness but may differ in magnitude.
+:::
 
 ### 6.3 Relationship between measures of central tendency
 
@@ -260,7 +264,8 @@ An observation is flagged as an outlier if $|M_i| \gt 3.5$.
 
 :::tip Tip MAD, which are themselves resistant to outliers. The factor $0.6745$ is the
 $0.75$-quantile of the Standard normal distribution, so the modified z-score is on a comparable
-scale to the standard Z-score for normally distributed data. :::
+scale to the standard Z-score for normally distributed data.
+:::
 
 ### 7.3 Choosing an outlier method
 
@@ -285,7 +290,8 @@ To construct a box plot:
 5. Plot any values outside the fences as individual points (these are the outliers).
 
 :::warning Warning Fences themselves. If no values lie outside the fences, the whiskers extend to
-the minimum and Maximum of the dataset. :::
+the minimum and Maximum of the dataset.
+:::
 
 ### 8.2 Interpreting skewness from a box plot
 
@@ -307,7 +313,8 @@ When two or more box plots are drawn on the same scale, compare:
 - **Outliers**: does one distribution have more extreme values?
 
 :::warning Warning Such as "distribution A has a higher median" is incomplete without also
-addressing how the spreads Compare. :::
+addressing how the spreads Compare.
+:::
 
 <hr />
 
@@ -342,7 +349,8 @@ Of each group. To compare two distributions:
 3. Compare location (medians), spread (IQR), and shape (skewness).
 
 :::tip Tip To the curve, then drop a vertical line to the $x$-axis. The reverse process gives the
-cumulative Frequency for a given $x$-value. :::
+cumulative Frequency for a given $x$-value.
+:::
 
 ### 9.3 Structuring a comparison
 
@@ -401,7 +409,8 @@ Cumulative frequencies: 5, 17, 35, 43, 47. The 23.5th value falls in the class $
 $$Q_2 = 20 + \left(23.5 - 17\right) \cdot \frac{10}{18} = 20 + 6.5 \cdot \frac{10}{18} = 20 + \frac{65}{18} \approx 23.6$$
 
 :::info Info Approximation; the true quantile may differ if the data are not uniformly spread within
-the class. :::
+the class.
+:::
 
 <hr />
 
@@ -807,7 +816,8 @@ questions within the A-Level specification for this topic, each with a full work
 Representation with other topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -833,3 +843,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

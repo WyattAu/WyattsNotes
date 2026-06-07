@@ -31,7 +31,8 @@ Determined.
 
 :::info In projectile motion, air resistance is always neglected unless stated otherwise. The only
 Acceleration is $g = 9.8\,\mathrm{m s}^{-2}$ acting vertically downward. Take care with sign
-Conventions — define upward as positive at the start and be consistent. :::
+Conventions — define upward as positive at the start and be consistent.
+:::
 
 <hr />
 
@@ -138,7 +139,8 @@ $R_{\max} = \dfrac{V^2}{g}$. $\blacksquare$
 
 :::info For a given speed $V$Complementary angles give the same range: $\theta$ and $90° - \theta$
 Both produce $R = \dfrac◆LB◆V^2\sin 2\theta◆RB◆◆LB◆g◆RB◆$. However, the trajectories are different —
-The steeper angle gives a higher but shorter arc. :::
+The steeper angle gives a higher but shorter arc.
+:::
 
 <hr />
 
@@ -1191,3 +1193,4 @@ Vertical: $v_y = u\sin\theta - gt$. At maximum height, $v_y = 0$.
 $u\sin\theta - gt = 0 \implies t = \dfrac◆LB◆u\sin\theta◆RB◆◆LB◆g◆RB◆$. $\blacksquare$
 
 </details>
+

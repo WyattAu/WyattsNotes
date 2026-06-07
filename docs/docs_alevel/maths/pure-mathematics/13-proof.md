@@ -22,7 +22,8 @@ slug: proof
 | CIE (9709) | P1, P2, P3 | Various methods across papers                                 |
 
 :::info Proof questions appear on every paper. You must be able to identify the appropriate proof
-Method and execute it , with every step justified. :::
+Method and execute it , with every step justified.
+:::
 
 <hr />
 
@@ -184,7 +185,8 @@ To prove a statement $P(n)$ for all integers $n \geq n_0$:
 
 :::info Info Non-empty set of positive integers has a least element. If $P(n_0)$ is true but some
 $P(m)$ with $m \gt n_0$ is false, then the set $\{m : P(m) \mathrm{ is false}\}$ has a least
-element, Contradicting the inductive step. :::
+element, Contradicting the inductive step.
+:::
 
 ### 5.2 Sum of the first $n$ integers
 
@@ -543,7 +545,8 @@ the A-Level specification for this topic, each with a full worked solution.
 other pure mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -568,3 +571,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

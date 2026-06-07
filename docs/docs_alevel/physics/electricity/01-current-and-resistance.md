@@ -180,7 +180,8 @@ Resistant to current flow.
 | Glass      | $\sim 10^{12}$           |
 
 :::warning Warning Particular component. A long thin copper wire has high resistance but copper
-still has low Resistivity. :::
+still has low Resistivity.
+:::
 
 ## 5. I-V Characteristics
 
@@ -245,7 +246,8 @@ The SI unit of energy is the joule (J). For domestic billing, the kilowatt-hour 
 $$1 \mathrm{ kWh} = 1000 \mathrm{ W} \times 3600 \mathrm{ s} = 3.6 \times 10^6 \mathrm{ J}$$
 
 :::tip Exam Technique When calculating energy for resistors in series, use $P = I^2R$ (same
-Current). For resistors in parallel, use $P = V^2/R$ (same voltage). :::
+Current). For resistors in parallel, use $P = V^2/R$ (same voltage).
+:::
 
 ## 7. Temperature Dependence of Resistance
 
@@ -327,7 +329,8 @@ Positive feedback loop.
 :::warning Common Pitfall Do not confuse the behaviour of metals and semiconductors. Metals have a
 _positive_ temperature coefficient ($R$ increases with $T$). Semiconductors (thermistors) have a
 _negative_ temperature coefficient ($R$ decreases with $T$). The physical mechanism is entirely
-Different: in metals, $\tau$ changes; in semiconductors, $n$ changes. :::
+Different: in metals, $\tau$ changes; in semiconductors, $n$ changes.
+:::
 
 ## 8. Superconductivity
 
@@ -507,10 +510,12 @@ Where $n$ is much smaller, $V_H$ is much larger and easier to measure.
 </details>
 
 :::warning Warning Direction of the magnetic field, not the width of the conductor perpendicular to
-the current. Sketch The geometry carefully. :::
+the current. Sketch The geometry carefully.
+:::
 
 :::tip Tip Hall effect, focus on the _sign_ of the Hall voltage. Electrons (negative charge) deflect
-to one Side, holes (positive charge) deflect to the opposite side. :::
+to one Side, holes (positive charge) deflect to the opposite side.
+:::
 
 ## 10. Power Transmission
 
@@ -587,7 +592,8 @@ Why high-voltage transmission is essential.
 
 :::tip Exam Technique When calculating transmission losses, remember to include both the outward and
 Return cables (total length $= 2L$). Also remember that the voltage in $P = IV$ is the transmission
-Voltage, not the voltage drop across the line resistance. :::
+Voltage, not the voltage drop across the line resistance.
+:::
 
 ## Problem Set
 
@@ -963,7 +969,8 @@ questions within the A-Level specification for this topic, each with a full work
 Resistance with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 :::danger Common Pitfalls
 
@@ -1011,3 +1018,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

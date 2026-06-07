@@ -446,7 +446,8 @@ End immediately; the CRT must unwind the environment.
 :::warning `std::terminate` vs `std::exit` If an exception escapes `main`Or an unjoinable
 `std::thread` is destroyed, the CRT calls `std::terminate`. This calls `std::abort`Which kills the
 Process **without** running static destructors or file buffer flushing. This often results in
-Truncated logs or corrupted data files. :::
+Truncated logs or corrupted data files.
+:::
 
 ### `std::exit` vs `std::quick_exit` vs `std::_Exit`
 
@@ -569,7 +570,8 @@ Destructors run during the normal termination sequence. On Windows, the mechanis
 
 :::warning Dynamic TLS has a significant first-access penalty (guard variable check, potential
 Initialization, destructor registration). On hot paths, prefer static TLS (constant initialization)
-Or pass data explicitly via function parameters. :::
+Or pass data explicitly via function parameters.
+:::
 
 ## DSO Constructor and Destructor Ordering
 
@@ -595,7 +597,8 @@ Access rather than load time.
 
 :::warning `LD_PRELOAD` interposes symbols but does not change `.init_array` ordering. A preloaded
 Library's constructors still run in dependency order relative to other DSOs. If the preloaded
-Library depends on symbols from the main executable, those symbols may not yet be initialized. :::
+Library depends on symbols from the main executable, those symbols may not yet be initialized.
+:::
 
 ## The `main` Function Signature and Return Value
 
@@ -655,7 +658,8 @@ The heap is initialized during `__libc_start_main` (glibc) or `mainCRTStartup` (
 :::warning The heap is **not** thread-safe at initialization time. If a global constructor spawns a
 Thread that allocates memory, the thread may encounter a partially-initialized heap. In practice,
 This is safe on glibc and MSVC because the heap is fully initialized before `.init_array`
-Processing, but it is a theoretical concern on custom CRTs. :::
+Processing, but it is a theoretical concern on custom CRTs.
+:::
 
 ### `operator new` and the CRT
 
@@ -718,7 +722,8 @@ Diagram in the startup sequence section). The CRT constructs `envp` from this da
 `main` on platforms that support it.
 
 :::info Per [N4950 S6.6.1], the `main` function signature with `char* envp[]` as a third parameter
-Is a common extension but not standard C++. Portable code should use `std::getenv()` instead. :::
+Is a common extension but not standard C++. Portable code should use `std::getenv()` instead.
+:::
 
 ## See Also
 
@@ -747,3 +752,4 @@ for mastery of this topic.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

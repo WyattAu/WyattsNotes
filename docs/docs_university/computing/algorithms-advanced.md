@@ -1690,3 +1690,4 @@ $\blacksquare$
   heuristics.
 - NP-completeness: reduce in polynomial time; SAT → 3-SAT → Clique → Vertex Cover are classic chain
   reductions.
+

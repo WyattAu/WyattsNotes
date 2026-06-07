@@ -548,7 +548,8 @@ $$
 
 :::warning If the curve crosses the $x$-axis between $a$ and $b$You must split the integral at Each
 crossing point and take the absolute value. The integral itself gives the signed area, which Can
-cancel out. :::
+cancel out.
+:::
 
 **Example:** Find the area enclosed by $y = x^2 - 4x + 3$ and the $x$-axis.
 
@@ -756,3 +757,4 @@ including key theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+

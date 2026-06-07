@@ -97,7 +97,8 @@ Pressure.
 
 :::warning Warning The partial pressures (and therefore concentrations) of the reacting gases remain
 unchanged. Adding An inert gas at constant total pressure does shift equilibrium towards the side
-with more moles of Gas, because the partial pressures of the reacting gases decrease. :::
+with more moles of Gas, because the partial pressures of the reacting gases decrease.
+:::
 
 #### Change in Temperature
 
@@ -371,7 +372,8 @@ $$\mathrm{H}_2\mathrm{S}_2\mathrm{O}_{7(l)} + \mathrm{H}_2\mathrm{O}_{(l)} \to 2
 
 :::info $\mathrm{SO}_3$ is NOT dissolved directly in water because the reaction is highly exothermic
 And would produce a corrosive mist of $\mathrm{H}_2\mathrm{SO}_4$ droplets that is difficult to
-Condense. :::
+Condense.
+:::
 
 ### Le Chatelier's Principle in the Contact Process
 
@@ -934,3 +936,4 @@ From the equation, ratio is $1:1$, so $n(\text{CaCl}_2) = 0.100\,\text{mol}$.
 $$m(\text{CaCl}_2) = 0.100 \times 111 = 11.1\,\text{g}$$
 
 > > > > > > > Stashed changes:docs/docs_dse/Chemistry/chemical-equilibrium.md
+

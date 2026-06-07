@@ -110,7 +110,8 @@ Have a constant phase relationship. This requires:
 - Constant phase difference
 
 :::warning Warning Not coherent because the phase difference fluctuates randomly. Interference
-requires coherent Sources, produced by splitting a single wave. :::
+requires coherent Sources, produced by splitting a single wave.
+:::
 
 ## 3. Young's Double Slit Experiment
 
@@ -166,7 +167,8 @@ Visible.
 The first minimum of the single-slit pattern occurs at $\sin\theta = \lambda/a$.
 
 :::tip Tip (single slit before the double slit), narrow slits, monochromatic light, and the
-small-angle Approximation. Quote the fringe spacing formula and explain each variable. :::
+small-angle Approximation. Quote the fringe spacing formula and explain each variable.
+:::
 
 <details>
 <summary>Example: Young's Double Slit</summary>
@@ -217,7 +219,8 @@ Or equal to $d/\lambda$).
 
 :::tip Exam Technique If asked to find the number of visible orders: calculate $d/\lambda$Take the
 Integer part, then note that orders $+n$ and $-n$ are both visible (plus the zeroth order). Total
-Visible maxima $= 2n_{\max} + 1$. :::
+Visible maxima $= 2n_{\max} + 1$.
+:::
 
 ## 5. Stationary Waves
 
@@ -710,7 +713,8 @@ hardest questions within the A-Level specification for this topic, each with a f
 Superposition and Interference with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ## Summary
 
@@ -732,3 +736,4 @@ and past paper questions, is essential for success in examinations.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

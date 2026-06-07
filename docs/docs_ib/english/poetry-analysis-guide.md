@@ -713,7 +713,8 @@ Significant.
 :::info For detailed examples of literary analysis applied to specific texts, see
 [A Streetcar Named Desire -- Close Reading and Analysis](streetcar-named-desire-analysis.md) and
 [Chronicle of a Death Foretold -- Close Reading and Analysis](chronicle-of-a-death-foretold-analysis.md).
-The analytical techniques described in this guide apply equally to prose and drama. :::
+The analytical techniques described in this guide apply equally to prose and drama.
+:::
 
 ## Summary
 
@@ -735,3 +736,4 @@ performance in this area.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

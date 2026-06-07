@@ -97,7 +97,8 @@ print(type(data["created"]))  # <class 'datetime.datetime'>
 ```
 
 :::info Python's `json` module only handles a subset of types natively: `dict``list``str`
-`int``float``bool`And `None`. Everything else requires custom encoding. :::
+`int``float``bool`And `None`. Everything else requires custom encoding.
+:::
 
 ### JSON Performance
 
@@ -270,7 +271,8 @@ Arbitrary Python objects, including calls to `subprocess.Popen` or `os.system`:
 !!python/object/apply:os.system ['rm -rf /']
 ```
 
-`yaml.safe_load()` only parses standard YAML types: scalars, sequences, mappings. :::
+`yaml.safe_load()` only parses standard YAML types: scalars, sequences, mappings.
+:::
 
 ### Custom Tags with Safe Loader
 
@@ -374,7 +376,8 @@ role = "readonly"
 
 :::tip Use TOML for configuration files, JSON for APIs and data interchange, YAML for complex
 Human-readable data, and pickle only for Python-internal serialization where security is not a
-Concern. :::
+Concern.
+:::
 
 ## CSV
 
@@ -434,7 +437,8 @@ with open("quoted.csv", "w", newline="") as f:
 ```
 
 :::warning Always open CSV files with `newline=""` as specified in the `csv` module documentation.
-On Python 3, failing to do so can cause extra blank lines in the output on some platforms. :::
+On Python 3, failing to do so can cause extra blank lines in the output on some platforms.
+:::
 
 ## Protocol Buffers
 
@@ -933,3 +937,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

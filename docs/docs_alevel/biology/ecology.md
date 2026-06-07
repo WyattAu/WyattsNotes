@@ -93,7 +93,8 @@ Than at the previous level, explaining why food chains are limited to 3--5 troph
 :::warning Common Pitfall Students often state that "90% of energy is lost" at each trophic level.
 The precise figure varies ( 80%--90% is lost, 10%--20% is transferred). The key point is That the
 loss is substantial and cumulative, which is why food chains are short. The lost energy is Not
-"wasted" -- it is dissipated as heat according to the second law of thermodynamics. :::
+"wasted" -- it is dissipated as heat according to the second law of thermodynamics.
+:::
 
 ## 2. Populations
 
@@ -480,7 +481,8 @@ capacity).
 solar energy That reaches producers, rather than the fraction transferred between trophic levels.
 The ecological Efficiency between trophic levels is the fraction of energy at one level that is
 incorporated into Biomass at the next level ( 10--20%), not the fraction of total solar radiation
-captured by Producers ( less than 3%). :::
+captured by Producers ( less than 3%).
+:::
 
 ## 9. Advanced Nutrient Cycle Analysis
 
@@ -595,7 +597,8 @@ Estimated population size $= 400$ woodlice.
 
 :::warning Common Pitfall The Lincoln index assumes a closed population between the two sampling
 events. If Organisms are born, die, migrate in, or migrate out between samples, the estimate will be
-inaccurate. If no marked individuals are recaptured ($n_3 = 0$), the method fails entirely. :::
+inaccurate. If no marked individuals are recaptured ($n_3 = 0$), the method fails entirely.
+:::
 
 ## 11. Climate Change and Ocean Acidification
 
@@ -1795,7 +1798,8 @@ within the A-Level specification for this topic, each with a full worked solutio
 with other biology topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/biology/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ## 33. Trophic Levels and Feeding Relationships
 
@@ -2001,3 +2005,4 @@ impossible to address with traditional field methods alone.
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
 the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
 each approach.
+

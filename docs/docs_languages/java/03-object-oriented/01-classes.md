@@ -44,7 +44,8 @@ public final class ImmutableList<E> extends AbstractList<E> implements List<E>, 
 :::info JLS Reference
 [JLS §8.1](https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html#jls-8.1) defines class
 Declarations. The top-level class can be `public` or package-private (no modifier). Only one
-`public` class per compilation unit (.java file) is permitted. :::
+`public` class per compilation unit (.java file) is permitted.
+:::
 
 A class body can contain: field declarations, method declarations, constructors, static and instance
 Initializer blocks, nested class and interface declarations, and enum declarations.
@@ -243,12 +244,14 @@ class SubclassDemo extends AccessDemo {
 :::warning `protected` access is narrower than most developers expect. A subclass in a different
 Package can access a `protected` member only through `this` or a reference of the subclass's own
 Type. It cannot access the `protected` member through a reference of the superclass type, even if
-The actual object is an instance of the subclass. :::
+The actual object is an instance of the subclass.
+:::
 
 :::info JLS Reference
 [JLS §6.6](https://docs.oracle.com/javase/specs/jls/se21/html/jls-6.html#jls-6.6) defines access
 Control in exhaustive detail. The rules for `protected` are specified in
-[JLS §6.6.2](https://docs.oracle.com/javase/specs/jls/se21/html/jls-6.html#jls-6.6.2). :::
+[JLS §6.6.2](https://docs.oracle.com/javase/specs/jls/se21/html/jls-6.html#jls-6.6.2).
+:::
 
 ## Fields and Methods
 
@@ -335,7 +338,8 @@ public class Config {
 
 :::danger Never use a static mutable field to store per-request or per-user state. Static fields are
 Shared across all threads and all instances of the class. This is the source of countless
-Concurrency bugs in web applications. :::
+Concurrency bugs in web applications.
+:::
 
 ## Final Classes and Methods
 
@@ -736,7 +740,8 @@ public Iterator<E> filteredIterator(final Predicate<? super E> predicate) {
 :::warning Prefer static nested classes over member inner classes. A member inner class holds an
 Implicit reference to its enclosing instance, which can prevent garbage collection of the enclosing
 Object and creates a coupling that makes testing harder. Use a member inner class only when it
-Genuinely needs to access the enclosing instance's state. :::
+Genuinely needs to access the enclosing instance's state.
+:::
 
 ## Inheritance
 
@@ -901,7 +906,8 @@ c.classify();     // "Child"  -- compile-time type is Child
 
 :::danger Never hide static methods. It creates extremely confusing behavior where the method called
 Depends on the declared type of the variable rather than the actual object. If you need polymorphic
-Behavior, use instance methods. :::
+Behavior, use instance methods.
+:::
 
 ### Covariant Return Types
 
@@ -1030,7 +1036,8 @@ public int hashCode() {
 :::warning If you use an object as a key in a `HashMap` or add it to a `HashSet`And then mutate Its
 state in a way that changes `equals()` or `hashCode()`The collection will behave incorrectly. The
 object may become "lost" in the wrong bucket. Always use immutable objects as hash keys, or Ensure
-that fields used in `equals()`/`hashCode()` are never modified after insertion. :::
+that fields used in `equals()`/`hashCode()` are never modified after insertion.
+:::
 
 ### clone()
 
@@ -1078,7 +1085,8 @@ class Person implements Cloneable {
 Does a shallow copy) and the `Cloneable` marker interface (which has no methods). The pattern is
 Awkward: you must call `super.clone()` (which checks runtime type), then manually deep-copy mutable
 Fields. Most experts recommend using copy constructors or static factory methods instead. Josh Bloch
-(Effective Java) recommends against using `clone()`. :::
+(Effective Java) recommends against using `clone()`.
+:::
 
 ### finalize()
 
@@ -1227,7 +1235,8 @@ public enum Operation {
 [JLS §8.9](https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html#jls-8.9) defines enum
 Declarations. Enum constants are implicitly `public static final`. Enum types implicitly extend
 `java.lang.Enum` and cannot be instantiated with `new`. Enum types are implicitly `final` unless
-They have constant-specific class bodies. :::
+They have constant-specific class bodies.
+:::
 
 ## Generics Basics
 
@@ -1465,3 +1474,4 @@ graph TD
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

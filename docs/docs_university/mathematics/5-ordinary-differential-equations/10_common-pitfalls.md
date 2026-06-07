@@ -112,3 +112,4 @@ applying the Poincaré-Bendixson Theorem (the inner boundary encloses the unstab
 boundary is chosen so that Trajectories point inward). $\blacksquare$
 
 </details>
+

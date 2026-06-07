@@ -180,3 +180,4 @@ per Bit). 4B/5B adds 25% overhead. 8B/10B adds 25%. 64B/66B adds only 3% overhea
 **Scrambling.** High-density bipolar 3 (HDB3) and other scrambling techniques ensure sufficient
 Transitions for clock recovery, preventing long runs of identical bits.
 
+

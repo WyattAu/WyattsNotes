@@ -16,7 +16,8 @@ Energy, and elastic potential energy with proofs and applications.
 
 :::info Energy methods often provide elegant shortcuts in mechanics problems. Where a Newton's-law
 approach Requires solving differential equations, an energy approach may give the answer in a single
-step. :::
+step.
+:::
 
 <hr />
 
@@ -228,7 +229,8 @@ illustrates the importance of knowing the track geometry.
 
 :::warning Common Pitfall The work-energy principle gives the change in kinetic energy, not the
 velocity directly. Remember To take the square root to find speed, and always check that the result
-is physically meaningful (i.e., the quantity under the square root must be non-negative). :::
+is physically meaningful (i.e., the quantity under the square root must be non-negative).
+:::
 
 <hr />
 
@@ -387,7 +389,8 @@ The line, with both strings at angles.
 
 :::warning Warning Elastic potential energy problems often require careful consideration of whether
 strings are taut or Slack at different points in the motion. Always check the assumptions about
-extensions at each stage. :::
+extensions at each stage.
+:::
 
 <hr />
 
@@ -550,3 +553,4 @@ $\blacksquare$
 - Power: $P = Fv$; at maximum speed, driving force equals total resistance.
 - Elastic PE: $\mathrm{EPE} = \frac{1}{2}kx^2 = \frac{\lambda x^2}{2l}$ for springs and elastic
   strings.
+

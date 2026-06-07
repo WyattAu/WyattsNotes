@@ -131,10 +131,12 @@ $$
 \end`\{aligned}`
 $$
 
-This describes the force in the inverse direction as the displacement vector from $m_1$ :::
+This describes the force in the inverse direction as the displacement vector from $m_1$
+:::
 
 :::warning IB extends Newton's Law of Universal Gravitation to include spherical masses with uniform
-Density by assuming to be point mass. :::
+Density by assuming to be point mass.
+:::
 
 ## Gravitational Field
 
@@ -319,7 +321,8 @@ Center of a body with significantly more mass.
 
 :::warning In IB, only the cases of orbiting a body with significantly more mass is present. The IB
 Also assume all orbits to be circular instead of elliptic as stated by
-[Keplar's First Law](#first-law). :::
+[Keplar's First Law](#first-law).
+:::
 
 In a stable circular orbit, equivalent force in the opposite direction is required to balance the
 [centripetal force](../1-space-time-and-motion/5_forces-and-momentum#centripetal-force) $F_c$ of
@@ -397,7 +400,8 @@ $$
 $$
 
 :::info Since $\frac{4\pi^2}{GM}$ is constant for a given central body, this reduces to
-$T^2 \propto r^3$. For elliptical orbits, replace $r$ with semi-major axis $a$. :::
+$T^2 \propto r^3$. For elliptical orbits, replace $r$ with semi-major axis $a$.
+:::
 
 ## Gravitational Field Inside a Spherical Shell
 
@@ -414,7 +418,8 @@ Elements. A near-side element pulls more strongly (inverse-square law), but the 
 Far-side element has more mass (larger solid angle). These effects cancel exactly.
 
 :::warning The IB requires only qualitative understanding of the shell theorem. A full
-../1-number-and-algebra/3_proof-and-logic Requires integration over the spherical shell. :::
+../1-number-and-algebra/3_proof-and-logic Requires integration over the spherical shell.
+:::
 
 ### Field Inside a Solid Sphere
 
@@ -870,7 +875,8 @@ questions within the IB specification for this topic, each with a full worked so
 Gravitational Fields with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ## Summary
 
@@ -894,3 +900,4 @@ and past paper questions, is essential for success in examinations.
 | ---------------------- | ------- | ------------------------------------------------------------------------------------------------------ |
 | [Gravitational Fields] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/physics/mechanics/08-gravitational-fields) |
 | [Gravitational Fields] | IB      | [View](https://ib.wyattau.com/docs/ib/physics/4-fields/1_gravitational-fields)                         |
+

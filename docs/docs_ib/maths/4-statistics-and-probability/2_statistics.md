@@ -890,7 +890,8 @@ solution.
 with other IB mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/ib/maths/diagnostics/diagnostic-guide) for instructions on self-marking
-and building a personal test matrix. :::
+and building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -914,3 +915,4 @@ and building a personal test matrix. :::
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

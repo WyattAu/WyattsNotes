@@ -527,7 +527,8 @@ quantify specific antigens (or antibodies) in a sample.
 and between natural and artificial immunity. Remember: "active" means the body MAKES its own
 antibodies; "passive" means the body RECEIVES pre-made antibodies. "Natural" means the exposure
 occurred (infection or maternal transfer); "artificial" means the exposure was deliberate
-(vaccination or antibody injection). :::
+(vaccination or antibody injection).
+:::
 
 1. **Confusing antigens and antibodies:** Antigens are molecules on the surface of pathogens (or
    other foreign substances) that trigger an immune response. Antibodies are proteins produced by
@@ -1113,3 +1114,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

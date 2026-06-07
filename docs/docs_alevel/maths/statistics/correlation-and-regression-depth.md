@@ -16,7 +16,8 @@ Correlation, least squares regression, and residual analysis.
 
 :::info Correlation measures the strength of a linear association. It does not imply causation, and
 it Does not capture non-linear relationships. Always plot your data before interpreting correlation
-Values. :::
+Values.
+:::
 
 <hr />
 
@@ -52,7 +53,8 @@ An **outlier** is a data point that lies far from the general pattern. Outliers 
 - Significantly affect the correlation coefficient and regression line.
 
 :::warning Common Pitfall A single outlier can dramatically change the value of the correlation
-coefficient. Always examine Your scatter diagram before relying on numerical measures. :::
+coefficient. Always examine Your scatter diagram before relying on numerical measures.
+:::
 
 <hr />
 
@@ -254,7 +256,8 @@ Minimises vertical residuals; the line of $x$ on $y$ minimises horizontal residu
    (homoscedasticity).
 
 :::warning Warning Do not use the regression line of $y$ on $x$ to predict $x$ from a given $y$Or
-vice versa. Use the appropriate regression line for the direction of prediction. :::
+vice versa. Use the appropriate regression line for the direction of prediction.
+:::
 
 <hr />
 
@@ -439,3 +442,4 @@ $\blacksquare$
 - Residuals: $e_i = y_i - \hat{y}_i$; random scatter confirms linearity, curved pattern suggests
   non-linearity.
 - Correlation does not imply causation; always inspect scatter diagrams before interpreting $r$.
+

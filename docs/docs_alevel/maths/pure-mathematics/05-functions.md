@@ -257,7 +257,8 @@ $$y = af(x - p) + q$$
 Represents: horizontal translation by $p$ (right), vertical stretch by factor $a$Vertical
 Translation by $q$ (up).
 
-:::tip Tip (outside). The order inside-out matters. :::
+:::tip Tip (outside). The order inside-out matters.
+:::
 
 <hr />
 
@@ -422,7 +423,8 @@ Vertical transformations interact differently.
    vertical shift $d$.
 
 :::warning Common Pitfall The horizontal shift in $f(bx + c)$ is $-c/b$NOT $-c$. The stretch
-"absorbs" part of the shift. This is the single most common error in transformation problems. :::
+"absorbs" part of the shift. This is the single most common error in transformation problems.
+:::
 
 <details>
 <summary>Example</summary>
@@ -750,7 +752,8 @@ within the A-Level specification for this topic, each with a full worked solutio
 with other pure mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -776,3 +779,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

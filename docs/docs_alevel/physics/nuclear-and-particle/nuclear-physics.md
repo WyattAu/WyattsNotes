@@ -48,7 +48,8 @@ This gives an upper bound on the nuclear radius of gold ($\sim 10^{-14}$ m, comp
 Radius of $\sim 10^{-10}$ m).
 
 :::warning Warning Not the radius itself. The alpha particle never actually touches the nucleus (the
-strong nuclear force Has a very short range). :::
+strong nuclear force Has a very short range).
+:::
 
 ## 2. Nuclear Structure
 
@@ -194,7 +195,8 @@ $$\prescript{A}{Z}\mathrm{X}^* \to \prescript{A}{Z}\mathrm{X} + \gamma$$
 No change in $A$ or $Z$. Weakly ionising, highly penetrating (requires thick lead or concrete).
 
 :::warning Warning Proton, so the total nucleon count is unchanged. Do not write $A - 1$ for beta
-decay. :::
+decay.
+:::
 
 ## 6. Exponential Decay Law and Half-Life
 
@@ -447,3 +449,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

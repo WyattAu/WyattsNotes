@@ -43,7 +43,8 @@ Undergoes **permanent (plastic) deformation**.
 
 :::warning Warning For many materials (especially metals), the elastic limit lies slightly beyond
 the limit of Proportionality. Between these two points the material still returns to its original
-shape, but $F$ And $\Delta x$ are no longer linearly related. :::
+shape, but $F$ And $\Delta x$ are no longer linearly related.
+:::
 
 ### Springs in Series and Parallel
 
@@ -91,7 +92,8 @@ Strain is dimensionless (a ratio). It is often expressed as a percentage.
 
 :::info Info (stretching) and compressive stress (squashing). **AQA** and **Edexcel** focus on
 tensile Loading. **OCR (A)** may ask about compressive stress-strain behaviour of brittle materials
-like Concrete. :::
+like Concrete.
+:::
 
 ## 3. Young's Modulus
 
@@ -119,7 +121,8 @@ Under tensile loading. It has units of Pa (same as stress, since strain is dimen
 :::warning Common Pitfall A high Young's modulus means the material is **stiff**, not necessarily
 **strong**. Glass is stiffer than rubber ($E \approx 70$ GPa vs $0.01$ GPa) but rubber is
 **tougher** (absorbs more energy before breaking) because it can undergo much larger strains.
-Stiffness and strength are different properties. :::
+Stiffness and strength are different properties.
+:::
 
 ### Measuring Young's Modulus
 
@@ -226,7 +229,8 @@ Polymers show a wide range of behaviours:
 :::info Info And requires interpretation of force-extension graphs. **Edexcel** asks for
 quantitative analysis of Stress-strain graphs including calculating the area under the graph
 (energy). **CIE** may ask you to Sketch stress-strain curves for different material types and
-identify specific points. **OCR (A)** Links material properties to engineering applications. :::
+identify specific points. **OCR (A)** Links material properties to engineering applications.
+:::
 
 ## 5. Elastic Potential Energy
 
@@ -267,7 +271,8 @@ $\square$
 
 :::warning Warning (Hookean)\*\* region. If the material has been loaded beyond the limit of
 proportionality, the energy Stored is the area under the actual (non-linear) force-extension curve,
-which must be found by Integration or by counting squares. :::
+which must be found by Integration or by counting squares.
+:::
 
 ## 6. Material Properties Comparison
 
@@ -372,7 +377,8 @@ Elevated temperatures. It is important in power station components, turbine blad
 Roofing.
 
 :::info Info **AQA** focuses more on the core stress-strain behaviour. **CIE** may include these in
-Application-style questions about engineering materials. :::
+Application-style questions about engineering materials.
+:::
 
 ## Problems
 
@@ -569,7 +575,8 @@ hardest questions within the A-Level specification for this topic, each with a f
 of Materials with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 :::danger Danger
 
@@ -613,3 +620,4 @@ self-marking and building a personal test matrix. :::
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

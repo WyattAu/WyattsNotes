@@ -22,7 +22,8 @@ slug: forces-and-newtons-laws
 | CIE (9709) | P1, P4  | Forces in P1; connected bodies, inclined planes in P4 |
 
 :::info Always draw a clear free body diagram before writing any equations. The quality of your
-Diagram determines the quality of your solution. :::
+Diagram determines the quality of your solution.
+:::
 
 <hr />
 
@@ -55,7 +56,8 @@ And are the same type of force.
 
 :::warning Newton's Third Law pairs act on different bodies. The weight of a book on a table and the
 Normal reaction from the table are **not** a Third Law pair (both act on the book). The Third Law
-Pair of the weight is the gravitational pull of the book on the Earth. :::
+Pair of the weight is the gravitational pull of the book on the Earth.
+:::
 
 <hr />
 
@@ -271,7 +273,8 @@ $$P = \frac◆LB◆\mu mg◆RB◆◆LB◆\cos\theta + \mu\sin\theta◆RB◆$$
 
 :::warning Applying a force at an angle **upward** reduces $R$ and therefore reduces the maximum
 Friction. Applying a force at an angle **downward** increases $R$ and increases the maximum
-Friction. :::
+Friction.
+:::
 
 ### 8.3 Connected particles on rough surfaces
 
@@ -360,7 +363,8 @@ Combined with $m_2 g - T = m_2 a$:
 $$a = \frac◆LB◆(m_2 - \mu m_1)g◆RB◆◆LB◆m_1 + m_2◆RB◆$$
 
 :::warning If $m_2 \lt \mu m_1$Then $a \lt 0$Meaning the system does not move. The friction Force is
-not at its maximum; instead $F = m_2 g$ (friction balances the hanging weight) and $T = m_2 g$. :::
+not at its maximum; instead $F = m_2 g$ (friction balances the hanging weight) and $T = m_2 g$.
+:::
 
 ### 9.4 Two particles on inclined planes with a pulley
 
@@ -433,7 +437,8 @@ $$P + \mu mg\cos\alpha - mg\sin\alpha = ma$$
 $$a = \frac{P}{m} - g(\sin\alpha - \mu\cos\alpha)$$
 
 :::tip Tip (or the tendency to move). Always draw a clear diagram and think about which way friction
-acts. :::
+acts.
+:::
 
 ### 10.4 Block on an inclined plane with a horizontal applied force
 
@@ -457,7 +462,8 @@ $$P\cos\alpha - \mu P\sin\alpha = mg\sin\alpha + \mu mg\cos\alpha$$
 $$P = \frac◆LB◆mg(\sin\alpha + \mu\cos\alpha)◆RB◆◆LB◆\cos\alpha - \mu\sin\alpha◆RB◆$$
 
 :::warning Warning Horizontal force can move the block up the slope (pushing horizontally jams the
-block into the Surface). :::
+block into the Surface).
+:::
 
 <hr />
 
@@ -1017,7 +1023,8 @@ questions within the A-Level specification for this topic, each with a full work
 Newton's Laws with other topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -1043,3 +1050,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

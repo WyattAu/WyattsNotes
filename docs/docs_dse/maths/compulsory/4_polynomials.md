@@ -667,7 +667,8 @@ within the DSE specification for this topic, each with a full worked solution.
 with other DSE mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/maths/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ---
 
@@ -976,3 +977,4 @@ $$2(1)^3 + p(1)^2 - 5(1) + 3 = 4 \implies 2 + p - 5 + 3 = 4 \implies p = 4$$
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
 the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
 each approach.
+

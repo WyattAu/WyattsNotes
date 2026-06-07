@@ -2347,3 +2347,4 @@ $\blacksquare$
 - `git replace` substitutes one object for another without rewriting history; useful for grafting.
 - `git bisect` uses binary search to find the commit that introduced a bug; $O(\log n)$ steps.
 - `git stash` temporarily shelves working directory changes; `git stash pop` restores them.
+

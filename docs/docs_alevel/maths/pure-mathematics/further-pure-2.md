@@ -23,7 +23,8 @@ slug: further-pure-2
 | CIE (9709) | Paper 3     | Complex, vectors, further calculus, conics             |
 
 :::info This is advanced content in most cases appearing in the second year of Further Mathematics.
-Ensure full mastery of Further Pure 1 before proceeding. :::
+Ensure full mastery of Further Pure 1 before proceeding.
+:::
 
 <hr />
 
@@ -402,3 +403,4 @@ the complex plane), group theory (axioms, subgroups, cyclic groups, isomorphism,
 further calculus (Maclaurin and Taylor series, series solutions, reduction formulae), vectors in 3D
 (scalar and vector products, lines, planes, shortest distances), and conics (focus-directrix
 properties, parametric and Cartesian equations, tangents and normals).
+

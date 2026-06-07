@@ -19,7 +19,8 @@ Comprehensive study guide covering the core physical chemistry topics for A-Leve
 across all major exam boards.
 
 :::info Board Coverage AQA Paper 1 & 2 | Edexcel A Paper 1 & 2 | OCR (A) Paper 1 & 2 | CIE Paper 2 &
-4 :::
+4
+:::
 
 ---
 
@@ -411,3 +412,4 @@ linked above.
 
 - Confusing terminology or concepts that appear similar but have distinct meanings.
 - Overlooking key assumptions or boundary conditions that limit applicability.
+

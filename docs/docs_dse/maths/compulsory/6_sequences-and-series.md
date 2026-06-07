@@ -930,7 +930,8 @@ within the DSE specification for this topic, each with a full worked solution.
 and Series with other DSE mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/maths/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ## Summary
 
@@ -955,3 +956,4 @@ applying these mathematical techniques.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

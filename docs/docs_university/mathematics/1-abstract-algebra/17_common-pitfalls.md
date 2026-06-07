@@ -72,3 +72,4 @@ of $\mathrm{Gal}(E/F)$ is not a bijection, and indices may not match. Always ver
 Condition before applying the theorem.
 :::
 
+

@@ -55,7 +55,8 @@ This is a hallmark signature of Brownian motion and provided the first direct ev
 Existence of atoms and molecules.
 
 :::info Info In terms of molecular bombardment. OCR (A): Historical context and Einstein's analysis.
-CIE: Qualitative and quantitative treatment. :::
+CIE: Qualitative and quantitative treatment.
+:::
 
 ## 2. Specific Heat Capacity
 
@@ -86,7 +87,8 @@ Requires much more energy than fusion because gas molecules are completely separ
 
 :::warning Warning Latent heat (which changes state at constant temperature). In a heating curve,
 the flat sections are Phase changes (latent heat), and the sloped sections are temperature changes
-(specific heat Capacity). :::
+(specific heat Capacity).
+:::
 
 ### Internal Energy
 
@@ -275,7 +277,8 @@ Inertia is negligible), leaving only 2 rotational DOF.
 
 :::warning Warning At high temperatures). The equipartition theorem applies to each fully-excited
 quadratic DOF. At Room temperature, diatomic molecules have 5 active DOF (3 translational + 2
-rotational), not 6. :::
+rotational), not 6.
+:::
 
 ## 7. Maxwell-Boltzmann Speed Distribution
 
@@ -300,7 +303,8 @@ But the area under the curve stays normalised to 1 (total probability). As mass 
 Distribution narrows and shifts left (heavier molecules move more slowly at the same temperature).
 
 :::info Info Of speeds at different temperatures. OCR (A): Ratio of speeds for different gases. CIE:
-Quantitative Use of all three speed measures. :::
+Quantitative Use of all three speed measures.
+:::
 
 <details>
 <summary>Example: Speed Ratio for Different Gases</summary>
@@ -721,3 +725,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

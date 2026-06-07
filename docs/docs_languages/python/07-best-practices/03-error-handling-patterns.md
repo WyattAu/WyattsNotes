@@ -55,7 +55,8 @@ BaseException
 
 :::info `SystemExit``KeyboardInterrupt`And `GeneratorExit` inherit directly from `BaseException`Not
 `Exception`. This means `except Exception:` does not catch them — which is Correct, since you
-generally do not want to catch system-level signals. :::
+generally do not want to catch system-level signals.
+:::
 
 ### Catching by Hierarchy
 
@@ -149,7 +150,8 @@ print(repr(e))  # ServerError('db.example.com', 5432, 'connection refused')
 
 :::tip Always call `super().__init__(message)` in custom exceptions. The message is stored in
 `self.args` and used by the default `__str__` implementation. Omitting this breaks exception
-Chaining and logging. :::
+Chaining and logging.
+:::
 
 ## EAFP vs LBYL
 
@@ -300,7 +302,8 @@ def process_file(path):
 
 :::tip Use `else` for code that should run only when no exception occurs. Use `finally` for cleanup
 That must happen regardless. Avoid putting logic in `finally` that might raise exceptions, as it
-Masks the original exception. :::
+Masks the original exception.
+:::
 
 ## Exception Handling in Generators
 
@@ -483,7 +486,8 @@ asyncio.run(main())
 ```
 
 :::info Unlike `threading.local()``contextvars.ContextVar` is designed for `asyncio` and correctly
-Propagates state through `asyncio.TaskGroup` and `Task` creation. :::
+Propagates state through `asyncio.TaskGroup` and `Task` creation.
+:::
 
 ## Assertions
 
@@ -645,7 +649,8 @@ class UserService:
 
 :::tip **Log and raise** for unexpected errors the caller must handle. **Log and continue** for
 Non-critical background operations. **Raise without logging** when the caller is responsible for
-Handling (e.g., validation at API boundary). Never swallow exceptions silently. :::
+Handling (e.g., validation at API boundary). Never swallow exceptions silently.
+:::
 
 ## Failure Domains
 
@@ -859,3 +864,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

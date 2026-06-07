@@ -52,7 +52,8 @@ Unlike PermGen, Metaspace uses native memory and can grow dynamically (bounded b
 [JLS §2.5](https://docs.oracle.com/javase/specs/jls/se21/html/jls-2.html#jls-2.5) defines the
 Runtime data areas.
 [JLS §17.4](https://docs.oracle.com/javase/specs/jls/se21/html/jls-17.html#jls-17.4) specifies the
-Memory model, which governs how threads interact through shared memory. :::
+Memory model, which governs how threads interact through shared memory.
+:::
 
 ### Where Variables Live
 
@@ -91,7 +92,8 @@ Directly on the stack or within object layouts on the heap. Primitives have no m
 [JLS §4.2](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.2) defines primitive
 Types and their values.
 [JLS §4.2.3](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.2.3) specifies
-Floating-point types and IEEE 754 conformance. :::
+Floating-point types and IEEE 754 conformance.
+:::
 
 ### Integral Types
 
@@ -147,7 +149,8 @@ System.out.println(0.1 + 0.2 == 0.3); // false
 ```
 
 :::warning Never use `==` or `!=` to compare floating-point values. Use `Math.abs(a - b) < epsilon`
-Or `Double.compare(a, b)` instead. For monetary calculations, always use `BigDecimal`. :::
+Or `Double.compare(a, b)` instead. For monetary calculations, always use `BigDecimal`.
+:::
 
 ```java
 BigDecimal price = new BigDecimal("19.99");
@@ -231,7 +234,8 @@ System.out.println(c.equals(d)); // true  (same value)
 
 :::warning **Always use `.equals()` to compare wrapper types.** Using `==` compares object identity,
 Not value. The cache makes `==` work for small values by coincidence, creating subtle bugs that only
-Appear in production with larger values. :::
+Appear in production with larger values.
+:::
 
 ### Performance Implications of Autoboxing
 
@@ -281,7 +285,8 @@ overloaded(boxed);  // prints "Integer" — reference matches reference
 ```
 
 :::danger Rule of thumb: use primitives everywhere unless you need `null` (to represent "no value")
-Or you are working with a generic API that requires reference types. :::
+Or you are working with a generic API that requires reference types.
+:::
 
 ## Strings
 
@@ -375,7 +380,8 @@ System.out.println(a.equals(f));   // true
 String literals.
 [JLS §5.1.7](https://docs.oracle.com/javase/specs/jls/se21/html/jls-5.html#jls-5.1.7) specifies
 Boxing conversion, including the requirement that strings computed from constant expressions are
-Interned. :::
+Interned.
+:::
 
 ### Design Decision: Why the String Pool Exists
 
@@ -410,7 +416,8 @@ String result = sb.toString();
 :::warning **Never use `StringBuffer` in new code** unless you have a specific requirement for
 Thread-safe mutable string building (which is almost never). The synchronization overhead is
 Unnecessary in the vast majority of use cases, and `StringBuffer` is essentially a legacy class
-Retained for backward compatibility. :::
+Retained for backward compatibility.
+:::
 
 ## Arrays
 
@@ -450,7 +457,8 @@ numbers[0] = 3.14;                     // ArrayStoreException at runtime!
 :::danger Array covariance breaks type safety. The JVM inserts an **array store check** at runtime
 On every assignment to an array element to prevent type corruption. This check has a small but real
 Performance cost. Generic collections (`List<Integer>`) are **invariant**, which is type-safe at
-Compile time and requires no runtime checks. :::
+Compile time and requires no runtime checks.
+:::
 
 ### Arrays vs ArrayList
 
@@ -508,7 +516,8 @@ var boxed = (Integer) 42; // inferred: Integer
 
 :::warning Do not use `var` when the type is not obvious from the right-hand side. The goal is
 Readability, not brevity. Prefer explicit types when the initializer is complex, when the type
-Carries important semantic information, or when the inferred type might be surprising. :::
+Carries important semantic information, or when the inferred type might be surprising.
+:::
 
 ## Type Promotion and Casting
 
@@ -548,7 +557,8 @@ int code = c + 1;          // code = 66
 :::warning **Surprising widening**: `long` to `float` is a widening conversion per the JLS, but a
 64-bit `long` has more precision than a 32-bit `float` (which has only 23 fraction bits). A large
 `long` value will lose low-order bits when converted to `float`. This is technically legal but often
-Surprising. :::
+Surprising.
+:::
 
 ### Explicit Casting (Narrowing)
 
@@ -668,7 +678,8 @@ if (obj instanceof String s && !s.isEmpty()) {
 
 :::info The scope rules for pattern variables are defined by the "conditional AND" short-circuit
 Semantics. If `obj instanceof String s` is `false`The right side of `&&` is never evaluated, so `s`
-cannot be used unsafely. The compiler verifies this using a concept called "flow analysis." :::
+cannot be used unsafely. The compiler verifies this using a concept called "flow analysis."
+:::
 
 ## Records (Java 14+)
 
@@ -841,7 +852,8 @@ ComplexNumber[] points = new ComplexNumber[1000];
 :::info Value types are still a preview feature and the syntax is evolving. As of Java 23, the
 Feature is available behind `--enable-preview`. The exact syntax and semantics may change in future
 Releases. The core idea remains: providing user-defined types with inline layout and value-based
-Equality, eliminating the performance penalty of object identity. :::
+Equality, eliminating the performance penalty of object identity.
+:::
 
 ### Identity vs Value Semantics
 
@@ -907,3 +919,4 @@ The Java type system reflects a series of deliberate tradeoffs:
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

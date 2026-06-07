@@ -525,7 +525,8 @@ So the second secondary maximum has about $1.6\%$ of the central maximum intensi
 
 :::info The intensity of secondary maxima drops rapidly: first secondary $\approx 4.7\%$Second
 $\approx 1.6\%$Third $\approx 0.8\%$ of $I_0$. Most of the diffracted light energy is concentrated
-In the central maximum. :::
+In the central maximum.
+:::
 
 ### Example 22: Radioactive Dating
 
@@ -572,7 +573,8 @@ $$L_{\mathrm{total} = 10 \log_{10}(3 \times 10^8) = 10 \times (8 + \log_{10} 3) 
 
 :::warning Doubling the number of identical sources only increases the sound level by
 $3 \mathrm{ dB$ (since $10\log_{10} 2 \approx 3$). Ten times as many sources gives
-$+10 \mathrm{ dB$. This Logarithmic behaviour surprises many students. :::
+$+10 \mathrm{ dB$. This Logarithmic behaviour surprises many students.
+:::
 
 ## Common Pitfalls Extended
 
@@ -673,7 +675,8 @@ Means:
 - Nuclei lighter than iron can _release energy by fusion_ (combining to form heavier nuclei closer
   to iron)
 - Nuclei heavier than iron can _release energy by fission_ (splitting to form lighter nuclei closer
-  To iron) :::
+  To iron)
+:::
 
 ### Example 28: Two-Source Interference Quantitative
 
@@ -732,3 +735,4 @@ Where $\tau$ is the dead time.
 
 30. Explain the principles of a gamma camera used in medical imaging. Describe how the collimator,
     scintillator crystal, photomultiplier tubes, and computer work together to produce an image.
+

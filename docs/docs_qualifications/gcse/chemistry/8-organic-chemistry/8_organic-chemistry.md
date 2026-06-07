@@ -116,7 +116,8 @@ $$\mathrm{CH_4 + \mathrm{O_2 \to \mathrm{C + 2\mathrm{H_2\mathrm{O$$
 
 :::warning Carbon monoxide is a toxic, colourless, odourless gas that binds to haemoglobin more
 Strongly than oxygen, preventing oxygen transport in the blood. Incomplete combustion is dangerous
-Because CO is produced without any visible or olfactory warning. :::
+Because CO is produced without any visible or olfactory warning.
+:::
 
 Incomplete combustion occurs when the oxygen supply is insufficient. The extent of incompleteness
 Depends on the oxygen-to-fuel ratio. With very limited oxygen, solid carbon (soot) is produced; with
@@ -831,3 +832,4 @@ $$\text{pH} = -\log_{10}[\text{H}^+] = -\log_{10}(0.050) = 1.30$$
 This topic covers the key concepts of Organic Chemistry for GCSE Chemistry. Focus on understanding
 the fundamental principles, practising with exam-style questions, and applying your knowledge to
 unfamiliar contexts.
+

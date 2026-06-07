@@ -116,7 +116,8 @@ $$E_p = mgh$$
 Where $m$ is mass (kg), $g$ is gravitational field strength (N/kg), and $h$ is height (m).
 
 :::info Near the Earth's surface, $g \approx 9.8$ N/kg (often approximated as 10 N/kg in
-Calculations). :::
+Calculations).
+:::
 
 The height $h$ is measured from an arbitrarily chosen reference level (often the ground). Only
 _changes_ in gravitational potential energy are physically meaningful, so the choice of reference
@@ -418,7 +419,8 @@ As light. Calculate the efficiency.
 $$\mathrm{Efficiency = \frac{6}{60} \times 100\% = 10\%$$
 
 :::warning No machine can be 100% efficient. Some energy is always dissipated (transferred to
-Thermal stores in the surroundings) due to friction, air resistance, or electrical resistance. :::
+Thermal stores in the surroundings) due to friction, air resistance, or electrical resistance.
+:::
 
 ### 6.2 Why Efficiency Cannot Reach 100 Percent
 
@@ -898,3 +900,4 @@ $$a = \frac{F_{\text{net}}}{m} = \frac{10}{2.0} = 5.0\,\text{m\,s}^{-2}$$
 This topic covers the key concepts of Energy for GCSE Physics. Focus on understanding the
 fundamental principles, practising with exam-style questions, and applying your knowledge to
 unfamiliar contexts.
+

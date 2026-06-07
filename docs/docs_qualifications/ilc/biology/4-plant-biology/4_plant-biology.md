@@ -79,7 +79,8 @@ Throughout the plant.
 :::info Guard cells are the only epidermal cells that contain chloroplasts. When light strikes them,
 Photosynthesis produces ATP, which drives potassium ion ($K^+$) pumps. Potassium ions enter the
 Guard cells, lowering their water potential. Water follows by osmosis, making the cells turgid and
-Opening the stomata. :::
+Opening the stomata.
+:::
 
 ### Root Structure (OL/HL)
 
@@ -291,7 +292,8 @@ Reliable.
 :::info Wind-pollinated flowers (e.g., grasses) produce enormous quantities of lightweight pollen.
 Only a tiny fraction reaches a stigma, but the sheer volume ensures successful reproduction.
 Insect-pollinated flowers produce less pollen but it is often larger and stickier to adhere to
-Pollinators. :::
+Pollinators.
+:::
 
 ### Fertilisation (OL/HL)
 
@@ -465,7 +467,8 @@ A tropism is a growth response to a directional stimulus. The response can be to
 
 :::warning A common source of confusion: auxin stimulates elongation in shoots but inhibits
 Elongation in roots. Roots are far more sensitive to auxin than shoots, so the same concentration
-That promotes growth in shoots inhibits growth in roots. :::
+That promotes growth in shoots inhibits growth in roots.
+:::
 
 ### Worked Example: Explaining Phototropism (HL)
 
@@ -741,3 +744,4 @@ genetic variation.
 | Chromosome number | Same as parent                       | Half of parent                              |
 | Genetic variation | No                                   | Yes (crossing over, independent assortment) |
 | Function          | Growth, repair, asexual reproduction | Production of gametes                       |
+

@@ -36,7 +36,8 @@ The AD curve slopes **downward** from left to right (higher price level $\Righta
 Of AD).
 
 :::info Info Channels of the downward-sloping AD curve. AQA often focuses on the interest rate and
-wealth Effects. OCR may ask students to evaluate which channel is most significant in practice. :::
+wealth Effects. OCR may ask students to evaluate which channel is most significant in practice.
+:::
 
 We derive this from three channels:
 
@@ -157,7 +158,8 @@ Capacity of the economy. AQA uses the same vertical LRAS but emphasises the dist
 Actual and potential growth. CIE (9708) may present an alternative diagram where LRAS is drawn as a
 Curve becoming vertical at full employment — this is the _Keynesian AS curve_ and is acceptable only
 In CIE mark schemes. OCR expects students to explain _why_ LRAS is vertical using the classical
-Dichotomy or factor mobility arguments. :::
+Dichotomy or factor mobility arguments.
+:::
 
 #### Derivation of the LRAS from the Production Function
 
@@ -322,7 +324,8 @@ The self-correcting mechanism. Edexcel (Paper 3) expects students to use AD/AS d
 Illustrate both Keynesian and classical perspectives. CIE (9708 Paper 4) often asks students to
 Discuss whether the economy can be left to self-correct. In all cases, examiners reward balanced
 Argumentation: acknowledge the theoretical mechanism but critically assess its practical
-Limitations. :::
+Limitations.
+:::
 
 ## 4. The Multiplier
 
@@ -401,7 +404,8 @@ The multiplier model has several important limitations:
 :::info Info Students should discuss capacity constraints, crowding out, and the open economy
 multiplier. Edexcel (9EC0) Paper 2 expects students to calculate the multiplier and evaluate its
 effectiveness. CIE (9708) Paper 3 may ask students to calculate the multiplier from given data and
-discuss why it Differs across countries. :::
+discuss why it Differs across countries.
+:::
 
 ## 5. The Accelerator Effect
 
@@ -458,15 +462,18 @@ Evaluative answers:
 The usefulness of the AD/AS model itself — a higher-order skill. AQA (7132) expects evaluation
 Within the context of specific policy discussions (e.g., "Evaluate the view that fiscal policy is
 The most effective way to increase AD"). Edexcel (9EC0) Paper 3 may ask students to compare AD/AS
-With alternative models such as the Phillips Curve. :::
+With alternative models such as the Phillips Curve.
+:::
 
 :::warning Common Pitfall Students often confuse _shifts_ of AD/SRAS with _movements along_ the
 Curves. "An increase in the price level reduces AD" is WRONG — it causes a movement along the AD
-Curve. "An increase in consumer confidence increases AD" is CORRECT — it shifts the AD curve. :::
+Curve. "An increase in consumer confidence increases AD" is CORRECT — it shifts the AD curve.
+:::
 
 :::info Board-Specific Note Edexcel (9EC0) emphasises the distinction between AD and AS shifts. CIE
 (9708) requires detailed diagrammatic analysis of equilibrium and shifts. AQA focuses on the
-Multiplier and its policy implications. :::
+Multiplier and its policy implications.
+:::
 
 ## 7. Problem Set
 
@@ -1177,3 +1184,4 @@ the financing method (tax-funded vs debt-funded).
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
 the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
 each approach.
+

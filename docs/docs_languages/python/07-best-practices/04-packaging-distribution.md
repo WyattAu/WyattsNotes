@@ -118,7 +118,8 @@ branch = true
 
 :::info PEP 621 standardizes project metadata in `pyproject.toml`. Before this, metadata was
 Scattered across `setup.py``setup.cfg`And `setup.cfg`/`pyproject.toml`. The new standard
-Consolidates everything into one file. :::
+Consolidates everything into one file.
+:::
 
 ## setup.py Legacy vs pyproject.toml
 
@@ -167,7 +168,8 @@ where = ["src"]
 
 :::warning `setup.py` is not deprecated, but `pyproject.toml` is preferred for new projects. The
 `setup.py` file can still exist for complex build logic that cannot be expressed declaratively, but
-Most projects do not need it. :::
+Most projects do not need it.
+:::
 
 ## setuptools
 
@@ -307,7 +309,8 @@ requests==2.31.0 \
 
 :::warning Always use `--generate-hashes` in production deployments. Hashes verify that the
 Installed package matches exactly what you tested. Without hashes, a compromised PyPI mirror could
-Serve malicious packages. :::
+Serve malicious packages.
+:::
 
 ## Virtual Environments
 
@@ -357,7 +360,8 @@ conda env create -f environment.yml
 
 :::info `venv` is the standard and ships with Python. Use `virtualenv` when you need features like
 `--system-site-packages` or faster creation. Use `conda` when you need non-Python dependencies
-(e.g., CUDA, MKL). :::
+(e.g., CUDA, MKL).
+:::
 
 ## Dependency Management
 
@@ -479,7 +483,8 @@ mylib/
 :::warning The `src` layout is preferred because it prevents a subtle bug: when you run tests from
 The project root, Python may import the local package instead of the installed one. The `src` layout
 Forces you to install the package before testing, catching missing dependencies and incorrect
-Packaging. :::
+Packaging.
+:::
 
 ## Entry Points
 
@@ -572,7 +577,8 @@ prune tests
 ```
 
 :::tip With the `src` layout and `[tool.setuptools.package-data]`Most projects do not need
-`MANIFEST.in`. Only use it when you need to include files that setuptools cannot auto-discover. :::
+`MANIFEST.in`. Only use it when you need to include files that setuptools cannot auto-discover.
+:::
 
 ## Versioning
 
@@ -775,7 +781,8 @@ Packages.
 | VCS versioning | Via plugin  | Built-in | Via plugin |
 
 :::tip For new projects, `hatch` or `flit` are excellent choices. Use `setuptools` only when you
-Need compatibility with existing tooling or complex build requirements (e.g., C extensions). :::
+Need compatibility with existing tooling or complex build requirements (e.g., C extensions).
+:::
 
 ## Wheel vs sdist
 
@@ -981,3 +988,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

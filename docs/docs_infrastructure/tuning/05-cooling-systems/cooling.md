@@ -90,7 +90,8 @@ Surfaces. Works well for Intel CPUs with their rectangular IHS.
 :::danger Liquid metal (galinstan) is electrically conductive and will short-circuit components if
 It spills onto the motherboard contacts or pins. It also reacts with aluminum, causing corrosion.
 Only use liquid metal on nickel-plated or copper surfaces. Apply a conformal coating (nail polish)
-Around the IHS to contain spills. :::
+Around the IHS to contain spills.
+:::
 
 ### When to Repaste
 
@@ -221,7 +222,8 @@ AIO coolers have finite lifespans. Common failure modes:
 4. **Fan failure:** Individual fans can fail. Replaceable in most AIOs.
 
 :::warning Always monitor pump RPM. Set an alarm in your monitoring software if pump RPM drops below
-A threshold ( 1000 RPM). A dead pump with active fans will cook a CPU in minutes under Load. :::
+A threshold ( 1000 RPM). A dead pump with active fans will cook a CPU in minutes under Load.
+:::
 
 ---
 
@@ -956,3 +958,4 @@ for mastery of this topic.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

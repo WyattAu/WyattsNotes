@@ -39,7 +39,8 @@ Consider:
   to compile regex patterns at compile time.
 - **Hand-written parsers:** for simple patterns (e.g., email validation, URL parsing), a
   hand-written parser is often faster and more readable.
-- **RE2:** Google's regex library with guaranteed linear-time matching. :::
+- **RE2:** Google's regex library with guaranteed linear-time matching.
+:::
 
 ### `std::regex_match` and `std::regex_search`
 
@@ -122,7 +123,8 @@ void regex_replace_demo() {
 ```
 
 :::info In the replacement string, `$&` refers to the entire match, `$1`..`$9` refer to capture
-groups, and `$$` is a literal `$`. These are defined in [N4950 §30.9.4]. :::
+groups, and `$$` is a literal `$`. These are defined in [N4950 §30.9.4].
+:::
 
 ### Email Validation with Regex
 
@@ -216,7 +218,8 @@ void catastrophic_backtracking_demo() {
 
 :::warning Avoid nested quantifiers in regex patterns: `(a+)+``(a*)*``(a+)*`. These can trigger
 Exponential backtracking on inputs that nearly match. If you must use them, set a timeout or use a
-Library with guaranteed linear-time matching (RE2, hyperscan). :::
+Library with guaranteed linear-time matching (RE2, hyperscan).
+:::
 
 ### Regex Grammars and Flags
 
@@ -574,3 +577,4 @@ for mastery of this topic.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

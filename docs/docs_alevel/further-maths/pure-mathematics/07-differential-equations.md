@@ -35,7 +35,8 @@ Adjust the parameters in the graph above to explore the relationships between va
 
 :::info All boards examine first-order ODEs. CIE and Edexcel require second-order linear ODEs. AQA
 Focuses on first-order equations with growth and decay modelling. The formula booklet gives the
-Integrating factor formula on Edexcel; AQA and OCR students must know it. :::
+Integrating factor formula on Edexcel; AQA and OCR students must know it.
+:::
 
 <hr />
 
@@ -76,7 +77,8 @@ $$y^2 = x^2 + 4, \quad y = \sqrt{x^2 + 4}$$
 
 :::warning When dividing by $g(y)$ during separation, we implicitly assume $g(y) \neq 0$. If
 $g(y_0) = 0$Then $y = y_0$ is a constant (equilibrium) solution that may not appear in the general
-Solution. Always check for these. :::
+Solution. Always check for these.
+:::
 
 **Example.** $\dfrac{dy}{dx} = y(1-y)$.
 
@@ -177,7 +179,8 @@ Using $y(0) = 1$: $1 = -1 + C \implies C = 2$.
 $$\boxed{y = 2e^{3x} - e^{2x}}$$
 
 :::tip The constant of integration in $\mu = e^{\int P\,dx}$ can be omitted (absorbed into $C$).
-Always choose the simplest antiderivative. :::
+Always choose the simplest antiderivative.
+:::
 
 <hr />
 
@@ -303,7 +306,8 @@ To find $y_p$Guess the form based on $f(x)$Then determine coefficients by substi
 | Polynomial      | General polynomial of same degree | Multiply by $x$ as needed          |
 
 :::warning If any term in your trial $y_p$ already appears in the complementary function $y_h$
-Multiply the entire trial by $x$. If it still appears, multiply by $x^2$. :::
+Multiply the entire trial by $x$. If it still appears, multiply by $x^2$.
+:::
 
 ### 4.3 Worked examples
 
@@ -1089,3 +1093,4 @@ $A\cos\omega x + B\sin\omega x = R\cos\delta\cos\omega x + R\sin\delta\sin\omega
 $\blacksquare$
 
 </details>
+

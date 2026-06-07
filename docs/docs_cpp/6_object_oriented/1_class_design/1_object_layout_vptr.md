@@ -62,7 +62,8 @@ $$
 :::tip Standard Layout A class with no virtual functions, no non-static data members of reference
 Type, and all non-static data members with the same access control is a **standard-layout class**
 [N4950 §11.4.1]. Such classes have a well-defined, portable memory layout and are compatible with C
-Structs. :::
+Structs.
+:::
 
 ## 1.2 The `this` Pointer [N4950 §11.4.3.2]
 
@@ -174,7 +175,8 @@ static_assert(sizeof(Derived) == sizeof(int));
 
 :::info Practical Importance EBO is exploited heavily by standard library implementations.
 `std::allocator&lt;T&gt;` is an empty class, and `std::vector&lt;T, std::allocator&lt;T&gt;&gt;`
-inherits from it privately so that the allocator Storage costs nothing. :::
+inherits from it privately so that the allocator Storage costs nothing.
+:::
 
 ### EBO Limitations
 
@@ -664,3 +666,4 @@ for mastery of this topic.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

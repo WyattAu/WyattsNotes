@@ -183,7 +183,8 @@ $$\mathrm{CH}_3^\bullet + \mathrm{Cl}^\bullet \to \mathrm{CH}_3\mathrm{Cl}$$
 
 :::warning Warning $\mathrm{CH}_3\mathrm{Cl}$$\mathrm{CH}_2\mathrm{Cl}_2$$\mathrm{CHCl}_3$And
 $\mathrm{CCl}_4$ Because the substitution can continue on the same carbon atom. Controlling the
-ratio of methane to Chlorine influences the proportion of products. :::
+ratio of methane to Chlorine influences the proportion of products.
+:::
 
 #### Cracking of Hydrocarbons
 
@@ -240,7 +241,8 @@ Together) based on the atomic number of substituents:
 
 :::info E/Z isomerism is a type of **stereoisomerism**. Stereoisomers have the same structural
 Formula but different spatial arrangements of atoms. For E/Z isomerism to occur, each carbon of the
-C=C must have two different substituents. :::
+C=C must have two different substituents.
+:::
 
 #### Physical Properties
 
@@ -297,7 +299,8 @@ The minor product, 1-bromopropane ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\math
 In smaller amounts.
 
 :::tip Markovnikov's Rule can be remembered as "the rich get richer": the carbon with more H atoms
-Gets the additional H. :::
+Gets the additional H.
+:::
 
 #### Industrial Importance of Alkenes
 
@@ -476,7 +479,8 @@ Product: phenylethanone (acetophenone).
 
 :::info Friedel-Crafts reactions cannot be used on benzene rings that already bear strongly
 Electron-withdrawing groups (e.g., $-\mathrm{NO}_2$) because these deactivate the ring towards
-Electrophilic attack. :::
+Electrophilic attack.
+:::
 
 ### Worked Example: Predicting EAS Products
 
@@ -814,7 +818,8 @@ $$n\mathrm{CH}_2=\mathrm{CHX} \to \left[\mathrm{--CH}_2\mathrm{--CHX--}\right]_n
 | PTFE (Teflon) | Tetrafluoroethene      | $--\mathrm{CF}_2\mathrm{--CF}_2--$                         | Non-stick coatings         |
 
 :::tip When drawing addition polymers, always show the repeating unit in square brackets with n
-Outside. Include enough of the structure to show the pattern ( at least two Repeating units). :::
+Outside. Include enough of the structure to show the pattern ( at least two Repeating units).
+:::
 
 ### 4.2 Condensation Polymerisation
 
@@ -942,7 +947,8 @@ Reduction is the addition of hydrogen or removal of oxygen.
   $\mathrm{R}_2\mathrm{C=O} \xrightarrow{\mathrm{NaBH}_4} \mathrm{R}_2\mathrm{CHOH}$
 
 :::info Info Reduce aldehydes and ketones but not carboxylic acids. $\mathrm{LiAlH}_4$ is more
-reactive and can Reduce carboxylic acids, esters, and amides. :::
+reactive and can Reduce carboxylic acids, esters, and amides.
+:::
 
 ### 5.3 Hydrolysis of Esters
 
@@ -1938,3 +1944,4 @@ $$\mathrm{Percentage\ yield} = \frac{4.8}{6.90} \times 100\% = 69.6\%$$
 
 6. Misidentifying the limiting reagent — compare mole ratios rather than comparing masses.
    > > > > > > > Stashed changes:docs/docs_dse/Chemistry/organic-chemistry.md
+

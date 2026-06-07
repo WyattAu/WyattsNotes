@@ -624,7 +624,8 @@ Where $\tau = C / (hA)$ is the time constant.
 
 :::info Info Radiation is not the dominant mechanism. At large temperature differences, the $T^4$
 dependence of Radiation becomes significant and the cooling is faster than predicted by Newton's
-law. :::
+law.
+:::
 
 ---
 
@@ -1469,7 +1470,8 @@ within the DSE specification for this topic, each with a full worked solution.
 Gases with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ---
 
@@ -1860,3 +1862,4 @@ A strong understanding of these principles, combined with regular practice of qu
 and past paper questions, is essential for success in examinations.
 
 > > > > > > > Stashed changes:docs/docs_dse/Physics/heat-and-gases.md
+

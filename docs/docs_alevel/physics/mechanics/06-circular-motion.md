@@ -40,7 +40,8 @@ $$\omega = \frac◆LB◆2\pi◆RB◆◆LB◆T◆RB◆ = 2\pi f$$
 Where $T$ is the period (time for one revolution) and $f$ is the frequency.
 
 :::info Info Quantities. AQA and Edexcel may accept degrees in some contexts but radians are
-expected in Formulae. CIE explicitly states that angular velocity must be in rad s$^{-1}$. :::
+expected in Formulae. CIE explicitly states that angular velocity must be in rad s$^{-1}$.
+:::
 
 **Example.** A CD rotates at $480$ rpm. Converting:
 $\omega = 480 \times 2\pi/60 = 16\pi \approx 50.3$ rad s$^{-1}$. A point $0.06$ m from the centre
@@ -81,7 +82,8 @@ The speed is constant, the _direction_ of velocity changes continuously, requiri
 :::info Info Derivation is the standard approach; calculus is optional extension work. OCR (A):
 Either method Accepted; the geometric proof appears more frequently in mark schemes. CIE: The
 geometric method is The primary derivation required; calculus is useful for STEP/matriculation
-preparation. :::
+preparation.
+:::
 
 ### Method 2: Geometry
 
@@ -103,7 +105,8 @@ $$\boxed{F_c = \frac{mv^2}{r} = m\omega^2 r}$$
 :::warning Common Pitfall **Centripetal force is not a separate force.** It is the _net_ inward
 Force resulting from whatever physical forces act on the body (tension, friction, gravity, normal
 Reaction, etc.). Never draw "centripetal force" on a free body diagram — identify the actual
-Force(s) providing the centripetal acceleration. :::
+Force(s) providing the centripetal acceleration.
+:::
 
 ### Intuition: Circular Motion is NOT Equilibrium
 
@@ -116,7 +119,8 @@ First law).
 Frame, objects appear to be pushed outward, but this is a pseudo-force (fictitious force) arising
 Because the frame itself is accelerating. In an inertial (laboratory) frame, no outward force
 Exists. AQA and Edexcel may ask you to explain the difference; OCR (A) has featured this in
-Multiple-choice questions. :::
+Multiple-choice questions.
+:::
 
 ## 4. Applications
 
@@ -149,7 +153,8 @@ $T = 2\pi\sqrt◆LB◆1.0 \times \cos 30°/9.81◆RB◆ = 2\pi\sqrt{0.0883} = 1.
 
 :::info Board Coverage AQA: Conical pendulum appears in Paper 1. Edexcel: Covered in CP2, As a
 multi-step calculation. OCR (A): Appears in Paper 2 with derivations required. CIE: Appears in P2;
-may be combined with energy considerations. :::
+may be combined with energy considerations.
+:::
 
 ### Banked Curves
 
@@ -201,7 +206,8 @@ Through tight turns. The normal reaction alone provides the centripetal force at
 
 :::info Info Is extension material. Edexcel: Both frictionless and friction cases may appear in CP2.
 OCR (A): Frictionless derivation is core; friction is stretch/challenge. CIE: Frictionless is
-required; Friction on banked curves occasionally appears in P2 as a harder question. :::
+required; Friction on banked curves occasionally appears in P2 as a harder question.
+:::
 
 ### Vertical Circles
 
@@ -452,7 +458,8 @@ This result is independent of the radius and speed -- only on the mass and $g$.
 :::tip Exam Technique When asked about the difference between tension at the top and bottom of a
 Vertical circle, the answer is always $6mg$ (for a string). For a rod (which can push as well as
 Pull), the minimum speed at the top is zero, not $\sqrt{gr}$Because the rod can support the weight
-Even when the speed is zero. :::
+Even when the speed is zero.
+:::
 
 <details>
 <summary>Example: Bucket of Water in a Vertical Circle</summary>
@@ -525,7 +532,8 @@ Period of a simple pendulum for small oscillations.
 
 :::warning Warning Is **shorter** than the small-angle simple pendulum period $T = 2\pi\sqrt{L/g}$.
 Do not confuse These two results. The conical pendulum has an additional $\cos\alpha$ factor because
-only the Vertical component of tension balances gravity. :::
+only the Vertical component of tension balances gravity.
+:::
 
 ## 7. Centrifugal Force -- Rotating Reference Frames
 
@@ -548,7 +556,8 @@ This has the same magnitude as the centripetal force but points in the opposite 
 Diagrams in inertial frames. It is a mathematical convenience for analysing motion in rotating
 Frames. In exams, always explain circular motion using centripetal force in an inertial frame unless
 Explicitly asked about rotating frames. AQA and OCR (A) have specifically tested the distinction
-Between centripetal and centrifugal descriptions. :::
+Between centripetal and centrifugal descriptions.
+:::
 
 **Summary of the two descriptions:**
 
@@ -561,7 +570,8 @@ Between centripetal and centrifugal descriptions. :::
 :::tip Exam Technique When asked "why do passengers feel thrown outward in a cornering car?", the
 Correct A-level answer is: "The passengers tend to continue in a straight line by Newton's first law
 While the car turns. No outward force acts on the passengers." Mentioning centrifugal force is
-Acceptable only if you state it is a fictitious force in a rotating frame. :::
+Acceptable only if you state it is a fictitious force in a rotating frame.
+:::
 
 ## Further Problems
 
@@ -716,7 +726,8 @@ questions within the A-Level specification for this topic, each with a full work
 Motion with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 :::danger Common Pitfalls
 
@@ -766,3 +777,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

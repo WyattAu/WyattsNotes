@@ -230,7 +230,8 @@ Increases memory bandwidth, which benefits workloads that are memory-bandwidth b
 :::warning Memory overclocking can cause data corruption. If your GPU is used for compute workloads
 (machine learning, rendering, scientific computing), memory instability can produce silently
 Incorrect results. Thoroughly test with error-checking workloads (e.g., CUDA memtest) before relying
-On an overclocked GPU for production compute. :::
+On an overclocked GPU for production compute.
+:::
 
 ---
 
@@ -830,3 +831,4 @@ for mastery of this topic.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

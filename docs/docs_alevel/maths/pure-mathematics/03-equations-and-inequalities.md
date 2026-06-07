@@ -153,7 +153,8 @@ positive and negative). So $cb - ca < 0$Giving $ca > cb$. $\blacksquare$
 Inequality.
 
 :::warning Warning Multiplying/dividing by a negative number. Always check the sign of the
-multiplier before Proceeding. :::
+multiplier before Proceeding.
+:::
 
 ### 3.2 Quadratic Inequalities
 
@@ -491,7 +492,8 @@ No real solution from this case.
 </details>
 
 :::warning Warning Inequality $|f(x)| \lt g(x)$ only makes sense when $g(x) \gt 0$And squaring
-preserves the Direction since $a \lt b$ implies $a^2 \lt b^2$ for $a, b \geq 0$. :::
+preserves the Direction since $a \lt b$ implies $a^2 \lt b^2$ for $a, b \geq 0$.
+:::
 
 <hr />
 
@@ -935,7 +937,8 @@ hardest questions within the A-Level specification for this topic, each with a f
 and Inequalities with other pure mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -961,3 +964,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

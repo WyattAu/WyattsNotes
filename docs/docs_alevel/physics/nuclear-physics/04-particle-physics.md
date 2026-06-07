@@ -145,7 +145,8 @@ In all particle interactions, the following quantities are **always conserved**:
 
 :::warning Warning **not** by the weak interaction. Strange particles are always produced in pairs
 (associated production) Via the strong interaction (conserving $S$) but decay individually via the
-weak interaction. :::
+weak interaction.
+:::
 
 <details>
 <summary>Worked Example: Conservation Check</summary>
@@ -522,3 +523,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

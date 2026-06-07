@@ -325,3 +325,4 @@ it is true under _some_ Assignment; it is _valid_ (a tautology) if true under _a
 Checking validity is Co-NP-complete, not NP-complete.
 :::
 
+

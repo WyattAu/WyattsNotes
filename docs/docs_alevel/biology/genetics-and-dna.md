@@ -68,7 +68,8 @@ Approximately $10^{-9}$ per base per replication.
 :::warning Common Pitfall DNA polymerase can only add nucleotides to the $3'$ end of a growing
 Strand. It cannot initiate synthesis de novo -- it requires a pre-existing $3'-\mathrm{OH}$ group,
 Which is provided by the RNA primer. Students often forget to mention primase and primers when
-Describing replication. :::
+Describing replication.
+:::
 
 ## 2. Protein Synthesis
 
@@ -165,7 +166,8 @@ completely non-functional protein.
 :::warning Common Pitfall Students often state that "mutations are always harmful." Most mutations
 Are neutral (silent mutations, mutations in non-coding DNA). Some are harmful (cause genetic
 Disorders), and a few are beneficial (provide the variation upon which natural selection acts). The
-Harmful mutations are eliminated by selection; beneficial ones may increase in frequency. :::
+Harmful mutations are eliminated by selection; beneficial ones may increase in frequency.
+:::
 
 ## 4. Meiosis
 
@@ -287,7 +289,8 @@ But reduced production of red pigment.
 :::warning Common Pitfall Students often confuse co-dominance and incomplete dominance. In
 Co-dominance, both alleles produce their full product (both A and B antigens are present). In
 Incomplete dominance, the heterozygote produces less of the dominant product (an intermediate
-Phenotype). The genetic ratios for both are 1:2:1, but the phenotypic expression differs. :::
+Phenotype). The genetic ratios for both are 1:2:1, but the phenotypic expression differs.
+:::
 
 ## 6. Gene Expression and Epigenetics
 
@@ -345,7 +348,8 @@ Offspring with brown coats and normal weight. A methyl-poor diet produces yellow
 Epigenetic changes are reversible modifications to gene expression that do not alter the DNA
 Sequence itself. Mutations are permanent changes to the nucleotide sequence. Epigenetic marks can be
 Passed to daughter cells during mitosis (and meiosis), but they can also be removed by Environmental
-changes. :::
+changes.
+:::
 
 ## 7. Genetic Technology
 
@@ -427,7 +431,8 @@ In **recombinant DNA technology**:
 :::warning Common Pitfall Students often write that "bacteria are genetically modified" in PCR. PCR
 does not Involve bacteria or modification of living organisms -- it is an in vitro technique. PCR,
 gel Electrophoresis, and DNA sequencing are analytical techniques, while recombinant DNA technology
-involves The creation of genetically modified organisms (GMOs). :::
+involves The creation of genetically modified organisms (GMOs).
+:::
 
 ## 8. Advanced Genetic Crosses
 
@@ -487,7 +492,8 @@ cross-overs that Cancel out).
 :::warning Common Pitfall Students often assume that a 9:3:3:1 ratio always results from a dihybrid
 cross. If the genes are linked, the observed ratio will deviate from 9:3:3:1, with an excess of
 parental Phenotypes and a deficit of recombinant phenotypes. Always check whether the genes are on
-the same Chromosome before applying Mendel's second law. :::
+the same Chromosome before applying Mendel's second law.
+:::
 
 ### 8.3 Sex Determination
 
@@ -1247,7 +1253,8 @@ reprogramming:
 Epigenetic changes alter gene expression without changing the DNA sequence. They are potentially
 reversible (unlike mutations). However, epigenetic changes can be inherited through cell division
 (mitosis) and, in rare cases, across generations (transgenerational epigenetic inheritance). Genetic
-mutations are permanent changes to the DNA sequence itself. :::
+mutations are permanent changes to the DNA sequence itself.
+:::
 
 ## 20. Genetic Disorders: Detailed Analysis
 
@@ -1496,7 +1503,8 @@ within the A-Level specification for this topic, each with a full worked solutio
 and DNA with other biology topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/biology/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ## 24. Genetic Screening and Counselling
 
@@ -2012,3 +2020,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

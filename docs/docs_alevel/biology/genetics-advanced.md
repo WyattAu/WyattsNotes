@@ -97,7 +97,8 @@ Ratio: **9:7**.
 :::warning Common Pitfall Students often confuse epistasis with dominance. Dominance is an
 interaction between **alleles at the same locus** (one allele masks another at the same gene).
 Epistasis is an interaction between **genes at different loci** (one gene masks or modifies another
-gene). They are fundamentally different genetic phenomena. :::
+gene). They are fundamentally different genetic phenomena.
+:::
 
 ## 2. Genetic Linkage and Crossing Over
 
@@ -655,7 +656,8 @@ Ratio: **13:3** (12 white + 1 white from $iicc$ : 3 coloured).
 :::warning Common Pitfall Students often confuse epistasis with dominance. Remember: dominance
 operates **within a single gene locus** (alleles of the same gene), while epistasis operates
 **between different gene loci**. When the dihybrid cross ratio deviates from 9:3:3:1, epistasis is
-the likely explanation, not dominance. :::
+the likely explanation, not dominance.
+:::
 
 ## 10. Genetic Linkage and Chromosome Mapping
 
@@ -961,7 +963,8 @@ Human height has $h^2 \approx 0.80$ (highly heritable, but nutrition also plays 
 :::warning Common Pitfall Students often confuse heritability of a trait in a population with the
 heritability of that trait in an individual. Heritability is a population-level statistic. A high
 heritability for height does not mean that a tall individual's height is "80% genetic" -- it means
-that 80% of the variation in height across the population is due to genetic differences. :::
+that 80% of the variation in height across the population is due to genetic differences.
+:::
 
 ## 16. Pedigree Analysis: Advanced Problems
 
@@ -1119,7 +1122,8 @@ produce dramatic morphological changes.
 be controlled by different genes. In fact, homologous structures share the same developmental genes.
 The differences arise from differences in gene regulation (when, where, and how much each gene is
 expressed), not from differences in the genes themselves. This is a key principle of evolutionary
-developmental biology (evo-devo). :::
+developmental biology (evo-devo).
+:::
 
 ## 19. Selection Coefficients and Fitness
 
@@ -1315,7 +1319,8 @@ Even after a protein is synthesised, its activity can be regulated:
 term is outdated and misleading. While most non-coding DNA does not code for proteins, it includes
 regulatory elements (promoters, enhancers, silencers), non-coding RNAs (miRNA, lncRNA, snRNA),
 telomeres, centromeres, and origins of replication -- all of which have important functions. The
-correct term is "non-coding DNA." :::
+correct term is "non-coding DNA."
+:::
 
 ## 19. Quantitative Genetics and Population Genetics Calculations
 
@@ -2251,3 +2256,4 @@ Ratio: **90 purple : 70 white**. $\blacksquare$
 - Selection against recessive alleles is slow because most copies are hidden in heterozygotes.
 - The chi-squared test compares observed and expected ratios to test for linkage or deviation from
   H-W equilibrium.
+

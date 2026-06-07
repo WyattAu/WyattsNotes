@@ -34,7 +34,8 @@ Adjust the parameters in the graph above to explore the relationships between va
 | CIE (9231) | P2      | Full coverage including logarithmic forms of inverses      |
 
 :::info The formula booklet lists hyperbolic identities and the logarithmic forms of the inverse
-Hyperbolic functions. CIE requires the derivation of these logarithmic forms. :::
+Hyperbolic functions. CIE requires the derivation of these logarithmic forms.
+:::
 
 <hr />
 
@@ -151,7 +152,8 @@ $\cos 2x = \cos^2 x - \sin^2 x \xrightarrow{\mathrm{Osborn}} \cosh 2x = \cosh^2 
 $\sinh^2$ term flips sign, turning $-$ into $+$.)
 
 :::tip Osborn's rule is a useful mnemonic but should not replace understanding. Always verify
-Identities by direct computation from the exponential definitions when in doubt. :::
+Identities by direct computation from the exponential definitions when in doubt.
+:::
 
 <hr />
 
@@ -303,7 +305,8 @@ $$\int \tanh x\,dx = \ln(\cosh x) + C$$
 
 :::tip When you encounter an integral of the form $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2+a^2}◆RB◆$ or
 $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2-a^2}◆RB◆$The inverse hyperbolic functions provide the most elegant
-Answer. CIE and Edexcel FP2 frequently test these. :::
+Answer. CIE and Edexcel FP2 frequently test these.
+:::
 
 <hr />
 
@@ -1096,3 +1099,4 @@ $= 2\sinh x(1+\sinh^2 x) + \sinh x + 2\sinh^3 x$
 $= 2\sinh x + 2\sinh^3 x + \sinh x + 2\sinh^3 x = \boxed{3\sinh x + 4\sinh^3 x}$. $\blacksquare$
 
 </details>
+

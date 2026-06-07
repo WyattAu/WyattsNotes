@@ -48,7 +48,8 @@ dynamic number = 22;
 ```
 
 :::tip The best practice is here is to avoid usage of `dynamic` and `Object` declaration, always use
-`var` or explicit typing. :::
+`var` or explicit typing.
+:::
 
 ### Mutation Specifier
 
@@ -187,7 +188,8 @@ Platforms, but is limited to 53-bit precision when compiled to JavaScript. `doub
 754 standard and is also 64 bits.
 
 :::info These numbers are inherited from the `num` class, with operations and methods such as
-`abs()``floor()`Etc. Note that `num``double``int` cannot be extended. :::
+`abs()``floor()`Etc. Note that `num``double``int` cannot be extended.
+:::
 
 #### String Literals
 
@@ -547,3 +549,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

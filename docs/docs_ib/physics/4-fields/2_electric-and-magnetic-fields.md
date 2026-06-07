@@ -764,7 +764,8 @@ questions within the IB specification for this topic, each with a full worked so
 and Magnetic Fields with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ## Summary
 
@@ -796,3 +797,4 @@ and past paper questions, is essential for success in examinations.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

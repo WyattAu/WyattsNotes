@@ -1100,3 +1100,4 @@ $\blacksquare$
 - `pg_trgm` enables trigram-based fuzzy matching with `%` operator and `similarity()` function.
 - JSONB operators (`->>`, `#>>`, `@>`, `?`) and GIN indexing enable semi-structured queries without
   a fixed schema.
+

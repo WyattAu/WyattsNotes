@@ -279,7 +279,8 @@ int main() {
 :::tip Tip `sizeof(unpadded_counter)` will be 4 (one int). With 8 threads, the unpadded counters
 occupy only 32 Bytes (fitting in a single cache line), while the padded counters occupy 512 bytes (8
 cache lines). The padded version will be significantly faster due to the elimination of false
-sharing. :::
+sharing.
+:::
 
 ## Padding and Alignment to Prevent False Sharing
 
@@ -852,3 +853,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

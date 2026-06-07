@@ -287,7 +287,8 @@ This means:
 - If the constructor throws, initialization is retried on the next access.
 
 :::tip Tip Variable's address in a local variable at the start of the function. The compiler may
-optimize this Automatically, but explicit caching can help in complex functions. :::
+optimize this Automatically, but explicit caching can help in complex functions.
+:::
 
 ## Initialization Ordering Across Threads
 
@@ -562,7 +563,8 @@ The new module and running its initializers lazily.
 
 :::warning Warning Dangerous. If any thread still has references to the TLS storage (e.g., via a
 pointer obtained Before the unload), the behavior is undefined. The standard does not define safe
-unloading semantics For TLS [N4950 §6.7.3]. :::
+unloading semantics For TLS [N4950 §6.7.3].
+:::
 
 ### TLS Slot Exhaustion
 
@@ -814,3 +816,4 @@ When working with thread-local storage (tls), follow these steps:
 2. Select the appropriate algorithm, data structure, or technique
 3. Implement the solution step by step
 4. Test with edge cases and verify correctness
+

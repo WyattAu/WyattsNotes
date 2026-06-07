@@ -49,7 +49,8 @@ Of evolution is the population; the unit of selection is the individual (or, the
 :::info Lamarckism is not accepted by modern science. However, the field of epigenetics has revealed
 That environmental factors can influence gene expression across generations without changing the DNA
 Sequence itself. This is sometimes mistakenly conflated with Lamarckism, but epigenetic changes are
-Reversible and do not create new alleles. :::
+Reversible and do not create new alleles.
+:::
 
 ---
 
@@ -117,7 +118,8 @@ If it were purely deleterious.
 
 :::warning A common misconception is that antibiotic resistance develops because bacteria "need" to
 Survive. Resistance arises from random pre-existing mutations; the antibiotic selects for Resistant
-individuals. The mutation occurs regardless of the antibiotic's presence. :::
+individuals. The mutation occurs regardless of the antibiotic's presence.
+:::
 
 ---
 
@@ -187,7 +189,8 @@ $$q = \frac{400}{1000} = 0.4$$
 
 :::info In DSE exams, HWE calculations are almost always tested. Remember: you can always determine
 $q$ from $q^2$ (the homozygous recessive frequency), and then $p$ from $p = 1 - q$. The heterozygote
-Frequency $2pq$ is the one most students miscalculate -- do not assume it equals $p + q$. :::
+Frequency $2pq$ is the one most students miscalculate -- do not assume it equals $p + q$.
+:::
 
 ### Genetic Drift
 
@@ -250,7 +253,8 @@ New species arise without geographic separation. Common mechanisms include:
 :::info Polyploidy is extremely rare in animals but is a major driver of speciation in plants.
 Approximately 30-70% of flowering plant species are polyploid. In the DSE, questions about
 Speciation focus on allopatric speciation, but you should be able to explain polyploidy as A
-mechanism of sympatric speciation in plants. :::
+mechanism of sympatric speciation in plants.
+:::
 
 ---
 
@@ -394,7 +398,8 @@ The only one whose matrilineal line has survived unbroken to the present day.
 :::info Mitochondrial Eve is a statistical concept, not a single individual who was the only human
 Female alive. Many other women lived at the same time, but their matrilineal lines happened to die
 Out at some point. The Y-chromosomal Adam (the most recent common paternal ancestor) lived
-Approximately 200,000-300,000 years ago, and the two individuals were not contemporaries. :::
+Approximately 200,000-300,000 years ago, and the two individuals were not contemporaries.
+:::
 
 ---
 
@@ -525,7 +530,8 @@ Three idealised types:
 
 :::warning Real survivorship curves rarely match idealised types exactly. Many species show
 Intermediate patterns. When interpreting DSE exam questions, look for the general shape rather than
-Trying to force a perfect classification. :::
+Trying to force a perfect classification.
+:::
 
 ---
 
@@ -665,7 +671,8 @@ $$\mathrm{Energy available at level } n = 0.1^n \times \mathrm{Energy at produce
 
 :::info Info Depending on the ecosystem and the organisms involved. Cold-blooded organisms are more
 Energy-efficient than warm-blooded ones. In DSE calculations, use 10% unless the question specifies
-Otherwise. :::
+Otherwise.
+:::
 
 ### Nutrient Cycles
 
@@ -772,7 +779,8 @@ $$\mathrm{NPP} = \mathrm{energy stored in plant biomass}$$
   water filtration and flood control
 
 :::info Info Precipitation plotted by month). Key features to identify: annual temperature range,
-wet and dry Seasons, total precipitation. Match these to the biome descriptions above. :::
+wet and dry Seasons, total precipitation. Match these to the biome descriptions above.
+:::
 
 ---
 
@@ -880,7 +888,8 @@ Major causes (often remembered by the acronym HIPPO):
 - **Ramsar Convention:** Protection of wetlands of international importance
 
 :::warning Warning Bioaccumulation is within an individual; biomagnification is across trophic
-levels. Both terms can Appear in the same question. :::
+levels. Both terms can Appear in the same question.
+:::
 
 ---
 
@@ -963,7 +972,8 @@ $$\chi^2 = \sum \frac{(O - E)^2}{E}$$
 
 Where $O$ = observed frequency and $E$ = expected frequency. Compare the calculated value to the
 Critical value at the appropriate degrees of freedom ($df = \mathrm{number of categories} - 1$) and
-Significance level ( $p = 0.05$). :::
+Significance level ( $p = 0.05$).
+:::
 
 ---
 
@@ -1446,7 +1456,8 @@ questions within the DSE specification for this topic, each with a full worked s
 and Ecology with other biology topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/biology/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ---
 
@@ -1829,3 +1840,4 @@ phosphates), leading to excessive algal growth.
 | [Ecology] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/biology/ecology) |
 | [Ecology] | IB      | [View](https://ib.wyattau.com/docs/ib/biology/4-ecology/1_ecology)      |
 | [Ecology] | DSE     | [View](https://dse.wyattau.com/docs/dse/biology/2-ecology/1_ecology)    |
+

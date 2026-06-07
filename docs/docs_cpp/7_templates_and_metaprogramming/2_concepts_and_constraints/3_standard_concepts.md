@@ -69,7 +69,8 @@ Subsumption ordering.
 Types that behave like built-in values: they can be copied, default-constructed, and compared for
 Equality. `int``double`And `std::string` are all `std::regular`. `std::unique_ptr` is `std::movable`
 but not `std::regular` (not copyable). `std::mutex` is neither `std::movable` nor `std::copyable`.
-These concepts are the vocabulary types of generic programming. :::
+These concepts are the vocabulary types of generic programming.
+:::
 
 ## Understanding `std::derived_from` vs `std::is_base_of`
 
@@ -376,7 +377,8 @@ product = 362880
 :::tip Using Range Concepts The `std::ranges` namespace provides range versions of many concepts.
 Prefer `std::ranges::range` over manually checking `begin()`/`end()`. Prefer
 `std::ranges::range_value_t<R>` over `typename R::value_type` (it works with proxy iterators). Range
-Concepts are defined in `<ranges>` [N4950 §26.2] and compose with the concepts in `<concepts>`. :::
+Concepts are defined in `<ranges>` [N4950 §26.2] and compose with the concepts in `<concepts>`.
+:::
 
 ## Range Concepts
 
@@ -572,3 +574,4 @@ programming, and requires both theoretical knowledge and hands-on practice.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

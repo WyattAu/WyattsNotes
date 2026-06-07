@@ -36,7 +36,8 @@ Adjust the parameters in the graph above to explore the relationships between va
 
 :::info All boards require the standard Maclaurin series. Edexcel and CIE additionally require
 Taylor series about $x = a$. The formula booklet lists the standard Maclaurin series — you must be
-Able to derive them and apply them. :::
+Able to derive them and apply them.
+:::
 
 <hr />
 
@@ -345,7 +346,8 @@ Gives more information (higher-order terms) than applying L'Hôpital's rule repe
    $e^{2x} = 1 + 2x + \dfrac{x^2}{2} + \cdots$.
 
 4. **Sign errors in alternating series.** $\sin x$ and $\cos x$ have alternating signs:
-   $\sin x = x - \dfrac{x^3}{6} + \cdots$ (not $x + \dfrac{x^3}{6} + \cdots$). :::
+   $\sin x = x - \dfrac{x^3}{6} + \cdots$ (not $x + \dfrac{x^3}{6} + \cdots$).
+:::
 
 :::tip **Exam strategy:**
 
@@ -353,7 +355,8 @@ Gives more information (higher-order terms) than applying L'Hôpital's rule repe
 - For compound functions ($e^{x^2}\sin x$), multiply series term by term and collect like powers.
 - Always state the range of validity when asked.
 - To find a Maclaurin series efficiently, compute successive derivatives at $x = 0$ and look for the
-  pattern. :::
+  pattern.
+:::
 
 <hr />
 
@@ -1175,3 +1178,4 @@ including key theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+

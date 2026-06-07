@@ -22,7 +22,8 @@ slug: correlation-and-regression
 | CIE (9709) | P1, P6  | Correlation and regression in P1/P6 |
 
 :::info The formula booklet gives the formula for PMCC and the least squares regression line. You
-Must be able to interpret these and understand their limitations. :::
+Must be able to interpret these and understand their limitations.
+:::
 
 <hr />
 
@@ -49,7 +50,8 @@ $$S_{xy} = \sum(x_i-\bar{x})(y_i-\bar{y}) = \sum x_i y_i - n\bar{x}\bar{y}$$
 - $r$ measures the strength of **linear** relationship only
 
 :::warning Correlation does not imply causation. Two variables may be strongly correlated because
-They are both influenced by a third (confounding) variable, or by coincidence. :::
+They are both influenced by a third (confounding) variable, or by coincidence.
+:::
 
 ### 1.3 Real-World Applications
 
@@ -177,7 +179,8 @@ Properties:
 
 :::warning The regression line should only be used for **interpolation** (predicting within the
 Range of the data). **Extrapolation** (predicting outside the data range) is unreliable because the
-Linear relationship may not hold. :::
+Linear relationship may not hold.
+:::
 
 ### 5.3 Regression of $y$ on $x$ vs. $x$ on $y$
 
@@ -599,7 +602,8 @@ hardest questions within the A-Level specification for this topic, each with a f
 and Regression with other topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -625,3 +629,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

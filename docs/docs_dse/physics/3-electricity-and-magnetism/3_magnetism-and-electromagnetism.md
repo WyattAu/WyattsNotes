@@ -559,7 +559,8 @@ hardest Questions within the DSE specification for this topic, each with a full 
 And Electromagnetism with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/physics/diagnostics/diagnostic-guide) for instructions on
-Self-marking and building a personal test matrix. :::
+Self-marking and building a personal test matrix.
+:::
 
 ---
 
@@ -1076,3 +1077,4 @@ $\blacksquare$
 | [Electromagnetism] | IB         | [View](https://ib.wyattau.com/docs/ib/physics/4-fields/4_induction)                                           |
 | [Electromagnetism] | DSE        | [View](https://dse.wyattau.com/docs/dse/physics/3-electricity-and-magnetism/3_magnetism-and-electromagnetism) |
 | [Electromagnetism] | University | [View](https://university.wyattau.com/docs/physics/3-electromagnetism/1_electromagnetism)                     |
+

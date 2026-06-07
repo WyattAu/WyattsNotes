@@ -30,7 +30,8 @@ Tools are essential for geometry, mechanics, and physics at university level.
 
 :::info All boards cover 3D vectors, the scalar product, and the vector product. AQA includes the
 Scalar triple product for volumes. CIE places particular emphasis on intersections of lines and
-Planes. :::
+Planes.
+:::
 
 <hr />
 
@@ -164,7 +165,8 @@ $\mathbf{b}$And its direction is given by the right-hand rule.
   $\mathbf{k}\times\mathbf{i} = \mathbf{j}$
 
 :::warning warning $\mathbf{a}\times\mathbf{b} = -\mathbf{b}\times\mathbf{a}$. The cross product is
-Only defined in 3D. :::
+Only defined in 3D.
+:::
 
 <hr />
 
@@ -357,7 +359,8 @@ $\square$
   coplanar
 
 :::info info $C$$D$ are coplanar, then
-$\overrightarrow{AB}\cdot(\overrightarrow{AC}\times\overrightarrow{AD}) = 0$. :::
+$\overrightarrow{AB}\cdot(\overrightarrow{AC}\times\overrightarrow{AD}) = 0$.
+:::
 
 <hr />
 
@@ -1172,3 +1175,4 @@ The lines intersect at $\boxed{(1,0,0)}$.
 
 6. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way
    around.
+

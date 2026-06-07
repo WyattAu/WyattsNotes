@@ -369,7 +369,8 @@ Point.
 :::warning The original question 8 in the practice section stated that "phenolphthalein is suitable
 For a strong acid-weak base titration" -- this is incorrect. Phenolphthalein (pH 8.3-10.0) is
 Suitable for weak acid-strong base titrations where the equivalence pH is above 7. For strong
-Acid-weak base titrations (equivalence pH below 7), methyl orange is the correct choice. :::
+Acid-weak base titrations (equivalence pH below 7), methyl orange is the correct choice.
+:::
 
 ---
 
@@ -714,3 +715,4 @@ Calculate the pH of a $0.050\,\text{mol\,dm}^{-3}$ solution of HCl.
 HCl is a strong acid, so $[\text{H}^+] = 0.050\,\text{mol\,dm}^{-3}$.
 
 $$\text{pH} = -\log_{10}[\text{H}^+] = -\log_{10}(0.050) = 1.30$$
+

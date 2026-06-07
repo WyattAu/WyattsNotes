@@ -231,7 +231,8 @@ $$\Delta H \approx \sum (\mathrm{bonds broken}) - \sum (\mathrm{bonds formed})$$
 
 :::warning Bond enthalpies give only **average** values. For reactions involving the gas phase, they
 Give good estimates. For reactions involving liquids or aqueous solutions, additional energy changes
-(vaporisation, dissolution) are not accounted for, so the estimate is less accurate. :::
+(vaporisation, dissolution) are not accounted for, so the estimate is less accurate.
+:::
 
 **Worked example 4:** Estimate $\Delta H$ for the combustion of methane using bond enthalpies.
 
@@ -415,7 +416,8 @@ $$-411 = 377 + \Delta H_{\mathrm{latt}}$$
 $$\Delta H_{\mathrm{latt}} = -411 - 377 = -788 \mathrm{ kJ/mol}$$
 
 :::info Lattice energy is always exothermic (negative) because energy is released when oppositely
-Charged ions come together. :::
+Charged ions come together.
+:::
 
 **Worked example 8:** Calculate the lattice energy of $\mathrm{MgO}$ given:
 
@@ -500,7 +502,8 @@ Where:
 - $\Delta S$ = entropy change (kJ mol$^{-1}$ K$^{-1}$)
 
 :::warning Ensure units are consistent. If $\Delta H$ is in kJ/mol and $\Delta S$ is in J mol$^{-1}$
-K$^{-1}$Convert $\Delta S$ to kJ mol$^{-1}$ K$^{-1}$ by dividing by 1000. :::
+K$^{-1}$Convert $\Delta S$ to kJ mol$^{-1}$ K$^{-1}$ by dividing by 1000.
+:::
 
 ### Feasibility of Reactions
 
@@ -893,3 +896,4 @@ $\text{C}(s) + \frac{1}{2}\text{O}_2(g) \rightarrow \text{CO}(g)$:
 $$\Delta H = (-394) - (-283) = -111\,\text{kJ\,mol}^{-1}$$
 
 > > > > > > > Stashed changes:docs/docs_dse/Chemistry/energetics.md
+

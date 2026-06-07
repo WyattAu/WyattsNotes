@@ -101,7 +101,8 @@ Opposite side. The nearer element pulls more strongly (shorter distance) but is 
 smaller Solid angle, and these two effects cancel exactly. $\square$
 
 :::warning Warning Earth is approximately but not perfectly spherical (equatorial bulge), so $g$
-varies slightly with Latitude even at sea level. :::
+varies slightly with Latitude even at sea level.
+:::
 
 ### Field Strength at Altitude
 
@@ -199,7 +200,8 @@ m s$^{-1}$ $= 5.02$ km s$^{-1}$.
 
 :::warning Common Pitfall Escape velocity is independent of the mass and direction of launch of the
 Projectile. A 1 kg ball and a $10^6$ kg rocket both need the same speed. However, the required
-kinetic Energy $E_k = \frac{1}{2}mv_e^2$ scales with mass. :::
+kinetic Energy $E_k = \frac{1}{2}mv_e^2$ scales with mass.
+:::
 
 ## 5. Orbital Mechanics
 
@@ -338,7 +340,8 @@ $$v = \sqrt◆LB◆\frac{GM}{r}◆RB◆ = \frac◆LB◆2\pi r◆RB◆◆LB◆T�
 
 :::warning Warning Geostationary is a stricter condition: geosynchronous AND equatorial AND
 circular. GPS satellites are Neither — they use medium Earth orbits at 20,200 km altitude with
-12-hour periods. :::
+12-hour periods.
+:::
 
 ### Applications
 
@@ -542,3 +545,4 @@ $\blacksquare$
 - Escape velocity: $v_{\mathrm{esc}} = \sqrt{\frac{2GM}{R}}$; for Earth
   $\approx 11.2\ \mathrm{km\,s^{-1}}$.
 - Orbital velocity: $v = \sqrt{\frac{GM}{r}}$; $g = -\frac{dV}{dr}$ links field and potential.
+

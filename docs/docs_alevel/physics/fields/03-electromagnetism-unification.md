@@ -242,7 +242,8 @@ Quantum nature of EM radiation (photons) would later be explained by Planck and 
 Classical wave description remains valid and powerful.
 
 :::info Info CIE. AQA and OCR (A) expect you to know the result and its significance but may not
-require the full Derivation. :::
+require the full Derivation.
+:::
 
 ## 5. Faraday's Law — Applications and Lenz's Law Intuition
 
@@ -709,7 +710,8 @@ hardest questions within the A-Level specification for this topic, each with a f
 Electromagnetism with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 :::danger Danger
 
@@ -732,7 +734,8 @@ self-marking and building a personal test matrix. :::
   the flux through it is large. The change can come from moving the coil, changing the field,
   changing the area, or rotating the coil.
 
-::: :::
+:::
+:::
 
 ## Common Pitfalls
 
@@ -758,3 +761,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

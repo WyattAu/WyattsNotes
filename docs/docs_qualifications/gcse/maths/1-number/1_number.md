@@ -15,7 +15,8 @@ slug: 1-number
 ## Number
 
 :::info Board Coverage AQA Paper 1 | Edexcel Paper 1 | OCR Paper 1 (Foundation & Higher) | WJEC Unit
-1 :::
+1
+:::
 
 ## 1. Types of Number
 
@@ -72,7 +73,8 @@ $\blacksquare$
 
 :::warning The product of two irrational numbers can be rational. For example,
 $\sqrt{2} \times \sqrt{2} = 2$. The sum of two irrational numbers can also be rational:
-$(1 + \sqrt{2}) + (1 - \sqrt{2}) = 2$. :::
+$(1 + \sqrt{2}) + (1 - \sqrt{2}) = 2$.
+:::
 
 ### 1.2 Prime Numbers and Factorisation
 
@@ -243,7 +245,8 @@ After the reduction: $120 \times 0.85 = 102$ pounds.
 After the increase: $102 \times 1.15 = 117.30$ pounds.
 
 :::warning A 15% decrease followed by a 15% increase does NOT return to the original value. The
-Second percentage is applied to a smaller base. :::
+Second percentage is applied to a smaller base.
+:::
 
 **Theorem.** A percentage increase of $P\%$ followed by a percentage decrease of $P\%$ (or vice
 Versa) always results in a net decrease. The net effect is a decrease of $\frac{P^2}{100}\%$.
@@ -432,7 +435,8 @@ Bounds for width: $5.15 \leq w \lt 5.20$
 - Lower bound of area: $8.35 \times 5.15 = 43.0025 \mathrm{ cm^2$
 
 :::warning For division, the upper bound of the quotient is NOT upper/upper. It is upper/lower (for
-Positive quantities). :::
+Positive quantities).
+:::
 
 **Worked Example (Higher Tier).** $x = 6.3$ and $y = 2.7$Both correct to 1 decimal place. Find the
 Lower bound of $\frac{x}{y}$.
@@ -520,7 +524,8 @@ Places, all digits beyond that point are discarded (not rounded).
 **Example.** Truncate $\pi$ to 3 decimal places: $3.141$ (not $3.142$).
 
 :::warning Truncation and rounding give different results when the digit immediately after the
-Cutoff is 5 or greater. Be sure to read the question carefully. :::
+Cutoff is 5 or greater. Be sure to read the question carefully.
+:::
 
 ## 6. Direct and Inverse Proportion
 
@@ -767,3 +772,4 @@ theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+

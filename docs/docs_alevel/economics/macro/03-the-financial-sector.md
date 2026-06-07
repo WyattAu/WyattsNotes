@@ -81,7 +81,8 @@ The **central bank** (Bank of England, ECB, Federal Reserve) performs:
 Monetary Policy Committee (MPC): 9 members, meets 8 times per year, sets the Bank Rate to achieve
 The 2% CPI inflation target. CIE (9708) focuses more on the _functions_ of central banks Rather than
 a specific institution. OCR expects you to distinguish between the central bank's roles In monetary
-stability and financial stability, and to evaluate whether these roles can conflict. :::
+stability and financial stability, and to evaluate whether these roles can conflict.
+:::
 
 **Real-world example — the Bank of England during COVID-19 (2020):** In March 2020, the BoE cut Bank
 Rate from 0.75% to 0.1% (an emergency 0.65 percentage point cut) and launched a GBP 200 billion QE
@@ -112,7 +113,8 @@ Money serves three functions: medium of exchange, store of value, unit of accoun
 
 :::info Board-Specific Note The exact definitions vary by board and country. CIE (9708) uses M0, M1,
 M2, M4. Edexcel emphasises M0 and M4. AQA focuses on broad vs narrow money. Always use the
-Definitions in your specification. :::
+Definitions in your specification.
+:::
 
 ### 2.2 Money Creation: The Money Multiplier
 
@@ -174,7 +176,8 @@ Model on most A Level specifications.
 Has recently moved towards acknowledging endogenous money but still primarily examines the
 Multiplier approach. OCR tends to focus on the practical implications (why QE did not cause
 Hyperinflation) rather than the theoretical debate. When answering, use the multiplier model but
-Acknowledge its limitations for evaluation marks. :::
+Acknowledge its limitations for evaluation marks.
+:::
 
 **Credit creation process (step-by-step balance sheets):**
 
@@ -248,7 +251,8 @@ Yield curve also inverted briefly in 2019, signalling expectations of BoE rate c
 As a predictor. Edexcel may link the yield curve to business investment decisions (firms use
 Long-term rates to evaluate projects). OCR emphasises the expectations theory and liquidity
 Preference theory of the term structure. CIE generally does not examine the yield curve in depth but
-May ask about the relationship between bond prices and interest rates. :::
+May ask about the relationship between bond prices and interest rates.
+:::
 
 ## 4. Monetary Policy
 
@@ -310,7 +314,8 @@ Diagrams. Edexcel requires a clear chain of reasoning from the interest rate cha
 Impact on AD, inflation, and employment. OCR is particularly interested in the _limitations_ of
 Monetary policy transmission — time lags, interest elasticity, and the liquidity trap. CIE expects a
 More formal diagrammatic analysis using the IS-LM framework (though not all centres teach IS-LM, so
-Check with your teacher). :::
+Check with your teacher).
+:::
 
 **Evaluation — how effective is monetary policy?**
 
@@ -390,7 +395,8 @@ Frequently includes questions on unconventional monetary policy. Key evaluation 
 Effective when banks are unwilling to lend (liquidity trap), the impact on the real economy is
 Uncertain and hard to measure, and the exit strategy (quantitative tightening) is politically and
 Economically risky. OCR may also ask about the interaction between QE and fiscal policy (monetary
-Financing). :::
+Financing).
+:::
 
 ## 5. Financial Markets
 
@@ -498,13 +504,15 @@ Large banks will always be rescued.
 :::tip Exam Technique When analysing monetary policy, always distinguish between the _transmission
 Mechanism_ (how the policy affects the economy) and the _effectiveness_ (how well it works in
 Practice). Consider time lags, the interest elasticity of investment, and the shape of the liquidity
-Preference curve. :::
+Preference curve.
+:::
 
 :::tip Exam Technique For evaluation questions ( worth 12-25 marks), structure your answer As: (1)
 identify the issue, (2) explain the mechanism with a diagram, (3) evaluate using **however/on the
 other hand/significantly** to introduce counterarguments, (4) conclude with a Justified judgement.
 Always consider short-run vs long-run effects and the context (e.g., the state Of the economy at the
-time). :::
+time).
+:::
 
 ## 7. Problem Set
 
@@ -1208,3 +1216,4 @@ largest component of household wealth.
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
 the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
 each approach.
+

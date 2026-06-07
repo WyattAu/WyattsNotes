@@ -27,7 +27,8 @@ slug: chemistry-acids-bases-electrochemistry
 - Base: electron pair donor
 
 :::info In the DSE syllabus, the Bronsted-Lowry definition is most commonly used. Always identify
-The proton donor and proton acceptor in acid-base reactions. :::
+The proton donor and proton acceptor in acid-base reactions.
+:::
 
 ### Conjugate Acid-Base Pairs
 
@@ -124,7 +125,8 @@ $$\mathrm{pH} = -\log_{10}(1.34 \times 10^{-3}) = 2.87$$
 
 :::tip Tip $[\mathrm{HA}]_{\mathrm{initial}} \approx [\mathrm{HA}]_{\mathrm{equilibrium}}$ only when
 the degree Of ionisation is small ( when $K_a \lt 10^{-4}$). This simplification is valid for most
-DSE-level problems. :::
+DSE-level problems.
+:::
 
 ### Worked Example: pH After Dilution
 
@@ -399,7 +401,8 @@ $2\mathrm{H}_2\mathrm{O} \to \mathrm{O}_2 + 4\mathrm{H}^+ + 4e^-$)
 Halides ($\mathrm{Cl}^-$$\mathrm{Br}^-$$\mathrm{I}^-$): The halogen is discharged
 
 :::warning Warning At the anode instead of $\mathrm{OH}^-$. In dilute chloride solutions,
-$\mathrm{OH}^-$ may be Preferentially discharged. :::
+$\mathrm{OH}^-$ may be Preferentially discharged.
+:::
 
 ### Worked Example 9
 
@@ -692,7 +695,8 @@ The pH changed from 5.04 to 4.98, a change of only 0.06. Without the buffer, add
 $0.01 \mathrm{ mol}$ of $\mathrm{HCl}$ to $1 \mathrm{ dm}^3$ of water would give pH = 2.
 
 :::info Info $\mathrm{pH} = \mathrm{p}K_a$. The effective buffering range is approximately
-$\mathrm{p}K_a \pm 1$. :::
+$\mathrm{p}K_a \pm 1$.
+:::
 
 ---
 
@@ -1189,3 +1193,4 @@ because the buffer system absorbs the added base. The buffer resists large pH ch
 4. Drawing structural formulae incorrectly — check the number of bonds each atom can form and the
    overall charge.
    > > > > > > > Stashed changes:docs/docs_dse/Chemistry/acids-bases-electrochemistry.md
+

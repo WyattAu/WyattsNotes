@@ -29,7 +29,8 @@ Want could be satisfied simultaneously and there would be no need to choose, all
 
 :::info Board-Specific Note All four boards (AQA, Edexcel, OCR, CIE) place the economic problem at
 The start of the syllabus. CIE (9708) Paper 1 frequently opens with MCQs testing precise definitions
-Of scarcity and opportunity cost. :::
+Of scarcity and opportunity cost.
+:::
 
 ### 1.2 Choice
 
@@ -50,7 +51,8 @@ Only the single best one that was rejected.
 
 :::warning Warning This is incorrect. It is the value of the _next-best_ alternative only. If you
 spend £10 on a book When your next-best option is a film ticket costing £10, the opportunity cost is
-the film ticket — Not the book, not the £10 itself, and not the film ticket _plus_ a coffee. :::
+the film ticket — Not the book, not the £10 itself, and not the film ticket _plus_ a coffee.
+:::
 
 <details>
 <summary>Example</summary>
@@ -119,7 +121,8 @@ Limited cognitive capacity and information.
 places particular Emphasis on _behavioural_ challenges to rationality — be prepared to discuss how
 bounded Rationality, heuristics, and framing effects undermine the assumption of rational utility
 Maximisation. CIE (9708) focuses more narrowly on the formal optimisation framework in Paper 2 essay
-Questions. :::
+Questions.
+:::
 
 ## 2. The Production Possibility Frontier
 
@@ -161,7 +164,8 @@ Rare but possible if there are economies of scale.
 :::info Info (concave) and to calculate opportunity cost from a numerical table or diagram. Edexcel
 (Theme 1) Often presents PPF data in table form and asks students to plot and interpret. CIE (9708)
 may ask For a formal derivation or for students to identify the shape from a production function.
-OCR tends To focus more on the _policy implications_ of PPF shifts. :::
+OCR tends To focus more on the _policy implications_ of PPF shifts.
+:::
 
 #### Evaluation of PPF Assumptions
 
@@ -340,7 +344,8 @@ The positive-normative distinction is fundamental because:
 
 :::tip Exam Technique When asked "Is this statement positive or normative?", look for value-laden
 Words: _should, ought, fair, unfair, too much, too little, best, worst_. These signal normative
-Statements. :::
+Statements.
+:::
 
 <details>
 <summary>Example: Classification</summary>
@@ -368,7 +373,8 @@ Therefore best understood as a continuum rather than a binary classification.
 :::info Board-Specific Note AQA (4.1.1.2) and Edexcel (Theme 1, 1.1.2) both explicitly test the
 Positive-normative distinction, with 2-4 mark MCQs or short-answer questions asking Students to
 classify statements. CIE (9708) may embed the distinction within longer essay questions. OCR often
-asks students to identify the positive and normative components within a single policy Argument. :::
+asks students to identify the positive and normative components within a single policy Argument.
+:::
 
 ## 4. Factors of Production
 
@@ -390,7 +396,8 @@ Rewards explicitly in the specification and frequently asks students to identify
 Being described in a given scenario. AQA (4.1.1.1) covers factors of production within the broader
 Topic of scarcity and choice. CIE (9708) expects students to distinguish between factor rewards and
 Understand the concept of factor mobility. OCR (H460) may ask students to explain how changes in the
-Quantity or quality of a factor of production affect the PPF. :::
+Quantity or quality of a factor of production affect the PPF.
+:::
 
 ## 5. Specialisation and Division of Labour
 
@@ -444,7 +451,8 @@ education systems, social safety nets).
 Division of labour, with AQA placing more emphasis on the link to international trade and Edexcel
 Focusing on the efficiency gains within firms. CIE (9708) Paper 2 may ask students to evaluate the
 Effects of specialisation on an economy. OCR (H460) often links specialisation to broader questions
-About globalisation and its discontents. :::
+About globalisation and its discontents.
+:::
 
 ## 6. Critical Evaluation
 
@@ -465,7 +473,8 @@ About globalisation and its discontents. :::
 :::info Board-Specific Note CIE (9708) often asks students to apply the PPF to real economies —
 E.g., "Using a PPF diagram, explain how a country might reallocate resources from consumer goods to
 Capital goods and evaluate the consequences." Focus on the trade-off between current consumption and
-Future growth. :::
+Future growth.
+:::
 
 #### Additional Evaluation Points
 
@@ -992,3 +1001,4 @@ consumer goods at any given level of capital goods production.
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
 the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
 each approach.
+

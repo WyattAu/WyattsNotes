@@ -139,7 +139,8 @@ Displacement $d$ depends on the thickness $t$ of the slab:
 $$d = t \cdot \sin\theta_1 \left(1 - \frac◆LB◆\cos\theta_1◆RB◆◆LB◆\sqrt{n^2 - \sin^2\theta_1}◆RB◆\right)$$
 
 :::info Board Coverage AQA Paper 2 (required practical on refraction) | Edexcel CP2 | OCR (A) Paper
-2 (core practical) | CIE P2 :::
+2 (core practical) | CIE P2
+:::
 
 ## 3. Total Internal Reflection
 
@@ -169,7 +170,8 @@ Entirely reflected. If $n_1 < n_2$Then $\frac{n_1}{n_2} < 1$ and
 $\sin\theta_2 < \sin\theta_1 \leq 1$ for all $\theta_1$So refraction always occurs.
 
 :::warning Warning Medium. Light going from air into glass can never undergo TIR, no matter how
-large the angle of Incidence. :::
+large the angle of Incidence.
+:::
 
 <details>
 <summary>Example: Critical Angle of Glass</summary>
@@ -258,7 +260,8 @@ Two main effects degrade the signal in optical fibres:
   multimode fibres).
 
 :::tip Tip Higher bandwidth, no electromagnetic interference, lighter weight, no electrical sparking
-risk, Lower signal loss over long distances. :::
+risk, Lower signal loss over long distances.
+:::
 
 ### Types of Optical Fibre
 
@@ -561,7 +564,8 @@ worked solution.
 and TIR with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 :::danger Danger
 
@@ -609,3 +613,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

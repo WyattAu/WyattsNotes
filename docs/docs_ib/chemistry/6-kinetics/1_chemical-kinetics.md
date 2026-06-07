@@ -1101,3 +1101,4 @@ $$k_{320} = 3.494 \times 2.0 \times 10^{-3} = 6.99 \times 10^{-3}\mathrm{ s}^{-1
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

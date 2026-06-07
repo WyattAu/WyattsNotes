@@ -284,7 +284,8 @@ $$
 
 :::info The addition rule generalises . For any number of events, the key insight is: add All
 individual probabilities, subtract all pairwise intersections, add back all triple Intersections,
-and so on, alternating signs. :::
+and so on, alternating signs.
+:::
 
 ## Conditional Probability
 
@@ -498,7 +499,8 @@ Independent.
 
 :::info When testing independence, always compute both $P(A \cap B)$ and $P(A) \cdot P(B)$
 Separately and compare. Do not assume independence from the problem description -- it must be
-Verified or explicitly stated. :::
+Verified or explicitly stated.
+:::
 
 ## Bayes' Theorem
 
@@ -968,7 +970,8 @@ within the DSE specification for this topic, each with a full worked solution.
 with other DSE mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/maths/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -1033,3 +1036,4 @@ denominator cannot be zero).
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
 the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
 each approach.
+

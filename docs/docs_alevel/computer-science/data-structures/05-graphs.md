@@ -106,7 +106,8 @@ class Graph:
 - **CIE (9618)** requires graph representations and traversal; may include minimum spanning tree
   algorithms (Kruskal's, Prim's)
 - **OCR (A)** requires adjacency matrix/list; Dijkstra's, Kruskal's, and Prim's algorithms
-- **Edexcel** covers basic graph representations and traversals :::
+- **Edexcel** covers basic graph representations and traversals
+:::
 
 <hr />
 
@@ -676,3 +677,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

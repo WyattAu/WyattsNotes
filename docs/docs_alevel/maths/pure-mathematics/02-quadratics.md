@@ -129,10 +129,12 @@ Form. Every step is reversible, so the formula is necessary and sufficient: it g
 And no extraneous ones.
 
 :::info Edexcel provides the quadratic formula in the formula booklet. AQA and OCR (A) do not — you
-Must memorise it. :::
+Must memorise it.
+:::
 
 :::tip Before applying the formula, check whether the equation can be solved more by Factorisation.
-Always check the discriminant first. :::
+Always check the discriminant first.
+:::
 
 <hr />
 
@@ -283,7 +285,8 @@ Quadratic across the real line.
 
 :::warning A critical error in inequalities: when multiplying or dividing both sides by a negative
 Number, you must **reverse** the inequality sign. This is because multiplication by $-1$ is
-Order-reversing: if $a < b$Then $-a > -b$. :::
+Order-reversing: if $a < b$Then $-a > -b$.
+:::
 
 **Theorem.** If $m < 0$ and $a < b$Then $ma > mb$.
 
@@ -418,7 +421,8 @@ To the line cutting the parabola twice.
 
 :::tip The discriminant of the resulting quadratic tells you the number of intersection points
 Between a line and a parabola: $\Delta > 0$ means 2 intersections, $\Delta = 0$ means tangent,
-$\Delta < 0$ means no intersection. :::
+$\Delta < 0$ means no intersection.
+:::
 
 <hr />
 
@@ -444,7 +448,8 @@ to the quadratic $az^2 + bz + c = 0$.
 
 :::warning After solving the reduced quadratic for $z$You must substitute back to find $x$. Discard
 any values of $z$ that are incompatible with the substitution (e.g., $z = x^2$ requires $z \geq 0$,
-$z = p^x$ requires $z > 0$). Always verify solutions in the original equation. :::
+$z = p^x$ requires $z > 0$). Always verify solutions in the original equation.
+:::
 
 <details>
 <summary>Example</summary>
@@ -668,7 +673,8 @@ And squaring both sides.
 
 :::warning Squaring both sides of an equation is **not reversible** — it can introduce extraneous
 Solutions. You must always substitute every candidate solution back into the **original** equation
-To verify it. :::
+To verify it.
+:::
 
 <details>
 <summary>Example</summary>
@@ -1067,7 +1073,8 @@ within the A-Level specification for this topic, each with a full worked solutio
 with other pure mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -1093,3 +1100,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

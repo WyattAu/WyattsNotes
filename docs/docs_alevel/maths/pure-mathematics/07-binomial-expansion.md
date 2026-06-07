@@ -22,7 +22,8 @@ slug: binomial-expansion
 | CIE (9709) | P1, P3     | P1: positive integer; P3: general                                |
 
 :::info AQA provides the binomial expansion formula in the formula booklet. Edexcel does not —
-Memorise it. :::
+Memorise it.
+:::
 
 <hr />
 
@@ -411,7 +412,8 @@ The expansion is valid when:
 $$\left|\frac{bx}{a}\right| \lt 1 \quad \mathrm{i.e.,} \quad |x| \lt \left|\frac{a}{b}\right|$$
 
 :::warning Always state the range of validity when working with non-integer powers. Marks are
-Routinely deducted for omitting this. :::
+Routinely deducted for omitting this.
+:::
 
 ### 8.2 Product of Two Expansions
 
@@ -895,7 +897,8 @@ questions within the A-Level specification for this topic, each with a full work
 Expansion with other pure mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -921,3 +924,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

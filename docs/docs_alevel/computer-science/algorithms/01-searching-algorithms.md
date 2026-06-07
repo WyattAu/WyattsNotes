@@ -138,7 +138,8 @@ $\square$
 
 :::warning Pitfall Binary search **only works on sorted arrays**. Applying it to an unsorted array
 Gives incorrect results. Also, beware of integer overflow when computing `mid = (low + high) // 2` —
-Use `mid = low + (high - low) // 2` for safety. :::
+Use `mid = low + (high - low) // 2` for safety.
+:::
 
 <details>
 <summary>Example: Trace binary search for x = 7 in [1, 3, 5, 7, 9, 11, 13]</summary>
@@ -183,7 +184,8 @@ def binary_search_recursive(A, x, low, high):
 :::info Board-specific **AQA** requires linear search and binary search; binary search must be on
 Sorted data and may require trace tables. **CIE (9618)** requires linear search and binary search
 With pseudocode. **OCR (A)** requires linear and binary search; may also cover hash-based searching.
-**Edexcel** covers linear and binary search algorithms. :::
+**Edexcel** covers linear and binary search algorithms.
+:::
 
 <hr />
 
@@ -224,7 +226,8 @@ Binary search can be used to find a threshold in a continuous or discrete answer
 "minimum maximum", "maximum minimum" problems).
 
 :::tip Exam tip For exam questions, always state the precondition (sorted array) for binary search
-And trace through the algorithm step by step. Show the low, high, mid values at each iteration. :::
+And trace through the algorithm step by step. Show the low, high, mid values at each iteration.
+:::
 
 <hr />
 
@@ -734,3 +737,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

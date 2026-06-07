@@ -721,7 +721,8 @@ Is conserved, and since the wave is moving more slowly, the energy is concentrat
 Wavelength.
 
 :::info This is analogous to light bending towards the normal when entering a denser medium. The
-Decrease in wave speed causes the wavelength to decrease while the frequency remains constant. :::
+Decrease in wave speed causes the wavelength to decrease while the frequency remains constant.
+:::
 
 ### Example 27: Electromagnetic Spectrum Calculations
 
@@ -895,3 +896,4 @@ This is close to the accepted value of approximately $343 \mathrm{ m/s$ at $20^\
 This topic covers the key concepts of Waves for GCSE Physics. Focus on understanding the fundamental
 principles, practising with exam-style questions, and applying your knowledge to unfamiliar
 contexts.
+

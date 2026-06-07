@@ -650,7 +650,8 @@ $$P_C = 0 \mathrm{ W$$ (pure capacitor dissipates no power)
 
 :::info Only resistors dissipate power in AC circuits. Inductors and capacitors store and release
 Energy each cycle but have zero average power dissipation. The power factor $\cos\phi$ accounts for
-This: a purely resistive load has $\cos\phi = 1$While purely reactive loads have $\cos\phi = 0$. :::
+This: a purely resistive load has $\cos\phi = 1$While purely reactive loads have $\cos\phi = 0$.
+:::
 
 ### Example 22: Measuring Unknown Resistance with a Wheatstone Bridge
 
@@ -720,7 +721,8 @@ This is approximately $3\tau$ ($3 \times 4.7 = 14.1 \mathrm{ s$).
 - After $1\tau$: charged to $63.2\%$ of final value
 - After $2\tau$: charged to $86.5\%$
 - After $3\tau$: charged to $95.0\%$
-- After $5\tau$: charged to $99.3\%$ (effectively fully charged) :::
+- After $5\tau$: charged to $99.3\%$ (effectively fully charged)
+:::
 
 ## Common Pitfalls Extended
 
@@ -769,3 +771,4 @@ Block DC while passing AC signals.
 25. Describe an experiment to determine the relationship between the current through a filament lamp
     and the potential difference across it. Include a circuit diagram description and explain how
     you would use the results to show that the lamp is a non-ohmic conductor.
+

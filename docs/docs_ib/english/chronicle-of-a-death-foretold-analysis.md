@@ -837,7 +837,8 @@ Single, objective truth.
 ## Exam Preparation: Key Quotations and Discussion Points
 
 :::info The following passages are recommended for close study. In the IB English examination, the
-Ability to analyse specific textual detail is essential. :::
+Ability to analyse specific textual detail is essential.
+:::
 
 **Opening sentence:** "On the day they were going to kill him, Santiago Nasar got up at five-thirty
 In the morning to wait for the boat the bishop was coming on."
@@ -885,7 +886,8 @@ Information.
 :::tip When writing an IB essay on this novel, consider structuring your argument around a specific
 Literary feature (narrative structure, imagery, irony) and tracing its operation across multiple
 Passages. Avoid plot summary; instead, analyse specific textual details and explain how they
-Contribute to the novel's overall meaning. :::
+Contribute to the novel's overall meaning.
+:::
 
 :::danger Common Pitfalls
 
@@ -1003,3 +1005,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

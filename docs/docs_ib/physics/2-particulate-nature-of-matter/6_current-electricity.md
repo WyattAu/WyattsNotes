@@ -157,7 +157,8 @@ Where $L$ is the length of the plates.
 
 :::tip[Electron vs Proton Deflection] For the same field and entry speed, a proton is deflected
 $m_p/m_e \approx 1836$ times less than an electron. The direction of deflection is opposite for
-Opposite charges. :::
+Opposite charges.
+:::
 
 <details>
 <summary>Worked Example: Electron Deflection Between Parallel Plates</summary>
@@ -255,7 +256,8 @@ V_d = \frac{I}`\{nAe}` = \frac{1.0}{(8.5 \times 10^{28})(10^{-6})(1.6 \times 10^
 $$
 
 This is extraordinarily slow. The signal (the electric field) propagates at a significant fraction
-Of $c$But the electrons themselves crawl. :::
+Of $c$But the electrons themselves crawl.
+:::
 
 <details>
 <summary>Worked Example: Drift Velocity in Aluminium</summary>
@@ -354,7 +356,8 @@ metre).
 :::info[Data Booklet Resistivity Values] Copper:
 $\rho \approx 1.7 \times 10^{-8}\,\Omega\,\mathrm{m}$. Nichrome (alloy):
 $\rho \approx 1.1 \times 10^{-6}\,\Omega\,\mathrm{m}$. Semiconductors: $\rho$ spans many orders of
-Magnitude. :::
+Magnitude.
+:::
 
 ### 3.3 Factors Affecting Resistance
 
@@ -781,7 +784,8 @@ $$
 
 :::warning[Efficiency at Maximum Power] At $R_L = r$The efficiency is only 50% (half the power is
 Dissipated in the internal resistance). In power distribution systems, $R_L \gt r$ is preferred for
-Higher efficiency, even though less total power is delivered. :::
+Higher efficiency, even though less total power is delivered.
+:::
 
 ### 5.4 Battery Configurations
 
@@ -982,7 +986,8 @@ Which is always less than $R$. The measured p.d. Is lower than the true p.d.
 :::tip[Minimising Measurement Error] For ammeters: use instruments with the smallest possible
 Internal resistance. For voltmeters: use instruments with the largest possible internal resistance.
 A voltmeter is considered sufficiently ideal if $R_V \gt 100R$Where $R$ is the resistance across
-Which it is connected. :::
+Which it is connected.
+:::
 
 ### 7.3 Galvanometer as Ammeter and Voltmeter
 
@@ -1541,7 +1546,8 @@ questions within the IB specification for this topic, each with a full worked so
 Electricity with other physics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ## Worked Examples
 
@@ -1570,3 +1576,4 @@ $$a = \frac{F_{\text{net}}}{m} = \frac{10}{2.0} = 5.0\,\text{m\,s}^{-2}$$
 | [Electricity] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/physics/electricity/01-current-and-resistance) |
 | [Electricity] | IB      | [View](https://ib.wyattau.com/docs/ib/physics/2-particulate-nature-of-matter/6_current-electricity)        |
 | [Electricity] | DSE     | [View](https://dse.wyattau.com/docs/dse/physics/3-electricity-and-magnetism/1_electrical-circuits)         |
+

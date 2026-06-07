@@ -47,7 +47,8 @@ Matured.
 :::info For Paper 3 essays, the ideological dimension should not be treated as the sole cause of the
 Cold War. Instead, it functioned as a lens through which both sides interpreted each other's
 Actions, often amplifying mistrust and escalating tensions beyond what objective strategic interests
-Alone would have produced. :::
+Alone would have produced.
+:::
 
 The ideological clash manifested in diametrically opposed visions of the post-war international
 Order. The United States favoured an open, multilateral economic system based on free trade and
@@ -140,7 +141,8 @@ Kennan argued that Soviet behaviour was driven by a combination of Marxist-Lenin
 Traditional Russian insecurity, and that the Soviet threat could be managed through "firm and
 Vigilant containment of Russian expansive tendencies." Kennan later argued that he had advocated
 Primarily for political and economic containment, not the militarised version that American policy
-Ultimately adopted. :::
+Ultimately adopted.
+:::
 
 ### 1.4 The Marshall Plan (1947)
 
@@ -1059,7 +1061,8 @@ Are shaped by the political and intellectual contexts in which they are produced
 :::note When evaluating historiography in essays, avoid the trap of listing the three schools One
 after another. Instead, integrate historiographical analysis into your argument, using it to Support
 or challenge specific points. The best essays will demonstrate that you understand not only What
-each school argues but why it argues it -- and what evidence supports or undermines its claims. :::
+each school argues but why it argues it -- and what evidence supports or undermines its claims.
+:::
 
 :::danger Common Pitfalls
 
@@ -1131,3 +1134,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

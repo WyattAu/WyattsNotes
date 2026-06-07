@@ -64,7 +64,8 @@ Rather than a collection of elements. Josh Bloch, the original framework designe
 `Map` was excluded from the `Collection` hierarchy because the two abstractions are fundamentally
 Different: collections are groups of elements, while maps are groups of key-value pairs. Forcing
 `Map` into the `Collection` hierarchy would have required either contrived semantics or a separate
-Parallel hierarchy for map entries. :::
+Parallel hierarchy for map entries.
+:::
 
 ## The Iterable Interface
 
@@ -260,7 +261,8 @@ Even those with frequent insertions. The O(n) cost of shifting elements in `Arra
 The fact that `System.arraycopy()` is a native, highly optimized operation that moves memory in
 Bulk. Furthermore, each `LinkedList` node requires an extra object allocation (16+ bytes of overhead
 For the object header, plus three reference fields), so a `LinkedList` with N elements uses
-Significantly more memory than an `ArrayList` with the same elements. :::
+Significantly more memory than an `ArrayList` with the same elements.
+:::
 
 `ArrayList` also implements the `RandomAccess` marker interface, which signals that it supports fast
 Random access. Generic algorithms in `Collections` check for this interface to choose between
@@ -390,7 +392,8 @@ EnumSet<Day> all = EnumSet.allOf(Day.class);
 :::info For enums with 64 or fewer constants, `EnumSet` uses a single `long` as its backing
 Representation, making the entire set occupy just 16 bytes (object header + long field). For enums
 With more than 64 constants, it uses a `long[]`. All bulk operations (`containsAll``retainAll` Etc.)
-are implemented as bitwise AND, OR, and NOT operations on the bit vectors. :::
+are implemented as bitwise AND, OR, and NOT operations on the bit vectors.
+:::
 
 ### Set Implementation Comparison
 
@@ -521,7 +524,8 @@ final V putVal(int hash, K key, V value, boolean onlyIfAbsent, boolean evict) {
 Has fewer than `MIN_TREEIFY_CAPACITY` (64) entries. If so, it prefers to resize the table instead,
 Because a larger table distributes keys across more buckets and may resolve the collision without
 The overhead of tree nodes. Only when the table already has at least 64 entries does it actually
-Convert the linked list to a red-black tree. :::
+Convert the linked list to a red-black tree.
+:::
 
 #### Load Factor and Capacity
 
@@ -614,7 +618,8 @@ private void fixAfterInsertion(Entry<K,V> x) {
 :::info The rotation operation is the fundamental tree restructuring primitive. A left rotation at
 Node X makes X's right child Y the new root of the subtree, with X becoming Y's left child and Y's
 Former left child becoming X's right child. Rotations preserve the binary search tree property
-(in-order traversal yields sorted order) while changing the tree's shape to reduce height. :::
+(in-order traversal yields sorted order) while changing the tree's shape to reduce height.
+:::
 
 ```java
 // Range operations are efficient in TreeMap because they leverage the sorted structure
@@ -680,7 +685,8 @@ public class LRUCache<K, V> extends LinkedHashMap<K, V> {
 :::warning `LinkedHashMap` with `accessOrder = true` is **not thread-safe**. Using it as an LRU
 Cache in a concurrent environment requires external synchronization or a wrapper like
 `Collections.synchronizedMap()`. For high-concurrency LRU caches, consider `Caffeine` or
-`Guava Cache` instead. :::
+`Guava Cache` instead.
+:::
 
 ### ConcurrentHashMap
 
@@ -718,7 +724,8 @@ Concurrent setting. If null values were allowed, `get(key)` returning `null` cou
 Key is absent" or "the key maps to null." In a single-threaded map, you can disambiguate with
 `containsKey()`But in a concurrent map, the state could change between `get()` and `containsKey()`.
 By prohibiting null values, `ConcurrentHashMap` ensures that `get()` returning `null` unambiguously
-means "the key is absent." :::
+means "the key is absent."
+:::
 
 ### Map Implementation Comparison
 
@@ -769,7 +776,8 @@ while (it.hasNext()) {
 :::danger Never call `Collection.remove()` during iteration. This modifies the collection's
 Structure while the iterator is active and will throw `ConcurrentModificationException`. Always use
 `Iterator.remove()` instead, which updates the iterator's internal state and the expected
-Modification count atomically. :::
+Modification count atomically.
+:::
 
 ### ListIterator
 
@@ -826,7 +834,8 @@ private class Itr implements Iterator<E> {
 :::warning Fail-fast behavior is on a best-effort basis. It cannot be guaranteed because the check
 Happens in the iterator, not via synchronization. The exception is thrown when the inconsistency is
 Detected, not when it occurs. In a concurrent setting without external synchronization, a fail-fast
-Exception should be used to **detect bugs**, not as a correctness mechanism. :::
+Exception should be used to **detect bugs**, not as a correctness mechanism.
+:::
 
 ### Fail-Safe Iterators
 
@@ -936,7 +945,8 @@ mixed.stream().sorted(nullSafe).forEach(System.out::println);
 By the class being compared (one fixed natural ordering). `Comparator` is a separate object that
 Defines a comparison strategy (many orderings for the same type). Use `Comparable` for the most
 Natural, obvious ordering. Use `Comparator` when you need alternative orderings or when you cannot
-Modify the class to implement `Comparable`. :::
+Modify the class to implement `Comparable`.
+:::
 
 Both `compareTo()` and `compare()` must satisfy the same contract as `equals()`:
 
@@ -950,7 +960,8 @@ Both `compareTo()` and `compare()` must satisfy the same contract as `equals()`:
 Sorted collections. `TreeSet` and `TreeMap` use the comparator (or `compareTo`) to determine
 Equality, not `equals()`. If the comparator is inconsistent with `equals()`The set will violate The
 `Set` contract (it may contain elements that are equal according to `equals()` but have Different
-comparison results). :::
+comparison results).
+:::
 
 ## Collections Utility Class
 
@@ -977,7 +988,8 @@ Collections.binarySearch(numbers, 3, Comparator.naturalOrder());
 
 :::danger `Collections.binarySearch()` returns undefined results if the list is not sorted according
 To the same ordering used for the search. Passing a list sorted by natural ordering but searching
-With a custom `Comparator` will produce incorrect results without any exception. :::
+With a custom `Comparator` will produce incorrect results without any exception.
+:::
 
 ### Unmodifiable Wrappers
 
@@ -1012,7 +1024,8 @@ synchronized (syncList) {
 :::warning Synchronized wrappers are **not** a substitute for `ConcurrentHashMap` in
 High-concurrency scenarios. Every method call acquires the monitor lock on the wrapper object, so
 Even reads block each other. For read-heavy workloads, `ConcurrentHashMap` with its lock-free reads
-And fine-grained write locking provides far better throughput. :::
+And fine-grained write locking provides far better throughput.
+:::
 
 ### Other Utility Methods
 
@@ -1106,7 +1119,8 @@ Map<String, Integer> fromEntries = Map.ofEntries(
 :::danger `List.of()``Set.of()`And `Map.of()` do **not** allow null elements or null Keys/values.
 Passing null throws `NullPointerException`. This is a deliberate design choice: nulls Are a common
 source of bugs, and immutable collections that cannot contain nulls are easier to Reason about. Use
-`Collections.singletonList(null)` or a mutable collection if nulls are required. :::
+`Collections.singletonList(null)` or a mutable collection if nulls are required.
+:::
 
 The internal implementation uses compact field-based storage for small sizes. For example,
 `List.of("A", "B")` creates an instance of `ListN` (or for very small lists, `List12``ListN1` Etc.)
@@ -1206,3 +1220,4 @@ System.out.println(nullSafeTree);  // [null, Alice]
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

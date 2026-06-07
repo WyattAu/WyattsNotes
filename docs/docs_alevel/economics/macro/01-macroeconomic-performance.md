@@ -53,7 +53,8 @@ Adjust market prices to factor costs. $\blacksquare$
 
 :::warning Warning Work) is excluded. Illegal activities are also excluded (though some countries
 now include estimates Of the shadow economy). This means GDP underestimates total economic activity,
-particularly in Countries with large informal sectors. :::
+particularly in Countries with large informal sectors.
+:::
 
 ### 1.3 Real vs Nominal GDP
 
@@ -193,7 +194,8 @@ Loop.
 :::info Info Questions. AQA may ask for an evaluation of which measure is more accurate. CIE tends
 to focus on CPI alone but may ask about measurement issues more broadly. OCR may ask about the
 implications of Using RPI for index-linked bonds — since RPI overstates inflation, bondholders
-receive higher Payments, increasing government debt costs. :::
+receive higher Payments, increasing government debt costs.
+:::
 
 ### 2.3 Causes of Inflation
 
@@ -258,7 +260,8 @@ Remained sticky due to persistent wage growth.
 :::info Info And cost-push causes of inflation using real-world data. CIE (9708) may present
 students with a Data-response question featuring inflation statistics from a specific country. OCR
 has previously Examined the role of supply-side shocks in causing stagflation (rising inflation with
-falling Output). :::
+falling Output).
+:::
 
 ### 2.6 Evaluation: The Costs of Inflation
 
@@ -346,7 +349,8 @@ Causes include:
 :::info Info And frequently tests causes and remedies. Edexcel emphasises the role of the NMW in
 causing Real-wage unemployment. CIE (9708) uses the term "demand-deficient" rather than "cyclical"
 and may Ask about hysteresis. OCR has examined the relationship between structural unemployment and
-regional Policy in the UK. :::
+regional Policy in the UK.
+:::
 
 ### 3.3 Costs of Unemployment
 
@@ -389,7 +393,8 @@ Policy response:
 Data-response questions. CIE (9708) may ask students to evaluate the effectiveness of government
 Intervention in the labour market. OCR has examined the distinction between unemployment and
 Economic inactivity, which is highly relevant to the COVID case (furloughed workers were technically
-Employed, not unemployed or inactive). :::
+Employed, not unemployed or inactive).
+:::
 
 ### 3.5 Evaluation: Unemployment Statistics
 
@@ -455,7 +460,8 @@ Financial accounts (borrowing from abroad or selling assets).
 
 :::info Info Balance from data and evaluate whether a deficit is a problem. CIE (9708) may ask about
 the Relationship between the current account and the exchange rate. OCR has examined the
-Marshall-Lerner Condition and the J-curve effect in the context of current account adjustment. :::
+Marshall-Lerner Condition and the J-curve effect in the context of current account adjustment.
+:::
 
 ### 4.3 Real-World Application: The UK's Persistent Current Account Deficit
 
@@ -558,7 +564,8 @@ concept of Hysteresis and how it relates to the Phillips curve (if unemployment 
 itself May rise, shifting the LRPC right). CIE (9708) may present a data-response question showing
 Inflation and unemployment data and ask students to interpret it using Phillips curve theory. OCR
 Has examined the role of supply shocks in causing stagflation and the breakdown of the simple
-Phillips curve relationship. :::
+Phillips curve relationship.
+:::
 
 ### 5.5 Evaluation: The Phillips Curve Trade-Off
 
@@ -601,7 +608,8 @@ These objectives often conflict:
 - **All objectives vs each other**: policy must balance competing priorities
 
 :::tip Tip Most recent ONS figures for UK GDP growth, inflation rate, unemployment rate, and current
-account Balance. Examiners reward application of theory to real data. :::
+account Balance. Examiners reward application of theory to real data.
+:::
 
 ### 6.1 Evaluation: Conflicts Between Macroeconomic Objectives
 
@@ -631,7 +639,8 @@ the other hand... However... Therefore"** structure. Here is a worked example:
 :::info Info Evaluation throughout. Edexcel's Paper 3 requires evaluation of policy effectiveness.
 CIE (9708) Data-response questions (Part b, 8 marks; Part c, 12 marks) require analysis and
 evaluation of Extract data. OCR's Component 3 requires a 20-mark essay with a clear conclusion. All
-boards reward The use of real-world data and counterarguments. :::
+boards reward The use of real-world data and counterarguments.
+:::
 
 ## 7. Problem Set
 
@@ -1381,3 +1390,4 @@ better on liveability indicators.
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
 the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
 each approach.
+

@@ -85,7 +85,8 @@ Policy controls execution:
 :::warning With the default launch policy, the implementation is free to choose `deferred`
 Execution. This means the task might run synchronously on the calling thread when `get()` is called,
 Defeating the purpose of asynchronous execution. Always use `std::launch::async` explicitly if you
-Need guaranteed asynchronous execution. :::
+Need guaranteed asynchronous execution.
+:::
 
 ## Future/Promise Pair as the Basic Async Primitive
 
@@ -244,7 +245,8 @@ int main() {
 :::tip When using `std::async` with `std::launch::async`Be aware that the C++ standard does **not**
 require implementations to use a thread pool. Some implementations (notably GCC's libstdc++) Spawn a
 new thread for each `std::async` call, which can be expensive. For high-throughput Scenarios, use a
-dedicated thread pool or a coroutine-based executor. :::
+dedicated thread pool or a coroutine-based executor.
+:::
 
 ## Cancellation via `std::stop_token` Integration
 
@@ -366,7 +368,8 @@ Depends on context [N4950 §8.5.3]:
 
 :::warning Always store exceptions in `unhandled_exception()` and rethrow them at an appropriate
 `await_resume()` point. Letting exceptions escape `resume()` makes the coroutine interface fragile
-And can lead to `std::terminate()` in detached scenarios. :::
+And can lead to `std::terminate()` in detached scenarios.
+:::
 
 ## Cleanup on Cancellation
 
@@ -542,7 +545,8 @@ int main() {
 :::info The P2300 `std::execution` proposal (targeting a future C++ standard) integrates
 `std::stop_token` directly into the sender/receiver model, providing a unified cancellation
 Mechanism that propagates through entire async computation graphs. Until P2300 is standardized,
-Manual `stop_token` integration as shown above is the recommended approach. :::
+Manual `stop_token` integration as shown above is the recommended approach.
+:::
 
 ## Summary
 
@@ -590,3 +594,4 @@ Manual `stop_token` integration as shown above is the recommended approach. :::
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

@@ -565,7 +565,8 @@ $$\eta = \frac{P_R}{P_{\mathrm{total}} = \frac{IR}{\mathcal{E}} = \frac{3 \times
 :::info The maximum power transfer theorem states that maximum power is delivered to the load when
 The load resistance equals the internal resistance ($R = r$). However, the efficiency is only 50%.
 In power distribution, we want high efficiency, so $R \gg r$. In audio systems, we want maximum
-Power transfer, so impedance matching is used. :::
+Power transfer, so impedance matching is used.
+:::
 
 ### Example 22: RC Circuit with AC Supply
 
@@ -769,7 +770,8 @@ Both methods give the same result.
 :::info When analysing diode circuits, always subtract the forward voltage drop from the supply
 Voltage before applying Ohm's law to the series resistor. Silicon diodes drop approximately
 $0.7 \mathrm{ V$ and LED forward voltages depend on colour ($1.8\mathrm{--2.2 \mathrm{ V$ for red,
-$2.8\mathrm{--3.3 \mathrm{ V$ for blue). :::
+$2.8\mathrm{--3.3 \mathrm{ V$ for blue).
+:::
 
 ## Board-Specific Content: SQA Advanced Higher
 
@@ -814,3 +816,4 @@ The speed of light.
 
 30. Explain the difference between EMF and potential difference. Why can a voltmeter give a reading
     less than the EMF when connected across a battery supplying current to a circuit?
+

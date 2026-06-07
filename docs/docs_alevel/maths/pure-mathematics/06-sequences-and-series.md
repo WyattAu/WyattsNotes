@@ -170,7 +170,8 @@ If $r = 1$: $S_n = na \to \pm\infty$ (unless $a = 0$).
 If $r = -1$: $S_n = a - a + a - a + \cdots$Which oscillates and does not converge. $\blacksquare$
 
 :::warning The condition $|r| < 1$ is essential. A common mistake is to apply the sum-to-infinity
-Formula when $|r| \geq 1$Which gives nonsense. :::
+Formula when $|r| \geq 1$Which gives nonsense.
+:::
 
 <details>
 <summary>Example</summary>
@@ -831,7 +832,8 @@ questions within the A-Level specification for this topic, each with a full work
 and Series with other pure mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/alevel/maths/diagnostic-guide) for instructions on self-marking and
-building a personal test matrix. :::
+building a personal test matrix.
+:::
 
 ## Common Pitfalls
 
@@ -856,3 +858,4 @@ each approach.
 
 Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
 linked above.
+

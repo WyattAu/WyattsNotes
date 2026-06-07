@@ -523,7 +523,8 @@ $$\Delta v_{\mathrm{total} = 2690 + 1401 = 4091 \mathrm{ m/s \approx 4.1 \mathrm
 
 :::info Hohmann transfers are the most fuel-efficient two-impulse transfer between coplanar circular
 Orbits. In practice, mission designers often use three-impulse bi-elliptic transfers when the ratio
-$r_2/r_1$ is very large (greater than about 11.94). :::
+$r_2/r_1$ is very large (greater than about 11.94).
+:::
 
 ### Example 22: Stellar Parallax and Distance
 
@@ -552,7 +553,8 @@ $$d = 12.99 \times 3.086 \times 10^{16} = 4.01 \times 10^{17} \mathrm{ m$$
 
 :::warning The Gaia space telescope can measure parallaxes down to about $10 \mathrm{ \mu\mathrm{as$
 (microarcseconds), corresponding to distances of about $100 \mathrm{ kpc$. Ground-based observations
-Are limited to parallaxes above about $0.01 \mathrm{ arcseconds$. :::
+Are limited to parallaxes above about $0.01 \mathrm{ arcseconds$.
+:::
 
 ### Example 23: Gravitational Potential Energy in Orbit Changes
 
@@ -577,7 +579,8 @@ $\Delta E = 9.4 \times 10^8 \mathrm{ J$.
 
 :::info Counter-, when a satellite fires its engines forward to speed up, it moves to a Higher orbit
 where it actually travels _slower_. The kinetic energy decreases, but the gravitational Potential
-energy increases by more than the kinetic energy decreases. :::
+energy increases by more than the kinetic energy decreases.
+:::
 
 ## Common Pitfalls Extended
 
@@ -680,7 +683,8 @@ $$d = 63.1 \times 3.26 = 205.7 \mathrm{ ly$$
 :::info The apparent magnitude scale is logarithmic and inverted: a difference of 5 magnitudes
 Corresponds to a brightness ratio of exactly 100. Each magnitude step represents a factor of
 $100^{1/5} \approx 2.512$ in brightness. A magnitude 1 star is $2.512^5 = 100$ times brighter than a
-Magnitude 6 star. :::
+Magnitude 6 star.
+:::
 
 ### Example 28: Gravitational Field Strength Inside a Planet
 
@@ -746,3 +750,4 @@ The potential difference: $\Delta V = (-5.97 + 6.25) \times 10^7 = 2.8 \times 10
 
 30. Calculate the gravitational potential energy of a $100 \mathrm{ kg$ satellite in a circular
     orbit at an altitude of $500 \mathrm{ km$. What is its total energy (kinetic + potential)?
+

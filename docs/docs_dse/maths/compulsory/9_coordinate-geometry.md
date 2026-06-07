@@ -675,7 +675,8 @@ questions within the DSE specification for this topic, each with a full worked s
 Geometry with other DSE mathematics topics to test synthesis under exam conditions.
 
 See [Diagnostic Guide](/docs/dse/maths/diagnostics/diagnostic-guide) for instructions on
-self-marking and building a personal test matrix. :::
+self-marking and building a personal test matrix.
+:::
 
 ---
 
@@ -995,3 +996,4 @@ $\blacksquare$
   [View](https://alevel-maths-physics.wyattau.com/docs/alevel/maths/pure-mathematics/04-coordinates-and-geometry)
   | | [Coordinate Geometry] | DSE |
   [View](https://dse.wyattau.com/docs/dse/maths/compulsory/9_coordinate-geometry) |
+
