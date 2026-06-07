@@ -1,5 +1,6 @@
 ---
 title: Problem Set
+slug: complex-analysis-problem-set
 tags:
   - Mathematics
   - University

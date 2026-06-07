@@ -1,5 +1,6 @@
 ---
 title: Problem Set
+slug: discrete-mathematics-problem-set
 tags:
   - Computing
   - University

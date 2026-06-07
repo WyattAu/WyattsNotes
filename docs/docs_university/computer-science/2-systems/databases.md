@@ -1,5 +1,6 @@
 ---
 title: Databases
+slug: systems-databases
 description:
   'University Computer Science Databases notes covering key definitions, core concepts, worked
   examples, and practice questions for efficient revision.'

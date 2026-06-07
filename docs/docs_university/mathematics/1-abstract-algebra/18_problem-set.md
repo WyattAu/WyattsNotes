@@ -1,5 +1,6 @@
 ---
 title: Problem Set
+slug: abstract-algebra-problem-set
 tags:
   - Mathematics
   - University

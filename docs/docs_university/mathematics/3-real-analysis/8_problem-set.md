@@ -1,5 +1,6 @@
 ---
 title: Problem Set
+slug: real-analysis-problem-set
 tags:
   - Mathematics
   - University

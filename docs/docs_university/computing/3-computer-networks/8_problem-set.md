@@ -1,5 +1,6 @@
 ---
 title: Problem Set
+slug: computer-networks-problem-set
 tags:
   - Computing
   - University

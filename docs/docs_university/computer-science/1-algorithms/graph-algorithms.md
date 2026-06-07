@@ -1,5 +1,6 @@
 ---
 title: Graph Algorithms
+slug: algorithms-graph-algorithms
 description:
   'University Computer Science Graph Algorithms notes covering key definitions, core concepts,
   worked examples, and practice questions for focused revision.'

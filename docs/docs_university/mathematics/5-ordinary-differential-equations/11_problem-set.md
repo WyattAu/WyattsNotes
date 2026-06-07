@@ -1,5 +1,6 @@
 ---
 title: Problem Set
+slug: ordinary-differential-equations-problem-set
 tags:
   - Mathematics
   - University

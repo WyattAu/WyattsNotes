@@ -1,5 +1,6 @@
 ---
 title: Problem Set
+slug: thermal-physics-problem-set
 tags:
   - Physics
   - University

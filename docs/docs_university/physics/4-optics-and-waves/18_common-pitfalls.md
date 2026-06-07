@@ -1,5 +1,6 @@
 ---
 title: Common Pitfalls
+slug: optics-and-waves-common-pitfalls
 tags:
   - Physics
   - University

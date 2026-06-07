@@ -1,5 +1,6 @@
 ---
 title: Statistical Mechanics
+slug: thermal-physics-statistical-mechanics
 tags:
   - Physics
   - University

@@ -1,5 +1,6 @@
 ---
 title: Statistical Mechanics
+slug: physical-chemistry-statistical-mechanics
 description: 'University Chemistry Statistical Mechanics notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:

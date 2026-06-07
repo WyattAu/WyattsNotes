@@ -1,5 +1,6 @@
 ---
 title: Applications
+slug: differential-geometry-applications
 tags:
   - Mathematics
   - University

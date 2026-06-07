@@ -1,5 +1,6 @@
 ---
 title: Problem Set
+slug: theory-of-computation-problem-set
 tags:
   - Computing
   - University

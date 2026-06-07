@@ -1,5 +1,6 @@
 ---
 title: Common Pitfalls
+slug: complex-analysis-common-pitfalls
 tags:
   - Mathematics
   - University

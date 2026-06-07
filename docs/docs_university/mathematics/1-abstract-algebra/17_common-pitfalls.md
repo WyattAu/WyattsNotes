@@ -1,5 +1,6 @@
 ---
 title: Common Pitfalls
+slug: abstract-algebra-common-pitfalls
 tags:
   - Mathematics
   - University

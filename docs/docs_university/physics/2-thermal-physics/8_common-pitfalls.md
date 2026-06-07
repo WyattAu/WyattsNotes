@@ -1,5 +1,6 @@
 ---
 title: Common Pitfalls
+slug: thermal-physics-common-pitfalls
 tags:
   - Physics
   - University

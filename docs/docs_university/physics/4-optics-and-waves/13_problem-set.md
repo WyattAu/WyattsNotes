@@ -1,5 +1,6 @@
 ---
 title: Problem Set
+slug: optics-and-waves-problem-set
 tags:
   - Physics
   - University

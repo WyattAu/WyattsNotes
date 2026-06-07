@@ -1,5 +1,6 @@
 ---
 title: Problem Set
+slug: databases-problem-set
 tags:
   - Computing
   - University

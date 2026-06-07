@@ -1,5 +1,6 @@
 ---
 title: Common Pitfalls
+slug: topology-common-pitfalls
 tags:
   - University Maths
 ---

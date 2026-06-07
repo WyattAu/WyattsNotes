@@ -9,7 +9,8 @@ tags:
   - University
 categories:
   - Computing
-slug: algorithms-advanced
+slug: algorithms-and-data-structures-algorithms-advanced
+
 ---
 
 ## 1. Network Flow

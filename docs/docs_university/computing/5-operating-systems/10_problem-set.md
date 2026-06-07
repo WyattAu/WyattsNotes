@@ -1,5 +1,6 @@
 ---
 title: Problem Set
+slug: operating-systems-problem-set
 tags:
   - Computing
   - University

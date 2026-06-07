@@ -1,5 +1,6 @@
 ---
 title: Common Pitfalls
+slug: ordinary-differential-equations-common-pitfalls
 tags:
   - Mathematics
   - University

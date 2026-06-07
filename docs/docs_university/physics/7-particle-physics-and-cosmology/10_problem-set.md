@@ -1,5 +1,6 @@
 ---
 title: Problem Set
+slug: particle-physics-and-cosmology-problem-set
 tags:
   - Physics
   - University

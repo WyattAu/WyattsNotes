@@ -1,5 +1,6 @@
 ---
 title: Problem Set
+slug: classical-mechanics-problem-set
 tags:
   - Physics
   - University

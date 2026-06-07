@@ -9,7 +9,8 @@ tags:
   - University
 categories:
   - Computing
-slug: computer-networks-advanced
+slug: computer-networks-computer-networks-advanced
+
 ---
 
 ## 1. Advanced Routing Protocols

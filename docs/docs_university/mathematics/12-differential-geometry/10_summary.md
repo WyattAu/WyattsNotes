@@ -1,5 +1,6 @@
 ---
 title: Summary
+slug: differential-geometry-summary
 tags:
   - Mathematics
   - University

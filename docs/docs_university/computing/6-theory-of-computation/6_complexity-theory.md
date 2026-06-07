@@ -1,5 +1,6 @@
 ---
 title: Complexity Theory
+slug: theory-of-computation-complexity-theory
 tags:
   - Computing
   - University

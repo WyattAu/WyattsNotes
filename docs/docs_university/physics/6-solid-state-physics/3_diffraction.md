@@ -1,5 +1,6 @@
 ---
 title: Diffraction
+slug: solid-state-physics-diffraction
 tags:
   - Physics
   - University

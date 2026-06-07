@@ -1,5 +1,6 @@
 ---
 title: Problem Set
+slug: solid-state-physics-problem-set
 tags:
   - Physics
   - University

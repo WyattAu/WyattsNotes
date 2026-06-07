@@ -1,5 +1,6 @@
 ---
 title: Electromagnetic Waves
+slug: electromagnetism-electromagnetic-waves
 tags:
   - Physics
   - University

@@ -9,7 +9,8 @@ tags:
   - University
 categories:
   - Computing
-slug: databases-advanced
+slug: computing-topics-databases-advanced
+
 ---
 
 ## 1. Advanced Relational Algebra

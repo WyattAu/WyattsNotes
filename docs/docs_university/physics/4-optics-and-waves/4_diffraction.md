@@ -1,5 +1,6 @@
 ---
 title: Diffraction
+slug: optics-and-waves-diffraction
 tags:
   - Physics
   - University

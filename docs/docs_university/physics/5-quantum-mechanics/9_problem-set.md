@@ -1,5 +1,6 @@
 ---
 title: Problem Set
+slug: quantum-mechanics-problem-set
 tags:
   - Physics
   - University

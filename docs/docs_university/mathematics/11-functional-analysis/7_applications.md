@@ -1,5 +1,6 @@
 ---
 title: Applications
+slug: functional-analysis-applications
 tags:
   - Mathematics
   - University

@@ -1,5 +1,6 @@
 ---
 title: Summary
+slug: topology-summary
 tags:
   - University Maths
 ---

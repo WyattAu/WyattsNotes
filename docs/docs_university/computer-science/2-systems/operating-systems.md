@@ -1,5 +1,6 @@
 ---
 title: Operating Systems
+slug: systems-operating-systems
 description:
   'University Computer Science Operating Systems notes covering key definitions, core concepts,
   worked examples, and practice questions for focused preparation.'

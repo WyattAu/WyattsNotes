@@ -1,5 +1,6 @@
 ---
 title: Problem Set
+slug: multivariable-calculus-problem-set
 tags:
   - Mathematics
   - University

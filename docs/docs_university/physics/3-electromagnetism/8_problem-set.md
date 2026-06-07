@@ -1,5 +1,6 @@
 ---
 title: Problem Set
+slug: electromagnetism-problem-set
 tags:
   - Physics
   - University

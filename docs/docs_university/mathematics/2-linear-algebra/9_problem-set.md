@@ -1,5 +1,6 @@
 ---
 title: Problem Set
+slug: linear-algebra-problem-set
 tags:
   - Mathematics
   - University

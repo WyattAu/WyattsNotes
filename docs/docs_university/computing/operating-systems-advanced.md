@@ -9,7 +9,8 @@ tags:
   - University
 categories:
   - Computing
-slug: operating-systems-advanced
+slug: computing-topics-operating-systems-advanced
+
 ---
 
 ## 1. Advanced Process Management

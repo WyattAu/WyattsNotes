@@ -1,5 +1,6 @@
 ---
 title: Summary of Key Results
+slug: measure-theory-summary-of-key-results
 tags:
   - Mathematics
   - University

@@ -1,5 +1,6 @@
 ---
 title: Problem Set
+slug: algorithms-and-data-structures-problem-set
 tags:
   - Computing
   - University

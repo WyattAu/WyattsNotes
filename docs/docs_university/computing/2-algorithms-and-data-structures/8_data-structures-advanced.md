@@ -9,7 +9,8 @@ tags:
   - University
 categories:
   - Computing
-slug: data-structures-advanced
+slug: algorithms-and-data-structures-data-structures-advanced
+
 ---
 
 ## 1. Balanced Search Trees

@@ -1,5 +1,6 @@
 ---
 title: Graph Algorithms
+slug: algorithms-and-data-structures-graph-algorithms
 tags:
   - Computing
   - University
