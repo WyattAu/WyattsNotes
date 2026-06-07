@@ -846,3 +846,5 @@ the definitions, applying the formulas or frameworks, and evaluating strengths a
 each approach.
 
 :::
+
+</details>
