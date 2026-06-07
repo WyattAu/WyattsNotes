@@ -1,13 +1,18 @@
-title: Kinematics description: 'Rigorous IB physics notes covering Kinematics. Includes definitions,
-derivations, worked examples, and exam-style problems. equations.' slug: kinematics
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- physics categories:
-- ib
-- ib-physics
-
+---
+title: Kinematics
+description: 'Rigorous IB physics notes covering Kinematics. Includes definitions,
+derivations, worked examples, and exam-style problems. equations.'
+slug: kinematics
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+  - physics
+  - ib
+  - ib-physics
+categories:
+  - ib
+  - ib-physics
+---
 ## Fundamental Quantities
 
 ### Scalars and Vectors

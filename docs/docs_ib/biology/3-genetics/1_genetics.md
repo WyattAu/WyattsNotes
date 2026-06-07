@@ -1,13 +1,18 @@
-title: Genetics description: 'IB Biology — meiosis, Mendelian genetics, inheritance patterns, gene
-expression, mutations, biotechnology, PCR, and genetic modification.' slug: genetics
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- biology categories:
-- ib
-- ib-biology
-
+---
+title: Genetics
+description: 'IB Biology — meiosis, Mendelian genetics, inheritance patterns, gene
+expression, mutations, biotechnology, PCR, and genetic modification.'
+slug: genetics
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+  - biology
+  - ib
+  - ib-biology
+categories:
+  - ib
+  - ib-biology
+---
 ## 1. Meiosis and Genetic Variation
 
 ### Recombination

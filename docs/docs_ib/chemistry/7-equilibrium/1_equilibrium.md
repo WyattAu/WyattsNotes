@@ -1,14 +1,19 @@
-title: Chemical Equilibrium description: 'Rigorous IB chemistry notes covering Chemical Equilibrium.
+---
+title: Chemical Equilibrium
+description: 'Rigorous IB chemistry notes covering Chemical Equilibrium.
 Includes definitions, derivations, worked examples, and exam-style problems. constants, and
-acid-base equilibrium.' slug: equilibrium
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- chemistry categories:
-- ib
-- ib-chemistry
-
+acid-base equilibrium.'
+slug: equilibrium
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+  - chemistry
+  - ib
+  - ib-chemistry
+categories:
+  - ib
+  - ib-chemistry
+---
 ## Dynamic Equilibrium
 
 ### Reversible Reactions

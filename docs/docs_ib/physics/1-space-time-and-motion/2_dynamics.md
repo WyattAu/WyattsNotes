@@ -1,14 +1,18 @@
-title: Dynamics and Newton's Laws description: 'Rigorous IB physics notes covering Dynamics and
-Newtons Laws. Includes definitions, derivations, worked examples, and exam-style problems.' slug:
-dynamics
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- physics categories:
-- ib
-- ib-physics
-
+---
+title: Dynamics and Newton's Laws
+description: 'Rigorous IB physics notes covering Dynamics and
+Newtons Laws. Includes definitions, derivations, worked examples, and exam-style problems.'
+slug: dynamics
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+  - physics
+  - ib
+  - ib-physics
+categories:
+  - ib
+  - ib-physics
+---
 ## Newton's First Law — Inertia
 
 ### Statement

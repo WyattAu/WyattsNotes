@@ -1,14 +1,18 @@
-title: Differentiation description: 'Rigorous IB mathematics notes covering Differentiation.
+---
+title: Differentiation
+description: 'Rigorous IB mathematics notes covering Differentiation.
 Includes definitions, derivations, worked examples, and exam-style problems. exam-style problems.'
 slug: differentiation-depth
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- maths categories:
-- ib
-- ib-maths
-
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+  - maths
+  - ib
+  - ib-maths
+categories:
+  - ib
+  - ib-maths
+---
 ## Limits and Continuity
 
 ### Intuitive Notion of a Limit

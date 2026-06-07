@@ -1,14 +1,18 @@
-title: Rotational Motion description: 'Rigorous IB physics notes covering Rotational Motion.
-Includes definitions, derivations, worked examples, and exam-style problems. momentum.' slug:
-rotational-motion
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- physics categories:
-- ib
-- ib-physics
-
+---
+title: Rotational Motion
+description: 'Rigorous IB physics notes covering Rotational Motion.
+Includes definitions, derivations, worked examples, and exam-style problems. momentum.'
+slug: rotational-motion
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+  - physics
+  - ib
+  - ib-physics
+categories:
+  - ib
+  - ib-physics
+---
 ## Circular Motion Fundamentals
 
 ### Angular Quantities

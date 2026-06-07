@@ -1,15 +1,10 @@
-title: Abstraction and Data Management tags:
-
-- IB
-- CS slug: abstraction-and-data-management description: 'Rigorous IB computer science notes covering
-  Abstraction and Data Management. Includes definitions, derivations, worked examples, and
-  exam-style problems. Baccalaureate.'
-
-date: 2024-01-01T00:00:00Z categories:
-
-- ib
-- ib-computer-science
-
+---
+slug: abstraction-and-data-management
+date: 2024-01-01T00:00:00Z
+categories:
+  - ib
+  - ib-computer-science
+---
 ## Conceptual Models vs Physical Models
 
 A **conceptual model** describes what a system does, what data it manages, and what relationships

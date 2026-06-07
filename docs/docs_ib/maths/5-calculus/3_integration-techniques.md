@@ -1,14 +1,19 @@
-title: Integration Techniques description: 'Rigorous IB mathematics notes covering Integration
+---
+title: Integration Techniques
+description: 'Rigorous IB mathematics notes covering Integration
 Techniques. Includes definitions, derivations, worked examples, and exam-style problems. volume, and
-applications.' slug: integration-techniques
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- maths categories:
-- ib
-- ib-maths
-
+applications.'
+slug: integration-techniques
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+  - maths
+  - ib
+  - ib-maths
+categories:
+  - ib
+  - ib-maths
+---
 ## Antidifferentiation Review
 
 Integration (antidifferentiation) is the reverse process of differentiation. If $F'(x) = f(x)$ Then:

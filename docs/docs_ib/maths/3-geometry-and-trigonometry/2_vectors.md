@@ -1,13 +1,10 @@
-title: Vectors tags:
-
-- maths slug: vectors description: 'Rigorous IB mathematics notes covering Vectors. Includes
-  definitions, derivations, worked examples, and exam-style problems.'
-
-date: 2024-01-01T00:00:00Z categories:
-
-- ib
-- ib-maths
-
+---
+slug: vectors
+date: 2024-01-01T00:00:00Z
+categories:
+  - ib
+  - ib-maths
+---
 ## Vector Line
 
 ### Parametric Form

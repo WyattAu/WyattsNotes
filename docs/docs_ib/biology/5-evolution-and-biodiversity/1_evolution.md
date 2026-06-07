@@ -1,14 +1,18 @@
-title: Evolution in Depth description: 'IB Biology -- evidence for evolution, natural selection
+---
+title: Evolution in Depth
+description: 'IB Biology -- evidence for evolution, natural selection
 types, speciation mechanisms, adaptive radiation, convergent evolution, gradualism vs punctuated'
 slug: evolution-depth
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- biology categories:
-- ib
-- ib-biology
-
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+  - biology
+  - ib
+  - ib-biology
+categories:
+  - ib
+  - ib-biology
+---
 ## 1. Evidence for Evolution
 
 ### Fossil Evidence

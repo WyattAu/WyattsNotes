@@ -1,13 +1,10 @@
-title: Computer Organizations tags:
-
-- CS slug: computer-organizations description: 'Rigorous IB computer science notes covering Computer
-  Organizations. Includes definitions, derivations, worked examples, and exam-style problems.'
-
-date: 2024-01-01T00:00:00Z categories:
-
-- ib
-- ib-computer-science
-
+---
+slug: computer-organizations
+date: 2024-01-01T00:00:00Z
+categories:
+  - ib
+  - ib-computer-science
+---
 ## Computer Architecture
 
 ### CPU architecture

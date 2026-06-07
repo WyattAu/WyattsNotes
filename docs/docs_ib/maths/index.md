@@ -1,19 +1,13 @@
-title: IB Mathematics description: 'Complete IB Mathematics revision notes covering algebra,
+---
+title: IB Mathematics
+description: 'Complete IB Mathematics revision notes covering algebra,
 functions, trigonometry, calculus, probability, statistics, vectors, and matrices. Worked examples,'
 slug: maths
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- maths categories:
-- ib
-- ib-maths
-
-# IB Mathematics
-
-Complete revision notes for IB Mathematics, covering the full syllabus with worked examples, common
-pitfalls, and exam-style problems.
-
+date: 2024-01-01T00:00:00Z
+categories:
+  - ib
+  - ib-maths
+---
 ## Core Topics
 
 ### Number and Algebra
