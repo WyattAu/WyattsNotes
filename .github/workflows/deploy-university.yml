@@ -170,6 +170,30 @@ jobs:
             fi
           done
 
+          # Merge sitemaps from all builds into a unified sitemap.xml
+          # Docusaurus generates sitemap.xml per build, but the maths base
+          # build only knows about maths pages. Combine all <url> entries.
+          node -e "
+          const fs = require('fs');
+          const path = require('path');
+          let urls = [];
+          for (const subj of ['maths', 'physics', 'computing', 'admissions', 'chemistry', 'computer-science']) {
+            const smPath = subj === 'maths' ? 'build/sitemap.xml' : 'build-' + subj + '/sitemap.xml';
+            if (fs.existsSync(smPath)) {
+              const xml = fs.readFileSync(smPath, 'utf8');
+              const matches = xml.match(/<url>[\s\S]*?<\/url>/g) || [];
+              urls.push(...matches);
+            }
+          }
+          if (urls.length > 0) {
+            const sitemap = '<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n' +
+              '<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n' +
+              urls.join('\n') + '\n</urlset>\n';
+            fs.writeFileSync('build/sitemap.xml', sitemap);
+          }
+          console.log('Merged sitemap with', urls.length, 'URLs');
+          "
+
           # Verify structure
           echo "=== Build directory structure ==="
           find build/docs -maxdepth 2 -type d | sort | head -30
@@ -177,6 +201,8 @@ jobs:
           find build/docs -name '*.html' | wc -l
           echo "=== Total JS bundles ==="
           find build/assets/js -name '*.js' | wc -l
+          echo "=== Sitemap URLs ==="
+          grep -c '<url>' build/sitemap.xml 2>/dev/null || echo "0"
 
       - name: Remove SSR bundle
         run: rm -rf build/__server
