@@ -1,16 +1,9 @@
 ---
-title: Probability Distributions tags:
-
-- IB
-- Maths slug: probability-distributions description: 'Rigorous IB mathematics notes covering
-  Probability Distributions. Includes definitions, derivations, worked examples, and exam-style
-  problems. Baccalaureate.'
-
-date: 2024-01-01T00:00:00Z categories:
-
-- ib
-- ib-maths
-
+slug: probability-distributions
+date: 2024-01-01T00:00:00Z
+categories:
+  - ib
+  - ib-maths
 ---
 ## Discrete Random Variables
 

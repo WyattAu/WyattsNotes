@@ -1,14 +1,17 @@
 ---
-title: Atomic Theory description: 'IB Chemistry — atomic models from Dalton to quantum mechanics,
-electron configuration, orbital theory, and periodic properties.' slug: atomic-theory
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- chemistry categories:
-- ib
-- ib-chemistry
-
+title: Atomic Theory
+description: 'IB Chemistry — atomic models from Dalton to quantum mechanics,
+electron configuration, orbital theory, and periodic properties.'
+slug: atomic-theory
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+  - chemistry
+  - ib
+  - ib-chemistry
+categories:
+  - ib
+  - ib-chemistry
 ---
 ## 1. Historical Development of Atomic Theory
 

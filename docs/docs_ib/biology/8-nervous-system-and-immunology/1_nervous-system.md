@@ -1,15 +1,17 @@
 ---
-title: Nervous System description: 'IB Biology — neuron structure and function, resting potential,
-action potential propagation, myelination, synapses, neurotransmitters, reflex arcs, sensory' slug:
-nervous-system
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- biology categories:
-- ib
-- ib-biology
-
+title: Nervous System
+description: 'IB Biology — neuron structure and function, resting potential,
+action potential propagation, myelination, synapses, neurotransmitters, reflex arcs, sensory'
+slug: nervous-system
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+  - biology
+  - ib
+  - ib-biology
+categories:
+  - ib
+  - ib-biology
 ---
 ## 1. Neuron Structure and Function
 

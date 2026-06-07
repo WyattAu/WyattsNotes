@@ -1,15 +1,17 @@
 ---
-title: Chemical Bonding (Advanced) description: 'Rigorous IB chemistry notes covering Chemical
+title: Chemical Bonding (Advanced)
+description: 'Rigorous IB chemistry notes covering Chemical
 Bonding (Advanced). Includes definitions, derivations, worked examples, and exam-style problems.'
 slug: 4-chemical-bonding/2_chemical-bonding-advanced
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- chemistry categories:
-- ib
-- ib-chemistry
-
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+  - chemistry
+  - ib
+  - ib-chemistry
+categories:
+  - ib
+  - ib-chemistry
 ---
 ## 1. VSEPR Theory
 

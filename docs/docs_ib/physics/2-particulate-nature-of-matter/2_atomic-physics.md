@@ -1,15 +1,18 @@
 ---
-title: Atomic and Nuclear Physics description: 'Rigorous IB physics notes covering Atomic and
+title: Atomic and Nuclear Physics
+description: 'Rigorous IB physics notes covering Atomic and
 Nuclear Physics. Includes definitions, derivations, worked examples, and exam-style problems.
-equivalence.' slug: atomic-physics
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- physics categories:
-- ib
-- ib-physics
-
+equivalence.'
+slug: atomic-physics
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+  - physics
+  - ib
+  - ib-physics
+categories:
+  - ib
+  - ib-physics
 ---
 ## Atomic Models
 

@@ -1,14 +1,17 @@
 ---
-title: Calculus description: 'Rigorous IB mathematics notes covering Calculus. Includes definitions,
-derivations, worked examples, and exam-style problems.' slug: calculus
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- maths categories:
-- ib
-- ib-maths
-
+title: Calculus
+description: 'Rigorous IB mathematics notes covering Calculus. Includes definitions,
+derivations, worked examples, and exam-style problems.'
+slug: calculus
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+  - maths
+  - ib
+  - ib-maths
+categories:
+  - ib
+  - ib-maths
 ---
 ## Limits
 

@@ -1,15 +1,15 @@
 ---
-title: Electric and Magnetic Fields slug: electric-and-magnetic-fields description: 'Rigorous IB
-physics notes covering Electric and Magnetic Fields. Includes definitions, derivations, worked
-examples, and exam-style problems. Baccalaureate.'
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- physics categories:
-- ib
-- ib-physics
-
+title: Electric and Magnetic Fields
+slug: electric-and-magnetic-fields
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+  - physics
+  - ib
+  - ib-physics
+categories:
+  - ib
+  - ib-physics
 ---
 ## Point Charge
 

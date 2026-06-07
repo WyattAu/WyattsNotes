@@ -1,14 +1,17 @@
 ---
-title: Ecology description: 'IB Biology — species, communities, ecosystems, energy flow, nutrient
-cycles, climate change, evolution, natural selection, and classification.' slug: ecology
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- biology categories:
-- ib
-- ib-biology
-
+title: Ecology
+description: 'IB Biology — species, communities, ecosystems, energy flow, nutrient
+cycles, climate change, evolution, natural selection, and classification.'
+slug: ecology
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+  - biology
+  - ib
+  - ib-biology
+categories:
+  - ib
+  - ib-biology
 ---
 ## 1. Species, Communities, and Ecosystems
 

@@ -1,15 +1,9 @@
 ---
-title: Databases tags:
-
-- IB
-- CS slug: databases description: 'Rigorous IB computer science notes covering Databases. Includes
-  definitions, derivations, worked examples, and exam-style problems.'
-
-date: 2024-01-01T00:00:00Z categories:
-
-- ib
-- ib-computer-science
-
+slug: databases
+date: 2024-01-01T00:00:00Z
+categories:
+  - ib
+  - ib-computer-science
 ---
 ## Database Fundamentals
 

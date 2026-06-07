@@ -1,15 +1,15 @@
 ---
-title: Motion in Electromagnetic Fields slug: motion-in-electromagnetic-fields description:
-'Rigorous IB physics notes covering Motion in Electromagnetic Fields. Includes definitions,
-derivations, worked examples, and exam-style problems. Baccalaureate.'
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- physics categories:
-- ib
-- ib-physics
-
+title: Motion in Electromagnetic Fields
+slug: motion-in-electromagnetic-fields
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+  - physics
+  - ib
+  - ib-physics
+categories:
+  - ib
+  - ib-physics
 ---
 ## Uniform Fields
 

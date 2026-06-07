@@ -1,20 +1,13 @@
 ---
-title: IB Computer Science description: 'Complete IB Computer Science revision notes covering
+title: IB Computer Science
+description: 'Complete IB Computer Science revision notes covering
 computational thinking, system design, data structures, algorithms, networking, databases, and
-programming' slug: computer-science
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- computer-science categories:
-- ib
-- ib-computer-science
-
-# IB Computer Science
-
-Complete revision notes for IB Computer Science, covering the full syllabus with worked examples,
-common pitfalls, and exam-style problems.
-
+programming'
+slug: computer-science
+date: 2024-01-01T00:00:00Z
+categories:
+  - ib
+  - ib-computer-science
 ---
 ## Core Topics
 

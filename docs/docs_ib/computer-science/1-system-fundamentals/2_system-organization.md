@@ -1,15 +1,9 @@
 ---
-title: System In Organizations tags:
-
-- CS slug: systemIn-organization description: 'Rigorous IB computer science notes covering System In
-  Organizations. Includes definitions, derivations, worked examples, and exam-style problems.
-  Baccalaureate.'
-
-date: 2024-01-01T00:00:00Z categories:
-
-- ib
-- ib-computer-science
-
+slug: systemIn-organization
+date: 2024-01-01T00:00:00Z
+categories:
+  - ib
+  - ib-computer-science
 ---
 ## Planning and System Installation
 

@@ -1,15 +1,17 @@
 ---
-title: Thermochemistry description: 'Rigorous IB chemistry notes covering Thermochemistry. Includes
-definitions, derivations, worked examples, and exam-style problems. energy cycles.' slug:
-thermochemistry
-
-date: 2024-01-01T00:00:00Z tags:
-
-- ib
-- chemistry categories:
-- ib
-- ib-chemistry
-
+title: Thermochemistry
+description: 'Rigorous IB chemistry notes covering Thermochemistry. Includes
+definitions, derivations, worked examples, and exam-style problems. energy cycles.'
+slug: thermochemistry
+date: 2024-01-01T00:00:00Z
+tags:
+  - ib
+  - chemistry
+  - ib
+  - ib-chemistry
+categories:
+  - ib
+  - ib-chemistry
 ---
 ## Enthalpy Changes
 

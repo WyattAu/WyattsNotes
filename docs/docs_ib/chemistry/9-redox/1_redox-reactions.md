@@ -1,16 +1,10 @@
 ---
-title: Redox Reactions description: "Rigorous IB chemistry notes covering Redox Reactions. Includes
-definitions, derivations, worked examples, and exam-style problems. cells, electrode potentials,
-electrolysis, Faraday's laws, corrosion, and fuel cells." slug: redox-reactions tags:
-
-- IB
-- Chemistry
-
-date: 2024-01-01T00:00:00Z categories:
-
-- ib
-- ib-chemistry
-
+title: Redox Reactions
+slug: redox-reactions
+date: 2024-01-01T00:00:00Z
+categories:
+  - ib
+  - ib-chemistry
 ---
 ## Oxidation States
 
