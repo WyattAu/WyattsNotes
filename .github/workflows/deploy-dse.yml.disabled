@@ -1,4 +1,4 @@
-name: Deploy IB to Cloudflare Pages
+name: Deploy DSE to Cloudflare Pages
 
 permissions:
   contents: read
@@ -7,9 +7,9 @@ on:
   push:
     branches: [main]
     paths:
-      - 'docs/docs_ib/**'
-      - 'sidebars/sidebar_ib.ts'
-      - 'docusaurus.ib.config.ts'
+      - 'docs/docs_dse/**'
+      - 'sidebars/sidebar_dse.ts'
+      - 'docusaurus.dse.config.ts'
       - 'docusaurus.shared.config.ts'
       - 'src/pages/**'
       - 'src/theme/**'
@@ -18,29 +18,29 @@ on:
       - 'package.json'
       - 'pnpm-lock.yaml'
       - 'scripts/escape-latex-braces.js'
-      - '.github/workflows/deploy-ib.yml'
+      - '.github/workflows/deploy-dse.yml'
   workflow_dispatch:
 
 concurrency:
-  group: deploy-ib-${{ github.ref }}
+  group: deploy-dse-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   deploy:
-    name: Build and Deploy IB
+    name: Build and Deploy DSE
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
 
       - uses: ./.github/actions/docusaurus-build
         with:
-          config-file: docusaurus.ib.config.ts
-          project-name: wyattsnotes-ib
-          site-name: IB
-          deploy-url: 'https://ib.wyattau.com'
-          node-memory: '14336'
-          preprocess-paths: 'docs/docs_ib'
+          config-file: docusaurus.dse.config.ts
+          project-name: wyattsnotes-dse
+          site-name: DSE
+          deploy-url: 'https://dse.wyattau.com'
+          node-memory: '11264'
+          preprocess-paths: 'docs/docs_dse'
           create-project: 'true'
           sentry-dsn: ${{ secrets.SENTRY_DSN }}
           google-site-verification: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
@@ -48,3 +48,5 @@ jobs:
           cloudflare-analytics-token: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
           cloudflare-api-token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           cloudflare-account-id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          algolia-app-id: ${{ secrets.ALGOLIA_APP_ID }}
+          algolia-search-key: ${{ secrets.ALGOLIA_SEARCH_KEY }}

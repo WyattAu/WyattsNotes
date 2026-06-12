@@ -1,4 +1,4 @@
-name: Deploy A-Level Maths & Physics to Cloudflare Pages
+name: Deploy Qualifications to Cloudflare Pages
 
 permissions:
   contents: read
@@ -7,45 +7,45 @@ on:
   push:
     branches: [main]
     paths:
-      - 'docs/docs_alevel/**'
-      - 'sidebars/sidebar_alevel*.ts'
-      - 'docusaurus.alevel*.config.ts'
+      - 'docs/docs_qualifications/**'
+      - 'sidebars/sidebar_qualifications.ts'
+      - 'docusaurus.qualifications.config.ts'
       - 'docusaurus.shared.config.ts'
       - 'src/pages/**'
       - 'src/theme/**'
       - 'src/components/**'
-      - 'src/css/**'
       - 'static/**'
       - 'package.json'
       - 'pnpm-lock.yaml'
       - 'scripts/escape-latex-braces.js'
-      - '.github/workflows/deploy-alevel-maths-physics.yml'
+      - '.github/workflows/deploy-qualifications.yml'
   workflow_dispatch:
 
 concurrency:
-  group: deploy-alevel-mp-${{ github.ref }}
+  group: deploy-qualifications-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   deploy:
-    name: Build and Deploy A-Level Maths & Physics
+    name: Build and Deploy Qualifications
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
 
       - uses: ./.github/actions/docusaurus-build
         with:
-          config-file: docusaurus.alevel-maths-physics.config.ts
-          project-name: wyattsnotes-alevel-maths-physics
-          site-name: 'A-Level Maths & Physics'
-          deploy-url: 'https://alevel.wyattau.com'
-          node-memory: '14336'
-          preprocess-paths: 'docs/docs_alevel'
-          create-project: 'true'
+          config-file: docusaurus.qualifications.config.ts
+          project-name: wyattsnotes-qualifications
+          site-name: Qualifications
+          deploy-url: 'https://qualifications.wyattau.com'
+          node-memory: '7168'
+          preprocess-paths: 'docs/docs_qualifications'
           sentry-dsn: ${{ secrets.SENTRY_DSN }}
           google-site-verification: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
           bing-site-verification: ${{ secrets.BING_SITE_VERIFICATION }}
           cloudflare-analytics-token: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
           cloudflare-api-token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           cloudflare-account-id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          algolia-app-id: ${{ secrets.ALGOLIA_APP_ID }}
+          algolia-search-key: ${{ secrets.ALGOLIA_SEARCH_KEY }}
