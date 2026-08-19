@@ -58,15 +58,15 @@ $$E_{\text{cell}} = E^\circ_{\text{cell}} - \frac{0.0592}{n}\log Q$$
 For the cell:
 $\text{Ag}^+(aq) + \text{Fe}^{2+}(aq) \rightleftharpoons \text{Ag}(s) + \text{Fe}^{3+}(aq)$, $n = 1$
 
-$$Q = \frac◆LB◆[\text{Fe}^{3+}]◆RB◆◆LB◆[\text{Ag}^+][\text{Fe}^{2+}]◆RB◆ = \frac◆LB◆1.00◆RB◆◆LB◆1.00 \times [\text{Fe}^{2+}]◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆[\text{Fe}^{2+}]◆RB◆$$
+$$Q = \frac{[\text{Fe}^{3+}]}{[\text{Ag}^+][\text{Fe}^{2+}]} = \frac{1.00}{1.00 \times [\text{Fe}^{2+}]} = \frac{1}{[\text{Fe}^{2+}]}$$
 
-$$0.020 = 0.030 - 0.0592\log\frac◆LB◆1◆RB◆◆LB◆[\text{Fe}^{2+}]◆RB◆$$
+$$0.020 = 0.030 - 0.0592\log\frac{1}{[\text{Fe}^{2+}]}$$
 
-$$-0.010 = -0.0592\log\frac◆LB◆1◆RB◆◆LB◆[\text{Fe}^{2+}]◆RB◆$$
+$$-0.010 = -0.0592\log\frac{1}{[\text{Fe}^{2+}]}$$
 
-$$\log\frac◆LB◆1◆RB◆◆LB◆[\text{Fe}^{2+}]◆RB◆ = \frac{0.010}{0.0592} = 0.169$$
+$$\log\frac{1}{[\text{Fe}^{2+}]} = \frac{0.010}{0.0592} = 0.169$$
 
-$$\frac◆LB◆1◆RB◆◆LB◆[\text{Fe}^{2+}]◆RB◆ = 10^{0.169} = 1.476$$
+$$\frac{1}{[\text{Fe}^{2+}]} = 10^{0.169} = 1.476$$
 
 $$[\text{Fe}^{2+}] = 0.678\,\text{mol dm}^{-3}$$
 
@@ -202,7 +202,7 @@ $$\Delta G^\circ = -2 \times 96500 \times 1.10 = -212300\,\text{J mol}^{-1} = -2
 
 (b) $\Delta G^\circ = -RT\ln K$
 
-$$\ln K = -\frac◆LB◆\Delta G^\circ◆RB◆◆LB◆RT◆RB◆ = \frac◆LB◆212300◆RB◆◆LB◆8.31 \times 298◆RB◆ = \frac{212300}{2476.4} = 85.72$$
+$$\ln K = -\frac{\Delta G^\circ}{RT} = \frac{212300}{8.31 \times 298} = \frac{212300}{2476.4} = 85.72$$
 
 $$K = e^{85.72} = 1.67 \times 10^{37}$$
 
@@ -211,7 +211,7 @@ conditions.
 
 (c) Using the Nernst equation:
 
-$$E_{\text{cell}} = E^\circ_{\text{cell}} - \frac{0.0592}{n}\log\frac◆LB◆[\text{Zn}^{2+}]◆RB◆◆LB◆[\text{Cu}^{2+}]◆RB◆$$
+$$E_{\text{cell}} = E^\circ_{\text{cell}} - \frac{0.0592}{n}\log\frac{[\text{Zn}^{2+}]}{[\text{Cu}^{2+}]}$$
 
 $$E_{\text{cell}} = 1.10 - \frac{0.0592}{2}\log\frac{0.0100}{1.00}$$
 
@@ -318,7 +318,7 @@ $$\Delta G^\circ = -nFE^\circ_{\text{cell}}$$
 
 $$n = 4\,\text{electrons per mol O}_2\text{ (or per 2 mol H}_2\text{)}$$
 
-$$E^\circ_{\text{cell}} = -\frac◆LB◆\Delta G^\circ◆RB◆◆LB◆nF◆RB◆ = -\frac◆LB◆-474000◆RB◆◆LB◆4 \times 96500◆RB◆ = \frac{474000}{386000} = 1.23\,\text{V}$$
+$$E^\circ_{\text{cell}} = -\frac{\Delta G^\circ}{nF} = -\frac{-474000}{4 \times 96500} = \frac{474000}{386000} = 1.23\,\text{V}$$
 
 The values are consistent.
 
@@ -326,7 +326,7 @@ The values are consistent.
 
 Each $\text{H}_2$ molecule releases 2 electrons: $\text{H}_2 \to 2\text{H}^+ + 2e^-$
 
-$$n(\text{H}_2) = \frac◆LB◆36000◆RB◆◆LB◆2 \times 96500◆RB◆ = 0.1865\,\text{mol}$$
+$$n(\text{H}_2) = \frac{36000}{2 \times 96500} = 0.1865\,\text{mol}$$
 
 $$m(\text{H}_2) = 0.1865 \times 2.02 = 0.377\,\text{g}$$
 
@@ -366,7 +366,7 @@ very difficult to oxidise (it would require breaking strong S--O bonds).
 
 (b) $Q = It = 0.500 \times 30.0 \times 60 = 900\,\mathrm{C}$
 
-$$n(\mathrm{Cu}) = \frac{Q}{nF} = \frac◆LB◆900◆RB◆◆LB◆2 \times 96500◆RB◆ = 4.66 \times 10^{-3}\,\mathrm{mol}$$
+$$n(\mathrm{Cu}) = \frac{Q}{nF} = \frac{900}{2 \times 96500} = 4.66 \times 10^{-3}\,\mathrm{mol}$$
 
 $$m(\mathrm{Cu}) = 4.66 \times 10^{-3} \times 63.5 = 0.296\,\mathrm{g}$$ (1 mark).
 
@@ -426,12 +426,12 @@ Overall: $\mathrm{PbBr}_2 \to \mathrm{Pb} + \mathrm{Br}_2$ (1 mark).
 
 (b) $Q = 2.00 \times 15.0 \times 60 = 1800\,\mathrm{C}$
 
-$$n(\mathrm{Br}_2) = \frac◆LB◆1800◆RB◆◆LB◆2 \times 96500◆RB◆ = 9.33 \times 10^{-3}\,\mathrm{mol}$$
+$$n(\mathrm{Br}_2) = \frac{1800}{2 \times 96500} = 9.33 \times 10^{-3}\,\mathrm{mol}$$
 
 $$V(\mathrm{Br}_2) = 9.33 \times 10^{-3} \times 22.4 = 0.209\,\mathrm{dm}^3$$ (1 mark).
 
 (c) Current efficiency
-$= \frac◆LB◆\text{actual volume}◆RB◆◆LB◆\text{theoretical volume}◆RB◆ \times 100 = \frac{0.85}{0.209} \times 100 = 407\%$
+$= \frac{\text{actual volume}}{\text{theoretical volume}} \times 100 = \frac{0.85}{0.209} \times 100 = 407\%$
 
 This is impossible (>100%), suggesting an error in the question data or experimental conditions. A
 realistic current efficiency for bromine production is 85--95%. If the collected volume were

@@ -18,7 +18,7 @@ slug: magnetic-fields-depth
 **Definition.** The magnetic flux density $B$ (also called the magnetic field strength in the
 context Of force calculations) is defined by the force on a current-carrying conductor:
 
-$$\boxed{B = \frac◆LB◆F◆RB◆◆LB◆IL\sin\theta◆RB◆}$$
+$$\boxed{B = \frac{F}{IL\sin\theta}}$$
 
 Where $F$ is the force on a wire of length $L$ carrying current $I$ at angle $\theta$ to the field.
 
@@ -71,12 +71,12 @@ $$\boxed{r = \frac{mv}{Bq}}$$
 
 The period of revolution:
 
-$$T = \frac◆LB◆2\pi r◆RB◆◆LB◆v◆RB◆ = \frac◆LB◆2\pi m◆RB◆◆LB◆Bq◆RB◆$$
+$$T = \frac{2\pi r}{v} = \frac{2\pi m}{Bq}$$
 
 This is **independent of $v$ and $r$**. A faster particle traces a proportionally larger circle in
 the Same time. The cyclotron frequency is:
 
-$$f = \frac◆LB◆Bq◆RB◆◆LB◆2\pi m◆RB◆$$
+$$f = \frac{Bq}{2\pi m}$$
 
 **Physical reason.** The magnetic force is $F = Bqv = mv^2/r$Giving $r = mv/(Bq)$. Both $r$ and $v$
 Increase proportionally, so $T = 2\pi r/v = 2\pi m/(Bq)$ is constant. This is the operating
@@ -93,7 +93,7 @@ Charge $+2e$ and mass $4m_p$. Compare their radii of curvature.
 
 **Answer.** $r = mv/(Bq)$.
 
-$r_\alpha / r_p = \frac◆LB◆(4m_p)v/(B \cdot 2e)◆RB◆◆LB◆m_p v/(Be)◆RB◆ = \frac{4}{2} = 2$.
+$r_\alpha / r_p = \frac{(4m_p)v/(B \cdot 2e)}{m_p v/(Be)} = \frac{4}{2} = 2$.
 
 The alpha particle has twice the radius. Despite having four times the mass, its double charge
 reduces The ratio to 2:1.
@@ -112,7 +112,7 @@ $\mathbf{F} \perp \mathbf{B}$There is no force component along $\mathbf{B}$).
 
 The particle traces a **helix** with pitch:
 
-$$\boxed{\mathrm{pitch} = v_\parallel\, T = \frac◆LB◆2\pi m v\cos\theta◆RB◆◆LB◆Bq◆RB◆}$$
+$$\boxed{\mathrm{pitch} = v_\parallel\, T = \frac{2\pi m v\cos\theta}{Bq}}$$
 
 ## 5. Velocity Selector
 
@@ -143,7 +143,7 @@ SI unit: weber (Wb). $1\ \mathrm{Wb} = 1\ \mathrm{T\,m^2}$.
 
 **Statement.** The magnitude of the induced e.m.f. Equals the rate of change of flux linkage:
 
-$$\boxed{|\varepsilon| = N\left|\frac◆LB◆d\Phi◆RB◆◆LB◆dt◆RB◆\right|}$$
+$$\boxed{|\varepsilon| = N\left|\frac{d\Phi}{dt}\right|}$$
 
 Where $N$ is the number of turns and $N\Phi$ is the flux linkage.
 
@@ -154,7 +154,7 @@ magnetic Flux that produced it.
 
 Lenz's law is the physical content of the minus sign in the full Faraday equation:
 
-$$\varepsilon = -N\frac◆LB◆d\Phi◆RB◆◆LB◆dt◆RB◆$$
+$$\varepsilon = -N\frac{d\Phi}{dt}$$
 
 **Energy conservation argument.** If the induced current reinforced the flux change rather than
 Opposing it, a self-amplifying cycle would create energy from nothing. The opposition ensures that
@@ -183,7 +183,7 @@ A coil of $N$ turns, area $A$Rotating at angular frequency $\omega$ in uniform f
 
 $$\Phi = NBA\cos(\omega t)$$
 
-$$\varepsilon = -\frac◆LB◆d\Phi◆RB◆◆LB◆dt◆RB◆ = NBA\omega\sin(\omega t)$$
+$$\varepsilon = -\frac{d\Phi}{dt} = NBA\omega\sin(\omega t)$$
 
 $$\boxed{\varepsilon = \varepsilon_0\sin(\omega t)}$$
 
@@ -273,9 +273,9 @@ Wire 1 (current $I_1$) creates field at distance $d$: $B_1 = \mu_0 I_1/(2\pi d)$
 
 Wire 2 (current $I_2$Length $L$) in this field experiences force:
 
-$$F = B_1 I_2 L = \frac◆LB◆\mu_0 I_1 I_2 L◆RB◆◆LB◆2\pi d◆RB◆$$
+$$F = B_1 I_2 L = \frac{\mu_0 I_1 I_2 L}{2\pi d}$$
 
-$$\boxed{\frac{F}{L} = \frac◆LB◆\mu_0 I_1 I_2◆RB◆◆LB◆2\pi d◆RB◆}$$
+$$\boxed{\frac{F}{L} = \frac{\mu_0 I_1 I_2}{2\pi d}}$$
 
 ### Direction
 
@@ -308,7 +308,7 @@ An electron moves at $2.0 \times 10^6$ m s$^{-1}$ perpendicular to a 0.80 T fiel
 Radius of its circular path.
 
 **Answer.**
-$r = \frac{m_e v}{Be} = \frac◆LB◆9.11 \times 10^{-31} \times 2.0 \times 10^6◆RB◆◆LB◆0.80 \times 1.60 \times 10^{-19}◆RB◆ = 1.42 \times 10^{-5}$
+$r = \frac{m_e v}{Be} = \frac{9.11 \times 10^{-31} \times 2.0 \times 10^6}{0.80 \times 1.60 \times 10^{-19}} = 1.42 \times 10^{-5}$
 m $= 14.2\,\mu$M.
 
 </details>
@@ -370,7 +370,7 @@ Two parallel wires 10 cm apart carry 10 A each in the same direction. Calculate 
 Length.
 
 **Answer.**
-$\frac{F}{L} = \frac◆LB◆\mu_0 I_1 I_2◆RB◆◆LB◆2\pi d◆RB◆ = \frac◆LB◆4\pi \times 10^{-7} \times 10 \times 10◆RB◆◆LB◆2\pi \times 0.10◆RB◆ = 2.0 \times 10^{-4}$
+$\frac{F}{L} = \frac{\mu_0 I_1 I_2}{2\pi d} = \frac{4\pi \times 10^{-7} \times 10 \times 10}{2\pi \times 0.10} = 2.0 \times 10^{-4}$
 N m$^{-1}$ (attractive).
 
 </details>
@@ -383,7 +383,7 @@ Calculate the radius and pitch of the helical path.
 **Answer.** $v_\perp = 5.0 \times 10^6 \times \sin 30^\circ = 2.5 \times 10^6$ m s$^{-1}$.
 $v_\parallel = 5.0 \times 10^6 \times \cos 30^\circ = 4.33 \times 10^6$ m s$^{-1}$.
 
-$r = \frac◆LB◆m_p v_\perp◆RB◆◆LB◆Bq◆RB◆ = \frac◆LB◆1.67 \times 10^{-27} \times 2.5 \times 10^6◆RB◆◆LB◆0.40 \times 1.60 \times 10^{-19}◆RB◆ = 0.0653$
+$r = \frac{m_p v_\perp}{Bq} = \frac{1.67 \times 10^{-27} \times 2.5 \times 10^6}{0.40 \times 1.60 \times 10^{-19}} = 0.0653$
 m $= 6.53$ cm.
 
 $T = 2\pi m_p/(Bq) = 2\pi \times 1.67 \times 10^{-27}/(0.40 \times 1.60 \times 10^{-19}) = 1.64 \times 10^{-7}$

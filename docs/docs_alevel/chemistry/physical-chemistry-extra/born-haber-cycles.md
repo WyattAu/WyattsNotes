@@ -191,7 +191,7 @@ The theoretical lattice enthalpy assumes purely ionic bonding and perfect spheri
 Distributions:
 
 $$
-\Delta H_\mathrm{lat}^\circ \approx -\frac◆LB◆N_A M z^+ z^- e^2◆RB◆◆LB◆4\pi\varepsilon_0 r_0◆RB◆\left(1 - \frac{1}{n}\right)
+\Delta H_\mathrm{lat}^\circ \approx -\frac{N_A M z^+ z^- e^2}{4\pi\varepsilon_0 r_0}\left(1 - \frac{1}{n}\right)
 $$
 
 Where:
@@ -219,11 +219,11 @@ Parameters: $M = 1.7476$$z^+ = 1$$z^- = -1$
 $r_0 = 282\,\mathrm{pm} = 2.82 \times 10^{-10}\,\mathrm{m}$$n = 8$.
 
 $$
-\Delta H_\mathrm{lat}^\circ \approx -\frac◆LB◆(6.022 \times 10^{23})(1.7476)(1)(1)(1.602 \times 10^{-19})^2◆RB◆◆LB◆4\pi(8.854 \times 10^{-12})(2.82 \times 10^{-10})◆RB◆\left(1 - \frac{1}{8}\right)
+\Delta H_\mathrm{lat}^\circ \approx -\frac{(6.022 \times 10^{23})(1.7476)(1)(1)(1.602 \times 10^{-19})^2}{4\pi(8.854 \times 10^{-12})(2.82 \times 10^{-10})}\left(1 - \frac{1}{8}\right)
 $$
 
 $$
-\Delta H_\mathrm{lat}^\circ \approx -\frac◆LB◆4.336 \times 10^{-14}◆RB◆◆LB◆3.142 \times 10^{-20}◆RB◆ \times 0.875 \approx -1.379 \times 10^6 \times 0.875 \approx -1207\,\mathrm{kJ/mol}
+\Delta H_\mathrm{lat}^\circ \approx -\frac{4.336 \times 10^{-14}}{3.142 \times 10^{-20}} \times 0.875 \approx -1.379 \times 10^6 \times 0.875 \approx -1207\,\mathrm{kJ/mol}
 $$
 
 Wait -- the actual Born-Lande calculation for NaCl gives approximately $-770\,\mathrm{kJ/mol}$ Which
@@ -237,7 +237,7 @@ For compounds where the crystal structure is unknown, the Kapustinskii equation 
 Empirical estimate of the lattice enthalpy:
 
 $$
-\Delta H_\mathrm{lat}^\circ \approx -\frac◆LB◆120.2 \times 10^{-6} \nu |z^+||z^-|◆RB◆◆LB◆r_+ + r_-◆RB◆\left(1 - \frac◆LB◆34.5 \times 10^{-12}◆RB◆◆LB◆r_+ + r_-◆RB◆\right)
+\Delta H_\mathrm{lat}^\circ \approx -\frac{120.2 \times 10^{-6} \nu |z^+||z^-|}{r_+ + r_-}\left(1 - \frac{34.5 \times 10^{-12}}{r_+ + r_-}\right)
 $$
 
 Where $\nu$ is the number of ions per formula unit ($\nu = 2$ for MX, $\nu = 3$ for $\mathrm{MX}_2$
@@ -385,7 +385,7 @@ The charge product for MgO is 4 times that of NaCl, and the ionic separation is 
 combined effect gives:
 
 $$
-\frac◆LB◆\Delta H_\mathrm{lat}(\mathrm{MgO})◆RB◆◆LB◆\Delta H_\mathrm{lat}(\mathrm{NaCl})◆RB◆ \approx \frac{4}{1} \times \frac{283}{212} \approx 5.3
+\frac{\Delta H_\mathrm{lat}(\mathrm{MgO})}{\Delta H_\mathrm{lat}(\mathrm{NaCl})} \approx \frac{4}{1} \times \frac{283}{212} \approx 5.3
 $$
 
 This ratio ($5.3$) is close to the experimental ratio ($3844/788 = 4.9$), confirming that the
@@ -499,7 +499,7 @@ character.
 The Born-Lande equation calculates the theoretical lattice enthalpy assuming perfect ionic bonding:
 
 $$
-\Delta H_\mathrm{lat}^\circ = -\frac◆LB◆N_A M z^+ z^- e^2◆RB◆◆LB◆4\pi\varepsilon_0 r_0◆RB◆\left(1 - \frac{1}{n}\right)
+\Delta H_\mathrm{lat}^\circ = -\frac{N_A M z^+ z^- e^2}{4\pi\varepsilon_0 r_0}\left(1 - \frac{1}{n}\right)
 $$
 
 Where $N_A$ is Avogadro's number, $M$ is the Madelung constant (depends on crystal structure), $z^+$

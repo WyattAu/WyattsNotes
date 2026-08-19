@@ -33,7 +33,7 @@ Must be able to interpret these and understand their limitations.
 
 **Definition.** For bivariate data $(x_1,y_1),\ldots,(x_n,y_n)$The PMCC is
 
-$$r = \frac◆LB◆S_{xy}◆RB◆◆LB◆\sqrt{S_{xx}\,S_{yy}}◆RB◆$$
+$$r = \frac{S_{xy}}{\sqrt{S_{xx}\,S_{yy}}}$$
 
 Where
 
@@ -78,7 +78,7 @@ Illustrates that even a moderate $r$ does not guarantee accurate individual pred
 
 When data are ranked, Spearman's coefficient is
 
-$$r_s = 1 - \frac◆LB◆6\sum d_i^2◆RB◆◆LB◆n(n^2-1)◆RB◆$$
+$$r_s = 1 - \frac{6\sum d_i^2}{n(n^2-1)}$$
 
 Where $d_i$ is the difference in ranks for the $i$-th pair.
 
@@ -124,12 +124,12 @@ $$S(a,b) = \sum_{i=1}^{n}(y_i - a - bx_i)^2$$
 
 ### 3.2 Derivation using partial derivatives
 
-Setting $\dfrac◆LB◆\partial S◆RB◆◆LB◆\partial a◆RB◆ = 0$ and
-$\dfrac◆LB◆\partial S◆RB◆◆LB◆\partial b◆RB◆ = 0$:
+Setting $\dfrac{\partial S}{\partial a} = 0$ and
+$\dfrac{\partial S}{\partial b} = 0$:
 
-$$\frac◆LB◆\partial S◆RB◆◆LB◆\partial a◆RB◆ = -2\sum(y_i - a - bx_i) = 0 \implies \sum y_i = na + b\sum x_i \tag{1}$$
+$$\frac{\partial S}{\partial a} = -2\sum(y_i - a - bx_i) = 0 \implies \sum y_i = na + b\sum x_i \tag{1}$$
 
-$$\frac◆LB◆\partial S◆RB◆◆LB◆\partial b◆RB◆ = -2\sum x_i(y_i - a - bx_i) = 0 \implies \sum x_i y_i = a\sum x_i + b\sum x_i^2 \tag{2}$$
+$$\frac{\partial S}{\partial b} = -2\sum x_i(y_i - a - bx_i) = 0 \implies \sum x_i y_i = a\sum x_i + b\sum x_i^2 \tag{2}$$
 
 From (1): $a = \bar{y} - b\bar{x}$.
 
@@ -141,7 +141,7 @@ $$\sum x_i y_i - n\bar{x}\bar{y} = b\left(\sum x_i^2 - n\bar{x}^2\right)$$
 
 $$S_{xy} = b\,S_{xx}$$
 
-$$\boxed{b = \frac{S_{xy}}{S_{xx}} = \frac◆LB◆\sum x_i y_i - n\bar{x}\bar{y}◆RB◆◆LB◆\sum x_i^2 - n\bar{x}^2◆RB◆}$$
+$$\boxed{b = \frac{S_{xy}}{S_{xx}} = \frac{\sum x_i y_i - n\bar{x}\bar{y}}{\sum x_i^2 - n\bar{x}^2}}$$
 
 $$\boxed{a = \bar{y} - b\bar{x}}$$
 
@@ -293,7 +293,7 @@ $\sum x^2 = 55$$\sum y^2 = 103$$\sum xy = 74$.
 $S_{xx} = 55 - 5(9) = 10$. $S_{yy} = 103 - 5(17.64) = 103 - 88.2 = 14.8$.
 $S_{xy} = 74 - 5(3)(4.2) = 74 - 63 = 11$.
 
-$r = \dfrac◆LB◆11◆RB◆◆LB◆\sqrt{10 \times 14.8}◆RB◆ = \dfrac◆LB◆11◆RB◆◆LB◆\sqrt{148}◆RB◆ = \dfrac{11}{12.166} \approx 0.904$.
+$r = \dfrac{11}{\sqrt{10 \times 14.8}} = \dfrac{11}{\sqrt{148}} = \dfrac{11}{12.166} \approx 0.904$.
 
 **If you get this wrong, revise:**
 [Pearson's PMCC](#1-pearsons-product-moment-correlation-coefficient-pmcc) — Section 1.
@@ -336,7 +336,7 @@ Ranks of $x$: 1, 2, 3, 4, 5. Ranks of $y$: 1, 3, 2, 4, 5.
 
 $\sum d^2 = 0 + 1 + 1 + 0 + 0 = 2$.
 
-$r_s = 1 - \dfrac◆LB◆6 \times 2◆RB◆◆LB◆5(25-1)◆RB◆ = 1 - \dfrac{12}{120} = 1 - 0.1 = 0.9$.
+$r_s = 1 - \dfrac{6 \times 2}{5(25-1)} = 1 - \dfrac{12}{120} = 1 - 0.1 = 0.9$.
 
 **If you get this wrong, revise:**
 [Spearman's Rank Correlation](#2-spearmans-rank-correlation-coefficient) — Section 2.
@@ -393,7 +393,7 @@ Given $S_{xx} = 80$$S_{yy} = 200$And $S_{xy} = 100$Find $r$$b$ (gradient of $y$ 
 
 <details>
 <summary>Solution 7</summary>
-$r = \dfrac◆LB◆100◆RB◆◆LB◆\sqrt{80 \times 200}◆RB◆ = \dfrac◆LB◆100◆RB◆◆LB◆\sqrt{16000}◆RB◆ = \dfrac{100}{126.49} \approx 0.791$.
+$r = \dfrac{100}{\sqrt{80 \times 200}} = \dfrac{100}{\sqrt{16000}} = \dfrac{100}{126.49} \approx 0.791$.
 
 $b = \dfrac{S_{xy}}{S_{xx}} = \dfrac{100}{80} = 1.25$.
 
@@ -481,7 +481,7 @@ The data is already ranked, so:
 
 $\sum d_i^2 = 8$.
 
-$r_s = 1 - \dfrac◆LB◆6 \times 8◆RB◆◆LB◆8(64 - 1)◆RB◆ = 1 - \dfrac{48}{504} = 1 - 0.0952 = 0.905$ (3
+$r_s = 1 - \dfrac{6 \times 8}{8(64 - 1)} = 1 - \dfrac{48}{504} = 1 - 0.0952 = 0.905$ (3
 s.f.).
 
 This indicates very strong positive agreement between the two teachers' rankings, suggesting
@@ -505,7 +505,7 @@ Cholesterol level for a patient with blood pressure of 150 mmHg. Comment on the 
 <summary>Solution 12</summary>
 
 (a)
-$r = \dfrac◆LB◆8100◆RB◆◆LB◆\sqrt{3600 \times 28900}◆RB◆ = \dfrac◆LB◆8100◆RB◆◆LB◆\sqrt{104040000}◆RB◆ = \dfrac{8100}{10200} \approx 0.794$.
+$r = \dfrac{8100}{\sqrt{3600 \times 28900}} = \dfrac{8100}{\sqrt{104040000}} = \dfrac{8100}{10200} \approx 0.794$.
 
 This indicates a strong positive linear correlation between blood pressure and cholesterol level.
 

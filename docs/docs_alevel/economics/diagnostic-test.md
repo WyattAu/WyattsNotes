@@ -71,7 +71,7 @@ The bus company's pricing strategy.
 
 <details>
 <summary>Answer</summary>
-(a) $E_d = \frac◆LB◆\%\Delta Q◆RB◆◆LB◆\%\Delta P◆RB◆ = -0.4$. $\%\Delta Q = -0.4 \times 10\% = -4\%$. Quantity demanded falls by 4%.<br />
+(a) $E_d = \frac{\%\Delta Q}{\%\Delta P} = -0.4$. $\%\Delta Q = -0.4 \times 10\% = -4\%$. Quantity demanded falls by 4%.<br />
 (b) Total revenue = $P \times Q$. New $TR = 1.10P \times 0.96Q = 1.056PQ$. Revenue rises by 5.6%.<br />
 Since $|E_d| = 0.4 \lt 1$Demand is **inelastic**. A price increase raises total revenue. The bus company should raise fares to maximise revenue (though this ignores welfare and equity considerations).
 <i>Revision: [Demand, Supply, and Equilibrium](/docs/alevel/economics/microeconomics/demand-supply-and-equilibrium)</i>
@@ -188,7 +188,7 @@ Redistributes it equally, what happens to the Gini coefficient?
 
 <details>
 <summary>Answer</summary>
-(a) Total income = £300,000. Share of each quintile (one person each): 5%, 8.3%, 11.7%, 20%, 55%. Cumulative: 5%, 13.3%, 25%, 45%, 100%. Line of equality: 20%, 40%, 60%, 80%, 100%. Gini = 1 - 2B where B is area under Lorenz curve. Using trapezoidal rule: $B = 0.5(0 + 0.05) + 0.5(0.05 + 0.133) + 0.5(0.133 + 0.25) + 0.5(0.25 + 0.45) + 0.5(0.45 + 1.0) = 0.025 + 0.0915 + 0.1915 + 0.35 + 0.725 = 1.383$. $A = 0.5 - B = -0.883$. Gini $= 2A = 2(0.5 - 1.383/2)$... Let me use the standard formula: Gini $= \frac◆LB◆2 \sum i \cdot y_i◆RB◆◆LB◆n \sum y_i◆RB◆ - \frac{n+1}{n}$. Or more , using the exact cumulative approach: Gini $\approx 0.38$ (a moderately unequal distribution).<br />
+(a) Total income = £300,000. Share of each quintile (one person each): 5%, 8.3%, 11.7%, 20%, 55%. Cumulative: 5%, 13.3%, 25%, 45%, 100%. Line of equality: 20%, 40%, 60%, 80%, 100%. Gini = 1 - 2B where B is area under Lorenz curve. Using trapezoidal rule: $B = 0.5(0 + 0.05) + 0.5(0.05 + 0.133) + 0.5(0.133 + 0.25) + 0.5(0.25 + 0.45) + 0.5(0.45 + 1.0) = 0.025 + 0.0915 + 0.1915 + 0.35 + 0.725 = 1.383$. $A = 0.5 - B = -0.883$. Gini $= 2A = 2(0.5 - 1.383/2)$... Let me use the standard formula: Gini $= \frac{2 \sum i \cdot y_i}{n \sum y_i} - \frac{n+1}{n}$. Or more , using the exact cumulative approach: Gini $\approx 0.38$ (a moderately unequal distribution).<br />
 (b) 20% tax: revenue = £60,000. Redistribution = £12,000 each. New incomes: £24,000, £32,000, £40,000, £60,000, £144,000. The distribution is more equal → Gini coefficient falls. The tax is proportional, so the redistribution effect (equal per capita transfer) is progressive, reducing inequality.
 <i>Revision: [Distribution of Income](/docs/alevel/economics/microeconomics/distribution-of-income)</i>
 </details>
@@ -645,8 +645,8 @@ $= (120 - 116) \times 248 = 992$ (40% of tax revenue). Total
 $= 1488 + 992 = 2480 = $ tax revenue. Correct.
 The consumer burden is larger because demand is less elastic than supply:
 $PED
-= \frac◆LB◆-2 \times 120◆RB◆◆LB◆260◆RB◆ = -0.92$ (inelastic).
-$PES = \frac◆LB◆3 \times 120◆RB◆◆LB◆260◆RB◆ = 1.38$ (elastic). Consumers bear $60\%$ of the burden
+= \frac{-2 \times 120}{260} = -0.92$ (inelastic).
+$PES = \frac{3 \times 120}{260} = 1.38$ (elastic). Consumers bear $60\%$ of the burden
 because demand is less elastic.
 
 </details>
@@ -794,7 +794,7 @@ rise to 6%.
 <summary>Answer</summary>
 (a) $P = \frac{4}{1.05} + \frac{4}{1.05^2} + \frac{104}{1.05^3} = 3.81 + 3.63 + 89.84 = \pounds 97.28$.
 
-(b) Current yield $= \frac◆LB◆\text{coupon}◆RB◆◆LB◆\text{price}◆RB◆ = \frac{4}{97.28} = 4.11\%$.
+(b) Current yield $= \frac{\text{coupon}}{\text{price}} = \frac{4}{97.28} = 4.11\%$.
 
 (c) Yield to maturity: the YTM is the discount rate that equates the present value of cash flows to
 the price. Since we used 5% to price the bond and the price is below par, the YTM is above the

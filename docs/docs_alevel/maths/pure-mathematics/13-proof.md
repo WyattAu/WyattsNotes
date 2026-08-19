@@ -193,7 +193,7 @@ element, Contradicting the inductive step.
 
 **Proof.**
 
-_Base case ($n=1$):_ $\displaystyle\sum_{r=1}^{1} r = 1 = \frac◆LB◆1 \times 2◆RB◆◆LB◆2◆RB◆$. ✓
+_Base case ($n=1$):_ $\displaystyle\sum_{r=1}^{1} r = 1 = \frac{1 \times 2}{2}$. ✓
 
 _Inductive hypothesis:_ Assume $\displaystyle\sum_{r=1}^{k} r = \frac{k(k+1)}{2}$ for some
 $k \geq 1$.
@@ -219,7 +219,7 @@ _Conclusion:_ By induction, the formula holds for all $n \in \mathbb{N}$. $\blac
 
 **Proof.**
 
-_Base case ($n=1$):_ $1 = \dfrac◆LB◆1 \times 2 \times 3◆RB◆◆LB◆6◆RB◆ = 1$. ✓
+_Base case ($n=1$):_ $1 = \dfrac{1 \times 2 \times 3}{6} = 1$. ✓
 
 _Inductive hypothesis:_ Assume $\displaystyle\sum_{r=1}^{k} r^2 = \frac{k(k+1)(2k+1)}{6}$.
 
@@ -347,7 +347,7 @@ Prove by induction that $\displaystyle\sum_{r=1}^{n} r^3 = \left[\frac{n(n+1)}{2
 
 <details>
 <summary>Solution 3</summary>
-*Base case ($n=1$):* $1^3 = 1 = \left[\dfrac◆LB◆1 \cdot 2◆RB◆◆LB◆2◆RB◆\right]^2 = 1$. ✓
+*Base case ($n=1$):* $1^3 = 1 = \left[\dfrac{1 \cdot 2}{2}\right]^2 = 1$. ✓
 
 _Hypothesis:_ $\displaystyle\sum_{r=1}^{k} r^3 = \left[\frac{k(k+1)}{2}\right]^2$.
 
@@ -396,7 +396,7 @@ Disprove by counterexample: "For all real $x$, $\sin(2x) = 2\sin x$."
 
 <details>
 <summary>Solution 5</summary>
-Let $x = \pi/4$. $\sin(\pi/2) = 1$ but $2\sin(\pi/4) = 2 \times \dfrac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆ = \sqrt{2} \neq 1$.
+Let $x = \pi/4$. $\sin(\pi/2) = 1$ but $2\sin(\pi/4) = 2 \times \dfrac{\sqrt{2}}{2} = \sqrt{2} \neq 1$.
 
 (The correct identity is $\sin(2x) = 2\sin x\cos x$.)
 
@@ -508,7 +508,7 @@ Prove by induction that $\displaystyle\sum_{r=1}^{n}\frac{1}{r(r+1)} = \frac{n}{
 
 <details>
 <summary>Solution 11</summary>
-*Base case ($n=1$):* $\dfrac◆LB◆1◆RB◆◆LB◆1 \times 2◆RB◆ = \dfrac{1}{2} = \dfrac{1}{1+1}$. ✓
+*Base case ($n=1$):* $\dfrac{1}{1 \times 2} = \dfrac{1}{2} = \dfrac{1}{1+1}$. ✓
 
 _Hypothesis:_ $\displaystyle\sum_{r=1}^{k}\frac{1}{r(r+1)} = \frac{k}{k+1}$.
 

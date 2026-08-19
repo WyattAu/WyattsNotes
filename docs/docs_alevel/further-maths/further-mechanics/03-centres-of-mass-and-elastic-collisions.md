@@ -35,9 +35,9 @@ Including oblique impacts.
 **Definition.** The _centre of mass_ of a lamina bounded by $y = f(x)$, $x = a$, $x = b$And the $x$-axis
 is the point $(\bar{x}, \bar{y})$ where:
 
-$$\boxed{\bar{x} = \frac◆LB◆\displaystyle\int_a^b x \cdot f(x)\,dx◆RB◆◆LB◆\displaystyle\int_a^b f(x)\,dx◆RB◆}$$
+$$\boxed{\bar{x} = \frac{\displaystyle\int_a^b x \cdot f(x)\,dx}{\displaystyle\int_a^b f(x)\,dx}}$$
 
-$$\boxed{\bar{y} = \frac◆LB◆\displaystyle\int_a^b \frac{1}{2}[f(x)]^2\,dx◆RB◆◆LB◆\displaystyle\int_a^b f(x)\,dx◆RB◆}$$
+$$\boxed{\bar{y} = \frac{\displaystyle\int_a^b \frac{1}{2}[f(x)]^2\,dx}{\displaystyle\int_a^b f(x)\,dx}}$$
 
 The denominator is the total area of the lamina: $A = \displaystyle\int_a^b f(x)\,dx$.
 
@@ -53,7 +53,7 @@ Is $y = \dfrac{h}{c - b}(x - b)$.
 For simplicity, take a right triangle with vertices $(0, 0)$$(b, 0)$$(0, h)$Where
 $f(x) = h - \dfrac{h}{b}x = h\!\left(1 - \dfrac{x}{b}\right)$.
 
-$$\bar{x} = \frac◆LB◆\displaystyle\int_0^b x \cdot h\!\left(1 - \frac{x}{b}\right)dx◆RB◆◆LB◆\displaystyle\int_0^b h\!\left(1 - \frac{x}{b}\right)dx◆RB◆$$
+$$\bar{x} = \frac{\displaystyle\int_0^b x \cdot h\!\left(1 - \frac{x}{b}\right)dx}{\displaystyle\int_0^b h\!\left(1 - \frac{x}{b}\right)dx}$$
 
 Numerator:
 $\displaystyle h\int_0^b \left(x - \frac{x^2}{b}\right)dx = h\left[\frac{x^2}{2} - \frac{x^3}{3b}\right]_0^b = h\left(\frac{b^2}{2} - \frac{b^2}{3}\right) = \frac{hb^2}{6}$.
@@ -63,9 +63,9 @@ $\displaystyle h\int_0^b \left(1 - \frac{x}{b}\right)dx = h\left[x - \frac{x^2}{
 
 $$\bar{x} = \frac{hb^2/6}{hb/2} = \frac{b}{3}$$
 
-$$\bar{y} = \frac◆LB◆\displaystyle\int_0^b \frac{1}{2}h^2\!\left(1 - \frac{x}{b}\right)^2 dx◆RB◆◆LB◆hb/2◆RB◆ = \frac◆LB◆\dfrac{h^2}{2}\displaystyle\int_0^b \left(1 - \frac{2x}{b} + \frac{x^2}{b^2}\right)dx◆RB◆◆LB◆hb/2◆RB◆$$
+$$\bar{y} = \frac{\displaystyle\int_0^b \frac{1}{2}h^2\!\left(1 - \frac{x}{b}\right)^2 dx}{hb/2} = \frac{\dfrac{h^2}{2}\displaystyle\int_0^b \left(1 - \frac{2x}{b} + \frac{x^2}{b^2}\right)dx}{hb/2}$$
 
-$$= \frac◆LB◆\dfrac{h^2}{2}\!\left[b - b + \dfrac{b}{3}\right]◆RB◆◆LB◆hb/2◆RB◆ = \frac{h^2 b / 6}{hb/2} = \frac{h}{3}$$
+$$= \frac{\dfrac{h^2}{2}\!\left[b - b + \dfrac{b}{3}\right]}{hb/2} = \frac{h^2 b / 6}{hb/2} = \frac{h}{3}$$
 
 For a general triangle with vertices $(x_1, y_1), (x_2, y_2), (x_3, y_3)$:
 
@@ -87,9 +87,9 @@ For a triangle of base $b$ and height $h$ with base on the $x$-axis: $\bar{y} = 
 
 For a uniform semicircular lamina of radius $r$:
 
-$$\boxed{\bar{y} = \frac◆LB◆4r◆RB◆◆LB◆3\pi◆RB◆}$$
+$$\boxed{\bar{y} = \frac{4r}{3\pi}}$$
 
-The centre of mass lies on the axis of symmetry, a distance $\dfrac◆LB◆4r◆RB◆◆LB◆3\pi◆RB◆$ from the
+The centre of mass lies on the axis of symmetry, a distance $\dfrac{4r}{3\pi}$ from the
 Diameter.
 
 ### 2.3 Circular sector
@@ -97,17 +97,17 @@ Diameter.
 For a sector of a circle of radius $r$ with half-angle $\alpha$ (so the sector subtends $2\alpha$ at
 The centre):
 
-$$\boxed{\bar{x} = \frac◆LB◆2r\sin\alpha◆RB◆◆LB◆3\alpha◆RB◆}$$
+$$\boxed{\bar{x} = \frac{2r\sin\alpha}{3\alpha}}$$
 
 This lies on the axis of symmetry. For a semicircle ($\alpha = \pi/2$):
-$\bar{x} = \dfrac◆LB◆2r◆RB◆◆LB◆3(\pi/2)◆RB◆ = \dfrac◆LB◆4r◆RB◆◆LB◆3\pi◆RB◆$Consistent with Section
+$\bar{x} = \dfrac{2r}{3(\pi/2)} = \dfrac{4r}{3\pi}$Consistent with Section
 2.2.
 
 ### 2.4 Circular arc
 
 For a uniform circular arc of radius $r$ subtending angle $2\alpha$ at the centre:
 
-$$\boxed{\bar{x} = \frac◆LB◆r\sin\alpha◆RB◆◆LB◆\alpha◆RB◆}$$
+$$\boxed{\bar{x} = \frac{r\sin\alpha}{\alpha}}$$
 
 <hr />
 
@@ -116,9 +116,9 @@ $$\boxed{\bar{x} = \frac◆LB◆r\sin\alpha◆RB◆◆LB◆\alpha◆RB◆}$$
 **Definition.** For a body composed of $n$ parts with masses $m_1, m_2, \ldots, m_n$ and centres of
 Mass at $(x_1, y_1), (x_2, y_2), \ldots, (x_n, y_n)$:
 
-$$\boxed{\bar{x} = \frac◆LB◆\displaystyle\sum_{i=1}^{n} m_i x_i◆RB◆◆LB◆\displaystyle\sum_{i=1}^{n} m_i◆RB◆}$$
+$$\boxed{\bar{x} = \frac{\displaystyle\sum_{i=1}^{n} m_i x_i}{\displaystyle\sum_{i=1}^{n} m_i}}$$
 
-$$\boxed{\bar{y} = \frac◆LB◆\displaystyle\sum_{i=1}^{n} m_i y_i◆RB◆◆LB◆\displaystyle\sum_{i=1}^{n} m_i◆RB◆}$$
+$$\boxed{\bar{y} = \frac{\displaystyle\sum_{i=1}^{n} m_i y_i}{\displaystyle\sum_{i=1}^{n} m_i}}$$
 
 For a composite body, _negative masses_ can be used for holes or removed sections.
 
@@ -131,16 +131,16 @@ Edge. Find the centre of mass of the remaining lamina.
 The square has area $(4a)^2 = 16a^2$ and centre of mass at $(2a, 2a)$.
 
 The semicircle has area $\dfrac{1}{2}\pi(2a)^2 = 2\pi a^2$ and centre of mass at
-$(2a, 2a + \dfrac◆LB◆4(2a)◆RB◆◆LB◆3\pi◆RB◆) = (2a, 2a + \dfrac◆LB◆8a◆RB◆◆LB◆3\pi◆RB◆)$Assuming the
+$(2a, 2a + \dfrac{4(2a)}{3\pi}) = (2a, 2a + \dfrac{8a}{3\pi})$Assuming the
 Semicircle is removed from the top edge.
 
 Using negative mass for the semicircle:
 
-$$\bar{y} = \frac◆LB◆16a^2 \times 2a - 2\pi a^2 \times (2a + 8a/(3\pi))◆RB◆◆LB◆16a^2 - 2\pi a^2◆RB◆$$
+$$\bar{y} = \frac{16a^2 \times 2a - 2\pi a^2 \times (2a + 8a/(3\pi))}{16a^2 - 2\pi a^2}$$
 
-$$= \frac◆LB◆32a^3 - 4\pi a^3 - 16a^3/3◆RB◆◆LB◆a^2(16 - 2\pi)◆RB◆ = \frac◆LB◆a(96 - 12\pi - 16)/3◆RB◆◆LB◆16 - 2\pi◆RB◆ = \frac◆LB◆a(80 - 12\pi)◆RB◆◆LB◆3(16 - 2\pi)◆RB◆$$
+$$= \frac{32a^3 - 4\pi a^3 - 16a^3/3}{a^2(16 - 2\pi)} = \frac{a(96 - 12\pi - 16)/3}{16 - 2\pi} = \frac{a(80 - 12\pi)}{3(16 - 2\pi)}$$
 
-$$= \frac◆LB◆a(80 - 12\pi)◆RB◆◆LB◆48 - 6\pi◆RB◆ = \frac◆LB◆a(40 - 6\pi)◆RB◆◆LB◆24 - 3\pi◆RB◆$$
+$$= \frac{a(80 - 12\pi)}{48 - 6\pi} = \frac{a(40 - 6\pi)}{24 - 3\pi}$$
 
 </details>
 
@@ -153,7 +153,7 @@ $$= \frac◆LB◆a(80 - 12\pi)◆RB◆◆LB◆48 - 6\pi◆RB◆ = \frac◆LB◆a
 A framework is made of uniform wires (rods). Each rod has its centre of mass at its midpoint. The
 Total mass is proportional to the total length.
 
-$$\boxed{\bar{x} = \frac◆LB◆\displaystyle\sum m_i x_i◆RB◆◆LB◆\displaystyle\sum m_i◆RB◆ = \frac◆LB◆\displaystyle\sum \ell_i x_i◆RB◆◆LB◆\displaystyle\sum \ell_i◆RB◆}$$
+$$\boxed{\bar{x} = \frac{\displaystyle\sum m_i x_i}{\displaystyle\sum m_i} = \frac{\displaystyle\sum \ell_i x_i}{\displaystyle\sum \ell_i}}$$
 
 Where $\ell_i$ is the length of the $i$-th rod and $x_i$ is the $x$-coordinate of its midpoint.
 
@@ -275,7 +275,7 @@ $$v_x = -e \cdot u_x, \qquad v_y = u_y$$
 
 The angle of incidence $\alpha$ and angle of reflection $\beta$ satisfy:
 
-$$\tan\beta = \frac◆LB◆u_y◆RB◆◆LB◆e \cdot u_x◆RB◆ = \frac◆LB◆\tan\alpha◆RB◆◆LB◆e◆RB◆$$
+$$\tan\beta = \frac{u_y}{e \cdot u_x} = \frac{\tan\alpha}{e}$$
 
 Since $e \leq 1$We have $\tan\beta \geq \tan\alpha$So the angle of reflection is greater than or
 Equal to the angle of incidence.
@@ -315,7 +315,7 @@ Angle of incidence: $\alpha = \arctan(4/6) = \arctan(2/3)$.
 
 Angle of reflection: $\beta = \arctan(4/3)$.
 
-Note: $\tan\beta = 4/3 = \dfrac◆LB◆\tan\alpha◆RB◆◆LB◆e◆RB◆ = \dfrac{2/3}{0.5} = 4/3$. ✓
+Note: $\tan\beta = 4/3 = \dfrac{\tan\alpha}{e} = \dfrac{2/3}{0.5} = 4/3$. ✓
 
 </details>
 
@@ -323,9 +323,9 @@ Note: $\tan\beta = 4/3 = \dfrac◆LB◆\tan\alpha◆RB◆◆LB◆e◆RB◆ = \df
 
 ## 8. Summary of Key Results
 
-$$\boxed{\bar{x} = \frac◆LB◆\displaystyle\sum m_i x_i◆RB◆◆LB◆\displaystyle\sum m_i◆RB◆, \qquad \bar{y} = \frac◆LB◆\displaystyle\sum m_i y_i◆RB◆◆LB◆\displaystyle\sum m_i◆RB◆}$$
+$$\boxed{\bar{x} = \frac{\displaystyle\sum m_i x_i}{\displaystyle\sum m_i}, \qquad \bar{y} = \frac{\displaystyle\sum m_i y_i}{\displaystyle\sum m_i}}$$
 
-$$\boxed{\bar{y}_{\mathrm{semicircle}} = \frac◆LB◆4r◆RB◆◆LB◆3\pi◆RB◆, \qquad \bar{x}_{\mathrm{sector}} = \frac◆LB◆2r\sin\alpha◆RB◆◆LB◆3\alpha◆RB◆}$$
+$$\boxed{\bar{y}_{\mathrm{semicircle}} = \frac{4r}{3\pi}, \qquad \bar{x}_{\mathrm{sector}} = \frac{2r\sin\alpha}{3\alpha}}$$
 
 $$\boxed{e = -\frac{v_1 - v_2}{u_1 - u_2}}$$
 
@@ -373,7 +373,7 @@ $3v_1 + 5(v_1 + 5) = 14 \implies 8v_1 = -11 \implies v_1 = -1.375\,\mathrm{m s}^
 
 $v_2 = -1.375 + 5 = 3.625\,\mathrm{m s}^{-1}$.
 
-$\mu = \dfrac◆LB◆3 \times 5◆RB◆◆LB◆8◆RB◆ = \dfrac{15}{8}$.
+$\mu = \dfrac{3 \times 5}{8} = \dfrac{15}{8}$.
 
 $\Delta KE = \dfrac{1}{2} \times \dfrac{15}{8} \times (10)^2 \times (1 - 0.25) = \dfrac{15}{16} \times 100 \times 0.75 = \dfrac{1125}{16} \approx 70.3\,\mathrm{J}$.
 
@@ -389,10 +389,10 @@ Find the centre of mass of a uniform semicircular lamina of radius $5\,\mathrm{c
 
 <details>
 <summary>Solution 3</summary>
-$\bar{y} = \dfrac◆LB◆4r◆RB◆◆LB◆3\pi◆RB◆ = \dfrac◆LB◆4 \times 5◆RB◆◆LB◆3\pi◆RB◆ = \dfrac◆LB◆20◆RB◆◆LB◆3\pi◆RB◆ \approx 2.12\,\mathrm{cm}$.
+$\bar{y} = \dfrac{4r}{3\pi} = \dfrac{4 \times 5}{3\pi} = \dfrac{20}{3\pi} \approx 2.12\,\mathrm{cm}$.
 
 The centre of mass lies on the axis of symmetry at a distance
-$\dfrac◆LB◆20◆RB◆◆LB◆3\pi◆RB◆\,\mathrm{cm}$ from the diameter.
+$\dfrac{20}{3\pi}\,\mathrm{cm}$ from the diameter.
 
 **If you get this wrong, revise:** [Semicircular lamina](#22-semicircular-lamina) — Section 2.2.
 
@@ -413,7 +413,7 @@ Since both centres of mass coincide at $(3a, 2a)$The composite lamina also has i
 $(3a, 2a)$ by symmetry.
 
 More formally:
-$\bar{x} = \dfrac◆LB◆24a^2 \times 3a - \pi a^2 \times 3a◆RB◆◆LB◆24a^2 - \pi a^2◆RB◆ = \dfrac◆LB◆3a(24 - \pi)◆RB◆◆LB◆24 - \pi◆RB◆ = 3a$.
+$\bar{x} = \dfrac{24a^2 \times 3a - \pi a^2 \times 3a}{24a^2 - \pi a^2} = \dfrac{3a(24 - \pi)}{24 - \pi} = 3a$.
 
 Similarly $\bar{y} = 2a$.
 
@@ -440,7 +440,7 @@ $v_x = 5$ (unchanged).
 Speed $= \sqrt{25 + 48} = \sqrt{73} \approx 8.54\,\mathrm{m s}^{-1}$.
 
 Angle to horizontal:
-$\theta = \arctan\!\left(\dfrac◆LB◆4\sqrt{3}◆RB◆◆LB◆5◆RB◆\right) = \arctan(1.386) \approx 54.2^\circ$.
+$\theta = \arctan\!\left(\dfrac{4\sqrt{3}}{5}\right) = \arctan(1.386) \approx 54.2^\circ$.
 
 **If you get this wrong, revise:** [Sphere hitting a smooth wall](#71-sphere-hitting-a-smooth-wall)
 — Section 7.1.
@@ -460,9 +460,9 @@ Rod 3: from $(4, 0)$ to $(0, 3)$Length $= \sqrt{16 + 9} = 5$Midpoint $(2, 1.5)$.
 
 Total length $= 4 + 3 + 5 = 12$.
 
-$\bar{x} = \dfrac◆LB◆4 \times 2 + 3 \times 0 + 5 \times 2◆RB◆◆LB◆12◆RB◆ = \dfrac{8 + 0 + 10}{12} = \dfrac{18}{12} = 1.5$.
+$\bar{x} = \dfrac{4 \times 2 + 3 \times 0 + 5 \times 2}{12} = \dfrac{8 + 0 + 10}{12} = \dfrac{18}{12} = 1.5$.
 
-$\bar{y} = \dfrac◆LB◆4 \times 0 + 3 \times 1.5 + 5 \times 1.5◆RB◆◆LB◆12◆RB◆ = \dfrac{0 + 4.5 + 7.5}{12} = \dfrac{12}{12} = 1$.
+$\bar{y} = \dfrac{4 \times 0 + 3 \times 1.5 + 5 \times 1.5}{12} = \dfrac{0 + 4.5 + 7.5}{12} = \dfrac{12}{12} = 1$.
 
 Centre of mass: $(1.5, 1)$.
 
@@ -516,9 +516,9 @@ $\bar{x} = \dfrac{8 + 8 + 4}{3} = \dfrac{20}{3}$$\bar{y} = \dfrac{0 + 6 + 6}{3} 
 
 Remaining area $= 48 - 12 = 36$.
 
-$\bar{x} = \dfrac◆LB◆48 \times 4 - 12 \times 20/3◆RB◆◆LB◆36◆RB◆ = \dfrac{192 - 80}{36} = \dfrac{112}{36} = \dfrac{28}{9} \approx 3.11\,\mathrm{cm}$.
+$\bar{x} = \dfrac{48 \times 4 - 12 \times 20/3}{36} = \dfrac{192 - 80}{36} = \dfrac{112}{36} = \dfrac{28}{9} \approx 3.11\,\mathrm{cm}$.
 
-$\bar{y} = \dfrac◆LB◆48 \times 3 - 12 \times 4◆RB◆◆LB◆36◆RB◆ = \dfrac{144 - 48}{36} = \dfrac{96}{36} = \dfrac{8}{3} \approx 2.67\,\mathrm{cm}$.
+$\bar{y} = \dfrac{48 \times 3 - 12 \times 4}{36} = \dfrac{144 - 48}{36} = \dfrac{96}{36} = \dfrac{8}{3} \approx 2.67\,\mathrm{cm}$.
 
 **If you get this wrong, revise:**
 [Centre of mass of composite bodies](#3-centre-of-mass-of-composite-bodies) — Section 3.
@@ -538,15 +538,15 @@ $v_y = -u\sin\theta$ (downward).
 
 After first impact: $v_x = u\cos\theta$$v_{y}' = eu\sin\theta$ (upward).
 
-Speed after bounce $= u\sqrt◆LB◆\cos^2\theta + e^2\sin^2\theta◆RB◆$.
+Speed after bounce $= u\sqrt{\cos^2\theta + e^2\sin^2\theta}$.
 
 Angle to horizontal:
-$\phi = \arctan\!\left(\dfrac◆LB◆e\sin\theta◆RB◆◆LB◆\cos\theta◆RB◆\right) = \arctan(e\tan\theta)$.
+$\phi = \arctan\!\left(\dfrac{e\sin\theta}{\cos\theta}\right) = \arctan(e\tan\theta)$.
 
-Time between first and second bounce: $T = \dfrac◆LB◆2eu\sin\theta◆RB◆◆LB◆g◆RB◆$.
+Time between first and second bounce: $T = \dfrac{2eu\sin\theta}{g}$.
 
 Horizontal distance
-$= u\cos\theta \times \dfrac◆LB◆2eu\sin\theta◆RB◆◆LB◆g◆RB◆ = \dfrac◆LB◆eu^2\sin 2\theta◆RB◆◆LB◆g◆RB◆$.
+$= u\cos\theta \times \dfrac{2eu\sin\theta}{g} = \dfrac{eu^2\sin 2\theta}{g}$.
 
 **If you get this wrong, revise:** [Sphere hitting a smooth wall](#71-sphere-hitting-a-smooth-wall)
 — Section 7.1.
@@ -567,9 +567,9 @@ Cylinder: volume $= \pi r^2 h$Centre of mass at distance $\dfrac{h}{2}$ from the
 
 Total volume $= \dfrac{2}{3}\pi r^3 + \pi r^2 h = \pi r^2\!\left(\dfrac{2r}{3} + h\right)$.
 
-$$\bar{x} = \frac◆LB◆\dfrac{2}{3}\pi r^3 \times \dfrac{3r}{8} + \pi r^2 h \times \dfrac{h}{2}◆RB◆◆LB◆\pi r^2\!\left(\dfrac{2r}{3} + h\right)◆RB◆ = \frac◆LB◆\dfrac{\pi r^4}{4} + \dfrac{\pi r^2 h^2}{2}◆RB◆◆LB◆\pi r^2\!\left(\dfrac{2r}{3} + h\right)◆RB◆$$
+$$\bar{x} = \frac{\dfrac{2}{3}\pi r^3 \times \dfrac{3r}{8} + \pi r^2 h \times \dfrac{h}{2}}{\pi r^2\!\left(\dfrac{2r}{3} + h\right)} = \frac{\dfrac{\pi r^4}{4} + \dfrac{\pi r^2 h^2}{2}}{\pi r^2\!\left(\dfrac{2r}{3} + h\right)}$$
 
-$$= \frac{r^2/4 + h^2/2}{2r/3 + h} = \frac◆LB◆r^2 + 2h^2◆RB◆◆LB◆4\!\left(\dfrac{2r}{3} + h\right)◆RB◆ = \frac{3(r^2 + 2h^2)}{4(2r + 3h)}$$
+$$= \frac{r^2/4 + h^2/2}{2r/3 + h} = \frac{r^2 + 2h^2}{4\!\left(\dfrac{2r}{3} + h\right)} = \frac{3(r^2 + 2h^2)}{4(2r + 3h)}$$
 
 **If you get this wrong, revise:**
 [Centre of mass of composite bodies](#3-centre-of-mass-of-composite-bodies) — Section 3.
@@ -625,7 +625,7 @@ Of mass of the remaining lamina.
 
 **Solution.** Square: area $= 36a^2$Centre of mass at $(3a, 3a)$.
 
-Equilateral triangle with side $2a$: area $= \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆4◆RB◆(2a)^2 = \sqrt{3}\,a^2$.
+Equilateral triangle with side $2a$: area $= \dfrac{\sqrt{3}}{4}(2a)^2 = \sqrt{3}\,a^2$.
 
 Height $= \sqrt{3}\,a$. The triangle's centroid is at distance $\sqrt{3}\,a/3$ from the base.
 
@@ -634,9 +634,9 @@ base on the top edge $y = 6a$ with centroid at $(3a, 6a - \sqrt{3}\,a/3)$:
 
 Using negative mass:
 
-$$\bar{y} = \frac◆LB◆36a^2 \times 3a - \sqrt{3}\,a^2 \times (6a - a\sqrt{3}/3)◆RB◆◆LB◆36a^2 - \sqrt{3}\,a^2◆RB◆ = \frac◆LB◆108a^3 - 6\sqrt{3}\,a^3 + a^3◆RB◆◆LB◆a^2(36 - \sqrt{3})◆RB◆$$
+$$\bar{y} = \frac{36a^2 \times 3a - \sqrt{3}\,a^2 \times (6a - a\sqrt{3}/3)}{36a^2 - \sqrt{3}\,a^2} = \frac{108a^3 - 6\sqrt{3}\,a^3 + a^3}{a^2(36 - \sqrt{3})}$$
 
-$$= \frac◆LB◆a(109 - 6\sqrt{3})◆RB◆◆LB◆36 - \sqrt{3}◆RB◆$$
+$$= \frac{a(109 - 6\sqrt{3})}{36 - \sqrt{3}}$$
 
 ### Example 9.3: Successive collisions with a wall
 
@@ -667,7 +667,7 @@ $z = h$.
 At height $z$The cross-section is a disc of radius $\dfrac{rz}{h}$With volume
 $dV = \pi\!\left(\dfrac{rz}{h}\right)^2 dz$.
 
-$$\bar{z} = \frac◆LB◆\displaystyle\int_0^h z \cdot \pi r^2 z^2/h^2\,dz◆RB◆◆LB◆\displaystyle\int_0^h \pi r^2 z^2/h^2\,dz◆RB◆ = \frac{h^4/4}{h^3/3} = \frac{3h}{4}$$
+$$\bar{z} = \frac{\displaystyle\int_0^h z \cdot \pi r^2 z^2/h^2\,dz}{\displaystyle\int_0^h \pi r^2 z^2/h^2\,dz} = \frac{h^4/4}{h^3/3} = \frac{3h}{4}$$
 
 The centre of mass is at distance $\dfrac{3h}{4}$ from the vertex (or $\dfrac{h}{4}$ from the base).
 
@@ -743,11 +743,11 @@ Removed circle: area $= \pi a^2/4$Centre of mass at $(a/2, 0)$.
 
 Remaining area $= \pi a^2/2 - \pi a^2/4 = \pi a^2/4$.
 
-$$\bar{x} = \frac◆LB◆(\pi a^2/2)(0) - (\pi a^2/4)(a/2)◆RB◆◆LB◆\pi a^2/4◆RB◆ = \frac◆LB◆-\pi a^3/8◆RB◆◆LB◆\pi a^2/4◆RB◆ = -\frac{a}{2}$$
+$$\bar{x} = \frac{(\pi a^2/2)(0) - (\pi a^2/4)(a/2)}{\pi a^2/4} = \frac{-\pi a^3/8}{\pi a^2/4} = -\frac{a}{2}$$
 
-$$\bar{y} = \frac◆LB◆(\pi a^2/2)(4a/(3\pi)) - (\pi a^2/4)(0)◆RB◆◆LB◆\pi a^2/4◆RB◆ = \frac◆LB◆2a^2/3◆RB◆◆LB◆\pi a^2/4◆RB◆ = \frac◆LB◆8a◆RB◆◆LB◆3\pi◆RB◆$$
+$$\bar{y} = \frac{(\pi a^2/2)(4a/(3\pi)) - (\pi a^2/4)(0)}{\pi a^2/4} = \frac{2a^2/3}{\pi a^2/4} = \frac{8a}{3\pi}$$
 
-Centre of mass: $\left(-\dfrac{a}{2}, \dfrac◆LB◆8a◆RB◆◆LB◆3\pi◆RB◆\right)$.
+Centre of mass: $\left(-\dfrac{a}{2}, \dfrac{8a}{3\pi}\right)$.
 
 </details>
 
@@ -804,11 +804,11 @@ Cone: volume $= \pi r^2 h/3$Centre of mass at distance $h/4$ from the base.
 
 Taking the join as the origin (measuring into the hemisphere as positive):
 
-$$\bar{x} = \frac◆LB◆(2\pi r^3/3)(3r/8) + (\pi r^2 h/3)(-h/4)◆RB◆◆LB◆2\pi r^3/3 + \pi r^2 h/3◆RB◆ = \frac◆LB◆\pi r^4/4 - \pi r^2 h^2/12◆RB◆◆LB◆\pi r^2(2r + h)/3◆RB◆$$
+$$\bar{x} = \frac{(2\pi r^3/3)(3r/8) + (\pi r^2 h/3)(-h/4)}{2\pi r^3/3 + \pi r^2 h/3} = \frac{\pi r^4/4 - \pi r^2 h^2/12}{\pi r^2(2r + h)/3}$$
 
 For the centre of mass to be at the join: $\bar{x} = 0$:
 
-$$\frac◆LB◆\pi r^4◆RB◆◆LB◆4◆RB◆ = \frac◆LB◆\pi r^2 h^2◆RB◆◆LB◆12◆RB◆ \implies 3r^2 = h^2 \implies h = r\sqrt{3}$$
+$$\frac{\pi r^4}{4} = \frac{\pi r^2 h^2}{12} \implies 3r^2 = h^2 \implies h = r\sqrt{3}$$
 
 </details>
 
@@ -822,16 +822,16 @@ $$\frac◆LB◆\pi r^4◆RB◆◆LB◆4◆RB◆ = \frac◆LB◆\pi r^2 h^2◆RB�
 Width $2a$ and height $h$. The flat side of the semicircle coincides with one edge of the rectangle.
 Find the distance of the centre of mass from the base of the rectangle.
 
-**Solution.** Semicircle: area $= \dfrac◆LB◆\pi a^2◆RB◆◆LB◆2◆RB◆$Centre of mass at
-$\dfrac◆LB◆4a◆RB◆◆LB◆3\pi◆RB◆$ above the diameter.
+**Solution.** Semicircle: area $= \dfrac{\pi a^2}{2}$Centre of mass at
+$\dfrac{4a}{3\pi}$ above the diameter.
 
 Rectangle: area $= 2ah$Centre of mass at $\dfrac{h}{2}$ above the base.
 
 Taking the base as datum:
 
-$$\bar{y} = \frac◆LB◆\frac{\pi a^2}{2}\!\left(h + \frac{4a}{3\pi}\right) + 2ah \cdot \frac{h}{2}◆RB◆◆LB◆\frac{\pi a^2}{2} + 2ah◆RB◆$$
+$$\bar{y} = \frac{\frac{\pi a^2}{2}\!\left(h + \frac{4a}{3\pi}\right) + 2ah \cdot \frac{h}{2}}{\frac{\pi a^2}{2} + 2ah}$$
 
-$$= \frac◆LB◆\frac{\pi a^2 h}{2} + \frac{2a^3}{3} + ah^2◆RB◆◆LB◆\frac{\pi a^2}{2} + 2ah◆RB◆$$
+$$= \frac{\frac{\pi a^2 h}{2} + \frac{2a^3}{3} + ah^2}{\frac{\pi a^2}{2} + 2ah}$$
 
 ### Example 8.2: Oblique elastic collision in 2D
 
@@ -852,7 +852,7 @@ Conservation of KE: $\dfrac{1}{2}m \times 16 = \dfrac{1}{2}mv_1^2 + \dfrac{1}{2}
 
 $16 = v_1^2 + 2v_2^2$ ... (3)
 
-From (2): $v_2\sin\theta = \dfrac◆LB◆v_1\sqrt{3}◆RB◆◆LB◆4◆RB◆$. From (1):
+From (2): $v_2\sin\theta = \dfrac{v_1\sqrt{3}}{4}$. From (1):
 $v_2\cos\theta = 2 - \dfrac{v_1}{4}$.
 
 Squaring and adding:
@@ -863,12 +863,12 @@ $16 = v_1^2 + 2\!\left(\dfrac{v_1^2}{4} - \dfrac{v_1}{2} + 4\right) = \dfrac{3v_
 
 $\dfrac{3v_1^2}{2} - v_1 - 8 = 0 \implies 3v_1^2 - 2v_1 - 16 = 0$.
 
-$v_1 = \dfrac◆LB◆2 \pm \sqrt{4+192}◆RB◆◆LB◆6◆RB◆ = \dfrac◆LB◆2 \pm 14◆RB◆◆LB◆6◆RB◆$. Taking
+$v_1 = \dfrac{2 \pm \sqrt{4+192}}{6} = \dfrac{2 \pm 14}{6}$. Taking
 Positive: $v_1 = \dfrac{16}{6} = \dfrac{8}{3}\,\mathrm{m\,s^{-1}}$.
 
-$v_2^2 = \dfrac◆LB◆64◆RB◆◆LB◆9 \times 4◆RB◆ - \dfrac{4}{3} + 4 = \dfrac{16}{9} - \dfrac{4}{3} + 4 = \dfrac{16-12+36}{9} = \dfrac{40}{9}$.
+$v_2^2 = \dfrac{64}{9 \times 4} - \dfrac{4}{3} + 4 = \dfrac{16}{9} - \dfrac{4}{3} + 4 = \dfrac{16-12+36}{9} = \dfrac{40}{9}$.
 
-$v_2 = \dfrac◆LB◆2\sqrt{10}◆RB◆◆LB◆3◆RB◆\,\mathrm{m\,s^{-1}}$.
+$v_2 = \dfrac{2\sqrt{10}}{3}\,\mathrm{m\,s^{-1}}$.
 
 ### Example 8.3: Toppling and sliding on an inclined plane
 
@@ -884,9 +884,9 @@ Taking moments about the centre:
 $Fr = I\alpha = \dfrac{1}{2}mr^2 \cdot \dfrac{a}{r} \implies F = \dfrac{ma}{2}$.
 
 Linear:
-$mg\sin\alpha - F = ma \implies mg\sin\alpha = \dfrac{3ma}{2} \implies a = \dfrac◆LB◆2g\sin\alpha◆RB◆◆LB◆3◆RB◆$.
+$mg\sin\alpha - F = ma \implies mg\sin\alpha = \dfrac{3ma}{2} \implies a = \dfrac{2g\sin\alpha}{3}$.
 
-$F = \dfrac◆LB◆mg\sin\alpha◆RB◆◆LB◆3◆RB◆ \leq \mu mg\cos\alpha \implies \tan\alpha \leq 3\mu$.
+$F = \dfrac{mg\sin\alpha}{3} \leq \mu mg\cos\alpha \implies \tan\alpha \leq 3\mu$.
 
 If $\mu < \tan\alpha \leq 3\mu$: rolls without slipping. If $\tan\alpha > 3\mu$: slides with
 Slipping.
@@ -896,7 +896,7 @@ Slipping.
 **Problem.** A rod of length $L$ has density $\rho(x) = \rho_0(1 + x/L)$. Find the centre of mass.
 
 **Solution.**
-$$\bar{x} = \frac◆LB◆\int_0^L x\rho(x)\,dx◆RB◆◆LB◆\int_0^L \rho(x)\,dx◆RB◆ = \frac◆LB◆\int_0^L x(1+x/L)\,dx◆RB◆◆LB◆\int_0^L (1+x/L)\,dx◆RB◆$$
+$$\bar{x} = \frac{\int_0^L x\rho(x)\,dx}{\int_0^L \rho(x)\,dx} = \frac{\int_0^L x(1+x/L)\,dx}{\int_0^L (1+x/L)\,dx}$$
 
 Numerator:
 $\displaystyle\int_0^L \!\left(x + \frac{x^2}{L}\right)dx = \frac{L^2}{2} + \frac{L^2}{3} = \frac{5L^2}{6}$.
@@ -947,9 +947,9 @@ Of mass of the remaining lamina.
 <details>
 <summary>Solution</summary>
 
-Triangle: area $= \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆4◆RB◆(2a)^2 = \sqrt{3}a^2$Centroid at geometric Centre.
+Triangle: area $= \dfrac{\sqrt{3}}{4}(2a)^2 = \sqrt{3}a^2$Centroid at geometric Centre.
 
-Hole: area $= \dfrac◆LB◆\pi a^2◆RB◆◆LB◆4◆RB◆$Centroid at geometric centre.
+Hole: area $= \dfrac{\pi a^2}{4}$Centroid at geometric centre.
 
 Since the hole is at the centroid, the remaining lamina has its centre of mass at the centroid of
 The triangle.
@@ -957,7 +957,7 @@ The triangle.
 Wait — the centre of mass of the remaining lamina is the weighted average of the triangle and the
 Hole (with negative mass for the hole):
 
-$$\bar{x} = \frac◆LB◆\sqrt{3}a^2 \cdot 0 - \frac{\pi a^2}{4} \cdot 0◆RB◆◆LB◆\sqrt{3}a^2 - \frac{\pi a^2}{4}◆RB◆ = 0$$
+$$\bar{x} = \frac{\sqrt{3}a^2 \cdot 0 - \frac{\pi a^2}{4} \cdot 0}{\sqrt{3}a^2 - \frac{\pi a^2}{4}} = 0$$
 
 The centre of mass remains at the centroid since both the triangle and hole are centred there.
 $\boxed{\bar{x} = 0}$
@@ -1022,8 +1022,8 @@ $\mathbf{M} = \mathbf{r} \times \mathbf{F}$. See
 | 1D elastic collision            | $v_1 = \dfrac{(m_1-m_2)u}{m_1+m_2}$, $v_2 = \dfrac{2m_1 u}{m_1+m_2}$                          |
 | Conservation of momentum        | $m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2$                                                         |
 | Conservation of KE (elastic)    | $\dfrac{1}{2}m_1u_1^2 + \dfrac{1}{2}m_2u_2^2 = \dfrac{1}{2}m_1v_1^2 + \dfrac{1}{2}m_2v_2^2$ |
-| Centre of mass (discrete)       | $\bar{x} = \dfrac◆LB◆\sum m_i x_i◆RB◆◆LB◆\sum m_i◆RB◆$                                      |
-| Centre of mass (continuous)     | $\bar{x} = \dfrac◆LB◆\int x\,\rho(x)\,dA◆RB◆◆LB◆\int \rho(x)\,dA◆RB◆$                       |
+| Centre of mass (discrete)       | $\bar{x} = \dfrac{\sum m_i x_i}{\sum m_i}$                                      |
+| Centre of mass (continuous)     | $\bar{x} = \dfrac{\int x\,\rho(x)\,dA}{\int \rho(x)\,dA}$                       |
 | Moment of inertia (rod, centre) | $I = \dfrac{ml^2}{12}$                                                                      |
 | Moment of inertia (rod, end)    | $I = \dfrac{ml^2}{3}$                                                                       |
 | Moment of inertia (disc)        | $I = \dfrac{mr^2}{2}$                                                                       |
@@ -1089,7 +1089,7 @@ With the vertex on the table, the centre of mass is at $\boxed{\dfrac{3h}{4}}$ a
 A uniform circular arc of radius $r$ subtending angle $2\alpha$ at the centre has its centre of mass
 At:
 
-$$\bar{x} = \frac◆LB◆r\sin\alpha◆RB◆◆LB◆\alpha◆RB◆$$
+$$\bar{x} = \frac{r\sin\alpha}{\alpha}$$
 
 From the centre, along the axis of symmetry.
 
@@ -1097,7 +1097,7 @@ From the centre, along the axis of symmetry.
 
 A uniform circular sector of radius $r$ and angle $2\alpha$ has its centre of mass at:
 
-$$\bar{x} = \frac◆LB◆2r\sin\alpha◆RB◆◆LB◆3\alpha◆RB◆$$
+$$\bar{x} = \frac{2r\sin\alpha}{3\alpha}$$
 
 From the centre, along the axis of symmetry.
 
@@ -1105,7 +1105,7 @@ From the centre, along the axis of symmetry.
 
 For partially elastic collisions, the coefficient of restitution $e$ is defined as:
 
-$$e = \frac◆LB◆\text{relative speed of separation}◆RB◆◆LB◆\text{relative speed of approach}◆RB◆$$
+$$e = \frac{\text{relative speed of separation}}{\text{relative speed of approach}}$$
 
 $e = 1$: perfectly elastic. $e = 0$: perfectly inelastic.
 
@@ -1154,7 +1154,7 @@ Find the centre of mass of a uniform semicircular lamina of radius $a$.
 
 By symmetry, $\bar{x} = 0$.
 
-$$\bar{y} = \frac◆LB◆\int_0^{\pi} \frac{1}{2}a^2 \cdot \frac{2}{3}a\sin\theta\,d\theta◆RB◆◆LB◆\frac{1}{2}\pi a^2◆RB◆ = \frac◆LB◆\frac{a^3}{3}\int_0^{\pi}\sin\theta\,dtheta◆RB◆◆LB◆\frac{\pi a^2}{2}◆RB◆ = \frac◆LB◆\frac{2a^3}{3}◆RB◆◆LB◆\frac{\pi a^2}{2}◆RB◆ = \boxed{\frac◆LB◆4a◆RB◆◆LB◆3\pi◆RB◆}$$
+$$\bar{y} = \frac{\int_0^{\pi} \frac{1}{2}a^2 \cdot \frac{2}{3}a\sin\theta\,d\theta}{\frac{1}{2}\pi a^2} = \frac{\frac{a^3}{3}\int_0^{\pi}\sin\theta\,dtheta}{\frac{\pi a^2}{2}} = \frac{\frac{2a^3}{3}}{\frac{\pi a^2}{2}} = \boxed{\frac{4a}{3\pi}}$$
 
 </details>
 
@@ -1188,7 +1188,7 @@ Where $\bar{d}$ is the distance from the centroid to the axis of rotation.
 
 For a 3D body with density $\rho(\mathbf{r})$:
 
-$$\bar{x} = \frac◆LB◆\iiint_V x\,\rho\,dV◆RB◆◆LB◆\iiint_V \rho\,dV◆RB◆, \quad \bar{y} = \frac◆LB◆\iiint_V y\,\rho\,dV◆RB◆◆LB◆\iiint_V \rho\,dV◆RB◆, \quad \bar{z} = \frac◆LB◆\iiint_V z\,\rho\,dV◆RB◆◆LB◆\iiint_V \rho\,dV◆RB◆$$
+$$\bar{x} = \frac{\iiint_V x\,\rho\,dV}{\iiint_V \rho\,dV}, \quad \bar{y} = \frac{\iiint_V y\,\rho\,dV}{\iiint_V \rho\,dV}, \quad \bar{z} = \frac{\iiint_V z\,\rho\,dV}{\iiint_V \rho\,dV}$$
 
 ---
 
@@ -1201,9 +1201,9 @@ A uniform wire is bent into a semicircle of radius $a$. Find its centre of mass.
 <details>
 <summary>Solution</summary>
 
-For a wire (1D), use $\bar{x} = \dfrac◆LB◆\int x\,ds◆RB◆◆LB◆\int ds◆RB◆$ where $ds = a\,d\theta$.
+For a wire (1D), use $\bar{x} = \dfrac{\int x\,ds}{\int ds}$ where $ds = a\,d\theta$.
 
-$$\bar{y} = \frac◆LB◆\int_0^{\pi} a\sin\theta \cdot a\,d\theta◆RB◆◆LB◆\int_0^{\pi} a\,d\theta◆RB◆ = \frac◆LB◆a^2[-\cos\theta]_0^{\pi}◆RB◆◆LB◆a\pi◆RB◆ = \frac◆LB◆2a^2◆RB◆◆LB◆a\pi◆RB◆ = \boxed{\frac◆LB◆2a◆RB◆◆LB◆\pi◆RB◆}$$
+$$\bar{y} = \frac{\int_0^{\pi} a\sin\theta \cdot a\,d\theta}{\int_0^{\pi} a\,d\theta} = \frac{a^2[-\cos\theta]_0^{\pi}}{a\pi} = \frac{2a^2}{a\pi} = \boxed{\frac{2a}{\pi}}$$
 
 </details>
 

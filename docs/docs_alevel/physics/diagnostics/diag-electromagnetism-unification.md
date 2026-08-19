@@ -27,11 +27,11 @@ the same time, how would the induced EMF compare? Explain using both Faraday's a
 
 **Solution:**
 
-(a) By Faraday's law: $\varepsilon = -N\frac◆LB◆\Delta\Phi◆RB◆◆LB◆\Delta t◆RB◆$
+(a) By Faraday's law: $\varepsilon = -N\frac{\Delta\Phi}{\Delta t}$
 
 $$\Delta\Phi = \Phi_{\text{final}} - \Phi_{\text{initial}} = 0 - BA = -B\pi r^2 = -0.40 \times \pi \times (0.05)^2 = -3.14 \times 10^{-3}\,\text{Wb}$$
 
-$$|\varepsilon| = N\frac◆LB◆|\Delta\Phi|◆RB◆◆LB◆\Delta t◆RB◆ = 500 \times \frac◆LB◆3.14 \times 10^{-3}◆RB◆◆LB◆0.10◆RB◆ = 15.7\,\text{V}$$
+$$|\varepsilon| = N\frac{|\Delta\Phi|}{\Delta t} = 500 \times \frac{3.14 \times 10^{-3}}{0.10} = 15.7\,\text{V}$$
 
 (b) By Lenz's law, the induced current opposes the change in flux. Since the flux (into the page,
 say) is decreasing, the induced current flows to maintain the flux by creating its own field in the
@@ -126,10 +126,10 @@ Since $Q = CV = (\varepsilon_0 A/d) \times Ed = \varepsilon_0 AE$:
 
 $$I = \frac{dQ}{dt} = \varepsilon_0 A \frac{dE}{dt}$$
 
-$$\frac{dE}{dt} = \frac◆LB◆I◆RB◆◆LB◆\varepsilon_0 A◆RB◆ = \frac◆LB◆2.0◆RB◆◆LB◆8.85 \times 10^{-12} \times 0.0314◆RB◆ = \frac◆LB◆2.0◆RB◆◆LB◆2.779 \times 10^{-13}◆RB◆ = 7.20 \times 10^{12}\,\text{V}\,\text{m}^{-1}\,\text{s}^{-1}$$
+$$\frac{dE}{dt} = \frac{I}{\varepsilon_0 A} = \frac{2.0}{8.85 \times 10^{-12} \times 0.0314} = \frac{2.0}{2.779 \times 10^{-13}} = 7.20 \times 10^{12}\,\text{V}\,\text{m}^{-1}\,\text{s}^{-1}$$
 
 (b) Displacement current:
-$I_d = \varepsilon_0 \frac◆LB◆d\Phi_E◆RB◆◆LB◆dt◆RB◆ = \varepsilon_0 A \frac{dE}{dt}$
+$I_d = \varepsilon_0 \frac{d\Phi_E}{dt} = \varepsilon_0 A \frac{dE}{dt}$
 
 $$I_d = 8.85 \times 10^{-12} \times 0.0314 \times 7.20 \times 10^{12} = 2.0\,\text{A}$$
 
@@ -165,7 +165,7 @@ radiation it would emit.
 **Solution:**
 
 (a)
-$f = \frac◆LB◆1◆RB◆◆LB◆2\pi\sqrt{LC}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2\pi\sqrt{1.0 \times 10^{-6} \times 1.0 \times 10^{-12}}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2\pi\sqrt{10^{-18}}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2\pi \times 10^{-9}◆RB◆ = 1.59 \times 10^8\,\text{Hz} = 159\,\text{MHz}$
+$f = \frac{1}{2\pi\sqrt{LC}} = \frac{1}{2\pi\sqrt{1.0 \times 10^{-6} \times 1.0 \times 10^{-12}}} = \frac{1}{2\pi\sqrt{10^{-18}}} = \frac{1}{2\pi \times 10^{-9}} = 1.59 \times 10^8\,\text{Hz} = 159\,\text{MHz}$
 
 This is in the VHF radio band.
 

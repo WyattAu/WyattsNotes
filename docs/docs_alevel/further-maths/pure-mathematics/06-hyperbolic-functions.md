@@ -50,13 +50,13 @@ $$\boxed{\cosh x = \frac{e^x + e^{-x}}{2}}$$
 
 $$\boxed{\sinh x = \frac{e^x - e^{-x}}{2}}$$
 
-$$\boxed{\tanh x = \frac◆LB◆\sinh x◆RB◆◆LB◆\cosh x◆RB◆ = \frac{e^x - e^{-x}}{e^x + e^{-x}}}$$
+$$\boxed{\tanh x = \frac{\sinh x}{\cosh x} = \frac{e^x - e^{-x}}{e^x + e^{-x}}}$$
 
 ### 1.2 The reciprocal hyperbolic functions
 
 **Definition.**
 
-$$\mathrm{sech}\,x = \frac◆LB◆1◆RB◆◆LB◆\cosh x◆RB◆, \qquad \mathrm{cosech}\,x = \frac◆LB◆1◆RB◆◆LB◆\sinh x◆RB◆, \qquad \coth\,x = \frac◆LB◆\cosh x◆RB◆◆LB◆\sinh x◆RB◆$$
+$$\mathrm{sech}\,x = \frac{1}{\cosh x}, \qquad \mathrm{cosech}\,x = \frac{1}{\sinh x}, \qquad \coth\,x = \frac{\cosh x}{\sinh x}$$
 
 :::warning Note the spelling: $\cosh$, $\sinh$, $\tanh$ are standard abbreviations. The reciprocals
 Use $\mathrm{sech}$ (not $\mathrm{sec h}$), $\mathrm{cosech}$ (not $\mathrm{csch}$), and $\coth$.
@@ -181,7 +181,7 @@ $$e^{2y} - 2xe^y - 1 = 0$$
 
 This is a quadratic in $e^y$:
 
-$$e^y = \frac◆LB◆2x \pm \sqrt{4x^2+4}◆RB◆◆LB◆2◆RB◆ = x \pm \sqrt{x^2+1}$$
+$$e^y = \frac{2x \pm \sqrt{4x^2+4}}{2} = x \pm \sqrt{x^2+1}$$
 
 Since $e^y > 0$ for all $y$We need $x + \sqrt{x^2+1} > 0$Which is always true. And
 $x - \sqrt{x^2+1} < 0$ for all $x$So we take the positive root:
@@ -200,7 +200,7 @@ $$2x = e^y + e^{-y}$$
 
 $$e^{2y} - 2xe^y + 1 = 0$$
 
-$$e^y = \frac◆LB◆2x \pm \sqrt{4x^2-4}◆RB◆◆LB◆2◆RB◆ = x \pm \sqrt{x^2-1}$$
+$$e^y = \frac{2x \pm \sqrt{4x^2-4}}{2} = x \pm \sqrt{x^2-1}$$
 
 Since $e^y \geq 1$ and $y \geq 0$: we need $e^y \geq 1$. Both roots are positive (for $x \geq 1$),
 But $x + \sqrt{x^2-1} \geq 1$ and $x - \sqrt{x^2-1} \leq 1$. Since $\cosh$ is not one-to-one on all
@@ -212,11 +212,11 @@ Therefore $\mathrm{arcosh}\,x = \ln(x + \sqrt{x^2-1})$ for $x \geq 1$. $\blacksq
 
 ### Proof of $\mathrm{artanh}\,x = \frac{1}{2}\ln\!\left(\frac{1+x}{1-x}\right)$
 
-Let $y = \mathrm{artanh}\,x$. Then $x = \tanh y = \dfrac◆LB◆\sinh y◆RB◆◆LB◆\cosh y◆RB◆$.
+Let $y = \mathrm{artanh}\,x$. Then $x = \tanh y = \dfrac{\sinh y}{\cosh y}$.
 
 Using $\cosh^2 y - \sinh^2 y = 1$:
 
-$$x = \frac◆LB◆\sinh y◆RB◆◆LB◆\cosh y◆RB◆ \implies \frac◆LB◆\sinh y◆RB◆◆LB◆\cosh y◆RB◆ = x \implies \sinh y = x\cosh y$$
+$$x = \frac{\sinh y}{\cosh y} \implies \frac{\sinh y}{\cosh y} = x \implies \sinh y = x\cosh y$$
 
 $$\cosh^2 y - x^2\cosh^2 y = 1 \implies \cosh^2 y = \frac{1}{1-x^2}$$
 
@@ -250,19 +250,19 @@ $$\frac{d}{dx}\cosh x = \frac{d}{dx}\left(\frac{e^x + e^{-x}}{2}\right) = \frac{
 
 ### 4.2 Derivatives of inverse hyperbolic functions
 
-$$\boxed{\frac{d}{dx}\mathrm{arsinh}\,x = \frac◆LB◆1◆RB◆◆LB◆\sqrt{x^2+1}◆RB◆}$$
+$$\boxed{\frac{d}{dx}\mathrm{arsinh}\,x = \frac{1}{\sqrt{x^2+1}}}$$
 
-$$\boxed{\frac{d}{dx}\mathrm{arcosh}\,x = \frac◆LB◆1◆RB◆◆LB◆\sqrt{x^2-1}◆RB◆, \quad x > 1}$$
+$$\boxed{\frac{d}{dx}\mathrm{arcosh}\,x = \frac{1}{\sqrt{x^2-1}}, \quad x > 1}$$
 
 $$\boxed{\frac{d}{dx}\mathrm{artanh}\,x = \frac{1}{1-x^2}, \quad |x| < 1}$$
 
-### Proof of $\frac{d}{dx}\mathrm{arsinh}\,x = \frac◆LB◆1◆RB◆◆LB◆\sqrt{x^2+1}◆RB◆$
+### Proof of $\frac{d}{dx}\mathrm{arsinh}\,x = \frac{1}{\sqrt{x^2+1}}$
 
 $\mathrm{arsinh}\,x = \ln(x + \sqrt{x^2+1})$.
 
-$$\frac{d}{dx}\ln(x+\sqrt{x^2+1}) = \frac◆LB◆1◆RB◆◆LB◆x+\sqrt{x^2+1}◆RB◆\cdot\left(1 + \frac◆LB◆x◆RB◆◆LB◆\sqrt{x^2+1}◆RB◆\right)$$
+$$\frac{d}{dx}\ln(x+\sqrt{x^2+1}) = \frac{1}{x+\sqrt{x^2+1}}\cdot\left(1 + \frac{x}{\sqrt{x^2+1}}\right)$$
 
-$$= \frac◆LB◆1◆RB◆◆LB◆x+\sqrt{x^2+1}◆RB◆\cdot\frac◆LB◆\sqrt{x^2+1}+x◆RB◆◆LB◆\sqrt{x^2+1}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆\sqrt{x^2+1}◆RB◆ \quad \blacksquare$$
+$$= \frac{1}{x+\sqrt{x^2+1}}\cdot\frac{\sqrt{x^2+1}+x}{\sqrt{x^2+1}} = \frac{1}{\sqrt{x^2+1}} \quad \blacksquare$$
 
 ### Proof of $\frac{d}{dx}\mathrm{artanh}\,x = \frac{1}{1-x^2}$
 
@@ -276,17 +276,17 @@ $$= \frac{1}{2}\cdot\frac{1-x}{1+x}\cdot\frac{2}{(1-x)^2} = \frac{1}{1-x^2} \qua
 
 The derivative results immediately give:
 
-$$\boxed{\int \frac◆LB◆1◆RB◆◆LB◆\sqrt{x^2+a^2}◆RB◆\,dx = \mathrm{arsinh}\!\left(\frac{x}{a}\right) + C = \ln\!\left(\frac{x}{a}+\sqrt◆LB◆\frac{x^2}{a^2}+1◆RB◆\right)+C}$$
+$$\boxed{\int \frac{1}{\sqrt{x^2+a^2}}\,dx = \mathrm{arsinh}\!\left(\frac{x}{a}\right) + C = \ln\!\left(\frac{x}{a}+\sqrt{\frac{x^2}{a^2}+1}\right)+C}$$
 
-$$\boxed{\int \frac◆LB◆1◆RB◆◆LB◆\sqrt{x^2-a^2}◆RB◆\,dx = \mathrm{arcosh}\!\left(\frac{x}{a}\right) + C = \ln\!\left(\frac{x}{a}+\sqrt◆LB◆\frac{x^2}{a^2}-1◆RB◆\right)+C, \quad x > a}$$
+$$\boxed{\int \frac{1}{\sqrt{x^2-a^2}}\,dx = \mathrm{arcosh}\!\left(\frac{x}{a}\right) + C = \ln\!\left(\frac{x}{a}+\sqrt{\frac{x^2}{a^2}-1}\right)+C, \quad x > a}$$
 
 $$\boxed{\int \frac{1}{a^2-x^2}\,dx = \frac{1}{a}\mathrm{artanh}\!\left(\frac{x}{a}\right) + C, \quad |x| < a}$$
 
 **Example.**
-$\displaystyle\int \frac◆LB◆1◆RB◆◆LB◆\sqrt{x^2+9}◆RB◆\,dx = \mathrm{arsinh}\!\left(\frac{x}{3}\right) + C = \ln\!\left(\frac{x}{3}+\sqrt◆LB◆\frac{x^2}{9}+1◆RB◆\right)+C = \ln\!\left(\frac◆LB◆x+\sqrt{x^2+9}◆RB◆◆LB◆3◆RB◆\right)+C$.
+$\displaystyle\int \frac{1}{\sqrt{x^2+9}}\,dx = \mathrm{arsinh}\!\left(\frac{x}{3}\right) + C = \ln\!\left(\frac{x}{3}+\sqrt{\frac{x^2}{9}+1}\right)+C = \ln\!\left(\frac{x+\sqrt{x^2+9}}{3}\right)+C$.
 
 **Example.**
-$\displaystyle\int \frac◆LB◆1◆RB◆◆LB◆\sqrt{x^2-4}◆RB◆\,dx = \mathrm{arcosh}\!\left(\frac{x}{2}\right) + C$
+$\displaystyle\int \frac{1}{\sqrt{x^2-4}}\,dx = \mathrm{arcosh}\!\left(\frac{x}{2}\right) + C$
 For $x > 2$.
 
 **Example.**
@@ -303,8 +303,8 @@ $$\int \mathrm{sech}^2\,x\,dx = \tanh x + C$$
 
 $$\int \tanh x\,dx = \ln(\cosh x) + C$$
 
-:::tip When you encounter an integral of the form $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2+a^2}◆RB◆$ or
-$\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2-a^2}◆RB◆$The inverse hyperbolic functions provide the most elegant
+:::tip When you encounter an integral of the form $\dfrac{1}{\sqrt{x^2+a^2}}$ or
+$\dfrac{1}{\sqrt{x^2-a^2}}$The inverse hyperbolic functions provide the most elegant
 Answer. CIE and Edexcel FP2 frequently test these.
 :::
 
@@ -345,7 +345,7 @@ Complex numbers:
 
 $$\sinh x = \tan(\mathrm{gd}\,x), \quad \cosh x = \sec(\mathrm{gd}\,x), \quad \tanh x = \sin(\mathrm{gd}\,x)$$
 
-$$\mathrm{gd}\,x = \int_0^x \mathrm{sech}\,t\,dt = 2\arctan(e^x) - \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$$
+$$\mathrm{gd}\,x = \int_0^x \mathrm{sech}\,t\,dt = 2\arctan(e^x) - \frac{\pi}{2}$$
 
 <hr />
 
@@ -355,14 +355,14 @@ $$\mathrm{gd}\,x = \int_0^x \mathrm{sech}\,t\,dt = 2\arctan(e^x) - \frac◆LB◆
 | --------- | -------------------------------------- | ----------------------------------- | --- | --- |
 | $\sinh x$ | $\dfrac{e^x-e^{-x}}{2}$                | $\ln(x+\sqrt{x^2+1})$               |
 | $\cosh x$ | $\dfrac{e^x+e^{-x}}{2}$                | $\ln(x+\sqrt{x^2-1}),\ x\geq 1$     |
-| $\tanh x$ | $\dfrac◆LB◆\sinh x◆RB◆◆LB◆\cosh x◆RB◆$ | $\dfrac{1}{2}\ln\dfrac{1+x}{1-x},\  | x   | <1$ |
+| $\tanh x$ | $\dfrac{\sinh x}{\cosh x}$ | $\dfrac{1}{2}\ln\dfrac{1+x}{1-x},\  | x   | <1$ |
 
 | Derivative                                                              | Integral                                                                     |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
 | $\dfrac{d}{dx}\sinh x = \cosh x$                                        | $\int\cosh x\,dx = \sinh x+C$                                                |
 | $\dfrac{d}{dx}\cosh x = \sinh x$                                        | $\int\sinh x\,dx = \cosh x+C$                                                |
 | $\dfrac{d}{dx}\tanh x = \mathrm{sech}^2\,x$                             | $\int\mathrm{sech}^2\,x\,dx = \tanh x+C$                                     |
-| $\dfrac{d}{dx}\mathrm{arsinh}\,x = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2+1}◆RB◆$ | $\int\dfrac◆LB◆dx◆RB◆◆LB◆\sqrt{x^2+a^2}◆RB◆ = \mathrm{arsinh}\dfrac{x}{a}+C$ |
+| $\dfrac{d}{dx}\mathrm{arsinh}\,x = \dfrac{1}{\sqrt{x^2+1}}$ | $\int\dfrac{dx}{\sqrt{x^2+a^2}} = \mathrm{arsinh}\dfrac{x}{a}+C$ |
 | $\dfrac{d}{dx}\mathrm{artanh}\,x = \dfrac{1}{1-x^2}$                    | $\int\dfrac{dx}{a^2-x^2} = \dfrac{1}{a}\mathrm{artanh}\dfrac{x}{a}+C$        |
 
 <hr />
@@ -383,7 +383,7 @@ Use the definition of $\cosh$ to obtain a quadratic in $e^x$.
 <summary>Answer 1</summary>
 $\dfrac{e^x+e^{-x}}{2} = 3 \implies e^x + e^{-x} = 6 \implies e^{2x} - 6e^x + 1 = 0$.
 
-$e^x = \dfrac◆LB◆6\pm\sqrt{36-4}◆RB◆◆LB◆2◆RB◆ = 3\pm 2\sqrt{2}$.
+$e^x = \dfrac{6\pm\sqrt{36-4}}{2} = 3\pm 2\sqrt{2}$.
 
 $x = \ln(3+2\sqrt{2})$ (taking the positive root for $x > 0$).
 
@@ -391,7 +391,7 @@ $x = \ln(3+2\sqrt{2})$ (taking the positive root for $x > 0$).
 
 <details>
 <summary>Problem 2</summary>
-Prove that $\tanh 2x = \dfrac◆LB◆2\tanh x◆RB◆◆LB◆1+\tanh^2 x◆RB◆$.
+Prove that $\tanh 2x = \dfrac{2\tanh x}{1+\tanh^2 x}$.
 </details>
 
 <details>
@@ -401,31 +401,31 @@ Start from $\sinh 2x = 2\sinh x\cosh x$ and $\cosh 2x = \cosh^2 x + \sinh^2 x$. 
 
 <details>
 <summary>Answer 2</summary>
-$\tanh 2x = \dfrac◆LB◆\sinh 2x◆RB◆◆LB◆\cosh 2x◆RB◆ = \dfrac◆LB◆2\sinh x\cosh x◆RB◆◆LB◆\cosh^2 x+\sinh^2 x◆RB◆$.
+$\tanh 2x = \dfrac{\sinh 2x}{\cosh 2x} = \dfrac{2\sinh x\cosh x}{\cosh^2 x+\sinh^2 x}$.
 
 Dividing numerator and denominator by $\cosh^2 x$:
 
-$= \dfrac◆LB◆2\tanh x◆RB◆◆LB◆1+\tanh^2 x◆RB◆. \quad \blacksquare$
+$= \dfrac{2\tanh x}{1+\tanh^2 x}. \quad \blacksquare$
 
 </details>
 
 <details>
 <summary>Problem 3</summary>
-Find $\displaystyle\int \frac◆LB◆1◆RB◆◆LB◆\sqrt{4x^2+9}◆RB◆\,dx$.
+Find $\displaystyle\int \frac{1}{\sqrt{4x^2+9}}\,dx$.
 </details>
 
 <details>
 <summary>Hint 3</summary>
-This matches $\displaystyle\int\frac◆LB◆1◆RB◆◆LB◆\sqrt{x^2+a^2}◆RB◆\,dx$ after a substitution. Let $u = 2x$.
+This matches $\displaystyle\int\frac{1}{\sqrt{x^2+a^2}}\,dx$ after a substitution. Let $u = 2x$.
 </details>
 
 <details>
 <summary>Answer 3</summary>
 Let $u = 2x$, $du = 2\,dx$.
 
-$\displaystyle\int\frac◆LB◆1◆RB◆◆LB◆\sqrt{4x^2+9}◆RB◆\,dx = \frac{1}{2}\int\frac◆LB◆1◆RB◆◆LB◆\sqrt{u^2+9}◆RB◆\,du = \frac{1}{2}\mathrm{arsinh}\!\left(\frac{u}{3}\right)+C = \frac{1}{2}\mathrm{arsinh}\!\left(\frac{2x}{3}\right)+C$.
+$\displaystyle\int\frac{1}{\sqrt{4x^2+9}}\,dx = \frac{1}{2}\int\frac{1}{\sqrt{u^2+9}}\,du = \frac{1}{2}\mathrm{arsinh}\!\left(\frac{u}{3}\right)+C = \frac{1}{2}\mathrm{arsinh}\!\left(\frac{2x}{3}\right)+C$.
 
-$= \dfrac{1}{2}\ln\!\left(\dfrac{2x}{3}+\sqrt◆LB◆\dfrac{4x^2}{9}+1◆RB◆\right)+C = \dfrac{1}{2}\ln\!\left(\dfrac◆LB◆2x+\sqrt{4x^2+9}◆RB◆◆LB◆3◆RB◆\right)+C$.
+$= \dfrac{1}{2}\ln\!\left(\dfrac{2x}{3}+\sqrt{\dfrac{4x^2}{9}+1}\right)+C = \dfrac{1}{2}\ln\!\left(\dfrac{2x+\sqrt{4x^2+9}}{3}\right)+C$.
 
 </details>
 
@@ -447,7 +447,7 @@ $(4\cosh x - 7)(\cosh x + 1) = 0$.
 
 $\cosh x = 7/4$ or $\cosh x = -1$ (rejected since $\cosh x \geq 1$).
 
-$\cosh x = 7/4 \implies x = \pm\ln\!\left(\dfrac{7}{4}+\sqrt◆LB◆\dfrac{49}{16}-1◆RB◆\right) = \pm\ln\!\left(\dfrac◆LB◆7+\sqrt{33}◆RB◆◆LB◆4◆RB◆\right)$.
+$\cosh x = 7/4 \implies x = \pm\ln\!\left(\dfrac{7}{4}+\sqrt{\dfrac{49}{16}-1}\right) = \pm\ln\!\left(\dfrac{7+\sqrt{33}}{4}\right)$.
 
 </details>
 
@@ -458,14 +458,14 @@ Differentiate $\mathrm{arcosh}(x^2+1)$.
 
 <details>
 <summary>Hint 5</summary>
-Use the chain rule with $\dfrac{d}{dx}\mathrm{arcosh}\,u = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{u^2-1}◆RB◆\cdot\dfrac{du}{dx}$.
+Use the chain rule with $\dfrac{d}{dx}\mathrm{arcosh}\,u = \dfrac{1}{\sqrt{u^2-1}}\cdot\dfrac{du}{dx}$.
 </details>
 
 <details>
 <summary>Answer 5</summary>
-$\dfrac{d}{dx}\mathrm{arcosh}(x^2+1) = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{(x^2+1)^2-1}◆RB◆\cdot 2x = \dfrac◆LB◆2x◆RB◆◆LB◆\sqrt{x^4+2x^2}◆RB◆ = \dfrac◆LB◆2x◆RB◆◆LB◆|x|\sqrt{x^2+2}◆RB◆$.
+$\dfrac{d}{dx}\mathrm{arcosh}(x^2+1) = \dfrac{1}{\sqrt{(x^2+1)^2-1}}\cdot 2x = \dfrac{2x}{\sqrt{x^4+2x^2}} = \dfrac{2x}{|x|\sqrt{x^2+2}}$.
 
-For $x > 0$: $\dfrac◆LB◆2◆RB◆◆LB◆\sqrt{x^2+2}◆RB◆$.
+For $x > 0$: $\dfrac{2}{\sqrt{x^2+2}}$.
 
 </details>
 
@@ -481,15 +481,15 @@ Use $\cosh 2x = 2\cosh^2 x - 1$ to express $\cosh^2 x$ in terms of $\cosh 2x$.
 
 <details>
 <summary>Answer 6</summary>
-$\cosh^2 x = \dfrac◆LB◆\cosh 2x+1◆RB◆◆LB◆2◆RB◆$.
+$\cosh^2 x = \dfrac{\cosh 2x+1}{2}$.
 
-$\displaystyle\int\cosh^2 x\,dx = \int\frac◆LB◆\cosh 2x+1◆RB◆◆LB◆2◆RB◆\,dx = \frac{1}{2}\left(\frac◆LB◆\sinh 2x◆RB◆◆LB◆2◆RB◆+x\right)+C = \frac◆LB◆\sinh 2x◆RB◆◆LB◆4◆RB◆+\frac{x}{2}+C$.
+$\displaystyle\int\cosh^2 x\,dx = \int\frac{\cosh 2x+1}{2}\,dx = \frac{1}{2}\left(\frac{\sinh 2x}{2}+x\right)+C = \frac{\sinh 2x}{4}+\frac{x}{2}+C$.
 
 </details>
 
 <details>
 <summary>Problem 7</summary>
-Show that $\dfrac{d}{dx}\left(\dfrac◆LB◆\sinh x◆RB◆◆LB◆\cosh^2 x◆RB◆\right) = \dfrac◆LB◆\cosh^2 x - 2\sinh^2 x◆RB◆◆LB◆\cosh^3 x◆RB◆$ and hence find $\displaystyle\int\mathrm{sech}^2\,x\tanh x\,dx$.
+Show that $\dfrac{d}{dx}\left(\dfrac{\sinh x}{\cosh^2 x}\right) = \dfrac{\cosh^2 x - 2\sinh^2 x}{\cosh^3 x}$ and hence find $\displaystyle\int\mathrm{sech}^2\,x\tanh x\,dx$.
 </details>
 
 <details>
@@ -499,16 +499,16 @@ Apply the quotient rule. Then use $\cosh^2 x - 2\sinh^2 x = \cosh^2 x - 2(\cosh^
 
 <details>
 <summary>Answer 7</summary>
-$\dfrac{d}{dx}\left(\dfrac◆LB◆\sinh x◆RB◆◆LB◆\cosh^2 x◆RB◆\right) = \dfrac◆LB◆\cosh x\cdot\cosh^2 x - \sinh x\cdot 2\cosh x\sinh x◆RB◆◆LB◆\cosh^4 x◆RB◆ = \dfrac◆LB◆\cosh^3 x - 2\sinh^2 x\cosh x◆RB◆◆LB◆\cosh^4 x◆RB◆ = \dfrac◆LB◆\cosh^2 x - 2\sinh^2 x◆RB◆◆LB◆\cosh^3 x◆RB◆$.
+$\dfrac{d}{dx}\left(\dfrac{\sinh x}{\cosh^2 x}\right) = \dfrac{\cosh x\cdot\cosh^2 x - \sinh x\cdot 2\cosh x\sinh x}{\cosh^4 x} = \dfrac{\cosh^3 x - 2\sinh^2 x\cosh x}{\cosh^4 x} = \dfrac{\cosh^2 x - 2\sinh^2 x}{\cosh^3 x}$.
 
 Now
-$\mathrm{sech}^2\,x\tanh x = \dfrac◆LB◆1◆RB◆◆LB◆\cosh^2 x◆RB◆\cdot\dfrac◆LB◆\sinh x◆RB◆◆LB◆\cosh x◆RB◆ = \dfrac◆LB◆\sinh x◆RB◆◆LB◆\cosh^3 x◆RB◆$.
+$\mathrm{sech}^2\,x\tanh x = \dfrac{1}{\cosh^2 x}\cdot\dfrac{\sinh x}{\cosh x} = \dfrac{\sinh x}{\cosh^3 x}$.
 
 Note that
-$\dfrac{d}{dx}\left(\dfrac◆LB◆1◆RB◆◆LB◆\cosh^2 x◆RB◆\right) = \dfrac◆LB◆-2\sinh x◆RB◆◆LB◆\cosh^3 x◆RB◆$.
+$\dfrac{d}{dx}\left(\dfrac{1}{\cosh^2 x}\right) = \dfrac{-2\sinh x}{\cosh^3 x}$.
 
 So
-$\displaystyle\int\mathrm{sech}^2\,x\tanh x\,dx = \int\dfrac◆LB◆\sinh x◆RB◆◆LB◆\cosh^3 x◆RB◆\,dx = -\dfrac◆LB◆1◆RB◆◆LB◆2\cosh^2 x◆RB◆+C = -\dfrac{1}{2}\mathrm{sech}^2\,x+C$.
+$\displaystyle\int\mathrm{sech}^2\,x\tanh x\,dx = \int\dfrac{\sinh x}{\cosh^3 x}\,dx = -\dfrac{1}{2\cosh^2 x}+C = -\dfrac{1}{2}\mathrm{sech}^2\,x+C$.
 
 </details>
 
@@ -597,20 +597,20 @@ Let $u = \sinh x$: $2u^2 - 5u - 3 = 0 \implies (2u + 1)(u - 3) = 0$.
 $u = -1/2$ or $u = 3$.
 
 $\sinh x = -1/2$:
-$x = \operatorname{arsinh}(-1/2) = -\ln(1/2 + \sqrt{1/4 + 1}) = -\ln(1/2 + \sqrt{5}/2) = -\ln\!\left(\dfrac◆LB◆1+\sqrt{5}◆RB◆◆LB◆2◆RB◆\right)$.
+$x = \operatorname{arsinh}(-1/2) = -\ln(1/2 + \sqrt{1/4 + 1}) = -\ln(1/2 + \sqrt{5}/2) = -\ln\!\left(\dfrac{1+\sqrt{5}}{2}\right)$.
 
 $\sinh x = 3$: $x = \operatorname{arsinh}\,3 = \ln(3 + \sqrt{10})$.
 
 ### Example 7.3: Differentiation of composite inverse hyperbolic functions
 
 **Problem.** Find
-$\dfrac{d}{dx}\left[\operatorname{artanh}\!\left(\dfrac◆LB◆\sin x◆RB◆◆LB◆2◆RB◆\right)\right]$.
+$\dfrac{d}{dx}\left[\operatorname{artanh}\!\left(\dfrac{\sin x}{2}\right)\right]$.
 
 **Solution.** Using the chain rule:
 
-$$\frac{d}{dx}\operatorname{artanh}\!\left(\frac◆LB◆\sin x◆RB◆◆LB◆2◆RB◆\right) = \frac◆LB◆1◆RB◆◆LB◆1 - \sin^2 x/4◆RB◆\cdot\frac◆LB◆\cos x◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆\cos x◆RB◆◆LB◆2 - \sin^2 x/2◆RB◆$$
+$$\frac{d}{dx}\operatorname{artanh}\!\left(\frac{\sin x}{2}\right) = \frac{1}{1 - \sin^2 x/4}\cdot\frac{\cos x}{2} = \frac{\cos x}{2 - \sin^2 x/2}$$
 
-$$= \frac◆LB◆2\cos x◆RB◆◆LB◆4 - \sin^2 x◆RB◆$$
+$$= \frac{2\cos x}{4 - \sin^2 x}$$
 
 ### Example 7.4: Proving an identity by induction
 
@@ -665,27 +665,27 @@ Therefore $y'' - 4y = 4y - 4y = 0$. $\blacksquare$
 
 ### Example 7.7: Inverse hyperbolic substitution in an integral
 
-**Problem.** Evaluate $\displaystyle\int \frac◆LB◆dx◆RB◆◆LB◆\sqrt{x^2 + 2x + 5}◆RB◆$.
+**Problem.** Evaluate $\displaystyle\int \frac{dx}{\sqrt{x^2 + 2x + 5}}$.
 
 **Solution.** Complete the square: $x^2 + 2x + 5 = (x+1)^2 + 4$.
 
-$$\int\frac◆LB◆dx◆RB◆◆LB◆\sqrt{(x+1)^2 + 4}◆RB◆ = \operatorname{arsinh}\!\left(\frac{x+1}{2}\right) + C$$
+$$\int\frac{dx}{\sqrt{(x+1)^2 + 4}} = \operatorname{arsinh}\!\left(\frac{x+1}{2}\right) + C$$
 
 ### Example 7.8: Derivative of $\operatorname{arcosh}$ via implicit differentiation
 
-**Problem.** Derive $\dfrac{d}{dx}\operatorname{arcosh}\,x = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2 - 1}◆RB◆$
+**Problem.** Derive $\dfrac{d}{dx}\operatorname{arcosh}\,x = \dfrac{1}{\sqrt{x^2 - 1}}$
 By implicit differentiation without using the logarithmic form.
 
 **Solution.** Let $y = \operatorname{arcosh}\,x$So $x = \cosh y$ and $y \geq 0$.
 
 Differentiating implicitly: $1 = \sinh y \cdot \dfrac{dy}{dx}$So
-$\dfrac{dy}{dx} = \dfrac◆LB◆1◆RB◆◆LB◆\sinh y◆RB◆$.
+$\dfrac{dy}{dx} = \dfrac{1}{\sinh y}$.
 
 Since $\cosh^2 y - \sinh^2 y = 1$: $\sinh^2 y = \cosh^2 y - 1 = x^2 - 1$.
 
 For $y \geq 0$We have $\sinh y \geq 0$So $\sinh y = \sqrt{x^2 - 1}$.
 
-$$\frac{dy}{dx} = \frac◆LB◆1◆RB◆◆LB◆\sqrt{x^2-1}◆RB◆ \quad \blacksquare$$
+$$\frac{dy}{dx} = \frac{1}{\sqrt{x^2-1}} \quad \blacksquare$$
 
 ---
 
@@ -716,7 +716,7 @@ Functions. The substitution $x = a\sinh u$ is often simpler than $x = a\tan\thet
 
 **(a)** Express $\cosh^{-1}(3)$ in exact logarithmic form.
 
-**(b)** Hence find the exact value of $\displaystyle\int_1^3 \frac◆LB◆dx◆RB◆◆LB◆\sqrt{x^2 - 1}◆RB◆$.
+**(b)** Hence find the exact value of $\displaystyle\int_1^3 \frac{dx}{\sqrt{x^2 - 1}}$.
 
 <details>
 <summary>Solution</summary>
@@ -724,7 +724,7 @@ Functions. The substitution $x = a\sinh u$ is often simpler than $x = a\tan\thet
 **(a)** $\operatorname{arcosh}\,3 = \ln(3 + \sqrt{8}) = \ln(3 + 2\sqrt{2})$.
 
 **(b)**
-$\displaystyle\int_1^3\frac◆LB◆dx◆RB◆◆LB◆\sqrt{x^2-1}◆RB◆ = \bigl[\operatorname{arcosh}\,x\bigr]_1^3 = \ln(3+2\sqrt{2}) - 0 = \ln(3+2\sqrt{2})$.
+$\displaystyle\int_1^3\frac{dx}{\sqrt{x^2-1}} = \bigl[\operatorname{arcosh}\,x\bigr]_1^3 = \ln(3+2\sqrt{2}) - 0 = \ln(3+2\sqrt{2})$.
 
 </details>
 
@@ -742,44 +742,44 @@ $x = \operatorname{artanh}\!\left(\frac{3}{5}\right) = \frac{1}{2}\ln\!\left(\fr
 ### Question 13
 
 **Prove by induction** that
-$\displaystyle\sum_{k=1}^{n}\cosh(kx) = \frac◆LB◆\sinh\!\left(\dfrac{nx}{2}\right)\cosh\!\left(\dfrac{(n+1)x}{2}\right)◆RB◆◆LB◆\sinh(x/2)◆RB◆$
+$\displaystyle\sum_{k=1}^{n}\cosh(kx) = \frac{\sinh\!\left(\dfrac{nx}{2}\right)\cosh\!\left(\dfrac{(n+1)x}{2}\right)}{\sinh(x/2)}$
 For $x \neq 0$.
 
 <details>
 <summary>Solution</summary>
 
 **Base case ($n = 1$):** LHS $= \cosh x$. RHS
-$= \dfrac◆LB◆\sinh(x/2)\cosh(x)◆RB◆◆LB◆\sinh(x/2)◆RB◆ = \cosh x$. True.
+$= \dfrac{\sinh(x/2)\cosh(x)}{\sinh(x/2)} = \cosh x$. True.
 
 **Inductive step.** Assume for $n = k$:
 
-$$\sum_{j=1}^{k}\cosh(jx) = \frac◆LB◆\sinh(kx/2)\cosh((k+1)x/2)◆RB◆◆LB◆\sinh(x/2)◆RB◆$$
+$$\sum_{j=1}^{k}\cosh(jx) = \frac{\sinh(kx/2)\cosh((k+1)x/2)}{\sinh(x/2)}$$
 
 For $n = k + 1$:
 
-$$\sum_{j=1}^{k+1}\cosh(jx) = \frac◆LB◆\sinh(kx/2)\cosh((k+1)x/2)◆RB◆◆LB◆\sinh(x/2)◆RB◆ + \cosh((k+1)x)$$
+$$\sum_{j=1}^{k+1}\cosh(jx) = \frac{\sinh(kx/2)\cosh((k+1)x/2)}{\sinh(x/2)} + \cosh((k+1)x)$$
 
 Using the identity $\sinh A\cosh B + \sinh(B-A)\sinh(x/2) = \sinh B\cosh A$ (which requires care),
 Or equivalently using the product-to-sum formula:
 
 The identity
-$\cosh((k+1)x) = \dfrac◆LB◆\sinh((k+1)x/2)\cosh((k+1)x/2)◆RB◆◆LB◆\sinh(x/2)◆RB◆ \cdot \sinh(x/2) - \dfrac◆LB◆\sinh(kx/2)\cosh((k+1)x/2)◆RB◆◆LB◆\sinh(x/2)◆RB◆ \cdot \sinh(x/2) + \ldots$
+$\cosh((k+1)x) = \dfrac{\sinh((k+1)x/2)\cosh((k+1)x/2)}{\sinh(x/2)} \cdot \sinh(x/2) - \dfrac{\sinh(kx/2)\cosh((k+1)x/2)}{\sinh(x/2)} \cdot \sinh(x/2) + \ldots$
 Is complex. Instead, use the known summation formula for $\sum \cosh(kx)$ which equals
-$\dfrac◆LB◆\sinh((n+1)x/2)\cosh(nx/2)◆RB◆◆LB◆\sinh(x/2)◆RB◆$. The result follows by induction using
+$\dfrac{\sinh((n+1)x/2)\cosh(nx/2)}{\sinh(x/2)}$. The result follows by induction using
 Standard techniques. $\blacksquare$
 
 </details>
 
 ### Question 14
 
-Find $\displaystyle\int \frac◆LB◆e^{2x}◆RB◆◆LB◆\sqrt{e^{4x} - 1}◆RB◆\,dx$.
+Find $\displaystyle\int \frac{e^{2x}}{\sqrt{e^{4x} - 1}}\,dx$.
 
 <details>
 <summary>Solution</summary>
 
 Let $u = e^{2x}$, $du = 2e^{2x}\,dx$:
 
-$$\int\frac◆LB◆e^{2x}\,dx◆RB◆◆LB◆\sqrt{e^{4x}-1}◆RB◆ = \frac{1}{2}\int\frac◆LB◆du◆RB◆◆LB◆\sqrt{u^2-1}◆RB◆ = \frac{1}{2}\operatorname{arcosh}\,u + C = \frac{1}{2}\operatorname{arcosh}(e^{2x}) + C$$
+$$\int\frac{e^{2x}\,dx}{\sqrt{e^{4x}-1}} = \frac{1}{2}\int\frac{du}{\sqrt{u^2-1}} = \frac{1}{2}\operatorname{arcosh}\,u + C = \frac{1}{2}\operatorname{arcosh}(e^{2x}) + C$$
 
 </details>
 
@@ -804,11 +804,11 @@ Up to $x^5$: $\boxed{f(x) = x^3 + \dfrac{x^5}{6} + O(x^7)}$.
 
 ### Example 8.1: Integration using the $\cosh$ substitution
 
-**Problem.** Evaluate $\displaystyle\int \frac◆LB◆dx◆RB◆◆LB◆\sqrt{x^2 - 4}◆RB◆$ for $x > 2$.
+**Problem.** Evaluate $\displaystyle\int \frac{dx}{\sqrt{x^2 - 4}}$ for $x > 2$.
 
 **Solution.** Let $x = 2\cosh u$, $dx = 2\sinh u\,du$.
 
-$$\int \frac◆LB◆2\sinh u\,du◆RB◆◆LB◆\sqrt{4\cosh^2 u - 4}◆RB◆ = \int \frac◆LB◆2\sinh u\,du◆RB◆◆LB◆2\sinh u◆RB◆ = \int du = u + C$$
+$$\int \frac{2\sinh u\,du}{\sqrt{4\cosh^2 u - 4}} = \int \frac{2\sinh u\,du}{2\sinh u} = \int du = u + C$$
 
 $$= \operatorname{arcosh}\!\left(\frac{x}{2}\right) + C = \ln\!\left(x + \sqrt{x^2-4}\right) - \ln 2 + C$$
 
@@ -830,11 +830,11 @@ $= \boxed{4\cosh^3 x - 3\cosh x}$. $\blacksquare$
 
 ### Example 8.3: Inverse hyperbolic functions in integrals
 
-**Problem.** Evaluate $\displaystyle\int_0^1 \frac◆LB◆dx◆RB◆◆LB◆\sqrt{1 + x^2}◆RB◆$.
+**Problem.** Evaluate $\displaystyle\int_0^1 \frac{dx}{\sqrt{1 + x^2}}$.
 
 **Solution.** Let $x = \sinh u$, $dx = \cosh u\,du$.
 
-$$\int_0^{\operatorname{arsinh}(1)} \frac◆LB◆\cosh u◆RB◆◆LB◆\sqrt{1+\sinh^2 u}◆RB◆\,du = \int_0^{\ln(1+\sqrt{2})} 1\,du = \ln(1+\sqrt{2})$$
+$$\int_0^{\operatorname{arsinh}(1)} \frac{\cosh u}{\sqrt{1+\sinh^2 u}}\,du = \int_0^{\ln(1+\sqrt{2})} 1\,du = \ln(1+\sqrt{2})$$
 
 $$= \boxed{\ln(1+\sqrt{2})}$$
 
@@ -845,7 +845,7 @@ $$= \boxed{\ln(1+\sqrt{2})}$$
 **Solution.** $\sinh x = 3 \implies x = \operatorname{arsinh}(3) = \ln(3 + \sqrt{10})$.
 
 Verification:
-$\dfrac{e^x - e^{-x}}{2} = \dfrac◆LB◆(3+\sqrt{10}) - \dfrac{1}{3+\sqrt{10}}◆RB◆◆LB◆2◆RB◆ = \dfrac◆LB◆(3+\sqrt{10})^2 - 1◆RB◆◆LB◆2(3+\sqrt{10})◆RB◆ = \dfrac◆LB◆9+6\sqrt{10}+10-1◆RB◆◆LB◆2(3+\sqrt{10})◆RB◆ = \dfrac◆LB◆18+6\sqrt{10}◆RB◆◆LB◆2(3+\sqrt{10})◆RB◆ = \dfrac◆LB◆6(3+\sqrt{10})◆RB◆◆LB◆2(3+\sqrt{10})◆RB◆ = 3$.
+$\dfrac{e^x - e^{-x}}{2} = \dfrac{(3+\sqrt{10}) - \dfrac{1}{3+\sqrt{10}}}{2} = \dfrac{(3+\sqrt{10})^2 - 1}{2(3+\sqrt{10})} = \dfrac{9+6\sqrt{10}+10-1}{2(3+\sqrt{10})} = \dfrac{18+6\sqrt{10}}{2(3+\sqrt{10})} = \dfrac{6(3+\sqrt{10})}{2(3+\sqrt{10})} = 3$.
 ✓
 
 ### Example 8.5: The catenary equation
@@ -862,11 +862,11 @@ Length and $s$ is the arc length.
 $\dfrac{dy}{dx} = \tan\theta = \dfrac{ws}{T_0} = \dfrac{s}{a}$ where $a = T_0/w$.
 
 Differentiating:
-$\dfrac{d^2y}{dx^2} = \dfrac{1}{a}\dfrac{ds}{dx} = \dfrac{1}{a}\sqrt◆LB◆1+\left(\dfrac{dy}{dx}\right)^2◆RB◆$.
+$\dfrac{d^2y}{dx^2} = \dfrac{1}{a}\dfrac{ds}{dx} = \dfrac{1}{a}\sqrt{1+\left(\dfrac{dy}{dx}\right)^2}$.
 
 Let $p = dy/dx$: $\dfrac{dp}{dx} = \dfrac{1}{a}\sqrt{1+p^2}$.
 
-$\displaystyle\int \frac◆LB◆dp◆RB◆◆LB◆\sqrt{1+p^2}◆RB◆ = \int \frac{dx}{a} \implies \operatorname{arsinh}(p) = \frac{x}{a}$.
+$\displaystyle\int \frac{dp}{\sqrt{1+p^2}} = \int \frac{dx}{a} \implies \operatorname{arsinh}(p) = \frac{x}{a}$.
 
 $p = \sinh(x/a)$. Integrating: $y = a\cosh(x/a) + C$. Taking the lowest point at $y = a$: $C = 0$.
 
@@ -921,7 +921,7 @@ $(4\sinh x + 1)(\sinh x - 1) = 0$.
 
 $\sinh x = -\dfrac{1}{4}$ or $\sinh x = 1$.
 
-$x = \operatorname{arsinh}\!\left(-\dfrac{1}{4}\right) = -\ln\!\left(\dfrac{1}{4}+\dfrac◆LB◆\sqrt{17}◆RB◆◆LB◆4◆RB◆\right)$
+$x = \operatorname{arsinh}\!\left(-\dfrac{1}{4}\right) = -\ln\!\left(\dfrac{1}{4}+\dfrac{\sqrt{17}}{4}\right)$
 Or $x = \operatorname{arsinh}(1) = \ln(1+\sqrt{2})$.
 
 </details>
@@ -949,7 +949,7 @@ Let $y = \sinh^{-1} x$So $x = \sinh y = \dfrac{e^y - e^{-y}}{2}$.
 
 $2x = e^y - e^{-y} \implies e^{2y} - 2xe^y - 1 = 0$.
 
-$e^y = \dfrac◆LB◆2x \pm \sqrt{4x^2+4}◆RB◆◆LB◆2◆RB◆ = x + \sqrt{x^2+1}$ (taking positive root since
+$e^y = \dfrac{2x \pm \sqrt{4x^2+4}}{2} = x + \sqrt{x^2+1}$ (taking positive root since
 $e^y > 0$).
 
 $$\boxed{\sinh^{-1} x = \ln(x + \sqrt{x^2+1})}$$
@@ -983,9 +983,9 @@ $\cos(ix) = \cosh x$ and $\sin(ix) = i\sinh x$. See
 | --------------------------- | ------------------------------------------------ | ------------------------------------- | ------------------ |
 | $\sinh x$                   | $\dfrac{e^x-e^{-x}}{2}$                          | $\cosh x$                             | $\cosh x + C$      |
 | $\cosh x$                   | $\dfrac{e^x+e^{-x}}{2}$                          | $\sinh x$                             | $\sinh x + C$      |
-| $\tanh x$                   | $\dfrac◆LB◆\sinh x◆RB◆◆LB◆\cosh x◆RB◆$           | $\operatorname{sech}^2 x$             | $\ln(\cosh x) + C$ |
-| $\operatorname{arsinh}\, x$ | $\ln(x+\sqrt{x^2+1})$                            | $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2+1}◆RB◆$ | —                  |
-| $\operatorname{arcosh}\, x$ | $\ln(x+\sqrt{x^2-1})$                            | $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2-1}◆RB◆$ | —                  |
+| $\tanh x$                   | $\dfrac{\sinh x}{\cosh x}$           | $\operatorname{sech}^2 x$             | $\ln(\cosh x) + C$ |
+| $\operatorname{arsinh}\, x$ | $\ln(x+\sqrt{x^2+1})$                            | $\dfrac{1}{\sqrt{x^2+1}}$ | —                  |
+| $\operatorname{arcosh}\, x$ | $\ln(x+\sqrt{x^2-1})$                            | $\dfrac{1}{\sqrt{x^2-1}}$ | —                  |
 | $\operatorname{artanh}\, x$ | $\dfrac{1}{2}\ln\!\left(\dfrac{1+x}{1-x}\right)$ | $\dfrac{1}{1-x^2}$                    | —                  |
 
 | Identity            | Formula                                                                |
@@ -1001,14 +1001,14 @@ $\cos(ix) = \cosh x$ and $\sin(ix) = i\sinh x$. See
 
 ### Question 11
 
-Find $\displaystyle\int_0^2 \frac◆LB◆dx◆RB◆◆LB◆\sqrt{x^2 + 4}◆RB◆$.
+Find $\displaystyle\int_0^2 \frac{dx}{\sqrt{x^2 + 4}}$.
 
 <details>
 <summary>Solution</summary>
 
 Let $x = 2\sinh u$, $dx = 2\cosh u\,du$.
 
-$\displaystyle\int_0^{\operatorname{arsinh}(1)} \frac◆LB◆2\cosh u◆RB◆◆LB◆2\cosh u◆RB◆\,du = [\operatorname{arsinh}(1) - 0] = \ln(1+\sqrt{2})$.
+$\displaystyle\int_0^{\operatorname{arsinh}(1)} \frac{2\cosh u}{2\cosh u}\,du = [\operatorname{arsinh}(1) - 0] = \ln(1+\sqrt{2})$.
 
 $\boxed{\ln(1+\sqrt{2})}$
 
@@ -1021,10 +1021,10 @@ $\boxed{\ln(1+\sqrt{2})}$
 <details>
 <summary>Solution</summary>
 
-$\tanh x = \dfrac◆LB◆\sinh x◆RB◆◆LB◆\cosh x◆RB◆$.
+$\tanh x = \dfrac{\sinh x}{\cosh x}$.
 
 Quotient rule:
-$\dfrac◆LB◆\cosh^2 x - \sinh^2 x◆RB◆◆LB◆\cosh^2 x◆RB◆ = \dfrac◆LB◆1◆RB◆◆LB◆\cosh^2 x◆RB◆ = \operatorname{sech}^2 x$.
+$\dfrac{\cosh^2 x - \sinh^2 x}{\cosh^2 x} = \dfrac{1}{\cosh^2 x} = \operatorname{sech}^2 x$.
 $\blacksquare$
 
 </details>
@@ -1040,14 +1040,14 @@ $a = T_H/w$ is the ratio of horizontal tension to weight per unit length.
 
 ### 14.2 Hyperbolic functions in special relativity
 
-The Lorentz factor $\gamma = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{1-v^2/c^2}◆RB◆$ can be written as
+The Lorentz factor $\gamma = \dfrac{1}{\sqrt{1-v^2/c^2}}$ can be written as
 $\gamma = \cosh\phi$ where $\tanh\phi = v/c$ (rapidity).
 
 Time dilation: $\Delta t' = \Delta t\cosh\phi$. Length contraction: $L' = L/\cosh\phi$.
 
 ### 14.3 The inverse Gudermannian
 
-$\mathrm{gd}^{-1}(\theta) = \ln|\sec\theta + \tan\theta| = \ln\!\left|\tan\!\left(\dfrac◆LB◆\theta◆RB◆◆LB◆2◆RB◆+\dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right)\right| = \operatorname{arsinh}(\tan\theta)$.
+$\mathrm{gd}^{-1}(\theta) = \ln|\sec\theta + \tan\theta| = \ln\!\left|\tan\!\left(\dfrac{\theta}{2}+\dfrac{\pi}{4}\right)\right| = \operatorname{arsinh}(\tan\theta)$.
 
 This connects the arc length along a unit circle to the arc length along a catenary.
 
@@ -1059,8 +1059,8 @@ This connects the arc length along a unit circle to the arc length along a caten
 | $\cosh(x+y)$ | $\cosh x\cosh y + \sinh x\sinh y$     |
 | $\sinh 2x$   | $2\sinh x\cosh x$                     |
 | $\cosh 2x$   | $2\cosh^2 x - 1 = 1 + 2\sinh^2 x$     |
-| $\sinh^2 x$  | $\dfrac◆LB◆\cosh 2x - 1◆RB◆◆LB◆2◆RB◆$ |
-| $\cosh^2 x$  | $\dfrac◆LB◆\cosh 2x + 1◆RB◆◆LB◆2◆RB◆$ |
+| $\sinh^2 x$  | $\dfrac{\cosh 2x - 1}{2}$ |
+| $\cosh^2 x$  | $\dfrac{\cosh 2x + 1}{2}$ |
 
 ---
 

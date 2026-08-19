@@ -45,7 +45,7 @@ $$\boxed{v = f\lambda}$$
 Exactly one wavelength $\lambda$ (the source completes one full oscillation, producing one complete
 Wave cycle):
 
-$$v = \frac◆LB◆\mathrm{distance travelled}◆RB◆◆LB◆\mathrm{time taken}◆RB◆ = \frac◆LB◆\lambda◆RB◆◆LB◆T◆RB◆ = \lambda \cdot \frac{1}{T} = f\lambda$$
+$$v = \frac{\mathrm{distance travelled}}{\mathrm{time taken}} = \frac{\lambda}{T} = \lambda \cdot \frac{1}{T} = f\lambda$$
 
 $\square$
 
@@ -64,7 +64,7 @@ Seismographs at different stations detect P-waves and S-waves arriving at differ
 Measuring the time difference $\Delta t$ and knowing the approximate speeds $v_P$ and $v_S$The
 Distance to the epicentre can be estimated:
 
-$$d \approx \frac◆LB◆v_P \cdot v_S◆RB◆◆LB◆v_P - v_S◆RB◆ \cdot \Delta t$$
+$$d \approx \frac{v_P \cdot v_S}{v_P - v_S} \cdot \Delta t$$
 
 Three or more stations are needed to triangulate the epicentre location.
 
@@ -76,14 +76,14 @@ $$y(x,t) = A\sin(kx - \omega t + \phi_0)$$
 
 Where:
 
-- $k = \frac◆LB◆2\pi◆RB◆◆LB◆\lambda◆RB◆$ is the **wave number** (rad m$^{-1}$)
-- $\omega = 2\pi f = \frac◆LB◆2\pi◆RB◆◆LB◆T◆RB◆$ is the **angular frequency** (rad s$^{-1}$)
+- $k = \frac{2\pi}{\lambda}$ is the **wave number** (rad m$^{-1}$)
+- $\omega = 2\pi f = \frac{2\pi}{T}$ is the **angular frequency** (rad s$^{-1}$)
 - $\phi_0$ is the initial phase
 
 **Proof that $v = f\lambda$ from the wave function.** A point of constant phase satisfies
 $kx - \omega t = \mathrm{const}$. Differentiating: $k\frac{dx}{dt} - \omega = 0$So:
 
-$$v = \frac{dx}{dt} = \frac◆LB◆\omega◆RB◆◆LB◆k◆RB◆ = \frac◆LB◆2\pi f◆RB◆◆LB◆2\pi/\lambda◆RB◆ = f\lambda$$
+$$v = \frac{dx}{dt} = \frac{\omega}{k} = \frac{2\pi f}{2\pi/\lambda} = f\lambda$$
 
 $\square$
 
@@ -238,11 +238,11 @@ $$P = F_{\mathrm{transverse}} \times v_{\mathrm{transverse}}$$
 
 For a wave $y = A\sin(kx - \omega t)$The transverse velocity is:
 
-$$v_y = \frac◆LB◆\partial y◆RB◆◆LB◆\partial t◆RB◆ = -A\omega\cos(kx - \omega t)$$
+$$v_y = \frac{\partial y}{\partial t} = -A\omega\cos(kx - \omega t)$$
 
 The transverse component of tension is (for small amplitudes):
 
-$$F_y \approx -T\frac◆LB◆\partial y◆RB◆◆LB◆\partial x◆RB◆ = -TAk\cos(kx - \omega t)$$
+$$F_y \approx -T\frac{\partial y}{\partial x} = -TAk\cos(kx - \omega t)$$
 
 The instantaneous power is:
 
@@ -252,10 +252,10 @@ The average power over one cycle (since $\langle\cos^2\rangle = 1/2$):
 
 $$\langle P \rangle = \frac{1}{2}TA^2 k\omega$$
 
-Since $v = \omega/k$We have $k\omega = \omega^2/v$. Also, for a string, $v = \sqrt◆LB◆T/\mu◆RB◆$
+Since $v = \omega/k$We have $k\omega = \omega^2/v$. Also, for a string, $v = \sqrt{T/\mu}$
 where $\mu$ is the mass per unit length, so $T = \mu v^2$:
 
-$$\langle P \rangle = \frac{1}{2}\mu v^2 A^2 \cdot \frac◆LB◆\omega^2◆RB◆◆LB◆v◆RB◆ = \frac{1}{2}\mu v \omega^2 A^2$$
+$$\langle P \rangle = \frac{1}{2}\mu v^2 A^2 \cdot \frac{\omega^2}{v} = \frac{1}{2}\mu v \omega^2 A^2$$
 
 The intensity is power per unit... But for a string wave, the "intensity" concept maps to power
 Directly. The key result is:
@@ -276,7 +276,7 @@ Amplitude plays the same role as "speed" for the oscillating particles.
 
 For a wave spreading uniformly from a point source in 3D:
 
-$$I = \frac◆LB◆P◆RB◆◆LB◆4\pi r^2◆RB◆$$
+$$I = \frac{P}{4\pi r^2}$$
 
 At distance $r$The power is spread over a sphere of area $4\pi r^2$. Doubling the distance Quarters
 the intensity.
@@ -320,7 +320,7 @@ Opposite.
 
 The **phase difference** between two points separated by distance $\Delta x$ is:
 
-$$\Delta\phi = \frac◆LB◆2\pi◆RB◆◆LB◆\lambda◆RB◆\Delta x$$
+$$\Delta\phi = \frac{2\pi}{\lambda}\Delta x$$
 
 **Special cases:**
 
@@ -349,12 +349,12 @@ When given a displacement--position graph:
 1. Identify the positions of the two points: $x_1$ and $x_2$
 2. Measure the wavelength $\lambda$ from the graph (peak to peak)
 3. Calculate $\Delta x = |x_2 - x_1|$
-4. Apply $\Delta\phi = \frac◆LB◆\Delta x◆RB◆◆LB◆\lambda◆RB◆ \times 360^\circ$ (or $\times 2\pi$ rad)
+4. Apply $\Delta\phi = \frac{\Delta x}{\lambda} \times 360^\circ$ (or $\times 2\pi$ rad)
 
 When given a displacement--time graph at a single point, the phase difference between two instants
 $t_1$ and $t_2$ is:
 
-$$\Delta\phi = \frac◆LB◆\Delta t◆RB◆◆LB◆T◆RB◆ \times 360° = \frac◆LB◆\Delta t◆RB◆◆LB◆T◆RB◆ \times 2\pi \mathrm{ rad}$$
+$$\Delta\phi = \frac{\Delta t}{T} \times 360° = \frac{\Delta t}{T} \times 2\pi \mathrm{ rad}$$
 
 :::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
 :::
@@ -394,7 +394,7 @@ A sound wave has frequency 440 Hz and wavelength 0.78 m. Calculate the speed of 
 A radio station broadcasts at 97.4 MHz. The speed of light is $3.00 \times 10^8$ m s$^{-1}$.
 Calculate the wavelength.
 
-**Answer.** $\lambda = \frac{c}{f} = \frac◆LB◆3.00 \times 10^8◆RB◆◆LB◆97.4 \times 10^6◆RB◆ = 3.08$
+**Answer.** $\lambda = \frac{c}{f} = \frac{3.00 \times 10^8}{97.4 \times 10^6} = 3.08$
 m.
 
 <b>If you get this wrong, revise:</b> [The Wave Equation](#the-wave-equation)
@@ -422,7 +422,7 @@ $I = \frac{I_0}{2}\cos^2 30° = \frac{I_0}{2} \times \frac{3}{4} = \frac{3I_0}{8
 Two points on a wave are separated by 0.15 m. The wavelength is 0.60 m. Calculate the phase
 Difference in (a) radians and (b) degrees.
 
-**Answer.** (a) $\Delta\phi = \frac◆LB◆2\pi◆RB◆◆LB◆0.60◆RB◆ \times 0.15 = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$
+**Answer.** (a) $\Delta\phi = \frac{2\pi}{0.60} \times 0.15 = \frac{\pi}{2}$
 rad.
 
 (b) $\Delta\phi = \frac{0.15}{0.60} \times 360° = 90^\circ$.
@@ -448,7 +448,7 @@ A point source emits 50 W of sound power. Calculate the intensity at a distance 
 Source.
 
 **Answer.**
-$I = \frac◆LB◆P◆RB◆◆LB◆4\pi r^2◆RB◆ = \frac◆LB◆50◆RB◆◆LB◆4\pi(64)◆RB◆ = \frac{50}{804} = 0.0622$ W
+$I = \frac{P}{4\pi r^2} = \frac{50}{4\pi(64)} = \frac{50}{804} = 0.0622$ W
 m$^{-2}$.
 
 <b>If you get this wrong, revise:</b>
@@ -519,7 +519,7 @@ $t_S = d/v_S$. The time difference is:
 
 $$\Delta t = t_S - t_P = d\left(\frac{1}{v_S} - \frac{1}{v_P}\right) = d\left(\frac{v_P - v_S}{v_P v_S}\right)$$
 
-$$d = \frac◆LB◆\Delta t \cdot v_P \cdot v_S◆RB◆◆LB◆v_P - v_S◆RB◆ = \frac◆LB◆120 \times 6500 \times 3800◆RB◆◆LB◆6500 - 3800◆RB◆ = \frac◆LB◆120 \times 2.47 \times 10^7◆RB◆◆LB◆2700◆RB◆ = \frac◆LB◆2.964 \times 10^9◆RB◆◆LB◆2700◆RB◆ \approx 1.10 \times 10^6 \mathrm{ m} = 1100 \mathrm{ km}$$
+$$d = \frac{\Delta t \cdot v_P \cdot v_S}{v_P - v_S} = \frac{120 \times 6500 \times 3800}{6500 - 3800} = \frac{120 \times 2.47 \times 10^7}{2700} = \frac{2.964 \times 10^9}{2700} \approx 1.10 \times 10^6 \mathrm{ m} = 1100 \mathrm{ km}$$
 
 <b>If you get this wrong, revise:</b>
 [Real-World Application: Seismic Waves](#real-world-application-seismic-waves)
@@ -577,7 +577,7 @@ $$f_1 = f_0 \cdot \frac{c - v}{c} = 5.0 \times 10^6 \times \frac{1540 - 0.80}{15
 This reflected signal then travels back to the transducer (source moving away, observer at rest),
 Effectively doubling the shift:
 
-$$\Delta f \approx \frac{2f_0 v}{c} = \frac◆LB◆2 \times 5.0 \times 10^6 \times 0.80◆RB◆◆LB◆1540◆RB◆ = \frac◆LB◆8.0 \times 10^6◆RB◆◆LB◆1540◆RB◆ \approx 5190 \mathrm{ Hz} \approx 5.2 \mathrm{ kHz}$$
+$$\Delta f \approx \frac{2f_0 v}{c} = \frac{2 \times 5.0 \times 10^6 \times 0.80}{1540} = \frac{8.0 \times 10^6}{1540} \approx 5190 \mathrm{ Hz} \approx 5.2 \mathrm{ kHz}$$
 
 <b>If you get this wrong, revise:</b>
 [Real-World Application: Doppler Ultrasound](#real-world-application-doppler-ultrasound)
@@ -594,9 +594,9 @@ With amplitude greater than, less than, or equal to 0.04 m.
 **Answer.** The phase difference is $\Delta\phi = \pi/3$ rad (60°). Since $\Delta\phi$ is neither
 $0$ nor $\pi$The resultant amplitude is intermediate:
 
-$$A_{\mathrm{res}} = \sqrt◆LB◆A_1^2 + A_2^2 + 2A_1 A_2 \cos\Delta\phi◆RB◆ = \sqrt◆LB◆0.04^2 + 0.04^2 + 2(0.04)(0.04)\cos(\pi/3)◆RB◆$$
+$$A_{\mathrm{res}} = \sqrt{A_1^2 + A_2^2 + 2A_1 A_2 \cos\Delta\phi} = \sqrt{0.04^2 + 0.04^2 + 2(0.04)(0.04)\cos(\pi/3)}$$
 
-$$= 0.04\sqrt◆LB◆2 + 2 \times 0.5◆RB◆ = 0.04\sqrt{3} \approx 0.069 \mathrm{ m}$$
+$$= 0.04\sqrt{2 + 2 \times 0.5} = 0.04\sqrt{3} \approx 0.069 \mathrm{ m}$$
 
 The resultant amplitude ($\approx 0.069$ m) is greater than 0.04 m but less than 0.08 m (which would
 Be the fully constructive case at $\Delta\phi = 0$).

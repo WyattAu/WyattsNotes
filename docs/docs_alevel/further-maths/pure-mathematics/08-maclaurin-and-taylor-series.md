@@ -127,7 +127,7 @@ For $|x| < 1$ and any real $n$:
 
 $$\boxed{(1+x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \frac{n(n-1)(n-2)}{3!}x^3 + \cdots = \sum_{k=0}^{\infty}\binom{n}{k}x^k}$$
 
-Where $\dbinom{n}{k} = \dfrac◆LB◆n(n-1)(n-2)\cdots(n-k+1)◆RB◆◆LB◆k!◆RB◆$.
+Where $\dbinom{n}{k} = \dfrac{n(n-1)(n-2)\cdots(n-k+1)}{k!}$.
 
 **Radius of convergence:** 1.
 
@@ -324,7 +324,7 @@ $= 1 + 2x + \dfrac{5}{2}x^2 + \dfrac{8}{3}x^3 + \cdots$
 **Intuition.** L'Hôpital's rule is a consequence of Taylor's theorem. If $f(a) = g(a) = 0$Then Near
 $a$:
 
-$$\frac{f(x)}{g(x)} \approx \frac◆LB◆f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^2◆RB◆◆LB◆g'(a)(x-a) + \frac{g''(a)}{2}(x-a)^2◆RB◆ = \frac◆LB◆f'(a) + \frac{f''(a)}{2}(x-a)◆RB◆◆LB◆g'(a) + \frac{g''(a)}{2}(x-a)◆RB◆$$
+$$\frac{f(x)}{g(x)} \approx \frac{f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^2}{g'(a)(x-a) + \frac{g''(a)}{2}(x-a)^2} = \frac{f'(a) + \frac{f''(a)}{2}(x-a)}{g'(a) + \frac{g''(a)}{2}(x-a)}$$
 
 Taking $x \to a$ gives $\dfrac{f'(a)}{g'(a)}$Which is L'Hôpital's rule. The series approach often
 Gives more information (higher-order terms) than applying L'Hôpital's rule repeatedly.
@@ -430,7 +430,7 @@ Setting $x = 2$: $e^2 = \displaystyle\sum_{n=0}^{\infty}\dfrac{2^n}{n!}$. $\blac
 <details>
 <summary>Problem 4</summary>
 
-Find the Taylor series of $\sin x$ about $x = \dfrac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$ up to the $(x - \pi/3)^3$
+Find the Taylor series of $\sin x$ about $x = \dfrac{\pi}{3}$ up to the $(x - \pi/3)^3$
 Term.
 
 </details>
@@ -438,11 +438,11 @@ Term.
 <details>
 <summary>Solution 4</summary>
 
-$f(x) = \sin x$. $f(\pi/3) = \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$. $f'(x) = \cos x$
-$f'(\pi/3) = \dfrac{1}{2}$. $f''(x) = -\sin x$, $f''(\pi/3) = -\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$.
+$f(x) = \sin x$. $f(\pi/3) = \dfrac{\sqrt{3}}{2}$. $f'(x) = \cos x$
+$f'(\pi/3) = \dfrac{1}{2}$. $f''(x) = -\sin x$, $f''(\pi/3) = -\dfrac{\sqrt{3}}{2}$.
 $f'''(x) = -\cos x$, $f'''(\pi/3) = -\dfrac{1}{2}$.
 
-$$\sin x = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ + \frac{1}{2}\left(x-\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right) - \frac◆LB◆\sqrt{3}◆RB◆◆LB◆4◆RB◆\left(x-\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right)^2 - \frac{1}{12}\left(x-\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right)^3 + \cdots$$
+$$\sin x = \frac{\sqrt{3}}{2} + \frac{1}{2}\left(x-\frac{\pi}{3}\right) - \frac{\sqrt{3}}{4}\left(x-\frac{\pi}{3}\right)^2 - \frac{1}{12}\left(x-\frac{\pi}{3}\right)^3 + \cdots$$
 
 **If you get this wrong, revise:** [Taylor Series About $x = a$](#3-taylor-series-about-x--a) —
 Section 3.
@@ -452,7 +452,7 @@ Section 3.
 <details>
 <summary>Problem 5</summary>
 
-Use series to evaluate $\displaystyle\lim_{x\to 0}\frac◆LB◆\sin x - x◆RB◆◆LB◆x^3◆RB◆$.
+Use series to evaluate $\displaystyle\lim_{x\to 0}\frac{\sin x - x}{x^3}$.
 
 </details>
 
@@ -463,7 +463,7 @@ $\sin x = x - \dfrac{x^3}{6} + \dfrac{x^5}{120} - \cdots$
 
 $\sin x - x = -\dfrac{x^3}{6} + \dfrac{x^5}{120} - \cdots$
 
-$\dfrac◆LB◆\sin x - x◆RB◆◆LB◆x^3◆RB◆ = -\dfrac{1}{6} + \dfrac{x^2}{120} - \cdots \to \boxed{-\dfrac{1}{6}}$
+$\dfrac{\sin x - x}{x^3} = -\dfrac{1}{6} + \dfrac{x^2}{120} - \cdots \to \boxed{-\dfrac{1}{6}}$
 As $x \to 0$.
 
 **If you get this wrong, revise:** [Evaluating Limits](#52-evaluating-limits-using-series) — Section
@@ -598,7 +598,7 @@ $\dfrac{e^{-x^2} - 1}{x^2} = -1 + \dfrac{x^2}{2} - \cdots \to \boxed{-1}$ as $x 
 
 ### Example 7.1: Maclaurin series of a composite function
 
-**Problem.** Find the Maclaurin series of $f(x) = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{1 + x^2}◆RB◆$ up to the
+**Problem.** Find the Maclaurin series of $f(x) = \dfrac{1}{\sqrt{1 + x^2}}$ up to the
 $x^6$ term.
 
 **Solution.** Use the binomial series with $n = -1/2$:
@@ -607,7 +607,7 @@ $(1 + u)^{-1/2} = 1 - \dfrac{u}{2} + \dfrac{3u^2}{8} - \dfrac{5u^3}{16} + \dfrac
 
 Substituting $u = x^2$:
 
-$$\frac◆LB◆1◆RB◆◆LB◆\sqrt{1+x^2}◆RB◆ = 1 - \frac{x^2}{2} + \frac{3x^4}{8} - \frac{5x^6}{16} + \cdots$$
+$$\frac{1}{\sqrt{1+x^2}} = 1 - \frac{x^2}{2} + \frac{3x^4}{8} - \frac{5x^6}{16} + \cdots$$
 
 Valid for $|x^2| < 1$I.e., $|x| < 1$.
 
@@ -622,7 +622,7 @@ Using three terms:
 $\cos(0.2) \approx 1 - 0.02 + \dfrac{0.0016}{24} = 1 - 0.02 + 0.0000667 = 0.980067$.
 
 Error bound: the next term is
-$\dfrac{(0.2)^6}{720} = \dfrac◆LB◆6.4 \times 10^{-7}◆RB◆◆LB◆720◆RB◆ \approx 8.9 \times 10^{-10}$.
+$\dfrac{(0.2)^6}{720} = \dfrac{6.4 \times 10^{-7}}{720} \approx 8.9 \times 10^{-10}$.
 
 So $|\text{error}| < 10^{-9}$.
 
@@ -647,7 +647,7 @@ $$e^x\cos x = 1 + x + \frac{x^2}{2} - \frac{x^4}{24} + \cdots$$
 
 **Problem.** Find the Maclaurin series of $\sec x$ up to the $x^4$ term.
 
-**Solution.** Write $\sec x = \dfrac◆LB◆1◆RB◆◆LB◆\cos x◆RB◆ = (1 - x^2/2 + x^4/24 - \cdots)^{-1}$.
+**Solution.** Write $\sec x = \dfrac{1}{\cos x} = (1 - x^2/2 + x^4/24 - \cdots)^{-1}$.
 
 Using $(1 - u)^{-1} = 1 + u + u^2 + \cdots$ with $u = x^2/2 - x^4/24 + \cdots$:
 
@@ -657,11 +657,11 @@ $$= 1 + \frac{x^2}{2} + \left(-\frac{x^4}{24} + \frac{x^4}{4}\right) + \cdots = 
 
 ### Example 7.5: Using series to find a limit
 
-**Problem.** Evaluate $\displaystyle\lim_{x\to 0}\frac◆LB◆x - \sin x◆RB◆◆LB◆x^3◆RB◆$.
+**Problem.** Evaluate $\displaystyle\lim_{x\to 0}\frac{x - \sin x}{x^3}$.
 
 **Solution.** $\sin x = x - \dfrac{x^3}{6} + \dfrac{x^5}{120} - \cdots$
 
-$$\frac◆LB◆x - \sin x◆RB◆◆LB◆x^3◆RB◆ = \frac◆LB◆x - x + x^3/6 - x^5/120 + \cdots◆RB◆◆LB◆x^3◆RB◆ = \frac{1}{6} - \frac{x^2}{120} + \cdots \to \boxed{\frac{1}{6}}$$
+$$\frac{x - \sin x}{x^3} = \frac{x - x + x^3/6 - x^5/120 + \cdots}{x^3} = \frac{1}{6} - \frac{x^2}{120} + \cdots \to \boxed{\frac{1}{6}}$$
 
 ### Example 7.6: Maclaurin series by differentiation
 
@@ -704,7 +704,7 @@ $$= \frac{1}{2} - \frac{1}{24} + \frac{1}{320} - \frac{1}{5376} + \frac{1}{11059
 $$= 0.5 - 0.041667 + 0.003125 - 0.000186 + 0.000009 = 0.461281$$
 
 The error is bounded by the next term:
-$\dfrac◆LB◆1◆RB◆◆LB◆11 \times 2^{11}◆RB◆ = \dfrac{1}{22528} \approx 0.000044$.
+$\dfrac{1}{11 \times 2^{11}} = \dfrac{1}{22528} \approx 0.000044$.
 
 So the integral $\approx 0.4613$ to 4 decimal places.
 
@@ -756,14 +756,14 @@ $$\ln\!\left(\frac{1+x}{1-x}\right) = 2x + \frac{2x^3}{3} + \frac{2x^5}{5} + \cd
 
 ### Question 12
 
-Use series to find $\displaystyle\lim_{x\to 0}\frac◆LB◆1 - \cos x - \frac{x^2}{2}◆RB◆◆LB◆x^4◆RB◆$.
+Use series to find $\displaystyle\lim_{x\to 0}\frac{1 - \cos x - \frac{x^2}{2}}{x^4}$.
 
 <details>
 <summary>Solution</summary>
 
 $\cos x = 1 - \dfrac{x^2}{2} + \dfrac{x^4}{24} - \cdots$
 
-$$\frac◆LB◆1 - \cos x - x^2/2◆RB◆◆LB◆x^4◆RB◆ = \frac◆LB◆1 - (1 - x^2/2 + x^4/24 - \cdots) - x^2/2◆RB◆◆LB◆x^4◆RB◆ = \frac◆LB◆-x^4/24 + \cdots◆RB◆◆LB◆x^4◆RB◆ \to \boxed{-\frac{1}{24}}$$
+$$\frac{1 - \cos x - x^2/2}{x^4} = \frac{1 - (1 - x^2/2 + x^4/24 - \cdots) - x^2/2}{x^4} = \frac{-x^4/24 + \cdots}{x^4} \to \boxed{-\frac{1}{24}}$$
 
 </details>
 
@@ -784,20 +784,20 @@ $$\frac{d^{k+1}}{dx^{k+1}}(xe^x) = \frac{d}{dx}[(x+k)e^x] = e^x + (x+k)e^x = (x+
 
 ### Question 14
 
-Find the Maclaurin series of $\sqrt◆LB◆\cos x◆RB◆$ up to the $x^4$ term.
+Find the Maclaurin series of $\sqrt{\cos x}$ up to the $x^4$ term.
 
 <details>
 <summary>Solution</summary>
 
 $\cos x = 1 - \dfrac{x^2}{2} + \dfrac{x^4}{24} - \cdots$
 
-$\sqrt◆LB◆\cos x◆RB◆ = (1 - x^2/2 + x^4/24 - \cdots)^{1/2}$
+$\sqrt{\cos x} = (1 - x^2/2 + x^4/24 - \cdots)^{1/2}$
 
 Using $(1+u)^{1/2} = 1 + u/2 - u^2/8 + \cdots$ with $u = -x^2/2 + x^4/24$:
 
 $u^2 = x^4/4 + \cdots$
 
-$$\sqrt◆LB◆\cos x◆RB◆ = 1 + \frac{1}{2}\!\left(-\frac{x^2}{2} + \frac{x^4}{24}\right) - \frac{1}{8}\!\left(\frac{x^4}{4}\right) + \cdots$$
+$$\sqrt{\cos x} = 1 + \frac{1}{2}\!\left(-\frac{x^2}{2} + \frac{x^4}{24}\right) - \frac{1}{8}\!\left(\frac{x^4}{4}\right) + \cdots$$
 
 $$= 1 - \frac{x^2}{4} + \frac{x^4}{48} - \frac{x^4}{32} + \cdots = 1 - \frac{x^2}{4} - \frac{x^4}{96} + \cdots$$
 
@@ -806,7 +806,7 @@ $$= 1 - \frac{x^2}{4} + \frac{x^4}{48} - \frac{x^4}{32} + \cdots = 1 - \frac{x^2
 ### Question 15
 
 Use the Maclaurin series for $\arctan x$ to show that
-$\displaystyle 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \cdots = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$.
+$\displaystyle 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \cdots = \frac{\pi}{4}$.
 
 <details>
 <summary>Solution</summary>
@@ -815,9 +815,9 @@ $\arctan x = x - \dfrac{x^3}{3} + \dfrac{x^5}{5} - \dfrac{x^7}{7} + \cdots$ for 
 
 Setting $x = 1$:
 
-$$\arctan 1 = 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \cdots = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$$
+$$\arctan 1 = 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \cdots = \frac{\pi}{4}$$
 
-Therefore $\displaystyle\sum_{n=0}^{\infty}\frac{(-1)^n}{2n+1} = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$.
+Therefore $\displaystyle\sum_{n=0}^{\infty}\frac{(-1)^n}{2n+1} = \frac{\pi}{4}$.
 $\blacksquare$
 
 </details>
@@ -882,11 +882,11 @@ $$\ln x = (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \frac{(x-1)^4}{4} + \c
 
 ### Example 10.3: Using series to evaluate a limit
 
-**Problem.** Find $\displaystyle\lim_{x \to 0} \frac◆LB◆e^x - 1 - x - \frac{x^2}{2}◆RB◆◆LB◆x^3◆RB◆$.
+**Problem.** Find $\displaystyle\lim_{x \to 0} \frac{e^x - 1 - x - \frac{x^2}{2}}{x^3}$.
 
 **Solution.** $e^x = 1 + x + \dfrac{x^2}{2} + \dfrac{x^3}{6} + \dfrac{x^4}{24} + \cdots$
 
-$$\frac{e^x - 1 - x - x^2/2}{x^3} = \frac◆LB◆x^3/6 + x^4/24 + \cdots◆RB◆◆LB◆x^3◆RB◆ = \frac{1}{6} + \frac{x}{24} + \cdots$$
+$$\frac{e^x - 1 - x - x^2/2}{x^3} = \frac{x^3/6 + x^4/24 + \cdots}{x^3} = \frac{1}{6} + \frac{x}{24} + \cdots$$
 
 $$\boxed{\lim_{x \to 0} = \frac{1}{6}}$$
 
@@ -978,16 +978,16 @@ Radius of convergence: $|x| < 1$ (from the binomial series convergence condition
 ### Question 9
 
 **Prove that**
-$\displaystyle\int_0^1 \frac◆LB◆\ln(1+x)◆RB◆◆LB◆x◆RB◆\,dx = \frac◆LB◆\pi^2◆RB◆◆LB◆12◆RB◆$.
+$\displaystyle\int_0^1 \frac{\ln(1+x)}{x}\,dx = \frac{\pi^2}{12}$.
 
 <details>
 <summary>Solution</summary>
 
 $\ln(1+x) = \displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}x^n}{n}$ for $|x| < 1$.
 
-$\dfrac◆LB◆\ln(1+x)◆RB◆◆LB◆x◆RB◆ = \displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}x^{n-1}}{n}$.
+$\dfrac{\ln(1+x)}{x} = \displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}x^{n-1}}{n}$.
 
-$\displaystyle\int_0^1 \frac◆LB◆\ln(1+x)◆RB◆◆LB◆x◆RB◆\,dx = \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^2} = \eta(2) = \frac◆LB◆\pi^2◆RB◆◆LB◆12◆RB◆$.
+$\displaystyle\int_0^1 \frac{\ln(1+x)}{x}\,dx = \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^2} = \eta(2) = \frac{\pi^2}{12}$.
 
 This is the Dirichlet eta function evaluated at 2. $\blacksquare$
 
@@ -1033,7 +1033,7 @@ $y = \sum a_n x^n$ into the ODE and equate coefficients.
 | $\sin x$         | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!}$  | $\infty$ |
 | $\cos x$         | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!}$      | $\infty$ |
 | $\ln(1+x)$       | $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}x^n}{n}$          | $1$      |
-| $(1+x)^\alpha$   | $\displaystyle\sum_{n=0}^{\infty} \binom◆LB◆\alpha◆RB◆◆LB◆n◆RB◆x^n$ | $1$      |
+| $(1+x)^\alpha$   | $\displaystyle\sum_{n=0}^{\infty} \binom{\alpha}{n}x^n$ | $1$      |
 | $\arctan x$      | $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{2n+1}$     | $1$      |
 | $\dfrac{1}{1-x}$ | $\displaystyle\sum_{n=0}^{\infty} x^n$                              | $1$      |
 
@@ -1048,17 +1048,17 @@ Implies all the standard addition formulae.
 
 ### Question 11
 
-Find the Maclaurin series of $\dfrac◆LB◆\sin x◆RB◆◆LB◆x◆RB◆$ and determine
-$\displaystyle\lim_{x \to 0} \frac◆LB◆\sin x◆RB◆◆LB◆x◆RB◆$.
+Find the Maclaurin series of $\dfrac{\sin x}{x}$ and determine
+$\displaystyle\lim_{x \to 0} \frac{\sin x}{x}$.
 
 <details>
 <summary>Solution</summary>
 
 $\sin x = x - \dfrac{x^3}{6} + \dfrac{x^5}{120} - \cdots$
 
-$\dfrac◆LB◆\sin x◆RB◆◆LB◆x◆RB◆ = 1 - \dfrac{x^2}{6} + \dfrac{x^4}{120} - \cdots$
+$\dfrac{\sin x}{x} = 1 - \dfrac{x^2}{6} + \dfrac{x^4}{120} - \cdots$
 
-$\displaystyle\lim_{x \to 0} \frac◆LB◆\sin x◆RB◆◆LB◆x◆RB◆ = 1$ (the constant term).
+$\displaystyle\lim_{x \to 0} \frac{\sin x}{x} = 1$ (the constant term).
 
 </details>
 
@@ -1072,9 +1072,9 @@ $\displaystyle\lim_{x \to 0} \frac◆LB◆\sin x◆RB◆◆LB◆x◆RB◆ = 1$ (
 The $n$-th derivative of $\cos x$ is one of $\pm\cos x$ or $\pm\sin x$So $|f^{(n)}(c)| \leq 1$ for
 All $c$ and $n$.
 
-By the Lagrange remainder: $|R_n(x)| \leq \dfrac◆LB◆|x|^{n+1}◆RB◆◆LB◆(n+1)!◆RB◆$.
+By the Lagrange remainder: $|R_n(x)| \leq \dfrac{|x|^{n+1}}{(n+1)!}$.
 
-For any fixed $x$: $\displaystyle\lim_{n \to \infty} \frac◆LB◆|x|^{n+1}◆RB◆◆LB◆(n+1)!◆RB◆ = 0$
+For any fixed $x$: $\displaystyle\lim_{n \to \infty} \frac{|x|^{n+1}}{(n+1)!} = 0$
 (factorial grows faster than exponential).
 
 Therefore $R_n(x) \to 0$ and the series converges to $\cos x$. $\blacksquare$
@@ -1083,16 +1083,16 @@ Therefore $R_n(x) \to 0$ and the series converges to $\cos x$. $\blacksquare$
 
 ### Question 13
 
-Use series to evaluate $\displaystyle\lim_{x \to 0} \frac◆LB◆\tan x - x◆RB◆◆LB◆x^3◆RB◆$.
+Use series to evaluate $\displaystyle\lim_{x \to 0} \frac{\tan x - x}{x^3}$.
 
 <details>
 <summary>Solution</summary>
 
 $\tan x = x + \dfrac{x^3}{3} + \dfrac{2x^5}{15} + \cdots$
 
-$\dfrac◆LB◆\tan x - x◆RB◆◆LB◆x^3◆RB◆ = \dfrac◆LB◆x^3/3 + 2x^5/15 + \cdots◆RB◆◆LB◆x^3◆RB◆ = \dfrac{1}{3} + \dfrac{2x^2}{15} + \cdots$
+$\dfrac{\tan x - x}{x^3} = \dfrac{x^3/3 + 2x^5/15 + \cdots}{x^3} = \dfrac{1}{3} + \dfrac{2x^2}{15} + \cdots$
 
-$\boxed{\displaystyle\lim_{x \to 0} \frac◆LB◆\tan x - x◆RB◆◆LB◆x^3◆RB◆ = \frac{1}{3}}$
+$\boxed{\displaystyle\lim_{x \to 0} \frac{\tan x - x}{x^3} = \frac{1}{3}}$
 
 </details>
 

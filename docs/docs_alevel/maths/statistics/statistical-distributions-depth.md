@@ -82,7 +82,7 @@ $P(5 \leq X \leq 9) = 1 - \dfrac{794}{4096} - \dfrac{79}{4096} = \dfrac{3223}{40
 A random variable $X$ has a **normal distribution** with parameters $\mu$ and $\sigma^2$ (written
 $X \sim N(\mu, \sigma^2)$) if its probability density function is:
 
-$$f(x) = \frac◆LB◆1◆RB◆◆LB◆\sigma\sqrt{2\pi}◆RB◆\exp\!\left(-\frac◆LB◆(x - \mu)^2◆RB◆◆LB◆2\sigma^2◆RB◆\right), \quad x \in \mathbb{R}$$
+$$f(x) = \frac{1}{\sigma\sqrt{2\pi}}\exp\!\left(-\frac{(x - \mu)^2}{2\sigma^2}\right), \quad x \in \mathbb{R}$$
 
 ### 2.2 Properties
 
@@ -97,9 +97,9 @@ $$f(x) = \frac◆LB◆1◆RB◆◆LB◆\sigma\sqrt{2\pi}◆RB◆\exp\!\left(-\fr
 
 To find probabilities, we standardise to the **standard normal** $Z \sim N(0, 1)$:
 
-$$Z = \frac◆LB◆X - \mu◆RB◆◆LB◆\sigma◆RB◆$$
+$$Z = \frac{X - \mu}{\sigma}$$
 
-$$P(X \leq x) = P\!\left(Z \leq \frac◆LB◆x - \mu◆RB◆◆LB◆\sigma◆RB◆\right) = \Phi\!\left(\frac◆LB◆x - \mu◆RB◆◆LB◆\sigma◆RB◆\right)$$
+$$P(X \leq x) = P\!\left(Z \leq \frac{x - \mu}{\sigma}\right) = \Phi\!\left(\frac{x - \mu}{\sigma}\right)$$
 
 Where $\Phi(z)$ denotes the cumulative distribution function of the standard normal.
 
@@ -160,7 +160,7 @@ $= 1 - \Phi(-0.337) = \Phi(0.337) \approx 0.632$
 A random variable $X$ has a **Poisson distribution** with parameter $\lambda$ (written
 $X \sim \mathrm{Po}(\lambda)$) if:
 
-$$P(X = r) = \frac◆LB◆e^{-\lambda}\lambda^r◆RB◆◆LB◆r!◆RB◆, \quad r = 0, 1, 2, \ldots$$
+$$P(X = r) = \frac{e^{-\lambda}\lambda^r}{r!}, \quad r = 0, 1, 2, \ldots$$
 
 **Conditions:**
 
@@ -183,7 +183,7 @@ a minute; (c) the probability of more than 8 calls in a two-minute period.
 $X \sim \mathrm{Po}(4.5)$.
 
 (a)
-$P(X = 6) = \dfrac{e^{-4.5}(4.5)^6}{6!} = \dfrac◆LB◆e^{-4.5} \times 8303.8◆RB◆◆LB◆720◆RB◆ \approx 0.1271$
+$P(X = 6) = \dfrac{e^{-4.5}(4.5)^6}{6!} = \dfrac{e^{-4.5} \times 8303.8}{720} \approx 0.1271$
 
 (b)
 $P(X \leq 2) = e^{-4.5}\!\left(1 + 4.5 + \dfrac{4.5^2}{2}\right) = e^{-4.5}(1 + 4.5 + 10.125) = 15.625\,e^{-4.5} \approx 0.1736$
@@ -207,7 +207,7 @@ Probability that exactly 3 are defective.
 
 $X \sim B(200, 0.02)$. Since $n = 200$ is large and $p = 0.02$ is small, $X \approx \mathrm{Po}(4)$.
 
-$$P(X = 3) = \frac◆LB◆e^{-4} \cdot 4^3◆RB◆◆LB◆3!◆RB◆ = \frac{64e^{-4}}{6} = \frac{32}{3}e^{-4} \approx 0.1954$$
+$$P(X = 3) = \frac{e^{-4} \cdot 4^3}{3!} = \frac{64e^{-4}}{6} = \frac{32}{3}e^{-4} \approx 0.1954$$
 
 <hr />
 
@@ -228,9 +228,9 @@ Then $X + Y \sim \mathrm{Po}(\lambda_1 + \lambda_2)$.
 
 **Proof sketch.** Using MGFs or direct convolution:
 
-$$P(X + Y = r) = \sum_{k=0}^{r}P(X = k)P(Y = r-k) = \sum_{k=0}^{r}\frac◆LB◆e^{-\lambda_1}\lambda_1^k◆RB◆◆LB◆k!◆RB◆ \cdot \frac◆LB◆e^{-\lambda_2}\lambda_2^{r-k}◆RB◆◆LB◆(r-k)!◆RB◆$$
+$$P(X + Y = r) = \sum_{k=0}^{r}P(X = k)P(Y = r-k) = \sum_{k=0}^{r}\frac{e^{-\lambda_1}\lambda_1^k}{k!} \cdot \frac{e^{-\lambda_2}\lambda_2^{r-k}}{(r-k)!}$$
 
-$$= \frac◆LB◆e^{-(\lambda_1+\lambda_2)}◆RB◆◆LB◆r!◆RB◆\sum_{k=0}^{r}\binom{r}{k}\lambda_1^k\lambda_2^{r-k} = \frac◆LB◆e^{-(\lambda_1+\lambda_2)}(\lambda_1+\lambda_2)^r◆RB◆◆LB◆r!◆RB◆ \quad \blacksquare$$
+$$= \frac{e^{-(\lambda_1+\lambda_2)}}{r!}\sum_{k=0}^{r}\binom{r}{k}\lambda_1^k\lambda_2^{r-k} = \frac{e^{-(\lambda_1+\lambda_2)}(\lambda_1+\lambda_2)^r}{r!} \quad \blacksquare$$
 
 ### 4.3 Worked example
 
@@ -296,7 +296,7 @@ Hours.
 <summary>Solution</summary>
 
 (a)
-$P(X = 4) = \dfrac◆LB◆e^{-6} \cdot 6^4◆RB◆◆LB◆4!◆RB◆ = \dfrac{1296}{24}e^{-6} = 54e^{-6} \approx 0.1335$.
+$P(X = 4) = \dfrac{e^{-6} \cdot 6^4}{4!} = \dfrac{1296}{24}e^{-6} = 54e^{-6} \approx 0.1335$.
 
 (b) For two hours, $Y \sim \mathrm{Po}(12)$.
 

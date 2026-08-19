@@ -757,7 +757,7 @@ $150 - Q = 30 + 0.5Q \Rightarrow 120 = 1.5Q \Rightarrow Q_{mkt} = 80$$P_{mkt} = 
 $150 - Q = 30 + 0.5Q + 0.2Q^2 \Rightarrow 0.2Q^2 + 1.5Q - 120 = 0$.
 
 Using the quadratic formula:
-$Q^* = \frac◆LB◆-1.5 + \sqrt{2.25 + 96}◆RB◆◆LB◆0.4◆RB◆ = \frac◆LB◆-1.5 + \sqrt{98.25}◆RB◆◆LB◆0.4◆RB◆ = \frac{-1.5 + 9.912}{0.4} = \frac{8.412}{0.4} = 21.03$.
+$Q^* = \frac{-1.5 + \sqrt{2.25 + 96}}{0.4} = \frac{-1.5 + \sqrt{98.25}}{0.4} = \frac{-1.5 + 9.912}{0.4} = \frac{8.412}{0.4} = 21.03$.
 
 $P^* = 150 - 21.03 = 128.97$.
 
@@ -797,7 +797,7 @@ boats. Each boat earns revenue $p = 50$ per unit of fish.
 
 **Social optimum (joint profit maximisation):** Total profit
 $\pi = p \cdot T(L) - cL = 50(100L - L^2) - 200L = 5000L - 50L^2 - 200L = 4800L - 50L^2$.
-$\frac◆LB◆d\pi◆RB◆◆LB◆dL◆RB◆ = 4800 - 100L = 0 \Rightarrow L^* = 48$ boats.
+$\frac{d\pi}{dL} = 4800 - 100L = 0 \Rightarrow L^* = 48$ boats.
 
 **Open access equilibrium (each boat enters until average revenue equals cost):** Average catch per
 boat $= \frac{T}{L} = 100 - L$. Entry continues until $p(100 - L) = 200$I.e.,
@@ -1007,7 +1007,7 @@ $\pi = (pqF - c) \times r(1 - F/K)/q = (2F - 100) \times 0.5(1 - F/1000)/0.01 = 
 
 $\pi = (2F - 100)(50 - 0.05F) = 100F - 0.1F^2 - 5000 + 5F = 105F - 0.1F^2 - 5000$.
 
-$\frac◆LB◆d\pi◆RB◆◆LB◆dF◆RB◆ = 105 - 0.2F = 0 \Rightarrow F = 525$.
+$\frac{d\pi}{dF} = 105 - 0.2F = 0 \Rightarrow F = 525$.
 
 **Comparison:**
 

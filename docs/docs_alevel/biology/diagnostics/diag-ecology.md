@@ -314,7 +314,7 @@ minimising environmental damage.
 **Solution:**
 
 (a) Ecological efficiency from cereal to cattle:
-$$\text{Efficiency} = \frac◆LB◆\text{energy in cattle biomass}◆RB◆◆LB◆\text{energy consumed by cattle}◆RB◆ \times 100 = \frac{3,600}{36,000} \times 100 = 10\%$$
+$$\text{Efficiency} = \frac{\text{energy in cattle biomass}}{\text{energy consumed by cattle}} \times 100 = \frac{3,600}{36,000} \times 100 = 10\%$$
 
 The ecological efficiency is approximately **10%** (this is consistent with the typical 10% rule for
 energy transfer between trophic levels).

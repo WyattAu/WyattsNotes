@@ -94,8 +94,8 @@ the velocity-time graph.
 
 (a) $\frac{dv}{dt} = g - \frac{k}{m}v$. Let $\alpha = k/m$: $\frac{dv}{dt} + \alpha v = g$.
 Integrating factor: $e^{\alpha t}$. $\frac{d}{dt}(ve^{\alpha t}) = ge^{\alpha t}$.
-$ve^{\alpha t} = \frac◆LB◆g◆RB◆◆LB◆\alpha◆RB◆e^{\alpha t} + C$.
-$v = \frac◆LB◆g◆RB◆◆LB◆\alpha◆RB◆ + Ce^{-\alpha t} = \frac{mg}{k} + Ce^{-kt/m}$. At $t = 0$:
+$ve^{\alpha t} = \frac{g}{\alpha}e^{\alpha t} + C$.
+$v = \frac{g}{\alpha} + Ce^{-\alpha t} = \frac{mg}{k} + Ce^{-kt/m}$. At $t = 0$:
 $0 = mg/k + C$$C = -mg/k$. $v = \frac{mg}{k}(1 - e^{-kt/m})$.
 
 (b) Terminal velocity: as $t \to \infty$$e^{-kt/m} \to 0$So $v_{\text{term}} = \frac{mg}{k}$.
@@ -152,18 +152,18 @@ $\alpha I_p + I_p' = \alpha A\cos + \alpha B\sin - A\omega\sin + B\omega\cos = \
 $\alpha A + B\omega = V_0/L$ and $\alpha B - A\omega = 0$So $B = A\omega/\alpha$.
 
 $A\alpha + A\omega^2/\alpha = V_0/L$.
-$A = \frac◆LB◆V_0\alpha◆RB◆◆LB◆L(\alpha^2 + \omega^2)◆RB◆ = \frac◆LB◆V_0 R◆RB◆◆LB◆L^2(\omega^2 + R^2/L^2)◆RB◆ = \frac◆LB◆V_0 R◆RB◆◆LB◆R^2 + \omega^2 L^2◆RB◆$.
+$A = \frac{V_0\alpha}{L(\alpha^2 + \omega^2)} = \frac{V_0 R}{L^2(\omega^2 + R^2/L^2)} = \frac{V_0 R}{R^2 + \omega^2 L^2}$.
 
-$I = Ce^{-Rt/L} + \frac◆LB◆V_0◆RB◆◆LB◆R^2 + \omega^2 L^2◆RB◆[R\cos(\omega t) + \omega L\sin(\omega t)]$.
+$I = Ce^{-Rt/L} + \frac{V_0}{R^2 + \omega^2 L^2}[R\cos(\omega t) + \omega L\sin(\omega t)]$.
 
-At $t = 0$: $0 = C + \frac◆LB◆V_0 R◆RB◆◆LB◆R^2 + \omega^2 L^2◆RB◆$So
-$C = -\frac◆LB◆V_0 R◆RB◆◆LB◆R^2 + \omega^2 L^2◆RB◆$.
+At $t = 0$: $0 = C + \frac{V_0 R}{R^2 + \omega^2 L^2}$So
+$C = -\frac{V_0 R}{R^2 + \omega^2 L^2}$.
 
 (b) **Transient:** $Ce^{-Rt/L}$ (decays to zero as $t \to \infty$). **Steady-state:**
-$\frac◆LB◆V_0◆RB◆◆LB◆R^2 + \omega^2 L^2◆RB◆[R\cos(\omega t) + \omega L\sin(\omega t)]$.
+$\frac{V_0}{R^2 + \omega^2 L^2}[R\cos(\omega t) + \omega L\sin(\omega t)]$.
 
 (c) Amplitude
-$= \frac◆LB◆V_0◆RB◆◆LB◆R^2 + \omega^2 L^2◆RB◆\sqrt◆LB◆R^2 + \omega^2 L^2◆RB◆ = \frac◆LB◆V_0◆RB◆◆LB◆\sqrt{R^2 + \omega^2 L^2}◆RB◆$.
+$= \frac{V_0}{R^2 + \omega^2 L^2}\sqrt{R^2 + \omega^2 L^2} = \frac{V_0}{\sqrt{R^2 + \omega^2 L^2}}$.
 
 (d) When $\omega \to 0$ (DC circuit): amplitude $\to \frac{V_0}{R} = I_0$. The current approaches
 $V_0/R$ with time constant $L/R$. This is the classic RL circuit charging: the inductor initially

@@ -101,7 +101,7 @@ Angle with the axis inside the fibre: $\alpha = 90^\circ - \theta_c = 13.3^\circ
 The ray travels along the fibre axis with horizontal speed $v\cos\alpha$ and bounces between the
 walls. The horizontal distance between bounces:
 
-$$d_{\text{bounce}} = \frac◆LB◆2r◆RB◆◆LB◆\tan\alpha◆RB◆ = \frac◆LB◆50 \times 10^{-6}◆RB◆◆LB◆\tan 13.3^\circ◆RB◆ = \frac◆LB◆50 \times 10^{-6}◆RB◆◆LB◆0.2363◆RB◆ = 2.12 \times 10^{-4}\,\text{m}$$
+$$d_{\text{bounce}} = \frac{2r}{\tan\alpha} = \frac{50 \times 10^{-6}}{\tan 13.3^\circ} = \frac{50 \times 10^{-6}}{0.2363} = 2.12 \times 10^{-4}\,\text{m}$$
 
 Number of reflections per metre:
 $N = 1/(2.12 \times 10^{-4}) = 4720\,\text{reflections}\,\text{m}^{-1}$
@@ -128,7 +128,7 @@ the glass block as viewed through the liquid.
 (a) $n = \text{real depth}/\text{apparent depth} = 40.0/28.5 = 1.404$
 
 Uncertainty:
-$\frac◆LB◆\Delta n◆RB◆◆LB◆n◆RB◆ = \frac◆LB◆\Delta d_{\text{real}}◆RB◆◆LB◆d_{\text{real}}◆RB◆ + \frac◆LB◆\Delta d_{\text{app}}◆RB◆◆LB◆d_{\text{app}}◆RB◆ = \frac{0.5}{40.0} + \frac{0.5}{28.5} = 0.0125 + 0.01754 = 0.0300$
+$\frac{\Delta n}{n} = \frac{\Delta d_{\text{real}}}{d_{\text{real}}} + \frac{\Delta d_{\text{app}}}{d_{\text{app}}} = \frac{0.5}{40.0} + \frac{0.5}{28.5} = 0.0125 + 0.01754 = 0.0300$
 
 $$\Delta n = 0.0300 \times 1.404 = 0.042$$
 
@@ -240,7 +240,7 @@ in radians: $\theta_a = 0.22\,\text{rad}$)
 (c) Bending loss becomes significant when the bend radius approaches a critical value. For a
 step-index fibre:
 
-$$R_{\text{critical}} \approx \frac◆LB◆3n_1^2\lambda◆RB◆◆LB◆4\pi(n_1^2 - n_2^2)^{3/2}◆RB◆$$
+$$R_{\text{critical}} \approx \frac{3n_1^2\lambda}{4\pi(n_1^2 - n_2^2)^{3/2}}$$
 
 Without the wavelength, we can estimate: for typical telecom fibres, bend losses become significant
 below $R \approx 10$--$30\,\text{mm}$ for single-mode fibres. For multimode fibres with larger

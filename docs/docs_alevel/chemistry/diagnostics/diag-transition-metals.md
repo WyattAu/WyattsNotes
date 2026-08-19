@@ -44,9 +44,9 @@ $\text{Cl}^- \lt \text{H}_2\text{O} \lt \text{NH}_3 \lt \text{en} \lt \text{CN}^
 
 (b)
 
-$$E = \frac◆LB◆hc◆RB◆◆LB◆\lambda◆RB◆$$
+$$E = \frac{hc}{\lambda}$$
 
-$$E = \frac◆LB◆6.63 \times 10^{-34} \times 3.00 \times 10^8◆RB◆◆LB◆498 \times 10^{-9}◆RB◆ = 3.992 \times 10^{-19}\,\text{J}$$
+$$E = \frac{6.63 \times 10^{-34} \times 3.00 \times 10^8}{498 \times 10^{-9}} = 3.992 \times 10^{-19}\,\text{J}$$
 
 Per mole:
 
@@ -139,7 +139,7 @@ $$n(\text{MnO}_4^-) = 0.0200 \times \frac{18.0}{1000} = 3.60 \times 10^{-4}\,\te
 
 $$n(\text{Fe}^{2+}) = 5 \times 3.60 \times 10^{-4} = 1.80 \times 10^{-3}\,\text{mol}$$
 
-$$[\text{Fe}^{2+}] = \frac◆LB◆1.80 \times 10^{-3}◆RB◆◆LB◆25.0/1000◆RB◆ = 0.0720\,\text{mol dm}^{-3}$$
+$$[\text{Fe}^{2+}] = \frac{1.80 \times 10^{-3}}{25.0/1000} = 0.0720\,\text{mol dm}^{-3}$$
 
 Verification with the dichromate titration:
 
@@ -149,7 +149,7 @@ $$n(\text{Cr}_2\text{O}_7^{2-}) = 0.0200 \times \frac{12.0}{1000} = 2.40 \times 
 
 $$n(\text{Fe}^{2+}) = 6 \times 2.40 \times 10^{-4} = 1.44 \times 10^{-3}\,\text{mol}$$
 
-$$[\text{Fe}^{2+}] = \frac◆LB◆1.44 \times 10^{-3}◆RB◆◆LB◆0.0250◆RB◆ = 0.0576\,\text{mol dm}^{-3}$$
+$$[\text{Fe}^{2+}] = \frac{1.44 \times 10^{-3}}{0.0250} = 0.0576\,\text{mol dm}^{-3}$$
 
 Note: The two titrations give slightly different results, which may indicate experimental error or
 that the dichromate titration is not fully reaching all $\text{Fe}^{2+}$ under the conditions used.

@@ -135,7 +135,7 @@ lowest, least soluble).
 
 The **$R_f$ value** (retention factor) can be calculated:
 
-$$R_f = \frac◆LB◆\text{Distance travelled by pigment}◆RB◆◆LB◆\text{Distance travelled by solvent front}◆RB◆$$
+$$R_f = \frac{\text{Distance travelled by pigment}}{\text{Distance travelled by solvent front}}$$
 
 ## 4. Light-Dependent Reactions
 
@@ -962,7 +962,7 @@ For every 5 turns of the Calvin cycle:
 - 1 turn is "wasted" on oxygenation (no net carbon gain, but ATP and $\mathrm{NADPH}$ are still
   consumed).
 
-Effective ATP cost per net $\mathrm{CO_2}$ fixed $= \frac◆LB◆5 \times 3◆RB◆◆LB◆4◆RB◆ = 3.75$ ATP per
+Effective ATP cost per net $\mathrm{CO_2}$ fixed $= \frac{5 \times 3}{4} = 3.75$ ATP per
 $\mathrm{CO_2}$ (instead of 3 ATP in the absence of photorespiration).
 
 At 35 degrees C, the ratio may increase to 1 oxygenation per 2 carboxylations, making
@@ -988,7 +988,7 @@ Chromatography separates mixtures based on differential partitioning between a *
 
 6. Calculate the **retention factor ($R_f$)** for each pigment:
 
-$$R_f = \frac◆LB◆\text{Distance travelled by pigment}◆RB◆◆LB◆\text{Distance travelled by solvent front}◆RB◆$$
+$$R_f = \frac{\text{Distance travelled by pigment}}{\text{Distance travelled by solvent front}}$$
 
 ### 16.2 Expected Results
 
@@ -1172,7 +1172,7 @@ $\text{DLI} = 200 \times 16 \times 3600 \times 10^{-6} = 200 \times 57600 \times
 Total daily light $= 11.52 \times 200 = 2304\ \mathrm{mol\ photons\ day^{-1}}$.
 
 Energy per photon (at 550 nm, average PAR wavelength):
-$E = \frac◆LB◆hc◆RB◆◆LB◆\lambda◆RB◆ = \frac◆LB◆6.626 \times 10^{-34} \times 3 \times 10^8◆RB◆◆LB◆550 \times 10^{-9}◆RB◆ = 3.61 \times 10^{-19}\ \mathrm{J}$.
+$E = \frac{hc}{\lambda} = \frac{6.626 \times 10^{-34} \times 3 \times 10^8}{550 \times 10^{-9}} = 3.61 \times 10^{-19}\ \mathrm{J}$.
 
 Total energy per day
 $= 2304 \times 6.022 \times 10^{23} \times 3.61 \times 10^{-19} = 2304 \times 2.17 \times 10^5 = 5.0 \times 10^{8}\ \mathrm{J} = 139\ \mathrm{kWh}$.
@@ -1215,7 +1215,7 @@ engulfed by a eukaryotic cell (primary endosymbiosis). Evidence:
 The relationship between light intensity and photosynthetic rate can be described by a rectangular
 hyperbola:
 
-$$P = \frac◆LB◆P_{\max} \times I◆RB◆◆LB◆K_m + I◆RB◆$$
+$$P = \frac{P_{\max} \times I}{K_m + I}$$
 
 Where $P$ = photosynthetic rate, $P_{\max}$ = maximum rate (at saturation), $I$ = light intensity,
 $K_m$ = light intensity at which the rate is half of $P_{\max}$.
@@ -1224,14 +1224,14 @@ If $P_{\max} = 20\ \mu\mathrm{mol\ CO_2\ m^{-2}\ s^{-1}}$ and
 $K_m = 50\ \mu\mathrm{mol\ photons\ m^{-2}\ s^{-1}}$:
 
 At $I = 50$:
-$P = \frac◆LB◆20 \times 50◆RB◆◆LB◆50 + 50◆RB◆ = \frac{1000}{100} = 10\ \mu\mathrm{mol\ CO_2\ m^{-2}\ s^{-1}}$
+$P = \frac{20 \times 50}{50 + 50} = \frac{1000}{100} = 10\ \mu\mathrm{mol\ CO_2\ m^{-2}\ s^{-1}}$
 (half of $P_{\max}$As expected).
 
 At $I = 200$:
-$P = \frac◆LB◆20 \times 200◆RB◆◆LB◆50 + 200◆RB◆ = \frac{4000}{250} = 16\ \mu\mathrm{mol\ CO_2\ m^{-2}\ s^{-1}}$.
+$P = \frac{20 \times 200}{50 + 200} = \frac{4000}{250} = 16\ \mu\mathrm{mol\ CO_2\ m^{-2}\ s^{-1}}$.
 
 At $I = 1000$:
-$P = \frac◆LB◆20 \times 1000◆RB◆◆LB◆50 + 1000◆RB◆ = \frac{20000}{1050} = 19.0\ \mu\mathrm{mol\ CO_2\ m^{-2}\ s^{-1}}$
+$P = \frac{20 \times 1000}{50 + 1000} = \frac{20000}{1050} = 19.0\ \mu\mathrm{mol\ CO_2\ m^{-2}\ s^{-1}}$
 (approaching $P_{\max}$).
 
 ### 19.2 Temperature Optimum Curves

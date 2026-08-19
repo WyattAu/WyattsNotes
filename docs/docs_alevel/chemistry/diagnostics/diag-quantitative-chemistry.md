@@ -31,7 +31,7 @@ hydroxide solution. $24.0\,\text{cm}^3$ of NaOH is required for complete neutral
 
 (a) **Step 1: Moles of NaOH used in the titration**
 
-$$n(\text{NaOH}) = \frac◆LB◆0.500 \times 24.0◆RB◆◆LB◆1000◆RB◆ = 0.0120\,\text{mol}$$
+$$n(\text{NaOH}) = \frac{0.500 \times 24.0}{1000} = 0.0120\,\text{mol}$$
 
 **Step 2: Moles of excess HCl**
 
@@ -41,7 +41,7 @@ $$n(\text{HCl}_{\text{excess}}) = 0.0120\,\text{mol}$$
 
 **Step 3: Moles of HCl that reacted with $\text{CaCO}_3$**
 
-$$n(\text{HCl}_{\text{total}}) = \frac◆LB◆1.00 \times 50.0◆RB◆◆LB◆1000◆RB◆ = 0.0500\,\text{mol}$$
+$$n(\text{HCl}_{\text{total}}) = \frac{1.00 \times 50.0}{1000} = 0.0500\,\text{mol}$$
 
 $$n(\text{HCl}_{\text{reacted}}) = 0.0500 - 0.0120 = 0.0380\,\text{mol}$$
 
@@ -88,9 +88,9 @@ $\text{C}_3\text{H}_8$. Identify the gas.
 - $V = 72.0\,\text{cm}^3 = 72.0 \times 10^{-6}\,\text{m}^3 = 7.20 \times 10^{-5}\,\text{m}^3$
 - $T = 77 + 273 = 350\,\text{K}$
 
-$$n = \frac{pV}{RT} = \frac◆LB◆98500 \times 7.20 \times 10^{-5}◆RB◆◆LB◆8.31 \times 350◆RB◆ = \frac{7.092}{2908.5} = 2.438 \times 10^{-3}\,\text{mol}$$
+$$n = \frac{pV}{RT} = \frac{98500 \times 7.20 \times 10^{-5}}{8.31 \times 350} = \frac{7.092}{2908.5} = 2.438 \times 10^{-3}\,\text{mol}$$
 
-$$M = \frac{m}{n} = \frac◆LB◆0.154◆RB◆◆LB◆2.438 \times 10^{-3}◆RB◆ = 63.2\,\text{g mol}^{-1}$$
+$$M = \frac{m}{n} = \frac{0.154}{2.438 \times 10^{-3}} = 63.2\,\text{g mol}^{-1}$$
 
 (b) Calculated molar masses:
 
@@ -135,7 +135,7 @@ $\text{C}_2\text{H}_5\text{HSO}_4 + \text{H}_2\text{O} \to \text{C}_2\text{H}_5\
 $$\text{Overall yield} = 0.95 \times 0.90 = 0.855 = 85.5\%$$
 
 (b) Atom economy =
-$\frac◆LB◆\text{M_r of desired product}◆RB◆◆LB◆\text{Sum of M_r of all products}◆RB◆ \times 100$
+$\frac{\text{M_r of desired product}}{\text{Sum of M_r of all products}} \times 100$
 
 Desired product: $\text{C}_2\text{H}_5\text{OH}$
 ($M_r = 2 \times 12.0 + 6 \times 1.0 + 16.0 = 46.0$)
@@ -203,9 +203,9 @@ experimental rounding error.
 
 (b) Using $pV = nRT$:
 
-$$n = \frac◆LB◆1.01 \times 10^5 \times 49.5 \times 10^{-6}◆RB◆◆LB◆8.31 \times 373◆RB◆ = \frac{5.000}{3099.6} = 1.613 \times 10^{-3}\,\text{mol}$$
+$$n = \frac{1.01 \times 10^5 \times 49.5 \times 10^{-6}}{8.31 \times 373} = \frac{5.000}{3099.6} = 1.613 \times 10^{-3}\,\text{mol}$$
 
-$$M = \frac◆LB◆0.120◆RB◆◆LB◆1.613 \times 10^{-3}◆RB◆ = 74.4\,\text{g mol}^{-1}$$
+$$M = \frac{0.120}{1.613 \times 10^{-3}} = 74.4\,\text{g mol}^{-1}$$
 
 The measured molar mass of $74.4\,\text{g mol}^{-1}$ is closest to **$\text{C}_5\text{H}_{12}$**
 (pentane, $M_r = 72.1\,\text{g mol}^{-1}$). Comparing with nearby hydrocarbons:
@@ -246,9 +246,9 @@ $$\text{BaCl}_2(s) + 2\text{H}_2\text{O}(l) \to \text{BaCl}_2 \cdot 2\text{H}_2\
 
 $$n(\text{H}_2\text{O}) = \frac{0.74}{18.0} = 0.0411\,\text{mol}$$
 
-$$n(\text{BaCl}_2) = \frac◆LB◆4.26◆RB◆◆LB◆137.3 + 2 \times 35.5◆RB◆ = \frac{4.26}{208.3} = 0.02045\,\text{mol}$$
+$$n(\text{BaCl}_2) = \frac{4.26}{137.3 + 2 \times 35.5} = \frac{4.26}{208.3} = 0.02045\,\text{mol}$$
 
-$$x = \frac◆LB◆n(\text{H}_2\text{O})◆RB◆◆LB◆n(\text{BaCl}_2)◆RB◆ = \frac{0.0411}{0.02045} = 2.01 \approx 2$$
+$$x = \frac{n(\text{H}_2\text{O})}{n(\text{BaCl}_2)} = \frac{0.0411}{0.02045} = 2.01 \approx 2$$
 
 The formula is **$\text{BaCl}_2 \cdot 2\text{H}_2\text{O}$**.
 
@@ -300,7 +300,7 @@ weak acid):
 
 $$n(\text{HCl}) = n(\text{NaOH})_{\text{first eq. pt.}} = 0.100 \times \frac{10.0}{1000} = 1.00 \times 10^{-3}\,\text{mol}$$
 
-$$[\text{HCl}] = \frac◆LB◆1.00 \times 10^{-3}◆RB◆◆LB◆25.0/1000◆RB◆ = 0.0400\,\text{mol dm}^{-3}$$
+$$[\text{HCl}] = \frac{1.00 \times 10^{-3}}{25.0/1000} = 0.0400\,\text{mol dm}^{-3}$$
 
 (b) The second equivalence point at $20.0\,\text{cm}^3$ corresponds to total acid neutralised. The
 additional $\text{NaOH}$ between the two equivalence points neutralises the
@@ -308,7 +308,7 @@ $\text{CH}_3\text{COOH}$:
 
 $$n(\text{CH}_3\text{COOH}) = 0.100 \times \frac{20.0 - 10.0}{1000} = 1.00 \times 10^{-3}\,\text{mol}$$
 
-$$[\text{CH}_3\text{COOH}] = \frac◆LB◆1.00 \times 10^{-3}◆RB◆◆LB◆25.0/1000◆RB◆ = 0.0400\,\text{mol dm}^{-3}$$
+$$[\text{CH}_3\text{COOH}] = \frac{1.00 \times 10^{-3}}{25.0/1000} = 0.0400\,\text{mol dm}^{-3}$$
 
 (c) At the second equivalence point, all $\text{HCl}$ and $\text{CH}_3\text{COOH}$ have been
 neutralised. The solution contains $\text{NaCl}$ (neutral from the strong acid-strong base reaction)
@@ -356,7 +356,7 @@ error and give the correct answer in $\mathrm{cm}^3$.
 The student used $p = 100$ without units. If they intended $100\,\mathrm{kPa}$They needed to convert
 to pascals: $p = 100000\,\mathrm{Pa}$ (1 mark).
 
-$$V = \frac{nRT}{p} = \frac◆LB◆0.050 \times 8.314 \times 298◆RB◆◆LB◆100000◆RB◆ = \frac{123.9}{100000} = 1.24 \times 10^{-3}\,\mathrm{m}^3 = 1.24\,\mathrm{dm}^3 = 1240\,\mathrm{cm}^3$$
+$$V = \frac{nRT}{p} = \frac{0.050 \times 8.314 \times 298}{100000} = \frac{123.9}{100000} = 1.24 \times 10^{-3}\,\mathrm{m}^3 = 1.24\,\mathrm{dm}^3 = 1240\,\mathrm{cm}^3$$
 
 The student's answer of $123.7$ is actually correct numerically but lacks units. If they meant
 $\mathrm{dm}^3$Their answer is close. The key error was likely not tracking units through the

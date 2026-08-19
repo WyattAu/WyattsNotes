@@ -87,8 +87,8 @@ Measured value: $(\Delta x / x) \times 100\%$.
 For a measurement $x \pm \Delta x$:
 
 - **Absolute uncertainty:** $\Delta x$
-- **Fractional uncertainty:** $\frac◆LB◆\Delta x◆RB◆◆LB◆x◆RB◆$
-- **Percentage uncertainty:** $\frac◆LB◆\Delta x◆RB◆◆LB◆x◆RB◆ \times 100\%$
+- **Fractional uncertainty:** $\frac{\Delta x}{x}$
+- **Percentage uncertainty:** $\frac{\Delta x}{x} \times 100\%$
 
 ### Propagation of Uncertainty
 
@@ -106,7 +106,7 @@ $$z_{\min} = (x - \Delta x) + (y - \Delta y)$$
 
 The absolute uncertainty is half the range:
 
-$$\Delta z = \frac◆LB◆z_{\max} - z_{\min}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆2\Delta x + 2\Delta y◆RB◆◆LB◆2◆RB◆$$
+$$\Delta z = \frac{z_{\max} - z_{\min}}{2} = \frac{2\Delta x + 2\Delta y}{2}$$
 
 $$\boxed{\Delta z = \Delta x + \Delta y}$$
 
@@ -117,9 +117,9 @@ $\square$
 Taking natural logarithms: $\ln z = \ln x + \ln y$. Differentiating: $dz/z = dx/x + dy/y$.
 Converting to finite uncertainties:
 
-$$\frac◆LB◆\Delta z◆RB◆◆LB◆z◆RB◆ = \frac◆LB◆\Delta x◆RB◆◆LB◆x◆RB◆ + \frac◆LB◆\Delta y◆RB◆◆LB◆y◆RB◆$$
+$$\frac{\Delta z}{z} = \frac{\Delta x}{x} + \frac{\Delta y}{y}$$
 
-$$\boxed{\frac◆LB◆\Delta z◆RB◆◆LB◆z◆RB◆ = \frac◆LB◆\Delta x◆RB◆◆LB◆x◆RB◆ + \frac◆LB◆\Delta y◆RB◆◆LB◆y◆RB◆}$$
+$$\boxed{\frac{\Delta z}{z} = \frac{\Delta x}{x} + \frac{\Delta y}{y}}$$
 
 $\square$
 
@@ -136,19 +136,19 @@ Add absolute uncertainties.
 
 #### Multiplication/Division: $z = xy$ or $z = x/y$
 
-$$\frac◆LB◆\Delta z◆RB◆◆LB◆z◆RB◆ = \frac◆LB◆\Delta x◆RB◆◆LB◆x◆RB◆ + \frac◆LB◆\Delta y◆RB◆◆LB◆y◆RB◆$$
+$$\frac{\Delta z}{z} = \frac{\Delta x}{x} + \frac{\Delta y}{y}$$
 
 Add fractional uncertainties.
 
 #### Powers: $z = x^n$
 
-$$\frac◆LB◆\Delta z◆RB◆◆LB◆z◆RB◆ = |n| \cdot \frac◆LB◆\Delta x◆RB◆◆LB◆x◆RB◆$$
+$$\frac{\Delta z}{z} = |n| \cdot \frac{\Delta x}{x}$$
 
 Multiply fractional uncertainty by the power.
 
 #### General formula (for reference):
 
-$$\Delta z = \sqrt◆LB◆\sum_{i}\left(\frac{\partial z}{\partial x_i}\Delta x_i\right)^2◆RB◆$$
+$$\Delta z = \sqrt{\sum_{i}\left(\frac{\partial z}{\partial x_i}\Delta x_i\right)^2}$$
 
 ### Uncertainty from a Single Reading
 
@@ -167,11 +167,11 @@ For $n$ repeated readings:
 
 $$\bar{x} = \frac{1}{n}\sum x_i$$
 
-$$\Delta x = \frac◆LB◆x_{\max} - x_{\min}◆RB◆◆LB◆2◆RB◆$$
+$$\Delta x = \frac{x_{\max} - x_{\min}}{2}$$
 
 For large $n$The standard uncertainty of the mean is:
 
-$$\Delta x = \frac◆LB◆\sigma◆RB◆◆LB◆\sqrt{n}◆RB◆, \qquad \sigma = \sqrt◆LB◆\frac{1}{n-1}\sum(x_i - \bar{x})^2◆RB◆$$
+$$\Delta x = \frac{\sigma}{\sqrt{n}}, \qquad \sigma = \sqrt{\frac{1}{n-1}\sum(x_i - \bar{x})^2}$$
 
 ## 3. Graphical Analysis
 
@@ -183,7 +183,7 @@ When determining a physical quantity from the gradient of a straight-line graph:
 2. Draw the **worst acceptable line** (the steepest/shallowest line consistent with the error bars).
 3. The uncertainty in the gradient is:
 
-$$\Delta m = \frac◆LB◆|m_{\mathrm{best}} - m_{\mathrm{worst}}|◆RB◆◆LB◆2◆RB◆$$
+$$\Delta m = \frac{|m_{\mathrm{best}} - m_{\mathrm{worst}}|}{2}$$
 
 ### Error Bars
 
@@ -203,7 +203,7 @@ Many physical relationships can be linearised by choosing appropriate variables:
 | $y = a\sqrt{x} + b$  | $y = aX + b$                          | $y$ vs $X = \sqrt{x}$ | $a$        | $b$       |
 | $y = a/x + b$        | $y = aX + b$                          | $y$ vs $X = 1/x$      | $a$        | $b$       |
 | $y = ae^{bx}$        | $\ln y = bx + \ln a$                  | $\ln y$ vs $x$        | $b$        | $\ln a$   |
-| $T = 2\pi\sqrt{L/g}$ | $T^2 = \frac◆LB◆4\pi^2◆RB◆◆LB◆g◆RB◆L$ | $T^2$ vs $L$          | $4\pi^2/g$ | $0$       |
+| $T = 2\pi\sqrt{L/g}$ | $T^2 = \frac{4\pi^2}{g}L$ | $T^2$ vs $L$          | $4\pi^2/g$ | $0$       |
 
 :::tip Exam Technique When asked to find the percentage uncertainty in a quantity determined from a
 Gradient, first find the gradient uncertainty using the worst line method, then divide by the
@@ -359,7 +359,7 @@ And graphical analysis.
 A student measures the period $T$ of a simple pendulum for five different lengths $L$. The
 Relationship is:
 
-$$T = 2\pi\sqrt◆LB◆\frac{L}{g}◆RB◆ \implies T^2 = \frac◆LB◆4\pi^2◆RB◆◆LB◆g◆RB◆L$$
+$$T = 2\pi\sqrt{\frac{L}{g}} \implies T^2 = \frac{4\pi^2}{g}L$$
 
 By plotting $T^2$ against $L$The gradient gives $4\pi^2/g$From which $g$ can be determined.
 
@@ -382,13 +382,13 @@ For the first row: $\Delta T^2 = 2 \times (0.03/1.26) \times 1.59 = 0.076 \appro
 From a line of best fit through $(L, T^2)$The gradient is $m = 4.08$ s$^2$ m$^{-1}$. The worst
 Acceptable line gives $m = 3.95$ s$^2$ m$^{-1}$.
 
-$$g = \frac◆LB◆4\pi^2◆RB◆◆LB◆m◆RB◆ = \frac{39.48}{4.08} = 9.68 \mathrm{ m s}^{-2}$$
+$$g = \frac{4\pi^2}{m} = \frac{39.48}{4.08} = 9.68 \mathrm{ m s}^{-2}$$
 
 Uncertainty in the gradient: $\Delta m = (4.08 - 3.95)/2 = 0.065$ s$^2$ m$^{-1}$.
 
 Since $g = 4\pi^2 / m$ and $g \propto 1/m$:
 
-$$\frac◆LB◆\Delta g◆RB◆◆LB◆g◆RB◆ = \frac◆LB◆\Delta m◆RB◆◆LB◆m◆RB◆ = \frac{0.065}{4.08} = 0.016 = 1.6\%$$
+$$\frac{\Delta g}{g} = \frac{\Delta m}{m} = \frac{0.065}{4.08} = 0.016 = 1.6\%$$
 
 $$\Delta g = 9.68 \times 0.016 = 0.15 \mathrm{ m s}^{-2}$$
 
@@ -489,7 +489,7 @@ Point's error bar does not overlap with the line of best fit, either:
 The worst acceptable line is the steepest (or shallowest) straight line that still passes through
 All the error bars. The uncertainty in the gradient is:
 
-$$\Delta m = \frac◆LB◆|m_{\mathrm{best}} - m_{\mathrm{worst}}|◆RB◆◆LB◆2◆RB◆$$
+$$\Delta m = \frac{|m_{\mathrm{best}} - m_{\mathrm{worst}}|}{2}$$
 
 :::warning Warning Uncertainty is $\pm$ half the smallest scale division of the measuring instrument
 used to obtain Each data point. State this assumption explicitly.

@@ -179,7 +179,7 @@ Validity has two aspects that examiners distinguish:
 
 Accuracy depends on minimising both systematic and random errors:
 
-$$\mathrm{Accuracy} \propto \frac◆LB◆1◆RB◆◆LB◆|\mathrm{systematic error}| + \mathrm{random error}◆RB◆$$
+$$\mathrm{Accuracy} \propto \frac{1}{|\mathrm{systematic error}| + \mathrm{random error}}$$
 
 **Systematic errors** shift all readings by a constant amount. They cannot be reduced by averaging.
 Examples include:

@@ -1743,8 +1743,8 @@ $$\frac{dx_i}{dt} = x_i \left[ f_i(\mathbf{x}) - \bar{f}(\mathbf{x}) \right]$$
 Where:
 
 - $x_i$ = frequency of strategy $i$ in the population
-- $f_i(\mathbf{{'}x{}'})$ = fitness (expected payoff) of strategy $i$
-- $\bar{f}(\mathbf{{'}x{}'})$ = average fitness of the population
+- $f_i(\mathbf{x})$ = fitness (expected payoff) of strategy $i$
+- $\bar{f}(\mathbf{x})$ = average fitness of the population
 
 Strategies with above-average fitness grow; those with below-average fitness shrink.
 

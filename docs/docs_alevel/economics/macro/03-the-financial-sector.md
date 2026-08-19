@@ -228,7 +228,7 @@ $$M^d = L_T + L_P + L_S = (k + j)Y - hi$$
 
 The interest rate is determined by the intersection of money demand and money supply:
 
-$$M^s = M^d \implies \bar{M} = (k+j)Y - hi \implies i = \frac◆LB◆(k+j)Y - \bar{M}◆RB◆◆LB◆h◆RB◆$$
+$$M^s = M^d \implies \bar{M} = (k+j)Y - hi \implies i = \frac{(k+j)Y - \bar{M}}{h}$$
 
 ### 3.3 Term Structure of Interest Rates
 
@@ -704,7 +704,7 @@ deposits).
 - Cash held: $650.25 \times 0.1 = 65.03$.
 
 **Total deposits created:** $$D = 1000 + 765 + 585.23 + \cdots$$
-$$D = \frac{1000}{1 - (1 - rr - re)(1 - c)} = \frac◆LB◆1000◆RB◆◆LB◆1 - 0.85 \times 0.9◆RB◆ = \frac{1000}{1 - 0.765} = \frac{1000}{0.235} = \text{GBP } 4\,255$$
+$$D = \frac{1000}{1 - (1 - rr - re)(1 - c)} = \frac{1000}{1 - 0.85 \times 0.9} = \frac{1000}{1 - 0.765} = \frac{1000}{0.235} = \text{GBP } 4\,255$$
 
 **Effective money multiplier:** $$m = \frac{D}{R} = \frac{4255}{1000} = 4.26$$
 
@@ -734,11 +734,11 @@ market yield (8%), so the investor is compensated by a capital gain of GBP 5 at 
 
 The **Macaulay duration** of a bond measures its sensitivity to interest rate changes:
 
-$$D = \frac{1}{P} \sum_{t=1}^{n} \frac◆LB◆t \times C_t◆RB◆◆LB◆(1+r)^t◆RB◆$$
+$$D = \frac{1}{P} \sum_{t=1}^{n} \frac{t \times C_t}{(1+r)^t}$$
 
 For a 5-year bond with 6% coupon, face 100, priced at par ($r = 6\%$):
 
-$$D = \frac{1}{100}\left[\frac◆LB◆1 \times 6◆RB◆◆LB◆1.06◆RB◆ + \frac◆LB◆2 \times 6◆RB◆◆LB◆1.06^2◆RB◆ + \frac◆LB◆3 \times 6◆RB◆◆LB◆1.06^3◆RB◆ + \frac◆LB◆4 \times 6◆RB◆◆LB◆1.06^4◆RB◆ + \frac◆LB◆5 \times 106◆RB◆◆LB◆1.06^5◆RB◆\right]$$
+$$D = \frac{1}{100}\left[\frac{1 \times 6}{1.06} + \frac{2 \times 6}{1.06^2} + \frac{3 \times 6}{1.06^3} + \frac{4 \times 6}{1.06^4} + \frac{5 \times 106}{1.06^5}\right]$$
 $$D = \frac{1}{100}[5.66 + 10.68 + 15.08 + 18.88 + 79.34] = \frac{129.64}{100} = 4.30 \text{ years}$$
 
 **Interpretation:** if interest rates rise by 1%, the bond price falls by approximately 4.30%.
@@ -923,7 +923,7 @@ deposits, 6-month wholesale funding).
   Variable-rate loans reprice to 7%.
 - New asset value: fixed-rate assets lose market value as yields rise. Bond value: GBP 80bn of
   10-year bonds at 2% yield. At 4% yield:
-  $PV = \frac◆LB◆80 \times 0.02◆RB◆◆LB◆0.04◆RB◆ \times (1 - 1.04^{-10}) + 80 / 1.04^{10}$.
+  $PV = \frac{80 \times 0.02}{0.04} \times (1 - 1.04^{-10}) + 80 / 1.04^{10}$.
   Approximately, bond prices fall by 15-20% for a 2% yield rise on 10-year bonds. New bond value:
   approximately 64bn. Loss: 16bn. Mortgage value: similarly, fixed-rate mortgages lose approximately
   10% of value. Loss: 20bn.
@@ -1045,11 +1045,11 @@ fall by 8bn to 862. The reduction in reserves removes liquidity from the banking
 **Example.** A household takes out a GBP 300,000 repayment mortgage over 25 years.
 
 **At 2% interest rate:** Monthly payment
-$= 300\,000 \times \frac◆LB◆0.02/12 \times (1 + 0.02/12)^{300}◆RB◆◆LB◆(1 + 0.02/12)^{300} - 1◆RB◆ = 300\,000 \times \frac◆LB◆0.001667 \times 1.646◆RB◆◆LB◆0.646◆RB◆ = 300\,000 \times 0.004249 = \pounds 1\,275$.
+$= 300\,000 \times \frac{0.02/12 \times (1 + 0.02/12)^{300}}{(1 + 0.02/12)^{300} - 1} = 300\,000 \times \frac{0.001667 \times 1.646}{0.646} = 300\,000 \times 0.004249 = \pounds 1\,275$.
 Total payments over 25 years: $1275 \times 300 = 382\,500$. Total interest: 82,500.
 
 **At 5% interest rate:** Monthly payment
-$= 300\,000 \times \frac◆LB◆0.05/12 \times (1 + 0.05/12)^{300}◆RB◆◆LB◆(1 + 0.05/12)^{300} - 1◆RB◆ = 300\,000 \times 0.005846 = \pounds 1\,754$.
+$= 300\,000 \times \frac{0.05/12 \times (1 + 0.05/12)^{300}}{(1 + 0.05/12)^{300} - 1} = 300\,000 \times 0.005846 = \pounds 1\,754$.
 Total payments: $1754 \times 300 = 526\,200$. Total interest: 226,200.
 
 **At 7% interest rate:** Monthly payment $= 300\,000 \times 0.007068 = \pounds 2\,120$. Total

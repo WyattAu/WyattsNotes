@@ -40,7 +40,7 @@ $\overrightarrow{PA} = \mathbf{a} - \mathbf{p} = \begin{pmatrix} 3 \\ -2 \\ 6 \e
 
 The shortest distance is:
 
-$$d = \frac◆LB◆\lvert\overrightarrow{PA} \times \mathbf{d}\rvert◆RB◆◆LB◆\lvert\mathbf{d}\rvert◆RB◆$$
+$$d = \frac{\lvert\overrightarrow{PA} \times \mathbf{d}\rvert}{\lvert\mathbf{d}\rvert}$$
 
 $$\overrightarrow{PA} \times \mathbf{d} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 3 & -2 & 6 \\ 2 & -1 & 3 \end{vmatrix} = \mathbf{i}(-6-(-6)) - \mathbf{j}(9-12) + \mathbf{k}(-3-(-4))$$
 
@@ -50,10 +50,10 @@ $$\lvert\overrightarrow{PA} \times \mathbf{d}\rvert = \sqrt{0 + 9 + 1} = \sqrt{1
 
 $$\lvert\mathbf{d}\rvert = \sqrt{4 + 1 + 9} = \sqrt{14}$$
 
-$$d = \frac◆LB◆\sqrt{10}◆RB◆◆LB◆\sqrt{14}◆RB◆ = \sqrt◆LB◆\frac{5}{7}◆RB◆$$
+$$d = \frac{\sqrt{10}}{\sqrt{14}} = \sqrt{\frac{5}{7}}$$
 
 **(b)** The point $B$ on $l$ closest to $A$ satisfies
-$\overrightarrow{PB} = \frac◆LB◆\overrightarrow{PA} \cdot \mathbf{d}◆RB◆◆LB◆\lvert\mathbf{d}\rvert^2◆RB◆\mathbf{d}$.
+$\overrightarrow{PB} = \frac{\overrightarrow{PA} \cdot \mathbf{d}}{\lvert\mathbf{d}\rvert^2}\mathbf{d}$.
 
 $$\overrightarrow{PA} \cdot \mathbf{d} = 6 + 2 + 18 = 26$$
 
@@ -76,7 +76,7 @@ Actual shortest distance: $\sqrt{5/7} = \sqrt{35}/7 \approx 0.845$.
 
 Student's answer: $\sqrt{11} \approx 3.317$.
 
-$$\text{Percentage overestimate} = \frac◆LB◆\sqrt{11} - \sqrt{5/7}◆RB◆◆LB◆\sqrt{5/7}◆RB◆ \times 100\% = \left(\frac◆LB◆\sqrt{77}◆RB◆◆LB◆\sqrt{5}◆RB◆ - 1\right) \times 100\% \approx 293\%$$
+$$\text{Percentage overestimate} = \frac{\sqrt{11} - \sqrt{5/7}}{\sqrt{5/7}} \times 100\% = \left(\frac{\sqrt{77}}{\sqrt{5}} - 1\right) \times 100\% \approx 293\%$$
 
 ---
 
@@ -136,7 +136,7 @@ The system is inconsistent, so the lines are **skew**.
 
 The shortest distance between two skew lines is:
 
-$$d = \frac◆LB◆\lvert(\mathbf{b} - \mathbf{a}) \cdot (\mathbf{d}_1 \times \mathbf{d}_2)\rvert◆RB◆◆LB◆\lvert\mathbf{d}_1 \times \mathbf{d}_2\rvert◆RB◆$$
+$$d = \frac{\lvert(\mathbf{b} - \mathbf{a}) \cdot (\mathbf{d}_1 \times \mathbf{d}_2)\rvert}{\lvert\mathbf{d}_1 \times \mathbf{d}_2\rvert}$$
 
 $\mathbf{b} - \mathbf{a} = \begin{pmatrix} 3 \\ -1 \\ -3 \end{pmatrix}$.
 
@@ -146,7 +146,7 @@ $\lvert\mathbf{d}_1 \times \mathbf{d}_2\rvert = \sqrt{9+9+1} = \sqrt{19}$
 
 $(\mathbf{b}-\mathbf{a}) \cdot (\mathbf{d}_1 \times \mathbf{d}_2) = -9 + 3 + 3 = -3$
 
-$$d = \frac◆LB◆\lvert -3 \rvert◆RB◆◆LB◆\sqrt{19}◆RB◆ = \frac◆LB◆3◆RB◆◆LB◆\sqrt{19}◆RB◆ = \frac◆LB◆3\sqrt{19}◆RB◆◆LB◆19◆RB◆$$
+$$d = \frac{\lvert -3 \rvert}{\sqrt{19}} = \frac{3}{\sqrt{19}} = \frac{3\sqrt{19}}{19}$$
 
 ---
 
@@ -175,7 +175,7 @@ $$\mathbf{n}_1 \cdot \mathbf{n}_2 = 2 - 2 - 4 = -4$$
 
 $$\lvert\mathbf{n}_1\rvert = \sqrt{4+1+4} = 3, \quad \lvert\mathbf{n}_2\rvert = \sqrt{1+4+4} = 3$$
 
-$$\cos\theta = \frac◆LB◆\lvert\mathbf{n}_1 \cdot \mathbf{n}_2\rvert◆RB◆◆LB◆\lvert\mathbf{n}_1\rvert\lvert\mathbf{n}_2\rvert◆RB◆ = \frac{4}{9}$$
+$$\cos\theta = \frac{\lvert\mathbf{n}_1 \cdot \mathbf{n}_2\rvert}{\lvert\mathbf{n}_1\rvert\lvert\mathbf{n}_2\rvert} = \frac{4}{9}$$
 
 $$\theta = \arccos\!\left(\frac{4}{9}\right)$$
 
@@ -199,8 +199,8 @@ Line of intersection:
 $\mathbf{r} = \begin{pmatrix} 13/5 \\ 1/5 \\ 0 \end{pmatrix} + t\begin{pmatrix} -2 \\ 6 \\ 5 \end{pmatrix}$.
 
 **(c)** The angle between two planes is always taken as the acute angle (between $0$ and
-$\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$). The angle between the normal vectors can be obtuse (between
-$\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ and $\pi$). In this problem, the dot product is negative ($-4$), so the
+$\frac{\pi}{2}$). The angle between the normal vectors can be obtuse (between
+$\frac{\pi}{2}$ and $\pi$). In this problem, the dot product is negative ($-4$), so the
 angle between the normals is obtuse: $\arccos(-4/9) \approx 116.4°$. The acute angle between the
 planes is $180° - 116.4° = 63.6° = \arccos(4/9)$.
 
@@ -321,7 +321,7 @@ $D^2 = 12(121/36) - 44(11/6) + 107 = \frac{1452 - 2904 + 3852}{36} = \frac{2400}
 
 At $t = 1$: $D^2 = 12 - 44 + 107 = 75$. $D = 5\sqrt{3}$.
 
-At $t = 11/6$: $D = \sqrt{200/3} = \frac◆LB◆10\sqrt{6}◆RB◆◆LB◆3◆RB◆ \approx 8.16$.
+At $t = 11/6$: $D = \sqrt{200/3} = \frac{10\sqrt{6}}{3} \approx 8.16$.
 
 At $t = 1$: $D = \sqrt{75} = 5\sqrt{3} \approx 8.66$.
 
@@ -330,7 +330,7 @@ at $t = 11/6$ hours.
 
 Let me verify: $\frac{d^2(D^2)}{dt^2} = 24 \gt 0$Confirming a minimum.
 
-Minimum distance: $D = \sqrt{200/3} = \frac◆LB◆10\sqrt{6}◆RB◆◆LB◆3◆RB◆$ km.
+Minimum distance: $D = \sqrt{200/3} = \frac{10\sqrt{6}}{3}$ km.
 
 **Note:** The question asks to "show that the ships are closest at $t = 1$ hour," but this is false.
 The actual closest approach occurs at $t = \frac{11}{6}$ hours. Recognising incorrect claims is
@@ -342,7 +342,7 @@ $12t^2 - 44t + 107 = 25 \implies 12t^2 - 44t + 82 = 0 \implies 6t^2 - 22t + 41 =
 Discriminant: $484 - 984 = -500 \lt 0$.
 
 The ships are never exactly 5 km apart. The minimum distance is
-$\frac◆LB◆10\sqrt{6}◆RB◆◆LB◆3◆RB◆ \approx 8.16$ km, which exceeds 5 km.
+$\frac{10\sqrt{6}}{3} \approx 8.16$ km, which exceeds 5 km.
 
 ---
 
@@ -358,7 +358,7 @@ $ABC$ are concurrent at a point $G$ (the centroid), and that $G$ divides each me
 $2:1$.
 
 **(c)** Points $P$ and $Q$ have position vectors $\mathbf{p}$ and $\mathbf{q}$ respectively. Show
-that the midpoint of $PQ$ has position vector $\frac◆LB◆\mathbf{p}+\mathbf{q}◆RB◆◆LB◆2◆RB◆$And use
+that the midpoint of $PQ$ has position vector $\frac{\mathbf{p}+\mathbf{q}}{2}$And use
 this result to prove that the line segment joining the midpoints of two sides of a triangle is
 parallel to the third side and half its length.
 
@@ -374,9 +374,9 @@ Since $ABCD$ is a parallelogram, $\overrightarrow{AB} = \overrightarrow{DC}$:
 
 $$\mathbf{b} - \mathbf{a} = \mathbf{c} - \mathbf{d} \implies \mathbf{a} + \mathbf{c} = \mathbf{b} + \mathbf{d}$$
 
-The midpoint of diagonal $AC$: $\frac◆LB◆\mathbf{a} + \mathbf{c}◆RB◆◆LB◆2◆RB◆$.
+The midpoint of diagonal $AC$: $\frac{\mathbf{a} + \mathbf{c}}{2}$.
 
-The midpoint of diagonal $BD$: $\frac◆LB◆\mathbf{b} + \mathbf{d}◆RB◆◆LB◆2◆RB◆$.
+The midpoint of diagonal $BD$: $\frac{\mathbf{b} + \mathbf{d}}{2}$.
 
 Since $\mathbf{a} + \mathbf{c} = \mathbf{b} + \mathbf{d}$These midpoints coincide. Therefore the
 diagonals bisect each other.
@@ -384,36 +384,36 @@ diagonals bisect each other.
 **(b)** Let the vertices of triangle $ABC$ have position vectors
 $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$.
 
-The midpoint of $BC$ has position vector $\frac◆LB◆\mathbf{b}+\mathbf{c}◆RB◆◆LB◆2◆RB◆$.
+The midpoint of $BC$ has position vector $\frac{\mathbf{b}+\mathbf{c}}{2}$.
 
 The median from $A$ to the midpoint of $BC$ has equation:
 
-$$\mathbf{r} = \mathbf{a} + t\left(\frac◆LB◆\mathbf{b}+\mathbf{c}◆RB◆◆LB◆2◆RB◆ - \mathbf{a}\right) = \mathbf{a} + t\left(\frac◆LB◆\mathbf{b}+\mathbf{c}-2\mathbf{a}◆RB◆◆LB◆2◆RB◆\right)$$
+$$\mathbf{r} = \mathbf{a} + t\left(\frac{\mathbf{b}+\mathbf{c}}{2} - \mathbf{a}\right) = \mathbf{a} + t\left(\frac{\mathbf{b}+\mathbf{c}-2\mathbf{a}}{2}\right)$$
 
 Similarly, the median from $B$ to the midpoint of $AC$ has equation:
 
-$$\mathbf{r} = \mathbf{b} + s\left(\frac◆LB◆\mathbf{a}+\mathbf{c}-2\mathbf{b}◆RB◆◆LB◆2◆RB◆\right)$$
+$$\mathbf{r} = \mathbf{b} + s\left(\frac{\mathbf{a}+\mathbf{c}-2\mathbf{b}}{2}\right)$$
 
 For concurrency, set these equal and solve. By symmetry, the intersection occurs at
 $t = \frac{2}{3}$ (and $s = \frac{2}{3}$):
 
-$$G = \mathbf{a} + \frac{2}{3}\left(\frac◆LB◆\mathbf{b}+\mathbf{c}-2\mathbf{a}◆RB◆◆LB◆2◆RB◆\right) = \mathbf{a} + \frac◆LB◆\mathbf{b}+\mathbf{c}-2\mathbf{a}◆RB◆◆LB◆3◆RB◆ = \frac◆LB◆3\mathbf{a} + \mathbf{b} + \mathbf{c} - 2\mathbf{a}◆RB◆◆LB◆3◆RB◆ = \frac◆LB◆\mathbf{a}+\mathbf{b}+\mathbf{c}◆RB◆◆LB◆3◆RB◆$$
+$$G = \mathbf{a} + \frac{2}{3}\left(\frac{\mathbf{b}+\mathbf{c}-2\mathbf{a}}{2}\right) = \mathbf{a} + \frac{\mathbf{b}+\mathbf{c}-2\mathbf{a}}{3} = \frac{3\mathbf{a} + \mathbf{b} + \mathbf{c} - 2\mathbf{a}}{3} = \frac{\mathbf{a}+\mathbf{b}+\mathbf{c}}{3}$$
 
-By the cyclic symmetry of $\frac◆LB◆\mathbf{a}+\mathbf{b}+\mathbf{c}◆RB◆◆LB◆3◆RB◆$The same point
+By the cyclic symmetry of $\frac{\mathbf{a}+\mathbf{b}+\mathbf{c}}{3}$The same point
 lies on all three medians.
 
 The point $G$ is at parameter $t = \frac{2}{3}$ along the median from $A$Meaning
 $\overrightarrow{AG} = \frac{2}{3}\overrightarrow{AM_{BC}}$. Therefore $G$ divides each median in
 the ratio $AG:GM_{BC} = 2:1$.
 
-**(c)** The midpoint of $PQ$: position vector $\frac◆LB◆\mathbf{p}+\mathbf{q}◆RB◆◆LB◆2◆RB◆$.
+**(c)** The midpoint of $PQ$: position vector $\frac{\mathbf{p}+\mathbf{q}}{2}$.
 
 For triangle $ABC$ with vertices at position vectors $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$:
 
-Midpoint of $AB$: $M = \frac◆LB◆\mathbf{a}+\mathbf{b}◆RB◆◆LB◆2◆RB◆$. Midpoint of $AC$:
-$N = \frac◆LB◆\mathbf{a}+\mathbf{c}◆RB◆◆LB◆2◆RB◆$.
+Midpoint of $AB$: $M = \frac{\mathbf{a}+\mathbf{b}}{2}$. Midpoint of $AC$:
+$N = \frac{\mathbf{a}+\mathbf{c}}{2}$.
 
-$$\overrightarrow{MN} = \frac◆LB◆\mathbf{a}+\mathbf{c}◆RB◆◆LB◆2◆RB◆ - \frac◆LB◆\mathbf{a}+\mathbf{b}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆\mathbf{c}-\mathbf{b}◆RB◆◆LB◆2◆RB◆ = \frac{1}{2}\overrightarrow{BC}$$
+$$\overrightarrow{MN} = \frac{\mathbf{a}+\mathbf{c}}{2} - \frac{\mathbf{a}+\mathbf{b}}{2} = \frac{\mathbf{c}-\mathbf{b}}{2} = \frac{1}{2}\overrightarrow{BC}$$
 
 Since $\overrightarrow{MN} = \frac{1}{2}\overrightarrow{BC}$The segment $MN$ is parallel to $BC$ and
 half its length. This is the midpoint theorem.

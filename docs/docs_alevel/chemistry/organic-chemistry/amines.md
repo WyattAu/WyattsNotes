@@ -164,7 +164,7 @@ The diazonium ion ($\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+$) is stabilised by re
 Delocalisation of the positive charge over the nitrogen atoms and into the ring:
 
 $$
-\mathrm{C}_6\mathrm{H}_5-\overset◆LB◆+◆RB◆◆LB◆\mathrm{N}◆RB◆\equiv\mathrm{N} \leftrightarrow \mathrm{C}_6\mathrm{H}_5-\mathrm{N}=\overset◆LB◆+◆RB◆◆LB◆\mathrm{N}◆RB◆
+\mathrm{C}_6\mathrm{H}_5-\overset{+}{\mathrm{N}}\equiv\mathrm{N} \leftrightarrow \mathrm{C}_6\mathrm{H}_5-\mathrm{N}=\overset{+}{\mathrm{N}}
 $$
 
 ### Reactions of Diazonium Salts
@@ -520,9 +520,9 @@ $K_b = 10^{-3.37} = 4.27 \times 10^{-4}$
 The equilibrium:
 $\mathrm{CH}_3\mathrm{NH}_2 + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{CH}_3\mathrm{NH}_3^+ + \mathrm{OH}^-$
 
-$$K_b = \frac◆LB◆[\mathrm{CH}_3\mathrm{NH}_3^+][\mathrm{OH}^-]◆RB◆◆LB◆[\mathrm{CH}_3\mathrm{NH}_2]◆RB◆ = \frac{x^2}{0.10 - x} \approx \frac{x^2}{0.10}$$
+$$K_b = \frac{[\mathrm{CH}_3\mathrm{NH}_3^+][\mathrm{OH}^-]}{[\mathrm{CH}_3\mathrm{NH}_2]} = \frac{x^2}{0.10 - x} \approx \frac{x^2}{0.10}$$
 
-$$x = \sqrt◆LB◆K_b \times 0.10◆RB◆ = \sqrt◆LB◆4.27 \times 10^{-5}◆RB◆ = 6.54 \times 10^{-3}\,\mathrm{mol\,dm^{-3}}$$
+$$x = \sqrt{K_b \times 0.10} = \sqrt{4.27 \times 10^{-5}} = 6.54 \times 10^{-3}\,\mathrm{mol\,dm^{-3}}$$
 
 $$\mathrm{pOH} = -\log(6.54 \times 10^{-3}) = 2.18$$
 
@@ -681,7 +681,7 @@ $$\mathrm{p}K_a + \mathrm{p}K_b = 14.00$$ $$\mathrm{p}K_a = 14.00 - 3.37 = 10.63
 
 Using the Henderson-Hasselbalch equation:
 
-$$\mathrm{pH} = \mathrm{p}K_a + \log\frac◆LB◆[\mathrm{base}]◆RB◆◆LB◆[\mathrm{acid}]◆RB◆ = 10.63 + \log\frac{0.100}{0.150} = 10.63 + \log(0.667) = 10.63 - 0.176 = 10.45$$
+$$\mathrm{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{base}]}{[\mathrm{acid}]} = 10.63 + \log\frac{0.100}{0.150} = 10.63 + \log(0.667) = 10.63 - 0.176 = 10.45$$
 
 The buffer has a pH of 10.45, which is within one unit of $\mathrm{p}K_a$ (10.63), so it is
 effective.

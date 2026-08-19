@@ -39,7 +39,7 @@ $$W_r = \int_0^{3.0} 1.5x\,dx = \left[0.75x^2\right]_0^3 = 0.75 \times 9 = 6.75\
 
 Net work $= 33 - 6.75 = 26.25\,\text{J}$
 
-$$v = \sqrt◆LB◆\frac{2 \times 26.25}{2.0}◆RB◆ = \sqrt{26.25} = 5.12\,\text{m}\,\text{s}^{-1}$$
+$$v = \sqrt{\frac{2 \times 26.25}{2.0}} = \sqrt{26.25} = 5.12\,\text{m}\,\text{s}^{-1}$$
 
 ---
 
@@ -82,7 +82,7 @@ Work done:
 (b) By the work-energy theorem:
 
 $$W_{\text{net}} = \Delta E_k = \frac{1}{2}mv^2 - 0$$ $$3600 - 1342 - 1291 = \frac{1}{2}(50)v^2$$
-$$967 = 25v^2$$ $$v = \sqrt◆LB◆\frac{967}{25}◆RB◆ = \sqrt{38.68} = 6.22\,\text{m}\,\text{s}^{-1}$$
+$$967 = 25v^2$$ $$v = \sqrt{\frac{967}{25}} = \sqrt{38.68} = 6.22\,\text{m}\,\text{s}^{-1}$$
 
 (c) Power $= Fv = 450 \times 6.22 = 2799 \approx 2800\,\text{W}$
 
@@ -118,7 +118,7 @@ $$P_{\text{useful}} = \dot{m}gh = 3.333 \times 9.81 \times 15 = 490.5\,\text{W}$
 
 Electrical power input:
 
-$$P_{\text{input}} = \frac◆LB◆P_{\text{useful}}◆RB◆◆LB◆\eta◆RB◆ = \frac{490.5}{0.85} = 577\,\text{W}$$
+$$P_{\text{input}} = \frac{P_{\text{useful}}}{\eta} = \frac{490.5}{0.85} = 577\,\text{W}$$
 
 (b) The minimum power calculated in part (a) accounts only for the gravitational PE gain. Since no
 energy losses occur in the pipe, the useful power goes entirely into raising the water to ground
@@ -185,8 +185,8 @@ $$18394 + 735.75e = 40e^2$$ $$40e^2 - 735.75e - 18394 = 0$$
 
 Using the quadratic formula:
 
-$$e = \frac◆LB◆735.75 + \sqrt{735.75^2 + 4 \times 40 \times 18394}◆RB◆◆LB◆80◆RB◆$$
-$$e = \frac◆LB◆735.75 + \sqrt{541328 + 2943040}◆RB◆◆LB◆80◆RB◆ = \frac◆LB◆735.75 + \sqrt{3484368}◆RB◆◆LB◆80◆RB◆$$
+$$e = \frac{735.75 + \sqrt{735.75^2 + 4 \times 40 \times 18394}}{80}$$
+$$e = \frac{735.75 + \sqrt{541328 + 2943040}}{80} = \frac{735.75 + \sqrt{3484368}}{80}$$
 $$= \frac{735.75 + 1866.6}{80} = \frac{2602.4}{80} = 32.53\,\text{m}$$
 
 (c) Total distance fallen $= 25 + 32.53 = 57.53\,\text{m}$
@@ -238,11 +238,11 @@ $$v_E = 12.81\,\text{m}\,\text{s}^{-1}$$
 At the top of the loop, both weight and normal reaction point downward (toward the centre):
 
 $$R + mg = \frac{mv_E^2}{r}$$
-$$R = \frac{mv_E^2}{r} - mg = \frac◆LB◆500 \times 164.2◆RB◆◆LB◆10◆RB◆ - 500 \times 9.81 = 8210 - 4905 = 3305\,\text{N}$$
+$$R = \frac{mv_E^2}{r} - mg = \frac{500 \times 164.2}{10} - 500 \times 9.81 = 8210 - 4905 = 3305\,\text{N}$$
 
 (c) At the top of the loop, the minimum condition for completing the loop is $R = 0$:
 
-$$mg = \frac◆LB◆mv_{\min}^2◆RB◆◆LB◆r◆RB◆ \Rightarrow v_{\min}^2 = gr = 9.81 \times 10 = 98.1$$
+$$mg = \frac{mv_{\min}^2}{r} \Rightarrow v_{\min}^2 = gr = 9.81 \times 10 = 98.1$$
 
 Energy from $A$ to $E$ (minimum case, ignoring friction first):
 
@@ -281,8 +281,8 @@ $G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$$M_E = 5.97 \tim
 
 (a) For a circular orbit, total energy $E = -\frac{GMm}{2r}$:
 
-$$E = -\frac◆LB◆6.67 \times 10^{-11} \times 5.97 \times 10^{24} \times 500◆RB◆◆LB◆2 \times 7.0 \times 10^6◆RB◆$$
-$$= -\frac◆LB◆1.991 \times 10^{17}◆RB◆◆LB◆1.4 \times 10^7◆RB◆ = -1.422 \times 10^{10}\,\text{J}$$
+$$E = -\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24} \times 500}{2 \times 7.0 \times 10^6}$$
+$$= -\frac{1.991 \times 10^{17}}{1.4 \times 10^7} = -1.422 \times 10^{10}\,\text{J}$$
 
 (b) To escape, total energy must be at least zero. The energy required is:
 
@@ -296,15 +296,15 @@ potential energy for a circular orbit, so escape energy equals the kinetic energ
 Change in velocity: $\Delta v = 60000/500 = 120\,\text{m}\,\text{s}^{-1}$
 
 Current orbital speed:
-$v = \sqrt◆LB◆\frac{GM}{r}◆RB◆ = \sqrt◆LB◆\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{7.0 \times 10^6}◆RB◆$
+$v = \sqrt{\frac{GM}{r}} = \sqrt{\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{7.0 \times 10^6}}$
 
-$$= \sqrt◆LB◆\frac{3.982 \times 10^{14}}{7.0 \times 10^6}◆RB◆ = \sqrt◆LB◆5.689 \times 10^7◆RB◆ = 7543\,\text{m}\,\text{s}^{-1}$$
+$$= \sqrt{\frac{3.982 \times 10^{14}}{7.0 \times 10^6}} = \sqrt{5.689 \times 10^7} = 7543\,\text{m}\,\text{s}^{-1}$$
 
 New speed: $v' = 7543 + 120 = 7663\,\text{m}\,\text{s}^{-1}$
 
 For a circular orbit: $v = \sqrt{GM/r}$So $r = GM/v^2$
 
-$$r' = \frac◆LB◆6.67 \times 10^{-11} \times 5.97 \times 10^{24}◆RB◆◆LB◆7663^2◆RB◆ = \frac◆LB◆3.982 \times 10^{14}◆RB◆◆LB◆5.872 \times 10^7◆RB◆ = 6.782 \times 10^6\,\text{m}$$
+$$r' = \frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{7663^2} = \frac{3.982 \times 10^{14}}{5.872 \times 10^7} = 6.782 \times 10^6\,\text{m}$$
 
 This gives a lower orbital radius, which is incorrect for a prograde burn. The impulse-based speed
 increase produces an elliptical orbit, and the simple $r = GM/v^2$ relation does not apply to an
@@ -315,6 +315,6 @@ $E' = E + F \times v \times t = E + 2000 \times 7543 \times 30 = -1.422 \times 1
 
 For circular orbit: $E' = -\frac{GMm}{2r'}$
 
-$$r' = -\frac{GMm}{2E'} = \frac◆LB◆6.67 \times 10^{-11} \times 5.97 \times 10^{24} \times 500◆RB◆◆LB◆2 \times 1.377 \times 10^{10}◆RB◆ = \frac◆LB◆1.991 \times 10^{17}◆RB◆◆LB◆2.754 \times 10^{10}◆RB◆ = 7.23 \times 10^6\,\text{m}$$
+$$r' = -\frac{GMm}{2E'} = \frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24} \times 500}{2 \times 1.377 \times 10^{10}} = \frac{1.991 \times 10^{17}}{2.754 \times 10^{10}} = 7.23 \times 10^6\,\text{m}$$
 
 The new orbital radius is $7.23 \times 10^6\,\text{m}$ (higher, as expected for a prograde burn).

@@ -219,7 +219,7 @@ $$
 The theoretical lattice enthalpy is calculated from the electrostatic model:
 
 $$
-\Delta H_\mathrm{lat}^\circ \approx -\frac◆LB◆N_A M z^+ z^- e^2◆RB◆◆LB◆4\pi\varepsilon_0 r_0◆RB◆\left(1 - \frac{1}{n}\right)
+\Delta H_\mathrm{lat}^\circ \approx -\frac{N_A M z^+ z^- e^2}{4\pi\varepsilon_0 r_0}\left(1 - \frac{1}{n}\right)
 $$
 
 Where:
@@ -301,7 +301,7 @@ The entropy increases because a gas is produced from a solid (more microstates).
 ### Entropy Change of the Surroundings
 
 $$
-\Delta S_\mathrm{surroundings} = -\frac◆LB◆\Delta H◆RB◆◆LB◆T◆RB◆
+\Delta S_\mathrm{surroundings} = -\frac{\Delta H}{T}
 $$
 
 For an exothermic reaction ($\Delta H \lt 0$), $\Delta S_\mathrm{surroundings} \gt 0$ (the
@@ -365,7 +365,7 @@ $\Delta H^\circ = +178\,\mathrm{kJ/mol}$$\Delta S^\circ = +160\,\mathrm{J\,mol^{
 At what temperature does the reaction become spontaneous?
 
 $$
-\Delta G^\circ = 0 \implies T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac◆LB◆178 \times 10^3◆RB◆◆LB◆160◆RB◆ = 1113\,\mathrm{K} = 840^\circ\mathrm{C}
+\Delta G^\circ = 0 \implies T = \frac{\Delta H^\circ}{\Delta S^\circ} = \frac{178 \times 10^3}{160} = 1113\,\mathrm{K} = 840^\circ\mathrm{C}
 $$
 
 Above $1113\,\mathrm{K}$$\Delta G^\circ \lt 0$ and the decomposition is spontaneous.
@@ -373,7 +373,7 @@ Above $1113\,\mathrm{K}$$\Delta G^\circ \lt 0$ and the decomposition is spontane
 ### Gibbs-Helmholtz Equation
 
 $$
-\left(\frac◆LB◆\partial (\Delta G/T)◆RB◆◆LB◆\partial T◆RB◆\right)_p = -\frac◆LB◆\Delta H◆RB◆◆LB◆T^2◆RB◆
+\left(\frac{\partial (\Delta G/T)}{\partial T}\right)_p = -\frac{\Delta H}{T^2}
 $$
 
 This shows how $\Delta G/T$ varies with temperature. In the simplified form used at A-Level, it
@@ -405,7 +405,7 @@ $\mathrm{N}_2\mathrm{O}_4(g) \rightleftharpoons 2\mathrm{NO}_2(g)$ given
 $\Delta G^\circ = +4.72\,\mathrm{kJ/mol}$.
 
 $$
-K = \exp\left(\frac◆LB◆-\Delta G^\circ◆RB◆◆LB◆RT◆RB◆\right) = \exp\left(\frac◆LB◆-4720◆RB◆◆LB◆8.314 \times 298◆RB◆\right) = \exp(-1.904) = 0.149
+K = \exp\left(\frac{-\Delta G^\circ}{RT}\right) = \exp\left(\frac{-4720}{8.314 \times 298}\right) = \exp(-1.904) = 0.149
 $$
 
 $K = 0.149$So reactants ($\mathrm{N}_2\mathrm{O}_4$) are favoured at equilibrium.
@@ -419,7 +419,7 @@ $$
 $$
 
 $$
-\ln K = -\frac◆LB◆\Delta H^\circ◆RB◆◆LB◆RT◆RB◆ + \frac◆LB◆\Delta S^\circ◆RB◆◆LB◆R◆RB◆
+\ln K = -\frac{\Delta H^\circ}{RT} + \frac{\Delta S^\circ}{R}
 $$
 
 This is the van 't Hoff equation (linear form), which is identical in structure to the Arrhenius
@@ -691,7 +691,7 @@ $\Delta S^\circ = +22.0\,\mathrm{J\,mol^{-1}\,K^{-1}}$. Calculate the melting po
 At the melting point, $\Delta G = 0$:
 
 $$
-T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac{6010}{22.0} = 273\,\mathrm{K} = 0^\circ\mathrm{C}
+T = \frac{\Delta H^\circ}{\Delta S^\circ} = \frac{6010}{22.0} = 273\,\mathrm{K} = 0^\circ\mathrm{C}
 $$
 
 </details>
@@ -752,7 +752,7 @@ molecules both contribute to a large positive entropy change.
 (b) At the threshold of spontaneity, $\Delta G^\circ = 0$:
 
 $$
-T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac◆LB◆176 \times 10^3◆RB◆◆LB◆285◆RB◆ = 618\,\mathrm{K} = 345^\circ\mathrm{C}
+T = \frac{\Delta H^\circ}{\Delta S^\circ} = \frac{176 \times 10^3}{285} = 618\,\mathrm{K} = 345^\circ\mathrm{C}
 $$
 
 Above $618\,\mathrm{K}$$\Delta G^\circ \lt 0$ and the decomposition is spontaneous.
@@ -865,7 +865,7 @@ $\Delta G^\circ = -5.40\,\mathrm{kJ/mol}$.
 
 $$-5400 = -8.314 \times 298 \times \ln K_c$$
 
-$$\ln K_c = \frac◆LB◆5400◆RB◆◆LB◆8.314 \times 298◆RB◆ = \frac{5400}{2478} = 2.179$$
+$$\ln K_c = \frac{5400}{8.314 \times 298} = \frac{5400}{2478} = 2.179$$
 
 $$K_c = e^{2.179} = 8.84$$
 
@@ -879,7 +879,7 @@ $\Delta S^\circ = +175.8\,\mathrm{J\,K^{-1}\,\mathrm{mol}^{-1}$.
 
 At $\Delta G = 0$: $0 = \Delta H^\circ - T\Delta S^\circ$
 
-$$T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac{57200}{175.8} = 325\,\mathrm{K}$$
+$$T = \frac{\Delta H^\circ}{\Delta S^\circ} = \frac{57200}{175.8} = 325\,\mathrm{K}$$
 
 Below $325\,\mathrm{K}$, $\Delta G < 0$ and the forward reaction is spontaneous. Above
 $325\,\mathrm{K}$, $\Delta G > 0$ and the reverse reaction is spontaneous. At $325\,\mathrm{K}$The
@@ -936,7 +936,7 @@ $\Delta G^\circ > 0$So the reaction is not thermodynamically feasible at $1500\,
 
 At what temperature does it become feasible?
 
-$$T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac{877000}{193} = 4544\,\mathrm{K}$$
+$$T = \frac{\Delta H^\circ}{\Delta S^\circ} = \frac{877000}{193} = 4544\,\mathrm{K}$$
 
 The reaction becomes feasible above approximately $4544\,\mathrm{K}$ (extremely high temperature,
 impractical). In practice, the Kroll process (reduction with $\mathrm{Mg}$ or $\mathrm{Cl}_2$) is
@@ -991,7 +991,7 @@ $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ = -85000 - 298 \times (-120) 
 (b) $\Delta G^\circ < 0$So the reaction is feasible (spontaneous) at $298\,\mathrm{K}$ (1 mark).
 
 (c) $\Delta G^\circ = 0$:
-$T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac{-85000}{-120} = 708\,\mathrm{K}$ (1
+$T = \frac{\Delta H^\circ}{\Delta S^\circ} = \frac{-85000}{-120} = 708\,\mathrm{K}$ (1
 mark). Above $708\,\mathrm{K}$, $\Delta G^\circ > 0$ and the reaction is non-spontaneous (1 mark).
 
 (d) 3 moles of gas on the left, 2 moles on the right. Increasing pressure favours the side with

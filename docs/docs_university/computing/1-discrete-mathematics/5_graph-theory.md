@@ -313,8 +313,8 @@ $d$--$4$.
 ### 5.8 Network Flows
 
 A **flow network** is a directed graph $G = (V, E)$ with a **source** $s$A **sink** $t$And a
-**capacity** function $c : E \to \mathbb{{'}R{}'}_{\geq 0}$. A **flow**
-$f : E \to \mathbb{{'}R{}'}_{\geq 0}$ Satisfies:
+**capacity** function $c : E \to \mathbb{R}_{\geq 0}$. A **flow**
+$f : E \to \mathbb{R}_{\geq 0}$ Satisfies:
 
 1. **Capacity constraint:** $0 \leq f(e) \leq c(e)$ for all $e \in E$.
 2. **Flow conservation:** for all $v \in V \setminus \\{s, t\\}$

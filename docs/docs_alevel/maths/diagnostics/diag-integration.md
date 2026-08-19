@@ -87,11 +87,11 @@ computes the indefinite integral, then substitutes $x = 0$ and $x = 1$ back into
 Show that this approach gives the correct answer, and explain why this works in this particular
 case.
 
-**(c)** A second student evaluates $\int_0^{\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆} x\cos x\, dx$ by integration
+**(c)** A second student evaluates $\int_0^{\frac{\pi}{2}} x\cos x\, dx$ by integration
 by parts and obtains $x\sin x + \cos x + C$. They then write
-$\int_0^{\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆} x\cos x\, dx = \left[\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆\sin\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ + \cos\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆\right] - [0 + \cos 0] = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - 1$.
+$\int_0^{\frac{\pi}{2}} x\cos x\, dx = \left[\frac{\pi}{2}\sin\frac{\pi}{2} + \cos\frac{\pi}{2}\right] - [0 + \cos 0] = \frac{\pi}{2} - 1$.
 A third student forgets to evaluate the lower limit and writes only
-$\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ + 0 = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$. What percentage error does the third
+$\frac{\pi}{2} + 0 = \frac{\pi}{2}$. What percentage error does the third
 student make?
 
 [Difficulty: hard. Tests the boundary between when forgetting to change limits produces errors
@@ -113,18 +113,18 @@ $$\frac{1}{3}(1+x^2)^{3/2} + C$$
 
 Evaluating from $x = 0$ to $x = 1$:
 
-$$\frac{1}{3}(2^{3/2}) - \frac{1}{3}(1^{3/2}) = \frac◆LB◆2\sqrt{2} - 1◆RB◆◆LB◆3◆RB◆$$
+$$\frac{1}{3}(2^{3/2}) - \frac{1}{3}(1^{3/2}) = \frac{2\sqrt{2} - 1}{3}$$
 
 This gives the same answer as part (a). Back-substitution always works because it restores the
 original variable, and the Fundamental Theorem of Calculus applies regardless of which variable is
 used. The error of forgetting limits occurs only when the student evaluates in $u$-space with the
 original $x$-limits (e.g., evaluating $\frac{1}{3}u^{3/2}$ from $u = 0$ to $u = 1$Which is wrong).
 
-**(c)** Correct answer: $\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - 1 \approx 0.5708$.
+**(c)** Correct answer: $\frac{\pi}{2} - 1 \approx 0.5708$.
 
-Third student's answer: $\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ \approx 1.5708$.
+Third student's answer: $\frac{\pi}{2} \approx 1.5708$.
 
-$$\text{Percentage error} = \frac◆LB◆\lvert\frac{\pi}{2} - (\frac{\pi}{2} - 1)\rvert◆RB◆◆LB◆\lvert\frac{\pi}{2} - 1\rvert◆RB◆ \times 100\% = \frac◆LB◆1◆RB◆◆LB◆\frac{\pi}{2} - 1◆RB◆ \times 100\% \approx 175.2\%$$
+$$\text{Percentage error} = \frac{\lvert\frac{\pi}{2} - (\frac{\pi}{2} - 1)\rvert}{\lvert\frac{\pi}{2} - 1\rvert} \times 100\% = \frac{1}{\frac{\pi}{2} - 1} \times 100\% \approx 175.2\%$$
 
 The third student's answer is $175.2\%$ too large — a catastrophic error from omitting a single
 term.
@@ -253,12 +253,12 @@ At $w = 1$: $\frac{1}{2}\sqrt{5} + 2\ln(1+\sqrt{5})$
 
 At $w = -2$: $0 + 2\ln(-2+\sqrt{8}) = 2\ln(2\sqrt{2}-2)$
 
-$$2\left[\frac◆LB◆\sqrt{5}◆RB◆◆LB◆2◆RB◆ + 2\ln(1+\sqrt{5}) - 2\ln(2\sqrt{2}-2)\right] = \sqrt{5} + 4\ln\!\left(\frac◆LB◆1+\sqrt{5}◆RB◆◆LB◆2\sqrt{2}-2◆RB◆\right)$$
+$$2\left[\frac{\sqrt{5}}{2} + 2\ln(1+\sqrt{5}) - 2\ln(2\sqrt{2}-2)\right] = \sqrt{5} + 4\ln\!\left(\frac{1+\sqrt{5}}{2\sqrt{2}-2}\right)$$
 
 Total distance
-$= \frac{1}{3}(5\sqrt{5} - 16\sqrt{2}) + \sqrt{5} + 4\ln\!\left(\frac◆LB◆1+\sqrt{5}◆RB◆◆LB◆2\sqrt{2}-2◆RB◆\right)$
+$= \frac{1}{3}(5\sqrt{5} - 16\sqrt{2}) + \sqrt{5} + 4\ln\!\left(\frac{1+\sqrt{5}}{2\sqrt{2}-2}\right)$
 
-$$= \frac◆LB◆8\sqrt{5}◆RB◆◆LB◆3◆RB◆ - \frac◆LB◆16\sqrt{2}◆RB◆◆LB◆3◆RB◆ + 4\ln\!\left(\frac◆LB◆1+\sqrt{5}◆RB◆◆LB◆2\sqrt{2}-2◆RB◆\right)$$
+$$= \frac{8\sqrt{5}}{3} - \frac{16\sqrt{2}}{3} + 4\ln\!\left(\frac{1+\sqrt{5}}{2\sqrt{2}-2}\right)$$
 
 ---
 
@@ -270,42 +270,42 @@ $$= \frac◆LB◆8\sqrt{5}◆RB◆◆LB◆3◆RB◆ - \frac◆LB◆16\sqrt{2}◆
 
 **(b)** Hence evaluate $\int_0^{\pi} \sin^2 x\, dx$ and interpret the result geometrically.
 
-**(c)** Evaluate $\int_0^{\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆} \sin^2 x\cos^2 x\, dx$ using appropriate
+**(c)** Evaluate $\int_0^{\frac{\pi}{4}} \sin^2 x\cos^2 x\, dx$ using appropriate
 identities.
 
 **(d)** Given that
-$\int_0^{\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆} \sin^n x\, dx = \frac{n-1}{n} \int_0^{\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆} \sin^{n-2} x\, dx$
-for $n \geq 2$ (Wallis' reduction formula), find $\int_0^{\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆} \sin^6 x\, dx$.
+$\int_0^{\frac{\pi}{2}} \sin^n x\, dx = \frac{n-1}{n} \int_0^{\frac{\pi}{2}} \sin^{n-2} x\, dx$
+for $n \geq 2$ (Wallis' reduction formula), find $\int_0^{\frac{\pi}{2}} \sin^6 x\, dx$.
 
 [Difficulty: hard. Combines trigonometric identities with integration, culminating in the Wallis
 reduction formula.]
 
 **Solution:**
 
-**(a)** Using $\sin^2 x = \frac◆LB◆1 - \cos 2x◆RB◆◆LB◆2◆RB◆$:
+**(a)** Using $\sin^2 x = \frac{1 - \cos 2x}{2}$:
 
-$$\int \sin^2 x\, dx = \int \frac◆LB◆1 - \cos 2x◆RB◆◆LB◆2◆RB◆\, dx = \frac{1}{2}x - \frac{1}{4}\sin 2x + C$$
+$$\int \sin^2 x\, dx = \int \frac{1 - \cos 2x}{2}\, dx = \frac{1}{2}x - \frac{1}{4}\sin 2x + C$$
 
 **(b)**
-$\int_0^{\pi} \sin^2 x\, dx = \left[\frac{1}{2}x - \frac{1}{4}\sin 2x\right]_0^{\pi} = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - 0 = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
+$\int_0^{\pi} \sin^2 x\, dx = \left[\frac{1}{2}x - \frac{1}{4}\sin 2x\right]_0^{\pi} = \frac{\pi}{2} - 0 = \frac{\pi}{2}$.
 
 Geometrically, this is the area between the curve $y = \sin^2 x$ and the $x$-axis from $x = 0$ to
 $x = \pi$. Since $\sin^2 x \geq 0$The area equals the integral. The result
-$\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ equals the area of a semicircle of radius 1, which is a coincidence
+$\frac{\pi}{2}$ equals the area of a semicircle of radius 1, which is a coincidence
 related to the fact that $\sin^2 x$ and $\cos^2 x$ each average to $\frac{1}{2}$ over a full period.
 
 **(c)**
-$\sin^2 x\cos^2 x = \frac{1}{4}\sin^2 2x = \frac{1}{4} \cdot \frac◆LB◆1 - \cos 4x◆RB◆◆LB◆2◆RB◆ = \frac{1}{8}(1 - \cos 4x)$.
+$\sin^2 x\cos^2 x = \frac{1}{4}\sin^2 2x = \frac{1}{4} \cdot \frac{1 - \cos 4x}{2} = \frac{1}{8}(1 - \cos 4x)$.
 
-$$\int_0^{\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆} \sin^2 x\cos^2 x\, dx = \int_0^{\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆} \frac{1}{8}(1 - \cos 4x)\, dx = \frac{1}{8}\left[x - \frac{1}{4}\sin 4x\right]_0^{\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆}$$
+$$\int_0^{\frac{\pi}{4}} \sin^2 x\cos^2 x\, dx = \int_0^{\frac{\pi}{4}} \frac{1}{8}(1 - \cos 4x)\, dx = \frac{1}{8}\left[x - \frac{1}{4}\sin 4x\right]_0^{\frac{\pi}{4}}$$
 
-$$= \frac{1}{8}\left(\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ - 0\right) = \frac◆LB◆\pi◆RB◆◆LB◆32◆RB◆$$
+$$= \frac{1}{8}\left(\frac{\pi}{4} - 0\right) = \frac{\pi}{32}$$
 
 **(d)** Applying Wallis' reduction formula repeatedly:
 
-$$\int_0^{\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆} \sin^6 x\, dx = \frac{5}{6}\int_0^{\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆} \sin^4 x\, dx = \frac{5}{6} \cdot \frac{3}{4}\int_0^{\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆} \sin^2 x\, dx = \frac{5}{6} \cdot \frac{3}{4} \cdot \frac{1}{2}\int_0^{\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆} 1\, dx$$
+$$\int_0^{\frac{\pi}{2}} \sin^6 x\, dx = \frac{5}{6}\int_0^{\frac{\pi}{2}} \sin^4 x\, dx = \frac{5}{6} \cdot \frac{3}{4}\int_0^{\frac{\pi}{2}} \sin^2 x\, dx = \frac{5}{6} \cdot \frac{3}{4} \cdot \frac{1}{2}\int_0^{\frac{\pi}{2}} 1\, dx$$
 
-$$= \frac{5}{6} \cdot \frac{3}{4} \cdot \frac{1}{2} \cdot \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆15\pi◆RB◆◆LB◆96◆RB◆ = \frac◆LB◆5\pi◆RB◆◆LB◆32◆RB◆$$
+$$= \frac{5}{6} \cdot \frac{3}{4} \cdot \frac{1}{2} \cdot \frac{\pi}{2} = \frac{15\pi}{96} = \frac{5\pi}{32}$$
 
 ---
 
@@ -313,18 +313,18 @@ $$= \frac{5}{6} \cdot \frac{3}{4} \cdot \frac{1}{2} \cdot \frac◆LB◆\pi◆RB�
 
 **Question:**
 
-A student claims that $\int \frac◆LB◆x◆RB◆◆LB◆\sqrt{x+1}◆RB◆\, dx = \frac{2}{3}(x-2)\sqrt{x+1} + C$.
+A student claims that $\int \frac{x}{\sqrt{x+1}}\, dx = \frac{2}{3}(x-2)\sqrt{x+1} + C$.
 
 **(a)** Verify this result by differentiation.
 
-**(b)** Find the integral $\int \frac◆LB◆x◆RB◆◆LB◆\sqrt{x+1}◆RB◆\, dx$ using the substitution
+**(b)** Find the integral $\int \frac{x}{\sqrt{x+1}}\, dx$ using the substitution
 $u = \sqrt{x+1}$And confirm the student's answer.
 
-**(c)** Hence evaluate $\int_0^3 \frac◆LB◆x◆RB◆◆LB◆\sqrt{x+1}◆RB◆\, dx$ exactly.
+**(c)** Hence evaluate $\int_0^3 \frac{x}{\sqrt{x+1}}\, dx$ exactly.
 
-**(d)** A different student claims $\int \frac◆LB◆1◆RB◆◆LB◆\sqrt{x+1}◆RB◆\, dx = 2\sqrt{x+1} + C$.
+**(d)** A different student claims $\int \frac{1}{\sqrt{x+1}}\, dx = 2\sqrt{x+1} + C$.
 Use differentiation to verify, then use this result together with part (b) to find
-$\int_0^3 \frac◆LB◆x+1◆RB◆◆LB◆\sqrt{x+1}◆RB◆\, dx$ without further integration.
+$\int_0^3 \frac{x+1}{\sqrt{x+1}}\, dx$ without further integration.
 
 [Difficulty: hard. Tests verification by differentiation, substitution technique, and decomposition
 of integrals using known results.]
@@ -339,13 +339,13 @@ $$F'(x) = \frac{2}{3}\left[(x+1)^{1/2} \cdot 1 + (x-2) \cdot \frac{1}{2}(x+1)^{-
 
 $$= \frac{2}{3}\left[(x+1)^{1/2} + \frac{x-2}{2(x+1)^{1/2}}\right]$$
 
-$$= \frac{2}{3} \cdot \frac{2(x+1) + (x-2)}{2(x+1)^{1/2}} = \frac{2}{3} \cdot \frac{3x}{2(x+1)^{1/2}} = \frac{x}{(x+1)^{1/2}} = \frac◆LB◆x◆RB◆◆LB◆\sqrt{x+1}◆RB◆$$
+$$= \frac{2}{3} \cdot \frac{2(x+1) + (x-2)}{2(x+1)^{1/2}} = \frac{2}{3} \cdot \frac{3x}{2(x+1)^{1/2}} = \frac{x}{(x+1)^{1/2}} = \frac{x}{\sqrt{x+1}}$$
 
 Confirmed.
 
 **(b)** $u = \sqrt{x+1}$So $u^2 = x + 1$Giving $x = u^2 - 1$ and $dx = 2u\, du$.
 
-$$\int \frac◆LB◆x◆RB◆◆LB◆\sqrt{x+1}◆RB◆\, dx = \int \frac{u^2-1}{u} \cdot 2u\, du = 2\int(u^2 - 1)\, du$$
+$$\int \frac{x}{\sqrt{x+1}}\, dx = \int \frac{u^2-1}{u} \cdot 2u\, du = 2\int(u^2 - 1)\, du$$
 
 $$= 2\left(\frac{u^3}{3} - u\right) + C = \frac{2u^3}{3} - 2u + C$$
 
@@ -356,7 +356,7 @@ $$= \frac{2}{3}(x+1)^{3/2} - 2(x+1)^{1/2} + C = \frac{2}{3}(x+1)^{1/2}[(x+1) - 3
 Confirmed.
 
 **(c)**
-$\int_0^3 \frac◆LB◆x◆RB◆◆LB◆\sqrt{x+1}◆RB◆\, dx = \left[\frac{2}{3}(x-2)\sqrt{x+1}\right]_0^3$
+$\int_0^3 \frac{x}{\sqrt{x+1}}\, dx = \left[\frac{2}{3}(x-2)\sqrt{x+1}\right]_0^3$
 
 At $x = 3$: $\frac{2}{3}(1)(2) = \frac{4}{3}$
 
@@ -365,14 +365,14 @@ At $x = 0$: $\frac{2}{3}(-2)(1) = -\frac{4}{3}$
 $$= \frac{4}{3} - \left(-\frac{4}{3}\right) = \frac{8}{3}$$
 
 **(d)** Verification:
-$\frac{d}{dx}[2(x+1)^{1/2}] = 2 \cdot \frac{1}{2}(x+1)^{-1/2} = \frac◆LB◆1◆RB◆◆LB◆\sqrt{x+1}◆RB◆$.
+$\frac{d}{dx}[2(x+1)^{1/2}] = 2 \cdot \frac{1}{2}(x+1)^{-1/2} = \frac{1}{\sqrt{x+1}}$.
 Confirmed.
 
-Decomposition: $\frac◆LB◆x+1◆RB◆◆LB◆\sqrt{x+1}◆RB◆ = \sqrt{x+1} = (x+1)^{1/2}$.
+Decomposition: $\frac{x+1}{\sqrt{x+1}} = \sqrt{x+1} = (x+1)^{1/2}$.
 
 So
-$\int_0^3 \frac◆LB◆x+1◆RB◆◆LB◆\sqrt{x+1}◆RB◆\, dx = \int_0^3 (x+1)^{1/2}\, dx = \left[\frac{2}{3}(x+1)^{3/2}\right]_0^3 = \frac{2}{3}(8 - 1) = \frac{14}{3}$.
+$\int_0^3 \frac{x+1}{\sqrt{x+1}}\, dx = \int_0^3 (x+1)^{1/2}\, dx = \left[\frac{2}{3}(x+1)^{3/2}\right]_0^3 = \frac{2}{3}(8 - 1) = \frac{14}{3}$.
 
 Alternatively, using linearity:
-$\int_0^3 \frac◆LB◆x+1◆RB◆◆LB◆\sqrt{x+1}◆RB◆\, dx = \int_0^3 \frac◆LB◆x◆RB◆◆LB◆\sqrt{x+1}◆RB◆\, dx + \int_0^3 \frac◆LB◆1◆RB◆◆LB◆\sqrt{x+1}◆RB◆\, dx = \frac{8}{3} + [2\sqrt{x+1}]_0^3 = \frac{8}{3} + 2(2-1) = \frac{8}{3} + 2 = \frac{14}{3}$.
+$\int_0^3 \frac{x+1}{\sqrt{x+1}}\, dx = \int_0^3 \frac{x}{\sqrt{x+1}}\, dx + \int_0^3 \frac{1}{\sqrt{x+1}}\, dx = \frac{8}{3} + [2\sqrt{x+1}]_0^3 = \frac{8}{3} + 2(2-1) = \frac{8}{3} + 2 = \frac{14}{3}$.
 Confirmed.

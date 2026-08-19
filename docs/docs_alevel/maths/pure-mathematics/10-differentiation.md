@@ -112,7 +112,7 @@ Strips along the edges; the corner piece $\delta u\,\delta v$ is negligible).
 
 **Theorem.** If $u = f(x)$ and $v = g(x)$ are differentiable with $v \neq 0$Then
 
-$$\frac{d}{dx}\left(\frac{u}{v}\right) = \frac◆LB◆v\frac{du}{dx} - u\frac{dv}{dx}◆RB◆◆LB◆v^2◆RB◆$$
+$$\frac{d}{dx}\left(\frac{u}{v}\right) = \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{v^2}$$
 
 ### 4.1 Proof from the product rule
 
@@ -122,7 +122,7 @@ $$\frac{d}{dx}\left(\frac{u}{v}\right) = \frac{du}{dx} \cdot v^{-1} + u \cdot \f
 
 By the chain rule, $\dfrac{d}{dx}(v^{-1}) = -v^{-2}\dfrac{dv}{dx}$:
 
-$$= \frac{1}{v}\frac{du}{dx} - \frac{u}{v^2}\frac{dv}{dx} = \frac◆LB◆v\frac{du}{dx} - u\frac{dv}{dx}◆RB◆◆LB◆v^2◆RB◆ \quad \blacksquare$$
+$$= \frac{1}{v}\frac{du}{dx} - \frac{u}{v^2}\frac{dv}{dx} = \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{v^2} \quad \blacksquare$$
 
 :::warning The quotient rule has a **minus** sign in the numerator: $v\,u' - u\,v'$. Getting this
 The wrong way around is one of the most common errors in A Level mathematics.
@@ -165,14 +165,14 @@ $\sin(\alpha + \beta) = \sin\alpha\cos\beta + \cos\alpha\sin\beta$:
 
 $$
 \begin{aligned}
-\frac{d}{dx}\sin x &= \lim_{h\to 0}\frac◆LB◆\sin(x+h) - \sin x◆RB◆◆LB◆h◆RB◆ \\
-&= \lim_{h\to 0}\frac◆LB◆\sin x\cos h + \cos x\sin h - \sin x◆RB◆◆LB◆h◆RB◆ \\
-&= \lim_{h\to 0}\left[\sin x \cdot \frac◆LB◆\cos h - 1◆RB◆◆LB◆h◆RB◆ + \cos x \cdot \frac◆LB◆\sin h◆RB◆◆LB◆h◆RB◆\right]
+\frac{d}{dx}\sin x &= \lim_{h\to 0}\frac{\sin(x+h) - \sin x}{h} \\
+&= \lim_{h\to 0}\frac{\sin x\cos h + \cos x\sin h - \sin x}{h} \\
+&= \lim_{h\to 0}\left[\sin x \cdot \frac{\cos h - 1}{h} + \cos x \cdot \frac{\sin h}{h}\right]
 \end{aligned}
 $$
 
-Using the standard limits $\displaystyle\lim_{h\to 0}\frac◆LB◆\sin h◆RB◆◆LB◆h◆RB◆ = 1$ and
-$\displaystyle\lim_{h\to 0}\frac◆LB◆\cos h - 1◆RB◆◆LB◆h◆RB◆ = 0$:
+Using the standard limits $\displaystyle\lim_{h\to 0}\frac{\sin h}{h} = 1$ and
+$\displaystyle\lim_{h\to 0}\frac{\cos h - 1}{h} = 0$:
 
 $$= \sin x \cdot 0 + \cos x \cdot 1 = \cos x \quad \blacksquare$$
 
@@ -180,9 +180,9 @@ $$= \sin x \cdot 0 + \cos x \cdot 1 = \cos x \quad \blacksquare$$
 
 **Theorem.** $\dfrac{d}{dx}\cos x = -\sin x$.
 
-**Proof.** Write $\cos x = \sin\!\left(\dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - x\right)$. By the chain rule:
+**Proof.** Write $\cos x = \sin\!\left(\dfrac{\pi}{2} - x\right)$. By the chain rule:
 
-$$\frac{d}{dx}\cos x = \cos\!\left(\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆-x\right) \cdot (-1) = -\sin x \quad \blacksquare$$
+$$\frac{d}{dx}\cos x = \cos\!\left(\frac{\pi}{2}-x\right) \cdot (-1) = -\sin x \quad \blacksquare$$
 
 ### 6.3 Derivative of $e^x$
 
@@ -196,7 +196,7 @@ $$\frac{d}{dx}\ln x = \frac{1}{x}$$
 
 ### 6.5 Derivative of $\tan x$
 
-$$\frac{d}{dx}\tan x = \frac{d}{dx}\left(\frac◆LB◆\sin x◆RB◆◆LB◆\cos x◆RB◆\right) = \frac◆LB◆\cos x \cdot \cos x - \sin x \cdot (-\sin x)◆RB◆◆LB◆\cos^2 x◆RB◆ = \frac◆LB◆\cos^2 x + \sin^2 x◆RB◆◆LB◆\cos^2 x◆RB◆ = \sec^2 x$$
+$$\frac{d}{dx}\tan x = \frac{d}{dx}\left(\frac{\sin x}{\cos x}\right) = \frac{\cos x \cdot \cos x - \sin x \cdot (-\sin x)}{\cos^2 x} = \frac{\cos^2 x + \sin^2 x}{\cos^2 x} = \sec^2 x$$
 
 ### 6.6 Summary table
 
@@ -321,7 +321,7 @@ $$\frac{dy}{dx} = \frac{dy/dt}{dx/dt}$$
 
 $$\frac{dx}{dt} = -2\sin t, \quad \frac{dy}{dt} = 2\cos t$$
 
-$$\frac{dy}{dx} = \frac◆LB◆2\cos t◆RB◆◆LB◆-2\sin t◆RB◆ = -\cot t$$
+$$\frac{dy}{dx} = \frac{2\cos t}{-2\sin t} = -\cot t$$
 
 At $t = \pi/4$: $\dfrac{dy}{dx} = -\cot(\pi/4) = -1$.
 
@@ -347,7 +347,7 @@ Differentiate $f(x) = \sqrt{x}$ from first principles.
 
 <details>
 <summary>Solution 1</summary>
-$$f'(x) = \lim_{h\to 0}\frac◆LB◆\sqrt{x+h}-\sqrt{x}◆RB◆◆LB◆h◆RB◆ \cdot \frac◆LB◆\sqrt{x+h}+\sqrt{x}◆RB◆◆LB◆\sqrt{x+h}+\sqrt{x}◆RB◆ = \lim_{h\to 0}\frac◆LB◆(x+h)-x◆RB◆◆LB◆h(\sqrt{x+h}+\sqrt{x})◆RB◆ = \lim_{h\to 0}\frac◆LB◆1◆RB◆◆LB◆\sqrt{x+h}+\sqrt{x}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2\sqrt{x}◆RB◆$$
+$$f'(x) = \lim_{h\to 0}\frac{\sqrt{x+h}-\sqrt{x}}{h} \cdot \frac{\sqrt{x+h}+\sqrt{x}}{\sqrt{x+h}+\sqrt{x}} = \lim_{h\to 0}\frac{(x+h)-x}{h(\sqrt{x+h}+\sqrt{x})} = \lim_{h\to 0}\frac{1}{\sqrt{x+h}+\sqrt{x}} = \frac{1}{2\sqrt{x}}$$
 
 **If you get this wrong, revise:**
 [The Derivative from First Principles](#1-the-derivative-from-first-principles) — Section 1.
@@ -375,7 +375,7 @@ At $x = 3$: $f''(3) = 6 \gt 0$So **local minimum**. $f(3) = 27 - 54 + 27 + 1 = 1
 
 <details>
 <summary>Problem 3</summary>
-Differentiate $y = \dfrac◆LB◆x^2 e^x◆RB◆◆LB◆\sin x◆RB◆$.
+Differentiate $y = \dfrac{x^2 e^x}{\sin x}$.
 </details>
 
 <details>
@@ -384,7 +384,7 @@ Let $u = x^2 e^x$ and $v = \sin x$.
 
 $u' = 2xe^x + x^2 e^x = e^x(x^2 + 2x)$ (product rule). $v' = \cos x$.
 
-$$\frac{dy}{dx} = \frac◆LB◆e^x(x^2+2x)\sin x - x^2 e^x \cos x◆RB◆◆LB◆\sin^2 x◆RB◆ = \frac◆LB◆xe^x[(x+2)\sin x - x\cos x]◆RB◆◆LB◆\sin^2 x◆RB◆$$
+$$\frac{dy}{dx} = \frac{e^x(x^2+2x)\sin x - x^2 e^x \cos x}{\sin^2 x} = \frac{xe^x[(x+2)\sin x - x\cos x]}{\sin^2 x}$$
 
 **If you get this wrong, revise:** [The Quotient Rule](#4-the-quotient-rule) — Section 4 and
 [The Product Rule](#3-the-product-rule) — Section 3.
@@ -421,7 +421,7 @@ $$\frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}$$
 
 At $r = 5$ with $\dfrac{dV}{dt} = 100$:
 
-$$100 = 4\pi(25)\frac{dr}{dt} \implies \frac{dr}{dt} = \frac◆LB◆100◆RB◆◆LB◆100\pi◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆\pi◆RB◆ \approx 0.318 \,\mathrm{cm/s}$$
+$$100 = 4\pi(25)\frac{dr}{dt} \implies \frac{dr}{dt} = \frac{100}{100\pi} = \frac{1}{\pi} \approx 0.318 \,\mathrm{cm/s}$$
 
 **If you get this wrong, revise:** [Connected Rates of Change](#8-connected-rates-of-change) —
 Section 8.
@@ -496,9 +496,9 @@ Prove that $\dfrac{d}{dx}\sec x = \sec x \tan x$.
 
 <details>
 <summary>Solution 9</summary>
-$\sec x = \dfrac◆LB◆1◆RB◆◆LB◆\cos x◆RB◆ = (\cos x)^{-1}$.
+$\sec x = \dfrac{1}{\cos x} = (\cos x)^{-1}$.
 
-$$\frac{d}{dx}\sec x = -(\cos x)^{-2} \cdot (-\sin x) = \frac◆LB◆\sin x◆RB◆◆LB◆\cos^2 x◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆\cos x◆RB◆ \cdot \frac◆LB◆\sin x◆RB◆◆LB◆\cos x◆RB◆ = \sec x \tan x \quad \blacksquare$$
+$$\frac{d}{dx}\sec x = -(\cos x)^{-2} \cdot (-\sin x) = \frac{\sin x}{\cos^2 x} = \frac{1}{\cos x} \cdot \frac{\sin x}{\cos x} = \sec x \tan x \quad \blacksquare$$
 
 **If you get this wrong, revise:** [The Chain Rule](#5-the-chain-rule) — Section 5.
 
@@ -588,13 +588,13 @@ Water flows into a cone of height $h$ and base radius $r$ at a rate of $5\,\math
 <summary>Solution 14</summary>
 With semi-vertical angle $30^\circ$: $r = h\tan 30° = h/\sqrt{3}$.
 
-$V = \dfrac{1}{3}\pi r^2 h = \dfrac{1}{3}\pi \dfrac{h^2}{3} h = \dfrac◆LB◆\pi h^3◆RB◆◆LB◆9◆RB◆$.
+$V = \dfrac{1}{3}\pi r^2 h = \dfrac{1}{3}\pi \dfrac{h^2}{3} h = \dfrac{\pi h^3}{9}$.
 
-$$\frac{dV}{dt} = \frac◆LB◆\pi h^2◆RB◆◆LB◆3◆RB◆ \cdot \frac{dh}{dt}$$
+$$\frac{dV}{dt} = \frac{\pi h^2}{3} \cdot \frac{dh}{dt}$$
 
 At $h = 10$ with $dV/dt = 5$:
 
-$$5 = \frac◆LB◆100\pi◆RB◆◆LB◆3◆RB◆ \cdot \frac{dh}{dt} \implies \frac{dh}{dt} = \frac◆LB◆15◆RB◆◆LB◆100\pi◆RB◆ = \frac◆LB◆3◆RB◆◆LB◆20\pi◆RB◆ \approx 0.0478 \,\mathrm{cm/s}$$
+$$5 = \frac{100\pi}{3} \cdot \frac{dh}{dt} \implies \frac{dh}{dt} = \frac{15}{100\pi} = \frac{3}{20\pi} \approx 0.0478 \,\mathrm{cm/s}$$
 
 **If you get this wrong, revise:** [Connected Rates of Change](#8-connected-rates-of-change) —
 Section 8.

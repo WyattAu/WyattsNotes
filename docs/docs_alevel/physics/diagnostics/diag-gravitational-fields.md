@@ -73,28 +73,28 @@ towards Mars.
 (a) Kepler's third law: $T^2 \propto r^3$
 
 $$\frac{T_D^2}{T_P^2} = \frac{r_D^3}{r_P^3}$$
-$$T_D = T_P \left(\frac{r_D}{r_P}\right)^{3/2} = 7.66 \times \left(\frac◆LB◆2.35 \times 10^7◆RB◆◆LB◆9.38 \times 10^6◆RB◆\right)^{3/2}$$
+$$T_D = T_P \left(\frac{r_D}{r_P}\right)^{3/2} = 7.66 \times \left(\frac{2.35 \times 10^7}{9.38 \times 10^6}\right)^{3/2}$$
 $$= 7.66 \times (2.505)^{3/2} = 7.66 \times 3.965 = 30.4\,\text{hours}$$
 
 The accepted value is approximately $30.3\,\text{hours}$Confirming the calculation.
 
 (b) From Phobos:
 
-$$T = \frac◆LB◆2\pi r◆RB◆◆LB◆v◆RB◆ \text{ and } v = \sqrt◆LB◆\frac{GM}{r}◆RB◆$$
-$$T = 2\pi\sqrt◆LB◆\frac{r^3}{GM}◆RB◆$$ $$M = \frac◆LB◆4\pi^2 r^3◆RB◆◆LB◆GT^2◆RB◆$$
+$$T = \frac{2\pi r}{v} \text{ and } v = \sqrt{\frac{GM}{r}}$$
+$$T = 2\pi\sqrt{\frac{r^3}{GM}}$$ $$M = \frac{4\pi^2 r^3}{GT^2}$$
 
 $$T_P = 7.66 \times 3600 = 27576\,\text{s}$$
 
-$$M = \frac◆LB◆4\pi^2 (9.38 \times 10^6)^3◆RB◆◆LB◆6.67 \times 10^{-11} \times (27576)^2◆RB◆$$
-$$= \frac◆LB◆4\pi^2 \times 8.258 \times 10^{20}◆RB◆◆LB◆6.67 \times 10^{-11} \times 7.604 \times 10^8◆RB◆$$
-$$= \frac◆LB◆3.263 \times 10^{22}◆RB◆◆LB◆5.072 \times 10^{-2}◆RB◆ = 6.43 \times 10^{23}\,\text{kg}$$
+$$M = \frac{4\pi^2 (9.38 \times 10^6)^3}{6.67 \times 10^{-11} \times (27576)^2}$$
+$$= \frac{4\pi^2 \times 8.258 \times 10^{20}}{6.67 \times 10^{-11} \times 7.604 \times 10^8}$$
+$$= \frac{3.263 \times 10^{22}}{5.072 \times 10^{-2}} = 6.43 \times 10^{23}\,\text{kg}$$
 
 The accepted value is $6.42 \times 10^{23}\,\text{kg}$.
 
 (c)
-$v_P = \sqrt{GM/r_P} = \sqrt◆LB◆6.67 \times 10^{-11} \times 6.43 \times 10^{23}/9.38 \times 10^6◆RB◆$
+$v_P = \sqrt{GM/r_P} = \sqrt{6.67 \times 10^{-11} \times 6.43 \times 10^{23}/9.38 \times 10^6}$
 
-$$= \sqrt◆LB◆4.569 \times 10^6◆RB◆ = 2138\,\text{m}\,\text{s}^{-1}$$
+$$= \sqrt{4.569 \times 10^6} = 2138\,\text{m}\,\text{s}^{-1}$$
 
 Phobos orbits Mars faster than Mars rotates. The tidal interaction causes a transfer of angular
 momentum from Phobos to Mars's rotation, causing Phobos to lose orbital energy and spiral inward.
@@ -125,15 +125,15 @@ distance $= 3.84 \times 10^8\,\text{m}$.
 
 (a) Gravitational potential at the Moon's surface:
 
-$$V_{\text{surface}} = -\frac{GM_M}{R_M} = -\frac◆LB◆6.67 \times 10^{-11} \times 7.35 \times 10^{22}◆RB◆◆LB◆1.74 \times 10^6◆RB◆ = -\frac◆LB◆4.902 \times 10^{12}◆RB◆◆LB◆1.74 \times 10^6◆RB◆ = -2.817 \times 10^6\,\text{J}\,\text{kg}^{-1}$$
+$$V_{\text{surface}} = -\frac{GM_M}{R_M} = -\frac{6.67 \times 10^{-11} \times 7.35 \times 10^{22}}{1.74 \times 10^6} = -\frac{4.902 \times 10^{12}}{1.74 \times 10^6} = -2.817 \times 10^6\,\text{J}\,\text{kg}^{-1}$$
 
 At $r = 3.0 \times 10^8\,\text{m}$ from Moon's centre:
 
-$$V_M = -\frac{GM_M}{r} = -\frac◆LB◆4.902 \times 10^{12}◆RB◆◆LB◆3.0 \times 10^8◆RB◆ = -1.634 \times 10^4\,\text{J}\,\text{kg}^{-1}$$
+$$V_M = -\frac{GM_M}{r} = -\frac{4.902 \times 10^{12}}{3.0 \times 10^8} = -1.634 \times 10^4\,\text{J}\,\text{kg}^{-1}$$
 
 Distance from Earth: $3.84 \times 10^8 - 3.0 \times 10^8 = 0.84 \times 10^8\,\text{m}$
 
-$$V_E = -\frac◆LB◆GM_E◆RB◆◆LB◆0.84 \times 10^8◆RB◆ = -\frac◆LB◆6.67 \times 10^{-11} \times 5.97 \times 10^{24}◆RB◆◆LB◆8.4 \times 10^7◆RB◆ = -\frac◆LB◆3.982 \times 10^{14}◆RB◆◆LB◆8.4 \times 10^7◆RB◆ = -4.740 \times 10^6\,\text{J}\,\text{kg}^{-1}$$
+$$V_E = -\frac{GM_E}{0.84 \times 10^8} = -\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{8.4 \times 10^7} = -\frac{3.982 \times 10^{14}}{8.4 \times 10^7} = -4.740 \times 10^6\,\text{J}\,\text{kg}^{-1}$$
 
 Total potential:
 $V_{\text{total}} = V_M + V_E = -1.634 \times 10^4 - 4.740 \times 10^6 = -4.756 \times 10^6\,\text{J}\,\text{kg}^{-1}$
@@ -143,7 +143,7 @@ Moon alone. This means more energy is required to escape from this point to infi
 Moon's surface alone, because the Earth's gravitational well also contributes.
 
 (b)
-$v_{\text{esc}} = \sqrt◆LB◆\frac{2GM_M}{R_M}◆RB◆ = \sqrt◆LB◆\frac{2 \times 4.902 \times 10^{12}}{1.74 \times 10^6}◆RB◆ = \sqrt◆LB◆5.635 \times 10^6◆RB◆ = 2374\,\text{m}\,\text{s}^{-1}$
+$v_{\text{esc}} = \sqrt{\frac{2GM_M}{R_M}} = \sqrt{\frac{2 \times 4.902 \times 10^{12}}{1.74 \times 10^6}} = \sqrt{5.635 \times 10^6} = 2374\,\text{m}\,\text{s}^{-1}$
 
 (c) At L1, the fields are equal in magnitude:
 
@@ -151,12 +151,12 @@ $$\frac{GM_E}{r^2} = \frac{GM_M}{(d - r)^2}$$
 
 Where $r$ is the distance from Earth and $d = 3.84 \times 10^8\,\text{m}$.
 
-$$\frac{r^2}{(d-r)^2} = \frac{M_E}{M_M} = \frac◆LB◆5.97 \times 10^{24}◆RB◆◆LB◆7.35 \times 10^{22}◆RB◆ = 81.22$$
+$$\frac{r^2}{(d-r)^2} = \frac{M_E}{M_M} = \frac{5.97 \times 10^{24}}{7.35 \times 10^{22}} = 81.22$$
 
 $$\frac{r}{d-r} = \sqrt{81.22} = 9.012$$
 
 $$r = 9.012(d - r) = 9.012d - 9.012r$$ $$10.012r = 9.012 \times 3.84 \times 10^8$$
-$$r = \frac◆LB◆34.61 \times 10^8◆RB◆◆LB◆10.012◆RB◆ = 3.457 \times 10^8\,\text{m}$$
+$$r = \frac{34.61 \times 10^8}{10.012} = 3.457 \times 10^8\,\text{m}$$
 
 The L1 point is approximately $3.46 \times 10^8\,\text{m}$ from the centre of the Earth, or about
 $3.84 \times 10^8 - 3.46 \times 10^8 = 3.8 \times 10^7\,\text{m}$ from the centre of the Moon.
@@ -182,24 +182,24 @@ $G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$$M_E = 5.97 \tim
 
 (a) For geostationary orbit, the period equals the Earth's sidereal day: $T = 86164\,\text{s}$.
 
-$$T = 2\pi\sqrt◆LB◆\frac{r^3}{GM_E}◆RB◆$$
-$$r^3 = \frac◆LB◆GMT^2◆RB◆◆LB◆4\pi^2◆RB◆ = \frac◆LB◆6.67 \times 10^{-11} \times 5.97 \times 10^{24} \times (86164)^2◆RB◆◆LB◆4\pi^2◆RB◆$$
-$$= \frac◆LB◆3.982 \times 10^{14} \times 7.424 \times 10^9◆RB◆◆LB◆39.478◆RB◆ = \frac◆LB◆2.956 \times 10^{24}◆RB◆◆LB◆39.478◆RB◆ = 7.488 \times 10^{22}$$
+$$T = 2\pi\sqrt{\frac{r^3}{GM_E}}$$
+$$r^3 = \frac{GMT^2}{4\pi^2} = \frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24} \times (86164)^2}{4\pi^2}$$
+$$= \frac{3.982 \times 10^{14} \times 7.424 \times 10^9}{39.478} = \frac{2.956 \times 10^{24}}{39.478} = 7.488 \times 10^{22}$$
 $$r = \sqrt[3]{7.488 \times 10^{22}} = 4.216 \times 10^7\,\text{m}$$
 
 (b) Total energy $E = -\frac{GMm}{2r}$:
 
-$$E = -\frac◆LB◆6.67 \times 10^{-11} \times 5.97 \times 10^{24} \times 1000◆RB◆◆LB◆2 \times 4.216 \times 10^7◆RB◆ = -\frac◆LB◆3.982 \times 10^{17}◆RB◆◆LB◆8.432 \times 10^7◆RB◆ = -4.723 \times 10^9\,\text{J}$$
+$$E = -\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24} \times 1000}{2 \times 4.216 \times 10^7} = -\frac{3.982 \times 10^{17}}{8.432 \times 10^7} = -4.723 \times 10^9\,\text{J}$$
 
 (c) For circular orbits: $v = \sqrt{GM/r}$So $v \propto r^{-1/2}$.
 
 Ratio of speeds:
-$\frac◆LB◆v_{\text{inner}}◆RB◆◆LB◆v_{\text{geo}}◆RB◆ = \sqrt◆LB◆\frac{r_{\text{geo}}}{r_{\text{inner}}}◆RB◆ = \sqrt◆LB◆\frac{r}{r/2}◆RB◆ = \sqrt{2}$
+$\frac{v_{\text{inner}}}{v_{\text{geo}}} = \sqrt{\frac{r_{\text{geo}}}{r_{\text{inner}}}} = \sqrt{\frac{r}{r/2}} = \sqrt{2}$
 
 Total energy per unit mass: $E/m = -\frac{GM}{2r}$So $E/m \propto r^{-1}$.
 
 Ratio:
-$\frac◆LB◆E_{\text{inner}}/m_{\text{inner}}◆RB◆◆LB◆E_{\text{geo}}/m_{\text{geo}}◆RB◆ = \frac◆LB◆r_{\text{geo}}◆RB◆◆LB◆r_{\text{inner}}◆RB◆ = \frac{r}{r/2} = 2$
+$\frac{E_{\text{inner}}/m_{\text{inner}}}{E_{\text{geo}}/m_{\text{geo}}} = \frac{r_{\text{geo}}}{r_{\text{inner}}} = \frac{r}{r/2} = 2$
 
 The inner satellite has $\sqrt{2}$ times the speed and 2 times the energy per unit mass (more
 negative).
@@ -226,7 +226,7 @@ Take $G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$.
 
 (a) Centre of mass from $M_1$:
 
-$$r_1 = \frac{M_2 d}{M_1 + M_2} = \frac◆LB◆1.0 \times 10^{30} \times 2.0 \times 10^{11}◆RB◆◆LB◆4.0 \times 10^{30}◆RB◆ = 5.0 \times 10^{10}\,\text{m}$$
+$$r_1 = \frac{M_2 d}{M_1 + M_2} = \frac{1.0 \times 10^{30} \times 2.0 \times 10^{11}}{4.0 \times 10^{30}} = 5.0 \times 10^{10}\,\text{m}$$
 
 So $M_1$ orbits at radius $r_1 = 5.0 \times 10^{10}\,\text{m}$ and $M_2$ at
 $r_2 = 1.5 \times 10^{11}\,\text{m}$.
@@ -238,21 +238,21 @@ $$\frac{GM_1 M_2}{d^2} = M_1 \omega^2 r_1 = M_2 \omega^2 r_2$$
 Using $M_1 \omega^2 r_1$:
 
 $$\frac{G M_2}{d^2} = \omega^2 r_1$$
-$$\omega^2 = \frac{GM_2}{d^2 r_1} = \frac◆LB◆6.67 \times 10^{-11} \times 1.0 \times 10^{30}◆RB◆◆LB◆(2.0 \times 10^{11})^2 \times 5.0 \times 10^{10}◆RB◆$$
-$$= \frac◆LB◆6.67 \times 10^{19}◆RB◆◆LB◆2.0 \times 10^{33}◆RB◆ = 3.335 \times 10^{-14}$$
+$$\omega^2 = \frac{GM_2}{d^2 r_1} = \frac{6.67 \times 10^{-11} \times 1.0 \times 10^{30}}{(2.0 \times 10^{11})^2 \times 5.0 \times 10^{10}}$$
+$$= \frac{6.67 \times 10^{19}}{2.0 \times 10^{33}} = 3.335 \times 10^{-14}$$
 $$\omega = 1.826 \times 10^{-7}\,\text{rad}\,\text{s}^{-1}$$
-$$T = \frac◆LB◆2\pi◆RB◆◆LB◆\omega◆RB◆ = \frac◆LB◆2\pi◆RB◆◆LB◆1.826 \times 10^{-7}◆RB◆ = 3.441 \times 10^7\,\text{s} = 398\,\text{days}$$
+$$T = \frac{2\pi}{\omega} = \frac{2\pi}{1.826 \times 10^{-7}} = 3.441 \times 10^7\,\text{s} = 398\,\text{days}$$
 
-Alternatively, using the general formula: $T^2 = \frac◆LB◆4\pi^2 d^3◆RB◆◆LB◆G(M_1 + M_2)◆RB◆$
+Alternatively, using the general formula: $T^2 = \frac{4\pi^2 d^3}{G(M_1 + M_2)}$
 
 Numerator:
 $4\pi^2 \times (2 \times 10^{11})^3 = 4\pi^2 \times 8 \times 10^{33} = 3.158 \times 10^{35}$
 
 Denominator: $6.67 \times 10^{-11} \times 4 \times 10^{30} = 2.668 \times 10^{20}$
 
-$$T^2 = \frac◆LB◆3.158 \times 10^{35}◆RB◆◆LB◆2.668 \times 10^{20}◆RB◆ = 1.184 \times 10^{15}$$
+$$T^2 = \frac{3.158 \times 10^{35}}{2.668 \times 10^{20}} = 1.184 \times 10^{15}$$
 
-$$T = \sqrt◆LB◆1.184 \times 10^{15}◆RB◆ = 3.441 \times 10^7\,\text{s} = 398\,\text{days}$$
+$$T = \sqrt{1.184 \times 10^{15}} = 3.441 \times 10^7\,\text{s} = 398\,\text{days}$$
 
 (c)
 $v_1 = \omega r_1 = 1.826 \times 10^{-7} \times 5.0 \times 10^{10} = 9130\,\text{m}\,\text{s}^{-1}$
@@ -288,14 +288,14 @@ Take $G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$.
 
 (a) Using conservation of energy relative to Jupiter:
 
-$$\frac{1}{2}v_{\infty}^2 = \frac{1}{2}v_{\min}^2 - \frac◆LB◆GM_J◆RB◆◆LB◆r_{\min}◆RB◆$$
+$$\frac{1}{2}v_{\infty}^2 = \frac{1}{2}v_{\min}^2 - \frac{GM_J}{r_{\min}}$$
 
 Where $v_{\infty} = 8.0 \times 10^3\,\text{m}\,\text{s}^{-1}$ is the speed far from Jupiter.
 
-$$\frac{1}{2}(8.0 \times 10^3)^2 = \frac{1}{2}v_{\min}^2 - \frac◆LB◆6.67 \times 10^{-11} \times 1.90 \times 10^{27}◆RB◆◆LB◆3.0 \times 10^8◆RB◆$$
+$$\frac{1}{2}(8.0 \times 10^3)^2 = \frac{1}{2}v_{\min}^2 - \frac{6.67 \times 10^{-11} \times 1.90 \times 10^{27}}{3.0 \times 10^8}$$
 $$3.2 \times 10^7 = \frac{1}{2}v_{\min}^2 - 4.223 \times 10^8$$
 $$\frac{1}{2}v_{\min}^2 = 4.543 \times 10^8$$
-$$v_{\min} = \sqrt◆LB◆9.086 \times 10^8◆RB◆ = 3.014 \times 10^4\,\text{m}\,\text{s}^{-1}$$
+$$v_{\min} = \sqrt{9.086 \times 10^8} = 3.014 \times 10^4\,\text{m}\,\text{s}^{-1}$$
 
 (b) In the best-case slingshot, the spacecraft's velocity relative to Jupiter is reversed. If the
 spacecraft approaches Jupiter from behind (in the direction of Jupiter's orbital motion), the

@@ -49,9 +49,9 @@ $$\mathcal{L} = U(x, y) + \lambda(M - P_x \cdot x - P_y \cdot y)$$
 
 First-order conditions:
 
-$$\frac◆LB◆\partial \mathcal{L}◆RB◆◆LB◆\partial x◆RB◆ = \frac◆LB◆\partial U◆RB◆◆LB◆\partial x◆RB◆ - \lambda P_x = 0 \implies \frac{MU_x}{P_x} = \lambda$$
+$$\frac{\partial \mathcal{L}}{\partial x} = \frac{\partial U}{\partial x} - \lambda P_x = 0 \implies \frac{MU_x}{P_x} = \lambda$$
 
-$$\frac◆LB◆\partial \mathcal{L}◆RB◆◆LB◆\partial y◆RB◆ = \frac◆LB◆\partial U◆RB◆◆LB◆\partial y◆RB◆ - \lambda P_y = 0 \implies \frac{MU_y}{P_y} = \lambda$$
+$$\frac{\partial \mathcal{L}}{\partial y} = \frac{\partial U}{\partial y} - \lambda P_y = 0 \implies \frac{MU_y}{P_y} = \lambda$$
 
 Therefore:
 
@@ -115,7 +115,7 @@ $$\pi(Q) = P \cdot Q - C(Q)$$
 
 First-order condition:
 
-$$\frac◆LB◆d\pi◆RB◆◆LB◆dQ◆RB◆ = P - C'(Q) = 0 \implies P = MC(Q)$$
+$$\frac{d\pi}{dQ} = P - C'(Q) = 0 \implies P = MC(Q)$$
 
 Where $MC(Q) = C'(Q)$ is marginal cost. Second-order condition requires $C''(Q) \gt 0$ (MC Rising).
 The **supply curve** of a competitive firm is the portion of its $MC$ curve above the Average
@@ -184,7 +184,7 @@ Allocating resources without central direction. It performs three functions:
 
 We define the **price elasticity of demand** as:
 
-$$\mathrm{PED} = \frac◆LB◆\%\Delta Q_d◆RB◆◆LB◆\%\Delta P◆RB◆ = \frac◆LB◆\Delta Q_d / Q_d◆RB◆◆LB◆\Delta P / P◆RB◆ = \frac{P}{Q_d} \cdot \frac◆LB◆\Delta Q_d◆RB◆◆LB◆\Delta P◆RB◆$$
+$$\mathrm{PED} = \frac{\%\Delta Q_d}{\%\Delta P} = \frac{\Delta Q_d / Q_d}{\Delta P / P} = \frac{P}{Q_d} \cdot \frac{\Delta Q_d}{\Delta P}$$
 
 Since the demand curve slopes downward, $\mathrm{PED} \lt 0$. We often state the _absolute value_
 $|\mathrm{PED}|$.
@@ -244,7 +244,7 @@ $\mathrm{PED} \to -\infty$ (perfectly elastic). As $Q \to a$ (quantity axis): $\
 
 ### 4.5 Income Elasticity of Demand (YED)
 
-$$\mathrm{YED} = \frac◆LB◆\%\Delta Q_d◆RB◆◆LB◆\%\Delta Y◆RB◆ = \frac◆LB◆\Delta Q_d / Q_d◆RB◆◆LB◆\Delta Y / Y◆RB◆$$
+$$\mathrm{YED} = \frac{\%\Delta Q_d}{\%\Delta Y} = \frac{\Delta Q_d / Q_d}{\Delta Y / Y}$$
 
 | YED         | Type of Good       | Example                            |
 | ----------- | ------------------ | ---------------------------------- |
@@ -254,7 +254,7 @@ $$\mathrm{YED} = \frac◆LB◆\%\Delta Q_d◆RB◆◆LB◆\%\Delta Y◆RB◆ = \
 
 ### 4.6 Cross-Price Elasticity of Demand (XED)
 
-$$\mathrm{XED}_{AB} = \frac◆LB◆\%\Delta Q_A◆RB◆◆LB◆\%\Delta P_B◆RB◆$$
+$$\mathrm{XED}_{AB} = \frac{\%\Delta Q_A}{\%\Delta P_B}$$
 
 | XED     | Relationship | Example            |
 | ------- | ------------ | ------------------ |
@@ -267,7 +267,7 @@ The _magnitude_ of XED indicates the closeness of the relationship — relevant 
 
 ### 4.7 Price Elasticity of Supply (PES)
 
-$$\mathrm{PES} = \frac◆LB◆\%\Delta Q_s◆RB◆◆LB◆\%\Delta P◆RB◆ = \frac◆LB◆\Delta Q_s / Q_s◆RB◆◆LB◆\Delta P / P◆RB◆$$
+$$\mathrm{PES} = \frac{\%\Delta Q_s}{\%\Delta P} = \frac{\Delta Q_s / Q_s}{\Delta P / P}$$
 
 **Determinants of PES:**
 
@@ -318,7 +318,7 @@ Where $P_s(Q)$ is the inverse supply function.
 
 :::info Board-Specific Note Edexcel (9EC0) emphasises elasticity calculations using the midpoint
 (arc elasticity) formula:
-$\mathrm{PED} = \frac◆LB◆\Delta Q◆RB◆◆LB◆\Delta P◆RB◆ \times \frac{(P_1 + P_2)/2}{(Q_1 + Q_2)/2}$.
+$\mathrm{PED} = \frac{\Delta Q}{\Delta P} \times \frac{(P_1 + P_2)/2}{(Q_1 + Q_2)/2}$.
 CIE Uses the point elasticity formula. Check your board's preference.
 
 ## 7. Problem Set
@@ -398,7 +398,7 @@ Predict the new attendance. Is this assumption realistic?
 
 <details>
 <summary>Hint</summary>
-PED $= \frac{-100/450}{2/9} = \frac{-0.222}{0.222} = -1$ (unit elastic, using midpoints). If PED remains $-1$: $\frac◆LB◆\%\Delta Q◆RB◆◆LB◆\%\Delta P◆RB◆ = -1$. Price rises from 10 to 12 = 20%. So quantity falls by 20%: $Q = 400 \times 0.8 = 320$. The assumption is unrealistic because PED varies along a linear demand curve.
+PED $= \frac{-100/450}{2/9} = \frac{-0.222}{0.222} = -1$ (unit elastic, using midpoints). If PED remains $-1$: $\frac{\%\Delta Q}{\%\Delta P} = -1$. Price rises from 10 to 12 = 20%. So quantity falls by 20%: $Q = 400 \times 0.8 = 320$. The assumption is unrealistic because PED varies along a linear demand curve.
 </details>
 
 **Problem 10.** The government is considering imposing a tax on cigarettes. Using demand and supply
@@ -417,7 +417,7 @@ $P_A = 20$$P_B = 10$.
 
 <details>
 <summary>Hint</summary>
-$\mathrm{XED}_{BA} = \frac◆LB◆\partial Q_B / \partial P_A \times P_A◆RB◆◆LB◆Q_B◆RB◆$. $\partial Q_B / \partial P_A = 1$. At $P_A = 20$$P_B = 10$: $Q_B = 80 - 20 + 20 = 80$. XED $= 1 \times 20/80 = 0.25$. Positive, so $A$ and $B$ are weak substitutes.
+$\mathrm{XED}_{BA} = \frac{\partial Q_B / \partial P_A \times P_A}{Q_B}$. $\partial Q_B / \partial P_A = 1$. At $P_A = 20$$P_B = 10$: $Q_B = 80 - 20 + 20 = 80$. XED $= 1 \times 20/80 = 0.25$. Positive, so $A$ and $B$ are weak substitutes.
 </details>
 
 **Problem 12.** Evaluate the usefulness of elasticity concepts for government policymakers. In your
@@ -509,7 +509,7 @@ Increase or decrease depending on the choke price and the extent of the shortage
 The distribution of a tax burden between consumers and producers depends on the **relative price
 Elasticities** of demand and supply:
 
-$$\frac◆LB◆\mathrm{Burden on consumers}◆RB◆◆LB◆\mathrm{Burden on producers}◆RB◆ = \frac◆LB◆|\mathrm{PES}|◆RB◆◆LB◆|\mathrm{PED}|◆RB◆$$
+$$\frac{\mathrm{Burden on consumers}}{\mathrm{Burden on producers}} = \frac{|\mathrm{PES}|}{|\mathrm{PED}|}$$
 
 The more inelastic side bears a greater share of the tax burden.
 

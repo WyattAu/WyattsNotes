@@ -78,7 +78,7 @@ Radiation below which no photoelectrons are emitted from a metal surface, regard
 The threshold frequency $f_0$ is the minimum frequency for photoemission. At this frequency,
 $E_{k,\max} = 0$:
 
-$$hf_0 = \phi \implies \boxed{f_0 = \frac◆LB◆\phi◆RB◆◆LB◆h◆RB◆}$$
+$$hf_0 = \phi \implies \boxed{f_0 = \frac{\phi}{h}}$$
 
 The threshold wavelength: $\lambda_0 = c/f_0 = hc/\phi$.
 
@@ -135,14 +135,14 @@ Accelerated through a potential difference of one volt: $1\,\mathrm{eV} = 1.60 \
 
 The energy levels of hydrogen are given by the **Bohr model**:
 
-$$E_n = -\frac◆LB◆13.6\,\mathrm{eV}◆RB◆◆LB◆n^2◆RB◆, \qquad n = 1, 2, 3, \ldots$$
+$$E_n = -\frac{13.6\,\mathrm{eV}}{n^2}, \qquad n = 1, 2, 3, \ldots$$
 
 The Lyman series (UV): transitions to $n = 1$. The Balmer series (visible): transitions to $n = 2$.
 The Paschen series (IR): transitions to $n = 3$.
 
 **Wavelength of emitted photon:**
 
-$$\frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆ = R\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)$$
+$$\frac{1}{\lambda} = R\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)$$
 
 Where $R = 1.097 \times 10^7$ m$^{-1}$ is the Rydberg constant.
 
@@ -201,11 +201,11 @@ Atomic spacing, so diffraction is observable.
 
 For an electron accelerated through p.d. $V$:
 
-$$eV = \frac{1}{2}mv^2 \implies v = \sqrt◆LB◆\frac{2eV}{m}◆RB◆$$
+$$eV = \frac{1}{2}mv^2 \implies v = \sqrt{\frac{2eV}{m}}$$
 
-$$\lambda = \frac{h}{mv} = \frac◆LB◆h◆RB◆◆LB◆\sqrt{2meV}◆RB◆$$
+$$\lambda = \frac{h}{mv} = \frac{h}{\sqrt{2meV}}$$
 
-Numerically: $\lambda = \sqrt◆LB◆\frac{1.505 \times 10^{-18}}{V}◆RB◆$ m (where $V$ is in volts).
+Numerically: $\lambda = \sqrt{\frac{1.505 \times 10^{-18}}{V}}$ m (where $V$ is in volts).
 
 For $V = 100$ V: $\lambda = 1.23 \times 10^{-10}$ m $= 0.123$ nm.
 
@@ -274,7 +274,7 @@ Reality at the quantum level.
 **Theorem (Heisenberg, 1927).** For any quantum particle, the product of the uncertainty in position
 $\Delta x$ and the uncertainty in momentum $\Delta p$ satisfies:
 
-$$\boxed{\Delta x \cdot \Delta p \geq \frac◆LB◆\hbar◆RB◆◆LB◆2◆RB◆}$$
+$$\boxed{\Delta x \cdot \Delta p \geq \frac{\hbar}{2}}$$
 
 Where $\hbar = h/(2\pi) = 1.055 \times 10^{-34}$ J s is the reduced Planck constant.
 
@@ -300,9 +300,9 @@ $$\Delta x \cdot \Delta k = \frac{1}{2}$$
 
 3. Since $p = \hbar k$We have $\Delta p = \hbar \, \Delta k$. Substituting:
 
-$$\Delta x \cdot \frac◆LB◆\Delta p◆RB◆◆LB◆\hbar◆RB◆ = \frac{1}{2}$$
+$$\Delta x \cdot \frac{\Delta p}{\hbar} = \frac{1}{2}$$
 
-$$\boxed{\Delta x \cdot \Delta p = \frac◆LB◆\hbar◆RB◆◆LB◆2◆RB◆}$$
+$$\boxed{\Delta x \cdot \Delta p = \frac{\hbar}{2}}$$
 
 This is the minimum uncertainty product. For non-Gaussian wave packets, the product is larger, hence
 The general inequality $\Delta x \cdot \Delta p \geq \hbar/2$.
@@ -320,11 +320,11 @@ well-defined Position and a well-defined momentum.
 **Electrons cannot "fall into" the nucleus.** If an electron were confined to a nucleus
 ($\Delta x \sim 5 \times 10^{-15}$ m), the minimum momentum uncertainty would be:
 
-$$\Delta p \geq \frac◆LB◆\hbar◆RB◆◆LB◆2\Delta x◆RB◆ = \frac◆LB◆1.055 \times 10^{-34}◆RB◆◆LB◆2 \times 5 \times 10^{-15}◆RB◆ = 1.06 \times 10^{-20}\,\mathrm{kg m s}^{-1}$$
+$$\Delta p \geq \frac{\hbar}{2\Delta x} = \frac{1.055 \times 10^{-34}}{2 \times 5 \times 10^{-15}} = 1.06 \times 10^{-20}\,\mathrm{kg m s}^{-1}$$
 
 The corresponding kinetic energy (using $E_k = p^2/2m$ and taking $p \approx \Delta p$):
 
-$$E_k \geq \frac◆LB◆(1.06 \times 10^{-20})^2◆RB◆◆LB◆2 \times 9.11 \times 10^{-31}◆RB◆ = 6.1 \times 10^{-11}\,\mathrm{J} \approx 382\,\mathrm{MeV}$$
+$$E_k \geq \frac{(1.06 \times 10^{-20})^2}{2 \times 9.11 \times 10^{-31}} = 6.1 \times 10^{-11}\,\mathrm{J} \approx 382\,\mathrm{MeV}$$
 
 This is orders of magnitude larger than the binding energy of the atom ($\sim 13.6$ eV). The
 Confinement energy alone would far exceed any attractive potential, so the electron cannot be
@@ -345,15 +345,15 @@ $5 \times 10^{-15}$ m.
 1. Position uncertainty: $\Delta x \approx 5 \times 10^{-15}$ m.
 2. From the uncertainty principle:
 
-$$\Delta p \geq \frac◆LB◆\hbar◆RB◆◆LB◆2\Delta x◆RB◆ = \frac◆LB◆1.055 \times 10^{-34}◆RB◆◆LB◆2 \times 5 \times 10^{-15}◆RB◆ = 1.06 \times 10^{-20}\,\mathrm{kg m s}^{-1}$$
+$$\Delta p \geq \frac{\hbar}{2\Delta x} = \frac{1.055 \times 10^{-34}}{2 \times 5 \times 10^{-15}} = 1.06 \times 10^{-20}\,\mathrm{kg m s}^{-1}$$
 
 3. Minimum kinetic energy (using $E_k = (\Delta p)^2 / 2m_e$):
 
-$$E_k \geq \frac◆LB◆(1.06 \times 10^{-20})^2◆RB◆◆LB◆2 \times 9.11 \times 10^{-31}◆RB◆ = \frac◆LB◆1.12 \times 10^{-40}◆RB◆◆LB◆1.82 \times 10^{-30}◆RB◆ = 6.15 \times 10^{-11}\,\mathrm{J}$$
+$$E_k \geq \frac{(1.06 \times 10^{-20})^2}{2 \times 9.11 \times 10^{-31}} = \frac{1.12 \times 10^{-40}}{1.82 \times 10^{-30}} = 6.15 \times 10^{-11}\,\mathrm{J}$$
 
 4. Converting to eV:
 
-$$E_k \geq \frac◆LB◆6.15 \times 10^{-11}◆RB◆◆LB◆1.60 \times 10^{-19}◆RB◆ = 3.84 \times 10^8\,\mathrm{eV} = 384\,\mathrm{MeV}$$
+$$E_k \geq \frac{6.15 \times 10^{-11}}{1.60 \times 10^{-19}} = 3.84 \times 10^8\,\mathrm{eV} = 384\,\mathrm{MeV}$$
 
 This is $\sim 28$ million times the ground-state binding energy of hydrogen (13.6 eV), confirming
 That the electron cannot exist inside the nucleus.
@@ -391,15 +391,15 @@ Where $k = 1/(4\pi\varepsilon_0)$.
 
 3. Substituting into the force balance:
 
-$$\frac{k e^2}{r^2} = \frac{m_e}{r}\left(\frac◆LB◆n\hbar◆RB◆◆LB◆m_e r◆RB◆\right)^2 = \frac◆LB◆n^2 \hbar^2◆RB◆◆LB◆m_e r^3◆RB◆$$
+$$\frac{k e^2}{r^2} = \frac{m_e}{r}\left(\frac{n\hbar}{m_e r}\right)^2 = \frac{n^2 \hbar^2}{m_e r^3}$$
 
 4. Solving for $r$:
 
-$$r^3 = \frac◆LB◆n^2 \hbar^2◆RB◆◆LB◆m_e k e^2◆RB◆ \cdot r^2 \implies \boxed{r_n = \frac◆LB◆n^2 \hbar^2◆RB◆◆LB◆m_e k e^2◆RB◆ = \frac{n^2}{Z} a_0}$$
+$$r^3 = \frac{n^2 \hbar^2}{m_e k e^2} \cdot r^2 \implies \boxed{r_n = \frac{n^2 \hbar^2}{m_e k e^2} = \frac{n^2}{Z} a_0}$$
 
 Where the **Bohr radius** is:
 
-$$\boxed{a_0 = \frac◆LB◆\hbar^2◆RB◆◆LB◆m_e k e^2◆RB◆ = 0.0529\,\mathrm{nm}}$$
+$$\boxed{a_0 = \frac{\hbar^2}{m_e k e^2} = 0.0529\,\mathrm{nm}}$$
 
 For hydrogen ($Z = 1$), the ground state ($n = 1$) orbit has $r_1 = a_0 = 0.0529$ nm.
 
@@ -423,9 +423,9 @@ $$E_n = E_k + E_p = \frac{k e^2}{2r_n} - \frac{k e^2}{r_n} = -\frac{k e^2}{2r_n}
 
 4. Substituting $r_n = n^2\hbar^2/(m_e k e^2)$:
 
-$$E_n = -\frac{k e^2}{2} \cdot \frac◆LB◆m_e k e^2◆RB◆◆LB◆n^2 \hbar^2◆RB◆ = -\frac◆LB◆m_e k^2 e^4◆RB◆◆LB◆2\hbar^2 n^2◆RB◆$$
+$$E_n = -\frac{k e^2}{2} \cdot \frac{m_e k e^2}{n^2 \hbar^2} = -\frac{m_e k^2 e^4}{2\hbar^2 n^2}$$
 
-$$\boxed{E_n = -\frac◆LB◆Z^2 \cdot 13.6\,\mathrm{eV}◆RB◆◆LB◆n^2◆RB◆}$$
+$$\boxed{E_n = -\frac{Z^2 \cdot 13.6\,\mathrm{eV}}{n^2}}$$
 
 For hydrogen ($Z = 1$): $E_1 = -13.6$ eV, $E_2 = -3.4$ eV, $E_3 = -1.51$ eV, $E_4 = -0.85$ eV.
 
@@ -435,19 +435,19 @@ $\square$
 
 1. For a transition from $n_i$ to $n_f$ ($n_i \gt n_f$):
 
-$$hf = E_{n_i} - E_{n_f} = \frac◆LB◆m_e k^2 e^4◆RB◆◆LB◆2\hbar^2◆RB◆\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)$$
+$$hf = E_{n_i} - E_{n_f} = \frac{m_e k^2 e^4}{2\hbar^2}\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)$$
 
 2. Since $f = c/\lambda$:
 
-$$\frac◆LB◆hc◆RB◆◆LB◆\lambda◆RB◆ = \frac◆LB◆m_e k^2 e^4◆RB◆◆LB◆2\hbar^2◆RB◆\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)$$
+$$\frac{hc}{\lambda} = \frac{m_e k^2 e^4}{2\hbar^2}\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)$$
 
 3. Rearranging:
 
-$$\frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆ = \frac◆LB◆m_e k^2 e^4◆RB◆◆LB◆2\hbar^2 hc◆RB◆\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right) = \frac◆LB◆m_e k^2 e^4◆RB◆◆LB◆4\pi c \hbar^3◆RB◆\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)$$
+$$\frac{1}{\lambda} = \frac{m_e k^2 e^4}{2\hbar^2 hc}\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right) = \frac{m_e k^2 e^4}{4\pi c \hbar^3}\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)$$
 
 4. Identifying the Rydberg constant:
 
-$$\boxed{R = \frac◆LB◆m_e k^2 e^4◆RB◆◆LB◆4\pi c \hbar^3◆RB◆ = 1.097 \times 10^7\,\mathrm{m}^{-1}}$$
+$$\boxed{R = \frac{m_e k^2 e^4}{4\pi c \hbar^3} = 1.097 \times 10^7\,\mathrm{m}^{-1}}$$
 
 $\square$
 
@@ -496,7 +496,7 @@ Rises again, drops at $V \approx 9.8$ V, again at $V \approx 14.7$ V, and so on.
 The spacing of $4.9$ V between successive dips directly measures the energy gap to the first excited
 State of Hg. The emitted photon has wavelength:
 
-$$\lambda = \frac◆LB◆hc◆RB◆◆LB◆\Delta E◆RB◆ = \frac◆LB◆1240\,\mathrm{eV nm}◆RB◆◆LB◆4.9\,\mathrm{eV}◆RB◆ = 253\,\mathrm{nm}$$
+$$\lambda = \frac{hc}{\Delta E} = \frac{1240\,\mathrm{eV nm}}{4.9\,\mathrm{eV}} = 253\,\mathrm{nm}$$
 
 Which is in the UV — consistent with the observed UV emission from the Hg vapour.
 
@@ -544,11 +544,11 @@ $$\psi(0) = 0 \quad \mathrm{and} \quad \psi(L) = 0$$
 1. Inside the box ($0 \lt x \lt L$), the time-independent Schrodinger equation for a free particle
    is:
 
-$$-\frac◆LB◆\hbar^2◆RB◆◆LB◆2m◆RB◆\frac◆LB◆d^2\psi◆RB◆◆LB◆dx^2◆RB◆ = E\psi$$
+$$-\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2} = E\psi$$
 
 2. Rearranging:
 
-$$\frac◆LB◆d^2\psi◆RB◆◆LB◆dx^2◆RB◆ + \frac◆LB◆2mE◆RB◆◆LB◆\hbar^2◆RB◆\psi = 0$$
+$$\frac{d^2\psi}{dx^2} + \frac{2mE}{\hbar^2}\psi = 0$$
 
 3. This is the simple harmonic oscillator equation with $k^2 = 2mE/\hbar^2$. The general solution
    is:
@@ -576,15 +576,15 @@ Function as positive $n$.
 
 6. Therefore:
 
-$$k_n = \frac◆LB◆n\pi◆RB◆◆LB◆L◆RB◆$$
+$$k_n = \frac{n\pi}{L}$$
 
 7. The energy is quantised:
 
-$$E_n = \frac◆LB◆\hbar^2 k_n^2◆RB◆◆LB◆2m◆RB◆ = \frac◆LB◆\hbar^2 n^2 \pi^2◆RB◆◆LB◆2mL^2◆RB◆ = \boxed{\frac{n^2 h^2}{8mL^2}}$$
+$$E_n = \frac{\hbar^2 k_n^2}{2m} = \frac{\hbar^2 n^2 \pi^2}{2mL^2} = \boxed{\frac{n^2 h^2}{8mL^2}}$$
 
 8. The normalised wave function (using $\int_0^L |\psi|^2 dx = 1$):
 
-$$\boxed{\psi_n(x) = \sqrt◆LB◆\frac{2}{L}◆RB◆\sin\left(\frac◆LB◆n\pi x◆RB◆◆LB◆L◆RB◆\right)}$$
+$$\boxed{\psi_n(x) = \sqrt{\frac{2}{L}}\sin\left(\frac{n\pi x}{L}\right)}$$
 
 $\square$
 
@@ -636,17 +636,17 @@ integrate over an interval.
 The resolution of any imaging system — the minimum distance between two points that can be
 Distinguished — is limited by diffraction. The **Abbe criterion** states:
 
-$$\boxed{\Delta x \approx \frac◆LB◆\lambda◆RB◆◆LB◆2\sin\theta◆RB◆}$$
+$$\boxed{\Delta x \approx \frac{\lambda}{2\sin\theta}}$$
 
 Where $\lambda$ is the wavelength of the probing radiation and $\theta$ is the half-angle subtended
 By the objective lens. For the best possible resolution (large $\theta$), this simplifies to:
 
-$$\Delta x \sim \frac◆LB◆\lambda◆RB◆◆LB◆2◆RB◆$$
+$$\Delta x \sim \frac{\lambda}{2}$$
 
 **The key advantage of electron microscopes.** The resolving power is directly proportional to
 Wavelength. Electrons can be given very short wavelengths by accelerating them to high energies:
 
-$$\lambda_e = \frac◆LB◆h◆RB◆◆LB◆\sqrt{2m_e eV}◆RB◆$$
+$$\lambda_e = \frac{h}{\sqrt{2m_e eV}}$$
 
 For $V = 100$ kV: $\lambda_e = 3.7 \times 10^{-12}$ m $= 0.0037$ nm.
 
@@ -667,15 +667,15 @@ Smaller, so the theoretical resolution is $\sim 10^5$ times better.
 
 To achieve a resolution of $\Delta x$We need $\lambda \lesssim 2\Delta x$:
 
-$$\frac◆LB◆h◆RB◆◆LB◆\sqrt{2m_e eV}◆RB◆ \leq 2\Delta x$$
+$$\frac{h}{\sqrt{2m_e eV}} \leq 2\Delta x$$
 
 Solving for $V$:
 
-$$\sqrt{2m_e eV} \geq \frac◆LB◆h◆RB◆◆LB◆2\Delta x◆RB◆$$
+$$\sqrt{2m_e eV} \geq \frac{h}{2\Delta x}$$
 
-$$2m_e eV \geq \frac◆LB◆h^2◆RB◆◆LB◆4(\Delta x)^2◆RB◆$$
+$$2m_e eV \geq \frac{h^2}{4(\Delta x)^2}$$
 
-$$\boxed{V \geq \frac◆LB◆h^2◆RB◆◆LB◆8m_e e(\Delta x)^2◆RB◆}$$
+$$\boxed{V \geq \frac{h^2}{8m_e e(\Delta x)^2}}$$
 
 This gives the minimum accelerating voltage needed to achieve a target resolution, neglecting lens
 Aberrations (which in practice further limit resolution).
@@ -761,7 +761,7 @@ Calculate the de Broglie wavelength of a neutron moving with kinetic energy $0.0
 Neutron).
 
 **Answer.** $E_k = 0.025 \times 1.60 \times 10^{-19} = 4.0 \times 10^{-21}$ J.
-$v = \sqrt{2E_k/m_n} = \sqrt◆LB◆2 \times 4.0 \times 10^{-21} / 1.675 \times 10^{-27}◆RB◆ = \sqrt◆LB◆4.78 \times 10^6◆RB◆ = 2186$
+$v = \sqrt{2E_k/m_n} = \sqrt{2 \times 4.0 \times 10^{-21} / 1.675 \times 10^{-27}} = \sqrt{4.78 \times 10^6} = 2186$
 M s$^{-1}$.
 
 $\lambda = h/(m_n v) = 6.63 \times 10^{-34} / (1.675 \times 10^{-27} \times 2186) = 1.82 \times 10^{-10}$
@@ -793,7 +793,7 @@ An electron is accelerated through a potential difference of 500 V. Calculate it
 Wavelength.
 
 **Answer.**
-$\lambda = \frac◆LB◆h◆RB◆◆LB◆\sqrt{2m_e eV}◆RB◆ = \frac◆LB◆6.63 \times 10^{-34}◆RB◆◆LB◆\sqrt{2 \times 9.11 \times 10^{-31} \times 1.60 \times 10^{-19} \times 500}◆RB◆ = \frac◆LB◆6.63 \times 10^{-34}◆RB◆◆LB◆\sqrt{1.458 \times 10^{-46}}◆RB◆ = \frac◆LB◆6.63 \times 10^{-34}◆RB◆◆LB◆1.208 \times 10^{-23}◆RB◆ = 5.49 \times 10^{-11}$
+$\lambda = \frac{h}{\sqrt{2m_e eV}} = \frac{6.63 \times 10^{-34}}{\sqrt{2 \times 9.11 \times 10^{-31} \times 1.60 \times 10^{-19} \times 500}} = \frac{6.63 \times 10^{-34}}{\sqrt{1.458 \times 10^{-46}}} = \frac{6.63 \times 10^{-34}}{1.208 \times 10^{-23}} = 5.49 \times 10^{-11}$
 M $= 0.0549$ nm.
 
 <b>If you get this wrong, revise:</b>
@@ -840,11 +840,11 @@ Heisenberg uncertainty principle to estimate the minimum uncertainty in its velo
 1. Position uncertainty: $\Delta x \approx 1.0 \times 10^{-10}$ m.
 2. From $\Delta x \cdot \Delta p \geq \hbar/2$:
 
-$$\Delta p \geq \frac◆LB◆1.055 \times 10^{-34}◆RB◆◆LB◆2 \times 1.0 \times 10^{-10}◆RB◆ = 5.28 \times 10^{-25}\,\mathrm{kg m s}^{-1}$$
+$$\Delta p \geq \frac{1.055 \times 10^{-34}}{2 \times 1.0 \times 10^{-10}} = 5.28 \times 10^{-25}\,\mathrm{kg m s}^{-1}$$
 
 3. Since $\Delta p = m_e \Delta v$:
 
-$$\Delta v \geq \frac◆LB◆5.28 \times 10^{-25}◆RB◆◆LB◆9.11 \times 10^{-31}◆RB◆ = 5.80 \times 10^5\,\mathrm{m s}^{-1}$$
+$$\Delta v \geq \frac{5.28 \times 10^{-25}}{9.11 \times 10^{-31}} = 5.80 \times 10^5\,\mathrm{m s}^{-1}$$
 
 The minimum uncertainty in velocity is $5.8 \times 10^5$ m s$^{-1}$.
 
@@ -867,17 +867,17 @@ Balance, $ke^2/r^2 = m_e v^2/r$:
 2. From quantisation: $v = n\hbar/(m_e r)$.
 3. Substituting into the force balance:
 
-$$m_e \frac◆LB◆n^2\hbar^2◆RB◆◆LB◆m_e^2 r^2◆RB◆ = \frac{ke^2}{r} \implies \frac◆LB◆n^2\hbar^2◆RB◆◆LB◆m_e r◆RB◆ = ke^2$$
+$$m_e \frac{n^2\hbar^2}{m_e^2 r^2} = \frac{ke^2}{r} \implies \frac{n^2\hbar^2}{m_e r} = ke^2$$
 
-$$r_n = \frac◆LB◆n^2\hbar^2◆RB◆◆LB◆m_e ke^2◆RB◆$$
+$$r_n = \frac{n^2\hbar^2}{m_e ke^2}$$
 
 For $n = 1$The Bohr radius:
 
-$$a_0 = \frac◆LB◆\hbar^2◆RB◆◆LB◆m_e ke^2◆RB◆ = \frac◆LB◆(1.055 \times 10^{-34})^2◆RB◆◆LB◆9.11 \times 10^{-31} \times 8.99 \times 10^9 \times (1.60 \times 10^{-19})^2◆RB◆ = 5.29 \times 10^{-11}\,\mathrm{m} = 0.0529\,\mathrm{nm}$$
+$$a_0 = \frac{\hbar^2}{m_e ke^2} = \frac{(1.055 \times 10^{-34})^2}{9.11 \times 10^{-31} \times 8.99 \times 10^9 \times (1.60 \times 10^{-19})^2} = 5.29 \times 10^{-11}\,\mathrm{m} = 0.0529\,\mathrm{nm}$$
 
 4. Total energy $E_n = -ke^2/(2r_n)$. For $n = 1$:
 
-$$E_1 = -\frac{ke^2}{2a_0} = -\frac◆LB◆(8.99 \times 10^9)(1.60 \times 10^{-19})^2◆RB◆◆LB◆2 \times 5.29 \times 10^{-11}◆RB◆ = -2.18 \times 10^{-18}\,\mathrm{J} = -13.6\,\mathrm{eV}$$
+$$E_1 = -\frac{ke^2}{2a_0} = -\frac{(8.99 \times 10^9)(1.60 \times 10^{-19})^2}{2 \times 5.29 \times 10^{-11}} = -2.18 \times 10^{-18}\,\mathrm{J} = -13.6\,\mathrm{eV}$$
 
 <b>If you get this wrong, revise:</b> [Derivation of the Bohr Model](#derivation-of-the-bohr-model)
 
@@ -897,7 +897,7 @@ De-excites.
 
 2. Wavelength of the emitted photon:
 
-$$\lambda = \frac◆LB◆hc◆RB◆◆LB◆\Delta E◆RB◆ = \frac◆LB◆1240\,\mathrm{eV nm}◆RB◆◆LB◆4.9\,\mathrm{eV}◆RB◆ = 253\,\mathrm{nm}$$
+$$\lambda = \frac{hc}{\Delta E} = \frac{1240\,\mathrm{eV nm}}{4.9\,\mathrm{eV}} = 253\,\mathrm{nm}$$
 
 This is in the ultraviolet region, consistent with the observed UV emission.
 
@@ -914,7 +914,7 @@ The energies of the ground state ($n = 1$) and the first three excited states ($
 
 Using $E_n = n^2 h^2 / (8m_e L^2)$:
 
-$$E_1 = \frac◆LB◆(6.63 \times 10^{-34})^2◆RB◆◆LB◆8 \times 9.11 \times 10^{-31} \times (1.0 \times 10^{-9})^2◆RB◆ = \frac◆LB◆4.396 \times 10^{-67}◆RB◆◆LB◆7.288 \times 10^{-48}◆RB◆ = 6.03 \times 10^{-20}\,\mathrm{J} = 0.377\,\mathrm{eV}$$
+$$E_1 = \frac{(6.63 \times 10^{-34})^2}{8 \times 9.11 \times 10^{-31} \times (1.0 \times 10^{-9})^2} = \frac{4.396 \times 10^{-67}}{7.288 \times 10^{-48}} = 6.03 \times 10^{-20}\,\mathrm{J} = 0.377\,\mathrm{eV}$$
 
 Since $E_n \propto n^2$:
 
@@ -937,9 +937,9 @@ Calculate the shortest wavelength in the Lyman series of hydrogen. What type of 
 The shortest wavelength in the Lyman series corresponds to the transition from $n = \infty$ to
 $n = 1$ (the series limit):
 
-$$\frac◆LB◆1◆RB◆◆LB◆\lambda_{\min}◆RB◆ = R\left(\frac{1}{1^2} - \frac◆LB◆1◆RB◆◆LB◆\infty^2◆RB◆\right) = R = 1.097 \times 10^7\,\mathrm{m}^{-1}$$
+$$\frac{1}{\lambda_{\min}} = R\left(\frac{1}{1^2} - \frac{1}{\infty^2}\right) = R = 1.097 \times 10^7\,\mathrm{m}^{-1}$$
 
-$$\lambda_{\min} = \frac{1}{R} = \frac◆LB◆1◆RB◆◆LB◆1.097 \times 10^7◆RB◆ = 9.12 \times 10^{-8}\,\mathrm{m} = 91.2\,\mathrm{nm}$$
+$$\lambda_{\min} = \frac{1}{R} = \frac{1}{1.097 \times 10^7} = 9.12 \times 10^{-8}\,\mathrm{m} = 91.2\,\mathrm{nm}$$
 
 This is in the far ultraviolet region, well below the visible range ($380$--$700$ nm).
 
@@ -956,15 +956,15 @@ Calculate the probability of finding the electron in the first quarter of the we
 
 For $n = 2$: $\psi_2(x) = \sqrt{2/L}\sin(2\pi x/L)$.
 
-$$P = \int_0^{L/4} |\psi_2(x)|^2\,dx = \frac{2}{L}\int_0^{L/4}\sin^2\left(\frac◆LB◆2\pi x◆RB◆◆LB◆L◆RB◆\right)dx$$
+$$P = \int_0^{L/4} |\psi_2(x)|^2\,dx = \frac{2}{L}\int_0^{L/4}\sin^2\left(\frac{2\pi x}{L}\right)dx$$
 
 Using $\sin^2\theta = (1 - \cos 2\theta)/2$:
 
-$$P = \frac{2}{L}\int_0^{L/4}\frac◆LB◆1 - \cos(4\pi x/L)◆RB◆◆LB◆2◆RB◆\,dx = \frac{1}{L}\left[x - \frac◆LB◆L◆RB◆◆LB◆4\pi◆RB◆\sin\left(\frac◆LB◆4\pi x◆RB◆◆LB◆L◆RB◆\right)\right]_0^{L/4}$$
+$$P = \frac{2}{L}\int_0^{L/4}\frac{1 - \cos(4\pi x/L)}{2}\,dx = \frac{1}{L}\left[x - \frac{L}{4\pi}\sin\left(\frac{4\pi x}{L}\right)\right]_0^{L/4}$$
 
 Evaluating at $x = L/4$:
 
-$$P = \frac{1}{L}\left[\frac{L}{4} - \frac◆LB◆L◆RB◆◆LB◆4\pi◆RB◆\sin(\pi)\right] = \frac{1}{L} \cdot \frac{L}{4} = \frac{1}{4}$$
+$$P = \frac{1}{L}\left[\frac{L}{4} - \frac{L}{4\pi}\sin(\pi)\right] = \frac{1}{L} \cdot \frac{L}{4} = \frac{1}{4}$$
 
 The probability is exactly $1/4$ (or $25\%$). This makes sense by symmetry: for $n = 2$The
 Probability density has two identical lobes, and the first quarter contains exactly half of the
@@ -986,11 +986,11 @@ $\lambda \leq 2\Delta x = 2 \times 0.1 \times 10^{-9} = 2.0 \times 10^{-10}$ m.
 
 Using $\lambda = h/\sqrt{2m_e eV}$:
 
-$$V = \frac◆LB◆h^2◆RB◆◆LB◆2m_e e \lambda^2◆RB◆ = \frac◆LB◆(6.63 \times 10^{-34})^2◆RB◆◆LB◆2 \times 9.11 \times 10^{-31} \times 1.60 \times 10^{-19} \times (2.0 \times 10^{-10})^2◆RB◆$$
+$$V = \frac{h^2}{2m_e e \lambda^2} = \frac{(6.63 \times 10^{-34})^2}{2 \times 9.11 \times 10^{-31} \times 1.60 \times 10^{-19} \times (2.0 \times 10^{-10})^2}$$
 
-$$V = \frac◆LB◆4.396 \times 10^{-67}◆RB◆◆LB◆2 \times 9.11 \times 10^{-31} \times 1.60 \times 10^{-19} \times 4.0 \times 10^{-20}◆RB◆$$
+$$V = \frac{4.396 \times 10^{-67}}{2 \times 9.11 \times 10^{-31} \times 1.60 \times 10^{-19} \times 4.0 \times 10^{-20}}$$
 
-$$V = \frac◆LB◆4.396 \times 10^{-67}◆RB◆◆LB◆1.167 \times 10^{-68}◆RB◆ = 37.7\,\mathrm{V}$$
+$$V = \frac{4.396 \times 10^{-67}}{1.167 \times 10^{-68}} = 37.7\,\mathrm{V}$$
 
 In practice, a much higher voltage ($\gt 100$ kV) is used because lens aberrations further limit the
 Resolution, but the diffraction-limited minimum is approximately $38$ V.
@@ -1008,7 +1008,7 @@ Experiment at $\sim 900$ K).
 
 **Answer.**
 
-$$\lambda = \frac{h}{mv} = \frac◆LB◆6.63 \times 10^{-34}◆RB◆◆LB◆1.20 \times 10^{-24} \times 220◆RB◆ = \frac◆LB◆6.63 \times 10^{-34}◆RB◆◆LB◆2.64 \times 10^{-22}◆RB◆ = 2.51 \times 10^{-12}\,\mathrm{m} = 0.00251\,\mathrm{nm}$$
+$$\lambda = \frac{h}{mv} = \frac{6.63 \times 10^{-34}}{1.20 \times 10^{-24} \times 220} = \frac{6.63 \times 10^{-34}}{2.64 \times 10^{-22}} = 2.51 \times 10^{-12}\,\mathrm{m} = 0.00251\,\mathrm{nm}$$
 
 This is comparable to the spacing between atoms in a crystal lattice. Remarkably, interference
 Patterns for C-60 have been observed experimentally (Arndt et al., 1999), confirming wave-particle

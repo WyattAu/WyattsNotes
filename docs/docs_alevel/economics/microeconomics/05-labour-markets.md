@@ -22,16 +22,16 @@ A profit-maximising firm hires labour up to the point where the **marginal reven
 
 $$MRP_L = MP_L \times MR$$
 
-Where $MP_L = \frac◆LB◆\partial Q◆RB◆◆LB◆\partial L◆RB◆$ is the marginal physical product of labour
-and $MR = \frac◆LB◆\partial TR◆RB◆◆LB◆\partial Q◆RB◆$ is marginal revenue.
+Where $MP_L = \frac{\partial Q}{\partial L}$ is the marginal physical product of labour
+and $MR = \frac{\partial TR}{\partial Q}$ is marginal revenue.
 
 **Proof.** The firm's profit as a function of labour input:
 
 $$\pi(L) = TR(Q(L)) - wL - FC$$
 
-$$\frac◆LB◆d\pi◆RB◆◆LB◆dL◆RB◆ = \frac{dTR}{dQ} \cdot \frac{dQ}{dL} - w = MR \cdot MP_L - w = MRP_L - w$$
+$$\frac{d\pi}{dL} = \frac{dTR}{dQ} \cdot \frac{dQ}{dL} - w = MR \cdot MP_L - w = MRP_L - w$$
 
-Setting $\frac◆LB◆d\pi◆RB◆◆LB◆dL◆RB◆ = 0$:
+Setting $\frac{d\pi}{dL} = 0$:
 
 $$MRP_L = w$$
 
@@ -54,7 +54,7 @@ The labour demand curve shifts when:
 
 ### 1.3 Elasticity of Demand for Labour
 
-$$\mathrm{PED}_L = \frac◆LB◆\%\Delta L◆RB◆◆LB◆\%\Delta w◆RB◆$$
+$$\mathrm{PED}_L = \frac{\%\Delta L}{\%\Delta w}$$
 
 **Determinants:**
 
@@ -92,7 +92,7 @@ Supply $\downarrow$.
 
 **Net effect:**
 
-$$\frac◆LB◆\partial L◆RB◆◆LB◆\partial w◆RB◆ = \underbrace◆LB◆\mathrm{Substitution effect}◆RB◆_{> 0} + \underbrace◆LB◆\mathrm{Income effect}◆RB◆_{< 0}$$
+$$\frac{\partial L}{\partial w} = \underbrace{\mathrm{Substitution effect}}_{> 0} + \underbrace{\mathrm{Income effect}}_{< 0}$$
 
 - At low wages: substitution effect dominates $\Rightarrow$ labour supply slopes upward
 - At high wages: income effect dominates $\Rightarrow$ labour supply bends backward
@@ -572,7 +572,7 @@ Forces that perpetuate unequal outcomes:
 
 The **Oaxaca-Blinder decomposition** (1973) separates the gender (or racial) pay gap into two parts:
 
-$$\bar{w}_m - \bar{w}_f = \underbrace◆LB◆\bar{X}_m \hat{\beta}_m - \bar{X}_f \hat{\beta}_m◆RB◆_{\mathrm{Explained (characteristics)}} + \underbrace◆LB◆\bar{X}_f \hat{\beta}_m - \bar{X}_f \hat{\beta}_f◆RB◆_{\mathrm{Unexplained (discrimination)}}$$
+$$\bar{w}_m - \bar{w}_f = \underbrace{\bar{X}_m \hat{\beta}_m - \bar{X}_f \hat{\beta}_m}_{\mathrm{Explained (characteristics)}} + \underbrace{\bar{X}_f \hat{\beta}_m - \bar{X}_f \hat{\beta}_f}_{\mathrm{Unexplained (discrimination)}}$$
 
 The "explained" portion captures differences in observable characteristics (education, experience,
 Occupation, hours). The "unexplained" portion is attributed to discrimination (different returns to
@@ -1109,7 +1109,7 @@ $28\,000 \times 1.03^9 = 36\,598$. Year 22 (age 42): $28\,000 \times 1.03^{21} =
 (age 64): $28\,000 \times 1.03^{43} = 102\,844$.
 
 Total earnings (approximate, using average): average salary over 44 years
-$\approx 28\,000 \times \frac◆LB◆1.03^{44} - 1◆RB◆◆LB◆44 \times \ln(1.03)◆RB◆$.
+$\approx 28\,000 \times \frac{1.03^{44} - 1}{44 \times \ln(1.03)}$.
 
 Using the sum of a geometric series:
 $\sum_{t=0}^{43} 28\,000 \times 1.03^t = 28\,000 \times \frac{1.03^{44} - 1}{0.03} = 28\,000 \times \frac{3.607 - 1}{0.03} = 28\,000 \times 86.9 = 2\,433\,200$.
@@ -1124,7 +1124,7 @@ growth). Total cost $= 30\,000 + 57\,680 = 87\,680$.
 **Net benefit:** $3\,314\,500 - 2\,433\,200 - 87\,680 = 793\,620$.
 
 **Internal rate of return:** The IRR is the discount rate $r$ that makes NPV = 0:
-$$NPV = -30\,000 - \frac{28\,000}{1+r} - \frac{28\,840}{(1+r)^2} + \sum_{t=3}^{44} \frac◆LB◆35\,000 \times 1.035^{t-3}◆RB◆◆LB◆(1+r)^t◆RB◆ = 0$$
+$$NPV = -30\,000 - \frac{28\,000}{1+r} - \frac{28\,840}{(1+r)^2} + \sum_{t=3}^{44} \frac{35\,000 \times 1.035^{t-3}}{(1+r)^t} = 0$$
 
 At $r = 10\%$: the NPV is approximately positive. At $r = 15\%$: the NPV is approximately negative.
 The IRR is approximately 12-13%, which is well above the typical student loan interest rate (3-7%),

@@ -25,14 +25,14 @@ Explore the simulation above to develop intuition for this topic.
 **Coulomb's Law.** The electrostatic force between two point charges $q_1$ and $q_2$ separated by
 Distance $r$ in vacuum is:
 
-$$\boxed{F = \frac◆LB◆q_1 q_2◆RB◆◆LB◆4\pi\varepsilon_0 r^2◆RB◆}$$
+$$\boxed{F = \frac{q_1 q_2}{4\pi\varepsilon_0 r^2}}$$
 
 Where $\varepsilon_0 = 8.85 \times 10^{-12}$ F m$^{-1}$ is the **permittivity of free space**.
 
 The force is **attractive** for opposite charges and **repulsive** for like charges. It acts along
 The line joining the charges.
 
-**Coulomb's constant:** $k = \frac◆LB◆1◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆ = 8.99 \times 10^9$ N m$^2$
+**Coulomb's constant:** $k = \frac{1}{4\pi\varepsilon_0} = 8.99 \times 10^9$ N m$^2$
 C$^{-2}$.
 
 ### Comparison with Gravity
@@ -90,18 +90,18 @@ comparison is Commonly tested (Paper 2). CIE: Gravitational--electrostatic analo
 **Definition.** The **electric field strength** $\mathbf{E}$ at a point is the force per unit
 Positive charge placed at that point:
 
-$$\mathbf{E} = \frac◆LB◆\mathbf{F}◆RB◆◆LB◆q◆RB◆$$
+$$\mathbf{E} = \frac{\mathbf{F}}{q}$$
 
 SI units: N C$^{-1}$ (equivalent to V m$^{-1}$).
 
 ### Field of a Point Charge
 
-$$\boxed{E = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0 r^2◆RB◆}$$
+$$\boxed{E = \frac{Q}{4\pi\varepsilon_0 r^2}}$$
 
 **Derivation.** Place a test charge $q$ at distance $r$ from $Q$. By Coulomb's law:
-$F = \frac◆LB◆Qq◆RB◆◆LB◆4\pi\varepsilon_0 r^2◆RB◆$. Therefore:
+$F = \frac{Qq}{4\pi\varepsilon_0 r^2}$. Therefore:
 
-$$E = \frac{F}{q} = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0 r^2◆RB◆$$
+$$E = \frac{F}{q} = \frac{Q}{4\pi\varepsilon_0 r^2}$$
 
 $\square$
 
@@ -122,7 +122,7 @@ $W = Fd = qEd$. But also $W = qV$. Therefore $qEd = qV$Giving $E = V/d$. $\squar
 Consider an infinite plane with uniform surface charge density $\sigma$ (C m$^{-2}$). The field on
 Either side of the plane is:
 
-$$\boxed{E = \frac◆LB◆\sigma◆RB◆◆LB◆2\varepsilon_0◆RB◆}$$
+$$\boxed{E = \frac{\sigma}{2\varepsilon_0}}$$
 
 This is remarkable: the field is **independent of distance** from the plane. No matter how far away
 You move, the field strength does not decrease. This is because an infinite plane always subtends
@@ -141,9 +141,9 @@ Enclosed charge: $Q_{\mathrm{enc}} = \sigma A$.
 
 By Gauss's law, $\Phi_E = Q_{\mathrm{enc}}/\varepsilon_0$:
 
-$$2EA = \frac◆LB◆\sigma A◆RB◆◆LB◆\varepsilon_0◆RB◆$$
+$$2EA = \frac{\sigma A}{\varepsilon_0}$$
 
-$$E = \frac◆LB◆\sigma◆RB◆◆LB◆2\varepsilon_0◆RB◆$$
+$$E = \frac{\sigma}{2\varepsilon_0}$$
 
 $\square$
 
@@ -165,15 +165,15 @@ The syllabus but is useful for understanding parallel plates.
 **Definition.** The **electric potential** $V$ at a point is the work done per unit positive charge
 To bring a small test charge from infinity to that point:
 
-$$\boxed{V = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0 r◆RB◆}$$
+$$\boxed{V = \frac{Q}{4\pi\varepsilon_0 r}}$$
 
 SI units: volts (V), where 1 V = 1 J C$^{-1}$.
 
 **Derivation.** The work done to bring $q$ from $\infty$ to $r$ against the electric force:
 
-$$W = \int_{\infty}^{r} F\,dr' = \int_{\infty}^{r} \frac◆LB◆Qq◆RB◆◆LB◆4\pi\varepsilon_0 r'^2◆RB◆\,dr' = \frac◆LB◆Qq◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆\left[-\frac{1}{r'}\right]_{\infty}^{r} = \frac◆LB◆Qq◆RB◆◆LB◆4\pi\varepsilon_0 r◆RB◆$$
+$$W = \int_{\infty}^{r} F\,dr' = \int_{\infty}^{r} \frac{Qq}{4\pi\varepsilon_0 r'^2}\,dr' = \frac{Qq}{4\pi\varepsilon_0}\left[-\frac{1}{r'}\right]_{\infty}^{r} = \frac{Qq}{4\pi\varepsilon_0 r}$$
 
-$$V = \frac{W}{q} = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0 r◆RB◆$$
+$$V = \frac{W}{q} = \frac{Q}{4\pi\varepsilon_0 r}$$
 
 $\square$
 
@@ -185,7 +185,7 @@ Distance, approaching zero at infinity.
 
 The potential energy of two charges $q_1$ and $q_2$ separated by $r$:
 
-$$U = \frac◆LB◆q_1 q_2◆RB◆◆LB◆4\pi\varepsilon_0 r◆RB◆ = q_2 V_1$$
+$$U = \frac{q_1 q_2}{4\pi\varepsilon_0 r} = q_2 V_1$$
 
 Where $V_1 = q_1/(4\pi\varepsilon_0 r)$ is the potential due to $q_1$ at the location of $q_2$.
 
@@ -217,7 +217,7 @@ Determine stored energy.
 Parallel-plate capacitor of area $A$ and separation $d$The energy density (energy per unit volume)
 Is:
 
-$$u = \frac{U}{Ad} = \frac◆LB◆\frac{1}{2}CV^2◆RB◆◆LB◆Ad◆RB◆ = \frac◆LB◆\frac{1}{2}\left(\frac{\varepsilon_0 A}{d}\right)\left(Ed\right)^2◆RB◆◆LB◆Ad◆RB◆ = \frac{1}{2}\varepsilon_0 E^2$$
+$$u = \frac{U}{Ad} = \frac{\frac{1}{2}CV^2}{Ad} = \frac{\frac{1}{2}\left(\frac{\varepsilon_0 A}{d}\right)\left(Ed\right)^2}{Ad} = \frac{1}{2}\varepsilon_0 E^2$$
 
 This result is general: any electric field of strength $E$ stores energy density
 $\frac{1}{2}\varepsilon_0 E^2$. Doubling the field strength quadruples the energy density.
@@ -252,9 +252,9 @@ $$\boxed{E = -\frac{dV}{dr}}$$
 
 In 3D: $\mathbf{E} = -\nabla V$.
 
-**Verification for a point charge.** $V = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0 r◆RB◆$.
+**Verification for a point charge.** $V = \frac{Q}{4\pi\varepsilon_0 r}$.
 
-$$-\frac{dV}{dr} = -\frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆\left(-\frac{1}{r^2}\right) = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0 r^2◆RB◆ = E \quad \checkmark$$
+$$-\frac{dV}{dr} = -\frac{Q}{4\pi\varepsilon_0}\left(-\frac{1}{r^2}\right) = \frac{Q}{4\pi\varepsilon_0 r^2} = E \quad \checkmark$$
 
 **Intuition.** The minus sign tells us that the electric field points in the direction of
 **decreasing** potential — a positive charge "rolls downhill" in the potential landscape.
@@ -291,7 +291,7 @@ An electron enters a uniform electric field of 5000 V m$^{-1}$ between plates of
 Speed $3.0 \times 10^7$ m s$^{-1}$. Calculate the vertical deflection.
 
 **Answer.**
-$a = \frac{eE}{m_e} = \frac◆LB◆1.60 \times 10^{-19} \times 5000◆RB◆◆LB◆9.11 \times 10^{-31}◆RB◆ = 8.78 \times 10^{14}$
+$a = \frac{eE}{m_e} = \frac{1.60 \times 10^{-19} \times 5000}{9.11 \times 10^{-31}} = 8.78 \times 10^{14}$
 M s$^{-2}$.
 
 $t = L/v = 0.050/3.0 \times 10^7 = 1.67 \times 10^{-9}$ s.
@@ -391,7 +391,7 @@ Two point charges, $q_1 = +3.0\,\mu$C and $q_2 = -5.0\,\mu$C, are separated by 0
 Electrostatic force between them.
 
 **Answer.**
-$F = \frac{kq_1 q_2}{r^2} = \frac◆LB◆8.99 \times 10^9 \times 3.0 \times 10^{-6} \times 5.0 \times 10^{-6}◆RB◆◆LB◆0.04◆RB◆ = \frac{0.135}{0.04} = 3.37$
+$F = \frac{kq_1 q_2}{r^2} = \frac{8.99 \times 10^9 \times 3.0 \times 10^{-6} \times 5.0 \times 10^{-6}}{0.04} = \frac{0.135}{0.04} = 3.37$
 N (attractive).
 
 <b>If you get this wrong, revise:</b> [Coulomb's Law](#1-coulombs-law)
@@ -403,7 +403,7 @@ N (attractive).
 Calculate the electric field strength at a distance of 0.10 m from a point charge of $+8.0\,\mu$C.
 
 **Answer.**
-$E = \frac{kQ}{r^2} = \frac◆LB◆8.99 \times 10^9 \times 8.0 \times 10^{-6}◆RB◆◆LB◆0.01◆RB◆ = \frac{71920}{0.01} = 7.19 \times 10^6$
+$E = \frac{kQ}{r^2} = \frac{8.99 \times 10^9 \times 8.0 \times 10^{-6}}{0.01} = \frac{71920}{0.01} = 7.19 \times 10^6$
 N C$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Field of a Point Charge](#field-of-a-point-charge)
@@ -415,7 +415,7 @@ N C$^{-1}$.
 Calculate the electric potential at a distance of 5.0 cm from a $+2.0\,\mu$C point charge.
 
 **Answer.**
-$V = \frac{kQ}{r} = \frac◆LB◆8.99 \times 10^9 \times 2.0 \times 10^{-6}◆RB◆◆LB◆0.050◆RB◆ = \frac{17980}{0.050} = 3.60 \times 10^5$
+$V = \frac{kQ}{r} = \frac{8.99 \times 10^9 \times 2.0 \times 10^{-6}}{0.050} = \frac{17980}{0.050} = 3.60 \times 10^5$
 V $= 360$ kV.
 
 <b>If you get this wrong, revise:</b> [Electric Potential](#3-electric-potential)
@@ -426,8 +426,8 @@ V $= 360$ kV.
 <summary>Problem 4</summary>
 Starting from $E = -dV/dr$Derive the electric field of a point charge from its potential.
 
-**Answer.** $V = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0 r◆RB◆$.
-$E = -\frac{dV}{dr} = -\frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆ \cdot \frac{d}{dr}\left(\frac{1}{r}\right) = -\frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆\left(-\frac{1}{r^2}\right) = \frac◆LB◆Q◆RB◆◆LB◆4\pi\varepsilon_0 r^2◆RB◆$.
+**Answer.** $V = \frac{Q}{4\pi\varepsilon_0 r}$.
+$E = -\frac{dV}{dr} = -\frac{Q}{4\pi\varepsilon_0} \cdot \frac{d}{dr}\left(\frac{1}{r}\right) = -\frac{Q}{4\pi\varepsilon_0}\left(-\frac{1}{r^2}\right) = \frac{Q}{4\pi\varepsilon_0 r^2}$.
 
 <b>If you get this wrong, revise:</b>
 [Relationship Between $E$ and $V$](#4-relationship-between-e-and-v-e---dvdr)
@@ -453,7 +453,7 @@ A proton is released from rest in a uniform electric field of $3.0 \times 10^4$ 
 Calculate its acceleration and the kinetic energy gained after moving 5.0 cm.
 
 **Answer.**
-$a = \frac{qE}{m} = \frac◆LB◆1.60 \times 10^{-19} \times 3.0 \times 10^4◆RB◆◆LB◆1.67 \times 10^{-27}◆RB◆ = 2.88 \times 10^{12}$
+$a = \frac{qE}{m} = \frac{1.60 \times 10^{-19} \times 3.0 \times 10^4}{1.67 \times 10^{-27}} = 2.88 \times 10^{12}$
 M s$^{-2}$.
 
 $E_k = qV = qEd = 1.60 \times 10^{-19} \times 3.0 \times 10^4 \times 0.050 = 2.4 \times 10^{-16}$ J.
@@ -469,7 +469,7 @@ Calculate the electric potential energy of two charges, $q_1 = +4.0\,\mu$C and $
 Separated by 0.30 m.
 
 **Answer.**
-$U = \frac{kq_1 q_2}{r} = \frac◆LB◆8.99 \times 10^9 \times 4.0 \times 10^{-6} \times 6.0 \times 10^{-6}◆RB◆◆LB◆0.30◆RB◆ = \frac{0.2158}{0.30} = 0.719$
+$U = \frac{kq_1 q_2}{r} = \frac{8.99 \times 10^9 \times 4.0 \times 10^{-6} \times 6.0 \times 10^{-6}}{0.30} = \frac{0.2158}{0.30} = 0.719$
 J.
 
 <b>If you get this wrong, revise:</b> [Electric Potential Energy](#electric-potential-energy)
@@ -482,7 +482,7 @@ An electron with speed $2.0 \times 10^7$ m s$^{-1}$ enters a uniform electric fi
 M$^{-1}$ perpendicular to its motion. The plates are 8.0 cm long. Calculate the deflection angle.
 
 **Answer.**
-$a = \frac{eE}{m_e} = \frac◆LB◆1.60 \times 10^{-19} \times 8000◆RB◆◆LB◆9.11 \times 10^{-31}◆RB◆ = 1.405 \times 10^{15}$
+$a = \frac{eE}{m_e} = \frac{1.60 \times 10^{-19} \times 8000}{9.11 \times 10^{-31}} = 1.405 \times 10^{15}$
 M s$^{-2}$.
 
 $t = L/v = 0.080/(2.0 \times 10^7) = 4.0 \times 10^{-9}$ s.
@@ -501,10 +501,10 @@ $\tan\theta = v_y/v = 5.62 \times 10^6 / 2.0 \times 10^7 = 0.281$. $\theta = 15.
 Three equal charges of $+2.0\,\mu$C are placed at the corners of an equilateral triangle of side
 0.10 m. Calculate the net electric field at the centre of the triangle.
 
-**Answer.** The centre is at distance $r = \frac◆LB◆0.10◆RB◆◆LB◆\sqrt{3}◆RB◆ = 0.0577$ m from each
+**Answer.** The centre is at distance $r = \frac{0.10}{\sqrt{3}} = 0.0577$ m from each
 charge.
 
-$E_{\mathrm{one}} = \frac{kQ}{r^2} = \frac◆LB◆8.99 \times 10^9 \times 2.0 \times 10^{-6}◆RB◆◆LB◆0.00333◆RB◆ = 5.40 \times 10^6$
+$E_{\mathrm{one}} = \frac{kQ}{r^2} = \frac{8.99 \times 10^9 \times 2.0 \times 10^{-6}}{0.00333} = 5.40 \times 10^6$
 N C$^{-1}$.
 
 By symmetry, the fields from the three charges cancel out (they are 120° apart and equal in
@@ -524,7 +524,7 @@ Calculate the charge on the sphere.
 $mg = T\cos 15^\circ$.
 
 $\tan 15° = \frac{qE}{mg}$.
-$q = \frac◆LB◆mg\tan 15°◆RB◆◆LB◆E◆RB◆ = \frac◆LB◆0.50 \times 10^{-3} \times 9.81 \times 0.2679◆RB◆◆LB◆5000◆RB◆ = \frac◆LB◆1.314 \times 10^{-3}◆RB◆◆LB◆5000◆RB◆ = 2.63 \times 10^{-7}$
+$q = \frac{mg\tan 15°}{E} = \frac{0.50 \times 10^{-3} \times 9.81 \times 0.2679}{5000} = \frac{1.314 \times 10^{-3}}{5000} = 2.63 \times 10^{-7}$
 C $= 263$ nC.
 
 <b>If you get this wrong, revise:</b> [Electric Field Strength](#2-electric-field-strength)
@@ -538,10 +538,10 @@ Potential at the surface when the dome carries a charge of $1.0\,\mu$C. At what 
 Discharge occur if the breakdown field of air is $3.0 \times 10^6$ V m$^{-1}$?
 
 **Answer.**
-$E = \frac{kQ}{r^2} = \frac◆LB◆8.99 \times 10^9 \times 1.0 \times 10^{-6}◆RB◆◆LB◆0.090◆RB◆ = 9.99 \times 10^4$
+$E = \frac{kQ}{r^2} = \frac{8.99 \times 10^9 \times 1.0 \times 10^{-6}}{0.090} = 9.99 \times 10^4$
 V M$^{-1}$.
 
-$V = \frac{kQ}{r} = \frac◆LB◆8.99 \times 10^9 \times 1.0 \times 10^{-6}◆RB◆◆LB◆0.30◆RB◆ = 3.00 \times 10^4$
+$V = \frac{kQ}{r} = \frac{8.99 \times 10^9 \times 1.0 \times 10^{-6}}{0.30} = 3.00 \times 10^4$
 V $= 30.0$ kV.
 
 For breakdown:
@@ -590,7 +590,7 @@ Take? (Assume uniform field and negligible air resistance.)
 $a = F/m = 1.0 \times 10^{-8} / 1.0 \times 10^{-12} = 1.0 \times 10^4$ m s$^{-2}$.
 
 $s = \frac{1}{2}at^2$So
-$t = \sqrt{2s/a} = \sqrt◆LB◆2 \times 0.50 / 1.0 \times 10^4◆RB◆ = \sqrt◆LB◆1.0 \times 10^{-4}◆RB◆ = 0.010$
+$t = \sqrt{2s/a} = \sqrt{2 \times 0.50 / 1.0 \times 10^4} = \sqrt{1.0 \times 10^{-4}} = 0.010$
 s $= 10$ ms.
 
 <b>If you get this wrong, revise:</b>
@@ -621,7 +621,7 @@ $2x^2 - 0.80x + 0.08 = x^2$
 
 $x^2 - 0.80x + 0.08 = 0$
 
-$x = \frac◆LB◆0.80 \pm \sqrt{0.64 - 0.32}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆0.80 \pm 0.566◆RB◆◆LB◆2◆RB◆$
+$x = \frac{0.80 \pm \sqrt{0.64 - 0.32}}{2} = \frac{0.80 \pm 0.566}{2}$
 
 Taking the solution outside both charges: $x = \frac{0.80 + 0.566}{2} = 0.683$ m.
 
@@ -638,14 +638,14 @@ Atom (separation $r = 5.29 \times 10^{-11}$ m). By what factor does the electros
 The gravitational force?
 
 **Answer.**
-$F_e = \frac{kq_1q_2}{r^2} = \frac◆LB◆8.99 \times 10^9 \times (1.60 \times 10^{-19})^2◆RB◆◆LB◆(5.29 \times 10^{-11})^2◆RB◆ = \frac◆LB◆2.30 \times 10^{-28}◆RB◆◆LB◆2.80 \times 10^{-21}◆RB◆ = 8.22 \times 10^{-8}$
+$F_e = \frac{kq_1q_2}{r^2} = \frac{8.99 \times 10^9 \times (1.60 \times 10^{-19})^2}{(5.29 \times 10^{-11})^2} = \frac{2.30 \times 10^{-28}}{2.80 \times 10^{-21}} = 8.22 \times 10^{-8}$
 N.
 
-$F_g = \frac{Gm_pm_e}{r^2} = \frac◆LB◆6.67 \times 10^{-11} \times 1.67 \times 10^{-27} \times 9.11 \times 10^{-31}◆RB◆◆LB◆(5.29 \times 10^{-11})^2◆RB◆ = \frac◆LB◆1.01 \times 10^{-67}◆RB◆◆LB◆2.80 \times 10^{-21}◆RB◆ = 3.61 \times 10^{-47}$
+$F_g = \frac{Gm_pm_e}{r^2} = \frac{6.67 \times 10^{-11} \times 1.67 \times 10^{-27} \times 9.11 \times 10^{-31}}{(5.29 \times 10^{-11})^2} = \frac{1.01 \times 10^{-67}}{2.80 \times 10^{-21}} = 3.61 \times 10^{-47}$
 N.
 
 Ratio:
-$\frac{F_e}{F_g} = \frac◆LB◆8.22 \times 10^{-8}◆RB◆◆LB◆3.61 \times 10^{-47}◆RB◆ = 2.28 \times 10^{39}$.
+$\frac{F_e}{F_g} = \frac{8.22 \times 10^{-8}}{3.61 \times 10^{-47}} = 2.28 \times 10^{39}$.
 
 The electrostatic force is $\sim 10^{39}$ times stronger than gravity. This enormous ratio explains
 Why atomic and molecular physics are governed entirely by electromagnetic forces, with gravity only

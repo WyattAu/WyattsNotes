@@ -19,11 +19,11 @@ $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-Let $a = p/q$ and $b = r/s$ where $p, q, r, s \in \mathbb{{'}Z{}'}$ and $q, s \neq 0$. Then
+Let $a = p/q$ and $b = r/s$ where $p, q, r, s \in \mathbb{Z}$ and $q, s \neq 0$. Then
 
 $$a + b = \frac{p}{q} + \frac{r}{s} = \frac{ps + rq}{qs}$$
 
-Since $ps + rq \in \mathbb{{'}Z{}'}$ and $qs \in \mathbb{{'}Z{}'} \setminus \\{0\\}$The sum $a + b$
+Since $ps + rq \in \mathbb{Z}$ and $qs \in \mathbb{Z} \setminus \\{0\\}$The sum $a + b$
 is rational. $\blacksquare$
 
 </details>
@@ -63,7 +63,7 @@ Contradiction. $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-Suppose $\sqrt{2} = p/q$ in lowest terms, with $p, q \in \mathbb{{'}Z{}'}^+$ and $\gcd(p, q) = 1$.
+Suppose $\sqrt{2} = p/q$ in lowest terms, with $p, q \in \mathbb{Z}^+$ and $\gcd(p, q) = 1$.
 Then $2q^2 = p^2$So $p^2$ is even, hence $p$ is even. Write $p = 2r$. Then $2q^2 = 4r^2$So
 $q^2 = 2r^2$Hence $q$ is even. But then both $p$ and $q$ are even, Contradicting $\gcd(p, q) = 1$.
 $\blacksquare$
@@ -145,7 +145,7 @@ has a least Element $m$. Since $P(0)$ is true, $m \geq 1$. Then $P(m - 1)$ is tr
 $m$), And $P(m - 1) \implies P(m)$ by the inductive hypothesis, so $P(m)$ is true, contradicting
 $m \in S$. Therefore $S = \emptyset$ and $P(n)$ holds for all $n \geq 0$.
 
-_Proof (induction implies WOP)._ Let $S \subseteq \mathbb{{'}N{}'}$ be nonempty. We prove by
+_Proof (induction implies WOP)._ Let $S \subseteq \mathbb{N}$ be nonempty. We prove by
 induction that If $S \cap \\{0, 1, \ldots, n\\} \neq \emptyset$Then $S$ has a least element. For
 $n = 0$, $S$ Contains $0$Which is the least element. Assume the claim for $n = k$. If
 $0 \in S \cap \\{0, \ldots, k+1\\}$ Then $0$ is the least element. Otherwise

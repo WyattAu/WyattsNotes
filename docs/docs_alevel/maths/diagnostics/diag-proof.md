@@ -100,7 +100,7 @@ the inductive step may require $n$ to be sufficiently large.]
 
 **(a)** Let $P(n)$ be the statement $\sum_{r=1}^{n} r^2 = \frac{n(n+1)(2n+1)}{6}$.
 
-**Base case ($n = 1$):** LHS $= 1^2 = 1$. RHS $= \frac◆LB◆1 \cdot 2 \cdot 3◆RB◆◆LB◆6◆RB◆ = 1$. LHS
+**Base case ($n = 1$):** LHS $= 1^2 = 1$. RHS $= \frac{1 \cdot 2 \cdot 3}{6} = 1$. LHS
 $=$ RHS. $P(1)$ is true.
 
 **Inductive step:** Assume $P(k)$ is true for some $k \geq 1$:
@@ -120,7 +120,7 @@ $$= \frac{(k+1)(k+2)(2k+3)}{6} = \frac{(k+1)((k+1)+1)(2(k+1)+1)}{6}$$
 This is $P(k+1)$. By induction, $P(n)$ is true for all $n \geq 1$.
 
 **(b)** At $n = 0$: LHS $= \sum_{r=1}^{0} r^2 = 0$ (empty sum). RHS
-$= \frac◆LB◆0 \cdot 1 \cdot 1◆RB◆◆LB◆6◆RB◆ = 0$. True.
+$= \frac{0 \cdot 1 \cdot 1}{6} = 0$. True.
 
 Starting at $n = 0$ is valid because the inductive step from $P(k)$ to $P(k+1)$ works for
 $k \geq 0$. The proof establishes the result for all $n \geq 0$Which is a stronger statement than

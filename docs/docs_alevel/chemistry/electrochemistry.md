@@ -210,7 +210,7 @@ $298\,\mathrm{K}$.
 $E^\circ_\mathrm{cell} = +1.10\,\mathrm{V}$ (from above). $n = 2$.
 
 $$
-Q = \frac◆LB◆[\mathrm{Zn}^{2+}]◆RB◆◆LB◆[\mathrm{Cu}^{2+}]◆RB◆ = \frac{0.010}{2.0} = 0.005
+Q = \frac{[\mathrm{Zn}^{2+}]}{[\mathrm{Cu}^{2+}]} = \frac{0.010}{2.0} = 0.005
 $$
 
 $$
@@ -227,7 +227,7 @@ A concentration cell consists of two half-cells with the same redox couple but d
 concentrations. The cell EMF arises purely from the concentration difference:
 
 $$
-E_\mathrm{cell} = -\frac{0.0592}{n}\log_{10}\frac◆LB◆[\mathrm{M}^{n+}]_\mathrm{dilute}◆RB◆◆LB◆[\mathrm{M}^{n+}]_\mathrm{concentrated}◆RB◆
+E_\mathrm{cell} = -\frac{0.0592}{n}\log_{10}\frac{[\mathrm{M}^{n+}]_\mathrm{dilute}}{[\mathrm{M}^{n+}]_\mathrm{concentrated}}
 $$
 
 **Example:** A $\mathrm{Cu}/\mathrm{Cu}^{2+}$ concentration cell with
@@ -287,7 +287,7 @@ limited infrastructure.
 **Efficiency calculation:** The maximum theoretical efficiency of a fuel cell is:
 
 $$
-\text{Efficiency} = \frac◆LB◆\Delta G^\circ◆RB◆◆LB◆\Delta H^\circ◆RB◆ \times 100
+\text{Efficiency} = \frac{\Delta G^\circ}{\Delta H^\circ} \times 100
 $$
 
 For the $\mathrm{H}_2/\mathrm{O}_2$ fuel cell at $298\,\mathrm{K}$:
@@ -391,7 +391,7 @@ $$
 to the quantity of electricity passed.
 
 $$
-M = \frac◆LB◆Q \cdot M◆RB◆◆LB◆n \cdot F◆RB◆
+M = \frac{Q \cdot M}{n \cdot F}
 $$
 
 **Second Law:** When the same quantity of electricity is passed through different electrolytes, the
@@ -432,7 +432,7 @@ $$
 Alternatively, using the formula directly:
 
 $$
-M = \frac◆LB◆Q \cdot M◆RB◆◆LB◆n \cdot F◆RB◆ = \frac◆LB◆4500 \times 63.5◆RB◆◆LB◆2 \times 96485◆RB◆ = \frac{285750}{192970} = 1.48\,\mathrm{g}
+M = \frac{Q \cdot M}{n \cdot F} = \frac{4500 \times 63.5}{2 \times 96485} = \frac{285750}{192970} = 1.48\,\mathrm{g}
 $$
 
 ## Corrosion and Its Prevention
@@ -710,7 +710,7 @@ $n(\mathrm{O}_2) = 0.01866 / 4 = 0.00467\,\mathrm{mol}$
 Using $pV = nRT$:
 
 $$
-V = \frac{nRT}{p} = \frac◆LB◆0.00467 \times 8.314 \times 298◆RB◆◆LB◆100 \times 10^3◆RB◆ = \frac{11.57}{100000} = 1.16 \times 10^{-4}\,\mathrm{m}^3 = 0.116\,\mathrm{dm}^3 = 116\,\mathrm{cm}^3
+V = \frac{nRT}{p} = \frac{0.00467 \times 8.314 \times 298}{100 \times 10^3} = \frac{11.57}{100000} = 1.16 \times 10^{-4}\,\mathrm{m}^3 = 0.116\,\mathrm{dm}^3 = 116\,\mathrm{cm}^3
 $$
 
 </details>
@@ -742,7 +742,7 @@ $$
 Using the Nernst equation:
 
 $$
-E_\mathrm{cell} = E^\circ_\mathrm{cell} - \frac{RT}{nF}\ln Q = 0 - \frac{RT}{2F}\ln\frac◆LB◆[\mathrm{Cu}^{2+}]_\mathrm{dilute}◆RB◆◆LB◆[\mathrm{Cu}^{2+}]_\mathrm{concentrated}◆RB◆
+E_\mathrm{cell} = E^\circ_\mathrm{cell} - \frac{RT}{nF}\ln Q = 0 - \frac{RT}{2F}\ln\frac{[\mathrm{Cu}^{2+}]_\mathrm{dilute}}{[\mathrm{Cu}^{2+}]_\mathrm{concentrated}}
 $$
 
 $$
@@ -828,9 +828,9 @@ at $298\,\mathrm{K}$.**
 
 $$E^\circ_\mathrm{cell} = 0.34 - (-0.76) = 1.10\,\mathrm{V}$$
 
-$$Q = \frac◆LB◆[\mathrm{Cu}^{2+}]◆RB◆◆LB◆[\mathrm{Zn}^{+}]◆RB◆ = \frac{0.001}{0.010} = 0.10$$
+$$Q = \frac{[\mathrm{Cu}^{2+}]}{[\mathrm{Zn}^{+}]} = \frac{0.001}{0.010} = 0.10$$
 
-$$E = 1.10 - \frac◆LB◆8.314 \times 298◆RB◆◆LB◆2 \times 96485◆RB◆\ln(0.10)$$
+$$E = 1.10 - \frac{8.314 \times 298}{2 \times 96485}\ln(0.10)$$
 
 $$= 1.10 - \frac{2478}{192970}\ln(0.10)$$
 

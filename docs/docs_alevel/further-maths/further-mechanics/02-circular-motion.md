@@ -44,13 +44,13 @@ Measured in radians.
 
 **Definition.** The **angular velocity** $\omega$ is the rate of change of angular displacement:
 
-$$\boxed{\omega = \frac◆LB◆d\theta◆RB◆◆LB◆dt◆RB◆}$$
+$$\boxed{\omega = \frac{d\theta}{dt}}$$
 
 The SI unit is rad s$^{-1}$.
 
 **Definition.** The **angular acceleration** $\alpha$ is the rate of change of angular velocity:
 
-$$\alpha = \frac◆LB◆d\omega◆RB◆◆LB◆dt◆RB◆ = \frac◆LB◆d^2\theta◆RB◆◆LB◆dt^2◆RB◆$$
+$$\alpha = \frac{d\omega}{dt} = \frac{d^2\theta}{dt^2}$$
 
 ### 1.2 Relationship with linear quantities
 
@@ -64,7 +64,7 @@ $$\boxed{a_{\mathrm{tangential}} = \alpha r}$$
 
 For uniform circular motion:
 
-$$\boxed{\omega = \frac◆LB◆2\pi◆RB◆◆LB◆T◆RB◆ = 2\pi f}$$
+$$\boxed{\omega = \frac{2\pi}{T} = 2\pi f}$$
 
 <hr />
 
@@ -80,14 +80,14 @@ $$\mathbf{r}(t) = r\cos(\omega t)\,\mathbf{i} + r\sin(\omega t)\,\mathbf{j}$$
 
 Velocity (first derivative):
 
-$$\mathbf{v}(t) = \frac◆LB◆d\mathbf{r}◆RB◆◆LB◆dt◆RB◆ = -r\omega\sin(\omega t)\,\mathbf{i} + r\omega\cos(\omega t)\,\mathbf{j}$$
+$$\mathbf{v}(t) = \frac{d\mathbf{r}}{dt} = -r\omega\sin(\omega t)\,\mathbf{i} + r\omega\cos(\omega t)\,\mathbf{j}$$
 
-Check: $|\mathbf{v}| = r\omega\sqrt◆LB◆\sin^2(\omega t) + \cos^2(\omega t)◆RB◆ = r\omega = v$.
+Check: $|\mathbf{v}| = r\omega\sqrt{\sin^2(\omega t) + \cos^2(\omega t)} = r\omega = v$.
 $\checkmark$
 
 Acceleration (second derivative):
 
-$$\mathbf{a}(t) = \frac◆LB◆d\mathbf{v}◆RB◆◆LB◆dt◆RB◆ = -r\omega^2\cos(\omega t)\,\mathbf{i} - r\omega^2\sin(\omega t)\,\mathbf{j} = -\omega^2\mathbf{r}(t)$$
+$$\mathbf{a}(t) = \frac{d\mathbf{v}}{dt} = -r\omega^2\cos(\omega t)\,\mathbf{i} - r\omega^2\sin(\omega t)\,\mathbf{j} = -\omega^2\mathbf{r}(t)$$
 
 $$\boxed{\mathbf{a} = -\omega^2 r\,\hat{\mathbf{r}}}$$
 
@@ -114,13 +114,13 @@ $\alpha$ is the angle the string makes with the vertical.
 
 Dividing (ii) by (i):
 
-$$\boxed{\tan\alpha = \frac{v^2}{rg} = \frac◆LB◆\omega^2 r◆RB◆◆LB◆g◆RB◆}$$
+$$\boxed{\tan\alpha = \frac{v^2}{rg} = \frac{\omega^2 r}{g}}$$
 
 Since $r = L\sin\alpha$ and $\omega = \dfrac{v}{r}$:
 
-$$\omega^2 = \frac◆LB◆g\tan\alpha◆RB◆◆LB◆L\sin\alpha◆RB◆ = \frac◆LB◆g◆RB◆◆LB◆L\cos\alpha◆RB◆$$
+$$\omega^2 = \frac{g\tan\alpha}{L\sin\alpha} = \frac{g}{L\cos\alpha}$$
 
-$$\boxed{T = \frac◆LB◆2\pi◆RB◆◆LB◆\omega◆RB◆ = 2\pi\sqrt◆LB◆\frac{L\cos\alpha}{g}◆RB◆}$$
+$$\boxed{T = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{L\cos\alpha}{g}}}$$
 
 ### 3.2 Banked tracks
 
@@ -134,7 +134,7 @@ Dividing (ii) by (i):
 
 $$\boxed{\tan\theta = \frac{v^2}{rg}}$$
 
-$$\boxed{v_{\mathrm{optimum}} = \sqrt◆LB◆rg\tan\theta◆RB◆}$$
+$$\boxed{v_{\mathrm{optimum}} = \sqrt{rg\tan\theta}}$$
 
 At the optimum speed, no friction is needed. If $v > v_{\mathrm{opt}}$Friction acts down the Slope.
 If $v < v_{\mathrm{opt}}$Friction acts up the slope.
@@ -151,7 +151,7 @@ $\sin\phi = a/r$.
 
 **Horizontal:** $R\sin\phi = \dfrac{mv^2}{a}$.
 
-$$\frac{v^2}{a} = \frac◆LB◆R\sin\phi◆RB◆◆LB◆m◆RB◆ = \frac◆LB◆g\sin\phi◆RB◆◆LB◆\cos\phi◆RB◆ = g\tan\phi = \frac{ga}{h}$$
+$$\frac{v^2}{a} = \frac{R\sin\phi}{m} = \frac{g\sin\phi}{\cos\phi} = g\tan\phi = \frac{ga}{h}$$
 
 <hr />
 
@@ -227,7 +227,7 @@ At angle $\theta$ from the top: $R + mg\cos\theta = \dfrac{mv^2}{r}$.
 
 Energy: $\dfrac{1}{2}mv^2 = mgr(1-\cos\theta)$ (from rest at the top).
 
-When $R = 0$: $mg\cos\theta = \dfrac{mv^2}{r} = \dfrac◆LB◆2mg(1-\cos\theta)◆RB◆◆LB◆r◆RB◆$.
+When $R = 0$: $mg\cos\theta = \dfrac{mv^2}{r} = \dfrac{2mg(1-\cos\theta)}{r}$.
 
 $g\cos\theta = 2g(1-\cos\theta) \implies \cos\theta = 2 - 2\cos\theta \implies 3\cos\theta = 2$.
 
@@ -261,19 +261,19 @@ A particle of mass $0.5\,\mathrm{kg}$ is attached to a string of length $1.2\,\m
 <summary>Solution 1</summary>
 $T\cos\alpha = mg = 0.5 \times 9.8 = 4.9$ ... (i)
 
-$T\sin\alpha = \dfrac{mv^2}{r} = \dfrac◆LB◆0.5 \times 9◆RB◆◆LB◆r◆RB◆$ ... (ii)
+$T\sin\alpha = \dfrac{mv^2}{r} = \dfrac{0.5 \times 9}{r}$ ... (ii)
 
-$r = 1.2\sin\alpha$. From (ii): $T\sin\alpha = \dfrac◆LB◆4.5◆RB◆◆LB◆1.2\sin\alpha◆RB◆$.
+$r = 1.2\sin\alpha$. From (ii): $T\sin\alpha = \dfrac{4.5}{1.2\sin\alpha}$.
 
 $T\sin^2\alpha = \dfrac{4.5}{1.2} = 3.75$.
 
-From (i): $T = \dfrac◆LB◆4.9◆RB◆◆LB◆\cos\alpha◆RB◆$.
+From (i): $T = \dfrac{4.9}{\cos\alpha}$.
 
-$\dfrac◆LB◆4.9\sin^2\alpha◆RB◆◆LB◆\cos\alpha◆RB◆ = 3.75 \implies \dfrac◆LB◆4.9(1-\cos^2\alpha)◆RB◆◆LB◆\cos\alpha◆RB◆ = 3.75$.
+$\dfrac{4.9\sin^2\alpha}{\cos\alpha} = 3.75 \implies \dfrac{4.9(1-\cos^2\alpha)}{\cos\alpha} = 3.75$.
 
 $4.9\cos^2\alpha + 3.75\cos\alpha - 4.9 = 0$.
 
-$\cos\alpha = \dfrac◆LB◆-3.75 + \sqrt{14.0625 + 96.04}◆RB◆◆LB◆9.8◆RB◆ = \dfrac{-3.75 + 10.48}{9.8} \approx 0.687$.
+$\cos\alpha = \dfrac{-3.75 + \sqrt{14.0625 + 96.04}}{9.8} = \dfrac{-3.75 + 10.48}{9.8} \approx 0.687$.
 
 $\alpha \approx 46.6^\circ$. $r = 1.2\sin 46.6° \approx 0.873\,\mathrm{m}$.
 $T = 4.9/0.687 \approx 7.13\,\mathrm{N}$.
@@ -307,9 +307,9 @@ A curve of radius $60\,\mathrm{m}$ is banked at $20^\circ$. Find the optimum spe
 
 <details>
 <summary>Solution 3</summary>
-$v_{\mathrm{opt}} = \sqrt◆LB◆rg\tan\theta◆RB◆ = \sqrt◆LB◆60 \times 9.8 \times \tan 20°◆RB◆ = \sqrt◆LB◆60 \times 9.8 \times 0.3640◆RB◆ = \sqrt{214.0} \approx 14.6\,\mathrm{m s}^{-1}$.
+$v_{\mathrm{opt}} = \sqrt{rg\tan\theta} = \sqrt{60 \times 9.8 \times \tan 20°} = \sqrt{60 \times 9.8 \times 0.3640} = \sqrt{214.0} \approx 14.6\,\mathrm{m s}^{-1}$.
 
-$N = \dfrac◆LB◆mg◆RB◆◆LB◆\cos\theta◆RB◆ = \dfrac◆LB◆1000 \times 9.8◆RB◆◆LB◆\cos 20°◆RB◆ = \dfrac{9800}{0.9397} \approx 10\,430\,\mathrm{N}$.
+$N = \dfrac{mg}{\cos\theta} = \dfrac{1000 \times 9.8}{\cos 20°} = \dfrac{9800}{0.9397} \approx 10\,430\,\mathrm{N}$.
 
 **If you get this wrong, revise:** [Banked tracks](#32-banked-tracks) — Section 3.2.
 
@@ -322,16 +322,16 @@ A mass of $0.3\,\mathrm{kg}$ on a string of length $0.8\,\mathrm{m}$ is whirled 
 
 <details>
 <summary>Solution 4</summary>
-At the top: $T + mg = \dfrac{mv^2}{r} \implies T = \dfrac◆LB◆0.3 \times 16◆RB◆◆LB◆0.8◆RB◆ - 0.3 \times 9.8 = 6 - 2.94 = 3.06\,\mathrm{N}$.
+At the top: $T + mg = \dfrac{mv^2}{r} \implies T = \dfrac{0.3 \times 16}{0.8} - 0.3 \times 9.8 = 6 - 2.94 = 3.06\,\mathrm{N}$.
 
 Energy conservation:
 $\dfrac{1}{2}mv_b^2 = \dfrac{1}{2}mv_t^2 + mg(2r) = \dfrac{1}{2}(0.3)(16) + 0.3(9.8)(1.6)$
 
 $= 2.4 + 4.704 = 7.104$.
-$v_b = \sqrt◆LB◆2 \times 7.104/0.3◆RB◆ = \sqrt{47.36} \approx 6.88\,\mathrm{m s}^{-1}$.
+$v_b = \sqrt{2 \times 7.104/0.3} = \sqrt{47.36} \approx 6.88\,\mathrm{m s}^{-1}$.
 
 At the bottom:
-$T - mg = \dfrac{mv_b^2}{r} \implies T = \dfrac◆LB◆0.3 \times 47.36◆RB◆◆LB◆0.8◆RB◆ + 2.94 = 17.76 + 2.94 = 20.7\,\mathrm{N}$.
+$T - mg = \dfrac{mv_b^2}{r} \implies T = \dfrac{0.3 \times 47.36}{0.8} + 2.94 = 17.76 + 2.94 = 20.7\,\mathrm{N}$.
 
 **If you get this wrong, revise:** [Motion in Vertical Circles](#4-motion-in-vertical-circles) —
 Section 4.
@@ -383,18 +383,18 @@ A car of mass $1200\,\mathrm{kg}$ travels at $18\,\mathrm{m s}^{-1}$ around a ba
 
 <details>
 <summary>Solution 7</summary>
-$v_{\mathrm{opt}} = \sqrt◆LB◆50 \times 9.8 \times \tan 25°◆RB◆ = \sqrt◆LB◆50 \times 9.8 \times 0.4663◆RB◆ = \sqrt{228.5} \approx 15.1\,\mathrm{m s}^{-1}$.
+$v_{\mathrm{opt}} = \sqrt{50 \times 9.8 \times \tan 25°} = \sqrt{50 \times 9.8 \times 0.4663} = \sqrt{228.5} \approx 15.1\,\mathrm{m s}^{-1}$.
 
 Since $18 > 15.1$The car is going too fast, so friction acts **down** the slope.
 
 $N\cos 25° - F\sin 25° = 1200 \times 9.8 = 11760$ ... (i)
 
-$N\sin 25° + F\cos 25° = \dfrac◆LB◆1200 \times 324◆RB◆◆LB◆50◆RB◆ = 7776$ ... (ii)
+$N\sin 25° + F\cos 25° = \dfrac{1200 \times 324}{50} = 7776$ ... (ii)
 
-From (i): $N = \dfrac◆LB◆11760 + F\sin 25°◆RB◆◆LB◆\cos 25°◆RB◆$.
+From (i): $N = \dfrac{11760 + F\sin 25°}{\cos 25°}$.
 
 Substituting into (ii):
-$\dfrac◆LB◆(11760 + F\sin 25°)\sin 25°◆RB◆◆LB◆\cos 25°◆RB◆ + F\cos 25° = 7776$.
+$\dfrac{(11760 + F\sin 25°)\sin 25°}{\cos 25°} + F\cos 25° = 7776$.
 
 $11760\tan 25° + F(\tan 25°\sin 25° + \cos 25°) = 7776$.
 
@@ -430,10 +430,10 @@ A conical pendulum has period $2\,\mathrm{s}$ and string length $1\,\mathrm{m}$.
 
 <details>
 <summary>Solution 9</summary>
-$\omega = \dfrac◆LB◆2\pi◆RB◆◆LB◆T◆RB◆ = \pi\,\mathrm{rad s}^{-1}$.
+$\omega = \dfrac{2\pi}{T} = \pi\,\mathrm{rad s}^{-1}$.
 
-From $\omega^2 = \dfrac◆LB◆g◆RB◆◆LB◆L\cos\alpha◆RB◆$:
-$\pi^2 = \dfrac◆LB◆9.8◆RB◆◆LB◆\cos\alpha◆RB◆ \implies \cos\alpha = \dfrac◆LB◆9.8◆RB◆◆LB◆\pi^2◆RB◆ \approx 0.993$.
+From $\omega^2 = \dfrac{g}{L\cos\alpha}$:
+$\pi^2 = \dfrac{9.8}{\cos\alpha} \implies \cos\alpha = \dfrac{9.8}{\pi^2} \approx 0.993$.
 
 $\alpha \approx 6.6^\circ$.
 
@@ -459,7 +459,7 @@ $v = \sqrt{6.2} \approx 2.49\,\mathrm{m s}^{-1}$.
 At the midpoint (horizontal), the reaction $R$ acts horizontally (towards the centre) since the
 Weight acts vertically:
 
-$R = \dfrac{mv^2}{r} = \dfrac◆LB◆0.1 \times 6.2◆RB◆◆LB◆0.5◆RB◆ = 1.24\,\mathrm{N}$.
+$R = \dfrac{mv^2}{r} = \dfrac{0.1 \times 6.2}{0.5} = 1.24\,\mathrm{N}$.
 
 Note: the weight is perpendicular to the radius at this point, so it does not contribute to the
 Centripetal force.
@@ -546,15 +546,15 @@ Substituting (i) into $F = \mu N$ and then into (ii):
 
 $$\mu(mg\cos\theta + \frac{mv^2}{r}\sin\theta) + mg\sin\theta = \frac{mv^2}{r}\cos\theta$$
 
-$$\mu g\cos\theta + \frac◆LB◆\mu v^2\sin\theta◆RB◆◆LB◆r◆RB◆ + g\sin\theta = \frac◆LB◆v^2\cos\theta◆RB◆◆LB◆r◆RB◆$$
+$$\mu g\cos\theta + \frac{\mu v^2\sin\theta}{r} + g\sin\theta = \frac{v^2\cos\theta}{r}$$
 
-$$v^2\left(\frac◆LB◆\cos\theta◆RB◆◆LB◆r◆RB◆ - \frac◆LB◆\mu\sin\theta◆RB◆◆LB◆r◆RB◆\right) = g(\mu\cos\theta + \sin\theta)$$
+$$v^2\left(\frac{\cos\theta}{r} - \frac{\mu\sin\theta}{r}\right) = g(\mu\cos\theta + \sin\theta)$$
 
-$$\boxed{v_{\max}^2 = \frac◆LB◆rg(\sin\theta + \mu\cos\theta)◆RB◆◆LB◆\cos\theta - \mu\sin\theta◆RB◆}$$
+$$\boxed{v_{\max}^2 = \frac{rg(\sin\theta + \mu\cos\theta)}{\cos\theta - \mu\sin\theta}}$$
 
 Similarly, when travelling slower than the optimum speed, friction acts **up the slope**:
 
-$$\boxed{v_{\min}^2 = \frac◆LB◆rg(\sin\theta - \mu\cos\theta)◆RB◆◆LB◆\cos\theta + \mu\sin\theta◆RB◆}$$
+$$\boxed{v_{\min}^2 = \frac{rg(\sin\theta - \mu\cos\theta)}{\cos\theta + \mu\sin\theta}}$$
 
 Note: $v_{\min}$ only exists if $\sin\theta > \mu\cos\theta$I.e., $\tan\theta > \mu$. If the bank
 Angle is too shallow, the car can come to rest without sliding down.
@@ -564,16 +564,16 @@ Angle is too shallow, the car can come to rest without sliding down.
 **Example.** A curve of radius $80\,\mathrm{m}$ is banked at $30^\circ$ with $\mu = 0.3$. Find the
 Maximum and minimum safe speeds for a car on this curve.
 
-$v_{\max}^2 = \dfrac◆LB◆80 \times 9.8(\sin 30° + 0.3\cos 30°)◆RB◆◆LB◆\cos 30° - 0.3\sin 30°◆RB◆ = \dfrac{784(0.5 + 0.2598)}{0.8660 - 0.15} = \dfrac◆LB◆784 \times 0.7598◆RB◆◆LB◆0.7160◆RB◆$
+$v_{\max}^2 = \dfrac{80 \times 9.8(\sin 30° + 0.3\cos 30°)}{\cos 30° - 0.3\sin 30°} = \dfrac{784(0.5 + 0.2598)}{0.8660 - 0.15} = \dfrac{784 \times 0.7598}{0.7160}$
 
 $= \dfrac{595.7}{0.7160} \approx 831.9 \implies v_{\max} \approx 28.8\,\mathrm{m s}^{-1}$.
 
-$v_{\min}^2 = \dfrac◆LB◆80 \times 9.8(\sin 30° - 0.3\cos 30°)◆RB◆◆LB◆\cos 30° + 0.3\sin 30°◆RB◆ = \dfrac{784(0.5 - 0.2598)}{0.8660 + 0.15} = \dfrac◆LB◆784 \times 0.2402◆RB◆◆LB◆1.016◆RB◆$
+$v_{\min}^2 = \dfrac{80 \times 9.8(\sin 30° - 0.3\cos 30°)}{\cos 30° + 0.3\sin 30°} = \dfrac{784(0.5 - 0.2598)}{0.8660 + 0.15} = \dfrac{784 \times 0.2402}{1.016}$
 
 $= \dfrac{188.3}{1.016} \approx 185.3 \implies v_{\min} \approx 13.6\,\mathrm{m s}^{-1}$.
 
 The optimum speed (no friction needed) is
-$v_{\mathrm{opt}} = \sqrt◆LB◆80 \times 9.8 \times \tan 30°◆RB◆ = \sqrt{452.6} \approx 21.3\,\mathrm{m s}^{-1}$
+$v_{\mathrm{opt}} = \sqrt{80 \times 9.8 \times \tan 30°} = \sqrt{452.6} \approx 21.3\,\mathrm{m s}^{-1}$
 Which lies between $v_{\min}$ and $v_{\max}$ as expected.
 
 <hr />
@@ -592,7 +592,7 @@ Constant speed $v$. The string makes a constant angle $\alpha$ with the vertical
 
 Since the mass moves in a horizontal circle, there is no vertical acceleration:
 
-$$T\cos\alpha = mg \implies T = \frac◆LB◆mg◆RB◆◆LB◆\cos\alpha◆RB◆$$ ... (i)
+$$T\cos\alpha = mg \implies T = \frac{mg}{\cos\alpha}$$ ... (i)
 
 The horizontal component of tension provides the centripetal force:
 
@@ -601,15 +601,15 @@ $$T\sin\alpha = \frac{mv^2}{r}$$ ... (ii)
 Since $r = L\sin\alpha$ and $v = \omega r = \omega L\sin\alpha$:
 
 From (i) and (ii):
-$\dfrac◆LB◆mg\sin\alpha◆RB◆◆LB◆\cos\alpha◆RB◆ = \dfrac◆LB◆m\omega^2 L^2\sin^2\alpha◆RB◆◆LB◆L\sin\alpha◆RB◆$
+$\dfrac{mg\sin\alpha}{\cos\alpha} = \dfrac{m\omega^2 L^2\sin^2\alpha}{L\sin\alpha}$
 
 $$g\tan\alpha = \omega^2 L\sin\alpha$$
 
-$$\omega^2 = \frac◆LB◆g\tan\alpha◆RB◆◆LB◆L\sin\alpha◆RB◆ = \frac◆LB◆g◆RB◆◆LB◆L\cos\alpha◆RB◆$$
+$$\omega^2 = \frac{g\tan\alpha}{L\sin\alpha} = \frac{g}{L\cos\alpha}$$
 
-$$\boxed{\omega = \sqrt◆LB◆\frac{g}{L\cos\alpha}◆RB◆}$$
+$$\boxed{\omega = \sqrt{\frac{g}{L\cos\alpha}}}$$
 
-$$\boxed{T_{\mathrm{period}} = \frac◆LB◆2\pi◆RB◆◆LB◆\omega◆RB◆ = 2\pi\sqrt◆LB◆\frac{L\cos\alpha}{g}◆RB◆}$$
+$$\boxed{T_{\mathrm{period}} = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{L\cos\alpha}{g}}}$$
 
 Key observations:
 
@@ -628,12 +628,12 @@ Point to complete the loop, the normal reaction at the top and bottom at this mi
 Speed and reaction at a point $90^\circ$ from the bottom.
 
 **Minimum speed at the bottom:**
-$v_{\min} = \sqrt{5gr} = \sqrt◆LB◆5 \times 9.8 \times 8◆RB◆ = \sqrt{392} \approx 19.8\,\mathrm{m s}^{-1}$.
+$v_{\min} = \sqrt{5gr} = \sqrt{5 \times 9.8 \times 8} = \sqrt{392} \approx 19.8\,\mathrm{m s}^{-1}$.
 
 **At the top (minimum speed):**
 $v_{\mathrm{top}} = \sqrt{gr} = \sqrt{78.4} \approx 8.85\,\mathrm{m s}^{-1}$.
 
-$R + mg = \dfrac◆LB◆mv_{\mathrm{top}}^2◆RB◆◆LB◆r◆RB◆ \implies R = \dfrac◆LB◆200 \times 78.4◆RB◆◆LB◆8◆RB◆ - 200 \times 9.8 = 1960 - 1960 = 0\,\mathrm{N}$.
+$R + mg = \dfrac{mv_{\mathrm{top}}^2}{r} \implies R = \dfrac{200 \times 78.4}{8} - 200 \times 9.8 = 1960 - 1960 = 0\,\mathrm{N}$.
 
 At minimum speed, the motorcycle is just in contact with the track at the top.
 
@@ -641,7 +641,7 @@ At minimum speed, the motorcycle is just in contact with the track at the top.
 
 $v_{\mathrm{bottom}} = \sqrt{5gr} \approx 19.8\,\mathrm{m s}^{-1}$.
 
-$R - mg = \dfrac◆LB◆mv_{\mathrm{bottom}}^2◆RB◆◆LB◆r◆RB◆ \implies R = \dfrac◆LB◆200 \times 392◆RB◆◆LB◆8◆RB◆ + 1960 = 9800 + 1960 = 11760\,\mathrm{N}$.
+$R - mg = \dfrac{mv_{\mathrm{bottom}}^2}{r} \implies R = \dfrac{200 \times 392}{8} + 1960 = 9800 + 1960 = 11760\,\mathrm{N}$.
 
 Note: $R = 6mg$ at the bottom when $v = \sqrt{5gr}$.
 
@@ -653,7 +653,7 @@ $v^2 = v_0^2 - 2gr = 392 - 156.8 = 235.2 \implies v \approx 15.3\,\mathrm{m s}^{
 
 At this point, the weight acts radially (towards the centre) and the reaction acts radially outward:
 
-$mg - R = \dfrac{mv^2}{r} \implies R = mg - \dfrac◆LB◆200 \times 235.2◆RB◆◆LB◆8◆RB◆ = 1960 - 5880$.
+$mg - R = \dfrac{mv^2}{r} \implies R = mg - \dfrac{200 \times 235.2}{8} = 1960 - 5880$.
 
 $R = -3920\,\mathrm{N}$.
 
@@ -714,7 +714,7 @@ $v_{\mathrm{top}}^2 = 49 - 2(9.8)(1.2) = 49 - 23.52 = 25.48$.
 $v_{\mathrm{top}} \approx 5.05\,\mathrm{m s}^{-1}$.
 
 At the top:
-$T + mg = \dfrac◆LB◆mv_{\mathrm{top}}^2◆RB◆◆LB◆r◆RB◆ \implies T = \dfrac◆LB◆0.4 \times 25.48◆RB◆◆LB◆0.6◆RB◆ - 0.4 \times 9.8 = 16.99 - 3.92 = 13.1\,\mathrm{N}$.
+$T + mg = \dfrac{mv_{\mathrm{top}}^2}{r} \implies T = \dfrac{0.4 \times 25.48}{0.6} - 0.4 \times 9.8 = 16.99 - 3.92 = 13.1\,\mathrm{N}$.
 
 At the midpoint (height $r = 0.6\,\mathrm{m}$ above bottom):
 
@@ -723,32 +723,32 @@ $v^2 = 49 - 2(9.8)(0.6) = 49 - 11.76 = 37.24$.
 At the midpoint, the weight is perpendicular to the radius. The reaction $R$ acts horizontally
 Towards the centre:
 
-$R = \dfrac◆LB◆0.4 \times 37.24◆RB◆◆LB◆0.6◆RB◆ = 24.8\,\mathrm{N}$.
+$R = \dfrac{0.4 \times 37.24}{0.6} = 24.8\,\mathrm{N}$.
 
 </details>
 
 <details>
 <summary>Q2. A conical pendulum consists of a mass of $0.5\,\mathrm{kg}$ on a string of length $1.5\,\mathrm{m}$. The string makes an angle of $25^\circ$ with the vertical. Find the tension, the speed of the mass, and the period of rotation.</summary>
 
-$T\cos 25° = 0.5 \times 9.8 = 4.9 \implies T = \dfrac◆LB◆4.9◆RB◆◆LB◆\cos 25°◆RB◆ \approx 5.41\,\mathrm{N}$.
+$T\cos 25° = 0.5 \times 9.8 = 4.9 \implies T = \dfrac{4.9}{\cos 25°} \approx 5.41\,\mathrm{N}$.
 
 $r = 1.5\sin 25° \approx 0.634\,\mathrm{m}$.
 
 $T\sin 25° = \dfrac{mv^2}{r} \implies 5.41\sin 25° = \dfrac{0.5v^2}{0.634}$.
 
-$2.285 = \dfrac{0.5v^2}{0.634} \implies v^2 = \dfrac◆LB◆2.285 \times 0.634◆RB◆◆LB◆0.5◆RB◆ = 2.897 \implies v \approx 1.70\,\mathrm{m s}^{-1}$.
+$2.285 = \dfrac{0.5v^2}{0.634} \implies v^2 = \dfrac{2.285 \times 0.634}{0.5} = 2.897 \implies v \approx 1.70\,\mathrm{m s}^{-1}$.
 
 Period
-$= 2\pi\sqrt◆LB◆\dfrac{L\cos\alpha}{g}◆RB◆ = 2\pi\sqrt◆LB◆\dfrac{1.5\cos 25°}{9.8}◆RB◆ = 2\pi\sqrt◆LB◆\dfrac{1.359}{9.8}◆RB◆ \approx 2\pi(0.3726) \approx 2.34\,\mathrm{s}$.
+$= 2\pi\sqrt{\dfrac{L\cos\alpha}{g}} = 2\pi\sqrt{\dfrac{1.5\cos 25°}{9.8}} = 2\pi\sqrt{\dfrac{1.359}{9.8}} \approx 2\pi(0.3726) \approx 2.34\,\mathrm{s}$.
 
 </details>
 
 <details>
 <summary>Q3. A racing car travels around a banked circular track of radius $100\,\mathrm{m}$ banked at $40^\circ$. The coefficient of friction between the tyres and the track is $0.4$. Find the maximum speed at which the car can travel without sliding up the track.</summary>
 
-$v_{\max}^2 = \dfrac◆LB◆rg(\sin\theta + \mu\cos\theta)◆RB◆◆LB◆\cos\theta - \mu\sin\theta◆RB◆ = \dfrac◆LB◆100 \times 9.8(\sin 40° + 0.4\cos 40°)◆RB◆◆LB◆\cos 40° - 0.4\sin 40°◆RB◆$
+$v_{\max}^2 = \dfrac{rg(\sin\theta + \mu\cos\theta)}{\cos\theta - \mu\sin\theta} = \dfrac{100 \times 9.8(\sin 40° + 0.4\cos 40°)}{\cos 40° - 0.4\sin 40°}$
 
-$= \dfrac{980(0.6428 + 0.3064)}{0.7660 - 0.2571} = \dfrac◆LB◆980 \times 0.9492◆RB◆◆LB◆0.5089◆RB◆ = \dfrac{930.2}{0.5089} \approx 1828$
+$= \dfrac{980(0.6428 + 0.3064)}{0.7660 - 0.2571} = \dfrac{980 \times 0.9492}{0.5089} = \dfrac{930.2}{0.5089} \approx 1828$
 
 $v_{\max} \approx 42.8\,\mathrm{m s}^{-1}$.
 
@@ -764,11 +764,11 @@ The bead can reach the top even if it has zero speed there.
 
 At the top, the reaction $R$ acts towards the centre (downward):
 
-$R + mg = \dfrac◆LB◆mv_{\mathrm{top}}^2◆RB◆◆LB◆r◆RB◆$ where $v_{\mathrm{top}}^2 = u^2 - 4gr$.
+$R + mg = \dfrac{mv_{\mathrm{top}}^2}{r}$ where $v_{\mathrm{top}}^2 = u^2 - 4gr$.
 
 $R = \dfrac{m(u^2 - 4gr)}{r} - mg = \dfrac{mu^2}{r} - 4mg - mg = \dfrac{mu^2}{r} - 5mg$.
 
-If $u = 2\sqrt{gr}$Then $R = \dfrac◆LB◆m \times 4gr◆RB◆◆LB◆r◆RB◆ - 5mg = 4mg - 5mg = -mg$.
+If $u = 2\sqrt{gr}$Then $R = \dfrac{m \times 4gr}{r} - 5mg = 4mg - 5mg = -mg$.
 
 The negative sign means the wire pushes the bead **upward** (away from centre) to prevent it from
 Falling through, since the bead has zero speed at the top.
@@ -787,7 +787,7 @@ $\dfrac{1}{2}mv^2 = \dfrac{1}{2}m(16) + mgr(1-\cos\theta) = 8m + 2m(9.8)(1-\cos\
 
 $v^2 = 16 + 19.6(1 - \cos\theta) = 35.6 - 19.6\cos\theta$
 
-From (i): $9.8\cos\theta = \dfrac◆LB◆35.6 - 19.6\cos\theta◆RB◆◆LB◆2◆RB◆ = 17.8 - 9.8\cos\theta$
+From (i): $9.8\cos\theta = \dfrac{35.6 - 19.6\cos\theta}{2} = 17.8 - 9.8\cos\theta$
 
 $19.6\cos\theta = 17.8 \implies \cos\theta = \dfrac{17.8}{19.6} = 0.9082 \implies \theta \approx 24.8^\circ$
 
@@ -804,25 +804,25 @@ Height above the bottom $= r + r\cos\theta = 2 + 1.82 = 3.82\,\mathrm{m}$.
 $\dfrac{mv^2}{r} = F = \mu mg \implies \mu = \dfrac{v^2}{rg} = \dfrac{225}{490} \approx 0.459$.
 
 **Banked at $20^\circ$:**
-$v_{\mathrm{opt}} = \sqrt◆LB◆50 \times 9.8 \times \tan 20°◆RB◆ = \sqrt{178.3} \approx 13.4\,\mathrm{m s}^{-1}$.
+$v_{\mathrm{opt}} = \sqrt{50 \times 9.8 \times \tan 20°} = \sqrt{178.3} \approx 13.4\,\mathrm{m s}^{-1}$.
 
 Since $15 > 13.4$Friction acts down the slope. With friction down the slope:
 
 $N\cos 20° - F\sin 20° = mg = 7840$ ... (i)
 
-$N\sin 20° + F\cos 20° = \dfrac{mv^2}{r} = \dfrac◆LB◆800 \times 225◆RB◆◆LB◆50◆RB◆ = 3600$ ... (ii)
+$N\sin 20° + F\cos 20° = \dfrac{mv^2}{r} = \dfrac{800 \times 225}{50} = 3600$ ... (ii)
 
-From (i): $N = \dfrac◆LB◆7840 + F\sin 20°◆RB◆◆LB◆\cos 20°◆RB◆$.
+From (i): $N = \dfrac{7840 + F\sin 20°}{\cos 20°}$.
 
 Substituting into (ii):
-$\dfrac◆LB◆(7840 + F\sin 20°)\sin 20°◆RB◆◆LB◆\cos 20°◆RB◆ + F\cos 20° = 3600$.
+$\dfrac{(7840 + F\sin 20°)\sin 20°}{\cos 20°} + F\cos 20° = 3600$.
 
 $7840\tan 20° + F(\sec 20°) = 3600$.
 
 $2854 + 1.064F = 3600 \implies F = \dfrac{746}{1.064} \approx 701\,\mathrm{N}$.
 
 $\mu = \dfrac{F}{N}$. From (i):
-$N = \dfrac◆LB◆7840 + 701\sin 20°◆RB◆◆LB◆\cos 20°◆RB◆ = \dfrac{7840 + 239.8}{0.9397} = \dfrac{8079.8}{0.9397} \approx 8598\,\mathrm{N}$.
+$N = \dfrac{7840 + 701\sin 20°}{\cos 20°} = \dfrac{7840 + 239.8}{0.9397} = \dfrac{8079.8}{0.9397} \approx 8598\,\mathrm{N}$.
 
 $\mu \approx \dfrac{701}{8598} \approx 0.0815$.
 
@@ -846,11 +846,11 @@ $4\,\mathrm{rad\,s^{-1}}$. Find $\theta$.
 
 Resolving horizontally: $T\sin\theta = m\omega^2 r = 0.5 \times 16 \times \sin\theta = 8\sin\theta$.
 
-Dividing: $\tan\theta = \dfrac◆LB◆8\sin\theta◆RB◆◆LB◆4.9/\cos\theta◆RB◆$. Actually:
+Dividing: $\tan\theta = \dfrac{8\sin\theta}{4.9/\cos\theta}$. Actually:
 
-$$\frac◆LB◆T\sin\theta◆RB◆◆LB◆T\cos\theta◆RB◆ = \tan\theta = \frac◆LB◆m\omega^2 L\sin\theta◆RB◆◆LB◆mg◆RB◆ = \frac◆LB◆\omega^2 L \sin\theta◆RB◆◆LB◆g◆RB◆$$
+$$\frac{T\sin\theta}{T\cos\theta} = \tan\theta = \frac{m\omega^2 L\sin\theta}{mg} = \frac{\omega^2 L \sin\theta}{g}$$
 
-$$\cos\theta = \frac◆LB◆g◆RB◆◆LB◆\omega^2 L◆RB◆ = \frac{9.8}{16} = 0.6125$$
+$$\cos\theta = \frac{g}{\omega^2 L} = \frac{9.8}{16} = 0.6125$$
 
 $$\boxed{\theta \approx 52.2°}$$
 
@@ -864,11 +864,11 @@ $N = mg\cos\alpha + \dfrac{mv^2}{r}\sin\alpha$.
 
 Resolving along surface: $\dfrac{mv^2}{r}\cos\alpha = mg\sin\alpha + \mu N$.
 
-$$\frac{mv^2}{r}\cos\alpha = mg\sin\alpha + \mu mg\cos\alpha + \frac◆LB◆\mu mv^2◆RB◆◆LB◆r◆RB◆\sin\alpha$$
+$$\frac{mv^2}{r}\cos\alpha = mg\sin\alpha + \mu mg\cos\alpha + \frac{\mu mv^2}{r}\sin\alpha$$
 
-$$v^2\!\left(\frac◆LB◆\cos\alpha◆RB◆◆LB◆r◆RB◆ - \frac◆LB◆\mu\sin\alpha◆RB◆◆LB◆r◆RB◆\right) = g(\sin\alpha + \mu\cos\alpha)$$
+$$v^2\!\left(\frac{\cos\alpha}{r} - \frac{\mu\sin\alpha}{r}\right) = g(\sin\alpha + \mu\cos\alpha)$$
 
-$$\boxed{v_{\max}^2 = \frac◆LB◆rg(\sin\alpha + \mu\cos\alpha)◆RB◆◆LB◆\cos\alpha - \mu\sin\alpha◆RB◆}$$
+$$\boxed{v_{\max}^2 = \frac{rg(\sin\alpha + \mu\cos\alpha)}{\cos\alpha - \mu\sin\alpha}}$$
 
 ### Example 8.3: Vertical circle — minimum speed at the top (rod)
 
@@ -878,7 +878,7 @@ Vertical circle. Find the minimum angular speed for complete circles.
 **Solution.** At the top: $T + mg = m\omega^2 l$. For a rod, $T \geq 0$ (can push). Minimum:
 $T = 0$:
 
-$$mg = m\omega_{\min}^2 l \implies \boxed{\omega_{\min} = \sqrt◆LB◆\frac{g}{l}◆RB◆}$$
+$$mg = m\omega_{\min}^2 l \implies \boxed{\omega_{\min} = \sqrt{\frac{g}{l}}}$$
 
 ### Example 8.4: Energy approach to vertical circles
 
@@ -911,9 +911,9 @@ $T = \dfrac{mv^2}{r} - mg$ (minimum).
 **Problem.** A disc rotates with angular acceleration $\alpha = -0.2\omega\,\mathrm{rad\,s^{-2}}$.
 If $\omega = 10\,\mathrm{rad\,s^{-1}}$ at $t = 0$Find $\omega(t)$.
 
-**Solution.** $\dfrac◆LB◆d\omega◆RB◆◆LB◆dt◆RB◆ = -0.2\omega$. Separable:
+**Solution.** $\dfrac{d\omega}{dt} = -0.2\omega$. Separable:
 
-$$\int \frac◆LB◆d\omega◆RB◆◆LB◆\omega◆RB◆ = \int -0.2\,dt \implies \ln\omega = -0.2t + \ln 10$$
+$$\int \frac{d\omega}{\omega} = \int -0.2\,dt \implies \ln\omega = -0.2t + \ln 10$$
 
 $$\boxed{\omega = 10e^{-0.2t}}$$
 
@@ -942,9 +942,9 @@ Hemispherical bowl of radius $R$. Find the speed $v$ in terms of $R$$r$And $g$.
 
 $N\sin\theta = \dfrac{mv^2}{r}$ where $\sin\theta = \dfrac{r}{R}$And $N\cos\theta = mg$.
 
-$\tan\theta = \dfrac{v^2}{rg} \implies \dfrac◆LB◆r◆RB◆◆LB◆\sqrt{R^2-r^2}◆RB◆ = \dfrac{v^2}{rg}$.
+$\tan\theta = \dfrac{v^2}{rg} \implies \dfrac{r}{\sqrt{R^2-r^2}} = \dfrac{v^2}{rg}$.
 
-$$\boxed{v^2 = \frac◆LB◆r^2 g◆RB◆◆LB◆\sqrt{R^2 - r^2}◆RB◆}$$
+$$\boxed{v^2 = \frac{r^2 g}{\sqrt{R^2 - r^2}}}$$
 
 </details>
 
@@ -1011,9 +1011,9 @@ Vertical circular motion problems often require energy methods combined with for
 | Centripetal acceleration                  | $a = \omega^2 r = \dfrac{v^2}{r}$                     |
 | Centripetal force                         | $F = m\omega^2 r = \dfrac{mv^2}{r}$                   |
 | Linear speed                              | $v = \omega r$                                        |
-| Angular speed                             | $\omega = \dfrac{v}{r} = \dfrac◆LB◆2\pi◆RB◆◆LB◆T◆RB◆$ |
-| Period                                    | $T = \dfrac◆LB◆2\pi◆RB◆◆LB◆\omega◆RB◆$                |
-| Conical pendulum: $\cos\theta$            | $\cos\theta = \dfrac◆LB◆g◆RB◆◆LB◆\omega^2 l◆RB◆$      |
+| Angular speed                             | $\omega = \dfrac{v}{r} = \dfrac{2\pi}{T}$ |
+| Period                                    | $T = \dfrac{2\pi}{\omega}$                |
+| Conical pendulum: $\cos\theta$            | $\cos\theta = \dfrac{g}{\omega^2 l}$      |
 | Vertical circle (top): min speed (string) | $v_{\min} = \sqrt{gr}$                                |
 | Vertical circle (top): min speed (rod)    | $v_{\min} = 0$                                        |
 | Vertical circle: max speed at bottom      | $v_{\max} = \sqrt{u^2 + 4gr}$ (energy)                |
@@ -1030,9 +1030,9 @@ Track of radius $50\,\mathrm{m}$. Find the minimum coefficient of friction requi
 <details>
 <summary>Solution</summary>
 
-$F = \dfrac{mv^2}{r} = \dfrac◆LB◆1200 \times 225◆RB◆◆LB◆50◆RB◆ = 5400\,\mathrm{N}$.
+$F = \dfrac{mv^2}{r} = \dfrac{1200 \times 225}{50} = 5400\,\mathrm{N}$.
 
-$F = \mu mg \implies \mu = \dfrac◆LB◆5400◆RB◆◆LB◆1200 \times 9.8◆RB◆ = \dfrac{5400}{11760}$.
+$F = \mu mg \implies \mu = \dfrac{5400}{1200 \times 9.8} = \dfrac{5400}{11760}$.
 
 $\boxed{\mu \approx 0.459}$
 
@@ -1102,7 +1102,7 @@ $\dfrac{1}{2}mu^2 = \dfrac{1}{2}mv^2 + mgr(1-\cos\theta)$
 $v^2 = u^2 - 2gr(1-\cos\theta)$.
 
 Substituting:
-$T = \dfrac◆LB◆m[u^2 - 2gr(1-\cos\theta)]◆RB◆◆LB◆r◆RB◆ + mg\cos\theta = \dfrac{mu^2}{r} - 2mg + 3mg\cos\theta$.
+$T = \dfrac{m[u^2 - 2gr(1-\cos\theta)]}{r} + mg\cos\theta = \dfrac{mu^2}{r} - 2mg + 3mg\cos\theta$.
 
 At the top: $T_{\text{top}} = \dfrac{mu^2}{r} - 2mg - 3mg = \dfrac{mu^2}{r} - 5mg$.
 
@@ -1124,7 +1124,7 @@ The vertical. Find the tension.
 
 Vertically: $T\cos 30° = 0.1 \times 9.8 = 0.98\,\mathrm{N}$.
 
-$T = \dfrac◆LB◆0.98◆RB◆◆LB◆\cos 30°◆RB◆ = \dfrac◆LB◆0.98◆RB◆◆LB◆\sqrt{3}/2◆RB◆ = \boxed{1.132\,\mathrm{N}}$.
+$T = \dfrac{0.98}{\cos 30°} = \dfrac{0.98}{\sqrt{3}/2} = \boxed{1.132\,\mathrm{N}}$.
 
 Check: horizontally, $T\sin 30° = m\omega^2 r$ where $r = 0.8\sin 30° = 0.4\,\mathrm{m}$.
 
@@ -1135,7 +1135,7 @@ $m\omega^2 r = 0.1 \times 9 \times 0.4 = 0.36\,\mathrm{N}$.
 These don't match, which means the given angle is inconsistent with the given angular speed. The
 Correct angle satisfies:
 
-$\cos\theta = \dfrac◆LB◆g◆RB◆◆LB◆\omega^2 l◆RB◆ = \dfrac◆LB◆9.8◆RB◆◆LB◆9 \times 0.8◆RB◆ = 1.361 > 1$.
+$\cos\theta = \dfrac{g}{\omega^2 l} = \dfrac{9.8}{9 \times 0.8} = 1.361 > 1$.
 
 This is impossible, meaning the particle cannot maintain circular motion at
 $3\,\mathrm{rad\,s^{-1}}$ with string length $0.8\,\mathrm{m}$ (it would need to be horizontal,
@@ -1247,7 +1247,7 @@ For small $\theta$: $\sin\theta \approx \theta$. The restoring torque is $-mgl\t
 $ml^2\ddot{\theta} = -mgl\theta \implies \ddot{\theta} + \dfrac{g}{l}\theta = 0$.
 
 This is SHM with $\omega^2 = g/l$. Period:
-$T = \dfrac◆LB◆2\pi◆RB◆◆LB◆\omega◆RB◆ = \boxed{2\pi\sqrt{l/g}}$. $\blacksquare$
+$T = \dfrac{2\pi}{\omega} = \boxed{2\pi\sqrt{l/g}}$. $\blacksquare$
 
 </details>
 

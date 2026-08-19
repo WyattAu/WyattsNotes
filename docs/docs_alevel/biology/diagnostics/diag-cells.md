@@ -163,7 +163,7 @@ different organelles are separated based on their density.
 **Solution:**
 
 (a) **Magnification** is the number of times larger the image appears compared to the actual object:
-$\text{magnification} = \frac◆LB◆\text{image size}◆RB◆◆LB◆\text{actual size}◆RB◆$. **Resolution**
+$\text{magnification} = \frac{\text{image size}}{\text{actual size}}$. **Resolution**
 (or resolving power) is the minimum distance between two points that can be distinguished as
 separate objects. Resolution is more important than magnification because increasing magnification
 without improving resolution produces a larger, blurry image — you cannot see more detail. The
@@ -189,14 +189,14 @@ structures (organelles, ribosomes, membranes) that are invisible under a light m
 4. The image appears in black and white (density-dependent contrast from heavy metal staining), not
    in natural colour.
 
-(c) Magnification $= \frac◆LB◆\text{image size}◆RB◆◆LB◆\text{actual size}◆RB◆$.
+(c) Magnification $= \frac{\text{image size}}{\text{actual size}}$.
 
 First, convert units consistently:
 
 - Image size of scale bar $= 20\text{ mm} = 20 \times 10^6\text{ nm}$
 - Actual size of scale bar $= 50\text{ nm}$
 
-$\text{Magnification} = \frac◆LB◆20 \times 10^6◆RB◆◆LB◆50◆RB◆ = \frac{20,000,000}{50} = 400,000$
+$\text{Magnification} = \frac{20 \times 10^6}{50} = \frac{20,000,000}{50} = 400,000$
 
 The magnification is $\times 400,000$.
 

@@ -83,7 +83,7 @@ Take $g = 9.81\,\text{m}\,\text{s}^{-2}$.
 **Solution:**
 
 (a) Speed just before first impact:
-$v = \sqrt{2gh} = \sqrt◆LB◆2 \times 9.81 \times 2.0◆RB◆ = \sqrt{39.24} = 6.264\,\text{m}\,\text{s}^{-1}$
+$v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 2.0} = \sqrt{39.24} = 6.264\,\text{m}\,\text{s}^{-1}$
 
 Speed after first bounce: $v' = ev = 0.80 \times 6.264 = 5.012\,\text{m}\,\text{s}^{-1}$
 
@@ -101,13 +101,13 @@ Total time $= t_0 + 2t_1 + 2et_1 + 2e^2t_1 + \ldots$
 
 $$= t_0 + 2t_1(1 + e + e^2 + \ldots) = t_0 + \frac{2t_1}{1 - e}$$
 
-$$= 0.6386 + \frac◆LB◆2 \times 0.5109◆RB◆◆LB◆1 - 0.80◆RB◆ = 0.6386 + \frac{1.0218}{0.20} = 0.6386 + 5.109 = 5.748\,\text{s}$$
+$$= 0.6386 + \frac{2 \times 0.5109}{1 - 0.80} = 0.6386 + \frac{1.0218}{0.20} = 0.6386 + 5.109 = 5.748\,\text{s}$$
 
 (c) Total distance $= h + 2h' + 2h'' + \ldots = h + 2e^2h + 2e^4h + \ldots$
 
 $$= h + 2he^2(1 + e^2 + e^4 + \ldots) = h + \frac{2he^2}{1 - e^2}$$
 
-$$= 2.0 + \frac◆LB◆2 \times 2.0 \times 0.64◆RB◆◆LB◆1 - 0.64◆RB◆ = 2.0 + \frac{2.56}{0.36} = 2.0 + 7.11 = 9.11\,\text{m}$$
+$$= 2.0 + \frac{2 \times 2.0 \times 0.64}{1 - 0.64} = 2.0 + \frac{2.56}{0.36} = 2.0 + 7.11 = 9.11\,\text{m}$$
 
 ---
 
@@ -230,7 +230,7 @@ of $2000\,\text{m}\,\text{s}^{-1}$ relative to the rocket.
 
 (b) At $t = 0$: mass $= 500\,\text{kg}$
 
-$$a_0 = \frac◆LB◆F_{\text{thrust}}◆RB◆◆LB◆m◆RB◆ = \frac{10000}{500} = 20.0\,\text{m}\,\text{s}^{-2}$$
+$$a_0 = \frac{F_{\text{thrust}}}{m} = \frac{10000}{500} = 20.0\,\text{m}\,\text{s}^{-2}$$
 
 At $t = 60\,\text{s}$: fuel burned $= 5.0 \times 60 = 300\,\text{kg}$Remaining mass
 $= 200\,\text{kg}$

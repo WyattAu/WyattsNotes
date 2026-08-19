@@ -125,7 +125,7 @@ Same force $F$:
 $F = k_1 x_1 = k_2 x_2$So $x_1 = F/k_1$ and $x_2 = F/k_2$. Total extension:
 $x = x_1 + x_2 = F(1/k_1 + 1/k_2)$.
 
-$$\boxed{\frac◆LB◆1◆RB◆◆LB◆k_{\mathrm{series}}◆RB◆ = \frac{1}{k_1} + \frac{1}{k_2}}$$
+$$\boxed{\frac{1}{k_{\mathrm{series}}} = \frac{1}{k_1} + \frac{1}{k_2}}$$
 
 **Intuition.** Parallel springs are stiffer (each contributes to resisting displacement). Series
 Springs are less stiff (each stretches under the same load, giving more total compliance). This is
@@ -173,7 +173,7 @@ Setting $E_k(\mathrm{final}) = 0$ (block comes to rest):
 
 $$\frac{1}{2}mv^2 = \mu mgd$$
 
-$$\boxed{d = \frac◆LB◆v^2◆RB◆◆LB◆2\mu g◆RB◆}$$
+$$\boxed{d = \frac{v^2}{2\mu g}}$$
 
 **Intuition.** The stopping distance is proportional to $v^2$ (not $v$), which is why driving at
 Twice the speed requires **four times** the braking distance. This quadratic dependence is a direct
@@ -208,7 +208,7 @@ Deep connection between symmetry and conservation is one of the most profound re
 
 **Definition.** **Power** is the rate at which work is done (or energy is transferred):
 
-$$\boxed{P = \frac{dW}{dt} = \frac◆LB◆\Delta E◆RB◆◆LB◆\Delta t◆RB◆}$$
+$$\boxed{P = \frac{dW}{dt} = \frac{\Delta E}{\Delta t}}$$
 
 **Units.** 1 watt (W) $= 1$ J s$^{-1}$.
 
@@ -243,11 +243,11 @@ Over the whole acceleration is $F(u+v)/2$.
 
 **Definition.** The **efficiency** of an energy transfer is:
 
-$$\eta = \frac◆LB◆\mathrm{useful energy output}◆RB◆◆LB◆\mathrm{total energy input}◆RB◆ \times 100\%$$
+$$\eta = \frac{\mathrm{useful energy output}}{\mathrm{total energy input}} \times 100\%$$
 
 Or equivalently for power:
 
-$$\eta = \frac◆LB◆P_{\mathrm{out}}◆RB◆◆LB◆P_{\mathrm{in}}◆RB◆ \times 100\%$$
+$$\eta = \frac{P_{\mathrm{out}}}{P_{\mathrm{in}}} \times 100\%$$
 
 Efficiency is always between 0% and 100%. In practice, some energy is always dissipated ( as Thermal
 energy due to friction or resistance).
@@ -272,7 +272,7 @@ A car of mass $1200$ kg accelerates from rest to $25$ m s$^{-1}$ in $8.0$ s. Cal
 
 **Answer.** (a) $E_k = \frac{1}{2}(1200)(25)^2 = 375\,000$ J $= 375$ kJ.
 
-(b) $P = \frac◆LB◆\Delta E_k◆RB◆◆LB◆\Delta t◆RB◆ = \frac{375\,000}{8.0} = 46\,900$ W $= 46.9$ kW.
+(b) $P = \frac{\Delta E_k}{\Delta t} = \frac{375\,000}{8.0} = 46\,900$ W $= 46.9$ kW.
 
 (c) $P = Fv_{\mathrm{avg}}$, $v_{\mathrm{avg}} = 12.5$ m s$^{-1}$. $F = 46\,900/12.5 = 3750$ N.
 Alternatively, $F = ma = 1200 \times 25/8 = 3750$ N.
@@ -288,7 +288,7 @@ A spring of spring constant $500$ N m$^{-1}$ is compressed by $0.08$ m. A $0.50$
 
 **Answer.** Elastic PE converted to KE: $\frac{1}{2}kx^2 = \frac{1}{2}mv^2$.
 
-$v = \sqrt◆LB◆\frac{kx^2}{m}◆RB◆ = \sqrt◆LB◆\frac{500 \times 0.0064}{0.50}◆RB◆ = \sqrt{6.4} = 2.53$
+$v = \sqrt{\frac{kx^2}{m}} = \sqrt{\frac{500 \times 0.0064}{0.50}} = \sqrt{6.4} = 2.53$
 m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Conservation of Energy](#5-conservation-of-energy)
@@ -300,10 +300,10 @@ m s$^{-1}$.
 A roller coaster car of mass $500$ kg starts from rest at point A, 20 m above the ground. It descends to point B at ground level, then rises to point C at 12 m above the ground. Assuming no friction, find the speed at B and C.
 
 **Answer.** At B: $\frac{1}{2}(500)v_B^2 = 500 \times 9.81 \times 20$.
-$v_B = \sqrt◆LB◆2 \times 9.81 \times 20◆RB◆ = \sqrt{392.4} = 19.8$ m s$^{-1}$.
+$v_B = \sqrt{2 \times 9.81 \times 20} = \sqrt{392.4} = 19.8$ m s$^{-1}$.
 
 At C: $E_k(C) = mg(h_A - h_C) = 500 \times 9.81 \times 8 = 39\,240$ J.
-$v_C = \sqrt◆LB◆2 \times 39\,240/500◆RB◆ = \sqrt{156.96} = 12.5$ m s$^{-1}$.
+$v_C = \sqrt{2 \times 39\,240/500} = \sqrt{156.96} = 12.5$ m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Conservation of Energy](#5-conservation-of-energy)
 
@@ -314,12 +314,12 @@ $v_C = \sqrt◆LB◆2 \times 39\,240/500◆RB◆ = \sqrt{156.96} = 12.5$ m s$^{-
 A motor lifts a $200$ kg load through a height of $15$ m in $10$ s. If the motor is $80\%$ efficient and runs on a $240$ V supply, calculate the current it draws.
 
 **Answer.** Useful power:
-$P_{\mathrm{out}} = \frac{mgh}{t} = \frac◆LB◆200 \times 9.81 \times 15◆RB◆◆LB◆10◆RB◆ = 2943$ W.
+$P_{\mathrm{out}} = \frac{mgh}{t} = \frac{200 \times 9.81 \times 15}{10} = 2943$ W.
 
 Electrical power:
-$P_{\mathrm{in}} = \frac◆LB◆P_{\mathrm{out}}◆RB◆◆LB◆\eta◆RB◆ = \frac{2943}{0.80} = 3679$ W.
+$P_{\mathrm{in}} = \frac{P_{\mathrm{out}}}{\eta} = \frac{2943}{0.80} = 3679$ W.
 
-Current: $I = \frac◆LB◆P_{\mathrm{in}}◆RB◆◆LB◆V◆RB◆ = \frac{3679}{240} = 15.3$ A.
+Current: $I = \frac{P_{\mathrm{in}}}{V} = \frac{3679}{240} = 15.3$ A.
 
 <b>If you get this wrong, revise:</b> [Efficiency](#6-power)
 
@@ -330,7 +330,7 @@ Current: $I = \frac◆LB◆P_{\mathrm{in}}◆RB◆◆LB◆V◆RB◆ = \frac{3679
 A pendulum bob of mass $0.50$ kg is pulled aside until it is $0.10$ m above its lowest point and released. Find its speed at the lowest point.
 
 **Answer.**
-$mgh = \frac{1}{2}mv^2 \implies v = \sqrt{2gh} = \sqrt◆LB◆2 \times 9.81 \times 0.10◆RB◆ = \sqrt{1.962} = 1.40$
+$mgh = \frac{1}{2}mv^2 \implies v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 0.10} = \sqrt{1.962} = 1.40$
 M s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Conservation of Energy](#5-conservation-of-energy)
@@ -348,7 +348,7 @@ $W_F = Fd\cos\theta = 150 \times 8.0 \times \cos 30° = 150 \times 8.0 \times 0.
 Friction: $F_f = 0.25 \times 467.4 = 116.9$ N. $W_f = 116.9 \times 8.0 = 935$ J.
 
 (c) Net work = $1039 - 935 = 104$ J. $W_{\mathrm{net}} = \Delta E_k = \frac{1}{2}mv^2$.
-$v = \sqrt◆LB◆2 \times 104/40◆RB◆ = \sqrt{5.2} = 2.28$ m s$^{-1}$.
+$v = \sqrt{2 \times 104/40} = \sqrt{5.2} = 2.28$ m s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Work Done by a Force](#1-work-done-by-a-force) and
 [Work-Energy Theorem](#2-kinetic-energy)
@@ -404,7 +404,7 @@ A satellite of mass $500$ kg is in a circular orbit at altitude $300$ km above E
 **Answer.** $r = R_E + h = 6\,670\,000$ m.
 $GM = gR_E^2 = 9.81 \times (6.37 \times 10^6)^2 = 3.976 \times 10^{14}$.
 
-$E = -\frac{GMm}{2r} = -\frac◆LB◆3.976 \times 10^{14} \times 500◆RB◆◆LB◆2 \times 6.67 \times 10^6◆RB◆ = -\frac◆LB◆1.988 \times 10^{17}◆RB◆◆LB◆1.334 \times 10^7◆RB◆ = -1.49 \times 10^{10}$
+$E = -\frac{GMm}{2r} = -\frac{3.976 \times 10^{14} \times 500}{2 \times 6.67 \times 10^6} = -\frac{1.988 \times 10^{17}}{1.334 \times 10^7} = -1.49 \times 10^{10}$
 J $= -14.9$ GJ.
 
 <b>If you get this wrong, revise:</b> [Conservation of Energy](#5-conservation-of-energy) and
@@ -497,11 +497,11 @@ Elastic. At any other point: $E_e + E_k = E_{\mathrm{total}}$.
 
 $E_{\mathrm{total}} = \frac{1}{2}(200)(0.15)^2 = 2.25$ J. Maximum speed at equilibrium ($x = 0$):
 $E_k = E_{\mathrm{total}}$.
-$v_{\mathrm{max}} = \sqrt◆LB◆2E_{\mathrm{total}}/m◆RB◆ = \sqrt◆LB◆2 \times 2.25/0.50◆RB◆ = \sqrt{9} = 3.0$
+$v_{\mathrm{max}} = \sqrt{2E_{\mathrm{total}}/m} = \sqrt{2 \times 2.25/0.50} = \sqrt{9} = 3.0$
 m S$^{-1}$.
 
 (b) At $x = 0.05$ m: $E_e = \frac{1}{2}(200)(0.0025) = 0.25$ J. $E_k = 2.25 - 0.25 = 2.0$ J.
-$v = \sqrt◆LB◆2 \times 2.0/0.50◆RB◆ = \sqrt{8} = 2.83$ m s$^{-1}$.
+$v = \sqrt{2 \times 2.0/0.50} = \sqrt{8} = 2.83$ m s$^{-1}$.
 
 (c) $E_{\mathrm{total}} = 2.25$ J (constant, since no friction).
 
@@ -579,7 +579,7 @@ Elastic potential energy in each spring.
 
 **Answer.** (a) For parallel springs: $k_{\mathrm{eff}} = 2k = 800$ N m$^{-1}$.
 
-Angular frequency: $\omega = \sqrt◆LB◆k_{\mathrm{eff}}/m◆RB◆ = \sqrt{800/5.0} = \sqrt{160} = 12.6$
+Angular frequency: $\omega = \sqrt{k_{\mathrm{eff}}/m} = \sqrt{800/5.0} = \sqrt{160} = 12.6$
 rad S$^{-1}$.
 
 Period: $T = 2\pi/\omega = 2\pi/12.6 = 0.499$ s.

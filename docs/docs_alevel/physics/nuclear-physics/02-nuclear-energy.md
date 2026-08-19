@@ -94,7 +94,7 @@ Tightly bound the nucleus.
 
 The **binding energy per nucleon** is a measure of nuclear stability:
 
-$$\frac{E_b}{A} = \frac◆LB◆\Delta m \cdot c^2◆RB◆◆LB◆A◆RB◆$$
+$$\frac{E_b}{A} = \frac{\Delta m \cdot c^2}{A}$$
 
 ### The Binding Energy Curve
 
@@ -180,7 +180,7 @@ Nuclear reaction occurs when a projectile strikes a target nucleus. It has dimen
 
 The cross-section is defined operationally as:
 
-$$\sigma = \frac◆LB◆\mathrm{number of reactions per unit time}◆RB◆◆LB◆\mathrm{incident flux} \times \mathrm{number of target nuclei}◆RB◆$$
+$$\sigma = \frac{\mathrm{number of reactions per unit time}}{\mathrm{incident flux} \times \mathrm{number of target nuclei}}$$
 
 The SI unit would be m$^2$But nuclear cross-sections are so small that the standard unit is the
 **barn**:
@@ -371,7 +371,7 @@ Mass $m_n$ and kinetic energy $E$ colliding elastically with a stationary nucleu
 
 **Theorem (maximum energy loss).** The maximum fractional energy loss per head-on collision is:
 
-$$\frac◆LB◆\Delta E_{\max}◆RB◆◆LB◆E◆RB◆ = \frac{4\,m_n\,M}{(m_n + M)^2}$$
+$$\frac{\Delta E_{\max}}{E} = \frac{4\,m_n\,M}{(m_n + M)^2}$$
 
 _Proof._ In the lab frame, the neutron has initial velocity $v$ and the target is at rest. After a
 Head-on elastic collision, conservation of momentum and kinetic energy give the neutron's final
@@ -384,7 +384,7 @@ $E' = \frac{1}{2}m_n(v')^2 = \left(\frac{m_n - M}{m_n + M}\right)^2 E$.
 
 Therefore:
 
-$$\frac◆LB◆\Delta E◆RB◆◆LB◆E◆RB◆ = \frac{E - E'}{E} = 1 - \left(\frac{m_n - M}{m_n + M}\right)^2 = \frac{4m_n M}{(m_n + M)^2}$$
+$$\frac{\Delta E}{E} = \frac{E - E'}{E} = 1 - \left(\frac{m_n - M}{m_n + M}\right)^2 = \frac{4m_n M}{(m_n + M)^2}$$
 
 This is maximised when $m_n = M$ (equal masses), giving $\Delta E/E = 1$: the neutron transfers all
 Its energy in a single collision. $\square$
@@ -410,7 +410,7 @@ Control rods are made of materials with very high neutron absorption cross-secti
 
 The **multiplication factor** is:
 
-$$k = \frac◆LB◆\mathrm{neutrons in generation } n + 1◆RB◆◆LB◆\mathrm{neutrons in generation } n◆RB◆$$
+$$k = \frac{\mathrm{neutrons in generation } n + 1}{\mathrm{neutrons in generation } n}$$
 
 | Regime        | Condition | Behaviour                       |
 | ------------- | --------- | ------------------------------- |
@@ -447,7 +447,7 @@ Subcritical" when $1 \lt k_{\mathrm{eff}} \lt 1 + \beta$. In this regime, the ne
 Grows on the timescale of the longest-lived delayed precursor ($\sim 55$ s for Br-87), not the
 Prompt lifetime. The effective time constant becomes:
 
-$$\tau_{\mathrm{eff}} \approx \frac◆LB◆\beta / \bar{\lambda}◆RB◆◆LB◆k_{\mathrm{eff}} - 1◆RB◆$$
+$$\tau_{\mathrm{eff}} \approx \frac{\beta / \bar{\lambda}}{k_{\mathrm{eff}} - 1}$$
 
 Where $\bar{\lambda} \approx 0.08\,\mathrm{s}^{-1}$. For $k_{\mathrm{eff}} = 1.001$:
 $\tau_{\mathrm{eff}} \approx 0.0065 / (0.08 \times 0.001) \approx 81$ s --- manageable by Mechanical
@@ -896,7 +896,7 @@ Elapse before this waste can be reclassified as low-level?
 $2^{-t/t_{1/2}} = A/A_0 = 10^6 / (5 \times 10^{12})
 = 2 \times 10^{-7}$.
 
-$t = -t_{1/2} \cdot \log_2(2 \times 10^{-7}) = -30.2 \times \frac◆LB◆\ln(2 \times 10^{-7})◆RB◆◆LB◆\ln 2◆RB◆$
+$t = -t_{1/2} \cdot \log_2(2 \times 10^{-7}) = -30.2 \times \frac{\ln(2 \times 10^{-7})}{\ln 2}$
 
 $\ln(2 \times 10^{-7}) = \ln 2 - 7 \ln 10 = 0.693 - 16.118 = -15.425$
 

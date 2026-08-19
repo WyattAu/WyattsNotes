@@ -65,7 +65,7 @@ coefficient. Always examine Your scatter diagram before relying on numerical mea
 The **product moment correlation coefficient** (also called Pearson's correlation coefficient) For a
 sample of $n$ pairs $(x_i, y_i)$ is:
 
-$$r = \frac◆LB◆S_{xy}◆RB◆◆LB◆\sqrt{S_{xx}\,S_{yy}}◆RB◆$$
+$$r = \frac{S_{xy}}{\sqrt{S_{xx}\,S_{yy}}}$$
 
 Where:
 
@@ -115,7 +115,7 @@ $\sum x_i^2 = 4 + 16 + 36 + 64 + 100 = 220$$S_{xx} = 220 - 5(36) = 40$
 
 $\sum y_i^2 = 9 + 25 + 16 + 49 + 81 = 180$$S_{yy} = 180 - 5(31.36) = 180 - 156.8 = 23.2$
 
-$$r = \frac◆LB◆28◆RB◆◆LB◆\sqrt{40 \times 23.2}◆RB◆ = \frac◆LB◆28◆RB◆◆LB◆\sqrt{928}◆RB◆ = \frac{28}{30.46} \approx 0.919$$
+$$r = \frac{28}{\sqrt{40 \times 23.2}} = \frac{28}{\sqrt{928}} = \frac{28}{30.46} \approx 0.919$$
 
 This indicates strong positive linear correlation.
 
@@ -135,7 +135,7 @@ The PMCC is unchanged by coding: $r_{xy} = r_{uv}$.
 **Spearman's rank correlation coefficient** $r_s$ measures the strength of the **monotonic**
 Relationship between two variables:
 
-$$r_s = 1 - \frac◆LB◆6\sum d_i^2◆RB◆◆LB◆n(n^2 - 1)◆RB◆$$
+$$r_s = 1 - \frac{6\sum d_i^2}{n(n^2 - 1)}$$
 
 Where $d_i = \mathrm{rank}(x_i) - \mathrm{rank}(y_i)$ is the difference in ranks for the $i$-th
 pair.
@@ -154,7 +154,7 @@ tied for ranks 3 and 4, both receive rank 3.5.
 
 When ties exist, the simplified formula is only approximate. A more accurate formula uses:
 
-$$r_s = \frac◆LB◆S_{xy}◆RB◆◆LB◆\sqrt{S_{xx}\,S_{yy}}◆RB◆$$
+$$r_s = \frac{S_{xy}}{\sqrt{S_{xx}\,S_{yy}}}$$
 
 Applied to the rank data.
 
@@ -172,7 +172,7 @@ Applied to the rank data.
 
 $\sum d_i^2 = 1 + 4 + 1 + 1 + 1 + 4 = 12$
 
-$$r_s = 1 - \frac◆LB◆6 \times 12◆RB◆◆LB◆6(35)◆RB◆ = 1 - \frac{72}{210} = 1 - 0.343 = 0.657$$
+$$r_s = 1 - \frac{6 \times 12}{6(35)} = 1 - \frac{72}{210} = 1 - 0.343 = 0.657$$
 
 This indicates moderate positive agreement between the judges.
 
@@ -192,7 +192,7 @@ $d_i$: 0, 0.5, -0.5, 0, 0.
 
 $\sum d_i^2 = 0 + 0.25 + 0.25 + 0 + 0 = 0.5$
 
-$$r_s = 1 - \frac◆LB◆6 \times 0.5◆RB◆◆LB◆5 \times 24◆RB◆ = 1 - \frac{3}{120} = 1 - 0.025 = 0.975$$
+$$r_s = 1 - \frac{6 \times 0.5}{5 \times 24} = 1 - \frac{3}{120} = 1 - 0.025 = 0.975$$
 
 Very strong positive monotonic relationship.
 
@@ -207,10 +207,10 @@ of squared residuals:
 
 $$S = \sum_{i=1}^{n}(y_i - a - bx_i)^2$$
 
-Setting $\dfrac◆LB◆\partial S◆RB◆◆LB◆\partial a◆RB◆ = 0$ and
-$\dfrac◆LB◆\partial S◆RB◆◆LB◆\partial b◆RB◆ = 0$:
+Setting $\dfrac{\partial S}{\partial a} = 0$ and
+$\dfrac{\partial S}{\partial b} = 0$:
 
-$$b = \frac{S_{xy}}{S_{xx}} = \frac◆LB◆\sum(x_i - \bar{x})(y_i - \bar{y})◆RB◆◆LB◆\sum(x_i - \bar{x})^2◆RB◆$$
+$$b = \frac{S_{xy}}{S_{xx}} = \frac{\sum(x_i - \bar{x})(y_i - \bar{y})}{\sum(x_i - \bar{x})^2}$$
 
 $$a = \bar{y} - b\bar{x}$$
 
@@ -218,9 +218,9 @@ $$a = \bar{y} - b\bar{x}$$
 
 ### 4.2 Derivation of the normal equations
 
-$$\frac◆LB◆\partial S◆RB◆◆LB◆\partial a◆RB◆ = -2\sum(y_i - a - bx_i) = 0 \implies na + b\sum x_i = \sum y_i$$
+$$\frac{\partial S}{\partial a} = -2\sum(y_i - a - bx_i) = 0 \implies na + b\sum x_i = \sum y_i$$
 
-$$\frac◆LB◆\partial S◆RB◆◆LB◆\partial b◆RB◆ = -2\sum x_i(y_i - a - bx_i) = 0 \implies a\sum x_i + b\sum x_i^2 = \sum x_i y_i$$
+$$\frac{\partial S}{\partial b} = -2\sum x_i(y_i - a - bx_i) = 0 \implies a\sum x_i + b\sum x_i^2 = \sum x_i y_i$$
 
 These are the **normal equations**. Dividing the first by $n$ gives $\bar{y} = a + b\bar{x}$
 Confirming the line passes through the mean point.
@@ -322,7 +322,7 @@ $S_{xy} = (1 - 3.5)(2 - 4.833) + \ldots = (-2.5)(-2.833) + (-1.5)(-1.833) + (-0.
 
 $= 7.083 + 2.750 - 0.083 - 0.417 + 3.250 + 7.917 = 20.5$
 
-$r = \dfrac◆LB◆20.5◆RB◆◆LB◆\sqrt{17.5 \times 26.17}◆RB◆ = \dfrac◆LB◆20.5◆RB◆◆LB◆\sqrt{457.98}◆RB◆ = \dfrac{20.5}{21.40} \approx 0.958$
+$r = \dfrac{20.5}{\sqrt{17.5 \times 26.17}} = \dfrac{20.5}{\sqrt{457.98}} = \dfrac{20.5}{21.40} \approx 0.958$
 
 </details>
 
@@ -358,7 +358,7 @@ $d_i$: -2, 1, -1, 2, -1, 1, -1, 1.
 
 $\sum d_i^2 = 4 + 1 + 1 + 4 + 1 + 1 + 1 + 1 = 14$.
 
-$r_s = 1 - \dfrac◆LB◆6 \times 14◆RB◆◆LB◆8 \times 63◆RB◆ = 1 - \dfrac{84}{504} = 1 - 0.1667 = 0.833$.
+$r_s = 1 - \dfrac{6 \times 14}{8 \times 63} = 1 - \dfrac{84}{504} = 1 - 0.1667 = 0.833$.
 
 </details>
 

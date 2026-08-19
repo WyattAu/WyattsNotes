@@ -30,7 +30,7 @@ intersection of individual domains, rather than considering the range of the inn
 **Solution:**
 
 **(a)**
-$f(g(x)) = f\left(\frac{1}{x-3}\right) = \sqrt◆LB◆\frac{2}{x-3} - 1◆RB◆ = \sqrt◆LB◆\frac{2 - (x-3)}{x-3}◆RB◆ = \sqrt◆LB◆\frac{5-x}{x-3}◆RB◆$.
+$f(g(x)) = f\left(\frac{1}{x-3}\right) = \sqrt{\frac{2}{x-3} - 1} = \sqrt{\frac{2 - (x-3)}{x-3}} = \sqrt{\frac{5-x}{x-3}}$.
 
 For this to be defined, we need:
 
@@ -49,7 +49,7 @@ Critical values: $x = 3$ (excluded, denominator zero) and $x = 5$ (included, num
 
 Domain of $f \circ g$: $(3, 5]$.
 
-**(b)** $g(f(x)) = g(\sqrt{2x-1}) = \frac◆LB◆1◆RB◆◆LB◆\sqrt{2x-1} - 3◆RB◆$.
+**(b)** $g(f(x)) = g(\sqrt{2x-1}) = \frac{1}{\sqrt{2x-1} - 3}$.
 
 For this to be defined:
 
@@ -177,11 +177,11 @@ Check: $x = 2 > 0$So it is in the domain. Also verify through each layer:
 
 $h(x) = \sqrt{x}$
 
-$f(h(x)) = \frac◆LB◆2◆RB◆◆LB◆\sqrt{x}+1◆RB◆$ (domain: $x \geq 0$, $x \neq 0$So $x > 0$)
+$f(h(x)) = \frac{2}{\sqrt{x}+1}$ (domain: $x \geq 0$, $x \neq 0$So $x > 0$)
 
-$g(f(h(x))) = \left(\frac◆LB◆2◆RB◆◆LB◆\sqrt{x}+1◆RB◆\right)^2 - 1 = \frac◆LB◆4◆RB◆◆LB◆(\sqrt{x}+1)^2◆RB◆ - 1 = \frac◆LB◆4 - (\sqrt{x}+1)^2◆RB◆◆LB◆(\sqrt{x}+1)^2◆RB◆$
+$g(f(h(x))) = \left(\frac{2}{\sqrt{x}+1}\right)^2 - 1 = \frac{4}{(\sqrt{x}+1)^2} - 1 = \frac{4 - (\sqrt{x}+1)^2}{(\sqrt{x}+1)^2}$
 
-$$= \frac◆LB◆4 - (x + 2\sqrt{x} + 1)◆RB◆◆LB◆(\sqrt{x}+1)^2◆RB◆ = \frac◆LB◆3 - x - 2\sqrt{x}◆RB◆◆LB◆(\sqrt{x}+1)^2◆RB◆$$
+$$= \frac{4 - (x + 2\sqrt{x} + 1)}{(\sqrt{x}+1)^2} = \frac{3 - x - 2\sqrt{x}}{(\sqrt{x}+1)^2}$$
 
 This does not equal $\frac{2}{x}$ . Let me verify with $x = 4$:
 
@@ -223,7 +223,7 @@ manipulation.]
 
 **(a)** By the AM-GM inequality, for $a = e^{2x} > 0$ and $b = e^{-2x} > 0$:
 
-$$\frac{a + b}{2} \geq \sqrt{ab} = \sqrt◆LB◆e^{2x} \cdot e^{-2x}◆RB◆ = \sqrt{1} = 1$$
+$$\frac{a + b}{2} \geq \sqrt{ab} = \sqrt{e^{2x} \cdot e^{-2x}} = \sqrt{1} = 1$$
 
 So $f(x) = e^{2x} + e^{-2x} \geq 2$.
 
@@ -235,7 +235,7 @@ get $f(x) \geq 2$ with equality at $x = 0$.
 **(b)** Let $u = g(x) = \ln(x + \sqrt{x^2 + 1})$.
 
 First, note that $e^u = x + \sqrt{x^2+1}$ and
-$e^{-u} = \frac◆LB◆1◆RB◆◆LB◆x + \sqrt{x^2+1}◆RB◆ = \frac◆LB◆\sqrt{x^2+1}-x◆RB◆◆LB◆(x+\sqrt{x^2+1})(\sqrt{x^2+1}-x)◆RB◆ = \sqrt{x^2+1} - x$.
+$e^{-u} = \frac{1}{x + \sqrt{x^2+1}} = \frac{\sqrt{x^2+1}-x}{(x+\sqrt{x^2+1})(\sqrt{x^2+1}-x)} = \sqrt{x^2+1} - x$.
 
 Therefore:
 $$e^{2u} = (x + \sqrt{x^2+1})^2 = x^2 + 2x\sqrt{x^2+1} + x^2 + 1 = 2x^2 + 1 + 2x\sqrt{x^2+1}$$
@@ -259,7 +259,7 @@ The function $f$ is defined by $f(\theta) = \sin(2\theta)$ and the function $g$ 
 $g(\theta) = \sin\theta + \cos\theta$ for $\theta \in [0, 2\pi)$.
 
 **(a)** Express $g(\theta)$ in the form $R\sin(\theta + \alpha)$ where $R > 0$ and
-$0 < \alpha < \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
+$0 < \alpha < \frac{\pi}{2}$.
 
 **(b)** Solve the equation $f(\theta) = g(\theta)$ for $\theta \in [0, 2\pi)$.
 
@@ -276,11 +276,11 @@ application.]
 
 $$R = \sqrt{1^2 + 1^2} = \sqrt{2}$$
 
-$$\alpha = \arctan\left(\frac{1}{1}\right) = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$$
+$$\alpha = \arctan\left(\frac{1}{1}\right) = \frac{\pi}{4}$$
 
-$$g(\theta) = \sqrt{2}\sin\left(\theta + \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right)$$
+$$g(\theta) = \sqrt{2}\sin\left(\theta + \frac{\pi}{4}\right)$$
 
-**(b)** $\sin(2\theta) = \sqrt{2}\sin\left(\theta + \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right)$.
+**(b)** $\sin(2\theta) = \sqrt{2}\sin\left(\theta + \frac{\pi}{4}\right)$.
 
 Using the double angle formula $\sin(2\theta) = 2\sin\theta\cos\theta$:
 
@@ -313,20 +313,20 @@ $$2\sin^2 t - \sqrt{2}\sin t - 1 = 0$$
 
 Let $s = \sin t$:
 
-$$s = \frac◆LB◆\sqrt{2} \pm \sqrt{2 + 8}◆RB◆◆LB◆4◆RB◆ = \frac◆LB◆\sqrt{2} \pm \sqrt{10}◆RB◆◆LB◆4◆RB◆$$
+$$s = \frac{\sqrt{2} \pm \sqrt{2 + 8}}{4} = \frac{\sqrt{2} \pm \sqrt{10}}{4}$$
 
 Since $|\sin t| \leq 1$:
-$\frac◆LB◆\sqrt{2} + \sqrt{10}◆RB◆◆LB◆4◆RB◆ \approx \frac{1.414 + 3.162}{4} \approx 1.144 > 1$. Not
+$\frac{\sqrt{2} + \sqrt{10}}{4} \approx \frac{1.414 + 3.162}{4} \approx 1.144 > 1$. Not
 valid.
 
-$\frac◆LB◆\sqrt{2} - \sqrt{10}◆RB◆◆LB◆4◆RB◆ \approx \frac{1.414 - 3.162}{4} \approx -0.437$. Valid.
+$\frac{\sqrt{2} - \sqrt{10}}{4} \approx \frac{1.414 - 3.162}{4} \approx -0.437$. Valid.
 
-So $\sin t = \frac◆LB◆\sqrt{2} - \sqrt{10}◆RB◆◆LB◆4◆RB◆$.
+So $\sin t = \frac{\sqrt{2} - \sqrt{10}}{4}$.
 
-$t = \theta + \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$So
-$\sin\left(\theta + \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right) = \frac◆LB◆\sqrt{2} - \sqrt{10}◆RB◆◆LB◆4◆RB◆$.
+$t = \theta + \frac{\pi}{4}$So
+$\sin\left(\theta + \frac{\pi}{4}\right) = \frac{\sqrt{2} - \sqrt{10}}{4}$.
 
-$$\theta + \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ = \arcsin\left(\frac◆LB◆\sqrt{2}-\sqrt{10}◆RB◆◆LB◆4◆RB◆\right) \approx -0.452 \text{ or } \pi + 0.452 \approx 3.594$$
+$$\theta + \frac{\pi}{4} = \arcsin\left(\frac{\sqrt{2}-\sqrt{10}}{4}\right) \approx -0.452 \text{ or } \pi + 0.452 \approx 3.594$$
 
 $$\theta \approx -0.452 - 0.785 = -1.237 \quad \text{or} \quad \theta \approx 3.594 - 0.785 = 2.809$$
 
@@ -334,7 +334,7 @@ In $[0, 2\pi)$: $\theta \approx 2.809$ and $\theta \approx -1.237 + 2\pi \approx
 
 The exact solutions are:
 
-$$\theta = \arcsin\left(\frac◆LB◆\sqrt{2}-\sqrt{10}◆RB◆◆LB◆4◆RB◆\right) - \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ + 2\pi \quad \text{or} \quad \theta = \pi - \arcsin\left(\frac◆LB◆\sqrt{2}-\sqrt{10}◆RB◆◆LB◆4◆RB◆\right) - \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$$
+$$\theta = \arcsin\left(\frac{\sqrt{2}-\sqrt{10}}{4}\right) - \frac{\pi}{4} + 2\pi \quad \text{or} \quad \theta = \pi - \arcsin\left(\frac{\sqrt{2}-\sqrt{10}}{4}\right) - \frac{\pi}{4}$$
 
 **(c)** The area condition gives:
 
@@ -344,9 +344,9 @@ $$6\sin C = \sin C \cdot \left(\sin\frac{C}{2} + \cos\frac{C}{2}\right)$$
 
 If $\sin C \neq 0$:
 
-$$6 = \sin\frac{C}{2} + \cos\frac{C}{2} = \sqrt{2}\sin\left(\frac{C}{2} + \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right)$$
+$$6 = \sin\frac{C}{2} + \cos\frac{C}{2} = \sqrt{2}\sin\left(\frac{C}{2} + \frac{\pi}{4}\right)$$
 
-$$\sin\left(\frac{C}{2} + \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right) = \frac◆LB◆6◆RB◆◆LB◆\sqrt{2}◆RB◆ = 3\sqrt{2}$$
+$$\sin\left(\frac{C}{2} + \frac{\pi}{4}\right) = \frac{6}{\sqrt{2}} = 3\sqrt{2}$$
 
 Since $3\sqrt{2} \approx 4.24 > 1$This is impossible. Therefore $\sin C = 0$Giving $C = 0$ or
 $C = \pi$. Since $C = 0$ gives a degenerate triangle, $C = \pi$.
@@ -388,7 +388,7 @@ $$a_2 = f(1) = \frac{1}{2}\left(1 + 3\right) = 2$$
 
 $$a_3 = f(2) = \frac{1}{2}\left(2 + \frac{3}{2}\right) = \frac{1}{2} \cdot \frac{7}{2} = \frac{7}{4}$$
 
-$$a_4 = f\left(\frac{7}{4}\right) = \frac{1}{2}\left(\frac{7}{4} + \frac◆LB◆3 \cdot 4◆RB◆◆LB◆7◆RB◆\right) = \frac{1}{2}\left(\frac{7}{4} + \frac{12}{7}\right) = \frac{1}{2} \cdot \frac{49 + 48}{28} = \frac{97}{56}$$
+$$a_4 = f\left(\frac{7}{4}\right) = \frac{1}{2}\left(\frac{7}{4} + \frac{3 \cdot 4}{7}\right) = \frac{1}{2}\left(\frac{7}{4} + \frac{12}{7}\right) = \frac{1}{2} \cdot \frac{49 + 48}{28} = \frac{97}{56}$$
 
 **(b)** **Base case:** $a_1 = 1 > 0$. True.
 

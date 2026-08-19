@@ -45,7 +45,7 @@ Charge $+Q$ is placed on one plate and $-Q$ on the other.
 
 The electric field between the plates is uniform:
 
-$$E = \frac◆LB◆Q◆RB◆◆LB◆\varepsilon_0 A◆RB◆$$
+$$E = \frac{Q}{\varepsilon_0 A}$$
 
 (This comes from Gauss's law:
 $\oint \mathbf{E} \cdot d\mathbf{A} = Q_{\mathrm{enclosed}}/\varepsilon_0$Applied to a Gaussian
@@ -53,15 +53,15 @@ Surface enclosing one plate.)
 
 The p.d. Between the plates is:
 
-$$V = Ed = \frac◆LB◆Qd◆RB◆◆LB◆\varepsilon_0 A◆RB◆$$
+$$V = Ed = \frac{Qd}{\varepsilon_0 A}$$
 
 Therefore:
 
-$$\boxed{C = \frac{Q}{V} = \frac◆LB◆\varepsilon_0 A◆RB◆◆LB◆d◆RB◆}$$
+$$\boxed{C = \frac{Q}{V} = \frac{\varepsilon_0 A}{d}}$$
 
 With a dielectric material of relative permittivity $\varepsilon_r$ between the plates:
 
-$$\boxed{C = \frac◆LB◆\varepsilon_0 \varepsilon_r A◆RB◆◆LB◆d◆RB◆}$$
+$$\boxed{C = \frac{\varepsilon_0 \varepsilon_r A}{d}}$$
 
 **Intuition.** Larger plate area allows more charge to be stored. Smaller separation increases the
 Electric field (and hence the p.d.) for a given charge, but since $C = Q/V$ and $V$ increases more
@@ -96,7 +96,7 @@ Line through the origin). This area is a triangle of base $Q$ and height $V$: $E
 
 For a parallel plate capacitor, the energy per unit volume between the plates:
 
-$$u = \frac◆LB◆E◆RB◆◆LB◆\mathrm{volume}◆RB◆ = \frac◆LB◆\frac{1}{2}CV^2◆RB◆◆LB◆Ad◆RB◆ = \frac◆LB◆\frac{1}{2}\frac{\varepsilon_0 A}{d} \cdot V^2◆RB◆◆LB◆Ad◆RB◆ = \frac◆LB◆\varepsilon_0 V^2◆RB◆◆LB◆2d^2◆RB◆ = \frac{1}{2}\varepsilon_0 E_{\mathrm{field}}^2$$
+$$u = \frac{E}{\mathrm{volume}} = \frac{\frac{1}{2}CV^2}{Ad} = \frac{\frac{1}{2}\frac{\varepsilon_0 A}{d} \cdot V^2}{Ad} = \frac{\varepsilon_0 V^2}{2d^2} = \frac{1}{2}\varepsilon_0 E_{\mathrm{field}}^2$$
 
 ## 4. Capacitors in Series and Parallel
 
@@ -110,7 +110,7 @@ $Q = C_{\mathrm{total}} V$: $C_{\mathrm{total}} = C_1 + C_2 + \cdots$ $\square$
 
 ### Series Combination
 
-$$\frac◆LB◆1◆RB◆◆LB◆C_{\mathrm{total}}◆RB◆ = \frac{1}{C_1} + \frac{1}{C_2} + \cdots + \frac{1}{C_n}$$
+$$\frac{1}{C_{\mathrm{total}}} = \frac{1}{C_1} + \frac{1}{C_2} + \cdots + \frac{1}{C_n}$$
 
 **Proof.** All capacitors store the same charge $Q$. Total p.d.:
 $V = V_1 + V_2 + \cdots = Q/C_1 + Q/C_2 + \cdots = Q(1/C_1 + 1/C_2 + \cdots)$. Since
@@ -136,7 +136,7 @@ $$\mathcal{E} = R\frac{dQ}{dt} + \frac{Q}{C}$$
 
 Rearranging:
 
-$$\frac{dQ}{dt} = \frac◆LB◆\mathcal{E}◆RB◆◆LB◆R◆RB◆ - \frac{Q}{RC}$$
+$$\frac{dQ}{dt} = \frac{\mathcal{E}}{R} - \frac{Q}{RC}$$
 
 Let $Q_0 = C\mathcal{E}$ (the maximum charge when fully charged):
 
@@ -158,7 +158,7 @@ $$\boxed{Q = Q_0\left(1 - e^{-t/RC}\right)}$$
 
 The current is:
 
-$$I = \frac{dQ}{dt} = \frac{Q_0}{RC}e^{-t/RC} = \frac◆LB◆\mathcal{E}◆RB◆◆LB◆R◆RB◆e^{-t/RC} = I_0 e^{-t/RC}$$
+$$I = \frac{dQ}{dt} = \frac{Q_0}{RC}e^{-t/RC} = \frac{\mathcal{E}}{R}e^{-t/RC} = I_0 e^{-t/RC}$$
 
 The p.d. Across the capacitor is:
 
@@ -254,11 +254,11 @@ The plates:
 
 These bound charges produce their own electric field $E_b$ that **opposes** the applied field $E_0$:
 
-$$E_b = \frac◆LB◆\sigma_b◆RB◆◆LB◆\varepsilon_0◆RB◆$$
+$$E_b = \frac{\sigma_b}{\varepsilon_0}$$
 
 The net field inside the dielectric is therefore:
 
-$$E_{\mathrm{eff}} = E_0 - E_b = E_0 - \frac◆LB◆\sigma_b◆RB◆◆LB◆\varepsilon_0◆RB◆$$
+$$E_{\mathrm{eff}} = E_0 - E_b = E_0 - \frac{\sigma_b}{\varepsilon_0}$$
 
 ### Derivation of $E_{\mathrm{eff}} = E_0/\varepsilon_r$
 
@@ -271,13 +271,13 @@ Where $\chi_e$ is the **electric susceptibility** of the material.
 
 The bound surface charge density is related to the polarisation by $\sigma_b = P$So:
 
-$$E_{\mathrm{eff}} = E_0 - \frac◆LB◆P◆RB◆◆LB◆\varepsilon_0◆RB◆ = E_0 - \chi_e E_{\mathrm{eff}}$$
+$$E_{\mathrm{eff}} = E_0 - \frac{P}{\varepsilon_0} = E_0 - \chi_e E_{\mathrm{eff}}$$
 
 Rearranging:
 
 $$E_{\mathrm{eff}}(1 + \chi_e) = E_0$$
 
-$$\boxed{E_{\mathrm{eff}} = \frac◆LB◆E_0◆RB◆◆LB◆1 + \chi_e◆RB◆}$$
+$$\boxed{E_{\mathrm{eff}} = \frac{E_0}{1 + \chi_e}}$$
 
 The **relative permittivity** (dielectric constant) is defined as:
 
@@ -285,7 +285,7 @@ $$\varepsilon_r = 1 + \chi_e$$
 
 Therefore:
 
-$$\boxed{E_{\mathrm{eff}} = \frac◆LB◆E_0◆RB◆◆LB◆\varepsilon_r◆RB◆}$$
+$$\boxed{E_{\mathrm{eff}} = \frac{E_0}{\varepsilon_r}}$$
 
 This is the key result: the dielectric reduces the internal electric field by a factor of
 $\varepsilon_r$.
@@ -294,12 +294,12 @@ $\varepsilon_r$.
 
 The p.d. Between the plates with a dielectric inserted is:
 
-$$V = E_{\mathrm{eff}} \cdot d = \frac◆LB◆E_0◆RB◆◆LB◆\varepsilon_r◆RB◆ \cdot d = \frac◆LB◆V_0◆RB◆◆LB◆\varepsilon_r◆RB◆$$
+$$V = E_{\mathrm{eff}} \cdot d = \frac{E_0}{\varepsilon_r} \cdot d = \frac{V_0}{\varepsilon_r}$$
 
 Since the charge $Q$ on the plates is unchanged (assuming the capacitor was isolated before
 Insertion), the new capacitance is:
 
-$$C = \frac{Q}{V} = \frac◆LB◆Q◆RB◆◆LB◆V_0/\varepsilon_r◆RB◆ = \varepsilon_r \frac{Q}{V_0} = \boxed{\varepsilon_r C_0}$$
+$$C = \frac{Q}{V} = \frac{Q}{V_0/\varepsilon_r} = \varepsilon_r \frac{Q}{V_0} = \boxed{\varepsilon_r C_0}$$
 
 The capacitance increases by a factor of $\varepsilon_r$. Physically, the reduced internal field
 Means a smaller p.d. For the same charge — the capacitor can store more charge for the same p.d.
@@ -314,7 +314,7 @@ Where $\varepsilon_0 = 8.854 \times 10^{-12}$ F m$^{-1}$ is the permittivity of 
 
 For a parallel plate capacitor with a dielectric:
 
-$$C = \frac◆LB◆\varepsilon A◆RB◆◆LB◆d◆RB◆ = \frac◆LB◆\varepsilon_0 \varepsilon_r A◆RB◆◆LB◆d◆RB◆$$
+$$C = \frac{\varepsilon A}{d} = \frac{\varepsilon_0 \varepsilon_r A}{d}$$
 
 ### Dielectric Strength
 
@@ -354,7 +354,7 @@ Two distinct cases must be considered:
 Has been charged and disconnected from the supply. Since $Q$ is constant and $C$ increases by
 $\varepsilon_r$The energy **decreases**:
 
-$$E_{\mathrm{new}} = \frac◆LB◆Q^2◆RB◆◆LB◆2C_{\mathrm{new}}◆RB◆ = \frac◆LB◆Q^2◆RB◆◆LB◆2\varepsilon_r C_0◆RB◆ = \frac◆LB◆E_0◆RB◆◆LB◆\varepsilon_r◆RB◆$$
+$$E_{\mathrm{new}} = \frac{Q^2}{2C_{\mathrm{new}}} = \frac{Q^2}{2\varepsilon_r C_0} = \frac{E_0}{\varepsilon_r}$$
 
 The "missing" energy is extracted by the work done pulling the dielectric into the field (the
 Polarised dielectric is attracted into the gap).
@@ -443,7 +443,7 @@ Capacitor. Find the final p.d., the final charge on each capacitor, and the ener
 **Step 1: Initial charge.** $Q_1 = C_1 V_1 = 10 \times 10^{-6} \times 100 = 1.0 \times 10^{-3}$ C.
 
 **Step 2: Final p.d.**
-$V' = \frac{C_1 V_1}{C_1 + C_2} = \frac◆LB◆10 \times 100◆RB◆◆LB◆10 + 30◆RB◆ = \frac{1000}{40} = 25$
+$V' = \frac{C_1 V_1}{C_1 + C_2} = \frac{10 \times 100}{10 + 30} = \frac{1000}{40} = 25$
 V.
 
 **Step 3: Final charges.** $Q_1' = 10 \times 10^{-6} \times 25 = 250\,\mu$C.
@@ -454,7 +454,7 @@ $E_f = \frac{1}{2} \times 10 \times 10^{-6} \times 625 + \frac{1}{2} \times 30 \
 J. $\Delta E = 50.0 - 12.5 = 37.5$ mJ.
 
 Using the formula:
-$\Delta E = \frac{1}{2}\frac◆LB◆10 \times 30◆RB◆◆LB◆10 + 30◆RB◆ \times 10000 \times 10^{-6} = \frac{1}{2} \times 7.5 \times 10^{-6} \times 10000 = 37.5 \times 10^{-3}$
+$\Delta E = \frac{1}{2}\frac{10 \times 30}{10 + 30} \times 10000 \times 10^{-6} = \frac{1}{2} \times 7.5 \times 10^{-6} \times 10000 = 37.5 \times 10^{-3}$
 J $= 37.5$ mJ.
 
 ## 10. RC Circuit Applications
@@ -487,11 +487,11 @@ $$V_{\mathrm{in}} = \frac{Q}{C} + IR$$
 If $RC \ll T$ (the time constant is much smaller than the period), then $V_C \gg V_R$So
 $V_{\mathrm{in}} \approx V_C = Q/C$. The current is:
 
-$$I = \frac{dQ}{dt} = C\frac{dV_C}{dt} \approx C\frac◆LB◆dV_{\mathrm{in}}◆RB◆◆LB◆dt◆RB◆$$
+$$I = \frac{dQ}{dt} = C\frac{dV_C}{dt} \approx C\frac{dV_{\mathrm{in}}}{dt}$$
 
 Therefore:
 
-$$V_{\mathrm{out}} = V_R = IR \approx RC\frac◆LB◆dV_{\mathrm{in}}◆RB◆◆LB◆dt◆RB◆$$
+$$V_{\mathrm{out}} = V_R = IR \approx RC\frac{dV_{\mathrm{in}}}{dt}$$
 
 The output is approximately the derivative of the input. For a square wave input, the output
 Produces sharp spikes at the transitions.
@@ -522,7 +522,7 @@ With the load acts as a **smoothing filter**:
 
 The **ripple voltage** is approximately:
 
-$$\Delta V \approx \frac◆LB◆I_{\mathrm{load}}◆RB◆◆LB◆fC◆RB◆$$
+$$\Delta V \approx \frac{I_{\mathrm{load}}}{fC}$$
 
 Where $I_{\mathrm{load}}$ is the load current and $f$ is the frequency of the rectified AC. A larger
 $C$ produces smaller ripple, hence smoother DC output.
@@ -578,7 +578,7 @@ $$C = -\frac{1}{mR}$$
 - Uncertainty in the gradient of the $\ln(V)$ vs $t$ graph (from the line of best fit).
 - Systematic errors: the voltmeter has its own resistance $R_V$ in parallel with the capacitor. If
   $R_V$ is not much larger than $R$The effective discharge resistance is
-  $R_{\mathrm{eff}} = \frac◆LB◆R \cdot R_V◆RB◆◆LB◆R + R_V◆RB◆$Leading to a systematic underestimate
+  $R_{\mathrm{eff}} = \frac{R \cdot R_V}{R + R_V}$Leading to a systematic underestimate
   of $C$.
 
 :::tip Exam Technique When asked to determine $C$ from a discharge curve, always take the natural
@@ -628,7 +628,7 @@ $= 7.2$ mJ.
 A parallel plate capacitor has plates of area $0.020$ m$^2$ separated by $0.50$ mm in vacuum. Calculate its capacitance.
 
 **Answer.**
-$C = \frac◆LB◆\varepsilon_0 A◆RB◆◆LB◆d◆RB◆ = \frac◆LB◆8.85 \times 10^{-12} \times 0.020◆RB◆◆LB◆0.50 \times 10^{-3}◆RB◆ = \frac◆LB◆1.77 \times 10^{-13}◆RB◆◆LB◆5.0 \times 10^{-4}◆RB◆ = 3.54 \times 10^{-10}$
+$C = \frac{\varepsilon_0 A}{d} = \frac{8.85 \times 10^{-12} \times 0.020}{0.50 \times 10^{-3}} = \frac{1.77 \times 10^{-13}}{5.0 \times 10^{-4}} = 3.54 \times 10^{-10}$
 F $= 354$ pF.
 
 <b>If you get this wrong, revise:</b> [Parallel Plate Capacitor](#2-parallel-plate-capacitor)
@@ -646,7 +646,7 @@ $Q = Q_0(1 - e^{-t/\tau}) = 2.82 \times 10^{-3}(1 - e^{-20/47}) = 2.82 \times 10
 C.
 
 (c)
-$I = I_0 e^{-t/\tau} = \frac◆LB◆6.0◆RB◆◆LB◆100 \times 10^3◆RB◆ e^{-20/47} = 6.0 \times 10^{-5} \times 0.654 = 3.92 \times 10^{-5}$
+$I = I_0 e^{-t/\tau} = \frac{6.0}{100 \times 10^3} e^{-20/47} = 6.0 \times 10^{-5} \times 0.654 = 3.92 \times 10^{-5}$
 A $= 39.2\,\mu$A.
 
 <b>If you get this wrong, revise:</b> [RC Circuits: Charging](#5-rc-circuits-charging)
@@ -674,7 +674,7 @@ Two capacitors, $C_1 = 10\,\mu$F and $C_2 = 20\,\mu$F, are connected (a) in para
 
 **Answer.** (a) $C_{\mathrm{parallel}} = 10 + 20 = 30\,\mu$F.
 
-(b) $\frac◆LB◆1◆RB◆◆LB◆C_{\mathrm{series}}◆RB◆ = \frac{1}{10} + \frac{1}{20} = \frac{3}{20}$.
+(b) $\frac{1}{C_{\mathrm{series}}} = \frac{1}{10} + \frac{1}{20} = \frac{3}{20}$.
 $C_{\mathrm{series}} = 6.67\,\mu$F.
 
 <b>If you get this wrong, revise:</b>
@@ -714,7 +714,7 @@ $E = \frac{1}{2} \times Q_0 \times V_0 = \frac{1}{2}QV$.
 A parallel plate capacitor with plate area $0.010$ m$^2$ and separation $0.20$ mm is filled with a dielectric of $\varepsilon_r = 5.0$. Calculate the capacitance and the energy stored when charged to 200 V.
 
 **Answer.**
-$C = \frac◆LB◆\varepsilon_0 \varepsilon_r A◆RB◆◆LB◆d◆RB◆ = \frac◆LB◆8.85 \times 10^{-12} \times 5.0 \times 0.010◆RB◆◆LB◆0.20 \times 10^{-3}◆RB◆ = \frac◆LB◆4.425 \times 10^{-13}◆RB◆◆LB◆2.0 \times 10^{-4}◆RB◆ = 2.21 \times 10^{-9}$
+$C = \frac{\varepsilon_0 \varepsilon_r A}{d} = \frac{8.85 \times 10^{-12} \times 5.0 \times 0.010}{0.20 \times 10^{-3}} = \frac{4.425 \times 10^{-13}}{2.0 \times 10^{-4}} = 2.21 \times 10^{-9}$
 F $= 2.21$ nF.
 
 $E = \frac{1}{2}CV^2 = \frac{1}{2} \times 2.21 \times 10^{-9} \times 40000 = 4.42 \times 10^{-5}$ J
@@ -761,7 +761,7 @@ $E = \frac{1}{2}CV^2 = \frac{1}{2}C(V_0 e^{-1})^2 = E_0 e^{-2} = 13.5 \times 0.1
 A parallel plate capacitor has plate area $0.050$ m$^2$ and separation $1.0$ mm, with vacuum between the plates. It is charged to $500$ V and then isolated. A dielectric with $\varepsilon_r = 4.0$ is inserted, filling the gap. Calculate: (a) the capacitance before and after insertion, (b) the charge on the plates, (c) the p.d. After insertion, (d) the energy stored before and after insertion, (e) the energy change and where it went.
 
 **Answer.** (a) Before:
-$C_0 = \frac◆LB◆8.85 \times 10^{-12} \times 0.050◆RB◆◆LB◆1.0 \times 10^{-3}◆RB◆ = 4.43 \times 10^{-10}$
+$C_0 = \frac{8.85 \times 10^{-12} \times 0.050}{1.0 \times 10^{-3}} = 4.43 \times 10^{-10}$
 F $= 443$ pF. After: $C = \varepsilon_r C_0 = 4.0 \times 443 = 1772$ pF $= 1.77$ nF.
 
 (b) The capacitor is isolated, so $Q$ is constant:
@@ -788,7 +788,7 @@ The gap (fringe-field forces attract the polarised dielectric into the capacitor
 A $20\,\mu$F capacitor is charged to $60$ V. It is then connected to an uncharged $80\,\mu$F capacitor. Calculate: (a) the final common p.d., (b) the final charge on each capacitor, (c) the initial and final total energy, (d) the energy lost.
 
 **Answer.** (a)
-$V' = \frac{C_1 V_1}{C_1 + C_2} = \frac◆LB◆20 \times 60◆RB◆◆LB◆20 + 80◆RB◆ = \frac{1200}{100} = 12$
+$V' = \frac{C_1 V_1}{C_1 + C_2} = \frac{20 \times 60}{20 + 80} = \frac{1200}{100} = 12$
 V.
 
 (b) $Q_1' = 20 \times 10^{-6} \times 12 = 240\,\mu$C.
@@ -800,7 +800,7 @@ $E_f = \frac{1}{2} \times 20 \times 10^{-6} \times 144 + \frac{1}{2} \times 80 \
 J $= 7.20$ mJ.
 
 (d) $\Delta E = 36.0 - 7.20 = 28.8$ mJ. Using the formula:
-$\Delta E = \frac{1}{2}\frac{C_1 C_2}{C_1 + C_2}V_1^2 = \frac{1}{2}\frac◆LB◆20 \times 80◆RB◆◆LB◆100◆RB◆ \times 10^{-6} \times 3600 = \frac{1}{2} \times 16 \times 10^{-6} \times 3600 = 28.8 \times 10^{-3}$
+$\Delta E = \frac{1}{2}\frac{C_1 C_2}{C_1 + C_2}V_1^2 = \frac{1}{2}\frac{20 \times 80}{100} \times 10^{-6} \times 3600 = \frac{1}{2} \times 16 \times 10^{-6} \times 3600 = 28.8 \times 10^{-3}$
 J. Energy dissipated as heat in the connecting wires and radiated as EM waves.
 
 <b>If you get this wrong, revise:</b>
@@ -835,7 +835,7 @@ $= 21.6$ mJ. Energy increased by a factor of $\varepsilon_r = 3$Consistent with 
 Two parallel plate capacitors have the same plate area $A = 0.010$ m$^2$ and separation $d = 0.50$ mm. Capacitor A has vacuum between the plates and is charged to $400$ V. Capacitor B has a mica dielectric ($\varepsilon_r = 6.0$) and is charged to the same p.d. Calculate: (a) the capacitance of each, (b) the energy density of each, (c) the maximum p.d. Each can withstand if the dielectric strength of mica is $160$ kV/mm.
 
 **Answer.** (a)
-$C_A = \frac◆LB◆8.85 \times 10^{-12} \times 0.010◆RB◆◆LB◆5.0 \times 10^{-4}◆RB◆ = 1.77 \times 10^{-10}$
+$C_A = \frac{8.85 \times 10^{-12} \times 0.010}{5.0 \times 10^{-4}} = 1.77 \times 10^{-10}$
 F $= 177$ pF. $C_B = \varepsilon_r C_A = 6.0 \times 177 = 1062$ pF $= 1.06$ nF.
 
 (b) Energy density $u = \frac{1}{2}\varepsilon_0 \varepsilon_r E^2$ where
@@ -862,9 +862,9 @@ J.
 <summary>Problem 15</summary>
 Four capacitors are connected as follows: $C_1 = 10\,\mu$F and $C_2 = 20\,\mu$F are in series with each other. This series combination is in parallel with $C_3 = 30\,\mu$F. The entire network is in series with $C_4 = 15\,\mu$F. A $100$ V supply is connected across the entire network. Calculate: (a) the equivalent capacitance, (b) the charge on $C_4$(c) the p.d. Across the $C_1$--$C_2$--$C_3$ sub-network, (d) the charge on $C_3$.
 
-**Answer.** (a) $C_{12} = \frac◆LB◆10 \times 20◆RB◆◆LB◆10 + 20◆RB◆ = 6.67\,\mu$F (series).
+**Answer.** (a) $C_{12} = \frac{10 \times 20}{10 + 20} = 6.67\,\mu$F (series).
 $C_{123} = C_{12} + C_3 = 6.67 + 30 = 36.67\,\mu$F (parallel).
-$C_{\mathrm{total}} = \frac◆LB◆36.67 \times 15◆RB◆◆LB◆36.67 + 15◆RB◆ = \frac{550}{51.67} = 10.6\,\mu$F.
+$C_{\mathrm{total}} = \frac{36.67 \times 15}{36.67 + 15} = \frac{550}{51.67} = 10.6\,\mu$F.
 
 (b)
 $Q_{\mathrm{total}} = C_{\mathrm{total}} \times V = 10.6 \times 10^{-6} \times 100 = 1.06 \times 10^{-3}$
@@ -915,8 +915,8 @@ The gradient from a line of best fit through these points: $m \approx -0.0294$ s
 (b) $m = -1/(RC)$So $C = -1/(mR) = -1/(-0.0294 \times 47000) = 1/(1382) = 7.24 \times 10^{-4}$ F
 $= 724\,\mu$F.
 
-(c) $C = \frac◆LB◆1◆RB◆◆LB◆|m|R◆RB◆$. Using fractional uncertainties:
-$\frac◆LB◆\Delta C◆RB◆◆LB◆C◆RB◆ = \frac◆LB◆\Delta |m|◆RB◆◆LB◆|m|◆RB◆ + \frac◆LB◆\Delta R◆RB◆◆LB◆R◆RB◆ = \frac{0.005}{0.0294} + 0.02 = 0.170 + 0.020 = 0.190$.
+(c) $C = \frac{1}{|m|R}$. Using fractional uncertainties:
+$\frac{\Delta C}{C} = \frac{\Delta |m|}{|m|} + \frac{\Delta R}{R} = \frac{0.005}{0.0294} + 0.02 = 0.170 + 0.020 = 0.190$.
 $\Delta C = 0.190 \times 724 = 138\,\mu$F. So $C = 724 \pm 138\,\mu$F, or
 $C = (7.2 \pm 1.4) \times 10^{-4}$ F.
 

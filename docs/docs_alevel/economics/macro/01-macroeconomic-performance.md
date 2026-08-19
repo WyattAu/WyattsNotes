@@ -61,17 +61,17 @@ particularly in Countries with large informal sectors.
 **Nominal GDP** is measured at current prices. **Real GDP** adjusts for price changes using a price
 Index (GDP deflator):
 
-$$\mathrm{Real GDP} = \frac◆LB◆\mathrm{Nominal GDP}◆RB◆◆LB◆\mathrm{GDP Deflator}◆RB◆ \times 100$$
+$$\mathrm{Real GDP} = \frac{\mathrm{Nominal GDP}}{\mathrm{GDP Deflator}} \times 100$$
 
-$$\mathrm{GDP Deflator} = \frac◆LB◆\mathrm{Nominal GDP}◆RB◆◆LB◆\mathrm{Real GDP}◆RB◆ \times 100$$
+$$\mathrm{GDP Deflator} = \frac{\mathrm{Nominal GDP}}{\mathrm{Real GDP}} \times 100$$
 
 **GDP growth rate:**
 
-$$g = \frac◆LB◆\mathrm{GDP}_t - \mathrm{GDP}_{t-1}◆RB◆◆LB◆\mathrm{GDP}_{t-1}◆RB◆ \times 100\%$$
+$$g = \frac{\mathrm{GDP}_t - \mathrm{GDP}_{t-1}}{\mathrm{GDP}_{t-1}} \times 100\%$$
 
 ### 1.4 GDP Per Capita
 
-$$\mathrm{GDP per capita} = \frac◆LB◆\mathrm{GDP}◆RB◆◆LB◆\mathrm{Population}◆RB◆$$
+$$\mathrm{GDP per capita} = \frac{\mathrm{GDP}}{\mathrm{Population}}$$
 
 GDP per capita is a better (though imperfect) measure of average living standards than total GDP.
 
@@ -150,7 +150,7 @@ _reduction_ in the rate of inflation (prices still rising, but more slowly).
 **Consumer Price Index (CPI)**: measures the change in the cost of a basket of goods and services
 Representative of household consumption.
 
-$$\mathrm{CPI}_t = \frac◆LB◆\sum_{i} P_{i,t} \cdot Q_{i,0}◆RB◆◆LB◆\sum_{i} P_{i,0} \cdot Q_{i,0}◆RB◆ \times 100$$
+$$\mathrm{CPI}_t = \frac{\sum_{i} P_{i,t} \cdot Q_{i,0}}{\sum_{i} P_{i,0} \cdot Q_{i,0}} \times 100$$
 
 Where $Q_{i,0}$ are base-period quantities (Laspeyres index).
 
@@ -292,7 +292,7 @@ Rapidly, making it much harder and more painful to bring inflation back down.
 
 The **unemployment rate** is:
 
-$$u = \frac◆LB◆\mathrm{Number unemployed}◆RB◆◆LB◆\mathrm{Labour force}◆RB◆ \times 100\% = \frac{U}{U + E} \times 100\%$$
+$$u = \frac{\mathrm{Number unemployed}}{\mathrm{Labour force}} \times 100\% = \frac{U}{U + E} \times 100\%$$
 
 Where the **labour force** = employed + unemployed. The unemployed are those without work, actively
 Seeking work, and available to start work.

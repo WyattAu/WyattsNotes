@@ -48,7 +48,7 @@ Cancellation of positive and negative electric charges renders electromagnetic f
 **Definition.** The gravitational field strength $\mathbf{g}$ at a point is the force per unit mass
 on a Small test mass placed at that point:
 
-$$\boxed{\mathbf{g} = \frac◆LB◆\mathbf{F}◆RB◆◆LB◆m◆RB◆}$$
+$$\boxed{\mathbf{g} = \frac{\mathbf{F}}{m}}$$
 
 SI units: N kg$^{-1}$Equivalent to m s$^{-2}$.
 
@@ -70,17 +70,17 @@ Points ($r \lt R$).
 the Shell into thin annular rings perpendicular to the line from the centre to $m$. A ring at polar
 angle $\theta$ has radius $R\sin\theta$Width $R\,d\theta$And mass:
 
-$$dM = \frac◆LB◆M◆RB◆◆LB◆4\pi R^2◆RB◆ \cdot 2\pi R^2 \sin\theta\,d\theta = \frac{M}{2}\sin\theta\,d\theta$$
+$$dM = \frac{M}{4\pi R^2} \cdot 2\pi R^2 \sin\theta\,d\theta = \frac{M}{2}\sin\theta\,d\theta$$
 
-Every element of the ring is at distance $s = \sqrt◆LB◆r^2 + R^2 - 2rR\cos\theta◆RB◆$ from $m$. By
+Every element of the ring is at distance $s = \sqrt{r^2 + R^2 - 2rR\cos\theta}$ from $m$. By
 the Axial symmetry of the ring, the transverse components of force cancel, leaving only the
 component Along the axis. The angle $\alpha$ between the force direction and the axis satisfies:
 
-$$\cos\alpha = \frac◆LB◆r - R\cos\theta◆RB◆◆LB◆s◆RB◆$$
+$$\cos\alpha = \frac{r - R\cos\theta}{s}$$
 
 The axial force contribution from the ring is:
 
-$$dF = \frac{Gm\,dM}{s^2}\cos\alpha = \frac{GmM}{2}\cdot\frac◆LB◆(r - R\cos\theta)\sin\theta\,d\theta◆RB◆◆LB◆(r^2 + R^2 - 2rR\cos\theta)^{3/2}◆RB◆$$
+$$dF = \frac{Gm\,dM}{s^2}\cos\alpha = \frac{GmM}{2}\cdot\frac{(r - R\cos\theta)\sin\theta\,d\theta}{(r^2 + R^2 - 2rR\cos\theta)^{3/2}}$$
 
 Substitute $u = \cos\theta$$du = -\sin\theta\,d\theta$. When $\theta = 0$$u = 1$; when
 $\theta = \pi$$u = -1$:
@@ -173,7 +173,7 @@ Conservation:
 
 $$\frac{1}{2}mv_e^2 - \frac{GMm}{R} = 0$$
 
-$$\boxed{v_e = \sqrt◆LB◆\frac{2GM}{R}◆RB◆}$$
+$$\boxed{v_e = \sqrt{\frac{2GM}{R}}}$$
 
 $\square$
 
@@ -193,7 +193,7 @@ speed increase of $(\sqrt{2} - 1) \times 100\% \approx 41.4\%$ to escape.
 Calculate the escape velocity from Mars ($M = 6.42 \times 10^{23}$ kg, $R = 3.39 \times 10^6$ m).
 
 **Answer.**
-$v_e = \sqrt◆LB◆\frac{2 \times 6.67 \times 10^{-11} \times 6.42 \times 10^{23}}{3.39 \times 10^6}◆RB◆ = \sqrt◆LB◆\frac{8.56 \times 10^{13}}{3.39 \times 10^6}◆RB◆ = \sqrt◆LB◆2.53 \times 10^7◆RB◆ = 5020$
+$v_e = \sqrt{\frac{2 \times 6.67 \times 10^{-11} \times 6.42 \times 10^{23}}{3.39 \times 10^6}} = \sqrt{\frac{8.56 \times 10^{13}}{3.39 \times 10^6}} = \sqrt{2.53 \times 10^7} = 5020$
 m s$^{-1}$ $= 5.02$ km s$^{-1}$.
 
 </details>
@@ -240,7 +240,7 @@ Setting $a = r$ recovers the circular orbit result. For a parabolic escape traje
 
 ### Orbital Speed is Mass-Independent
 
-$$v = \sqrt◆LB◆\frac{GM}{r}◆RB◆$$
+$$v = \sqrt{\frac{GM}{r}}$$
 
 The satellite's mass $m$ cancels. This is the same reason that all objects fall at the same rate in
 a Gravitational field (equivalence principle).
@@ -252,10 +252,10 @@ Required to move it to a circular orbit of radius $1.4 \times 10^7$ m.
 
 **Answer.** $GM = 3.98 \times 10^{14}$ N m$^2$ kg$^{-1}$.
 
-$E_1 = -\frac{GMm}{2r_1} = -\frac◆LB◆3.98 \times 10^{14} \times 500◆RB◆◆LB◆2 \times 7.0 \times 10^6◆RB◆ = -1.42 \times 10^{10}$
+$E_1 = -\frac{GMm}{2r_1} = -\frac{3.98 \times 10^{14} \times 500}{2 \times 7.0 \times 10^6} = -1.42 \times 10^{10}$
 J.
 
-$E_2 = -\frac◆LB◆3.98 \times 10^{14} \times 500◆RB◆◆LB◆2 \times 1.4 \times 10^7◆RB◆ = -7.11 \times 10^9$
+$E_2 = -\frac{3.98 \times 10^{14} \times 500}{2 \times 1.4 \times 10^7} = -7.11 \times 10^9$
 J.
 
 $\Delta E = E_2 - E_1 = -7.11 \times 10^9 - (-1.42 \times 10^{10}) = 7.1 \times 10^9$ J $= 7.1$ GJ.
@@ -271,7 +271,7 @@ Every planet moves in an elliptical orbit with the Sun at one focus.
 **Proof sketch.** Starting from $\mathbf{F} = -\frac{GMm}{r^2}\hat{\mathbf{r}}$ (central force), the
 orbit Equation in polar coordinates is:
 
-$$r = \frac◆LB◆a(1 - e^2)◆RB◆◆LB◆1 + e\cos\theta◆RB◆$$
+$$r = \frac{a(1 - e^2)}{1 + e\cos\theta}$$
 
 Where $a$ is the semi-major axis and $e$ is the eccentricity. For $E \lt 0$ (bound orbit), $e \lt 1$
 And the orbit is an ellipse with the central mass at one focus. $\square$
@@ -295,17 +295,17 @@ Consistent with conservation of angular momentum: small $r$ requires large $v_\p
 
 ### Third Law: Law of Periods
 
-$$\boxed{T^2 = \frac◆LB◆4\pi^2◆RB◆◆LB◆GM◆RB◆\,a^3}$$
+$$\boxed{T^2 = \frac{4\pi^2}{GM}\,a^3}$$
 
 **Proof for circular orbits.** Equating gravitational and centripetal force:
 
-$$\frac{GMm}{r^2} = \frac{mv^2}{r} \implies v = \sqrt◆LB◆\frac{GM}{r}◆RB◆$$
+$$\frac{GMm}{r^2} = \frac{mv^2}{r} \implies v = \sqrt{\frac{GM}{r}}$$
 
 Since $T = 2\pi r/v$:
 
-$$T = \frac◆LB◆2\pi r◆RB◆◆LB◆\sqrt{GM/r}◆RB◆ = 2\pi\sqrt◆LB◆\frac{r^3}{GM}◆RB◆$$
+$$T = \frac{2\pi r}{\sqrt{GM/r}} = 2\pi\sqrt{\frac{r^3}{GM}}$$
 
-$$T^2 = \frac◆LB◆4\pi^2 r^3◆RB◆◆LB◆GM◆RB◆$$
+$$T^2 = \frac{4\pi^2 r^3}{GM}$$
 
 For elliptical orbits, replace $r$ with the semi-major axis $a$. $\square$
 
@@ -321,7 +321,7 @@ equator.
 
 ### Derivation of Orbital Radius
 
-$$r^3 = \frac◆LB◆GMT^2◆RB◆◆LB◆4\pi^2◆RB◆ = \frac◆LB◆3.98 \times 10^{14} \times (86164)^2◆RB◆◆LB◆4\pi^2◆RB◆ = 7.54 \times 10^{22}$$
+$$r^3 = \frac{GMT^2}{4\pi^2} = \frac{3.98 \times 10^{14} \times (86164)^2}{4\pi^2} = 7.54 \times 10^{22}$$
 
 $$\boxed{r = 4.22 \times 10^7\ \mathrm{m} = 42\,200\ \mathrm{km}}$$
 
@@ -329,7 +329,7 @@ Altitude above Earth's surface: $h = 42200 - 6370 = 35\,830$ km.
 
 ### Orbital Speed
 
-$$v = \sqrt◆LB◆\frac{GM}{r}◆RB◆ = \frac◆LB◆2\pi r◆RB◆◆LB◆T◆RB◆ = 3070\ \mathrm{m\,s}^{-1}$$
+$$v = \sqrt{\frac{GM}{r}} = \frac{2\pi r}{T} = 3070\ \mathrm{m\,s}^{-1}$$
 
 ### Three Necessary and Sufficient Conditions
 
@@ -372,7 +372,7 @@ Calculate the gravitational field strength at the surface of Jupiter ($M = 1.90 
 $R = 6.99 \times 10^7$ m).
 
 **Answer.**
-$g = \frac{GM}{R^2} = \frac◆LB◆6.67 \times 10^{-11} \times 1.90 \times 10^{27}◆RB◆◆LB◆(6.99 \times 10^7)^2◆RB◆ = \frac◆LB◆1.267 \times 10^{17}◆RB◆◆LB◆4.886 \times 10^{15}◆RB◆ = 25.9$
+$g = \frac{GM}{R^2} = \frac{6.67 \times 10^{-11} \times 1.90 \times 10^{27}}{(6.99 \times 10^7)^2} = \frac{1.267 \times 10^{17}}{4.886 \times 10^{15}} = 25.9$
 N kg$^{-1}$.
 
 </details>
@@ -384,7 +384,7 @@ $2.0 \times 10^{11}$ m. Find the orbital period.
 
 **Answer.** Each star orbits at radius $r = 1.0 \times 10^{11}$ m.
 
-$T^2 = \frac◆LB◆4\pi^2 r^3◆RB◆◆LB◆G(2M)◆RB◆ = \frac◆LB◆4\pi^2 \times 10^{33}◆RB◆◆LB◆6.67 \times 10^{-11} \times 6.0 \times 10^{30}◆RB◆ = \frac◆LB◆3.95 \times 10^{34}◆RB◆◆LB◆4.00 \times 10^{20}◆RB◆ = 9.88 \times 10^{13}$
+$T^2 = \frac{4\pi^2 r^3}{G(2M)} = \frac{4\pi^2 \times 10^{33}}{6.67 \times 10^{-11} \times 6.0 \times 10^{30}} = \frac{3.95 \times 10^{34}}{4.00 \times 10^{20}} = 9.88 \times 10^{13}$
 
 $T = 9.94 \times 10^6$ s $= 115$ days.
 
@@ -408,7 +408,7 @@ The centre is $g = GMr/R^3$.
 **Answer.** By the shell theorem, only the mass within radius $r$ contributes. For uniform density
 $\rho = 3M/(4\pi R^3)$The enclosed mass is $M_{\mathrm{enc}} = \rho \cdot 4\pi r^3/3 = Mr^3/R^3$.
 
-$g = \frac◆LB◆GM_{\mathrm{enc}}◆RB◆◆LB◆r^2◆RB◆ = \frac{GMr^3/R^3}{r^2} = \frac{GMr}{R^3}$.
+$g = \frac{GM_{\mathrm{enc}}}{r^2} = \frac{GMr^3/R^3}{r^2} = \frac{GMr}{R^3}$.
 
 $\square$
 
@@ -422,7 +422,7 @@ Distance $r_p = 1.0 \times 10^{10}$ m. Find its speed at perihelion.
 
 **Answer.** Energy conservation: $\frac{1}{2}mv_p^2 - \frac{GMm}{r_p} = \frac{1}{2}mv_0^2$.
 
-$v_p = \sqrt{v_0^2 + 2GM/r_p} = \sqrt◆LB◆2.5 \times 10^7 + 2.65 \times 10^{10}◆RB◆ = \sqrt◆LB◆2.653 \times 10^{10}◆RB◆ = 1.63 \times 10^5$
+$v_p = \sqrt{v_0^2 + 2GM/r_p} = \sqrt{2.5 \times 10^7 + 2.65 \times 10^{10}} = \sqrt{2.653 \times 10^{10}} = 1.63 \times 10^5$
 m s$^{-1}$ $= 163$ km s$^{-1}$.
 
 </details>
@@ -433,7 +433,7 @@ Calculate the gravitational potential energy of the Earth--Moon system. ($M_E = 
 Kg, $M_M = 7.35 \times 10^{22}$ kg, $r = 3.84 \times 10^8$ m.)
 
 **Answer.**
-$E_p = -\frac{GM_E M_M}{r} = -\frac◆LB◆6.67 \times 10^{-11} \times 5.97 \times 10^{24} \times 7.35 \times 10^{22}◆RB◆◆LB◆3.84 \times 10^8◆RB◆ = -7.63 \times 10^{28}$
+$E_p = -\frac{GM_E M_M}{r} = -\frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24} \times 7.35 \times 10^{22}}{3.84 \times 10^8} = -7.63 \times 10^{28}$
 J.
 
 </details>
@@ -480,7 +480,7 @@ Elliptical orbit with apogee $r_a = 4.2 \times 10^7$ m.
 **Answer.** Semi-major axis: $a = (r_p + r_a)/2 = (7.0 + 42.0) \times 10^6 / 2 = 2.45 \times 10^7$
 m.
 
-$v_p = \sqrt{GM(2/r_p - 1/a)} = \sqrt◆LB◆3.98 \times 10^{14}(2.857 \times 10^{-7} - 4.082 \times 10^{-8})◆RB◆ = \sqrt◆LB◆3.98 \times 10^{14} \times 2.449 \times 10^{-7}◆RB◆ = \sqrt◆LB◆9.75 \times 10^7◆RB◆ = 9870$
+$v_p = \sqrt{GM(2/r_p - 1/a)} = \sqrt{3.98 \times 10^{14}(2.857 \times 10^{-7} - 4.082 \times 10^{-8})} = \sqrt{3.98 \times 10^{14} \times 2.449 \times 10^{-7}} = \sqrt{9.75 \times 10^7} = 9870$
 m s$^{-1}$.
 
 </details>

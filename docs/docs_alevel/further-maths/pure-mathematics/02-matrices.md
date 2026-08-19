@@ -147,7 +147,7 @@ $$\boxed{\mathbf{A}^{-1} = \frac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \en
 
 For a $3 \times 3$ matrix $\mathbf{A}$:
 
-$$\boxed{\mathbf{A}^{-1} = \frac◆LB◆1◆RB◆◆LB◆\det(\mathbf{A})◆RB◆\operatorname{adj}(\mathbf{A})}$$
+$$\boxed{\mathbf{A}^{-1} = \frac{1}{\det(\mathbf{A})}\operatorname{adj}(\mathbf{A})}$$
 
 Where the _adjugate_ (or _adjoint_) matrix $\operatorname{adj}(\mathbf{A})$ is the transpose of the
 _cofactor matrix_.
@@ -215,7 +215,7 @@ For a $2 \times 2$ system:
 
 For a system $\mathbf{A}\mathbf{x} = \mathbf{b}$ where $\det(\mathbf{A}) \neq 0$:
 
-$$x_i = \frac◆LB◆\det(\mathbf{A}_i)◆RB◆◆LB◆\det(\mathbf{A})◆RB◆$$
+$$x_i = \frac{\det(\mathbf{A}_i)}{\det(\mathbf{A})}$$
 
 Where $\mathbf{A}_i$ is $\mathbf{A}$ with column $i$ replaced by $\mathbf{b}$.
 
@@ -439,7 +439,7 @@ $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$.
 
 $$\boxed{\det(\mathbf{AB}) = \det(\mathbf{A})\det(\mathbf{B})}$$
 
-$$\boxed{\mathbf{A}^{-1} = \frac◆LB◆1◆RB◆◆LB◆\det(\mathbf{A})◆RB◆\operatorname{adj}(\mathbf{A}) \quad \mathrm{when } \det(\mathbf{A}) \neq 0}$$
+$$\boxed{\mathbf{A}^{-1} = \frac{1}{\det(\mathbf{A})}\operatorname{adj}(\mathbf{A}) \quad \mathrm{when } \det(\mathbf{A}) \neq 0}$$
 
 $$\boxed{\mathrm{Rotation by } \theta: \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}}$$
 
@@ -525,12 +525,12 @@ Twice is the identity.
 <details>
 <summary>Answer</summary>
 
-$\tan\theta = \sqrt{3} \implies \theta = \dfrac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$.
+$\tan\theta = \sqrt{3} \implies \theta = \dfrac{\pi}{3}$.
 
-$$\mathbf{M} = \begin{pmatrix} \cos\frac◆LB◆2\pi◆RB◆◆LB◆3◆RB◆ & \sin\frac◆LB◆2\pi◆RB◆◆LB◆3◆RB◆ \\ \sin\frac◆LB◆2\pi◆RB◆◆LB◆3◆RB◆ & -\cos\frac◆LB◆2\pi◆RB◆◆LB◆3◆RB◆ \end{pmatrix} = \begin{pmatrix} -\frac{1}{2} & \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ \\ \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ & \frac{1}{2} \end{pmatrix}$$
+$$\mathbf{M} = \begin{pmatrix} \cos\frac{2\pi}{3} & \sin\frac{2\pi}{3} \\ \sin\frac{2\pi}{3} & -\cos\frac{2\pi}{3} \end{pmatrix} = \begin{pmatrix} -\frac{1}{2} & \frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} & \frac{1}{2} \end{pmatrix}$$
 
 Verification:
-$$\mathbf{M}^2 = \begin{pmatrix} -\frac{1}{2} & \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ \\ \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ & \frac{1}{2} \end{pmatrix}\begin{pmatrix} -\frac{1}{2} & \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ \\ \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ & \frac{1}{2} \end{pmatrix} = \begin{pmatrix} \frac{1}{4} + \frac{3}{4} & -\frac◆LB◆\sqrt{3}◆RB◆◆LB◆4◆RB◆ + \frac◆LB◆\sqrt{3}◆RB◆◆LB◆4◆RB◆ \\ -\frac◆LB◆\sqrt{3}◆RB◆◆LB◆4◆RB◆ + \frac◆LB◆\sqrt{3}◆RB◆◆LB◆4◆RB◆ & \frac{3}{4} + \frac{1}{4} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = \mathbf{I} \quad \square$$
+$$\mathbf{M}^2 = \begin{pmatrix} -\frac{1}{2} & \frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} & \frac{1}{2} \end{pmatrix}\begin{pmatrix} -\frac{1}{2} & \frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} & \frac{1}{2} \end{pmatrix} = \begin{pmatrix} \frac{1}{4} + \frac{3}{4} & -\frac{\sqrt{3}}{4} + \frac{\sqrt{3}}{4} \\ -\frac{\sqrt{3}}{4} + \frac{\sqrt{3}}{4} & \frac{3}{4} + \frac{1}{4} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = \mathbf{I} \quad \square$$
 
 </details>
 
@@ -719,7 +719,7 @@ Use the standard formula for $\mathbf{R}_z$ with $\theta = \pi/2$.
 <details>
 <summary>Answer</summary>
 
-$$\mathbf{R}_z = \begin{pmatrix} \cos\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ & -\sin\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ & 0 \\ \sin\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ & \cos\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ & 0 \\ 0 & 0 & 1 \end{pmatrix} = \begin{pmatrix} 0 & -1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1 \end{pmatrix}$$
+$$\mathbf{R}_z = \begin{pmatrix} \cos\frac{\pi}{2} & -\sin\frac{\pi}{2} & 0 \\ \sin\frac{\pi}{2} & \cos\frac{\pi}{2} & 0 \\ 0 & 0 & 1 \end{pmatrix} = \begin{pmatrix} 0 & -1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1 \end{pmatrix}$$
 
 $\det(\mathbf{R}_z) = 0 \cdot (0 - 0) - (-1)(1 - 0) + 0 = 1$. ✓
 
@@ -849,11 +849,11 @@ Rotation by $90°$ anticlockwise about the origin. Find the matrix representing 
 
 **Solution.** The line $y = x\sqrt{3}$ makes angle $60°$ with the $x$-axis.
 
-$R = \begin{pmatrix}\cos 120°&\sin 120°\\\sin 120°&-\cos 120°\end{pmatrix} = \begin{pmatrix}-\frac{1}{2}&\frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆\\\frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆&\frac{1}{2}\end{pmatrix}$.
+$R = \begin{pmatrix}\cos 120°&\sin 120°\\\sin 120°&-\cos 120°\end{pmatrix} = \begin{pmatrix}-\frac{1}{2}&\frac{\sqrt{3}}{2}\\\frac{\sqrt{3}}{2}&\frac{1}{2}\end{pmatrix}$.
 
 $S = \begin{pmatrix}0&-1\\1&0\end{pmatrix}$.
 
-$RS = \begin{pmatrix}-\frac{1}{2}&\frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆\\\frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆&\frac{1}{2}\end{pmatrix}\begin{pmatrix}0&-1\\1&0\end{pmatrix} = \begin{pmatrix}\frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆&\frac{1}{2}\\\frac{1}{2}&-\frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆\end{pmatrix}$.
+$RS = \begin{pmatrix}-\frac{1}{2}&\frac{\sqrt{3}}{2}\\\frac{\sqrt{3}}{2}&\frac{1}{2}\end{pmatrix}\begin{pmatrix}0&-1\\1&0\end{pmatrix} = \begin{pmatrix}\frac{\sqrt{3}}{2}&\frac{1}{2}\\\frac{1}{2}&-\frac{\sqrt{3}}{2}\end{pmatrix}$.
 
 $\det(RS) = -\dfrac{3}{4} - \dfrac{1}{4} = -1$ and $\text{tr}(RS) = 0$Confirming this is a
 Reflection.
@@ -1045,7 +1045,7 @@ Where $\lambda_i$ are eigenvalues and $\mathbf{q}_i$ are orthonormal eigenvector
 ### 14.4 Matrix norms
 
 The Frobenius norm:
-$\|\mathbf{A}\|_F = \sqrt◆LB◆\sum_{i,j} a_{ij}^2◆RB◆ = \sqrt◆LB◆\mathrm{tr}(\mathbf{A}^T\mathbf{A})◆RB◆$.
+$\|\mathbf{A}\|_F = \sqrt{\sum_{i,j} a_{ij}^2} = \sqrt{\mathrm{tr}(\mathbf{A}^T\mathbf{A})}$.
 
 The spectral norm: $\|\mathbf{A}\|_2 = \sigma_{\max}$ (largest singular value).
 

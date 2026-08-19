@@ -41,11 +41,11 @@ $$-3p^2 + 6p + 1 > 0$$ $$3p^2 - 6p - 1 < 0$$
 
 The roots of $3p^2 - 6p - 1 = 0$ are:
 
-$$p = \frac◆LB◆6 \pm \sqrt{36 + 12}◆RB◆◆LB◆6◆RB◆ = \frac◆LB◆6 \pm \sqrt{48}◆RB◆◆LB◆6◆RB◆ = \frac◆LB◆6 \pm 4\sqrt{3}◆RB◆◆LB◆6◆RB◆ = \frac◆LB◆3 \pm 2\sqrt{3}◆RB◆◆LB◆3◆RB◆ = 1 \pm \frac◆LB◆2\sqrt{3}◆RB◆◆LB◆3◆RB◆$$
+$$p = \frac{6 \pm \sqrt{36 + 12}}{6} = \frac{6 \pm \sqrt{48}}{6} = \frac{6 \pm 4\sqrt{3}}{6} = \frac{3 \pm 2\sqrt{3}}{3} = 1 \pm \frac{2\sqrt{3}}{3}$$
 
 Since $3p^2 - 6p - 1$ is a positive quadratic, it is negative between the roots:
 
-$$1 - \frac◆LB◆2\sqrt{3}◆RB◆◆LB◆3◆RB◆ < p < 1 + \frac◆LB◆2\sqrt{3}◆RB◆◆LB◆3◆RB◆$$
+$$1 - \frac{2\sqrt{3}}{3} < p < 1 + \frac{2\sqrt{3}}{3}$$
 
 Approximately: $-0.155 < p < 2.155$.
 
@@ -54,11 +54,11 @@ $x - 1 = 0$Which has one real root. So $p = 0$ is excluded from the quadratic ca
 
 **(b)** A repeated root requires $\Delta = 0$:
 
-$$p = 1 \pm \frac◆LB◆2\sqrt{3}◆RB◆◆LB◆3◆RB◆$$
+$$p = 1 \pm \frac{2\sqrt{3}}{3}$$
 
 **(c)** No real roots require $\Delta < 0$:
 
-$$p < 1 - \frac◆LB◆2\sqrt{3}◆RB◆◆LB◆3◆RB◆ \quad \text{or} \quad p > 1 + \frac◆LB◆2\sqrt{3}◆RB◆◆LB◆3◆RB◆$$
+$$p < 1 - \frac{2\sqrt{3}}{3} \quad \text{or} \quad p > 1 + \frac{2\sqrt{3}}{3}$$
 
 **Positive roots condition:** By Vieta's formulas, for both roots to be positive we need:
 
@@ -138,7 +138,7 @@ The roots of the equation $2x^2 - 5x + 1 = 0$ are $\alpha$ and $\beta$.
 
 Without finding the numerical values of $\alpha$ and $\beta$Find the value of:
 
-$$\frac◆LB◆1◆RB◆◆LB◆\alpha^2 + 1◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆\beta^2 + 1◆RB◆$$
+$$\frac{1}{\alpha^2 + 1} + \frac{1}{\beta^2 + 1}$$
 
 [Difficulty: hard. Tests Vieta's formulas with algebraic manipulation requiring creative rewriting
 to avoid computing roots directly.]
@@ -151,7 +151,7 @@ $$\alpha + \beta = \frac{5}{2}, \quad \alpha\beta = \frac{1}{2}$$
 
 **Step 2: Simplify the target expression.**
 
-$$\frac◆LB◆1◆RB◆◆LB◆\alpha^2+1◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆\beta^2+1◆RB◆ = \frac◆LB◆(\beta^2+1) + (\alpha^2+1)◆RB◆◆LB◆(\alpha^2+1)(\beta^2+1)◆RB◆ = \frac◆LB◆\alpha^2 + \beta^2 + 2◆RB◆◆LB◆\alpha^2\beta^2 + \alpha^2 + \beta^2 + 1◆RB◆$$
+$$\frac{1}{\alpha^2+1} + \frac{1}{\beta^2+1} = \frac{(\beta^2+1) + (\alpha^2+1)}{(\alpha^2+1)(\beta^2+1)} = \frac{\alpha^2 + \beta^2 + 2}{\alpha^2\beta^2 + \alpha^2 + \beta^2 + 1}$$
 
 **Step 3: Express $\alpha^2 + \beta^2$ using Vieta's.**
 
@@ -163,7 +163,7 @@ $$\alpha^2\beta^2 = (\alpha\beta)^2 = \frac{1}{4}$$
 
 **Step 5: Substitute into the expression.**
 
-$$\frac◆LB◆\frac{21}{4} + 2◆RB◆◆LB◆\frac{1}{4} + \frac{21}{4} + 1◆RB◆ = \frac◆LB◆\frac{21}{4} + \frac{8}{4}◆RB◆◆LB◆\frac{1}{4} + \frac{21}{4} + \frac{4}{4}◆RB◆ = \frac◆LB◆\frac{29}{4}◆RB◆◆LB◆\frac{26}{4}◆RB◆ = \frac{29}{26}$$
+$$\frac{\frac{21}{4} + 2}{\frac{1}{4} + \frac{21}{4} + 1} = \frac{\frac{21}{4} + \frac{8}{4}}{\frac{1}{4} + \frac{21}{4} + \frac{4}{4}} = \frac{\frac{29}{4}}{\frac{26}{4}} = \frac{29}{26}$$
 
 ---
 
@@ -371,11 +371,11 @@ $$= \int_0^4 \left[-1 + \sqrt{8-(x-2)^2} - (x^2 - 4x + 1)\right] dx$$
 $$= \int_0^4 \left[\sqrt{8-(x-2)^2} - x^2 + 4x - 2\right] dx$$
 
 The integral $\int_0^4 \sqrt{8-(x-2)^2} \, dx$ is a semicircle of radius $2\sqrt{2}$Giving area
-$\frac◆LB◆\pi(2\sqrt{2})^2◆RB◆◆LB◆2◆RB◆ = 4\pi$.
+$\frac{\pi(2\sqrt{2})^2}{2} = 4\pi$.
 
 $$\int_0^4 (-x^2 + 4x - 2) \, dx = \left[-\frac{x^3}{3} + 2x^2 - 2x\right]_0^4 = -\frac{64}{3} + 32 - 8 = -\frac{64}{3} + 24 = \frac{72 - 64}{3} = \frac{8}{3}$$
 
-$$A = 4\pi + \frac{8}{3} = \frac◆LB◆12\pi + 8◆RB◆◆LB◆3◆RB◆ \approx 15.6 \text{ (3 s.f.)}$$
+$$A = 4\pi + \frac{8}{3} = \frac{12\pi + 8}{3} \approx 15.6 \text{ (3 s.f.)}$$
 
 ---
 
@@ -438,7 +438,7 @@ $$A = xy = x\left(30 - \frac{3}{2}x\right) = 30x - \frac{3}{2}x^2$$
 
 This is a downward-opening quadratic with vertex at:
 
-$$x = \frac◆LB◆-30◆RB◆◆LB◆2 \cdot (-3/2)◆RB◆ = \frac{30}{3} = 10$$
+$$x = \frac{-30}{2 \cdot (-3/2)} = \frac{30}{3} = 10$$
 
 At $x = 10$: $y = 30 - 15 = 15$. $A_{\max} = 10 \times 15 = 150$ m$^2$.
 

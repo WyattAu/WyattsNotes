@@ -19,13 +19,13 @@ confusion on terminology.
 
 ### Power Set
 
-A power set $\mathcal◆LB◆◆LB◆'◆RB◆P◆LB◆◆RB◆'◆RB◆(S)$ of set $S$ is the set of all subsets of $S$.
+A power set $\mathcal{P}(S)$ of set $S$ is the set of all subsets of $S$.
 For example, let $S = \{1,2,3\}$The power set of $S$ will be
-$\mathcal◆LB◆◆LB◆'◆RB◆P◆LB◆◆RB◆'◆RB◆(S) = \{\emptyset, \{1\}, \{2\}, \{3\}, \{1,2\}, \{1,3\}, \{2,3\}, \{1,2,3\}\}$
+$\mathcal{P}(S) = \{\emptyset, \{1\}, \{2\}, \{3\}, \{1,2\}, \{1,3\}, \{2,3\}, \{1,2,3\}\}$
 
 ### Disjoint Sets
 
-A collection of sets $\{A_i\}_◆LB◆i \in I◆RB◆$ is pairwise disjoint if $A_i \cap A_j = \emptyset$
+A collection of sets $\{A_i\}_{i \in I}$ is pairwise disjoint if $A_i \cap A_j = \emptyset$
 for all $i \neq j$.
 
 ### Equivalence Relation
@@ -43,12 +43,12 @@ The set of all equivalence classes is denoted $S / \sim$ (the quotient set).
 Given a set $S$ and an equivalence relation $\sim$The quotient space $S / \sim$ is the set of
 equivalence classes $\{ [x] : x \in S \}$Where $[x] = \{ y \in S : x \sim y \}$.
 
-_Context in Probability:_ $L^p$ is the quotient space of $\mathcal◆LB◆◆LB◆'◆RB◆L◆LB◆◆RB◆'◆RB◆^p$
+_Context in Probability:_ $L^p$ is the quotient space of $\mathcal{L}^p$
 (the space of measurable functions with finite $p$-**semi-norm**) under the equivalence relation
-$f \sim g \iff f=g$ $\mu$-a.e. Formally, $L^p = \mathcal◆LB◆◆LB◆'◆RB◆L◆LB◆◆RB◆'◆RB◆^p / \sim$.
+$f \sim g \iff f=g$ $\mu$-a.e. Formally, $L^p = \mathcal{L}^p / \sim$.
 
 :::warning **Semi-norm vs. Norm:** The functional $\lVert \cdot \rVert_p$ is only a **semi-norm** on
-$\mathcal◆LB◆◆LB◆'◆RB◆L◆LB◆◆RB◆'◆RB◆^p$ because $\lVert f \rVert_p = 0 \implies f = 0$ almost
+$\mathcal{L}^p$ because $\lVert f \rVert_p = 0 \implies f = 0$ almost
 everywhere, not everywhere. It becomes a true **norm** only after quotienting by the equivalence
 relation to obtain $L^p$. This distinction ensures $L^p$ is a Banach space by identifying functions
 that differ only on null sets.
@@ -59,16 +59,16 @@ that differ only on null sets.
 ### Topology
 
 A topology $\tau$ on a set $S$ is a **collection of subsets of $S$** (i.e.,
-$\tau \subseteq \mathcal◆LB◆◆LB◆'◆RB◆P◆LB◆◆RB◆'◆RB◆(S)$), called open sets, satisfying:
+$\tau \subseteq \mathcal{P}(S)$), called open sets, satisfying:
 
 1. Triviality: $\emptyset, S \in \tau$
 
 2. Finite intersection:
-   $U_1, \dots, U_n \in \tau \implies \bigcap^n_◆LB◆i=1◆RB◆ U_i \in \tau, n\in \mathbb◆LB◆◆LB◆'◆RB◆N◆LB◆◆RB◆'◆RB◆$
+   $U_1, \dots, U_n \in \tau \implies \bigcap^n_{i=1} U_i \in \tau, n\in \mathbb{N}$
 
-3. Arbitrary union: If $\left\{U_\alpha\right\}_◆LB◆\alpha \in A◆RB◆$ is a collection of sets such
+3. Arbitrary union: If $\left\{U_\alpha\right\}_{\alpha \in A}$ is a collection of sets such
    that $U_\alpha \in \tau$ for all $\alpha \in A$Then
-   $\bigcup_◆LB◆\alpha \in A◆RB◆ U_\alpha \in \tau$.
+   $\bigcup_{\alpha \in A} U_\alpha \in \tau$.
 
 ### Topological Space
 
@@ -103,10 +103,10 @@ space, closed sets satisfy:
 
 Given a set $A \subseteq S$ in a topological space:
 
-- The **closure** $\overline◆LB◆A◆RB◆$ is the smallest closed set containing $A$ (intersection of
+- The **closure** $\overline{A}$ is the smallest closed set containing $A$ (intersection of
   all closed supersets).
 - The **interior** $A^\circ$ is the largest open set contained in $A$ (union of all open subsets).
-- The **boundary** $\partial A = \overline◆LB◆A◆RB◆ \setminus A^\circ$.
+- The **boundary** $\partial A = \overline{A} \setminus A^\circ$.
 
 ### Lipschitz Continuity
 
@@ -114,10 +114,10 @@ Given metric spaces $(X, d_X)$ and $(Y, d_Y)$A function $f: X \to Y$ is $K$-Lips
 $K \geq 0$) if: $$ d_Y(f(x_1), f(x_2)) \leq K \cdot d_X(x_1, x_2) \quad \forall x_1, x_2 \in X $$
 
 The **Lipschitz constant** (or Lipschitz semi-norm) is defined as:
-$$\lVert f \rVert_◆LB◆\mathrm◆LB◆Lip◆RB◆◆LB◆◆RB◆◆RB◆ = \sup_◆LB◆x \neq y◆RB◆ \frac◆LB◆d_Y(f(x), f(y))◆RB◆◆LB◆d_X(x, y)◆RB◆$$
+$$\lVert f \rVert_{\mathrm{Lip}} = \sup_{x \neq y} \frac{d_Y(f(x), f(y))}{d_X(x, y)}$$
 
 The set of 1-Lipschitz functions consists of all functions satisfying
-$\lVert f \rVert_◆LB◆\mathrm◆LB◆Lip◆RB◆◆LB◆◆RB◆◆RB◆ \leq 1$.
+$\lVert f \rVert_{\mathrm{Lip}} \leq 1$.
 
 In Wasserstein GANs, the discriminator (critic) must be 1-Lipschitz. This is often enforced via
 Gradient Penalty or Spectral Normalization.
@@ -130,31 +130,31 @@ A topological space $(S, \tau)$ is a Polish Space if it is:
 2. Completely Metrizable: There exists a metric $d$ inducing $\tau$ such that $(S, d)$ is a complete
    metric space (every Cauchy sequence converges).
 
-_Relevance to ML:_ $\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^n$Infinite sequences
-$\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^\infty$And space of continuous functions $C[0,1]$ are Polish.
+_Relevance to ML:_ $\mathbb{R}^n$Infinite sequences
+$\mathbb{R}^\infty$And space of continuous functions $C[0,1]$ are Polish.
 This property ensures regular conditional probabilities exist.
 
 ### Borel $\sigma$-algebra
 
 Let $(S, \tau)$ be a topological space, the Borel $\sigma$-algebra, denoted
-$\mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(S)$Is the $\sigma$-algebra generated by topology $\tau$:
+$\mathcal{B}(S)$Is the $\sigma$-algebra generated by topology $\tau$:
 
 $$
-\begin◆LB◆equation◆RB◆
- \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(S) = \sigma (\tau)
-\end◆LB◆equation◆RB◆
+\begin{equation}
+ \mathcal{B}(S) = \sigma (\tau)
+\end{equation}
 $$
 
 ### Borel Space
 
-The pair $(S, \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(S))$ is called a Borel space.
+The pair $(S, \mathcal{B}(S))$ is called a Borel space.
 
 ### Standard Borel Space
 
-A measurable space $(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆)$ is a standard Borel space if
-there exists a bimeasurable bijection (a bijection $f$ where both $f$ and $f^◆LB◆-1◆RB◆$ are
-measurable) between $(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆)$ and
-$(B, \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(B))$ where $B$ is a **Borel subset** of a Polish space $S$.
+A measurable space $(\Omega, \mathcal{F})$ is a standard Borel space if
+there exists a bimeasurable bijection (a bijection $f$ where both $f$ and $f^{-1}$ are
+measurable) between $(\Omega, \mathcal{F})$ and
+$(B, \mathcal{B}(B))$ where $B$ is a **Borel subset** of a Polish space $S$.
 
 _Note:_ By Kuratowski's theorem, all uncountable standard Borel spaces are isomorphic to each other
 (and to $[0,1]$ with its Borel $\sigma$-algebra). Including Borel subsets (rather than just Polish
@@ -164,9 +164,9 @@ spaces) ensures discrete/finite spaces and intervals like $(0,1]$ are covered.
 
 ### Diffeomorphism
 
-A map $\phi: U \to V$ between open sets in $\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d$ is a
+A map $\phi: U \to V$ between open sets in $\mathbb{R}^d$ is a
 **$C^k$-diffeomorphism** if it is a bijection, $k$-times continuously differentiable, and its
-inverse $\phi^◆LB◆-1◆RB◆$ is also $k$-times continuously differentiable. In ML contexts, $k=1$
+inverse $\phi^{-1}$ is also $k$-times continuously differentiable. In ML contexts, $k=1$
 ($C^1$-diffeomorphism) or $k=\infty$ ($C^\infty$-diffeomorphism, smooth).
 
 _Crucial for Normalizing Flows/Change of Variables._
@@ -174,19 +174,19 @@ _Crucial for Normalizing Flows/Change of Variables._
 ### Jacobian Matrix
 
 Let $T: U \to V$ be a differentiable map between open sets in
-$\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d$. The **Jacobian matrix** of $T$ at point $x$Denoted
-$\mathbf◆LB◆◆LB◆'◆RB◆J◆LB◆◆RB◆'◆RB◆_T(x)$Is the $d \times d$ matrix of all first-order partial
+$\mathbb{R}^d$. The **Jacobian matrix** of $T$ at point $x$Denoted
+$\mathbf{J}_T(x)$Is the $d \times d$ matrix of all first-order partial
 derivatives:
 
 $$
-\mathbf◆LB◆◆LB◆'◆RB◆J◆LB◆◆RB◆'◆RB◆_T(x) = \begin◆LB◆pmatrix◆RB◆
-\frac◆LB◆\partial T_1◆RB◆◆LB◆\partial x_1◆RB◆(x) & \cdots & \frac◆LB◆\partial T_1◆RB◆◆LB◆\partial x_d◆RB◆(x) \\
+\mathbf{J}_T(x) = \begin{pmatrix}
+\frac{\partial T_1}{\partial x_1}(x) & \cdots & \frac{\partial T_1}{\partial x_d}(x) \\
 \vdots & \ddots & \vdots \\
-\frac◆LB◆\partial T_d◆RB◆◆LB◆\partial x_1◆RB◆(x) & \cdots & \frac◆LB◆\partial T_d◆RB◆◆LB◆\partial x_d◆RB◆(x)
-\end◆LB◆pmatrix◆RB◆
+\frac{\partial T_d}{\partial x_1}(x) & \cdots & \frac{\partial T_d}{\partial x_d}(x)
+\end{pmatrix}
 $$
 
-The **Jacobian determinant** $|\det \mathbf◆LB◆◆LB◆'◆RB◆J◆LB◆◆RB◆'◆RB◆_T(x)|$ measures the local
+The **Jacobian determinant** $|\det \mathbf{J}_T(x)|$ measures the local
 volume distortion factor of the transformation $T$ at point $x$.
 
 _Relevance:_ Essential for Normalizing Flows, where the log-determinant of the Jacobian must be
@@ -196,46 +196,46 @@ neural network optimization.
 ### Change of Variables (Diffeomorphism)
 
 Let $X$ be a random variable with PDF $p_X$ on an open set
-$U \subseteq \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d$. Let $T: U \to V$ be a $C^1$-diffeomorphism. Let
+$U \subseteq \mathbb{R}^d$. Let $T: U \to V$ be a $C^1$-diffeomorphism. Let
 $Y = T(X)$. The PDF of $Y$ is given by:
 
 $$
-P_Y(y) = p_X(T^◆LB◆-1◆RB◆(y)) \cdot \left| \det \mathbf◆LB◆◆LB◆'◆RB◆J◆LB◆◆RB◆'◆RB◆_◆LB◆T^◆LB◆-1◆RB◆◆RB◆(y) \right|
+P_Y(y) = p_X(T^{-1}(y)) \cdot \left| \det \mathbf{J}_{T^{-1}}(y) \right|
 $$
 
 Using the Inverse Function Theorem, this is equivalent to:
 
 $$
-P_Y(y) = p_X(T^◆LB◆-1◆RB◆(y)) \cdot | \det \mathbf◆LB◆◆LB◆'◆RB◆J◆LB◆◆RB◆'◆RB◆_T(T^◆LB◆-1◆RB◆(y)) |^◆LB◆-1◆RB◆
+P_Y(y) = p_X(T^{-1}(y)) \cdot | \det \mathbf{J}_T(T^{-1}(y)) |^{-1}
 $$
 
-Where $\mathbf◆LB◆◆LB◆'◆RB◆J◆LB◆◆RB◆'◆RB◆_◆LB◆T^◆LB◆-1◆RB◆◆RB◆(y)$ is the Jacobian matrix of the
+Where $\mathbf{J}_{T^{-1}}(y)$ is the Jacobian matrix of the
 inverse transformation evaluated at $y$.
 
 ## Measure Theory Foundations
 
 ### $\sigma$-algebra
 
-Given a non-empty set $\Omega$The $\sigma$-algebra $\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$ is a
-sub-collection of the power set $\mathcal◆LB◆◆LB◆'◆RB◆P◆LB◆◆RB◆'◆RB◆(\Omega)$ whose elements are
-called measurable sets, where $\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$ satisfies:
+Given a non-empty set $\Omega$The $\sigma$-algebra $\mathcal{F}$ is a
+sub-collection of the power set $\mathcal{P}(\Omega)$ whose elements are
+called measurable sets, where $\mathcal{F}$ satisfies:
 
-1. Triviality: $\Omega \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$
+1. Triviality: $\Omega \in \mathcal{F}$
 2. Closure under complement:
-   $A \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆ \implies A^c \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$
+   $A \in \mathcal{F} \implies A^c \in \mathcal{F}$
 3. Closure under countable Union:
-   $A_1, A_2, \dots \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆ \implies \bigcup^\infty_◆LB◆i=1◆RB◆ A_i \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$
+   $A_1, A_2, \dots \in \mathcal{F} \implies \bigcup^\infty_{i=1} A_i \in \mathcal{F}$
 
 :::info Why condition 3 is necessary: Countable unions are required to handle limits, for example,
-when we analyze a sequence of events $\lim_◆LB◆n\to \infty◆RB◆ A_n$Without closure under countable
+when we analyze a sequence of events $\lim_{n\to \infty} A_n$Without closure under countable
 unions, probabilities cannot be assign to limits of random variables.
 :::
 
 ### Sub-$\sigma$-algebra
 
-Given a measurable space $(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆)$A collection
-$\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆\subseteq \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$ is a
-sub-$\sigma$-algebra if $\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆$ is itself a $\sigma$-algebra on
+Given a measurable space $(\Omega, \mathcal{F})$A collection
+$\mathcal{G}\subseteq \mathcal{F}$ is a
+sub-$\sigma$-algebra if $\mathcal{G}$ is itself a $\sigma$-algebra on
 $\Omega$.
 
 _Intuition:_ A sub-$\sigma$-algebra represents a coarser information structure---it contains fewer
@@ -243,49 +243,49 @@ events, corresponding to having less information about the outcome.
 
 ### Measurable Space
 
-A measurable space is a tuple $(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆)$ consisting of any
+A measurable space is a tuple $(\Omega, \mathcal{F})$ consisting of any
 non-empty set (sample space) $\Omega$ and $\sigma$-algebra
-$\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆ \subseteq \mathcal◆LB◆◆LB◆'◆RB◆P◆LB◆◆RB◆'◆RB◆(\Omega)$.
+$\mathcal{F} \subseteq \mathcal{P}(\Omega)$.
 
 ### Generated $\sigma$-algebra
 
-Let $\mathcal◆LB◆◆LB◆'◆RB◆C◆LB◆◆RB◆'◆RB◆ \subseteq \mathcal◆LB◆◆LB◆'◆RB◆P◆LB◆◆RB◆'◆RB◆(S)$ be any
+Let $\mathcal{C} \subseteq \mathcal{P}(S)$ be any
 collection of subsets of $S$The $\sigma$-algebra generated by
-$\mathcal◆LB◆◆LB◆'◆RB◆C◆LB◆◆RB◆'◆RB◆$Denoted $\sigma(\mathcal◆LB◆◆LB◆'◆RB◆C◆LB◆◆RB◆'◆RB◆)$ is the
-intersection of all $\sigma$-algebras containing $\mathcal◆LB◆◆LB◆'◆RB◆C◆LB◆◆RB◆'◆RB◆$Hence the
-smallest $\sigma$-algebra containing $\mathcal◆LB◆◆LB◆'◆RB◆C◆LB◆◆RB◆'◆RB◆$. This is denoted:
+$\mathcal{C}$Denoted $\sigma(\mathcal{C})$ is the
+intersection of all $\sigma$-algebras containing $\mathcal{C}$Hence the
+smallest $\sigma$-algebra containing $\mathcal{C}$. This is denoted:
 
 $$
-\begin◆LB◆equation◆RB◆
- \sigma(\mathcal◆LB◆◆LB◆'◆RB◆C◆LB◆◆RB◆'◆RB◆) = \bigcap \left\{\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆:\mathcal◆LB◆◆LB◆'◆RB◆C◆LB◆◆RB◆'◆RB◆ \subseteq \mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆, \mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆ \mathrm◆LB◆ is◆RB◆ a $\sigma$-algebra on ◆LB◆◆RB◆S \right\◆RB◆
-\end◆LB◆equation◆RB◆
+\begin{equation}
+ \sigma(\mathcal{C}) = \bigcap \left\{\mathcal{G}:\mathcal{C} \subseteq \mathcal{G}, \mathcal{G} \mathrm{ is} a $\sigma$-algebra on {}S \right\}
+\end{equation}
 $$
 
 ### Measurable Function
 
-Let $(\Omega_1, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_1)$ and
-$(\Omega_2, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_2)$ be measurable spaces. A function
+Let $(\Omega_1, \mathcal{F}_1)$ and
+$(\Omega_2, \mathcal{F}_2)$ be measurable spaces. A function
 $f: \Omega_1 \to \Omega_2$ is **measurable** (or
-$\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_1/\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_2$-measurable) if the
+$\mathcal{F}_1/\mathcal{F}_2$-measurable) if the
 pre-image of every measurable set in the target is a measurable set in the source:
 
 $$
-\forall B \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_2, \quad f^◆LB◆-1◆RB◆(B) \triangleq \{\omega \in \Omega_1 : f(\omega) \in B\} \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_1
+\forall B \in \mathcal{F}_2, \quad f^{-1}(B) \triangleq \{\omega \in \Omega_1 : f(\omega) \in B\} \in \mathcal{F}_1
 $$
 
 _Note:_ This is the foundational definition before introducing Random Elements.
 
 ### Measure
 
-In a measurable space $(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆)$A measure is a function
-$\mu : \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆ \rightarrow [0,\infty]$Satisfying:
+In a measurable space $(\Omega, \mathcal{F})$A measure is a function
+$\mu : \mathcal{F} \rightarrow [0,\infty]$Satisfying:
 
 1. Null set: $\mu(\emptyset) = 0$
 2. Countable additivity: For any countable collection of pairwise disjoint sets
-   $\{A_i\}^\infty_◆LB◆i=1◆RB◆ \subseteq \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$:
+   $\{A_i\}^\infty_{i=1} \subseteq \mathcal{F}$:
 
 $$
-\mu \left(\bigcup^\infty_◆LB◆i=1◆RB◆ A_i\right) = \sum^\infty_◆LB◆i=1◆RB◆ \mu (A_i)
+\mu \left(\bigcup^\infty_{i=1} A_i\right) = \sum^\infty_{i=1} \mu (A_i)
 $$
 
 ### Almost Everywhere and Equivalence
@@ -300,7 +300,7 @@ Assuming the set $\{x \in \Omega : f(x) \neq g(x)\}$ is measurable.
 
 :::warning **Rigor Note:** In pure measure theory, the set $\{x \in \Omega : f(x) \neq g(x)\}$ need
 not be measurable if the measure space is not complete. The fully rigorous formulation is: There
-exists a measurable null set $N \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$ such that $\mu(N) = 0$ and
+exists a measurable null set $N \in \mathcal{F}$ such that $\mu(N) = 0$ and
 $\{x \in \Omega : f(x) \neq g(x)\} \subseteq N$. This bypasses the need to assume the inner set is
 measurable and introduces the concept of measure space completeness (see _Completeness of a Measure
 Space_ below).
@@ -313,39 +313,39 @@ Interchangeably.
 
 ### Completeness of a Measure Space
 
-A measure space $(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆, \mu)$ is **complete** if every subset
+A measure space $(\Omega, \mathcal{F}, \mu)$ is **complete** if every subset
 of a null set is measurable (and hence also a null set). Formally:
 
 $$
-\mathrm◆LB◆If◆RB◆ ◆LB◆◆RB◆ N \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆ \mathrm◆LB◆ with◆RB◆ ◆LB◆◆RB◆ \mu(N) = 0 \mathrm◆LB◆ and◆RB◆ ◆LB◆◆RB◆ A \subseteq N, \mathrm◆LB◆ then◆RB◆ ◆LB◆◆RB◆ A \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆
+\mathrm{If} {} N \in \mathcal{F} \mathrm{ with} {} \mu(N) = 0 \mathrm{ and} {} A \subseteq N, \mathrm{ then} {} A \in \mathcal{F}
 $$
 
-_Note:_ The Lebesgue measure on $\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d$ is complete by construction.
+_Note:_ The Lebesgue measure on $\mathbb{R}^d$ is complete by construction.
 Any measure space can be "completed" by adding all subsets of null sets to the $\sigma$-algebra. The
 completion of a Borel measure yields the larger $\sigma$-algebra of Lebesgue-measurable sets.
 
 ### $\sigma$-finite Measure
 
-A measure $\mu$ on $(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆)$ is $\sigma$-finite if $\Omega$
+A measure $\mu$ on $(\Omega, \mathcal{F})$ is $\sigma$-finite if $\Omega$
 can be written as a countable union of measurable sets with finite measures:
 
 $$
-\Omega = \bigcup^\infty_◆LB◆n=1◆RB◆ A_n, \quad A_n \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆, \quad \mu(A_n) < \infty
+\Omega = \bigcup^\infty_{n=1} A_n, \quad A_n \in \mathcal{F}, \quad \mu(A_n) < \infty
 $$
 
 ### Reference Measure
 
 The reference measure $\lambda$ is a fixed $\sigma$-finite measure on a measurable space
-$(S, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆)$.
+$(S, \mathcal{F})$.
 
 ### Absolute Continuity of Measures
 
 Given two measures $\nu$ and $\mu$ on the same measurable space
-$(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆)$We say $\nu$ is **absolutely continuous** with
+$(\Omega, \mathcal{F})$We say $\nu$ is **absolutely continuous** with
 respect to $\mu$Denoted $\nu \ll \mu$If:
 
 $$
-\mu(A) = 0 \implies \nu(A) = 0 \quad \forall A \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆
+\mu(A) = 0 \implies \nu(A) = 0 \quad \forall A \in \mathcal{F}
 $$
 
 _Intuition:_ If $\nu \ll \mu$Then $\nu$ cannot "create probability out of thin air" where $\mu$ says
@@ -354,123 +354,123 @@ there is none. This is the prerequisite for the existence of the Radon-Nikodym d
 ### Pushforward Measure
 
 Let
-$T: (\Omega_1, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_1) \to (\Omega_2, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_2)$
+$T: (\Omega_1, \mathcal{F}_1) \to (\Omega_2, \mathcal{F}_2)$
 be a **measurable mapping**. Given a measure $\mu$ on
-$(\Omega_1, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_1)$The **pushforward measure** $T_\#\mu$ on
-$(\Omega_2, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_2)$ is defined as:
+$(\Omega_1, \mathcal{F}_1)$The **pushforward measure** $T_\#\mu$ on
+$(\Omega_2, \mathcal{F}_2)$ is defined as:
 
 $$
-T_\# \mu(B) = \mu(T^◆LB◆-1◆RB◆(B)) \quad \mathrm◆LB◆for◆RB◆ all ◆LB◆◆RB◆ B \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_2
+T_\# \mu(B) = \mu(T^{-1}(B)) \quad \mathrm{for} all {} B \in \mathcal{F}_2
 $$
 
 _Note:_ This is a pure measure-theoretic concept. When $T$ is a random element and $\mu = P$The
 pushforward becomes the law/induced distribution.
 
 _ML Context:_ In Generative Models (GANs/VAEs), the pushforward measure is the foundation of the
-**Generator**. If $z \sim \mathcal◆LB◆◆LB◆'◆RB◆N◆LB◆◆RB◆'◆RB◆(0, I)$ is a latent variable and
+**Generator**. If $z \sim \mathcal{N}(0, I)$ is a latent variable and
 $G_\theta$ is a neural network, the generated data distribution is exactly the pushforward measure
-$◆LB◆G_\theta◆RB◆_\# \mathcal◆LB◆◆LB◆'◆RB◆N◆LB◆◆RB◆'◆RB◆(0, I)$.
+${G_\theta}_\# \mathcal{N}(0, I)$.
 
 ### Product Measure
 
-Let $(\Omega_1, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_1, \mu_1)$ and
-$(\Omega_2, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_2, \mu_2)$ be two $\sigma$-finite measure spaces.
+Let $(\Omega_1, \mathcal{F}_1, \mu_1)$ and
+$(\Omega_2, \mathcal{F}_2, \mu_2)$ be two $\sigma$-finite measure spaces.
 The product $\sigma$-algebra, denoted
-$\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_1 \otimes \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_2$ is the
+$\mathcal{F}_1 \otimes \mathcal{F}_2$ is the
 $\sigma$-algebra generated by measurable rectangles $A \times B$ where
-$A \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_1, B \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_2$. There
+$A \in \mathcal{F}_1, B \in \mathcal{F}_2$. There
 exists a unique measure $\pi = \mu_1 \otimes \mu_2$ on
-$\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_1 \otimes \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_2$ such that for
+$\mathcal{F}_1 \otimes \mathcal{F}_2$ such that for
 all measurable rectangles:
 
 $$
-\begin◆LB◆equation◆RB◆
+\begin{equation}
  \pi(A \times B) = \mu_1(A)\mu_2(B)
-\end◆LB◆equation◆RB◆
+\end{equation}
 $$
 
 ### Radon-Nikodym Derivative
 
-Let $(\Omega,\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆)$ be a measurable space equipped with two
+Let $(\Omega,\mathcal{F})$ be a measurable space equipped with two
 $\sigma$-finite measures $\mu$ and $\nu$. If $\nu$ is absolutely continuous with respect to $\mu$
 (denoted $\nu \ll \mu$), meaning that
-$\forall A \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆, (\mu(A)=0 \implies \nu(A)=0)$Then there exists a
+$\forall A \in \mathcal{F}, (\mu(A)=0 \implies \nu(A)=0)$Then there exists a
 measurable function $f: \Omega \to [0,\infty)$Unique $\mu$-almost everywhere, such that for every
-$A \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$:
+$A \in \mathcal{F}$:
 
 $$
 \nu(A) = \int_A f d\mu
 $$
 
 The function $f$ is called the Radon-Nikodym derivative and is denoted
-$f = \frac◆LB◆d\nu◆RB◆◆LB◆d\mu◆RB◆$.
+$f = \frac{d\nu}{d\mu}$.
 
 ### Dirac Measure
 
-Let $(S, \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(S))$ be a measurable space and $x \in S$ be a fixed
+Let $(S, \mathcal{B}(S))$ be a measurable space and $x \in S$ be a fixed
 point. The Dirac measure $\delta_x$ is defined as:
 
 $$
-\forall A \in \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(S), \quad
-\delta_x(A) = \begin◆LB◆cases◆RB◆
- 1 & \mathrm◆LB◆if◆RB◆ ◆LB◆◆RB◆ x\in A\\
- 0 & \mathrm◆LB◆if◆RB◆ ◆LB◆◆RB◆ x\notin A
-\end◆LB◆cases◆RB◆
+\forall A \in \mathcal{B}(S), \quad
+\delta_x(A) = \begin{cases}
+ 1 & \mathrm{if} {} x\in A\\
+ 0 & \mathrm{if} {} x\notin A
+\end{cases}
 $$
 
 ### Empirical Measure
 
-Let $(S, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆)$ be a measurable space and $x_1, \dots, x_n \in S$ be
-fixed observations. The empirical measure $\hat◆LB◆P◆RB◆_n$ is defined as:
+Let $(S, \mathcal{F})$ be a measurable space and $x_1, \dots, x_n \in S$ be
+fixed observations. The empirical measure $\hat{P}_n$ is defined as:
 
 $$
-\hat◆LB◆P◆RB◆_n(A) = \frac◆LB◆1◆RB◆◆LB◆n◆RB◆ \sum_◆LB◆i=1◆RB◆^n \delta_◆LB◆x_i◆RB◆(A) = \frac◆LB◆ | \{i : x_i \in A\} | ◆RB◆◆LB◆n◆RB◆, \quad \forall A \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆
+\hat{P}_n(A) = \frac{1}{n} \sum_{i=1}^n \delta_{x_i}(A) = \frac{ | \{i : x_i \in A\} | }{n}, \quad \forall A \in \mathcal{F}
 $$
 
 Where $| \cdot |$ denotes the **cardinality** (number of elements) of the set, not absolute value.
 
-:::info In statistical contexts, if $X_1, \dots, X_n$ are random elements, $\hat◆LB◆P◆RB◆_n$ becomes
-a RandomMeasure mapping $\omega \mapsto \frac◆LB◆1◆RB◆◆LB◆n◆RB◆\sum \delta_◆LB◆X_i(\omega)◆RB◆$.
+:::info In statistical contexts, if $X_1, \dots, X_n$ are random elements, $\hat{P}_n$ becomes
+a RandomMeasure mapping $\omega \mapsto \frac{1}{n}\sum \delta_{X_i(\omega)}$.
 :::
 
 ### Support of a Measure
 
 Given a Borel probability measure $\mu$ on a topological space $(S, \tau)$The support of
-$\mu$Denoted $\mathrm◆LB◆supp◆RB◆◆LB◆◆RB◆(\mu)$Is the set of all points $x \in S$ for which every
+$\mu$Denoted $\mathrm{supp}(\mu)$Is the set of all points $x \in S$ for which every
 open neighborhood of $x$ has positive measure. Equivalently, it is the intersection of all closed
 sets with full measure:
 
 $$
-\mathrm◆LB◆supp◆RB◆◆LB◆◆RB◆(\mu) = \bigcap \{ C \subseteq S : C \mathrm◆LB◆ is◆RB◆ closed and ◆LB◆◆RB◆ \mu(C) = 1 \}
+\mathrm{supp}(\mu) = \bigcap \{ C \subseteq S : C \mathrm{ is} closed and {} \mu(C) = 1 \}
 $$
 
 ### Probability Measure
 
-A probability measure $P$ is a measure on $(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆)$ such that
+A probability measure $P$ is a measure on $(\Omega, \mathcal{F})$ such that
 $P(\Omega) = 1$. It must satisfy Countable Additivity: For any countable sequence of pairwise
-disjoint events $\{A_i\}_◆LB◆i=1◆RB◆^\infty \subseteq \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$:
+disjoint events $\{A_i\}_{i=1}^\infty \subseteq \mathcal{F}$:
 
 $$
-P\left(\bigcup_◆LB◆i=1◆RB◆^\infty A_i\right) = \sum_◆LB◆i=1◆RB◆^\infty P(A_i)
+P\left(\bigcup_{i=1}^\infty A_i\right) = \sum_{i=1}^\infty P(A_i)
 $$
 
 ### Space of Probability Measure
 
-Let $(S, \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(S))$ be a measurable space. The space of probability
-measures $\mathcal◆LB◆◆LB◆'◆RB◆M◆LB◆◆RB◆'◆RB◆_1(S)$ is the set of all probability measures on
-$(S, \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(S))$ such that $\mu(S) = 1$ for all
-$\mu \in \mathcal◆LB◆◆LB◆'◆RB◆M◆LB◆◆RB◆'◆RB◆_1(S)$.
+Let $(S, \mathcal{B}(S))$ be a measurable space. The space of probability
+measures $\mathcal{M}_1(S)$ is the set of all probability measures on
+$(S, \mathcal{B}(S))$ such that $\mu(S) = 1$ for all
+$\mu \in \mathcal{M}_1(S)$.
 
-:::info The notation $\mathcal◆LB◆◆LB◆'◆RB◆M◆LB◆◆RB◆'◆RB◆_1$ emphasizes that these are probability
+:::info The notation $\mathcal{M}_1$ emphasizes that these are probability
 measures (total mass 1), as opposed to general measures with arbitrary mass.
 :::
 
 ### Probability Space
 
-A probability space is a tuple $(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆, P)$Where
-$(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆)$ is the measurable space defined previously and $P$
+A probability space is a tuple $(\Omega, \mathcal{F}, P)$Where
+$(\Omega, \mathcal{F})$ is the measurable space defined previously and $P$
 is the probability measure where
-$P \in \mathcal◆LB◆◆LB◆'◆RB◆M◆LB◆◆RB◆'◆RB◆_1(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆)$.
+$P \in \mathcal{M}_1(\Omega, \mathcal{F})$.
 
 ### Outcome
 
@@ -478,39 +478,39 @@ Outcome $\omega \in \Omega$ is an element of some space $\Omega$.
 
 ### Carathéodory's Extension Theorem
 
-Let $\Omega$ be a set and $\mathcal◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$ be a Ring of subsets (closed under
+Let $\Omega$ be a set and $\mathcal{R}$ be a Ring of subsets (closed under
 finite union and relative complement). Let
-$\mu_0: \mathcal◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆ \to [0, \infty]$ be a pre-measure (countably additive on
-$\mathcal◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$). **Theorem:** There exists a measure $\mu$ on the
-$\sigma$-algebra generated by $\mathcal◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$Denoted
-$\sigma(\mathcal◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆)$Such that $\mu(A) = \mu_0(A)$ for all
-$A \in \mathcal◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$. Furthermore, if $\mu_0$ is $\sigma$-finite, this
+$\mu_0: \mathcal{R} \to [0, \infty]$ be a pre-measure (countably additive on
+$\mathcal{R}$). **Theorem:** There exists a measure $\mu$ on the
+$\sigma$-algebra generated by $\mathcal{R}$Denoted
+$\sigma(\mathcal{R})$Such that $\mu(A) = \mu_0(A)$ for all
+$A \in \mathcal{R}$. Furthermore, if $\mu_0$ is $\sigma$-finite, this
 extension $\mu$ is unique.
 
-This theorem allows us to define the Lebesgue measure on $\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$ by
+This theorem allows us to define the Lebesgue measure on $\mathbb{R}$ by
 defining the length of intervals, and guarantees a valid probability measure exists on the complex
 Borel $\sigma$-algebra.
 
 ### Kolmogorov Extension Theorem (Kolmogorov-Bochner)
 
-Let $T$ be an index set ( $T = \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$ or
-$T = \mathbb◆LB◆◆LB◆'◆RB◆N◆LB◆◆RB◆'◆RB◆$ for time). For each finite subset
+Let $T$ be an index set ( $T = \mathbb{R}$ or
+$T = \mathbb{N}$ for time). For each finite subset
 $J = \{t_1, \dots, t_n\} \subset T$Let $\mu_J$ be a probability measure on
-$(\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^J, \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^J))$
+$(\mathbb{R}^J, \mathcal{B}(\mathbb{R}^J))$
 (a **finite-dimensional distribution** or FDD).
 
 **Consistency Condition:** The family $\{\mu_J\}$ is **consistent** if for any finite subsets
 $J \subseteq K \subset T$The marginal of $\mu_K$ onto coordinates $J$ equals $\mu_J$:
 
 $$
-\mu_J(A) = \mu_K(A \times \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^◆LB◆K \setminus J◆RB◆), \quad \forall A \in \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^J)
+\mu_J(A) = \mu_K(A \times \mathbb{R}^{K \setminus J}), \quad \forall A \in \mathcal{B}(\mathbb{R}^J)
 $$
 
 **Theorem:** If $\{\mu_J\}$ is a consistent family of finite-dimensional distributions, there exists
 a unique probability measure $P$ on the product space
-$(\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^T, \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^T))$
+$(\mathbb{R}^T, \mathcal{B}(\mathbb{R}^T))$
 such that for every finite $J \subset T$The marginal distribution of $P$ on
-$\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^J$ is $\mu_J$.
+$\mathbb{R}^J$ is $\mu_J$.
 
 _Relevance:_ This theorem is **essential** for rigorously defining stochastic processes. It
 guarantees that the Wiener Process (Brownian Motion) and Markov Chains exist as well-defined
@@ -520,18 +520,18 @@ probability measures on path space, given only their finite-dimensional distribu
 
 ### Event
 
-Given a measurable space $(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆)$An event is a measurable set
-$A \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$ to which a probability $P(A)$ can be assigned.
+Given a measurable space $(\Omega, \mathcal{F})$An event is a measurable set
+$A \in \mathcal{F}$ to which a probability $P(A)$ can be assigned.
 
 ### Elementary Event
 
 An elementary event is a set containing a single outcome, $\{\omega\} \subset \Omega$. For
 singletons in $\Omega$ to be measurable, we must assume the $\sigma$-algebra
-$\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$ contains all singletons, or equivalently, that $\Omega$ is
+$\mathcal{F}$ contains all singletons, or equivalently, that $\Omega$ is
 equipped with a topology making it a Standard Borel space (e.g., $\Omega$ is itself a Polish space).
 
 _Note:_ This is distinct from singletons in the target space $S$. When $S$ is a Polish space
-equipped with its Borel $\sigma$-algebra $\mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(S)$All singletons
+equipped with its Borel $\sigma$-algebra $\mathcal{B}(S)$All singletons
 $\{s\} \subset S$ are indeed measurable because Polish spaces are $T_1$ (singletons are closed,
 hence Borel-measurable).
 
@@ -547,7 +547,7 @@ $$
 
 ### Joint Probability
 
-If two events $A, B \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$ the probability of their intersection
+If two events $A, B \in \mathcal{F}$ the probability of their intersection
 is denoted $P(A \cap B)$. Using the additivity of measures, the inclusion-exclusion principle is as
 follows:
 
@@ -559,21 +559,21 @@ $$
 
 ### Conditional Probability
 
-For events $A, B \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆, P(B) > 0$The conditional probability of
+For events $A, B \in \mathcal{F}, P(B) > 0$The conditional probability of
 $A$ given $B$ is defined as the normalized measure of the intersection:
 
 $$
-P(A|B) \triangleq \frac◆LB◆P(A\cap B)◆RB◆◆LB◆P(B)◆RB◆, \quad P(B) \in (0, 1]
+P(A|B) \triangleq \frac{P(A\cap B)}{P(B)}, \quad P(B) \in (0, 1]
 $$
 
 ### Mutual Independence
 
-A finite collection of events $A_1, \dots, A_n \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$ is
+A finite collection of events $A_1, \dots, A_n \in \mathcal{F}$ is
 **mutually independent** (or independent) if for every subset of indices
 $I \subseteq \{1, \dots, n\}$:
 
 $$
-P\left(\bigcap_◆LB◆i\in I◆RB◆ A_i\right) = \prod_◆LB◆i\in I◆RB◆P(A_i)
+P\left(\bigcap_{i\in I} A_i\right) = \prod_{i\in I}P(A_i)
 $$
 
 :::info **Terminology Note:** The term "marginal independence" is sometimes used to refer to
@@ -583,8 +583,8 @@ For the independence of $n$ events, "mutual independence" is the standard termin
 
 ### Conditional Independence
 
-Given that event $C \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$ holds, event
-$A, B \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$ are conditionally independent if:
+Given that event $C \in \mathcal{F}$ holds, event
+$A, B \in \mathcal{F}$ are conditionally independent if:
 
 $$
 P(A\cap B| C) = P(A|C)P(B|C)
@@ -598,13 +598,13 @@ This is often denoted as $A \perp B | C$.
 
 The random elements can map to spaces other than the real line, random variable (strictly real
 number line) is not enough to measure the full domain of a random source. Therefore, random element
-should be strictly defined. Let $(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆)$ be a measurable
-space (the source of randomness), and $(S, \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(S))$ be a measurable
+should be strictly defined. Let $(\Omega, \mathcal{F})$ be a measurable
+space (the source of randomness), and $(S, \mathcal{B}(S))$ be a measurable
 space (the target). A function $X:\Omega \rightarrow S$ is a random element if it is measurable,
 i.e., the pre-image of every measurable set in the target is a measurable set in the source:
 
 $$
-\forall B \in \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(S), X^◆LB◆-1◆RB◆(B) \triangleq \{\omega \in \Omega : X(\omega) \in B\} \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆
+\forall B \in \mathcal{B}(S), X^{-1}(B) \triangleq \{\omega \in \Omega : X(\omega) \in B\} \in \mathcal{F}
 $$
 
 ### Random Variable
@@ -612,54 +612,54 @@ $$
 A random variable is a specific case of random element where the target space is the real line:
 
 $$
-(S, \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(S)) = (\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆, \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆))
+(S, \mathcal{B}(S)) = (\mathbb{R}, \mathcal{B}(\mathbb{R}))
 $$
 
 ### Random Vector
 
 A random vector is a specific case of random element where the target space is the Euclidean space
-$\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d$:
+$\mathbb{R}^d$:
 
 $$
-(S, \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(S)) = (\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d, \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d))
+(S, \mathcal{B}(S)) = (\mathbb{R}^d, \mathcal{B}(\mathbb{R}^d))
 $$
 
-A random vector $\mathbf◆LB◆◆LB◆'◆RB◆X◆LB◆◆RB◆'◆RB◆ = (X_1, \dots, X_d)^\top$ can be viewed as a
+A random vector $\mathbf{X} = (X_1, \dots, X_d)^\top$ can be viewed as a
 collection of $d$ real-valued random variables.
 
 ### Independence of $\sigma$-algebras
 
 Two $\sigma$-algebras
-$\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆, \mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆ \subseteq \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$
-are independent if for all $G \in \mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆$ and
-$H \in \mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆$, $P(G \cap H) = P(G)P(H)$.
+$\mathcal{G}, \mathcal{H} \subseteq \mathcal{F}$
+are independent if for all $G \in \mathcal{G}$ and
+$H \in \mathcal{H}$, $P(G \cap H) = P(G)P(H)$.
 
 ### Independence of Random Elements
 
-Random elements $X, Y$ on $(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆, P)$ are independent if
+Random elements $X, Y$ on $(\Omega, \mathcal{F}, P)$ are independent if
 their generated $\sigma$-algebras
-$\sigma(X) = \{X^◆LB◆-1◆RB◆(B) : B \in \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(S)\}$ and $\sigma(Y)$ are
+$\sigma(X) = \{X^{-1}(B) : B \in \mathcal{B}(S)\}$ and $\sigma(Y)$ are
 independent.
 
 ### The Law/Induced Distribution
 
 The Law of random element $X$ is the probability measure
-$P_X \in \mathcal◆LB◆◆LB◆'◆RB◆M◆LB◆◆RB◆'◆RB◆_1(S, \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(S))$Defined by
+$P_X \in \mathcal{M}_1(S, \mathcal{B}(S))$Defined by
 the pushforward $X\sim P_X$:
 
 $$
-P_X(B) = P(X^◆LB◆-1◆RB◆(B))
+P_X(B) = P(X^{-1}(B))
 $$
 
 ### Probability Density Function
 
 If $P_X \ll \lambda$The probability density function would be the Radon-Nikodym derivative
-$f=\frac◆LB◆d P_X◆RB◆◆LB◆d \lambda◆RB◆$Satisfying:
+$f=\frac{d P_X}{d \lambda}$Satisfying:
 
 $$
-\begin◆LB◆equation◆RB◆
+\begin{equation}
  P_X(B) = \int_B f \space d \lambda
-\end◆LB◆equation◆RB◆
+\end{equation}
 $$
 
 _Note:_ The PDF $f$ is unique **only up to $\lambda$-null sets**. If $f$ and $g$ differ only on a
@@ -674,14 +674,14 @@ $\lambda(B) = 0 \implies P_X(B) = 0$.
 
 ### Marginal Distribution
 
-Let $(X, Y)$ be a pair of random elements with joint distribution $P_◆LB◆XY◆RB◆$ on the product
+Let $(X, Y)$ be a pair of random elements with joint distribution $P_{XY}$ on the product
 space
-$(S \times T, \mathcal◆LB◆◆LB◆'◆RB◆S◆LB◆◆RB◆'◆RB◆ \otimes \mathcal◆LB◆◆LB◆'◆RB◆T◆LB◆◆RB◆'◆RB◆)$. The
-**marginal distribution** of $X$ is the pushforward of $P_◆LB◆XY◆RB◆$ under the projection map
+$(S \times T, \mathcal{S} \otimes \mathcal{T})$. The
+**marginal distribution** of $X$ is the pushforward of $P_{XY}$ under the projection map
 $\pi_X: S \times T \to S$Defined as:
 
 $$
-P_X(A) = P_◆LB◆XY◆RB◆(A \times T) = (\pi_X)_\# P_◆LB◆XY◆RB◆(A), \quad \forall A \in \mathcal◆LB◆◆LB◆'◆RB◆S◆LB◆◆RB◆'◆RB◆
+P_X(A) = P_{XY}(A \times T) = (\pi_X)_\# P_{XY}(A), \quad \forall A \in \mathcal{S}
 $$
 
 Equivalently, $P_X$ is the law of $X$ when treating $X$ as a random element in isolation.
@@ -695,10 +695,10 @@ Given a sequence of random elements $X_1, \dots, X_n$If their joint law is the p
 marginal laws:
 
 $$
-P_◆LB◆(X_1, \dots, X_n)◆RB◆ = P_◆LB◆X_1◆RB◆ \otimes \dots \otimes P_◆LB◆X_n◆RB◆
+P_{(X_1, \dots, X_n)} = P_{X_1} \otimes \dots \otimes P_{X_n}
 $$
 
-And all marginal laws are identical ($P_◆LB◆X_1◆RB◆ = \dots = P_◆LB◆X_n◆RB◆ = P_X$), then the
+And all marginal laws are identical ($P_{X_1} = \dots = P_{X_n} = P_X$), then the
 sequence is **IID**. Equivalently, the random elements are pairwise independent and all share the
 same distribution.
 
@@ -713,24 +713,24 @@ Indicator function $1_A:\Omega \rightarrow \{1,0\}$ satisfies:
 
 $$
 1_A(\omega) =
-\begin◆LB◆cases◆RB◆
- 1 & \mathrm◆LB◆if◆RB◆ ◆LB◆◆RB◆ \omega \in A\\
- 0 & \mathrm◆LB◆else◆RB◆◆LB◆◆RB◆
-\end◆LB◆cases◆RB◆
+\begin{cases}
+ 1 & \mathrm{if} {} \omega \in A\\
+ 0 & \mathrm{else}
+\end{cases}
 $$
 
 ### Simple Function
 
-A function $s: \Omega \rightarrow \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$ is a **simple function** if it
+A function $s: \Omega \rightarrow \mathbb{R}$ is a **simple function** if it
 takes on a finite number of values. This can be written as a linear combination of indicator
 functions:
 
 $$
-S(\omega) = \sum^n_◆LB◆i=1◆RB◆ \alpha_i 1_◆LB◆A_i◆RB◆ (\omega), \quad \alpha_i \in \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆, \quad A_i \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆
+S(\omega) = \sum^n_{i=1} \alpha_i 1_{A_i} (\omega), \quad \alpha_i \in \mathbb{R}, \quad A_i \in \mathcal{F}
 $$
 
-Where $\alpha_i \in \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$ are real coefficients and
-$A_i \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$ are pairwise disjoint measurable sets.
+Where $\alpha_i \in \mathbb{R}$ are real coefficients and
+$A_i \in \mathcal{F}$ are pairwise disjoint measurable sets.
 
 :::info **Non-negative Simple Function:** For the construction of the Lebesgue integral, we
 specifically use **non-negative simple functions** where $\alpha_i \in [0, \infty)$ for all $i$.
@@ -743,14 +743,14 @@ construction.
 This is an integral constructed from $3$ steps:
 
 1. Simple functions: Given a simple function $s=\sum \alpha_i 1_A$The integral is
-   $\int s d\mu = \sum^n_◆LB◆i=1◆RB◆ \alpha_i \mu (A_i)$.
+   $\int s d\mu = \sum^n_{i=1} \alpha_i \mu (A_i)$.
 2. Non-negative Measurable Functions: For any $f: \Omega \rightarrow [0, \infty]$Defined as the
    supremum of integrals of simple functions bounded by f:
    $$
-   \int f d\mu = \sup \left\{\int s d\mu : 0\leq s \leq f, s \mathrm◆LB◆ is◆RB◆ simple◆LB◆◆RB◆\right\◆RB◆
+   \int f d\mu = \sup \left\{\int s d\mu : 0\leq s \leq f, s \mathrm{ is} simple{}\right\}
    $$
 3. General Measurable Functions: For a **measurable** function
-   $f: \Omega \rightarrow \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$Decompose into positive and negative
+   $f: \Omega \rightarrow \mathbb{R}$Decompose into positive and negative
    parts $f = f^+ - f^-$ (where $f^+ = \max(f, 0)$ and $f^- = \max(-f, 0)$). The integral is defined
    as:
    $$
@@ -768,103 +768,103 @@ This is an integral constructed from $3$ steps:
 
 ### Expectation (Real-valued)
 
-For a real-valued random variable $X: \Omega \to \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$The expectation
+For a real-valued random variable $X: \Omega \to \mathbb{R}$The expectation
 is the standard Lebesgue integral with respect to the probability measure $P$:
 
 $$
-\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X] = \int_\Omega X(\omega) \, dP(\omega)
+\mathbb{E}[X] = \int_\Omega X(\omega) \, dP(\omega)
 $$
 
 If $X$ has a density $f_X$ with respect to Lebesgue measure $\lambda$This becomes:
 
 $$
-\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X] = \int_◆LB◆\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆◆RB◆ x \cdot f_X(x) \, d\lambda(x)
+\mathbb{E}[X] = \int_{\mathbb{R}} x \cdot f_X(x) \, d\lambda(x)
 $$
 
 ### Moments and Variance
 
-For a real-valued random variable $X$ and $k \in \mathbb◆LB◆◆LB◆'◆RB◆N◆LB◆◆RB◆'◆RB◆$:
+For a real-valued random variable $X$ and $k \in \mathbb{N}$:
 
-- The **$k$-th moment** (about the origin) is $\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X^k]$Provided
-  $\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[|X|^k] < \infty$.
+- The **$k$-th moment** (about the origin) is $\mathbb{E}[X^k]$Provided
+  $\mathbb{E}[|X|^k] < \infty$.
 - The **$k$-th central moment** is
-  $\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[(X - \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X])^k]$.
+  $\mathbb{E}[(X - \mathbb{E}[X])^k]$.
 
 The **variance** of $X$ is the second central moment:
 
 $$
-\mathrm◆LB◆Var◆RB◆◆LB◆◆RB◆(X) = \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[(X - \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X])^2] = \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X^2] - (\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X])^2
+\mathrm{Var}(X) = \mathbb{E}[(X - \mathbb{E}[X])^2] = \mathbb{E}[X^2] - (\mathbb{E}[X])^2
 $$
 
-The **standard deviation** is $\sigma_X = \sqrt◆LB◆\mathrm◆LB◆Var◆RB◆◆LB◆◆RB◆(X)◆RB◆$.
+The **standard deviation** is $\sigma_X = \sqrt{\mathrm{Var}(X)}$.
 
 _Properties:_
 
-- $\mathrm◆LB◆Var◆RB◆◆LB◆◆RB◆(X) \geq 0$
-- $\mathrm◆LB◆Var◆RB◆◆LB◆◆RB◆(aX + b) = a^2 \mathrm◆LB◆Var◆RB◆◆LB◆◆RB◆(X)$ for constants $a, b$
-- $\mathrm◆LB◆Var◆RB◆◆LB◆◆RB◆(X) = 0 \iff X = \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X]$ almost surely
+- $\mathrm{Var}(X) \geq 0$
+- $\mathrm{Var}(aX + b) = a^2 \mathrm{Var}(X)$ for constants $a, b$
+- $\mathrm{Var}(X) = 0 \iff X = \mathbb{E}[X]$ almost surely
 
 ### Law of the Unconscious Statistician (LOTUS)
 
 Let $X: \Omega \to S$ be a random element with law $P_X$And let
-$f: S \to \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$ be measurable. **If $f$ is non-negative, or if
-$\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[|f(X)|] < \infty$**, then the expectation of $f(X)$ can be
+$f: S \to \mathbb{R}$ be measurable. **If $f$ is non-negative, or if
+$\mathbb{E}[|f(X)|] < \infty$**, then the expectation of $f(X)$ can be
 computed either in the sample space or the target space:
 
-$$\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[f(X)] = \int_\Omega f(X(\omega)) \, dP(\omega) = \int_S f(x) \, dP_X(x)$$
+$$\mathbb{E}[f(X)] = \int_\Omega f(X(\omega)) \, dP(\omega) = \int_S f(x) \, dP_X(x)$$
 
 _Intuition:_ LOTUS justifies computing expectations using the pushforward measure (distribution)
 rather than the underlying probability space. In ML, this is why we can compute
-$\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[f(X)]$ using the density $p_X(x)$ without knowing $\Omega$ or
+$\mathbb{E}[f(X)]$ using the density $p_X(x)$ without knowing $\Omega$ or
 $P$.
 
 ### Covariance
 
 For two random variables $X, Y$ with finite second moments, the covariance is defined as:
 
-$$\mathrm◆LB◆Cov◆RB◆◆LB◆◆RB◆(X, Y) = \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[(X - \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X])(Y - \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[Y])]$$
+$$\mathrm{Cov}(X, Y) = \mathbb{E}[(X - \mathbb{E}[X])(Y - \mathbb{E}[Y])]$$
 
 Equivalently,
-$\mathrm◆LB◆Cov◆RB◆◆LB◆◆RB◆(X, Y) = \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[XY] - \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X]\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[Y]$.
+$\mathrm{Cov}(X, Y) = \mathbb{E}[XY] - \mathbb{E}[X]\mathbb{E}[Y]$.
 
 _Properties:_
 
-- $\mathrm◆LB◆Cov◆RB◆◆LB◆◆RB◆(X, X) = \mathrm◆LB◆Var◆RB◆◆LB◆◆RB◆(X)$
-- $\mathrm◆LB◆Cov◆RB◆◆LB◆◆RB◆(X, Y) = \mathrm◆LB◆Cov◆RB◆◆LB◆◆RB◆(Y, X)$ (symmetry)
-- $\mathrm◆LB◆Cov◆RB◆◆LB◆◆RB◆(aX, bY) = ab \cdot \mathrm◆LB◆Cov◆RB◆◆LB◆◆RB◆(X, Y)$ (bilinearity)
-- If $X$ and $Y$ are independent, $\mathrm◆LB◆Cov◆RB◆◆LB◆◆RB◆(X, Y) = 0$ (but converse is not true)
+- $\mathrm{Cov}(X, X) = \mathrm{Var}(X)$
+- $\mathrm{Cov}(X, Y) = \mathrm{Cov}(Y, X)$ (symmetry)
+- $\mathrm{Cov}(aX, bY) = ab \cdot \mathrm{Cov}(X, Y)$ (bilinearity)
+- If $X$ and $Y$ are independent, $\mathrm{Cov}(X, Y) = 0$ (but converse is not true)
 
 ### Covariance Matrix
 
-For a random vector $\mathbf◆LB◆◆LB◆'◆RB◆X◆LB◆◆RB◆'◆RB◆ \in \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d$
+For a random vector $\mathbf{X} \in \mathbb{R}^d$
 with finite second moments, the covariance matrix
-$\Sigma \in \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^◆LB◆d \times d◆RB◆$ is defined as:
+$\Sigma \in \mathbb{R}^{d \times d}$ is defined as:
 
 $$
-\Sigma = \mathrm◆LB◆Cov◆RB◆◆LB◆◆RB◆(\mathbf◆LB◆◆LB◆'◆RB◆X◆LB◆◆RB◆'◆RB◆) = \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆\left[(\mathbf◆LB◆◆LB◆'◆RB◆X◆LB◆◆RB◆'◆RB◆ - \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[\mathbf◆LB◆◆LB◆'◆RB◆X◆LB◆◆RB◆'◆RB◆])(\mathbf◆LB◆◆LB◆'◆RB◆X◆LB◆◆RB◆'◆RB◆ - \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[\mathbf◆LB◆◆LB◆'◆RB◆X◆LB◆◆RB◆'◆RB◆])^\top\right]
+\Sigma = \mathrm{Cov}(\mathbf{X}) = \mathbb{E}\left[(\mathbf{X} - \mathbb{E}[\mathbf{X}])(\mathbf{X} - \mathbb{E}[\mathbf{X}])^\top\right]
 $$
 
-The $(i,j)$-th entry is $\Sigma_◆LB◆ij◆RB◆ = \mathrm◆LB◆Cov◆RB◆◆LB◆◆RB◆(X_i, X_j)$. The covariance
+The $(i,j)$-th entry is $\Sigma_{ij} = \mathrm{Cov}(X_i, X_j)$. The covariance
 matrix is symmetric and positive semi-definite.
 
-### Lebesgue $p$-spaces ($\mathcal◆LB◆◆LB◆'◆RB◆L◆LB◆◆RB◆'◆RB◆^p$)
+### Lebesgue $p$-spaces ($\mathcal{L}^p$)
 
-For $p \in [1, \infty)$The space $\mathcal◆LB◆◆LB◆'◆RB◆L◆LB◆◆RB◆'◆RB◆^p(\Omega, \mu)$ consists of
-all measurable functions $f: \Omega \to \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$ such that the norm is
+For $p \in [1, \infty)$The space $\mathcal{L}^p(\Omega, \mu)$ consists of
+all measurable functions $f: \Omega \to \mathbb{R}$ such that the norm is
 finite:
 
 $$
-\lVert f \rVert_p \triangleq \left( \int_\Omega |f(\omega)|^p \, d\mu(\omega) \right)^◆LB◆1/p◆RB◆ < \infty
+\lVert f \rVert_p \triangleq \left( \int_\Omega |f(\omega)|^p \, d\mu(\omega) \right)^{1/p} < \infty
 $$
 
-The space $L^p$ is the quotient space of $\mathcal◆LB◆◆LB◆'◆RB◆L◆LB◆◆RB◆'◆RB◆^p$ modulo the
+The space $L^p$ is the quotient space of $\mathcal{L}^p$ modulo the
 equivalence relation $f \sim g \iff f=g$ $\mu$-almost everywhere. $L^p$ is a Banach space under the
 norm $\lVert \cdot \rVert_p$.
 
 _Generalization:_ For vector-valued functions, the Bochner space
-$\mathcal◆LB◆◆LB◆'◆RB◆L◆LB◆◆RB◆'◆RB◆^p(\Omega, \mu; \mathbb◆LB◆◆LB◆'◆RB◆V◆LB◆◆RB◆'◆RB◆)$ consists of
-strongly measurable functions $f: \Omega \to \mathbb◆LB◆◆LB◆'◆RB◆V◆LB◆◆RB◆'◆RB◆$ where
-$\lVert f \rVert_p = \left( \int_\Omega \lVert f(\omega) \rVert^p \, d\mu(\omega) \right)^◆LB◆1/p◆RB◆ < \infty$.
+$\mathcal{L}^p(\Omega, \mu; \mathbb{V})$ consists of
+strongly measurable functions $f: \Omega \to \mathbb{V}$ where
+$\lVert f \rVert_p = \left( \int_\Omega \lVert f(\omega) \rVert^p \, d\mu(\omega) \right)^{1/p} < \infty$.
 
 ### Bochner Integrability (Preview)
 
@@ -873,12 +873,12 @@ Lebesgue integral. The formal definition requires concepts from Functional Analy
 strong measurability) and is deferred to the _Functional Analysis and Bochner Integration_ section
 below.
 
-_Intuition:_ A function $f: \Omega \to \mathbb◆LB◆◆LB◆'◆RB◆V◆LB◆◆RB◆'◆RB◆$ is Bochner integrable if
+_Intuition:_ A function $f: \Omega \to \mathbb{V}$ is Bochner integrable if
 it is the limit of simple Banach-valued functions and its norm is Lebesgue integrable:
 $\int_\Omega \lVert f(\omega) \rVert \, d\mu(\omega) < \infty$.
 
 :::info **Bochner's Theorem:** A strongly measurable function
-$X: \Omega \to \mathbb◆LB◆◆LB◆'◆RB◆V◆LB◆◆RB◆'◆RB◆$ is Bochner integrable _if and only if_ its norm
+$X: \Omega \to \mathbb{V}$ is Bochner integrable _if and only if_ its norm
 is Lebesgue integrable: $$\int_\Omega \lVert X(\omega) \rVert \, d\mu(\omega) < \infty$$ This is the
 characteristic criterion for Bochner integrability and is formally stated in the _Bochner Integral_
 definition below.
@@ -886,14 +886,14 @@ definition below.
 
 ### Fubini-Tonelli Theorem
 
-Let $(\Omega_1, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_1, \mu_1)$ and
-$(\Omega_2, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_2, \mu_2)$ be $\sigma$-finite measure spaces. The
+Let $(\Omega_1, \mathcal{F}_1, \mu_1)$ and
+$(\Omega_2, \mathcal{F}_2, \mu_2)$ be $\sigma$-finite measure spaces. The
 Fubini-Tonelli Theorem states:
 
 1. Tonelli (non-negative measurable functions): If $f: \Omega_1 \times \Omega_2 \to [0,\infty]$ is
    measurable, then:
    $$
-   \int_◆LB◆\Omega_1 \times \Omega_2◆RB◆ f d(\mu_1 \otimes \mu_2) = \int_◆LB◆\Omega_1◆RB◆ \left(\int_◆LB◆\Omega_2◆RB◆ f(x,y) d\mu_2 (y) \right)d\mu_1(x)
+   \int_{\Omega_1 \times \Omega_2} f d(\mu_1 \otimes \mu_2) = \int_{\Omega_1} \left(\int_{\Omega_2} f(x,y) d\mu_2 (y) \right)d\mu_1(x)
    $$
 2. Fubini (integrable functions): If $f$ is integrable ($f \in L^1 (\mu_1 \otimes \mu_2)$), then the
    order of integration can be swapped, and the equality holds for the signed integral.
@@ -902,19 +902,19 @@ Fubini-Tonelli Theorem states:
 
 ### Convex Function
 
-A function $f: V \to \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$ on a vector space is convex if
+A function $f: V \to \mathbb{R}$ on a vector space is convex if
 $\forall x, y \in V, \lambda \in [0,1]$:
 $$f(\lambda x + (1-\lambda)y) \leq \lambda f(x) + (1-\lambda)f(y)$$ (Crucial for Jensen's inequality
 and Optimization).
 
 ### Jensen's Inequality
 
-Given a probability space $(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆, P)$A real-valued random
-variable $X: \Omega \to \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$ and a convex function
-$\varphi: \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆ \to \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$:
+Given a probability space $(\Omega, \mathcal{F}, P)$A real-valued random
+variable $X: \Omega \to \mathbb{R}$ and a convex function
+$\varphi: \mathbb{R} \to \mathbb{R}$:
 
 $$
-\varphi(\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X]) \leq \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[\varphi(X)]
+\varphi(\mathbb{E}[X]) \leq \mathbb{E}[\varphi(X)]
 $$
 
 ### Markov's Inequality
@@ -922,7 +922,7 @@ $$
 Let $X$ be a non-negative random variable and $a > 0$. Then:
 
 $$
-P(X \geq a) \leq \frac◆LB◆\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X]◆RB◆◆LB◆a◆RB◆
+P(X \geq a) \leq \frac{\mathbb{E}[X]}{a}
 $$
 
 ### Chebyshev's Inequality
@@ -931,7 +931,7 @@ Let $X$ be a random variable with finite mean $\mu$ and finite non-zero variance
 $k > 0$:
 
 $$
-P(|X - \mu| \geq k\sigma) \leq \frac◆LB◆1◆RB◆◆LB◆k^2◆RB◆
+P(|X - \mu| \geq k\sigma) \leq \frac{1}{k^2}
 $$
 
 ## Functional Analysis and Bochner Integration
@@ -939,38 +939,38 @@ $$
 ### Normed Vector Space
 
 A Normed Vector Space is a pair $(V, \lVert \cdot \rVert)$ where $V$ is a vector space over field
-$\mathbb◆LB◆◆LB◆'◆RB◆K◆LB◆◆RB◆'◆RB◆$ ( $\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$ or
-$\mathbb◆LB◆◆LB◆'◆RB◆C◆LB◆◆RB◆'◆RB◆$) and $\lVert \cdot \rVert: V \to [0, \infty)$ is a norm
+$\mathbb{K}$ ( $\mathbb{R}$ or
+$\mathbb{C}$) and $\lVert \cdot \rVert: V \to [0, \infty)$ is a norm
 satisfying:
 
 1. Positive Definiteness: $\lVert x \rVert = 0 \iff x = 0_V$.
 2. Absolute Homogeneity: $\lVert \alpha x \rVert = |\alpha| \lVert x \rVert$ for all scalars
-   $\alpha \in \mathbb◆LB◆◆LB◆'◆RB◆K◆LB◆◆RB◆'◆RB◆$.
+   $\alpha \in \mathbb{K}$.
 3. Triangle Inequality: $\lVert x + y \rVert \leq \lVert x \rVert + \lVert y \rVert$.
 
 _Note:_ Every normed space induces a metric $d(x,y) = \lVert x - y \rVert$.
 
 ### Euclidean Norm
 
-On $\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d$The **Euclidean norm** (or $\ell^2$-norm) is defined as:
+On $\mathbb{R}^d$The **Euclidean norm** (or $\ell^2$-norm) is defined as:
 
 $$
-\lVert x \rVert_2 = \sqrt◆LB◆\sum_◆LB◆i=1◆RB◆^d x_i^2◆RB◆ = \sqrt◆LB◆\langle x, x \rangle◆RB◆
+\lVert x \rVert_2 = \sqrt{\sum_{i=1}^d x_i^2} = \sqrt{\langle x, x \rangle}
 $$
 
 Where $\langle \cdot, \cdot \rangle$ denotes the standard dot product. The Euclidean norm is the
-norm induced by the standard inner product on $\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d$.
+norm induced by the standard inner product on $\mathbb{R}^d$.
 
 _Note:_ While general norms (defined above) apply to any normed vector space, the Euclidean norm is
 specific to finite-dimensional real spaces equipped with the standard inner product. All norms on
-$\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d$ are equivalent, but the Euclidean norm has special
+$\mathbb{R}^d$ are equivalent, but the Euclidean norm has special
 properties: it is strictly convex, rotation-invariant, and induces the familiar Euclidean geometry.
 
 ### Cauchy Sequence
 
-A sequence $(x_n)_◆LB◆n \in \mathbb◆LB◆◆LB◆'◆RB◆N◆LB◆◆RB◆'◆RB◆◆RB◆$ in a normed vector space
+A sequence $(x_n)_{n \in \mathbb{N}}$ in a normed vector space
 $(V, \lVert \cdot \rVert)$ is a Cauchy sequence if
-$\forall \epsilon>0, \exists N \in \mathbb◆LB◆◆LB◆'◆RB◆N◆LB◆◆RB◆'◆RB◆$ such that
+$\forall \epsilon>0, \exists N \in \mathbb{N}$ such that
 $\forall n, m \geq N, \lVert x_n - x_m \rVert < \epsilon$.
 
 _Note:_ In a general metric space $(M, d)$The condition is $d(x_n, x_m) < \epsilon$. Since every
@@ -979,33 +979,33 @@ more natural in the context of Banach spaces.
 
 ### Banach Space
 
-A Banach space $(\mathbb◆LB◆◆LB◆'◆RB◆V◆LB◆◆RB◆'◆RB◆, \lVert \cdot \rVert)$ is a vector space
-$\mathbb◆LB◆◆LB◆'◆RB◆V◆LB◆◆RB◆'◆RB◆$ equipped with a norm $\lVert \cdot \rVert$ that is complete.
-"Complete" means every Cauchy sequence in $\mathbb◆LB◆◆LB◆'◆RB◆V◆LB◆◆RB◆'◆RB◆$ converges to a limit
-within $\mathbb◆LB◆◆LB◆'◆RB◆V◆LB◆◆RB◆'◆RB◆$.
+A Banach space $(\mathbb{V}, \lVert \cdot \rVert)$ is a vector space
+$\mathbb{V}$ equipped with a norm $\lVert \cdot \rVert$ that is complete.
+"Complete" means every Cauchy sequence in $\mathbb{V}$ converges to a limit
+within $\mathbb{V}$.
 
-$\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d$ is a Banach space under any norm because in finite
+$\mathbb{R}^d$ is a Banach space under any norm because in finite
 dimensions, all norms are equivalent and complete. When equipped specifically with the Euclidean
-inner product and its induced norm, $\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d$ becomes a Hilbert space
+inner product and its induced norm, $\mathbb{R}^d$ becomes a Hilbert space
 (a specialized subset of Banach spaces).
 
 ### Inner Product Space
 
-An inner product space is a vector space $V$ over a field $\mathbb◆LB◆◆LB◆'◆RB◆K◆LB◆◆RB◆'◆RB◆$ (
-$\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$ or $\mathbb◆LB◆◆LB◆'◆RB◆C◆LB◆◆RB◆'◆RB◆$) equipped with an inner
-product $\langle \cdot, \cdot \rangle: V \times V \to \mathbb◆LB◆◆LB◆'◆RB◆K◆LB◆◆RB◆'◆RB◆$
+An inner product space is a vector space $V$ over a field $\mathbb{K}$ (
+$\mathbb{R}$ or $\mathbb{C}$) equipped with an inner
+product $\langle \cdot, \cdot \rangle: V \times V \to \mathbb{K}$
 satisfying:
 
-1. Conjugate Symmetry: $\langle x, y \rangle = \overline◆LB◆\langle y, x \rangle◆RB◆$ (symmetry for
+1. Conjugate Symmetry: $\langle x, y \rangle = \overline{\langle y, x \rangle}$ (symmetry for
    real spaces: $\langle x, y \rangle = \langle y, x \rangle$).
 2. Linearity in first argument:
    $\langle ax + by, z \rangle = a\langle x, z \rangle + b\langle y, z \rangle$.
 3. Positive Definiteness: $\langle x, x \rangle \geq 0$ with equality iff $x = 0$.
 
 By conjugate symmetry, the inner product is **conjugate linear** (anti-linear) in the second
-argument for complex spaces: $\langle x, ay \rangle = \bar◆LB◆a◆RB◆\langle x, y \rangle$.
+argument for complex spaces: $\langle x, ay \rangle = \bar{a}\langle x, y \rangle$.
 
-The inner product induces a norm: $\lVert x \rVert = \sqrt◆LB◆\langle x, x \rangle◆RB◆$.
+The inner product induces a norm: $\lVert x \rVert = \sqrt{\langle x, x \rangle}$.
 
 ### Hilbert Space
 
@@ -1014,25 +1014,25 @@ respect to the distance function induced by the inner product.
 
 ### Dual Space
 
-Given a normed vector space $V$ over field $\mathbb◆LB◆◆LB◆'◆RB◆K◆LB◆◆RB◆'◆RB◆$The **(topological)
+Given a normed vector space $V$ over field $\mathbb{K}$The **(topological)
 dual space** $V^*$ is the space of all continuous linear functionals
-$f: V \to \mathbb◆LB◆◆LB◆'◆RB◆K◆LB◆◆RB◆'◆RB◆$.
+$f: V \to \mathbb{K}$.
 
 _Key Results:_
 
 - For finite-dimensional spaces, $V^*$ is isomorphic to $V$.
-- For Hilbert spaces $\mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆$The **Riesz Representation Theorem**
-  states that every $f \in \mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆^*$ corresponds to a unique
-  $y \in \mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆$ such that $f(x) = \langle x, y \rangle$.
+- For Hilbert spaces $\mathcal{H}$The **Riesz Representation Theorem**
+  states that every $f \in \mathcal{H}^*$ corresponds to a unique
+  $y \in \mathcal{H}$ such that $f(x) = \langle x, y \rangle$.
 - For Banach spaces, $V^*$ may be strictly larger than $V$.
 
 _Relevance:_ The characteristic function of a Banach-space-valued random variable uses the dual
-space: $\varphi_X(t) = \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[e^◆LB◆i t(X)◆RB◆]$ where $t \in B^*$.
+space: $\varphi_X(t) = \mathbb{E}[e^{i t(X)}]$ where $t \in B^*$.
 
 ### Strongly Measurable
 
-Given a Banach space $\mathbb◆LB◆◆LB◆'◆RB◆V◆LB◆◆RB◆'◆RB◆$A function
-$X: \Omega \to \mathbb◆LB◆◆LB◆'◆RB◆V◆LB◆◆RB◆'◆RB◆$ is strongly measurable if it is the pointwise
+Given a Banach space $\mathbb{V}$A function
+$X: \Omega \to \mathbb{V}$ is strongly measurable if it is the pointwise
 limit of a sequence of simple functions. Pettis Measurability Theorem states $X$ is strongly
 measurable iff $X$ is weakly measurable and has a separable range (This is essential for Polish
 spaces).
@@ -1041,47 +1041,47 @@ spaces).
 
 This is an integral constructed from:
 
-1. Banach valued simple function: $s: \Omega \to \mathbb◆LB◆◆LB◆'◆RB◆V◆LB◆◆RB◆'◆RB◆$Taking finite
+1. Banach valued simple function: $s: \Omega \to \mathbb{V}$Taking finite
    values $v_1, \dots, v_n$ on disjoint sets $A_i$:
    $$
-   \int_\Omega s dP = \sum^n_◆LB◆i=1◆RB◆ v_i P(A_i)
+   \int_\Omega s dP = \sum^n_{i=1} v_i P(A_i)
    $$
-2. Bochner Integrable: A function $X: \Omega \to \mathbb◆LB◆◆LB◆'◆RB◆V◆LB◆◆RB◆'◆RB◆$ is Bochner
+2. Bochner Integrable: A function $X: \Omega \to \mathbb{V}$ is Bochner
    integrable if there exists a sequence of simple functions $s_n$ converging to $X$ **pointwise
    $P$-almost everywhere** ($s_n \to X$ $P$-a.e.) such that:
    $$
-   \lim_◆LB◆n \to \infty◆RB◆ \int_\Omega \lVert X-s_n\rVert dP = 0
+   \lim_{n \to \infty} \int_\Omega \lVert X-s_n\rVert dP = 0
    $$
 3. The integral:
-   $\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X] = \lim_◆LB◆n \to \infty◆RB◆ \int_\Omega s_n dP$
+   $\mathbb{E}[X] = \lim_{n \to \infty} \int_\Omega s_n dP$
 
 ### Kernel (Reproducing Kernel Hilbert Space context)
 
-Let $\mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆$ be a Hilbert space of functions
-$f: \mathcal◆LB◆◆LB◆'◆RB◆X◆LB◆◆RB◆'◆RB◆ \to \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$.
-$\mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆$ is an RKHS if the **evaluation functional**
+Let $\mathcal{H}$ be a Hilbert space of functions
+$f: \mathcal{X} \to \mathbb{R}$.
+$\mathcal{H}$ is an RKHS if the **evaluation functional**
 $\delta_x: f \mapsto f(x)$ is a bounded (continuous) linear operator for all
-$x \in \mathcal◆LB◆◆LB◆'◆RB◆X◆LB◆◆RB◆'◆RB◆$. By Riesz Representation Theorem, there exists a unique
-function $k(\cdot, x) \in \mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆$ such that: $$ f(x) = \langle f,
-k(\cdot, x) \rangle*\mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆ $$ The function $k(x, y) = \langle k(\cdot,
-x), k(\cdot, y) \rangle*\mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆$ is called the Reproducing Kernel.
+$x \in \mathcal{X}$. By Riesz Representation Theorem, there exists a unique
+function $k(\cdot, x) \in \mathcal{H}$ such that: $$ f(x) = \langle f,
+k(\cdot, x) \rangle_{\mathcal}{H} $$ The function $k(x, y) = \langle k(\cdot,
+x), k(\cdot, y) \rangle_{\mathcal}{H}$ is called the Reproducing Kernel.
 
 ### Positive Definite Kernel
 
 A function
-$k: \mathcal◆LB◆◆LB◆'◆RB◆X◆LB◆◆RB◆'◆RB◆ \times \mathcal◆LB◆◆LB◆'◆RB◆X◆LB◆◆RB◆'◆RB◆ \to \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$
+$k: \mathcal{X} \times \mathcal{X} \to \mathbb{R}$
 is a **positive definite kernel** if:
 
-1. Symmetry: $k(x, y) = k(y, x)$ for all $x, y \in \mathcal◆LB◆◆LB◆'◆RB◆X◆LB◆◆RB◆'◆RB◆$
-2. Positive semi-definiteness: For any $n \in \mathbb◆LB◆◆LB◆'◆RB◆N◆LB◆◆RB◆'◆RB◆$Any
-   $x_1, \dots, x_n \in \mathcal◆LB◆◆LB◆'◆RB◆X◆LB◆◆RB◆'◆RB◆$And any
-   $c_1, \dots, c_n \in \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$:
-   $$\sum_◆LB◆i=1◆RB◆^n \sum_◆LB◆j=1◆RB◆^n c_i c_j k(x_i, x_j) \geq 0$$
+1. Symmetry: $k(x, y) = k(y, x)$ for all $x, y \in \mathcal{X}$
+2. Positive semi-definiteness: For any $n \in \mathbb{N}$Any
+   $x_1, \dots, x_n \in \mathcal{X}$And any
+   $c_1, \dots, c_n \in \mathbb{R}$:
+   $$\sum_{i=1}^n \sum_{j=1}^n c_i c_j k(x_i, x_j) \geq 0$$
 
 ### Moore-Aronszajn Theorem
 
 For every positive definite kernel $k$There exists a unique RKHS
-$\mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆_k$ for which $k$ is the reproducing kernel.
+$\mathcal{H}_k$ for which $k$ is the reproducing kernel.
 
 _Relevance:_ This theorem guarantees that we can work with kernels directly (e.g., RBF, polynomial)
 without explicitly constructing the RKHS.
@@ -1089,15 +1089,15 @@ without explicitly constructing the RKHS.
 ### Expectation (Vector-valued / Bochner)
 
 For vector-valued random elements, expectations are defined over Banach spaces via the Bochner
-integral. Given a probability space $(\Omega,\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆, P)$And a Banach
-space $(\mathbb◆LB◆◆LB◆'◆RB◆V◆LB◆◆RB◆'◆RB◆, \lVert \cdot \rVert)$For a random element
-$X: \Omega \rightarrow \mathbb◆LB◆◆LB◆'◆RB◆V◆LB◆◆RB◆'◆RB◆$The expectation (expected value) is the
+integral. Given a probability space $(\Omega,\mathcal{F}, P)$And a Banach
+space $(\mathbb{V}, \lVert \cdot \rVert)$For a random element
+$X: \Omega \rightarrow \mathbb{V}$The expectation (expected value) is the
 Bochner integral of $X$ with respect to probability measure $P$ denoted as
-$\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X]$. This exists if $X$ is strongly measurable and
+$\mathbb{E}[X]$. This exists if $X$ is strongly measurable and
 $\int_\Omega \lVert X(\omega) \rVert dP(\omega) < \infty$ and is denoted as:
 
 $$
-\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X] = \int_\Omega X(\omega)dP(\omega), \quad \omega \in \Omega
+\mathbb{E}[X] = \int_\Omega X(\omega)dP(\omega), \quad \omega \in \Omega
 $$
 
 ## Convergence
@@ -1108,18 +1108,18 @@ A sequence of random variables $X_n$ converges almost surely to $X$ if the event
 has a probability $0$:
 
 $$
-P\left(\left\{\omega \in \Omega: \lim_◆LB◆n\rightarrow \infty◆RB◆ X_n (\omega) = X(\omega)\right\}\right)= 1
+P\left(\left\{\omega \in \Omega: \lim_{n\rightarrow \infty} X_n (\omega) = X(\omega)\right\}\right)= 1
 $$
 
 ### Convergence In Probability
 
 Let $X_n$ and $X$ be random elements defined on the **same probability space**
-$(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆, P)$Taking values in a metric space $(S, d)$. We say
-$X_n$ converges in probability to $X$Denoted $X_n \xrightarrow◆LB◆P◆RB◆ X$If for every
+$(\Omega, \mathcal{F}, P)$Taking values in a metric space $(S, d)$. We say
+$X_n$ converges in probability to $X$Denoted $X_n \xrightarrow{P} X$If for every
 $\epsilon > 0$:
 
 $$
-\lim_◆LB◆n\rightarrow \infty◆RB◆ P\left(d(X_n(\omega), X(\omega)) > \epsilon \right) = 0
+\lim_{n\rightarrow \infty} P\left(d(X_n(\omega), X(\omega)) > \epsilon \right) = 0
 $$
 
 :::warning **Crucial Distinction from Weak Convergence:** Convergence in probability requires $X_n$
@@ -1131,11 +1131,11 @@ as they map to the same target metric space.
 ### Weak Convergence
 
 Let $X_n, X$ be random elements in a metric space $S$. $X_n$ converges weakly to $X$Denoted
-$X_n \xrightarrow◆LB◆d◆RB◆ X$If for every bounded continuous function
-$f: S \rightarrow \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$:
+$X_n \xrightarrow{d} X$If for every bounded continuous function
+$f: S \rightarrow \mathbb{R}$:
 
 $$
-\lim_◆LB◆n \rightarrow \infty◆RB◆ \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[f(X_n)] = \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[f(X)]
+\lim_{n \rightarrow \infty} \mathbb{E}[f(X_n)] = \mathbb{E}[f(X)]
 $$
 
 ### Monotone Convergence Theorem (MCT)
@@ -1144,7 +1144,7 @@ If $\{f_n\}$ is a sequence of non-negative measurable functions such that $f_n \
 pointwise, then:
 
 $$
-\lim_◆LB◆n \to \infty◆RB◆ \int f_n \, d\mu = \int f \, d\mu
+\lim_{n \to \infty} \int f_n \, d\mu = \int f \, d\mu
 $$
 
 (This is a prerequisite for proving Fatou's Lemma and DCT).
@@ -1154,7 +1154,7 @@ $$
 Let $\{f_n\}$ be a sequence of non-negative measurable functions. Then:
 
 $$
-\int \liminf_◆LB◆n \to \infty◆RB◆ f_n \, d\mu \leq \liminf_◆LB◆n \to \infty◆RB◆ \int f_n \, d\mu
+\int \liminf_{n \to \infty} f_n \, d\mu \leq \liminf_{n \to \infty} \int f_n \, d\mu
 $$
 
 _Intuition:_ Fatou's Lemma provides a **one-sided bound** for the integral of a limit. The
@@ -1168,13 +1168,13 @@ existence of minimizers in optimization problems.
 ### Dominated Convergence Theorem (DCT)
 
 Let $(f_n)$ be a sequence of measurable functions on
-$(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆, \mu)$ such that $f_n(\omega) \to f(\omega)$ pointwise
+$(\Omega, \mathcal{F}, \mu)$ such that $f_n(\omega) \to f(\omega)$ pointwise
 almost everywhere. **Theorem:** If there exists a measurable function $g \in L^1(\mu)$ (the
 "dominating function") such that $|f_n(\omega)| \leq g(\omega)$ almost everywhere for all $n$Then
 $f$ is integrable and:
 
 $$
-\lim_◆LB◆n \to \infty◆RB◆ \int_\Omega f_n \, d\mu = \int_\Omega f \, d\mu
+\lim_{n \to \infty} \int_\Omega f_n \, d\mu = \int_\Omega f \, d\mu
 $$
 
 Justifies swapping limits and expectations. Essential for proving convergence of Stochastic Gradient
@@ -1183,36 +1183,36 @@ Descent (SGD) and differentiating under the integral sign (common in Variational
 ### Portmanteau Theorem
 
 For random elements $X_n, X$ in a metric space $S$The following are equivalent definitions of weak
-convergence ($X_n \xrightarrow◆LB◆d◆RB◆ X$):
+convergence ($X_n \xrightarrow{d} X$):
 
-1. $\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[f(X_n)] \to \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[f(X)]$ for all
+1. $\mathbb{E}[f(X_n)] \to \mathbb{E}[f(X)]$ for all
    bounded continuous $f$.
-2. $\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[f(X_n)] \to \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[f(X)]$ for all
+2. $\mathbb{E}[f(X_n)] \to \mathbb{E}[f(X)]$ for all
    bounded Lipschitz $f$.
 3. $\limsup P(X_n \in C) \leq P(X \in C)$ for all closed sets $C$.
 4. $\liminf P(X_n \in U) \geq P(X \in U)$ for all open sets $U$.
 5. $P(X_n \in A) \to P(X \in A)$ for all **continuity sets**
-   $A \in \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(S)$ (i.e., Borel sets where
-   $P(X \in \partial A) = 0$With $\partial A = \overline◆LB◆A◆RB◆ \setminus A^\circ$ denoting the
+   $A \in \mathcal{B}(S)$ (i.e., Borel sets where
+   $P(X \in \partial A) = 0$With $\partial A = \overline{A} \setminus A^\circ$ denoting the
    boundary).
 
 ### Characteristic Function
 
 For a random variable $X$ taking values in an inner product space (
-$\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d$ or a Hilbert space $\mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆$),
+$\mathbb{R}^d$ or a Hilbert space $\mathcal{H}$),
 the characteristic function is defined as: $$ \varphi_X(t) =
-\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆\left[ e^◆LB◆i \langle t, X \rangle◆RB◆ \right], \quad t \in
-\mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆
+\mathbb{E}\left[ e^{i \langle t, X \rangle} \right], \quad t \in
+\mathcal{H}
 
 $$
-Where $\langle \cdot, \cdot \rangle$ denotes the inner product. For $\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d$This
-reduces to $\varphi_X(t) = \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆\left[ e^◆LB◆i t^\top X◆RB◆ \right]$ with
-$t \in \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d$.
+Where $\langle \cdot, \cdot \rangle$ denotes the inner product. For $\mathbb{R}^d$This
+reduces to $\varphi_X(t) = \mathbb{E}\left[ e^{i t^\top X} \right]$ with
+$t \in \mathbb{R}^d$.
 
 :::info **Generalization to Banach Spaces:** For a random variable $X$ taking values in a Banach
 space $B$ (which may lack an inner product), $t$ belongs to the _dual space_ $B^*$And the
-characteristic function is defined as $\varphi_X(t) = \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆\left[ e^◆LB◆i t(X)◆RB◆ \right]$
-where $t: B \to \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$ is a continuous linear functional. For Hilbert spaces, the
+characteristic function is defined as $\varphi_X(t) = \mathbb{E}\left[ e^{i t(X)} \right]$
+where $t: B \to \mathbb{R}$ is a continuous linear functional. For Hilbert spaces, the
 Riesz Representation Theorem identifies $B^*$ with $B$Recovering the inner product formulation.
 :::
 
@@ -1220,23 +1220,23 @@ Riesz Representation Theorem identifies $B^*$ with $B$Recovering the inner produ
 
 Let $X_n$ be random variables with characteristic functions $\varphi_n(t)$.
 
-1. If $X_n \xrightarrow◆LB◆d◆RB◆ X$Then $\varphi_n(t) \to \varphi_X(t)$ pointwise.
+1. If $X_n \xrightarrow{d} X$Then $\varphi_n(t) \to \varphi_X(t)$ pointwise.
 2. If $\varphi_n(t)$ converges pointwise to a function $\varphi(t)$ which is continuous at $t=0$Then
-   $\varphi$ is the characteristic function of some random variable $X$And $X_n \xrightarrow◆LB◆d◆RB◆ X$.
+   $\varphi$ is the characteristic function of some random variable $X$And $X_n \xrightarrow{d} X$.
 
 ### Law of Large Numbers (LLN)
 
-Let $X_1, X_2, \dots$ be i.i.d. Random variables with $\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X_1] = \mu$.
+Let $X_1, X_2, \dots$ be i.i.d. Random variables with $\mathbb{E}[X_1] = \mu$.
 
-**Weak Law of Large Numbers (WLLN):** $\bar◆LB◆X◆RB◆_n = \frac◆LB◆1◆RB◆◆LB◆n◆RB◆\sum_◆LB◆i=1◆RB◆^n X_i \xrightarrow◆LB◆P◆RB◆ \mu$
+**Weak Law of Large Numbers (WLLN):** $\bar{X}_n = \frac{1}{n}\sum_{i=1}^n X_i \xrightarrow{P} \mu$
 
 **Strong Law of Large Numbers (SLLN):**
-$\bar◆LB◆X◆RB◆_n = \frac◆LB◆1◆RB◆◆LB◆n◆RB◆\sum_◆LB◆i=1◆RB◆^n X_i \xrightarrow◆LB◆a.s.◆RB◆ \mu$
+$\bar{X}_n = \frac{1}{n}\sum_{i=1}^n X_i \xrightarrow{a.s.} \mu$
 
 :::warning **Important Distinction for ERM:** The standard LLN only guarantees that the empirical
 risk of a _single, fixed_ hypothesis converges to its true risk. To justify Empirical Risk
 Minimization (ERM) where we search for the _minimum_ across a hypothesis class
-$\mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆$We need the **Uniform Law of Large Numbers (ULLN)** to prevent overfitting.
+$\mathcal{H}$We need the **Uniform Law of Large Numbers (ULLN)** to prevent overfitting.
 See Glivenko-Cantelli theorem.
 :::
 
@@ -1245,9 +1245,9 @@ See Glivenko-Cantelli theorem.
 Let $X_1, X_2, \dots$ be i.i.d. Random variables with mean $\mu$ and finite covariance $\Sigma$.
 Then:
 
-$$\sqrt◆LB◆n◆RB◆(\bar◆LB◆X◆RB◆_n - \mu) \xrightarrow◆LB◆d◆RB◆ \mathcal◆LB◆◆LB◆'◆RB◆N◆LB◆◆RB◆'◆RB◆(0, \Sigma)$$
+$$\sqrt{n}(\bar{X}_n - \mu) \xrightarrow{d} \mathcal{N}(0, \Sigma)$$
 
-Where $\bar◆LB◆X◆RB◆_n = \frac◆LB◆1◆RB◆◆LB◆n◆RB◆\sum_◆LB◆i=1◆RB◆^n X_i$.
+Where $\bar{X}_n = \frac{1}{n}\sum_{i=1}^n X_i$.
 
 _Relevance:_ Foundation of asymptotic normality, Fisher Information properties, and explains why
 neural network weights are often initialized with Gaussian distributions.
@@ -1256,33 +1256,33 @@ neural network weights are often initialized with Gaussian distributions.
 
 ### Uniform Law of Large Numbers (ULLN) / Glivenko-Cantelli
 
-Let $\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$ be a class of measurable functions. The empirical measure $\hat◆LB◆P◆RB◆_n$
+Let $\mathcal{F}$ be a class of measurable functions. The empirical measure $\hat{P}_n$
 satisfies the ULLN if:
 
 
 $$
 
-\sup_◆LB◆f \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆◆RB◆ \left| \int f \, d\hat◆LB◆P◆RB◆_n - \int f \,
-dP \right| \xrightarrow◆LB◆a.s.◆RB◆ 0
+\sup_{f \in \mathcal{F}} \left| \int f \, d\hat{P}_n - \int f \,
+dP \right| \xrightarrow{a.s.} 0
 
 $$
 
-A function class $\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$ is called **Glivenko-Cantelli** if this holds. This is the
+A function class $\mathcal{F}$ is called **Glivenko-Cantelli** if this holds. This is the
 actual theoretical backbone of Statistical Learning Theory and ERM, ensuring uniform convergence
 across the entire hypothesis class.
 
 ### True Risk and Empirical Risk
 
-Let $\ell: \mathcal◆LB◆◆LB◆'◆RB◆Y◆LB◆◆RB◆'◆RB◆ \times \mathcal◆LB◆◆LB◆'◆RB◆Y◆LB◆◆RB◆'◆RB◆ \to \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$ be a loss
-function and $f: \mathcal◆LB◆◆LB◆'◆RB◆X◆LB◆◆RB◆'◆RB◆ \to \mathcal◆LB◆◆LB◆'◆RB◆Y◆LB◆◆RB◆'◆RB◆$ be a hypothesis (predictor).
+Let $\ell: \mathcal{Y} \times \mathcal{Y} \to \mathbb{R}$ be a loss
+function and $f: \mathcal{X} \to \mathcal{Y}$ be a hypothesis (predictor).
 
 The **True Risk** (or expected risk) is the expected loss under the true data distribution:
 
 
 $$
 
-\mathcal◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆(f) = \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆_◆LB◆(X,Y) \sim
-P◆RB◆[\ell(f(X), Y)]
+\mathcal{R}(f) = \mathbb{E}_{(X,Y) \sim
+P}[\ell(f(X), Y)]
 
 $$
 
@@ -1291,14 +1291,14 @@ The **Empirical Risk** is the average loss over the observed training samples:
 
 $$
 
-\hat◆LB◆\mathcal◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆◆RB◆*n(f) = \frac◆LB◆1◆RB◆◆LB◆n◆RB◆\sum*◆LB◆i=1◆RB◆^n
+\hat{\mathcal{R}}*n(f) = \frac{1}{n}\sum_{i=1}^n
 \ell(f(x_i), y_i)
 
 $$
 
 _Connection to LLN:_ The Law of Large Numbers guarantees
-$\hat◆LB◆\mathcal◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆◆RB◆_n(f) \to \mathcal◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆(f)$ for a _fixed_ $f$. The ULLN extends
-this to uniform convergence over a hypothesis class $\mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆$.
+$\hat{\mathcal{R}}_n(f) \to \mathcal{R}(f)$ for a _fixed_ $f$. The ULLN extends
+this to uniform convergence over a hypothesis class $\mathcal{H}$.
 
 ### Concentration Inequalities
 
@@ -1308,10 +1308,10 @@ $a_i \leq X_i \leq b_i$. Then for any $t > 0$:
 
 $$
 
-P\left( \left| \frac◆LB◆1◆RB◆◆LB◆n◆RB◆\sum*◆LB◆i=1◆RB◆^n X_i -
-\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆\left[\frac◆LB◆1◆RB◆◆LB◆n◆RB◆\sum*◆LB◆i=1◆RB◆^n X\*i\right]
-\right| \geq t \right) \leq 2\exp\left(-\frac◆LB◆2n^2t^2◆RB◆◆LB◆\sum_◆LB◆i=1◆RB◆^n(b_i -
-a_i)^2◆RB◆\right)
+P\left( \left| \frac{1}{n}\sum_{i=1}^n X_i -
+\mathbb{E}\left[\frac{1}{n}\sum_{i=1}^n X_i\right]
+\right| \geq t \right) \leq 2\exp\left(-\frac{2n^2t^2}{\sum_{i=1}^n(b_i -
+a_i)^2}\right)
 
 $$
 
@@ -1319,14 +1319,14 @@ _Relevance:_ Provides high-probability bounds for bounded random variables; foun
 generalization bounds in SLT.
 
 **McDiarmid's Inequality (Bounded Differences):** Let $X_1, \dots, X_n$ be independent random
-variables. If $f: \mathcal◆LB◆◆LB◆'◆RB◆X◆LB◆◆RB◆'◆RB◆^n \to \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$ satisfies the bounded
+variables. If $f: \mathcal{X}^n \to \mathbb{R}$ satisfies the bounded
 differences condition:
 
 
 $$
 
-\sup*◆LB◆x_1, \dots, x_n, x_i'◆RB◆ |f(x_1, \dots, x_n) - f(x_1, \dots, x*◆LB◆i-1◆RB◆, x\*i',
-x_◆LB◆i+1◆RB◆, \dots, x_n)| \leq c_i
+\sup_{x_1, \dots, x_n, x_i'} |f(x_1, \dots, x_n) - f(x_1, \dots, x_{i-1}, x_i',
+x_{i+1}, \dots, x_n)| \leq c_i
 
 $$
 
@@ -1335,8 +1335,8 @@ Then for any $t > 0$:
 
 $$
 
-P(|f(X\*1, \dots, X*n) - \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[f(X_1, \dots, X_n)]| \geq t) \leq
-2\exp\left(-\frac◆LB◆2t^2◆RB◆◆LB◆\sum*◆LB◆i=1◆RB◆^n c_i^2◆RB◆\right)
+P(|f(X\*1, \dots, X_n) - \mathbb{E}[f(X_1, \dots, X_n)]| \geq t) \leq
+2\exp\left(-\frac{2t^2}{\sum_{i=1}^n c_i^2}\right)
 
 $$
 
@@ -1345,16 +1345,16 @@ bounds for arbitrary learning algorithms.
 
 ### Rademacher Complexity
 
-Let $\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$ be a class of functions
-$f: \mathcal◆LB◆◆LB◆'◆RB◆X◆LB◆◆RB◆'◆RB◆ \to \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$ and let $S = \{x_1, \dots, x_n\}$ be a fixed
-sample. The **empirical Rademacher complexity** of $\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$ with respect to $S$ is:
+Let $\mathcal{F}$ be a class of functions
+$f: \mathcal{X} \to \mathbb{R}$ and let $S = \{x_1, \dots, x_n\}$ be a fixed
+sample. The **empirical Rademacher complexity** of $\mathcal{F}$ with respect to $S$ is:
 
 
 $$
 
-\hat◆LB◆\mathfrak◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆◆RB◆*S(\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆) =
-\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆*\sigma\left[ \sup_◆LB◆f \in
-\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆◆RB◆ \frac◆LB◆1◆RB◆◆LB◆n◆RB◆\sum_◆LB◆i=1◆RB◆^n \sigma_i f(x_i)
+\hat{\mathfrak{R}}*S(\mathcal{F}) =
+\mathbb{E}_{\sigma}\left[ \sup_{f \in
+\mathcal{F}} \frac{1}{n}\sum_{i=1}^n \sigma_i f(x_i)
 \right]
 
 $$
@@ -1362,8 +1362,8 @@ $$
 Where $\sigma_1, \dots, \sigma_n$ are i.i.d. Rademacher random variables
 ($P(\sigma_i = +1) = P(\sigma_i = -1) = 1/2$).
 
-The **Rademacher complexity** of $\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$ is
-$\mathfrak◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆_n(\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆) = \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆_S[\hat◆LB◆\mathfrak◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆◆RB◆_S(\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆)]$.
+The **Rademacher complexity** of $\mathcal{F}$ is
+$\mathfrak{R}_n(\mathcal{F}) = \mathbb{E}_S[\hat{\mathfrak{R}}_S(\mathcal{F})]$.
 
 _Intuition:_ Measures the capacity of a function class to fit random noise. Higher complexity
 implies greater risk of overfitting.
@@ -1373,10 +1373,10 @@ via Rademacher complexity of their weight matrices.
 
 ### VC Dimension
 
-The **Vapnik-Chervonenkis (VC) dimension** of a hypothesis class $\mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆$ is the
-largest number of points that can be shattered by $\mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆$. A set
-$\{x_1, \dots, x_d\}$ is shattered by $\mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆$ if for every binary labeling
-$(y_1, \dots, y_d) \in \{0, 1\}^d$There exists $h \in \mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆$ such that
+The **Vapnik-Chervonenkis (VC) dimension** of a hypothesis class $\mathcal{H}$ is the
+largest number of points that can be shattered by $\mathcal{H}$. A set
+$\{x_1, \dots, x_d\}$ is shattered by $\mathcal{H}$ if for every binary labeling
+$(y_1, \dots, y_d) \in \{0, 1\}^d$There exists $h \in \mathcal{H}$ such that
 $h(x_i) = y_i$ for all $i$.
 
 _Relevance:_ A finite VC dimension implies the class is Glivenko-Cantelli. VC theory provides the
@@ -1386,18 +1386,18 @@ classical foundation for structural risk minimization.
 
 ### Stochastic Process
 
-A **stochastic process** is a collection of random elements $\{X_t\}_◆LB◆t \in T◆RB◆$ indexed by a set $T$
+A **stochastic process** is a collection of random elements $\{X_t\}_{t \in T}$ indexed by a set $T$
 ( time, discrete or continuous), all defined on the same probability space
-$(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆, P)$ and taking values in a measurable space
-$(S, \mathcal◆LB◆◆LB◆'◆RB◆S◆LB◆◆RB◆'◆RB◆)$.
+$(\Omega, \mathcal{F}, P)$ and taking values in a measurable space
+$(S, \mathcal{S})$.
 
 ### Wiener Process (Brownian Motion)
 
-A stochastic process $\{W_t\}_◆LB◆t \geq 0◆RB◆$ is a **Wiener process** (or standard Brownian motion) if:
+A stochastic process $\{W_t\}_{t \geq 0}$ is a **Wiener process** (or standard Brownian motion) if:
 
 1. $W_0 = 0$ almost surely
 2. $W_t$ has independent increments: $W_t - W_s \perp W_u - W_v$ for disjoint intervals
-3. $W_t - W_s \sim \mathcal◆LB◆◆LB◆'◆RB◆N◆LB◆◆RB◆'◆RB◆(0, t-s)$ for $t > s$
+3. $W_t - W_s \sim \mathcal{N}(0, t-s)$ for $t > s$
 4. $t \mapsto W_t$ is continuous almost surely
 
 _Relevance:_ The foundational continuous-time martingale; essential for diffusion models.
@@ -1413,18 +1413,18 @@ Stein score $\nabla_x \log p_t(x)$ appears in the reverse-time SDE.
 
 ### Filtration
 
-A **filtration** $\{\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_t\}_◆LB◆t \geq 0◆RB◆$ is an increasing family of
+A **filtration** $\{\mathcal{F}_t\}_{t \geq 0}$ is an increasing family of
 $\sigma$-algebras indexed by time (discrete or continuous):
 
 
 $$
 
-\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_s \subseteq \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_t \subseteq
-\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆ \quad \mathrm◆LB◆for◆RB◆ all ◆LB◆◆RB◆ s \leq t
+\mathcal{F}_s \subseteq \mathcal{F}_t \subseteq
+\mathcal{F} \quad \mathrm{for} all {} s \leq t
 
 $$
 
-_Intuition:_ $\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_t$ represents the information available at time $t$. As time
+_Intuition:_ $\mathcal{F}_t$ represents the information available at time $t$. As time
 progresses, we gain more information (the $\sigma$-algebra grows).
 
 _Relevance:_ Essential for Diffusion Models (SDEs), Reinforcement Learning (partially observable
@@ -1432,53 +1432,53 @@ Markov decision processes), and sequential decision making.
 
 ### Adapted Process
 
-A stochastic process $\{X_t\}_◆LB◆t \geq 0◆RB◆$ is **adapted** to a filtration
-$\{\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_t\}$ if $X_t$ is $\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_t$-measurable for every $t$.
+A stochastic process $\{X_t\}_{t \geq 0}$ is **adapted** to a filtration
+$\{\mathcal{F}_t\}$ if $X_t$ is $\mathcal{F}_t$-measurable for every $t$.
 Equivalently, the value of $X_t$ is fully determined by the information available at time $t$.
 
 _Intuition:_ An adapted process cannot "see into the future." At each time $t$, $X_t$ depends only on
-information in $\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_t$.
+information in $\mathcal{F}_t$.
 
 ### Martingale
 
-A stochastic process $\{X_t\}_◆LB◆t \geq 0◆RB◆$ adapted to a filtration $\{\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_t\}$ is a
+A stochastic process $\{X_t\}_{t \geq 0}$ adapted to a filtration $\{\mathcal{F}_t\}$ is a
 **martingale** if:
 
 
 $$
 
-\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X_t | \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_s] = X_s \quad
-\mathrm◆LB◆for◆RB◆ all ◆LB◆◆RB◆ s \leq t
+\mathbb{E}[X_t | \mathcal{F}_s] = X_s \quad
+\mathrm{for} all {} s \leq t
 
 $$
 
 _Variants:_
 
-- **Sub-martingale:** $\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X_t | \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_s] \geq X_s$
-- **Super-martingale:** $\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X_t | \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆_s] \leq X_s$
+- **Sub-martingale:** $\mathbb{E}[X_t | \mathcal{F}_s] \geq X_s$
+- **Super-martingale:** $\mathbb{E}[X_t | \mathcal{F}_s] \leq X_s$
 
 _Relevance:_ Martingales appear in the analysis of stochastic gradient descent, diffusion processes,
 and optimal stopping problems.
 
 ### Markov/Transition Kernel
 
-Let $(S, \mathcal◆LB◆◆LB◆'◆RB◆S◆LB◆◆RB◆'◆RB◆)$ and $(T, \mathcal◆LB◆◆LB◆'◆RB◆T◆LB◆◆RB◆'◆RB◆)$ be measurable spaces. A function
-$\kappa: S \times \mathcal◆LB◆◆LB◆'◆RB◆T◆LB◆◆RB◆'◆RB◆ \to [0, 1]$ is a Markov Kernel (or probability kernel) if:
+Let $(S, \mathcal{S})$ and $(T, \mathcal{T})$ be measurable spaces. A function
+$\kappa: S \times \mathcal{T} \to [0, 1]$ is a Markov Kernel (or probability kernel) if:
 
-1. For every fixed $B \in \mathcal◆LB◆◆LB◆'◆RB◆T◆LB◆◆RB◆'◆RB◆$The map $s \mapsto \kappa(s, B)$ is
-   $\mathcal◆LB◆◆LB◆'◆RB◆S◆LB◆◆RB◆'◆RB◆$-measurable.
+1. For every fixed $B \in \mathcal{T}$The map $s \mapsto \kappa(s, B)$ is
+   $\mathcal{S}$-measurable.
 2. For every fixed $s \in S$The map $B \mapsto \kappa(s, B)$ is a probability measure on
-   $(T, \mathcal◆LB◆◆LB◆'◆RB◆T◆LB◆◆RB◆'◆RB◆)$.
+   $(T, \mathcal{T})$.
 
 ### Markov Chain
 
 A sequence of random variables $X_0, X_1, X_2, \dots$ taking values in a measurable space
-$(S, \mathcal◆LB◆◆LB◆'◆RB◆S◆LB◆◆RB◆'◆RB◆)$ is a **Markov Chain** if it satisfies the Markov property:
+$(S, \mathcal{S})$ is a **Markov Chain** if it satisfies the Markov property:
 
 
 $$
 
-P(X*◆LB◆n+1◆RB◆ \in B | X_0, \dots, X_n) = P(X*◆LB◆n+1◆RB◆ \in B | X_n) = \kappa(X_n, B)
+P(X_{n+1} \in B | X_0, \dots, X_n) = P(X_{n+1} \in B | X_n) = \kappa(X_n, B)
 
 $$
 
@@ -1486,13 +1486,13 @@ Where $\kappa$ is the transition kernel.
 
 ### Stationary Distribution
 
-A probability measure $\pi$ on $(S, \mathcal◆LB◆◆LB◆'◆RB◆S◆LB◆◆RB◆'◆RB◆)$ is a **stationary distribution** (or
+A probability measure $\pi$ on $(S, \mathcal{S})$ is a **stationary distribution** (or
 invariant measure) for a Markov kernel $\kappa$ if:
 
 
 $$
 
-\pi(B) = \int_S \kappa(x, B) \, d\pi(x) \quad \forall B \in \mathcal◆LB◆◆LB◆'◆RB◆S◆LB◆◆RB◆'◆RB◆
+\pi(B) = \int_S \kappa(x, B) \, d\pi(x) \quad \forall B \in \mathcal{S}
 
 $$
 
@@ -1501,36 +1501,36 @@ conditions.
 
 ### Regular Conditional Probability
 
-Let $(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆, P)$ be a probability space and let
-$\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆ \subseteq \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$ be a sub-$\sigma$-algebra. A **Regular
-Conditional Probability** (RCP) is a kernel $\kappa: \Omega \times \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆ \to [0, 1]$
+Let $(\Omega, \mathcal{F}, P)$ be a probability space and let
+$\mathcal{G} \subseteq \mathcal{F}$ be a sub-$\sigma$-algebra. A **Regular
+Conditional Probability** (RCP) is a kernel $\kappa: \Omega \times \mathcal{F} \to [0, 1]$
 such that:
 
 1. For $P$-almost all $\omega$, $\kappa(\omega, \cdot)$ is a probability measure on
-   $(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆)$.
-2. For every $A \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$, $\omega \mapsto \kappa(\omega, A)$ is
-   $\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆$-measurable and is a version of the conditional expectation:
-   $\kappa(\cdot, A) = \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[1_A | \mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆]$.
-3. **Disintegration Property:** For any $A \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$ and
-   $G \in \mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆$: $$ P(A \cap G) = \int_G \kappa(\omega, A) \, dP(\omega) $$
+   $(\Omega, \mathcal{F})$.
+2. For every $A \in \mathcal{F}$, $\omega \mapsto \kappa(\omega, A)$ is
+   $\mathcal{G}$-measurable and is a version of the conditional expectation:
+   $\kappa(\cdot, A) = \mathbb{E}[1_A | \mathcal{G}]$.
+3. **Disintegration Property:** For any $A \in \mathcal{F}$ and
+   $G \in \mathcal{G}$: $$ P(A \cap G) = \int_G \kappa(\omega, A) \, dP(\omega) $$
 
-_Critical Note:_ An RCP evaluates events in the **source** $\sigma$-algebra $\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$.
-The existence of RCP is guaranteed when $(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆)$ is a Standard Borel space.
+_Critical Note:_ An RCP evaluates events in the **source** $\sigma$-algebra $\mathcal{F}$.
+The existence of RCP is guaranteed when $(\Omega, \mathcal{F})$ is a Standard Borel space.
 
 ### Disintegration Theorem
 
-Let $(S, \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(S))$ and $(T, \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(T))$ be Standard Borel spaces.
+Let $(S, \mathcal{B}(S))$ and $(T, \mathcal{B}(T))$ be Standard Borel spaces.
 Let $\mu$ be a probability measure on the product space $S \times T$And let $\nu$ be the marginal
 distribution of $\mu$ on $S$ (defined by $\nu(A) = \mu(A \times T)$).
 
-There exists a family of probability measures $\{\mu_x\}_◆LB◆x \in S◆RB◆$ on $T$Unique $\nu$-almost
+There exists a family of probability measures $\{\mu_x\}_{x \in S}$ on $T$Unique $\nu$-almost
 everywhere, such that for every bounded measurable function
-$f: S \times T \to \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$:
+$f: S \times T \to \mathbb{R}$:
 
 
 $$
 
-\int_◆LB◆S \times T◆RB◆ f(x, y) \, d\mu(x, y) = \int_S \left( \int_T f(x, y) \, d\mu_x(y) \right)
+\int_{S \times T} f(x, y) \, d\mu(x, y) = \int_S \left( \int_T f(x, y) \, d\mu_x(y) \right)
 d\nu(x)
 
 $$
@@ -1540,59 +1540,59 @@ the notation $P(Y \in B | X=x)$.
 
 ### Regular Conditional Distribution
 
-Instead of asking "What is the expected value of $X$ given $\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆$?", we ask "What
-is the full distribution of $X$ given $\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆$?". Let
-$(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆, P)$ be a probability space, let $(S, \mathcal◆LB◆◆LB◆'◆RB◆S◆LB◆◆RB◆'◆RB◆)$ be a
+Instead of asking "What is the expected value of $X$ given $\mathcal{G}$?", we ask "What
+is the full distribution of $X$ given $\mathcal{G}$?". Let
+$(\Omega, \mathcal{F}, P)$ be a probability space, let $(S, \mathcal{S})$ be a
 measurable space (the target space of our random element), and let $X: \Omega \to S$ be a Random
-Element. Let $\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆ \subseteq \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$ be a sub-$\sigma$-algebra.
+Element. Let $\mathcal{G} \subseteq \mathcal{F}$ be a sub-$\sigma$-algebra.
 
-A Regular Conditional Distribution (or Conditional Kernel) of $X$ given $\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆$ is a
-function $\kappa: \Omega \times \mathcal◆LB◆◆LB◆'◆RB◆S◆LB◆◆RB◆'◆RB◆ \to [0, 1]$ such that:
+A Regular Conditional Distribution (or Conditional Kernel) of $X$ given $\mathcal{G}$ is a
+function $\kappa: \Omega \times \mathcal{S} \to [0, 1]$ such that:
 
 1. Measure: For almost every fixed $\omega \in \Omega$The map $B \mapsto \kappa(\omega, B)$ is a
-   probability measure on $(S, \mathcal◆LB◆◆LB◆'◆RB◆S◆LB◆◆RB◆'◆RB◆)$.
-2. Measurability: For every fixed set $B \in \mathcal◆LB◆◆LB◆'◆RB◆S◆LB◆◆RB◆'◆RB◆$The map
-   $\omega \mapsto \kappa(\omega, B)$ is $\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆$-measurable.
-3. Consistency: For every $B \in \mathcal◆LB◆◆LB◆'◆RB◆S◆LB◆◆RB◆'◆RB◆$ and $G \in \mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆$:
+   probability measure on $(S, \mathcal{S})$.
+2. Measurability: For every fixed set $B \in \mathcal{S}$The map
+   $\omega \mapsto \kappa(\omega, B)$ is $\mathcal{G}$-measurable.
+3. Consistency: For every $B \in \mathcal{S}$ and $G \in \mathcal{G}$:
 $$
 
-\int_G \kappa(\omega, B) \, dP(\omega) = P(X^◆LB◆-1◆RB◆(B) \cap G)
+\int_G \kappa(\omega, B) \, dP(\omega) = P(X^{-1}(B) \cap G)
 
 $$
 
 **Key Distinction from Regular Conditional Probability:**
 
 - **Regular Conditional Probability** evaluates the probability of target sets given a
-sub-$\sigma$-algebra $\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆$.
+sub-$\sigma$-algebra $\mathcal{G}$.
 - **Regular Conditional Distribution** is specifically the conditional law of a Random Element $X$
-given $\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆$.
+given $\mathcal{G}$.
 
 ### Conditional Expectation
 
-Let $(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆, P)$ be a probability space and let
-$X \in L^1(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆, P)$ be an integrable random variable. Let
-$\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆ \subseteq \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$ be a sub-$\sigma$-algebra. The conditional
-expectation of $X$ given $\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆$Denoted
-$\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X|\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆]$Is the unique (up to almost sure equivalence) random
+Let $(\Omega, \mathcal{F}, P)$ be a probability space and let
+$X \in L^1(\Omega, \mathcal{F}, P)$ be an integrable random variable. Let
+$\mathcal{G} \subseteq \mathcal{F}$ be a sub-$\sigma$-algebra. The conditional
+expectation of $X$ given $\mathcal{G}$Denoted
+$\mathbb{E}[X|\mathcal{G}]$Is the unique (up to almost sure equivalence) random
 variable $Z$ satisfying:
 
-1. Measurability: $Z$ is $\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆$-measurable.
-2. Integral Invariance: For all $G \in \mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆$:
+1. Measurability: $Z$ is $\mathcal{G}$-measurable.
+2. Integral Invariance: For all $G \in \mathcal{G}$:
 $$
 
 \int_G Z \, dP = \int_G X \, dP
 
 $$
 
-Note that $\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X|\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆]$ is the orthogonal projection of $X$ onto
-the subspace of $\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆$-measurable functions if $X \in L^2$.
+Note that $\mathbb{E}[X|\mathcal{G}]$ is the orthogonal projection of $X$ onto
+the subspace of $\mathcal{G}$-measurable functions if $X \in L^2$.
 
 If regular conditional distribution $\kappa$ exists, then:
 
 
 $$
 
-\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆[X|\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆] (\omega) = \int_S s \,
+\mathbb{E}[X|\mathcal{G}] (\omega) = \int_S s \,
 \kappa(\omega, ds)
 
 $$
@@ -1605,7 +1605,7 @@ Fréchet variance. Given the Regular Conditional Distribution $\kappa(\omega, \c
 
 $$
 
-\mu_◆LB◆\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆◆RB◆(\omega) = \underset◆LB◆y \in S◆RB◆◆LB◆\arg\min◆RB◆
+\mu_{\mathcal{G}}(\omega) = \underset{y \in S}{\arg\min}
 \int_S d^2(y, s) \, \kappa(\omega, ds)
 
 $$
@@ -1622,12 +1622,12 @@ does not require linear structure.
 
 ### Parameter Space
 
-A parameter space is a measurable space $(\Theta, \mathcal◆LB◆◆LB◆'◆RB◆A◆LB◆◆RB◆'◆RB◆)$.
+A parameter space is a measurable space $(\Theta, \mathcal{A})$.
 
 ### Parametrization
 
 A parametrization $\psi$ is a mapping
-$\psi: \Theta \rightarrow \mathcal◆LB◆◆LB◆'◆RB◆M◆LB◆◆RB◆'◆RB◆_1(S, \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(S))$ that assigns a
+$\psi: \Theta \rightarrow \mathcal{M}_1(S, \mathcal{B}(S))$ that assigns a
 probability measure on each parameter $\Theta$. We denote the measure $P_\theta = \psi(\theta)$.
 
 ### Parameter
@@ -1637,7 +1637,7 @@ A parameter is an element $\theta \in \Theta$ used as an argument for $\psi$.
 ### Statistical Model
 
 A statistical model is the image of parametrization:
-$\mathcal◆LB◆◆LB◆'◆RB◆Q◆LB◆◆RB◆'◆RB◆= \{P_\theta \in \mathcal◆LB◆◆LB◆'◆RB◆M◆LB◆◆RB◆'◆RB◆_1(S, \mathcal◆LB◆◆LB◆'◆RB◆B◆LB◆◆RB◆'◆RB◆(S)) : P_\theta = \psi(\theta), \theta \in \Theta\}$
+$\mathcal{Q}= \{P_\theta \in \mathcal{M}_1(S, \mathcal{B}(S)) : P_\theta = \psi(\theta), \theta \in \Theta\}$
 
 ### Exponential Family
 
@@ -1654,8 +1654,8 @@ $$
 Where:
 
 - $h(x) \geq 0$ is the **base measure** (does not depend on $\theta$)
-- $\eta(\theta) \in \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d$ is the **natural parameter**
-- $T(x) \in \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d$ is the **sufficient statistic**
+- $\eta(\theta) \in \mathbb{R}^d$ is the **natural parameter**
+- $T(x) \in \mathbb{R}^d$ is the **sufficient statistic**
 - $A(\theta) = \log \int h(x) \exp(\langle \eta(\theta), T(x) \rangle) \, dx$ is the **log-partition
   function** (normalization constant)
 
@@ -1671,27 +1671,27 @@ Inference, Generalized Linear Models, and natural gradient methods.
 
 ### Dominated Statistical Model
 
-The model $\mathcal◆LB◆◆LB◆'◆RB◆Q◆LB◆◆RB◆'◆RB◆_\theta : \theta \in \Theta$ is called dominated if there exists a
+The model $\mathcal{Q}_\theta : \theta \in \Theta$ is called dominated if there exists a
 $\sigma$-finite reference measure $\lambda$ such that
 $\forall \theta \in \Theta, P_\theta \ll \lambda$.
 
 ### Likelihood Function
 
 Given a dominated model with reference measure $\lambda$The density
-$f_\theta = \frac◆LB◆dP_\theta◆RB◆◆LB◆d\lambda◆RB◆$ exists. For a fixed observation $s \in S$The likelihood
+$f_\theta = \frac{dP_\theta}{d\lambda}$ exists. For a fixed observation $s \in S$The likelihood
 function $L_s: \Theta \rightarrow [0, \infty)$ is defined by:
 
 
 $$
 
-\begin◆LB◆equation◆RB◆ L*s(\theta) = f*\theta(s), \quad \mathrm◆LB◆where◆RB◆ ◆LB◆◆RB◆ f*\theta =
-\frac◆LB◆dP*\theta◆RB◆◆LB◆d\lambda◆RB◆ \end◆LB◆equation◆RB◆
+\begin{equation} L_s(\theta) = f_{\theta}(s), \quad \mathrm{where} {} f_{\theta} =
+\frac{dP_{\theta}}{d\lambda} \end{equation}
 
 $$
 
 ### Bayes' Theorem (Measure-Theoretic)
 
-Let $(\Theta, \mathcal◆LB◆◆LB◆'◆RB◆A◆LB◆◆RB◆'◆RB◆)$ be a parameter space equipped with a prior probability measure
+Let $(\Theta, \mathcal{A})$ be a parameter space equipped with a prior probability measure
 $\Pi$. Let $P_\theta$ be the likelihood (data distribution) for each $\theta \in \Theta$. Given an
 observation $x$The **posterior distribution** $\Pi(\cdot | x)$ is defined via the Radon-Nikodym
 derivative:
@@ -1699,8 +1699,8 @@ derivative:
 
 $$
 
-\frac◆LB◆d\Pi(\cdot | x)◆RB◆◆LB◆d\Pi◆RB◆(\theta) = \frac◆LB◆p(x | \theta)◆RB◆◆LB◆\int\_\Theta p(x |
-\theta') \, d\Pi(\theta')◆RB◆
+\frac{d\Pi(\cdot | x)}{d\Pi}(\theta) = \frac{p(x | \theta)}{\int\_\Theta p(x |
+\theta') \, d\Pi(\theta')}
 
 $$
 
@@ -1709,12 +1709,12 @@ Equivalently, in measure notation:
 
 $$
 
-\Pi(d\theta | x) = \frac◆LB◆p(x | \theta)◆RB◆◆LB◆\int\_\Theta p(x | \theta') \, \Pi(d\theta')◆RB◆
+\Pi(d\theta | x) = \frac{p(x | \theta)}{\int\_\Theta p(x | \theta') \, \Pi(d\theta')}
 \Pi(d\theta)
 
 $$
 
-Where $p(x | \theta) = \frac◆LB◆dP_\theta◆RB◆◆LB◆d\lambda◆RB◆(x)$ is the likelihood density with respect to a
+Where $p(x | \theta) = \frac{dP_\theta}{d\lambda}(x)$ is the likelihood density with respect to a
 reference measure $\lambda$.
 
 _Requirements:_ The denominator (marginal likelihood / evidence) must be finite and non-zero for the
@@ -1738,8 +1738,8 @@ $$
 
 _Properties:_
 
-- $\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆_◆LB◆x \sim P_\theta◆RB◆[s(x; \theta)] = 0$ (under regularity conditions)
-- $\mathrm◆LB◆Cov◆RB◆◆LB◆◆RB◆(s(x; \theta)) = \mathcal◆LB◆◆LB◆'◆RB◆I◆LB◆◆RB◆'◆RB◆(\theta)$ (Fisher Information Matrix)
+- $\mathbb{E}_{x \sim P_\theta}[s(x; \theta)] = 0$ (under regularity conditions)
+- $\mathrm{Cov}(s(x; \theta)) = \mathcal{I}(\theta)$ (Fisher Information Matrix)
 
 _Relevance:_ Essential for the REINFORCE algorithm in Reinforcement Learning and Fisher Information
 analysis.
@@ -1769,12 +1769,12 @@ _Key Distinction:_
 
 ### Total Variation Distance
 
-For two probability measures $P$ and $Q$ on $(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆)$:
+For two probability measures $P$ and $Q$ on $(\Omega, \mathcal{F})$:
 
 
 $$
 
-\delta(P, Q) = \sup_◆LB◆A \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆◆RB◆ |P(A) - Q(A)|
+\delta(P, Q) = \sup_{A \in \mathcal{F}} |P(A) - Q(A)|
 
 $$
 
@@ -1783,7 +1783,7 @@ If measures possess densities $p$ and $q$ w.r.t a reference measure $\mu$:
 
 $$
 
-\delta(P, Q) = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆ \int\_\Omega |p(x) - q(x)| \, d\mu(x)
+\delta(P, Q) = \frac{1}{2} \int\_\Omega |p(x) - q(x)| \, d\mu(x)
 
 $$
 
@@ -1791,14 +1791,14 @@ $$
 
 Let $\{P_\theta : \theta \in \Theta\}$ be a parametric model with densities $f(x; \theta)$. Under
 regularity conditions (twice differentiability), the Fisher Information Matrix
-$\mathcal◆LB◆◆LB◆'◆RB◆I◆LB◆◆RB◆'◆RB◆(\theta)$ is:
+$\mathcal{I}(\theta)$ is:
 
 
 $$
 
-\mathcal◆LB◆◆LB◆'◆RB◆I◆LB◆◆RB◆'◆RB◆(\theta)*◆LB◆ij◆RB◆ = \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆*◆LB◆x
-\sim P\_\theta◆RB◆ \left[ \frac◆LB◆\partial◆RB◆◆LB◆\partial \theta_i◆RB◆ \log f(x; \theta) \cdot
-\frac◆LB◆\partial◆RB◆◆LB◆\partial \theta_j◆RB◆ \log f(x; \theta) \right]
+\mathcal{I}(\theta)*{ij} = \mathbb{E}*{x
+\sim P\_\theta} \left[ \frac{\partial}{\partial \theta_i} \log f(x; \theta) \cdot
+\frac{\partial}{\partial \theta_j} \log f(x; \theta) \right]
 
 $$
 
@@ -1806,65 +1806,65 @@ It represents the curvature of the KL-divergence near $\theta$.
 
 ### Kullback-Leibler Divergence
 
-Let $P$ and $Q$ be two probability measures on $(S, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆)$. If $P \ll Q$The
+Let $P$ and $Q$ be two probability measures on $(S, \mathcal{F})$. If $P \ll Q$The
 Kullback-Leibler Divergence is defined as the expectation of the log-likelihood ratio with respect
 to $P$:
 
 
 $$
 
-D*◆LB◆KL◆RB◆(P \| Q) = \int_S \log \left( \frac◆LB◆dP◆RB◆◆LB◆dQ◆RB◆ \right) \, dP =
-\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆*◆LB◆x \sim P◆RB◆ \left[ \log \frac◆LB◆dP◆RB◆◆LB◆dQ◆RB◆(x) \right]
+D_{KL}(P \| Q) = \int_S \log \left( \frac{dP}{dQ} \right) \, dP =
+\mathbb{E}*{x \sim P} \left[ \log \frac{dP}{dQ}(x) \right]
 
 $$
 
-If $P \not\ll Q$Then $D_◆LB◆KL◆RB◆(P \| Q) = +\infty$.
+If $P \not\ll Q$Then $D_{KL}(P \| Q) = +\infty$.
 
 :::warning **KL Divergence is NOT a Metric:**
 
 Despite its widespread use, KL divergence fails to satisfy the axioms of a metric:
 
-1. **Asymmetry:** $D_◆LB◆KL◆RB◆(P \| Q) \neq D_◆LB◆KL◆RB◆(Q \| P)$ . This is why I-Projection and M-Projection
+1. **Asymmetry:** $D_{KL}(P \| Q) \neq D_{KL}(Q \| P)$ . This is why I-Projection and M-Projection
    yield different results.
-2. **Triangle inequality violation:** $D_◆LB◆KL◆RB◆(P \| R) \not\leq D_◆LB◆KL◆RB◆(P \| Q) + D_◆LB◆KL◆RB◆(Q \| R)$ .
+2. **Triangle inequality violation:** $D_{KL}(P \| R) \not\leq D_{KL}(P \| Q) + D_{KL}(Q \| R)$ .
 
 This motivates the use of alternative divergences that **are** proper metrics:
 
 - **Wasserstein Metric:** A true metric with meaningful gradients even for disjoint supports.
-- **Jensen-Shannon Divergence:** Symmetric and bounded; $\sqrt◆LB◆D_◆LB◆JS◆RB◆◆RB◆$ is a true metric.
+- **Jensen-Shannon Divergence:** Symmetric and bounded; $\sqrt{D_{JS}}$ is a true metric.
 
 :::
 
 ### Jensen-Shannon Divergence
 
 The Jensen-Shannon Divergence (JSD) is a symmetrized and smoothed version of KL divergence:
-$$D_◆LB◆JS◆RB◆(P \| Q) = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆ D_◆LB◆KL◆RB◆(P \| M) + \frac◆LB◆1◆RB◆◆LB◆2◆RB◆ D_◆LB◆KL◆RB◆(Q \| M)$$ Where
-$M = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆(P + Q)$.
+$$D_{JS}(P \| Q) = \frac{1}{2} D_{KL}(P \| M) + \frac{1}{2} D_{KL}(Q \| M)$$ Where
+$M = \frac{1}{2}(P + Q)$.
 
 _Properties:_
 
-- Symmetric: $D_◆LB◆JS◆RB◆(P \| Q) = D_◆LB◆JS◆RB◆(Q \| P)$
-- Bounded: $0 \leq D_◆LB◆JS◆RB◆(P \| Q) \leq \log 2$
-- $D_◆LB◆JS◆RB◆(P \| Q) = 0 \iff P = Q$
+- Symmetric: $D_{JS}(P \| Q) = D_{JS}(Q \| P)$
+- Bounded: $0 \leq D_{JS}(P \| Q) \leq \log 2$
+- $D_{JS}(P \| Q) = 0 \iff P = Q$
 
 _Relevance:_ The original GAN objective minimizes JSD between the data distribution and generated
 distribution.
 
 ### Chain Rule for KL Divergence
 
-Let $X, Y$ be random variables with joint distributions $P_◆LB◆XY◆RB◆$ and $Q_◆LB◆XY◆RB◆$. Assuming the joint
-distributions factorize as $P_◆LB◆XY◆RB◆ = P_X P_◆LB◆Y|X◆RB◆$ and $Q_◆LB◆XY◆RB◆ = Q_X Q_◆LB◆Y|X◆RB◆$Then: $$ D_◆LB◆KL◆RB◆(P_◆LB◆XY◆RB◆
-\| Q_◆LB◆XY◆RB◆) = D_◆LB◆KL◆RB◆(P_X \| Q_X) + \mathbb◆LB◆E◆RB◆_◆LB◆x \sim P_X◆RB◆ [D_◆LB◆KL◆RB◆(P_◆LB◆Y|X=x◆RB◆ \| Q_◆LB◆Y|X=x◆RB◆)]
+Let $X, Y$ be random variables with joint distributions $P_{XY}$ and $Q_{XY}$. Assuming the joint
+distributions factorize as $P_{XY} = P_X P_{Y|X}$ and $Q_{XY} = Q_X Q_{Y|X}$Then: $$ D_{KL}(P_{XY}
+\| Q_{XY}) = D_{KL}(P_X \| Q_X) + \mathbb{E}_{x \sim P_X} [D_{KL}(P_{Y|X=x} \| Q_{Y|X=x})]
 $$
 
 ### Mutual Information
 
-Let $X$ and $Y$ be random variables with joint distribution $P_◆LB◆XY◆RB◆$ and marginals $P_X$,
+Let $X$ and $Y$ be random variables with joint distribution $P_{XY}$ and marginals $P_X$,
 $P_Y$. The **Mutual Information** $I(X; Y)$ is the KL divergence between the joint and the product
 of marginals:
 
 $$
-I(X; Y) = D_◆LB◆KL◆RB◆(P_◆LB◆XY◆RB◆ \| P_X \otimes P_Y) = \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆_◆LB◆P_◆LB◆XY◆RB◆◆RB◆\left[\log \frac◆LB◆p(x,y)◆RB◆◆LB◆p(x)p(y)◆RB◆\right]
+I(X; Y) = D_{KL}(P_{XY} \| P_X \otimes P_Y) = \mathbb{E}_{P_{XY}}\left[\log \frac{p(x,y)}{p(x)p(y)}\right]
 $$
 
 _Properties:_
@@ -1881,8 +1881,8 @@ For a probability measure $P$ with density $p = dP/d\lambda$ with respect to a r
 $\lambda$:
 
 - **Differential Entropy** (continuous case):
-  $H(P) = -\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆_P[\log p(X)] = -\int p(x) \log p(x) \, d\lambda(x)$
-- **Shannon Entropy** (discrete case): $H(P) = -\sum_◆LB◆x◆RB◆ p(x) \log p(x)$
+  $H(P) = -\mathbb{E}_P[\log p(X)] = -\int p(x) \log p(x) \, d\lambda(x)$
+- **Shannon Entropy** (discrete case): $H(P) = -\sum_{x} p(x) \log p(x)$
 
 Note: Differential entropy can be negative (unlike Shannon entropy which is non-negative). Entropy
 measures the average uncertainty or "surprise" in a distribution.
@@ -1893,16 +1893,16 @@ The cross-entropy $H(P, Q)$ is **fundamentally defined** as the expected negativ
 under $P$:
 
 $$
-H(P, Q) \triangleq -\mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆_◆LB◆x \sim P◆RB◆[\log q(x)] = -\int p(x) \log q(x) \, d\lambda(x)
+H(P, Q) \triangleq -\mathbb{E}_{x \sim P}[\log q(x)] = -\int p(x) \log q(x) \, d\lambda(x)
 $$
 
 This decomposes into:
 
 $$
-H(P, Q) = H(P) + D_◆LB◆KL◆RB◆(P \Vert Q)
+H(P, Q) = H(P) + D_{KL}(P \Vert Q)
 $$
 
-_Intuition:_ $D_◆LB◆KL◆RB◆$ measures the "extra" bits needed to encode data from $P$ using a code
+_Intuition:_ $D_{KL}$ measures the "extra" bits needed to encode data from $P$ using a code
 optimized for $Q$While Cross-Entropy $H(P, Q)$ measures the "total" bits. Minimizing cross-entropy
 is equivalent to minimizing KL divergence since $H(P)$ is constant with respect to $Q$.
 
@@ -1918,12 +1918,12 @@ is equivalent to minimizing KL divergence since $H(P)$ is constant with respect 
 
 ### Information Projection (I-Projection) vs. Moment Projection (M-Projection)
 
-Given a distribution $P$ and a family of distributions $\mathcal◆LB◆◆LB◆'◆RB◆Q◆LB◆◆RB◆'◆RB◆$:
+Given a distribution $P$ and a family of distributions $\mathcal{Q}$:
 
 **M-Projection (Moment Projection / Forward KL):**
 
 $$
-Q^*_◆LB◆M◆RB◆ = \arg\min_◆LB◆Q \in \mathcal◆LB◆◆LB◆'◆RB◆Q◆LB◆◆RB◆'◆RB◆◆RB◆ D_◆LB◆KL◆RB◆(P \| Q)
+Q^*_{M} = \arg\min_{Q \in \mathcal{Q}} D_{KL}(P \| Q)
 $$
 
 - **Mass-covering behavior**: Since $P$ is in the numerator, wherever $P(x) > 0$, $Q(x)$ must also
@@ -1934,7 +1934,7 @@ $$
 **I-Projection (Information Projection / Reverse KL):**
 
 $$
-Q^*_◆LB◆I◆RB◆ = \arg\min_◆LB◆Q \in \mathcal◆LB◆◆LB◆'◆RB◆Q◆LB◆◆RB◆'◆RB◆◆RB◆ D_◆LB◆KL◆RB◆(Q \| P)
+Q^*_{I} = \arg\min_{Q \in \mathcal{Q}} D_{KL}(Q \| P)
 $$
 
 - **Mode-seeking behavior**: Since $Q$ is in the numerator, wherever $P(x) \approx 0$, $Q(x)$ must
@@ -1949,13 +1949,13 @@ For a latent variable model with observed data $x$Latent variables $z$And approx
 $q_\phi(z|x)$:
 
 $$
-\log p(x) \geq \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆_◆LB◆q_\phi(z|x)◆RB◆[\log p(x,z)] - \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆_◆LB◆q_\phi(z|x)◆RB◆[\log q_\phi(z|x)] = \mathcal◆LB◆◆LB◆'◆RB◆L◆LB◆◆RB◆'◆RB◆(\phi)
+\log p(x) \geq \mathbb{E}_{q_\phi(z|x)}[\log p(x,z)] - \mathbb{E}_{q_\phi(z|x)}[\log q_\phi(z|x)] = \mathcal{L}(\phi)
 $$
 
 Equivalently:
 
 $$
-\mathcal◆LB◆◆LB◆'◆RB◆L◆LB◆◆RB◆'◆RB◆(\phi) = \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆_◆LB◆q_\phi(z|x)◆RB◆[\log p(x|z)] - D_◆LB◆KL◆RB◆(q_\phi(z|x) \| p(z))
+\mathcal{L}(\phi) = \mathbb{E}_{q_\phi(z|x)}[\log p(x|z)] - D_{KL}(q_\phi(z|x) \| p(z))
 $$
 
 _Relevance:_ Foundation of Variational Autoencoders (VAEs) and Variational Inference.
@@ -1965,26 +1965,26 @@ _Relevance:_ Foundation of Variational Autoencoders (VAEs) and Variational Infer
 ### Reparameterization Trick
 
 To compute gradients of expectations
-$\nabla_\phi \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆_◆LB◆z \sim q_\phi◆RB◆[f(z)]$We cannot directly push
+$\nabla_\phi \mathbb{E}_{z \sim q_\phi}[f(z)]$We cannot directly push
 the gradient through the distribution. The reparameterization trick rewrites the sampling process
 using a deterministic transformation:
 
 If $z = T_\phi(\epsilon)$ where $\epsilon \sim p(\epsilon)$ (a fixed, parameter-free distribution)
 and $T_\phi$ is a diffeomorphism, then by LOTUS:
 
-$$\nabla_\phi \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆_◆LB◆z \sim q_\phi◆RB◆[f(z)] = \nabla_\phi \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆_◆LB◆\epsilon \sim p◆RB◆[f(T_\phi(\epsilon))] = \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆_◆LB◆\epsilon \sim p◆RB◆[\nabla_\phi f(T_\phi(\epsilon))]$$
+$$\nabla_\phi \mathbb{E}_{z \sim q_\phi}[f(z)] = \nabla_\phi \mathbb{E}_{\epsilon \sim p}[f(T_\phi(\epsilon))] = \mathbb{E}_{\epsilon \sim p}[\nabla_\phi f(T_\phi(\epsilon))]$$
 
 _Relevance:_ Foundation of VAE training and differentiable Monte Carlo estimation.
 
 ### Wasserstein Metric (Kantorovich-Rubinstein)
 
-Let $\mu, \nu \in \mathcal◆LB◆◆LB◆'◆RB◆P◆LB◆◆RB◆'◆RB◆(S)$ where $(S, d)$ is a Polish space. The
+Let $\mu, \nu \in \mathcal{P}(S)$ where $(S, d)$ is a Polish space. The
 $p$-Wasserstein distance is:
-$$W_p(\mu, \nu) = \left( \inf_◆LB◆\gamma \in \Pi(\mu, \nu)◆RB◆ \int_◆LB◆S \times S◆RB◆ d(x, y)^p \, d\gamma(x, y) \right)^◆LB◆1/p◆RB◆$$
+$$W_p(\mu, \nu) = \left( \inf_{\gamma \in \Pi(\mu, \nu)} \int_{S \times S} d(x, y)^p \, d\gamma(x, y) \right)^{1/p}$$
 Where $\Pi(\mu, \nu)$ is the set of joint distributions (couplings) with marginals $\mu$ and $\nu$.
 
 _Duality (for $p=1$):_ Via Kantorovich-Rubinstein,
-$W_1(\mu, \nu) = \sup \{ \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆_\mu[f] - \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆_\nu[f] : \lVert f \rVert_◆LB◆\mathrm◆LB◆Lip◆RB◆◆LB◆◆RB◆◆RB◆ \leq 1 \◆RB◆$.
+$W_1(\mu, \nu) = \sup \{ \mathbb{E}_\mu[f] - \mathbb{E}_\nu[f] : \lVert f \rVert_{\mathrm{Lip}} \leq 1 \}$.
 
 _Relevance:_ Foundation of Wasserstein GANs; provides meaningful gradients even when distributions
 have disjoint support.
@@ -1992,11 +1992,11 @@ have disjoint support.
 ### Maximum Mean Discrepancy (MMD)
 
 A metric on the space of probability measures derived from an RKHS. Let $P, Q$ be probability
-measures and $\mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆$ be an RKHS with unit ball
-$\mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆$.
+measures and $\mathcal{H}$ be an RKHS with unit ball
+$\mathcal{F}$.
 
 $$
-\mathrm◆LB◆MMD◆RB◆◆LB◆◆RB◆(P, Q) = \sup_◆LB◆f \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆◆RB◆ \left( \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆_◆LB◆x \sim P◆RB◆[f(x)] - \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆_◆LB◆y \sim Q◆RB◆[f(y)] \right)
+\mathrm{MMD}(P, Q) = \sup_{f \in \mathcal{F}} \left( \mathbb{E}_{x \sim P}[f(x)] - \mathbb{E}_{y \sim Q}[f(y)] \right)
 $$
 
 _Relevance:_ Used in Generative Moment Matching Networks (GMMN) and as a critic in GANs. Can be
@@ -2005,11 +2005,11 @@ computed efficiently via kernel tricks without explicit density estimation.
 ### Fisher Divergence
 
 The **Fisher Divergence** (or Score Matching objective) measures the discrepancy between score
-functions of two distributions. For data distribution $p_◆LB◆\mathrm◆LB◆data◆RB◆◆LB◆◆RB◆◆RB◆$ and
+functions of two distributions. For data distribution $p_{\mathrm{data}}$ and
 model distribution $p_\theta$:
 
 $$
-J(\theta) = \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆_◆LB◆p_◆LB◆\mathrm◆LB◆data◆RB◆◆LB◆◆RB◆◆RB◆◆RB◆\left[ \lVert \nabla_x \log p_◆LB◆\mathrm◆LB◆data◆RB◆◆LB◆◆RB◆◆RB◆(x) - \nabla_x \log p_\theta(x) \rVert^2 \right]
+J(\theta) = \mathbb{E}_{p_{\mathrm{data}}}\left[ \lVert \nabla_x \log p_{\mathrm{data}}(x) - \nabla_x \log p_\theta(x) \rVert^2 \right]
 $$
 
 _Key Property:_ Minimizing the Fisher divergence is equivalent to Score Matching. Unlike KL
@@ -2022,10 +2022,10 @@ _Relevance:_ Foundation of Score-Based Generative Modeling and denoising score m
 Pinsker's Inequality bounds the Total Variation distance using KL divergence:
 
 $$
-\delta(P, Q) \leq \sqrt◆LB◆\frac◆LB◆1◆RB◆◆LB◆2◆RB◆ D_◆LB◆KL◆RB◆(P \| Q)◆RB◆
+\delta(P, Q) \leq \sqrt{\frac{1}{2} D_{KL}(P \| Q)}
 $$
 
-Where $\delta(P, Q)$ is the Total Variation distance and $D_◆LB◆KL◆RB◆(P \| Q)$ is the KL
+Where $\delta(P, Q)$ is the Total Variation distance and $D_{KL}(P \| Q)$ is the KL
 divergence.
 
 _Relevance:_ Provides a bridge between information-theoretic bounds and probabilistic bounds.
@@ -2033,19 +2033,19 @@ Frequently used in generative modeling proofs to convert KL bounds into TV bound
 
 ### Tightness and Prokhorov's Theorem
 
-**Tightness:** A family of probability measures $\mathcal◆LB◆◆LB◆'◆RB◆P◆LB◆◆RB◆'◆RB◆$ on a Polish
+**Tightness:** A family of probability measures $\mathcal{P}$ on a Polish
 space $(S, d)$ is **tight** if for every $\epsilon > 0$There exists a compact set
 $K_\epsilon \subseteq S$ such that:
 
 $$
-\sup_◆LB◆\mu \in \mathcal◆LB◆◆LB◆'◆RB◆P◆LB◆◆RB◆'◆RB◆◆RB◆ \mu(S \setminus K_\epsilon) < \epsilon
+\sup_{\mu \in \mathcal{P}} \mu(S \setminus K_\epsilon) < \epsilon
 $$
 
 _Intuition:_ Tightness prevents probability mass from "escaping to infinity."
 
 **Prokhorov's Theorem:** Let $(S, d)$ be a Polish space. A family of probability measures
-$\mathcal◆LB◆◆LB◆'◆RB◆P◆LB◆◆RB◆'◆RB◆$ is **relatively compact** (every sequence has a weakly
-convergent subsequence) if and only if $\mathcal◆LB◆◆LB◆'◆RB◆P◆LB◆◆RB◆'◆RB◆$ is tight.
+$\mathcal{P}$ is **relatively compact** (every sequence has a weakly
+convergent subsequence) if and only if $\mathcal{P}$ is tight.
 
 _Relevance:_ Provides the theoretical foundation for why Wasserstein spaces are well-behaved.
 Essential for proving existence of limiting distributions in generative model training.
@@ -2055,7 +2055,7 @@ Essential for proving existence of limiting distributions in generative model tr
 Langevin Dynamics is an SDE that samples from a target distribution $p(x)$ using its Stein score:
 
 $$
-DX_t = \nabla_x \log p(X_t) \, dt + \sqrt◆LB◆2◆RB◆ \, dW_t
+DX_t = \nabla_x \log p(X_t) \, dt + \sqrt{2} \, dW_t
 $$
 
 Where $W_t$ is a Wiener process and $\nabla_x \log p(x)$ is the Stein score.
@@ -2063,7 +2063,7 @@ Where $W_t$ is a Wiener process and $\nabla_x \log p(x)$ is the Stein score.
 _Discretization (Unadjusted Langevin Algorithm):_
 
 $$
-X_◆LB◆t+1◆RB◆ = x_t + \eta \nabla_x \log p(x_t) + \sqrt◆LB◆2\eta◆RB◆ \, \epsilon_t, \quad \epsilon_t \sim \mathcal◆LB◆◆LB◆'◆RB◆N◆LB◆◆RB◆'◆RB◆(0, I)
+X_{t+1} = x_t + \eta \nabla_x \log p(x_t) + \sqrt{2\eta} \, \epsilon_t, \quad \epsilon_t \sim \mathcal{N}(0, I)
 $$
 
 _Relevance:_ Under appropriate conditions, the stationary distribution of Langevin Dynamics is
@@ -2116,15 +2116,15 @@ unpredictable because of data uncertainty.
 
 ### Manifold Hypothesis
 
-Let $\mathcal◆LB◆◆LB◆'◆RB◆X◆LB◆◆RB◆'◆RB◆ = \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d$ be the ambient data
+Let $\mathcal{X} = \mathbb{R}^d$ be the ambient data
 space. The Manifold Hypothesis states that the probability mass of the data distribution
-$P_◆LB◆data◆RB◆$ is supported on (or concentrated near) a topological manifold
-$\mathcal◆LB◆◆LB◆'◆RB◆M◆LB◆◆RB◆'◆RB◆ \subseteq \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d$ where
-$\dim(\mathcal◆LB◆◆LB◆'◆RB◆M◆LB◆◆RB◆'◆RB◆) \ll d$. Formally,
-$\mathrm◆LB◆supp◆RB◆◆LB◆◆RB◆(P_◆LB◆data◆RB◆) \subseteq \mathcal◆LB◆◆LB◆'◆RB◆M◆LB◆◆RB◆'◆RB◆$.
+$P_{data}$ is supported on (or concentrated near) a topological manifold
+$\mathcal{M} \subseteq \mathbb{R}^d$ where
+$\dim(\mathcal{M}) \ll d$. Formally,
+$\mathrm{supp}(P_{data}) \subseteq \mathcal{M}$.
 Explains why high-dimensional generative models (GANs, VAEs) work: they map a low-dimensional latent
-space $\mathcal◆LB◆◆LB◆'◆RB◆Z◆LB◆◆RB◆'◆RB◆ \subseteq \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^k$ to
-$\mathcal◆LB◆◆LB◆'◆RB◆M◆LB◆◆RB◆'◆RB◆$.
+space $\mathcal{Z} \subseteq \mathbb{R}^k$ to
+$\mathcal{M}$.
 
 ## Common Pitfalls
 

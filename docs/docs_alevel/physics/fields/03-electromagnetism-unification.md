@@ -27,7 +27,7 @@ Among the most important equations in physics.
 
 ### Gauss's Law for Electricity
 
-$$\oint \mathbf{E} \cdot d\mathbf{A} = \frac◆LB◆Q_{\mathrm{enclosed}}◆RB◆◆LB◆\varepsilon_0◆RB◆$$
+$$\oint \mathbf{E} \cdot d\mathbf{A} = \frac{Q_{\mathrm{enclosed}}}{\varepsilon_0}$$
 
 **Meaning.** The total electric flux through any closed surface equals the total charge enclosed,
 Divided by $\varepsilon_0$. Electric charges are the sources (and sinks) of electric field lines.
@@ -41,14 +41,14 @@ Monopoles** — magnetic field lines always form closed loops.
 
 ### Faraday's Law
 
-$$\oint \mathbf{E} \cdot d\mathbf{l} = -\frac◆LB◆d\Phi_B◆RB◆◆LB◆dt◆RB◆$$
+$$\oint \mathbf{E} \cdot d\mathbf{l} = -\frac{d\Phi_B}{dt}$$
 
 **Meaning.** A changing magnetic flux induces an electromotive force (and hence an electric field)
 Around a closed loop. This is the mathematical form of Faraday's law of induction.
 
 ### Ampere-Maxwell Law
 
-$$\oint \mathbf{B} \cdot d\mathbf{l} = \mu_0 I_{\mathrm{enclosed}} + \mu_0\varepsilon_0\frac◆LB◆d\Phi_E◆RB◆◆LB◆dt◆RB◆$$
+$$\oint \mathbf{B} \cdot d\mathbf{l} = \mu_0 I_{\mathrm{enclosed}} + \mu_0\varepsilon_0\frac{d\Phi_E}{dt}$$
 
 **Definition.** The displacement current $I_d = \varepsilon_0\,d\Phi_E/dt$ is a quantity
 Proportional to the rate of change of electric flux through a surface. It is not a flow of charge
@@ -66,7 +66,7 @@ Restore this symmetry — and in doing so, predicted electromagnetic waves.
 
 **Definition.** An electromagnetic wave is a self-propagating transverse wave consisting of
 Oscillating electric and magnetic fields perpendicular to each other and to the direction of
-Propagation, travelling at speed $c = 1/\sqrt◆LB◆\mu_0\varepsilon_0◆RB◆$ in vacuum.
+Propagation, travelling at speed $c = 1/\sqrt{\mu_0\varepsilon_0}$ in vacuum.
 
 :::info Board Coverage AQA Paper 2 | Edexcel CP3 | OCR (A) Paper 2 Mod 6 | CIE P4
 :::
@@ -83,8 +83,8 @@ In free space, Maxwell's equations become:
 
 $$\oint \mathbf{E} \cdot d\mathbf{A} = 0 \quad \mathrm{(no charges)}$$
 $$\oint \mathbf{B} \cdot d\mathbf{A} = 0 \quad \mathrm{(no monopoles)}$$
-$$\oint \mathbf{E} \cdot d\mathbf{l} = -\frac◆LB◆d\Phi_B◆RB◆◆LB◆dt◆RB◆ \quad \mathrm{(Faraday)}$$
-$$\oint \mathbf{B} \cdot d\mathbf{l} = \mu_0\varepsilon_0\frac◆LB◆d\Phi_E◆RB◆◆LB◆dt◆RB◆ \quad \mathrm{(Ampere-Maxwell, no currents)}$$
+$$\oint \mathbf{E} \cdot d\mathbf{l} = -\frac{d\Phi_B}{dt} \quad \mathrm{(Faraday)}$$
+$$\oint \mathbf{B} \cdot d\mathbf{l} = \mu_0\varepsilon_0\frac{d\Phi_E}{dt} \quad \mathrm{(Ampere-Maxwell, no currents)}$$
 
 Consider a plane wave propagating in the $x$-direction, with $\mathbf{E} = E_y\,\hat{\mathbf{j}}$
 And $\mathbf{B} = B_z\,\hat{\mathbf{k}}$.
@@ -93,45 +93,45 @@ Applying Faraday's law to a rectangular loop in the $xy$-plane:
 
 $$E_y \cdot l = -\frac{d}{dt}(B_z \cdot l \cdot \Delta x)$$
 
-$$E_y = -\frac◆LB◆\partial B_z◆RB◆◆LB◆\partial t◆RB◆\Delta x$$
+$$E_y = -\frac{\partial B_z}{\partial t}\Delta x$$
 
 In the limit $\Delta x \to 0$:
-$\frac◆LB◆\partial E_y◆RB◆◆LB◆\partial x◆RB◆ = -\frac◆LB◆\partial B_z◆RB◆◆LB◆\partial t◆RB◆$ ... (i)
+$\frac{\partial E_y}{\partial x} = -\frac{\partial B_z}{\partial t}$ ... (i)
 
 Applying the Ampere-Maxwell law to a rectangular loop in the $xz$-plane:
 
 $$B_z \cdot l = \mu_0\varepsilon_0\frac{d}{dt}(E_y \cdot l \cdot \Delta x)$$
 
-$$\frac◆LB◆\partial B_z◆RB◆◆LB◆\partial x◆RB◆ = \mu_0\varepsilon_0\frac◆LB◆\partial E_y◆RB◆◆LB◆\partial t◆RB◆$$
+$$\frac{\partial B_z}{\partial x} = \mu_0\varepsilon_0\frac{\partial E_y}{\partial t}$$
 ... (ii)
 
 Differentiating (i) with respect to $x$ and (ii) with respect to $t$:
 
-$$\frac◆LB◆\partial^2 E_y◆RB◆◆LB◆\partial x^2◆RB◆ = -\frac◆LB◆\partial^2 B_z◆RB◆◆LB◆\partial t \partial x◆RB◆$$
+$$\frac{\partial^2 E_y}{\partial x^2} = -\frac{\partial^2 B_z}{\partial t \partial x}$$
 
-$$\frac◆LB◆\partial^2 B_z◆RB◆◆LB◆\partial x \partial t◆RB◆ = \mu_0\varepsilon_0\frac◆LB◆\partial^2 E_y◆RB◆◆LB◆\partial t^2◆RB◆$$
+$$\frac{\partial^2 B_z}{\partial x \partial t} = \mu_0\varepsilon_0\frac{\partial^2 E_y}{\partial t^2}$$
 
 Substituting the second into the first:
 
-$$\frac◆LB◆\partial^2 E_y◆RB◆◆LB◆\partial x^2◆RB◆ = -\mu_0\varepsilon_0\frac◆LB◆\partial^2 E_y◆RB◆◆LB◆\partial t^2◆RB◆$$
+$$\frac{\partial^2 E_y}{\partial x^2} = -\mu_0\varepsilon_0\frac{\partial^2 E_y}{\partial t^2}$$
 
-$$\boxed{\frac◆LB◆\partial^2 E_y◆RB◆◆LB◆\partial x^2◆RB◆ = \mu_0\varepsilon_0\frac◆LB◆\partial^2 E_y◆RB◆◆LB◆\partial t^2◆RB◆}$$
+$$\boxed{\frac{\partial^2 E_y}{\partial x^2} = \mu_0\varepsilon_0\frac{\partial^2 E_y}{\partial t^2}}$$
 
 This is the **wave equation** with wave speed:
 
-$$\boxed{c = \frac◆LB◆1◆RB◆◆LB◆\sqrt{\mu_0\varepsilon_0}◆RB◆}$$
+$$\boxed{c = \frac{1}{\sqrt{\mu_0\varepsilon_0}}}$$
 
 $\square$
 
 Similarly for $B_z$:
 
-$$\frac◆LB◆\partial^2 B_z◆RB◆◆LB◆\partial x^2◆RB◆ = \mu_0\varepsilon_0\frac◆LB◆\partial^2 B_z◆RB◆◆LB◆\partial t^2◆RB◆$$
+$$\frac{\partial^2 B_z}{\partial x^2} = \mu_0\varepsilon_0\frac{\partial^2 B_z}{\partial t^2}$$
 
 ### Calculating $c$
 
-$$c = \frac◆LB◆1◆RB◆◆LB◆\sqrt{\mu_0\varepsilon_0}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆\sqrt{4\pi \times 10^{-7} \times 8.854 \times 10^{-12}}◆RB◆$$
+$$c = \frac{1}{\sqrt{\mu_0\varepsilon_0}} = \frac{1}{\sqrt{4\pi \times 10^{-7} \times 8.854 \times 10^{-12}}}$$
 
-$$c = \frac◆LB◆1◆RB◆◆LB◆\sqrt{1.113 \times 10^{-17}}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆3.337 \times 10^{-9}◆RB◆ = 2.998 \times 10^8 \mathrm{ m s}^{-1}$$
+$$c = \frac{1}{\sqrt{1.113 \times 10^{-17}}} = \frac{1}{3.337 \times 10^{-9}} = 2.998 \times 10^8 \mathrm{ m s}^{-1}$$
 
 $$\boxed{c \approx 3.00 \times 10^8 \mathrm{ m s}^{-1}}$$
 
@@ -147,40 +147,40 @@ $\mu_0$ and $\varepsilon_0$.
 
 Starting from the two coupled first-order equations derived above:
 
-$$\frac◆LB◆\partial E_y◆RB◆◆LB◆\partial x◆RB◆ = -\frac◆LB◆\partial B_z◆RB◆◆LB◆\partial t◆RB◆ \quad \mathrm{... (i)}$$
+$$\frac{\partial E_y}{\partial x} = -\frac{\partial B_z}{\partial t} \quad \mathrm{... (i)}$$
 
-$$\frac◆LB◆\partial B_z◆RB◆◆LB◆\partial x◆RB◆ = \mu_0\varepsilon_0\frac◆LB◆\partial E_y◆RB◆◆LB◆\partial t◆RB◆ \quad \mathrm{... (ii)}$$
+$$\frac{\partial B_z}{\partial x} = \mu_0\varepsilon_0\frac{\partial E_y}{\partial t} \quad \mathrm{... (ii)}$$
 
 For a plane wave $E_y = E_0\sin(kx - \omega t)$Equation (i) gives:
 
 $$kE_0\cos(kx - \omega t) = \omega B_0\cos(kx - \omega t)$$
 
-So $\frac{E_0}{B_0} = \frac◆LB◆\omega◆RB◆◆LB◆k◆RB◆ = c$. This confirms that the electric and
+So $\frac{E_0}{B_0} = \frac{\omega}{k} = c$. This confirms that the electric and
 magnetic field Amplitudes are related by a fixed ratio — a direct consequence of Maxwell's
 equations, not an Independent assumption.
 
 ### Energy in Electromagnetic Waves
 
 The energy density in the electric field is $u_E = \frac{1}{2}\varepsilon_0 E^2$ and in the magnetic
-Field is $u_B = \frac◆LB◆B^2◆RB◆◆LB◆2\mu_0◆RB◆$. Since $B = E/c$:
+Field is $u_B = \frac{B^2}{2\mu_0}$. Since $B = E/c$:
 
-$$u_B = \frac◆LB◆E^2◆RB◆◆LB◆2\mu_0 c^2◆RB◆ = \frac◆LB◆\varepsilon_0 E^2◆RB◆◆LB◆2◆RB◆ = u_E$$
+$$u_B = \frac{E^2}{2\mu_0 c^2} = \frac{\varepsilon_0 E^2}{2} = u_E$$
 
 The electric and magnetic fields carry **equal energy**. The total energy density is:
 
-$$u = \varepsilon_0 E^2 = \frac◆LB◆B^2◆RB◆◆LB◆\mu_0◆RB◆$$
+$$u = \varepsilon_0 E^2 = \frac{B^2}{\mu_0}$$
 
 The Poynting vector gives the energy flux (power per unit area):
 
-$$\mathbf{S} = \frac◆LB◆1◆RB◆◆LB◆\mu_0◆RB◆\mathbf{E} \times \mathbf{B}$$
+$$\mathbf{S} = \frac{1}{\mu_0}\mathbf{E} \times \mathbf{B}$$
 
 For a plane wave, the time-averaged intensity is:
 
-$$\langle S \rangle = \frac◆LB◆E_0 B_0◆RB◆◆LB◆2\mu_0◆RB◆ = \frac◆LB◆E_0^2◆RB◆◆LB◆2\mu_0 c◆RB◆ = \frac◆LB◆c\varepsilon_0 E_0^2◆RB◆◆LB◆2◆RB◆$$
+$$\langle S \rangle = \frac{E_0 B_0}{2\mu_0} = \frac{E_0^2}{2\mu_0 c} = \frac{c\varepsilon_0 E_0^2}{2}$$
 
 **Real-world example.** A typical laser pointer emits about 5 mW of power through a beam of diameter
 2 mm. The intensity is $I = P/A = 5 \times 10^{-3} / (\pi \times 10^{-6}) \approx 1600$ W m$^{-2}$.
-From this, $E_0 = \sqrt◆LB◆2I/(\mu_0 c)◆RB◆ \approx 1100$ V m$^{-1}$ — a surprisingly large electric
+From this, $E_0 = \sqrt{2I/(\mu_0 c)} \approx 1100$ V m$^{-1}$ — a surprisingly large electric
 field From a small device.
 
 ### Radiation Pressure
@@ -204,11 +204,11 @@ From Maxwell's equations, EM waves have these properties:
 
 1. **Transverse**: $\mathbf{E}$ and $\mathbf{B}$ are perpendicular to each other and to the
    direction of propagation
-2. **Speed**: $c = 1/\sqrt◆LB◆\mu_0\varepsilon_0◆RB◆$ in vacuum (independent of frequency)
+2. **Speed**: $c = 1/\sqrt{\mu_0\varepsilon_0}$ in vacuum (independent of frequency)
 3. **Relation between fields**: $E = cB$ (the ratio $E/B = c$ is constant)
 4. **Self-propagating**: no medium required
 5. **Carry energy**: the Poynting vector
-   $\mathbf{S} = \frac◆LB◆1◆RB◆◆LB◆\mu_0◆RB◆\mathbf{E} \times \mathbf{B}$ gives the energy flux
+   $\mathbf{S} = \frac{1}{\mu_0}\mathbf{E} \times \mathbf{B}$ gives the energy flux
 6. **Carry momentum**: radiation pressure $P = I/c$ for total absorption, $P = 2I/c$ for perfect
    reflection
 
@@ -256,7 +256,7 @@ $$N\Phi = NBA\cos\theta$$
 Faraday's law states that the magnitude of the induced electromotive force equals the rate of change
 Of flux linkage:
 
-$$|\varepsilon| = \frac◆LB◆d(N\Phi)◆RB◆◆LB◆dt◆RB◆$$
+$$|\varepsilon| = \frac{d(N\Phi)}{dt}$$
 
 ### Lenz's Law: Why the Minus Sign Matters
 
@@ -365,7 +365,7 @@ Whether the carriers are positive or negative. In semiconductors, both electron 
 **Example.** A Hall probe has $n = 8.5 \times 10^{28}$ m$^{-3}$ (copper), thickness $t = 1.0$ mm,
 And carries current $I = 10$ mA. In a field of $B = 0.50$ T:
 
-$V_H = \frac◆LB◆0.50 \times 0.010◆RB◆◆LB◆8.5 \times 10^{28} \times 1.0 \times 10^{-3} \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆5.0 \times 10^{-3}◆RB◆◆LB◆1.36 \times 10^{7}◆RB◆ = 3.7 \times 10^{-10}$
+$V_H = \frac{0.50 \times 0.010}{8.5 \times 10^{28} \times 1.0 \times 10^{-3} \times 1.60 \times 10^{-19}} = \frac{5.0 \times 10^{-3}}{1.36 \times 10^{7}} = 3.7 \times 10^{-10}$
 V.
 
 This tiny voltage in metals explains why Hall probes use **semiconductors** (with much lower $n$) to
@@ -389,7 +389,7 @@ Isotopic masses and abundances.
    charge $q = +e$ (or $+2e$Etc.).
 2. **Acceleration.** Ions are accelerated through a potential difference $V$Gaining kinetic energy:
 
-   $$\frac{1}{2}mv^2 = qV \quad \Rightarrow \quad v = \sqrt◆LB◆\frac{2qV}{m}◆RB◆$$
+   $$\frac{1}{2}mv^2 = qV \quad \Rightarrow \quad v = \sqrt{\frac{2qV}{m}}$$
 
 3. **Deflection.** Ions enter a region of uniform magnetic field $B$ and follow a semicircular path.
    The magnetic force provides centripetal acceleration:
@@ -399,7 +399,7 @@ Isotopic masses and abundances.
 4. **Detection.** Ions strike a detector at different positions depending on their radius of
    curvature. Substituting the velocity from stage 2:
 
-   $$r = \frac{1}{B}\sqrt◆LB◆\frac{2mV}{q}◆RB◆$$
+   $$r = \frac{1}{B}\sqrt{\frac{2mV}{q}}$$
 
 Rearranging for the mass-to-charge ratio:
 
@@ -416,7 +416,7 @@ $$\boxed{\frac{m}{q} = \frac{B^2 r^2}{2V}}$$
 **Real-world example.** In a mass spectrometer with $B = 0.50$ T and $V = 10,000$ V, singly-charged
 Carbon-12 ions ($m = 12 \times 1.66 \times 10^{-27}$ kg) follow a semicircular path of radius:
 
-$$r = \frac{1}{0.50}\sqrt◆LB◆\frac{2 \times 1.99 \times 10^{-26} \times 10000}{1.60 \times 10^{-19}}◆RB◆ = 2.0 \times 0.0500 = 0.100 \mathrm{ m} = 10.0 \mathrm{ cm}$$
+$$r = \frac{1}{0.50}\sqrt{\frac{2 \times 1.99 \times 10^{-26} \times 10000}{1.60 \times 10^{-19}}} = 2.0 \times 0.0500 = 0.100 \mathrm{ m} = 10.0 \mathrm{ cm}$$
 
 Carbon-13 ions ($m = 13 \times 1.66 \times 10^{-27}$ kg) would be deflected to a radius
 $\sqrt{13/12} \times 10.0 \approx 10.4$ cm — the two isotopes are separated on the detector.
@@ -453,7 +453,7 @@ Between the dees.
 The period of the semicircular orbit is $T = \pi r / v = \pi m / (qB)$. Remarkably, the radius and
 Velocity cancel out:
 
-$$\boxed{f = \frac{1}{T} = \frac◆LB◆qB◆RB◆◆LB◆2\pi m◆RB◆}$$
+$$\boxed{f = \frac{1}{T} = \frac{qB}{2\pi m}}$$
 
 This is the **cyclotron frequency** — only on $q$, $B$And $m$**not on the particle's Speed or
 radius**. This is why the alternating `EMF` can operate at a fixed frequency, regardless of The
@@ -468,11 +468,11 @@ $$\frac{mv^2}{r} = qvB \quad \Rightarrow \quad r = \frac{mv}{qB}$$
 
 The time for one complete revolution is:
 
-$$T = \frac◆LB◆2\pi r◆RB◆◆LB◆v◆RB◆ = \frac◆LB◆2\pi m◆RB◆◆LB◆qB◆RB◆$$
+$$T = \frac{2\pi r}{v} = \frac{2\pi m}{qB}$$
 
 This is independent of $r$ and $v$Confirming that the frequency is constant:
 
-$$f = \frac◆LB◆qB◆RB◆◆LB◆2\pi m◆RB◆$$
+$$f = \frac{qB}{2\pi m}$$
 
 $\square$
 
@@ -513,7 +513,7 @@ Calculate the speed of light from the values of $\mu_0 = 4\pi \times 10^{-7}$ T 
 $\varepsilon_0 = 8.85 \times 10^{-12}$ F m$^{-1}$.
 
 **Answer.**
-$c = \frac◆LB◆1◆RB◆◆LB◆\sqrt{4\pi \times 10^{-7} \times 8.85 \times 10^{-12}}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆\sqrt{1.113 \times 10^{-17}}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆3.337 \times 10^{-9}◆RB◆ = 2.998 \times 10^8$
+$c = \frac{1}{\sqrt{4\pi \times 10^{-7} \times 8.85 \times 10^{-12}}} = \frac{1}{\sqrt{1.113 \times 10^{-17}}} = \frac{1}{3.337 \times 10^{-9}} = 2.998 \times 10^8$
 M s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Calculating $c$](#calculating-c)
@@ -610,7 +610,7 @@ Calculate: (a) the frequency, (b) the wavelength, (c) the magnetic field amplitu
 What was the significance of Maxwell's prediction of the speed of EM waves? How was it
 Experimentally confirmed?
 
-**Answer.** Maxwell showed that EM waves travel at $c = 1/\sqrt◆LB◆\mu_0\varepsilon_0◆RB◆$Which
+**Answer.** Maxwell showed that EM waves travel at $c = 1/\sqrt{\mu_0\varepsilon_0}$Which
 matched The measured speed of light. This proved that light is an electromagnetic wave — unifying
 optics With electromagnetism. It was experimentally confirmed by Hertz (1887), who generated and
 detected Radio waves using oscillating circuits, showing they had the predicted properties
@@ -644,7 +644,7 @@ M$^{-3}$. A current of 5.0 mA passes through the strip, which is placed in a mag
 T. Calculate the Hall voltage. Why is a semiconductor used rather than a metal?
 
 **Answer.**
-$V_H = \frac{BI}{ntq} = \frac◆LB◆0.30 \times 5.0 \times 10^{-3}◆RB◆◆LB◆1.0 \times 10^{21} \times 1.5 \times 10^{-3} \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆1.5 \times 10^{-3}◆RB◆◆LB◆0.240◆RB◆ = 6.25 \times 10^{-3}$
+$V_H = \frac{BI}{ntq} = \frac{0.30 \times 5.0 \times 10^{-3}}{1.0 \times 10^{21} \times 1.5 \times 10^{-3} \times 1.60 \times 10^{-19}} = \frac{1.5 \times 10^{-3}}{0.240} = 6.25 \times 10^{-3}$
 V $= 6.3$ mV.
 
 A semiconductor is used because its much lower carrier density ($n$) produces a larger, more
@@ -663,7 +663,7 @@ Velocity of the ions after acceleration. (b) Calculate the radius of their semic
 Would neon-22 ions hit the detector closer to or further from the entrance slit?
 
 **Answer.** (a) $\frac{1}{2}mv^2 = qV$So
-$v = \sqrt{2qV/m} = \sqrt◆LB◆2 \times 1.60 \times 10^{-19} \times 5000 / (3.32 \times 10^{-26})◆RB◆ = \sqrt◆LB◆4.82 \times 10^{10}◆RB◆ = 2.20 \times 10^5$
+$v = \sqrt{2qV/m} = \sqrt{2 \times 1.60 \times 10^{-19} \times 5000 / (3.32 \times 10^{-26})} = \sqrt{4.82 \times 10^{10}} = 2.20 \times 10^5$
 M s$^{-1}$.
 
 (b)

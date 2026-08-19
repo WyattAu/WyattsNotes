@@ -500,7 +500,7 @@ A chiral compound rotates the plane of plane-polarised light. The observed rotat
 on:
 
 $$
-[\alpha] = \frac◆LB◆\alpha_\mathrm{obs}◆RB◆◆LB◆l \times c◆RB◆
+[\alpha] = \frac{\alpha_\mathrm{obs}}{l \times c}
 $$
 
 Where $[\alpha]$ is the specific rotation (constant for a given compound), $l$ is the path length

@@ -177,11 +177,11 @@ $$y = u\sin\theta \cdot t - \frac{1}{2}gt^2 \tag{vertical}$$
 
 Eliminating $t$ from the parametric equations:
 
-$$t = \frac◆LB◆x◆RB◆◆LB◆u\cos\theta◆RB◆$$
+$$t = \frac{x}{u\cos\theta}$$
 
-$$y = u\sin\theta \cdot \frac◆LB◆x◆RB◆◆LB◆u\cos\theta◆RB◆ - \frac{1}{2}g\!\left(\frac◆LB◆x◆RB◆◆LB◆u\cos\theta◆RB◆\right)^{\!2}$$
+$$y = u\sin\theta \cdot \frac{x}{u\cos\theta} - \frac{1}{2}g\!\left(\frac{x}{u\cos\theta}\right)^{\!2}$$
 
-$$\boxed{y = x\tan\theta - \frac◆LB◆gx^2◆RB◆◆LB◆2u^2\cos^2\theta◆RB◆}$$
+$$\boxed{y = x\tan\theta - \frac{gx^2}{2u^2\cos^2\theta}}$$
 
 This is the equation of a **parabola**, confirming that the trajectory of a projectile (under
 Constant gravity with no air resistance) is parabolic.
@@ -190,15 +190,15 @@ Constant gravity with no air resistance) is parabolic.
 
 **Time of flight** (landing at the same height): Setting $y = 0$:
 
-$$t = \frac◆LB◆2u\sin\theta◆RB◆◆LB◆g◆RB◆$$
+$$t = \frac{2u\sin\theta}{g}$$
 
 **Maximum height:**
 
-$$H = \frac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$$
+$$H = \frac{u^2\sin^2\theta}{2g}$$
 
 **Range:**
 
-$$R = \frac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆g◆RB◆$$
+$$R = \frac{u^2\sin 2\theta}{g}$$
 
 **Maximum range** occurs when $\sin 2\theta = 1$I.e. $\theta = 45^\circ$Giving
 $R_{\max} = \dfrac{u^2}{g}$.
@@ -226,7 +226,7 @@ $$-1.5 = 14.34t - 4.9t^2$$
 
 $$4.9t^2 - 14.34t - 1.5 = 0$$
 
-$$t = \frac◆LB◆14.34 \pm \sqrt{14.34^2 + 4(4.9)(1.5)}◆RB◆◆LB◆2(4.9)◆RB◆ = \frac◆LB◆14.34 \pm \sqrt{205.64 + 29.4}◆RB◆◆LB◆9.8◆RB◆$$
+$$t = \frac{14.34 \pm \sqrt{14.34^2 + 4(4.9)(1.5)}}{2(4.9)} = \frac{14.34 \pm \sqrt{205.64 + 29.4}}{9.8}$$
 
 $$t = \frac{14.34 + 15.38}{9.8} \approx 3.025\;\mathrm{s} \quad (\mathrm{taking\ the\ positive\ root})$$
 
@@ -386,9 +386,9 @@ horizontal. Taking $g = 9.8\;\mathrm{m\,s^{-2}}$Find the maximum height and the 
 <details>
 <summary>Solution</summary>
 
-$$H = \frac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆ = \frac◆LB◆900 \times 0.75◆RB◆◆LB◆19.6◆RB◆ = \frac{675}{19.6} \approx 34.4\;\mathrm{m}$$
+$$H = \frac{u^2\sin^2\theta}{2g} = \frac{900 \times 0.75}{19.6} = \frac{675}{19.6} \approx 34.4\;\mathrm{m}$$
 
-$$R = \frac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆g◆RB◆ = \frac◆LB◆900 \times \sin 120^\circ◆RB◆◆LB◆9.8◆RB◆ = \frac◆LB◆900 \times 0.866◆RB◆◆LB◆9.8◆RB◆ \approx 79.6\;\mathrm{m}$$
+$$R = \frac{u^2\sin 2\theta}{g} = \frac{900 \times \sin 120^\circ}{9.8} = \frac{900 \times 0.866}{9.8} \approx 79.6\;\mathrm{m}$$
 
 </details>
 
@@ -423,7 +423,7 @@ where the Stone lands, and the velocity (magnitude and direction) at impact.
 
 Vertical: $s = -60$$u_y = 0$$a = -9.8$.
 
-$$-60 = 0 - \frac{1}{2}(9.8)t^2 \implies t = \sqrt◆LB◆\frac{120}{9.8}◆RB◆ \approx 3.50\;\mathrm{s}$$
+$$-60 = 0 - \frac{1}{2}(9.8)t^2 \implies t = \sqrt{\frac{120}{9.8}} \approx 3.50\;\mathrm{s}$$
 
 Horizontal: $x = 8 \times 3.50 = 28.0\;\mathrm{m}$.
 
@@ -462,7 +462,7 @@ Maximum displacement when $v = 0$:
 
 $$0 = 4s - s^2 + 2 \implies s^2 - 4s - 2 = 0$$
 
-$$s = \frac◆LB◆4 \pm \sqrt{16 + 8}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆4 \pm \sqrt{24}◆RB◆◆LB◆2◆RB◆ = 2 \pm \sqrt{6}$$
+$$s = \frac{4 \pm \sqrt{16 + 8}}{2} = \frac{4 \pm \sqrt{24}}{2} = 2 \pm \sqrt{6}$$
 
 Taking the positive root: $s_{\max} = 2 + \sqrt{6} \approx 4.45\;\mathrm{m}$.
 

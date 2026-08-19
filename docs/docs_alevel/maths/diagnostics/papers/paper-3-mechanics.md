@@ -150,7 +150,7 @@ $$\text{Displacement} = s(7) - s(0) = -\frac{7}{3} \approx -2.33 \text{ m}$$
 The student claims the distance is $2.33$ m (taking the magnitude). Actual distance is
 $\frac{71}{3} \approx 23.67$ m.
 
-$$\text{Percentage error} = \frac◆LB◆\lvert \frac{71}{3} - \frac{7}{3} \rvert◆RB◆◆LB◆\frac{71}{3}◆RB◆ \times 100\% = \frac{64}{71} \times 100\% \approx 90.1\%$$
+$$\text{Percentage error} = \frac{\lvert \frac{71}{3} - \frac{7}{3} \rvert}{\frac{71}{3}} \times 100\% = \frac{64}{71} \times 100\% \approx 90.1\%$$
 
 The student underestimates the distance by approximately 90% — a catastrophic error caused by not
 accounting for the two direction reversals.
@@ -219,7 +219,7 @@ $$\text{Student's answer} = 150 \text{ Nm}$$
 
 $$\text{Correct answer} = 150\cos 40° \approx 114.9 \text{ Nm}$$
 
-$$\text{Percentage overestimate} = \frac◆LB◆150 - 150\cos 40°◆RB◆◆LB◆150\cos 40°◆RB◆ \times 100\% = \frac◆LB◆1 - \cos 40°◆RB◆◆LB◆\cos 40°◆RB◆ \times 100\% = \left(\frac◆LB◆1◆RB◆◆LB◆\cos 40°◆RB◆ - 1\right) \times 100\% \approx 30.5\%$$
+$$\text{Percentage overestimate} = \frac{150 - 150\cos 40°}{150\cos 40°} \times 100\% = \frac{1 - \cos 40°}{\cos 40°} \times 100\% = \left(\frac{1}{\cos 40°} - 1\right) \times 100\% \approx 30.5\%$$
 
 **(c)** If the $50$ N force acts perpendicular to the rod at $B$The perpendicular distance from $A$
 to the line of action is the length of the rod:
@@ -243,15 +243,15 @@ $$a = \frac{P}{mv} - \frac{R}{m} \quad \blacksquare$$
 
 **(b)** At maximum speed, $a = 0$:
 
-$$\frac◆LB◆P◆RB◆◆LB◆v_{\max}◆RB◆ = R \implies v_{\max} = \frac{P}{R} = \frac{40000}{200} = 200 \text{ m/s}$$
+$$\frac{P}{v_{\max}} = R \implies v_{\max} = \frac{P}{R} = \frac{40000}{200} = 200 \text{ m/s}$$
 
 **(c)** At $v = 10$ m/s:
 
-$$a = \frac◆LB◆40000◆RB◆◆LB◆800 \times 10◆RB◆ - \frac{200}{800} = 5 - 0.25 = 4.75 \text{ m/s}^2$$
+$$a = \frac{40000}{800 \times 10} - \frac{200}{800} = 5 - 0.25 = 4.75 \text{ m/s}^2$$
 
 At $v = 100$ m/s:
 
-$$a = \frac◆LB◆40000◆RB◆◆LB◆800 \times 100◆RB◆ - \frac{200}{800} = 0.5 - 0.25 = 0.25 \text{ m/s}^2$$
+$$a = \frac{40000}{800 \times 100} - \frac{200}{800} = 0.5 - 0.25 = 0.25 \text{ m/s}^2$$
 
 **(d)** The acceleration at $10$ m/s is $4.75$ m/s$^2$ and at $100$ m/s is $0.25$ m/s$^2$. The
 acceleration decreases by a factor of 19 as the speed increases by a factor of 10. Constant power
@@ -259,7 +259,7 @@ does not imply constant acceleration; in fact, the acceleration decreases hyperb
 
 **(e)** From $a = \frac{dv}{dt} = \frac{P}{mv} - \frac{R}{m}$:
 
-$$dt = \frac◆LB◆dv◆RB◆◆LB◆\frac{P}{mv} - \frac{R}{m}◆RB◆ = \frac{mv\,dv}{P - Rv}$$
+$$dt = \frac{dv}{\frac{P}{mv} - \frac{R}{m}} = \frac{mv\,dv}{P - Rv}$$
 
 $$t = \int_{5}^{15} \frac{mv}{P - Rv}\,dv = 800\int_{5}^{15} \frac{v}{40000 - 200v}\,dv$$
 
@@ -294,7 +294,7 @@ m/s.
 
 **(b)** Coefficient of restitution:
 
-$$e = \frac◆LB◆\text{relative speed of separation}◆RB◆◆LB◆\text{relative speed of approach}◆RB◆$$
+$$e = \frac{\text{relative speed of separation}}{\text{relative speed of approach}}$$
 
 Relative speed of approach $= 5 - (-3) = 8$ m/s.
 

@@ -184,7 +184,7 @@ $$\Delta t = \frac{2L}{v_x}$$
 
 The average force on the wall from this particle:
 
-$$F = \frac◆LB◆\Delta p◆RB◆◆LB◆\Delta t◆RB◆ = \frac{2mv_x}{2L/v_x} = \frac{mv_x^2}{L}$$
+$$F = \frac{\Delta p}{\Delta t} = \frac{2mv_x}{2L/v_x} = \frac{mv_x^2}{L}$$
 
 For $N$ particles, the total force on one wall:
 
@@ -192,7 +192,7 @@ $$F_{\mathrm{total}} = \sum_{i=1}^{N} \frac{mv_{x,i}^2}{L} = \frac{m}{L}\sum_{i=
 
 The pressure on the wall:
 
-$$p = \frac◆LB◆F_{\mathrm{total}}◆RB◆◆LB◆L^2◆RB◆ = \frac{m}{L^3}\sum_{i=1}^{N}v_{x,i}^2 = \frac{mN}{V}\langle v_x^2\rangle$$
+$$p = \frac{F_{\mathrm{total}}}{L^2} = \frac{m}{L^3}\sum_{i=1}^{N}v_{x,i}^2 = \frac{mN}{V}\langle v_x^2\rangle$$
 
 Where $\langle v_x^2\rangle = \frac{1}{N}\sum v_{x,i}^2$ is the mean square velocity in the
 $x$-direction.
@@ -201,7 +201,7 @@ By symmetry:
 $\langle v_x^2\rangle = \langle v_y^2\rangle = \langle v_z^2\rangle = \frac{1}{3}\langle v^2\rangle$
 (since $v^2 = v_x^2 + v_y^2 + v_z^2$ and the motion is isotropic).
 
-$$p = \frac{mN}{V} \cdot \frac{1}{3}\langle v^2\rangle = \frac{1}{3}\frac◆LB◆Nm\langle v^2\rangle◆RB◆◆LB◆V◆RB◆$$
+$$p = \frac{mN}{V} \cdot \frac{1}{3}\langle v^2\rangle = \frac{1}{3}\frac{Nm\langle v^2\rangle}{V}$$
 
 $$\boxed{pV = \frac{1}{3}Nm\langle v^2\rangle}$$
 
@@ -223,13 +223,13 @@ Temperature**, not on the type of gas molecule.
 
 The **root mean square speed** is defined as:
 
-$$\boxed{v_{\mathrm{rms}} = \sqrt◆LB◆\langle v^2\rangle◆RB◆}$$
+$$\boxed{v_{\mathrm{rms}} = \sqrt{\langle v^2\rangle}}$$
 
 From $\langle E_k\rangle = \frac{1}{2}m\langle v^2\rangle = \frac{3}{2}k_BT$:
 
 $$\frac{1}{2}mv_{\mathrm{rms}}^2 = \frac{3}{2}k_BT$$
 
-$$\boxed{v_{\mathrm{rms}} = \sqrt◆LB◆\frac{3k_BT}{m}◆RB◆ = \sqrt◆LB◆\frac{3RT}{M_r}◆RB◆$$
+$$\boxed{v_{\mathrm{rms}} = \sqrt{\frac{3k_BT}{m}} = \sqrt{\frac{3RT}{M_r}}$$
 
 Where $M_r$ is the molar mass.
 
@@ -242,7 +242,7 @@ $\propto 1/\sqrt{M_r}$).
 Calculate the rms speed of oxygen molecules ($M_r = 0.032$ kg mol$^{-1}$) at 300 K.
 
 **Answer.**
-$v_{\mathrm{rms}} = \sqrt◆LB◆\frac{3RT}{M_r}◆RB◆ = \sqrt◆LB◆\frac{3 \times 8.31 \times 300}{0.032}◆RB◆ = \sqrt{233719} = 483$
+$v_{\mathrm{rms}} = \sqrt{\frac{3RT}{M_r}} = \sqrt{\frac{3 \times 8.31 \times 300}{0.032}} = \sqrt{233719} = 483$
 M s$^{-1}$.
 
 </details>
@@ -285,12 +285,12 @@ rotational), not 6.
 The molecules in a gas do not all move at the same speed. The **Maxwell-Boltzmann distribution**
 Describes the probability density of molecular speeds at temperature $T$:
 
-$$f(v) = 4\pi\left(\frac◆LB◆m◆RB◆◆LB◆2\pi k_BT◆RB◆\right)^{3/2} v^2 \exp\!\left(-\frac{mv^2}{2k_BT}\right)$$
+$$f(v) = 4\pi\left(\frac{m}{2\pi k_BT}\right)^{3/2} v^2 \exp\!\left(-\frac{mv^2}{2k_BT}\right)$$
 
 The distribution is characterised by three speeds, all proportional to $\sqrt{k_BT/m}$ but with
 Different numerical prefactors:
 
-$$v_p = \sqrt◆LB◆\frac{2k_BT}{m}◆RB◆ \qquad \langle v \rangle = \sqrt◆LB◆\frac{8k_BT}{\pi m}◆RB◆ \qquad v_{\mathrm{rms}} = \sqrt◆LB◆\frac{3k_BT}{m}◆RB◆$$
+$$v_p = \sqrt{\frac{2k_BT}{m}} \qquad \langle v \rangle = \sqrt{\frac{8k_BT}{\pi m}} \qquad v_{\mathrm{rms}} = \sqrt{\frac{3k_BT}{m}}$$
 
 **Ordering:** $v_p < \langle v \rangle < v_{\mathrm{rms}}$
 
@@ -312,7 +312,7 @@ Quantitative Use of all three speed measures.
 Compare the rms speeds of helium ($M_r = 4$) and carbon dioxide ($M_r = 44$) at 300 K.
 
 **Answer.**
-$\frac◆LB◆v_{\mathrm{rms}}(\mathrm{He})◆RB◆◆LB◆v_{\mathrm{rms}}(\mathrm{CO}_2)◆RB◆ = \sqrt◆LB◆\frac{M_r(\mathrm{CO}_2)}{M_r(\mathrm{He})}◆RB◆ = \sqrt◆LB◆\frac{44}{4}◆RB◆ = \sqrt{11} \approx 3.32$.
+$\frac{v_{\mathrm{rms}}(\mathrm{He})}{v_{\mathrm{rms}}(\mathrm{CO}_2)} = \sqrt{\frac{M_r(\mathrm{CO}_2)}{M_r(\mathrm{He})}} = \sqrt{\frac{44}{4}} = \sqrt{11} \approx 3.32$.
 
 Helium molecules move about 3.3 times faster than CO$_2$ molecules at the same temperature. This is
 Why helium escapes from the atmosphere faster than heavier gases (atmospheric escape).
@@ -324,7 +324,7 @@ Why helium escapes from the atmosphere faster than heavier gases (atmospheric es
 The **mean free path** $\lambda$ is the average distance a molecule travels between successive
 Collisions:
 
-$$\boxed{\lambda = \frac◆LB◆1◆RB◆◆LB◆\sqrt{2}\,\pi d^2 n◆RB◆}$$
+$$\boxed{\lambda = \frac{1}{\sqrt{2}\,\pi d^2 n}}$$
 
 Where $d$ is the molecular diameter and $n = N/V$ is the number density.
 
@@ -335,7 +335,7 @@ Cylinder. The collision frequency is $f = n\pi d^2 v_{\mathrm{rel}}$ where $v_{\
 Mean relative speed. For a thermal distribution, $v_{\mathrm{rel}} = \sqrt{2}\,\langle v\rangle$
 (factor from relative velocity of two Maxwellian distributions), giving:
 
-$$\lambda = \frac◆LB◆\langle v\rangle◆RB◆◆LB◆f◆RB◆ = \frac◆LB◆\langle v\rangle◆RB◆◆LB◆\sqrt{2}\,\pi d^2 n \langle v\rangle◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆\sqrt{2}\,\pi d^2 n◆RB◆$$
+$$\lambda = \frac{\langle v\rangle}{f} = \frac{\langle v\rangle}{\sqrt{2}\,\pi d^2 n \langle v\rangle} = \frac{1}{\sqrt{2}\,\pi d^2 n}$$
 
 $\square$
 
@@ -376,7 +376,7 @@ A 0.50 kg block of ice at 0°C is heated until it completely melts. The specific
 A gas occupies 0.020 m$^3$ at a pressure of $1.5 \times 10^5$ Pa and temperature 300 K. Calculate the number of moles.
 
 **Answer.**
-$n = \frac{pV}{RT} = \frac◆LB◆1.5 \times 10^5 \times 0.020◆RB◆◆LB◆8.31 \times 300◆RB◆ = \frac{3000}{2493} = 1.20$
+$n = \frac{pV}{RT} = \frac{1.5 \times 10^5 \times 0.020}{8.31 \times 300} = \frac{3000}{2493} = 1.20$
 Mol.
 
 <b>If you get this wrong, revise:</b> [The Ideal Gas Equation](#the-ideal-gas-equation)
@@ -388,7 +388,7 @@ Mol.
 Calculate the rms speed of nitrogen molecules ($M_r = 0.028$ kg mol$^{-1}$) at 250 K.
 
 **Answer.**
-$v_{\mathrm{rms}} = \sqrt◆LB◆\frac{3 \times 8.31 \times 250}{0.028}◆RB◆ = \sqrt◆LB◆\frac{6232.5}{0.028}◆RB◆ = \sqrt{222\,589} = 472$
+$v_{\mathrm{rms}} = \sqrt{\frac{3 \times 8.31 \times 250}{0.028}} = \sqrt{\frac{6232.5}{0.028}} = \sqrt{222\,589} = 472$
 M s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Root Mean Square Speed](#5-root-mean-square-speed)
@@ -400,7 +400,7 @@ M s$^{-1}$.
 A gas cylinder of volume 0.050 m$^3$ contains oxygen at 200 kPa and 280 K. If the temperature rises to 350 K and the volume increases to 0.060 m$^3$What is the new pressure?
 
 **Answer.** Using $p_1V_1/T_1 = p_2V_2/T_2$:
-$p_2 = \frac{p_1V_1T_2}{V_2T_1} = \frac◆LB◆200\,000 \times 0.050 \times 350◆RB◆◆LB◆0.060 \times 280◆RB◆ = \frac{3\,500\,000}{16.8} = 208\,333$
+$p_2 = \frac{p_1V_1T_2}{V_2T_1} = \frac{200\,000 \times 0.050 \times 350}{0.060 \times 280} = \frac{3\,500\,000}{16.8} = 208\,333$
 Pa $\approx 208$ kPa.
 
 <b>If you get this wrong, revise:</b> [Ideal Gas Laws](#3-ideal-gas-laws)
@@ -483,7 +483,7 @@ $v_p < \langle v \rangle < v_{\mathrm{rms}}$.
 
 **Answer.** All three speeds are of the form $c\sqrt{k_BT/m}$ with different constants:
 
-$v_p = \sqrt{2} \approx 1.414$, $\langle v \rangle = \sqrt◆LB◆8/\pi◆RB◆ \approx 1.596$
+$v_p = \sqrt{2} \approx 1.414$, $\langle v \rangle = \sqrt{8/\pi} \approx 1.596$
 $v_{\mathrm{rms}} = \sqrt{3} \approx 1.732$.
 
 The ratios are $v_p : \langle v \rangle : v_{\mathrm{rms}} = 1 : 1.128 : 1.225$. The ordering holds
@@ -502,7 +502,7 @@ A container holds helium at 400 K and nitrogen at 400 K. Calculate the ratio of 
 ($M_r(\mathrm{He}) = 4$, $M_r(\mathrm{N}_2) = 28$.)
 
 **Answer.**
-$\frac◆LB◆v_{\mathrm{rms}}(\mathrm{He})◆RB◆◆LB◆v_{\mathrm{rms}}(\mathrm{N}_2)◆RB◆ = \sqrt◆LB◆\frac{M_r(\mathrm{N}_2)}{M_r(\mathrm{He})}◆RB◆ = \sqrt◆LB◆\frac{28}{4}◆RB◆ = \sqrt{7} \approx 2.65$.
+$\frac{v_{\mathrm{rms}}(\mathrm{He})}{v_{\mathrm{rms}}(\mathrm{N}_2)} = \sqrt{\frac{M_r(\mathrm{N}_2)}{M_r(\mathrm{He})}} = \sqrt{\frac{28}{4}} = \sqrt{7} \approx 2.65$.
 
 At the same temperature, lighter helium molecules move 2.65 times faster than nitrogen molecules.
 
@@ -535,10 +535,10 @@ Calculate the mean free path of oxygen molecules (diameter $d = 3.6 \times 10^{-
 ($p = 1.01 \times 10^5$ Pa, $T = 273$ K).
 
 **Answer.** Number density:
-$n = \frac{p}{k_BT} = \frac◆LB◆1.01 \times 10^5◆RB◆◆LB◆1.381 \times 10^{-23} \times 273◆RB◆ = 2.68 \times 10^{25}$
+$n = \frac{p}{k_BT} = \frac{1.01 \times 10^5}{1.381 \times 10^{-23} \times 273} = 2.68 \times 10^{25}$
 M$^{-3}$.
 
-$\lambda = \frac◆LB◆1◆RB◆◆LB◆\sqrt{2}\,\pi d^2 n◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆1.414 \times 3.14 \times (3.6 \times 10^{-10})^2 \times 2.68 \times 10^{25}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆1.23 \times 10^{7}◆RB◆ = 8.1 \times 10^{-8}$
+$\lambda = \frac{1}{\sqrt{2}\,\pi d^2 n} = \frac{1}{1.414 \times 3.14 \times (3.6 \times 10^{-10})^2 \times 2.68 \times 10^{25}} = \frac{1}{1.23 \times 10^{7}} = 8.1 \times 10^{-8}$
 M $= 81$ nm.
 
 <b>If you get this wrong, revise:</b> [Mean Free Path](#8-mean-free-path)
@@ -661,7 +661,7 @@ $\langle E_k\rangle(\mathrm{He}) = \langle E_k\rangle(\mathrm{Ar}) = \frac{3}{2}
 J.
 
 Rms speed ratio:
-$\frac◆LB◆v_{\mathrm{rms}}(\mathrm{He})◆RB◆◆LB◆v_{\mathrm{rms}}(\mathrm{Ar})◆RB◆ = \sqrt◆LB◆\frac{M_r(\mathrm{Ar})}{M_r(\mathrm{He})}◆RB◆ = \sqrt◆LB◆\frac{40}{4}◆RB◆ = \sqrt{10} \approx 3.16$.
+$\frac{v_{\mathrm{rms}}(\mathrm{He})}{v_{\mathrm{rms}}(\mathrm{Ar})} = \sqrt{\frac{M_r(\mathrm{Ar})}{M_r(\mathrm{He})}} = \sqrt{\frac{40}{4}} = \sqrt{10} \approx 3.16$.
 
 Helium atoms move $\sqrt{10}$ times faster than argon atoms, despite having the same average kinetic
 Energy. This is because kinetic energy depends on $mv^2$So lighter atoms must move faster to have

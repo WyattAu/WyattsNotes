@@ -19,7 +19,7 @@ maximum profit, (c) the shut-down price, (d) the output at which average cost is
 
 (a) Profit maximisation: $\text{MC} = \text{MR} = P$.
 
-$\text{MC} = \frac◆LB◆d\text{TC}◆RB◆◆LB◆dQ◆RB◆ = 20 + 4Q$.
+$\text{MC} = \frac{d\text{TC}}{dQ} = 20 + 4Q$.
 
 $20 + 4Q = 80$$4Q = 60$$Q^* = 15$.
 
@@ -36,10 +36,10 @@ $\text{MC} = \text{AVC}$ (minimum of AVC).
 
 $\text{TVC} = 20Q + 2Q^2$$\text{AVC} = 20 + 2Q$.
 
-Minimum AVC: $\frac◆LB◆d(\text{AVC})◆RB◆◆LB◆dQ◆RB◆ = 2 \neq 0$. Actually, since AVC is linear with a
+Minimum AVC: $\frac{d(\text{AVC})}{dQ} = 2 \neq 0$. Actually, since AVC is linear with a
 positive slope, the minimum is at $Q = 0$: $\text{AVC}_{\min} = 20$.
 
-Wait -- $\text{AVC} = \frac◆LB◆\text{TVC}◆RB◆◆LB◆Q◆RB◆ = 20 + 2Q$Which increases with $Q$. The
+Wait -- $\text{AVC} = \frac{\text{TVC}}{Q} = 20 + 2Q$Which increases with $Q$. The
 minimum is at $Q = 0$Where $\text{AVC} = 20$. So the shut-down price is $\pounds 20$.
 
 Alternatively, $\text{AVC} = \text{MC}$: $20 + 2Q = 20 + 4Q$Which gives $Q = 0$$\text{AVC} = 20$.
@@ -47,7 +47,7 @@ Shut-down price $= \pounds 20$.
 
 (d) Minimum AC: $\text{AC} = \frac{200 + 20Q + 2Q^2}{Q} = \frac{200}{Q} + 20 + 2Q$.
 
-$\frac◆LB◆d(\text{AC})◆RB◆◆LB◆dQ◆RB◆ = -\frac{200}{Q^2} + 2 = 0$So $Q^2 = 100$$Q = 10$.
+$\frac{d(\text{AC})}{dQ} = -\frac{200}{Q^2} + 2 = 0$So $Q^2 = 100$$Q = 10$.
 
 $\text{AC}_{\min} = \frac{200}{10} + 20 + 20 = 20 + 20 + 20 = \pounds 40$.
 
@@ -61,7 +61,7 @@ $\text{MC}(10) = 20 + 40 = 60$.
 
 The property $\text{MC} = \text{AC}$ at minimum AC should hold. Let me recheck the derivative:
 
-$\frac◆LB◆d(\text{AC})◆RB◆◆LB◆dQ◆RB◆ = \frac{-200}{Q^2} + 2 = 0 \Rightarrow Q = 10$. And
+$\frac{d(\text{AC})}{dQ} = \frac{-200}{Q^2} + 2 = 0 \Rightarrow Q = 10$. And
 $\text{MC}(10) = 60 \neq 40 = \text{AC}(10)$.
 
 There is an error. The condition is that MC intersects AC at its minimum. Let me check with a
@@ -114,7 +114,7 @@ $\text{MC at } Q_m = 10 + 2(18.33) = 46.67$.
 $\text{DWL} = \frac{1}{2}(36.67)(9.17) = \pounds 168.1$.
 
 (d) Lerner Index
-$= \frac◆LB◆P - \text{MC}◆RB◆◆LB◆P◆RB◆ = \frac{83.33 - 46.67}{83.33} = \frac{36.67}{83.33} = 0.44$.
+$= \frac{P - \text{MC}}{P} = \frac{83.33 - 46.67}{83.33} = \frac{36.67}{83.33} = 0.44$.
 
 The Lerner Index of 0.44 indicates significant market power. A perfectly competitive firm would have
 a Lerner Index of 0.
@@ -230,7 +230,7 @@ $200 - 2Q = \frac{1000}{Q} + 50$$150 - 2Q = \frac{1000}{Q}$$150Q - 2Q^2 = 1000$.
 
 $2Q^2 - 150Q + 1000 = 0$$Q^2 - 75Q + 500 = 0$.
 
-$Q = \frac◆LB◆75 \pm \sqrt{5625 - 2000}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆75 \pm 60.1◆RB◆◆LB◆2◆RB◆$.
+$Q = \frac{75 \pm \sqrt{5625 - 2000}}{2} = \frac{75 \pm 60.1}{2}$.
 
 $Q = 67.6$ (taking the feasible root). $P = 200 - 2(67.6) = \pounds 64.8$.
 
@@ -265,7 +265,7 @@ $P = 160 - (Q_H + Q_F)$.
 
 Firm H's profit: $\pi_H = (160 - Q_H - Q_F)Q_H - 40Q_H = (120 - Q_F)Q_H - Q_H^2$.
 
-$\frac◆LB◆d\pi_H◆RB◆◆LB◆dQ_H◆RB◆ = 120 - Q_F - 2Q_H = 0$So $Q_H = 60 - Q_F/2$. (Best response
+$\frac{d\pi_H}{dQ_H} = 120 - Q_F - 2Q_H = 0$So $Q_H = 60 - Q_F/2$. (Best response
 function)
 
 By symmetry: $Q_F = 60 - Q_H/2$.
@@ -348,7 +348,7 @@ without a subsidy of 200. This is the allocatively efficient outcome.
 
 (c) Average cost pricing: $P = AC \Rightarrow 50 - Q = 200/Q + 10$.
 $50 - Q = 200/Q + 10 \Rightarrow 40 - Q = 200/Q \Rightarrow 40Q - Q^2 = 200 \Rightarrow Q^2 - 40Q + 200 = 0$.
-$Q = \frac◆LB◆40 \pm \sqrt{1600 - 800}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆40 \pm 28.28◆RB◆◆LB◆2◆RB◆$. Taking
+$Q = \frac{40 \pm \sqrt{1600 - 800}}{2} = \frac{40 \pm 28.28}{2}$. Taking
 the lower root: $Q = 5.86$$P = 44.14$. Taking the higher root: $Q = 34.14$$P = 15.86$.
 
 The relevant solution is $Q = 34.14$ (higher output, lower price). Let me verify:
@@ -424,7 +424,7 @@ $Q = 200 - P$.
 If the incumbent serves the entire market at price $P$: $P = 1000/(200 - P) + 40$.
 $P - 40 = 1000/(200 - P)$. $(P - 40)(200 - P) = 1000$. $200P - P^2 - 8000 + 40P = 1000$.
 $P^2 - 240P + 9000 = 0$.
-$P = \frac◆LB◆240 \pm \sqrt{57600 - 36000}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆240 \pm \sqrt{21600}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆240 \pm 147◆RB◆◆LB◆2◆RB◆$.
+$P = \frac{240 \pm \sqrt{57600 - 36000}}{2} = \frac{240 \pm \sqrt{21600}}{2} = \frac{240 \pm 147}{2}$.
 $P = 46.5$ or $P = 193.5$.
 
 The relevant solution is $P = 46.5$ (the lower price). At this price: $Q = 200 - 46.5 = 153.5$.

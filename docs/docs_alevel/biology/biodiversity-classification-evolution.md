@@ -61,10 +61,10 @@ $D$ ranges from $0$ (no diversity: all individuals belong to a single species) t
 **Example.** Community A has 10 species each with 10 individuals ($N = 100$). Community B has 10
 Species with 91 individuals of one species and 1 individual of each of the other 9 ($N = 100$).
 
-Community A: $D = 1 - 10 \times \frac◆LB◆10 \times 9◆RB◆◆LB◆100 \times 99◆RB◆ = 1 - 0.0909 = 0.909$.
+Community A: $D = 1 - 10 \times \frac{10 \times 9}{100 \times 99} = 1 - 0.0909 = 0.909$.
 
 Community B:
-$D = 1 - \left(\frac◆LB◆91 \times 90◆RB◆◆LB◆100 \times 99◆RB◆ + 9 \times \frac◆LB◆1 \times 0◆RB◆◆LB◆100 \times 99◆RB◆\right) = 1 - 0.8273 = 0.173$.
+$D = 1 - \left(\frac{91 \times 90}{100 \times 99} + 9 \times \frac{1 \times 0}{100 \times 99}\right) = 1 - 0.8273 = 0.173$.
 
 Community A has much higher diversity despite having the same species richness, because evenness is
 Higher.
@@ -292,7 +292,7 @@ Suggesting that evolution is occurring.
 Heterozygous ($Aa$), and 20 are homozygous recessive ($aa$).
 
 Total alleles: $N = 2 \times 500 = 1000$. Frequency of $a$:
-$q = \frac◆LB◆(2 \times 20) + 160◆RB◆◆LB◆1000◆RB◆ = \frac{200}{1000} = 0.2$. Frequency of $A$:
+$q = \frac{(2 \times 20) + 160}{1000} = \frac{200}{1000} = 0.2$. Frequency of $A$:
 $p = 1 - 0.2 = 0.8$. Expected under H-W: $p^2 = 0.64$ ($320$ individuals), $2pq = 0.32$ ($160$
 Individuals), $q^2 = 0.04$ ($20$ individuals). The observed frequencies match H-W predictions,
 Suggesting the population is approximately in equilibrium.
@@ -364,7 +364,7 @@ Record. For example, if two species diverged from a common ancestor 10 million y
 determined By fossils) and their DNA sequences now differ at 2% of sites, the mutation rate is
 estimated as:
 
-$$\mu = \frac◆LB◆0.02◆RB◆◆LB◆2 \times 10^7\ \mathrm{years}◆RB◆ = 1 \times 10^{-9}\ \mathrm{mutations\ per\ site\ per\ year}$$
+$$\mu = \frac{0.02}{2 \times 10^7\ \mathrm{years}} = 1 \times 10^{-9}\ \mathrm{mutations\ per\ site\ per\ year}$$
 
 The factor of 2 accounts for the fact that both lineages have been accumulating mutations
 independently Since divergence.
@@ -378,7 +378,7 @@ The gene is 330 base pairs long.
 Number of substitutions per site $= \frac{12}{330} = 0.0364$.
 
 Time since divergence
-$= \frac◆LB◆0.0364◆RB◆◆LB◆2 \times 2.5 \times 10^{-9}◆RB◆ = 7.27 \times 10^6\ \mathrm{years} \approx 7.3\ \mathrm{million\ years}$.
+$= \frac{0.0364}{2 \times 2.5 \times 10^{-9}} = 7.27 \times 10^6\ \mathrm{years} \approx 7.3\ \mathrm{million\ years}$.
 
 ### 6.3 Limitations of Molecular Clocks
 
@@ -523,7 +523,7 @@ Species A: 45, Species B: 30, Species C: 15, Species D: 8, Species E: 2.
 
 **Answer.** $N = 45 + 30 + 15 + 8 + 2 = 100$.
 
-$D = 1 - \left(\frac◆LB◆45 \times 44◆RB◆◆LB◆100 \times 99◆RB◆ + \frac◆LB◆30 \times 29◆RB◆◆LB◆100 \times 99◆RB◆ + \frac◆LB◆15 \times 14◆RB◆◆LB◆100 \times 99◆RB◆ + \frac◆LB◆8 \times 7◆RB◆◆LB◆100 \times 99◆RB◆ + \frac◆LB◆2 \times 1◆RB◆◆LB◆100 \times 99◆RB◆\right)$
+$D = 1 - \left(\frac{45 \times 44}{100 \times 99} + \frac{30 \times 29}{100 \times 99} + \frac{15 \times 14}{100 \times 99} + \frac{8 \times 7}{100 \times 99} + \frac{2 \times 1}{100 \times 99}\right)$
 
 $= 1 - (0.2000 + 0.0879 + 0.0212 + 0.0006 + 0.0002)$
 
@@ -546,9 +546,9 @@ Frequencies and determine whether the population is in equilibrium.
 
 **Answer.** Total alleles: $N = 2000$.
 
-Frequency of $R$: $p = \frac◆LB◆(2 \times 640) + 200◆RB◆◆LB◆2000◆RB◆ = \frac{1480}{2000} = 0.74$.
+Frequency of $R$: $p = \frac{(2 \times 640) + 200}{2000} = \frac{1480}{2000} = 0.74$.
 
-Frequency of $W$: $q = \frac◆LB◆(2 \times 160) + 200◆RB◆◆LB◆2000◆RB◆ = \frac{520}{2000} = 0.26$.
+Frequency of $W$: $q = \frac{(2 \times 160) + 200}{2000} = \frac{520}{2000} = 0.26$.
 
 Expected genotype frequencies under H-W: $p^2 = 0.5476$ ($548$ red), $2pq = 0.3848$ ($385$ pink),
 $q^2 = 0.0676$ ($68$ white).
@@ -842,7 +842,7 @@ differs:
 
 ### 11.2 Simpson's Index of Diversity
 
-$$D = 1 - \frac◆LB◆\sum n(n-1)◆RB◆◆LB◆N(N-1)◆RB◆$$
+$$D = 1 - \frac{\sum n(n-1)}{N(N-1)}$$
 
 Where $n$ = number of individuals of each species, $N$ = total number of individuals.
 
@@ -862,7 +862,7 @@ Habitat 1 (managed grassland):
 | Thistle         | 5            | 20       |
 | **Total ($N$)** | **100**      | **2750** |
 
-$D_1 = 1 - \frac◆LB◆2750◆RB◆◆LB◆100 \times 99◆RB◆ = 1 - \frac{2750}{9900} = 1 - 0.278 = 0.722$
+$D_1 = 1 - \frac{2750}{100 \times 99} = 1 - \frac{2750}{9900} = 1 - 0.278 = 0.722$
 
 Habitat 2 (wildflower meadow):
 
@@ -883,7 +883,7 @@ Habitat 2 (wildflower meadow):
 | Species M       | 5            | 20       |
 | **Total ($N$)** | **100**      | **730**  |
 
-$D_2 = 1 - \frac◆LB◆730◆RB◆◆LB◆100 \times 99◆RB◆ = 1 - \frac{730}{9900} = 1 - 0.074 = 0.926$
+$D_2 = 1 - \frac{730}{100 \times 99} = 1 - \frac{730}{9900} = 1 - 0.074 = 0.926$
 
 The wildflower meadow (Habitat 2) has higher diversity ($D = 0.926$) than the managed grassland
 (Habitat 1, $D = 0.722$) because it has higher species richness and greater evenness.
@@ -1406,17 +1406,17 @@ wildlife:
 
 **Calculations from quadrat data:**
 
-Mean density per quadrat $= \frac◆LB◆\sum n_i◆RB◆◆LB◆k◆RB◆$ (where $n_i$ = number in quadrat $i$;
+Mean density per quadrat $= \frac{\sum n_i}{k}$ (where $n_i$ = number in quadrat $i$;
 $k$ = number of quadrats).
 
 Total population estimate
-$= \text{mean density} \times \frac◆LB◆\text{total area}◆RB◆◆LB◆\text{quadrat area}◆RB◆$.
+$= \text{mean density} \times \frac{\text{total area}}{\text{quadrat area}}$.
 
 **Standard deviation:**
 
-$$s = \sqrt◆LB◆\frac{\sum(x_i - \bar{x})^2}{n-1}◆RB◆$$
+$$s = \sqrt{\frac{\sum(x_i - \bar{x})^2}{n-1}}$$
 
-Standard error $= \frac◆LB◆s◆RB◆◆LB◆\sqrt{n}◆RB◆$.
+Standard error $= \frac{s}{\sqrt{n}}$.
 
 95% confidence interval $= \bar{x} \pm 1.96 \times \text{standard error}$.
 
@@ -1450,9 +1450,9 @@ Are plant species distributed independently of soil pH?
 | Total     | 55          | 50           | 45            | 150   |
 
 Expected values:
-$E = \frac◆LB◆\text{row total} \times \text{column total}◆RB◆◆LB◆\text{grand total}◆RB◆$
+$E = \frac{\text{row total} \times \text{column total}}{\text{grand total}}$
 
-$E_{A,\text{acidic}} = \frac◆LB◆70 \times 55◆RB◆◆LB◆150◆RB◆ = 25.7$
+$E_{A,\text{acidic}} = \frac{70 \times 55}{150} = 25.7$
 
 $\chi^2 = \sum \frac{(O - E)^2}{E} = \frac{(45-25.7)^2}{25.7} + \frac{(20-23.3)^2}{23.3} + \frac{(5-21)^2}{21} + \frac{(10-29.3)^2}{29.3} + \frac{(30-26.7)^2}{26.7} + \frac{(40-24)^2}{24}$
 
@@ -1508,7 +1508,7 @@ frequencies, this may indicate selection:
 | bb (yellow) | 120      | 64 ($= 0.16 \times 400$)         |
 | **Total**   | **400**  | **400**                          |
 
-Allele frequencies: $p(\mathrm{B}) = \frac◆LB◆160 \times 2 + 120◆RB◆◆LB◆800◆RB◆ = 0.55$;
+Allele frequencies: $p(\mathrm{B}) = \frac{160 \times 2 + 120}{800} = 0.55$;
 $q(\mathrm{b}) = 0.45$.
 
 The excess of bb homozygotes and deficiency of heterozygotes suggest **negative assortative mating**
@@ -1596,16 +1596,16 @@ When analysing ecological data, it is essential to quantify variability:
 
 | Statistic                | Formula                                              | What It Measures                                                 |
 | ------------------------ | ---------------------------------------------------- | ---------------------------------------------------------------- |
-| Mean ($\bar{x}$)         | $\bar{x} = \frac◆LB◆\sum x_i◆RB◆◆LB◆n◆RB◆$           | Central tendency                                                 |
-| Standard deviation ($s$) | $s = \sqrt◆LB◆\frac{\sum(x_i - \bar{x})^2}{n-1}◆RB◆$ | Spread of data around the mean                                   |
-| Standard error (SE)      | $\mathrm{SE} = \frac◆LB◆s◆RB◆◆LB◆\sqrt{n}◆RB◆$       | Precision of the mean estimate                                   |
+| Mean ($\bar{x}$)         | $\bar{x} = \frac{\sum x_i}{n}$           | Central tendency                                                 |
+| Standard deviation ($s$) | $s = \sqrt{\frac{\sum(x_i - \bar{x})^2}{n-1}}$ | Spread of data around the mean                                   |
+| Standard error (SE)      | $\mathrm{SE} = \frac{s}{\sqrt{n}}$       | Precision of the mean estimate                                   |
 | 95% CI                   | $\bar{x} \pm 1.96 \times \mathrm{SE}$                | Range within which the true population mean is 95% likely to lie |
 
 ### 26.2 Student's t-Test
 
 Used to compare the means of two independent samples:
 
-$$t = \frac◆LB◆|\bar{x}_1 - \bar{x}_2|◆RB◆◆LB◆\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}◆RB◆$$
+$$t = \frac{|\bar{x}_1 - \bar{x}_2|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}$$
 
 Degrees of freedom = $n_1 + n_2 - 2$.
 
@@ -1613,7 +1613,7 @@ Degrees of freedom = $n_1 + n_2 - 2$.
 
 Field A: $\bar{x}_1 = 6.2$$s_1 = 0.8$$n_1 = 10$. Field B: $\bar{x}_2 = 5.1$$s_2 = 0.7$$n_2 = 10$.
 
-$$t = \frac◆LB◆|6.2 - 5.1|◆RB◆◆LB◆\sqrt{\frac{0.64}{10} + \frac{0.49}{10}}◆RB◆ = \frac◆LB◆1.1◆RB◆◆LB◆\sqrt{0.113}◆RB◆ = \frac{1.1}{0.336} = 3.27$$
+$$t = \frac{|6.2 - 5.1|}{\sqrt{\frac{0.64}{10} + \frac{0.49}{10}}} = \frac{1.1}{\sqrt{0.113}} = \frac{1.1}{0.336} = 3.27$$
 
 Degrees of freedom $= 18$. Critical value at $p = 0.05$ with 18 df $= 2.101$.
 
@@ -1638,7 +1638,7 @@ in soil pH between the two fields.
 The molecular clock uses the rate of neutral mutations to estimate when two species diverged from a
 common ancestor:
 
-$$\text{Time since divergence} = \frac◆LB◆\text{Number of nucleotide differences}◆RB◆◆LB◆2 \times \text{Mutation rate per year}◆RB◆$$
+$$\text{Time since divergence} = \frac{\text{Number of nucleotide differences}}{2 \times \text{Mutation rate per year}}$$
 
 **Assumptions:**
 
@@ -1729,7 +1729,7 @@ A biodiversity hotspot is a region with:
 | Method                                 | Formula                                                                                                        | When to Use                             |
 | -------------------------------------- | -------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
 | Quadrat density                        | $\text{Population} = \text{mean density per quadrat} \times \text{total area}$                                 | Plants and sessile (non-moving) animals |
-| Mark-release-recapture (Lincoln index) | $N = \frac◆LB◆M \times C◆RB◆◆LB◆R◆RB◆$ (M = marked first catch, C = total second catch, R = recaptured marked) | Mobile animals                          |
+| Mark-release-recapture (Lincoln index) | $N = \frac{M \times C}{R}$ (M = marked first catch, C = total second catch, R = recaptured marked) | Mobile animals                          |
 | Belt transect                          | Count organisms in quadrats along a continuous transect                                                        | Studying distribution along a gradient  |
 
 **Assumptions of mark-release-recapture:**

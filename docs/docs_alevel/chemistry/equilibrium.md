@@ -53,7 +53,7 @@ $$
 The equilibrium constant in terms of concentrations is:
 
 $$
-K_c = \frac◆LB◆[\mathrm{C}]^c[\mathrm{D}]^d◆RB◆◆LB◆[\mathrm{A}]^a[\mathrm{B}]^b◆RB◆
+K_c = \frac{[\mathrm{C}]^c[\mathrm{D}]^d}{[\mathrm{A}]^a[\mathrm{B}]^b}
 $$
 
 Where all concentrations are equilibrium concentrations in $\mathrm{mol/dm}^3$.
@@ -92,7 +92,7 @@ $$
 | $\mathrm{HI}$  | 0             | $+0.78$      | 0.78              | 0.78                              |
 
 $$
-K_c = \frac◆LB◆[\mathrm{HI}]^2◆RB◆◆LB◆[\mathrm{H}_2][\mathrm{I}_2]◆RB◆ = \frac{(0.78)^2}{(0.61)(0.61)} = \frac{0.6084}{0.3721} = 1.64
+K_c = \frac{[\mathrm{HI}]^2}{[\mathrm{H}_2][\mathrm{I}_2]} = \frac{(0.78)^2}{(0.61)(0.61)} = \frac{0.6084}{0.3721} = 1.64
 $$
 
 $K_c$ is dimensionless here because $(c+d)-(a+b) = 2 - 2 = 0$.
@@ -102,7 +102,7 @@ $K_c$ is dimensionless here because $(c+d)-(a+b) = 2 - 2 = 0$.
 For gaseous reactions, $K_p$ is expressed in terms of partial pressures:
 
 $$
-K_p = \frac◆LB◆(p_\mathrm{C})^c(p_\mathrm{D})^d◆RB◆◆LB◆(p_\mathrm{A})^a(p_\mathrm{B})^b◆RB◆
+K_p = \frac{(p_\mathrm{C})^c(p_\mathrm{D})^d}{(p_\mathrm{A})^a(p_\mathrm{B})^b}
 $$
 
 Where $p_i$ is the equilibrium partial pressure of species $i$.
@@ -158,7 +158,7 @@ Partial pressures ($p_i = x_i \times 200$):
 - $p(\mathrm{SO}_3) = 100.0\,\mathrm{kPa}$
 
 $$
-K_p = \frac◆LB◆(p_{\mathrm{SO}_3})^2◆RB◆◆LB◆(p_{\mathrm{SO}_2})^2 \times p_{\mathrm{O}_2}◆RB◆ = \frac◆LB◆(100.0)^2◆RB◆◆LB◆(66.7)^2 \times 33.3◆RB◆ = \frac{10000}{148074} = 0.0675\,\mathrm{kPa}^{-1}
+K_p = \frac{(p_{\mathrm{SO}_3})^2}{(p_{\mathrm{SO}_2})^2 \times p_{\mathrm{O}_2}} = \frac{(100.0)^2}{(66.7)^2 \times 33.3} = \frac{10000}{148074} = 0.0675\,\mathrm{kPa}^{-1}
 $$
 
 ## Homogeneous and Heterogeneous Equilibria
@@ -194,7 +194,7 @@ For an endothermic reaction ($\Delta H \gt 0$):
 The quantitative relationship is given by the **van 't Hoff equation**:
 
 $$
-\ln\left(\frac{K_2}{K_1}\right) = -\frac◆LB◆\Delta H^\circ◆RB◆◆LB◆R◆RB◆\left(\frac{1}{T_2} - \frac{1}{T_1}\right)
+\ln\left(\frac{K_2}{K_1}\right) = -\frac{\Delta H^\circ}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right)
 $$
 
 This is analogous to the Arrhenius equation (see [Chemical Kinetics](./chemical-kinetics)).
@@ -238,14 +238,14 @@ $500\,\mathrm{K}$$K_c = 6.0 \times 10^{-2}\,\mathrm{mol^{-2}\,dm^6}$. Calculate 
 $\Delta n_g = 2 - (1 + 3) = -2$.
 
 $$
-K_p = K_c(RT)^{-2} = \frac{K_c}{(RT)^2} = \frac◆LB◆6.0 \times 10^{-2}◆RB◆◆LB◆(8.314 \times 500)^2◆RB◆ = \frac{0.060}{(4157)^2} = \frac◆LB◆0.060◆RB◆◆LB◆1.728 \times 10^7◆RB◆ = 3.5 \times 10^{-9}\,\mathrm{Pa^{-2}}
+K_p = K_c(RT)^{-2} = \frac{K_c}{(RT)^2} = \frac{6.0 \times 10^{-2}}{(8.314 \times 500)^2} = \frac{0.060}{(4157)^2} = \frac{0.060}{1.728 \times 10^7} = 3.5 \times 10^{-9}\,\mathrm{Pa^{-2}}
 $$
 
 Note: if $K_c$ is in $\mathrm{mol/dm^3}$$R$ must be in consistent units. Alternatively, work in
 $\mathrm{atm}$: $R = 0.0821\,\mathrm{dm^3\,atm\,mol^{-1}\,K^{-1}}$.
 
 $$
-K_p = \frac◆LB◆0.060◆RB◆◆LB◆(0.0821 \times 500)^2◆RB◆ = \frac{0.060}{(41.05)^2} = \frac{0.060}{1685} = 3.6 \times 10^{-5}\,\mathrm{atm^{-2}}
+K_p = \frac{0.060}{(0.0821 \times 500)^2} = \frac{0.060}{(41.05)^2} = \frac{0.060}{1685} = 3.6 \times 10^{-5}\,\mathrm{atm^{-2}}
 $$
 
 Always state the pressure units when giving $K_p$.
@@ -328,7 +328,7 @@ K_{sp} = [\mathrm{Pb}^{2+}][\mathrm{I}^-]^2 = s(2s)^2 = 4s^3
 $$
 
 $$
-S = \sqrt[3]{\frac{K_{sp}}{4}} = \sqrt[3]{\frac◆LB◆1.4 \times 10^{-8}◆RB◆◆LB◆4◆RB◆} = \sqrt[3]{3.5 \times 10^{-9}} = 1.52 \times 10^{-3}\,\mathrm{mol/dm}^3
+S = \sqrt[3]{\frac{K_{sp}}{4}} = \sqrt[3]{\frac{1.4 \times 10^{-8}}{4}} = \sqrt[3]{3.5 \times 10^{-9}} = 1.52 \times 10^{-3}\,\mathrm{mol/dm}^3
 $$
 
 ### Precipitation Prediction
@@ -347,13 +347,13 @@ common ion shifts the dissolution equilibrium to the left, suppressing dissoluti
 **Example.** The solubility of $\mathrm{AgCl}$ in pure water is:
 
 $$
-S = \sqrt{K_{sp}} = \sqrt◆LB◆1.8 \times 10^{-10}◆RB◆ = 1.34 \times 10^{-5}\,\mathrm{mol/dm}^3
+S = \sqrt{K_{sp}} = \sqrt{1.8 \times 10^{-10}} = 1.34 \times 10^{-5}\,\mathrm{mol/dm}^3
 $$
 
 In $0.10\,\mathrm{mol/dm}^3$ $\mathrm{NaCl}$ solution:
 
 $$
-[\mathrm{Ag}^+] = \frac◆LB◆K_{sp}◆RB◆◆LB◆[\mathrm{Cl}^-]◆RB◆ = \frac◆LB◆1.8 \times 10^{-10}◆RB◆◆LB◆0.10◆RB◆ = 1.8 \times 10^{-9}\,\mathrm{mol/dm}^3
+[\mathrm{Ag}^+] = \frac{K_{sp}}{[\mathrm{Cl}^-]} = \frac{1.8 \times 10^{-10}}{0.10} = 1.8 \times 10^{-9}\,\mathrm{mol/dm}^3
 $$
 
 The solubility is reduced by a factor of approximately $10^4$.
@@ -421,7 +421,7 @@ A related concept to equilibrium constants is the partition coefficient, which d
 distribution of a solute between two immiscible solvents:
 
 $$
-K_\mathrm{partition} = \frac◆LB◆[\text{solute}]_\mathrm{organic}◆RB◆◆LB◆[\text{solute}]_\mathrm{aqueous}◆RB◆
+K_\mathrm{partition} = \frac{[\text{solute}]_\mathrm{organic}}{[\text{solute}]_\mathrm{aqueous}}
 $$
 
 This is constant at a given temperature and is used in solvent extraction. If a solute is more
@@ -438,7 +438,7 @@ extracted by:
 
 (b) Two extractions with $50\,\mathrm{cm}^3$ of ether each.
 
-**(a)** $K = \frac◆LB◆c_\mathrm{ether}◆RB◆◆LB◆c_\mathrm{water}◆RB◆ = 4.0$
+**(a)** $K = \frac{c_\mathrm{ether}}{c_\mathrm{water}} = 4.0$
 
 Let $x$ = mass extracted. $c_\mathrm{ether} = x/100$$c_\mathrm{water} = (5.0 - x)/100$.
 
@@ -546,9 +546,9 @@ is added to $40.0\,\mathrm{cm}^3$ of $0.0050\,\mathrm{mol/dm}^3$ $\mathrm{NaCl}$
 
 Total volume = $50.0\,\mathrm{cm}^3$.
 
-$[\mathrm{Ag}^+] = \frac◆LB◆0.010 \times 10.0◆RB◆◆LB◆50.0◆RB◆ = 0.0020\,\mathrm{mol/dm}^3$
+$[\mathrm{Ag}^+] = \frac{0.010 \times 10.0}{50.0} = 0.0020\,\mathrm{mol/dm}^3$
 
-$[\mathrm{Cl}^-] = \frac◆LB◆0.0050 \times 40.0◆RB◆◆LB◆50.0◆RB◆ = 0.0040\,\mathrm{mol/dm}^3$
+$[\mathrm{Cl}^-] = \frac{0.0050 \times 40.0}{50.0} = 0.0040\,\mathrm{mol/dm}^3$
 
 $Q = [\mathrm{Ag}^+][\mathrm{Cl}^-] = 0.0020 \times 0.0040 = 8.0 \times 10^{-6}$
 
@@ -582,7 +582,7 @@ $$
 Verification:
 
 $$
-K_p = \frac◆LB◆p(\mathrm{PCl}_3) \times p(\mathrm{Cl}_2)◆RB◆◆LB◆p(\mathrm{PCl}_5)◆RB◆ = \frac◆LB◆95 \times 95◆RB◆◆LB◆10◆RB◆ = \frac{9025}{10} = 902.5\,\mathrm{kPa}
+K_p = \frac{p(\mathrm{PCl}_3) \times p(\mathrm{Cl}_2)}{p(\mathrm{PCl}_5)} = \frac{95 \times 95}{10} = \frac{9025}{10} = 902.5\,\mathrm{kPa}
 $$
 
 This does not equal $K_p = 12.5\,\mathrm{kPa}$Indicating that the given data is inconsistent with
@@ -614,7 +614,7 @@ $$
 Using the quadratic formula:
 
 $$
-X = \frac◆LB◆412.5 \pm \sqrt{412.5^2 - 4 \times 40000}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆412.5 \pm \sqrt{170156 - 160000}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆412.5 \pm \sqrt{10156}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆412.5 \pm 100.8◆RB◆◆LB◆2◆RB◆
+X = \frac{412.5 \pm \sqrt{412.5^2 - 4 \times 40000}}{2} = \frac{412.5 \pm \sqrt{170156 - 160000}}{2} = \frac{412.5 \pm \sqrt{10156}}{2} = \frac{412.5 \pm 100.8}{2}
 $$
 
 $x = 256.7$ or $x = 155.9$. Since $p(\mathrm{PCl}_3) = 200 - x$ must be positive,
@@ -644,7 +644,7 @@ K_{sp} = s(2s)^2 = 4s^3 = 3.9 \times 10^{-11}
 $$
 
 $$
-S = \sqrt[3]{\frac◆LB◆3.9 \times 10^{-11}◆RB◆◆LB◆4◆RB◆} = \sqrt[3]{9.75 \times 10^{-12}} = 2.14 \times 10^{-4}\,\mathrm{mol/dm}^3
+S = \sqrt[3]{\frac{3.9 \times 10^{-11}}{4}} = \sqrt[3]{9.75 \times 10^{-12}} = 2.14 \times 10^{-4}\,\mathrm{mol/dm}^3
 $$
 
 (b) In $0.050\,\mathrm{mol/dm}^3$ $\mathrm{CaCl}_2$:
@@ -705,14 +705,14 @@ $= 1.00 + x$.
 Total pressure: use $pV = nRT$:
 
 $$
-P_\mathrm{total} = \frac{(1.00 + x)RT}{V} = \frac◆LB◆(1.00 + x) \times 8.314 \times 298◆RB◆◆LB◆10.0 \times 10^{-3}◆RB◆ = (1.00 + x) \times 247\,700\,\mathrm{Pa}
+P_\mathrm{total} = \frac{(1.00 + x)RT}{V} = \frac{(1.00 + x) \times 8.314 \times 298}{10.0 \times 10^{-3}} = (1.00 + x) \times 247\,700\,\mathrm{Pa}
 $$
 
 Partial pressures:
 $p(\mathrm{N}_2\mathrm{O}_4) = \frac{1.00 - x}{1.00 + x} \times p_\mathrm{total}$$p(\mathrm{NO}_2) = \frac{2x}{1.00 + x} \times p_\mathrm{total}$.
 
 $$
-K_p = \frac◆LB◆p(\mathrm{NO}_2)^2◆RB◆◆LB◆p(\mathrm{N}_2\mathrm{O}_4)◆RB◆ = \frac{(2x)^2}{(1.00 - x)(1.00 + x)} \times p_\mathrm{total} = \frac{4x^2}{1 - x^2} \times p_\mathrm{total}
+K_p = \frac{p(\mathrm{NO}_2)^2}{p(\mathrm{N}_2\mathrm{O}_4)} = \frac{(2x)^2}{(1.00 - x)(1.00 + x)} \times p_\mathrm{total} = \frac{4x^2}{1 - x^2} \times p_\mathrm{total}
 $$
 
 Since $K_p = 0.115\,\mathrm{atm} = 0.115 \times 101325 = 11652\,\mathrm{Pa}$:
@@ -785,7 +785,7 @@ $K_p$.
 
 The relationship between $K$ and temperature is given by the van 't Hoff equation:
 
-$$\ln\frac{K_2}{K_1} = -\frac◆LB◆\Delta H^\circ◆RB◆◆LB◆R◆RB◆\left(\frac{1}{T_2} - \frac{1}{T_1}\right)$$
+$$\ln\frac{K_2}{K_1} = -\frac{\Delta H^\circ}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right)$$
 
 ### Kp Calculations: Heterogeneous Equilibria
 
@@ -834,7 +834,7 @@ If $s$ is the solubility in $\mathrm{mol\,dm^{-3}}$:
 
 $$K_{sp} = s \times s = s^2$$
 
-$$s = \sqrt{K_{sp}} = \sqrt◆LB◆1.08 \times 10^{-10}◆RB◆ = 1.04 \times 10^{-5}\,\mathrm{mol\,dm^{-3}}$$
+$$s = \sqrt{K_{sp}} = \sqrt{1.08 \times 10^{-10}} = 1.04 \times 10^{-5}\,\mathrm{mol\,dm^{-3}}$$
 
 **Common ion effect:** The solubility of $\mathrm{BaSO}_4$ is reduced in the presence of
 $\mathrm{Na}_2\mathrm{SO}_4$ (a common source of $\mathrm{SO}_4^{2-}$). Adding $\mathrm{SO}_4^{2-}$
@@ -905,17 +905,17 @@ $y(\mathrm{N}_2) = \frac{1-x}{4-2x}$$y(\mathrm{H}_2) = \frac{3-3x}{4-2x}$$y(\mat
 
 Partial pressures: $p_i = y_i \times P_\mathrm{total}$
 
-$$K_p = \frac◆LB◆p(\mathrm{NH}_3)^2◆RB◆◆LB◆p(\mathrm{N}_2) \times p(\mathrm{H}_2)^3◆RB◆ = \frac◆LB◆\left(\frac{2x}{4-2x} \times 200\right)^2◆RB◆◆LB◆\left(\frac{1-x}{4-2x} \times 200\right)\left(\frac{3-3x}{4-2x} \times 200\right)^3◆RB◆$$
+$$K_p = \frac{p(\mathrm{NH}_3)^2}{p(\mathrm{N}_2) \times p(\mathrm{H}_2)^3} = \frac{\left(\frac{2x}{4-2x} \times 200\right)^2}{\left(\frac{1-x}{4-2x} \times 200\right)\left(\frac{3-3x}{4-2x} \times 200\right)^3}$$
 
 This simplifies to:
 
-$$K_p = \frac◆LB◆4x^2(4-2x)^2◆RB◆◆LB◆(1-x)(3-3x)^3 \times 200^2◆RB◆$$
+$$K_p = \frac{4x^2(4-2x)^2}{(1-x)(3-3x)^3 \times 200^2}$$
 
 Assuming $x$ is small (5% approximation): $4 - 2x \approx 4$$1 - x \approx 1$$3 - 3x \approx 3$:
 
-$$6.0 \times 10^{-3} = \frac◆LB◆4x^2 \times 16◆RB◆◆LB◆1 \times 27 \times 40000◆RB◆ = \frac{64x^2}{1080000}$$
+$$6.0 \times 10^{-3} = \frac{4x^2 \times 16}{1 \times 27 \times 40000} = \frac{64x^2}{1080000}$$
 
-$$x^2 = \frac◆LB◆6.0 \times 10^{-3} \times 1080000◆RB◆◆LB◆64◆RB◆ = \frac{6480}{64} = 101.25$$
+$$x^2 = \frac{6.0 \times 10^{-3} \times 1080000}{64} = \frac{6480}{64} = 101.25$$
 
 $$x \approx 10.1$$
 
@@ -972,7 +972,7 @@ $\mathrm{CH}_3\mathrm{COOH} = 1.00 - 0.667 = 0.333\,\mathrm{mol}$$\mathrm{CH}_3\
 
 Since all species are in the same volume (cancels in $K_c$):
 
-$$K_c = \frac◆LB◆[\mathrm{ester}][\mathrm{H}_2\mathrm{O}]◆RB◆◆LB◆[\mathrm{acid}][\mathrm{alcohol}]◆RB◆ = \frac◆LB◆0.667 \times 0.667◆RB◆◆LB◆0.333 \times 0.333◆RB◆ = \frac{0.445}{0.111} = 4.01$$
+$$K_c = \frac{[\mathrm{ester}][\mathrm{H}_2\mathrm{O}]}{[\mathrm{acid}][\mathrm{alcohol}]} = \frac{0.667 \times 0.667}{0.333 \times 0.333} = \frac{0.445}{0.111} = 4.01$$
 
 (1 mark for equilibrium moles, 1 mark for expression, 1 mark for calculation.)
 
@@ -1005,7 +1005,7 @@ If $s$ is the solubility: $[\mathrm{Pb}^{2+}] = s$$[\mathrm{I}^-] = 2s$
 
 $$K_{sp} = [\mathrm{Pb}^{2+}][\mathrm{I}^-]^2 = s \times (2s)^2 = 4s^3$$
 
-$$s = \sqrt[3]{\frac{K_{sp}}{4}} = \sqrt[3]{\frac◆LB◆9.8 \times 10^{-9}◆RB◆◆LB◆4◆RB◆} = \sqrt[3]{2.45 \times 10^{-9}} = 1.35 \times 10^{-3}\,\mathrm{mol\,dm^{-3}}$$
+$$s = \sqrt[3]{\frac{K_{sp}}{4}} = \sqrt[3]{\frac{9.8 \times 10^{-9}}{4}} = \sqrt[3]{2.45 \times 10^{-9}} = 1.35 \times 10^{-3}\,\mathrm{mol\,dm^{-3}}$$
 
 (1 mark for expression, 1 mark for substitution, 1 mark for calculation.)
 

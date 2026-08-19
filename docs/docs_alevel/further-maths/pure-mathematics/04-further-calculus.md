@@ -82,23 +82,23 @@ Let $I = \int e^{ax}\cos bx\,dx$. First application: $u = e^{ax}$, $dv = \cos bx
 
 $$du = ae^{ax}\,dx, \quad v = \frac{1}{b}\sin bx$$
 
-$$I = \frac◆LB◆e^{ax}\sin bx◆RB◆◆LB◆b◆RB◆ - \frac{a}{b}\int e^{ax}\sin bx\,dx$$
+$$I = \frac{e^{ax}\sin bx}{b} - \frac{a}{b}\int e^{ax}\sin bx\,dx$$
 
 Second application on $\int e^{ax}\sin bx\,dx$: $u = e^{ax}$, $dv = \sin bx\,dx$.
 
 $$du = ae^{ax}\,dx, \quad v = -\frac{1}{b}\cos bx$$
 
-$$\int e^{ax}\sin bx\,dx = -\frac◆LB◆e^{ax}\cos bx◆RB◆◆LB◆b◆RB◆ + \frac{a}{b}\int e^{ax}\cos bx\,dx = -\frac◆LB◆e^{ax}\cos bx◆RB◆◆LB◆b◆RB◆ + \frac{a}{b}I$$
+$$\int e^{ax}\sin bx\,dx = -\frac{e^{ax}\cos bx}{b} + \frac{a}{b}\int e^{ax}\cos bx\,dx = -\frac{e^{ax}\cos bx}{b} + \frac{a}{b}I$$
 
 Substituting back:
 
-$$I = \frac◆LB◆e^{ax}\sin bx◆RB◆◆LB◆b◆RB◆ - \frac{a}{b}\left(-\frac◆LB◆e^{ax}\cos bx◆RB◆◆LB◆b◆RB◆ + \frac{a}{b}I\right)$$
+$$I = \frac{e^{ax}\sin bx}{b} - \frac{a}{b}\left(-\frac{e^{ax}\cos bx}{b} + \frac{a}{b}I\right)$$
 
-$$I = \frac◆LB◆e^{ax}\sin bx◆RB◆◆LB◆b◆RB◆ + \frac◆LB◆ae^{ax}\cos bx◆RB◆◆LB◆b^2◆RB◆ - \frac{a^2}{b^2}I$$
+$$I = \frac{e^{ax}\sin bx}{b} + \frac{ae^{ax}\cos bx}{b^2} - \frac{a^2}{b^2}I$$
 
-$$I\left(1 + \frac{a^2}{b^2}\right) = e^{ax}\left(\frac◆LB◆\sin bx◆RB◆◆LB◆b◆RB◆ + \frac◆LB◆a\cos bx◆RB◆◆LB◆b^2◆RB◆\right)$$
+$$I\left(1 + \frac{a^2}{b^2}\right) = e^{ax}\left(\frac{\sin bx}{b} + \frac{a\cos bx}{b^2}\right)$$
 
-$$\boxed{I = \frac◆LB◆e^{ax}(a\cos bx + b\sin bx)◆RB◆◆LB◆a^2 + b^2◆RB◆ + C}$$
+$$\boxed{I = \frac{e^{ax}(a\cos bx + b\sin bx)}{a^2 + b^2} + C}$$
 
 :::tip tip original integral reappears — solve for it algebraically. Always keep $u = e^{ax}$ on
 Both applications.
@@ -131,11 +131,11 @@ $$nI_n = (n-1)I_{n-2}$$
 
 $$\boxed{I_n = \frac{n-1}{n}\,I_{n-2}, \quad n \geq 2}$$
 
-The base cases are $I_0 = \displaystyle\int_0^{\pi/2}1\,dx = \dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ and
+The base cases are $I_0 = \displaystyle\int_0^{\pi/2}1\,dx = \dfrac{\pi}{2}$ and
 $I_1 = \displaystyle\int_0^{\pi/2}\sin x\,dx = 1$.
 
 **Example.** Using the reduction formula,
-$I_4 = \dfrac{3}{4}I_2 = \dfrac{3}{4}\cdot\dfrac{1}{2}I_0 = \dfrac{3}{4}\cdot\dfrac{1}{2}\cdot\dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ = \dfrac◆LB◆3\pi◆RB◆◆LB◆16◆RB◆$.
+$I_4 = \dfrac{3}{4}I_2 = \dfrac{3}{4}\cdot\dfrac{1}{2}I_0 = \dfrac{3}{4}\cdot\dfrac{1}{2}\cdot\dfrac{\pi}{2} = \dfrac{3\pi}{16}$.
 
 :::warning warning $0$ and $\pi/2$. For general limits, the boundary term must be evaluated.
 :::
@@ -175,7 +175,7 @@ Complete the square: $x^2 + 2x + 5 = (x+1)^2 + 4$.
 
 Split the numerator to match the derivative of the denominator:
 
-$$\frac{3x+1}{x^2+2x+5} = \frac◆LB◆\frac{3}{2}(2x+2) + 1 - 3◆RB◆◆LB◆x^2+2x+5◆RB◆ = \frac{3}{2}\cdot\frac{2x+2}{x^2+2x+5} - \frac{2}{(x+1)^2+4}$$
+$$\frac{3x+1}{x^2+2x+5} = \frac{\frac{3}{2}(2x+2) + 1 - 3}{x^2+2x+5} = \frac{3}{2}\cdot\frac{2x+2}{x^2+2x+5} - \frac{2}{(x+1)^2+4}$$
 
 $$\int \frac{3x+1}{x^2+2x+5}\,dx = \frac{3}{2}\ln(x^2+2x+5) - 2\cdot\frac{1}{2}\arctan\!\left(\frac{x+1}{2}\right) + C$$
 
@@ -207,7 +207,7 @@ $$\int\left(\frac{1}{x} - \frac{1}{x-1} + \frac{1}{(x-1)^2}\right)dx = \ln|x| - 
 
 $$\boxed{\int \frac{1}{a^2+x^2}\,dx = \frac{1}{a}\arctan\frac{x}{a} + C}$$
 
-$$\boxed{\int \frac◆LB◆1◆RB◆◆LB◆\sqrt{a^2-x^2}◆RB◆\,dx = \arcsin\frac{x}{a} + C}$$
+$$\boxed{\int \frac{1}{\sqrt{a^2-x^2}}\,dx = \arcsin\frac{x}{a} + C}$$
 
 $$\boxed{\int \frac{1}{a^2-x^2}\,dx = \frac{1}{2a}\ln\left|\frac{a+x}{a-x}\right| + C}$$
 
@@ -215,18 +215,18 @@ $$\boxed{\int \frac{1}{a^2-x^2}\,dx = \frac{1}{2a}\ln\left|\frac{a+x}{a-x}\right
 
 Let $x = a\tan\theta$So $dx = a\sec^2\theta\,d\theta$.
 
-$$\int \frac◆LB◆1◆RB◆◆LB◆a^2 + a^2\tan^2\theta◆RB◆\cdot a\sec^2\theta\,d\theta = \int \frac◆LB◆a\sec^2\theta◆RB◆◆LB◆a^2\sec^2\theta◆RB◆\,d\theta = \frac{1}{a}\int 1\,d\theta = \frac◆LB◆\theta◆RB◆◆LB◆a◆RB◆ + C$$
+$$\int \frac{1}{a^2 + a^2\tan^2\theta}\cdot a\sec^2\theta\,d\theta = \int \frac{a\sec^2\theta}{a^2\sec^2\theta}\,d\theta = \frac{1}{a}\int 1\,d\theta = \frac{\theta}{a} + C$$
 
 Since $\theta = \arctan(x/a)$:
 
 $$\int \frac{1}{a^2+x^2}\,dx = \frac{1}{a}\arctan\frac{x}{a} + C \quad \blacksquare$$
 
-### Proof of $\int \frac◆LB◆1◆RB◆◆LB◆\sqrt{a^2-x^2}◆RB◆\,dx = \arcsin\frac{x}{a} + C$
+### Proof of $\int \frac{1}{\sqrt{a^2-x^2}}\,dx = \arcsin\frac{x}{a} + C$
 
 Let $x = a\sin\theta$So $dx = a\cos\theta\,d\theta$ and $\sqrt{a^2 - x^2} = a\cos\theta$ (for
 $|\theta| \leq \pi/2$).
 
-$$\int \frac◆LB◆a\cos\theta◆RB◆◆LB◆a\cos\theta◆RB◆\,d\theta = \int 1\,d\theta = \theta + C = \arcsin\frac{x}{a} + C \quad \blacksquare$$
+$$\int \frac{a\cos\theta}{a\cos\theta}\,d\theta = \int 1\,d\theta = \theta + C = \arcsin\frac{x}{a} + C \quad \blacksquare$$
 
 ### Proof of $\int \frac{1}{a^2-x^2}\,dx = \frac{1}{2a}\ln\left|\frac{a+x}{a-x}\right| + C$
 
@@ -240,11 +240,11 @@ $$\int \frac{1}{a^2-x^2}\,dx = \frac{1}{2a}\bigl[-\ln|a-x| + \ln|a+x|\bigr] + C 
 
 $$\int \frac{1}{a^2 + (x+b)^2}\,dx = \frac{1}{a}\arctan\frac{x+b}{a} + C$$
 
-$$\int \frac◆LB◆1◆RB◆◆LB◆\sqrt{a^2 - (x+b)^2}◆RB◆\,dx = \arcsin\frac{x+b}{a} + C$$
+$$\int \frac{1}{\sqrt{a^2 - (x+b)^2}}\,dx = \arcsin\frac{x+b}{a} + C$$
 
 These follow directly from the standard forms via the substitution $u = x + b$.
 
-:::warning warning $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{a^2-x^2}◆RB◆$ (gives $\arcsin$), and
+:::warning warning $\dfrac{1}{\sqrt{a^2-x^2}}$ (gives $\arcsin$), and
 $\dfrac{1}{a^2-x^2}$ (gives a logarithmic form). The square root makes the difference.
 :::
 
@@ -254,9 +254,9 @@ $\dfrac{1}{a^2-x^2}$ (gives a logarithmic form). The square root makes the diffe
 
 ### 4.1 Derivatives
 
-$$\boxed{\frac{d}{dx}\arcsin x = \frac◆LB◆1◆RB◆◆LB◆\sqrt{1-x^2}◆RB◆, \quad |x| < 1}$$
+$$\boxed{\frac{d}{dx}\arcsin x = \frac{1}{\sqrt{1-x^2}}, \quad |x| < 1}$$
 
-$$\boxed{\frac{d}{dx}\arccos x = -\frac◆LB◆1◆RB◆◆LB◆\sqrt{1-x^2}◆RB◆, \quad |x| < 1}$$
+$$\boxed{\frac{d}{dx}\arccos x = -\frac{1}{\sqrt{1-x^2}}, \quad |x| < 1}$$
 
 $$\boxed{\frac{d}{dx}\arctan x = \frac{1}{1+x^2}}$$
 
@@ -268,9 +268,9 @@ Differentiating implicitly with respect to $x$:
 
 $$1 = \sec^2 y \cdot \frac{dy}{dx}$$
 
-$$\frac{dy}{dx} = \frac◆LB◆1◆RB◆◆LB◆\sec^2 y◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆1 + \tan^2 y◆RB◆ = \frac{1}{1+x^2} \quad \blacksquare$$
+$$\frac{dy}{dx} = \frac{1}{\sec^2 y} = \frac{1}{1 + \tan^2 y} = \frac{1}{1+x^2} \quad \blacksquare$$
 
-### Proof of $\frac{d}{dx}\arcsin x = \frac◆LB◆1◆RB◆◆LB◆\sqrt{1-x^2}◆RB◆$
+### Proof of $\frac{d}{dx}\arcsin x = \frac{1}{\sqrt{1-x^2}}$
 
 Let $y = \arcsin x$. Then $x = \sin y$.
 
@@ -279,13 +279,13 @@ Differentiating implicitly:
 $$1 = \cos y \cdot \frac{dy}{dx}$$
 
 Since $\arcsin x$ has range $[-\pi/2, \pi/2]$We have $\cos y \geq 0$So
-$\cos y = \sqrt◆LB◆1-\sin^2 y◆RB◆ = \sqrt{1-x^2}$.
+$\cos y = \sqrt{1-\sin^2 y} = \sqrt{1-x^2}$.
 
-$$\frac{dy}{dx} = \frac◆LB◆1◆RB◆◆LB◆\cos y◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆\sqrt{1-x^2}◆RB◆ \quad \blacksquare$$
+$$\frac{dy}{dx} = \frac{1}{\cos y} = \frac{1}{\sqrt{1-x^2}} \quad \blacksquare$$
 
 ### 4.2 Chain rule with inverse trig functions
 
-**Example.** $\dfrac{d}{dx}\arcsin(3x) = \dfrac◆LB◆3◆RB◆◆LB◆\sqrt{1-9x^2}◆RB◆$.
+**Example.** $\dfrac{d}{dx}\arcsin(3x) = \dfrac{3}{\sqrt{1-9x^2}}$.
 
 **Example.**
 $\dfrac{d}{dx}\arctan\!\left(\dfrac{x}{2}\right) = \dfrac{1/2}{1 + x^2/4} = \dfrac{2}{4+x^2}$.
@@ -333,7 +333,7 @@ $$= -8\pi\int_0^{\pi}\sin^3 t\,dt = 8\pi\int_0^{\pi}\sin^3 t\,dt$$
 
 Using $\sin^3 t = \sin t(1-\cos^2 t)$ and the substitution $u = \cos t$:
 
-$$= 8\pi\int_{-1}^{1}(1-u^2)\,du = 8\pi\left[u - \frac{u^3}{3}\right]_{-1}^1 = 8\pi\left(\frac{2}{3} - \left(-\frac{2}{3}\right)\right) = \frac◆LB◆32\pi◆RB◆◆LB◆3◆RB◆$$
+$$= 8\pi\int_{-1}^{1}(1-u^2)\,du = 8\pi\left[u - \frac{u^3}{3}\right]_{-1}^1 = 8\pi\left(\frac{2}{3} - \left(-\frac{2}{3}\right)\right) = \frac{32\pi}{3}$$
 
 <hr />
 
@@ -343,24 +343,24 @@ $$= 8\pi\int_{-1}^{1}(1-u^2)\,du = 8\pi\left[u - \frac{u^3}{3}\right]_{-1}^1 = 8
 
 **Theorem.** For a curve $y = f(x)$ from $x = a$ to $x = b$:
 
-$$\boxed{s = \int_a^b \sqrt◆LB◆1 + \left(\frac{dy}{dx}\right)^2◆RB◆\,dx}$$
+$$\boxed{s = \int_a^b \sqrt{1 + \left(\frac{dy}{dx}\right)^2}\,dx}$$
 
 For a curve given parametrically by $x = x(t)$, $y = y(t)$ from $t = t_1$ to $t = t_2$:
 
-$$\boxed{s = \int_{t_1}^{t_2} \sqrt◆LB◆\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2◆RB◆\,dt}$$
+$$\boxed{s = \int_{t_1}^{t_2} \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2}\,dt}$$
 
 **Derivation (Cartesian).** The arc length element $ds$ satisfies $ds^2 = dx^2 + dy^2$ by the
 Pythagorean theorem applied to an infinitesimal segment. Therefore:
 
-$$ds = \sqrt◆LB◆1 + \left(\frac{dy}{dx}\right)^2◆RB◆\,dx$$
+$$ds = \sqrt{1 + \left(\frac{dy}{dx}\right)^2}\,dx$$
 
 Integrating from $a$ to $b$ gives the total arc length.
 
 **Example.** Find the arc length of $y = \ln(\cos x)$ from $x = 0$ to $x = \pi/3$.
 
-$$\frac{dy}{dx} = \frac◆LB◆-\sin x◆RB◆◆LB◆\cos x◆RB◆ = -\tan x$$
+$$\frac{dy}{dx} = \frac{-\sin x}{\cos x} = -\tan x$$
 
-$$s = \int_0^{\pi/3}\sqrt◆LB◆1+\tan^2 x◆RB◆\,dx = \int_0^{\pi/3}\sec x\,dx = \Bigl[\ln|\sec x + \tan x|\Bigr]_0^{\pi/3}$$
+$$s = \int_0^{\pi/3}\sqrt{1+\tan^2 x}\,dx = \int_0^{\pi/3}\sec x\,dx = \Bigl[\ln|\sec x + \tan x|\Bigr]_0^{\pi/3}$$
 
 $$= \ln(2 + \sqrt{3}) - \ln(1) = \ln(2+\sqrt{3})$$
 
@@ -369,11 +369,11 @@ $$= \ln(2 + \sqrt{3}) - \ln(1) = \ln(2+\sqrt{3})$$
 **Theorem.** The surface area generated by rotating $y = f(x)$ from $x = a$ to $x = b$ about the
 $x$-axis:
 
-$$\boxed{S = 2\pi\int_a^b y\,\sqrt◆LB◆1 + \left(\frac{dy}{dx}\right)^2◆RB◆\,dx}$$
+$$\boxed{S = 2\pi\int_a^b y\,\sqrt{1 + \left(\frac{dy}{dx}\right)^2}\,dx}$$
 
 For a parametric curve rotated about the $x$-axis:
 
-$$\boxed{S = 2\pi\int_{t_1}^{t_2} y\,\sqrt◆LB◆\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2◆RB◆\,dt}$$
+$$\boxed{S = 2\pi\int_{t_1}^{t_2} y\,\sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2}\,dt}$$
 
 **Example.** Find the surface area generated by rotating $y = x^2$ from $x = 0$ to $x = 1$ about the
 $x$-axis.
@@ -384,19 +384,19 @@ Let $x = \frac{1}{2}\tan\theta$, $dx = \frac{1}{2}\sec^2\theta\,d\theta$. When $
 when $x = 1$, $\theta = \arctan 2$.
 
 $$
-S = 2\pi\int_0^{\arctan 2}\frac◆LB◆\tan^2\theta◆RB◆◆LB◆4◆RB◆\cdot\sec\theta\cdot\frac{1}{2}\sec^2\theta\,d\theta
-= \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\int_0^{\arctan 2}\tan^2\theta\sec^3\theta\,d\theta
+S = 2\pi\int_0^{\arctan 2}\frac{\tan^2\theta}{4}\cdot\sec\theta\cdot\frac{1}{2}\sec^2\theta\,d\theta
+= \frac{\pi}{4}\int_0^{\arctan 2}\tan^2\theta\sec^3\theta\,d\theta
 $$
 
 Using $\tan^2\theta = \sec^2\theta - 1$ and integrating by parts with $u = \sec\theta$
 $dv = \sec^2\theta\,d\theta$:
 
 This integral evaluates to
-$\dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\left[\dfrac{1}{4}\sec\theta\tan\theta + \dfrac{1}{4}\ln|\sec\theta+\tan\theta| - \dfrac{1}{4}\sec\theta\tan\theta + \dfrac{1}{8}\ln|\sec\theta+\tan\theta|\right]_0^{\arctan 2}$.
+$\dfrac{\pi}{4}\left[\dfrac{1}{4}\sec\theta\tan\theta + \dfrac{1}{4}\ln|\sec\theta+\tan\theta| - \dfrac{1}{4}\sec\theta\tan\theta + \dfrac{1}{8}\ln|\sec\theta+\tan\theta|\right]_0^{\arctan 2}$.
 
 Simplifying with $\sec(\arctan 2) = \sqrt{5}$ and $\tan(\arctan 2) = 2$:
 
-$$S = \frac◆LB◆9\pi\sqrt{5}◆RB◆◆LB◆16◆RB◆ - \frac◆LB◆\pi◆RB◆◆LB◆32◆RB◆\ln(2+\sqrt{5})$$
+$$S = \frac{9\pi\sqrt{5}}{16} - \frac{\pi}{32}\ln(2+\sqrt{5})$$
 
 :::info CIE (9231) P2 requires arc length and surface area of revolution. Edexcel FP2 covers arc
 Length but surface area appears less frequently. AQA covers both in Paper 1. OCR (A) covers arc
@@ -410,12 +410,12 @@ Length in Paper 1.
 | Integral                                                    | Result                                                             |
 | ----------------------------------------------------------- | ------------------------------------------------------------------ |
 | $\displaystyle\int\frac{1}{a^2+x^2}\,dx$                    | $\dfrac{1}{a}\arctan\dfrac{x}{a}+C$                                |
-| $\displaystyle\int\frac◆LB◆1◆RB◆◆LB◆\sqrt{a^2-x^2}◆RB◆\,dx$ | $\arcsin\dfrac{x}{a}+C$                                            |
+| $\displaystyle\int\frac{1}{\sqrt{a^2-x^2}}\,dx$ | $\arcsin\dfrac{x}{a}+C$                                            |
 | $\displaystyle\int\frac{1}{a^2-x^2}\,dx$                    | $\dfrac{1}{2a}\ln\left\|\dfrac{a+x}{a-x}\right\|+C$                |
-| $\dfrac{d}{dx}\arcsin x$                                    | $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{1-x^2}◆RB◆$                              |
+| $\dfrac{d}{dx}\arcsin x$                                    | $\dfrac{1}{\sqrt{1-x^2}}$                              |
 | $\dfrac{d}{dx}\arctan x$                                    | $\dfrac{1}{1+x^2}$                                                 |
 | Vol. About $x$-axis                                         | $\pi\displaystyle\int_a^b y^2\,dx$                                 |
-| Arc length                                                  | $\displaystyle\int\sqrt◆LB◆1+\left(\frac{dy}{dx}\right)^2◆RB◆\,dx$ |
+| Arc length                                                  | $\displaystyle\int\sqrt{1+\left(\frac{dy}{dx}\right)^2}\,dx$ |
 
 <hr />
 
@@ -540,11 +540,11 @@ Differentiate using the product rule and the chain rule with $\dfrac{d}{dx}\arcs
 
 <details>
 <summary>Answer 6</summary>
-$\dfrac{d}{dx}\bigl[x\arcsin x + \sqrt{1-x^2}\bigr] = \arcsin x + \dfrac◆LB◆x◆RB◆◆LB◆\sqrt{1-x^2}◆RB◆ + \dfrac◆LB◆-x◆RB◆◆LB◆\sqrt{1-x^2}◆RB◆ = \arcsin x$.
+$\dfrac{d}{dx}\bigl[x\arcsin x + \sqrt{1-x^2}\bigr] = \arcsin x + \dfrac{x}{\sqrt{1-x^2}} + \dfrac{-x}{\sqrt{1-x^2}} = \arcsin x$.
 
 Therefore $\displaystyle\int \arcsin x\,dx = x\arcsin x + \sqrt{1-x^2} + C$.
 
-$\displaystyle\int_0^{1/2}\arcsin x\,dx = \left[x\arcsin x + \sqrt{1-x^2}\right]_0^{1/2} = \frac{1}{2}\cdot\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆ + \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ - 1 = \frac◆LB◆\pi◆RB◆◆LB◆12◆RB◆ + \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ - 1$.
+$\displaystyle\int_0^{1/2}\arcsin x\,dx = \left[x\arcsin x + \sqrt{1-x^2}\right]_0^{1/2} = \frac{1}{2}\cdot\frac{\pi}{6} + \frac{\sqrt{3}}{2} - 1 = \frac{\pi}{12} + \frac{\sqrt{3}}{2} - 1$.
 
 </details>
 
@@ -580,7 +580,7 @@ Use $\displaystyle\int\frac{1}{a^2+x^2}\,dx = \frac{1}{a}\arctan\frac{x}{a}$. He
 
 <details>
 <summary>Answer 8</summary>
-$\displaystyle\int_0^{\infty}\frac{1}{4+x^2}\,dx = \left[\frac{1}{2}\arctan\frac{x}{2}\right]_0^{\infty} = \frac{1}{2}\cdot\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - 0 = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$.
+$\displaystyle\int_0^{\infty}\frac{1}{4+x^2}\,dx = \left[\frac{1}{2}\arctan\frac{x}{2}\right]_0^{\infty} = \frac{1}{2}\cdot\frac{\pi}{2} - 0 = \frac{\pi}{4}$.
 </details>
 
 <details>
@@ -622,9 +622,9 @@ $\int e^x\cos 2x\,dx = \frac{1}{2}e^x\sin 2x - \frac{1}{2}\int e^x\sin 2x\,dx = 
 
 $I = -\frac{1}{2}e^x\cos 2x + \frac{1}{4}e^x\sin 2x - \frac{1}{4}I$.
 
-$\frac{5}{4}I = e^x\left(\frac◆LB◆\sin 2x◆RB◆◆LB◆4◆RB◆ - \frac◆LB◆\cos 2x◆RB◆◆LB◆2◆RB◆\right)$.
+$\frac{5}{4}I = e^x\left(\frac{\sin 2x}{4} - \frac{\cos 2x}{2}\right)$.
 
-$\boxed{I = \frac◆LB◆e^x(\sin 2x - 2\cos 2x)◆RB◆◆LB◆5◆RB◆ + C}$
+$\boxed{I = \frac{e^x(\sin 2x - 2\cos 2x)}{5} + C}$
 
 </details>
 
@@ -668,7 +668,7 @@ $$\boxed{I_3 = (x^3 - 3x^2 + 6x - 6)e^x + C}$$
 
 ### Example 8.3: Improper integral convergence test
 
-**Problem.** Determine whether $\displaystyle\int_0^1 \frac◆LB◆1◆RB◆◆LB◆\sqrt{x}◆RB◆\,dx$ converges,
+**Problem.** Determine whether $\displaystyle\int_0^1 \frac{1}{\sqrt{x}}\,dx$ converges,
 And evaluate if it does.
 
 **Solution.** The integrand is undefined at $x = 0$. Write:
@@ -676,18 +676,18 @@ And evaluate if it does.
 $$\int_0^1 x^{-1/2}\,dx = \lim_{a \to 0^+} \int_a^1 x^{-1/2}\,dx = \lim_{a \to 0^+} \left[2x^{1/2}\right]_a^1 = \lim_{a \to 0^+} (2 - 2\sqrt{a}) = 2$$
 
 Since the limit exists and is finite, the integral converges.
-$\boxed{\displaystyle\int_0^1 \frac◆LB◆1◆RB◆◆LB◆\sqrt{x}◆RB◆\,dx = 2}$
+$\boxed{\displaystyle\int_0^1 \frac{1}{\sqrt{x}}\,dx = 2}$
 
 ### Example 8.4: Integration using the $t = \tan(x/2)$ substitution
 
-**Problem.** Evaluate $\displaystyle\int_0^{\pi/2} \frac◆LB◆1◆RB◆◆LB◆1 + \sin x◆RB◆\,dx$ using the
+**Problem.** Evaluate $\displaystyle\int_0^{\pi/2} \frac{1}{1 + \sin x}\,dx$ using the
 Weierstrass substitution.
 
 **Solution.** Let $t = \tan(x/2)$So $\sin x = \dfrac{2t}{1+t^2}$ and $dx = \dfrac{2\,dt}{1+t^2}$.
 
 When $x = 0$: $t = 0$. When $x = \pi/2$: $t = 1$.
 
-$$\int_0^1 \frac◆LB◆1◆RB◆◆LB◆1 + \frac{2t}{1+t^2}◆RB◆ \cdot \frac{2\,dt}{1+t^2} = \int_0^1 \frac{2\,dt}{(1+t^2) + 2t} = \int_0^1 \frac{2\,dt}{t^2 + 2t + 1} = \int_0^1 \frac{2\,dt}{(t+1)^2}$$
+$$\int_0^1 \frac{1}{1 + \frac{2t}{1+t^2}} \cdot \frac{2\,dt}{1+t^2} = \int_0^1 \frac{2\,dt}{(1+t^2) + 2t} = \int_0^1 \frac{2\,dt}{t^2 + 2t + 1} = \int_0^1 \frac{2\,dt}{(t+1)^2}$$
 
 $$= \left[-\frac{2}{t+1}\right]_0^1 = -1 + 2 = \boxed{1}$$
 
@@ -698,9 +698,9 @@ The total arc length.
 
 **Solution.** $\dfrac{dx}{dt} = 1 - \cos t$, $\dfrac{dy}{dt} = \sin t$.
 
-$$s = \int_0^{2\pi} \sqrt◆LB◆(1-\cos t)^2 + \sin^2 t◆RB◆\,dt = \int_0^{2\pi} \sqrt◆LB◆1 - 2\cos t + \cos^2 t + \sin^2 t◆RB◆\,dt$$
+$$s = \int_0^{2\pi} \sqrt{(1-\cos t)^2 + \sin^2 t}\,dt = \int_0^{2\pi} \sqrt{1 - 2\cos t + \cos^2 t + \sin^2 t}\,dt$$
 
-$$= \int_0^{2\pi} \sqrt◆LB◆2 - 2\cos t◆RB◆\,dt = \int_0^{2\pi} \sqrt◆LB◆4\sin^2(t/2)◆RB◆\,dt = \int_0^{2\pi} 2|\sin(t/2)|\,dt$$
+$$= \int_0^{2\pi} \sqrt{2 - 2\cos t}\,dt = \int_0^{2\pi} \sqrt{4\sin^2(t/2)}\,dt = \int_0^{2\pi} 2|\sin(t/2)|\,dt$$
 
 For $0 \leq t \leq 2\pi$, $\sin(t/2) \geq 0$So:
 
@@ -708,16 +708,16 @@ $$s = 2\int_0^{2\pi} \sin(t/2)\,dt = 2\left[-2\cos(t/2)\right]_0^{2\pi} = 2(2 + 
 
 ### Example 8.6: Taylor series approach to a difficult limit
 
-**Problem.** Evaluate $\displaystyle\lim_{x \to 0} \frac◆LB◆x - \sin x◆RB◆◆LB◆x^3◆RB◆$.
+**Problem.** Evaluate $\displaystyle\lim_{x \to 0} \frac{x - \sin x}{x^3}$.
 
 **Solution.** Expand $\sin x$ as a Maclaurin series:
 
 $$\sin x = x - \frac{x^3}{6} + \frac{x^5}{120} - \cdots$$
 
-$$\frac◆LB◆x - \sin x◆RB◆◆LB◆x^3◆RB◆ = \frac◆LB◆x - \left(x - \frac{x^3}{6} + \frac{x^5}{120} - \cdots\right)◆RB◆◆LB◆x^3◆RB◆ = \frac◆LB◆\frac{x^3}{6} - \frac{x^5}{120} + \cdots◆RB◆◆LB◆x^3◆RB◆ = \frac{1}{6} - \frac{x^2}{120} + \cdots$$
+$$\frac{x - \sin x}{x^3} = \frac{x - \left(x - \frac{x^3}{6} + \frac{x^5}{120} - \cdots\right)}{x^3} = \frac{\frac{x^3}{6} - \frac{x^5}{120} + \cdots}{x^3} = \frac{1}{6} - \frac{x^2}{120} + \cdots$$
 
 Taking $x \to 0$:
-$\boxed{\displaystyle\lim_{x \to 0} \frac◆LB◆x - \sin x◆RB◆◆LB◆x^3◆RB◆ = \frac{1}{6}}$
+$\boxed{\displaystyle\lim_{x \to 0} \frac{x - \sin x}{x^3} = \frac{1}{6}}$
 
 ### Example 8.7: Integration involving inverse trigonometric functions
 
@@ -725,13 +725,13 @@ $\boxed{\displaystyle\lim_{x \to 0} \frac◆LB◆x - \sin x◆RB◆◆LB◆x^3�
 
 **Solution.** Use integration by parts with $u = \arcsin x$, $dv = dx$:
 
-$$du = \frac◆LB◆1◆RB◆◆LB◆\sqrt{1-x^2}◆RB◆\,dx, \quad v = x$$
+$$du = \frac{1}{\sqrt{1-x^2}}\,dx, \quad v = x$$
 
-$$\int \arcsin x\,dx = x\arcsin x - \int \frac◆LB◆x◆RB◆◆LB◆\sqrt{1-x^2}◆RB◆\,dx$$
+$$\int \arcsin x\,dx = x\arcsin x - \int \frac{x}{\sqrt{1-x^2}}\,dx$$
 
 For the second integral, let $w = 1 - x^2$, $dw = -2x\,dx$:
 
-$$\int \frac◆LB◆x◆RB◆◆LB◆\sqrt{1-x^2}◆RB◆\,dx = -\sqrt{1-x^2}$$
+$$\int \frac{x}{\sqrt{1-x^2}}\,dx = -\sqrt{1-x^2}$$
 
 $$\boxed{\int \arcsin x\,dx = x\arcsin x + \sqrt{1-x^2} + C}$$
 
@@ -741,7 +741,7 @@ $$\boxed{\int \arcsin x\,dx = x\arcsin x + \sqrt{1-x^2} + C}$$
 
 | Pitfall                                                                         | Correct Approach                                                                             |
 | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | --------------------------------------------- | ----------------------------------------------- |
-| Forgetting the chain rule when differentiating composite inverse trig functions | Always write $\dfrac{d}{dx}\!\left[\arcsin(u)\right] = \dfrac◆LB◆u'◆RB◆◆LB◆\sqrt{1-u^2}◆RB◆$ |
+| Forgetting the chain rule when differentiating composite inverse trig functions | Always write $\dfrac{d}{dx}\!\left[\arcsin(u)\right] = \dfrac{u'}{\sqrt{1-u^2}}$ |
 | Using $\ln                                                                      | x                                                                                            | $ before checking if the integral is improper | Check for discontinuities in the interval first |
 | Forgetting $+C$ on every antiderivative                                         | Every indefinite integral needs an arbitrary constant                                        |
 | Applying reduction formulae without checking the base case                      | Always state $I_0$ or $I_1$ explicitly                                                       |
@@ -767,7 +767,7 @@ $$\int \frac{du}{u^2 + 1} = \arctan u + C = \boxed{\arctan(e^x) + C}$$
 ### Question 9
 
 The reduction formula $I_n = \displaystyle\int_0^{\pi/4} \tan^n x\,dx$ satisfies
-$I_n = \dfrac{1}{n-1} - I_{n-2}$ for $n \geq 2$. Given $I_0 = \dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$ and
+$I_n = \dfrac{1}{n-1} - I_{n-2}$ for $n \geq 2$. Given $I_0 = \dfrac{\pi}{4}$ and
 $I_1 = \dfrac{1}{2}\ln 2$Find $I_3$.
 
 <details>
@@ -775,7 +775,7 @@ $I_1 = \dfrac{1}{2}\ln 2$Find $I_3$.
 
 $I_3 = \dfrac{1}{2} - I_1 = \dfrac{1}{2} - \dfrac{1}{2}\ln 2 = \dfrac{1}{2}(1 - \ln 2)$.
 
-To verify: $I_2 = \dfrac{1}{1} - I_0 = 1 - \dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$. Then
+To verify: $I_2 = \dfrac{1}{1} - I_0 = 1 - \dfrac{\pi}{4}$. Then
 $I_3 = \dfrac{1}{2} - I_1 = \dfrac{1}{2} - \dfrac{1}{2}\ln 2$. Consistent.
 $\boxed{I_3 = \dfrac{1}{2}(1 - \ln 2)}$
 
@@ -810,7 +810,7 @@ Let $y = \arctan x$So $x = \tan y$. Differentiating implicitly with respect to $
 
 $$1 = \sec^2 y \cdot \frac{dy}{dx}$$
 
-$$\frac{dy}{dx} = \cos^2 y = \frac◆LB◆1◆RB◆◆LB◆\sec^2 y◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆1 + \tan^2 y◆RB◆ = \frac{1}{1 + x^2}$$
+$$\frac{dy}{dx} = \cos^2 y = \frac{1}{\sec^2 y} = \frac{1}{1 + \tan^2 y} = \frac{1}{1 + x^2}$$
 
 $\blacksquare$
 
@@ -818,7 +818,7 @@ $\blacksquare$
 
 ### Question 12
 
-Evaluate $\displaystyle\int_0^1 \frac◆LB◆\ln x◆RB◆◆LB◆1+x◆RB◆\,dx$Expressing your answer in terms Of
+Evaluate $\displaystyle\int_0^1 \frac{\ln x}{1+x}\,dx$Expressing your answer in terms Of
 $\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^2}$.
 
 <details>
@@ -833,7 +833,7 @@ $\displaystyle\int_0^1 x^n \ln x\,dx = -\frac{1}{(n+1)^2}$:
 
 $$= -\sum_{n=0}^{\infty} \frac{(-1)^n}{(n+1)^2} = -\sum_{n=1}^{\infty} \frac{(-1)^{n-1}}{n^2} = \sum_{n=1}^{\infty} \frac{(-1)^n}{n^2}$$
 
-This equals $-\dfrac◆LB◆\pi^2◆RB◆◆LB◆12◆RB◆$.
+This equals $-\dfrac{\pi^2}{12}$.
 
 </details>
 
@@ -861,7 +861,7 @@ Arc length and area calculations are used extensively in mechanics for work-ener
 ### 11.4 Calculus and hyperbolic functions
 
 The inverse hyperbolic functions arise from integration:
-$\displaystyle\int \frac◆LB◆dx◆RB◆◆LB◆\sqrt{x^2+a^2}◆RB◆ = \operatorname{arsinh}(x/a) + C$. See
+$\displaystyle\int \frac{dx}{\sqrt{x^2+a^2}} = \operatorname{arsinh}(x/a) + C$. See
 [Hyperbolic Functions](/docs/alevel/further-maths/pure-mathematics/hyperbolic-functions).
 
 ---
@@ -892,7 +892,7 @@ $\sin x = \dfrac{2t}{1+t^2}$$\cos x = \dfrac{1-t^2}{1+t^2}$$dx = \dfrac{2\,dt}{1
 | Form                                                          | Result                    |
 | ------------------------------------------------------------- | ------------------------- | ---- | ---- |
 | $\displaystyle\int \frac{f'(x)}{f(x)}\,dx$                    | $\ln                      | f(x) | + C$ |
-| $\displaystyle\int \frac◆LB◆f'(x)◆RB◆◆LB◆\sqrt{f(x)}◆RB◆\,dx$ | $2\sqrt{f(x)} + C$        |
+| $\displaystyle\int \frac{f'(x)}{\sqrt{f(x)}}\,dx$ | $2\sqrt{f(x)} + C$        |
 | $\displaystyle\int f(x) \cdot f'(x)\,dx$                      | $\dfrac{[f(x)]^2}{2} + C$ |
 
 ---
@@ -903,11 +903,11 @@ $\sin x = \dfrac{2t}{1+t^2}$$\cos x = \dfrac{1-t^2}{1+t^2}$$dx = \dfrac{2\,dt}{1
 | ---------------------------- | --------------------------------------------------------------------------- |
 | Integration by parts         | $\displaystyle\int u\,dv = uv - \int v\,du$                                 |
 | Reduction formula (by parts) | Express $I_n$ in terms of $I_{n-1}$ or $I_{n-2}$                            |
-| Arc length (Cartesian)       | $s = \displaystyle\int_a^b \sqrt◆LB◆1+\left(\frac{dy}{dx}\right)^2◆RB◆\,dx$ |
-| Arc length (parametric)      | $s = \displaystyle\int_\alpha^\beta \sqrt◆LB◆\dot{x}^2+\dot{y}^2◆RB◆\,dt$   |
+| Arc length (Cartesian)       | $s = \displaystyle\int_a^b \sqrt{1+\left(\frac{dy}{dx}\right)^2}\,dx$ |
+| Arc length (parametric)      | $s = \displaystyle\int_\alpha^\beta \sqrt{\dot{x}^2+\dot{y}^2}\,dt$   |
 | Area under parametric curve  | $A = \displaystyle\int y\frac{dx}{dt}\,dt$                                  |
 | Surface of revolution        | $S = 2\pi\displaystyle\int_a^b y\sqrt{1+(y')^2}\,dx$                        |
-| Derivative of $\arcsin x$    | $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{1-x^2}◆RB◆$                                       |
+| Derivative of $\arcsin x$    | $\dfrac{1}{\sqrt{1-x^2}}$                                       |
 | Derivative of $\arctan x$    | $\dfrac{1}{1+x^2}$                                                          |
 | Improper integral test       | $\displaystyle\int_a^\infty f(x)\,dx = \lim_{b\to\infty}\int_a^b f(x)\,dx$  |
 
@@ -953,7 +953,7 @@ $s = \displaystyle\int_0^{\pi/4} \sec x\,dx = [\ln|\sec x + \tan x|]_0^{\pi/4} =
 ### Question 15
 
 **Prove that**
-$\displaystyle\int_0^{\pi/2} \sin^n x\,dx = \dfrac{n-1}{n} \cdot \dfrac{n-3}{n-2} \cdots \times \begin{cases} 1 & n \text{ odd} \\ \dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ & n \text{ even}\end{cases}$
+$\displaystyle\int_0^{\pi/2} \sin^n x\,dx = \dfrac{n-1}{n} \cdot \dfrac{n-3}{n-2} \cdots \times \begin{cases} 1 & n \text{ odd} \\ \dfrac{\pi}{2} & n \text{ even}\end{cases}$
 (Wallis' formula).
 
 <details>
@@ -972,7 +972,7 @@ $nI_n = (n-1)I_{n-2}$So $\boxed{I_n = \dfrac{n-1}{n}I_{n-2}}$.
 Base cases: $I_0 = \pi/2$$I_1 = 1$.
 
 For even $n$:
-$I_n = \dfrac{n-1}{n} \cdot \dfrac{n-3}{n-2} \cdots \dfrac{1}{2} \cdot \dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
+$I_n = \dfrac{n-1}{n} \cdot \dfrac{n-3}{n-2} \cdots \dfrac{1}{2} \cdot \dfrac{\pi}{2}$.
 
 For odd $n$: $I_n = \dfrac{n-1}{n} \cdot \dfrac{n-3}{n-2} \cdots \dfrac{2}{3} \cdot 1$.
 $\blacksquare$
@@ -988,7 +988,7 @@ $\blacksquare$
 The gamma function extends the factorial: $\Gamma(n) = (n-1)!$ for positive integers, and
 $\Gamma(x) = \displaystyle\int_0^{\infty} t^{x-1}e^{-t}\,dt$ for $x > 0$.
 
-Wallis' formula leads to the important result: $\Gamma(1/2) = \sqrt◆LB◆\pi◆RB◆$.
+Wallis' formula leads to the important result: $\Gamma(1/2) = \sqrt{\pi}$.
 
 ### 15.2 Frullani's integral
 
@@ -1000,7 +1000,7 @@ Example: $\displaystyle\int_0^{\infty} \frac{e^{-ax}-e^{-bx}}{x}\,dx = \ln\frac{
 ### 15.3 Differentiation under the integral sign
 
 Leibniz's rule:
-$\dfrac◆LB◆d◆RB◆◆LB◆d\alpha◆RB◆\displaystyle\int_a^b f(x,\alpha)\,dx = \int_a^b \frac◆LB◆\partial f◆RB◆◆LB◆\partial\alpha◆RB◆\,dx$.
+$\dfrac{d}{d\alpha}\displaystyle\int_a^b f(x,\alpha)\,dx = \int_a^b \frac{\partial f}{\partial\alpha}\,dx$.
 
 This is a powerful technique for evaluating integrals that depend on a parameter.
 
@@ -1032,14 +1032,14 @@ $\lambda = 1$.
 
 ### Question 17
 
-**Prove that** $\displaystyle\int_0^{\pi/2} \sin^2 x\cos^2 x\,dx = \frac◆LB◆\pi◆RB◆◆LB◆16◆RB◆$.
+**Prove that** $\displaystyle\int_0^{\pi/2} \sin^2 x\cos^2 x\,dx = \frac{\pi}{16}$.
 
 <details>
 <summary>Solution</summary>
 
-$\sin^2 x\cos^2 x = \dfrac◆LB◆\sin^2 2x◆RB◆◆LB◆4◆RB◆ = \dfrac◆LB◆1-\cos 4x◆RB◆◆LB◆8◆RB◆$.
+$\sin^2 x\cos^2 x = \dfrac{\sin^2 2x}{4} = \dfrac{1-\cos 4x}{8}$.
 
-$\displaystyle\int_0^{\pi/2} \frac◆LB◆1-\cos 4x◆RB◆◆LB◆8◆RB◆\,dx = \frac{1}{8}\!\left[x-\frac◆LB◆\sin 4x◆RB◆◆LB◆4◆RB◆\right]_0^{\pi/2} = \frac{1}{8}\cdot\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ = \boxed{\dfrac◆LB◆\pi◆RB◆◆LB◆16◆RB◆}$.
+$\displaystyle\int_0^{\pi/2} \frac{1-\cos 4x}{8}\,dx = \frac{1}{8}\!\left[x-\frac{\sin 4x}{4}\right]_0^{\pi/2} = \frac{1}{8}\cdot\frac{\pi}{2} = \boxed{\dfrac{\pi}{16}}$.
 $\blacksquare$
 
 </details>
@@ -1057,7 +1057,7 @@ $I = e^x\sin x + e^x\cos x - I$.
 
 $2I = e^x(\sin x+\cos x)$.
 
-$\boxed{I = \dfrac◆LB◆e^x(\sin x+\cos x)◆RB◆◆LB◆2◆RB◆ + C}$
+$\boxed{I = \dfrac{e^x(\sin x+\cos x)}{2} + C}$
 
 </details>
 
@@ -1091,7 +1091,7 @@ Bounded above.
 
 $F'(x) = \dfrac{1}{1+x^4} > 0$ for all $x \geq 0$So $F$ is strictly increasing. ✓
 
-$F(x) < F(\infty) = \displaystyle\int_0^{\infty} \frac{dt}{1+t^4} < \int_0^{\infty} \frac{dt}{1+t^2} = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
+$F(x) < F(\infty) = \displaystyle\int_0^{\infty} \frac{dt}{1+t^4} < \int_0^{\infty} \frac{dt}{1+t^2} = \frac{\pi}{2}$.
 ✓
 
 Therefore $F$ is increasing and bounded above by $\pi/2$. $\blacksquare$

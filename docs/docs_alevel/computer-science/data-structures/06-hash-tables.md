@@ -52,7 +52,7 @@ A **prime** not close to a power of 2.
 $$h(k) = \lfloor m \cdot (k \cdot A \bmod 1) \rfloor$$
 
 Where $A$ is a constant $0 \lt A \lt 1$ (Knuth suggests
-$A = \frac◆LB◆\sqrt{5} - 1◆RB◆◆LB◆2◆RB◆ \approx 0.618$).
+$A = \frac{\sqrt{5} - 1}{2} \approx 0.618$).
 
 **Advantage:** Works well with any value of $m$.
 
@@ -210,7 +210,7 @@ Load factor approaches 1 (vs $O(1)$ for uniform hashing).
 More formally, after inserting $n$ keys into a table of size $m$ with linear probing, the expected
 Number of probes for an unsuccessful search is approximately:
 
-$$\frac{1}{2}\left(1 + \frac◆LB◆1◆RB◆◆LB◆(1 - \alpha)^2◆RB◆\right)$$
+$$\frac{1}{2}\left(1 + \frac{1}{(1 - \alpha)^2}\right)$$
 
 Where $\alpha = n/m$ is the load factor. As $\alpha \to 1$This grows to $\infty$. $\square$
 
@@ -421,7 +421,7 @@ Load factor: $\alpha = 500/1000 = 0.5$.
 **Unsuccessful search:** Expected probes = $\alpha = 0.5$ (we traverse the entire chain on average).
 
 **Successful search:** Expected probes =
-$1 + \frac◆LB◆\alpha◆RB◆◆LB◆2◆RB◆ - \frac◆LB◆\alpha◆RB◆◆LB◆2n◆RB◆ \approx 1 + \frac◆LB◆\alpha◆RB◆◆LB◆2◆RB◆ = 1 + 0.25 = 1.25$.
+$1 + \frac{\alpha}{2} - \frac{\alpha}{2n} \approx 1 + \frac{\alpha}{2} = 1 + 0.25 = 1.25$.
 
 More precisely: for successful search, we examine half the chain on average (the target is equally
 Likely to be at any position in the chain). Expected chain length = $\alpha = 0.5$So expected Probes

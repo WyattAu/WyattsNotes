@@ -18,7 +18,7 @@ midpoint (arc elasticity) method. Is demand elastic or inelastic? What happens t
 **Solution:**
 
 Midpoint method:
-$\text{PED} = \frac◆LB◆\% \Delta Q_d◆RB◆◆LB◆\% \Delta P◆RB◆ = \frac◆LB◆\Delta Q / \bar{Q}◆RB◆◆LB◆\Delta P / \bar{P}◆RB◆$
+$\text{PED} = \frac{\% \Delta Q_d}{\% \Delta P} = \frac{\Delta Q / \bar{Q}}{\Delta P / \bar{P}}$
 
 $\Delta Q = 600 - 800 = -200$, $\bar{Q} = (800 + 600)/2 = 700$
 
@@ -48,7 +48,7 @@ hand-sanitiser might be less elastic in the very short run than in the long run.
 At $P = 3$: $Q_s = -100 + 50(3) = 50$ At $P = 5$: $Q_s = -100 + 50(5) = 150$
 
 Midpoint method:
-$\text{PES} = \frac◆LB◆\% \Delta Q_s◆RB◆◆LB◆\% \Delta P◆RB◆ = \frac◆LB◆\Delta Q / \bar{Q}◆RB◆◆LB◆\Delta P / \bar{P}◆RB◆$
+$\text{PES} = \frac{\% \Delta Q_s}{\% \Delta P} = \frac{\Delta Q / \bar{Q}}{\Delta P / \bar{P}}$
 
 $\Delta Q = 150 - 50 = 100$, $\bar{Q} = (50 + 150)/2 = 100$
 

@@ -13,7 +13,7 @@ hide_table_of_contents: true
 
 **Question:** (a) Evaluate $\int_1^{\infty} \frac{1}{x^2}\,dx$. (b) Determine whether
 $\int_1^{\infty} \frac{1}{x}\,dx$ converges or diverges. (c) Evaluate
-$\int_0^1 \frac◆LB◆1◆RB◆◆LB◆\sqrt{x}◆RB◆\,dx$. (d) Explain the difference between a convergent and
+$\int_0^1 \frac{1}{\sqrt{x}}\,dx$. (d) Explain the difference between a convergent and
 divergent improper integral.
 
 **Solution:**
@@ -27,7 +27,7 @@ $\int_1^{\infty} \frac{1}{x}\,dx = \lim_{b \to \infty}[\ln x]_1^b = \lim_{b \to 
 **Diverges**.
 
 (c)
-$\int_0^1 \frac◆LB◆1◆RB◆◆LB◆\sqrt{x}◆RB◆\,dx = \lim_{a \to 0^+}[2\sqrt{x}]_a^1 = \lim_{a \to 0^+}(2 - 2\sqrt{a}) = 2 - 0 = 2$.
+$\int_0^1 \frac{1}{\sqrt{x}}\,dx = \lim_{a \to 0^+}[2\sqrt{x}]_a^1 = \lim_{a \to 0^+}(2 - 2\sqrt{a}) = 2 - 0 = 2$.
 Converges to 2.
 
 (d) A **convergent** improper integral has a finite value -- the limit exists and equals a real
@@ -48,10 +48,10 @@ method: $V = 2\pi\int_a^b xy\,dx$.
 $V = \pi\int_0^4 y^2\,dx = \pi\int_0^4 x\,dx = \pi\left[\frac{x^2}{2}\right]_0^4 = \pi \times 8 = 8\pi$.
 
 (b)
-$V = \pi\int_0^2 x^2\,dy = \pi\int_0^2 y^4\,dy = \pi\left[\frac{y^5}{5}\right]_0^2 = \pi \times \frac{32}{5} = \frac◆LB◆32\pi◆RB◆◆LB◆5◆RB◆$.
+$V = \pi\int_0^2 x^2\,dy = \pi\int_0^2 y^4\,dy = \pi\left[\frac{y^5}{5}\right]_0^2 = \pi \times \frac{32}{5} = \frac{32\pi}{5}$.
 
 (c)
-$V = 2\pi\int_0^1 x \cdot x^2\,dx = 2\pi\int_0^1 x^3\,dx = 2\pi\left[\frac{x^4}{4}\right]_0^1 = 2\pi \times \frac{1}{4} = \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
+$V = 2\pi\int_0^1 x \cdot x^2\,dx = 2\pi\int_0^1 x^3\,dx = 2\pi\left[\frac{x^4}{4}\right]_0^1 = 2\pi \times \frac{1}{4} = \frac{\pi}{2}$.
 
 ### UT-3: Parametric Differentiation
 
@@ -64,22 +64,22 @@ normal to the curve at the point where $t = 2$.
 
 (a) $\frac{dx}{dt} = 2t$, $\frac{dy}{dt} = 3t^2 - 1$. $\frac{dy}{dx} = \frac{3t^2 - 1}{2t}$.
 
-(b) Stationary points: $\frac{dy}{dx} = 0$So $3t^2 - 1 = 0$, $t = \pm\frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆$.
+(b) Stationary points: $\frac{dy}{dx} = 0$So $3t^2 - 1 = 0$, $t = \pm\frac{1}{\sqrt{3}}$.
 
-$t = \frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆$:
-$x = \frac{4}{3}$, $y = \frac◆LB◆1◆RB◆◆LB◆3\sqrt{3}◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆ = -\frac◆LB◆2◆RB◆◆LB◆3\sqrt{3}◆RB◆$.
-$t = -\frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆$:
-$x = \frac{4}{3}$, $y = -\frac◆LB◆1◆RB◆◆LB◆3\sqrt{3}◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆ = \frac◆LB◆2◆RB◆◆LB◆3\sqrt{3}◆RB◆$.
+$t = \frac{1}{\sqrt{3}}$:
+$x = \frac{4}{3}$, $y = \frac{1}{3\sqrt{3}} - \frac{1}{\sqrt{3}} = -\frac{2}{3\sqrt{3}}$.
+$t = -\frac{1}{\sqrt{3}}$:
+$x = \frac{4}{3}$, $y = -\frac{1}{3\sqrt{3}} + \frac{1}{\sqrt{3}} = \frac{2}{3\sqrt{3}}$.
 
 (c)
-$\frac{d^2y}{dx^2} = \frac{d}{dt}\left(\frac{3t^2-1}{2t}\right) \Big/ \frac{dx}{dt} = \frac◆LB◆6t \cdot 2t - (3t^2-1) \cdot 2◆RB◆◆LB◆4t^2◆RB◆ \Big/ 2t = \frac{12t^2 - 6t^2 + 2}{4t^2} \cdot \frac{1}{2t} = \frac{6t^2 + 2}{8t^3}$.
+$\frac{d^2y}{dx^2} = \frac{d}{dt}\left(\frac{3t^2-1}{2t}\right) \Big/ \frac{dx}{dt} = \frac{6t \cdot 2t - (3t^2-1) \cdot 2}{4t^2} \Big/ 2t = \frac{12t^2 - 6t^2 + 2}{4t^2} \cdot \frac{1}{2t} = \frac{6t^2 + 2}{8t^3}$.
 
-At $t = \frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆$:
-$\frac{d^2y}{dx^2} = \frac◆LB◆6/3 + 2◆RB◆◆LB◆8/(3\sqrt{3})◆RB◆ = \frac◆LB◆4◆RB◆◆LB◆8/(3\sqrt{3})◆RB◆ = \frac◆LB◆12\sqrt{3}◆RB◆◆LB◆8◆RB◆ = \frac◆LB◆3\sqrt{3}◆RB◆◆LB◆2◆RB◆ \gt 0$:
+At $t = \frac{1}{\sqrt{3}}$:
+$\frac{d^2y}{dx^2} = \frac{6/3 + 2}{8/(3\sqrt{3})} = \frac{4}{8/(3\sqrt{3})} = \frac{12\sqrt{3}}{8} = \frac{3\sqrt{3}}{2} \gt 0$:
 **minimum**.
 
-At $t = -\frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆$:
-$\frac{d^2y}{dx^2} = \frac◆LB◆6/3 + 2◆RB◆◆LB◆8/(-3\sqrt{3})◆RB◆ = -\frac◆LB◆3\sqrt{3}◆RB◆◆LB◆2◆RB◆ \lt 0$:
+At $t = -\frac{1}{\sqrt{3}}$:
+$\frac{d^2y}{dx^2} = \frac{6/3 + 2}{8/(-3\sqrt{3})} = -\frac{3\sqrt{3}}{2} \lt 0$:
 **maximum**.
 
 (d) At $t = 2$: $x = 5$, $y = 6$. $\frac{dy}{dx} = \frac{12-1}{4} = \frac{11}{4}$.
@@ -149,34 +149,34 @@ $\int_0^{\infty} xe^{-x}\,dx = [-xe^{-x}]_0^{\infty} + \int_0^{\infty} e^{-x}\,d
 (b) Find the surface area generated when this curve is rotated about the $x$-axis. (c) A curve is
 given by $x = 2\cos\theta$$y = 2\sin\theta$. Find the arc length for one complete revolution
 ($0 \le \theta \le 2\pi$). (d) Explain why the arc length formula involves
-$\sqrt◆LB◆1 + \left(\frac{dy}{dx}\right)^2◆RB◆$.
+$\sqrt{1 + \left(\frac{dy}{dx}\right)^2}$.
 
 **Solution:**
 
-(a) Arc length $s = \int_a^b \sqrt◆LB◆1 + \left(\frac{dy}{dx}\right)^2◆RB◆\,dx$.
+(a) Arc length $s = \int_a^b \sqrt{1 + \left(\frac{dy}{dx}\right)^2}\,dx$.
 $\frac{dy}{dx} = x^{1/2}$.
 $s = \int_0^3 \sqrt{1 + x}\,dx = \left[\frac{2}{3}(1+x)^{3/2}\right]_0^3 = \frac{2}{3}(8 - 1) = \frac{14}{3}$.
 
 (b) Surface area
-$= 2\pi\int_0^3 y\sqrt◆LB◆1 + \left(\frac{dy}{dx}\right)^2◆RB◆\,dx = 2\pi\int_0^3 \frac{2}{3}x^{3/2}\sqrt{1+x}\,dx$.
+$= 2\pi\int_0^3 y\sqrt{1 + \left(\frac{dy}{dx}\right)^2}\,dx = 2\pi\int_0^3 \frac{2}{3}x^{3/2}\sqrt{1+x}\,dx$.
 
-Let $u = 1 + x$$du = dx$$x = u - 1$: $= \frac◆LB◆4\pi◆RB◆◆LB◆3◆RB◆\int_1^4 (u-1)^{3/2}u^{1/2}\,du$.
+Let $u = 1 + x$$du = dx$$x = u - 1$: $= \frac{4\pi}{3}\int_1^4 (u-1)^{3/2}u^{1/2}\,du$.
 
 This integral requires expanding $(u-1)^{3/2} = u^{3/2} - 3u^{1/2} + 3u^{-1/2} - u^{-3/2}$Then
 multiplying by $u^{1/2}$ and integrating term by term.
 
-$= \frac◆LB◆4\pi◆RB◆◆LB◆3◆RB◆\int_1^4 (u^2 - 3u + 3 - u^{-1})\,du = \frac◆LB◆4\pi◆RB◆◆LB◆3◆RB◆\left[\frac{u^3}{3} - \frac{3u^2}{2} + 3u - \ln u\right]_1^4$
+$= \frac{4\pi}{3}\int_1^4 (u^2 - 3u + 3 - u^{-1})\,du = \frac{4\pi}{3}\left[\frac{u^3}{3} - \frac{3u^2}{2} + 3u - \ln u\right]_1^4$
 
-$= \frac◆LB◆4\pi◆RB◆◆LB◆3◆RB◆\left[\left(\frac{64}{3} - 24 + 12 - \ln 4\right) - \left(\frac{1}{3} - \frac{3}{2} + 3 - 0\right)\right] = \frac◆LB◆4\pi◆RB◆◆LB◆3◆RB◆\left(\frac{63}{3} - 12 + 9 - \frac{3}{2} - \ln 4\right)$
+$= \frac{4\pi}{3}\left[\left(\frac{64}{3} - 24 + 12 - \ln 4\right) - \left(\frac{1}{3} - \frac{3}{2} + 3 - 0\right)\right] = \frac{4\pi}{3}\left(\frac{63}{3} - 12 + 9 - \frac{3}{2} - \ln 4\right)$
 
-$= \frac◆LB◆4\pi◆RB◆◆LB◆3◆RB◆(21 - 12 + 9 - 1.5 - 1.386) = \frac◆LB◆4\pi◆RB◆◆LB◆3◆RB◆(15.114) = 63.3$.
+$= \frac{4\pi}{3}(21 - 12 + 9 - 1.5 - 1.386) = \frac{4\pi}{3}(15.114) = 63.3$.
 
-(c) $\frac◆LB◆dx◆RB◆◆LB◆d\theta◆RB◆ = -2\sin\theta$$\frac◆LB◆dy◆RB◆◆LB◆d\theta◆RB◆ = 2\cos\theta$.
-$\sqrt◆LB◆(-2\sin\theta)^2 + (2\cos\theta)^2◆RB◆ = \sqrt{4} = 2$.
+(c) $\frac{dx}{d\theta} = -2\sin\theta$$\frac{dy}{d\theta} = 2\cos\theta$.
+$\sqrt{(-2\sin\theta)^2 + (2\cos\theta)^2} = \sqrt{4} = 2$.
 $s = \int_0^{2\pi} 2\,d\theta = 4\pi$. This is a circle of radius 2, so circumference
 $= 2\pi(2) = 4\pi$.
 
 (d) The formula comes from approximating the curve by many small line segments of length
-$\Delta s = \sqrt◆LB◆(\Delta x)^2 + (\Delta y)^2◆RB◆$. Dividing by $\Delta x$:
-$\Delta s = \sqrt◆LB◆1 + \left(\frac{\Delta y}{\Delta x}\right)^2◆RB◆\Delta x$. In the limit as
+$\Delta s = \sqrt{(\Delta x)^2 + (\Delta y)^2}$. Dividing by $\Delta x$:
+$\Delta s = \sqrt{1 + \left(\frac{\Delta y}{\Delta x}\right)^2}\Delta x$. In the limit as
 $\Delta x \to 0$: $ds = \sqrt{1 + (dy/dx)^2}\,dx$. Integrating gives the total arc length.

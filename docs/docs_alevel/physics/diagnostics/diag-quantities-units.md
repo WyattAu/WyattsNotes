@@ -87,16 +87,16 @@ uncertainties.
 
 **Solution:**
 
-(a) Rearranging: $l = \frac◆LB◆gT^2◆RB◆◆LB◆4\pi^2◆RB◆$
+(a) Rearranging: $l = \frac{gT^2}{4\pi^2}$
 
 Central value:
 
-$$l = \frac◆LB◆9.81 \times 2.00^2◆RB◆◆LB◆4\pi^2◆RB◆ = \frac◆LB◆9.81 \times 4.00◆RB◆◆LB◆39.478◆RB◆ = \frac{39.24}{39.478} = 0.9940\,\text{m}$$
+$$l = \frac{9.81 \times 2.00^2}{4\pi^2} = \frac{9.81 \times 4.00}{39.478} = \frac{39.24}{39.478} = 0.9940\,\text{m}$$
 
 Using the fractional uncertainty method:
 
-$$\frac◆LB◆\Delta l◆RB◆◆LB◆l◆RB◆ = \frac◆LB◆\Delta g◆RB◆◆LB◆g◆RB◆ + 2\frac◆LB◆\Delta T◆RB◆◆LB◆T◆RB◆$$
-$$\frac◆LB◆\Delta l◆RB◆◆LB◆l◆RB◆ = \frac{0.01}{9.81} + 2 \times \frac{0.02}{2.00} = 0.00102 + 0.0200 = 0.0210$$
+$$\frac{\Delta l}{l} = \frac{\Delta g}{g} + 2\frac{\Delta T}{T}$$
+$$\frac{\Delta l}{l} = \frac{0.01}{9.81} + 2 \times \frac{0.02}{2.00} = 0.00102 + 0.0200 = 0.0210$$
 
 $$\Delta l = 0.0210 \times 0.9940 = 0.0209 \approx 0.021\,\text{m}$$
 
@@ -180,7 +180,7 @@ coarse resolution conceals.
 A student derives the following expression for the horizontal range $R$ of a projectile launched at
 angle $\theta$ above the horizontal with initial speed $u$ from a cliff of height $h$:
 
-$$R = \frac◆LB◆u^2 \sin(2\theta)◆RB◆◆LB◆2g◆RB◆\left(1 + \sqrt◆LB◆1 + \frac{2gh}{u^2\sin^2\theta}◆RB◆\right)$$
+$$R = \frac{u^2 \sin(2\theta)}{2g}\left(1 + \sqrt{1 + \frac{2gh}{u^2\sin^2\theta}}\right)$$
 
 Without deriving this formula, verify it is dimensionally correct.
 
@@ -191,14 +191,14 @@ We need to show that the right-hand side has dimensions of length ($\text{L}$).
 **First term:** $\frac{u^2}{g}$
 
 Dimensions:
-$\frac◆LB◆(\text{L}\text{T}^{-1})^2◆RB◆◆LB◆\text{L}\text{T}^{-2}◆RB◆ = \frac◆LB◆\text{L}^2\text{T}^{-2}◆RB◆◆LB◆\text{L}\text{T}^{-2}◆RB◆ = \text{L}$
+$\frac{(\text{L}\text{T}^{-1})^2}{\text{L}\text{T}^{-2}} = \frac{\text{L}^2\text{T}^{-2}}{\text{L}\text{T}^{-2}} = \text{L}$
 
 $\sin(2\theta)$ and $\sin^2\theta$ are dimensionless.
 
-**Inside the square root:** $\frac◆LB◆2gh◆RB◆◆LB◆u^2\sin^2\theta◆RB◆$
+**Inside the square root:** $\frac{2gh}{u^2\sin^2\theta}$
 
 Dimensions:
-$\frac◆LB◆(\text{L}\text{T}^{-2}) \cdot \text{L}◆RB◆◆LB◆(\text{L}\text{T}^{-1})^2◆RB◆ = \frac◆LB◆\text{L}^2\text{T}^{-2}◆RB◆◆LB◆\text{L}^2\text{T}^{-2}◆RB◆ = 1$
+$\frac{(\text{L}\text{T}^{-2}) \cdot \text{L}}{(\text{L}\text{T}^{-1})^2} = \frac{\text{L}^2\text{T}^{-2}}{\text{L}^2\text{T}^{-2}} = 1$
 (dimensionless)
 
 The square root of a dimensionless quantity is dimensionless. The expression inside the parentheses
@@ -232,11 +232,11 @@ Recalculate $g$ accounting for this systematic error, and state the total uncert
 
 (a) Central value:
 
-$$g = \frac{v^2}{2d} = \frac◆LB◆5.40^2◆RB◆◆LB◆2 \times 1.500◆RB◆ = \frac{29.16}{3.000} = 9.720\,\text{m}\,\text{s}^{-2}$$
+$$g = \frac{v^2}{2d} = \frac{5.40^2}{2 \times 1.500} = \frac{29.16}{3.000} = 9.720\,\text{m}\,\text{s}^{-2}$$
 
 Fractional uncertainty:
 
-$$\frac◆LB◆\Delta g◆RB◆◆LB◆g◆RB◆ = 2\frac◆LB◆\Delta v◆RB◆◆LB◆v◆RB◆ + \frac◆LB◆\Delta d◆RB◆◆LB◆d◆RB◆ = 2 \times \frac{0.05}{5.40} + \frac{0.003}{1.500} = 0.01852 + 0.00200 = 0.02052$$
+$$\frac{\Delta g}{g} = 2\frac{\Delta v}{v} + \frac{\Delta d}{d} = 2 \times \frac{0.05}{5.40} + \frac{0.003}{1.500} = 0.01852 + 0.00200 = 0.02052$$
 
 $$\Delta g = 0.02052 \times 9.720 = 0.1995 \approx 0.20\,\text{m}\,\text{s}^{-2}$$
 
@@ -247,13 +247,13 @@ $v_{\text{true}} = v_{\text{measured}} - 0.10 = 5.40 - 0.10 = 5.30\,\text{m}\,\t
 
 The systematic error shifts the central value but does not change the random uncertainty.
 
-$$g_{\text{corrected}} = \frac◆LB◆5.30^2◆RB◆◆LB◆2 \times 1.500◆RB◆ = \frac{28.09}{3.000} = 9.363\,\text{m}\,\text{s}^{-2}$$
+$$g_{\text{corrected}} = \frac{5.30^2}{2 \times 1.500} = \frac{28.09}{3.000} = 9.363\,\text{m}\,\text{s}^{-2}$$
 
 The random uncertainty remains $\pm 0.20\,\text{m}\,\text{s}^{-2}$ (from part a).
 
 The systematic uncertainty in $g$ due to the systematic error in $v$:
 
-$$\Delta g_{\text{sys}} = \frac◆LB◆2v \cdot \Delta v_{\text{sys}}◆RB◆◆LB◆2d◆RB◆ = \frac◆LB◆2 \times 5.30 \times 0.10◆RB◆◆LB◆3.00◆RB◆ = \frac{1.060}{3.00} = 0.353\,\text{m}\,\text{s}^{-2}$$
+$$\Delta g_{\text{sys}} = \frac{2v \cdot \Delta v_{\text{sys}}}{2d} = \frac{2 \times 5.30 \times 0.10}{3.00} = \frac{1.060}{3.00} = 0.353\,\text{m}\,\text{s}^{-2}$$
 
 Total uncertainty (random and systematic combined in quadrature):
 
@@ -293,20 +293,20 @@ $m = (4.2 \pm 0.2) \times 10^{-15}\,\text{V}\,\text{s}$.
 **Solution:**
 
 (a) The equation $eV_s = hf - \phi$ can be rearranged as
-$V_s = \frac{h}{e}f - \frac◆LB◆\phi◆RB◆◆LB◆e◆RB◆$Which is of the form $y = mx + c$.
+$V_s = \frac{h}{e}f - \frac{\phi}{e}$Which is of the form $y = mx + c$.
 
 Dimensions of the gradient $m = h/e$:
 
-$$[m] = \frac{[h]}{[e]} = \frac◆LB◆\text{M}\text{L}^2\text{T}^{-1}◆RB◆◆LB◆\text{I}\text{T}◆RB◆ = \frac◆LB◆\text{M}\text{L}^2\text{T}^{-2}◆RB◆◆LB◆\text{I}\text{T}^2◆RB◆$$
+$$[m] = \frac{[h]}{[e]} = \frac{\text{M}\text{L}^2\text{T}^{-1}}{\text{I}\text{T}} = \frac{\text{M}\text{L}^2\text{T}^{-2}}{\text{I}\text{T}^2}$$
 
 The student's gradient has units of
-$\text{V}\,\text{s} = \frac◆LB◆\text{J}◆RB◆◆LB◆\text{C}◆RB◆ \cdot \text{s} = \frac◆LB◆\text{kg}\,\text{m}^2\,\text{s}^{-2}◆RB◆◆LB◆\text{A}\,\text{s}◆RB◆ \cdot \text{s} = \text{kg}\,\text{m}^2\,\text{s}^{-2}\,\text{A}^{-1}$.
+$\text{V}\,\text{s} = \frac{\text{J}}{\text{C}} \cdot \text{s} = \frac{\text{kg}\,\text{m}^2\,\text{s}^{-2}}{\text{A}\,\text{s}} \cdot \text{s} = \text{kg}\,\text{m}^2\,\text{s}^{-2}\,\text{A}^{-1}$.
 
 Dimensions of $h$: $\text{M}\text{L}^2\text{T}^{-1}$
 
 Dimensions of $e$: $\text{I}\text{T}$ (charge $=$ current $\times$ time)
 
-$$\frac{[h]}{[e]} = \frac◆LB◆\text{M}\text{L}^2\text{T}^{-1}◆RB◆◆LB◆\text{I}\text{T}◆RB◆ = \text{M}\text{L}^2\text{T}^{-2}\text{I}^{-1}$$
+$$\frac{[h]}{[e]} = \frac{\text{M}\text{L}^2\text{T}^{-1}}{\text{I}\text{T}} = \text{M}\text{L}^2\text{T}^{-2}\text{I}^{-1}$$
 
 This matches $\text{kg}\,\text{m}^2\,\text{s}^{-2}\,\text{A}^{-1}$Confirming dimensional
 consistency.
@@ -316,7 +316,7 @@ consistency.
 $$h = 4.2 \times 10^{-15} \times 1.60 \times 10^{-19} = 6.72 \times 10^{-34}\,\text{J}\,\text{s}$$
 
 Fractional uncertainty:
-$\frac◆LB◆\Delta h◆RB◆◆LB◆h◆RB◆ = \frac◆LB◆\Delta m◆RB◆◆LB◆m◆RB◆ = \frac{0.2}{4.2} = 0.0476$
+$\frac{\Delta h}{h} = \frac{\Delta m}{m} = \frac{0.2}{4.2} = 0.0476$
 
 $$\Delta h = 0.0476 \times 6.72 \times 10^{-34} = 3.20 \times 10^{-35}\,\text{J}\,\text{s}$$
 

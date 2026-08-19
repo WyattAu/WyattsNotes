@@ -157,7 +157,7 @@ $$
 ### Percentage Yield
 
 $$
-\mathrm{Percentage yield} = \frac◆LB◆\mathrm{Actual yield}◆RB◆◆LB◆\mathrm{Theoretical yield}◆RB◆ \times 100\%
+\mathrm{Percentage yield} = \frac{\mathrm{Actual yield}}{\mathrm{Theoretical yield}} \times 100\%
 $$
 
 Yields below 100% arise from incomplete reactions, side reactions, product loss during purification,
@@ -205,7 +205,7 @@ $$
 Stoichiometry: $n(\mathrm{NaOH}) = n(\mathrm{HCl}) = 2.15 \times 10^{-3}\,\mathrm{mol}$.
 
 $$
-C(\mathrm{NaOH}) = \frac◆LB◆2.15 \times 10^{-3}◆RB◆◆LB◆0.0250◆RB◆ = 0.0860\,\mathrm{mol/dm}^3
+C(\mathrm{NaOH}) = \frac{2.15 \times 10^{-3}}{0.0250} = 0.0860\,\mathrm{mol/dm}^3
 $$
 
 ### Redox Titrations
@@ -287,7 +287,7 @@ $$
 $100\,\mathrm{kPa}$ and $298\,\mathrm{K}$.
 
 $$
-V = \frac{nRT}{p} = \frac◆LB◆0.500 \times 8.314 \times 298◆RB◆◆LB◆100 \times 10^3◆RB◆ = \frac{1239}{100000} = 0.01239\,\mathrm{m}^3 = 12.4\,\mathrm{dm}^3
+V = \frac{nRT}{p} = \frac{0.500 \times 8.314 \times 298}{100 \times 10^3} = \frac{1239}{100000} = 0.01239\,\mathrm{m}^3 = 12.4\,\mathrm{dm}^3
 $$
 
 ### Deviations from Ideality
@@ -521,7 +521,7 @@ N(\mathrm{HCl}) = 0.200 \times 0.02240 = 4.480 \times 10^{-3}\,\mathrm{mol}
 $$
 
 $$
-N(\mathrm{Na}_2\mathrm{CO}_3) = \frac◆LB◆4.480 \times 10^{-3}◆RB◆◆LB◆2◆RB◆ = 2.240 \times 10^{-3}\,\mathrm{mol}
+N(\mathrm{Na}_2\mathrm{CO}_3) = \frac{4.480 \times 10^{-3}}{2} = 2.240 \times 10^{-3}\,\mathrm{mol}
 $$
 
 $$
@@ -580,7 +580,7 @@ The experimental value ($-424\,\mathrm{kJ/mol}$) is much less exothermic than th
 The percentage yield compares the actual amount of product obtained with the theoretical maximum:
 
 $$
-\%\,\mathrm{yield} = \frac◆LB◆\mathrm{actual\ yield}◆RB◆◆LB◆\mathrm{theoretical\ yield}◆RB◆ \times 100
+\%\,\mathrm{yield} = \frac{\mathrm{actual\ yield}}{\mathrm{theoretical\ yield}} \times 100
 $$
 
 **Worked Example.** $5.00\,\mathrm{g}$ of $\mathrm{CH}_3\mathrm{CH}_2\mathrm{Br}$ (bromoethane,
@@ -607,7 +607,7 @@ Atom economy measures the efficiency of a reaction in terms of how many atoms fr
 up in the desired product:
 
 $$
-\mathrm{Atom\ economy} = \frac◆LB◆M_r\ \mathrm{of\ desired\ product}◆RB◆◆LB◆\sum M_r\ \mathrm{of\ all\ products}◆RB◆ \times 100
+\mathrm{Atom\ economy} = \frac{M_r\ \mathrm{of\ desired\ product}}{\sum M_r\ \mathrm{of\ all\ products}} \times 100
 $$
 
 **Worked Example.** Compare the atom economy of two routes to ethanol:
@@ -744,7 +744,7 @@ N(\mathrm{BaCl}_2) = \frac{4.26}{208.2} = 0.0205\,\mathrm{mol}
 $$
 
 $$
-X = \frac◆LB◆n(\mathrm{H}_2\mathrm{O})◆RB◆◆LB◆n(\mathrm{BaCl}_2)◆RB◆ = \frac{0.0411}{0.0205} = 2.01 \approx 2
+X = \frac{n(\mathrm{H}_2\mathrm{O})}{n(\mathrm{BaCl}_2)} = \frac{0.0411}{0.0205} = 2.01 \approx 2
 $$
 
 The formula is $\mathrm{BaCl}_2\cdot2\mathrm{H}_2\mathrm{O}$.
@@ -785,7 +785,7 @@ N(\mathrm{CaCO}_3) = \frac{10.0}{100.1} = 0.0999\,\mathrm{mol} = n(\mathrm{CO}_2
 $$
 
 $$
-V = \frac{nRT}{p} = \frac◆LB◆0.0999 \times 8.314 \times 298◆RB◆◆LB◆100 \times 10^3◆RB◆ = \frac{247.6}{100000} = 2.48 \times 10^{-3}\,\mathrm{m}^3 = 2.48\,\mathrm{dm}^3
+V = \frac{nRT}{p} = \frac{0.0999 \times 8.314 \times 298}{100 \times 10^3} = \frac{247.6}{100000} = 2.48 \times 10^{-3}\,\mathrm{m}^3 = 2.48\,\mathrm{dm}^3
 $$
 
 Alternatively, using molar volume: $V = 0.0999 \times 24.0 = 2.40\,\mathrm{dm}^3$ (close but not
@@ -807,7 +807,7 @@ exact because the molar volume approximation depends on the conditions).
 For a measurement $x \pm \Delta x$:
 
 $$
-\text{Percentage uncertainty} = \frac◆LB◆\Delta x◆RB◆◆LB◆x◆RB◆ \times 100\%
+\text{Percentage uncertainty} = \frac{\Delta x}{x} \times 100\%
 $$
 
 ### Combining Uncertainties
@@ -876,7 +876,7 @@ From stoichiometry (5 mol $\mathrm{Fe}^{2+}$ per 1 mol $\mathrm{MnO}_4^-$):
 
 $$n(\mathrm{Fe}^{2+}) = 5 \times 3.92 \times 10^{-4} = 1.96 \times 10^{-3}\,\mathrm{mol}$$
 
-$$c(\mathrm{Fe}^{2+}) = \frac◆LB◆1.96 \times 10^{-3}◆RB◆◆LB◆0.0200◆RB◆ = 0.0980\,\mathrm{mol\,dm^{-3}}$$
+$$c(\mathrm{Fe}^{2+}) = \frac{1.96 \times 10^{-3}}{0.0200} = 0.0980\,\mathrm{mol\,dm^{-3}}$$
 
 ### Gas Volume Calculations
 
@@ -890,7 +890,7 @@ $$n(\mathrm{CaCO}_3) = \frac{10.0}{100.09} = 0.0999\,\mathrm{mol}$$
 
 $$n(\mathrm{CO}_2) = 0.0999\,\mathrm{mol}$$ (1:1 stoichiometry)
 
-$$V = \frac{nRT}{p} = \frac◆LB◆0.0999 \times 8.314 \times 298◆RB◆◆LB◆101000◆RB◆ = \frac{247.5}{101000} = 2.45 \times 10^{-3}\,\mathrm{m}^3 = 2.45\,\mathrm{dm}^3$$
+$$V = \frac{nRT}{p} = \frac{0.0999 \times 8.314 \times 298}{101000} = \frac{247.5}{101000} = 2.45 \times 10^{-3}\,\mathrm{m}^3 = 2.45\,\mathrm{dm}^3$$
 
 $$V = 2450\,\mathrm{cm}^3$$
 
@@ -959,7 +959,7 @@ $$\text{Percentage yield} = \frac{0.098}{0.139} \times 100 = 70.5\%$$
 Atom economy measures the efficiency of a reaction in terms of how much of the reactants end up in
 the desired product:
 
-$$\text{Atom economy} = \frac◆LB◆M_r \text{ of desired product}◆RB◆◆LB◆\text{Sum of } M_r \text{ of all products}◆RB◆ \times 100\%$$
+$$\text{Atom economy} = \frac{M_r \text{ of desired product}}{\text{Sum of } M_r \text{ of all products}} \times 100\%$$
 
 **Worked Example:** Compare the atom economy of two routes to ethanol.
 
@@ -971,7 +971,7 @@ $$\text{Atom economy} = \frac{46.0}{46.0} \times 100 = 100\%$$
 Route 2: Fermentation (single product)
 $$\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6 \to 2\mathrm{C}_2\mathrm{H}_5\mathrm{OH} + 2\mathrm{CO}_2$$
 
-$$\text{Atom economy} = \frac◆LB◆2 \times 46.0◆RB◆◆LB◆2 \times 46.0 + 2 \times 44.0◆RB◆ \times 100 = \frac{92.0}{180.0} \times 100 = 51.1\%$$
+$$\text{Atom economy} = \frac{2 \times 46.0}{2 \times 46.0 + 2 \times 44.0} \times 100 = \frac{92.0}{180.0} \times 100 = 51.1\%$$
 
 Addition reactions always have 100% atom economy (assuming no side reactions). This is a key
 advantage of addition reactions in green chemistry.
@@ -1030,7 +1030,7 @@ $298\,\mathrm{K}$).
 **Mark Scheme:**
 
 (a)
-$n(\mathrm{CO}_2) = \frac{pV}{RT} = \frac◆LB◆101000 \times 480 \times 10^{-6}◆RB◆◆LB◆8.314 \times 298◆RB◆ = \frac{48.5}{2478} = 0.0196\,\mathrm{mol}$
+$n(\mathrm{CO}_2) = \frac{pV}{RT} = \frac{101000 \times 480 \times 10^{-6}}{8.314 \times 298} = \frac{48.5}{2478} = 0.0196\,\mathrm{mol}$
 (1 mark).
 
 From $\mathrm{CaCO}_3 + 2\mathrm{HCl} \to \mathrm{CaCl}_2 + \mathrm{CO}_2 + \mathrm{H}_2\mathrm{O}$:
@@ -1056,7 +1056,7 @@ metal.
 
 **Mark Scheme:**
 
-$$n(\mathrm{H}_2) = \frac{pV}{RT} = \frac◆LB◆100000 \times 120 \times 10^{-6}◆RB◆◆LB◆8.314 \times 298◆RB◆ = \frac{12.0}{2478} = 0.00484\,\mathrm{mol}$$
+$$n(\mathrm{H}_2) = \frac{pV}{RT} = \frac{100000 \times 120 \times 10^{-6}}{8.314 \times 298} = \frac{12.0}{2478} = 0.00484\,\mathrm{mol}$$
 (1 mark)
 
 Assume M has valency $+2$: $n(\mathrm{M}) = \frac{0.00484}{2} = 0.00242\,\mathrm{mol}$ (1 mark).

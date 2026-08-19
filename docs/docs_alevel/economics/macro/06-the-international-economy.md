@@ -115,7 +115,7 @@ Country exports labour-intensive goods.
 
 The **terms of trade (ToT)** measure the ratio of a country's export prices to its import prices:
 
-$$\mathrm{ToT} = \frac◆LB◆\mathrm{Index of Export Prices}◆RB◆◆LB◆\mathrm{Index of Import Prices}◆RB◆ \times 100$$
+$$\mathrm{ToT} = \frac{\mathrm{Index of Export Prices}}{\mathrm{Index of Import Prices}} \times 100$$
 
 ### 2.2 Interpretation
 
@@ -169,7 +169,7 @@ intervention.
 
 The **exchange rate** is the price of one currency in terms of another.
 
-$$\mathrm{Spot rate: } e = \frac◆LB◆\mathrm{units of domestic currency}◆RB◆◆LB◆\mathrm{one unit of foreign currency}◆RB◆$$
+$$\mathrm{Spot rate: } e = \frac{\mathrm{units of domestic currency}}{\mathrm{one unit of foreign currency}}$$
 
 A **depreciation** of the pound means $e$ rises (more pounds per dollar — the pound is weaker). An
 **appreciation** means $e$ falls (fewer pounds per dollar — the pound is stronger).
@@ -232,7 +232,7 @@ $$e = \frac{P_{domestic}}{P_{foreign}}$$
 
 **Relative PPP**: the exchange rate should adjust to reflect inflation differentials:
 
-$$\frac◆LB◆\Delta e◆RB◆◆LB◆e◆RB◆ \approx \pi_{domestic} - \pi_{foreign}$$
+$$\frac{\Delta e}{e} \approx \pi_{domestic} - \pi_{foreign}$$
 
 PPP holds approximately in the long run but fails in the short run due to: trade barriers,
 Non-traded goods, price stickiness, and speculation.
@@ -251,8 +251,8 @@ $$|E_X| + |E_M| \gt 1$$
 
 Where:
 
-- $E_X = \frac◆LB◆\% \Delta Q_X◆RB◆◆LB◆\% \Delta P_X◆RB◆$ = price elasticity of demand for exports
-- $E_M = \frac◆LB◆\% \Delta Q_M◆RB◆◆LB◆\% \Delta P_M◆RB◆$ = price elasticity of demand for imports
+- $E_X = \frac{\% \Delta Q_X}{\% \Delta P_X}$ = price elasticity of demand for exports
+- $E_M = \frac{\% \Delta Q_M}{\% \Delta P_M}$ = price elasticity of demand for imports
 
 **Proof sketch.** The current account balance (in domestic currency):
 
@@ -265,7 +265,7 @@ A depreciation ($e$ rises) makes exports cheaper for foreigners ($P_X/e$ falls) 
 Expensive for domestic consumers ($e \cdot P_M^*$ rises). The effect on $CA$ depends on whether the
 Volume responses are large enough to outweigh the price changes:
 
-$$\Delta CA \approx \left(\frac◆LB◆E_X \cdot P_X \cdot X◆RB◆◆LB◆P_X \cdot X + e \cdot P_M^* \cdot M◆RB◆\right) \times \left(|E_X| + |E_M| - 1\right) \times \frac◆LB◆\Delta e◆RB◆◆LB◆e◆RB◆$$
+$$\Delta CA \approx \left(\frac{E_X \cdot P_X \cdot X}{P_X \cdot X + e \cdot P_M^* \cdot M}\right) \times \left(|E_X| + |E_M| - 1\right) \times \frac{\Delta e}{e}$$
 
 If $|E_X| + |E_M| \gt 1$: the volume effect dominates → $CA$ improves. If $|E_X| + |E_M| \lt 1$: The
 price effect dominates → $CA$ worsens (the country spends more on imports because they are more
@@ -592,11 +592,11 @@ After depreciation ($e \uparrow$), export volumes rise ($\Delta X > 0$ since exp
 abroad) and import volumes fall ($\Delta M < 0$ since imports are more expensive). The effect on the
 trade balance depends on whether the volume effect dominates the price effect.
 
-Define $\epsilon_X = -\frac◆LB◆\Delta X/X◆RB◆◆LB◆\Delta e/e◆RB◆$ (elasticity of export volume to
-exchange rate) and $\epsilon_M = -\frac◆LB◆\Delta M/M◆RB◆◆LB◆\Delta e/e◆RB◆$ (elasticity of import
+Define $\epsilon_X = -\frac{\Delta X/X}{\Delta e/e}$ (elasticity of export volume to
+exchange rate) and $\epsilon_M = -\frac{\Delta M/M}{\Delta e/e}$ (elasticity of import
 volume to exchange rate). The current account improves when:
 
-$$\epsilon_X \cdot \frac◆LB◆P_X \cdot X◆RB◆◆LB◆CA◆RB◆ + \epsilon_M \cdot \frac◆LB◆P_M^* \cdot e \cdot M◆RB◆◆LB◆CA◆RB◆ > \frac◆LB◆P_M^* \cdot e \cdot M - P_X \cdot X◆RB◆◆LB◆CA◆RB◆$$
+$$\epsilon_X \cdot \frac{P_X \cdot X}{CA} + \epsilon_M \cdot \frac{P_M^* \cdot e \cdot M}{CA} > \frac{P_M^* \cdot e \cdot M - P_X \cdot X}{CA}$$
 
 If trade is initially balanced ($P_X \cdot X = P_M^* \cdot e \cdot M$), this simplifies to:
 
@@ -866,7 +866,7 @@ discrepancy). The country is a net borrower from the rest of the world. If capit
 - The current account improves (Marshall-Lerner condition permitting).
 - The required depreciation: if the current account deficit must be eliminated through exchange rate
   adjustment, and the sum of PEDs is 1.5, the required depreciation is approximately
-  $\frac◆LB◆90◆RB◆◆LB◆200 \times 1.5 - 280 \times 0.75◆RB◆ \times 100 \approx 20\%$ (very
+  $\frac{90}{200 \times 1.5 - 280 \times 0.75} \times 100 \approx 20\%$ (very
   approximate).
 
 ### 10.3 Trading Blocs: Numerical Welfare Analysis
@@ -1003,7 +1003,7 @@ provides certainty for international trade and investment, which may be benefici
 | 2023 |        130         |        120         |     108.3      |
 
 **Terms of trade calculation:**
-$ToT = \frac◆LB◆\text{Export price}◆RB◆◆LB◆\text{Import price}◆RB◆ \times 100$.
+$ToT = \frac{\text{Export price}}{\text{Import price}} \times 100$.
 
 2021: $ToT = 120/105 \times 100 = 114.3$. An improvement of 14.3%. 2022:
 $ToT = 150/115 \times 100 = 130.4$. A further improvement (copper boom). 2023:

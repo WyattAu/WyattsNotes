@@ -147,7 +147,7 @@ Many small independent effects (height, measurement error, etc.) will be approxi
 
 $X \sim N(\mu, \sigma^2)$ has PDF
 
-$$f(x) = \frac◆LB◆1◆RB◆◆LB◆\sigma\sqrt{2\pi}◆RB◆\,e^{-\frac◆LB◆(x-\mu)^2◆RB◆◆LB◆2\sigma^2◆RB◆}$$
+$$f(x) = \frac{1}{\sigma\sqrt{2\pi}}\,e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
 
 ### 3.3 Properties
 
@@ -159,13 +159,13 @@ $$f(x) = \frac◆LB◆1◆RB◆◆LB◆\sigma\sqrt{2\pi}◆RB◆\,e^{-\frac◆LB
 
 ### 3.4 Standard normal
 
-If $X \sim N(\mu, \sigma^2)$Then $Z = \dfrac◆LB◆X - \mu◆RB◆◆LB◆\sigma◆RB◆ \sim N(0, 1)$.
+If $X \sim N(\mu, \sigma^2)$Then $Z = \dfrac{X - \mu}{\sigma} \sim N(0, 1)$.
 
 Probabilities are found using the standard normal table or a calculator's inverse normal function.
 
 ### 3.5 Finding probabilities
 
-$$P(a < X < b) = P\!\left(\frac◆LB◆a-\mu◆RB◆◆LB◆\sigma◆RB◆ < Z < \frac◆LB◆b-\mu◆RB◆◆LB◆\sigma◆RB◆\right) = \Phi\!\left(\frac◆LB◆b-\mu◆RB◆◆LB◆\sigma◆RB◆\right) - \Phi\!\left(\frac◆LB◆a-\mu◆RB◆◆LB◆\sigma◆RB◆\right)$$
+$$P(a < X < b) = P\!\left(\frac{a-\mu}{\sigma} < Z < \frac{b-\mu}{\sigma}\right) = \Phi\!\left(\frac{b-\mu}{\sigma}\right) - \Phi\!\left(\frac{a-\mu}{\sigma}\right)$$
 
 ### 3.6 Normal approximation to Binomial
 
@@ -174,7 +174,7 @@ For large $n$ with $np \gt 5$ and $n(1-p) \gt 5$:
 $$B(n, p) \approx N(np, np(1-p))$$
 
 With **continuity correction**:
-$P(X \leq k) \approx P\!\left(Z \lt \frac◆LB◆k + 0.5 - np◆RB◆◆LB◆\sqrt{np(1-p)}◆RB◆\right)$.
+$P(X \leq k) \approx P\!\left(Z \lt \frac{k + 0.5 - np}{\sqrt{np(1-p)}}\right)$.
 
 :::warning Warning (Binomial) with a continuous one (Normal). Add or subtract 0.5 depending on the
 inequality Direction.
@@ -189,7 +189,7 @@ inequality Direction.
 $X \sim \mathrm{Po}(\lambda)$ models the number of events in a fixed interval when events occur
 Independently at a constant average rate $\lambda$.
 
-$$P(X = k) = \frac◆LB◆e^{-\lambda}\lambda^k◆RB◆◆LB◆k!◆RB◆, \quad k = 0, 1, 2, \ldots$$
+$$P(X = k) = \frac{e^{-\lambda}\lambda^k}{k!}, \quad k = 0, 1, 2, \ldots$$
 
 ### 4.2 Derivation as a limit of the Binomial
 
@@ -201,19 +201,19 @@ $B(n, p) \to \mathrm{Po}(\lambda)$.
 $$
 \begin{aligned}
 P(X = k) &= \binom{n}{k}p^k(1-p)^{n-k} \\
-&= \frac◆LB◆n(n-1)\cdots(n-k+1)◆RB◆◆LB◆k!◆RB◆ \cdot \frac◆LB◆\lambda^k◆RB◆◆LB◆n^k◆RB◆ \cdot \left(1-\frac◆LB◆\lambda◆RB◆◆LB◆n◆RB◆\right)^{n-k}
+&= \frac{n(n-1)\cdots(n-k+1)}{k!} \cdot \frac{\lambda^k}{n^k} \cdot \left(1-\frac{\lambda}{n}\right)^{n-k}
 \end{aligned}
 $$
 
 Consider each factor as $n \to \infty$:
 
-- $\dfrac◆LB◆n(n-1)\cdots(n-k+1)◆RB◆◆LB◆n^k◆RB◆ \to 1$ (each term $n-i \approx n$)
-- $\left(1 - \dfrac◆LB◆\lambda◆RB◆◆LB◆n◆RB◆\right)^{n-k} \to e^{-\lambda}$ (using
+- $\dfrac{n(n-1)\cdots(n-k+1)}{n^k} \to 1$ (each term $n-i \approx n$)
+- $\left(1 - \dfrac{\lambda}{n}\right)^{n-k} \to e^{-\lambda}$ (using
   $\lim_{n\to\infty}(1+a/n)^n = e^a$)
 
 Therefore:
 
-$$P(X = k) \to \frac{1}{k!} \cdot \lambda^k \cdot e^{-\lambda} = \frac◆LB◆e^{-\lambda}\lambda^k◆RB◆◆LB◆k!◆RB◆ \quad \blacksquare$$
+$$P(X = k) \to \frac{1}{k!} \cdot \lambda^k \cdot e^{-\lambda} = \frac{e^{-\lambda}\lambda^k}{k!} \quad \blacksquare$$
 
 ### 4.3 Proof that $E(X) = \lambda$
 
@@ -221,8 +221,8 @@ $$P(X = k) \to \frac{1}{k!} \cdot \lambda^k \cdot e^{-\lambda} = \frac◆LB◆e^
 
 $$
 \begin{aligned}
-E(X) &= \sum_{k=0}^{\infty}k \cdot \frac◆LB◆e^{-\lambda}\lambda^k◆RB◆◆LB◆k!◆RB◆ = \sum_{k=1}^{\infty}\frac◆LB◆e^{-\lambda}\lambda^k◆RB◆◆LB◆(k-1)!◆RB◆ \\
-&= \lambda e^{-\lambda}\sum_{k=1}^{\infty}\frac◆LB◆\lambda^{k-1}◆RB◆◆LB◆(k-1)!◆RB◆ = \lambda e^{-\lambda}\sum_{j=0}^{\infty}\frac◆LB◆\lambda^j◆RB◆◆LB◆j!◆RB◆ \\
+E(X) &= \sum_{k=0}^{\infty}k \cdot \frac{e^{-\lambda}\lambda^k}{k!} = \sum_{k=1}^{\infty}\frac{e^{-\lambda}\lambda^k}{(k-1)!} \\
+&= \lambda e^{-\lambda}\sum_{k=1}^{\infty}\frac{\lambda^{k-1}}{(k-1)!} = \lambda e^{-\lambda}\sum_{j=0}^{\infty}\frac{\lambda^j}{j!} \\
 &= \lambda e^{-\lambda} \cdot e^{\lambda} = \lambda \quad \blacksquare
 \end{aligned}
 $$
@@ -233,8 +233,8 @@ $$
 
 $$
 \begin{aligned}
-E(X(X-1)) &= \sum_{k=2}^{\infty}k(k-1)\frac◆LB◆e^{-\lambda}\lambda^k◆RB◆◆LB◆k!◆RB◆ = \sum_{k=2}^{\infty}\frac◆LB◆e^{-\lambda}\lambda^k◆RB◆◆LB◆(k-2)!◆RB◆ \\
-&= \lambda^2 e^{-\lambda}\sum_{j=0}^{\infty}\frac◆LB◆\lambda^j◆RB◆◆LB◆j!◆RB◆ = \lambda^2 e^{-\lambda} \cdot e^{\lambda} = \lambda^2
+E(X(X-1)) &= \sum_{k=2}^{\infty}k(k-1)\frac{e^{-\lambda}\lambda^k}{k!} = \sum_{k=2}^{\infty}\frac{e^{-\lambda}\lambda^k}{(k-2)!} \\
+&= \lambda^2 e^{-\lambda}\sum_{j=0}^{\infty}\frac{\lambda^j}{j!} = \lambda^2 e^{-\lambda} \cdot e^{\lambda} = \lambda^2
 \end{aligned}
 $$
 
@@ -398,7 +398,7 @@ A call centre receives an average of 4.5 calls per minute. Find the probability 
 <summary>Solution 3</summary>
 $X \sim \mathrm{Po}(4.5)$.
 
-$P(X=6) = \dfrac{e^{-4.5}(4.5)^6}{6!} = \dfrac◆LB◆0.01111 \times 8303.77◆RB◆◆LB◆720◆RB◆ \approx 0.1281$.
+$P(X=6) = \dfrac{e^{-4.5}(4.5)^6}{6!} = \dfrac{0.01111 \times 8303.77}{720} \approx 0.1281$.
 
 $P(X \gt 8) = 1 - P(X \leq 8) = 1 - \sum_{k=0}^{8}\dfrac{e^{-4.5}(4.5)^k}{k!} \approx 1 - 0.9804 = 0.0196$.
 
@@ -520,7 +520,7 @@ If $X \sim \mathrm{Po}(3)$ and $Y \sim \mathrm{Po}(5)$ are independent, find $P(
 <summary>Solution 10</summary>
 By additivity: $X + Y \sim \mathrm{Po}(3+5) = \mathrm{Po}(8)$.
 
-$P(X + Y = 6) = \dfrac{e^{-8}(8)^6}{6!} = \dfrac◆LB◆e^{-8} \times 262144◆RB◆◆LB◆720◆RB◆ \approx \dfrac◆LB◆0.000335 \times 262144◆RB◆◆LB◆720◆RB◆ \approx 0.1221$.
+$P(X + Y = 6) = \dfrac{e^{-8}(8)^6}{6!} = \dfrac{e^{-8} \times 262144}{720} \approx \dfrac{0.000335 \times 262144}{720} \approx 0.1221$.
 
 **If you get this wrong, revise:** [Additivity](#45-additivity) — Section 4.5.
 
@@ -640,7 +640,7 @@ $\lambda = np = 120 \times 0.025 = 3$.
 
 (b) $X \approx \mathrm{Po}(3)$.
 
-$$P(X = 5) = \frac◆LB◆e^{-3} \times 3^5◆RB◆◆LB◆5!◆RB◆ = \frac◆LB◆e^{-3} \times 243◆RB◆◆LB◆120◆RB◆ = 2.025\,e^{-3} \approx 2.025 \times 0.0498 \approx 0.1008$$
+$$P(X = 5) = \frac{e^{-3} \times 3^5}{5!} = \frac{e^{-3} \times 243}{120} = 2.025\,e^{-3} \approx 2.025 \times 0.0498 \approx 0.1008$$
 
 (c) For the normal approximation we need $np \gt 5$ and $n(1-p) \gt 5$. Here $np = 3 \lt 5$ So the
 normal approximation is not appropriate. The Poisson approximation is the correct choice Since $p$

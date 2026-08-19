@@ -39,7 +39,7 @@ Aristotle believed that force was necessary to _maintain_ motion.
 > **The rate of change of momentum of a body is directly proportional to the net external force
 > acting on it, and takes place in the direction of that force.**
 
-$$\mathbf{F}_{\mathrm{net}} = \frac◆LB◆d\mathbf{p}◆RB◆◆LB◆dt◆RB◆ = \frac◆LB◆d(m\mathbf{v})◆RB◆◆LB◆dt◆RB◆$$
+$$\mathbf{F}_{\mathrm{net}} = \frac{d\mathbf{p}}{dt} = \frac{d(m\mathbf{v})}{dt}$$
 
 For constant mass:
 
@@ -176,15 +176,15 @@ Horizontal component of the normal reaction alone provides the centripetal force
 <summary>Example: Conical Pendulum</summary>
 A particle of mass $m$ is attached to a string of length $L$ and revolves in a horizontal circle of radius $r$ with the string making angle $\theta$ with the vertical. Find the tension and the angular speed.
 
-**Answer.** Resolving vertically: $T\cos\theta = mg$So $T = \frac◆LB◆mg◆RB◆◆LB◆\cos\theta◆RB◆$.
+**Answer.** Resolving vertically: $T\cos\theta = mg$So $T = \frac{mg}{\cos\theta}$.
 
 Resolving horizontally (towards the centre): $T\sin\theta = m\omega^2 r$.
 
-Substituting: $\frac◆LB◆mg\sin\theta◆RB◆◆LB◆\cos\theta◆RB◆ = m\omega^2 r$Giving
-$\omega^2 = \frac◆LB◆g\tan\theta◆RB◆◆LB◆r◆RB◆$.
+Substituting: $\frac{mg\sin\theta}{\cos\theta} = m\omega^2 r$Giving
+$\omega^2 = \frac{g\tan\theta}{r}$.
 
-Since $r = L\sin\theta$This becomes $\omega^2 = \frac◆LB◆g◆RB◆◆LB◆L\cos\theta◆RB◆$So
-$\omega = \sqrt◆LB◆\frac{g}{L\cos\theta}◆RB◆$.
+Since $r = L\sin\theta$This becomes $\omega^2 = \frac{g}{L\cos\theta}$So
+$\omega = \sqrt{\frac{g}{L\cos\theta}}$.
 
 </details>
 
@@ -230,7 +230,7 @@ $$\boxed{\tan\lambda = \mu_s}$$
 <summary>Derivation</summary>
 The total contact force on a body is the vector sum of the normal reaction $R$ (perpendicular to the surface) and the maximum static friction $F_s = \mu_s R$ (parallel to the surface). The angle $\lambda$ that this resultant makes with $R$ satisfies:
 
-$\tan\lambda = \frac{F_s}{R} = \frac◆LB◆\mu_s R◆RB◆◆LB◆R◆RB◆ = \mu_s$
+$\tan\lambda = \frac{F_s}{R} = \frac{\mu_s R}{R} = \mu_s$
 
 $\square$
 
@@ -329,14 +329,14 @@ For $m_2$ hanging vertically (taking downward as positive): $m_2 g - T = m_2 a$.
 
 Adding the two equations: $m_2 g - \mu m_1 g = (m_1 + m_2)a$.
 
-$$\boxed{a = \frac◆LB◆(m_2 - \mu m_1)g◆RB◆◆LB◆m_1 + m_2◆RB◆}$$
+$$\boxed{a = \frac{(m_2 - \mu m_1)g}{m_1 + m_2}}$$
 
 Substituting into the equation for $m_2$:
-$T = m_2(g - a) = m_2 g\left(1 - \frac◆LB◆m_2 - \mu m_1◆RB◆◆LB◆m_1 + m_2◆RB◆\right)$
+$T = m_2(g - a) = m_2 g\left(1 - \frac{m_2 - \mu m_1}{m_1 + m_2}\right)$
 
-$T = m_2 g \cdot \frac◆LB◆m_1 + m_2 - m_2 + \mu m_1◆RB◆◆LB◆m_1 + m_2◆RB◆ = \frac◆LB◆m_1 m_2 g(1 + \mu)◆RB◆◆LB◆m_1 + m_2◆RB◆$
+$T = m_2 g \cdot \frac{m_1 + m_2 - m_2 + \mu m_1}{m_1 + m_2} = \frac{m_1 m_2 g(1 + \mu)}{m_1 + m_2}$
 
-$$\boxed{T = \frac◆LB◆m_1 m_2 g(1 + \mu)◆RB◆◆LB◆m_1 + m_2◆RB◆}$$
+$$\boxed{T = \frac{m_1 m_2 g(1 + \mu)}{m_1 + m_2}}$$
 
 Note: the system only accelerates if $m_2 > \mu m_1$; otherwise static friction is sufficient to
 Hold the system in equilibrium.
@@ -352,10 +352,10 @@ A block of mass $4.0$ kg is on a rough horizontal table ($\mu = 0.3$) connected 
 **Answer.** Check condition: $m_2 = 2.0$ kg, $\mu m_1 = 0.3 \times 4.0 = 1.2$ kg. Since $2.0 > 1.2$
 The system accelerates.
 
-$a = \frac◆LB◆(2.0 - 0.3 \times 4.0) \times 9.81◆RB◆◆LB◆4.0 + 2.0◆RB◆ = \frac◆LB◆0.8 \times 9.81◆RB◆◆LB◆6.0◆RB◆ = 1.31$
+$a = \frac{(2.0 - 0.3 \times 4.0) \times 9.81}{4.0 + 2.0} = \frac{0.8 \times 9.81}{6.0} = 1.31$
 m S$^{-2}$.
 
-$T = \frac◆LB◆4.0 \times 2.0 \times 9.81 \times 1.3◆RB◆◆LB◆6.0◆RB◆ = \frac{101.8}{6.0} = 17.0$ N.
+$T = \frac{4.0 \times 2.0 \times 9.81 \times 1.3}{6.0} = \frac{101.8}{6.0} = 17.0$ N.
 
 Check: for $m_1$, $T - \mu m_1 g = 17.0 - 0.3 \times 4.0 \times 9.81 = 17.0 - 11.8 = 5.2$ N, and
 $m_1 a = 4.0 \times 1.31 = 5.2$ N. Consistent.
@@ -402,7 +402,7 @@ At higher speeds (e.g., a skydiver in air), drag is proportional to $v^2$: $F_d 
 
 $$mg - kv^2 = ma$$
 
-At terminal velocity: $v_T = \sqrt◆LB◆\frac{mg}{k}◆RB◆$.
+At terminal velocity: $v_T = \sqrt{\frac{mg}{k}}$.
 
 :::info Info Focuses on the qualitative description of terminal velocity.
 :::
@@ -427,10 +427,10 @@ Net force: $25 - 14.7 = 10.3$ N. Acceleration: $a = 10.3/5.0 = 2.1$ m s$^{-2}$.
 <summary>Problem 2</summary>
 In an Atwood machine, $m_1 = 8.0$ kg and $m_2 = 5.0$ kg. Find the acceleration and the tension in the string.
 
-**Answer.** $a = \frac◆LB◆(8.0 - 5.0) \times 9.81◆RB◆◆LB◆8.0 + 5.0◆RB◆ = \frac{29.43}{13.0} = 2.26$
+**Answer.** $a = \frac{(8.0 - 5.0) \times 9.81}{8.0 + 5.0} = \frac{29.43}{13.0} = 2.26$
 m s$^{-2}$.
 
-$T = \frac◆LB◆2 \times 8.0 \times 5.0 \times 9.81◆RB◆◆LB◆13.0◆RB◆ = \frac{784.8}{13.0} = 60.4$ N.
+$T = \frac{2 \times 8.0 \times 5.0 \times 9.81}{13.0} = \frac{784.8}{13.0} = 60.4$ N.
 
 <b>If you get this wrong, revise:</b> [Pulleys: The Atwood Machine](#pulleys-the-atwood-machine)
 
@@ -467,7 +467,7 @@ $a = g\sin 30° = 9.81 \times 0.5 = 4.91$ m s$^{-2}$.
 A raindrop of mass $2.0 \times 10^{-5}$ kg falls through air with drag proportional to $v^2$. If the terminal velocity is $9.0$ m s$^{-1}$Find the drag constant $k$.
 
 **Answer.** At terminal velocity: $mg = kv_T^2$.
-$k = \frac{mg}{v_T^2} = \frac◆LB◆2.0 \times 10^{-5} \times 9.81◆RB◆◆LB◆81◆RB◆ = 2.4 \times 10^{-6}$
+$k = \frac{mg}{v_T^2} = \frac{2.0 \times 10^{-5} \times 9.81}{81} = 2.4 \times 10^{-6}$
 N s$^2$ M$^{-2}$.
 
 <b>If you get this wrong, revise:</b> [Quadratic Drag Model](#quadratic-drag-model)
@@ -537,7 +537,7 @@ For the linear drag model $F_d = kv$Derive the time taken for a falling object t
 
 $\frac{1}{2} = 1 - e^{-kt/m} \implies e^{-kt/m} = \frac{1}{2} \implies -kt/m = \ln\frac{1}{2} = -\ln 2$.
 
-$t = \frac◆LB◆m \ln 2◆RB◆◆LB◆k◆RB◆$. Since $\tau = m/k$, $t = \tau \ln 2 \approx 0.693\tau$.
+$t = \frac{m \ln 2}{k}$. Since $\tau = m/k$, $t = \tau \ln 2 \approx 0.693\tau$.
 
 <b>If you get this wrong, revise:</b> [Solving the ODE](#solving-the-ode)
 
@@ -612,10 +612,10 @@ A mass of $3.0$ kg rests on a rough horizontal table ($\mu = 0.25$) connected by
 **Answer.** Check condition: $\mu m_1 = 0.25 \times 3.0 = 0.75$ kg. Since $m_2 = 1.5 > 0.75$The
 System accelerates.
 
-$a = \frac◆LB◆(1.5 - 0.25 \times 3.0) \times 9.81◆RB◆◆LB◆3.0 + 1.5◆RB◆ = \frac◆LB◆0.75 \times 9.81◆RB◆◆LB◆4.5◆RB◆ = \frac{7.36}{4.5} = 1.63$
+$a = \frac{(1.5 - 0.25 \times 3.0) \times 9.81}{3.0 + 1.5} = \frac{0.75 \times 9.81}{4.5} = \frac{7.36}{4.5} = 1.63$
 M s$^{-2}$.
 
-$T = \frac◆LB◆3.0 \times 1.5 \times 9.81 \times 1.25◆RB◆◆LB◆4.5◆RB◆ = \frac{55.2}{4.5} = 12.3$ N.
+$T = \frac{3.0 \times 1.5 \times 9.81 \times 1.25}{4.5} = \frac{55.2}{4.5} = 12.3$ N.
 
 <b>If you get this wrong, revise:</b> [Particles on a Rough Surface](#particles-on-a-rough-surface)
 
@@ -636,7 +636,7 @@ For $m_B$ (downward positive): $m_B g - T = m_B a$.
 
 Adding: $m_B g - m_A g\sin 30° = (m_A + m_B)a$.
 
-$a = \frac◆LB◆(3.0 \times 9.81 - 5.0 \times 9.81 \times 0.5)◆RB◆◆LB◆5.0 + 3.0◆RB◆ = \frac{(29.4 - 24.5)}{8.0} = \frac{4.90}{8.0} = 0.613$
+$a = \frac{(3.0 \times 9.81 - 5.0 \times 9.81 \times 0.5)}{5.0 + 3.0} = \frac{(29.4 - 24.5)}{8.0} = \frac{4.90}{8.0} = 0.613$
 M s$^{-2}$.
 
 $T = m_B(g - a) = 3.0(9.81 - 0.613) = 3.0 \times 9.20 = 27.6$ N.
@@ -662,13 +662,13 @@ $v_{\mathrm{top}} = 4.20$ m s$^{-1}$
 (a) At the bottom, the normal reaction $R$ and weight act along the same line, with $R$ pointing
 Upward (towards the centre):
 
-$R - mg = \frac◆LB◆mv_{\mathrm{bot}}^2◆RB◆◆LB◆r◆RB◆$So
-$R = 0.50 \times 9.81 + \frac◆LB◆0.50 \times 49◆RB◆◆LB◆0.80◆RB◆ = 4.91 + 30.6 = 35.5$ N.
+$R - mg = \frac{mv_{\mathrm{bot}}^2}{r}$So
+$R = 0.50 \times 9.81 + \frac{0.50 \times 49}{0.80} = 4.91 + 30.6 = 35.5$ N.
 
 (b) At the top, both $R$ and weight point towards the centre (downward):
 
-$R + mg = \frac◆LB◆mv_{\mathrm{top}}^2◆RB◆◆LB◆r◆RB◆$So
-$R = \frac◆LB◆0.50 \times 17.6◆RB◆◆LB◆0.80◆RB◆ - 0.50 \times 9.81 = 11.0 - 4.91 = 6.09$ N.
+$R + mg = \frac{mv_{\mathrm{top}}^2}{r}$So
+$R = \frac{0.50 \times 17.6}{0.80} - 0.50 \times 9.81 = 11.0 - 4.91 = 6.09$ N.
 
 <b>If you get this wrong, revise:</b>
 [Motion on a Curved Path -- Centripetal Force Introduction](#5-motion-on-a-curved-path----centripetal-force-introduction)
@@ -682,7 +682,7 @@ A car of mass $800$ kg travels around the inside of a vertical circular loop of 
 **Answer.** (a) At the top, taking downward as positive (towards the centre): $R + mg = mv^2/r$.
 Contact is lost when $R = 0$So the minimum speed is:
 
-$mg = \frac◆LB◆mv_{\min}^2◆RB◆◆LB◆r◆RB◆ \implies v_{\min} = \sqrt{gr} = \sqrt◆LB◆9.81 \times 10◆RB◆ = 9.90$
+$mg = \frac{mv_{\min}^2}{r} \implies v_{\min} = \sqrt{gr} = \sqrt{9.81 \times 10} = 9.90$
 m s$^{-1}$
 
 (b) By conservation of energy (bottom to top, height difference $2r$):
@@ -751,7 +751,7 @@ Adding: $m_B g - m_A g\sin 30° - \mu m_A g\cos 30° = (m_A + m_B)a$.
 (b) $T = m_B(g - a) = 8.0(9.81 - 3.50) = 8.0 \times 6.31 = 50.5$ N.
 
 (c) Using $v^2 = u^2 + 2as$ with $u = 0$:
-$v = \sqrt◆LB◆2 \times 3.50 \times 2.0◆RB◆ = \sqrt{14.0} = 3.74$ M s$^{-1}$.
+$v = \sqrt{2 \times 3.50 \times 2.0} = \sqrt{14.0} = 3.74$ M s$^{-1}$.
 
 <b>If you get this wrong, revise:</b> [Friction](#6-friction) and
 [Connected Particles](#7-connected-particles)

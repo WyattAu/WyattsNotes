@@ -109,7 +109,7 @@ We need $\mathrm{P}(D \mid +)$.
 
 By Bayes' theorem (or using a tree diagram / contingency table):
 
-$$\mathrm{P}(D \mid +) = \frac◆LB◆\mathrm{P}(+ \mid D) \cdot \mathrm{P}(D)◆RB◆◆LB◆\mathrm{P}(+)◆RB◆$$
+$$\mathrm{P}(D \mid +) = \frac{\mathrm{P}(+ \mid D) \cdot \mathrm{P}(D)}{\mathrm{P}(+)}$$
 
 $$\mathrm{P}(+) = \mathrm{P}(+ \mid D)\mathrm{P}(D) + \mathrm{P}(+ \mid D')\mathrm{P}(D')$$
 
@@ -155,7 +155,7 @@ $\mathrm{P}(+ \mid D)$ is the sensitivity of the test (among people with the dis
 test positive), while $\mathrm{P}(D \mid +)$ is the positive predictive value (among people who test
 positive, what fraction actually have the disease). These are related by Bayes' theorem:
 
-$$\mathrm{P}(D \mid +) = \frac◆LB◆\mathrm{P}(+ \mid D) \cdot \mathrm{P}(D)◆RB◆◆LB◆\mathrm{P}(+)◆RB◆$$
+$$\mathrm{P}(D \mid +) = \frac{\mathrm{P}(+ \mid D) \cdot \mathrm{P}(D)}{\mathrm{P}(+)}$$
 
 They would be equal only when $\mathrm{P}(D) = \mathrm{P}(+)$I.e., when the prevalence equals the
 overall probability of a positive test. This is a very specific condition that would not generally
@@ -191,13 +191,13 @@ and a proof about a fundamental identity.]
 
 **(a)** $X$ can take values 0, 1, 2, 3.
 
-$$\mathrm{P}(X = 0) = \frac◆LB◆\binom{6}{3}◆RB◆◆LB◆\binom{10}{3}◆RB◆ = \frac{20}{120} = \frac{1}{6}$$
+$$\mathrm{P}(X = 0) = \frac{\binom{6}{3}}{\binom{10}{3}} = \frac{20}{120} = \frac{1}{6}$$
 
-$$\mathrm{P}(X = 1) = \frac◆LB◆\binom{4}{1}\binom{6}{2}◆RB◆◆LB◆\binom{10}{3}◆RB◆ = \frac◆LB◆4 \times 15◆RB◆◆LB◆120◆RB◆ = \frac{60}{120} = \frac{1}{2}$$
+$$\mathrm{P}(X = 1) = \frac{\binom{4}{1}\binom{6}{2}}{\binom{10}{3}} = \frac{4 \times 15}{120} = \frac{60}{120} = \frac{1}{2}$$
 
-$$\mathrm{P}(X = 2) = \frac◆LB◆\binom{4}{2}\binom{6}{1}◆RB◆◆LB◆\binom{10}{3}◆RB◆ = \frac◆LB◆6 \times 6◆RB◆◆LB◆120◆RB◆ = \frac{36}{120} = \frac{3}{10}$$
+$$\mathrm{P}(X = 2) = \frac{\binom{4}{2}\binom{6}{1}}{\binom{10}{3}} = \frac{6 \times 6}{120} = \frac{36}{120} = \frac{3}{10}$$
 
-$$\mathrm{P}(X = 3) = \frac◆LB◆\binom{4}{3}◆RB◆◆LB◆\binom{10}{3}◆RB◆ = \frac{4}{120} = \frac{1}{30}$$
+$$\mathrm{P}(X = 3) = \frac{\binom{4}{3}}{\binom{10}{3}} = \frac{4}{120} = \frac{1}{30}$$
 
 **Verification:**
 
@@ -210,7 +210,7 @@ $$\mathrm{E}(X) = \sum x \cdot \mathrm{P}(X = x) = 0\left(\frac{1}{6}\right) + 1
 $$= 0 + \frac{1}{2} + \frac{6}{10} + \frac{3}{30} = \frac{1}{2} + \frac{3}{5} + \frac{1}{10} = \frac{5}{10} + \frac{6}{10} + \frac{1}{10} = \frac{12}{10} = 1.2$$
 
 **Alternative check:**
-$\mathrm{E}(X) = n \times \frac◆LB◆\text{number of red}◆RB◆◆LB◆\text{total}◆RB◆ = 3 \times \frac{4}{10} = 1.2$.
+$\mathrm{E}(X) = n \times \frac{\text{number of red}}{\text{total}} = 3 \times \frac{4}{10} = 1.2$.
 This confirms our result.
 
 $$\mathrm{E}(X^2) = 0^2\left(\frac{1}{6}\right) + 1^2\left(\frac{1}{2}\right) + 2^2\left(\frac{3}{10}\right) + 3^2\left(\frac{1}{30}\right)$$

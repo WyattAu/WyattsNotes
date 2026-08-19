@@ -179,7 +179,7 @@ Find the sum to infinity of $1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \cdot
 
 Here $a = 1$$r = \frac{1}{2}$$|r| < 1$.
 
-$$S_\infty = \frac◆LB◆1◆RB◆◆LB◆1 - \frac{1}{2}◆RB◆ = 2$$
+$$S_\infty = \frac{1}{1 - \frac{1}{2}} = 2$$
 
 </details>
 
@@ -261,7 +261,7 @@ $a = b$.
 
 **Extension.** For $n$ positive real numbers $x_1, x_2, \ldots, x_n$:
 
-$$\frac◆LB◆x_1 + x_2 + \cdots + x_n◆RB◆◆LB◆n◆RB◆ \geq \sqrt[n]{x_1 x_2 \cdots x_n}$$
+$$\frac{x_1 + x_2 + \cdots + x_n}{n} \geq \sqrt[n]{x_1 x_2 \cdots x_n}$$
 
 With equality if and only if $x_1 = x_2 = \cdots = x_n$. The proof of the general case (by induction
 Using the two-variable result as the base) is beyond A-level scope.
@@ -272,7 +272,7 @@ Find the minimum value of $x + \frac{4}{x}$ for $x \gt 0$.
 
 By AM-GM with $a = x$ and $b = \frac{4}{x}$ (both positive):
 
-$$\frac◆LB◆x + \frac{4}{x}◆RB◆◆LB◆2◆RB◆ \geq \sqrt◆LB◆x \cdot \frac{4}{x}◆RB◆ = \sqrt{4} = 2$$
+$$\frac{x + \frac{4}{x}}{2} \geq \sqrt{x \cdot \frac{4}{x}} = \sqrt{4} = 2$$
 
 So $x + \frac{4}{x} \geq 4$.
 
@@ -422,7 +422,7 @@ The sequence of discounted salaries is an arithmetic-geometric sequence:
 
 Since $|r| \lt 1$:
 
-$$S_\infty = \frac{30000}{1 - 0.9} + \frac◆LB◆1500 \times 0.9◆RB◆◆LB◆(1 - 0.9)^2◆RB◆$$
+$$S_\infty = \frac{30000}{1 - 0.9} + \frac{1500 \times 0.9}{(1 - 0.9)^2}$$
 
 $$= \frac{30000}{0.1} + \frac{1350}{0.01}$$
 
@@ -440,7 +440,7 @@ The total present value is 435000.
 
 _Proof by induction._
 
-Base case ($n = 1$): LHS $= 1$. RHS $= \frac◆LB◆1 \times 2 \times 3◆RB◆◆LB◆6◆RB◆ = 1$. ✓
+Base case ($n = 1$): LHS $= 1$. RHS $= \frac{1 \times 2 \times 3}{6} = 1$. ✓
 
 Inductive step: Assume $\displaystyle\sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}$ for some
 $n \geq 1$.
@@ -451,20 +451,20 @@ $$
 \begin{aligned}
 \sum_{k=1}^{n+1} k^2 &= \frac{n(n+1)(2n+1)}{6} + (n+1)^2 \\
 &= \frac{n(n+1)(2n+1) + 6(n+1)^2}{6} \\
-&= \frac◆LB◆(n+1)\bigl[n(2n+1) + 6(n+1)\bigr]◆RB◆◆LB◆6◆RB◆ \\
+&= \frac{(n+1)\bigl[n(2n+1) + 6(n+1)\bigr]}{6} \\
 &= \frac{(n+1)(2n^2 + 7n + 6)}{6} \\
 &= \frac{(n+1)(n+2)(2n+3)}{6}
 \end{aligned}
 $$
 
-This equals $\frac◆LB◆(n+1)\bigl((n+1)+1\bigr)\bigl(2(n+1)+1\bigr)◆RB◆◆LB◆6◆RB◆$Which is the formula
+This equals $\frac{(n+1)\bigl((n+1)+1\bigr)\bigl(2(n+1)+1\bigr)}{6}$Which is the formula
 for $n+1$. ✓ $\blacksquare$
 
 ### 9.2 Proof of $\sum_{k=1}^{n} k^3 = \left[\frac{n(n+1)}{2}\right]^2$
 
 _Proof by induction._
 
-Base case ($n = 1$): LHS $= 1$. RHS $= \left[\frac◆LB◆1 \times 2◆RB◆◆LB◆2◆RB◆\right]^2 = 1$. ✓
+Base case ($n = 1$): LHS $= 1$. RHS $= \left[\frac{1 \times 2}{2}\right]^2 = 1$. ✓
 
 Inductive step: Assume $\displaystyle\sum_{k=1}^{n} k^3 = \left[\frac{n(n+1)}{2}\right]^2$.
 
@@ -475,7 +475,7 @@ $$
 \sum_{k=1}^{n+1} k^3 &= \left[\frac{n(n+1)}{2}\right]^2 + (n+1)^3 \\
 &= \frac{n^2(n+1)^2}{4} + (n+1)^3 \\
 &= \frac{n^2(n+1)^2 + 4(n+1)^3}{4} \\
-&= \frac◆LB◆(n+1)^2\bigl(n^2 + 4(n+1)\bigr)◆RB◆◆LB◆4◆RB◆ \\
+&= \frac{(n+1)^2\bigl(n^2 + 4(n+1)\bigr)}{4} \\
 &= \frac{(n+1)^2(n^2 + 4n + 4)}{4} \\
 &= \frac{(n+1)^2(n+2)^2}{4} \\
 &= \left[\frac{(n+1)(n+2)}{2}\right]^2
@@ -673,7 +673,7 @@ $S_{12} = 3(4096 - 1) = 12285 > 10000$. ✓
 <summary>Solution</summary>
 By induction.
 
-Base case ($n = 1$): LHS $= 1 \times 2 = 2$. RHS $= \frac◆LB◆1 \times 2 \times 3◆RB◆◆LB◆3◆RB◆ = 2$.
+Base case ($n = 1$): LHS $= 1 \times 2 = 2$. RHS $= \frac{1 \times 2 \times 3}{3} = 2$.
 ✓
 
 Inductive step: Assume $\sum_{k=1}^{n} k(k+1) = \frac{n(n+1)(n+2)}{3}$.
@@ -703,7 +703,7 @@ value of $x$ at which it occurs.
 <summary>Solution</summary>
 By AM-GM with $a = x^2$ and $b = \frac{9}{x^2}$ (both positive since $x \gt 0$):
 
-$$\frac◆LB◆x^2 + \frac{9}{x^2}◆RB◆◆LB◆2◆RB◆ \geq \sqrt◆LB◆x^2 \cdot \frac{9}{x^2}◆RB◆ = \sqrt{9} = 3$$
+$$\frac{x^2 + \frac{9}{x^2}}{2} \geq \sqrt{x^2 \cdot \frac{9}{x^2}} = \sqrt{9} = 3$$
 
 So $x^2 + \frac{9}{x^2} \geq 6$.
 
@@ -758,9 +758,9 @@ Since $|r| \lt 1$The sum to infinity converges:
 
 $$S_\infty = \frac{a}{1 - r} + \frac{dr}{(1-r)^2}$$
 
-$$= \frac◆LB◆1◆RB◆◆LB◆1 - \frac{1}{2}◆RB◆ + \frac◆LB◆3 \times \frac{1}{2}◆RB◆◆LB◆\left(1 - \frac{1}{2}\right)^2◆RB◆$$
+$$= \frac{1}{1 - \frac{1}{2}} + \frac{3 \times \frac{1}{2}}{\left(1 - \frac{1}{2}\right)^2}$$
 
-$$= \frac◆LB◆1◆RB◆◆LB◆\frac{1}{2}◆RB◆ + \frac◆LB◆\frac{3}{2}◆RB◆◆LB◆\frac{1}{4}◆RB◆$$
+$$= \frac{1}{\frac{1}{2}} + \frac{\frac{3}{2}}{\frac{1}{4}}$$
 
 $$= 2 + 6 = 8$$
 
@@ -786,7 +786,7 @@ $$
 
 Verification for $n = 4$: $1 \times 0 + 2 \times 1 + 3 \times 2 + 4 \times 3 = 0 + 2 + 6 + 12 = 20$.
 
-Formula: $\frac◆LB◆4 \times 5 \times 3◆RB◆◆LB◆3◆RB◆ = 20$. ✓
+Formula: $\frac{4 \times 5 \times 3}{3} = 20$. ✓
 
 </details>
 <b>If you get this wrong, revise:</b> [Sigma notation](#4-sigma-notation)

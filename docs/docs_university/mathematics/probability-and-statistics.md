@@ -49,7 +49,7 @@ intersections, and complements of open Sets. We write $(\mathbb{R}, \mathcal{B})
 **Proposition 1.0.** The intersection of any collection of sigma-algebras on $\Omega$ is a
 sigma-algebra.
 
-_Proof._ Let `\\{\\mathcal{{'}F{}'}_\\alpha\\}` be a collection of sigma-algebras. Then: (1)
+_Proof._ Let `\\{\\mathcal{F}_\\alpha\\}` be a collection of sigma-algebras. Then: (1)
 $\Omega \in \mathcal{F}_\alpha$ for all $\alpha$So $\Omega \in \bigcap_\alpha \mathcal{F}_\alpha$.
 (2) If $A \in \bigcap_\alpha \mathcal{F}_\alpha$Then $A \in \mathcal{F}_\alpha$ for all $\alpha$So
 $A^c \in \mathcal{F}_\alpha$ for all $\alpha$Hence $A^c \in \bigcap_\alpha \mathcal{F}_\alpha$. (3)

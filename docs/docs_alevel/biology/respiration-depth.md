@@ -419,7 +419,7 @@ $\mathrm{C{-}O$ bonds). This is why lipids are preferred for long-term energy st
 
 The respiratory quotient (RQ) is the ratio of $\mathrm{CO_2}$ produced to $\mathrm{O_2}$ consumed:
 
-$$RQ = \frac◆LB◆\text{Volume of }\mathrm{CO_2}\text{ produced}◆RB◆◆LB◆\text{Volume of }\mathrm{O_2}\text{ consumed}◆RB◆$$
+$$RQ = \frac{\text{Volume of }\mathrm{CO_2}\text{ produced}}{\text{Volume of }\mathrm{O_2}\text{ consumed}}$$
 
 For different substrates:
 
@@ -567,7 +567,7 @@ tertiary structure break, the active site changes shape, and the enzyme can no l
 reaction. By $60\ ^\circ\mathrm{C}$Most enzymes are denatured and the rate is very low.
 
 (c)
-$Q_{10} = \frac◆LB◆\text{Rate at } 30\ ^\circ\mathrm{C}◆RB◆◆LB◆\text{Rate at } 20\ ^\circ\mathrm{C}◆RB◆ = \frac{3.6}{1.8} = 2.0$.
+$Q_{10} = \frac{\text{Rate at } 30\ ^\circ\mathrm{C}}{\text{Rate at } 20\ ^\circ\mathrm{C}} = \frac{3.6}{1.8} = 2.0$.
 
 The rate doubles for a $10\ ^\circ\mathrm{C}$ increase, which is typical for enzyme-catalysed
 reactions within the range before denaturation.
@@ -602,10 +602,10 @@ meet immediate energy demands.
 A respirometer containing 5 g of germinating pea seeds and soda lime shows that $3.2\ \mathrm{cm^3}$ of $\mathrm{O_2}$ is consumed in 20 minutes at $20\ ^\circ\mathrm{C}$. (a) Calculate the respiration rate per gram of tissue. (b) Calculate the respiratory quotient if $2.5\ \mathrm{cm^3}$ of $\mathrm{CO_2}$ was produced (measured in a separate respirometer without soda lime). (c) What does the RQ value suggest about the respiratory substrate?
 
 **Answer.** (a) Rate per gram
-$= \frac◆LB◆3.2◆RB◆◆LB◆5 \times 20◆RB◆ = 0.032\ \mathrm{cm^3\ O_2\ g^{-1}\ min^{-1}}$.
+$= \frac{3.2}{5 \times 20} = 0.032\ \mathrm{cm^3\ O_2\ g^{-1}\ min^{-1}}$.
 
 (b)
-$RQ = \frac◆LB◆\text{Volume of }\mathrm{CO_2}\text{ produced}◆RB◆◆LB◆\text{Volume of }\mathrm{O_2}\text{ consumed}◆RB◆ = \frac{2.5}{3.2} = 0.78$.
+$RQ = \frac{\text{Volume of }\mathrm{CO_2}\text{ produced}}{\text{Volume of }\mathrm{O_2}\text{ consumed}} = \frac{2.5}{3.2} = 0.78$.
 
 (c) An RQ of 0.78 is between the values for pure carbohydrate (1.0) and pure lipid (0.7), suggesting
 the seeds are respiring a mixture of substrates -- primarily lipids (from energy stores in the seed)
@@ -666,7 +666,7 @@ varies:
 
 Overall efficiency of aerobic respiration:
 
-$$\text{Efficiency} = \frac◆LB◆\text{Energy captured as ATP}◆RB◆◆LB◆\text{Total energy released}◆RB◆ = \frac◆LB◆30 \times 30.5◆RB◆◆LB◆2870◆RB◆ = \frac{915}{2870} = 31.9\%$$
+$$\text{Efficiency} = \frac{\text{Energy captured as ATP}}{\text{Total energy released}} = \frac{30 \times 30.5}{2870} = \frac{915}{2870} = 31.9\%$$
 
 This means approximately 68% of the energy in glucose is lost as heat. While this seems inefficient,
 it is sufficient for the metabolic demands of most organisms because glucose is continuously
@@ -1363,7 +1363,7 @@ Urea is less toxic than ammonia, relatively soluble in water, and excreted by th
 The respiratory quotient (RQ) is the ratio of $\mathrm{CO_2}$ produced to $\mathrm{O_2}$ consumed
 during respiration:
 
-$$\mathrm{RQ} = \frac◆LB◆\text{volume of } \mathrm{CO_2} \text{ produced}◆RB◆◆LB◆\text{volume of } \mathrm{O_2} \text{ consumed}◆RB◆$$
+$$\mathrm{RQ} = \frac{\text{volume of } \mathrm{CO_2} \text{ produced}}{\text{volume of } \mathrm{O_2} \text{ consumed}}$$
 
 | Substrate             | RQ                 | Explanation                                                                                            |
 | --------------------- | ------------------ | ------------------------------------------------------------------------------------------------------ |
@@ -1813,7 +1813,7 @@ dangerous lactate accumulation in the blood and recycles carbon skeletons.
 
 The respiratory quotient is the ratio of $\mathrm{CO_2}$ produced to $\mathrm{O_2}$ consumed:
 
-$$\mathrm{RQ} = \frac◆LB◆\text{Volume of } \mathrm{CO_2} \text{ produced}◆RB◆◆LB◆\text{Volume of } \mathrm{O_2} \text{ consumed}◆RB◆$$
+$$\mathrm{RQ} = \frac{\text{Volume of } \mathrm{CO_2} \text{ produced}}{\text{Volume of } \mathrm{O_2} \text{ consumed}}$$
 
 ### 31.2 RQ Values for Different Substrates
 
@@ -2115,7 +2115,7 @@ molecule (6 vs 10). Always use 2.5 ATP per NADH and 1.5 ATP per $\mathrm{FADH_2}
 
 ### 43.2 Calculating RQ
 
-$$\mathrm{RQ} = \frac◆LB◆\text{Volume of }\mathrm{CO_2}\text{ produced}◆RB◆◆LB◆\text{Volume of }\mathrm{O_2}\text{ consumed}◆RB◆$$
+$$\mathrm{RQ} = \frac{\text{Volume of }\mathrm{CO_2}\text{ produced}}{\text{Volume of }\mathrm{O_2}\text{ consumed}}$$
 
 | Substrate                    | Equation                                               | RQ Calculation       |
 | ---------------------------- | ------------------------------------------------------ | -------------------- |

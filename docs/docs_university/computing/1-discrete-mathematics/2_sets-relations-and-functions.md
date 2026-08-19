@@ -41,7 +41,7 @@ A **Hasse diagram** is a graphical representation of a finite poset $(A, \preceq
 Is drawn below $b$ whenever $a \prec b$ (i.e., $a \preceq b$ and $a \neq b$), and an edge is drawn
 From $a$ to $b$ whenever $b$ **covers** $a$ (there is no $c$ with $a \prec c \prec b$).
 
-**Worked Example.** Show that $R$ on $\mathbb{{'}Z{}'}$ defined by $a\,R\,b$ iff
+**Worked Example.** Show that $R$ on $\mathbb{Z}$ defined by $a\,R\,b$ iff
 $a \equiv b \pmod{5}$ is An equivalence relation. Describe the equivalence classes.
 
 <details>
@@ -55,10 +55,10 @@ $b \equiv a \pmod{5}$.
 _Transitive:_ If $5 \mid (a - b)$ and $5 \mid (b - c)$Then $5 \mid (a - b) + (b - c) = a - c$So
 $a \equiv c \pmod{5}$.
 
-The equivalence classes are $[0] = \\{5k : k \in \mathbb{{'}Z{}'}\\}$
-$[1] = \\{5k+1 : k \in \mathbb{{'}Z{}'}\\}$ $[2] = \\{5k+2 : k \in \mathbb{{'}Z{}'}\\}$
-$[3] = \\{5k+3 : k \in \mathbb{{'}Z{}'}\\}$ $[4] = \\{5k+4 : k \in \mathbb{{'}Z{}'}\\}$. There are
-exactly 5 equivalence classes, forming the quotient $\mathbb{{'}Z{}'}/5\mathbb{{'}Z{}'}$.
+The equivalence classes are $[0] = \\{5k : k \in \mathbb{Z}\\}$
+$[1] = \\{5k+1 : k \in \mathbb{Z}\\}$ $[2] = \\{5k+2 : k \in \mathbb{Z}\\}$
+$[3] = \\{5k+3 : k \in \mathbb{Z}\\}$ $[4] = \\{5k+4 : k \in \mathbb{Z}\\}$. There are
+exactly 5 equivalence classes, forming the quotient $\mathbb{Z}/5\mathbb{Z}$.
 
 </details>
 
@@ -132,31 +132,31 @@ and only if it is bijective.
 ### 2.4 Countability
 
 **Definition.** A set $S$ is **countable** if it is finite or countably infinite. A set is
-**countably infinite** if there exists a bijection $\mathbb{{'}N{}'} \to S$. A set that is not
+**countably infinite** if there exists a bijection $\mathbb{N} \to S$. A set that is not
 countable Is **uncountable**.
 
-**Theorem 2.6.** $\mathbb{{'}Z{}'}$ is countably infinite.
+**Theorem 2.6.** $\mathbb{Z}$ is countably infinite.
 
-_Proof._ The function $f : \mathbb{{'}N{}'} \to \mathbb{{'}Z{}'}$ defined by
+_Proof._ The function $f : \mathbb{N} \to \mathbb{Z}$ defined by
 
 $$f(n) = \begin{cases} n/2 & \mathrm{if}\; n\; \mathrm{is}\; even \\ -(n+1)/2 & \mathrm{if}\; n\; \mathrm{is}\; odd \end{cases}$$
 
 Is a bijection, enumerating $0, -1, 1, -2, 2, -3, 3, \ldots$ $\blacksquare$
 
-**Theorem 2.7.** $\mathbb{{'}Q{}'}$ is countably infinite.
+**Theorem 2.7.** $\mathbb{Q}$ is countably infinite.
 
-_Proof._ Every positive rational can be written as $p/q$ with $p, q \in \mathbb{{'}N{}'}^+$. Arrange
+_Proof._ Every positive rational can be written as $p/q$ with $p, q \in \mathbb{N}^+$. Arrange
 the Pairs $(p, q)$ in an infinite grid and traverse them diagonally:
 
 $1/1,\; 1/2,\; 2/1,\; 3/1,\; 1/3,\; 1/4,\; 2/3,\; 3/2,\; 4/1, \ldots$
 
 Skipping duplicates (where $p/q = p'/q'$ in reduced form) yields an enumeration of
-$\mathbb{{'}Q{}'}^+$. Extending with negatives and zero gives an enumeration of $\mathbb{{'}Q{}'}$.
+$\mathbb{Q}^+$. Extending with negatives and zero gives an enumeration of $\mathbb{Q}$.
 $\blacksquare$
 
-**Theorem 2.8 (Cantor, 1891).** $\mathbb{{'}R{}'}$ is uncountable.
+**Theorem 2.8 (Cantor, 1891).** $\mathbb{R}$ is uncountable.
 
-_Proof (Diagonal argument)._ Suppose for contradiction that $\mathbb{{'}R{}'}$ is countable. Then
+_Proof (Diagonal argument)._ Suppose for contradiction that $\mathbb{R}$ is countable. Then
 the Interval $[0, 1)$ can be listed as $r_1, r_2, r_3, \ldots$ where each $r_i$ has a unique decimal
 Expansion $r_i = 0.d_{i1}d_{i2}d_{i3}\ldots$ with each $d_{ij} \in \\{0, 1, \ldots, 9\\}$ (choosing
 the expansion that does not end in all 9s to avoid dual representations).
@@ -167,5 +167,5 @@ $$s_i = \begin{cases} 5 & \mathrm{if}\; d_{ii} \neq 5 \\ 6 & \mathrm{if}\; d_{ii
 
 Then $s \in [0, 1)$ and $s$ differs from $r_i$ in the $i$-th decimal place for every $i$ So
 $s \notin \\{r_1, r_2, \ldots\\}$Contradicting the assumption that the list was complete. Therefore
-$\mathbb{{'}R{}'}$ is uncountable. $\blacksquare$
+$\mathbb{R}$ is uncountable. $\blacksquare$
 

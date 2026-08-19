@@ -31,12 +31,12 @@ Take $\mu_0 = 4\pi \times 10^{-7}\,\text{T}\,\text{m}\,\text{A}^{-1}$.
 
 (a) The magnetic field due to $I_1$ at the location of $I_2$:
 
-$$B = \frac◆LB◆\mu_0 I_1◆RB◆◆LB◆2\pi r◆RB◆ = \frac◆LB◆4\pi \times 10^{-7} \times 10◆RB◆◆LB◆2\pi \times 0.05◆RB◆ = \frac◆LB◆4\pi \times 10^{-6}◆RB◆◆LB◆0.1\pi◆RB◆ = 4.0 \times 10^{-5}\,\text{T}$$
+$$B = \frac{\mu_0 I_1}{2\pi r} = \frac{4\pi \times 10^{-7} \times 10}{2\pi \times 0.05} = \frac{4\pi \times 10^{-6}}{0.1\pi} = 4.0 \times 10^{-5}\,\text{T}$$
 
 Force per unit length:
-$\frac{F}{L} = \frac◆LB◆\mu_0 I_1 I_2◆RB◆◆LB◆2\pi r◆RB◆ = \frac◆LB◆4\pi \times 10^{-7} \times 10 \times 5.0◆RB◆◆LB◆2\pi \times 0.05◆RB◆$
+$\frac{F}{L} = \frac{\mu_0 I_1 I_2}{2\pi r} = \frac{4\pi \times 10^{-7} \times 10 \times 5.0}{2\pi \times 0.05}$
 
-$$= \frac◆LB◆2 \times 10^{-5}◆RB◆◆LB◆0.05◆RB◆ = 4.0 \times 10^{-4}\,\text{N}\,\text{m}^{-1}$$
+$$= \frac{2 \times 10^{-5}}{0.05} = 4.0 \times 10^{-4}\,\text{N}\,\text{m}^{-1}$$
 
 Using the right-hand grip rule: $I_1$ produces a field that points into the page at the location of
 $I_2$ (if $I_2$ is to the right of $I_1$ and both carry current upward). Fleming's left-hand rule
@@ -82,12 +82,12 @@ $4.0 \times 10^6\,\text{m}\,\text{s}^{-1}$.
 
 $$Bqv = \frac{mv^2}{r} \Rightarrow r = \frac{mv}{Bq}$$
 
-$$r = \frac◆LB◆1.67 \times 10^{-27} \times 4.0 \times 10^6◆RB◆◆LB◆0.50 \times 1.60 \times 10^{-19}◆RB◆ = \frac◆LB◆6.68 \times 10^{-21}◆RB◆◆LB◆8.0 \times 10^{-20}◆RB◆ = 0.0835\,\text{m} = 8.35\,\text{cm}$$
+$$r = \frac{1.67 \times 10^{-27} \times 4.0 \times 10^6}{0.50 \times 1.60 \times 10^{-19}} = \frac{6.68 \times 10^{-21}}{8.0 \times 10^{-20}} = 0.0835\,\text{m} = 8.35\,\text{cm}$$
 
 (b) Cyclotron frequency:
-$f = \frac◆LB◆Bq◆RB◆◆LB◆2\pi m◆RB◆ = \frac◆LB◆0.50 \times 1.60 \times 10^{-19}◆RB◆◆LB◆2\pi \times 1.67 \times 10^{-27}◆RB◆$
+$f = \frac{Bq}{2\pi m} = \frac{0.50 \times 1.60 \times 10^{-19}}{2\pi \times 1.67 \times 10^{-27}}$
 
-$$= \frac◆LB◆8.0 \times 10^{-20}◆RB◆◆LB◆1.049 \times 10^{-26}◆RB◆ = 7.63 \times 10^6\,\text{Hz} = 7.63\,\text{MHz}$$
+$$= \frac{8.0 \times 10^{-20}}{1.049 \times 10^{-26}} = 7.63 \times 10^6\,\text{Hz} = 7.63\,\text{MHz}$$
 
 Period: $T = 1/f = 1.31 \times 10^{-7}\,\text{s} = 131\,\text{ns}$
 
@@ -133,11 +133,11 @@ This is consistent with $\varepsilon = \varepsilon_{\max}\sin(\omega t)$.
 
 (c) Average EMF over one quarter revolution ($t = 0$ to $t = T/4 = \pi/(2\omega)$):
 
-$$\bar{\varepsilon} = \frac{1}{T/4}\int_0^{T/4} \varepsilon_{\max}\sin(\omega t)\,dt = \frac{4}{T}\left[-\frac◆LB◆\varepsilon_{\max}◆RB◆◆LB◆\omega◆RB◆\cos(\omega t)\right]_0^{T/4}$$
+$$\bar{\varepsilon} = \frac{1}{T/4}\int_0^{T/4} \varepsilon_{\max}\sin(\omega t)\,dt = \frac{4}{T}\left[-\frac{\varepsilon_{\max}}{\omega}\cos(\omega t)\right]_0^{T/4}$$
 
-$$= \frac◆LB◆4\varepsilon_{\max}◆RB◆◆LB◆\omega T◆RB◆\left[-\cos\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ + \cos 0\right] = \frac◆LB◆4\varepsilon_{\max}◆RB◆◆LB◆2\pi◆RB◆(0 + 1) = \frac◆LB◆2\varepsilon_{\max}◆RB◆◆LB◆\pi◆RB◆$$
+$$= \frac{4\varepsilon_{\max}}{\omega T}\left[-\cos\frac{\pi}{2} + \cos 0\right] = \frac{4\varepsilon_{\max}}{2\pi}(0 + 1) = \frac{2\varepsilon_{\max}}{\pi}$$
 
-$$= \frac◆LB◆2 \times 100.5◆RB◆◆LB◆\pi◆RB◆ = 63.9\,\text{V}$$
+$$= \frac{2 \times 100.5}{\pi} = 63.9\,\text{V}$$
 
 This is $2/\pi \approx 0.637$ times the peak value, which is the mean of a half sine wave.
 
@@ -172,12 +172,12 @@ $$v = 1.5 \times 10^5/0.050 = 3.0 \times 10^6\,\text{m}\,\text{s}^{-1}$$
 For neon-20:
 $r_{20} = 20 \times 1.66 \times 10^{-27} \times 3.0 \times 10^6/(0.20 \times 1.60 \times 10^{-19})$
 
-$$= \frac◆LB◆9.96 \times 10^{-20}◆RB◆◆LB◆3.2 \times 10^{-20}◆RB◆ = 3.1125\,\text{m}$$
+$$= \frac{9.96 \times 10^{-20}}{3.2 \times 10^{-20}} = 3.1125\,\text{m}$$
 
 For neon-22:
 $r_{22} = 22 \times 1.66 \times 10^{-27} \times 3.0 \times 10^6/(0.20 \times 1.60 \times 10^{-19})$
 
-$$= \frac◆LB◆10.956 \times 10^{-20}◆RB◆◆LB◆3.2 \times 10^{-20}◆RB◆ = 3.4238\,\text{m}$$
+$$= \frac{10.956 \times 10^{-20}}{3.2 \times 10^{-20}} = 3.4238\,\text{m}$$
 
 Separation on detector:
 $d = 2(r_{22} - r_{20}) = 2(3.4238 - 3.1125) = 2 \times 0.3113 = 0.623\,\text{m} = 62.3\,\text{cm}$
@@ -224,15 +224,15 @@ Actual primary current: $I_p = P_{\text{in}}/V_p = 62.6/240 = 0.261\,\text{A}$
 
 Power loss: $P_{\text{loss}} = P_{\text{in}} - P_{\text{out}} = 62.6 - 57.6 = 5.0\,\text{W}$
 
-(c) The induced EMF equation: $V_p = N_p \times \frac◆LB◆d\Phi◆RB◆◆LB◆dt◆RB◆$
+(c) The induced EMF equation: $V_p = N_p \times \frac{d\Phi}{dt}$
 
 For sinusoidal: $V_p = N_p \times \omega \times \hat{B} \times A$Where $\hat{B}$ is the peak flux
 density.
 
 Using RMS:
-$V_{p,\text{RMS}} = \frac◆LB◆N_p \times 2\pi f \times \hat{B} \times A◆RB◆◆LB◆\sqrt{2}◆RB◆$
+$V_{p,\text{RMS}} = \frac{N_p \times 2\pi f \times \hat{B} \times A}{\sqrt{2}}$
 
-$$f_{\min} = \frac◆LB◆V_{p,\text{RMS}}\sqrt{2}◆RB◆◆LB◆2\pi N_p \hat{B} A◆RB◆ = \frac◆LB◆240 \times 1.414◆RB◆◆LB◆2\pi \times 500 \times 1.5 \times 0.010◆RB◆$$
+$$f_{\min} = \frac{V_{p,\text{RMS}}\sqrt{2}}{2\pi N_p \hat{B} A} = \frac{240 \times 1.414}{2\pi \times 500 \times 1.5 \times 0.010}$$
 
 $$= \frac{339.4}{47.12} = 7.20\,\text{Hz}$$
 
@@ -260,7 +260,7 @@ The field is directed into the page and the loop moves to the right.
 (a) As the loop exits, the area within the field decreases. If $x$ is the length still inside the
 field, the flux is $\Phi = B \times 0.10 \times x$.
 
-$$\varepsilon = -\frac◆LB◆d\Phi◆RB◆◆LB◆dt◆RB◆ = -B \times 0.10 \times \frac{dx}{dt} = -B \times 0.10 \times (-v) = B \times 0.10 \times v$$
+$$\varepsilon = -\frac{d\Phi}{dt} = -B \times 0.10 \times \frac{dx}{dt} = -B \times 0.10 \times (-v) = B \times 0.10 \times v$$
 
 (The sign depends on direction convention.)
 

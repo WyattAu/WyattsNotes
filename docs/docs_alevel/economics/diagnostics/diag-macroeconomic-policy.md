@@ -20,7 +20,7 @@ multiplier.
 **Solution:**
 
 (a) Simple multiplier:
-$k = \frac◆LB◆1◆RB◆◆LB◆1 - \text{MPC}◆RB◆ = \frac{1}{1 - 0.75} = \frac{1}{0.25} = 4$.
+$k = \frac{1}{1 - \text{MPC}} = \frac{1}{1 - 0.75} = \frac{1}{0.25} = 4$.
 
 (b) Change in income: $\Delta Y = k \times \Delta I = 4 \times 200 = \pounds 800$~m.
 
@@ -28,7 +28,7 @@ $k = \frac◆LB◆1◆RB◆◆LB◆1 - \text{MPC}◆RB◆ = \frac{1}{1 - 0.75} =
 $\Delta C = \text{MPC} \times \Delta Y = 0.75 \times 800 = \pounds 600$~m.
 
 With tax and imports, the complex multiplier:
-$k = \frac◆LB◆1◆RB◆◆LB◆1 - \text{MPC}(1-t) + \text{MPM}◆RB◆$.
+$k = \frac{1}{1 - \text{MPC}(1-t) + \text{MPM}}$.
 
 $k = \frac{1}{1 - 0.75(1 - 0.2) + 0.1} = \frac{1}{1 - 0.75(0.8) + 0.1} = \frac{1}{1 - 0.60 + 0.1} = \frac{1}{0.50} = 2$.
 
@@ -83,7 +83,7 @@ percentage points.
 
 **Solution:**
 
-(a) Multiplier: $k = \frac◆LB◆1◆RB◆◆LB◆1 - \text{MPC}(1-t) + \text{MPM}◆RB◆$
+(a) Multiplier: $k = \frac{1}{1 - \text{MPC}(1-t) + \text{MPM}}$
 
 $k = \frac{1}{1 - 0.8(0.75) + 0.15} = \frac{1}{1 - 0.60 + 0.15} = \frac{1}{0.55} = 1.82$
 
@@ -149,9 +149,9 @@ Maximum change in money supply $= 5 \times (-2) = -\pounds 10$~bn.
 If $M$ decreases (from the open market sale), then $V$ must increase to compensate. The relationship
 is:
 
-$\frac◆LB◆\Delta(\text{MV})◆RB◆◆LB◆\text{MV}◆RB◆ = \frac◆LB◆\Delta M◆RB◆◆LB◆M◆RB◆ + \frac◆LB◆\Delta V◆RB◆◆LB◆V◆RB◆ + \frac◆LB◆\Delta M◆RB◆◆LB◆M◆RB◆ \times \frac◆LB◆\Delta V◆RB◆◆LB◆V◆RB◆$
+$\frac{\Delta(\text{MV})}{\text{MV}} = \frac{\Delta M}{M} + \frac{\Delta V}{V} + \frac{\Delta M}{M} \times \frac{\Delta V}{V}$
 
-For small changes: $\frac◆LB◆\Delta M◆RB◆◆LB◆M◆RB◆ + \frac◆LB◆\Delta V◆RB◆◆LB◆V◆RB◆ \approx 2\%$.
+For small changes: $\frac{\Delta M}{M} + \frac{\Delta V}{V} \approx 2\%$.
 
 This scenario is contradictory: the interest rate rise and bond sale both reduce the money supply,
 which should reduce $Y$ or $P$Not increase $Y$ by 2%. If we observe $Y$ rising despite

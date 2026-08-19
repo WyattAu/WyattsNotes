@@ -68,7 +68,7 @@ $$
 \begin{aligned}
 Z_1 + z_2 &= (a + c) + (b + d)i \\
 Z_1 z_2 &= (ac - bd) + (ad + bc)i \\
-\frac{z_1}{z_2} &= \frac◆LB◆z_1 \overline{z_2}◆RB◆◆LB◆|z_2|^2◆RB◆ = \frac{(ac + bd) + (bc - ad)i}{c^2 + d^2}
+\frac{z_1}{z_2} &= \frac{z_1 \overline{z_2}}{|z_2|^2} = \frac{(ac + bd) + (bc - ad)i}{c^2 + d^2}
 \end{aligned}
 $$
 
@@ -81,14 +81,14 @@ Where $\overline{z_2} = c - di$ is the _complex conjugate_ of $z_2$.
 
 Find the modulus, argument, and polar form of $z = 1 - \sqrt{3}\,i$.
 
-$$|z| = \sqrt◆LB◆1^2 + (-\sqrt{3})^2◆RB◆ = \sqrt{1 + 3} = 2$$
+$$|z| = \sqrt{1^2 + (-\sqrt{3})^2} = \sqrt{1 + 3} = 2$$
 
 Since $(a, b) = (1, -\sqrt{3})$ lies in the fourth quadrant:
 
-$$\arg(z) = \arctan\!\left(\frac◆LB◆-\sqrt{3}◆RB◆◆LB◆1◆RB◆\right) = -\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$$
+$$\arg(z) = \arctan\!\left(\frac{-\sqrt{3}}{1}\right) = -\frac{\pi}{3}$$
 
 Polar form:
-$z = 2\!\left(\cos\!\left(-\dfrac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right) + i\sin\!\left(-\dfrac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right)\right)$.
+$z = 2\!\left(\cos\!\left(-\dfrac{\pi}{3}\right) + i\sin\!\left(-\dfrac{\pi}{3}\right)\right)$.
 
 </details>
 
@@ -119,7 +119,7 @@ $$
 Using the compound angle identities. ✓
 
 For negative integers, note that
-$\dfrac◆LB◆1◆RB◆◆LB◆\cos\theta + i\sin\theta◆RB◆ = \cos\theta - i\sin\theta = \cos(-\theta) + i\sin(-\theta)$
+$\dfrac{1}{\cos\theta + i\sin\theta} = \cos\theta - i\sin\theta = \cos(-\theta) + i\sin(-\theta)$
 So the result follows. $\square$
 
 **Intuition.** De Moivre's theorem says that raising a complex number on the unit circle to the
@@ -160,13 +160,13 @@ $$z^n = r^n\left(\cos(n\theta) + i\sin(n\theta)\right)$$
 Find $(1 + i)^{10}$.
 
 First write in polar form:
-$1 + i = \sqrt{2}\!\left(\cos\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ + i\sin\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right)$.
+$1 + i = \sqrt{2}\!\left(\cos\frac{\pi}{4} + i\sin\frac{\pi}{4}\right)$.
 
 $$
 \begin{aligned}
-(1 + i)^{10} &= \left(\sqrt{2}\right)^{10}\!\left(\cos\frac◆LB◆10\pi◆RB◆◆LB◆4◆RB◆ + i\sin\frac◆LB◆10\pi◆RB◆◆LB◆4◆RB◆\right) \\
-&= 32\!\left(\cos\frac◆LB◆5\pi◆RB◆◆LB◆2◆RB◆ + i\sin\frac◆LB◆5\pi◆RB◆◆LB◆2◆RB◆\right) \\
-&= 32\!\left(\cos\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ + i\sin\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆\right) \\
+(1 + i)^{10} &= \left(\sqrt{2}\right)^{10}\!\left(\cos\frac{10\pi}{4} + i\sin\frac{10\pi}{4}\right) \\
+&= 32\!\left(\cos\frac{5\pi}{2} + i\sin\frac{5\pi}{2}\right) \\
+&= 32\!\left(\cos\frac{\pi}{2} + i\sin\frac{\pi}{2}\right) \\
 &= 32(0 + i) = 32i
 \end{aligned}
 $$
@@ -183,12 +183,12 @@ $n \in \mathbb{Z}^+$.
 By De Moivre's theorem, writing $1 = \cos 0 + i\sin 0 = \cos(2k\pi) + i\sin(2k\pi)$ for any integer
 $k$The $n$ distinct solutions are:
 
-$$\boxed{z_k = \cos\!\left(\frac◆LB◆2k\pi◆RB◆◆LB◆n◆RB◆\right) + i\sin\!\left(\frac◆LB◆2k\pi◆RB◆◆LB◆n◆RB◆\right), \quad k = 0, 1, 2, \ldots, n-1}$$
+$$\boxed{z_k = \cos\!\left(\frac{2k\pi}{n}\right) + i\sin\!\left(\frac{2k\pi}{n}\right), \quad k = 0, 1, 2, \ldots, n-1}$$
 
 ### 3.1 Geometric Interpretation
 
 The $n$-th roots of unity lie on the unit circle $|z| = 1$ in the Argand diagram, equally spaced at
-Angles of $\dfrac◆LB◆2\pi◆RB◆◆LB◆n◆RB◆$ radians apart. They form the vertices of a regular $n$-gon
+Angles of $\dfrac{2\pi}{n}$ radians apart. They form the vertices of a regular $n$-gon
 Inscribed in the unit circle, with one vertex at $z = 1$.
 
 ### 3.2 Sum and Product of Roots
@@ -201,7 +201,7 @@ This follows from the coefficient of $z^{n-1}$ in $z^n - 1 = 0$ being zero (by V
 Equivalently, the roots form a geometric series with ratio $\omega = e^{2\pi i/n}$ and first term 1,
 Giving:
 
-$$\sum_{k=0}^{n-1} \omega^k = \frac◆LB◆1 - \omega^n◆RB◆◆LB◆1 - \omega◆RB◆ = \frac◆LB◆1 - 1◆RB◆◆LB◆1 - \omega◆RB◆ = 0$$
+$$\sum_{k=0}^{n-1} \omega^k = \frac{1 - \omega^n}{1 - \omega} = \frac{1 - 1}{1 - \omega} = 0$$
 
 The product of all $n$-th roots of unity is:
 
@@ -212,23 +212,23 @@ $$\prod_{k=0}^{n-1} z_k = (-1)^{n-1}$$
 
 Find all cube roots of unity and verify that their sum is zero.
 
-$z^3 = 1 \implies z_k = \cos\!\left(\dfrac◆LB◆2k\pi◆RB◆◆LB◆3◆RB◆\right) + i\sin\!\left(\dfrac◆LB◆2k\pi◆RB◆◆LB◆3◆RB◆\right)$
+$z^3 = 1 \implies z_k = \cos\!\left(\dfrac{2k\pi}{3}\right) + i\sin\!\left(\dfrac{2k\pi}{3}\right)$
 For $k = 0, 1, 2$.
 
 $$
 \begin{aligned}
 Z_0 &= \cos 0 + i\sin 0 = 1 \\
-Z_1 &= \cos\frac◆LB◆2\pi◆RB◆◆LB◆3◆RB◆ + i\sin\frac◆LB◆2\pi◆RB◆◆LB◆3◆RB◆ = -\frac{1}{2} + \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆\,i \\
-Z_2 &= \cos\frac◆LB◆4\pi◆RB◆◆LB◆3◆RB◆ + i\sin\frac◆LB◆4\pi◆RB◆◆LB◆3◆RB◆ = -\frac{1}{2} - \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆\,i
+Z_1 &= \cos\frac{2\pi}{3} + i\sin\frac{2\pi}{3} = -\frac{1}{2} + \frac{\sqrt{3}}{2}\,i \\
+Z_2 &= \cos\frac{4\pi}{3} + i\sin\frac{4\pi}{3} = -\frac{1}{2} - \frac{\sqrt{3}}{2}\,i
 \end{aligned}
 $$
 
 Sum:
-$1 - \dfrac{1}{2} + \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆\,i - \dfrac{1}{2} - \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆\,i = 0$.
+$1 - \dfrac{1}{2} + \dfrac{\sqrt{3}}{2}\,i - \dfrac{1}{2} - \dfrac{\sqrt{3}}{2}\,i = 0$.
 ✓
 
 Product:
-$1 \cdot \left(-\dfrac{1}{2} + \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆\,i\right)\left(-\dfrac{1}{2} - \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆\,i\right) = 1 \cdot \left(\dfrac{1}{4} + \dfrac{3}{4}\right) = 1 = (-1)^{3-1}$.
+$1 \cdot \left(-\dfrac{1}{2} + \dfrac{\sqrt{3}}{2}\,i\right)\left(-\dfrac{1}{2} - \dfrac{\sqrt{3}}{2}\,i\right) = 1 \cdot \left(\dfrac{1}{4} + \dfrac{3}{4}\right) = 1 = (-1)^{3-1}$.
 ✓
 
 </details>
@@ -257,15 +257,15 @@ Substituting $x = i\theta$ into the series for $e^x$:
 
 $$
 \begin{aligned}
-E^{i\theta} &= 1 + i\theta + \frac◆LB◆(i\theta)^2◆RB◆◆LB◆2!◆RB◆ + \frac◆LB◆(i\theta)^3◆RB◆◆LB◆3!◆RB◆ + \frac◆LB◆(i\theta)^4◆RB◆◆LB◆4!◆RB◆ + \frac◆LB◆(i\theta)^5◆RB◆◆LB◆5!◆RB◆ + \cdots \\
-&= 1 + i\theta + \frac◆LB◆i^2\theta^2◆RB◆◆LB◆2!◆RB◆ + \frac◆LB◆i^3\theta^3◆RB◆◆LB◆3!◆RB◆ + \frac◆LB◆i^4\theta^4◆RB◆◆LB◆4!◆RB◆ + \frac◆LB◆i^5\theta^5◆RB◆◆LB◆5!◆RB◆ + \cdots \\
-&= 1 + i\theta - \frac◆LB◆\theta^2◆RB◆◆LB◆2!◆RB◆ - \frac◆LB◆i\theta^3◆RB◆◆LB◆3!◆RB◆ + \frac◆LB◆\theta^4◆RB◆◆LB◆4!◆RB◆ + \frac◆LB◆i\theta^5◆RB◆◆LB◆5!◆RB◆ - \cdots
+E^{i\theta} &= 1 + i\theta + \frac{(i\theta)^2}{2!} + \frac{(i\theta)^3}{3!} + \frac{(i\theta)^4}{4!} + \frac{(i\theta)^5}{5!} + \cdots \\
+&= 1 + i\theta + \frac{i^2\theta^2}{2!} + \frac{i^3\theta^3}{3!} + \frac{i^4\theta^4}{4!} + \frac{i^5\theta^5}{5!} + \cdots \\
+&= 1 + i\theta - \frac{\theta^2}{2!} - \frac{i\theta^3}{3!} + \frac{\theta^4}{4!} + \frac{i\theta^5}{5!} - \cdots
 \end{aligned}
 $$
 
 Using $i^2 = -1$$i^3 = -i$$i^4 = 1$$i^5 = i$And so on. Grouping real and imaginary parts:
 
-$$e^{i\theta} = \underbrace◆LB◆\left(1 - \frac{\theta^2}{2!} + \frac{\theta^4}{4!} - \cdots\right)◆RB◆_{=\,\cos\theta} + i\underbrace◆LB◆\left(\theta - \frac{\theta^3}{3!} + \frac{\theta^5}{5!} - \cdots\right)◆RB◆_{=\,\sin\theta}$$
+$$e^{i\theta} = \underbrace{\left(1 - \frac{\theta^2}{2!} + \frac{\theta^4}{4!} - \cdots\right)}_{=\,\cos\theta} + i\underbrace{\left(\theta - \frac{\theta^3}{3!} + \frac{\theta^5}{5!} - \cdots\right)}_{=\,\sin\theta}$$
 
 Therefore $e^{i\theta} = \cos\theta + i\sin\theta$. $\square$
 
@@ -304,7 +304,7 @@ $$
 **Definition.** The locus $|z - a| = r$Where $a \in \mathbb{C}$ and $r \in \mathbb{R}^+$Is a Circle
 with centre $a$ and radius $r$ in the Argand diagram.
 
-$$|z - a| = r \iff \sqrt◆LB◆(x - \alpha)^2 + (y - \beta)^2◆RB◆ = r \iff (x - \alpha)^2 + (y - \beta)^2 = r^2$$
+$$|z - a| = r \iff \sqrt{(x - \alpha)^2 + (y - \beta)^2} = r \iff (x - \alpha)^2 + (y - \beta)^2 = r^2$$
 
 Where $a = \alpha + \beta i$ and $z = x + yi$.
 
@@ -326,7 +326,7 @@ The region $\alpha_1 < \arg(z - a) < \alpha_2$ is an angular sector (wedge) with
 
 Exam questions often require describing a _region_ defined by combining loci, such as:
 
-- $|z - 3| \leq 2$ and $\arg(z) \geq \dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$: the part of a disc in a sector.
+- $|z - 3| \leq 2$ and $\arg(z) \geq \dfrac{\pi}{4}$: the part of a disc in a sector.
 
 :::warning A half-line $\arg(z - a) = \alpha$ does _not_ include the point $a$. When shading
 Regions, be careful about whether boundaries are included (solid line) or excluded (dashed line).
@@ -341,13 +341,13 @@ The boundary is included by testing a point.
 <summary>Worked Example: Describing a locus algebraically</summary>
 
 A complex number $z$ satisfies $|z - 2i| \leq 3$ and
-$0 \leq \arg(z) \leq \dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$. Find the greatest possible value of $|z|$ and the
+$0 \leq \arg(z) \leq \dfrac{\pi}{2}$. Find the greatest possible value of $|z|$ and the
 Least possible value of $|z|$.
 
 The first condition: $|z - 2i| \leq 3$ is the closed disc of radius 3 centred at $2i$I.e. At
 $(0, 2)$.
 
-The second condition: $0 \leq \arg(z) \leq \dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ restricts $z$ to the first
+The second condition: $0 \leq \arg(z) \leq \dfrac{\pi}{2}$ restricts $z$ to the first
 Quadrant (including axes).
 
 The disc centre $(0, 2)$ with radius 3 extends from $y = -1$ to $y = 5$ and from $x = -3$ to
@@ -441,7 +441,7 @@ $$\boxed{e^{i\theta} = \cos\theta + i\sin\theta}$$
 
 $$\boxed{e^{i\pi} + 1 = 0}$$
 
-$$\boxed{z_k = e^{2k\pi i/n} = \cos\!\left(\frac◆LB◆2k\pi◆RB◆◆LB◆n◆RB◆\right) + i\sin\!\left(\frac◆LB◆2k\pi◆RB◆◆LB◆n◆RB◆\right), \quad k = 0, 1, \ldots, n-1}$$
+$$\boxed{z_k = e^{2k\pi i/n} = \cos\!\left(\frac{2k\pi}{n}\right) + i\sin\!\left(\frac{2k\pi}{n}\right), \quad k = 0, 1, \ldots, n-1}$$
 
 $$\boxed{\sum_{k=0}^{n-1} z_k = 0}$$
 
@@ -469,9 +469,9 @@ Find $|z|$ and $\arg(z)$ first. Then apply De Moivre's theorem.
 $|z| = \sqrt{3 + 1} = 2$.
 
 The point $(-\sqrt{3}, 1)$ is in the second quadrant.
-$\arg(z) = \pi - \arctan\!\left(\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆\right) = \pi - \dfrac◆LB◆\pi◆RB◆◆LB◆6◆RB◆ = \dfrac◆LB◆5\pi◆RB◆◆LB◆6◆RB◆$.
+$\arg(z) = \pi - \arctan\!\left(\dfrac{1}{\sqrt{3}}\right) = \pi - \dfrac{\pi}{6} = \dfrac{5\pi}{6}$.
 
-$$z^5 = 2^5\!\left(\cos\frac◆LB◆25\pi◆RB◆◆LB◆6◆RB◆ + i\sin\frac◆LB◆25\pi◆RB◆◆LB◆6◆RB◆\right) = 32\!\left(\cos\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆ + i\sin\frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆\right) = 32\!\left(\frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ + \frac{1}{2}\,i\right) = 16\sqrt{3} + 16i$$
+$$z^5 = 2^5\!\left(\cos\frac{25\pi}{6} + i\sin\frac{25\pi}{6}\right) = 32\!\left(\cos\frac{\pi}{6} + i\sin\frac{\pi}{6}\right) = 32\!\left(\frac{\sqrt{3}}{2} + \frac{1}{2}\,i\right) = 16\sqrt{3} + 16i$$
 
 </details>
 
@@ -523,16 +523,16 @@ Write $16i = 16e^{i\pi/2}$ and use the roots formula.
 <details>
 <summary>Answer</summary>
 
-$16i = 16\!\left(\cos\dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ + i\sin\dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆\right)$.
+$16i = 16\!\left(\cos\dfrac{\pi}{2} + i\sin\dfrac{\pi}{2}\right)$.
 
-$$z_k = 2\!\left(\cos\!\left(\frac◆LB◆\pi/2 + 2k\pi◆RB◆◆LB◆4◆RB◆\right) + i\sin\!\left(\frac◆LB◆\pi/2 + 2k\pi◆RB◆◆LB◆4◆RB◆\right)\right), \quad k = 0, 1, 2, 3$$
+$$z_k = 2\!\left(\cos\!\left(\frac{\pi/2 + 2k\pi}{4}\right) + i\sin\!\left(\frac{\pi/2 + 2k\pi}{4}\right)\right), \quad k = 0, 1, 2, 3$$
 
 $$
 \begin{aligned}
-K = 0:\quad z_0 &= 2\!\left(\cos\frac◆LB◆\pi◆RB◆◆LB◆8◆RB◆ + i\sin\frac◆LB◆\pi◆RB◆◆LB◆8◆RB◆\right) = 2\!\left(\frac◆LB◆\sqrt{2+\sqrt{2}}◆RB◆◆LB◆2◆RB◆ + i\,\frac◆LB◆\sqrt{2-\sqrt{2}}◆RB◆◆LB◆2◆RB◆\right) = \sqrt◆LB◆2+\sqrt{2}◆RB◆ + i\sqrt◆LB◆2-\sqrt{2}◆RB◆ \\
-K = 1:\quad z_1 &= 2\!\left(\cos\frac◆LB◆5\pi◆RB◆◆LB◆8◆RB◆ + i\sin\frac◆LB◆5\pi◆RB◆◆LB◆8◆RB◆\right) = -\sqrt◆LB◆2-\sqrt{2}◆RB◆ + i\sqrt◆LB◆2+\sqrt{2}◆RB◆ \\
-K = 2:\quad z_2 &= 2\!\left(\cos\frac◆LB◆9\pi◆RB◆◆LB◆8◆RB◆ + i\sin\frac◆LB◆9\pi◆RB◆◆LB◆8◆RB◆\right) = -\sqrt◆LB◆2+\sqrt{2}◆RB◆ - i\sqrt◆LB◆2-\sqrt{2}◆RB◆ \\
-K = 3:\quad z_3 &= 2\!\left(\cos\frac◆LB◆13\pi◆RB◆◆LB◆8◆RB◆ + i\sin\frac◆LB◆13\pi◆RB◆◆LB◆8◆RB◆\right) = \sqrt◆LB◆2-\sqrt{2}◆RB◆ - i\sqrt◆LB◆2+\sqrt{2}◆RB◆
+K = 0:\quad z_0 &= 2\!\left(\cos\frac{\pi}{8} + i\sin\frac{\pi}{8}\right) = 2\!\left(\frac{\sqrt{2+\sqrt{2}}}{2} + i\,\frac{\sqrt{2-\sqrt{2}}}{2}\right) = \sqrt{2+\sqrt{2}} + i\sqrt{2-\sqrt{2}} \\
+K = 1:\quad z_1 &= 2\!\left(\cos\frac{5\pi}{8} + i\sin\frac{5\pi}{8}\right) = -\sqrt{2-\sqrt{2}} + i\sqrt{2+\sqrt{2}} \\
+K = 2:\quad z_2 &= 2\!\left(\cos\frac{9\pi}{8} + i\sin\frac{9\pi}{8}\right) = -\sqrt{2+\sqrt{2}} - i\sqrt{2-\sqrt{2}} \\
+K = 3:\quad z_3 &= 2\!\left(\cos\frac{13\pi}{8} + i\sin\frac{13\pi}{8}\right) = \sqrt{2-\sqrt{2}} - i\sqrt{2+\sqrt{2}}
 \end{aligned}
 $$
 
@@ -542,7 +542,7 @@ $$
 
 **Problem 4.** The fifth roots of unity are $\omega^0, \omega^1, \omega^2, \omega^3, \omega^4$ where
 $\omega = e^{2\pi i/5}$. Show that $1 + \omega + \omega^2 + \omega^3 + \omega^4 = 0$ and deduce that
-$\cos\dfrac◆LB◆2\pi◆RB◆◆LB◆5◆RB◆ + \cos\dfrac◆LB◆4\pi◆RB◆◆LB◆5◆RB◆ = -\dfrac{1}{2}$.
+$\cos\dfrac{2\pi}{5} + \cos\dfrac{4\pi}{5} = -\dfrac{1}{2}$.
 
 <details>
 <summary>Hint</summary>
@@ -558,27 +558,27 @@ The roots satisfy $z^5 - 1 = 0$. The coefficient of $z^4$ is 0, so by Vieta's fo
 $\sum_{k=0}^{4} \omega^k = 0$.
 
 Alternatively:
-$\displaystyle\sum_{k=0}^{4}\omega^k = \frac◆LB◆1 - \omega^5◆RB◆◆LB◆1 - \omega◆RB◆ = \frac◆LB◆1 - 1◆RB◆◆LB◆1 - \omega◆RB◆ = 0$.
+$\displaystyle\sum_{k=0}^{4}\omega^k = \frac{1 - \omega^5}{1 - \omega} = \frac{1 - 1}{1 - \omega} = 0$.
 
-Expanding using $\omega^k = \cos\frac◆LB◆2k\pi◆RB◆◆LB◆5◆RB◆ + i\sin\frac◆LB◆2k\pi◆RB◆◆LB◆5◆RB◆$:
+Expanding using $\omega^k = \cos\frac{2k\pi}{5} + i\sin\frac{2k\pi}{5}$:
 
-$$\sum_{k=0}^{4}\omega^k = \underbrace◆LB◆\sum_{k=0}^{4}\cos\frac{2k\pi}{5}◆RB◆_{\mathrm{real}} + i\underbrace◆LB◆\sum_{k=0}^{4}\sin\frac{2k\pi}{5}◆RB◆_{\mathrm{imaginary}} = 0$$
+$$\sum_{k=0}^{4}\omega^k = \underbrace{\sum_{k=0}^{4}\cos\frac{2k\pi}{5}}_{\mathrm{real}} + i\underbrace{\sum_{k=0}^{4}\sin\frac{2k\pi}{5}}_{\mathrm{imaginary}} = 0$$
 
 The imaginary part is zero by symmetry ($\sin\theta = -\sin(2\pi - \theta)$). The real part gives:
 
-$$1 + \cos\frac◆LB◆2\pi◆RB◆◆LB◆5◆RB◆ + \cos\frac◆LB◆4\pi◆RB◆◆LB◆5◆RB◆ + \cos\frac◆LB◆6\pi◆RB◆◆LB◆5◆RB◆ + \cos\frac◆LB◆8\pi◆RB◆◆LB◆5◆RB◆ = 0$$
+$$1 + \cos\frac{2\pi}{5} + \cos\frac{4\pi}{5} + \cos\frac{6\pi}{5} + \cos\frac{8\pi}{5} = 0$$
 
-Since $\cos\frac◆LB◆6\pi◆RB◆◆LB◆5◆RB◆ = \cos\frac◆LB◆4\pi◆RB◆◆LB◆5◆RB◆$ and
-$\cos\frac◆LB◆8\pi◆RB◆◆LB◆5◆RB◆ = \cos\frac◆LB◆2\pi◆RB◆◆LB◆5◆RB◆$:
+Since $\cos\frac{6\pi}{5} = \cos\frac{4\pi}{5}$ and
+$\cos\frac{8\pi}{5} = \cos\frac{2\pi}{5}$:
 
-$$1 + 2\cos\frac◆LB◆2\pi◆RB◆◆LB◆5◆RB◆ + 2\cos\frac◆LB◆4\pi◆RB◆◆LB◆5◆RB◆ = 0 \implies \cos\frac◆LB◆2\pi◆RB◆◆LB◆5◆RB◆ + \cos\frac◆LB◆4\pi◆RB◆◆LB◆5◆RB◆ = -\frac{1}{2} \quad \square$$
+$$1 + 2\cos\frac{2\pi}{5} + 2\cos\frac{4\pi}{5} = 0 \implies \cos\frac{2\pi}{5} + \cos\frac{4\pi}{5} = -\frac{1}{2} \quad \square$$
 
 </details>
 
 <hr />
 
 **Problem 5.** Sketch on separate Argand diagrams the loci given by (a) $|z - 1 - i| = |z - 3 + i|$
-And (b) $\arg(z - 2) = \dfrac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$. Find the complex number(s) satisfying both
+And (b) $\arg(z - 2) = \dfrac{\pi}{3}$. Find the complex number(s) satisfying both
 Conditions simultaneously.
 
 <details>
@@ -595,8 +595,8 @@ Part (a) is a perpendicular bisector. Part (b) is a half-line. Find their inters
 $(1, 1)$ and $(3, -1)$. The midpoint is $(2, 0)$ and the slope of the segment is
 $\dfrac{-1 - 1}{3 - 1} = -1$So the perpendicular bisector has slope $1$ and equation $y = x - 2$.
 
-**(b)** $\arg(z - 2) = \dfrac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$ is a half-line from $(2, 0)$ at angle
-$\dfrac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$ to the positive real axis. Its equation is $y = \sqrt{3}(x - 2)$ for
+**(b)** $\arg(z - 2) = \dfrac{\pi}{3}$ is a half-line from $(2, 0)$ at angle
+$\dfrac{\pi}{3}$ to the positive real axis. Its equation is $y = \sqrt{3}(x - 2)$ for
 $x > 2$.
 
 **Intersection:** Setting $x - 2 = \sqrt{3}(x - 2)$:
@@ -660,7 +660,7 @@ $w$-plane.
 
 <hr />
 
-**Problem 7.** Express $\dfrac◆LB◆(1+i)^6◆RB◆◆LB◆(1-i\sqrt{3})^4◆RB◆$ in the form $a + bi$.
+**Problem 7.** Express $\dfrac{(1+i)^6}{(1-i\sqrt{3})^4}$ in the form $a + bi$.
 
 <details>
 <summary>Hint</summary>
@@ -674,12 +674,12 @@ Write each term in exponential form and use the laws of indices.
 
 $1 + i = \sqrt{2}\,e^{i\pi/4}$ and $1 - i\sqrt{3} = 2\,e^{-i\pi/3}$.
 
-$$\frac◆LB◆(1+i)^6◆RB◆◆LB◆(1-i\sqrt{3})^4◆RB◆ = \frac◆LB◆(\sqrt{2}\,e^{i\pi/4})^6◆RB◆◆LB◆(2\,e^{-i\pi/3})^4◆RB◆ = \frac◆LB◆8e^{3\pi i/2}◆RB◆◆LB◆16\,e^{-4\pi i/3}◆RB◆ = \frac{1}{2}\,e^{i(3\pi/2 + 4\pi/3)}$$
+$$\frac{(1+i)^6}{(1-i\sqrt{3})^4} = \frac{(\sqrt{2}\,e^{i\pi/4})^6}{(2\,e^{-i\pi/3})^4} = \frac{8e^{3\pi i/2}}{16\,e^{-4\pi i/3}} = \frac{1}{2}\,e^{i(3\pi/2 + 4\pi/3)}$$
 
-$$3\pi/2 + 4\pi/3 = \frac◆LB◆9\pi + 8\pi◆RB◆◆LB◆6◆RB◆ = \frac◆LB◆17\pi◆RB◆◆LB◆6◆RB◆ = 2\pi + \frac◆LB◆5\pi◆RB◆◆LB◆6◆RB◆$$
+$$3\pi/2 + 4\pi/3 = \frac{9\pi + 8\pi}{6} = \frac{17\pi}{6} = 2\pi + \frac{5\pi}{6}$$
 
 So:
-$\dfrac{1}{2}\,e^{5\pi i/6} = \dfrac{1}{2}\!\left(\cos\dfrac◆LB◆5\pi◆RB◆◆LB◆6◆RB◆ + i\sin\dfrac◆LB◆5\pi◆RB◆◆LB◆6◆RB◆\right) = \dfrac{1}{2}\!\left(-\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ + \dfrac{1}{2}\,i\right) = -\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆4◆RB◆ + \dfrac{1}{4}\,i$
+$\dfrac{1}{2}\,e^{5\pi i/6} = \dfrac{1}{2}\!\left(\cos\dfrac{5\pi}{6} + i\sin\dfrac{5\pi}{6}\right) = \dfrac{1}{2}\!\left(-\dfrac{\sqrt{3}}{2} + \dfrac{1}{2}\,i\right) = -\dfrac{\sqrt{3}}{4} + \dfrac{1}{4}\,i$
 
 </details>
 
@@ -687,7 +687,7 @@ $\dfrac{1}{2}\,e^{5\pi i/6} = \dfrac{1}{2}\!\left(\cos\dfrac◆LB◆5\pi◆RB◆
 
 **Problem 8.** The transformation $T$ from the $z$-plane to the $w$-plane is given by $w = z^2$. The
 Region $R$ in the $z$-plane is defined by $1 \leq |z| \leq 2$ and
-$0 \leq \arg(z) \leq \dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$. Find and describe the image of $R$ under $T$.
+$0 \leq \arg(z) \leq \dfrac{\pi}{4}$. Find and describe the image of $R$ under $T$.
 
 <details>
 <summary>Hint</summary>
@@ -703,11 +703,11 @@ If $z = re^{i\theta}$Then $w = r^2 e^{2i\theta}$.
 
 - Modulus: $1 \leq r \leq 2 \implies 1 \leq r^2 \leq 4$So $1 \leq |w| \leq 4$.
 - Argument:
-  $0 \leq \theta \leq \dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ \implies 0 \leq 2\theta \leq \dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$
-  so $0 \leq \arg(w) \leq \dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
+  $0 \leq \theta \leq \dfrac{\pi}{4} \implies 0 \leq 2\theta \leq \dfrac{\pi}{2}$
+  so $0 \leq \arg(w) \leq \dfrac{\pi}{2}$.
 
 The image is the region in the first quadrant of the $w$-plane between the circles $|w| = 1$ and
-$|w| = 4$Bounded by the rays $\arg(w) = 0$ and $\arg(w) = \dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
+$|w| = 4$Bounded by the rays $\arg(w) = 0$ and $\arg(w) = \dfrac{\pi}{2}$.
 
 </details>
 
@@ -715,7 +715,7 @@ $|w| = 4$Bounded by the rays $\arg(w) = 0$ and $\arg(w) = \dfrac◆LB◆\pi◆RB
 
 **Problem 9.** Solve the equation $z^3 + z^2 + z + 1 = 0$ by recognising it as a geometric series,
 And hence show that
-$\cos\dfrac◆LB◆2\pi◆RB◆◆LB◆4◆RB◆ + \cos\dfrac◆LB◆4\pi◆RB◆◆LB◆4◆RB◆ + \cos\dfrac◆LB◆6\pi◆RB◆◆LB◆4◆RB◆ = -1$.
+$\cos\dfrac{2\pi}{4} + \cos\dfrac{4\pi}{4} + \cos\dfrac{6\pi}{4} = -1$.
 
 <details>
 <summary>Hint</summary>
@@ -740,11 +740,11 @@ $$i + (-1) + (-i) = -1 \quad \checkmark$$
 Now: $e^{i\pi/2} + e^{i\pi} + e^{3i\pi/2} = i + (-1) + (-i) = -1$.
 
 Separating real and imaginary parts:
-$\cos\dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ + \cos\pi + \cos\dfrac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆ = -1$I.e.
+$\cos\dfrac{\pi}{2} + \cos\pi + \cos\dfrac{3\pi}{2} = -1$I.e.
 $0 - 1 + 0 = -1$. ✓
 
 Alternatively, the claim as stated uses
-$\cos\dfrac◆LB◆2\pi◆RB◆◆LB◆4◆RB◆ + \cos\dfrac◆LB◆4\pi◆RB◆◆LB◆4◆RB◆ + \cos\dfrac◆LB◆6\pi◆RB◆◆LB◆4◆RB◆ = \cos\dfrac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ + \cos\pi + \cos\dfrac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆ = 0 + (-1) + 0 = -1$.
+$\cos\dfrac{2\pi}{4} + \cos\dfrac{4\pi}{4} + \cos\dfrac{6\pi}{4} = \cos\dfrac{\pi}{2} + \cos\pi + \cos\dfrac{3\pi}{2} = 0 + (-1) + 0 = -1$.
 ✓ $\square$
 
 </details>
@@ -752,10 +752,10 @@ $\cos\dfrac◆LB◆2\pi◆RB◆◆LB◆4◆RB◆ + \cos\dfrac◆LB◆4\pi◆RB�
 <hr />
 
 **Problem 10.** (a) Show that
-$\dfrac◆LB◆1◆RB◆◆LB◆e^{i\theta} - 1◆RB◆ = -\dfrac{1}{2} - \dfrac{i}{2}\cot\dfrac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$
+$\dfrac{1}{e^{i\theta} - 1} = -\dfrac{1}{2} - \dfrac{i}{2}\cot\dfrac{\theta}{2}$
 For $\theta \notin 2\pi\mathbb{Z}$.
 
-(b) Hence, or otherwise, find $\displaystyle\sum_{k=1}^{n-1}\frac◆LB◆1◆RB◆◆LB◆1 - \omega^k◆RB◆$
+(b) Hence, or otherwise, find $\displaystyle\sum_{k=1}^{n-1}\frac{1}{1 - \omega^k}$
 Where $\omega = e^{2\pi i/n}$.
 
 <details>
@@ -770,24 +770,24 @@ Identities. For (b), use the result from (a) with $\theta = 2k\pi/n$.
 <summary>Answer</summary>
 
 **(a)**
-$\dfrac◆LB◆1◆RB◆◆LB◆e^{i\theta} - 1◆RB◆ = \dfrac◆LB◆e^{-i\theta} - 1◆RB◆◆LB◆(e^{i\theta} - 1)(e^{-i\theta} - 1)◆RB◆ = \dfrac◆LB◆e^{-i\theta} - 1◆RB◆◆LB◆2 - (e^{i\theta} + e^{-i\theta})◆RB◆ = \dfrac◆LB◆e^{-i\theta} - 1◆RB◆◆LB◆2 - 2\cos\theta◆RB◆$.
+$\dfrac{1}{e^{i\theta} - 1} = \dfrac{e^{-i\theta} - 1}{(e^{i\theta} - 1)(e^{-i\theta} - 1)} = \dfrac{e^{-i\theta} - 1}{2 - (e^{i\theta} + e^{-i\theta})} = \dfrac{e^{-i\theta} - 1}{2 - 2\cos\theta}$.
 
 Numerator:
-$e^{-i\theta} - 1 = \cos\theta - 1 - i\sin\theta = -2\sin^2\dfrac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ - 2i\sin\dfrac◆LB◆\theta◆RB◆◆LB◆2◆RB◆\cos\dfrac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = -2\sin\dfrac◆LB◆\theta◆RB◆◆LB◆2◆RB◆\!\left(\sin\dfrac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ + i\cos\dfrac◆LB◆\theta◆RB◆◆LB◆2◆RB◆\right)$.
+$e^{-i\theta} - 1 = \cos\theta - 1 - i\sin\theta = -2\sin^2\dfrac{\theta}{2} - 2i\sin\dfrac{\theta}{2}\cos\dfrac{\theta}{2} = -2\sin\dfrac{\theta}{2}\!\left(\sin\dfrac{\theta}{2} + i\cos\dfrac{\theta}{2}\right)$.
 
-Denominator: $2 - 2\cos\theta = 4\sin^2\dfrac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$.
+Denominator: $2 - 2\cos\theta = 4\sin^2\dfrac{\theta}{2}$.
 
-$$\frac◆LB◆1◆RB◆◆LB◆e^{i\theta} - 1◆RB◆ = \frac◆LB◆-2\sin\frac{\theta}{2}\!\left(\sin\frac{\theta}{2} + i\cos\frac{\theta}{2}\right)◆RB◆◆LB◆4\sin^2\frac{\theta}{2}◆RB◆ = \frac◆LB◆-\sin\frac{\theta}{2} - i\cos\frac{\theta}{2}◆RB◆◆LB◆2\sin\frac{\theta}{2}◆RB◆ = -\frac{1}{2} - \frac{i}{2}\cot\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \quad \square$$
+$$\frac{1}{e^{i\theta} - 1} = \frac{-2\sin\frac{\theta}{2}\!\left(\sin\frac{\theta}{2} + i\cos\frac{\theta}{2}\right)}{4\sin^2\frac{\theta}{2}} = \frac{-\sin\frac{\theta}{2} - i\cos\frac{\theta}{2}}{2\sin\frac{\theta}{2}} = -\frac{1}{2} - \frac{i}{2}\cot\frac{\theta}{2} \quad \square$$
 
 **(b)** Using (a):
-$\dfrac◆LB◆1◆RB◆◆LB◆1 - \omega^k◆RB◆ = -\dfrac◆LB◆1◆RB◆◆LB◆e^{2k\pi i/n} - 1◆RB◆ = \dfrac{1}{2} + \dfrac{i}{2}\cot\dfrac◆LB◆k\pi◆RB◆◆LB◆n◆RB◆$.
+$\dfrac{1}{1 - \omega^k} = -\dfrac{1}{e^{2k\pi i/n} - 1} = \dfrac{1}{2} + \dfrac{i}{2}\cot\dfrac{k\pi}{n}$.
 
-$$\sum_{k=1}^{n-1}\frac◆LB◆1◆RB◆◆LB◆1 - \omega^k◆RB◆ = \sum_{k=1}^{n-1}\!\left(\frac{1}{2} + \frac{i}{2}\cot\frac◆LB◆k\pi◆RB◆◆LB◆n◆RB◆\right) = \frac{n-1}{2} + \frac{i}{2}\sum_{k=1}^{n-1}\cot\frac◆LB◆k\pi◆RB◆◆LB◆n◆RB◆$$
+$$\sum_{k=1}^{n-1}\frac{1}{1 - \omega^k} = \sum_{k=1}^{n-1}\!\left(\frac{1}{2} + \frac{i}{2}\cot\frac{k\pi}{n}\right) = \frac{n-1}{2} + \frac{i}{2}\sum_{k=1}^{n-1}\cot\frac{k\pi}{n}$$
 
 The cotangent sum is zero by symmetry:
-$\cot\dfrac◆LB◆k\pi◆RB◆◆LB◆n◆RB◆ = -\cot\dfrac◆LB◆(n-k)\pi◆RB◆◆LB◆n◆RB◆$So terms cancel in pairs.
+$\cot\dfrac{k\pi}{n} = -\cot\dfrac{(n-k)\pi}{n}$So terms cancel in pairs.
 
-Therefore: $\displaystyle\sum_{k=1}^{n-1}\frac◆LB◆1◆RB◆◆LB◆1 - \omega^k◆RB◆ = \frac{n - 1}{2}$.
+Therefore: $\displaystyle\sum_{k=1}^{n-1}\frac{1}{1 - \omega^k} = \frac{n - 1}{2}$.
 
 </details>
 
@@ -815,7 +815,7 @@ $$\boxed{\cos 5\theta = 16\cos^5\theta - 20\cos^3\theta + 5\cos\theta}$$
 
 **Solution.** $-64 = 64e^{i\pi}$. The 6th roots are:
 
-$$z_k = 64^{1/6} \exp\!\left(\frac◆LB◆i(\pi + 2k\pi)◆RB◆◆LB◆6◆RB◆\right) = 2\exp\!\left(\frac◆LB◆i(2k+1)\pi◆RB◆◆LB◆6◆RB◆\right)$$
+$$z_k = 64^{1/6} \exp\!\left(\frac{i(\pi + 2k\pi)}{6}\right) = 2\exp\!\left(\frac{i(2k+1)\pi}{6}\right)$$
 
 For $k = 0, 1, 2, 3, 4, 5$.
 
@@ -845,11 +845,11 @@ This is the perpendicular bisector of the segment joining $3+4i$ and $-1+2i$.
 ### Example 8.4: Region defined by an inequality
 
 **Problem.** Shade on an Argand diagram the region defined by $|z - 2i| \leq 3$ and
-$0 \leq \arg(z) \leq \dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$.
+$0 \leq \arg(z) \leq \dfrac{\pi}{4}$.
 
 **Solution.** $|z - 2i| \leq 3$ is the closed disc of radius 3 centred at $2i$ (i.e., $(0, 2)$).
 
-$0 \leq \arg(z) \leq \dfrac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$ is the sector between the positive real axis and
+$0 \leq \arg(z) \leq \dfrac{\pi}{4}$ is the sector between the positive real axis and
 The line $y = x$ (for $x \geq 0$).
 
 The required region is the intersection: a segment of the disc in the first quadrant between angles
@@ -879,7 +879,7 @@ The image is the line $\boxed{u + v = 4}$ (where $w = u + iv$).
 
 **Solution.** This is a geometric series with ratio $\omega \neq 1$:
 
-$$\sum_{k=0}^{n-1} \omega^k = \frac◆LB◆1 - \omega^n◆RB◆◆LB◆1 - \omega◆RB◆ = \frac◆LB◆1 - 1◆RB◆◆LB◆1 - \omega◆RB◆ = 0$$
+$$\sum_{k=0}^{n-1} \omega^k = \frac{1 - \omega^n}{1 - \omega} = \frac{1 - 1}{1 - \omega} = 0$$
 
 $\blacksquare$
 
@@ -918,7 +918,7 @@ Solve $z^4 = 8(1 + i\sqrt{3})$Giving roots in the form $r(\cos\theta + i\sin\the
 
 $8(1+i\sqrt{3}) = 16e^{i\pi/3}$.
 
-$z_k = 2\exp\!\left(\dfrac◆LB◆i(\pi/3 + 2k\pi)◆RB◆◆LB◆4◆RB◆\right)$ for $k = 0, 1, 2, 3$.
+$z_k = 2\exp\!\left(\dfrac{i(\pi/3 + 2k\pi)}{4}\right)$ for $k = 0, 1, 2, 3$.
 
 $z_0 = 2(\cos 15° + i\sin 15°)$, $z_1 = 2(\cos 105° + i\sin 105°)$
 $z_2 = 2(\cos 195° + i\sin 195°)$, $z_3 = 2(\cos 285° + i\sin 285°)$.
@@ -932,13 +932,13 @@ $z_2 = 2(\cos 195° + i\sin 195°)$, $z_3 = 2(\cos 285° + i\sin 285°)$.
 <details>
 <summary>Solution</summary>
 
-$\cos^2\theta = \dfrac◆LB◆1+\cos 2\theta◆RB◆◆LB◆2◆RB◆$.
+$\cos^2\theta = \dfrac{1+\cos 2\theta}{2}$.
 
-$\cos^4\theta = \left(\dfrac◆LB◆1+\cos 2\theta◆RB◆◆LB◆2◆RB◆\right)^{\!2} = \dfrac◆LB◆1 + 2\cos 2\theta + \cos^2 2\theta◆RB◆◆LB◆4◆RB◆$.
+$\cos^4\theta = \left(\dfrac{1+\cos 2\theta}{2}\right)^{\!2} = \dfrac{1 + 2\cos 2\theta + \cos^2 2\theta}{4}$.
 
-$\cos^2 2\theta = \dfrac◆LB◆1+\cos 4\theta◆RB◆◆LB◆2◆RB◆$.
+$\cos^2 2\theta = \dfrac{1+\cos 4\theta}{2}$.
 
-$\cos^4\theta = \dfrac{1}{4} + \dfrac◆LB◆\cos 2\theta◆RB◆◆LB◆2◆RB◆ + \dfrac◆LB◆1+\cos 4\theta◆RB◆◆LB◆8◆RB◆ = \dfrac{3}{8} + \dfrac◆LB◆\cos 2\theta◆RB◆◆LB◆2◆RB◆ + \dfrac◆LB◆\cos 4\theta◆RB◆◆LB◆8◆RB◆$.
+$\cos^4\theta = \dfrac{1}{4} + \dfrac{\cos 2\theta}{2} + \dfrac{1+\cos 4\theta}{8} = \dfrac{3}{8} + \dfrac{\cos 2\theta}{2} + \dfrac{\cos 4\theta}{8}$.
 $\blacksquare$
 
 </details>
@@ -1003,14 +1003,14 @@ Solve $z^3 = -8i$Giving roots in Cartesian form.
 <details>
 <summary>Solution</summary>
 
-$-8i = 8e^{-i\pi/2}$. Roots: $z_k = 2\exp\!\left(\dfrac◆LB◆-i\pi/2 + 2k\pi i◆RB◆◆LB◆3◆RB◆\right)$
+$-8i = 8e^{-i\pi/2}$. Roots: $z_k = 2\exp\!\left(\dfrac{-i\pi/2 + 2k\pi i}{3}\right)$
 For $k=0,1,2$.
 
-$z_0 = 2e^{-i\pi/6} = 2\!\left(\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ - \dfrac{i}{2}\right) = \sqrt{3}-i$.
+$z_0 = 2e^{-i\pi/6} = 2\!\left(\dfrac{\sqrt{3}}{2} - \dfrac{i}{2}\right) = \sqrt{3}-i$.
 
 $z_1 = 2e^{i\pi/2} = 2i$.
 
-$z_2 = 2e^{7i\pi/6} = 2\!\left(-\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ - \dfrac{i}{2}\right) = -\sqrt{3}-i$.
+$z_2 = 2e^{7i\pi/6} = 2\!\left(-\dfrac{\sqrt{3}}{2} - \dfrac{i}{2}\right) = -\sqrt{3}-i$.
 
 $\boxed{z = \sqrt{3}-i,\; 2i,\; -\sqrt{3}-i}$
 
@@ -1070,7 +1070,7 @@ Is also a root. This is because $\overline{P(z)} = P(\bar{z})$ for real-coeffici
 
 From $e^{i\theta} = \cos\theta + i\sin\theta$ and $e^{-i\theta} = \cos\theta - i\sin\theta$:
 
-$$\cos\theta = \frac◆LB◆e^{i\theta}+e^{-i\theta}◆RB◆◆LB◆2◆RB◆, \qquad \sin\theta = \frac◆LB◆e^{i\theta}-e^{-i\theta}◆RB◆◆LB◆2i◆RB◆$$
+$$\cos\theta = \frac{e^{i\theta}+e^{-i\theta}}{2}, \qquad \sin\theta = \frac{e^{i\theta}-e^{-i\theta}}{2i}$$
 
 These are essential for deriving trigonometric identities and solving certain integrals.
 
@@ -1080,12 +1080,12 @@ These are essential for deriving trigonometric identities and solving certain in
 
 ### Question 13
 
-Express $\dfrac◆LB◆1+e^{i\theta}◆RB◆◆LB◆1-e^{i\theta}◆RB◆$ in the form $a+bi$.
+Express $\dfrac{1+e^{i\theta}}{1-e^{i\theta}}$ in the form $a+bi$.
 
 <details>
 <summary>Solution</summary>
 
-$\dfrac◆LB◆1+e^{i\theta}◆RB◆◆LB◆1-e^{i\theta}◆RB◆ = \dfrac◆LB◆e^{i\theta/2}(e^{-i\theta/2}+e^{i\theta/2})◆RB◆◆LB◆e^{i\theta/2}(e^{-i\theta/2}-e^{i\theta/2})◆RB◆ = \dfrac◆LB◆2\cos(\theta/2)◆RB◆◆LB◆-2i\sin(\theta/2)◆RB◆ = \dfrac◆LB◆i\cos(\theta/2)◆RB◆◆LB◆\sin(\theta/2)◆RB◆ = \boxed{i\cot(\theta/2)}$
+$\dfrac{1+e^{i\theta}}{1-e^{i\theta}} = \dfrac{e^{i\theta/2}(e^{-i\theta/2}+e^{i\theta/2})}{e^{i\theta/2}(e^{-i\theta/2}-e^{i\theta/2})} = \dfrac{2\cos(\theta/2)}{-2i\sin(\theta/2)} = \dfrac{i\cos(\theta/2)}{\sin(\theta/2)} = \boxed{i\cot(\theta/2)}$
 
 </details>
 
@@ -1100,7 +1100,7 @@ The $n$-th roots of unity are $1, \omega, \omega^2, \ldots, \omega^{n-1}$ where
 $\omega = e^{2\pi i/n}$.
 
 This is a geometric series:
-$\displaystyle\sum_{k=0}^{n-1} \omega^k = \frac◆LB◆1-\omega^n◆RB◆◆LB◆1-\omega◆RB◆ = \frac◆LB◆1-1◆RB◆◆LB◆1-\omega◆RB◆ = 0$.
+$\displaystyle\sum_{k=0}^{n-1} \omega^k = \frac{1-\omega^n}{1-\omega} = \frac{1-1}{1-\omega} = 0$.
 $\blacksquare$
 
 </details>
@@ -1145,7 +1145,7 @@ This provides a geometric interpretation of all complex arithmetic.
 
 To solve $z^n = w = re^{i\phi}$:
 
-$$z_k = r^{1/n} \exp\!\left(\frac◆LB◆i(\phi + 2k\pi)◆RB◆◆LB◆n◆RB◆\right) \quad \text{for } k = 0, 1, \ldots, n-1$$
+$$z_k = r^{1/n} \exp\!\left(\frac{i(\phi + 2k\pi)}{n}\right) \quad \text{for } k = 0, 1, \ldots, n-1$$
 
 The roots lie on a circle of radius $r^{1/n}$Equally spaced.
 
@@ -1172,7 +1172,7 @@ Find all complex numbers $z$ such that $z^4 = -16$.
 <details>
 <summary>Solution</summary>
 
-$-16 = 16e^{i\pi}$. Roots: $z_k = 2\exp\!\left(\dfrac◆LB◆i(\pi+2k\pi)◆RB◆◆LB◆4◆RB◆\right)$ for
+$-16 = 16e^{i\pi}$. Roots: $z_k = 2\exp\!\left(\dfrac{i(\pi+2k\pi)}{4}\right)$ for
 $k=0,1,2,3$.
 
 $z_0 = 2e^{i\pi/4} = \sqrt{2}+i\sqrt{2}$$z_1 = 2e^{i3\pi/4} = -\sqrt{2}+i\sqrt{2}$
@@ -1238,7 +1238,7 @@ While complex analysis (Cauchy's theorem, residue calculus) is beyond A-Level, t
 Concepts appear:
 
 - Cauchy's integral formula:
-  $f(a) = \dfrac◆LB◆1◆RB◆◆LB◆2\pi i◆RB◆\displaystyle\oint_C \frac{f(z)}{z-a}\,dz$
+  $f(a) = \dfrac{1}{2\pi i}\displaystyle\oint_C \frac{f(z)}{z-a}\,dz$
 - Residue theorem: $\displaystyle\oint_C f(z)\,dz = 2\pi i \sum \text{Res}(f, a_k)$
 
 These are mentioned for context and further study.

@@ -39,7 +39,7 @@ For positive real numbers $a$ and $b$:
 $$
 \begin{aligned}
 \sqrt{a}\sqrt{b} &= \sqrt{ab} \\
-\frac◆LB◆\sqrt{a}◆RB◆◆LB◆\sqrt{b}◆RB◆ &= \sqrt◆LB◆\frac{a}{b}◆RB◆ \\
+\frac{\sqrt{a}}{\sqrt{b}} &= \sqrt{\frac{a}{b}} \\
 (\sqrt{a})^n &= a^{n/2}
 \end{aligned}
 $$
@@ -50,11 +50,11 @@ $\sqrt{a} = a^{1/2}$.
 **Rationalising the denominator.** If a fraction has a surd in the denominator, we multiply
 Numerator and denominator by the surd (or its conjugate) to eliminate it.
 
-For a denominator of the form $\sqrt{a}$Multiply by $\frac◆LB◆\sqrt{a}◆RB◆◆LB◆\sqrt{a}◆RB◆$:
+For a denominator of the form $\sqrt{a}$Multiply by $\frac{\sqrt{a}}{\sqrt{a}}$:
 
 $$
 \begin{aligned}
-\frac◆LB◆1◆RB◆◆LB◆\sqrt{a}◆RB◆ &= \frac◆LB◆1◆RB◆◆LB◆\sqrt{a}◆RB◆ \cdot \frac◆LB◆\sqrt{a}◆RB◆◆LB◆\sqrt{a}◆RB◆ = \frac◆LB◆\sqrt{a}◆RB◆◆LB◆a◆RB◆
+\frac{1}{\sqrt{a}} &= \frac{1}{\sqrt{a}} \cdot \frac{\sqrt{a}}{\sqrt{a}} = \frac{\sqrt{a}}{a}
 \end{aligned}
 $$
 
@@ -62,12 +62,12 @@ For a denominator of the form $a + b\sqrt{c}$Multiply by the _conjugate_ $a - b\
 
 $$
 \begin{aligned}
-\frac◆LB◆1◆RB◆◆LB◆a + b\sqrt{c}◆RB◆ &= \frac◆LB◆a - b\sqrt{c}◆RB◆◆LB◆(a + b\sqrt{c})(a - b\sqrt{c})◆RB◆ = \frac◆LB◆a - b\sqrt{c}◆RB◆◆LB◆a^2 - b^2 c◆RB◆
+\frac{1}{a + b\sqrt{c}} &= \frac{a - b\sqrt{c}}{(a + b\sqrt{c})(a - b\sqrt{c})} = \frac{a - b\sqrt{c}}{a^2 - b^2 c}
 \end{aligned}
 $$
 
 :::warning A common error is to "rationalise" by splitting the fraction:
-$\frac◆LB◆a + b\sqrt{c}◆RB◆◆LB◆d◆RB◆ \neq \frac{a}{d} + b\sqrt◆LB◆\frac{c}{d}◆RB◆$ . Always
+$\frac{a + b\sqrt{c}}{d} \neq \frac{a}{d} + b\sqrt{\frac{c}{d}}$ . Always
 distribute the Denominator correctly.
 :::
 
@@ -109,7 +109,7 @@ Of 2 into both $p$ and $q$Making the fraction reducible.
 ## 2. Indices (Exponent Laws)
 
 **Definition.** For $a > 0$ and $n \in \mathbb{Z}^+$We define
-$a^n = \underbrace◆LB◆a \times a \times \cdots \times a◆RB◆_{n \mathrm{ times}}$. We extend this
+$a^n = \underbrace{a \times a \times \cdots \times a}_{n \mathrm{ times}}$. We extend this
 Definition as follows:
 
 $$
@@ -138,8 +138,8 @@ _Proof of $a^m \cdot a^n = a^{m+n}$ for positive integer exponents._
 
 $$
 \begin{aligned}
-A^m \cdot a^n &= \underbrace◆LB◆a \cdot a \cdots a◆RB◆_{m} \cdot \underbrace◆LB◆a \cdot a \cdots a◆RB◆_{n} \\
-&= \underbrace◆LB◆a \cdot a \cdots a◆RB◆_{m + n} = a^{m+n}
+A^m \cdot a^n &= \underbrace{a \cdot a \cdots a}_{m} \cdot \underbrace{a \cdot a \cdots a}_{n} \\
+&= \underbrace{a \cdot a \cdots a}_{m + n} = a^{m+n}
 \end{aligned}
 $$
 
@@ -332,15 +332,15 @@ $$
 
 ## 7. Problem Set
 
-**Problem 1.** Simplify $\frac◆LB◆\sqrt{3} + 1◆RB◆◆LB◆\sqrt{3} - 1◆RB◆$.
+**Problem 1.** Simplify $\frac{\sqrt{3} + 1}{\sqrt{3} - 1}$.
 
 <details>
 <summary>Solution</summary>
 $$
 \begin{aligned}
-\frac◆LB◆\sqrt{3} + 1◆RB◆◆LB◆\sqrt{3} - 1◆RB◆ &= \frac◆LB◆(\sqrt{3} + 1)(\sqrt{3} + 1)◆RB◆◆LB◆(\sqrt{3} - 1)(\sqrt{3} + 1)◆RB◆ \\
-&= \frac◆LB◆3 + 2\sqrt{3} + 1◆RB◆◆LB◆3 - 1◆RB◆ \\
-&= \frac◆LB◆4 + 2\sqrt{3}◆RB◆◆LB◆2◆RB◆ = 2 + \sqrt{3}
+\frac{\sqrt{3} + 1}{\sqrt{3} - 1} &= \frac{(\sqrt{3} + 1)(\sqrt{3} + 1)}{(\sqrt{3} - 1)(\sqrt{3} + 1)} \\
+&= \frac{3 + 2\sqrt{3} + 1}{3 - 1} \\
+&= \frac{4 + 2\sqrt{3}}{2} = 2 + \sqrt{3}
 \end{aligned}
 $$
 </details>
@@ -426,7 +426,7 @@ Adding (1) and (2): $3a = 18$So $a = 6$. Then $b = 4 - 6 = -2$.
 $$
 \begin{aligned}
 \left(\frac{8x^6}{27y^3}\right)^{-2/3} &= \left(\frac{27y^3}{8x^6}\right)^{2/3} \\
-&= \frac◆LB◆(27)^{2/3} \cdot (y^3)^{2/3}◆RB◆◆LB◆(8)^{2/3} \cdot (x^6)^{2/3}◆RB◆ \\
+&= \frac{(27)^{2/3} \cdot (y^3)^{2/3}}{(8)^{2/3} \cdot (x^6)^{2/3}} \\
 &= \frac{9y^2}{4x^4}
 \end{aligned}
 $$

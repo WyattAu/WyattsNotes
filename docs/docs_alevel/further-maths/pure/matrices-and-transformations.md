@@ -131,7 +131,7 @@ $$\frac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}\begin{pmatrix}
 
 ### 3.3 Inverse of a 3x3 matrix
 
-**Method 1: Adjugate matrix.** $A^{-1} = \dfrac◆LB◆1◆RB◆◆LB◆\det A◆RB◆\,\mathrm{adj}(A)$Where the
+**Method 1: Adjugate matrix.** $A^{-1} = \dfrac{1}{\det A}\,\mathrm{adj}(A)$Where the
 Adjugate is the transpose of the cofactor matrix.
 
 **Method 2: Row reduction.** Form the augmented matrix $[A \mid I]$ and apply row operations to
@@ -361,7 +361,7 @@ Fibonacci number.
 <details>
 <summary>Solution</summary>
 
-Eigenvalues of $A$: $\lambda^2 - \lambda - 2 = 0 \implies \lambda = \frac◆LB◆1 \pm 3◆RB◆◆LB◆2◆RB◆$
+Eigenvalues of $A$: $\lambda^2 - \lambda - 2 = 0 \implies \lambda = \frac{1 \pm 3}{2}$
 So $\lambda_1 = 2$, $\lambda_2 = -1$.
 
 Eigenvectors: for $\lambda = 2$: $(1, 1)$; for $\lambda = -1$: $(-2, 1)$.
@@ -373,8 +373,8 @@ $\begin{pmatrix} F_{n+1} \\ F_n \end{pmatrix} = A^n\begin{pmatrix} 1 \\ 0 \end{p
 
 This gives $F_n = \frac{2^n - (-1)^n}{3}$ (the Lucas sequence). For the standard Fibonacci sequence
 With $A = \begin{pmatrix} 1 & 1 \\ 1 & 0 \end{pmatrix}$The result is
-$F_n = \frac◆LB◆\phi^n - \psi^n◆RB◆◆LB◆\sqrt{5}◆RB◆$ where
-$\phi = \frac◆LB◆1+\sqrt{5}◆RB◆◆LB◆2◆RB◆$.
+$F_n = \frac{\phi^n - \psi^n}{\sqrt{5}}$ where
+$\phi = \frac{1+\sqrt{5}}{2}$.
 
 </details>
 
@@ -400,7 +400,7 @@ $$= ad(eh - fg) - bc(eh - fg) = (ad - bc)(eh - fg) = \det(A)\det(B) \quad \black
 ### 7.2 Proof: $\det(A) \neq 0 \iff A$ is invertible
 
 **Proof.** ($\Rightarrow$) If $\det(A) \neq 0$The adjugate formula gives
-$A^{-1} = \dfrac◆LB◆1◆RB◆◆LB◆\det A◆RB◆\mathrm{adj}(A)$So $A$ is invertible.
+$A^{-1} = \dfrac{1}{\det A}\mathrm{adj}(A)$So $A$ is invertible.
 
 ($\Leftarrow$) If $A$ is invertible with $A^{-1}$Then
 $\det(A)\det(A^{-1}) = \det(AA^{-1}) = \det(I) = 1$. Since $1 \neq 0$We must have $\det(A) \neq 0$.
@@ -739,11 +739,11 @@ $\det A = 1(2-1) - 2(4-1) + 1(2-1) = 1 - 6 + 1 = -4$.
 
 Using Cramer's rule:
 
-$$x = \frac◆LB◆\det\begin{pmatrix} 4 & 2 & 1 \\ 3 & 1 & 1 \\ 5 & 1 & 2 \end{pmatrix}◆RB◆◆LB◆-4◆RB◆ = \frac{4(2-1) - 2(6-5) + 1(3-5)}{-4} = \frac{4 - 2 - 2}{-4} = 0$$
+$$x = \frac{\det\begin{pmatrix} 4 & 2 & 1 \\ 3 & 1 & 1 \\ 5 & 1 & 2 \end{pmatrix}}{-4} = \frac{4(2-1) - 2(6-5) + 1(3-5)}{-4} = \frac{4 - 2 - 2}{-4} = 0$$
 
-$$y = \frac◆LB◆\det\begin{pmatrix} 1 & 4 & 1 \\ 2 & 3 & 1 \\ 1 & 5 & 2 \end{pmatrix}◆RB◆◆LB◆-4◆RB◆ = \frac{1(6-5) - 4(4-1) + 1(10-3)}{-4} = \frac{1 - 12 + 7}{-4} = 1$$
+$$y = \frac{\det\begin{pmatrix} 1 & 4 & 1 \\ 2 & 3 & 1 \\ 1 & 5 & 2 \end{pmatrix}}{-4} = \frac{1(6-5) - 4(4-1) + 1(10-3)}{-4} = \frac{1 - 12 + 7}{-4} = 1$$
 
-$$z = \frac◆LB◆\det\begin{pmatrix} 1 & 2 & 4 \\ 2 & 1 & 3 \\ 1 & 1 & 5 \end{pmatrix}◆RB◆◆LB◆-4◆RB◆ = \frac{1(5-3) - 2(10-3) + 4(2-1)}{-4} = \frac{2 - 14 + 4}{-4} = 2$$
+$$z = \frac{\det\begin{pmatrix} 1 & 2 & 4 \\ 2 & 1 & 3 \\ 1 & 1 & 5 \end{pmatrix}}{-4} = \frac{1(5-3) - 2(10-3) + 4(2-1)}{-4} = \frac{2 - 14 + 4}{-4} = 2$$
 
 Solution: $x = 0$, $y = 1$, $z = 2$.
 
@@ -865,10 +865,10 @@ $A = \begin{pmatrix}4&2\\2&1\end{pmatrix}$.
 $\lambda = 0, 5$.
 
 $\lambda = 0$: $\begin{pmatrix}4&2\\2&1\end{pmatrix}\mathbf{v}=\mathbf{0} \implies v_1 = -v_2/2$.
-Eigenvector: $(1,-2)$Normalised: $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{5}◆RB◆(1,-2)$.
+Eigenvector: $(1,-2)$Normalised: $\dfrac{1}{\sqrt{5}}(1,-2)$.
 
 $\lambda = 5$: $\begin{pmatrix}-1&2\\2&-4\end{pmatrix}\mathbf{v}=\mathbf{0} \implies v_1 = 2v_2$.
-Eigenvector: $(2,1)$Normalised: $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{5}◆RB◆(2,1)$.
+Eigenvector: $(2,1)$Normalised: $\dfrac{1}{\sqrt{5}}(2,1)$.
 
 Orthogonality check: $(1)(2)+(-2)(1) = 0$. ✓ The eigenvectors are orthogonal (as expected for a
 Symmetric matrix).
@@ -903,7 +903,7 @@ $R_\theta R_\phi = \begin{pmatrix}\cos\theta\cos\phi-\sin\theta\sin\phi&-\cos\th
 $= \begin{pmatrix}\cos(\theta+\phi)&-\sin(\theta+\phi)\\\sin(\theta+\phi)&\cos(\theta+\phi)\end{pmatrix} = R_{\theta+\phi}$.
 ✓
 
-$R_\theta^{-1} = \dfrac◆LB◆1◆RB◆◆LB◆\cos^2\theta+\sin^2\theta◆RB◆\begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix} = \begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix} = R_{-\theta}$.
+$R_\theta^{-1} = \dfrac{1}{\cos^2\theta+\sin^2\theta}\begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix} = \begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix} = R_{-\theta}$.
 ✓
 
 ### Example 13.4: Determinant and area scaling
@@ -991,7 +991,7 @@ The line $y = 2x$ makes angle $\theta = \arctan 2$ with the $x$-axis.
 
 $R = \begin{pmatrix}\cos 2\theta&\sin 2\theta\\\sin 2\theta&-\cos 2\theta\end{pmatrix}$.
 
-$\cos\theta = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{5}◆RB◆$, $\sin\theta = \dfrac◆LB◆2◆RB◆◆LB◆\sqrt{5}◆RB◆$.
+$\cos\theta = \dfrac{1}{\sqrt{5}}$, $\sin\theta = \dfrac{2}{\sqrt{5}}$.
 
 $\cos 2\theta = \cos^2\theta-\sin^2\theta = \dfrac{1-4}{5} = -\dfrac{3}{5}$.
 

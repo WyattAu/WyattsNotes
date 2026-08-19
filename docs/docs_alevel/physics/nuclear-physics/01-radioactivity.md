@@ -118,7 +118,7 @@ Number changes. A neutron becomes a proton, so the total nucleon count is unchan
 
 **Definition.** The decay constant $\lambda$ is the probability per unit time of a nucleus decaying.
 
-$$\boxed{\lambda = \frac◆LB◆\ln 2◆RB◆◆LB◆t_{1/2}◆RB◆}$$
+$$\boxed{\lambda = \frac{\ln 2}{t_{1/2}}}$$
 
 The probability that any single nucleus decays in a small time interval $dt$ is $\lambda\,dt$.
 
@@ -170,7 +170,7 @@ $$\frac{1}{2} = e^{-\lambda t_{1/2}}$$
 
 $$\ln 2 = \lambda t_{1/2}$$
 
-$$\boxed{t_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆\lambda◆RB◆}$$
+$$\boxed{t_{1/2} = \frac{\ln 2}{\lambda}}$$
 
 **Intuition.** After one half-life, half remain. After two, a quarter. After $n$ half-lives,
 $N = N_0/2^n$. The decay is exponential — the activity is always proportional to the number of
@@ -464,7 +464,7 @@ $$^{14}\mathrm{N} + ^{1}\mathrm{n} \to ^{14}\mathrm{C} + ^{1}\mathrm{H}$$
 When an organism dies, this exchange stops and the $^{14}\mathrm{C}$ decays with a half-life of 5730
 years. The age of a sample is found from:
 
-$$t = \frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆\ln\left(\frac{A_0}{A}\right) = \frac◆LB◆t_{1/2}◆RB◆◆LB◆\ln 2◆RB◆\ln\left(\frac{N_0}{N}\right)$$
+$$t = \frac{1}{\lambda}\ln\left(\frac{A_0}{A}\right) = \frac{t_{1/2}}{\ln 2}\ln\left(\frac{N_0}{N}\right)$$
 
 Where $N_0/N$ is the ratio of current $^{14}\mathrm{C}$ content to that of a living sample.
 
@@ -491,7 +491,7 @@ Radioactive isotopes are used both diagnostically and therapeutically:
 **Definition.** The effective half-life of a radioactive substance in the body is the time for its
 Activity to fall to half its initial value, combining both physical decay and biological clearance:
 
-$$\frac◆LB◆1◆RB◆◆LB◆t_{\mathrm{eff}}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆t_{\mathrm{physical}}◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆t_{\mathrm{biological}}◆RB◆$$
+$$\frac{1}{t_{\mathrm{eff}}} = \frac{1}{t_{\mathrm{physical}}} + \frac{1}{t_{\mathrm{biological}}}$$
 
 
 :::

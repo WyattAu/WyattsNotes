@@ -138,7 +138,7 @@ $$
 $$
 
 $$
-K_a = \frac◆LB◆[\mathrm{H}^+][\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆
+K_a = \frac{[\mathrm{H}^+][\mathrm{A}^-]}{[\mathrm{HA}]}
 $$
 
 Units of $K_a$: $\mathrm{mol\,dm^{-3}}$.
@@ -167,7 +167,7 @@ $$
 $$
 
 $$
-K_b = \frac◆LB◆[\mathrm{BH}^+][\mathrm{OH}^-]◆RB◆◆LB◆[\mathrm{B}]◆RB◆
+K_b = \frac{[\mathrm{BH}^+][\mathrm{OH}^-]}{[\mathrm{B}]}
 $$
 
 The relationship between $K_a$ and $K_b$ for a conjugate pair:
@@ -205,7 +205,7 @@ $$
 $$
 
 $$
-[\mathrm{H}^+] = \frac◆LB◆K_w◆RB◆◆LB◆[\mathrm{OH}^-]◆RB◆ = \frac◆LB◆1.0 \times 10^{-14}◆RB◆◆LB◆c◆RB◆
+[\mathrm{H}^+] = \frac{K_w}{[\mathrm{OH}^-]} = \frac{1.0 \times 10^{-14}}{c}
 $$
 
 $$
@@ -220,18 +220,18 @@ $\mathrm{pH} = 14 + \log_{10}(0.020) = 14 - 1.70 = 12.30$.
 For a weak acid $\mathrm{HA}$ of concentration $c$ with $K_a$:
 
 $$
-K_a = \frac◆LB◆[\mathrm{H}^+][\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆
+K_a = \frac{[\mathrm{H}^+][\mathrm{A}^-]}{[\mathrm{HA}]}
 $$
 
 Assuming $[\mathrm{H}^+] \approx [\mathrm{A}^-]$ and $[\mathrm{HA}] \approx c$ (valid when
 $\alpha \lt 5\%$):
 
 $$
-K_a = \frac◆LB◆[\mathrm{H}^+]^2◆RB◆◆LB◆c◆RB◆
+K_a = \frac{[\mathrm{H}^+]^2}{c}
 $$
 
 $$
-[\mathrm{H}^+] = \sqrt◆LB◆K_a \times c◆RB◆
+[\mathrm{H}^+] = \sqrt{K_a \times c}
 $$
 
 $$
@@ -242,7 +242,7 @@ $$
 ($K_a = 1.74 \times 10^{-5}$).
 
 $$
-[\mathrm{H}^+] = \sqrt◆LB◆1.74 \times 10^{-5} \times 0.100◆RB◆ = \sqrt◆LB◆1.74 \times 10^{-6}◆RB◆ = 1.32 \times 10^{-3}\,\mathrm{mol/dm}^3
+[\mathrm{H}^+] = \sqrt{1.74 \times 10^{-5} \times 0.100} = \sqrt{1.74 \times 10^{-6}} = 1.32 \times 10^{-3}\,\mathrm{mol/dm}^3
 $$
 
 $$
@@ -257,7 +257,7 @@ valid.
 For a weak base $\mathrm{B}$ of concentration $c$ with $K_b$:
 
 $$
-[\mathrm{OH}^-] = \sqrt◆LB◆K_b \times c◆RB◆
+[\mathrm{OH}^-] = \sqrt{K_b \times c}
 $$
 
 $$
@@ -272,7 +272,7 @@ $$
 ($K_b = 1.78 \times 10^{-5}$).
 
 $$
-[\mathrm{OH}^-] = \sqrt◆LB◆1.78 \times 10^{-5} \times 0.200◆RB◆ = \sqrt◆LB◆3.56 \times 10^{-6}◆RB◆ = 1.89 \times 10^{-3}\,\mathrm{mol/dm}^3
+[\mathrm{OH}^-] = \sqrt{1.78 \times 10^{-5} \times 0.200} = \sqrt{3.56 \times 10^{-6}} = 1.89 \times 10^{-3}\,\mathrm{mol/dm}^3
 $$
 
 $$
@@ -322,19 +322,19 @@ This consumes the added $\mathrm{OH}^-$Minimising the pH change.
 Starting from the $K_a$ expression:
 
 $$
-K_a = \frac◆LB◆[\mathrm{H}^+][\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆
+K_a = \frac{[\mathrm{H}^+][\mathrm{A}^-]}{[\mathrm{HA}]}
 $$
 
 Rearranging:
 
 $$
-[\mathrm{H}^+] = K_a \times \frac◆LB◆[\mathrm{HA}]◆RB◆◆LB◆[\mathrm{A}^-]◆RB◆
+[\mathrm{H}^+] = K_a \times \frac{[\mathrm{HA}]}{[\mathrm{A}^-]}
 $$
 
 Taking $-\log_{10}$:
 
 $$
-\mathrm{pH} = \mathrm{p}K_a + \log_{10}\frac◆LB◆[\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆
+\mathrm{pH} = \mathrm{p}K_a + \log_{10}\frac{[\mathrm{A}^-]}{[\mathrm{HA}]}
 $$
 
 This is the **Henderson-Hasselbalch equation**.
@@ -480,7 +480,7 @@ $$
 $$
 
 $$
-K_a = \frac◆LB◆[\mathrm{H}^+]^2◆RB◆◆LB◆c◆RB◆ = \frac◆LB◆(1.00 \times 10^{-3})^2◆RB◆◆LB◆0.050◆RB◆ = \frac◆LB◆1.00 \times 10^{-6}◆RB◆◆LB◆0.050◆RB◆ = 2.0 \times 10^{-5}\,\mathrm{mol/dm}^3
+K_a = \frac{[\mathrm{H}^+]^2}{c} = \frac{(1.00 \times 10^{-3})^2}{0.050} = \frac{1.00 \times 10^{-6}}{0.050} = 2.0 \times 10^{-5}\,\mathrm{mol/dm}^3
 $$
 
 $$
@@ -583,7 +583,7 @@ $1:1$).
 Applying the Henderson-Hasselbalch equation:
 
 $$
-\mathrm{pH} = \mathrm{p}K_a + \log_{10}\left(\frac◆LB◆[\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆\right) = \mathrm{p}K_a + \log_{10}(1) = \mathrm{p}K_a + 0 = \mathrm{p}K_a
+\mathrm{pH} = \mathrm{p}K_a + \log_{10}\left(\frac{[\mathrm{A}^-]}{[\mathrm{HA}]}\right) = \mathrm{p}K_a + \log_{10}(1) = \mathrm{p}K_a + 0 = \mathrm{p}K_a
 $$
 
 This is a useful experimental method for determining the $\mathrm{p}K_a$ of a weak acid: read the pH
@@ -692,14 +692,14 @@ $$
 $$
 
 $$
-K_a = \frac◆LB◆[\mathrm{H}^+][\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆
+K_a = \frac{[\mathrm{H}^+][\mathrm{A}^-]}{[\mathrm{HA}]}
 $$
 
 If the acid is weak enough that $[\mathrm{H}^+] = [\mathrm{A}^-] \ll c_0$ (the initial
 concentration):
 
 $$
-K_a \approx \frac◆LB◆[\mathrm{H}^+]^2◆RB◆◆LB◆c_0◆RB◆
+K_a \approx \frac{[\mathrm{H}^+]^2}{c_0}
 $$
 
 $$
@@ -714,7 +714,7 @@ $$
 ($K_a = 1.74 \times 10^{-5}\,\mathrm{mol/dm}^3$).
 
 $$
-[\mathrm{H}^+] = \sqrt◆LB◆1.74 \times 10^{-5} \times 0.100◆RB◆ = \sqrt◆LB◆1.74 \times 10^{-6}◆RB◆ = 1.32 \times 10^{-3}\,\mathrm{mol/dm}^3}
+[\mathrm{H}^+] = \sqrt{1.74 \times 10^{-5} \times 0.100} = \sqrt{1.74 \times 10^{-6}} = 1.32 \times 10^{-3}\,\mathrm{mol/dm}^3}
 $$
 
 $$
@@ -774,7 +774,7 @@ $$
 For $0.100\,\mathrm{mol/dm}^3$ $\mathrm{H}_2\mathrm{SO}_4$:
 
 $$
-[\mathrm{H}^+]_{K_{a2}} \approx \sqrt◆LB◆1.2 \times 10^{-2} \times 0.100◆RB◆ = 0.0346\,\mathrm{mol/dm}^3
+[\mathrm{H}^+]_{K_{a2}} \approx \sqrt{1.2 \times 10^{-2} \times 0.100} = 0.0346\,\mathrm{mol/dm}^3
 $$
 
 $$
@@ -811,7 +811,7 @@ Excess $\mathrm{HCl} = 2.50 - 1.00 = 1.50 \times 10^{-3}\,\mathrm{mol}$
 Total volume $= 25.0 + 10.0 = 35.0\,\mathrm{cm}^3 = 0.0350\,\mathrm{dm}^3$
 
 $$
-[\mathrm{H}^+] = \frac◆LB◆1.50 \times 10^{-3}◆RB◆◆LB◆0.0350◆RB◆ = 0.0429\,\mathrm{mol/dm}^3 \implies \mathrm{pH} = 1.37
+[\mathrm{H}^+] = \frac{1.50 \times 10^{-3}}{0.0350} = 0.0429\,\mathrm{mol/dm}^3 \implies \mathrm{pH} = 1.37
 $$
 
 **After $24.9\,\mathrm{cm}^3$ $\mathrm{NaOH}$ added (near equivalence):**
@@ -821,7 +821,7 @@ Moles of $\mathrm{NaOH} = 0.0249 \times 0.100 = 2.49 \times 10^{-3}\,\mathrm{mol
 Excess $\mathrm{HCl} = 2.50 - 2.49 = 0.01 \times 10^{-3}\,\mathrm{mol}$
 
 $$
-[\mathrm{H}^+] = \frac◆LB◆0.01 \times 10^{-3}◆RB◆◆LB◆0.0499◆RB◆ = 2.00 \times 10^{-4}\,\mathrm{mol/dm}^3 \implies \mathrm{pH} = 3.70
+[\mathrm{H}^+] = \frac{0.01 \times 10^{-3}}{0.0499} = 2.00 \times 10^{-4}\,\mathrm{mol/dm}^3 \implies \mathrm{pH} = 3.70
 $$
 
 **At equivalence point ($25.0\,\mathrm{cm}^3$):**
@@ -836,7 +836,7 @@ Moles of $\mathrm{NaOH}$ added = $0.0251 \times 0.100 = 2.51 \times 10^{-3}\,\ma
 Excess $\mathrm{NaOH} = 2.51 - 2.50 = 0.01 \times 10^{-3}\,\mathrm{mol}$
 
 $$
-[\mathrm{OH}^-] = \frac◆LB◆0.01 \times 10^{-3}◆RB◆◆LB◆0.0501◆RB◆ = 2.00 \times 10^{-4}\,\mathrm{mol/dm}^3
+[\mathrm{OH}^-] = \frac{0.01 \times 10^{-3}}{0.0501} = 2.00 \times 10^{-4}\,\mathrm{mol/dm}^3
 $$
 
 $$
@@ -862,7 +862,7 @@ come from a strong or weak acid/base:
 $\mathrm{NH}_4\mathrm{Cl}$. ($K_b(\mathrm{NH}_3) = 1.8 \times 10^{-5}$)
 
 $$
-K_a(\mathrm{NH}_4^+) = \frac{K_w}{K_b} = \frac◆LB◆1.0 \times 10^{-14}◆RB◆◆LB◆1.8 \times 10^{-5}◆RB◆ = 5.6 \times 10^{-10}
+K_a(\mathrm{NH}_4^+) = \frac{K_w}{K_b} = \frac{1.0 \times 10^{-14}}{1.8 \times 10^{-5}} = 5.6 \times 10^{-10}
 $$
 
 $$
@@ -870,11 +870,11 @@ $$
 $$
 
 $$
-K_a = \frac◆LB◆[\mathrm{NH}_3][\mathrm{H}_3\mathrm{O}^+]◆RB◆◆LB◆[\mathrm{NH}_4^+]◆RB◆ \approx \frac{x^2}{0.050}
+K_a = \frac{[\mathrm{NH}_3][\mathrm{H}_3\mathrm{O}^+]}{[\mathrm{NH}_4^+]} \approx \frac{x^2}{0.050}
 $$
 
 $$
-X = \sqrt◆LB◆5.6 \times 10^{-10} \times 0.050◆RB◆ = \sqrt◆LB◆2.8 \times 10^{-11}◆RB◆ = 5.3 \times 10^{-6}\,\mathrm{mol/dm}^3
+X = \sqrt{5.6 \times 10^{-10} \times 0.050} = \sqrt{2.8 \times 10^{-11}} = 5.3 \times 10^{-6}\,\mathrm{mol/dm}^3
 $$
 
 $$
@@ -938,7 +938,7 @@ $[\mathrm{A}^-] = 0.00500/0.150 = 0.0333\,\mathrm{mol/dm}^3$
 Step 4: Apply the Henderson-Hasselbalch equation.
 
 $$
-\mathrm{pH} = \mathrm{p}K_a + \log\frac◆LB◆[\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆ = 4.76 + \log\frac{0.0333}{0.100} = 4.76 + \log(0.333) = 4.76 - 0.478 = 4.28
+\mathrm{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{A}^-]}{[\mathrm{HA}]} = 4.76 + \log\frac{0.0333}{0.100} = 4.76 + \log(0.333) = 4.76 - 0.478 = 4.28
 $$
 
 </details>
@@ -989,7 +989,7 @@ ethanoic acid ($K_a = 1.74 \times 10^{-5}$).
 
 Let $x = [\mathrm{H}^+] = [\mathrm{CH}_3\mathrm{COO}^-]$.
 
-$$K_a = \frac◆LB◆x^2◆RB◆◆LB◆1.00 \times 10^{-4} - x◆RB◆ = 1.74 \times 10^{-5}$$
+$$K_a = \frac{x^2}{1.00 \times 10^{-4} - x} = 1.74 \times 10^{-5}$$
 
 $$x^2 = 1.74 \times 10^{-5}(1.00 \times 10^{-4} - x) = 1.74 \times 10^{-9} - 1.74 \times 10^{-5}x$$
 
@@ -997,15 +997,15 @@ $$x^2 + 1.74 \times 10^{-5}x - 1.74 \times 10^{-9} = 0$$
 
 Using the quadratic formula:
 
-$$x = \frac◆LB◆-1.74 \times 10^{-5} + \sqrt{(1.74 \times 10^{-5})^2 + 4(1.74 \times 10^{-9})}◆RB◆◆LB◆2◆RB◆$$
+$$x = \frac{-1.74 \times 10^{-5} + \sqrt{(1.74 \times 10^{-5})^2 + 4(1.74 \times 10^{-9})}}{2}$$
 
-$$x = \frac◆LB◆-1.74 \times 10^{-5} + \sqrt{3.03 \times 10^{-10} + 6.96 \times 10^{-9}}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆-1.74 \times 10^{-5} + \sqrt{7.26 \times 10^{-9}}◆RB◆◆LB◆2◆RB◆$$
+$$x = \frac{-1.74 \times 10^{-5} + \sqrt{3.03 \times 10^{-10} + 6.96 \times 10^{-9}}}{2} = \frac{-1.74 \times 10^{-5} + \sqrt{7.26 \times 10^{-9}}}{2}$$
 
-$$x = \frac◆LB◆-1.74 \times 10^{-5} + 8.52 \times 10^{-5}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆6.78 \times 10^{-5}◆RB◆◆LB◆2◆RB◆ = 3.39 \times 10^{-5}\,\mathrm{mol\,dm^{-3}}$$
+$$x = \frac{-1.74 \times 10^{-5} + 8.52 \times 10^{-5}}{2} = \frac{6.78 \times 10^{-5}}{2} = 3.39 \times 10^{-5}\,\mathrm{mol\,dm^{-3}}$$
 
 $$\mathrm{pH} = -\log(3.39 \times 10^{-5}) = 4.47$$
 
-Check: $\frac◆LB◆3.39 \times 10^{-5}◆RB◆◆LB◆1.00 \times 10^{-4}◆RB◆ \times 100 = 33.9\%$
+Check: $\frac{3.39 \times 10^{-5}}{1.00 \times 10^{-4}} \times 100 = 33.9\%$
 dissociation. Since this exceeds 5%, the approximation was not valid and the quadratic solution was
 necessary.
 
@@ -1018,13 +1018,13 @@ $[\mathrm{HA}] = [\mathrm{A}^-]$). The useful range is $\mathrm{p}K_a \pm 1$.
 $0.200\,\mathrm{mol\,dm^{-3}}$ ethanoic acid ($\mathrm{p}K_a = 4.76$) to produce a buffer with pH
 $= 5.00$?
 
-$$\mathrm{pH} = \mathrm{p}K_a + \log\frac◆LB◆[\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆$$
+$$\mathrm{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{A}^-]}{[\mathrm{HA}]}$$
 
-$$5.00 = 4.76 + \log\frac◆LB◆[\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆$$
+$$5.00 = 4.76 + \log\frac{[\mathrm{A}^-]}{[\mathrm{HA}]}$$
 
-$$\log\frac◆LB◆[\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆ = 0.24$$
+$$\log\frac{[\mathrm{A}^-]}{[\mathrm{HA}]} = 0.24$$
 
-$$\frac◆LB◆[\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆ = 10^{0.24} = 1.74$$
+$$\frac{[\mathrm{A}^-]}{[\mathrm{HA}]} = 10^{0.24} = 1.74$$
 
 Initial moles of ethanoic acid: $n = 0.200 \times 0.500 = 0.100\,\mathrm{mol}$
 
@@ -1073,17 +1073,17 @@ $n(\mathrm{CH}_3\mathrm{COO}^-) = 0.100 \times 0.0250 = 2.50 \times 10^{-3}\,\ma
 
 Total volume $= 50.0\,\mathrm{cm}^3 = 0.0500\,\mathrm{dm}^3$
 
-$[\mathrm{CH}_3\mathrm{COO}^-] = \frac◆LB◆2.50 \times 10^{-3}◆RB◆◆LB◆0.0500◆RB◆ = 0.0500\,\mathrm{mol\,dm^{-3}}$
+$[\mathrm{CH}_3\mathrm{COO}^-] = \frac{2.50 \times 10^{-3}}{0.0500} = 0.0500\,\mathrm{mol\,dm^{-3}}$
 
 The ethanoate ion hydrolyses:
 
 $$\mathrm{CH}_3\mathrm{COO}^- + \mathrm{H}_2\mathrm{O} \rightleftharpoons \mathrm{CH}_3\mathrm{COOH} + \mathrm{OH}^-$$
 
-$$K_b = \frac{K_w}{K_a} = \frac◆LB◆1.00 \times 10^{-14}◆RB◆◆LB◆1.74 \times 10^{-5}◆RB◆ = 5.75 \times 10^{-10}$$
+$$K_b = \frac{K_w}{K_a} = \frac{1.00 \times 10^{-14}}{1.74 \times 10^{-5}} = 5.75 \times 10^{-10}$$
 
-$$K_b = \frac◆LB◆[\mathrm{OH}^-]^2◆RB◆◆LB◆[\mathrm{CH}_3\mathrm{COO}^-]◆RB◆ = \frac{x^2}{0.0500} = 5.75 \times 10^{-10}$$
+$$K_b = \frac{[\mathrm{OH}^-]^2}{[\mathrm{CH}_3\mathrm{COO}^-]} = \frac{x^2}{0.0500} = 5.75 \times 10^{-10}$$
 
-$$x = \sqrt◆LB◆5.75 \times 10^{-10} \times 0.0500◆RB◆ = 5.37 \times 10^{-6}\,\mathrm{mol\,dm^{-3}}$$
+$$x = \sqrt{5.75 \times 10^{-10} \times 0.0500} = 5.37 \times 10^{-6}\,\mathrm{mol\,dm^{-3}}$$
 
 $$\mathrm{pOH} = -\log(5.37 \times 10^{-6}) = 5.27$$
 
@@ -1156,7 +1156,7 @@ $n(\mathrm{HCl})_\text{excess} = 2.50 \times 10^{-3} - 5.00 \times 10^{-4} = 2.0
 
 Total volume $= 35.0\,\mathrm{cm}^3 = 0.0350\,\mathrm{dm}^3$
 
-$[\mathrm{H}^+] = \frac◆LB◆2.00 \times 10^{-3}◆RB◆◆LB◆0.0350◆RB◆ = 0.0571\,\mathrm{mol\,dm^{-3}}$
+$[\mathrm{H}^+] = \frac{2.00 \times 10^{-3}}{0.0350} = 0.0571\,\mathrm{mol\,dm^{-3}}$
 
 $\mathrm{pH} = -\log(0.0571) = 1.24$ (1 mark for moles, 1 mark for excess, 1 mark for concentration,
 1 mark for pH.)
@@ -1180,7 +1180,7 @@ added to $25.0\,\mathrm{cm}^3$ of the buffer. (3 marks)
 
 $n(\mathrm{CH}_3\mathrm{COO}^-) = 0.100\,\mathrm{mol}$
 
-$$\mathrm{pH} = \mathrm{p}K_a + \log\frac◆LB◆[\mathrm{CH}_3\mathrm{COO}^-]◆RB◆◆LB◆[\mathrm{CH}_3\mathrm{COOH}]◆RB◆ = 4.76 + \log\frac{0.100}{0.100} = 4.76 + 0 = 4.76$$
+$$\mathrm{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{CH}_3\mathrm{COO}^-]}{[\mathrm{CH}_3\mathrm{COOH}]} = 4.76 + \log\frac{0.100}{0.100} = 4.76 + 0 = 4.76$$
 (1 mark for expression, 1 mark for answer.)
 
 (b) $n(\mathrm{HCl}) = 1.00 \times 0.001 = 1.00 \times 10^{-3}\,\mathrm{mol}$

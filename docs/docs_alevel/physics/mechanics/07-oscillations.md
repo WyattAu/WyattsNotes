@@ -78,11 +78,11 @@ $$a = \frac{d^2x}{dt^2} = -A\omega^2\cos(\omega t + \phi) = -\omega^2 x$$
 
 From $x = A\cos(\omega t + \phi)$ and $v = -A\omega\sin(\omega t + \phi)$:
 
-$$\cos(\omega t + \phi) = \frac{x}{A}, \quad \sin(\omega t + \phi) = \frac◆LB◆-v◆RB◆◆LB◆A\omega◆RB◆$$
+$$\cos(\omega t + \phi) = \frac{x}{A}, \quad \sin(\omega t + \phi) = \frac{-v}{A\omega}$$
 
 Since $\sin^2 + \cos^2 = 1$:
 
-$$\frac{x^2}{A^2} + \frac◆LB◆v^2◆RB◆◆LB◆A^2\omega^2◆RB◆ = 1$$
+$$\frac{x^2}{A^2} + \frac{v^2}{A^2\omega^2} = 1$$
 
 $$\boxed{v = \pm\omega\sqrt{A^2 - x^2}}$$
 
@@ -128,7 +128,7 @@ By Newton's second law: $ma = -kx$I.e., $a = -\frac{k}{m}x$.
 
 Comparing with $a = -\omega^2 x$:
 
-$$\boxed{\omega = \sqrt◆LB◆\frac{k}{m}◆RB◆, \qquad T = 2\pi\sqrt◆LB◆\frac{m}{k}◆RB◆}$$
+$$\boxed{\omega = \sqrt{\frac{k}{m}}, \qquad T = 2\pi\sqrt{\frac{m}{k}}}$$
 
 **Intuition.** A stiffer spring (larger $k$) gives faster oscillations. A heavier mass (larger $m$)
 Gives slower oscillations. The period is independent of amplitude — this is a defining feature of
@@ -156,7 +156,7 @@ $$\ddot{\theta} = -\frac{g}{L}\theta$$
 
 This is SHM in the variable $\theta$ with angular frequency $\omega = \sqrt{g/L}$:
 
-$$\boxed{T = 2\pi\sqrt◆LB◆\frac{L}{g}◆RB◆}$$
+$$\boxed{T = 2\pi\sqrt{\frac{L}{g}}}$$
 
 :::warning Common Pitfall The period of a simple pendulum is **independent of mass** and
 **independent of amplitude** (for small oscillations). These are classic exam questions.
@@ -427,7 +427,7 @@ For light damping ($b \lt 2\sqrt{km}$), the solution is:
 
 $$\boxed{x(t) = A_0 \, e^{-bt/(2m)} \cos(\omega' t + \phi)}$$
 
-Where $\omega' = \sqrt◆LB◆\omega_0^2 - b^2/(4m^2)◆RB◆$ is the damped angular frequency, slightly
+Where $\omega' = \sqrt{\omega_0^2 - b^2/(4m^2)}$ is the damped angular frequency, slightly
 less than The natural frequency $\omega_0 = \sqrt{k/m}$.
 
 The amplitude decays inside the exponential envelope:
@@ -494,11 +494,11 @@ The amplitude reaches its maximum value.
 
 The steady-state amplitude of a driven, damped oscillator:
 
-$$A(f_d) = \frac◆LB◆F_0 / m◆RB◆◆LB◆\sqrt{(\omega_0^2 - \omega_d^2)^2 + (b\omega_d/m)^2}◆RB◆$$
+$$A(f_d) = \frac{F_0 / m}{\sqrt{(\omega_0^2 - \omega_d^2)^2 + (b\omega_d/m)^2}}$$
 
 At resonance ($\omega_d = \omega_0$):
 
-$$A_{\max} = \frac◆LB◆F_0◆RB◆◆LB◆b\omega_0◆RB◆$$
+$$A_{\max} = \frac{F_0}{b\omega_0}$$
 
 **Key features of the resonance curve:**
 
@@ -574,13 +574,13 @@ Same frequency. The resultant phasor is the **vector sum** of the individual pha
 
 For $x_1 = A_1\cos(\omega t)$ and $x_2 = A_2\cos(\omega t + \delta)$:
 
-$$\boxed{A_{\mathrm{res}} = \sqrt◆LB◆A_1^2 + A_2^2 + 2A_1 A_2 \cos\delta◆RB◆}$$
+$$\boxed{A_{\mathrm{res}} = \sqrt{A_1^2 + A_2^2 + 2A_1 A_2 \cos\delta}}$$
 
 **Proof.** The cosine rule applied to the triangle formed by the two phasors and their resultant,
 With included angle $\delta$. $\square$
 
 The resultant phase is given by
-$\tan\phi_{\mathrm{res}} = \frac◆LB◆A_2 \sin\delta◆RB◆◆LB◆A_1 + A_2 \cos\delta◆RB◆$.
+$\tan\phi_{\mathrm{res}} = \frac{A_2 \sin\delta}{A_1 + A_2 \cos\delta}$.
 
 :::info Board Coverage AQA Paper 2 | Edexcel CP2 | OCR (A) Paper 2 | CIE P2
 :::
@@ -635,7 +635,7 @@ Ranking: 440 Hz (largest) &gt; 220 Hz &gt; 880 Hz (smallest).
 Two SHM oscillations of the same frequency have amplitudes 3.0 cm and 4.0 cm, with a phase difference of $60^\circ$. Find the amplitude of the resultant oscillation using the phasor method.
 
 **Answer.**
-$A_{\mathrm{res}} = \sqrt◆LB◆A_1^2 + A_2^2 + 2A_1 A_2 \cos\delta◆RB◆ = \sqrt◆LB◆9 + 16 + 2(3)(4)\cos 60°◆RB◆ = \sqrt{25 + 12} = \sqrt{37} = 6.08$
+$A_{\mathrm{res}} = \sqrt{A_1^2 + A_2^2 + 2A_1 A_2 \cos\delta} = \sqrt{9 + 16 + 2(3)(4)\cos 60°} = \sqrt{25 + 12} = \sqrt{37} = 6.08$
 Cm.
 
 <b>If you get this wrong, revise:</b> [Phasor Diagrams for SHM](#12-phasor-diagrams-for-shm)

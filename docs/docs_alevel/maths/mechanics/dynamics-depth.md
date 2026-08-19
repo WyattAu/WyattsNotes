@@ -31,7 +31,7 @@ Velocity unless acted upon by a resultant external force.
 **Newton's Second Law.** The resultant force acting on a body is equal to the rate of change of
 Momentum:
 
-$$\mathbf{F} = \frac◆LB◆d\mathbf{p}◆RB◆◆LB◆dt◆RB◆ = \frac◆LB◆d(m\mathbf{v})◆RB◆◆LB◆dt◆RB◆$$
+$$\mathbf{F} = \frac{d\mathbf{p}}{dt} = \frac{d(m\mathbf{v})}{dt}$$
 
 For constant mass $m$:
 
@@ -243,7 +243,7 @@ $$P\cos 25^\circ - \mu P\sin 25^\circ = 10g\sin 25^\circ + 10\mu g\cos 25^\circ$
 
 $$P(\cos 25^\circ - 0.3\sin 25^\circ) = 10g(\sin 25^\circ + 0.3\cos 25^\circ)$$
 
-$$P = \frac◆LB◆10(9.8)(0.4226 + 0.3 \times 0.9063)◆RB◆◆LB◆0.9063 - 0.3 \times 0.4226◆RB◆ = \frac◆LB◆98 \times 0.6945◆RB◆◆LB◆0.7795◆RB◆ \approx 87.3\;\mathrm{N}$$
+$$P = \frac{10(9.8)(0.4226 + 0.3 \times 0.9063)}{0.9063 - 0.3 \times 0.4226} = \frac{98 \times 0.6945}{0.7795} \approx 87.3\;\mathrm{N}$$
 
 **Case 2: on the point of sliding down the plane** ($F = \mu R$Acting up the plane):
 
@@ -253,7 +253,7 @@ $$P\cos 25^\circ + \mu(10g\cos 25^\circ + P\sin 25^\circ) = 10g\sin 25^\circ$$
 
 $$P(\cos 25^\circ + 0.3\sin 25^\circ) = 10g(\sin 25^\circ - 0.3\cos 25^\circ)$$
 
-$$P = \frac{98(0.4226 - 0.2719)}{0.9063 + 0.1268} = \frac◆LB◆98 \times 0.1507◆RB◆◆LB◆1.0331◆RB◆ \approx 14.3\;\mathrm{N}$$
+$$P = \frac{98(0.4226 - 0.2719)}{0.9063 + 0.1268} = \frac{98 \times 0.1507}{1.0331} \approx 14.3\;\mathrm{N}$$
 
 Therefore, for equilibrium: $14.3 \leq P \leq 87.3\;\mathrm{N}$.
 
@@ -277,7 +277,7 @@ System is conserved.
 $$m_1\mathbf{u}_1 + m_2\mathbf{u}_2 = m_1\mathbf{v}_1 + m_2\mathbf{v}_2$$
 
 **Proof.** Newton's second law for the system:
-$\mathbf{F}_{\mathrm{ext}} = \dfrac◆LB◆d\mathbf{p}_{\mathrm{total}}◆RB◆◆LB◆dt◆RB◆$.
+$\mathbf{F}_{\mathrm{ext}} = \dfrac{d\mathbf{p}_{\mathrm{total}}}{dt}$.
 
 If $\mathbf{F}_{\mathrm{ext}} = \mathbf{0}$Then $\mathbf{p}_{\mathrm{total}}$ is constant.
 $\blacksquare$
@@ -316,7 +316,7 @@ $= \Delta p = 3v - 0 = 3 \times \dfrac{8}{3} = 8\;\mathrm{Ns}$.
 
 The **coefficient of restitution** $e$ for a collision is defined as:
 
-$$e = \frac◆LB◆\mathrm{relative\ speed\ of\ separation}◆RB◆◆LB◆\mathrm{relative\ speed\ of\ approach}◆RB◆$$
+$$e = \frac{\mathrm{relative\ speed\ of\ separation}}{\mathrm{relative\ speed\ of\ approach}}$$
 
 For a direct impact between two particles:
 
@@ -477,7 +477,7 @@ Taking the direction away from the bat as positive:
 
 $$I = m(v - u) = 0.15(30 - (-20)) = 0.15(50) = 7.5\;\mathrm{Ns}$$
 
-$$F = \frac◆LB◆I◆RB◆◆LB◆\Delta t◆RB◆ = \frac{7.5}{0.01} = 750\;\mathrm{N}$$
+$$F = \frac{I}{\Delta t} = \frac{7.5}{0.01} = 750\;\mathrm{N}$$
 
 </details>
 

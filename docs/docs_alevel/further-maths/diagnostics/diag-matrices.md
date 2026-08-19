@@ -160,7 +160,7 @@ solution (inconsistent) or infinitely many solutions.
 ### IT-3: Matrix Applications (with Differential Equations)
 
 **Question:** The matrix $\mathbf{A} = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$ defines a
-system of coupled differential equations $\frac◆LB◆d\mathbf{x}◆RB◆◆LB◆dt◆RB◆ = \mathbf{A}\mathbf{x}$
+system of coupled differential equations $\frac{d\mathbf{x}}{dt} = \mathbf{A}\mathbf{x}$
 where $\mathbf{x} = \begin{pmatrix} x \\ y \end{pmatrix}$. (a) Find the eigenvalues and eigenvectors
 of $\mathbf{A}$. (b) Write the general solution for $\mathbf{x}(t)$ given that
 $\mathbf{x}(0) = \begin{pmatrix} 3 \\ 1 \end{pmatrix}$. (c) Calculate $\mathbf{x}(1)$. (d) Describe

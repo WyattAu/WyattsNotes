@@ -43,7 +43,7 @@ $r = 0, 1, 2, \ldots$ (number of failures). AQA uses $r = 1, 2, \ldots$.
 **Definition.** A discrete random variable $X$ follows a **Poisson distribution** with parameter
 $\lambda$ (where $\lambda > 0$), written $X \sim \mathrm{Po}(\lambda)$If
 
-$$P(X = r) = \frac◆LB◆e^{-\lambda}\lambda^r◆RB◆◆LB◆r!◆RB◆, \quad r = 0, 1, 2, \ldots$$
+$$P(X = r) = \frac{e^{-\lambda}\lambda^r}{r!}, \quad r = 0, 1, 2, \ldots$$
 
 The Poisson distribution models the number of events occurring in a fixed interval of time or space
 When:
@@ -62,18 +62,18 @@ $B(n, p) \to \mathrm{Po}(\lambda)$.
 $$
 \begin{aligned}
 P(X = r) &= \binom{n}{r}p^r(1-p)^{n-r} \\
-&= \frac◆LB◆n(n-1)\cdots(n-r+1)◆RB◆◆LB◆r!◆RB◆\cdot\frac◆LB◆\lambda^r◆RB◆◆LB◆n^r◆RB◆\cdot\left(1-\frac◆LB◆\lambda◆RB◆◆LB◆n◆RB◆\right)^{n-r}
+&= \frac{n(n-1)\cdots(n-r+1)}{r!}\cdot\frac{\lambda^r}{n^r}\cdot\left(1-\frac{\lambda}{n}\right)^{n-r}
 \end{aligned}
 $$
 
 Consider each factor as $n \to \infty$:
 
-- $\dfrac◆LB◆n(n-1)\cdots(n-r+1)◆RB◆◆LB◆n^r◆RB◆ \to 1$ since each of the $r$ factors tends to 1
-- $\left(1-\dfrac◆LB◆\lambda◆RB◆◆LB◆n◆RB◆\right)^{n-r} = \left(1-\dfrac◆LB◆\lambda◆RB◆◆LB◆n◆RB◆\right)^n \cdot \left(1-\dfrac◆LB◆\lambda◆RB◆◆LB◆n◆RB◆\right)^{-r} \to e^{-\lambda} \cdot 1 = e^{-\lambda}$
+- $\dfrac{n(n-1)\cdots(n-r+1)}{n^r} \to 1$ since each of the $r$ factors tends to 1
+- $\left(1-\dfrac{\lambda}{n}\right)^{n-r} = \left(1-\dfrac{\lambda}{n}\right)^n \cdot \left(1-\dfrac{\lambda}{n}\right)^{-r} \to e^{-\lambda} \cdot 1 = e^{-\lambda}$
 
 Therefore:
 
-$$P(X = r) \to \frac{1}{r!}\cdot\lambda^r \cdot e^{-\lambda} = \frac◆LB◆e^{-\lambda}\lambda^r◆RB◆◆LB◆r!◆RB◆ \quad \blacksquare$$
+$$P(X = r) \to \frac{1}{r!}\cdot\lambda^r \cdot e^{-\lambda} = \frac{e^{-\lambda}\lambda^r}{r!} \quad \blacksquare$$
 
 ### 1.3 Proof that $E(X) = \lambda$
 
@@ -81,8 +81,8 @@ $$P(X = r) \to \frac{1}{r!}\cdot\lambda^r \cdot e^{-\lambda} = \frac◆LB◆e^{-
 
 $$
 \begin{aligned}
-E(X) &= \sum_{r=0}^{\infty}r\cdot\frac◆LB◆e^{-\lambda}\lambda^r◆RB◆◆LB◆r!◆RB◆ = \sum_{r=1}^{\infty}\frac◆LB◆e^{-\lambda}\lambda^r◆RB◆◆LB◆(r-1)!◆RB◆ \\
-&= \lambda e^{-\lambda}\sum_{r=1}^{\infty}\frac◆LB◆\lambda^{r-1}◆RB◆◆LB◆(r-1)!◆RB◆ = \lambda e^{-\lambda}\sum_{k=0}^{\infty}\frac◆LB◆\lambda^k◆RB◆◆LB◆k!◆RB◆ \\
+E(X) &= \sum_{r=0}^{\infty}r\cdot\frac{e^{-\lambda}\lambda^r}{r!} = \sum_{r=1}^{\infty}\frac{e^{-\lambda}\lambda^r}{(r-1)!} \\
+&= \lambda e^{-\lambda}\sum_{r=1}^{\infty}\frac{\lambda^{r-1}}{(r-1)!} = \lambda e^{-\lambda}\sum_{k=0}^{\infty}\frac{\lambda^k}{k!} \\
 &= \lambda e^{-\lambda}\cdot e^{\lambda} = \lambda \quad \blacksquare
 \end{aligned}
 $$
@@ -95,8 +95,8 @@ First compute $E(X(X-1))$:
 
 $$
 \begin{aligned}
-E(X(X-1)) &= \sum_{r=2}^{\infty}r(r-1)\frac◆LB◆e^{-\lambda}\lambda^r◆RB◆◆LB◆r!◆RB◆ = \sum_{r=2}^{\infty}\frac◆LB◆e^{-\lambda}\lambda^r◆RB◆◆LB◆(r-2)!◆RB◆ \\
-&= \lambda^2 e^{-\lambda}\sum_{k=0}^{\infty}\frac◆LB◆\lambda^k◆RB◆◆LB◆k!◆RB◆ = \lambda^2 e^{-\lambda}\cdot e^{\lambda} = \lambda^2
+E(X(X-1)) &= \sum_{r=2}^{\infty}r(r-1)\frac{e^{-\lambda}\lambda^r}{r!} = \sum_{r=2}^{\infty}\frac{e^{-\lambda}\lambda^r}{(r-2)!} \\
+&= \lambda^2 e^{-\lambda}\sum_{k=0}^{\infty}\frac{\lambda^k}{k!} = \lambda^2 e^{-\lambda}\cdot e^{\lambda} = \lambda^2
 \end{aligned}
 $$
 
@@ -118,7 +118,7 @@ $$\boxed{X + Y \sim \mathrm{Po}(\lambda + \mu)}$$
 
 Cumulative Poisson probabilities are found using:
 
-$$P(X \leq r) = \sum_{k=0}^{r}\frac◆LB◆e^{-\lambda}\lambda^k◆RB◆◆LB◆k!◆RB◆$$
+$$P(X \leq r) = \sum_{k=0}^{r}\frac{e^{-\lambda}\lambda^k}{k!}$$
 
 These are obtained from tables or a calculator. Key relationships:
 
@@ -227,9 +227,9 @@ $$P(X > m + n \mid X > m) = P(X > n)$$
 
 $$
 \begin{aligned}
-P(X > m + n \mid X > m) &= \frac◆LB◆P(X > m+n \mathrm{ and } X > m)◆RB◆◆LB◆P(X > m)◆RB◆ \\
+P(X > m + n \mid X > m) &= \frac{P(X > m+n \mathrm{ and } X > m)}{P(X > m)} \\
 &= \frac{P(X > m+n)}{P(X > m)} \quad \mathrm{(since } X > m+n \implies X > m\mathrm{)} \\
-&= \frac◆LB◆1 - P(X \leq m+n)◆RB◆◆LB◆1 - P(X \leq m)◆RB◆
+&= \frac{1 - P(X \leq m+n)}{1 - P(X \leq m)}
 \end{aligned}
 $$
 
@@ -313,7 +313,7 @@ A factory produces items with defects occurring at an average rate of 2.5 per ho
 
 <details>
 <summary>Solution 1</summary>
-For one hour: $X \sim \mathrm{Po}(2.5)$. $P(X=4) = \dfrac{e^{-2.5}(2.5)^4}{4!} = \dfrac◆LB◆0.08209 \times 39.0625◆RB◆◆LB◆24◆RB◆ \approx 0.1336$.
+For one hour: $X \sim \mathrm{Po}(2.5)$. $P(X=4) = \dfrac{e^{-2.5}(2.5)^4}{4!} = \dfrac{0.08209 \times 39.0625}{24} \approx 0.1336$.
 
 For two hours: $Y \sim \mathrm{Po}(5)$ (by additivity).
 $P(Y > 6) = 1 - P(Y \leq 6) = 1 - 0.7622 = 0.2378$.
@@ -348,10 +348,10 @@ Prove that $E(X) = \lambda$ for $X \sim \mathrm{Po}(\lambda)$Showing all steps o
 
 <details>
 <summary>Solution 3</summary>
-$E(X) = \sum_{r=0}^{\infty}r\cdot\dfrac◆LB◆e^{-\lambda}\lambda^r◆RB◆◆LB◆r!◆RB◆ = \sum_{r=1}^{\infty}\dfrac◆LB◆e^{-\lambda}\lambda^r◆RB◆◆LB◆(r-1)!◆RB◆ = \lambda e^{-\lambda}\sum_{r=1}^{\infty}\dfrac◆LB◆\lambda^{r-1}◆RB◆◆LB◆(r-1)!◆RB◆$
+$E(X) = \sum_{r=0}^{\infty}r\cdot\dfrac{e^{-\lambda}\lambda^r}{r!} = \sum_{r=1}^{\infty}\dfrac{e^{-\lambda}\lambda^r}{(r-1)!} = \lambda e^{-\lambda}\sum_{r=1}^{\infty}\dfrac{\lambda^{r-1}}{(r-1)!}$
 
 Substituting $k = r-1$:
-$= \lambda e^{-\lambda}\sum_{k=0}^{\infty}\dfrac◆LB◆\lambda^k◆RB◆◆LB◆k!◆RB◆ = \lambda e^{-\lambda}\cdot e^{\lambda} = \lambda$.
+$= \lambda e^{-\lambda}\sum_{k=0}^{\infty}\dfrac{\lambda^k}{k!} = \lambda e^{-\lambda}\cdot e^{\lambda} = \lambda$.
 $\blacksquare$
 
 **If you get this wrong, revise:** [Proof that $E(X) = \lambda$](#13-proof-that-ex--lambda) —
@@ -505,11 +505,11 @@ Approximation.
 
 **Solution.** **(a) Binomial:** $X \sim \mathrm{Bin}(200, 0.02)$.
 
-$$P(X = 3) = \binom{200}{3}(0.02)^3(0.98)^{197} = \frac◆LB◆200 \times 199 \times 198◆RB◆◆LB◆6◆RB◆ \times 8 \times 10^{-6} \times (0.98)^{197}$$
+$$P(X = 3) = \binom{200}{3}(0.02)^3(0.98)^{197} = \frac{200 \times 199 \times 198}{6} \times 8 \times 10^{-6} \times (0.98)^{197}$$
 
 **(b) Poisson approximation:** $\lambda = np = 200 \times 0.02 = 4$. $X \approx \mathrm{Po}(4)$.
 
-$$P(X = 3) = \frac◆LB◆e^{-4} \cdot 4^3◆RB◆◆LB◆3!◆RB◆ = \frac{64}{6e^4} = \frac{32}{3e^4} \approx 0.1954$$
+$$P(X = 3) = \frac{e^{-4} \cdot 4^3}{3!} = \frac{64}{6e^4} = \frac{32}{3e^4} \approx 0.1954$$
 
 The approximation is valid since $n \geq 50$ and $p \leq 0.1$.
 
@@ -548,7 +548,7 @@ Observed frequencies for $k$ cars are compared with the expected frequencies und
 $X \sim \mathrm{Po}(3)$. Calculate the expected frequency for each value of $k$ if 200 intervals
 Were observed.
 
-**Solution.** Under $H_0$: $P(X = k) = \dfrac◆LB◆e^{-3} \cdot 3^k◆RB◆◆LB◆k!◆RB◆$.
+**Solution.** Under $H_0$: $P(X = k) = \dfrac{e^{-3} \cdot 3^k}{k!}$.
 
 | $k$      | $P(X = k)$             | Expected freq ($\times 200$) |
 | -------- | ---------------------- | ---------------------------- |
@@ -600,23 +600,23 @@ Distribution of $X + Y$ and find $P(X + Y = 6)$.
 
 **Solution.** $X + Y \sim \mathrm{Po}(3 + 5) = \mathrm{Po}(8)$.
 
-$$P(X + Y = 6) = \frac◆LB◆e^{-8} \cdot 8^6◆RB◆◆LB◆6!◆RB◆ = \frac◆LB◆262144 \cdot e^{-8}◆RB◆◆LB◆720◆RB◆ = \frac◆LB◆364.09 \cdot e^{-8}◆RB◆◆LB◆1◆RB◆ \approx 0.1221$$
+$$P(X + Y = 6) = \frac{e^{-8} \cdot 8^6}{6!} = \frac{262144 \cdot e^{-8}}{720} = \frac{364.09 \cdot e^{-8}}{1} \approx 0.1221$$
 
 ### Example 7.8: Poisson as a limiting case
 
 **Problem.** Prove that if $X \sim \mathrm{Bin}(n, p)$ with $\lambda = np$ fixed as $n \to \infty$
-Then $P(X = k) \to \dfrac◆LB◆e^{-\lambda}\lambda^k◆RB◆◆LB◆k!◆RB◆$.
+Then $P(X = k) \to \dfrac{e^{-\lambda}\lambda^k}{k!}$.
 
 **Solution.**
 
-$$P(X = k) = \binom{n}{k}p^k(1-p)^{n-k} = \frac{n!}{k!(n-k)!}\cdot\frac◆LB◆\lambda^k◆RB◆◆LB◆n^k◆RB◆\cdot\left(1-\frac◆LB◆\lambda◆RB◆◆LB◆n◆RB◆\right)^{n-k}$$
+$$P(X = k) = \binom{n}{k}p^k(1-p)^{n-k} = \frac{n!}{k!(n-k)!}\cdot\frac{\lambda^k}{n^k}\cdot\left(1-\frac{\lambda}{n}\right)^{n-k}$$
 
-$$= \frac◆LB◆\lambda^k◆RB◆◆LB◆k!◆RB◆\cdot\frac◆LB◆n(n-1)\cdots(n-k+1)◆RB◆◆LB◆n^k◆RB◆\cdot\left(1-\frac◆LB◆\lambda◆RB◆◆LB◆n◆RB◆\right)^{n-k}$$
+$$= \frac{\lambda^k}{k!}\cdot\frac{n(n-1)\cdots(n-k+1)}{n^k}\cdot\left(1-\frac{\lambda}{n}\right)^{n-k}$$
 
-As $n \to \infty$: $\dfrac◆LB◆n(n-1)\cdots(n-k+1)◆RB◆◆LB◆n^k◆RB◆ \to 1$ and
-$\left(1-\dfrac◆LB◆\lambda◆RB◆◆LB◆n◆RB◆\right)^{n-k} \to e^{-\lambda}$.
+As $n \to \infty$: $\dfrac{n(n-1)\cdots(n-k+1)}{n^k} \to 1$ and
+$\left(1-\dfrac{\lambda}{n}\right)^{n-k} \to e^{-\lambda}$.
 
-Therefore $P(X = k) \to \dfrac◆LB◆e^{-\lambda}\lambda^k◆RB◆◆LB◆k!◆RB◆$. $\blacksquare$
+Therefore $P(X = k) \to \dfrac{e^{-\lambda}\lambda^k}{k!}$. $\blacksquare$
 
 ---
 
@@ -654,7 +654,7 @@ Customers arrive in a given hour. **(b)** More than 2 customers arrive in a 30-m
 
 **(a)** $X \sim \mathrm{Po}(4)$.
 
-$$P(X = 3) = \frac◆LB◆e^{-4}\cdot 64◆RB◆◆LB◆6◆RB◆ = \frac{32}{3e^4} \approx 0.1954$$
+$$P(X = 3) = \frac{e^{-4}\cdot 64}{6} = \frac{32}{3e^4} \approx 0.1954$$
 
 **(b)** For 30 minutes: $Y \sim \mathrm{Po}(2)$.
 
@@ -717,7 +717,7 @@ $X \sim \mathrm{Po}(2)$.
 **(b)** $P(X \leq 3) = e^{-2}(1 + 2 + 2 + 4/3) = e^{-2} \cdot 19/3 \approx 0.8571$.
 
 **(c)**
-$P(X = 2 \mid X \leq 3) = \dfrac◆LB◆P(X = 2)◆RB◆◆LB◆P(X \leq 3)◆RB◆ = \dfrac{2e^{-2}}{19e^{-2}/3} = \dfrac{6}{19} \approx 0.3158$.
+$P(X = 2 \mid X \leq 3) = \dfrac{P(X = 2)}{P(X \leq 3)} = \dfrac{2e^{-2}}{19e^{-2}/3} = \dfrac{6}{19} \approx 0.3158$.
 
 </details>
 
@@ -737,7 +737,7 @@ Interval.
 **(a)** $\hat{\lambda} = 145/50 = 2.9$ per second.
 
 **(b)**
-$P(X = 3) = \dfrac{e^{-2.9}(2.9)^3}{6} = \dfrac◆LB◆24.389 \cdot e^{-2.9}◆RB◆◆LB◆6◆RB◆ \approx 0.2227$.
+$P(X = 3) = \dfrac{e^{-2.9}(2.9)^3}{6} = \dfrac{24.389 \cdot e^{-2.9}}{6} \approx 0.2227$.
 
 </details>
 
@@ -757,7 +757,7 @@ Approximation.
 $P(X=3) = \binom{1000}{3}(0.002)^3(0.998)^{997} \approx 0.1814$.
 
 (b) $\lambda = np = 2$. $X \approx \mathrm{Po}(2)$:
-$P(X=3) = \dfrac◆LB◆e^{-2} \cdot 8◆RB◆◆LB◆6◆RB◆ \approx 0.1804$.
+$P(X=3) = \dfrac{e^{-2} \cdot 8}{6} \approx 0.1804$.
 
 The approximation is excellent (error $< 0.6\%$).
 
@@ -770,7 +770,7 @@ That the total number of messages in a 2-hour period exceeds 20.
 
 Total messages $= \mathrm{Po}(10+6) = \mathrm{Po}(16)$.
 
-$$P(X > 20) = 1 - P(X \leq 20) = 1 - \sum_{k=0}^{20} \frac◆LB◆e^{-16} \cdot 16^k◆RB◆◆LB◆k!◆RB◆ \approx 1 - 0.8688 = \boxed{0.131}$$
+$$P(X > 20) = 1 - P(X \leq 20) = 1 - \sum_{k=0}^{20} \frac{e^{-16} \cdot 16^k}{k!} \approx 1 - 0.8688 = \boxed{0.131}$$
 
 ### Example 8.3: Conditional probability with the geometric distribution
 
@@ -794,7 +794,7 @@ Under $H_0$Total calls in 10 minutes $\sim \mathrm{Po}(60)$.
 
 For large $\lambda$Approximate with $N(60, 60)$.
 
-$$P(X \geq 72) \approx P\!\left(Z \geq \frac◆LB◆71.5 - 60◆RB◆◆LB◆\sqrt{60}◆RB◆\right) = P(Z \geq 1.485) = 1 - 0.9311 = 0.069$$
+$$P(X \geq 72) \approx P\!\left(Z \geq \frac{71.5 - 60}{\sqrt{60}}\right) = P(Z \geq 1.485) = 1 - 0.9311 = 0.069$$
 
 (using continuity correction).
 
@@ -806,9 +806,9 @@ $0.069 > 0.05$: **do not reject** $H_0$. Insufficient evidence that the rate has
 
 **Solution.** The mode $m$ satisfies $P(X = m) \geq P(X = m-1)$ and $P(X = m) \geq P(X = m+1)$.
 
-$$\frac◆LB◆e^{-\lambda}\lambda^m◆RB◆◆LB◆m!◆RB◆ \geq \frac◆LB◆e^{-\lambda}\lambda^{m-1}◆RB◆◆LB◆(m-1)!◆RB◆ \implies \frac◆LB◆\lambda◆RB◆◆LB◆m◆RB◆ \geq 1 \implies m \leq \lambda$$
+$$\frac{e^{-\lambda}\lambda^m}{m!} \geq \frac{e^{-\lambda}\lambda^{m-1}}{(m-1)!} \implies \frac{\lambda}{m} \geq 1 \implies m \leq \lambda$$
 
-$$\frac◆LB◆e^{-\lambda}\lambda^m◆RB◆◆LB◆m!◆RB◆ \geq \frac◆LB◆e^{-\lambda}\lambda^{m+1}◆RB◆◆LB◆(m+1)!◆RB◆ \implies \frac◆LB◆m+1◆RB◆◆LB◆\lambda◆RB◆ \geq 1 \implies m \geq \lambda - 1$$
+$$\frac{e^{-\lambda}\lambda^m}{m!} \geq \frac{e^{-\lambda}\lambda^{m+1}}{(m+1)!} \implies \frac{m+1}{\lambda} \geq 1 \implies m \geq \lambda - 1$$
 
 So $\lambda - 1 \leq m \leq \lambda$Meaning the mode is $\lfloor\lambda\rfloor$ (and also $\lambda$
 if $\lambda$ is an integer).
@@ -864,7 +864,7 @@ Exactly 5 errors.
 
 Total errors $\sim \mathrm{Po}(6)$.
 
-$$P(X = 5) = \frac◆LB◆e^{-6} \cdot 6^5◆RB◆◆LB◆120◆RB◆ = \frac◆LB◆7776 \cdot e^{-6}◆RB◆◆LB◆120◆RB◆ \approx \boxed{0.1606}$$
+$$P(X = 5) = \frac{e^{-6} \cdot 6^5}{120} = \frac{7776 \cdot e^{-6}}{120} \approx \boxed{0.1606}$$
 
 </details>
 
@@ -875,11 +875,11 @@ $$P(X = 5) = \frac◆LB◆e^{-6} \cdot 6^5◆RB◆◆LB◆120◆RB◆ = \frac◆
 <details>
 <summary>Solution</summary>
 
-$$E(X) = \sum_{k=0}^{\infty} k \cdot \frac◆LB◆e^{-\lambda}\lambda^k◆RB◆◆LB◆k!◆RB◆ = \sum_{k=1}^{\infty} \frac◆LB◆e^{-\lambda}\lambda^k◆RB◆◆LB◆(k-1)!◆RB◆$$
+$$E(X) = \sum_{k=0}^{\infty} k \cdot \frac{e^{-\lambda}\lambda^k}{k!} = \sum_{k=1}^{\infty} \frac{e^{-\lambda}\lambda^k}{(k-1)!}$$
 
 Let $j = k-1$:
 
-$$= \lambda e^{-\lambda} \sum_{j=0}^{\infty} \frac◆LB◆\lambda^j◆RB◆◆LB◆j!◆RB◆ = \lambda e^{-\lambda} \cdot e^{\lambda} = \lambda$$
+$$= \lambda e^{-\lambda} \sum_{j=0}^{\infty} \frac{\lambda^j}{j!} = \lambda e^{-\lambda} \cdot e^{\lambda} = \lambda$$
 
 $\blacksquare$
 
@@ -925,7 +925,7 @@ Distribution. See
 
 | Distribution                 | PMF                                                      | $E(X)$           | $\mathrm{Var}(X)$  |
 | ---------------------------- | -------------------------------------------------------- | ---------------- | ------------------ |
-| $\mathrm{Po}(\lambda)$       | $P(X=x) = \dfrac◆LB◆e^{-\lambda}\lambda^x◆RB◆◆LB◆x!◆RB◆$ | $\lambda$        | $\lambda$          |
+| $\mathrm{Po}(\lambda)$       | $P(X=x) = \dfrac{e^{-\lambda}\lambda^x}{x!}$ | $\lambda$        | $\lambda$          |
 | $\mathrm{Geo}(p)$ (trials)   | $P(X=x) = p(1-p)^{x-1}$                                  | $\dfrac{1}{p}$   | $\dfrac{1-p}{p^2}$ |
 | $\mathrm{Geo}(p)$ (failures) | $P(X=x) = p(1-p)^x$                                      | $\dfrac{1-p}{p}$ | $\dfrac{1-p}{p^2}$ |
 
@@ -949,10 +949,10 @@ Between two consecutive arrivals exceeds 20 minutes.
 <summary>Solution</summary>
 
 **(a)** $\lambda = 8 \times 0.5 = 4$.
-$P(X=5) = \dfrac◆LB◆e^{-4} \cdot 1024◆RB◆◆LB◆120◆RB◆ \approx \boxed{0.1563}$.
+$P(X=5) = \dfrac{e^{-4} \cdot 1024}{120} \approx \boxed{0.1563}$.
 
 **(b)** $\lambda = 8$.
-$P(X > 10) = 1 - P(X \leq 10) = 1 - \sum_{k=0}^{10}\dfrac◆LB◆e^{-8} \cdot 8^k◆RB◆◆LB◆k!◆RB◆ \approx 1 - 0.8159 = \boxed{0.184}$.
+$P(X > 10) = 1 - P(X \leq 10) = 1 - \sum_{k=0}^{10}\dfrac{e^{-8} \cdot 8^k}{k!} \approx 1 - 0.8159 = \boxed{0.184}$.
 
 **(c)** Inter-arrival time $T \sim \mathrm{Exp}(8)$. $P(T > 1/3) = e^{-8/3} \approx \boxed{0.0695}$.
 
@@ -965,9 +965,9 @@ $P(X > 10) = 1 - P(X \leq 10) = 1 - \sum_{k=0}^{10}\dfrac◆LB◆e^{-8} \cdot 8^
 <details>
 <summary>Solution</summary>
 
-$E(X^2) = \displaystyle\sum_{k=0}^{\infty} k^2 \cdot \frac◆LB◆e^{-\lambda}\lambda^k◆RB◆◆LB◆k!◆RB◆ = \sum_{k=1}^{\infty} k \cdot \frac◆LB◆e^{-\lambda}\lambda^k◆RB◆◆LB◆(k-1)!◆RB◆ = \lambda e^{-\lambda}\sum_{j=0}^{\infty}(j+1)\frac◆LB◆\lambda^j◆RB◆◆LB◆j!◆RB◆$
+$E(X^2) = \displaystyle\sum_{k=0}^{\infty} k^2 \cdot \frac{e^{-\lambda}\lambda^k}{k!} = \sum_{k=1}^{\infty} k \cdot \frac{e^{-\lambda}\lambda^k}{(k-1)!} = \lambda e^{-\lambda}\sum_{j=0}^{\infty}(j+1)\frac{\lambda^j}{j!}$
 
-$= \lambda e^{-\lambda}\!\left(\sum_{j=0}^{\infty} j\frac◆LB◆\lambda^j◆RB◆◆LB◆j!◆RB◆ + \sum_{j=0}^{\infty}\frac◆LB◆\lambda^j◆RB◆◆LB◆j!◆RB◆\right) = \lambda e^{-\lambda}(\lambda e^{\lambda} + e^{\lambda}) = \lambda(\lambda+1) = \lambda^2+\lambda$.
+$= \lambda e^{-\lambda}\!\left(\sum_{j=0}^{\infty} j\frac{\lambda^j}{j!} + \sum_{j=0}^{\infty}\frac{\lambda^j}{j!}\right) = \lambda e^{-\lambda}(\lambda e^{\lambda} + e^{\lambda}) = \lambda(\lambda+1) = \lambda^2+\lambda$.
 
 $\mathrm{Var}(X) = E(X^2)-[E(X)]^2 = \lambda^2+\lambda-\lambda^2 = \boxed{\lambda}$. $\blacksquare$
 
@@ -1017,7 +1017,7 @@ $P(20 \leq X \leq 30) = P(X \leq 30) - P(X \leq 19)$.
 
 Using the normal approximation: $X \approx N(24, 24)$.
 
-$P(19.5 < X < 30.5) \approx P\!\left(\dfrac◆LB◆19.5-24◆RB◆◆LB◆\sqrt{24}◆RB◆ < Z < \dfrac◆LB◆30.5-24◆RB◆◆LB◆\sqrt{24}◆RB◆\right)$
+$P(19.5 < X < 30.5) \approx P\!\left(\dfrac{19.5-24}{\sqrt{24}} < Z < \dfrac{30.5-24}{\sqrt{24}}\right)$
 
 $= P(-0.919 < Z < 1.327) = \Phi(1.327) - \Phi(-0.919) = 0.908 - 0.179 = \boxed{0.729}$
 
@@ -1055,7 +1055,7 @@ A Poisson process with rate $\lambda$ is a counting process $N(t)$ satisfying:
 
 For $X \sim \mathrm{Po}(\lambda_1)$ and $Y \sim \mathrm{Po}(\lambda_2)$Independent:
 
-$$P(X = k \mid X + Y = n) = \binom{n}{k}\!\left(\frac◆LB◆\lambda_1◆RB◆◆LB◆\lambda_1+\lambda_2◆RB◆\right)^k\left(\frac◆LB◆\lambda_2◆RB◆◆LB◆\lambda_1+\lambda_2◆RB◆\right)^{n-k}$$
+$$P(X = k \mid X + Y = n) = \binom{n}{k}\!\left(\frac{\lambda_1}{\lambda_1+\lambda_2}\right)^k\left(\frac{\lambda_2}{\lambda_1+\lambda_2}\right)^{n-k}$$
 
 This is $\mathrm{Bin}(n, \lambda_1/(\lambda_1+\lambda_2))$ — the conditional distribution is
 Binomial!

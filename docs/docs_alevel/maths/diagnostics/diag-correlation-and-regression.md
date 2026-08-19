@@ -55,24 +55,24 @@ $$S_{xx} = 12247 - \frac{267^2}{7} = 12247 - \frac{71289}{7} = 12247 - 10184.14.
 
 $$S_{yy} = 4554 - \frac{146^2}{7} = 4554 - \frac{21316}{7} = 4554 - 3045.143 = 1508.857$$
 
-$$S_{xy} = 7324 - \frac◆LB◆267 \times 146◆RB◆◆LB◆7◆RB◆ = 7324 - \frac{38982}{7} = 7324 - 5568.857 = 1755.143$$
+$$S_{xy} = 7324 - \frac{267 \times 146}{7} = 7324 - \frac{38982}{7} = 7324 - 5568.857 = 1755.143$$
 
-$$r = \frac◆LB◆S_{xy}◆RB◆◆LB◆\sqrt{S_{xx} \cdot S_{yy}}◆RB◆ = \frac◆LB◆1755.143◆RB◆◆LB◆\sqrt{2062.857 \times 1508.857}◆RB◆$$
+$$r = \frac{S_{xy}}{\sqrt{S_{xx} \cdot S_{yy}}} = \frac{1755.143}{\sqrt{2062.857 \times 1508.857}}$$
 
-$$= \frac◆LB◆1755.143◆RB◆◆LB◆\sqrt{3111755.1}◆RB◆ = \frac{1755.143}{1764.02} = 0.9950 \text{ (4 d.p.)}$$
+$$= \frac{1755.143}{\sqrt{3111755.1}} = \frac{1755.143}{1764.02} = 0.9950 \text{ (4 d.p.)}$$
 
 **(b)** The student's claim is **incorrect**. The PMCC is invariant under linear coding of the form
 $u = ax + b$ and $v = cy + d$ (where $a, c \neq 0$). Here $u = \frac{1}{1000}x$ and
 $v = \frac{1}{100}y$Which are linear transformations.
 
-To see why: the PMCC is defined as $r = \frac◆LB◆S_{xy}◆RB◆◆LB◆\sqrt{S_{xx} \cdot S_{yy}}◆RB◆$.
+To see why: the PMCC is defined as $r = \frac{S_{xy}}{\sqrt{S_{xx} \cdot S_{yy}}}$.
 Under coding:
 
-$$S_{uv} = \sum uv - \frac◆LB◆(\sum u)(\sum v)◆RB◆◆LB◆n◆RB◆ = ac \sum xy - ac \frac◆LB◆(\sum x)(\sum y)◆RB◆◆LB◆n◆RB◆ = ac \cdot S_{xy}$$
+$$S_{uv} = \sum uv - \frac{(\sum u)(\sum v)}{n} = ac \sum xy - ac \frac{(\sum x)(\sum y)}{n} = ac \cdot S_{xy}$$
 
 $$S_{uu} = a^2 S_{xx}, \quad S_{vv} = c^2 S_{yy}$$
 
-$$r_{uv} = \frac◆LB◆ac \cdot S_{xy}◆RB◆◆LB◆\sqrt{a^2 S_{xx} \cdot c^2 S_{yy}}◆RB◆ = \frac◆LB◆ac \cdot S_{xy}◆RB◆◆LB◆|ac|\sqrt{S_{xx} \cdot S_{yy}}◆RB◆ = \frac◆LB◆S_{xy}◆RB◆◆LB◆\sqrt{S_{xx} \cdot S_{yy}}◆RB◆ = r_{xy}$$
+$$r_{uv} = \frac{ac \cdot S_{xy}}{\sqrt{a^2 S_{xx} \cdot c^2 S_{yy}}} = \frac{ac \cdot S_{xy}}{|ac|\sqrt{S_{xx} \cdot S_{yy}}} = \frac{S_{xy}}{\sqrt{S_{xx} \cdot S_{yy}}} = r_{xy}$$
 
 The factors of $a$ and $c$ cancel out completely, so the PMCC is unchanged by scaling or shifting.
 
@@ -90,7 +90,7 @@ The factors of $a$ and $c$ cancel out completely, so the PMCC is unchanged by sc
 
 $$\sum d^2 = 0$$
 
-$$r_s = 1 - \frac◆LB◆6 \sum d^2◆RB◆◆LB◆n(n^2 - 1)◆RB◆ = 1 - 0 = 1$$
+$$r_s = 1 - \frac{6 \sum d^2}{n(n^2 - 1)} = 1 - 0 = 1$$
 
 Spearman's rank correlation coefficient is 1 (perfect rank correlation).
 
@@ -245,7 +245,7 @@ $$(-8) + (-3) + 1 + 2 + 3 + 4 + 2 + (-1) + (-5) + 5 = 0 \checkmark$$
 This must always be zero because the least squares regression line of $y$ on $x$ satisfies
 $\hat{y} = a + bx$ where:
 
-$$b = \frac{S_{xy}}{S_{xx}} = \frac◆LB◆\sum(x_i - \bar{x})(y_i - \bar{y})◆RB◆◆LB◆\sum(x_i - \bar{x})^2◆RB◆$$
+$$b = \frac{S_{xy}}{S_{xx}} = \frac{\sum(x_i - \bar{x})(y_i - \bar{y})}{\sum(x_i - \bar{x})^2}$$
 
 $$a = \bar{y} - b\bar{x}$$
 
@@ -531,9 +531,9 @@ residuals (which range from $-2.2$ to $67.3$).
 
 **(b)** After removing the outlier ($T = 30, S = 50$):
 
-$$r = \frac◆LB◆S_{TS}◆RB◆◆LB◆\sqrt{S_{TT} \cdot S_{SS}}◆RB◆ = \frac◆LB◆3292◆RB◆◆LB◆\sqrt{238 \times 46247}◆RB◆$$
+$$r = \frac{S_{TS}}{\sqrt{S_{TT} \cdot S_{SS}}} = \frac{3292}{\sqrt{238 \times 46247}}$$
 
-$$= \frac◆LB◆3292◆RB◆◆LB◆\sqrt{11006786}◆RB◆ = \frac{3292}{3317.65} = 0.9923 \text{ (4 d.p.)}$$
+$$= \frac{3292}{\sqrt{11006786}} = \frac{3292}{3317.65} = 0.9923 \text{ (4 d.p.)}$$
 
 Regression coefficient:
 

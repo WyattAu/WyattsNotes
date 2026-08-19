@@ -20,7 +20,7 @@ $\gamma$ individually. (d) Find a cubic with roots $2\alpha, 2\beta, 2\gamma$.
 
 (a) $f(1) = 1 - 3 + 4 - 2 = 0 \checkmark$. $f(x) = (x-1)(x^2 - 2x + 2)$.
 
-(b) $x^2 - 2x + 2 = 0$. $x = \frac◆LB◆2 \pm \sqrt{4-8}◆RB◆◆LB◆2◆RB◆ = 1 \pm i$. So
+(b) $x^2 - 2x + 2 = 0$. $x = \frac{2 \pm \sqrt{4-8}}{2} = 1 \pm i$. So
 $\beta = 1+i$, $\gamma = 1-i$.
 
 (c)
@@ -61,7 +61,7 @@ integers $n$.
 
 **Solution:**
 
-**Base case ($n = 1$):** LHS $= 1^3 = 1$. RHS $= \frac◆LB◆1 \times 4◆RB◆◆LB◆4◆RB◆ = 1$. LHS $=$ RHS
+**Base case ($n = 1$):** LHS $= 1^3 = 1$. RHS $= \frac{1 \times 4}{4} = 1$. LHS $=$ RHS
 $\checkmark$.
 
 **Inductive hypothesis:** Assume $\sum_{r=1}^{k} r^3 = \frac{k^2(k+1)^2}{4}$ for some $k \ge 1$.
@@ -113,8 +113,8 @@ series for $\frac{1}{(1-x)^2}$.
 
 **Solution:**
 
-(a) **Base case ($n=1$):** LHS $= \frac◆LB◆1◆RB◆◆LB◆1 \cdot 2 \cdot 3◆RB◆ = \frac{1}{6}$. RHS
-$= \frac◆LB◆1 \cdot 4◆RB◆◆LB◆4 \cdot 2 \cdot 3◆RB◆ = \frac{1}{6}$. $\checkmark$.
+(a) **Base case ($n=1$):** LHS $= \frac{1}{1 \cdot 2 \cdot 3} = \frac{1}{6}$. RHS
+$= \frac{1 \cdot 4}{4 \cdot 2 \cdot 3} = \frac{1}{6}$. $\checkmark$.
 
 **Hypothesis:** Assume true for $n = k$.
 

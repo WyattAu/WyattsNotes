@@ -266,7 +266,7 @@ Where $E_k^{\max}$ is the maximum kinetic energy of the emitted photoelectrons.
 
 At the threshold, $E_k^{\max} = 0$So $hf_0 = \phi$:
 
-$$\boxed{f_0 = \frac◆LB◆\phi◆RB◆◆LB◆h◆RB◆}$$
+$$\boxed{f_0 = \frac{\phi}{h}}$$
 
 For frequencies below $f_0$No electron can be emitted regardless of intensity, because each photon
 Carries insufficient energy. Increasing intensity means more photons, not more energy per photon.
@@ -305,14 +305,14 @@ Interference) just as electromagnetic waves exhibit particle-like properties (ph
 
 An electron accelerated through potential difference $V$ gains kinetic energy:
 
-$$\frac{1}{2}m_e v^2 = eV \implies v = \sqrt◆LB◆\frac{2eV}{m_e}◆RB◆$$
+$$\frac{1}{2}m_e v^2 = eV \implies v = \sqrt{\frac{2eV}{m_e}}$$
 
 $$p = m_e v = \sqrt{2m_e eV}$$
 
-$$\boxed{\lambda = \frac◆LB◆h◆RB◆◆LB◆\sqrt{2m_e eV}◆RB◆}$$
+$$\boxed{\lambda = \frac{h}{\sqrt{2m_e eV}}}$$
 
 For $V = 100$ V:
-$\lambda = 6.63 \times 10^{-34}/\sqrt◆LB◆2 \times 9.11 \times 10^{-31} \times 1.60 \times 10^{-19} \times 100◆RB◆ = 1.23 \times 10^{-10}$
+$\lambda = 6.63 \times 10^{-34}/\sqrt{2 \times 9.11 \times 10^{-31} \times 1.60 \times 10^{-19} \times 100} = 1.23 \times 10^{-10}$
 m $= 0.123$ nm.
 
 This is comparable to atomic spacing, explaining why electron diffraction can resolve crystal
@@ -343,7 +343,7 @@ Calculate the de Broglie wavelength of (a) an electron with kinetic energy 150 e
 Moving at $2.0 \times 10^6$ m s$^{-1}$.
 
 **Answer.** (a)
-$\lambda = h/\sqrt{2m_e eV} = 6.63 \times 10^{-34}/\sqrt◆LB◆2 \times 9.11 \times 10^{-31} \times 1.60 \times 10^{-19} \times 150◆RB◆ = 6.63 \times 10^{-34}/\sqrt◆LB◆4.37 \times 10^{-47}◆RB◆ = 6.63 \times 10^{-34}/6.61 \times 10^{-24} = 1.00 \times 10^{-10}$
+$\lambda = h/\sqrt{2m_e eV} = 6.63 \times 10^{-34}/\sqrt{2 \times 9.11 \times 10^{-31} \times 1.60 \times 10^{-19} \times 150} = 6.63 \times 10^{-34}/\sqrt{4.37 \times 10^{-47}} = 6.63 \times 10^{-34}/6.61 \times 10^{-24} = 1.00 \times 10^{-10}$
 m $= 0.100$ nm.
 
 (b)
@@ -359,11 +359,11 @@ Because of its much larger mass.
 
 The de Broglie relation $\lambda = h/p$ and the Einstein relation $E = hf$ together imply:
 
-$$E = hf = \frac◆LB◆hc◆RB◆◆LB◆\lambda◆RB◆ = pc$$
+$$E = hf = \frac{hc}{\lambda} = pc$$
 
 For massless particles (photons). For massive particles in the non-relativistic limit:
 
-$$E_k = \frac{p^2}{2m} = \frac◆LB◆h^2◆RB◆◆LB◆2m\lambda^2◆RB◆$$
+$$E_k = \frac{p^2}{2m} = \frac{h^2}{2m\lambda^2}$$
 
 These relations are the foundation of quantum mechanics. The wave function $\Psi$ of a particle
 Satisfies the Schrodinger equation, and the probability of finding the particle in a region is
@@ -412,7 +412,7 @@ Energy of the photoelectrons and their maximum speed.
 
 **Answer.** $E_{\mathrm{photon}} = hc/\lambda = 2.26$ eV. $E_k = hf - \phi = 2.26 - 2.0 = 0.26$ eV
 $= 4.16 \times 10^{-20}$ J.
-$v = \sqrt{2E_k/m_e} = \sqrt◆LB◆2 \times 4.16 \times 10^{-20}/9.11 \times 10^{-31}◆RB◆ = 3.02 \times 10^5$
+$v = \sqrt{2E_k/m_e} = \sqrt{2 \times 4.16 \times 10^{-20}/9.11 \times 10^{-31}} = 3.02 \times 10^5$
 m s$^{-1}$.
 
 </details>
@@ -440,7 +440,7 @@ Calculate the de Broglie wavelength of a neutron with kinetic energy 0.025 eV (t
 Room temperature).
 
 **Answer.** $E_k = 0.025 \times 1.60 \times 10^{-19} = 4.0 \times 10^{-21}$ J.
-$v = \sqrt{2E_k/m_n} = \sqrt◆LB◆2 \times 4.0 \times 10^{-21}/1.67 \times 10^{-27}◆RB◆ = 2189$ m
+$v = \sqrt{2E_k/m_n} = \sqrt{2 \times 4.0 \times 10^{-21}/1.67 \times 10^{-27}} = 2189$ m
 s$^{-1}$.
 $\lambda = h/(m_n v) = 6.63 \times 10^{-34}/(1.67 \times 10^{-27} \times 2189) = 1.82 \times 10^{-10}$
 m $= 0.182$ nm.
@@ -483,11 +483,11 @@ kg.
 Comparing with known masses: $m_e = 9.11 \times 10^{-31}$ kg, $m_p = 1.67 \times 10^{-27}$ kg. The
 mass is approximately $3.2\,m_e$Which does not match a known fundamental particle. This Suggests a
 systematic error or that the particle is a muon ($m_\mu = 1.88 \times 10^{-28}$ kg). For a muon:
-$\lambda = 6.63 \times 10^{-34}/\sqrt◆LB◆2 \times 1.88 \times 10^{-28} \times 1.60 \times 10^{-19} \times 500◆RB◆ = 6.63 \times 10^{-34}/\sqrt◆LB◆3.01 \times 10^{-44}◆RB◆ = 6.63 \times 10^{-34}/1.74 \times 10^{-22} = 3.82 \times 10^{-12}$
+$\lambda = 6.63 \times 10^{-34}/\sqrt{2 \times 1.88 \times 10^{-28} \times 1.60 \times 10^{-19} \times 500} = 6.63 \times 10^{-34}/\sqrt{3.01 \times 10^{-44}} = 6.63 \times 10^{-34}/1.74 \times 10^{-22} = 3.82 \times 10^{-12}$
 m.
 
 The calculated $\lambda = 3.06 \times 10^{-10}$ m is most consistent with an electron
-($\lambda_e = h/\sqrt{2m_e eV} = 6.63 \times 10^{-34}/\sqrt◆LB◆2 \times 9.11 \times 10^{-31} \times 1.60 \times 10^{-19} \times 500◆RB◆ = 5.49 \times 10^{-11}$
+($\lambda_e = h/\sqrt{2m_e eV} = 6.63 \times 10^{-34}/\sqrt{2 \times 9.11 \times 10^{-31} \times 1.60 \times 10^{-19} \times 500} = 5.49 \times 10^{-11}$
 m). The discrepancy suggests an experimental issue or different scattering geometry.
 
 </details>

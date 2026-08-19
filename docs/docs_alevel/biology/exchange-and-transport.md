@@ -24,7 +24,7 @@ sidebar_position: 3
 As an organism increases in size, its volume grows faster than its surface area. For a cube of side
 Length $l$:
 
-$$\mathrm{Surface\ area} = 6l^2, \quad \mathrm{Volume} = l^3, \quad \frac◆LB◆\mathrm{SA}◆RB◆◆LB◆\mathrm{V}◆RB◆ = \frac{6}{l}$$
+$$\mathrm{Surface\ area} = 6l^2, \quad \mathrm{Volume} = l^3, \quad \frac{\mathrm{SA}}{\mathrm{V}} = \frac{6}{l}$$
 
 The SA:V ratio therefore decreases as size increases. This has critical implications: the surface
 Area available for exchange of gases, nutrients, and heat becomes proportionally smaller relative to
@@ -46,7 +46,7 @@ All gas exchange surfaces share common features:
 
 These features all derive from **Fick's law of diffusion**:
 
-$$J = -D \frac◆LB◆\Delta C◆RB◆◆LB◆\Delta x◆RB◆$$
+$$J = -D \frac{\Delta C}{\Delta x}$$
 
 Where $J$ is the flux (rate of diffusion per unit area), $D$ is the diffusion coefficient,
 $\Delta C$ is the concentration difference, and $\Delta x$ is the diffusion distance.
@@ -379,7 +379,7 @@ Be released (the Bohr effect). $\mathrm{HCO_3^-$ ions are exchanged for $\mathrm
 
 Fick's first law of diffusion states:
 
-$$J = -D \frac◆LB◆\Delta C◆RB◆◆LB◆\Delta x◆RB◆$$
+$$J = -D \frac{\Delta C}{\Delta x}$$
 
 Where:
 
@@ -391,7 +391,7 @@ Where:
 
 The total rate of diffusion across a surface of area $A$ is:
 
-$$\text{Rate} = J \times A = D \cdot A \cdot \frac◆LB◆\Delta C◆RB◆◆LB◆\Delta x◆RB◆$$
+$$\text{Rate} = J \times A = D \cdot A \cdot \frac{\Delta C}{\Delta x}$$
 
 This equation directly explains the adaptations of gas exchange surfaces: maximising $A$ (large
 surface Area), minimising $\Delta x$ (thin barrier), and maximising $\Delta C$ (maintaining a steep
@@ -412,7 +412,7 @@ $\alpha = 1.3 \times 10^{-3}\ \mathrm{mol\ m^{-3}\ kPa^{-1}}$.
 
 $$\Delta C = \alpha \times \Delta p\mathrm{O_2} = 1.3 \times 10^{-3} \times (13.3 - 5.3) = 0.0104\ \mathrm{mol\ m^{-3}}$$
 
-$$\text{Rate} = D \cdot A \cdot \frac◆LB◆\Delta C◆RB◆◆LB◆\Delta x◆RB◆ = 1.8 \times 10^{-9} \times 200 \times 10^{-12} \times \frac◆LB◆0.0104◆RB◆◆LB◆0.5 \times 10^{-6}◆RB◆$$
+$$\text{Rate} = D \cdot A \cdot \frac{\Delta C}{\Delta x} = 1.8 \times 10^{-9} \times 200 \times 10^{-12} \times \frac{0.0104}{0.5 \times 10^{-6}}$$
 
 $$= 1.8 \times 10^{-9} \times 2 \times 10^{-10} \times 20800 = 7.5 \times 10^{-15}\ \mathrm{mol\ s^{-1}}$$
 
@@ -423,7 +423,7 @@ is Why the human respiratory system can meet the body's $\mathrm{O_2}$ demand.
 ($\Delta x = 0.5\ \mu\mathrm{m}$) with diffusion through a layer of connective tissue
 ($\Delta x = 5.0\ \mu\mathrm{m}$), all else being equal.
 
-$$\frac◆LB◆J_{\mathrm{alveolus}}◆RB◆◆LB◆J_{\mathrm{tissue}}◆RB◆ = \frac◆LB◆D \cdot \Delta C / 0.5◆RB◆◆LB◆D \cdot \Delta C / 5.0◆RB◆ = \frac{5.0}{0.5} = 10$$
+$$\frac{J_{\mathrm{alveolus}}}{J_{\mathrm{tissue}}} = \frac{D \cdot \Delta C / 0.5}{D \cdot \Delta C / 5.0} = \frac{5.0}{0.5} = 10$$
 
 The alveolar barrier is 10 times more efficient at gas exchange because it is 10 times thinner. This
 Quantifies the critical importance of a thin diffusion barrier.
@@ -589,7 +589,7 @@ $\mathrm{CO} = 100 \times 195 = 19500\ \mathrm{cm^3\ min^{-1}} = 19.5\ \mathrm{d
 (b) Calculate the ejection fraction at rest.
 
 Ejection fraction
-$= \frac◆LB◆\mathrm{Stroke\ volume}◆RB◆◆LB◆\mathrm{End-diastolic\ volume}◆RB◆ \times 100\% = \frac{72}{120} \times 100\% = 60\%$.
+$= \frac{\mathrm{Stroke\ volume}}{\mathrm{End-diastolic\ volume}} \times 100\% = \frac{72}{120} \times 100\% = 60\%$.
 
 (c) The cardiac output increased by a factor of $\frac{19.5}{4.9} \approx 4.0\times$. This is
 achieved Primarily through increased heart rate (from 68 to $195\ \mathrm{beats\ min^{-1}}$A factor
@@ -1051,7 +1051,7 @@ The rate of transpiration is affected by:
 transpiration rate). The distance moved by an air bubble in the capillary tube is recorded over
 time:
 
-$$\text{Transpiration rate} = \frac◆LB◆\text{Volume of water taken up}◆RB◆◆LB◆\text{Time}◆RB◆ = \frac◆LB◆\pi r^2 d◆RB◆◆LB◆t◆RB◆$$
+$$\text{Transpiration rate} = \frac{\text{Volume of water taken up}}{\text{Time}} = \frac{\pi r^2 d}{t}$$
 
 Where $r$ = radius of capillary tube, $d$ = distance bubble moved, $t$ = time.
 
@@ -1399,7 +1399,7 @@ bypassing the circulatory system:
 
 Adaptations for efficient gas exchange (features related to Fick's Law):
 
-$$\text{Rate of diffusion} \propto \frac◆LB◆\text{surface area} \times \text{concentration difference}◆RB◆◆LB◆\text{diffusion distance}◆RB◆$$
+$$\text{Rate of diffusion} \propto \frac{\text{surface area} \times \text{concentration difference}}{\text{diffusion distance}}$$
 
 | Feature                                                     | How It Maximises Diffusion Rate                                                |
 | ----------------------------------------------------------- | ------------------------------------------------------------------------------ |
@@ -1890,7 +1890,7 @@ The cohesion-tension theory explains how water moves up the xylem against gravit
 
 ### 37.1 The Equation
 
-$$\text{Rate of diffusion} = \frac◆LB◆D \times A \times \Delta C◆RB◆◆LB◆\Delta x◆RB◆$$
+$$\text{Rate of diffusion} = \frac{D \times A \times \Delta C}{\Delta x}$$
 
 | Symbol            | Meaning                                                                                           | Unit                                             |
 | ----------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------ |

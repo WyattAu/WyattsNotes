@@ -88,13 +88,13 @@ Energy released: $E = 0.2153 \times 931.5 = 200.6\,\text{MeV}$
 
 (b) Number of $^{235}\text{U}$ atoms in $1.0\,\text{kg}$:
 
-$$N = \frac◆LB◆1.0◆RB◆◆LB◆235.0439 \times 1.661 \times 10^{-27}◆RB◆ = \frac◆LB◆1.0◆RB◆◆LB◆3.904 \times 10^{-25}◆RB◆ = 2.561 \times 10^{24}$$
+$$N = \frac{1.0}{235.0439 \times 1.661 \times 10^{-27}} = \frac{1.0}{3.904 \times 10^{-25}} = 2.561 \times 10^{24}$$
 
 Total energy: $E = 2.561 \times 10^{24} \times 200.6 \times 1.60 \times 10^{-13}$
 
 $$= 2.561 \times 10^{24} \times 3.210 \times 10^{-11} = 8.22 \times 10^{13}\,\text{J}$$
 
-(c) Ratio: $\frac◆LB◆8.22 \times 10^{13}◆RB◆◆LB◆3.0 \times 10^7◆RB◆ = 2.74 \times 10^6$
+(c) Ratio: $\frac{8.22 \times 10^{13}}{3.0 \times 10^7} = 2.74 \times 10^6$
 
 Nuclear fission releases about **2.7 million times** more energy per kilogram than burning coal.
 This enormous energy density is why nuclear power is so attractive, despite the challenges of waste
@@ -153,7 +153,7 @@ Mass of 4 protons
 $= 4 \times 1.00728 \times 1.661 \times 10^{-27} = 6.694 \times 10^{-27}\,\text{kg}$
 
 Energy per kg:
-$E = \frac◆LB◆26.7 \times 10^6 \times 1.60 \times 10^{-19}◆RB◆◆LB◆6.694 \times 10^{-27}◆RB◆ = \frac◆LB◆4.272 \times 10^{-12}◆RB◆◆LB◆6.694 \times 10^{-27}◆RB◆ = 6.38 \times 10^{14}\,\text{J}\,\text{kg}^{-1}$
+$E = \frac{26.7 \times 10^6 \times 1.60 \times 10^{-19}}{6.694 \times 10^{-27}} = \frac{4.272 \times 10^{-12}}{6.694 \times 10^{-27}} = 6.38 \times 10^{14}\,\text{J}\,\text{kg}^{-1}$
 
 (c) Mass consumption rate:
 $\dot{m} = L/E_{\text{per kg}} = 3.85 \times 10^{26}/(6.38 \times 10^{14}) = 6.03 \times 10^{11}\,\text{kg}\,\text{s}^{-1}$
@@ -183,7 +183,7 @@ the power to double).
 (a) Fission rate:
 $\dot{n} = P/(E_{\text{per fission}}) = 3000 \times 10^6/(200 \times 10^6 \times 1.60 \times 10^{-19})$
 
-$$= \frac◆LB◆3.0 \times 10^9◆RB◆◆LB◆3.20 \times 10^{-11}◆RB◆ = 9.375 \times 10^{19}\,\text{fissions}\,\text{s}^{-1}$$
+$$= \frac{3.0 \times 10^9}{3.20 \times 10^{-11}} = 9.375 \times 10^{19}\,\text{fissions}\,\text{s}^{-1}$$
 
 (b) The reactor period $T$ is related to $k$ by:
 

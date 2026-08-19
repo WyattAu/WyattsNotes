@@ -171,7 +171,7 @@ Consists of four reversible processes:
 
 The efficiency of any heat engine is:
 
-$$\eta = \frac◆LB◆W_{\mathrm{out}}◆RB◆◆LB◆Q_H◆RB◆ = \frac{Q_H - Q_C}{Q_H} = 1 - \frac{Q_C}{Q_H}$$
+$$\eta = \frac{W_{\mathrm{out}}}{Q_H} = \frac{Q_H - Q_C}{Q_H} = 1 - \frac{Q_C}{Q_H}$$
 
 **Derivation of Carnot efficiency.** For the Carnot cycle, $Q_H/T_H = Q_C/T_C$ (from the properties
 Of reversible cycles):
@@ -269,7 +269,7 @@ This shows $dQ/T$ is an **exact differential** -- its integral around any closed
 Zero. Therefore, $\oint dQ_{\mathrm{rev}}/T = 0$ defines a state function, which we call **entropy**
 $S$:
 
-$$dS = \frac◆LB◆dQ_{\mathrm{rev}}◆RB◆◆LB◆T◆RB◆, \qquad \Delta S = \int \frac◆LB◆dQ_{\mathrm{rev}}◆RB◆◆LB◆T◆RB◆$$
+$$dS = \frac{dQ_{\mathrm{rev}}}{T}, \qquad \Delta S = \int \frac{dQ_{\mathrm{rev}}}{T}$$
 
 For an **irreversible** process, $\Delta S_{\mathrm{total}} > 0$. For a **reversible** process,
 $\Delta S_{\mathrm{total}} = 0$.

@@ -54,13 +54,13 @@ The resultant is:
 $$y_{\mathrm{total}} = A\sin(\omega t) + A\sin(\omega t + \Delta\phi)$$
 
 Using the trigonometric identity
-$\sin\alpha + \sin\beta = 2\sin\frac◆LB◆\alpha+\beta◆RB◆◆LB◆2◆RB◆\cos\frac◆LB◆\alpha-\beta◆RB◆◆LB◆2◆RB◆$:
+$\sin\alpha + \sin\beta = 2\sin\frac{\alpha+\beta}{2}\cos\frac{\alpha-\beta}{2}$:
 
-$$y_{\mathrm{total}} = 2A\cos\left(\frac◆LB◆\Delta\phi◆RB◆◆LB◆2◆RB◆\right)\sin\left(\omega t + \frac◆LB◆\Delta\phi◆RB◆◆LB◆2◆RB◆\right)$$
+$$y_{\mathrm{total}} = 2A\cos\left(\frac{\Delta\phi}{2}\right)\sin\left(\omega t + \frac{\Delta\phi}{2}\right)$$
 
 The resultant amplitude is:
 
-$$A_{\mathrm{resultant}} = 2A\left|\cos\frac◆LB◆\Delta\phi◆RB◆◆LB◆2◆RB◆\right|$$
+$$A_{\mathrm{resultant}} = 2A\left|\cos\frac{\Delta\phi}{2}\right|$$
 
 - **Constructive interference**:
   $\Delta\phi = 0, 2\pi, 4\pi, \ldots \implies A_{\mathrm{resultant}} = 2A$
@@ -81,12 +81,12 @@ For two waves of wavelength $\lambda$ travelling to a point via paths of lengths
 
 **Phase difference:**
 
-$$\boxed{\Delta\phi = \frac◆LB◆2\pi◆RB◆◆LB◆\lambda◆RB◆\Delta x}$$
+$$\boxed{\Delta\phi = \frac{2\pi}{\lambda}\Delta x}$$
 
 **Derivation.** One extra wavelength $\lambda$ corresponds to a full cycle, i.e., a phase difference
 Of $2\pi$. By proportionality:
 
-$$\frac◆LB◆\Delta\phi◆RB◆◆LB◆2\pi◆RB◆ = \frac◆LB◆\Delta x◆RB◆◆LB◆\lambda◆RB◆ \implies \Delta\phi = \frac◆LB◆2\pi◆RB◆◆LB◆\lambda◆RB◆\Delta x$$
+$$\frac{\Delta\phi}{2\pi} = \frac{\Delta x}{\lambda} \implies \Delta\phi = \frac{2\pi}{\lambda}\Delta x$$
 
 $\square$
 
@@ -147,11 +147,11 @@ Where $w$ is the distance from the central maximum to the $n$-th bright fringe. 
 
 $$s \cdot \frac{w}{D} = n\lambda$$
 
-$$\boxed{w = \frac◆LB◆n\lambda D◆RB◆◆LB◆s◆RB◆}$$
+$$\boxed{w = \frac{n\lambda D}{s}}$$
 
 The **fringe spacing** (distance between adjacent bright fringes) is:
 
-$$\boxed{\Delta w = \frac◆LB◆\lambda D◆RB◆◆LB◆s◆RB◆}$$
+$$\boxed{\Delta w = \frac{\lambda D}{s}}$$
 
 **Intuition.** Larger wavelength means wider fringes. Greater slit separation means narrower
 Fringes. Greater screen distance means wider fringes. The pattern scales linearly with all three
@@ -176,7 +176,7 @@ Light of wavelength 590 nm passes through double slits separated by 0.50 mm onto
 Away. Calculate the fringe spacing.
 
 **Answer.**
-$\Delta w = \frac◆LB◆\lambda D◆RB◆◆LB◆s◆RB◆ = \frac◆LB◆590 \times 10^{-9} \times 1.5◆RB◆◆LB◆0.50 \times 10^{-3}◆RB◆ = \frac◆LB◆8.85 \times 10^{-7}◆RB◆◆LB◆5.0 \times 10^{-4}◆RB◆ = 1.77 \times 10^{-3}$
+$\Delta w = \frac{\lambda D}{s} = \frac{590 \times 10^{-9} \times 1.5}{0.50 \times 10^{-3}} = \frac{8.85 \times 10^{-7}}{5.0 \times 10^{-4}} = 1.77 \times 10^{-3}$
 M $= 1.77$ mm.
 
 </details>
@@ -203,7 +203,7 @@ Destructive interference from non-adjacent pairs suppresses the background).
 
 **Maximum number of orders.** Since $|\sin\theta| \leq 1$:
 
-$$|n| \leq \frac◆LB◆d◆RB◆◆LB◆\lambda◆RB◆$$
+$$|n| \leq \frac{d}{\lambda}$$
 
 The highest order visible is $n_{\max} = \lfloor d/\lambda \rfloor$ (the greatest integer less than
 Or equal to $d/\lambda$).
@@ -241,7 +241,7 @@ By superposition:
 $$y = y_1 + y_2 = A[\sin(kx - \omega t) + \sin(kx + \omega t)]$$
 
 Using
-$\sin\alpha + \sin\beta = 2\sin\frac◆LB◆\alpha+\beta◆RB◆◆LB◆2◆RB◆\cos\frac◆LB◆\alpha-\beta◆RB◆◆LB◆2◆RB◆$:
+$\sin\alpha + \sin\beta = 2\sin\frac{\alpha+\beta}{2}\cos\frac{\alpha-\beta}{2}$:
 
 $$y = 2A\sin(kx)\cos(\omega t)$$
 
@@ -263,11 +263,11 @@ Occurring midway between adjacent nodes.
 
 **Nodes** are points of zero amplitude at all times. From $A(x) = 0$:
 
-$$\sin(kx) = 0 \implies kx = n\pi \implies x = \frac◆LB◆n\lambda◆RB◆◆LB◆2◆RB◆, \quad n = 0, 1, 2, \ldots$$
+$$\sin(kx) = 0 \implies kx = n\pi \implies x = \frac{n\lambda}{2}, \quad n = 0, 1, 2, \ldots$$
 
 **Antinodes** are points of maximum amplitude. From $|\sin(kx)| = 1$:
 
-$$kx = (n + \tfrac{1}{2})\pi \implies x = \frac◆LB◆(2n+1)\lambda◆RB◆◆LB◆4◆RB◆, \quad n = 0, 1, 2, \ldots$$
+$$kx = (n + \tfrac{1}{2})\pi \implies x = \frac{(2n+1)\lambda}{4}, \quad n = 0, 1, 2, \ldots$$
 
 The distance between adjacent nodes is $\lambda/2$. The distance between a node and the nearest
 Antinode is $\lambda/4$.
@@ -341,7 +341,7 @@ In Young's double slit experiment, the slits are 0.40 mm apart and the screen is
 Fringe spacing is measured as 2.8 mm. Calculate the wavelength of the light.
 
 **Answer.**
-$\lambda = \frac◆LB◆s \cdot \Delta w◆RB◆◆LB◆D◆RB◆ = \frac◆LB◆0.40 \times 10^{-3} \times 2.8 \times 10^{-3}◆RB◆◆LB◆2.0◆RB◆ = \frac◆LB◆1.12 \times 10^{-6}◆RB◆◆LB◆2.0◆RB◆ = 5.6 \times 10^{-7}$
+$\lambda = \frac{s \cdot \Delta w}{D} = \frac{0.40 \times 10^{-3} \times 2.8 \times 10^{-3}}{2.0} = \frac{1.12 \times 10^{-6}}{2.0} = 5.6 \times 10^{-7}$
 M $= 560$ nm.
 
 <b>If you get this wrong, revise:</b>
@@ -355,7 +355,7 @@ A diffraction grating has 500 lines per mm. Light of wavelength 600 nm is incide
 Calculate the angle of the second-order maximum.
 
 **Answer.** $d = 1/500$ mm $= 2.0 \times 10^{-6}$ m. $d\sin\theta = 2\lambda$.
-$\sin\theta = \frac◆LB◆2 \times 600 \times 10^{-9}◆RB◆◆LB◆2.0 \times 10^{-6}◆RB◆ = \frac◆LB◆1.2 \times 10^{-6}◆RB◆◆LB◆2.0 \times 10^{-6}◆RB◆ = 0.60$.
+$\sin\theta = \frac{2 \times 600 \times 10^{-9}}{2.0 \times 10^{-6}} = \frac{1.2 \times 10^{-6}}{2.0 \times 10^{-6}} = 0.60$.
 $\theta = \arcsin(0.60) = 36.9^\circ$.
 
 <b>If you get this wrong, revise:</b> [Diffraction Gratings](#4-diffraction-gratings)
@@ -381,7 +381,7 @@ Wave speed on the string, (b) the frequency of the third harmonic.
 A pipe of length 0.85 m is closed at one end. The speed of sound is 340 m s$^{-1}$. Calculate the
 Frequency of the first two harmonics.
 
-**Answer.** $f_1 = \frac{v}{4L} = \frac◆LB◆340◆RB◆◆LB◆4 \times 0.85◆RB◆ = \frac{340}{3.4} = 100$ Hz.
+**Answer.** $f_1 = \frac{v}{4L} = \frac{340}{4 \times 0.85} = \frac{340}{3.4} = 100$ Hz.
 
 The next harmonic is the 3rd: $f_3 = 3f_1 = 300$ Hz. (No 2nd harmonic exists for a closed pipe.)
 
@@ -425,11 +425,11 @@ $y_2 = A\sin(kx + \omega t)$.
 **Answer.** $y = y_1 + y_2 = A[\sin(kx - \omega t) + \sin(kx + \omega t)]$.
 
 Using the identity
-$\sin\alpha + \sin\beta = 2\sin\frac◆LB◆\alpha+\beta◆RB◆◆LB◆2◆RB◆\cos\frac◆LB◆\alpha-\beta◆RB◆◆LB◆2◆RB◆$:
+$\sin\alpha + \sin\beta = 2\sin\frac{\alpha+\beta}{2}\cos\frac{\alpha-\beta}{2}$:
 
 $\alpha = kx - \omega t$, $\beta = kx + \omega t$.
 
-$\frac◆LB◆\alpha + \beta◆RB◆◆LB◆2◆RB◆ = kx$, $\frac◆LB◆\alpha - \beta◆RB◆◆LB◆2◆RB◆ = -\omega t$.
+$\frac{\alpha + \beta}{2} = kx$, $\frac{\alpha - \beta}{2} = -\omega t$.
 
 $y = 2A\sin(kx)\cos(-\omega t) = 2A\sin(kx)\cos(\omega t)$ (since $\cos$ is even).
 
@@ -444,7 +444,7 @@ In a Young's double slit experiment using light of wavelength 550 nm, the fringe
 1.5 m away is 1.1 mm. Calculate the slit separation.
 
 **Answer.**
-$s = \frac◆LB◆\lambda D◆RB◆◆LB◆\Delta w◆RB◆ = \frac◆LB◆550 \times 10^{-9} \times 1.5◆RB◆◆LB◆1.1 \times 10^{-3}◆RB◆ = \frac◆LB◆8.25 \times 10^{-7}◆RB◆◆LB◆1.1 \times 10^{-3}◆RB◆ = 7.5 \times 10^{-4}$
+$s = \frac{\lambda D}{\Delta w} = \frac{550 \times 10^{-9} \times 1.5}{1.1 \times 10^{-3}} = \frac{8.25 \times 10^{-7}}{1.1 \times 10^{-3}} = 7.5 \times 10^{-4}$
 M $= 0.75$ mm.
 
 <b>If you get this wrong, revise:</b>
@@ -458,7 +458,7 @@ A string of length 0.60 m vibrates at its fourth harmonic at 400 Hz. Find the wa
 Wavelength of the fourth harmonic.
 
 **Answer.** $f_4 = \frac{4v}{2L} = \frac{2v}{L}$.
-$v = \frac{f_4 L}{2} = \frac◆LB◆400 \times 0.60◆RB◆◆LB◆2◆RB◆ = 120$ m s$^{-1}$.
+$v = \frac{f_4 L}{2} = \frac{400 \times 0.60}{2} = 120$ m s$^{-1}$.
 
 $\lambda_4 = 2L/4 = L/2 = 0.30$ m.
 
@@ -493,11 +493,11 @@ The second order, calculate the angular range subtended by the visible spectrum.
 **Answer.** $d = 1/400$ mm $= 2.5 \times 10^{-6}$ m. For $n = 2$:
 
 For 400 nm:
-$\sin\theta = \frac◆LB◆2 \times 400 \times 10^{-9}◆RB◆◆LB◆2.5 \times 10^{-6}◆RB◆ = 0.320$
+$\sin\theta = \frac{2 \times 400 \times 10^{-9}}{2.5 \times 10^{-6}} = 0.320$
 $\theta = 18.7^\circ$.
 
 For 700 nm:
-$\sin\theta = \frac◆LB◆2 \times 700 \times 10^{-9}◆RB◆◆LB◆2.5 \times 10^{-6}◆RB◆ = 0.560$
+$\sin\theta = \frac{2 \times 700 \times 10^{-9}}{2.5 \times 10^{-6}} = 0.560$
 $\theta = 34.1^\circ$.
 
 Angular range $= 34.1° - 18.7° = 15.4^\circ$.
@@ -514,7 +514,7 @@ Angular range $= 34.1° - 18.7° = 15.4^\circ$.
 Screen $2.0$ m away. Find the distance from the central maximum to the fifth bright fringe.
 
 **Answer.**
-$w = \frac◆LB◆n\lambda D◆RB◆◆LB◆s◆RB◆ = \frac◆LB◆5 \times 480 \times 10^{-9} \times 2.0◆RB◆◆LB◆0.80 \times 10^{-3}◆RB◆ = \frac◆LB◆4.80 \times 10^{-6}◆RB◆◆LB◆8.0 \times 10^{-4}◆RB◆ = 6.0 \times 10^{-3}$
+$w = \frac{n\lambda D}{s} = \frac{5 \times 480 \times 10^{-9} \times 2.0}{0.80 \times 10^{-3}} = \frac{4.80 \times 10^{-6}}{8.0 \times 10^{-4}} = 6.0 \times 10^{-3}$
 M $= 6.0$ mm.
 
 ### 6.2 Finding the Position of a Minimum
@@ -570,7 +570,7 @@ Than red light ($\lambda \approx 700$ nm).
 Two sources are **coherent** if their phase difference $\Delta\phi$ is constant in time. The
 **coherence length** is the maximum path difference over which interference can be observed:
 
-$$L_c = \frac◆LB◆\lambda^2◆RB◆◆LB◆\Delta\lambda◆RB◆$$
+$$L_c = \frac{\lambda^2}{\Delta\lambda}$$
 
 Where $\Delta\lambda$ is the bandwidth of the source. A narrow-band source (small $\Delta\lambda$)
 Has a long coherence length.
@@ -593,7 +593,7 @@ Slits act as secondary coherent sources.
 The **angular dispersion** of a grating is $d\theta/d\lambda = n/(d\cos\theta)$. The **resolving
 Power** is:
 
-$$R = \frac◆LB◆\lambda◆RB◆◆LB◆\Delta\lambda◆RB◆ = nN$$
+$$R = \frac{\lambda}{\Delta\lambda} = nN$$
 
 Where $N$ is the total number of illuminated slits.
 
@@ -682,7 +682,7 @@ A stationary wave is formed on a string of length $0.80$ m with wave speed $320$
 Two waves of the same frequency meet at a point. Wave $A$ has amplitude $5.0$ mm and wave $B$ has amplitude $3.0$ mm. The phase difference is $\pi/3$ radians. Calculate the resultant amplitude.
 
 **Answer.**
-$A_R = \sqrt◆LB◆A^2 + B^2 + 2AB\cos\Delta\phi◆RB◆ = \sqrt◆LB◆25 + 9 + 2 \times 5 \times 3 \times \cos(\pi/3)◆RB◆ = \sqrt{25 + 9 + 15} = \sqrt{49} = 7.0$
+$A_R = \sqrt{A^2 + B^2 + 2AB\cos\Delta\phi} = \sqrt{25 + 9 + 2 \times 5 \times 3 \times \cos(\pi/3)} = \sqrt{25 + 9 + 15} = \sqrt{49} = 7.0$
 Mm.
 
 <b>If you get this wrong, revise:</b>

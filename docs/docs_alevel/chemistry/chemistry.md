@@ -132,10 +132,10 @@ four boards.
 | Topic            | Key Equations                                                                                                                                                                                                                      |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Quantitative     | $n = \frac{m}{M}$$c = \frac{n}{V}$$pV = nRT$$\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}$                                                                                                                                            |
-| Acids/Bases      | $\mathrm{pH} = -\log[\mathrm{H}^+]$$K_a = \frac◆LB◆[\mathrm{H}^+][\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆$$K_w = [\mathrm{H}^+][\mathrm{OH}^-]$$\mathrm{pH} = \mathrm{p}K_a + \log\frac◆LB◆[\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆$ |
-| Equilibrium      | $K_c = \frac◆LB◆\prod[\mathrm{products}]^a◆RB◆◆LB◆\prod[\mathrm{reactants}]^b◆RB◆$$K_p = \frac◆LB◆\prod p_i^{a_i}◆RB◆◆LB◆\prod p_j^{b_j}◆RB◆$$K_p = K_c(RT)^{\Delta n}$                                                            |
+| Acids/Bases      | $\mathrm{pH} = -\log[\mathrm{H}^+]$$K_a = \frac{[\mathrm{H}^+][\mathrm{A}^-]}{[\mathrm{HA}]}$$K_w = [\mathrm{H}^+][\mathrm{OH}^-]$$\mathrm{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{A}^-]}{[\mathrm{HA}]}$ |
+| Equilibrium      | $K_c = \frac{\prod[\mathrm{products}]^a}{\prod[\mathrm{reactants}]^b}$$K_p = \frac{\prod p_i^{a_i}}{\prod p_j^{b_j}}$$K_p = K_c(RT)^{\Delta n}$                                                            |
 | Thermodynamics   | $\Delta G = \Delta H - T\Delta S$$\Delta G^\circ = -RT\ln K$$q = mc\Delta T$                                                                                                                                                       |
-| Kinetics         | $\text{rate} = k[\mathrm{A}]^m[\mathrm{B}]^n$$k = Ae^{-E_a/RT}$$\ln k = -\frac{E_a}{R}\cdot\frac{1}{T} + \ln A$$t_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆k◆RB◆$ (first-order)                                                               |
+| Kinetics         | $\text{rate} = k[\mathrm{A}]^m[\mathrm{B}]^n$$k = Ae^{-E_a/RT}$$\ln k = -\frac{E_a}{R}\cdot\frac{1}{T} + \ln A$$t_{1/2} = \frac{\ln 2}{k}$ (first-order)                                                               |
 | Electrochemistry | $E^\circ_\mathrm{cell} = E^\circ_\mathrm{cathode} - E^\circ_\mathrm{anode}$$\Delta G^\circ = -nFE^\circ$$Q = It$$n = \frac{Q}{F}$$E = E^\circ - \frac{RT}{nF}\ln Q$                                                                |
 | Born-Haber       | $\Delta H_f = \Delta H_\mathrm{at} + \sum \mathrm{IE} + \Delta H_\mathrm{at}(\text{anion}) + \sum \mathrm{EA} + \Delta H_\mathrm{lat}$                                                                                             |
 
@@ -204,14 +204,14 @@ assessed:
 - **Plotting data:** Choose appropriate scales, label axes with quantities and units.
 - **Drawing lines of best fit:** For linear relationships, draw the best straight line through the
   data points.
-- **Determining the gradient:** $\text{gradient} = \frac◆LB◆\Delta y◆RB◆◆LB◆\Delta x◆RB◆$. For an
+- **Determining the gradient:** $\text{gradient} = \frac{\Delta y}{\Delta x}$. For an
   Arrhenius plot ($\ln k$ vs $1/T$), the gradient is $-E_a/R$.
 - **Determining the y-intercept:** The intercept on a $\ln k$ vs $1/T$ plot gives $\ln A$.
 
 ### Error Analysis
 
 - **Percentage error:**
-  $\frac◆LB◆\text{absolute error}◆RB◆◆LB◆\text{measured value}◆RB◆ \times 100\%$.
+  $\frac{\text{absolute error}}{\text{measured value}} \times 100\%$.
 - **Propagation of errors:** For multiplication/division, add percentage errors. For
   addition/subtraction, add absolute errors.
 - **Significant figures:** Final answers should be given to the same number of significant figures
@@ -226,7 +226,7 @@ $100\,\mathrm{kPa}$.
 
 $$n = \frac{m}{M} = \frac{2.50}{44.01} = 0.0568\,\mathrm{mol}$$
 
-$$V = \frac{nRT}{p} = \frac◆LB◆0.0568 \times 8.314 \times 298◆RB◆◆LB◆100000◆RB◆ = \frac{140.7}{100000} = 1.41 \times 10^{-3}\,\mathrm{m}^3 = 1.41\,\mathrm{dm}^3$$
+$$V = \frac{nRT}{p} = \frac{0.0568 \times 8.314 \times 298}{100000} = \frac{140.7}{100000} = 1.41 \times 10^{-3}\,\mathrm{m}^3 = 1.41\,\mathrm{dm}^3$$
 
 #### Worked Example 2: Titration Calculation
 
@@ -240,7 +240,7 @@ $$n(\mathrm{HCl}) = c \times V = 0.150 \times 0.0224 = 3.36 \times 10^{-3}\,\mat
 
 From the 1:1 stoichiometry: $n(\mathrm{NaOH}) = 3.36 \times 10^{-3}\,\mathrm{mol}$
 
-$$c(\mathrm{NaOH}) = \frac{n}{V} = \frac◆LB◆3.36 \times 10^{-3}◆RB◆◆LB◆0.0250◆RB◆ = 0.134\,\mathrm{mol\,dm^{-3}}$$
+$$c(\mathrm{NaOH}) = \frac{n}{V} = \frac{3.36 \times 10^{-3}}{0.0250} = 0.134\,\mathrm{mol\,dm^{-3}}$$
 
 #### Worked Example 3: Enthalpy of Neutralisation
 
@@ -269,20 +269,20 @@ $1.32 \times 10^{-2}\,\mathrm{s^{-1}}$ at $318\,\mathrm{K}$. Calculate the activ
 
 $$\ln\frac{k_2}{k_1} = -\frac{E_a}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right)$$
 
-$$\ln\frac◆LB◆1.32 \times 10^{-2}◆RB◆◆LB◆3.46 \times 10^{-3}◆RB◆ = -\frac{E_a}{8.314}\left(\frac{1}{318} - \frac{1}{298}\right)$$
+$$\ln\frac{1.32 \times 10^{-2}}{3.46 \times 10^{-3}} = -\frac{E_a}{8.314}\left(\frac{1}{318} - \frac{1}{298}\right)$$
 
 $$\ln(3.82) = -\frac{E_a}{8.314}(0.003145 - 0.003356)$$
 
 $$1.340 = -\frac{E_a}{8.314}(-2.11 \times 10^{-4})$$
 
-$$E_a = \frac◆LB◆1.340◆RB◆◆LB◆2.11 \times 10^{-4}◆RB◆ \times 8.314 = 52800\,\mathrm{J\,mol^{-1}} = 52.8\,\mathrm{kJ\,mol^{-1}}$$
+$$E_a = \frac{1.340}{2.11 \times 10^{-4}} \times 8.314 = 52800\,\mathrm{J\,mol^{-1}} = 52.8\,\mathrm{kJ\,mol^{-1}}$$
 
 #### Worked Example 5: pH and Buffer Calculations
 
 Calculate the pH of a buffer solution containing $0.100\,\mathrm{mol\,dm^{-3}}$ ethanoic acid
 ($\mathrm{p}K_a = 4.76$) and $0.150\,\mathrm{mol\,dm^{-3}}$ sodium ethanoate.
 
-$$\mathrm{pH} = \mathrm{p}K_a + \log\frac◆LB◆[\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆ = 4.76 + \log\frac{0.150}{0.100} = 4.76 + 0.176 = 4.94$$
+$$\mathrm{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{A}^-]}{[\mathrm{HA}]} = 4.76 + \log\frac{0.150}{0.100} = 4.76 + 0.176 = 4.94$$
 
 The buffer is effective within $\pm 1\,\mathrm{pH}$ unit of $\mathrm{p}K_a$ (i.e. PH 3.76 to 5.76).
 

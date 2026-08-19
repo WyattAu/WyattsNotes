@@ -81,15 +81,15 @@ Since the path difference is an integer number of wavelengths ($n = 2$), $P$ is 
 
 The amplitude at $P$ is $A = 2A_0$ (double slit maximum).
 
-(b) Phase difference: $\phi = \frac◆LB◆2\pi \Delta x◆RB◆◆LB◆\lambda◆RB◆$
+(b) Phase difference: $\phi = \frac{2\pi \Delta x}{\lambda}$
 
 The resultant amplitude from two waves of amplitude $A_0$ with phase difference $\phi$:
 
-$$A = \sqrt◆LB◆A_0^2 + A_0^2 + 2A_0^2\cos\phi◆RB◆ = A_0\sqrt◆LB◆2(1 + \cos\phi)◆RB◆ = 2A_0\left|\cos\frac◆LB◆\phi◆RB◆◆LB◆2◆RB◆\right|$$
+$$A = \sqrt{A_0^2 + A_0^2 + 2A_0^2\cos\phi} = A_0\sqrt{2(1 + \cos\phi)} = 2A_0\left|\cos\frac{\phi}{2}\right|$$
 
 In terms of path difference: $\phi = 2\pi\Delta x/\lambda$
 
-$$A = 2A_0\left|\cos\frac◆LB◆\pi\Delta x◆RB◆◆LB◆\lambda◆RB◆\right|$$
+$$A = 2A_0\left|\cos\frac{\pi\Delta x}{\lambda}\right|$$
 
 (c) Intensity is proportional to amplitude squared: $I \propto A^2$
 
@@ -166,8 +166,8 @@ Take $c = 3.00 \times 10^8\,\text{m}\,\text{s}^{-1}$.
 
 (a) For a source moving away from the observer:
 
-$$\frac◆LB◆\Delta\lambda◆RB◆◆LB◆\lambda◆RB◆ = \frac{v}{c}$$
-$$\Delta\lambda = \frac◆LB◆3.0 \times 10^6◆RB◆◆LB◆3.00 \times 10^8◆RB◆ \times 656 = 0.010 \times 656 = 6.56\,\text{nm}$$
+$$\frac{\Delta\lambda}{\lambda} = \frac{v}{c}$$
+$$\Delta\lambda = \frac{3.0 \times 10^6}{3.00 \times 10^8} \times 656 = 0.010 \times 656 = 6.56\,\text{nm}$$
 
 Observed wavelength: $\lambda' = 656 + 6.56 = 662.56 \approx 663\,\text{nm}$ (redshifted)
 
@@ -177,8 +177,8 @@ The frequency decreases by $1.0\%$.
 
 (c) The probe approaches Jupiter, so the observed frequency is higher:
 
-$$f' = f\left(\frac{c}{c - v}\right) = 8.4 \times 10^9 \times \frac◆LB◆3.00 \times 10^8◆RB◆◆LB◆3.00 \times 10^8 - 2.0 \times 10^4◆RB◆$$
-$$= 8.4 \times 10^9 \times \frac◆LB◆3.00 \times 10^8◆RB◆◆LB◆2.9998 \times 10^8◆RB◆ = 8.4 \times 10^9 \times 1.000067 = 8.4006 \times 10^9\,\text{Hz}$$
+$$f' = f\left(\frac{c}{c - v}\right) = 8.4 \times 10^9 \times \frac{3.00 \times 10^8}{3.00 \times 10^8 - 2.0 \times 10^4}$$
+$$= 8.4 \times 10^9 \times \frac{3.00 \times 10^8}{2.9998 \times 10^8} = 8.4 \times 10^9 \times 1.000067 = 8.4006 \times 10^9\,\text{Hz}$$
 
 The shift is $\Delta f = 5.6 \times 10^5\,\text{Hz} = 560\,\text{kHz}$.
 
@@ -200,10 +200,10 @@ wavelength of the fundamental mode.
 
 **Solution:**
 
-(a) Wave speed: $v = \sqrt◆LB◆T/\mu◆RB◆$Where
+(a) Wave speed: $v = \sqrt{T/\mu}$Where
 $\mu = m/l = 4.0 \times 10^{-3}/0.80 = 5.0 \times 10^{-3}\,\text{kg}\,\text{m}^{-1}$
 
-$$v = \sqrt◆LB◆25/(5.0 \times 10^{-3})◆RB◆ = \sqrt{5000} = 70.7\,\text{m}\,\text{s}^{-1}$$
+$$v = \sqrt{25/(5.0 \times 10^{-3})} = \sqrt{5000} = 70.7\,\text{m}\,\text{s}^{-1}$$
 
 (b) For a string fixed at both ends, $f_n = nv/(2l)$:
 
@@ -248,7 +248,7 @@ earthquake.
 
 Critical angle (for TIR from mantle to crust):
 
-$$\sin\theta_c = \frac◆LB◆v_{\text{crust}}◆RB◆◆LB◆v_{\text{mantle}}◆RB◆ = \frac{6.0}{10.0} = 0.60$$
+$$\sin\theta_c = \frac{v_{\text{crust}}}{v_{\text{mantle}}} = \frac{6.0}{10.0} = 0.60$$
 $$\theta_c = 36.9^\circ$$
 
 For the direct path, the wave enters the mantle at some angle. Since the wave goes from a slower

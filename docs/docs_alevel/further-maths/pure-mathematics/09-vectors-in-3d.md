@@ -76,7 +76,7 @@ $$|\mathbf{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2}$$
 
 **Definition.** The **direction cosines** of $\mathbf{a}$ are
 
-$$\cos\alpha = \frac◆LB◆a_1◆RB◆◆LB◆|\mathbf{a}|◆RB◆, \quad \cos\beta = \frac◆LB◆a_2◆RB◆◆LB◆|\mathbf{a}|◆RB◆, \quad \cos\gamma = \frac◆LB◆a_3◆RB◆◆LB◆|\mathbf{a}|◆RB◆$$
+$$\cos\alpha = \frac{a_1}{|\mathbf{a}|}, \quad \cos\beta = \frac{a_2}{|\mathbf{a}|}, \quad \cos\gamma = \frac{a_3}{|\mathbf{a}|}$$
 
 Where $\alpha$, $\beta$, $\gamma$ are the angles $\mathbf{a}$ makes with the $x$-, $y$-, $z$-axes.
 
@@ -256,7 +256,7 @@ $$\boxed{3x + 4y + 5z = 13}$$
 
 The angle between two planes with normals $\mathbf{n}_1$ and $\mathbf{n}_2$ is
 
-$$\boxed{\cos\theta = \frac◆LB◆|\mathbf{n}_1\cdot\mathbf{n}_2|◆RB◆◆LB◆|\mathbf{n}_1||\mathbf{n}_2|◆RB◆}$$
+$$\boxed{\cos\theta = \frac{|\mathbf{n}_1\cdot\mathbf{n}_2|}{|\mathbf{n}_1||\mathbf{n}_2|}}$$
 
 The acute angle is found by taking the absolute value.
 
@@ -265,7 +265,7 @@ The acute angle is found by taking the absolute value.
 The angle $\phi$ between a line with direction $\mathbf{d}$ and a plane with normal $\mathbf{n}$
 Satisfies:
 
-$$\sin\phi = \frac◆LB◆|\mathbf{d}\cdot\mathbf{n}|◆RB◆◆LB◆|\mathbf{d}||\mathbf{n}|◆RB◆$$
+$$\sin\phi = \frac{|\mathbf{d}\cdot\mathbf{n}|}{|\mathbf{d}||\mathbf{n}|}$$
 
 Equivalently, if $\alpha$ is the angle between $\mathbf{d}$ and $\mathbf{n}$Then
 $\phi = 90° - \alpha$.
@@ -286,11 +286,11 @@ To find the line of intersection of $a_1 x + b_1 y + c_1 z = d_1$ and $a_2 x + b
 **Theorem.** The perpendicular distance from point $P$ with position vector $\mathbf{p}$ to the
 Plane $\mathbf{r}\cdot\mathbf{n} = d$ is
 
-$$\boxed{D = \frac◆LB◆|\mathbf{p}\cdot\mathbf{n} - d|◆RB◆◆LB◆|\mathbf{n}|◆RB◆}$$
+$$\boxed{D = \frac{|\mathbf{p}\cdot\mathbf{n} - d|}{|\mathbf{n}|}}$$
 
 In Cartesian form, for plane $ax + by + cz = d$ and point $(x_0, y_0, z_0)$:
 
-$$\boxed{D = \frac◆LB◆|ax_0 + by_0 + cz_0 - d|◆RB◆◆LB◆\sqrt{a^2+b^2+c^2}◆RB◆}$$
+$$\boxed{D = \frac{|ax_0 + by_0 + cz_0 - d|}{\sqrt{a^2+b^2+c^2}}}$$
 
 ### Proof of the distance formula
 
@@ -305,13 +305,13 @@ $$D = |\mathbf{p}\cdot\hat{\mathbf{n}} - p|$$
 If the plane is given as $\mathbf{r}\cdot\mathbf{n} = d$ (where $\mathbf{n}$ is not necessarily a
 Unit vector), then $\hat{\mathbf{n}} = \mathbf{n}/|\mathbf{n}|$ and $p = d/|\mathbf{n}|$:
 
-$$D = \left|\mathbf{p}\cdot\frac◆LB◆\mathbf{n}◆RB◆◆LB◆|\mathbf{n}|◆RB◆ - \frac◆LB◆d◆RB◆◆LB◆|\mathbf{n}|◆RB◆\right| = \frac◆LB◆|\mathbf{p}\cdot\mathbf{n} - d|◆RB◆◆LB◆|\mathbf{n}|◆RB◆$$
+$$D = \left|\mathbf{p}\cdot\frac{\mathbf{n}}{|\mathbf{n}|} - \frac{d}{|\mathbf{n}|}\right| = \frac{|\mathbf{p}\cdot\mathbf{n} - d|}{|\mathbf{n}|}$$
 
 $\square$
 
 **Example.** Find the distance from $P(1, 2, 3)$ to the plane $2x - y + 2z = 5$.
 
-$D = \dfrac◆LB◆|2(1)-1(2)+2(3)-5|◆RB◆◆LB◆\sqrt{4+1+4}◆RB◆ = \dfrac◆LB◆|2-2+6-5|◆RB◆◆LB◆3◆RB◆ = \dfrac{1}{3}$.
+$D = \dfrac{|2(1)-1(2)+2(3)-5|}{\sqrt{4+1+4}} = \dfrac{|2-2+6-5|}{3} = \dfrac{1}{3}$.
 
 <hr />
 
@@ -337,11 +337,11 @@ $|\mathbf{b}\times\mathbf{c}|$ (from Section 4.3).
 The height is the component of $\mathbf{a}$ perpendicular to the base, which is the projection of
 $\mathbf{a}$ onto the direction of $\mathbf{b}\times\mathbf{c}$:
 
-$$\mathrm{height} = |\mathbf{a}|\cos\phi = \frac◆LB◆\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})◆RB◆◆LB◆|\mathbf{b}\times\mathbf{c}|◆RB◆$$
+$$\mathrm{height} = |\mathbf{a}|\cos\phi = \frac{\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})}{|\mathbf{b}\times\mathbf{c}|}$$
 
 Where $\phi$ is the angle between $\mathbf{a}$ and $\mathbf{b}\times\mathbf{c}$.
 
-$$V = \mathrm{base} \times \mathrm{height} = |\mathbf{b}\times\mathbf{c}| \cdot \frac◆LB◆\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})◆RB◆◆LB◆|\mathbf{b}\times\mathbf{c}|◆RB◆ = \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})$$
+$$V = \mathrm{base} \times \mathrm{height} = |\mathbf{b}\times\mathbf{c}| \cdot \frac{\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})}{|\mathbf{b}\times\mathbf{c}|} = \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})$$
 
 Taking the absolute value to get a positive volume:
 
@@ -368,7 +368,7 @@ $\overrightarrow{AB}\cdot(\overrightarrow{AC}\times\overrightarrow{AD}) = 0$.
 The shortest distance between two skew lines $\mathbf{r}_1 = \mathbf{a}_1 + \lambda\mathbf{d}_1$ and
 $\mathbf{r}_2 = \mathbf{a}_2 + \mu\mathbf{d}_2$ is
 
-$$\boxed{D = \frac◆LB◆|(\mathbf{a}_2 - \mathbf{a}_1)\cdot(\mathbf{d}_1\times\mathbf{d}_2)|◆RB◆◆LB◆|\mathbf{d}_1\times\mathbf{d}_2|◆RB◆}$$
+$$\boxed{D = \frac{|(\mathbf{a}_2 - \mathbf{a}_1)\cdot(\mathbf{d}_1\times\mathbf{d}_2)|}{|\mathbf{d}_1\times\mathbf{d}_2|}}$$
 
 **Intuition.** The shortest distance is measured along the common perpendicular. The direction of
 The common perpendicular is $\mathbf{d}_1 \times \mathbf{d}_2$. The formula projects the vector
@@ -385,9 +385,9 @@ Between any point on each line onto this perpendicular direction.
 | Line                  | $\mathbf{r} = \mathbf{a} + \lambda\mathbf{d}$                                                          |
 | Plane (vector)        | $\mathbf{r}\cdot\mathbf{n} = d$                                                                        |
 | Plane (Cartesian)     | $ax + by + cz = d$                                                                                     |
-| Point-plane distance  | $D = \dfrac◆LB◆                                                                                        | \mathbf{p}\cdot\mathbf{n} - d                                        | ◆RB◆◆LB◆ | \mathbf{n}                       | ◆RB◆$       |
+| Point-plane distance  | $D = \dfrac{                                                                                        | \mathbf{p}\cdot\mathbf{n} - d                                        | }{ | \mathbf{n}                       | }$       |
 | Parallelepiped volume | $V =                                                                                                   | \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})                          | $        |
-| Skew line distance    | $D = \dfrac◆LB◆                                                                                        | (\mathbf{a}\_2-\mathbf{a}\_1)\cdot(\mathbf{d}\_1\times\mathbf{d}\_2) | ◆RB◆◆LB◆ | \mathbf{d}\_1\times\mathbf{d}\_2 | ◆RB◆$       |
+| Skew line distance    | $D = \dfrac{                                                                                        | (\mathbf{a}\_2-\mathbf{a}\_1)\cdot(\mathbf{d}\_1\times\mathbf{d}\_2) | }{ | \mathbf{d}\_1\times\mathbf{d}\_2 | }$       |
 
 <hr />
 
@@ -450,7 +450,7 @@ Find the distance from the point $P(3, 1, -2)$ to the plane $x + 2y - 2z = 6$.
 <details>
 <summary>Solution 3</summary>
 
-$D = \dfrac◆LB◆|3 + 2(1) - 2(-2) - 6|◆RB◆◆LB◆\sqrt{1+4+4}◆RB◆ = \dfrac◆LB◆|3+2+4-6|◆RB◆◆LB◆3◆RB◆ = \dfrac{3}{3} = 1$.
+$D = \dfrac{|3 + 2(1) - 2(-2) - 6|}{\sqrt{1+4+4}} = \dfrac{|3+2+4-6|}{3} = \dfrac{3}{3} = 1$.
 
 $\boxed{D = 1}$.
 
@@ -481,7 +481,7 @@ $|\mathbf{d}_1\times\mathbf{d}_2| = \sqrt{4+1+1} = \sqrt{6}$.
 
 $(\mathbf{a}_2-\mathbf{a}_1)\cdot(\mathbf{d}_1\times\mathbf{d}_2) = 1(-2)+(-1)(1)+3(1) = -2-1+3 = 0$.
 
-$D = \dfrac◆LB◆0◆RB◆◆LB◆\sqrt{6}◆RB◆ = 0$. The lines actually **intersect** (not skew).
+$D = \dfrac{0}{\sqrt{6}} = 0$. The lines actually **intersect** (not skew).
 
 **If you get this wrong, revise:** [Distance Between Skew Lines](#9-distance-between-two-skew-lines)
 — Section 9.
@@ -523,7 +523,7 @@ Find the angle between the planes $2x - y + z = 3$ and $x + y + 2z = 1$.
 $\mathbf{n}_1 = \begin{pmatrix}2\\-1\\1\end{pmatrix}$$|\mathbf{n}_1| = \sqrt{6}$.
 $\mathbf{n}_2 = \begin{pmatrix}1\\1\\2\end{pmatrix}$$|\mathbf{n}_2| = \sqrt{6}$.
 
-$\cos\theta = \dfrac◆LB◆|2-1+2|◆RB◆◆LB◆\sqrt{6}\cdot\sqrt{6}◆RB◆ = \dfrac{3}{6} = \dfrac{1}{2}$.
+$\cos\theta = \dfrac{|2-1+2|}{\sqrt{6}\cdot\sqrt{6}} = \dfrac{3}{6} = \dfrac{1}{2}$.
 
 $\theta = \boxed{60°}$.
 
@@ -608,9 +608,9 @@ And the plane $2x - y + 2z = 5$.
 $\mathbf{d} = \begin{pmatrix}3\\1\\-1\end{pmatrix}$
 $\mathbf{n} = \begin{pmatrix}2\\-1\\2\end{pmatrix}$.
 
-$\sin\phi = \dfrac◆LB◆|\mathbf{d}\cdot\mathbf{n}|◆RB◆◆LB◆|\mathbf{d}||\mathbf{n}|◆RB◆ = \dfrac◆LB◆|6-1-2|◆RB◆◆LB◆\sqrt{11}\sqrt{9}◆RB◆ = \dfrac◆LB◆3◆RB◆◆LB◆3\sqrt{11}◆RB◆ = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{11}◆RB◆$.
+$\sin\phi = \dfrac{|\mathbf{d}\cdot\mathbf{n}|}{|\mathbf{d}||\mathbf{n}|} = \dfrac{|6-1-2|}{\sqrt{11}\sqrt{9}} = \dfrac{3}{3\sqrt{11}} = \dfrac{1}{\sqrt{11}}$.
 
-$\phi = \arcsin\!\left(\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{11}◆RB◆\right) \approx \boxed{17.6°}$.
+$\phi = \arcsin\!\left(\dfrac{1}{\sqrt{11}}\right) \approx \boxed{17.6°}$.
 
 **If you get this wrong, revise:**
 [Angle Between Line and Plane](#65-angle-between-a-line-and-a-plane) — Section 6.5.
@@ -639,7 +639,7 @@ $|\mathbf{d}_1\times\mathbf{d}_2| = \sqrt{1+4+1} = \sqrt{6}$.
 
 $(\mathbf{a}_2-\mathbf{a}_1)\cdot(\mathbf{d}_1\times\mathbf{d}_2) = (-1)(-1)+1(2)+0(-1) = 1+2 = 3$.
 
-$D = \dfrac◆LB◆3◆RB◆◆LB◆\sqrt{6}◆RB◆ = \dfrac◆LB◆3\sqrt{6}◆RB◆◆LB◆6◆RB◆ = \boxed{\dfrac◆LB◆\sqrt{6}◆RB◆◆LB◆2◆RB◆}$.
+$D = \dfrac{3}{\sqrt{6}} = \dfrac{3\sqrt{6}}{6} = \boxed{\dfrac{\sqrt{6}}{2}}$.
 
 **If you get this wrong, revise:** [Distance Between Skew Lines](#9-distance-between-two-skew-lines)
 — Section 9.
@@ -658,16 +658,16 @@ $D = \dfrac◆LB◆3◆RB◆◆LB◆\sqrt{6}◆RB◆ = \dfrac◆LB◆3\sqrt{6}�
 
 $$P' = P - 2D\hat{\mathbf{n}}$$
 
-Where $D = \dfrac◆LB◆1+2+3-6◆RB◆◆LB◆\sqrt{3}◆RB◆ = 0$ and
-$\hat{\mathbf{n}} = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆(1, 1, 1)$.
+Where $D = \dfrac{1+2+3-6}{\sqrt{3}} = 0$ and
+$\hat{\mathbf{n}} = \dfrac{1}{\sqrt{3}}(1, 1, 1)$.
 
 Since $D = 0$The point $P$ lies on the plane, so its reflection is itself: $P' = (1, 2, 3)$.
 
 Let me use a point not on the plane. The reflection of $Q(0, 0, 0)$:
 
-$$D = \frac◆LB◆0 + 0 + 0 - 6◆RB◆◆LB◆\sqrt{3}◆RB◆ = -2\sqrt{3}$$
+$$D = \frac{0 + 0 + 0 - 6}{\sqrt{3}} = -2\sqrt{3}$$
 
-$$Q' = (0, 0, 0) - 2(-2\sqrt{3})\frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆(1, 1, 1) = (0, 0, 0) + 4(1, 1, 1) = (4, 4, 4)$$
+$$Q' = (0, 0, 0) - 2(-2\sqrt{3})\frac{1}{\sqrt{3}}(1, 1, 1) = (0, 0, 0) + 4(1, 1, 1) = (4, 4, 4)$$
 
 Check: the midpoint of $Q$ and $Q'$ is $(2, 2, 2)$Which satisfies $2+2+2 = 6$. Correct.
 
@@ -678,9 +678,9 @@ The plane $x - 2y + 2z = 5$.
 
 **Solution.** $\mathbf{d} = (3, 0, -1)$$\mathbf{n} = (1, -2, 2)$.
 
-$$\sin\phi = \frac◆LB◆|\mathbf{d}\cdot\mathbf{n}|◆RB◆◆LB◆|\mathbf{d}||\mathbf{n}|◆RB◆ = \frac◆LB◆|3 + 0 - 2|◆RB◆◆LB◆\sqrt{10}\sqrt{9}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆3\sqrt{10}◆RB◆$$
+$$\sin\phi = \frac{|\mathbf{d}\cdot\mathbf{n}|}{|\mathbf{d}||\mathbf{n}|} = \frac{|3 + 0 - 2|}{\sqrt{10}\sqrt{9}} = \frac{1}{3\sqrt{10}}$$
 
-$$\phi = \arcsin\!\left(\frac◆LB◆1◆RB◆◆LB◆3\sqrt{10}◆RB◆\right) \approx 6.1^\circ$$
+$$\phi = \arcsin\!\left(\frac{1}{3\sqrt{10}}\right) \approx 6.1^\circ$$
 
 ### Example 11.3: Volume of a tetrahedron using the scalar triple product
 
@@ -741,7 +741,7 @@ Since the scalar triple product is zero, the four points are coplanar. $\blacksq
 **Problem.** Find the projection of the vector $\mathbf{a} = (2, 1, -1)$ onto the plane
 $x + y + z = 1$.
 
-**Solution.** The unit normal is $\hat{\mathbf{n}} = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆(1, 1, 1)$.
+**Solution.** The unit normal is $\hat{\mathbf{n}} = \dfrac{1}{\sqrt{3}}(1, 1, 1)$.
 
 The projection of $\mathbf{a}$ onto the normal direction:
 
@@ -814,7 +814,7 @@ $\mathbf{a}_2 - \mathbf{a}_1 = (2, -1, 2)$.
 
 $(\mathbf{a}_2-\mathbf{a}_1)\cdot(\mathbf{d}_1\times\mathbf{d}_2) = 4 - 3 - 6 = -5$.
 
-$D = \dfrac◆LB◆|-5|◆RB◆◆LB◆\sqrt{22}◆RB◆ = \dfrac◆LB◆5◆RB◆◆LB◆\sqrt{22}◆RB◆ = \dfrac◆LB◆5\sqrt{22}◆RB◆◆LB◆22◆RB◆$.
+$D = \dfrac{|-5|}{\sqrt{22}} = \dfrac{5}{\sqrt{22}} = \dfrac{5\sqrt{22}}{22}$.
 
 </details>
 
@@ -853,7 +853,7 @@ $$|\mathbf{p}|^2 - 2\mathbf{a}\cdot\mathbf{p} + |\mathbf{a}|^2 = |\mathbf{p}|^2 
 $$2(\mathbf{b} - \mathbf{a})\cdot\mathbf{p} = |\mathbf{b}|^2 - |\mathbf{a}|^2$$
 
 This is the equation of a plane with normal $\mathbf{b} - \mathbf{a}$ (perpendicular to $AB$), which
-Passes through the midpoint $\dfrac◆LB◆\mathbf{a}+\mathbf{b}◆RB◆◆LB◆2◆RB◆$. This is the
+Passes through the midpoint $\dfrac{\mathbf{a}+\mathbf{b}}{2}$. This is the
 Perpendicular bisector. $\blacksquare$
 
 </details>
@@ -931,12 +931,12 @@ Representations of curves.
 | Scalar product           | $\mathbf{a}\cdot\mathbf{b} =                                                                                                  | \mathbf{a}                                                           |          | \mathbf{b}                       | \cos\theta = a_1b_1+a_2b_2+a_3b_3$ |
 | Vector product           | $\mathbf{a}\times\mathbf{b} = \begin{pmatrix}a_2b_3-a_3b_2\\a_3b_1-a_1b_3\\a_1b_2-a_2b_1\end{pmatrix}$                        |
 | Scalar triple product    | $[\mathbf{a},\mathbf{b},\mathbf{c}] = \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c}) = \det(\mathbf{a}\;\mathbf{b}\;\mathbf{c})$ |
-| Distance: point to plane | $D = \dfrac◆LB◆                                                                                                               | \mathbf{a}\cdot\mathbf{n} - d                                        | ◆RB◆◆LB◆ | \mathbf{n}                       | ◆RB◆$                              |
-| Distance: skew lines     | $D = \dfrac◆LB◆                                                                                                               | (\mathbf{a}\_2-\mathbf{a}\_1)\cdot(\mathbf{d}\_1\times\mathbf{d}\_2) | ◆RB◆◆LB◆ | \mathbf{d}\_1\times\mathbf{d}\_2 | ◆RB◆$                              |
-| Angle: line to plane     | $\sin\phi = \dfrac◆LB◆                                                                                                        | \mathbf{d}\cdot\mathbf{n}                                            | ◆RB◆◆LB◆ | \mathbf{d}                       |                                    | \mathbf{n}    | ◆RB◆$ |
-| Angle: two planes        | $\cos\theta = \dfrac◆LB◆                                                                                                      | \mathbf{n}\_1\cdot\mathbf{n}\_2                                      | ◆RB◆◆LB◆ | \mathbf{n}\_1                    |                                    | \mathbf{n}\_2 | ◆RB◆$ |
+| Distance: point to plane | $D = \dfrac{                                                                                                               | \mathbf{a}\cdot\mathbf{n} - d                                        | }{ | \mathbf{n}                       | }$                              |
+| Distance: skew lines     | $D = \dfrac{                                                                                                               | (\mathbf{a}\_2-\mathbf{a}\_1)\cdot(\mathbf{d}\_1\times\mathbf{d}\_2) | }{ | \mathbf{d}\_1\times\mathbf{d}\_2 | }$                              |
+| Angle: line to plane     | $\sin\phi = \dfrac{                                                                                                        | \mathbf{d}\cdot\mathbf{n}                                            | }{ | \mathbf{d}                       |                                    | \mathbf{n}    | }$ |
+| Angle: two planes        | $\cos\theta = \dfrac{                                                                                                      | \mathbf{n}\_1\cdot\mathbf{n}\_2                                      | }{ | \mathbf{n}\_1                    |                                    | \mathbf{n}\_2 | }$ |
 | Volume of tetrahedron    | $V = \dfrac{1}{6}                                                                                                             | [\mathbf{a},\mathbf{b},\mathbf{c}]                                   | $        |
-| Reflection in plane      | $P' = P - 2D\hat{\mathbf{n}}$ where $D = \dfrac◆LB◆P\cdot\mathbf{n}-d◆RB◆◆LB◆                                                 | \mathbf{n}                                                           | ◆RB◆$    |
+| Reflection in plane      | $P' = P - 2D\hat{\mathbf{n}}$ where $D = \dfrac{P\cdot\mathbf{n}-d}{                                                 | \mathbf{n}                                                           | }$    |
 
 ---
 
@@ -1013,7 +1013,7 @@ $|\mathbf{d}_1\times\mathbf{d}_2| = \sqrt{3}$.
 $\mathbf{a}_2-\mathbf{a}_1 = (0,-1,1)$.
 $(\mathbf{a}_2-\mathbf{a}_1)\cdot(\mathbf{d}_1\times\mathbf{d}_2) = 0+1+1 = 2$.
 
-$D = \dfrac◆LB◆2◆RB◆◆LB◆\sqrt{3}◆RB◆ = \boxed{\dfrac◆LB◆2\sqrt{3}◆RB◆◆LB◆3◆RB◆}$.
+$D = \dfrac{2}{\sqrt{3}} = \boxed{\dfrac{2\sqrt{3}}{3}}$.
 
 </details>
 
@@ -1061,7 +1061,7 @@ Find the angle between the planes $2x - y + z = 3$ and $x + y + 2z = 1$.
 
 $\mathbf{n}_1 = (2,-1,1)$$\mathbf{n}_2 = (1,1,2)$.
 
-$\cos\theta = \dfrac◆LB◆|2-1+2|◆RB◆◆LB◆\sqrt{6}\sqrt{6}◆RB◆ = \dfrac{3}{6} = \dfrac{1}{2}$.
+$\cos\theta = \dfrac{|2-1+2|}{\sqrt{6}\sqrt{6}} = \dfrac{3}{6} = \dfrac{1}{2}$.
 
 $\boxed{\theta = 60°}$
 
@@ -1092,9 +1092,9 @@ Since the cross product gives $(2,1,-3)$The line is parallel to this vector. $\b
 
 If $\mathbf{a}$ makes angles $\alpha, \beta, \gamma$ with the coordinate axes, then:
 
-$\cos\alpha = \dfrac◆LB◆a_1◆RB◆◆LB◆|\mathbf{a}|◆RB◆$
-$\cos\beta = \dfrac◆LB◆a_2◆RB◆◆LB◆|\mathbf{a}|◆RB◆$
-$\cos\gamma = \dfrac◆LB◆a_3◆RB◆◆LB◆|\mathbf{a}|◆RB◆$
+$\cos\alpha = \dfrac{a_1}{|\mathbf{a}|}$
+$\cos\beta = \dfrac{a_2}{|\mathbf{a}|}$
+$\cos\gamma = \dfrac{a_3}{|\mathbf{a}|}$
 
 And $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$.
 
@@ -1111,7 +1111,7 @@ $(\mathbf{a}\times\mathbf{b})\times\mathbf{c} = \mathbf{b}(\mathbf{a}\cdot\mathb
 The shortest distance from point $P$ (position vector $\mathbf{p}$) to the line
 $\mathbf{r} = \mathbf{a} + \lambda\mathbf{d}$ is:
 
-$$D = \frac◆LB◆|(\mathbf{p}-\mathbf{a})\times\mathbf{d}|◆RB◆◆LB◆|\mathbf{d}|◆RB◆$$
+$$D = \frac{|(\mathbf{p}-\mathbf{a})\times\mathbf{d}|}{|\mathbf{d}|}$$
 
 ### 19.4 Vector planes — parametric form
 
@@ -1137,7 +1137,7 @@ $\mathbf{p}-\mathbf{a} = (1,2,3)-(0,1,-1) = (1,1,4)$. $\mathbf{d} = (1,1,0)$.
 
 $(\mathbf{p}-\mathbf{a})\times\mathbf{d} = \begin{pmatrix}1\cdot0-4\cdot1\\4\cdot1-1\cdot0\\1\cdot1-1\cdot1\end{pmatrix} = (-4, 4, 0)$.
 
-$D = \dfrac◆LB◆|(-4,4,0)|◆RB◆◆LB◆|(1,1,0)|◆RB◆ = \dfrac◆LB◆\sqrt{32}◆RB◆◆LB◆\sqrt{2}◆RB◆ = \dfrac◆LB◆4\sqrt{2}◆RB◆◆LB◆\sqrt{2}◆RB◆ = \boxed{4}$.
+$D = \dfrac{|(-4,4,0)|}{|(1,1,0)|} = \dfrac{\sqrt{32}}{\sqrt{2}} = \dfrac{4\sqrt{2}}{\sqrt{2}} = \boxed{4}$.
 
 </details>
 
