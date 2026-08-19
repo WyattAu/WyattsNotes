@@ -45,7 +45,7 @@
     "@fontsource/merriweather": "^5.2.9",
     "@mdx-js/react": "^3.1.0",
     "@mermaid-js/layout-elk": "0.1.9",
-    "@r74tech/docusaurus-plugin-panzoom": "^2.4.0",
+    "@r74tech/docusaurus-plugin-panzoom": "^2.4.2",
     "autoprefixer": "^10.5.0",
     "clsx": "^2.1.1",
     "docusaurus-plugin-image-zoom": "^3.0.1",
