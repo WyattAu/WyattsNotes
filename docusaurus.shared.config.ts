@@ -78,32 +78,21 @@ export function createRemarkPluginsConfig(
   useEscapeJsxBraces = false,
   opts: { skipGridTables?: boolean; skipCodeSnippets?: boolean } = {},
 ) {
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const escapeJsxBraces = require('./src/plugins/escape-jsx-braces/index.js');
-
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let remarkPluginsList: any[];
 
-  if (useEscapeJsxBraces) {
-    remarkPluginsList = opts.skipCodeSnippets
-      ? [remarkMath, escapeJsxBraces]
-      : [remarkMath, escapeJsxBraces, remarkCodeSnippets];
-  } else {
-    remarkPluginsList = opts.skipCodeSnippets ? [remarkMath] : [remarkMath, remarkCodeSnippets];
-  }
+  remarkPluginsList = opts.skipCodeSnippets ? [remarkMath] : [remarkMath, remarkCodeSnippets];
 
   return {
     beforeDefaultRemarkPlugins: opts.skipGridTables ? [] : [remarkGridTable],
-    // remarkMath MUST run before escape-jsx-braces so that math/inlineMath
-    // nodes exist in the AST when the brace-escaping plugin processes them.
-    // The plugin restores diamond placeholders in math node values before KaTeX.
+    // remarkMath processes math/inlineMath nodes in the AST.
     remarkPlugins: remarkPluginsList,
   };
 }
 
 /**
  * Create the common docs plugin config spread object.
- * @param useEscapeJsxBraces - Whether to include escape-jsx-braces in remark plugins.
+ * @param _useEscapeJsxBraces - Deprecated: sentinel system removed (content is clean).
  * @param opts.skipGridTables - Skip remarkGridTable plugin (for content without grid tables).
  * @param opts.skipCodeSnippets - Skip remarkCodeSnippets plugin (for content without @snippet refs).
  */

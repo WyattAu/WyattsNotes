@@ -114,7 +114,9 @@ Given metric spaces $(X, d_X)$ and $(Y, d_Y)$A function $f: X \to Y$ is $K$-Lips
 $K \geq 0$) if: $$ d_Y(f(x_1), f(x_2)) \leq K \cdot d_X(x_1, x_2) \quad \forall x_1, x_2 \in X $$
 
 The **Lipschitz constant** (or Lipschitz semi-norm) is defined as:
-$$\lVert f \rVert_{\mathrm{Lip}} = \sup_{x \neq y} \frac{d_Y(f(x), f(y))}{d_X(x, y)}$$
+$$\lVert f \rVert_{\mathrm{Lip}} = \sup_{x \neq y} \frac{d_Y(f(x), f(y))}{d_X(x, y)}
+$$
+
 
 The set of 1-Lipschitz functions consists of all functions satisfying
 $\lVert f \rVert_{\mathrm{Lip}} \leq 1$.
@@ -811,7 +813,9 @@ $f: S \to \mathbb{R}$ be measurable. **If $f$ is non-negative, or if
 $\mathbb{E}[|f(X)|] < \infty$**, then the expectation of $f(X)$ can be
 computed either in the sample space or the target space:
 
-$$\mathbb{E}[f(X)] = \int_\Omega f(X(\omega)) \, dP(\omega) = \int_S f(x) \, dP_X(x)$$
+$$\mathbb{E}[f(X)] = \int_\Omega f(X(\omega)) \, dP(\omega) = \int_S f(x) \, dP_X(x)
+$$
+
 
 _Intuition:_ LOTUS justifies computing expectations using the pushforward measure (distribution)
 rather than the underlying probability space. In ML, this is why we can compute
@@ -822,7 +826,9 @@ $P$.
 
 For two random variables $X, Y$ with finite second moments, the covariance is defined as:
 
-$$\mathrm{Cov}(X, Y) = \mathbb{E}[(X - \mathbb{E}[X])(Y - \mathbb{E}[Y])]$$
+$$\mathrm{Cov}(X, Y) = \mathbb{E}[(X - \mathbb{E}[X])(Y - \mathbb{E}[Y])]
+$$
+
 
 Equivalently,
 $\mathrm{Cov}(X, Y) = \mathbb{E}[XY] - \mathbb{E}[X]\mathbb{E}[Y]$.
@@ -879,7 +885,9 @@ $\int_\Omega \lVert f(\omega) \rVert \, d\mu(\omega) < \infty$.
 
 :::info **Bochner's Theorem:** A strongly measurable function
 $X: \Omega \to \mathbb{V}$ is Bochner integrable _if and only if_ its norm
-is Lebesgue integrable: $$\int_\Omega \lVert X(\omega) \rVert \, d\mu(\omega) < \infty$$ This is the
+is Lebesgue integrable: $$\int_\Omega \lVert X(\omega) \rVert \, d\mu(\omega) < \infty
+$$
+ This is the
 characteristic criterion for Bochner integrability and is formally stated in the _Bochner Integral_
 definition below.
 :::
@@ -904,7 +912,9 @@ Fubini-Tonelli Theorem states:
 
 A function $f: V \to \mathbb{R}$ on a vector space is convex if
 $\forall x, y \in V, \lambda \in [0,1]$:
-$$f(\lambda x + (1-\lambda)y) \leq \lambda f(x) + (1-\lambda)f(y)$$ (Crucial for Jensen's inequality
+$$f(\lambda x + (1-\lambda)y) \leq \lambda f(x) + (1-\lambda)f(y)
+$$
+ (Crucial for Jensen's inequality
 and Optimization).
 
 ### Jensen's Inequality
@@ -1076,7 +1086,9 @@ is a **positive definite kernel** if:
 2. Positive semi-definiteness: For any $n \in \mathbb{N}$Any
    $x_1, \dots, x_n \in \mathcal{X}$And any
    $c_1, \dots, c_n \in \mathbb{R}$:
-   $$\sum_{i=1}^n \sum_{j=1}^n c_i c_j k(x_i, x_j) \geq 0$$
+   $$\sum_{i=1}^n \sum_{j=1}^n c_i c_j k(x_i, x_j) \geq 0
+$$
+
 
 ### Moore-Aronszajn Theorem
 
@@ -1208,104 +1220,73 @@ $$
 Where $\langle \cdot, \cdot \rangle$ denotes the inner product. For $\mathbb{R}^d$This
 reduces to $\varphi_X(t) = \mathbb{E}\left[ e^{i t^\top X} \right]$ with
 $t \in \mathbb{R}^d$.
-
 :::info **Generalization to Banach Spaces:** For a random variable $X$ taking values in a Banach
 space $B$ (which may lack an inner product), $t$ belongs to the _dual space_ $B^*$And the
 characteristic function is defined as $\varphi_X(t) = \mathbb{E}\left[ e^{i t(X)} \right]$
 where $t: B \to \mathbb{R}$ is a continuous linear functional. For Hilbert spaces, the
 Riesz Representation Theorem identifies $B^*$ with $B$Recovering the inner product formulation.
 :::
-
 ### Levy's Continuity Theorem
-
 Let $X_n$ be random variables with characteristic functions $\varphi_n(t)$.
-
 1. If $X_n \xrightarrow{d} X$Then $\varphi_n(t) \to \varphi_X(t)$ pointwise.
 2. If $\varphi_n(t)$ converges pointwise to a function $\varphi(t)$ which is continuous at $t=0$Then
    $\varphi$ is the characteristic function of some random variable $X$And $X_n \xrightarrow{d} X$.
-
 ### Law of Large Numbers (LLN)
-
 Let $X_1, X_2, \dots$ be i.i.d. Random variables with $\mathbb{E}[X_1] = \mu$.
-
 **Weak Law of Large Numbers (WLLN):** $\bar{X}_n = \frac{1}{n}\sum_{i=1}^n X_i \xrightarrow{P} \mu$
-
 **Strong Law of Large Numbers (SLLN):**
 $\bar{X}_n = \frac{1}{n}\sum_{i=1}^n X_i \xrightarrow{a.s.} \mu$
-
 :::warning **Important Distinction for ERM:** The standard LLN only guarantees that the empirical
 risk of a _single, fixed_ hypothesis converges to its true risk. To justify Empirical Risk
 Minimization (ERM) where we search for the _minimum_ across a hypothesis class
 $\mathcal{H}$We need the **Uniform Law of Large Numbers (ULLN)** to prevent overfitting.
 See Glivenko-Cantelli theorem.
 :::
-
 ### Central Limit Theorem (CLT)
-
 Let $X_1, X_2, \dots$ be i.i.d. Random variables with mean $\mu$ and finite covariance $\Sigma$.
 Then:
-
-$$\sqrt{n}(\bar{X}_n - \mu) \xrightarrow{d} \mathcal{N}(0, \Sigma)$$
+$$\sqrt{n}(\bar{X}_n - \mu) \xrightarrow{d} \mathcal{N}(0, \Sigma)
+$$
 
 Where $\bar{X}_n = \frac{1}{n}\sum_{i=1}^n X_i$.
-
 _Relevance:_ Foundation of asymptotic normality, Fisher Information properties, and explains why
 neural network weights are often initialized with Gaussian distributions.
-
 ## Statistical Learning Theory
-
 ### Uniform Law of Large Numbers (ULLN) / Glivenko-Cantelli
-
 Let $\mathcal{F}$ be a class of measurable functions. The empirical measure $\hat{P}_n$
 satisfies the ULLN if:
-
-
 $$
 
 \sup_{f \in \mathcal{F}} \left| \int f \, d\hat{P}_n - \int f \,
 dP \right| \xrightarrow{a.s.} 0
 
 $$
-
 A function class $\mathcal{F}$ is called **Glivenko-Cantelli** if this holds. This is the
 actual theoretical backbone of Statistical Learning Theory and ERM, ensuring uniform convergence
 across the entire hypothesis class.
-
 ### True Risk and Empirical Risk
-
 Let $\ell: \mathcal{Y} \times \mathcal{Y} \to \mathbb{R}$ be a loss
 function and $f: \mathcal{X} \to \mathcal{Y}$ be a hypothesis (predictor).
-
 The **True Risk** (or expected risk) is the expected loss under the true data distribution:
-
-
 $$
 
 \mathcal{R}(f) = \mathbb{E}_{(X,Y) \sim
 P}[\ell(f(X), Y)]
 
 $$
-
 The **Empirical Risk** is the average loss over the observed training samples:
-
-
 $$
 
 \hat{\mathcal{R}}*n(f) = \frac{1}{n}\sum_{i=1}^n
 \ell(f(x_i), y_i)
 
 $$
-
 _Connection to LLN:_ The Law of Large Numbers guarantees
 $\hat{\mathcal{R}}_n(f) \to \mathcal{R}(f)$ for a _fixed_ $f$. The ULLN extends
 this to uniform convergence over a hypothesis class $\mathcal{H}$.
-
 ### Concentration Inequalities
-
 **Hoeffding's Inequality:** Let $X_1, \dots, X_n$ be independent random variables bounded such that
 $a_i \leq X_i \leq b_i$. Then for any $t > 0$:
-
-
 $$
 
 P\left( \left| \frac{1}{n}\sum_{i=1}^n X_i -
@@ -1314,42 +1295,30 @@ P\left( \left| \frac{1}{n}\sum_{i=1}^n X_i -
 a_i)^2}\right)
 
 $$
-
 _Relevance:_ Provides high-probability bounds for bounded random variables; foundational for
 generalization bounds in SLT.
-
 **McDiarmid's Inequality (Bounded Differences):** Let $X_1, \dots, X_n$ be independent random
 variables. If $f: \mathcal{X}^n \to \mathbb{R}$ satisfies the bounded
 differences condition:
-
-
 $$
 
 \sup_{x_1, \dots, x_n, x_i'} |f(x_1, \dots, x_n) - f(x_1, \dots, x_{i-1}, x_i',
 x_{i+1}, \dots, x_n)| \leq c_i
 
 $$
-
 Then for any $t > 0$:
-
-
 $$
 
 P(|f(X\*1, \dots, X_n) - \mathbb{E}[f(X_1, \dots, X_n)]| \geq t) \leq
 2\exp\left(-\frac{2t^2}{\sum_{i=1}^n c_i^2}\right)
 
 $$
-
 _Relevance:_ Generalizes Hoeffding to functions of random variables; used to prove generalization
 bounds for arbitrary learning algorithms.
-
 ### Rademacher Complexity
-
 Let $\mathcal{F}$ be a class of functions
 $f: \mathcal{X} \to \mathbb{R}$ and let $S = \{x_1, \dots, x_n\}$ be a fixed
 sample. The **empirical Rademacher complexity** of $\mathcal{F}$ with respect to $S$ is:
-
-
 $$
 
 \hat{\mathfrak{R}}*S(\mathcal{F}) =
@@ -1358,154 +1327,106 @@ $$
 \right]
 
 $$
-
 Where $\sigma_1, \dots, \sigma_n$ are i.i.d. Rademacher random variables
 ($P(\sigma_i = +1) = P(\sigma_i = -1) = 1/2$).
-
 The **Rademacher complexity** of $\mathcal{F}$ is
 $\mathfrak{R}_n(\mathcal{F}) = \mathbb{E}_S[\hat{\mathfrak{R}}_S(\mathcal{F})]$.
-
 _Intuition:_ Measures the capacity of a function class to fit random noise. Higher complexity
 implies greater risk of overfitting.
-
 _Relevance:_ Provides tight generalization bounds; the complexity of neural networks can be bounded
 via Rademacher complexity of their weight matrices.
-
 ### VC Dimension
-
 The **Vapnik-Chervonenkis (VC) dimension** of a hypothesis class $\mathcal{H}$ is the
 largest number of points that can be shattered by $\mathcal{H}$. A set
 $\{x_1, \dots, x_d\}$ is shattered by $\mathcal{H}$ if for every binary labeling
 $(y_1, \dots, y_d) \in \{0, 1\}^d$There exists $h \in \mathcal{H}$ such that
 $h(x_i) = y_i$ for all $i$.
-
 _Relevance:_ A finite VC dimension implies the class is Glivenko-Cantelli. VC theory provides the
 classical foundation for structural risk minimization.
-
 ## Stochastic Processes and Conditioning
-
 ### Stochastic Process
-
 A **stochastic process** is a collection of random elements $\{X_t\}_{t \in T}$ indexed by a set $T$
 ( time, discrete or continuous), all defined on the same probability space
 $(\Omega, \mathcal{F}, P)$ and taking values in a measurable space
 $(S, \mathcal{S})$.
-
 ### Wiener Process (Brownian Motion)
-
 A stochastic process $\{W_t\}_{t \geq 0}$ is a **Wiener process** (or standard Brownian motion) if:
-
 1. $W_0 = 0$ almost surely
 2. $W_t$ has independent increments: $W_t - W_s \perp W_u - W_v$ for disjoint intervals
 3. $W_t - W_s \sim \mathcal{N}(0, t-s)$ for $t > s$
 4. $t \mapsto W_t$ is continuous almost surely
-
 _Relevance:_ The foundational continuous-time martingale; essential for diffusion models.
-
 ### Stochastic Differential Equation (SDE)
-
-An SDE describes the evolution of a stochastic process: $$dX_t = f(X_t, t)dt + g(X_t, t)dW_t$$
+An SDE describes the evolution of a stochastic process: $$dX_t = f(X_t, t)dt + g(X_t, t)dW_t
+$$
 
 Where $f$ is the drift function, $g$ is the diffusion coefficient, and $W_t$ is a Wiener process.
-
 _Relevance:_ Score-based generative models and diffusion models are formulated as SDEs, where the
 Stein score $\nabla_x \log p_t(x)$ appears in the reverse-time SDE.
-
 ### Filtration
-
 A **filtration** $\{\mathcal{F}_t\}_{t \geq 0}$ is an increasing family of
 $\sigma$-algebras indexed by time (discrete or continuous):
-
-
 $$
 
 \mathcal{F}_s \subseteq \mathcal{F}_t \subseteq
 \mathcal{F} \quad \mathrm{for} all {} s \leq t
 
 $$
-
 _Intuition:_ $\mathcal{F}_t$ represents the information available at time $t$. As time
 progresses, we gain more information (the $\sigma$-algebra grows).
-
 _Relevance:_ Essential for Diffusion Models (SDEs), Reinforcement Learning (partially observable
 Markov decision processes), and sequential decision making.
-
 ### Adapted Process
-
 A stochastic process $\{X_t\}_{t \geq 0}$ is **adapted** to a filtration
 $\{\mathcal{F}_t\}$ if $X_t$ is $\mathcal{F}_t$-measurable for every $t$.
 Equivalently, the value of $X_t$ is fully determined by the information available at time $t$.
-
 _Intuition:_ An adapted process cannot "see into the future." At each time $t$, $X_t$ depends only on
 information in $\mathcal{F}_t$.
-
 ### Martingale
-
 A stochastic process $\{X_t\}_{t \geq 0}$ adapted to a filtration $\{\mathcal{F}_t\}$ is a
 **martingale** if:
-
-
 $$
 
 \mathbb{E}[X_t | \mathcal{F}_s] = X_s \quad
 \mathrm{for} all {} s \leq t
 
 $$
-
 _Variants:_
-
 - **Sub-martingale:** $\mathbb{E}[X_t | \mathcal{F}_s] \geq X_s$
 - **Super-martingale:** $\mathbb{E}[X_t | \mathcal{F}_s] \leq X_s$
-
 _Relevance:_ Martingales appear in the analysis of stochastic gradient descent, diffusion processes,
 and optimal stopping problems.
-
 ### Markov/Transition Kernel
-
 Let $(S, \mathcal{S})$ and $(T, \mathcal{T})$ be measurable spaces. A function
 $\kappa: S \times \mathcal{T} \to [0, 1]$ is a Markov Kernel (or probability kernel) if:
-
 1. For every fixed $B \in \mathcal{T}$The map $s \mapsto \kappa(s, B)$ is
    $\mathcal{S}$-measurable.
 2. For every fixed $s \in S$The map $B \mapsto \kappa(s, B)$ is a probability measure on
    $(T, \mathcal{T})$.
-
 ### Markov Chain
-
 A sequence of random variables $X_0, X_1, X_2, \dots$ taking values in a measurable space
 $(S, \mathcal{S})$ is a **Markov Chain** if it satisfies the Markov property:
-
-
 $$
 
 P(X_{n+1} \in B | X_0, \dots, X_n) = P(X_{n+1} \in B | X_n) = \kappa(X_n, B)
 
 $$
-
 Where $\kappa$ is the transition kernel.
-
 ### Stationary Distribution
-
 A probability measure $\pi$ on $(S, \mathcal{S})$ is a **stationary distribution** (or
 invariant measure) for a Markov kernel $\kappa$ if:
-
-
 $$
 
 \pi(B) = \int_S \kappa(x, B) \, d\pi(x) \quad \forall B \in \mathcal{S}
 
 $$
-
 _Relevance:_ Required for MCMC algorithms. The chain converges to $\pi$ under appropriate
 conditions.
-
 ### Regular Conditional Probability
-
 Let $(\Omega, \mathcal{F}, P)$ be a probability space and let
 $\mathcal{G} \subseteq \mathcal{F}$ be a sub-$\sigma$-algebra. A **Regular
 Conditional Probability** (RCP) is a kernel $\kappa: \Omega \times \mathcal{F} \to [0, 1]$
 such that:
-
 1. For $P$-almost all $\omega$, $\kappa(\omega, \cdot)$ is a probability measure on
    $(\Omega, \mathcal{F})$.
 2. For every $A \in \mathcal{F}$, $\omega \mapsto \kappa(\omega, A)$ is
@@ -1513,42 +1434,31 @@ such that:
    $\kappa(\cdot, A) = \mathbb{E}[1_A | \mathcal{G}]$.
 3. **Disintegration Property:** For any $A \in \mathcal{F}$ and
    $G \in \mathcal{G}$: $$ P(A \cap G) = \int_G \kappa(\omega, A) \, dP(\omega) $$
-
 _Critical Note:_ An RCP evaluates events in the **source** $\sigma$-algebra $\mathcal{F}$.
 The existence of RCP is guaranteed when $(\Omega, \mathcal{F})$ is a Standard Borel space.
-
 ### Disintegration Theorem
-
 Let $(S, \mathcal{B}(S))$ and $(T, \mathcal{B}(T))$ be Standard Borel spaces.
 Let $\mu$ be a probability measure on the product space $S \times T$And let $\nu$ be the marginal
 distribution of $\mu$ on $S$ (defined by $\nu(A) = \mu(A \times T)$).
-
 There exists a family of probability measures $\{\mu_x\}_{x \in S}$ on $T$Unique $\nu$-almost
 everywhere, such that for every bounded measurable function
 $f: S \times T \to \mathbb{R}$:
-
-
 $$
 
 \int_{S \times T} f(x, y) \, d\mu(x, y) = \int_S \left( \int_T f(x, y) \, d\mu_x(y) \right)
 d\nu(x)
 
 $$
-
 The measures $\mu_x$ are called the conditional probabilities of $Y$ given $X=x$Formally justifying
 the notation $P(Y \in B | X=x)$.
-
 ### Regular Conditional Distribution
-
 Instead of asking "What is the expected value of $X$ given $\mathcal{G}$?", we ask "What
 is the full distribution of $X$ given $\mathcal{G}$?". Let
 $(\Omega, \mathcal{F}, P)$ be a probability space, let $(S, \mathcal{S})$ be a
 measurable space (the target space of our random element), and let $X: \Omega \to S$ be a Random
 Element. Let $\mathcal{G} \subseteq \mathcal{F}$ be a sub-$\sigma$-algebra.
-
 A Regular Conditional Distribution (or Conditional Kernel) of $X$ given $\mathcal{G}$ is a
 function $\kappa: \Omega \times \mathcal{S} \to [0, 1]$ such that:
-
 1. Measure: For almost every fixed $\omega \in \Omega$The map $B \mapsto \kappa(\omega, B)$ is a
    probability measure on $(S, \mathcal{S})$.
 2. Measurability: For every fixed set $B \in \mathcal{S}$The map
@@ -1559,23 +1469,18 @@ $$
 \int_G \kappa(\omega, B) \, dP(\omega) = P(X^{-1}(B) \cap G)
 
 $$
-
 **Key Distinction from Regular Conditional Probability:**
-
 - **Regular Conditional Probability** evaluates the probability of target sets given a
 sub-$\sigma$-algebra $\mathcal{G}$.
 - **Regular Conditional Distribution** is specifically the conditional law of a Random Element $X$
 given $\mathcal{G}$.
-
 ### Conditional Expectation
-
 Let $(\Omega, \mathcal{F}, P)$ be a probability space and let
 $X \in L^1(\Omega, \mathcal{F}, P)$ be an integrable random variable. Let
 $\mathcal{G} \subseteq \mathcal{F}$ be a sub-$\sigma$-algebra. The conditional
 expectation of $X$ given $\mathcal{G}$Denoted
 $\mathbb{E}[X|\mathcal{G}]$Is the unique (up to almost sure equivalence) random
 variable $Z$ satisfying:
-
 1. Measurability: $Z$ is $\mathcal{G}$-measurable.
 2. Integral Invariance: For all $G \in \mathcal{G}$:
 $$
@@ -1583,33 +1488,24 @@ $$
 \int_G Z \, dP = \int_G X \, dP
 
 $$
-
 Note that $\mathbb{E}[X|\mathcal{G}]$ is the orthogonal projection of $X$ onto
 the subspace of $\mathcal{G}$-measurable functions if $X \in L^2$.
-
 If regular conditional distribution $\kappa$ exists, then:
-
-
 $$
 
 \mathbb{E}[X|\mathcal{G}] (\omega) = \int_S s \,
 \kappa(\omega, ds)
 
 $$
-
 ### Conditional Fréchet Mean
-
 If $S$ is a metric space $(S, d)$The Conditional Fréchet Mean is the minimizer of the conditional
 Fréchet variance. Given the Regular Conditional Distribution $\kappa(\omega, \cdot)$ defined above:
-
-
 $$
 
 \mu_{\mathcal{G}}(\omega) = \underset{y \in S}{\arg\min}
 \int_S d^2(y, s) \, \kappa(\omega, ds)
 
 $$
-
 :::warning **Rigor Note:** For the integral $\int_S s \, \kappa(\omega, ds)$ in the context of
 conditional expectation (and for the Fréchet mean to be well-defined via Bochner integration), $S$
 cannot be an arbitrary metric space. It must be a subset of a vector space (specifically, a Banach
@@ -1617,183 +1513,124 @@ space) where addition and scalar multiplication are defined, enabling the Bochne
 general metric spaces, the Fréchet mean is defined via the minimization formulation above, which
 does not require linear structure.
 :::
-
 ## Statistical Models and Information Geometry
-
 ### Parameter Space
-
 A parameter space is a measurable space $(\Theta, \mathcal{A})$.
-
 ### Parametrization
-
 A parametrization $\psi$ is a mapping
 $\psi: \Theta \rightarrow \mathcal{M}_1(S, \mathcal{B}(S))$ that assigns a
 probability measure on each parameter $\Theta$. We denote the measure $P_\theta = \psi(\theta)$.
-
 ### Parameter
-
 A parameter is an element $\theta \in \Theta$ used as an argument for $\psi$.
-
 ### Statistical Model
-
 A statistical model is the image of parametrization:
 $\mathcal{Q}= \{P_\theta \in \mathcal{M}_1(S, \mathcal{B}(S)) : P_\theta = \psi(\theta), \theta \in \Theta\}$
-
 ### Exponential Family
-
 A parametric family of distributions $\{P_\theta : \theta \in \Theta\}$ with densities $p(x|\theta)$
 belongs to the **exponential family** if it can be written in the form:
-
-
 $$
 
 P(x|\theta) = h(x) \exp\left(\langle \eta(\theta), T(x) \rangle - A(\theta)\right)
 
 $$
-
 Where:
-
 - $h(x) \geq 0$ is the **base measure** (does not depend on $\theta$)
 - $\eta(\theta) \in \mathbb{R}^d$ is the **natural parameter**
 - $T(x) \in \mathbb{R}^d$ is the **sufficient statistic**
 - $A(\theta) = \log \int h(x) \exp(\langle \eta(\theta), T(x) \rangle) \, dx$ is the **log-partition
   function** (normalization constant)
-
 _Canonical Form:_ When $\eta(\theta) = \theta$The family is in canonical form:
 $p(x|\eta) = h(x) \exp(\langle \eta, T(x) \rangle - A(\eta))$.
-
 _Examples:_ Gaussian, Bernoulli, Poisson, Gamma, Beta, Dirichlet, Categorical (with fixed support
 size), Wishart.
-
 _Relevance:_ Exponential families have closed-form conjugate priors, tractable M-projections, and
 Fisher Information equal to the Hessian of $A(\theta)$. They are foundational in Variational
 Inference, Generalized Linear Models, and natural gradient methods.
-
 ### Dominated Statistical Model
-
 The model $\mathcal{Q}_\theta : \theta \in \Theta$ is called dominated if there exists a
 $\sigma$-finite reference measure $\lambda$ such that
 $\forall \theta \in \Theta, P_\theta \ll \lambda$.
-
 ### Likelihood Function
-
 Given a dominated model with reference measure $\lambda$The density
 $f_\theta = \frac{dP_\theta}{d\lambda}$ exists. For a fixed observation $s \in S$The likelihood
 function $L_s: \Theta \rightarrow [0, \infty)$ is defined by:
-
-
 $$
 
 \begin{equation} L_s(\theta) = f_{\theta}(s), \quad \mathrm{where} {} f_{\theta} =
 \frac{dP_{\theta}}{d\lambda} \end{equation}
 
 $$
-
 ### Bayes' Theorem (Measure-Theoretic)
-
 Let $(\Theta, \mathcal{A})$ be a parameter space equipped with a prior probability measure
 $\Pi$. Let $P_\theta$ be the likelihood (data distribution) for each $\theta \in \Theta$. Given an
 observation $x$The **posterior distribution** $\Pi(\cdot | x)$ is defined via the Radon-Nikodym
 derivative:
-
-
 $$
 
 \frac{d\Pi(\cdot | x)}{d\Pi}(\theta) = \frac{p(x | \theta)}{\int\_\Theta p(x |
 \theta') \, d\Pi(\theta')}
 
 $$
-
 Equivalently, in measure notation:
-
-
 $$
 
 \Pi(d\theta | x) = \frac{p(x | \theta)}{\int\_\Theta p(x | \theta') \, \Pi(d\theta')}
 \Pi(d\theta)
 
 $$
-
 Where $p(x | \theta) = \frac{dP_\theta}{d\lambda}(x)$ is the likelihood density with respect to a
 reference measure $\lambda$.
-
 _Requirements:_ The denominator (marginal likelihood / evidence) must be finite and non-zero for the
 posterior to be well-defined.
-
 _Relevance:_ This is the rigorous foundation of Bayesian ML, Variational Autoencoders (VAEs), and
 posterior inference. The measure-theoretic formulation handles both continuous and discrete
 parameter spaces uniformly.
-
 ### Score Function (Fisher Score)
-
 Let $\{P_\theta : \theta \in \Theta\}$ be a parametric model with densities $f(x; \theta)$. The
 **Fisher score function** is the gradient of the log-likelihood with respect to parameters:
-
-
 $$
 
 S(x; \theta) = \nabla\_\theta \log f(x; \theta)
 
 $$
-
 _Properties:_
-
 - $\mathbb{E}_{x \sim P_\theta}[s(x; \theta)] = 0$ (under regularity conditions)
 - $\mathrm{Cov}(s(x; \theta)) = \mathcal{I}(\theta)$ (Fisher Information Matrix)
-
 _Relevance:_ Essential for the REINFORCE algorithm in Reinforcement Learning and Fisher Information
 analysis.
-
 ### Stein Score (Data Score)
-
 In modern ML, particularly Score-Based Generative Models and Diffusion Models, the "score" refers to
 the **Stein score** (or data score):
-
-
 $$
 
 S(x) = \nabla_x \log p(x)
 
 $$
-
 This is the gradient of the log-density with respect to the **data** $x$Not the parameters $\theta$.
 The Stein score points in the direction of steepest increase in log-probability within the data
 space.
-
 _Key Distinction:_
-
 - **Fisher Score** $\nabla_\theta \log p(x; \theta)$: Gradient in parameter space; used in classical
   statistics and RL.
 - **Stein Score** $\nabla_x \log p(x)$: Gradient in data space; used in Langevin Dynamics, Score
   Matching, and Diffusion Models.
-
 ### Total Variation Distance
-
 For two probability measures $P$ and $Q$ on $(\Omega, \mathcal{F})$:
-
-
 $$
 
 \delta(P, Q) = \sup_{A \in \mathcal{F}} |P(A) - Q(A)|
 
 $$
-
 If measures possess densities $p$ and $q$ w.r.t a reference measure $\mu$:
-
-
 $$
 
 \delta(P, Q) = \frac{1}{2} \int\_\Omega |p(x) - q(x)| \, d\mu(x)
 
 $$
-
 ### Fisher Information (Matrix)
-
 Let $\{P_\theta : \theta \in \Theta\}$ be a parametric model with densities $f(x; \theta)$. Under
 regularity conditions (twice differentiability), the Fisher Information Matrix
 $\mathcal{I}(\theta)$ is:
-
-
 $$
 
 \mathcal{I}(\theta)*{ij} = \mathbb{E}*{x
@@ -1801,57 +1638,40 @@ $$
 \frac{\partial}{\partial \theta_j} \log f(x; \theta) \right]
 
 $$
-
 It represents the curvature of the KL-divergence near $\theta$.
-
 ### Kullback-Leibler Divergence
-
 Let $P$ and $Q$ be two probability measures on $(S, \mathcal{F})$. If $P \ll Q$The
 Kullback-Leibler Divergence is defined as the expectation of the log-likelihood ratio with respect
 to $P$:
-
-
 $$
 
 D_{KL}(P \| Q) = \int_S \log \left( \frac{dP}{dQ} \right) \, dP =
 \mathbb{E}*{x \sim P} \left[ \log \frac{dP}{dQ}(x) \right]
 
 $$
-
 If $P \not\ll Q$Then $D_{KL}(P \| Q) = +\infty$.
-
 :::warning **KL Divergence is NOT a Metric:**
-
 Despite its widespread use, KL divergence fails to satisfy the axioms of a metric:
-
 1. **Asymmetry:** $D_{KL}(P \| Q) \neq D_{KL}(Q \| P)$ . This is why I-Projection and M-Projection
    yield different results.
 2. **Triangle inequality violation:** $D_{KL}(P \| R) \not\leq D_{KL}(P \| Q) + D_{KL}(Q \| R)$ .
-
 This motivates the use of alternative divergences that **are** proper metrics:
-
 - **Wasserstein Metric:** A true metric with meaningful gradients even for disjoint supports.
 - **Jensen-Shannon Divergence:** Symmetric and bounded; $\sqrt{D_{JS}}$ is a true metric.
-
 :::
-
 ### Jensen-Shannon Divergence
-
 The Jensen-Shannon Divergence (JSD) is a symmetrized and smoothed version of KL divergence:
-$$D_{JS}(P \| Q) = \frac{1}{2} D_{KL}(P \| M) + \frac{1}{2} D_{KL}(Q \| M)$$ Where
+$$D_{JS}(P \| Q) = \frac{1}{2} D_{KL}(P \| M) + \frac{1}{2} D_{KL}(Q \| M)
+$$
+ Where
 $M = \frac{1}{2}(P + Q)$.
-
 _Properties:_
-
 - Symmetric: $D_{JS}(P \| Q) = D_{JS}(Q \| P)$
 - Bounded: $0 \leq D_{JS}(P \| Q) \leq \log 2$
 - $D_{JS}(P \| Q) = 0 \iff P = Q$
-
 _Relevance:_ The original GAN objective minimizes JSD between the data distribution and generated
 distribution.
-
 ### Chain Rule for KL Divergence
-
 Let $X, Y$ be random variables with joint distributions $P_{XY}$ and $Q_{XY}$. Assuming the joint
 distributions factorize as $P_{XY} = P_X P_{Y|X}$ and $Q_{XY} = Q_X Q_{Y|X}$Then: $$ D_{KL}(P_{XY}
 \| Q_{XY}) = D_{KL}(P_X \| Q_X) + \mathbb{E}_{x \sim P_X} [D_{KL}(P_{Y|X=x} \| Q_{Y|X=x})]
@@ -1972,7 +1792,9 @@ using a deterministic transformation:
 If $z = T_\phi(\epsilon)$ where $\epsilon \sim p(\epsilon)$ (a fixed, parameter-free distribution)
 and $T_\phi$ is a diffeomorphism, then by LOTUS:
 
-$$\nabla_\phi \mathbb{E}_{z \sim q_\phi}[f(z)] = \nabla_\phi \mathbb{E}_{\epsilon \sim p}[f(T_\phi(\epsilon))] = \mathbb{E}_{\epsilon \sim p}[\nabla_\phi f(T_\phi(\epsilon))]$$
+$$\nabla_\phi \mathbb{E}_{z \sim q_\phi}[f(z)] = \nabla_\phi \mathbb{E}_{\epsilon \sim p}[f(T_\phi(\epsilon))] = \mathbb{E}_{\epsilon \sim p}[\nabla_\phi f(T_\phi(\epsilon))]
+$$
+
 
 _Relevance:_ Foundation of VAE training and differentiable Monte Carlo estimation.
 
@@ -1980,7 +1802,9 @@ _Relevance:_ Foundation of VAE training and differentiable Monte Carlo estimatio
 
 Let $\mu, \nu \in \mathcal{P}(S)$ where $(S, d)$ is a Polish space. The
 $p$-Wasserstein distance is:
-$$W_p(\mu, \nu) = \left( \inf_{\gamma \in \Pi(\mu, \nu)} \int_{S \times S} d(x, y)^p \, d\gamma(x, y) \right)^{1/p}$$
+$$W_p(\mu, \nu) = \left( \inf_{\gamma \in \Pi(\mu, \nu)} \int_{S \times S} d(x, y)^p \, d\gamma(x, y) \right)^{1/p}
+$$
+
 Where $\Pi(\mu, \nu)$ is the set of joint distributions (couplings) with marginals $\mu$ and $\nu$.
 
 _Duality (for $p=1$):_ Via Kantorovich-Rubinstein,
@@ -2009,7 +1833,7 @@ functions of two distributions. For data distribution $p_{\mathrm{data}}$ and
 model distribution $p_\theta$:
 
 $$
-J(\theta) = \mathbb{E}_{p_{\mathrm{data}}}\left[ \lVert \nabla_x \log p_{\mathrm{data}}(x) - \nabla_x \log p_\theta(x) \rVert^2 \right]
+J(\theta) = \mathbb{E}_{p_{\mathrm{data}\left[ \lVert \nabla_x \log p_{\mathrm{data}}(x) - \nabla_x \log p_\theta(x) \rVert^2 \right]
 $$
 
 _Key Property:_ Minimizing the Fisher divergence is equivalent to Score Matching. Unlike KL
