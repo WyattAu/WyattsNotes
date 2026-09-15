@@ -88,6 +88,13 @@
         "project": ["./tsconfig.json"]
       },
       "rules": {
+        "@typescript-eslint/no-unused-vars": [
+          "error",
+          {
+            "argsIgnorePattern": "^_",
+            "varsIgnorePattern": "^_"
+          }
+        ],
         "@typescript-eslint/no-misused-promises": "error",
         "@typescript-eslint/require-await": "warn",
         "@typescript-eslint/no-unsafe-assignment": "off",

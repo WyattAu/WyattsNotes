@@ -13,15 +13,15 @@
  * Usage: node scripts/fix-latex-corruption.js <file...> [--dry-run]
  * Exits 1 if any file changed (or would change, with --dry-run).
  */
-const fs = require('node:fs')
+const fs = require('node:fs');
 
-const args = process.argv.slice(2)
-const dryRun = args.includes('--dry-run')
-const files = args.filter(a => !a.startsWith('--'))
+const args = process.argv.slice(2);
+const dryRun = args.includes('--dry-run');
+const files = args.filter((a) => !a.startsWith('--'));
 
 if (files.length === 0) {
-  console.error('usage: fix-latex-corruption.js <file...> [--dry-run]')
-  process.exit(2)
+  console.error('usage: fix-latex-corruption.js <file...> [--dry-run]');
+  process.exit(2);
 }
 
 const TRANSFORMS = [
@@ -70,39 +70,39 @@ const TRANSFORMS = [
     regex: /([A-Za-z])\*([A-Za-z])/g,
     replace: '$1_$2',
   },
-]
+];
 
-let anyChanged = false
+let anyChanged = false;
 
 for (const file of files) {
-  const before = fs.readFileSync(file, 'utf8')
-  let after = before
-  const changes = []
+  const before = fs.readFileSync(file, 'utf8');
+  let after = before;
+  const changes = [];
 
   for (const t of TRANSFORMS) {
-    const matches = [...after.matchAll(t.regex)]
+    const matches = [...after.matchAll(t.regex)];
     if (matches.length > 0) {
-      for (const m of matches) changes.push(`${t.name}: ${m[0]}`)
-      after = after.replace(t.regex, t.replace)
+      for (const m of matches) changes.push(`${t.name}: ${m[0]}`);
+      after = after.replace(t.regex, t.replace);
     }
   }
 
   // Markdown emphasis is never letter*letter, so remaining single stars
   // adjacent to letters inside math are reported for manual review.
-  const suspicious = [...after.matchAll(/[A-Za-z]\*[A-Za-z{\\]/g)]
+  const suspicious = [...after.matchAll(/[A-Za-z]\*[A-Za-z{\\]/g)];
   for (const m of suspicious) {
-    console.warn(`WARN ${file}: possible asterisk damage remains: ${m[0]}`)
+    console.warn(`WARN ${file}: possible asterisk damage remains: ${m[0]}`);
   }
 
   if (after !== before) {
-    anyChanged = true
-    if (!dryRun) fs.writeFileSync(file, after)
-    console.log(`${file}: ${changes.length} fixes${dryRun ? ' (dry run)' : ''}`)
-    for (const c of changes.slice(0, 10)) console.log(`  ${c}`)
-    if (changes.length > 10) console.log(`  ... and ${changes.length - 10} more`)
+    anyChanged = true;
+    if (!dryRun) fs.writeFileSync(file, after);
+    console.log(`${file}: ${changes.length} fixes${dryRun ? ' (dry run)' : ''}`);
+    for (const c of changes.slice(0, 10)) console.log(`  ${c}`);
+    if (changes.length > 10) console.log(`  ... and ${changes.length - 10} more`);
   } else {
-    console.log(`${file}: clean`)
+    console.log(`${file}: clean`);
   }
 }
 
-process.exit(anyChanged ? 1 : 0)
+process.exit(anyChanged ? 1 : 0);

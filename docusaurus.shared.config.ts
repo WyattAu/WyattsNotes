@@ -68,20 +68,16 @@ export const rehypePluginConfig = {
 
 /**
  * Create remark plugin config.
- * @param useEscapeJsxBraces - Whether to include the escape-jsx-braces remark plugin.
- *   Used by: ib, dse, alevel-maths-physics, alevel-sciences, university (via generated config).
- *   NOT used by: main, programming, qualifications.
  * @param opts.skipGridTables - Skip remarkGridTable plugin (for content without grid tables).
  * @param opts.skipCodeSnippets - Skip remarkCodeSnippets plugin (for content without @snippet refs).
  */
 export function createRemarkPluginsConfig(
-  useEscapeJsxBraces = false,
   opts: { skipGridTables?: boolean; skipCodeSnippets?: boolean } = {},
 ) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  let remarkPluginsList: any[];
-
-  remarkPluginsList = opts.skipCodeSnippets ? [remarkMath] : [remarkMath, remarkCodeSnippets];
+  const remarkPluginsList: any[] = opts.skipCodeSnippets
+    ? [remarkMath]
+    : [remarkMath, remarkCodeSnippets];
 
   return {
     beforeDefaultRemarkPlugins: opts.skipGridTables ? [] : [remarkGridTable],
@@ -93,18 +89,19 @@ export function createRemarkPluginsConfig(
 /**
  * Create the common docs plugin config spread object.
  * @param _useEscapeJsxBraces - Deprecated: sentinel system removed (content is clean).
+ *   Kept for positional compatibility with existing call sites; ignored.
  * @param opts.skipGridTables - Skip remarkGridTable plugin (for content without grid tables).
  * @param opts.skipCodeSnippets - Skip remarkCodeSnippets plugin (for content without @snippet refs).
  */
 export function createCommonDocsPluginConfig(
-  useEscapeJsxBraces = false,
+  _useEscapeJsxBraces = false,
   opts: { skipGridTables?: boolean; skipCodeSnippets?: boolean } = {},
 ) {
   return {
     showLastUpdateTime: true,
     showLastUpdateAuthor: true,
     ...admonitionsConfig,
-    ...createRemarkPluginsConfig(useEscapeJsxBraces, opts),
+    ...createRemarkPluginsConfig(opts),
     ...rehypePluginConfig,
   };
 }
