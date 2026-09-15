@@ -18,6 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      # Deploys for this repo are disabled (migrated to WyattAu/starlight-sites),
+      # but these sub-sites are still served. academics.* is a deliberate
+      # redirect to ib.*, so 3xx counts as healthy.
       - name: Check all sites
         run: |
           SITES=(
@@ -28,14 +31,14 @@ jobs:
             "qualifications.wyattau.com"
             "programming.wyattau.com"
             "university.wyattau.com"
-            "academics.wyattau.com"
+            "academics.wyattau.com" # 301 -> ib.wyattau.com by design
             "ib.wyattau.com"
             "dse.wyattau.com"
           )
           FAILED=()
           for site in "${SITES[@]}"; do
             STATUS=$(curl -s -o /dev/null -w "%{http_code}" --max-time 15 "https://${site}")
-            if [ "$STATUS" != "200" ]; then
+            if [ "$STATUS" -lt 200 ] || [ "$STATUS" -ge 400 ]; then
               FAILED+=("${site} returned ${STATUS}")
             fi
             echo "${site}: ${STATUS}"

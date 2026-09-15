@@ -1,5 +1,10 @@
 # WyattsNotes
 
+> [!WARNING] **This repository is deprecated.** Site deployment has migrated to
+> [WyattAu/starlight-sites](https://github.com/WyattAu/starlight-sites). The Docusaurus deploy
+> workflows have been removed; content in this repo is kept for history only. The sub-sites below
+> remain served from their last deployment.
+
 [![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
 [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
